@@ -1,4 +1,3 @@
-
 ## Introduction
 Welcome to the Aerospace Medicine Implementation Guide (IG) for the Synthea Synthetic Patient Generation utility. This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.
 
