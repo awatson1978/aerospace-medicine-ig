@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary -  v0.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.3.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Scenarios</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Astronaut.html"
+                  title="StructureDefinition/Astronaut">Astronaut</a>
+            </td>
+            <td>
+<p>Patient profile for flight crew on space craft.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-average-blood-pressure.html"
+                  title="StructureDefinition/average-blood-pressure">Average Blood Pressure</a>
+            </td>
+            <td>
+<p>A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol.  The average blood pressure has a systolic and a diastolic component.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-bp-device.html"
+                  title="StructureDefinition/bp-device">Blood Pressure Device</a>
+            </td>
+            <td>
+<p>A profile of the Device resource used specifically for blood pressure devices and includes an extension for blood pressure cuff size.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-blood-pressure-panel.html"
+                  title="StructureDefinition/blood-pressure-panel">Blood Pressure Panel</a>
+            </td>
+            <td>
+<p>Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-height.html"
+                  title="StructureDefinition/height">Body Height</a>
+            </td>
+            <td>
+<p>The measurement in centimeters or feet and inches from the top of the head to the heel, usually while standing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-body-mass-index.html"
+                  title="StructureDefinition/body-mass-index">Body Mass Index</a>
+            </td>
+            <td>
+<p>A numerical index based on an individual's weight in kilograms divided by the square of their height in meters.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-body-temperature.html"
+                  title="StructureDefinition/body-temperature">Body Temperature</a>
+            </td>
+            <td>
+<p>The measured heat of an individual's body.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-body-weight.html"
+                  title="StructureDefinition/body-weight">Body Weight</a>
+            </td>
+            <td>
+<p>The measured mass of an individual's body.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceEquipment.html"
+                  title="StructureDefinition/SpaceEquipment">Commercial Space Equipment</a>
+            </td>
+            <td>
+<p>Device profile for commercial space equipment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EnvironmentalMonitoring.html"
+                  title="StructureDefinition/EnvironmentalMonitoring">Environmental Monitoring</a>
+            </td>
+            <td>
+<p>Profile for environmental monitoring.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-GimbalScreening.html"
+                  title="StructureDefinition/GimbalScreening">Gimbal Screening</a>
+            </td>
+            <td>
+<p>Screening protocol for Multi Axis Gimbal training device.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-GimbalScreeningCondition.html"
+                  title="StructureDefinition/GimbalScreeningCondition">Gimbal Screening Condition</a>
+            </td>
+            <td>
+<p>Contraindicated conditions for riding in a multi-axis gimbal machine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-GimbalScreeningMedication.html"
+                  title="StructureDefinition/GimbalScreeningMedication">Gimbal Screening Medication</a>
+            </td>
+            <td>
+<p>Contraindicated medications for riding in a multi-axis gimbal machine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-GimbalScreeningObservation.html"
+                  title="StructureDefinition/GimbalScreeningObservation">Gimbal Screening Observation</a>
+            </td>
+            <td>
+<p>Contraindicated observations for riding in a multi-axis gimbal machine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-GimbalScreeningProcedure.html"
+                  title="StructureDefinition/GimbalScreeningProcedure">Gimbal Screening Procedure</a>
+            </td>
+            <td>
+<p>Contraindicated medical procedures for riding in a multi-axis gimbal machine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-heart-rate.html"
+                  title="StructureDefinition/heart-rate">Heart Rate</a>
+            </td>
+            <td>
+<p>The number of heart beats in a minute.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceRiskAssesment.html"
+                  title="StructureDefinition/SpaceRiskAssesment">Mission Risk Assessment</a>
+            </td>
+            <td>
+<p>Risk assessment for space missions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html"
+                  title="StructureDefinition/oxygen-saturation-arterial-blood-pulseOx">Oxygen Saturation in Arterial Blood by Pulse Oximetry</a>
+            </td>
+            <td>
+<p>A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood via pulse oximetry.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oxygen-saturation-arterial-blood.html"
+                  title="StructureDefinition/oxygen-saturation-arterial-blood">Oxygen Saturation in Arterial blood, method not specified</a>
+            </td>
+            <td>
+<p>A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-respiratory-rate.html"
+                  title="StructureDefinition/respiratory-rate">Respiratory Rate</a>
+            </td>
+            <td>
+<p>The measured number of breaths taken in a minute.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceCondition.html"
+                  title="StructureDefinition/SpaceCondition">Space Health Condition</a>
+            </td>
+            <td>
+<p>Health conditions specific to outerspace environment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceProcedure.html"
+                  title="StructureDefinition/SpaceProcedure">Space Health Procedure</a>
+            </td>
+            <td>
+<p>Health procedures specific to outerspace environment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceInsuranceContract.html"
+                  title="StructureDefinition/SpaceInsuranceContract">Space Insurance Contract</a>
+            </td>
+            <td>
+<p>Specialized contract coverage for space travel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceOrg.html"
+                  title="StructureDefinition/SpaceOrg">Space Organization</a>
+            </td>
+            <td>
+<p>Organizations involved with astronautics and space travel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceVehicle.html"
+                  title="StructureDefinition/SpaceVehicle">Space Vehicle</a>
+            </td>
+            <td>
+<p>Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceInsurance.html"
+                  title="StructureDefinition/SpaceInsurance">Space insurance</a>
+            </td>
+            <td>
+<p>Insurance plan for space travel</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-twenty-four-hour-blood-pressure.html"
+                  title="StructureDefinition/twenty-four-hour-blood-pressure">Twenty Four Hour Blood Pressure</a>
+            </td>
+            <td>
+<p>An average blood pressure (systolic and diastolic) over a twenty four hour period.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vital-signs-panel.html"
+                  title="StructureDefinition/vital-signs-panel">Vital Signs Panel</a>
+            </td>
+            <td>
+<p>A vital signs panel as defined by Logica Health.  It includes Oxygen Saturation via Pulse Oximetry, Oxygen Saturation in Arterial blood, body height, body length, body weight, body temperature, blood pressure panel, heart rate, respiratory rate, head-occcipital/frontal circumference, oxygen saturation via pulse oximetry, and body mass index.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpaceLocation.html"
+                  title="StructureDefinition/SpaceLocation">xGeo Locations</a>
+            </td>
+            <td>
+<p>Locations in outerspace, past the Karman line, such as a space ship or space habitat.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Space-Adaptation-Bone-Health.html"
+                  title="ValueSet/Space-Adaptation-Bone-Health">Adaptations of Bone Health in Space</a>
+            </td>
+            <td>
+<p>SNOMED CT concepts related to bone health adaptations observed in spaceflight conditions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Astronaut-Back-Pain.html"
+                  title="ValueSet/Astronaut-Back-Pain">Back Pain and Space Travel Research Concepts</a>
+            </td>
+            <td>
+<p>SNOMED codes related to back pain and associated conditions observed in astronauts and their potential terrestrial applications.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SpaceTravelBrainChanges.html"
+                  title="ValueSet/SpaceTravelBrainChanges">Brain Changes from Prolonged Space Travel</a>
+            </td>
+            <td>
+<p>A ValueSet encompassing SNOMED concepts related to physiological and neurological changes from prolonged space travel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-GimbalContraindicatedConditions.html"
+                  title="ValueSet/GimbalContraindicatedConditions">Gimbal Contraindications</a>
+            </td>
+            <td>
+<p>Contraindicated conditions for riding a multi-axis gimbal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-AircraftFumeExposureValueSet.html"
+                  title="ValueSet/AircraftFumeExposureValueSet">Health Impacts of Aircraft Fume Exposure</a>
+            </td>
+            <td>
+<p>ValueSet for SNOMED concepts related to health impacts from exposure to aircraft contaminated air and fume events.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-LunarDustToxicityValueSet.html"
+                  title="ValueSet/LunarDustToxicityValueSet">Lunar Dust Toxicity Related Conditions</a>
+            </td>
+            <td>
+<p>A ValueSet containing SNOMED codes for conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-Muscle-Stiffness-and-Space-Health.html"
+                  title="ValueSet/Muscle-Stiffness-and-Space-Health">Muscle Stiffness and Space Health ValueSet</a>
+            </td>
+            <td>
+<p>This ValueSet includes SNOMED codes related to muscle stiffness and health in the context of spaceflight and Earth-based applications, filtered by a similarity threshold greater than 0.5.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SleepLossHypoxiaEffect.html"
+                  title="ValueSet/SleepLossHypoxiaEffect">Sleep Loss and Hypoxia Effects ValueSet</a>
+            </td>
+            <td>
+<p>This ValueSet includes SNOMED CT terms matched to concepts related to the physiological and cognitive effects of sleep loss and hypoxia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SleepLossHypoxiaResponses.html"
+                  title="ValueSet/SleepLossHypoxiaResponses">Sleep Loss and Hypoxia Responses</a>
+            </td>
+            <td>
+<p>A ValueSet for concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia, including associated medical conditions and factors.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SpaceRadiationRisksVS.html"
+                  title="ValueSet/SpaceRadiationRisksVS">Space Radiation Risks ValueSet</a>
+            </td>
+            <td>
+<p>A ValueSet containing SNOMED concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SpaceflightStressFactors.html"
+                  title="ValueSet/SpaceflightStressFactors">Stress and Physiological Factors in Spaceflight Analog Missions</a>
+            </td>
+            <td>
+<p>Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Example: Example Scenarios </h3>
+    <p>These define groups of interrelated examples that demonstrate one or more of the workflows supported by this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioArtemis.html"
+                  title="ExampleScenario/ScenarioArtemis">Artemis Space Camp</a>
+            </td>
+            <td>
+<p>Artemis space camp for extended stay on the Lunar surface.  Mission health objectives:  inflatable space habitat with contained atmosphere.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioBiodomeConstruciton.html"
+                  title="ExampleScenario/ScenarioBiodomeConstruciton">Lunar Biodome Construction</a>
+            </td>
+            <td>
+<p>Lunar biodome construction.  Mission health objectives:  micrometeorites and solar storms.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioLunarFarming.html"
+                  title="ExampleScenario/ScenarioLunarFarming">Lunar Farming</a>
+            </td>
+            <td>
+<p>Lunar farming and food production.  Mission health objectives:  calorie production.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioLunarGateway.html"
+                  title="ExampleScenario/ScenarioLunarGateway">Lunar Gateway</a>
+            </td>
+            <td>
+<p>Lunar gateway transfer operations.  Mission health objectives:  space airlocks and closed loop environment transfers.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioIceMining.html"
+                  title="ExampleScenario/ScenarioIceMining">Lunar Ice Mining</a>
+            </td>
+            <td>
+<p>Lunar ice mining in a crater.  Mission health objectives:  occupational safety while operating heavy equipment in microgravity.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioArtemisSurveying.html"
+                  title="ExampleScenario/ScenarioArtemisSurveying">Lunar Prospecting</a>
+            </td>
+            <td>
+<p>Artemis surveying and prospecting for ice mining and lunar cave habitats.  Mission health objectives:  radiation exposure management.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioRadioTelescopeInstall.html"
+                  title="ExampleScenario/ScenarioRadioTelescopeInstall">Lunar Radio Telescope Install</a>
+            </td>
+            <td>
+<p>Lunar Crater Radio Telescope installation.  Mission health objectives:  resource maintenance and multi-person surface missions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioSpaceOSHA.html"
+                  title="ExampleScenario/ScenarioSpaceOSHA">Space Occupational Safety</a>
+            </td>
+            <td>
+<p>OSHA considerations for astronauts.  Mission health objectives:  osteoperosis and occular degeneration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioSpaceTourism.html"
+                  title="ExampleScenario/ScenarioSpaceTourism">Space Tourism</a>
+            </td>
+            <td>
+<p>Commercial space tourism flight, with duration &lt;1 day past Karman line.  Mission health objectives:  integrate passenger hospital records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ExampleScenario-ScenarioSpaceWalk.html"
+                  title="ExampleScenario/ScenarioSpaceWalk">Space Walk</a>
+            </td>
+            <td>
+<p>OSHA considerations for spacewalks.  Mission health objectives:  vital sign monitoring.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionAsphyxiation.html"
+                  title="Condition/ConditionAsphyxiation">Condition - Asphyxiation</a>
+            </td>
+            <td>
+<p>Oxygen deprivation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionBluntTrauma.html"
+                  title="Condition/ConditionBluntTrauma">Condition - Blunt Trauma</a>
+            </td>
+            <td>
+<p>Blunt injury (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionBurn.html" title="Condition/ConditionBurn">Condition - Burn</a>
+            </td>
+            <td>
+<p>Burn injury (morphologic abnormality)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionHeartAttack.html"
+                  title="Condition/ConditionHeartAttack">Condition - Heart Attack</a>
+            </td>
+            <td>
+<p>Myocardial infarction (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionHypoxia.html"
+                  title="Condition/ConditionHypoxia">Condition - Hypoxia</a>
+            </td>
+            <td>
+<p>Oxygen deprivation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionOccularDegeneration.html"
+                  title="Condition/ConditionOccularDegeneration">Condition - Occular Degeneration</a>
+            </td>
+            <td>
+<p>Microgravity induced occular degeneration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionOsteoporosis.html"
+                  title="Condition/ConditionOsteoporosis">Condition - Osteoporosis</a>
+            </td>
+            <td>
+<p>Microgravity induced bone loss.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionRadiationExposure.html"
+                  title="Condition/ConditionRadiationExposure">Condition - Radiation Exposure</a>
+            </td>
+            <td>
+<p>Radiation exposure (rads)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionSmokeInhalation.html"
+                  title="Condition/ConditionSmokeInhalation">Condition - Smoke Inhalation</a>
+            </td>
+            <td>
+<p>Smoke inhalation injury (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ConditionStroke.html" title="Condition/ConditionStroke">Condition - Stroke</a>
+            </td>
+            <td>
+<p>Cerebrovascular accident (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentAnonLoc.html" title="Consent/ConsentAnonLoc">ConsentAnonLoc</a>
+            </td>
+            <td>
+<p>Policy rule to allow general citizenry and anonymous users access to public listings of Location records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentAnonOrg.html" title="Consent/ConsentAnonOrg">ConsentAnonOrg</a>
+            </td>
+            <td>
+<p>Policy rule to allow general citizenry and anonymous users access to public listings of Organization records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentAnonPrac.html" title="Consent/ConsentAnonPrac">ConsentAnonPrac</a>
+            </td>
+            <td>
+<p>Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentClinicianLoc.html"
+                  title="Consent/ConsentClinicianLoc">ConsentClinicianLoc</a>
+            </td>
+            <td>
+<p>Policy rule to allow authenticated healthcare practitioners access to restricted Location records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Consent-ConsentClinicianOrg.html"
+                  title="Consent/ConsentClinicianOrg">ConsentClinicianOrg</a>
+            </td>
+            <td>
+<p>Policy rule to allow authenticated healthcare practitioners access to restricted Organization records.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-UsDeptOfDefence.html"
+                  title="Organization/UsDeptOfDefence">Department of Defense</a>
+            </td>
+            <td>
+<p>Organization - Department of Defense</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceAirLock.html" title="Device/DeviceAirLock">Device - Air Lock</a>
+            </td>
+            <td>
+<p>Air Lock</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-AscentEntrySpacesuit.html"
+                  title="Device/AscentEntrySpacesuit">Device - Ascent/Entry Spacesuit</a>
+            </td>
+            <td>
+<p>Ascent/Entry Spacesuit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-AstroSpacesuit.html" title="Device/AstroSpacesuit">Device - Astro Spacesuit</a>
+            </td>
+            <td>
+<p>Astro Spacesuit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-CislunarHighwayPatrolSystem.html"
+                  title="Device/CislunarHighwayPatrolSystem">Device - Cislunar Highway Patrol System</a>
+            </td>
+            <td>
+<p>Space traffic patrol system</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceCyberTruck.html" title="Device/DeviceCyberTruck">Device - Cyber Truck</a>
+            </td>
+            <td>
+<p>Cyber truck</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DreamChaserVehicle.html" title="Device/DreamChaserVehicle">Device - Dream Chaser</a>
+            </td>
+            <td>
+<p>Space Vehicle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceFlightRecorder.html"
+                  title="Device/DeviceFlightRecorder">Device - Flight Recorder (FHIR)</a>
+            </td>
+            <td>
+<p>Mission flight recorder that monitors astronaut and passenger activities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceFlightSuit.html" title="Device/DeviceFlightSuit">Device - Flight Suit</a>
+            </td>
+            <td>
+<p>Flight suit for space travel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceHospitalBed.html" title="Device/DeviceHospitalBed">Device - Hospital Bed</a>
+            </td>
+            <td>
+<p>General hospital bed.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-JamesWebTelescope.html" title="Device/JamesWebTelescope">Device - James Webb Telescope</a>
+            </td>
+            <td>
+<p>Deep space telescope at Legrange Point 2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceRadiotelescope.html"
+                  title="Device/DeviceRadiotelescope">Device - Lunar Crater Radio Telescope</a>
+            </td>
+            <td>
+<p>Lunar Crater Radio Telescope</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceLunarRover.html" title="Device/DeviceLunarRover">Device - Lunar Rover</a>
+            </td>
+            <td>
+<p>Lunar rover</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceOrbitalReef.html" title="Device/DeviceOrbitalReef">Device - Orbital Reef</a>
+            </td>
+            <td>
+<p>Space Station</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceSmartClothing.html"
+                  title="Device/DeviceSmartClothing">Device - Smart Clothing</a>
+            </td>
+            <td>
+<p>ECG enabled undershirt</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceSpaceGarage.html" title="Device/DeviceSpaceGarage">Device - Space Garage</a>
+            </td>
+            <td>
+<p>Space Garage</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceSpaceSuit.html" title="Device/DeviceSpaceSuit">Device - Space Suit</a>
+            </td>
+            <td>
+<p>Environmental suit for extra-vehicular operations.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceSpaceTent.html" title="Device/DeviceSpaceTent">Device - Space Tent</a>
+            </td>
+            <td>
+<p>Space Tent</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceTelehealthMonitor.html"
+                  title="Device/DeviceTelehealthMonitor">Device - Telehealth Monitor</a>
+            </td>
+            <td>
+<p>Monitoring terminal that supports both video conferencing and streaming vital sign signals.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-DeviceVitalSignsMonitor.html"
+                  title="Device/DeviceVitalSignsMonitor">Device - Vital Signs Monitor</a>
+            </td>
+            <td>
+<p>Vital signs monitor (heart rate, respiration, blood pressure, temperature).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-xEMUSpacesuit.html" title="Device/xEMUSpacesuit">Device - xEMU Spacesuit</a>
+            </td>
+            <td>
+<p>xEMU Spacesuit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-xEVASSpacesuit.html" title="Device/xEVASSpacesuit">Device - xEVAS Spacesuit</a>
+            </td>
+            <td>
+<p>xEVAS Spacesuit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Contract-SpaceTourismTravelInsuranceContract.html"
+                  title="Contract/SpaceTourismTravelInsuranceContract">Insurance - Contract</a>
+            </td>
+            <td>
+<p>Space tourist insurance coverage.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="InsurancePlan-SpaceTourismTravelInsurance.html"
+                  title="InsurancePlan/SpaceTourismTravelInsurance">Insurance - Plan</a>
+            </td>
+            <td>
+<p>Space tourist insurance plan.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationAirlock1.html" title="Location/LocationAirlock1">Location - Airlock1</a>
+            </td>
+            <td>
+<p>Airlock 1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationArtemisSpaceCamp.html"
+                  title="Location/LocationArtemisSpaceCamp">Location - Artemis Space Camp</a>
+            </td>
+            <td>
+<p>Artemis space camp (Pending)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationBiosphere2.html"
+                  title="Location/LocationBiosphere2">Location - Biosphere2</a>
+            </td>
+            <td>
+<p>Biosphere 2 ecology dome at University of Arizona</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationCrater0.html" title="Location/LocationCrater0">Location - Crater</a>
+            </td>
+            <td>
+<p>Lunar crater with no known scientific or industrial uses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationCyberTruck.html"
+                  title="Location/LocationCyberTruck">Location - Cyber Truck</a>
+            </td>
+            <td>
+<p>Tesla cyber truck</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationDragon.html" title="Location/LocationDragon">Location - Dragon Capsule</a>
+            </td>
+            <td>
+<p>Dragon capsule, part of the SpaceX Crew Dragon flight system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationLunarGateway.html"
+                  title="Location/LocationLunarGateway">Location - Gateway</a>
+            </td>
+            <td>
+<p>Lunar Gateway - outpost and transfer station in lunar orbit.  (Pending)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationCrater3.html" title="Location/LocationCrater3">Location - Habitat Crater</a>
+            </td>
+            <td>
+<p>Lunar micro-crater suitable for habitat construction.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationIcuBed.html" title="Location/LocationIcuBed">Location - ICU Bed</a>
+            </td>
+            <td>
+<p>Intensive Care Unit - Bed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationIcuWard.html" title="Location/LocationIcuWard">Location - ICU Ward</a>
+            </td>
+            <td>
+<p>Intensive Care Unit - Ward</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationInternationalSpaceStation.html"
+                  title="Location/LocationInternationalSpaceStation">Location - ISS</a>
+            </td>
+            <td>
+<p>International Space Station - football field sized orbital space station in low earth orbit (LEO)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationCrater1.html" title="Location/LocationCrater1">Location - Ice Crater</a>
+            </td>
+            <td>
+<p>Lunar crater containing ice</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-KennedySpaceCenter.html"
+                  title="Location/KennedySpaceCenter">Location - Kennedy Space Center</a>
+            </td>
+            <td>
+<p>Kennedy Space Center, Florida</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LabToOrbit.html" title="Location/LabToOrbit">Location - Lab To Orbit</a>
+            </td>
+            <td>
+<p>Lab To Orbit - Colorado</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LegangePoint2.html" title="Location/LegangePoint2">Location - Legrange Point 2</a>
+            </td>
+            <td>
+<p>Legrange Point 2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationLunarTent1.html"
+                  title="Location/LocationLunarTent1">Location - Lunar Tent 1</a>
+            </td>
+            <td>
+<p>Inflatable lunar tent with controlled atmosphere.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationLunarVillage.html"
+                  title="Location/LocationLunarVillage">Location - Lunar Village</a>
+            </td>
+            <td>
+<p>EU Lunar Village (Pending)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationLunarBuggy.html"
+                  title="Location/LocationLunarBuggy">Location - LunarBuggy</a>
+            </td>
+            <td>
+<p>Lunar buggy for the Artemis mission (GM / Lockheed Martin)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationMirSpaceStation.html"
+                  title="Location/LocationMirSpaceStation">Location - Mir</a>
+            </td>
+            <td>
+<p>Mir Space Station (Decomissioned)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationOrbitalReefSpaceStation.html"
+                  title="Location/LocationOrbitalReefSpaceStation">Location - Orbital Reef</a>
+            </td>
+            <td>
+<p>Orbital Reef Space Station</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationTaingong.html" title="Location/LocationTaingong">Location - Palace in the Sky</a>
+            </td>
+            <td>
+<p>Palace in the Sky (Taingong)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationSoyez.html" title="Location/LocationSoyez">Location - Soyez Capsule</a>
+            </td>
+            <td>
+<p>Soyez capsule, part of the Korolev Design Bureau lunar landing flight system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationSpaceLabSpaceStation.html"
+                  title="Location/LocationSpaceLabSpaceStation">Location - Space Lab</a>
+            </td>
+            <td>
+<p>Space Lab (Decomissioned)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationSpaceGarage.html"
+                  title="Location/LocationSpaceGarage">Location - SpaceGarage1</a>
+            </td>
+            <td>
+<p>Space Garage</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationCrater2.html" title="Location/LocationCrater2">Location - Telescope Crater</a>
+            </td>
+            <td>
+<p>Lunar crater suitable for a space telescope.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-MapNoradToObservation.html"
+                  title="ConceptMap/MapNoradToObservation">Map - Norad2Observation</a>
+            </td>
+            <td>
+<p>Maps the NORAD two-line punch card format to FHIR Observation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-MapNoradToLocation.html"
+                  title="ConceptMap/MapNoradToLocation">Map - NoradToLocation</a>
+            </td>
+            <td>
+<p>Maps  NORAD two-line punch card format to FHIR Location.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-MapObservationToLocation.html"
+                  title="ConceptMap/MapObservationToLocation">Map - ObservationToLocation</a>
+            </td>
+            <td>
+<p>Maps orbital coordinate observations to an xGeo location.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-MapObservationToNorad.html"
+                  title="ConceptMap/MapObservationToNorad">Map - ObservationToNorad</a>
+            </td>
+            <td>
+<p>Maps a FHIR Observation to a NORAD two-line punch card format.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-MapVitalsBundleToPanel.html"
+                  title="ConceptMap/MapVitalsBundleToPanel">Map - VitalsBundleToPanel</a>
+            </td>
+            <td>
+<p>Maps a bundle of vital signs to a multi-component Observation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation.Environmental-1.html"
+                  title="Observation/Observation.Environmental-1">Observation - Environmental</a>
+            </td>
+            <td>
+<p>Environmental monitoring status report</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Observation.Kepler.ECI.1.html"
+                  title="Observation/Observation.Kepler.ECI.1">Observation - Orbital Elements</a>
+            </td>
+            <td>
+<p>Observation - Orbital Elements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-AxiomSpace.html" title="Organization/AxiomSpace">Org - Axiom Space</a>
+            </td>
+            <td>
+<p>Organization - Axiom Space</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-CollinsAerospace.html"
+                  title="Organization/CollinsAerospace">Org - Collins Aerospace</a>
+            </td>
+            <td>
+<p>Organization - Collins Aerospace</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-UsDepartmentOfCommerce.html"
+                  title="Organization/UsDepartmentOfCommerce">Org - Department of Commerce</a>
+            </td>
+            <td>
+<p>Organization - Department of Commerce</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-GlennResearchCenter.html"
+                  title="Organization/GlennResearchCenter">Org - Glenn Research Center</a>
+            </td>
+            <td>
+<p>Organization - Glenn Research Center</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-IlcDover.html" title="Organization/IlcDover">Org - ILC Dover</a>
+            </td>
+            <td>
+<p>Organization - ILC Dover</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-NASA.html" title="Organization/NASA">Org - NASA</a>
+            </td>
+            <td>
+<p>Organization - National Aeronautics and Space Administration</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Oceaneering.html" title="Organization/Oceaneering">Org - Oceaneering</a>
+            </td>
+            <td>
+<p>Organization - Oceaneering</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-UsOfficeOfSpaceCommerce.html"
+                  title="Organization/UsOfficeOfSpaceCommerce">Org - Office of Space Commerce </a>
+            </td>
+            <td>
+<p>Organization - Office of Space Commerce</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-PineParkEngineering.html"
+                  title="Organization/PineParkEngineering">Org - Pine Park Engineering</a>
+            </td>
+            <td>
+<p>Organization - Pine Park Engineering</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SieraSpace.html" title="Organization/SieraSpace">Org - Sierra Space</a>
+            </td>
+            <td>
+<p>Organization - Sierra Space</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SpaceForce.html" title="Organization/SpaceForce">Org - Space Force</a>
+            </td>
+            <td>
+<p>Organization - US Space Force</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-StarHarborAcademy.html"
+                  title="Organization/StarHarborAcademy">Org - Star Harbor Academy</a>
+            </td>
+            <td>
+<p>Organization - Star Harbor Academy</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-TRISH.html" title="Organization/TRISH">Org - TRISH</a>
+            </td>
+            <td>
+<p>Organization - Translational Research Institute for Space Health</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-sarek.html" title="Patient/sarek">Patient - Ambassador Sarek</a>
+            </td>
+            <td>
+<p>Patient - Ambassador Sarek</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-janeway.html" title="Patient/janeway">Patient - Catherine Janeway</a>
+            </td>
+            <td>
+<p>Patient - Catherine Janeway</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-kirk.html" title="Patient/kirk">Patient - James Kirk</a>
+            </td>
+            <td>
+<p>Patient - James Kirk</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-redshirt1.html" title="Patient/redshirt1">Patient - Red Shirt 1</a>
+            </td>
+            <td>
+<p>Patient - Red Shirt 1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-redshirt2.html" title="Patient/redshirt2">Patient - Red Shirt 2</a>
+            </td>
+            <td>
+<p>Patient - Red Shirt 2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-space-construction-engineer-1.html"
+                  title="Patient/space-construction-engineer-1">Patient - Space Construction 1</a>
+            </td>
+            <td>
+<p>Patient - Space Construction Engineer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-space-engineer-1.html" title="Patient/space-engineer-1">Patient - Space Engineer</a>
+            </td>
+            <td>
+<p>Patient - Space Engineer</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-spaceminer1.html" title="Patient/spaceminer1">Patient - Space Miner 1</a>
+            </td>
+            <td>
+<p>Patient - Space Miner</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureBoneDensitometry.html"
+                  title="Procedure/ProcedureBoneDensitometry">Procedure - Bone Densitometry</a>
+            </td>
+            <td>
+<p>Bone densitometry scan</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureCompression.html"
+                  title="Procedure/ProcedureCompression">Procedure - Compression</a>
+            </td>
+            <td>
+<p>Atmospheric compression of vehicle compartment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureDecompression.html"
+                  title="Procedure/ProcedureDecompression">Procedure - Decompression</a>
+            </td>
+            <td>
+<p>Decompression of vehicle compartment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureEyeExam.html"
+                  title="Procedure/ProcedureEyeExam">Procedure - Eye Exam</a>
+            </td>
+            <td>
+<p>Eye exam</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureHearingExam.html"
+                  title="Procedure/ProcedureHearingExam">Procedure - Hearing Exam</a>
+            </td>
+            <td>
+<p>Hearing exam</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureUltrasound.html"
+                  title="Procedure/ProcedureUltrasound">Procedure - Ultrasound</a>
+            </td>
+            <td>
+<p>Ultrasound scan of the abdomen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssesmentAtmosphere.html"
+                  title="RiskAssessment/RiskAssesmentAtmosphere">Risk - Atmosphere</a>
+            </td>
+            <td>
+<p>Risk of flight running out of breathable atmosphere.  (i.e. suffocation)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssesmentCalorieRestriction.html"
+                  title="RiskAssessment/RiskAssesmentCalorieRestriction">Risk - Calorie Ristrction</a>
+            </td>
+            <td>
+<p>Risk of calorie restriction among passengers. (i.e. starvation)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssesmentCancer.html"
+                  title="RiskAssessment/RiskAssesmentCancer">Risk - Cancer</a>
+            </td>
+            <td>
+<p>Post-flight risk of cancer.  (i.e. cancer)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssesmentFlightRisk.html"
+                  title="RiskAssessment/RiskAssesmentFlightRisk">Risk - Catastrophic Failure</a>
+            </td>
+            <td>
+<p>Risk of flight having a catastrophic engineering failure. (i.e. explotion)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssesmentContamination.html"
+                  title="RiskAssessment/RiskAssesmentContamination">Risk - Contamination</a>
+            </td>
+            <td>
+<p>Risk assessment of microbial contamination. (i.e. mildew)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RiskAssessment-RiskAssesmentMission.html"
+                  title="RiskAssessment/RiskAssesmentMission">Risk - Mission</a>
+            </td>
+            <td>
+<p>Overall mission risk assessment for a space mission</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 6, 2025 20:46-0600">2025-05-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

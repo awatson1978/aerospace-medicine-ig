@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>References -  v0.3.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.3.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>References</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>References</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#policy--regulations" id="markdown-toc-policy--regulations">Policy &amp; Regulations</a></li>
+  <li><a href="#actuarial-analysis" id="markdown-toc-actuarial-analysis">Actuarial Analysis</a></li>
+  <li><a href="#commercial-space" id="markdown-toc-commercial-space">Commercial Space</a></li>
+  <li><a href="#conferences" id="markdown-toc-conferences">Conferences</a></li>
+  <li><a href="#history" id="markdown-toc-history">History</a></li>
+  <li><a href="#launches--mission-analysis" id="markdown-toc-launches--mission-analysis">Launches &amp; Mission Analysis</a></li>
+  <li><a href="#space-habitats--environmental-health" id="markdown-toc-space-habitats--environmental-health">Space Habitats &amp; Environmental Health</a></li>
+  <li><a href="#spacesuits" id="markdown-toc-spacesuits">Spacesuits</a></li>
+  <li><a href="#research-programs" id="markdown-toc-research-programs">Research Programs</a></li>
+  <li><a href="#hermes--lunanet" id="markdown-toc-hermes--lunanet">Hermes / LunaNet</a></li>
+  <li><a href="#analog-simulations" id="markdown-toc-analog-simulations">Analog Simulations</a></li>
+  <li><a href="#astronaut-training" id="markdown-toc-astronaut-training">Astronaut Training</a></li>
+  <li><a href="#artemis" id="markdown-toc-artemis">Artemis</a></li>
+  <li><a href="#medical-studies" id="markdown-toc-medical-studies">Medical Studies</a></li>
+  <li><a href="#aerospace-medicine-practice" id="markdown-toc-aerospace-medicine-practice">Aerospace Medicine Practice</a></li>
+  <li><a href="#space-standards" id="markdown-toc-space-standards">Space Standards</a></li>
+  <li><a href="#space-cybersecurity" id="markdown-toc-space-cybersecurity">Space Cybersecurity</a></li>
+  <li><a href="#terrestrial-applications" id="markdown-toc-terrestrial-applications">Terrestrial Applications</a></li>
+  <li><a href="#lunar-exploration" id="markdown-toc-lunar-exploration">Lunar Exploration</a></li>
+  <li><a href="#nuclear-reactors-in-space" id="markdown-toc-nuclear-reactors-in-space">Nuclear Reactors in Space</a></li>
+  <li><a href="#additional-resources" id="markdown-toc-additional-resources">Additional Resources</a></li>
+</ul>
+
+</div>
+
+<h3 id="policy--regulations">Policy &amp; Regulations</h3>
+<ul>
+  <li><a href="https://arstechnica.com/space/2024/11/space-policy-is-about-to-get-pretty-wild-yall/">Space policy is about to get pretty wild, y'all</a></li>
+  <li><a href="https://www.rand.org/pubs/research_reports/RRA2466-1.html">Assessing the Readiness for Human Commercial Spaceflight Safety Regulations</a></li>
+  <li><a href="https://www.nasa.gov/wp-content/uploads/2023/10/article.marisa-covington-ethically-cleared-to-launch-9.29.23.pdf">Ethically cleared to launch?</a></li>
+  <li><a href="https://2017-2021.state.gov/space-policy-directive-1-reinvigorating-americas-human-space-exploration-program/index.html">Space Policy Directive 1</a></li>
+  <li><a href="https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/Value-Based-Programs/MACRA-MIPS-and-APMs/MACRA-MIPS-and-APMs">Medicare Access and CHIP Reauthorization Act (MACRA)</a></li>
+  <li><a href="https://oig.treasury.gov/cares-act">Coronavirus Aid, Relief, and Economic Security Act (CARES Act)</a></li>
+  <li><a href="https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/outerspacetreaty.html">U.N. Outer Space Treaty</a></li>
+  <li><a href="https://www.unoosa.org/oosa/en/ourwork/spacelaw/treaties/status/index.html">U.N. Moon Treaty</a></li>
+  <li><a href="https://www.faa.gov/space">Federal Aviation Administration - Commercial Human Spaceflight</a></li>
+  <li><a href="https://www.trade.gov/commercial-space">International Trade Administration - Commercial Space</a></li>
+  <li><a href="https://www.space.com/faa-commercial-astronaut-wings-rule-change">New FAA rules change who qualifies for commercial astronaut wings</a></li>
+  <li><a href="https://www.space.com/trump-moon-mining-space-resources-executive-order.html">Trump signs executive order to support moon mining, tap asteroid resources</a></li>
+  <li><a href="https://www.theguardian.com/us-news/2020/apr/07/trump-mining-moon-executive-order">Trump order encourages US to mine the moon</a></li>
+  <li><a href="https://www.space.com/39050-trump-directs-nasa-humans-to-moon.html">President Trump Directs NASA to Return to the Moon, Then Aim for Mars</a></li>
+  <li><a href="https://www.theatlantic.com/science/archive/2018/01/nasa-challenger-christa-mcauliffe/551021/">NASA's Lovely Tribute to the Teacher Who Perished on Challenger</a></li>
+</ul>
+
+<h3 id="actuarial-analysis">Actuarial Analysis</h3>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/List_of_spaceflight-related_accidents_and_incidents">List of spaceflight related accidents and incidents</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/List_of_space_travelers_by_name">List of space travelers by name</a></li>
+  <li><a href="https://flyfright.com/statistics/">Plane crash and Fear of Flying Statistics</a></li>
+  <li><a href="https://www.youtube.com/watch?v=J7G3s9oq03g">Space Data for Healthcare with Veronika Strnadová and Marketa</a></li>
+  <li><a href="https://www.bts.gov/ctp">Bureau of Transportation Statistics - County Transportation Profiles</a></li>
+  <li><a href="https://www.cdc.gov/vitalsigns/motor-vehicle-safety/index.html">Centers for Disease Control - Motor Vehicle Crash Deaths</a></li>
+  <li><a href="https://executiveflyers.com/what-are-the-chances-of-a-plane-crashing/">What Are the Chances of a Plane Crashing? (Aircraft, Airline, Country, Year)</a></li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/19077613/">FIA Score: a simple risk index for predicting fatality in aviation crashes</a></li>
+  <li><a href="https://www.nytimes.com/2021/11/10/science/600-astronauts-space.html">More than 600 human beings have now been to space</a></li>
+</ul>
+
+<h3 id="commercial-space">Commercial Space</h3>
+<ul>
+  <li><a href="https://thespacereview.com/article/3785/1">Solving the commercial passenger spaceflight puzzle (part 1)</a></li>
+  <li><a href="https://hbr.org/2021/02/the-commercial-space-age-is-here">The Commercial Space Age Is Here</a></li>
+  <li><a href="https://matadornetwork.com/read/book-trip-international-space-station/">You Can Now Book a 10-Day Trip To the International Space Station</a></li>
+  <li><a href="https://www.space.commerce.gov/wp-content/uploads/2021-01-DOC-space-accomplishments-report.pdf">Department of Commerce accomplishments space and space commerce</a></li>
+  <li><a href="https://www.cbsnews.com/news/spacex-launch-space-station-how-to-watch-time-channel-stream-2022-04-08/">SpaceX launches first all-commercial crew to space station</a></li>
+</ul>
+
+<h3 id="conferences">Conferences</h3>
+<ul>
+  <li><a href="https://www.spacesymposium.org/">40th Space Symposium - Registration is now open!</a></li>
+  <li><a href="https://www.hou.usra.edu/meetings/lpsc2023/">LPSC 2023 - Lunar and Planetary Science Conference</a></li>
+  <li><a href="https://www.podiumcast.com/store/events/2023-aerospace-medical">Podiumcast</a></li>
+  <li><a href="https://mitre.brandlive.com/Civil-Space-Collaboration-Summit/en/home">Civil Space Collaboration Summit</a></li>
+  <li><a href="https://www.nasa.gov/hrp/iws-2025/">HRP IWS 2025 - NASA</a></li>
+  <li><a href="https://www.edgereg.net/er/EventHomePage/CustomPage.jsp?ActivityID=42008&amp;ItemID=137127">Human Research Program Investigators' Workshop 2024</a></li>
+</ul>
+
+<h3 id="history">History</h3>
+<ul>
+  <li><a href="https://www.businesswire.com/news/home/20190605005127/en/">To the Moon and Beyond: MITRE and the Apollo Program</a></li>
+  <li><a href="https://arstechnica.com/science/2019/12/apollo-flight-controller-101-every-console-explained/">Apollo Flight Controller 101: Every console explained</a></li>
+</ul>
+
+<h3 id="launches--mission-analysis">Launches &amp; Mission Analysis</h3>
+<ul>
+  <li><a href="https://spectrum.ieee.org/nasa-artemis-science">Here's All the Science Hitching a Ride on Artemis I</a></li>
+  <li><a href="https://www.nasaspaceflight.com/2023/05/unity-25-flight/">VSS Unity conducts first powered flight since Branson's trip in 2021</a></li>
+  <li><a href="https://www.engadget.com/virgin-galactic-will-start-commercial-spaceflight-as-soon-as-june-27th-214515616.html">Virgin Galactic will start commercial spaceflight on June 29th</a></li>
+  <li><a href="https://gizmodo.com/space-pharmaceuticals-varda-regulations-faa-1850850528">Space Drugs Factory Denied Reentry to Earth</a></li>
+  <li><a href="https://www.space.com/russian-spacewalk-nauka-leak-cause-webcast">Cosmonauts hunt for source of ISS leak during spacewalk</a></li>
+  <li><a href="https://futurism.com/the-byte/space-station-astronauts-air">Scientists Alarmed by What Space Station Astronauts Appear to Be Breathing</a></li>
+  <li><a href="https://futurism.com/the-byte/spacex-signs-deal-launch-private-space-station">SpaceX Signs Deal to Launch Private Space Station</a></li>
+  <li><a href="https://futurism.com/the-byte/boeing-starliner-astronauts-stranded">NASA Says That the Boeing "Astronauts Are Not Stranded" While the Astronauts Remain Stranded</a></li>
+  <li><a href="https://x.com/TLPN_Official/status/1801020834229706766">The Launch Pad on X: Emergency Situation on the ISS</a></li>
+  <li><a href="https://blogs.nasa.gov/spacestation/2024/10/25/nasa-provides-update-on-agencys-spacex-crew-8-health/">NASA Provides Update on Agency's SpaceX Crew-8 Health</a></li>
+  <li><a href="https://thehill.com/homenews/space/4818023-boeing-starliner-crew-international-space-station-2025-spacex/">Boeing Starliner crew could return next year on SpaceX flight, NASA says</a></li>
+  <li><a href="https://spacenews.com/chinas-secretive-reusable-spaceplane-lands-after-267-days-in-orbit/">China's secretive reusable spaceplane lands after 267 days in orbit</a></li>
+  <li><a href="https://www.spacex.com/launches/mission/?missionId=polarisdawn">SpaceX - Polaris Dawn Launch</a></li>
+  <li><a href="https://gizmodo.com/nasa-tells-spacex-to-focus-safety-after-astronaut-hospitalizations-2000519391">NASA Tells SpaceX to Focus on Safety After Astronaut Hospitalizations</a></li>
+  <li><a href="https://arstechnica.com/space/2024/09/a-key-nasa-commercial-partner-faces-severe-financial-challenges/">A key NASA commercial partner faces severe financial challenges</a></li>
+  <li><a href="https://www.youtube.com/watch?v=SQX3zcpOojQ">SpaceX Crew Dragon interior (4K UHD)</a></li>
+</ul>
+
+<h3 id="space-habitats--environmental-health">Space Habitats &amp; Environmental Health</h3>
+<ul>
+  <li><a href="https://archive.org/details/nasa_techdoc_19930072988">A study of interior landscape plants for indoor air pollution abatement</a></li>
+  <li><a href="https://www.axiomspace.com/release/esa-partnership">Axiom Space and ESA Forge New Partnership</a></li>
+  <li><a href="https://qz.com/drug-resistant-bacteria-international-space-station-1851421829">Mutated, drug-resistant bacteria found on International Space Station</a></li>
+  <li><a href="https://www.axiomspace.com/release/axiom-space-accelerates-axiom-station-assembly">Axiom Space Accelerates Axiom Station Assembly</a></li>
+  <li><a href="https://roadmap.ebrc.org/engineering-biology-for-space-health/">Engineering Biology for Space Health</a></li>
+  <li><a href="https://www.inverse.com/science/inside-the-extreme-workout-regimen-of-an-astronaut-stuck-at-the-international-space-station">Inside the Extreme Workout Regimen of An Astronaut Stuck at the ISS</a></li>
+  <li><a href="https://www.psychologytoday.com/intl/blog/between-cultures/202402/self-care-in-space">Self-Care in Space</a></li>
+  <li><a href="https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Keeping_your_underwear_clean_on_the_Moon">ESA - Keeping your underwear clean on the Moon</a></li>
+  <li><a href="https://www.axiomspace.com/axiom-station">Axiom Station</a></li>
+  <li><a href="https://www.acentech.com/resources/2021/05/noise-exposure-aboard-the-international-space-station-iss/">Noise Exposure Aboard The International Space Station (ISS)</a></li>
+  <li><a href="https://www.youtube.com/watch?v=Jumvuu1KcA0">Bill Nye and Astro Mike on Space Radiation and Electromagnetic Shields</a></li>
+  <li><a href="https://inhabitat.com/mits-winning-solar-powered-dome-tree-habitats-for-mars-mimic-earthly-forests/">MIT’s winning solar-powered dome tree habitats for Mars mimic earthly forests</a></li>
+  <li><a href="https://biosphere2.org/">Biosphere2</a></li>
+</ul>
+
+<h3 id="spacesuits">Spacesuits</h3>
+<ul>
+  <li><a href="https://www.americanscientist.org/article/the-past-and-future-space-suit">The Past and Future Space Suit</a></li>
+  <li><a href="https://www.youtube.com/watch?v=us8Vjple7c8">Next-Generation Spacesuit Reveal</a></li>
+  <li><a href="https://www.nasa.gov/humans-in-space/extravehicular-activity-reference-documents/">Extravehicular Activity Reference Documents - NASA</a></li>
+  <li><a href="https://mynews13.com/fl/orlando/space/2023/07/17/from-apollo-to-artemis-how-axiom-space-s-new-suits-will-handle-the-harsh-moon-dust">How Axiom Space's new suits will handle the harsh moon dust</a></li>
+  <li><a href="https://astronauticsinstitute.org/product/eva102-2/">EVA 102: Space Medicine</a></li>
+  <li><a href="https://ilcdoverastrospace.com/aerospace/spacesuits/">Spacesuits - ILC Dover</a></li>
+  <li><a href="https://aerospaceamerica.aiaa.org/features/tomorrows-spacesuits/">Tomorrow's spacesuits</a></li>
+  <li><a href="https://blog.executivebiz.com/2019/07/collins-aerospace-ilc-dover-introduce-next-gen-space-suit-prototype/">Collins Aerospace, ILC Dover Introduce Next-Gen Space Suit Prototype</a></li>
+  <li><a href="https://www.youtube.com/watch?v=yj6LYpZosRU">NASA Introduces New Spacesuits for the Moon and Mars</a></li>
+  <li><a href="https://www.youtube.com/watch?v=VsdoJy8rzZg">How Astronauts Put on Space Suits</a></li>
+  <li><a href="https://www.axiomspace.com/news/axiom-space-spacesuits">Axiom Space wins NASA Contract to Build Next Generation Astronaut Spacesuits</a></li>
+  <li><a href="https://lifestyle.livemint.com/news/talking-point/we-need-to-focus-on-next-gen-spacesuit-design-111644896940713.html">We need to focus on next-gen spacesuit design</a></li>
+  <li><a href="https://www.ilcdover.com/2022/06/03/ilc-dover-among-industry-team-selected-to-provide-the-next-generation-of-spacesuits-for-nasa/">ILC Dover Among Industry Team Selected to Provide the Next Generation of Spacesuits for NASA</a></li>
+  <li><a href="https://gizmodo.com/nasa-s-next-moonsuit-is-going-to-be-damned-impressive-1845393104">NASA’s Next Lunar Spacesuit Is Going to Be Damned Impressive</a></li>
+  <li><a href="https://www.fastcompany.com/90375440/the-improbable-story-of-the-bra-maker-who-won-the-right-to-make-astronaut-spacesuits">The improbable story of the bra-maker who won the right to make astronaut spacesuits</a></li>
+</ul>
+
+<h3 id="research-programs">Research Programs</h3>
+<ul>
+  <li><a href="https://www.nasa.gov/technology/tech-transfer-spinoffs/nasa-funded-space-radiation-research-fights-cancer-on-earth/">NASA-Funded Space Radiation Research Fights Cancer on Earth</a></li>
+  <li><a href="https://spacehealth.bcm.edu/">Grant Research Integrated Dashboard</a></li>
+  <li><a href="https://www.bcm.edu/news/trish-seeking-proposals-for-health-data-management-platform-for-space-health">TRISH seeking proposals for health data management platform</a></li>
+  <li><a href="https://www.bcm.edu/academic-centers/space-medicine/translational-research-institute/research">Translational Research Institute for Space Health Research</a></li>
+  <li><a href="https://www.bcm.edu/news/trish-research-on-axioms-ax-2-mission-to-examine-effects-of-spaceflight-on-humans">TRISH research on Axiom's Ax-2 Mission</a></li>
+  <li><a href="https://www.nasa.gov/humans-in-space/nasa-funds-eight-studies-to-protect-astronaut-health-on-long-missions/">NASA Funds Eight Studies to Protect Astronaut Health on Long Missions</a></li>
+  <li><a href="https://www.bcm.edu/news/trish-selects-healthcare-and-data-management-projects-for-spaceflights">TRISH selects healthcare and data management projects</a></li>
+  <li><a href="https://www.asc-csa.gc.ca/eng/health/health-beyond-initiative.asp">Astronaut Health Beyond Initiative</a></li>
+  <li><a href="https://www.bcm.edu/news/trish-seeking-scientist-proposals-to-advance-space-health-research">TRISH seeking scientist proposals</a></li>
+  <li><a href="https://www.issnationallab.org/research-on-the-iss/areas-of-research/">Research on the International Space Station</a></li>
+  <li><a href="https://mse.ufl.edu/b-sure-program-josephine-allen-diversity-space-health-research/">Josephine Allen looks to broaden diversity in space health research</a></li>
+</ul>
+
+<h3 id="hermes--lunanet">Hermes / LunaNet</h3>
+<ul>
+  <li><a href="https://www.mobihealthnews.com/news/qa-why-astronauts-will-need-their-own-health-data-management-platform">Q&amp;A: Why astronauts will need their own health data management platform</a></li>
+  <li><a href="https://medium.com/predict/communication-with-the-far-side-of-the-moon-9afc2d25d442">Communicating With the Far Side of the Moon</a></li>
+  <li><a href="https://www.cfpublic.org/podcast/are-we-there-yet/2023-04-25/more-private-space-missions-mean-more-data-on-astronaut-health">More private space missions mean more data on astronaut health</a></li>
+  <li><a href="https://www.nature.com/articles/s42256-023-00617-5">Biomonitoring and precision health in deep space supported by AI</a></li>
+  <li><a href="https://www.reuters.com/science/white-house-directs-nasa-create-time-standard-moon-2024-04-02/">White House directs NASA to create time standard for the moon</a></li>
+  <li><a href="https://fedtechmagazine.com/article/2018/03/how-nasa-deploys-telehealth-care-astronauts">How NASA Deploys Telehealth to Care for Astronauts</a></li>
+  <li><a href="https://www.nasa.gov/johnson/HWHAP/deep-space-healthcare">Deep Space Healthcare</a></li>
+  <li><a href="https://afresearchlab.com/technology/cislunar-highway-patrol-system-chps/">CisLunar Highway Patrol System (CHPS)</a></li>
+</ul>
+
+<h3 id="analog-simulations">Analog Simulations</h3>
+<ul>
+  <li><a href="https://www.space.com/nasa-chapea-analog-mars-mission-one-month-interview">Commander of NASA's 1st yearlong analog Mars mission discusses effort's 1st month</a></li>
+</ul>
+
+<h3 id="astronaut-training">Astronaut Training</h3>
+<ul>
+  <li><a href="https://www.youtube.com/playlist?list=PLbyvawxScNbtkgEG0soDPUxSHVUnIfihN">SEATEST - YouTube</a></li>
+  <li><a href="https://blooloop.com/technology/news/star-harbor-commercial-spaceflight-training-facility/">Star Harbor plans world’s first training facility for space tourists</a></li>
+  <li><a href="https://spacenews.com/sierra-space-to-start-astronaut-training-program/">Sierra Space to start astronaut training program</a></li>
+</ul>
+
+<h3 id="artemis">Artemis</h3>
+<ul>
+  <li><a href="https://science.nasa.gov/solar-system/moon/nasas-lro-lunar-ice-deposits-are-widespread/">NASA's LRO: Lunar Ice Deposits are Widespread</a></li>
+  <li><a href="https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/">NASA Provides Update on Artemis III Moon Landing Regions</a></li>
+  <li><a href="https://afresearchlab.com/news/afrl-helps-nasa-test-equipment-for-artemis-ii-mission/">AFRL helps NASA test equipment for Artemis II mission</a></li>
+</ul>
+
+<h3 id="medical-studies">Medical Studies</h3>
+<ul>
+  <li><a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.1046166/full">Sleep loss effects on physiological and cognitive responses</a></li>
+  <li><a href="https://www.discovermagazine.com/the-sciences/back-pain-is-highly-common-among-astronauts">Back Pain is Highly Common Among Astronauts</a></li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/33979426/">Back Pain in Outerspace</a></li>
+  <li><a href="https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.898841/full">Biobehavioral and psychosocial stress changes during spaceflight analog missions</a></li>
+  <li><a href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/glaucoma/glaucoma-medicines">Glaucoma Medicines</a></li>
+  <li><a href="https://www.nature.com/articles/s41526-022-00244-1">Overview of lunar dust toxicity risk</a></li>
+  <li><a href="https://spacenews.com/nasa-updates-plans-for-use-of-commercial-space-stations/">NASA updates plans for use of commercial space stations</a></li>
+  <li><a href="https://ispyphysiology.com/2023/01/11/how-our-bones-adapt-in-space/">How Our Bones Adapt in Space</a></li>
+  <li><a href="https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2021.585870/full">Assessing Accuracy of Commercial Heart Rate Technologies</a></li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/36652027/">Effect of Active Muscles on Astronaut Kinematics</a></li>
+  <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/hbm.26214">EEG oscillations and oxygen saturation in hypoxia</a></li>
+  <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S2468896722001434">Task impairment during spaceflight missions</a></li>
+  <li><a href="https://www.nature.com/articles/s41526-022-00228-1">Optic nerve sheath diameter and spaceflight</a></li>
+  <li><a href="https://oem.bmj.com/content/80/5/239">Skin melanoma in Danish military pilots</a></li>
+  <li><a href="https://ehjournal.biomedcentral.com/counter/pdf/10.1186/s12940-023-00987-8.pdf">Health consequences of aircraft contaminated air exposure</a></li>
+  <li><a href="https://theconversation.com/space-travel-taxes-astronauts-brains-but-microbes-on-the-menu-could-help-in-unexpected-ways-216355">Space travel taxes astronauts' brains</a></li>
+  <li><a href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422(24)00224-2/abstract">Effects of spaceflight on the brain</a></li>
+  <li><a href="https://www.nature.com/articles/s41598-024-54759-6">Muscle stiffness indicating mission crew health</a></li>
+  <li><a href="https://www.brainfacts.org/neuroscience-in-society/tech-and-the-brain/2024/six-months-in-space-changes-your-brain-for-years-011724">Six Months in Space Changes Your Brain for Years</a></li>
+  <li><a href="https://www.nature.com/articles/s41586-024-07927-7">Space radiation measurements during Artemis I</a></li>
+  <li><a href="https://www.cnn.com/2018/03/14/health/scott-kelly-dna-nasa-twins-study/index.html">Astronaut’s gene expression no longer same as his identical twin, NASA finds</a></li>
+  <li><a href="https://www.theage.com.au/lifestyle/astronaut-scott-kelly-on-the-devastating-effects-of-a-year-in-space-20170922-gyn9iw.html">Astronaut Scott Kelly on the devastating effects of a year in space</a></li>
+  <li><a href="https://www.forbes.com/sites/allisongasparini/2022/06/06/astronaut-blood-samples-continue-to-shed-light-on-the-health-risks-of-spaceflight/?sh=9bebba270925">Astronaut Blood Samples Continue To Shed Light On The Health Risks Of Spaceflight</a></li>
+  <li><a href="https://lsda.jsc.nasa.gov/">Life Science Data Archive</a></li>
+</ul>
+
+<h3 id="aerospace-medicine-practice">Aerospace Medicine Practice</h3>
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>[AsMA</td>
+          <td>Aerospace Medical Association](https://www.asma.org/about-asma/constituents/aerospace-human-factors-association)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li><a href="https://www.utmb.edu/spph/aerospace-medicine/residency-program">Aerospace Medicine Residency</a></li>
+  <li><a href="https://www.space.com/iss-robot-surgery-astronaut-celebrate-science">Astronauts celebrate success of 1st surgery robot on ISS</a></li>
+  <li><a href="https://breaktimenews.co.uk/nasa-astronauts-talk-extreme-medicine/">NASA astronauts talk ‘extreme medicine’</a></li>
+  <li><a href="https://blogs.nasa.gov/spacestation/2020/01/10/eye-checks-pain-studies-and-spacesuit-checks-wrap-up-workweek/">Eye Checks, Pain Studies and Spacesuit Checks Wrap up Workweek</a></li>
+  <li><a href="http://publicationslist.org/data/m.elliott/ref-22/The%20eight%20vital%20signs%20of%20patient%20monitoring.pdf">Critical care: the eight vital signs of patient monitoring</a></li>
+</ul>
+
+<h3 id="space-standards">Space Standards</h3>
+<ul>
+  <li><a href="https://futurism.com/stranded-astronauts-spacex-boeing-spacesuits-incompatible">There's a Problem With Rescuing the Stranded Astronauts: SpaceX and Boeing Spacesuits Aren't Compatible</a></li>
+</ul>
+
+<h3 id="space-cybersecurity">Space Cybersecurity</h3>
+<ul>
+  <li><a href="https://visionspace.com/crashing-cryptolib/">How to crash a Spacecraft – DoS through Vulnerability in NASA CryptoLib v1.3.0</a></li>
+</ul>
+
+<h3 id="terrestrial-applications">Terrestrial Applications</h3>
+<ul>
+  <li><a href="https://ieeexplore.ieee.org/document/10041983">How Space Operations Drive Innovation In Human Healthcare</a></li>
+  <li><a href="https://spinoff.nasa.gov/astronaut-remote-health-monitoring?msclkid=d3e32237c19211ec91fc866c6933e583">Artificial Intelligence for Astronauts Monitors Patients at Home</a></li>
+</ul>
+
+<h3 id="lunar-exploration">Lunar Exploration</h3>
+<ul>
+  <li><a href="https://www.nasa.gov/sites/default/files/atoms/files/artemis_plan-20200921.pdf">NASA’s Lunar Exploration Program Overview</a></li>
+  <li><a href="https://www.moonsociety.org/">The Moon Society</a></li>
+  <li><a href="https://arstechnica.com/science/2020/03/nasa-selects-spacex-to-deliver-cargo-to-lunar-orbit-in-the-2020s/">SpaceX has won a big NASA contract to fly cargo to the Moon</a></li>
+  <li><a href="https://www.slashgear.com/nasa-partners-with-13-us-companies-to-support-moon-and-mars-tech-30585733">NASA Partners With 13 US Companies To Support Moon And Mars Tech</a></li>
+  <li><a href="https://www.express.co.uk/news/science/1161390/Water-on-the-Moon-NASA-news-lunar-water-Mercury-ice-craters-UCLA">Water on the Moon: NASA claims 'significantly' more water on Moon than previously thought</a></li>
+  <li><a href="https://www.nasa.gov/feature/goddard/2019/how-nasa-protects-astronauts-from-space-radiation-at-moon-mars-solar-cosmic-rays">How NASA Will Protect Astronauts From Space Radiation at the Moon</a></li>
+  <li><a href="https://www.rutgers.edu/news/what-will-it-take-live-moon#.XU3SX3wpCfA">What Will It Take to Live on the Moon?</a></li>
+  <li><a href="https://www.bbc.com/news/world-asia-china-46873526">China's Moon mission sees first seeds sprout</a></li>
+  <li><a href="https://www.nasa.gov/image-feature/goddard/2019/apollo-11-footsteps">Apollo 11 Footsteps</a>  esa-spacebok-bouncing-robot/)</li>
+  <li><a href="https://www.space.com/china-moon-south-pole-research-station-2020s.html">China Eyes Robotic Outpost at the Moon's South Pole in Late 2020s</a></li>
+  <li><a href="https://www.pcmag.com/news/50-years-on-the-moon-the-evolution-of-lunar-lander-games">50 Years on the Moon: The Evolution of Lunar Lander Games</a></li>
+  <li><a href="https://www.sciencealert.com/scientists-predict-how-long-humans-can-survive-radiation-on-the-moon/amp">We Finally Know How Much Radiation There Is on The Moon, And It's Not Great News</a></li>
+  <li><a href="https://weather.com/science/space/video/usgs-releases-first-ever-map-of-moons-entire-surface?pl=pl-the-latest">USGS Releases First-Ever Map of Moon’s Entire Surface</a></li>
+  <li><a href="https://www.fool.com/investing/2019/06/16/nasa-names-11-space-companies-to-return-mankind-to.aspx">NASA Names 11 Space Companies to Return to the Moon</a></li>
+  <li>[Bouncing robot for low-gravity space missions has a spring in its step](https://www.digitaltrends.com/cool-tech/- <a href="https://news.uchicago.edu/story/50-years-later-uchicago-scientists-continue-decode-moons-mysteries">50 years later, UChicago scientists continue to decode moon’s mysteries</a></li>
+  <li><a href="https://www.miningweekly.com/article/space-mining-is-getting-close-to-reality-2017-12-15-1/rep_id:3650">Space mining is getting close to reality</a></li>
+  <li><a href="https://www.yahoo.com/news/nasa-eyeing-inflatable-space-lodges-110759876.html">NASA eyeing inflatable space lodges for moon, Mars and beyond</a></li>
+  <li><a href="https://www.space.com/moon-dust-problem-lunar-exploration.html">Moon Dust Could Be a Problem for Future Lunar Explorers</a></li>
+  <li><a href="https://futurism.com/the-byte/nasa-moon-visitors-stay-longer-apollo">NASA: Four Astronauts will stay on the Moon for two weeks</a></li>
+  <li><a href="https://www.space.com/28189-moon-mining-economic-feasibility.html">Is Moon Mining Economically Feasible?</a></li>
+  <li><a href="https://www.space.com/37549-elon-musk-moon-base-mars.html">Elon Musk Calls for Moon Base</a></li>
+  <li><a href="https://inhabitat.com/new-discovery-suggests-large-quantities-of-water-hidden-inside-the-moon/">New discovery suggests large quantities of water hidden inside the Moon</a></li>
+  <li><a href="https://www.iflscience.com/space/scientists-have-found-a-perfect-place-to-build-a-moon-base/">Scientists Have Found A Huge Cave On The Moon</a></li>
+  <li><a href="https://weather.com/science/space/video/usgs-releases-first-ever-map-of-moons-entire-surface?pl=pl-the-latest">USGS Releases First-Ever Map of Moon’s Entire Surface</a></li>
+  <li><a href="https://www.space.com/7044-moon-apollo-astronauts-customs.html">Back from the Moon, Apollo Astronauts Had to Go Through Customs</a></li>
+  <li><a href="https://www.space.com/32695-moon-colony-european-space-agency.html">Europe Aiming for International 'Moon Village'</a></li>
+  <li><a href="https://www-acc.esa.int/About_Us/DG_s_news_and_views/Moon_Village_humans_and_robots_together_on_the_Moon">Moon Village: humans and robots together on the Moon</a></li>
+  <li><a href="https://www.businessinsider.com/nasa-mars-rover-prototype-seadek-2017-5">NASA has been quietly working on a Mars rover concept that looks like a Batmobile</a></li>
+  <li><a href="https://www.iflscience.com/space/china-says-it-is-preparing-for-a-manned-lunar-landing/">China Says It Is Preparing For A Manned Lunar Landing</a></li>
+  <li><a href="https://www.npr.org/2021/03/10/975579975/china-russia-announce-plan-to-build-moon-research-station">China, Russia Announce Plan To Build Moon Research Station</a></li>
+  <li><a href="https://www.sciencealert.com/elon-musk-has-released-photos-of-his-underground-tunnels">Elon Musk Has Started Digging a Giant Underground Tunnel in LA</a></li>
+  <li><a href="https://www.theverge.com/2018/11/2/18055158/elon-musk-tesla-pickup-truck-bladerunner-futuristic">Elon Musk doesn’t care if people buy his ‘Blade Runner pickup truck’</a></li>
+  <li><a href="https://www.nasa.gov/feature/purposeful-passenger-artemis-i-manikin-helps-prepare-for-moon-missions-with-crew/">Purposeful Passenger: Artemis I Manikin Helps Prepare for Moon Missions With Crew</a></li>
+</ul>
+
+<h3 id="nuclear-reactors-in-space">Nuclear Reactors in Space</h3>
+<ul>
+  <li><a href="https://gizmodo.com/nasa-runs-successful-first-tests-of-compact-nuclear-rea-1822233354">NASA Runs Successful First Tests of Compact Nuclear Reactor for Mars Base</a></li>
+  <li><a href="https://www.space.com/40479-space-nuclear-reactor-kilopower-passes-big-test.html">A Nuclear Reactor for Space Missions Passes Final Major Ground Tests</a></li>
+  <li><a href="https://www.federalregister.gov/documents/2020/12/23/2020-28457/posting-of-the-presidential-policy-directive-6-space-policy-national-strategy-for-space-nuclear">National Strategy for Space Nuclear Power and Propulsion</a></li>
+  <li><a href="https://www.discovermagazine.com/the-sciences/nasas-new-nuclear-reactor-could-change-space-exploration">NASA's New Nuclear Reactor Could Change Space Exploration</a></li>
+</ul>
+
+<h3 id="additional-resources">Additional Resources</h3>
+<ul>
+  <li><a href="https://resident360.nejm.org/curbside-consults/space-medicine-with-drs-serena-aunon-chancellor-and-michael-barratt">Space Medicine with Drs. Serena Auñón-Chancellor and Michael Barratt</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 6, 2025 20:46-0600">2025-05-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
