@@ -1,7 +1,7 @@
 Profile: SpaceEquipment
 Parent: Device
 Title: "Commercial Space Equipment"
-Description: "Device profile for commercial space equipment."
+Description: "STUB - Device profile for commercial space equipment."
 
 Instance: DeviceFlightRecorder
 InstanceOf: SpaceEquipment

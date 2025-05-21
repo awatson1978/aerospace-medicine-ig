@@ -1,10 +1,9 @@
 ValueSet: SleepLossHypoxiaEffect
-Title: "Sleep Loss and Hypoxia Effects ValueSet"
-Description: "This ValueSet includes SNOMED CT terms matched to concepts related to the physiological and cognitive effects of sleep loss and hypoxia."
+Title: "Sleep Loss and Hypoxia Effects"
+Description: "Concepts related to the physiological and cognitive effects of sleep loss and hypoxia."
 * http://snomed.info/sct#86636006 "Sleep"
 * http://snomed.info/sct#30869003 "Hypoxia"
 * http://snomed.info/sct#246612009 "General visual responses"
-* http://snomed.info/sct#30869003 "Hypoxia"
 * http://snomed.info/sct#30920001 "Circadian rhythm"
 * http://snomed.info/sct#80216008 "Cognitive impairment"
 * http://snomed.info/sct#113257007 "Cardiovascular system"
@@ -17,7 +16,7 @@ Description: "This ValueSet includes SNOMED CT terms matched to concepts related
 
 ValueSet: SleepLossHypoxiaResponses
 Title: "Sleep Loss and Hypoxia Responses"
-Description: "A ValueSet for concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia, including associated medical conditions and factors."
+Description: "Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia."
 * http://snomed.info/sct#78590007 "Acute mountain sickness"
 * http://snomed.info/sct#130989002 "Sleep deprivation"
 * http://snomed.info/sct#30869003 "Hypoxia"
@@ -28,9 +27,9 @@ Description: "A ValueSet for concepts related to sleep deprivation and physiolog
 * http://snomed.info/sct#55235003 "CRP - C-reactive protein level"
 * http://snomed.info/sct#15754000 "Interleukin-7"
 
-ValueSet: Astronaut_Back_Pain
-Title: "Back Pain and Space Travel Research Concepts"
-Description: "SNOMED codes related to back pain and associated conditions observed in astronauts and their potential terrestrial applications."
+ValueSet: AstronautBackPain
+Title: "Back Pain and Space Travel"
+Description: "Back pain and associated conditions observed in astronauts and their potential terrestrial applications."
 * http://snomed.info/sct#16986008 "Pain in back"
 * http://snomed.info/sct#46360000 "Abnormal curvature"
 * http://snomed.info/sct#73589001 "Herniation of intervertebral disc"
@@ -39,7 +38,7 @@ Description: "SNOMED codes related to back pain and associated conditions observ
 * http://snomed.info/sct#82423001 "Chronic pain"
 
 ValueSet: SpaceflightStressFactors
-Title: "Stress and Physiological Factors in Spaceflight Analog Missions"
+Title: "Stress and Physiological Factors"
 Description: "Concepts related to stress, physiological, and psychological factors during spaceflight analog missions."
 * http://snomed.info/sct#364565004 "joint stress test response"
 * http://snomed.info/sct#72353004 "psychosocial procedure"
@@ -67,15 +66,14 @@ Description: "Concepts related to stress, physiological, and psychological facto
 
 
 ValueSet: LunarDustToxicityValueSet
-Title: "Lunar Dust Toxicity Related Conditions"
-Description: "A ValueSet containing SNOMED codes for conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities."
+Title: "Lunar Dust Toxicity"
+Description: "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities."
 * http://snomed.info/sct#60481001 "Toxicity"
 * http://snomed.info/sct#51615001 "Pulmonary fibrosis"
 * http://snomed.info/sct#13645005 "Chronic obstructive pulmonary disease"
 * http://snomed.info/sct#257553007 "Irritation"
 * http://snomed.info/sct#4979002 "Dermatitis"
 * http://snomed.info/sct#11214006 "Reactive"
-* http://snomed.info/sct#60481001 "Toxicity"
 * http://snomed.info/sct#2296009 "Iron dextran toxicity"
 * http://snomed.info/sct#271794005 "Circadian dysregulation"
 * http://snomed.info/sct#187875007 "Lung cancer"
@@ -90,9 +88,9 @@ Description: "A ValueSet containing SNOMED codes for conditions and effects asso
 * http://snomed.info/sct#46595003 "Deposition"
 
 
-ValueSet: Space_Adaptation_Bone_Health
-Title: "Adaptations of Bone Health in Space"
-Description: "SNOMED CT concepts related to bone health adaptations observed in spaceflight conditions."
+ValueSet: SpaceAdaptationBoneHealth
+Title: "Adaptations of Bone Health"
+Description: "Bone health adaptations observed in spaceflight conditions."
 * http://snomed.info/sct#20199007 "Bone mineral density (BMD) below expected range for age"
 * http://snomed.info/sct#86198006 "Deconditioning of musculoskeletal system"
 * http://snomed.info/sct#89348000 "Increased bone resorption"
@@ -106,8 +104,8 @@ Description: "SNOMED CT concepts related to bone health adaptations observed in 
 
 
 ValueSet: AircraftFumeExposureValueSet
-Title: "Health Impacts of Aircraft Fume Exposure"
-Description: "ValueSet for SNOMED concepts related to health impacts from exposure to aircraft contaminated air and fume events."
+Title: "Aircraft Fume Exposure"
+Description: "Health impacts from exposure to aircraft contaminated air and fume events."
 * http://snomed.info/sct#36179005 "R.I.N.D. syndrome"
 * http://snomed.info/sct#255736001 "Fume"
 * http://snomed.info/sct#102413006 "Contaminated air"
@@ -130,9 +128,9 @@ Description: "ValueSet for SNOMED concepts related to health impacts from exposu
 * http://snomed.info/sct#129681004 "Environmental finding"
 
 
-ValueSet: Muscle_Stiffness_and_Space_Health
-Title: "Muscle Stiffness and Space Health ValueSet"
-Description: "This ValueSet includes SNOMED codes related to muscle stiffness and health in the context of spaceflight and Earth-based applications, filtered by a similarity threshold greater than 0.5."
+ValueSet: MuscleStiffnessAndSpaceHealth
+Title: "Muscle Stiffness"
+Description: "Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications."
 * http://snomed.info/sct#16046003 "Muscle stiffness"
 * http://snomed.info/sct#249919003 "Muscle stiffness"
 * http://snomed.info/sct#162411004 "C/O: stiffness"
@@ -140,8 +138,8 @@ Description: "This ValueSet includes SNOMED codes related to muscle stiffness an
 
 
 ValueSet: SpaceTravelBrainChanges
-Title: "Brain Changes from Prolonged Space Travel"
-Description: "A ValueSet encompassing SNOMED concepts related to physiological and neurological changes from prolonged space travel."
+Title: "Brain and Neurologic Changes"
+Description: "Concepts related to physiological and neurological changes from prolonged space travel."
 * http://snomed.info/sct#65124004 "Part of body puffy"
 * http://snomed.info/sct#361533001 "Vestibular system"
 * http://snomed.info/sct#68523003 "Cerebral white matter"
@@ -155,7 +153,7 @@ Description: "A ValueSet encompassing SNOMED concepts related to physiological a
 
 ValueSet: SpaceRadiationRisksVS
 Title: "Space Radiation Risks ValueSet"
-Description: "A ValueSet containing SNOMED concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data."
+Description: "Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data."
 * http://snomed.info/sct#138899005 "H/O: radiation exposure"
 * http://snomed.info/sct#95722004 "Bilateral cataracts"
 * http://snomed.info/sct#229040007 "radiation absorbed dose"

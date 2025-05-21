@@ -5,7 +5,7 @@
 Profile: SpaceInsurance
 Parent: InsurancePlan
 Title: "Space insurance"
-Description: "Insurance plan for space travel"
+Description: "STUB - Insurance plan for space travel"
 
 Instance: SpaceTourismTravelInsurance
 InstanceOf: SpaceInsurance

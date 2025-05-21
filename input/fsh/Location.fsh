@@ -5,12 +5,12 @@
 Profile: SpaceLocation
 Parent: Location
 Title: "xGeo Locations"
-Description: "Locations in outerspace, past the Karman line, such as a space ship or space habitat."
+Description: "STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat."
 
 Profile: SpaceVehicle
 Parent: Location
 Title: "Space Vehicle"
-Description: "Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)"
+Description: "STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)"
 
 Instance: LocationInternationalSpaceStation
 InstanceOf: SpaceLocation

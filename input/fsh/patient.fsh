@@ -4,7 +4,7 @@
 Profile: Astronaut
 Parent: Patient
 Title: "Astronaut"
-Description: "Patient profile for flight crew on space craft."
+Description: "STUB - Patient profile for flight crew on space craft."
 * name 1..* MS
 
 // Profile: SpaceTourist

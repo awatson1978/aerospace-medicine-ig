@@ -1,7 +1,7 @@
 Profile: SpaceRiskAssesment
 Parent: RiskAssessment
 Title: "Mission Risk Assessment"
-Description: "Risk assessment for space missions."
+Description: "STUB - Risk assessment for space missions."
 
 Instance: RiskAssesmentMission
 InstanceOf: SpaceRiskAssesment

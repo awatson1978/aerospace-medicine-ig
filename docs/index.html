@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Space Health Implementation Guide -  v0.3.0</title>
+    <title>Space Health Implementation Guide -  v0.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.0 - ci-build
+            <span style="display:inline-block;">0.4.0 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -120,7 +152,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Space Health Implementation Guide</h2>
   
 
@@ -135,7 +167,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.3.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth|0.3.0"/></span>
+      <span class="copy-text">0.4.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth|0.4.0"/></span>
       </td>
     </tr>
 
@@ -151,7 +183,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-05-06
+            as of 2025-05-21
           
         
       </td>
@@ -178,14 +210,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<h2 id="introduction">Introduction</h2>
-<p>Welcome to the Aerospace Medicine Implementation Guide (IG) for the Synthea Synthetic Patient Generation utility. This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.</p>
+<p>Welcome to the HL7 FHIR Aerospace Medicine Implementation Guide (IG). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.</p>
 
 <p>This guide is intended for developers, researchers, mission planners, medical device manufacturers, and clinicians who are designing, evaluating, or simulating health monitoring systems in aerospace domains—from commercial space tourism to long-duration crewed missions. It provides the data schemas, usage patterns, and practical mappings needed to support synthetic patient generation and interoperability across the continuum of spaceflight health data—from pre-launch screening to in-flight telemetry to post-mission rehabilitation.</p>
 
 <p><img src="./AstronauticalHealthRecordEcosystem.jpg" alt="AstronauticalHealthRecordEcosystem" width="100%" /></p>
 
-<h2 id="design-philosophy">Design Philosophy</h2>
 <p>The design philosophy of this guide is grounded in a central thesis:</p>
 
 <blockquote>
@@ -194,7 +224,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>If this thesis holds, then the boundaries between Earth-based clinical care and spaceflight operational medicine begin to blur. The underlying data requirements of intensive care units—real-time biometric streaming, automated alerting, device interoperability, and physician oversight—are strikingly similar to those required for safeguarding astronauts in microgravity or hostile environments. Conversely, the rugged, autonomous, and adaptive systems developed for human spaceflight offer a promising model for remote, resource-constrained, and austere healthcare delivery on Earth.</p>
 
-<p>This dual-use insight informs the architecture of this IG. It proposes that spacesuits, spacecraft life support systems, and mission control centers should function as distributed, mobile intensive care environments. To enable this, they must speak the same language as Earth-based healthcare systems—namely, the FHIR standard that underpins modern electronic health record (EHR) systems, clinical decision support tools, and remote patient monitoring platforms.</p>
+<p>This dual-use insight informs the architecture of this implementation guide. It proposes that spacesuits, spacecraft life support systems, and mission control centers should function as distributed, mobile intensive care environments. To enable this, they must speak the same language as Earth-based healthcare systems—namely, the FHIR standard that underpins modern electronic health record (EHR) systems, clinical decision support tools, and remote patient monitoring platforms.</p>
 
 <p>By modeling aerospace medicine scenarios using FHIR resources, we unlock a number of benefits:</p>
 
@@ -214,22 +244,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>
+    <p>Health assessments before and after reentry</p>
+  </li>
+  <li>
+    <p>Flight readiness evaluations and crew medical certification</p>
+  </li>
+  <li>
     <p>Continuous physiologic monitoring in microgravity</p>
   </li>
   <li>
     <p>Radiation exposure tracking during lunar EVAs</p>
   </li>
   <li>
-    <p>Health assessments before and after reentry</p>
+    <p>Emergency response modeling in pressurized rovers or habitats</p>
   </li>
   <li>
-    <p>Emergency response modeling in pressurized rovers or habitats</p>
+    <p>Actuarial analysis of risk factors for the insurance industry.</p>
   </li>
 </ul>
 
-<p>Modeling long-term changes in cardiovascular, musculoskeletal, or neurovestibular health from partial gravity exposure</p>
-
-<p>Ultimately, this IG is not only a tool for simulating patients in space—it is a statement about the convergence of aerospace and clinical medicine, and a call to design our next-generation health systems with both Earth and space in mind. As we prepare for commercial space tourism, lunar occupations, and human Mars missions, the infrastructure we build must be informed by the highest standards of safety, interoperability, and resilience.</p>
+<p>Ultimately, this implementation guide is not only a tool for simulating patients in space - it is a statement about the convergence of aerospace and clinical medicine, and a call to design our next-generation health systems with both Earth and space in mind. As we prepare for commercial space tourism, lunar occupations, and human Mars missions, the infrastructure we build must be informed by the highest standards of safety, interoperability, and resilience.</p>
 
 
 
@@ -250,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 6, 2025 20:46-0600">2025-05-06</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 21, 2025 00:44-0500">2025-05-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

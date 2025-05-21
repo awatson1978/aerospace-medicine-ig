@@ -204,8 +204,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:contraindicatedConditions.resource","Bundle.entry.resource","","","",0,1,"","","","Condition {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningCondition]]} {[]}
-","Detailed information about conditions, problems or diagnoses","A clinical condition, problem, diagnosis, or other event, situation, issue, or clinical concept that has risen to a level of concern.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","PPR message","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value<Diagnosis]"
+"Bundle.entry:contraindicatedConditions.resource","Bundle.entry.resource","","","",0,1,"","","Y","Condition {[]} {[]}
+","A resource in the bundle","The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "Bundle.entry:contraindicatedConditions.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -321,8 +321,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:contraindicatedProcedures.resource","Bundle.entry.resource","","","",0,1,"","","","Procedure {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningProcedure]]} {[]}
-","An action that is being or was performed on a patient","An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","Procedure[moodCode=EVN]"
+"Bundle.entry:contraindicatedProcedures.resource","Bundle.entry.resource","","","",0,1,"","","Y","Procedure {[]} {[]}
+","A resource in the bundle","The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "Bundle.entry:contraindicatedProcedures.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -438,8 +438,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:contraindicatedMedications.resource","Bundle.entry.resource","","","",0,1,"","","","Medication {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningMedication]]} {[]}
-","Definition of a Medication","This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","Entity. Role, or Act","ManufacturedProduct[classCode=ADMM]"
+"Bundle.entry:contraindicatedMedications.resource","Bundle.entry.resource","","","",0,1,"","","Y","Medication {[]} {[]}
+","A resource in the bundle","The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "Bundle.entry:contraindicatedMedications.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -555,9 +555,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry:contraindicatedObservations.resource","Bundle.entry.resource","","Vital Signs
-MeasurementResultsTests","",0,1,"","","","Observation {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningObservation]]} {[]}
-","Measurements and simple assertions","Measurements and simple assertions made about a patient, device or other subject.","Used for simple observations such as device measurements, laboratory atomic results, vital signs, height, weight, smoking status, comments, etc.  Other resources are used to provide context for observations such as laboratory reports, etc.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","OBX","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN]"
+"Bundle.entry:contraindicatedObservations.resource","Bundle.entry.resource","","","",0,1,"","","Y","Observation {[]} {[]}
+","A resource in the bundle","The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "Bundle.entry:contraindicatedObservations.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

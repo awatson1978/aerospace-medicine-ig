@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-environmental-factors-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-environmental-factors-cs</b></p><a name=\"space-environmental-factors-cs\"> </a><a name=\"hcspace-environmental-factors-cs\"> </a><a name=\"space-environmental-factors-cs-en-US\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">microgravity<a name=\"space-environmental-factors-cs-microgravity\"> </a></td><td>Microgravity</td><td>A state of very weak gravity experienced in spacecraft in orbit, where the apparent weight is significantly less than on Earth but not completely zero</td></tr><tr><td style=\"white-space:nowrap\">zero-gravity<a name=\"space-environmental-factors-cs-zero-gravity\"> </a></td><td>Zero Gravity</td><td>The condition of apparent weightlessness experienced in freefall or in space</td></tr><tr><td style=\"white-space:nowrap\">air-quality-space<a name=\"space-environmental-factors-cs-air-quality-space\"> </a></td><td>Space Habitat Air Quality</td><td>The condition of air within confined spacecraft or space habitats, including levels of pollutants, CO2, and other gases</td></tr><tr><td style=\"white-space:nowrap\">space-radiation<a name=\"space-environmental-factors-cs-space-radiation\"> </a></td><td>Space Radiation</td><td>Radiation experienced in the space environment, including galactic cosmic rays, solar particle events, and trapped radiation</td></tr><tr><td style=\"white-space:nowrap\">vacuum-environment<a name=\"space-environmental-factors-cs-vacuum-environment\"> </a></td><td>Vacuum Environment</td><td>The near-vacuum conditions of space that pose risks to human health and spacecraft systems</td></tr><tr><td style=\"white-space:nowrap\">cabin-pressure<a name=\"space-environmental-factors-cs-cabin-pressure\"> </a></td><td>Cabin Pressure</td><td>The atmospheric pressure maintained within spacecraft habitats</td></tr><tr><td style=\"white-space:nowrap\">temperature-extremes<a name=\"space-environmental-factors-cs-temperature-extremes\"> </a></td><td>Temperature Extremes</td><td>The extreme hot and cold temperatures experienced in space depending on exposure to sunlight or shadow</td></tr><tr><td style=\"white-space:nowrap\">lunar-dust<a name=\"space-environmental-factors-cs-lunar-dust\"> </a></td><td>Lunar Dust</td><td>Fine particles of lunar regolith that can cause respiratory and equipment problems during lunar missions</td></tr><tr><td style=\"white-space:nowrap\">martian-dust<a name=\"space-environmental-factors-cs-martian-dust\"> </a></td><td>Martian Dust</td><td>Fine particles of Martian regolith that can cause respiratory and equipment problems during Mars missions</td></tr><tr><td style=\"white-space:nowrap\">space-debris<a name=\"space-environmental-factors-cs-space-debris\"> </a></td><td>Space Debris</td><td>Artificial orbital debris that presents a collision hazard to spacecraft and astronauts during EVA</td></tr><tr><td style=\"white-space:nowrap\">confined-living-space<a name=\"space-environmental-factors-cs-confined-living-space\"> </a></td><td>Confined Living Space</td><td>The restricted living and working areas within spacecraft that can impact physical and psychological health</td></tr><tr><td style=\"white-space:nowrap\">galactic-cosmic-radiation<a name=\"space-environmental-factors-cs-galactic-cosmic-radiation\"> </a></td><td>Galactic Cosmic Radiation</td><td>High-energy particles originating outside the solar system that can penetrate spacecraft and human tissue</td></tr><tr><td style=\"white-space:nowrap\">solar-particle-events<a name=\"space-environmental-factors-cs-solar-particle-events\"> </a></td><td>Solar Particle Events</td><td>Radiation from solar flares and coronal mass ejections that can pose acute radiation hazards</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "SpaceEnvironmentalFactorsCodeSystem"] ; # 
+  fhir:title [ fhir:v "Space Environmental Factors"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-21T00:44:32-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for space environmental factors not found in SNOMED CT"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "microgravity" ] ;
+     fhir:display [ fhir:v "Microgravity" ] ;
+     fhir:definition [ fhir:v "A state of very weak gravity experienced in spacecraft in orbit, where the apparent weight is significantly less than on Earth but not completely zero" ]
+  ] [
+     fhir:code [ fhir:v "zero-gravity" ] ;
+     fhir:display [ fhir:v "Zero Gravity" ] ;
+     fhir:definition [ fhir:v "The condition of apparent weightlessness experienced in freefall or in space" ]
+  ] [
+     fhir:code [ fhir:v "air-quality-space" ] ;
+     fhir:display [ fhir:v "Space Habitat Air Quality" ] ;
+     fhir:definition [ fhir:v "The condition of air within confined spacecraft or space habitats, including levels of pollutants, CO2, and other gases" ]
+  ] [
+     fhir:code [ fhir:v "space-radiation" ] ;
+     fhir:display [ fhir:v "Space Radiation" ] ;
+     fhir:definition [ fhir:v "Radiation experienced in the space environment, including galactic cosmic rays, solar particle events, and trapped radiation" ]
+  ] [
+     fhir:code [ fhir:v "vacuum-environment" ] ;
+     fhir:display [ fhir:v "Vacuum Environment" ] ;
+     fhir:definition [ fhir:v "The near-vacuum conditions of space that pose risks to human health and spacecraft systems" ]
+  ] [
+     fhir:code [ fhir:v "cabin-pressure" ] ;
+     fhir:display [ fhir:v "Cabin Pressure" ] ;
+     fhir:definition [ fhir:v "The atmospheric pressure maintained within spacecraft habitats" ]
+  ] [
+     fhir:code [ fhir:v "temperature-extremes" ] ;
+     fhir:display [ fhir:v "Temperature Extremes" ] ;
+     fhir:definition [ fhir:v "The extreme hot and cold temperatures experienced in space depending on exposure to sunlight or shadow" ]
+  ] [
+     fhir:code [ fhir:v "lunar-dust" ] ;
+     fhir:display [ fhir:v "Lunar Dust" ] ;
+     fhir:definition [ fhir:v "Fine particles of lunar regolith that can cause respiratory and equipment problems during lunar missions" ]
+  ] [
+     fhir:code [ fhir:v "martian-dust" ] ;
+     fhir:display [ fhir:v "Martian Dust" ] ;
+     fhir:definition [ fhir:v "Fine particles of Martian regolith that can cause respiratory and equipment problems during Mars missions" ]
+  ] [
+     fhir:code [ fhir:v "space-debris" ] ;
+     fhir:display [ fhir:v "Space Debris" ] ;
+     fhir:definition [ fhir:v "Artificial orbital debris that presents a collision hazard to spacecraft and astronauts during EVA" ]
+  ] [
+     fhir:code [ fhir:v "confined-living-space" ] ;
+     fhir:display [ fhir:v "Confined Living Space" ] ;
+     fhir:definition [ fhir:v "The restricted living and working areas within spacecraft that can impact physical and psychological health" ]
+  ] [
+     fhir:code [ fhir:v "galactic-cosmic-radiation" ] ;
+     fhir:display [ fhir:v "Galactic Cosmic Radiation" ] ;
+     fhir:definition [ fhir:v "High-energy particles originating outside the solar system that can penetrate spacecraft and human tissue" ]
+  ] [
+     fhir:code [ fhir:v "solar-particle-events" ] ;
+     fhir:display [ fhir:v "Solar Particle Events" ] ;
+     fhir:definition [ fhir:v "Radiation from solar flares and coronal mass ejections that can pose acute radiation hazards" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

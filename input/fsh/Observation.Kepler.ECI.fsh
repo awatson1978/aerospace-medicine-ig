@@ -1,3 +1,9 @@
+Profile: AstrodynamicsObservation
+Parent: Observation
+Title: "Astrodynamics Observation"
+Description: "An observation of a satellite or celestial object's orbital characteristics, using orbital elements."
+
+
 Instance: Observation.Kepler.ECI.1
 InstanceOf: Observation
 Title: "Observation - Orbital Elements"

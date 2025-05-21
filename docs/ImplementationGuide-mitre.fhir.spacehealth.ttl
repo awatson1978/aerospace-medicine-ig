@@ -14,10 +14,10 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><a name=\"mitre.fhir.spacehealth-en-US\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
   fhir:name [ fhir:v "SpaceflightHealthSimulationsReferenceDocumentation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-06T20:45:50-06:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-05-21T00:44:32-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -836,11 +836,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ValueSet/Space-Adaptation-Bone-Health> ;
-         fhir:reference [ fhir:v "ValueSet/Space-Adaptation-Bone-Health" ]
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth> ;
+         fhir:reference [ fhir:v "ValueSet/SpaceAdaptationBoneHealth" ]
        ] ;
-       fhir:name [ fhir:v "Adaptations of Bone Health in Space" ] ;
-       fhir:description [ fhir:v "SNOMED CT concepts related to bone health adaptations observed in spaceflight conditions." ] ;
+       fhir:name [ fhir:v "Adaptations of Bone Health" ] ;
+       fhir:description [ fhir:v "Bone health adaptations observed in spaceflight conditions." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -850,15 +850,33 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ExampleScenario"
+           fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioArtemis> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioArtemis" ]
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet> ;
+         fhir:reference [ fhir:v "ValueSet/AircraftFumeExposureValueSet" ]
        ] ;
-       fhir:name [ fhir:v "Artemis Space Camp" ] ;
-       fhir:description [ fhir:v "Artemis space camp for extended stay on the Lunar surface.  Mission health objectives:  inflatable space habitat with contained atmosphere." ] ;
+       fhir:name [ fhir:v "Aircraft Fume Exposure" ] ;
+       fhir:description [ fhir:v "Health impacts from exposure to aircraft contaminated air and fume events." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/AstrodynamicsObservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/AstrodynamicsObservation" ]
+       ] ;
+       fhir:name [ fhir:v "Astrodynamics Observation" ] ;
+       fhir:description [ fhir:v "An observation of a satellite or celestial object's orbital characteristics, using orbital elements." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -876,7 +894,25 @@
          fhir:reference [ fhir:v "StructureDefinition/Astronaut" ]
        ] ;
        fhir:name [ fhir:v "Astronaut" ] ;
-       fhir:description [ fhir:v "Patient profile for flight crew on space craft." ] ;
+       fhir:description [ fhir:v "STUB - Patient profile for flight crew on space craft." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/Questionnaire/AstronautFlightReadinessQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/AstronautFlightReadinessQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Astronaut and Space Tourist Medical Screening Questionnaire" ] ;
+       fhir:description [ fhir:v "A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -908,11 +944,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ValueSet/Astronaut-Back-Pain> ;
-         fhir:reference [ fhir:v "ValueSet/Astronaut-Back-Pain" ]
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain> ;
+         fhir:reference [ fhir:v "ValueSet/AstronautBackPain" ]
        ] ;
-       fhir:name [ fhir:v "Back Pain and Space Travel Research Concepts" ] ;
-       fhir:description [ fhir:v "SNOMED codes related to back pain and associated conditions observed in astronauts and their potential terrestrial applications." ] ;
+       fhir:name [ fhir:v "Back Pain and Space Travel" ] ;
+       fhir:description [ fhir:v "Back pain and associated conditions observed in astronauts and their potential terrestrial applications." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1037,8 +1073,8 @@
          fhir:link <https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges> ;
          fhir:reference [ fhir:v "ValueSet/SpaceTravelBrainChanges" ]
        ] ;
-       fhir:name [ fhir:v "Brain Changes from Prolonged Space Travel" ] ;
-       fhir:description [ fhir:v "A ValueSet encompassing SNOMED concepts related to physiological and neurological changes from prolonged space travel." ] ;
+       fhir:name [ fhir:v "Brain and Neurologic Changes" ] ;
+       fhir:description [ fhir:v "Concepts related to physiological and neurological changes from prolonged space travel." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1056,7 +1092,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceEquipment" ]
        ] ;
        fhir:name [ fhir:v "Commercial Space Equipment" ] ;
-       fhir:description [ fhir:v "Device profile for commercial space equipment." ] ;
+       fhir:description [ fhir:v "STUB - Device profile for commercial space equipment." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1250,96 +1286,6 @@
          a fhir:canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"^^xsd:anyURI ;
          fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Consent"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/Consent/ConsentAnonLoc> ;
-         fhir:reference [ fhir:v "Consent/ConsentAnonLoc" ]
-       ] ;
-       fhir:name [ fhir:v "ConsentAnonLoc" ] ;
-       fhir:description [ fhir:v "Policy rule to allow general citizenry and anonymous users access to public listings of Location records." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Consent"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/Consent/ConsentAnonOrg> ;
-         fhir:reference [ fhir:v "Consent/ConsentAnonOrg" ]
-       ] ;
-       fhir:name [ fhir:v "ConsentAnonOrg" ] ;
-       fhir:description [ fhir:v "Policy rule to allow general citizenry and anonymous users access to public listings of Organization records." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Consent"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/Consent/ConsentAnonPrac> ;
-         fhir:reference [ fhir:v "Consent/ConsentAnonPrac" ]
-       ] ;
-       fhir:name [ fhir:v "ConsentAnonPrac" ] ;
-       fhir:description [ fhir:v "Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Consent"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/Consent/ConsentClinicianLoc> ;
-         fhir:reference [ fhir:v "Consent/ConsentClinicianLoc" ]
-       ] ;
-       fhir:name [ fhir:v "ConsentClinicianLoc" ] ;
-       fhir:description [ fhir:v "Policy rule to allow authenticated healthcare practitioners access to restricted Location records." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Consent"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/Consent/ConsentClinicianOrg> ;
-         fhir:reference [ fhir:v "Consent/ConsentClinicianOrg" ]
-       ] ;
-       fhir:name [ fhir:v "ConsentClinicianOrg" ] ;
-       fhir:description [ fhir:v "Policy rule to allow authenticated healthcare practitioners access to restricted Organization records." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -1781,6 +1727,60 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/EnvironmentalMonitoringLogicalModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/EnvironmentalMonitoringLogicalModel" ]
+       ] ;
+       fhir:name [ fhir:v "Environmental Monitoring API for Closed Biome Systems" ] ;
+       fhir:description [ fhir:v "A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/Questionnaire/FAA8500Questionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/FAA8500Questionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "FAA Form 8500-8 Questionnaire" ] ;
+       fhir:description [ fhir:v "FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/Questionnaire/GShockEligibilityQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/GShockEligibilityQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "G-SHOCK Centrifugal Trainer Eligibility Questionnaire" ] ;
+       fhir:description [ fhir:v "Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1821,96 +1821,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningCondition> ;
-         fhir:reference [ fhir:v "StructureDefinition/GimbalScreeningCondition" ]
-       ] ;
-       fhir:name [ fhir:v "Gimbal Screening Condition" ] ;
-       fhir:description [ fhir:v "Contraindicated conditions for riding in a multi-axis gimbal machine." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningMedication> ;
-         fhir:reference [ fhir:v "StructureDefinition/GimbalScreeningMedication" ]
-       ] ;
-       fhir:name [ fhir:v "Gimbal Screening Medication" ] ;
-       fhir:description [ fhir:v "Contraindicated medications for riding in a multi-axis gimbal machine." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningObservation> ;
-         fhir:reference [ fhir:v "StructureDefinition/GimbalScreeningObservation" ]
-       ] ;
-       fhir:name [ fhir:v "Gimbal Screening Observation" ] ;
-       fhir:description [ fhir:v "Contraindicated observations for riding in a multi-axis gimbal machine." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreeningProcedure> ;
-         fhir:reference [ fhir:v "StructureDefinition/GimbalScreeningProcedure" ]
-       ] ;
-       fhir:name [ fhir:v "Gimbal Screening Procedure" ] ;
-       fhir:description [ fhir:v "Contraindicated medical procedures for riding in a multi-axis gimbal machine." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet> ;
-         fhir:reference [ fhir:v "ValueSet/AircraftFumeExposureValueSet" ]
-       ] ;
-       fhir:name [ fhir:v "Health Impacts of Aircraft Fume Exposure" ] ;
-       fhir:description [ fhir:v "ValueSet for SNOMED concepts related to health impacts from exposure to aircraft contaminated air and fume events." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/heart-rate> ;
          fhir:reference [ fhir:v "StructureDefinition/heart-rate" ]
        ] ;
@@ -1933,7 +1843,7 @@
          fhir:reference [ fhir:v "Contract/SpaceTourismTravelInsuranceContract" ]
        ] ;
        fhir:name [ fhir:v "Insurance - Contract" ] ;
-       fhir:description [ fhir:v "Space tourist insurance coverage." ] ;
+       fhir:description [ fhir:v "STUB - Space tourist insurance coverage." ] ;
        fhir:example [
          a fhir:canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract"^^xsd:anyURI ;
@@ -2424,24 +2334,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ExampleScenario"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioBiodomeConstruciton> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioBiodomeConstruciton" ]
-       ] ;
-       fhir:name [ fhir:v "Lunar Biodome Construction" ] ;
-       fhir:description [ fhir:v "Lunar biodome construction.  Mission health objectives:  micrometeorites and solar storms." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -2449,191 +2341,11 @@
          fhir:link <https://mitre.org/fhir/space-health/ValueSet/LunarDustToxicityValueSet> ;
          fhir:reference [ fhir:v "ValueSet/LunarDustToxicityValueSet" ]
        ] ;
-       fhir:name [ fhir:v "Lunar Dust Toxicity Related Conditions" ] ;
-       fhir:description [ fhir:v "A ValueSet containing SNOMED codes for conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities." ] ;
+       fhir:name [ fhir:v "Lunar Dust Toxicity" ] ;
+       fhir:description [ fhir:v "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ExampleScenario"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioLunarFarming> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioLunarFarming" ]
-       ] ;
-       fhir:name [ fhir:v "Lunar Farming" ] ;
-       fhir:description [ fhir:v "Lunar farming and food production.  Mission health objectives:  calorie production." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ExampleScenario"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioLunarGateway> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioLunarGateway" ]
-       ] ;
-       fhir:name [ fhir:v "Lunar Gateway" ] ;
-       fhir:description [ fhir:v "Lunar gateway transfer operations.  Mission health objectives:  space airlocks and closed loop environment transfers." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ExampleScenario"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioIceMining> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioIceMining" ]
-       ] ;
-       fhir:name [ fhir:v "Lunar Ice Mining" ] ;
-       fhir:description [ fhir:v "Lunar ice mining in a crater.  Mission health objectives:  occupational safety while operating heavy equipment in microgravity." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ExampleScenario"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioArtemisSurveying> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioArtemisSurveying" ]
-       ] ;
-       fhir:name [ fhir:v "Lunar Prospecting" ] ;
-       fhir:description [ fhir:v "Artemis surveying and prospecting for ice mining and lunar cave habitats.  Mission health objectives:  radiation exposure management." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ExampleScenario"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioRadioTelescopeInstall> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioRadioTelescopeInstall" ]
-       ] ;
-       fhir:name [ fhir:v "Lunar Radio Telescope Install" ] ;
-       fhir:description [ fhir:v "Lunar Crater Radio Telescope installation.  Mission health objectives:  resource maintenance and multi-person surface missions." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ConceptMap"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ConceptMap/MapNoradToObservation> ;
-         fhir:reference [ fhir:v "ConceptMap/MapNoradToObservation" ]
-       ] ;
-       fhir:name [ fhir:v "Map - Norad2Observation" ] ;
-       fhir:description [ fhir:v "Maps the NORAD two-line punch card format to FHIR Observation." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ConceptMap"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ConceptMap/MapNoradToLocation> ;
-         fhir:reference [ fhir:v "ConceptMap/MapNoradToLocation" ]
-       ] ;
-       fhir:name [ fhir:v "Map - NoradToLocation" ] ;
-       fhir:description [ fhir:v "Maps  NORAD two-line punch card format to FHIR Location." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ConceptMap"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ConceptMap/MapObservationToLocation> ;
-         fhir:reference [ fhir:v "ConceptMap/MapObservationToLocation" ]
-       ] ;
-       fhir:name [ fhir:v "Map - ObservationToLocation" ] ;
-       fhir:description [ fhir:v "Maps orbital coordinate observations to an xGeo location." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ConceptMap"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ConceptMap/MapObservationToNorad> ;
-         fhir:reference [ fhir:v "ConceptMap/MapObservationToNorad" ]
-       ] ;
-       fhir:name [ fhir:v "Map - ObservationToNorad" ] ;
-       fhir:description [ fhir:v "Maps a FHIR Observation to a NORAD two-line punch card format." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ConceptMap"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ConceptMap/MapVitalsBundleToPanel> ;
-         fhir:reference [ fhir:v "ConceptMap/MapVitalsBundleToPanel" ]
-       ] ;
-       fhir:name [ fhir:v "Map - VitalsBundleToPanel" ] ;
-       fhir:description [ fhir:v "Maps a bundle of vital signs to a multi-component Observation." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -2648,7 +2360,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceRiskAssesment" ]
        ] ;
        fhir:name [ fhir:v "Mission Risk Assessment" ] ;
-       fhir:description [ fhir:v "Risk assessment for space missions." ] ;
+       fhir:description [ fhir:v "STUB - Risk assessment for space missions." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2662,11 +2374,29 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ValueSet/Muscle-Stiffness-and-Space-Health> ;
-         fhir:reference [ fhir:v "ValueSet/Muscle-Stiffness-and-Space-Health" ]
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth> ;
+         fhir:reference [ fhir:v "ValueSet/MuscleStiffnessAndSpaceHealth" ]
        ] ;
-       fhir:name [ fhir:v "Muscle Stiffness and Space Health ValueSet" ] ;
-       fhir:description [ fhir:v "This ValueSet includes SNOMED codes related to muscle stiffness and health in the context of spaceflight and Earth-based applications, filtered by a similarity threshold greater than 0.5." ] ;
+       fhir:name [ fhir:v "Muscle Stiffness" ] ;
+       fhir:description [ fhir:v "Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/Questionnaire/HERAAnalogMissionApplication> ;
+         fhir:reference [ fhir:v "Questionnaire/HERAAnalogMissionApplication" ]
+       ] ;
+       fhir:name [ fhir:v "NASA HERA Analog Mission Application" ] ;
+       fhir:description [ fhir:v "Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3389,8 +3119,8 @@
          fhir:link <https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect> ;
          fhir:reference [ fhir:v "ValueSet/SleepLossHypoxiaEffect" ]
        ] ;
-       fhir:name [ fhir:v "Sleep Loss and Hypoxia Effects ValueSet" ] ;
-       fhir:description [ fhir:v "This ValueSet includes SNOMED CT terms matched to concepts related to the physiological and cognitive effects of sleep loss and hypoxia." ] ;
+       fhir:name [ fhir:v "Sleep Loss and Hypoxia Effects" ] ;
+       fhir:description [ fhir:v "Concepts related to the physiological and cognitive effects of sleep loss and hypoxia." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3408,7 +3138,79 @@
          fhir:reference [ fhir:v "ValueSet/SleepLossHypoxiaResponses" ]
        ] ;
        fhir:name [ fhir:v "Sleep Loss and Hypoxia Responses" ] ;
-       fhir:description [ fhir:v "A ValueSet for concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia, including associated medical conditions and factors." ] ;
+       fhir:description [ fhir:v "Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects> ;
+         fhir:reference [ fhir:v "ValueSet/space-cardiovascular-effects" ]
+       ] ;
+       fhir:name [ fhir:v "Space Cardiovascular Effects" ] ;
+       fhir:description [ fhir:v "Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-cardiovascular-effects-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-cardiovascular-effects-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Cardiovascular Effects" ] ;
+       fhir:description [ fhir:v "CodeSystem for space cardiovascular effects not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors> ;
+         fhir:reference [ fhir:v "ValueSet/space-environmental-factors" ]
+       ] ;
+       fhir:name [ fhir:v "Space Environmental Factors" ] ;
+       fhir:description [ fhir:v "Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-environmental-factors-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Environmental Factors" ] ;
+       fhir:description [ fhir:v "CodeSystem for space environmental factors not found in SNOMED CT" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3444,7 +3246,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceProcedure" ]
        ] ;
        fhir:name [ fhir:v "Space Health Procedure" ] ;
-       fhir:description [ fhir:v "Health procedures specific to outerspace environment." ] ;
+       fhir:description [ fhir:v "STUB - Health procedures specific to outerspace environment." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3462,7 +3264,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceInsurance" ]
        ] ;
        fhir:name [ fhir:v "Space insurance" ] ;
-       fhir:description [ fhir:v "Insurance plan for space travel" ] ;
+       fhir:description [ fhir:v "STUB - Insurance plan for space travel" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3480,7 +3282,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceInsuranceContract" ]
        ] ;
        fhir:name [ fhir:v "Space Insurance Contract" ] ;
-       fhir:description [ fhir:v "Specialized contract coverage for space travel" ] ;
+       fhir:description [ fhir:v "STUB - Specialized contract coverage for space travel" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3490,15 +3292,69 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ExampleScenario"
+           fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioSpaceOSHA> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioSpaceOSHA" ]
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-monitoring-procedures> ;
+         fhir:reference [ fhir:v "ValueSet/space-monitoring-procedures" ]
        ] ;
-       fhir:name [ fhir:v "Space Occupational Safety" ] ;
-       fhir:description [ fhir:v "OSHA considerations for astronauts.  Mission health objectives:  osteoperosis and occular degeneration." ] ;
+       fhir:name [ fhir:v "Space Monitoring Procedures" ] ;
+       fhir:description [ fhir:v "Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-monitoring-procedures-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-monitoring-procedures-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Monitoring Procedures" ] ;
+       fhir:description [ fhir:v "CodeSystem for space monitoring procedures not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects> ;
+         fhir:reference [ fhir:v "ValueSet/space-neurological-effects" ]
+       ] ;
+       fhir:name [ fhir:v "Space Neurological Effects" ] ;
+       fhir:description [ fhir:v "Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-neurological-effects-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-neurological-effects-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Neurological Effects" ] ;
+       fhir:description [ fhir:v "CodeSystem for space neurological effects not found in SNOMED CT" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3516,7 +3372,115 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceOrg" ]
        ] ;
        fhir:name [ fhir:v "Space Organization" ] ;
-       fhir:description [ fhir:v "Organizations involved with astronautics and space travel." ] ;
+       fhir:description [ fhir:v "STUB - Organizations involved with astronautics and space travel." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-physiological-effects> ;
+         fhir:reference [ fhir:v "ValueSet/space-physiological-effects" ]
+       ] ;
+       fhir:name [ fhir:v "Space Physiological Effects" ] ;
+       fhir:description [ fhir:v "Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-physiological-effects-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-physiological-effects-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Physiological Effects" ] ;
+       fhir:description [ fhir:v "CodeSystem for space physiological effects not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-preventive-health-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Preventive Health" ] ;
+       fhir:description [ fhir:v "CodeSystem for space preventive health concepts not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects> ;
+         fhir:reference [ fhir:v "ValueSet/space-psychological-effects" ]
+       ] ;
+       fhir:name [ fhir:v "Space Psychological Effects" ] ;
+       fhir:description [ fhir:v "Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-psychological-effects-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-psychological-effects-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Psychological Effects" ] ;
+       fhir:description [ fhir:v "CodeSystem for space psychological effects not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-radiation-effects> ;
+         fhir:reference [ fhir:v "ValueSet/space-radiation-effects" ]
+       ] ;
+       fhir:name [ fhir:v "Space Radiation Effects" ] ;
+       fhir:description [ fhir:v "Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3534,7 +3498,7 @@
          fhir:reference [ fhir:v "ValueSet/SpaceRadiationRisksVS" ]
        ] ;
        fhir:name [ fhir:v "Space Radiation Risks ValueSet" ] ;
-       fhir:description [ fhir:v "A ValueSet containing SNOMED concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data." ] ;
+       fhir:description [ fhir:v "Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3544,15 +3508,15 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ExampleScenario"
+           fhir:v "CodeSystem"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioSpaceTourism> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioSpaceTourism" ]
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-treatment-procedures-cs" ]
        ] ;
-       fhir:name [ fhir:v "Space Tourism" ] ;
-       fhir:description [ fhir:v "Commercial space tourism flight, with duration <1 day past Karman line.  Mission health objectives:  integrate passenger hospital records." ] ;
+       fhir:name [ fhir:v "Space Treatment Procedures" ] ;
+       fhir:description [ fhir:v "CodeSystem for space treatment procedures not found in SNOMED CT" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3570,7 +3534,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceVehicle" ]
        ] ;
        fhir:name [ fhir:v "Space Vehicle" ] ;
-       fhir:description [ fhir:v "Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)" ] ;
+       fhir:description [ fhir:v "STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3580,15 +3544,51 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ExampleScenario"
+           fhir:v "ValueSet"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://mitre.org/fhir/space-health/ExampleScenario/ScenarioSpaceWalk> ;
-         fhir:reference [ fhir:v "ExampleScenario/ScenarioSpaceWalk" ]
+         fhir:link <https://mitre.org/fhir/space-health/ValueSet/space-visual-effects> ;
+         fhir:reference [ fhir:v "ValueSet/space-visual-effects" ]
        ] ;
-       fhir:name [ fhir:v "Space Walk" ] ;
-       fhir:description [ fhir:v "OSHA considerations for spacewalks.  Mission health objectives:  vital sign monitoring." ] ;
+       fhir:name [ fhir:v "Space Visual Effects" ] ;
+       fhir:description [ fhir:v "Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-visual-effects-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Visual Effects" ] ;
+       fhir:description [ fhir:v "CodeSystem for space visual effects not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry> ;
+         fhir:reference [ fhir:v "StructureDefinition/SpacecraftLifeSupportTelemetry" ]
+       ] ;
+       fhir:name [ fhir:v "Spacecraft Life Support Telemetry" ] ;
+       fhir:description [ fhir:v "A logical model representing Environmental Control and Life Support Systems (ECLSS) parameters monitored in spacecraft habitat modules." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3605,7 +3605,7 @@
          fhir:link <https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors> ;
          fhir:reference [ fhir:v "ValueSet/SpaceflightStressFactors" ]
        ] ;
-       fhir:name [ fhir:v "Stress and Physiological Factors in Spaceflight Analog Missions" ] ;
+       fhir:name [ fhir:v "Stress and Physiological Factors" ] ;
        fhir:description [ fhir:v "Concepts related to stress, physiological, and psychological factors during spaceflight analog missions." ] ;
        fhir:example [
          a fhir:boolean ;
@@ -3660,7 +3660,7 @@
          fhir:reference [ fhir:v "StructureDefinition/SpaceLocation" ]
        ] ;
        fhir:name [ fhir:v "xGeo Locations" ] ;
-       fhir:description [ fhir:v "Locations in outerspace, past the Karman line, such as a space ship or space habitat." ] ;
+       fhir:description [ fhir:v "STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -3721,6 +3721,90 @@
            fhir:v "references.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "References" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "eclss.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "eclss.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Environmental Control and Life Support Systems (ECLSS)" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "biomes.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "biomes.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Biospheres" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "flight-readiness-pilots.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "flight-readiness-pilots.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "EHR Use for Pilot Certification" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "screening-gimbal.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "screening-gimbal.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Gimbal Training" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "screening-analog.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "screening-analog.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Analog Mission Training" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "screening-astronaut.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "screening-astronaut.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Astronaut Training" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

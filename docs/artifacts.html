@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary -  v0.3.0</title>
+    <title>Artifacts Summary -  v0.4.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.3.0 - ci-build
+            <span style="display:inline-block;">0.4.0 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -120,7 +152,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.3.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -132,16 +164,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#3">Example: Example Scenarios</a>
+         <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -150,6 +188,76 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EnvironmentalMonitoringLogicalModel.html"
+                  title="StructureDefinition/EnvironmentalMonitoringLogicalModel">Environmental Monitoring API for Closed Biome Systems</a>
+            </td>
+            <td>
+<p>A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SpacecraftLifeSupportTelemetry.html"
+                  title="StructureDefinition/SpacecraftLifeSupportTelemetry">Spacecraft Life Support Telemetry</a>
+            </td>
+            <td>
+<p>A logical model representing Environmental Control and Life Support Systems (ECLSS) parameters monitored in spacecraft habitat modules.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-AstronautFlightReadinessQuestionnaire.html"
+                  title="Questionnaire/AstronautFlightReadinessQuestionnaire">Astronaut and Space Tourist Medical Screening Questionnaire</a>
+            </td>
+            <td>
+<p>A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-FAA8500Questionnaire.html"
+                  title="Questionnaire/FAA8500Questionnaire">FAA Form 8500-8 Questionnaire</a>
+            </td>
+            <td>
+<p>FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-GShockEligibilityQuestionnaire.html"
+                  title="Questionnaire/GShockEligibilityQuestionnaire">G-SHOCK Centrifugal Trainer Eligibility Questionnaire</a>
+            </td>
+            <td>
+<p>Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-HERAAnalogMissionApplication.html"
+                  title="Questionnaire/HERAAnalogMissionApplication">NASA HERA Analog Mission Application</a>
+            </td>
+            <td>
+<p>Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -157,11 +265,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-AstrodynamicsObservation.html"
+                  title="StructureDefinition/AstrodynamicsObservation">Astrodynamics Observation</a>
+            </td>
+            <td>
+<p>An observation of a satellite or celestial object's orbital characteristics, using orbital elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-Astronaut.html"
                   title="StructureDefinition/Astronaut">Astronaut</a>
             </td>
             <td>
-<p>Patient profile for flight crew on space craft.</p>
+<p>STUB - Patient profile for flight crew on space craft.</p>
 </td>
          </tr>
          <tr>
@@ -233,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceEquipment">Commercial Space Equipment</a>
             </td>
             <td>
-<p>Device profile for commercial space equipment.</p>
+<p>STUB - Device profile for commercial space equipment.</p>
 </td>
          </tr>
          <tr>
@@ -256,42 +373,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-GimbalScreeningCondition.html"
-                  title="StructureDefinition/GimbalScreeningCondition">Gimbal Screening Condition</a>
-            </td>
-            <td>
-<p>Contraindicated conditions for riding in a multi-axis gimbal machine.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-GimbalScreeningMedication.html"
-                  title="StructureDefinition/GimbalScreeningMedication">Gimbal Screening Medication</a>
-            </td>
-            <td>
-<p>Contraindicated medications for riding in a multi-axis gimbal machine.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-GimbalScreeningObservation.html"
-                  title="StructureDefinition/GimbalScreeningObservation">Gimbal Screening Observation</a>
-            </td>
-            <td>
-<p>Contraindicated observations for riding in a multi-axis gimbal machine.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-GimbalScreeningProcedure.html"
-                  title="StructureDefinition/GimbalScreeningProcedure">Gimbal Screening Procedure</a>
-            </td>
-            <td>
-<p>Contraindicated medical procedures for riding in a multi-axis gimbal machine.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-heart-rate.html"
                   title="StructureDefinition/heart-rate">Heart Rate</a>
             </td>
@@ -305,7 +386,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceRiskAssesment">Mission Risk Assessment</a>
             </td>
             <td>
-<p>Risk assessment for space missions.</p>
+<p>STUB - Risk assessment for space missions.</p>
 </td>
          </tr>
          <tr>
@@ -350,7 +431,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceProcedure">Space Health Procedure</a>
             </td>
             <td>
-<p>Health procedures specific to outerspace environment.</p>
+<p>STUB - Health procedures specific to outerspace environment.</p>
 </td>
          </tr>
          <tr>
@@ -359,7 +440,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceInsuranceContract">Space Insurance Contract</a>
             </td>
             <td>
-<p>Specialized contract coverage for space travel</p>
+<p>STUB - Specialized contract coverage for space travel</p>
 </td>
          </tr>
          <tr>
@@ -368,7 +449,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceOrg">Space Organization</a>
             </td>
             <td>
-<p>Organizations involved with astronautics and space travel.</p>
+<p>STUB - Organizations involved with astronautics and space travel.</p>
 </td>
          </tr>
          <tr>
@@ -377,7 +458,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceVehicle">Space Vehicle</a>
             </td>
             <td>
-<p>Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)</p>
+<p>STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)</p>
 </td>
          </tr>
          <tr>
@@ -386,7 +467,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceInsurance">Space insurance</a>
             </td>
             <td>
-<p>Insurance plan for space travel</p>
+<p>STUB - Insurance plan for space travel</p>
 </td>
          </tr>
          <tr>
@@ -413,12 +494,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/SpaceLocation">xGeo Locations</a>
             </td>
             <td>
-<p>Locations in outerspace, past the Karman line, such as a space ship or space habitat.</p>
+<p>STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -426,29 +507,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-Space-Adaptation-Bone-Health.html"
-                  title="ValueSet/Space-Adaptation-Bone-Health">Adaptations of Bone Health in Space</a>
+               <a href="ValueSet-SpaceAdaptationBoneHealth.html"
+                  title="ValueSet/SpaceAdaptationBoneHealth">Adaptations of Bone Health</a>
             </td>
             <td>
-<p>SNOMED CT concepts related to bone health adaptations observed in spaceflight conditions.</p>
+<p>Bone health adaptations observed in spaceflight conditions.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-Astronaut-Back-Pain.html"
-                  title="ValueSet/Astronaut-Back-Pain">Back Pain and Space Travel Research Concepts</a>
+               <a href="ValueSet-AircraftFumeExposureValueSet.html"
+                  title="ValueSet/AircraftFumeExposureValueSet">Aircraft Fume Exposure</a>
             </td>
             <td>
-<p>SNOMED codes related to back pain and associated conditions observed in astronauts and their potential terrestrial applications.</p>
+<p>Health impacts from exposure to aircraft contaminated air and fume events.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-AstronautBackPain.html"
+                  title="ValueSet/AstronautBackPain">Back Pain and Space Travel</a>
+            </td>
+            <td>
+<p>Back pain and associated conditions observed in astronauts and their potential terrestrial applications.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-SpaceTravelBrainChanges.html"
-                  title="ValueSet/SpaceTravelBrainChanges">Brain Changes from Prolonged Space Travel</a>
+                  title="ValueSet/SpaceTravelBrainChanges">Brain and Neurologic Changes</a>
             </td>
             <td>
-<p>A ValueSet encompassing SNOMED concepts related to physiological and neurological changes from prolonged space travel.</p>
+<p>Concepts related to physiological and neurological changes from prolonged space travel.</p>
 </td>
          </tr>
          <tr>
@@ -462,38 +552,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-AircraftFumeExposureValueSet.html"
-                  title="ValueSet/AircraftFumeExposureValueSet">Health Impacts of Aircraft Fume Exposure</a>
-            </td>
-            <td>
-<p>ValueSet for SNOMED concepts related to health impacts from exposure to aircraft contaminated air and fume events.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-LunarDustToxicityValueSet.html"
-                  title="ValueSet/LunarDustToxicityValueSet">Lunar Dust Toxicity Related Conditions</a>
+                  title="ValueSet/LunarDustToxicityValueSet">Lunar Dust Toxicity</a>
             </td>
             <td>
-<p>A ValueSet containing SNOMED codes for conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.</p>
+<p>Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-Muscle-Stiffness-and-Space-Health.html"
-                  title="ValueSet/Muscle-Stiffness-and-Space-Health">Muscle Stiffness and Space Health ValueSet</a>
+               <a href="ValueSet-MuscleStiffnessAndSpaceHealth.html"
+                  title="ValueSet/MuscleStiffnessAndSpaceHealth">Muscle Stiffness</a>
             </td>
             <td>
-<p>This ValueSet includes SNOMED codes related to muscle stiffness and health in the context of spaceflight and Earth-based applications, filtered by a similarity threshold greater than 0.5.</p>
+<p>Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-SleepLossHypoxiaEffect.html"
-                  title="ValueSet/SleepLossHypoxiaEffect">Sleep Loss and Hypoxia Effects ValueSet</a>
+                  title="ValueSet/SleepLossHypoxiaEffect">Sleep Loss and Hypoxia Effects</a>
             </td>
             <td>
-<p>This ValueSet includes SNOMED CT terms matched to concepts related to the physiological and cognitive effects of sleep loss and hypoxia.</p>
+<p>Concepts related to the physiological and cognitive effects of sleep loss and hypoxia.</p>
 </td>
          </tr>
          <tr>
@@ -502,7 +583,70 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/SleepLossHypoxiaResponses">Sleep Loss and Hypoxia Responses</a>
             </td>
             <td>
-<p>A ValueSet for concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia, including associated medical conditions and factors.</p>
+<p>Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-cardiovascular-effects.html"
+                  title="ValueSet/space-cardiovascular-effects">Space Cardiovascular Effects</a>
+            </td>
+            <td>
+<p>Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-environmental-factors.html"
+                  title="ValueSet/space-environmental-factors">Space Environmental Factors</a>
+            </td>
+            <td>
+<p>Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-monitoring-procedures.html"
+                  title="ValueSet/space-monitoring-procedures">Space Monitoring Procedures</a>
+            </td>
+            <td>
+<p>Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-neurological-effects.html"
+                  title="ValueSet/space-neurological-effects">Space Neurological Effects</a>
+            </td>
+            <td>
+<p>Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-physiological-effects.html"
+                  title="ValueSet/space-physiological-effects">Space Physiological Effects</a>
+            </td>
+            <td>
+<p>Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-psychological-effects.html"
+                  title="ValueSet/space-psychological-effects">Space Psychological Effects</a>
+            </td>
+            <td>
+<p>Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-radiation-effects.html"
+                  title="ValueSet/space-radiation-effects">Space Radiation Effects</a>
+            </td>
+            <td>
+<p>Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries</p>
 </td>
          </tr>
          <tr>
@@ -511,13 +655,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/SpaceRadiationRisksVS">Space Radiation Risks ValueSet</a>
             </td>
             <td>
-<p>A ValueSet containing SNOMED concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.</p>
+<p>Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-visual-effects.html"
+                  title="ValueSet/space-visual-effects">Space Visual Effects</a>
+            </td>
+            <td>
+<p>Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-SpaceflightStressFactors.html"
-                  title="ValueSet/SpaceflightStressFactors">Stress and Physiological Factors in Spaceflight Analog Missions</a>
+                  title="ValueSet/SpaceflightStressFactors">Stress and Physiological Factors</a>
             </td>
             <td>
 <p>Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.</p>
@@ -525,105 +678,96 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
-   <h3>Example: Example Scenarios </h3>
-    <p>These define groups of interrelated examples that demonstrate one or more of the workflows supported by this implementation guide.</p>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioArtemis.html"
-                  title="ExampleScenario/ScenarioArtemis">Artemis Space Camp</a>
+               <a href="CodeSystem-space-cardiovascular-effects-cs.html"
+                  title="CodeSystem/space-cardiovascular-effects-cs">Space Cardiovascular Effects</a>
             </td>
             <td>
-<p>Artemis space camp for extended stay on the Lunar surface.  Mission health objectives:  inflatable space habitat with contained atmosphere.</p>
+<p>CodeSystem for space cardiovascular effects not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioBiodomeConstruciton.html"
-                  title="ExampleScenario/ScenarioBiodomeConstruciton">Lunar Biodome Construction</a>
+               <a href="CodeSystem-space-environmental-factors-cs.html"
+                  title="CodeSystem/space-environmental-factors-cs">Space Environmental Factors</a>
             </td>
             <td>
-<p>Lunar biodome construction.  Mission health objectives:  micrometeorites and solar storms.</p>
+<p>CodeSystem for space environmental factors not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioLunarFarming.html"
-                  title="ExampleScenario/ScenarioLunarFarming">Lunar Farming</a>
+               <a href="CodeSystem-space-monitoring-procedures-cs.html"
+                  title="CodeSystem/space-monitoring-procedures-cs">Space Monitoring Procedures</a>
             </td>
             <td>
-<p>Lunar farming and food production.  Mission health objectives:  calorie production.</p>
+<p>CodeSystem for space monitoring procedures not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioLunarGateway.html"
-                  title="ExampleScenario/ScenarioLunarGateway">Lunar Gateway</a>
+               <a href="CodeSystem-space-neurological-effects-cs.html"
+                  title="CodeSystem/space-neurological-effects-cs">Space Neurological Effects</a>
             </td>
             <td>
-<p>Lunar gateway transfer operations.  Mission health objectives:  space airlocks and closed loop environment transfers.</p>
+<p>CodeSystem for space neurological effects not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioIceMining.html"
-                  title="ExampleScenario/ScenarioIceMining">Lunar Ice Mining</a>
+               <a href="CodeSystem-space-physiological-effects-cs.html"
+                  title="CodeSystem/space-physiological-effects-cs">Space Physiological Effects</a>
             </td>
             <td>
-<p>Lunar ice mining in a crater.  Mission health objectives:  occupational safety while operating heavy equipment in microgravity.</p>
+<p>CodeSystem for space physiological effects not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioArtemisSurveying.html"
-                  title="ExampleScenario/ScenarioArtemisSurveying">Lunar Prospecting</a>
+               <a href="CodeSystem-space-preventive-health-cs.html"
+                  title="CodeSystem/space-preventive-health-cs">Space Preventive Health</a>
             </td>
             <td>
-<p>Artemis surveying and prospecting for ice mining and lunar cave habitats.  Mission health objectives:  radiation exposure management.</p>
+<p>CodeSystem for space preventive health concepts not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioRadioTelescopeInstall.html"
-                  title="ExampleScenario/ScenarioRadioTelescopeInstall">Lunar Radio Telescope Install</a>
+               <a href="CodeSystem-space-psychological-effects-cs.html"
+                  title="CodeSystem/space-psychological-effects-cs">Space Psychological Effects</a>
             </td>
             <td>
-<p>Lunar Crater Radio Telescope installation.  Mission health objectives:  resource maintenance and multi-person surface missions.</p>
+<p>CodeSystem for space psychological effects not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioSpaceOSHA.html"
-                  title="ExampleScenario/ScenarioSpaceOSHA">Space Occupational Safety</a>
+               <a href="CodeSystem-space-treatment-procedures-cs.html"
+                  title="CodeSystem/space-treatment-procedures-cs">Space Treatment Procedures</a>
             </td>
             <td>
-<p>OSHA considerations for astronauts.  Mission health objectives:  osteoperosis and occular degeneration.</p>
+<p>CodeSystem for space treatment procedures not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioSpaceTourism.html"
-                  title="ExampleScenario/ScenarioSpaceTourism">Space Tourism</a>
+               <a href="CodeSystem-space-visual-effects-cs.html"
+                  title="CodeSystem/space-visual-effects-cs">Space Visual Effects</a>
             </td>
             <td>
-<p>Commercial space tourism flight, with duration &lt;1 day past Karman line.  Mission health objectives:  integrate passenger hospital records.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ExampleScenario-ScenarioSpaceWalk.html"
-                  title="ExampleScenario/ScenarioSpaceWalk">Space Walk</a>
-            </td>
-            <td>
-<p>OSHA considerations for spacewalks.  Mission health objectives:  vital sign monitoring.</p>
+<p>CodeSystem for space visual effects not found in SNOMED CT</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -715,48 +859,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Cerebrovascular accident (disorder)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-ConsentAnonLoc.html" title="Consent/ConsentAnonLoc">ConsentAnonLoc</a>
-            </td>
-            <td>
-<p>Policy rule to allow general citizenry and anonymous users access to public listings of Location records.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-ConsentAnonOrg.html" title="Consent/ConsentAnonOrg">ConsentAnonOrg</a>
-            </td>
-            <td>
-<p>Policy rule to allow general citizenry and anonymous users access to public listings of Organization records.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-ConsentAnonPrac.html" title="Consent/ConsentAnonPrac">ConsentAnonPrac</a>
-            </td>
-            <td>
-<p>Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-ConsentClinicianLoc.html"
-                  title="Consent/ConsentClinicianLoc">ConsentClinicianLoc</a>
-            </td>
-            <td>
-<p>Policy rule to allow authenticated healthcare practitioners access to restricted Location records.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Consent-ConsentClinicianOrg.html"
-                  title="Consent/ConsentClinicianOrg">ConsentClinicianOrg</a>
-            </td>
-            <td>
-<p>Policy rule to allow authenticated healthcare practitioners access to restricted Organization records.</p>
 </td>
          </tr>
          <tr>
@@ -949,7 +1051,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="Contract/SpaceTourismTravelInsuranceContract">Insurance - Contract</a>
             </td>
             <td>
-<p>Space tourist insurance coverage.</p>
+<p>STUB - Space tourist insurance coverage.</p>
 </td>
          </tr>
          <tr>
@@ -1172,51 +1274,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Lunar crater suitable for a space telescope.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-MapNoradToObservation.html"
-                  title="ConceptMap/MapNoradToObservation">Map - Norad2Observation</a>
-            </td>
-            <td>
-<p>Maps the NORAD two-line punch card format to FHIR Observation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-MapNoradToLocation.html"
-                  title="ConceptMap/MapNoradToLocation">Map - NoradToLocation</a>
-            </td>
-            <td>
-<p>Maps  NORAD two-line punch card format to FHIR Location.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-MapObservationToLocation.html"
-                  title="ConceptMap/MapObservationToLocation">Map - ObservationToLocation</a>
-            </td>
-            <td>
-<p>Maps orbital coordinate observations to an xGeo location.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-MapObservationToNorad.html"
-                  title="ConceptMap/MapObservationToNorad">Map - ObservationToNorad</a>
-            </td>
-            <td>
-<p>Maps a FHIR Observation to a NORAD two-line punch card format.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-MapVitalsBundleToPanel.html"
-                  title="ConceptMap/MapVitalsBundleToPanel">Map - VitalsBundleToPanel</a>
-            </td>
-            <td>
-<p>Maps a bundle of vital signs to a multi-component Observation.</p>
 </td>
          </tr>
          <tr>
@@ -1540,7 +1597,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 6, 2025 20:46-0600">2025-05-06</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 21, 2025 00:44-0500">2025-05-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

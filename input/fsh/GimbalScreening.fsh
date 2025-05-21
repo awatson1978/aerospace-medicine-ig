@@ -22,32 +22,36 @@ Description: "Screening protocol for Multi Axis Gimbal training device."
     contraindicatedMedications 1..* MS and
     contraindicatedObservations 1..* MS 
 
-* entry[contraindicatedConditions].resource only GimbalScreeningCondition
-* entry[contraindicatedProcedures].resource only GimbalScreeningProcedure
-* entry[contraindicatedMedications].resource only GimbalScreeningMedication
-* entry[contraindicatedObservations].resource only GimbalScreeningObservation
+* entry[contraindicatedConditions].resource only Condition
+* entry[contraindicatedProcedures].resource only Procedure
+* entry[contraindicatedMedications].resource only Medication
+* entry[contraindicatedObservations].resource only Observation
 
 
+// * entry[contraindicatedConditions].resource only GimbalScreeningCondition
+// * entry[contraindicatedProcedures].resource only GimbalScreeningProcedure
+// * entry[contraindicatedMedications].resource only GimbalScreeningMedication
+// * entry[contraindicatedObservations].resource only GimbalScreeningObservation
 
-Profile: GimbalScreeningCondition
-Parent: Condition
-Title: "Gimbal Screening Condition"
-Description: "Contraindicated conditions for riding in a multi-axis gimbal machine."
+// Profile: GimbalScreeningCondition
+// Parent: Condition
+// Title: "Gimbal Screening Condition"
+// Description: "Contraindicated conditions for riding in a multi-axis gimbal machine."
 
-Profile: GimbalScreeningProcedure
-Parent: Procedure
-Title: "Gimbal Screening Procedure"
-Description: "Contraindicated medical procedures for riding in a multi-axis gimbal machine."
+// Profile: GimbalScreeningProcedure
+// Parent: Procedure
+// Title: "Gimbal Screening Procedure"
+// Description: "Contraindicated medical procedures for riding in a multi-axis gimbal machine."
 
-Profile: GimbalScreeningMedication
-Parent: Medication
-Title: "Gimbal Screening Medication"
-Description: "Contraindicated medications for riding in a multi-axis gimbal machine."
+// Profile: GimbalScreeningMedication
+// Parent: Medication
+// Title: "Gimbal Screening Medication"
+// Description: "Contraindicated medications for riding in a multi-axis gimbal machine."
 
-Profile: GimbalScreeningObservation
-Parent: Observation
-Title: "Gimbal Screening Observation"
-Description: "Contraindicated observations for riding in a multi-axis gimbal machine."
+// Profile: GimbalScreeningObservation
+// Parent: Observation
+// Title: "Gimbal Screening Observation"
+// Description: "Contraindicated observations for riding in a multi-axis gimbal machine."
 
 
 // Profile: GimbalScreeningClaustrophobia

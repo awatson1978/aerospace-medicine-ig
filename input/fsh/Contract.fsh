@@ -5,9 +5,9 @@
 Profile: SpaceInsuranceContract
 Parent: Contract
 Title: "Space Insurance Contract"
-Description: "Specialized contract coverage for space travel"
+Description: "STUB - Specialized contract coverage for space travel"
 
 Instance: SpaceTourismTravelInsuranceContract
 InstanceOf: SpaceInsuranceContract
 Title: "Insurance - Contract"
-Description: "Space tourist insurance coverage."
+Description: "STUB - Space tourist insurance coverage."

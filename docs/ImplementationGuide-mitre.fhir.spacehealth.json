@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><a name=\"mitre.fhir.spacehealth-en-US\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"
   },
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.3.0",
+  "version" : "0.4.0",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-05-06T20:45:50-06:00",
+  "date" : "2025-05-21T00:44:32-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -609,22 +609,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/Space-Adaptation-Bone-Health"
+        "reference" : "ValueSet/SpaceAdaptationBoneHealth"
       },
-      "name" : "Adaptations of Bone Health in Space",
-      "description" : "SNOMED CT concepts related to bone health adaptations observed in spaceflight conditions.",
+      "name" : "Adaptations of Bone Health",
+      "description" : "Bone health adaptations observed in spaceflight conditions.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ExampleScenario/ScenarioArtemis"
+        "reference" : "ValueSet/AircraftFumeExposureValueSet"
       },
-      "name" : "Artemis Space Camp",
-      "description" : "Artemis space camp for extended stay on the Lunar surface.  Mission health objectives:  inflatable space habitat with contained atmosphere.",
+      "name" : "Aircraft Fume Exposure",
+      "description" : "Health impacts from exposure to aircraft contaminated air and fume events.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/AstrodynamicsObservation"
+      },
+      "name" : "Astrodynamics Observation",
+      "description" : "An observation of a satellite or celestial object's orbital characteristics, using orbital elements.",
       "exampleBoolean" : false
     },
     {
@@ -636,7 +648,19 @@
         "reference" : "StructureDefinition/Astronaut"
       },
       "name" : "Astronaut",
-      "description" : "Patient profile for flight crew on space craft.",
+      "description" : "STUB - Patient profile for flight crew on space craft.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/AstronautFlightReadinessQuestionnaire"
+      },
+      "name" : "Astronaut and Space Tourist Medical Screening Questionnaire",
+      "description" : "A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices.",
       "exampleBoolean" : false
     },
     {
@@ -657,10 +681,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/Astronaut-Back-Pain"
+        "reference" : "ValueSet/AstronautBackPain"
       },
-      "name" : "Back Pain and Space Travel Research Concepts",
-      "description" : "SNOMED codes related to back pain and associated conditions observed in astronauts and their potential terrestrial applications.",
+      "name" : "Back Pain and Space Travel",
+      "description" : "Back pain and associated conditions observed in astronauts and their potential terrestrial applications.",
       "exampleBoolean" : false
     },
     {
@@ -743,8 +767,8 @@
       "reference" : {
         "reference" : "ValueSet/SpaceTravelBrainChanges"
       },
-      "name" : "Brain Changes from Prolonged Space Travel",
-      "description" : "A ValueSet encompassing SNOMED concepts related to physiological and neurological changes from prolonged space travel.",
+      "name" : "Brain and Neurologic Changes",
+      "description" : "Concepts related to physiological and neurological changes from prolonged space travel.",
       "exampleBoolean" : false
     },
     {
@@ -756,7 +780,7 @@
         "reference" : "StructureDefinition/SpaceEquipment"
       },
       "name" : "Commercial Space Equipment",
-      "description" : "Device profile for commercial space equipment.",
+      "description" : "STUB - Device profile for commercial space equipment.",
       "exampleBoolean" : false
     },
     {
@@ -878,66 +902,6 @@
       "name" : "Condition - Stroke",
       "description" : "Cerebrovascular accident (disorder)",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentAnonLoc"
-      },
-      "name" : "ConsentAnonLoc",
-      "description" : "Policy rule to allow general citizenry and anonymous users access to public listings of Location records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentAnonOrg"
-      },
-      "name" : "ConsentAnonOrg",
-      "description" : "Policy rule to allow general citizenry and anonymous users access to public listings of Organization records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentAnonPrac"
-      },
-      "name" : "ConsentAnonPrac",
-      "description" : "Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentClinicianLoc"
-      },
-      "name" : "ConsentClinicianLoc",
-      "description" : "Policy rule to allow authenticated healthcare practitioners access to restricted Location records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentClinicianOrg"
-      },
-      "name" : "ConsentClinicianOrg",
-      "description" : "Policy rule to allow authenticated healthcare practitioners access to restricted Organization records.",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1218,6 +1182,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EnvironmentalMonitoringLogicalModel"
+      },
+      "name" : "Environmental Monitoring API for Closed Biome Systems",
+      "description" : "A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/FAA8500Questionnaire"
+      },
+      "name" : "FAA Form 8500-8 Questionnaire",
+      "description" : "FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/GShockEligibilityQuestionnaire"
+      },
+      "name" : "G-SHOCK Centrifugal Trainer Eligibility Questionnaire",
+      "description" : "Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1245,66 +1245,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/GimbalScreeningCondition"
-      },
-      "name" : "Gimbal Screening Condition",
-      "description" : "Contraindicated conditions for riding in a multi-axis gimbal machine.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/GimbalScreeningMedication"
-      },
-      "name" : "Gimbal Screening Medication",
-      "description" : "Contraindicated medications for riding in a multi-axis gimbal machine.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/GimbalScreeningObservation"
-      },
-      "name" : "Gimbal Screening Observation",
-      "description" : "Contraindicated observations for riding in a multi-axis gimbal machine.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/GimbalScreeningProcedure"
-      },
-      "name" : "Gimbal Screening Procedure",
-      "description" : "Contraindicated medical procedures for riding in a multi-axis gimbal machine.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/AircraftFumeExposureValueSet"
-      },
-      "name" : "Health Impacts of Aircraft Fume Exposure",
-      "description" : "ValueSet for SNOMED concepts related to health impacts from exposure to aircraft contaminated air and fume events.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/heart-rate"
       },
       "name" : "Heart Rate",
@@ -1320,7 +1260,7 @@
         "reference" : "Contract/SpaceTourismTravelInsuranceContract"
       },
       "name" : "Insurance - Contract",
-      "description" : "Space tourist insurance coverage.",
+      "description" : "STUB - Space tourist insurance coverage.",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract"
     },
     {
@@ -1638,146 +1578,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
-      }],
-      "reference" : {
-        "reference" : "ExampleScenario/ScenarioBiodomeConstruciton"
-      },
-      "name" : "Lunar Biodome Construction",
-      "description" : "Lunar biodome construction.  Mission health objectives:  micrometeorites and solar storms.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/LunarDustToxicityValueSet"
       },
-      "name" : "Lunar Dust Toxicity Related Conditions",
-      "description" : "A ValueSet containing SNOMED codes for conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
+      "name" : "Lunar Dust Toxicity",
+      "description" : "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
-      }],
-      "reference" : {
-        "reference" : "ExampleScenario/ScenarioLunarFarming"
-      },
-      "name" : "Lunar Farming",
-      "description" : "Lunar farming and food production.  Mission health objectives:  calorie production.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
-      }],
-      "reference" : {
-        "reference" : "ExampleScenario/ScenarioLunarGateway"
-      },
-      "name" : "Lunar Gateway",
-      "description" : "Lunar gateway transfer operations.  Mission health objectives:  space airlocks and closed loop environment transfers.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
-      }],
-      "reference" : {
-        "reference" : "ExampleScenario/ScenarioIceMining"
-      },
-      "name" : "Lunar Ice Mining",
-      "description" : "Lunar ice mining in a crater.  Mission health objectives:  occupational safety while operating heavy equipment in microgravity.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
-      }],
-      "reference" : {
-        "reference" : "ExampleScenario/ScenarioArtemisSurveying"
-      },
-      "name" : "Lunar Prospecting",
-      "description" : "Artemis surveying and prospecting for ice mining and lunar cave habitats.  Mission health objectives:  radiation exposure management.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
-      }],
-      "reference" : {
-        "reference" : "ExampleScenario/ScenarioRadioTelescopeInstall"
-      },
-      "name" : "Lunar Radio Telescope Install",
-      "description" : "Lunar Crater Radio Telescope installation.  Mission health objectives:  resource maintenance and multi-person surface missions.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/MapNoradToObservation"
-      },
-      "name" : "Map - Norad2Observation",
-      "description" : "Maps the NORAD two-line punch card format to FHIR Observation.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/MapNoradToLocation"
-      },
-      "name" : "Map - NoradToLocation",
-      "description" : "Maps  NORAD two-line punch card format to FHIR Location.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/MapObservationToLocation"
-      },
-      "name" : "Map - ObservationToLocation",
-      "description" : "Maps orbital coordinate observations to an xGeo location.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/MapObservationToNorad"
-      },
-      "name" : "Map - ObservationToNorad",
-      "description" : "Maps a FHIR Observation to a NORAD two-line punch card format.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ConceptMap"
-      }],
-      "reference" : {
-        "reference" : "ConceptMap/MapVitalsBundleToPanel"
-      },
-      "name" : "Map - VitalsBundleToPanel",
-      "description" : "Maps a bundle of vital signs to a multi-component Observation.",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1788,7 +1596,7 @@
         "reference" : "StructureDefinition/SpaceRiskAssesment"
       },
       "name" : "Mission Risk Assessment",
-      "description" : "Risk assessment for space missions.",
+      "description" : "STUB - Risk assessment for space missions.",
       "exampleBoolean" : false
     },
     {
@@ -1797,10 +1605,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/Muscle-Stiffness-and-Space-Health"
+        "reference" : "ValueSet/MuscleStiffnessAndSpaceHealth"
       },
-      "name" : "Muscle Stiffness and Space Health ValueSet",
-      "description" : "This ValueSet includes SNOMED codes related to muscle stiffness and health in the context of spaceflight and Earth-based applications, filtered by a similarity threshold greater than 0.5.",
+      "name" : "Muscle Stiffness",
+      "description" : "Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/HERAAnalogMissionApplication"
+      },
+      "name" : "NASA HERA Analog Mission Application",
+      "description" : "Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center",
       "exampleBoolean" : false
     },
     {
@@ -2267,8 +2087,8 @@
       "reference" : {
         "reference" : "ValueSet/SleepLossHypoxiaEffect"
       },
-      "name" : "Sleep Loss and Hypoxia Effects ValueSet",
-      "description" : "This ValueSet includes SNOMED CT terms matched to concepts related to the physiological and cognitive effects of sleep loss and hypoxia.",
+      "name" : "Sleep Loss and Hypoxia Effects",
+      "description" : "Concepts related to the physiological and cognitive effects of sleep loss and hypoxia.",
       "exampleBoolean" : false
     },
     {
@@ -2280,7 +2100,55 @@
         "reference" : "ValueSet/SleepLossHypoxiaResponses"
       },
       "name" : "Sleep Loss and Hypoxia Responses",
-      "description" : "A ValueSet for concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia, including associated medical conditions and factors.",
+      "description" : "Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-cardiovascular-effects"
+      },
+      "name" : "Space Cardiovascular Effects",
+      "description" : "Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-cardiovascular-effects-cs"
+      },
+      "name" : "Space Cardiovascular Effects",
+      "description" : "CodeSystem for space cardiovascular effects not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-environmental-factors"
+      },
+      "name" : "Space Environmental Factors",
+      "description" : "Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-environmental-factors-cs"
+      },
+      "name" : "Space Environmental Factors",
+      "description" : "CodeSystem for space environmental factors not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -2304,7 +2172,7 @@
         "reference" : "StructureDefinition/SpaceProcedure"
       },
       "name" : "Space Health Procedure",
-      "description" : "Health procedures specific to outerspace environment.",
+      "description" : "STUB - Health procedures specific to outerspace environment.",
       "exampleBoolean" : false
     },
     {
@@ -2316,7 +2184,7 @@
         "reference" : "StructureDefinition/SpaceInsurance"
       },
       "name" : "Space insurance",
-      "description" : "Insurance plan for space travel",
+      "description" : "STUB - Insurance plan for space travel",
       "exampleBoolean" : false
     },
     {
@@ -2328,19 +2196,55 @@
         "reference" : "StructureDefinition/SpaceInsuranceContract"
       },
       "name" : "Space Insurance Contract",
-      "description" : "Specialized contract coverage for space travel",
+      "description" : "STUB - Specialized contract coverage for space travel",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ExampleScenario/ScenarioSpaceOSHA"
+        "reference" : "ValueSet/space-monitoring-procedures"
       },
-      "name" : "Space Occupational Safety",
-      "description" : "OSHA considerations for astronauts.  Mission health objectives:  osteoperosis and occular degeneration.",
+      "name" : "Space Monitoring Procedures",
+      "description" : "Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-monitoring-procedures-cs"
+      },
+      "name" : "Space Monitoring Procedures",
+      "description" : "CodeSystem for space monitoring procedures not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-neurological-effects"
+      },
+      "name" : "Space Neurological Effects",
+      "description" : "Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-neurological-effects-cs"
+      },
+      "name" : "Space Neurological Effects",
+      "description" : "CodeSystem for space neurological effects not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -2352,7 +2256,79 @@
         "reference" : "StructureDefinition/SpaceOrg"
       },
       "name" : "Space Organization",
-      "description" : "Organizations involved with astronautics and space travel.",
+      "description" : "STUB - Organizations involved with astronautics and space travel.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-physiological-effects"
+      },
+      "name" : "Space Physiological Effects",
+      "description" : "Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-physiological-effects-cs"
+      },
+      "name" : "Space Physiological Effects",
+      "description" : "CodeSystem for space physiological effects not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-preventive-health-cs"
+      },
+      "name" : "Space Preventive Health",
+      "description" : "CodeSystem for space preventive health concepts not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-psychological-effects"
+      },
+      "name" : "Space Psychological Effects",
+      "description" : "Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-psychological-effects-cs"
+      },
+      "name" : "Space Psychological Effects",
+      "description" : "CodeSystem for space psychological effects not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-radiation-effects"
+      },
+      "name" : "Space Radiation Effects",
+      "description" : "Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries",
       "exampleBoolean" : false
     },
     {
@@ -2364,19 +2340,19 @@
         "reference" : "ValueSet/SpaceRadiationRisksVS"
       },
       "name" : "Space Radiation Risks ValueSet",
-      "description" : "A ValueSet containing SNOMED concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.",
+      "description" : "Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "ExampleScenario/ScenarioSpaceTourism"
+        "reference" : "CodeSystem/space-treatment-procedures-cs"
       },
-      "name" : "Space Tourism",
-      "description" : "Commercial space tourism flight, with duration <1 day past Karman line.  Mission health objectives:  integrate passenger hospital records.",
+      "name" : "Space Treatment Procedures",
+      "description" : "CodeSystem for space treatment procedures not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -2388,19 +2364,43 @@
         "reference" : "StructureDefinition/SpaceVehicle"
       },
       "name" : "Space Vehicle",
-      "description" : "Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)",
+      "description" : "STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ExampleScenario"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ExampleScenario/ScenarioSpaceWalk"
+        "reference" : "ValueSet/space-visual-effects"
       },
-      "name" : "Space Walk",
-      "description" : "OSHA considerations for spacewalks.  Mission health objectives:  vital sign monitoring.",
+      "name" : "Space Visual Effects",
+      "description" : "Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-visual-effects-cs"
+      },
+      "name" : "Space Visual Effects",
+      "description" : "CodeSystem for space visual effects not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SpacecraftLifeSupportTelemetry"
+      },
+      "name" : "Spacecraft Life Support Telemetry",
+      "description" : "A logical model representing Environmental Control and Life Support Systems (ECLSS) parameters monitored in spacecraft habitat modules.",
       "exampleBoolean" : false
     },
     {
@@ -2411,7 +2411,7 @@
       "reference" : {
         "reference" : "ValueSet/SpaceflightStressFactors"
       },
-      "name" : "Stress and Physiological Factors in Spaceflight Analog Missions",
+      "name" : "Stress and Physiological Factors",
       "description" : "Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.",
       "exampleBoolean" : false
     },
@@ -2448,7 +2448,7 @@
         "reference" : "StructureDefinition/SpaceLocation"
       },
       "name" : "xGeo Locations",
-      "description" : "Locations in outerspace, past the Karman line, such as a space ship or space habitat.",
+      "description" : "STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat.",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -2484,6 +2484,60 @@
         }],
         "nameUrl" : "references.html",
         "title" : "References",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "eclss.html"
+        }],
+        "nameUrl" : "eclss.html",
+        "title" : "Environmental Control and Life Support Systems (ECLSS)",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "biomes.html"
+        }],
+        "nameUrl" : "biomes.html",
+        "title" : "Biospheres",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "flight-readiness-pilots.html"
+        }],
+        "nameUrl" : "flight-readiness-pilots.html",
+        "title" : "EHR Use for Pilot Certification",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "screening-gimbal.html"
+        }],
+        "nameUrl" : "screening-gimbal.html",
+        "title" : "Gimbal Training",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "screening-analog.html"
+        }],
+        "nameUrl" : "screening-analog.html",
+        "title" : "Analog Mission Training",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "screening-astronaut.html"
+        }],
+        "nameUrl" : "screening-astronaut.html",
+        "title" : "Astronaut Training",
         "generation" : "markdown"
       }]
     },

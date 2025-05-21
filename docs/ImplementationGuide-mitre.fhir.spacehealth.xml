@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth"/>
-  <version value="0.3.0"/>
+  <version value="0.4.0"/>
   <name value="SpaceflightHealthSimulationsReferenceDocumentation"/>
   <status value="draft"/>
-  <date value="2025-05-06T20:45:50-06:00"/>
+  <date value="2025-05-21T00:44:32-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -453,21 +453,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/Space-Adaptation-Bone-Health"/>
+        <reference value="ValueSet/SpaceAdaptationBoneHealth"/>
       </reference>
-      <name value="Adaptations of Bone Health in Space"/>
-      <description value="SNOMED CT concepts related to bone health adaptations observed in spaceflight conditions."/>
+      <name value="Adaptations of Bone Health"/>
+      <description value="Bone health adaptations observed in spaceflight conditions."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ExampleScenario/ScenarioArtemis"/>
+        <reference value="ValueSet/AircraftFumeExposureValueSet"/>
       </reference>
-      <name value="Artemis Space Camp"/>
-      <description value="Artemis space camp for extended stay on the Lunar surface.  Mission health objectives:  inflatable space habitat with contained atmosphere."/>
+      <name value="Aircraft Fume Exposure"/>
+      <description value="Health impacts from exposure to aircraft contaminated air and fume events."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AstrodynamicsObservation"/>
+      </reference>
+      <name value="Astrodynamics Observation"/>
+      <description value="An observation of a satellite or celestial object's orbital characteristics, using orbital elements."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -478,7 +489,18 @@
         <reference value="StructureDefinition/Astronaut"/>
       </reference>
       <name value="Astronaut"/>
-      <description value="Patient profile for flight crew on space craft."/>
+      <description value="STUB - Patient profile for flight crew on space craft."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/AstronautFlightReadinessQuestionnaire"/>
+      </reference>
+      <name value="Astronaut and Space Tourist Medical Screening Questionnaire"/>
+      <description value="A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -497,10 +519,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/Astronaut-Back-Pain"/>
+        <reference value="ValueSet/AstronautBackPain"/>
       </reference>
-      <name value="Back Pain and Space Travel Research Concepts"/>
-      <description value="SNOMED codes related to back pain and associated conditions observed in astronauts and their potential terrestrial applications."/>
+      <name value="Back Pain and Space Travel"/>
+      <description value="Back pain and associated conditions observed in astronauts and their potential terrestrial applications."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -576,8 +598,8 @@
       <reference>
         <reference value="ValueSet/SpaceTravelBrainChanges"/>
       </reference>
-      <name value="Brain Changes from Prolonged Space Travel"/>
-      <description value="A ValueSet encompassing SNOMED concepts related to physiological and neurological changes from prolonged space travel."/>
+      <name value="Brain and Neurologic Changes"/>
+      <description value="Concepts related to physiological and neurological changes from prolonged space travel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -588,7 +610,7 @@
         <reference value="StructureDefinition/SpaceEquipment"/>
       </reference>
       <name value="Commercial Space Equipment"/>
-      <description value="Device profile for commercial space equipment."/>
+      <description value="STUB - Device profile for commercial space equipment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -700,61 +722,6 @@
       <name value="Condition - Stroke"/>
       <description value="Cerebrovascular accident (disorder)"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/ConsentAnonLoc"/>
-      </reference>
-      <name value="ConsentAnonLoc"/>
-      <description value="Policy rule to allow general citizenry and anonymous users access to public listings of Location records."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/ConsentAnonOrg"/>
-      </reference>
-      <name value="ConsentAnonOrg"/>
-      <description value="Policy rule to allow general citizenry and anonymous users access to public listings of Organization records."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/ConsentAnonPrac"/>
-      </reference>
-      <name value="ConsentAnonPrac"/>
-      <description value="Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/ConsentClinicianLoc"/>
-      </reference>
-      <name value="ConsentClinicianLoc"/>
-      <description value="Policy rule to allow authenticated healthcare practitioners access to restricted Location records."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/ConsentClinicianOrg"/>
-      </reference>
-      <name value="ConsentClinicianOrg"/>
-      <description value="Policy rule to allow authenticated healthcare practitioners access to restricted Organization records."/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1011,6 +978,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EnvironmentalMonitoringLogicalModel"/>
+      </reference>
+      <name value="Environmental Monitoring API for Closed Biome Systems"/>
+      <description value="A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/FAA8500Questionnaire"/>
+      </reference>
+      <name value="FAA Form 8500-8 Questionnaire"/>
+      <description value="FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/GShockEligibilityQuestionnaire"/>
+      </reference>
+      <name value="G-SHOCK Centrifugal Trainer Eligibility Questionnaire"/>
+      <description value="Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1036,61 +1036,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/GimbalScreeningCondition"/>
-      </reference>
-      <name value="Gimbal Screening Condition"/>
-      <description value="Contraindicated conditions for riding in a multi-axis gimbal machine."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/GimbalScreeningMedication"/>
-      </reference>
-      <name value="Gimbal Screening Medication"/>
-      <description value="Contraindicated medications for riding in a multi-axis gimbal machine."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/GimbalScreeningObservation"/>
-      </reference>
-      <name value="Gimbal Screening Observation"/>
-      <description value="Contraindicated observations for riding in a multi-axis gimbal machine."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/GimbalScreeningProcedure"/>
-      </reference>
-      <name value="Gimbal Screening Procedure"/>
-      <description value="Contraindicated medical procedures for riding in a multi-axis gimbal machine."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/AircraftFumeExposureValueSet"/>
-      </reference>
-      <name value="Health Impacts of Aircraft Fume Exposure"/>
-      <description value="ValueSet for SNOMED concepts related to health impacts from exposure to aircraft contaminated air and fume events."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/heart-rate"/>
       </reference>
       <name value="Heart Rate"/>
@@ -1105,7 +1050,7 @@
         <reference value="Contract/SpaceTourismTravelInsuranceContract"/>
       </reference>
       <name value="Insurance - Contract"/>
-      <description value="Space tourist insurance coverage."/>
+      <description value="STUB - Space tourist insurance coverage."/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract"/>
     </resource>
     <resource>
@@ -1396,135 +1341,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/ScenarioBiodomeConstruciton"/>
-      </reference>
-      <name value="Lunar Biodome Construction"/>
-      <description value="Lunar biodome construction.  Mission health objectives:  micrometeorites and solar storms."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/LunarDustToxicityValueSet"/>
       </reference>
-      <name value="Lunar Dust Toxicity Related Conditions"/>
-      <description value="A ValueSet containing SNOMED codes for conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities."/>
+      <name value="Lunar Dust Toxicity"/>
+      <description value="Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities."/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/ScenarioLunarFarming"/>
-      </reference>
-      <name value="Lunar Farming"/>
-      <description value="Lunar farming and food production.  Mission health objectives:  calorie production."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/ScenarioLunarGateway"/>
-      </reference>
-      <name value="Lunar Gateway"/>
-      <description value="Lunar gateway transfer operations.  Mission health objectives:  space airlocks and closed loop environment transfers."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/ScenarioIceMining"/>
-      </reference>
-      <name value="Lunar Ice Mining"/>
-      <description value="Lunar ice mining in a crater.  Mission health objectives:  occupational safety while operating heavy equipment in microgravity."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/ScenarioArtemisSurveying"/>
-      </reference>
-      <name value="Lunar Prospecting"/>
-      <description value="Artemis surveying and prospecting for ice mining and lunar cave habitats.  Mission health objectives:  radiation exposure management."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
-      </extension>
-      <reference>
-        <reference value="ExampleScenario/ScenarioRadioTelescopeInstall"/>
-      </reference>
-      <name value="Lunar Radio Telescope Install"/>
-      <description value="Lunar Crater Radio Telescope installation.  Mission health objectives:  resource maintenance and multi-person surface missions."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/MapNoradToObservation"/>
-      </reference>
-      <name value="Map - Norad2Observation"/>
-      <description value="Maps the NORAD two-line punch card format to FHIR Observation."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/MapNoradToLocation"/>
-      </reference>
-      <name value="Map - NoradToLocation"/>
-      <description value="Maps  NORAD two-line punch card format to FHIR Location."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/MapObservationToLocation"/>
-      </reference>
-      <name value="Map - ObservationToLocation"/>
-      <description value="Maps orbital coordinate observations to an xGeo location."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/MapObservationToNorad"/>
-      </reference>
-      <name value="Map - ObservationToNorad"/>
-      <description value="Maps a FHIR Observation to a NORAD two-line punch card format."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/MapVitalsBundleToPanel"/>
-      </reference>
-      <name value="Map - VitalsBundleToPanel"/>
-      <description value="Maps a bundle of vital signs to a multi-component Observation."/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1534,7 +1358,7 @@
         <reference value="StructureDefinition/SpaceRiskAssesment"/>
       </reference>
       <name value="Mission Risk Assessment"/>
-      <description value="Risk assessment for space missions."/>
+      <description value="STUB - Risk assessment for space missions."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1542,10 +1366,21 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/Muscle-Stiffness-and-Space-Health"/>
+        <reference value="ValueSet/MuscleStiffnessAndSpaceHealth"/>
       </reference>
-      <name value="Muscle Stiffness and Space Health ValueSet"/>
-      <description value="This ValueSet includes SNOMED codes related to muscle stiffness and health in the context of spaceflight and Earth-based applications, filtered by a similarity threshold greater than 0.5."/>
+      <name value="Muscle Stiffness"/>
+      <description value="Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/HERAAnalogMissionApplication"/>
+      </reference>
+      <name value="NASA HERA Analog Mission Application"/>
+      <description value="Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1973,8 +1808,8 @@
       <reference>
         <reference value="ValueSet/SleepLossHypoxiaEffect"/>
       </reference>
-      <name value="Sleep Loss and Hypoxia Effects ValueSet"/>
-      <description value="This ValueSet includes SNOMED CT terms matched to concepts related to the physiological and cognitive effects of sleep loss and hypoxia."/>
+      <name value="Sleep Loss and Hypoxia Effects"/>
+      <description value="Concepts related to the physiological and cognitive effects of sleep loss and hypoxia."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1985,7 +1820,51 @@
         <reference value="ValueSet/SleepLossHypoxiaResponses"/>
       </reference>
       <name value="Sleep Loss and Hypoxia Responses"/>
-      <description value="A ValueSet for concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia, including associated medical conditions and factors."/>
+      <description value="Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-cardiovascular-effects"/>
+      </reference>
+      <name value="Space Cardiovascular Effects"/>
+      <description value="Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-cardiovascular-effects-cs"/>
+      </reference>
+      <name value="Space Cardiovascular Effects"/>
+      <description value="CodeSystem for space cardiovascular effects not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-environmental-factors"/>
+      </reference>
+      <name value="Space Environmental Factors"/>
+      <description value="Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-environmental-factors-cs"/>
+      </reference>
+      <name value="Space Environmental Factors"/>
+      <description value="CodeSystem for space environmental factors not found in SNOMED CT"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2007,7 +1886,7 @@
         <reference value="StructureDefinition/SpaceProcedure"/>
       </reference>
       <name value="Space Health Procedure"/>
-      <description value="Health procedures specific to outerspace environment."/>
+      <description value="STUB - Health procedures specific to outerspace environment."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2018,7 +1897,7 @@
         <reference value="StructureDefinition/SpaceInsurance"/>
       </reference>
       <name value="Space insurance"/>
-      <description value="Insurance plan for space travel"/>
+      <description value="STUB - Insurance plan for space travel"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2029,18 +1908,51 @@
         <reference value="StructureDefinition/SpaceInsuranceContract"/>
       </reference>
       <name value="Space Insurance Contract"/>
-      <description value="Specialized contract coverage for space travel"/>
+      <description value="STUB - Specialized contract coverage for space travel"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ExampleScenario/ScenarioSpaceOSHA"/>
+        <reference value="ValueSet/space-monitoring-procedures"/>
       </reference>
-      <name value="Space Occupational Safety"/>
-      <description value="OSHA considerations for astronauts.  Mission health objectives:  osteoperosis and occular degeneration."/>
+      <name value="Space Monitoring Procedures"/>
+      <description value="Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-monitoring-procedures-cs"/>
+      </reference>
+      <name value="Space Monitoring Procedures"/>
+      <description value="CodeSystem for space monitoring procedures not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-neurological-effects"/>
+      </reference>
+      <name value="Space Neurological Effects"/>
+      <description value="Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-neurological-effects-cs"/>
+      </reference>
+      <name value="Space Neurological Effects"/>
+      <description value="CodeSystem for space neurological effects not found in SNOMED CT"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2051,7 +1963,73 @@
         <reference value="StructureDefinition/SpaceOrg"/>
       </reference>
       <name value="Space Organization"/>
-      <description value="Organizations involved with astronautics and space travel."/>
+      <description value="STUB - Organizations involved with astronautics and space travel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-physiological-effects"/>
+      </reference>
+      <name value="Space Physiological Effects"/>
+      <description value="Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-physiological-effects-cs"/>
+      </reference>
+      <name value="Space Physiological Effects"/>
+      <description value="CodeSystem for space physiological effects not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-preventive-health-cs"/>
+      </reference>
+      <name value="Space Preventive Health"/>
+      <description value="CodeSystem for space preventive health concepts not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-psychological-effects"/>
+      </reference>
+      <name value="Space Psychological Effects"/>
+      <description value="Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-psychological-effects-cs"/>
+      </reference>
+      <name value="Space Psychological Effects"/>
+      <description value="CodeSystem for space psychological effects not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-radiation-effects"/>
+      </reference>
+      <name value="Space Radiation Effects"/>
+      <description value="Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2062,18 +2040,18 @@
         <reference value="ValueSet/SpaceRadiationRisksVS"/>
       </reference>
       <name value="Space Radiation Risks ValueSet"/>
-      <description value="A ValueSet containing SNOMED concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data."/>
+      <description value="Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ExampleScenario/ScenarioSpaceTourism"/>
+        <reference value="CodeSystem/space-treatment-procedures-cs"/>
       </reference>
-      <name value="Space Tourism"/>
-      <description value="Commercial space tourism flight, with duration &lt;1 day past Karman line.  Mission health objectives:  integrate passenger hospital records."/>
+      <name value="Space Treatment Procedures"/>
+      <description value="CodeSystem for space treatment procedures not found in SNOMED CT"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2084,18 +2062,40 @@
         <reference value="StructureDefinition/SpaceVehicle"/>
       </reference>
       <name value="Space Vehicle"/>
-      <description value="Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)"/>
+      <description value="STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ExampleScenario"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ExampleScenario/ScenarioSpaceWalk"/>
+        <reference value="ValueSet/space-visual-effects"/>
       </reference>
-      <name value="Space Walk"/>
-      <description value="OSHA considerations for spacewalks.  Mission health objectives:  vital sign monitoring."/>
+      <name value="Space Visual Effects"/>
+      <description value="Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-visual-effects-cs"/>
+      </reference>
+      <name value="Space Visual Effects"/>
+      <description value="CodeSystem for space visual effects not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SpacecraftLifeSupportTelemetry"/>
+      </reference>
+      <name value="Spacecraft Life Support Telemetry"/>
+      <description value="A logical model representing Environmental Control and Life Support Systems (ECLSS) parameters monitored in spacecraft habitat modules."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2105,7 +2105,7 @@
       <reference>
         <reference value="ValueSet/SpaceflightStressFactors"/>
       </reference>
-      <name value="Stress and Physiological Factors in Spaceflight Analog Missions"/>
+      <name value="Stress and Physiological Factors"/>
       <description value="Concepts related to stress, physiological, and psychological factors during spaceflight analog missions."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -2139,7 +2139,7 @@
         <reference value="StructureDefinition/SpaceLocation"/>
       </reference>
       <name value="xGeo Locations"/>
-      <description value="Locations in outerspace, past the Karman line, such as a space ship or space habitat."/>
+      <description value="STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -2171,6 +2171,54 @@
         </extension>
         <nameUrl value="references.html"/>
         <title value="References"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="eclss.html"/>
+        </extension>
+        <nameUrl value="eclss.html"/>
+        <title value="Environmental Control and Life Support Systems (ECLSS)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="biomes.html"/>
+        </extension>
+        <nameUrl value="biomes.html"/>
+        <title value="Biospheres"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="flight-readiness-pilots.html"/>
+        </extension>
+        <nameUrl value="flight-readiness-pilots.html"/>
+        <title value="EHR Use for Pilot Certification"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="screening-gimbal.html"/>
+        </extension>
+        <nameUrl value="screening-gimbal.html"/>
+        <title value="Gimbal Training"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="screening-analog.html"/>
+        </extension>
+        <nameUrl value="screening-analog.html"/>
+        <title value="Analog Mission Training"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="screening-astronaut.html"/>
+        </extension>
+        <nameUrl value="screening-astronaut.html"/>
+        <title value="Astronaut Training"/>
         <generation value="markdown"/>
       </page>
     </page>

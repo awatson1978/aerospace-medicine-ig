@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-treatment-procedures-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-treatment-procedures-cs</b></p><a name=\"space-treatment-procedures-cs\"> </a><a name=\"hcspace-treatment-procedures-cs\"> </a><a name=\"space-treatment-procedures-cs-en-US\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">in-flight-medical-care<a name=\"space-treatment-procedures-cs-in-flight-medical-care\"> </a></td><td>In-flight Medical Care</td><td>Medical care provided during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">space-surgery<a name=\"space-treatment-procedures-cs-space-surgery\"> </a></td><td>Space Surgery</td><td>Surgical procedures adapted for the microgravity environment</td></tr><tr><td style=\"white-space:nowrap\">space-anesthesia<a name=\"space-treatment-procedures-cs-space-anesthesia\"> </a></td><td>Space Anesthesia</td><td>Administration of anesthesia in the microgravity environment</td></tr><tr><td style=\"white-space:nowrap\">fluid-resuscitation-microgravity<a name=\"space-treatment-procedures-cs-fluid-resuscitation-microgravity\"> </a></td><td>Fluid Resuscitation in Microgravity</td><td>Administration of intravenous fluids in microgravity conditions</td></tr><tr><td style=\"white-space:nowrap\">countermeasure-exercise<a name=\"space-treatment-procedures-cs-countermeasure-exercise\"> </a></td><td>Countermeasure Exercise</td><td>Prescribed exercise to prevent physiological deconditioning during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">artificial-gravity-therapy<a name=\"space-treatment-procedures-cs-artificial-gravity-therapy\"> </a></td><td>Artificial Gravity Therapy</td><td>Use of artificial gravity to prevent physiological deconditioning</td></tr><tr><td style=\"white-space:nowrap\">pharmaceutical-stability-space<a name=\"space-treatment-procedures-cs-pharmaceutical-stability-space\"> </a></td><td>Pharmaceutical Stability in Space</td><td>Assessment and maintenance of medication stability in the space environment</td></tr><tr><td style=\"white-space:nowrap\">radiation-protection-procedures<a name=\"space-treatment-procedures-cs-radiation-protection-procedures\"> </a></td><td>Radiation Protection Procedures</td><td>Methods to protect astronauts from space radiation</td></tr><tr><td style=\"white-space:nowrap\">LBNP-therapy<a name=\"space-treatment-procedures-cs-LBNP-therapy\"> </a></td><td>Lower Body Negative Pressure Therapy</td><td>Use of lower body negative pressure to prevent cardiovascular deconditioning</td></tr><tr><td style=\"white-space:nowrap\">space-rehabilitation<a name=\"space-treatment-procedures-cs-space-rehabilitation\"> </a></td><td>Space Rehabilitation</td><td>Rehabilitation techniques used during spaceflight to prevent or treat physiological deconditioning</td></tr><tr><td style=\"white-space:nowrap\">EVA-medical-contingency<a name=\"space-treatment-procedures-cs-EVA-medical-contingency\"> </a></td><td>EVA Medical Contingency Management</td><td>Management of medical emergencies during extravehicular activities</td></tr><tr><td style=\"white-space:nowrap\">hyperbaric-oxygen-therapy-space<a name=\"space-treatment-procedures-cs-hyperbaric-oxygen-therapy-space\"> </a></td><td>Hyperbaric Oxygen Therapy in Space</td><td>Administration of hyperbaric oxygen therapy in the space environment</td></tr><tr><td style=\"white-space:nowrap\">microgravity-trauma-management<a name=\"space-treatment-procedures-cs-microgravity-trauma-management\"> </a></td><td>Microgravity Trauma Management</td><td>Management of traumatic injuries in the microgravity environment</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.0"] ; # 
+  fhir:name [ fhir:v "SpaceTreatmentProceduresCodeSystem"] ; # 
+  fhir:title [ fhir:v "Space Treatment Procedures"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-05-21T00:44:32-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for space treatment procedures not found in SNOMED CT"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "in-flight-medical-care" ] ;
+     fhir:display [ fhir:v "In-flight Medical Care" ] ;
+     fhir:definition [ fhir:v "Medical care provided during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "space-surgery" ] ;
+     fhir:display [ fhir:v "Space Surgery" ] ;
+     fhir:definition [ fhir:v "Surgical procedures adapted for the microgravity environment" ]
+  ] [
+     fhir:code [ fhir:v "space-anesthesia" ] ;
+     fhir:display [ fhir:v "Space Anesthesia" ] ;
+     fhir:definition [ fhir:v "Administration of anesthesia in the microgravity environment" ]
+  ] [
+     fhir:code [ fhir:v "fluid-resuscitation-microgravity" ] ;
+     fhir:display [ fhir:v "Fluid Resuscitation in Microgravity" ] ;
+     fhir:definition [ fhir:v "Administration of intravenous fluids in microgravity conditions" ]
+  ] [
+     fhir:code [ fhir:v "countermeasure-exercise" ] ;
+     fhir:display [ fhir:v "Countermeasure Exercise" ] ;
+     fhir:definition [ fhir:v "Prescribed exercise to prevent physiological deconditioning during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "artificial-gravity-therapy" ] ;
+     fhir:display [ fhir:v "Artificial Gravity Therapy" ] ;
+     fhir:definition [ fhir:v "Use of artificial gravity to prevent physiological deconditioning" ]
+  ] [
+     fhir:code [ fhir:v "pharmaceutical-stability-space" ] ;
+     fhir:display [ fhir:v "Pharmaceutical Stability in Space" ] ;
+     fhir:definition [ fhir:v "Assessment and maintenance of medication stability in the space environment" ]
+  ] [
+     fhir:code [ fhir:v "radiation-protection-procedures" ] ;
+     fhir:display [ fhir:v "Radiation Protection Procedures" ] ;
+     fhir:definition [ fhir:v "Methods to protect astronauts from space radiation" ]
+  ] [
+     fhir:code [ fhir:v "LBNP-therapy" ] ;
+     fhir:display [ fhir:v "Lower Body Negative Pressure Therapy" ] ;
+     fhir:definition [ fhir:v "Use of lower body negative pressure to prevent cardiovascular deconditioning" ]
+  ] [
+     fhir:code [ fhir:v "space-rehabilitation" ] ;
+     fhir:display [ fhir:v "Space Rehabilitation" ] ;
+     fhir:definition [ fhir:v "Rehabilitation techniques used during spaceflight to prevent or treat physiological deconditioning" ]
+  ] [
+     fhir:code [ fhir:v "EVA-medical-contingency" ] ;
+     fhir:display [ fhir:v "EVA Medical Contingency Management" ] ;
+     fhir:definition [ fhir:v "Management of medical emergencies during extravehicular activities" ]
+  ] [
+     fhir:code [ fhir:v "hyperbaric-oxygen-therapy-space" ] ;
+     fhir:display [ fhir:v "Hyperbaric Oxygen Therapy in Space" ] ;
+     fhir:definition [ fhir:v "Administration of hyperbaric oxygen therapy in the space environment" ]
+  ] [
+     fhir:code [ fhir:v "microgravity-trauma-management" ] ;
+     fhir:display [ fhir:v "Microgravity Trauma Management" ] ;
+     fhir:definition [ fhir:v "Management of traumatic injuries in the microgravity environment" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

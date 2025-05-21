@@ -1,7 +1,7 @@
 Profile: SpaceOrg
 Parent: Organization
 Title: "Space Organization"
-Description: "Organizations involved with astronautics and space travel."
+Description: "STUB - Organizations involved with astronautics and space travel."
 
 Instance: SpaceForce
 InstanceOf: SpaceOrg

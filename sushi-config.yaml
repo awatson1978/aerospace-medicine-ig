@@ -9,7 +9,7 @@ name: Spaceflight Health Simulations - Reference Documentation
 # title: Aerospace Medicine
 description: Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.
 status: draft # draft | active | retired | unknown
-version: 0.3.0
+version: 0.4.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 dependencies:
   hl7.fhir.us.core: 4.0.0
@@ -34,16 +34,36 @@ pages:
   #   title: Synthea
   references.md:
     title: References
+  eclss.md:
+    title: Environmental Control and Life Support Systems (ECLSS)
+  biomes.md:
+    title: Biospheres
+  flight-readiness-pilots.md:
+    title: EHR Use for Pilot Certification
+  screening-gimbal.md:
+    title: Gimbal Training
+  screening-analog.md:
+    title: Analog Mission Training
+  screening-astronaut.md:
+    title: Astronaut Training
   # downloads.md:
   #   title: Downloads
 
 menu:
   Home: index.html
-  References: references.html
+  Environmental Monitoring: 
+    Life Support Systems: eclss.html
+    Biospheres: biomes.html
+  Flight Readiness:
+    FAA Pilot Certification (Form 8500-8): flight-readiness-pilots.html
+    Astronaut Training: screening-astronaut.html
+    Gimbal Training: screening-gimbal.html
+    Analog Missions: screening-analog.html
   # Scenarios: scenarios.html
   # Synthea: synthea.html
   # Health Registry: registry.html
   # Downloads: downloads.html
+  References: references.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

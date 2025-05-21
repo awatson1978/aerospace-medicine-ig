@@ -1,7 +1,7 @@
 Profile: SpaceProcedure
 Parent: Procedure
 Title: "Space Health Procedure"
-Description: "Health procedures specific to outerspace environment."
+Description: "STUB - Health procedures specific to outerspace environment."
 
 
 Instance: ProcedureDecompression
