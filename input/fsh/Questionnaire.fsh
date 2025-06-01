@@ -881,7 +881,7 @@ Usage: #definition
 Alias: SCT = http://snomed.info/sct
 Alias: LOINC = http://loinc.org
 
-Instance: GShockEligibilityQuestionnaire
+Instance: GShockEligibility
 InstanceOf: Questionnaire
 Title: "G-SHOCK Centrifugal Trainer Eligibility Questionnaire"
 Description: "Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training"
