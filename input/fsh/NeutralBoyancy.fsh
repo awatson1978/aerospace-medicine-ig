@@ -258,13 +258,6 @@ Title: "Hyperbaric Treatment Table"
 Description: "Specific treatment table used (e.g., USN Table 6)"
 * value[x] only string
 
-Extension: MaximumPressure
-Id: maximum-pressure
-Title: "Maximum Treatment Pressure"
-Description: "Maximum pressure reached during treatment"
-* value[x] only Quantity
-* valueQuantity.unit = "atm"
-
 Extension: TreatmentDuration
 Id: treatment-duration
 Title: "Treatment Duration"

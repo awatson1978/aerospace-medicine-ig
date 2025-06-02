@@ -566,7 +566,7 @@ Description: "German Aerospace Center medical research institute"
 * address.city = "Cologne"
 * address.country = "DE"
 
-Instance: JAXA_SpaceBiomedicalResearch
+Instance: JAXASpaceBiomedicalResearch
 InstanceOf: Location
 Title: "JAXA Space Biomedical Research Office"
 Description: "Japan Aerospace Exploration Agency medical research"
@@ -575,7 +575,7 @@ Description: "Japan Aerospace Exploration Agency medical research"
 * address.city = "Tsukuba"
 * address.country = "JP"
 
-Instance: CSA_LifeSciencesResearch
+Instance: CSALifeSciencesResearch
 InstanceOf: Location
 Title: "CSA Life Sciences Research"
 Description: "Canadian Space Agency life sciences research division"

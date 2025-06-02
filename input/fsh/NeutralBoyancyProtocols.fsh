@@ -61,10 +61,13 @@ Extension: SafetyStopCompliance
 Id: safety-stop-compliance
 Title: "Safety Stop Compliance"
 Description: "Compliance with required safety stops during ascent"
-* value[x] only BackboneElement
-* valueBackboneElement.depth only Quantity
-* valueBackboneElement.duration only Duration
-* valueBackboneElement.completed only boolean
+* extension contains
+    depth 0..1 MS and
+    duration 0..1 MS and
+    completed 0..1 MS
+* extension[depth].value[x] only Quantity
+* extension[duration].value[x] only Duration  
+* extension[completed].value[x] only boolean
 
 Extension: EnvironmentalFactors
 Id: environmental-factors
@@ -125,7 +128,7 @@ Profile: UnderwaterCommunicationSystem
 Parent: SpaceEquipment
 Id: underwater-communication-system
 Title: "Underwater Communication System"
-Description: "Communication equipment and systems for underwater training operations"
+Description: "Communication equipment for underwater training operations"
 
 * type MS
 * type from UnderwaterCommunicationSystems (extensible)
@@ -142,29 +145,24 @@ Description: "Communication equipment and systems for underwater training operat
     waterproofRating 0..1 MS and
     operatingDepth 0..1 MS
 
-* property[communicationRange] ^short = "Effective communication range"
+// Define property types without trying to constrain value[x] subtypes
 * property[communicationRange].type = $underwater-comm#comm-range
 * property[communicationRange].valueQuantity.system = $ucum
 * property[communicationRange].valueQuantity.code = #m
 
-* property[signalQuality] ^short = "Signal quality rating"
 * property[signalQuality].type = $underwater-comm#signal-quality
-* property[signalQuality].valueString ^short = "Signal quality description"
+// Remove the problematic valueString constraint
 
-* property[encryptionCapability] ^short = "Encryption and security features"
 * property[encryptionCapability].type = $underwater-comm#encryption
-* property[encryptionCapability].valueBoolean ^short = "Has encryption capability"
+// Remove the problematic valueBoolean constraint
 
-* property[batteryLife] ^short = "Battery operating time"
 * property[batteryLife].type = $underwater-comm#battery-life
 * property[batteryLife].valueQuantity.system = $ucum
 * property[batteryLife].valueQuantity.code = #h
 
-* property[waterproofRating] ^short = "Waterproof rating (IP rating)"
 * property[waterproofRating].type = $underwater-comm#waterproof-rating
-* property[waterproofRating].valueString ^short = "IP rating (e.g., IP68)"
+// Remove the problematic valueString constraint
 
-* property[operatingDepth] ^short = "Maximum operating depth"
 * property[operatingDepth].type = $underwater-comm#operating-depth
 * property[operatingDepth].valueQuantity.system = $ucum
 * property[operatingDepth].valueQuantity.code = #m
@@ -267,11 +265,15 @@ Extension: EnvironmentalConditions
 Id: environmental-conditions
 Title: "Environmental Conditions"
 Description: "Environmental conditions during training session"
-* value[x] only BackboneElement
-* valueBackboneElement.waterTemperature only Quantity
-* valueBackboneElement.visibility only Quantity
-* valueBackboneElement.currentStrength only Quantity
-* valueBackboneElement.poolConfiguration only string
+* extension contains
+    waterTemperature 0..1 and
+    visibility 0..1 and
+    currentStrength 0..1 and
+    poolConfiguration 0..1
+* extension[waterTemperature].value[x] only Quantity
+* extension[visibility].value[x] only Quantity
+* extension[currentStrength].value[x] only Quantity
+* extension[poolConfiguration].value[x] only string
 
 Profile: AdvancedDiveProfile
 Parent: Observation
