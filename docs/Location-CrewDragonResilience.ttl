@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Location/CrewDragonResilience> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CrewDragonResilience"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"^^xsd:anyURI ;
+       fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location CrewDragonResilience</b></p><a name=\"CrewDragonResilience\"> </a><a name=\"hcCrewDragonResilience\"> </a><a name=\"CrewDragonResilience-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SpaceVehicle.html\">Space Vehicle</a></p></div><p><b>name</b>: Crew Dragon Resilience</p><p><b>description</b>: SpaceX commercial crew vehicle for long-duration missions</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "Crew Dragon Resilience"] ; # 
+  fhir:description [ fhir:v "SpaceX commercial crew vehicle for long-duration missions"] . # 
+
+# -------------------------------------------------------------------------------------
+

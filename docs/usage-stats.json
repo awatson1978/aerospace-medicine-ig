@@ -1,8 +1,464 @@
 {
   "package": "mitre.fhir.spacehealth",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness",
+      "title": "Cardiovascular Fitness Assessment",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/chamber-configuration",
+      "title": "Hyperbaric Chamber Configuration",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/chamber-type",
+      "title": "Hyperbaric Chamber Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/communication-systems",
+      "title": "Communication Systems Used",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/complication-monitoring",
+      "title": "Complication Monitoring",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/crew-coordination",
+      "title": "Crew Coordination Assessment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm",
+      "title": "Decompression Algorithm Used",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context",
+      "title": "Mission Context for Diagnostic Reports",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/diving-contraindications",
+      "title": "Diving Medical Contraindications",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures",
+      "title": "Emergency Procedures",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/emergency-response",
+      "title": "Emergency Response Assessment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/emergency-type",
+      "title": "Type of Emergency",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/environmental-conditions",
+      "title": "Environmental Conditions",
+      "types": [
+        "Quantity",
+        "Quantity",
+        "Quantity",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors",
+      "title": "Environmental Factors",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-capabilities",
+      "title": "Hyperbaric Chamber Capabilities",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned",
+      "title": "Lessons Learned",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/location-capabilities",
+      "title": "Location Capabilities",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy",
+      "title": "Location Hierarchy",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth",
+      "title": "Maximum Training Depth",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached",
+      "title": "Maximum Depth Reached",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure",
+      "title": "Maximum Operating Pressure",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention",
+      "title": "Medical Intervention",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-context",
+      "title": "Mission Context",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/operational-status",
+      "title": "Operational Status",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability",
+      "title": "Oxygen Delivery Capability",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration",
+      "title": "Oxygen Concentration",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring",
+      "title": "Patient Monitoring",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/pulmonary-function",
+      "title": "Pulmonary Function Assessment",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/radiation-countermeasures",
+      "title": "Radiation Countermeasures",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/radiation-type",
+      "title": "Space Radiation Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance",
+      "title": "Regulatory Compliance",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures",
+      "title": "Rescue Procedures Used",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/response-time",
+      "title": "Emergency Response Time",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/safety-protocols",
+      "title": "Safety Protocols",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/safety-stop-compliance",
+      "title": "Safety Stop Compliance",
+      "types": [
+        "Quantity",
+        "Duration",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/session-duration",
+      "title": "Training Session Duration",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass",
+      "title": "Shielding Mass",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/suit-configuration",
+      "title": "Space Suit Configuration",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/task-completion-metrics",
+      "title": "Task Completion Metrics",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment",
+      "title": "Tool Usage Assessment",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time",
+      "title": "Total Decompression Time",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/training-objectives",
+      "title": "Training Session Objectives",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/treatment-duration",
+      "title": "Treatment Duration",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/treatment-table",
+      "title": "Hyperbaric Treatment Table",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/vestibular-assessment",
+      "title": "Vestibular Function Assessment",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
     "Observation": [
       {
@@ -12,14 +468,26 @@
     ],
     "Device": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment",
-        "title": "Commercial Space Equipment"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/underwater-communication-system",
+        "title": "Underwater Communication System"
       }
     ],
     "Patient": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut",
-        "title": "Astronaut"
+        "title": "Astronaut Patient Profile"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition",
+        "title": "Space Health Condition"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response",
+        "title": "Underwater Emergency Response"
       }
     ],
     "Bundle": [
@@ -28,10 +496,10 @@
         "title": "Gimbal Screening"
       }
     ],
-    "Condition": [
+    "Location": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition",
-        "title": "Space Health Condition"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber",
+        "title": "Hyperbaric Chamber"
       }
     ],
     "InsurancePlan": [
@@ -46,28 +514,22 @@
         "title": "Space Insurance Contract"
       }
     ],
-    "Location": [
-      {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle",
-        "title": "Space Vehicle"
-      }
-    ],
     "Organization": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceOrg",
         "title": "Space Organization"
       }
     ],
-    "Procedure": [
-      {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure",
-        "title": "Space Health Procedure"
-      }
-    ],
     "RiskAssessment": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment",
         "title": "Mission Risk Assessment"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary",
+        "title": "Space Radiation Exposure Summary (Fixed)"
       }
     ]
   },
@@ -159,6 +621,133 @@
     ],
     "http://hl7.org/fhir/us/vitals/StructureDefinition/bp-cuff-size-ext": [
       "Device"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/chamber-configuration": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/chamber-type": [
+      "Location"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/communication-systems": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/complication-monitoring": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/crew-coordination": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context": [
+      "DiagnosticReport"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/diving-contraindications": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/emergency-response": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/emergency-type": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/environmental-conditions": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-capabilities": [
+      "Location"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure": [
+      "Location",
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/mission-context": [
+      "Observation"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability": [
+      "Location"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/pulmonary-function": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/radiation-countermeasures": [
+      "Observation"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/radiation-type": [
+      "Observation"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/response-time": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/safety-protocols": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/safety-stop-compliance": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/session-duration": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass": [
+      "Observation"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/suit-configuration": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/task-completion-metrics": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/training-objectives": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/treatment-duration": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/treatment-table": [
+      "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/vestibular-assessment": [
+      "Procedure"
     ]
   }
 }

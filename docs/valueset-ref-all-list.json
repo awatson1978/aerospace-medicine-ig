@@ -12,7 +12,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-Astronaut.html" : "Astronaut"
+      "StructureDefinition-Astronaut.html" : "Astronaut Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/asset-availability",
@@ -40,16 +40,32 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
-      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-height.html" : "Body Height",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
       "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation"
+      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response",
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-body-weight.html" : "Body Weight",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -66,6 +82,20 @@
       "StructureDefinition-GimbalScreening.html" : "Gimbal Screening"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-summary.html" : "Space Radiation Exposure Summary (Fixed)"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
       "version" : "4.0.1",
       "status" : "draft",
@@ -77,7 +107,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.162"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -91,7 +122,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -105,8 +137,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
       "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -120,7 +161,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.168"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -134,7 +176,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.170"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -148,7 +191,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.171"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -162,7 +206,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.166"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-content-class",
@@ -568,20 +613,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -595,8 +647,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -610,7 +664,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.425"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-kind",
@@ -624,12 +686,20 @@
       "sources" : ["2.16.840.1.113883.4.642.3.208"],
       "uses" : {
       },
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
       "StructureDefinition-body-weight.html" : "Body Weight",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
       "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
@@ -643,7 +713,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1083"],
       "uses" : {
       },
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)",
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System",
       "StructureDefinition-bp-device.html" : "Blood Pressure Device",
+      "StructureDefinition-DivingEquipment.html" : "Diving Equipment",
       "StructureDefinition-SpaceEquipment.html" : "Commercial Space Equipment"
     },
     {
@@ -658,7 +731,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.209"],
       "uses" : {
       },
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)",
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System",
       "StructureDefinition-bp-device.html" : "Blood Pressure Device",
+      "StructureDefinition-DivingEquipment.html" : "Diving Equipment",
       "StructureDefinition-SpaceEquipment.html" : "Commercial Space Equipment"
     },
     {
@@ -673,7 +749,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1081"],
       "uses" : {
       },
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)",
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System",
       "StructureDefinition-bp-device.html" : "Blood Pressure Device",
+      "StructureDefinition-DivingEquipment.html" : "Diving Equipment",
       "StructureDefinition-SpaceEquipment.html" : "Commercial Space Equipment"
     },
     {
@@ -688,7 +767,36 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1376"],
       "uses" : {
       },
+      "StructureDefinition-DivingEquipment.html" : "Diving Equipment",
       "StructureDefinition-SpaceEquipment.html" : "Commercial Space Equipment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-summary.html" : "Space Radiation Exposure Summary (Fixed)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-summary.html" : "Space Radiation Exposure Summary (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/event-status",
@@ -702,7 +810,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.109"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -758,32 +874,54 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
-      "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
-      "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-GimbalScreening.html" : "Gimbal Screening",
-      "StructureDefinition-SpaceInsurance.html" : "Space insurance",
-      "StructureDefinition-bp-device.html" : "Blood Pressure Device",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
-      "StructureDefinition-SpaceRiskAssesment.html" : "Mission Risk Assessment",
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
-      "StructureDefinition-SpaceInsuranceContract.html" : "Space Insurance Contract",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
-      "StructureDefinition-Astronaut.html" : "Astronaut",
-      "StructureDefinition-SpaceOrg.html" : "Space Organization",
+      "StructureDefinition-height.html" : "Body Height",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-Astronaut.html" : "Astronaut Patient Profile",
+      "StructureDefinition-GimbalScreening.html" : "Gimbal Screening",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
+      "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
       "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
+      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-SpaceInsurance.html" : "Space insurance",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response",
       "StructureDefinition-SpaceEquipment.html" : "Commercial Space Equipment",
+      "StructureDefinition-space-radiation-summary.html" : "Space Radiation Exposure Summary (Fixed)",
+      "StructureDefinition-SpaceRiskAssesment.html" : "Mission Risk Assessment",
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
       "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-body-weight.html" : "Body Weight",
+      "StructureDefinition-SpaceInsuranceContract.html" : "Space Insurance Contract",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-SpaceOrg.html" : "Space Organization",
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
       "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel"
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System",
+      "StructureDefinition-bp-device.html" : "Blood Pressure Device",
+      "StructureDefinition-DivingEquipment.html" : "Diving Equipment",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -797,7 +935,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-Astronaut.html" : "Astronaut"
+      "StructureDefinition-Astronaut.html" : "Astronaut Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-mode",
@@ -811,8 +949,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.330"],
       "uses" : {
       },
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -828,8 +968,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-status",
@@ -843,8 +985,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.332"],
       "uses" : {
       },
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -858,7 +1002,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.169"],
       "uses" : {
       },
-      "StructureDefinition-SpaceCondition.html" : "Space Health Condition"
+      "StructureDefinition-SpaceCondition.html" : "Space Health Condition",
+      "StructureDefinition-DecompressionSickness.html" : "Decompression Sickness"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -875,7 +1020,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-Astronaut.html" : "Astronaut"
+      "StructureDefinition-Astronaut.html" : "Astronaut Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -889,20 +1034,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -917,7 +1069,14 @@
       "uses" : {
       },
       "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation"
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -933,20 +1092,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -960,14 +1126,21 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
-      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
+      "StructureDefinition-body-weight.html" : "Body Weight",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
+      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -981,21 +1154,28 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
+      "StructureDefinition-SpaceRiskAssesment.html" : "Mission Risk Assessment",
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
-      "StructureDefinition-SpaceRiskAssesment.html" : "Mission Risk Assessment",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -1009,16 +1189,16 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
       "uses" : {
       },
+      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
-      "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
       "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
-      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-body-weight.html" : "Body Weight",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
       "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
     },
@@ -1048,7 +1228,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-Astronaut.html" : "Astronaut"
+      "StructureDefinition-Astronaut.html" : "Astronaut Patient Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/performer-role",
@@ -1062,7 +1242,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.433"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
@@ -1076,7 +1264,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.430"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
@@ -1090,7 +1286,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.427"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
@@ -1104,7 +1304,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.429"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
@@ -1118,7 +1326,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.431"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
@@ -1132,7 +1348,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.428"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
@@ -1146,7 +1370,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.432"],
       "uses" : {
       },
-      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure"
+      "StructureDefinition-SpaceProcedure.html" : "Space Health Procedure",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-UnderwaterEVASimulation.html" : "Underwater EVA Simulation",
+      "StructureDefinition-HyperbaricTreatment.html" : "Hyperbaric Treatment",
+      "StructureDefinition-NeutralBuoyancySession.html" : "Neutral Buoyancy Training Session",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-DiveMedicalClearance.html" : "Dive Medical Clearance",
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session",
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/provenance-agent-role",
@@ -1204,17 +1436,29 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
+      "StructureDefinition-oxygen-concentration.html" : "Oxygen Concentration",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-maximum-pressure.html" : "Maximum Operating Pressure",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-maximum-depth.html" : "Maximum Training Depth",
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-maximum-depth-reached.html" : "Maximum Depth Reached",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)",
+      "StructureDefinition-shielding-mass.html" : "Shielding Mass",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)",
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -1231,20 +1475,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1260,20 +1511,41 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
+      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-BarotraumaAssessment.html" : "Barotrauma Assessment",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
-      "StructureDefinition-AstrodynamicsObservation.html" : "Astrodynamics Observation",
+      "StructureDefinition-advanced-dive-profile.html" : "Advanced Dive Profile",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
-      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
+      "StructureDefinition-communication-session-assessment.html" : "Communication Session Assessment",
+      "StructureDefinition-EnvironmentalMonitoring.html" : "Environmental Monitoring",
       "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-DiveProfile.html" : "Dive Profile",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCDiagnosticReportCodes",
+      "title" : "LOINC Diagnostic Report Codes",
+      "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.233"],
+      "sources" : ["2.16.840.1.113883.4.642.3.233"],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-summary.html" : "Space Radiation Exposure Summary (Fixed)"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/risk-probability",
@@ -1315,16 +1587,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.955"],
       "uses" : {
       },
+      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-body-temperature.html" : "Body Temperature",
+      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
+      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
+      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
       "StructureDefinition-heart-rate.html" : "Heart Rate",
       "StructureDefinition-height.html" : "Body Height",
-      "StructureDefinition-twenty-four-hour-blood-pressure.html" : "Twenty Four Hour Blood Pressure",
-      "StructureDefinition-body-weight.html" : "Body Weight",
-      "StructureDefinition-body-mass-index.html" : "Body Mass Index",
-      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
-      "StructureDefinition-oxygen-saturation-arterial-blood.html" : "Oxygen Saturation in Arterial blood, method not specified",
       "StructureDefinition-respiratory-rate.html" : "Respiratory Rate",
-      "StructureDefinition-body-temperature.html" : "Body Temperature",
-      "StructureDefinition-vital-signs-panel.html" : "Vital Signs Panel",
+      "StructureDefinition-blood-pressure-panel.html" : "Blood Pressure Panel",
+      "StructureDefinition-body-weight.html" : "Body Weight",
       "StructureDefinition-average-blood-pressure.html" : "Average Blood Pressure",
       "StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry"
     },
@@ -1340,8 +1612,37 @@
       "sources" : ["2.16.840.1.113883.4.642.3.211"],
       "uses" : {
       },
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)",
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System",
       "StructureDefinition-bp-device.html" : "Blood Pressure Device",
+      "StructureDefinition-DivingEquipment.html" : "Diving Equipment",
       "StructureDefinition-SpaceEquipment.html" : "Commercial Space Equipment"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "LocationCapabilitiesVS",
+      "title" : "Location Capabilities Value Set",
+      "description" : "Capabilities and services available at aerospace medicine locations",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "OperationalStatusVS",
+      "title" : "Operational Status Value Set",
+      "description" : "Operational status codes for facilities and vehicles",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-operational-status.html" : "Operational Status"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
@@ -1355,8 +1656,9 @@
       "sources" : ["2.16.840.1.113883.21.51"],
       "uses" : {
       },
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations"
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActConsentDirective",
@@ -1398,12 +1700,14 @@
       "sources" : ["2.16.840.1.113883.1.11.17660"],
       "uses" : {
       },
-      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle",
-      "StructureDefinition-SpaceLocation.html" : "xGeo Locations"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-NeutralBuoyancyFacility.html" : "Neutral Buoyancy Facility",
+      "StructureDefinition-SpaceLocation.html" : "xGeo Locations",
+      "StructureDefinition-SpaceVehicle.html" : "Space Vehicle"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "AircraftFumeExposureValueSet",
       "title" : "Aircraft Fume Exposure",
@@ -1412,7 +1716,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "AstronautBackPain",
       "title" : "Back Pain and Space Travel",
@@ -1421,7 +1725,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "GimbalContraindicatedConditions",
       "title" : "Gimbal Contraindications",
@@ -1430,7 +1734,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/LunarDustToxicityValueSet",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "LunarDustToxicityValueSet",
       "title" : "Lunar Dust Toxicity",
@@ -1439,7 +1743,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "MuscleStiffnessAndSpaceHealth",
       "title" : "Muscle Stiffness",
@@ -1448,7 +1752,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SleepLossHypoxiaEffect",
       "title" : "Sleep Loss and Hypoxia Effects",
@@ -1457,7 +1761,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SleepLossHypoxiaResponses",
       "title" : "Sleep Loss and Hypoxia Responses",
@@ -1466,7 +1770,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceAdaptationBoneHealth",
       "title" : "Adaptations of Bone Health",
@@ -1475,7 +1779,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceRadiationRisksVS",
       "title" : "Space Radiation Risks ValueSet",
@@ -1484,7 +1788,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceTravelBrainChanges",
       "title" : "Brain and Neurologic Changes",
@@ -1493,7 +1797,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceflightStressFactors",
       "title" : "Stress and Physiological Factors",
@@ -1501,8 +1805,184 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DecompressionProcedures",
+      "title" : "Decompression Procedures",
+      "description" : "Standardized decompression procedures and protocols",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-decompression-algorithm.html" : "Decompression Algorithm Used",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-environmental-factors.html" : "Environmental Factors"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DivingContraindicatedConditions",
+      "title" : "Diving Medical Contraindications",
+      "description" : "Medical conditions that contraindicate diving activities",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DivingMedicalExaminations",
+      "title" : "Diving Medical Examinations",
+      "description" : "Types of medical examinations for diving fitness",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/dosimeter-type-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DosimeterTypeVS",
+      "title" : "Dosimeter Types",
+      "description" : "Types of radiation dosimeters",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "HyperbaricCapabilitiesVS",
+      "title" : "Hyperbaric Chamber Capabilities",
+      "description" : "Capabilities available in hyperbaric chambers",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hyperbaric-capabilities.html" : "Hyperbaric Chamber Capabilities"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "HyperbaricChamberTypeVS",
+      "title" : "Hyperbaric Chamber Types",
+      "description" : "Types of hyperbaric chambers",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-chamber-type.html" : "Hyperbaric Chamber Type"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "NeutralBuoyancyTrainingActivities",
+      "title" : "Neutral Buoyancy Training Activities",
+      "description" : "Types of training activities conducted in neutral buoyancy environments",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "OrganDoseCodesVSComplete",
+      "title" : "Complete Organ-Specific Dose Codes",
+      "description" : "Comprehensive codes for organ-specific radiation dose measurements",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RadiationCountermeasuresVS",
+      "title" : "Radiation Countermeasures",
+      "description" : "Protective measures against radiation",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiation-countermeasures.html" : "Radiation Countermeasures"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "RadiationCountermeasuresVSComplete",
+      "title" : "Complete Radiation Countermeasures",
+      "description" : "Comprehensive list of protective measures against space radiation",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "RadiationDetectorTypeVSComplete",
+      "title" : "Complete Radiation Detector Types",
+      "description" : "Comprehensive list of radiation detection devices used in space",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RadiationDoseUnitsVS",
+      "title" : "Radiation Dose Units",
+      "description" : "Units for radiation dose measurements",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/regulatory-standards",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RegulatoryStandards",
+      "title" : "Regulatory Standards for Diving and Space Medicine",
+      "description" : "Regulatory standards and compliance requirements",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
+      "StructureDefinition-safety-protocols.html" : "Safety Protocols"
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceCardiovascularEffectsValueSet",
       "title" : "Space Cardiovascular Effects",
@@ -1511,7 +1991,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceEnvironmentalFactorsValueSet",
       "title" : "Space Environmental Factors",
@@ -1520,7 +2000,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-monitoring-procedures",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceMonitoringProceduresValueSet",
       "title" : "Space Monitoring Procedures",
@@ -1529,7 +2009,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceNeurologicalEffectsValueSet",
       "title" : "Space Neurological Effects",
@@ -1538,7 +2018,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-physiological-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpacePhysiologicalEffectsValueSet",
       "title" : "Space Physiological Effects",
@@ -1547,7 +2027,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpacePsychologicalEffectsValueSet",
       "title" : "Space Psychological Effects",
@@ -1555,8 +2035,24 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "SpaceRadiationDoseCodesVSComplete",
+      "title" : "Complete Space Radiation Dose Measurement Codes",
+      "description" : "Comprehensive codes for radiation dose measurements in space environments",
+      "systems" : [
+        "http://loinc.org",
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-cumulative-radiation-dose.html" : "Cumulative Radiation Dose (Fixed)",
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceRadiationEffectsValueSet",
       "title" : "Space Radiation Effects",
@@ -1564,13 +2060,65 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "SpaceRadiationTypeVS",
+      "title" : "Space Radiation Types",
+      "description" : "Types of radiation encountered in space",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiation-type.html" : "Space Radiation Type"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "SpaceRadiationTypeVSComplete",
+      "title" : "Complete Space Radiation Types",
+      "description" : "Comprehensive list of ionizing radiation types encountered in space",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-visual-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceVisualEffectsValueSet",
       "title" : "Space Visual Effects",
       "description" : "Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-communication-systems",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "UnderwaterCommunicationSystems",
+      "title" : "Underwater Communication Systems",
+      "description" : "Communication systems used in underwater training operations",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "UnderwaterTrainingProcedures",
+      "title" : "Underwater Training Procedures",
+      "description" : "Procedures and activities conducted during underwater training",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     }
   ]
 }

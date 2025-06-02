@@ -1,0 +1,122 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "regulatory-compliance-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem regulatory-compliance-cs</b></p><a name=\"regulatory-compliance-cs\"> </a><a name=\"hcregulatory-compliance-cs\"> </a><a name=\"regulatory-compliance-cs-en-US\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">noaa-diving-manual<a name=\"regulatory-compliance-cs-noaa-diving-manual\"> </a></td><td>NOAA Diving Manual</td><td>NOAA Diving Manual standards compliance</td></tr><tr><td style=\"white-space:nowrap\">noaa-medical-standards<a name=\"regulatory-compliance-cs-noaa-medical-standards\"> </a></td><td>NOAA Medical Standards</td><td>NOAA diving medical standards</td></tr><tr><td style=\"white-space:nowrap\">noaa-training-standards<a name=\"regulatory-compliance-cs-noaa-training-standards\"> </a></td><td>NOAA Training Standards</td><td>NOAA diver training standards</td></tr><tr><td style=\"white-space:nowrap\">noaa-equipment-standards<a name=\"regulatory-compliance-cs-noaa-equipment-standards\"> </a></td><td>NOAA Equipment Standards</td><td>NOAA diving equipment standards</td></tr><tr><td style=\"white-space:nowrap\">osha-commercial-diving<a name=\"regulatory-compliance-cs-osha-commercial-diving\"> </a></td><td>OSHA Commercial Diving</td><td>OSHA 29 CFR 1910 Subpart T compliance</td></tr><tr><td style=\"white-space:nowrap\">osha-medical-requirements<a name=\"regulatory-compliance-cs-osha-medical-requirements\"> </a></td><td>OSHA Medical Requirements</td><td>OSHA diving medical requirements</td></tr><tr><td style=\"white-space:nowrap\">osha-safety-standards<a name=\"regulatory-compliance-cs-osha-safety-standards\"> </a></td><td>OSHA Safety Standards</td><td>OSHA diving safety standards</td></tr><tr><td style=\"white-space:nowrap\">aaus-scientific-diving<a name=\"regulatory-compliance-cs-aaus-scientific-diving\"> </a></td><td>AAUS Scientific Diving</td><td>American Academy of Underwater Sciences standards</td></tr><tr><td style=\"white-space:nowrap\">aaus-training<a name=\"regulatory-compliance-cs-aaus-training\"> </a></td><td>AAUS Training Standards</td><td>AAUS diver training certification</td></tr><tr><td style=\"white-space:nowrap\">aaus-medical<a name=\"regulatory-compliance-cs-aaus-medical\"> </a></td><td>AAUS Medical Standards</td><td>AAUS medical fitness requirements</td></tr><tr><td style=\"white-space:nowrap\">nasa-nbl-operations<a name=\"regulatory-compliance-cs-nasa-nbl-operations\"> </a></td><td>NASA NBL Operations</td><td>NASA Neutral Buoyancy Laboratory operating procedures</td></tr><tr><td style=\"white-space:nowrap\">nasa-dive-safety<a name=\"regulatory-compliance-cs-nasa-dive-safety\"> </a></td><td>NASA Dive Safety</td><td>NASA diving safety standards</td></tr><tr><td style=\"white-space:nowrap\">nasa-medical-standards<a name=\"regulatory-compliance-cs-nasa-medical-standards\"> </a></td><td>NASA Medical Standards</td><td>NASA astronaut medical standards</td></tr><tr><td style=\"white-space:nowrap\">nasa-training-protocols<a name=\"regulatory-compliance-cs-nasa-training-protocols\"> </a></td><td>NASA Training Protocols</td><td>NASA astronaut training protocols</td></tr><tr><td style=\"white-space:nowrap\">iso-diving-services<a name=\"regulatory-compliance-cs-iso-diving-services\"> </a></td><td>ISO Diving Services</td><td>ISO 24801 diving services standards</td></tr><tr><td style=\"white-space:nowrap\">en-diving-services<a name=\"regulatory-compliance-cs-en-diving-services\"> </a></td><td>EN Diving Services</td><td>European diving services standards</td></tr><tr><td style=\"white-space:nowrap\">csa-diving-operations<a name=\"regulatory-compliance-cs-csa-diving-operations\"> </a></td><td>CSA Diving Operations</td><td>Canadian Standards Association diving</td></tr><tr><td style=\"white-space:nowrap\">commercial-diver<a name=\"regulatory-compliance-cs-commercial-diver\"> </a></td><td>Commercial Diver Certification</td><td>Professional commercial diving certification</td></tr><tr><td style=\"white-space:nowrap\">scientific-diver<a name=\"regulatory-compliance-cs-scientific-diver\"> </a></td><td>Scientific Diver Certification</td><td>Scientific diving certification</td></tr><tr><td style=\"white-space:nowrap\">public-safety-diver<a name=\"regulatory-compliance-cs-public-safety-diver\"> </a></td><td>Public Safety Diver</td><td>Public safety diving certification</td></tr><tr><td style=\"white-space:nowrap\">instructor-level<a name=\"regulatory-compliance-cs-instructor-level\"> </a></td><td>Instructor Certification</td><td>Diving instructor certification</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "RegulatoryComplianceCS"] ; # 
+  fhir:title [ fhir:v "Diving and Space Medicine Regulatory Compliance"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-01T22:56:50-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Regulatory standards and compliance codes for diving and space medicine"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "21"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "noaa-diving-manual" ] ;
+     fhir:display [ fhir:v "NOAA Diving Manual" ] ;
+     fhir:definition [ fhir:v "NOAA Diving Manual standards compliance" ]
+  ] [
+     fhir:code [ fhir:v "noaa-medical-standards" ] ;
+     fhir:display [ fhir:v "NOAA Medical Standards" ] ;
+     fhir:definition [ fhir:v "NOAA diving medical standards" ]
+  ] [
+     fhir:code [ fhir:v "noaa-training-standards" ] ;
+     fhir:display [ fhir:v "NOAA Training Standards" ] ;
+     fhir:definition [ fhir:v "NOAA diver training standards" ]
+  ] [
+     fhir:code [ fhir:v "noaa-equipment-standards" ] ;
+     fhir:display [ fhir:v "NOAA Equipment Standards" ] ;
+     fhir:definition [ fhir:v "NOAA diving equipment standards" ]
+  ] [
+     fhir:code [ fhir:v "osha-commercial-diving" ] ;
+     fhir:display [ fhir:v "OSHA Commercial Diving" ] ;
+     fhir:definition [ fhir:v "OSHA 29 CFR 1910 Subpart T compliance" ]
+  ] [
+     fhir:code [ fhir:v "osha-medical-requirements" ] ;
+     fhir:display [ fhir:v "OSHA Medical Requirements" ] ;
+     fhir:definition [ fhir:v "OSHA diving medical requirements" ]
+  ] [
+     fhir:code [ fhir:v "osha-safety-standards" ] ;
+     fhir:display [ fhir:v "OSHA Safety Standards" ] ;
+     fhir:definition [ fhir:v "OSHA diving safety standards" ]
+  ] [
+     fhir:code [ fhir:v "aaus-scientific-diving" ] ;
+     fhir:display [ fhir:v "AAUS Scientific Diving" ] ;
+     fhir:definition [ fhir:v "American Academy of Underwater Sciences standards" ]
+  ] [
+     fhir:code [ fhir:v "aaus-training" ] ;
+     fhir:display [ fhir:v "AAUS Training Standards" ] ;
+     fhir:definition [ fhir:v "AAUS diver training certification" ]
+  ] [
+     fhir:code [ fhir:v "aaus-medical" ] ;
+     fhir:display [ fhir:v "AAUS Medical Standards" ] ;
+     fhir:definition [ fhir:v "AAUS medical fitness requirements" ]
+  ] [
+     fhir:code [ fhir:v "nasa-nbl-operations" ] ;
+     fhir:display [ fhir:v "NASA NBL Operations" ] ;
+     fhir:definition [ fhir:v "NASA Neutral Buoyancy Laboratory operating procedures" ]
+  ] [
+     fhir:code [ fhir:v "nasa-dive-safety" ] ;
+     fhir:display [ fhir:v "NASA Dive Safety" ] ;
+     fhir:definition [ fhir:v "NASA diving safety standards" ]
+  ] [
+     fhir:code [ fhir:v "nasa-medical-standards" ] ;
+     fhir:display [ fhir:v "NASA Medical Standards" ] ;
+     fhir:definition [ fhir:v "NASA astronaut medical standards" ]
+  ] [
+     fhir:code [ fhir:v "nasa-training-protocols" ] ;
+     fhir:display [ fhir:v "NASA Training Protocols" ] ;
+     fhir:definition [ fhir:v "NASA astronaut training protocols" ]
+  ] [
+     fhir:code [ fhir:v "iso-diving-services" ] ;
+     fhir:display [ fhir:v "ISO Diving Services" ] ;
+     fhir:definition [ fhir:v "ISO 24801 diving services standards" ]
+  ] [
+     fhir:code [ fhir:v "en-diving-services" ] ;
+     fhir:display [ fhir:v "EN Diving Services" ] ;
+     fhir:definition [ fhir:v "European diving services standards" ]
+  ] [
+     fhir:code [ fhir:v "csa-diving-operations" ] ;
+     fhir:display [ fhir:v "CSA Diving Operations" ] ;
+     fhir:definition [ fhir:v "Canadian Standards Association diving" ]
+  ] [
+     fhir:code [ fhir:v "commercial-diver" ] ;
+     fhir:display [ fhir:v "Commercial Diver Certification" ] ;
+     fhir:definition [ fhir:v "Professional commercial diving certification" ]
+  ] [
+     fhir:code [ fhir:v "scientific-diver" ] ;
+     fhir:display [ fhir:v "Scientific Diver Certification" ] ;
+     fhir:definition [ fhir:v "Scientific diving certification" ]
+  ] [
+     fhir:code [ fhir:v "public-safety-diver" ] ;
+     fhir:display [ fhir:v "Public Safety Diver" ] ;
+     fhir:definition [ fhir:v "Public safety diving certification" ]
+  ] [
+     fhir:code [ fhir:v "instructor-level" ] ;
+     fhir:display [ fhir:v "Instructor Certification" ] ;
+     fhir:definition [ fhir:v "Diving instructor certification" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

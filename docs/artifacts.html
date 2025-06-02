@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary -  v0.4.1</title>
+    <title>Artifacts Summary -  v0.4.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10"}
-    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.4.1 - ci-build
+            <span style="display:inline-block;">0.4.2 - ci-build
 
 
             </span>
@@ -81,6 +81,19 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-boyancy.html">Neutral Boyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
@@ -152,7 +165,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -173,13 +186,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -265,6 +281,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-advanced-dive-profile.html"
+                  title="StructureDefinition/advanced-dive-profile">Advanced Dive Profile</a>
+            </td>
+            <td>
+<p>Comprehensive dive profile with enhanced data collection and regulatory compliance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-AstrodynamicsObservation.html"
                   title="StructureDefinition/AstrodynamicsObservation">Astrodynamics Observation</a>
             </td>
@@ -275,10 +300,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-Astronaut.html"
-                  title="StructureDefinition/Astronaut">Astronaut</a>
+                  title="StructureDefinition/Astronaut">Astronaut Patient Profile</a>
             </td>
             <td>
-<p>STUB - Patient profile for flight crew on space craft.</p>
+<p>Patient profile for astronauts and space travelers</p>
 </td>
          </tr>
          <tr>
@@ -288,6 +313,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol.  The average blood pressure has a systolic and a diastolic component.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BarotraumaAssessment.html"
+                  title="StructureDefinition/BarotraumaAssessment">Barotrauma Assessment</a>
+            </td>
+            <td>
+<p>Assessment of pressure-related injuries (barotrauma)</p>
 </td>
          </tr>
          <tr>
@@ -355,6 +389,87 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-communication-session-assessment.html"
+                  title="StructureDefinition/communication-session-assessment">Communication Session Assessment</a>
+            </td>
+            <td>
+<p>Assessment of communication system performance during underwater training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cumulative-radiation-dose.html"
+                  title="StructureDefinition/cumulative-radiation-dose">Cumulative Radiation Dose (Fixed)</a>
+            </td>
+            <td>
+<p>Enhanced cumulative radiation dose tracking with comprehensive time periods</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-decompression-protocol.html"
+                  title="StructureDefinition/decompression-protocol">Decompression Protocol</a>
+            </td>
+            <td>
+<p>Standardized decompression procedures for diving operations and space analog training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DecompressionSickness.html"
+                  title="StructureDefinition/DecompressionSickness">Decompression Sickness</a>
+            </td>
+            <td>
+<p>Decompression sickness occurring during diving or altitude training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiveMedicalClearance.html"
+                  title="StructureDefinition/DiveMedicalClearance">Dive Medical Clearance</a>
+            </td>
+            <td>
+<p>Medical clearance examination for diving operations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiveProfile.html"
+                  title="StructureDefinition/DiveProfile">Dive Profile</a>
+            </td>
+            <td>
+<p>Comprehensive dive profile including depth, time, and environmental data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DivingEquipment.html"
+                  title="StructureDefinition/DivingEquipment">Diving Equipment</a>
+            </td>
+            <td>
+<p>Equipment used for diving operations and underwater training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"
+                  title="StructureDefinition/enhanced-hyperbaric-treatment">Enhanced Hyperbaric Treatment</a>
+            </td>
+            <td>
+<p>Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-enhanced-neutral-buoyancy-session.html"
+                  title="StructureDefinition/enhanced-neutral-buoyancy-session">Enhanced Neutral Buoyancy Training Session</a>
+            </td>
+            <td>
+<p>Comprehensive neutral buoyancy training session with full regulatory compliance tracking</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-EnvironmentalMonitoring.html"
                   title="StructureDefinition/EnvironmentalMonitoring">Environmental Monitoring</a>
             </td>
@@ -382,11 +497,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-hyperbaric-chamber.html"
+                  title="StructureDefinition/hyperbaric-chamber">Hyperbaric Chamber</a>
+            </td>
+            <td>
+<p>A medical facility equipped with a hyperbaric chamber for pressurized treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-HyperbaricTreatment.html"
+                  title="StructureDefinition/HyperbaricTreatment">Hyperbaric Treatment</a>
+            </td>
+            <td>
+<p>Hyperbaric oxygen therapy or chamber treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-SpaceRiskAssesment.html"
                   title="StructureDefinition/SpaceRiskAssesment">Mission Risk Assessment</a>
             </td>
             <td>
 <p>STUB - Risk assessment for space missions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NeutralBuoyancyFacility.html"
+                  title="StructureDefinition/NeutralBuoyancyFacility">Neutral Buoyancy Facility</a>
+            </td>
+            <td>
+<p>Facility for underwater astronaut training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NeutralBuoyancySession.html"
+                  title="StructureDefinition/NeutralBuoyancySession">Neutral Buoyancy Training Session</a>
+            </td>
+            <td>
+<p>Training session in neutral buoyancy facility for EVA simulation</p>
 </td>
          </tr>
          <tr>
@@ -405,6 +556,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-radiation-detector.html"
+                  title="StructureDefinition/radiation-detector">Radiation Detection Device (Fixed)</a>
+            </td>
+            <td>
+<p>Fixed device profile for radiation monitoring in space with properly constrained properties</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-regulatory-compliance-assessment.html"
+                  title="StructureDefinition/regulatory-compliance-assessment">Regulatory Compliance Assessment</a>
+            </td>
+            <td>
+<p>Assessment of compliance with diving and space medicine regulatory standards</p>
 </td>
          </tr>
          <tr>
@@ -454,6 +623,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-space-radiation-exposure.html"
+                  title="StructureDefinition/space-radiation-exposure">Space Radiation Exposure (Fixed)</a>
+            </td>
+            <td>
+<p>Corrected radiation dose measurement for space missions with proper extension contexts</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-space-radiation-summary.html"
+                  title="StructureDefinition/space-radiation-summary">Space Radiation Exposure Summary (Fixed)</a>
+            </td>
+            <td>
+<p>Comprehensive radiation dose summary with proper mission context</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-SpaceVehicle.html"
                   title="StructureDefinition/SpaceVehicle">Space Vehicle</a>
             </td>
@@ -481,6 +668,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-underwater-communication-system.html"
+                  title="StructureDefinition/underwater-communication-system">Underwater Communication System</a>
+            </td>
+            <td>
+<p>Communication equipment for underwater training operations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-UnderwaterEVASimulation.html"
+                  title="StructureDefinition/UnderwaterEVASimulation">Underwater EVA Simulation</a>
+            </td>
+            <td>
+<p>Extravehicular activity simulation conducted underwater</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-underwater-emergency-response.html"
+                  title="StructureDefinition/underwater-emergency-response">Underwater Emergency Response</a>
+            </td>
+            <td>
+<p>Emergency response procedures during underwater training operations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-vital-signs-panel.html"
                   title="StructureDefinition/vital-signs-panel">Vital Signs Panel</a>
             </td>
@@ -500,6 +714,419 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-cardiovascular-fitness.html"
+                  title="StructureDefinition/cardiovascular-fitness">Cardiovascular Fitness Assessment</a>
+            </td>
+            <td>
+<p>Assessment of cardiovascular fitness for diving</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-communication-systems.html"
+                  title="StructureDefinition/communication-systems">Communication Systems Used</a>
+            </td>
+            <td>
+<p>Communication systems and protocols used during training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-complication-monitoring.html"
+                  title="StructureDefinition/complication-monitoring">Complication Monitoring</a>
+            </td>
+            <td>
+<p>Monitoring for treatment complications</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-crew-coordination.html"
+                  title="StructureDefinition/crew-coordination">Crew Coordination Assessment</a>
+            </td>
+            <td>
+<p>Assessment of crew coordination during simulation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-decompression-algorithm.html"
+                  title="StructureDefinition/decompression-algorithm">Decompression Algorithm Used</a>
+            </td>
+            <td>
+<p>The specific decompression algorithm or table used</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-diving-contraindications.html"
+                  title="StructureDefinition/diving-contraindications">Diving Medical Contraindications</a>
+            </td>
+            <td>
+<p>Medical conditions that contraindicate diving</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-emergency-procedures.html"
+                  title="StructureDefinition/emergency-procedures">Emergency Procedures</a>
+            </td>
+            <td>
+<p>Emergency decompression procedures if applicable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-emergency-response.html"
+                  title="StructureDefinition/emergency-response">Emergency Response Assessment</a>
+            </td>
+            <td>
+<p>Assessment of emergency response procedures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-response-time.html"
+                  title="StructureDefinition/response-time">Emergency Response Time</a>
+            </td>
+            <td>
+<p>Time from emergency recognition to response initiation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-environmental-conditions.html"
+                  title="StructureDefinition/environmental-conditions">Environmental Conditions</a>
+            </td>
+            <td>
+<p>Environmental conditions during training session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-environmental-factors.html"
+                  title="StructureDefinition/environmental-factors">Environmental Factors</a>
+            </td>
+            <td>
+<p>Environmental conditions affecting decompression requirements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hyperbaric-capabilities.html"
+                  title="StructureDefinition/hyperbaric-capabilities">Hyperbaric Chamber Capabilities</a>
+            </td>
+            <td>
+<p>Specific capabilities of the hyperbaric chamber</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-chamber-configuration.html"
+                  title="StructureDefinition/chamber-configuration">Hyperbaric Chamber Configuration</a>
+            </td>
+            <td>
+<p>Configuration and setup of the hyperbaric chamber</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-chamber-type.html"
+                  title="StructureDefinition/chamber-type">Hyperbaric Chamber Type</a>
+            </td>
+            <td>
+<p>Type of hyperbaric chamber (monoplace, multiplace, etc.)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-treatment-table.html"
+                  title="StructureDefinition/treatment-table">Hyperbaric Treatment Table</a>
+            </td>
+            <td>
+<p>Specific treatment table used (e.g., USN Table 6)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-lessons-learned.html"
+                  title="StructureDefinition/lessons-learned">Lessons Learned</a>
+            </td>
+            <td>
+<p>Lessons learned and recommendations from emergency response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-location-capabilities.html"
+                  title="StructureDefinition/location-capabilities">Location Capabilities</a>
+            </td>
+            <td>
+<p>Specific capabilities and equipment available at location</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-location-hierarchy.html"
+                  title="StructureDefinition/location-hierarchy">Location Hierarchy</a>
+            </td>
+            <td>
+<p>Hierarchical relationship between locations (parent/child)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-maximum-depth-reached.html"
+                  title="StructureDefinition/maximum-depth-reached">Maximum Depth Reached</a>
+            </td>
+            <td>
+<p>Maximum depth reached during the dive requiring decompression</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-maximum-pressure.html"
+                  title="StructureDefinition/maximum-pressure">Maximum Operating Pressure</a>
+            </td>
+            <td>
+<p>Maximum pressure the chamber can safely operate at</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-maximum-depth.html"
+                  title="StructureDefinition/maximum-depth">Maximum Training Depth</a>
+            </td>
+            <td>
+<p>Maximum depth reached during training session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medical-intervention.html"
+                  title="StructureDefinition/medical-intervention">Medical Intervention</a>
+            </td>
+            <td>
+<p>Medical interventions provided during emergency response</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mission-context.html"
+                  title="StructureDefinition/mission-context">Mission Context</a>
+            </td>
+            <td>
+<p>Links radiation exposure to specific space missions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-diagnostic-report-mission-context.html"
+                  title="StructureDefinition/diagnostic-report-mission-context">Mission Context for Diagnostic Reports</a>
+            </td>
+            <td>
+<p>Links diagnostic reports to specific space missions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-operational-status.html"
+                  title="StructureDefinition/operational-status">Operational Status</a>
+            </td>
+            <td>
+<p>Current operational status of the facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oxygen-concentration.html"
+                  title="StructureDefinition/oxygen-concentration">Oxygen Concentration</a>
+            </td>
+            <td>
+<p>Oxygen concentration during treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-oxygen-capability.html"
+                  title="StructureDefinition/oxygen-capability">Oxygen Delivery Capability</a>
+            </td>
+            <td>
+<p>Oxygen delivery capabilities of the chamber</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-monitoring.html"
+                  title="StructureDefinition/patient-monitoring">Patient Monitoring</a>
+            </td>
+            <td>
+<p>Continuous patient monitoring during hyperbaric treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-pulmonary-function.html"
+                  title="StructureDefinition/pulmonary-function">Pulmonary Function Assessment</a>
+            </td>
+            <td>
+<p>Assessment of respiratory function for diving</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-radiation-countermeasures.html"
+                  title="StructureDefinition/radiation-countermeasures">Radiation Countermeasures</a>
+            </td>
+            <td>
+<p>Protective measures taken during radiation exposure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-regulatory-compliance.html"
+                  title="StructureDefinition/regulatory-compliance">Regulatory Compliance</a>
+            </td>
+            <td>
+<p>Regulatory standards compliance during training session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-rescue-procedures.html"
+                  title="StructureDefinition/rescue-procedures">Rescue Procedures Used</a>
+            </td>
+            <td>
+<p>Specific rescue procedures and techniques employed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-safety-protocols.html"
+                  title="StructureDefinition/safety-protocols">Safety Protocols</a>
+            </td>
+            <td>
+<p>Safety protocols and procedures followed during training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-safety-stop-compliance.html"
+                  title="StructureDefinition/safety-stop-compliance">Safety Stop Compliance</a>
+            </td>
+            <td>
+<p>Compliance with required safety stops during ascent</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-shielding-mass.html"
+                  title="StructureDefinition/shielding-mass">Shielding Mass</a>
+            </td>
+            <td>
+<p>Effective shielding mass in g/cm²</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-radiation-type.html"
+                  title="StructureDefinition/radiation-type">Space Radiation Type</a>
+            </td>
+            <td>
+<p>Type of space radiation exposure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-suit-configuration.html"
+                  title="StructureDefinition/suit-configuration">Space Suit Configuration</a>
+            </td>
+            <td>
+<p>Configuration of space suit simulator used in training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-task-completion-metrics.html"
+                  title="StructureDefinition/task-completion-metrics">Task Completion Metrics</a>
+            </td>
+            <td>
+<p>Performance metrics for tasks completed during training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tool-usage-assessment.html"
+                  title="StructureDefinition/tool-usage-assessment">Tool Usage Assessment</a>
+            </td>
+            <td>
+<p>Assessment of tool manipulation and usage effectiveness</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-total-decompression-time.html"
+                  title="StructureDefinition/total-decompression-time">Total Decompression Time</a>
+            </td>
+            <td>
+<p>Total time required for decompression including all stops</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-session-duration.html"
+                  title="StructureDefinition/session-duration">Training Session Duration</a>
+            </td>
+            <td>
+<p>Duration of the neutral buoyancy training session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-training-objectives.html"
+                  title="StructureDefinition/training-objectives">Training Session Objectives</a>
+            </td>
+            <td>
+<p>Specific training objectives for the session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-treatment-duration.html"
+                  title="StructureDefinition/treatment-duration">Treatment Duration</a>
+            </td>
+            <td>
+<p>Total duration of hyperbaric treatment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-emergency-type.html"
+                  title="StructureDefinition/emergency-type">Type of Emergency</a>
+            </td>
+            <td>
+<p>Classification of the emergency situation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vestibular-assessment.html"
+                  title="StructureDefinition/vestibular-assessment">Vestibular Function Assessment</a>
+            </td>
+            <td>
+<p>Assessment of inner ear and balance function</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -543,11 +1170,119 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-organ-dose-codes-vs-complete.html"
+                  title="ValueSet/organ-dose-codes-vs-complete">Complete Organ-Specific Dose Codes</a>
+            </td>
+            <td>
+<p>Comprehensive codes for organ-specific radiation dose measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-radiation-countermeasures-vs-complete.html"
+                  title="ValueSet/radiation-countermeasures-vs-complete">Complete Radiation Countermeasures</a>
+            </td>
+            <td>
+<p>Comprehensive list of protective measures against space radiation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-radiation-detector-type-vs-complete.html"
+                  title="ValueSet/radiation-detector-type-vs-complete">Complete Radiation Detector Types</a>
+            </td>
+            <td>
+<p>Comprehensive list of radiation detection devices used in space</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-radiation-dose-codes-vs-complete.html"
+                  title="ValueSet/space-radiation-dose-codes-vs-complete">Complete Space Radiation Dose Measurement Codes</a>
+            </td>
+            <td>
+<p>Comprehensive codes for radiation dose measurements in space environments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-space-radiation-type-vs-complete.html"
+                  title="ValueSet/space-radiation-type-vs-complete">Complete Space Radiation Types</a>
+            </td>
+            <td>
+<p>Comprehensive list of ionizing radiation types encountered in space</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-decompression-procedures.html"
+                  title="ValueSet/decompression-procedures">Decompression Procedures</a>
+            </td>
+            <td>
+<p>Standardized decompression procedures and protocols</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-diving-contraindicated-conditions.html"
+                  title="ValueSet/diving-contraindicated-conditions">Diving Medical Contraindications</a>
+            </td>
+            <td>
+<p>Medical conditions that contraindicate diving activities</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-diving-medical-examinations.html"
+                  title="ValueSet/diving-medical-examinations">Diving Medical Examinations</a>
+            </td>
+            <td>
+<p>Types of medical examinations for diving fitness</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-dosimeter-type-vs.html"
+                  title="ValueSet/dosimeter-type-vs">Dosimeter Types</a>
+            </td>
+            <td>
+<p>Types of radiation dosimeters</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-GimbalContraindicatedConditions.html"
                   title="ValueSet/GimbalContraindicatedConditions">Gimbal Contraindications</a>
             </td>
             <td>
 <p>Contraindicated conditions for riding a multi-axis gimbal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-hyperbaric-capabilities-vs.html"
+                  title="ValueSet/hyperbaric-capabilities-vs">Hyperbaric Chamber Capabilities</a>
+            </td>
+            <td>
+<p>Capabilities available in hyperbaric chambers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-hyperbaric-chamber-type-vs.html"
+                  title="ValueSet/hyperbaric-chamber-type-vs">Hyperbaric Chamber Types</a>
+            </td>
+            <td>
+<p>Types of hyperbaric chambers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-location-capabilities-vs.html"
+                  title="ValueSet/location-capabilities-vs">Location Capabilities Value Set</a>
+            </td>
+            <td>
+<p>Capabilities and services available at aerospace medicine locations</p>
 </td>
          </tr>
          <tr>
@@ -566,6 +1301,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-neutral-buoyancy-training-activities.html"
+                  title="ValueSet/neutral-buoyancy-training-activities">Neutral Buoyancy Training Activities</a>
+            </td>
+            <td>
+<p>Types of training activities conducted in neutral buoyancy environments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-operational-status-vs.html"
+                  title="ValueSet/operational-status-vs">Operational Status Value Set</a>
+            </td>
+            <td>
+<p>Operational status codes for facilities and vehicles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-radiation-countermeasures-vs.html"
+                  title="ValueSet/radiation-countermeasures-vs">Radiation Countermeasures</a>
+            </td>
+            <td>
+<p>Protective measures against radiation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-radiation-dose-units-vs.html"
+                  title="ValueSet/radiation-dose-units-vs">Radiation Dose Units</a>
+            </td>
+            <td>
+<p>Units for radiation dose measurements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-regulatory-standards.html"
+                  title="ValueSet/regulatory-standards">Regulatory Standards for Diving and Space Medicine</a>
+            </td>
+            <td>
+<p>Regulatory standards and compliance requirements</p>
 </td>
          </tr>
          <tr>
@@ -660,6 +1440,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-space-radiation-type-vs.html"
+                  title="ValueSet/space-radiation-type-vs">Space Radiation Types</a>
+            </td>
+            <td>
+<p>Types of radiation encountered in space</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-space-visual-effects.html"
                   title="ValueSet/space-visual-effects">Space Visual Effects</a>
             </td>
@@ -676,14 +1465,131 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-underwater-communication-systems.html"
+                  title="ValueSet/underwater-communication-systems">Underwater Communication Systems</a>
+            </td>
+            <td>
+<p>Communication systems used in underwater training operations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-underwater-training-procedures.html"
+                  title="ValueSet/underwater-training-procedures">Underwater Training Procedures</a>
+            </td>
+            <td>
+<p>Procedures and activities conducted during underwater training</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-decompression-protocol-cs.html"
+                  title="CodeSystem/decompression-protocol-cs">Decompression Protocols and Procedures</a>
+            </td>
+            <td>
+<p>Standardized decompression protocols and safety procedures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-diving-medicine-cs.html"
+                  title="CodeSystem/diving-medicine-cs">Diving Medicine Code System</a>
+            </td>
+            <td>
+<p>Medical codes specific to diving medicine and hyperbaric treatments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-regulatory-compliance-cs.html"
+                  title="CodeSystem/regulatory-compliance-cs">Diving and Space Medicine Regulatory Compliance</a>
+            </td>
+            <td>
+<p>Regulatory standards and compliance codes for diving and space medicine</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-aerospace-code-system-enhanced.html"
+                  title="CodeSystem/aerospace-code-system-enhanced">Enhanced Aerospace Medicine Code System</a>
+            </td>
+            <td>
+<p>Comprehensive code system for aerospace medicine concepts including all referenced codes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-hyperbaric-capabilities-cs.html"
+                  title="CodeSystem/hyperbaric-capabilities-cs">Hyperbaric Chamber Capabilities</a>
+            </td>
+            <td>
+<p>Capabilities and services available in hyperbaric chambers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-hyperbaric-chamber-type-cs.html"
+                  title="CodeSystem/hyperbaric-chamber-type-cs">Hyperbaric Chamber Types</a>
+            </td>
+            <td>
+<p>Types of hyperbaric chambers</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-location-capabilities-cs.html"
+                  title="CodeSystem/location-capabilities-cs">Location Capabilities Code System</a>
+            </td>
+            <td>
+<p>Capabilities and services available at aerospace medicine locations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-neutral-buoyancy-training-cs.html"
+                  title="CodeSystem/neutral-buoyancy-training-cs">Neutral Buoyancy Training Code System</a>
+            </td>
+            <td>
+<p>Specialized codes for neutral buoyancy training activities and assessments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-operational-status-cs.html"
+                  title="CodeSystem/operational-status-cs">Operational Status Code System</a>
+            </td>
+            <td>
+<p>Operational status codes for facilities and vehicles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-radiation-countermeasures-cs.html"
+                  title="CodeSystem/radiation-countermeasures-cs">Radiation Countermeasures Code System</a>
+            </td>
+            <td>
+<p>Protective measures against space radiation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-radiation-detector-type-cs.html"
+                  title="CodeSystem/radiation-detector-type-cs">Radiation Detector Type Code System</a>
+            </td>
+            <td>
+<p>Types of radiation detection equipment</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-space-cardiovascular-effects-cs.html"
@@ -749,6 +1655,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-space-radiation-type-cs.html"
+                  title="CodeSystem/space-radiation-type-cs">Space Radiation Type Code System</a>
+            </td>
+            <td>
+<p>Types of radiation encountered in space environments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-space-treatment-procedures-cs.html"
                   title="CodeSystem/space-treatment-procedures-cs">Space Treatment Procedures</a>
             </td>
@@ -765,14 +1680,112 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>CodeSystem for space visual effects not found in SNOMED CT</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-underwater-communication-cs.html"
+                  title="CodeSystem/underwater-communication-cs">Underwater Communication Systems</a>
+            </td>
+            <td>
+<p>Communication systems and protocols for underwater training operations</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-AquariusUnderwaterLaboratory.html"
+                  title="Location/AquariusUnderwaterLaboratory">Aquarius Underwater Laboratory</a>
+            </td>
+            <td>
+<p>NOAA's Aquarius underwater research station used for NEEMO missions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-ArtemisBaseCampHabitat.html"
+                  title="Location/ArtemisBaseCampHabitat">Artemis Base Camp Habitat</a>
+            </td>
+            <td>
+<p>Artemis lunar surface habitat module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-Biosphere2UnderseaHabitat.html"
+                  title="Location/Biosphere2UnderseaHabitat">Biosphere 2 Undersea Habitat</a>
+            </td>
+            <td>
+<p>University of Arizona Biosphere 2 analog training facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-BlueOriginWestTexas.html"
+                  title="Location/BlueOriginWestTexas">Blue Origin West Texas Facility</a>
+            </td>
+            <td>
+<p>Blue Origin suborbital flight operations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-StarlinerCalypso.html" title="Location/StarlinerCalypso">Boeing Starliner Calypso</a>
+            </td>
+            <td>
+<p>Boeing CST-100 Starliner spacecraft</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-BrooksAltitudeChamber.html"
+                  title="Location/BrooksAltitudeChamber">Brooks Altitude Chamber</a>
+            </td>
+            <td>
+<p>High-altitude environmental training facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-BrooksAerospaceMedicine.html"
+                  title="Location/BrooksAerospaceMedicine">Brooks School of Aerospace Medicine</a>
+            </td>
+            <td>
+<p>USAF School of Aerospace Medicine hyperbaric facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-CHESAUnderseaLaboratory.html"
+                  title="Location/CHESAUnderseaLaboratory">CHESA Undersea Laboratory</a>
+            </td>
+            <td>
+<p>Commercial underwater training facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-CSADavidFloridaLaboratory.html"
+                  title="Location/CSADavidFloridaLaboratory">CSA David Florida Laboratory</a>
+            </td>
+            <td>
+<p>Canadian Space Agency testing facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-CSALifeSciencesResearch.html"
+                  title="Location/CSALifeSciencesResearch">CSA Life Sciences Research</a>
+            </td>
+            <td>
+<p>Canadian Space Agency life sciences research division</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Condition-ConditionAsphyxiation.html"
@@ -859,6 +1872,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Cerebrovascular accident (disorder)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-CrewDragonEndeavour.html"
+                  title="Location/CrewDragonEndeavour">Crew Dragon Endeavour</a>
+            </td>
+            <td>
+<p>SpaceX Crew Dragon spacecraft Endeavour</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-CrewDragonResilience.html"
+                  title="Location/CrewDragonResilience">Crew Dragon Resilience</a>
+            </td>
+            <td>
+<p>SpaceX Crew Dragon spacecraft Resilience</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-DLRAerospaceMedicine.html"
+                  title="Location/DLRAerospaceMedicine">DLR Institute of Aerospace Medicine</a>
+            </td>
+            <td>
+<p>German Aerospace Center medical research institute</p>
 </td>
          </tr>
          <tr>
@@ -1047,6 +2087,149 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Location-ESACentrfugeCologne.html"
+                  title="Location/ESACentrfugeCologne">ESA Human Centrifuge</a>
+            </td>
+            <td>
+<p>European Space Agency centrifuge facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-EarthMoonL4L5Stations.html"
+                  title="Location/EarthMoonL4L5Stations">Earth-Moon L4/L5 Stations</a>
+            </td>
+            <td>
+<p>Space habitats at Earth-Moon Lagrange points</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-EdwardsAirForceBase.html"
+                  title="Location/EdwardsAirForceBase">Edwards Air Force Base</a>
+            </td>
+            <td>
+<p>USAF Test Pilot School and aerospace medicine research</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-EuropeanAstronautCentreNBL.html"
+                  title="Location/EuropeanAstronautCentreNBL">European Astronaut Centre NBL</a>
+            </td>
+            <td>
+<p>ESA's neutral buoyancy facility in Cologne, Germany</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ExampleAstronaut.html" title="Patient/ExampleAstronaut">Example Astronaut</a>
+            </td>
+            <td>
+<p>Example astronaut for testing radiation tracking</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ExampleDiveMedicalClearance.html"
+                  title="Procedure/ExampleDiveMedicalClearance">Example Dive Medical Clearance</a>
+            </td>
+            <td>
+<p>Example medical clearance for diving operations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-ExampleHyperbaricChamber.html"
+                  title="Location/ExampleHyperbaricChamber">Example Hyperbaric Chamber</a>
+            </td>
+            <td>
+<p>Example hyperbaric chamber facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ExampleNeutralBuoyancySession.html"
+                  title="Procedure/ExampleNeutralBuoyancySession">Example Neutral Buoyancy Training Session</a>
+            </td>
+            <td>
+<p>Example of a typical neutral buoyancy training session</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleDiveProfile.html"
+                  title="Observation/ExampleDiveProfile">Example Training Dive Profile</a>
+            </td>
+            <td>
+<p>Example dive profile from neutral buoyancy training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-HyperbaricChamberFacility.html"
+                  title="Location/HyperbaricChamberFacility">Hyperbaric Treatment Chamber</a>
+            </td>
+            <td>
+<p>Hyperbaric medicine treatment facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-InternationalSpaceStationColumbus.html"
+                  title="Location/InternationalSpaceStationColumbus">ISS Columbus Laboratory</a>
+            </td>
+            <td>
+<p>International Space Station European laboratory module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-InternationalSpaceStationCupola.html"
+                  title="Location/InternationalSpaceStationCupola">ISS Cupola Module</a>
+            </td>
+            <td>
+<p>International Space Station Cupola observation module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-InternationalSpaceStationDestiny.html"
+                  title="Location/InternationalSpaceStationDestiny">ISS Destiny Laboratory</a>
+            </td>
+            <td>
+<p>International Space Station US laboratory module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-InternationalSpaceStationKibo.html"
+                  title="Location/InternationalSpaceStationKibo">ISS Kibo Laboratory</a>
+            </td>
+            <td>
+<p>International Space Station Japanese laboratory module</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-InternationalSpaceStationUnity.html"
+                  title="Location/InternationalSpaceStationUnity">ISS Unity Node</a>
+            </td>
+            <td>
+<p>International Space Station Unity connecting node</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-InternationalSpaceStationZvezda.html"
+                  title="Location/InternationalSpaceStationZvezda">ISS Zvezda Service Module</a>
+            </td>
+            <td>
+<p>International Space Station Russian service module with enhanced shielding</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Contract-SpaceTourismTravelInsuranceContract.html"
                   title="Contract/SpaceTourismTravelInsuranceContract">Insurance - Contract</a>
             </td>
@@ -1061,6 +2244,33 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Space tourist insurance plan.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-JAXASpaceBiomedicalResearch.html"
+                  title="Location/JAXASpaceBiomedicalResearch">JAXA Space Biomedical Research Office</a>
+            </td>
+            <td>
+<p>Japan Aerospace Exploration Agency medical research</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-JamesWebbSpaceTelescope.html"
+                  title="Location/JamesWebbSpaceTelescope">James Webb Space Telescope Location</a>
+            </td>
+            <td>
+<p>James Webb Space Telescope at Sun-Earth L2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-KSCMedicalFacility.html"
+                  title="Location/KSCMedicalFacility">Kennedy Space Center Medical Facility</a>
+            </td>
+            <td>
+<p>KSC astronaut medical support facility</p>
 </td>
          </tr>
          <tr>
@@ -1278,6 +2488,111 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Location-LunarGatewayHALO.html" title="Location/LunarGatewayHALO">Lunar Gateway HALO Module</a>
+            </td>
+            <td>
+<p>Lunar Gateway Habitation and Logistics Outpost</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LunarGatewayPPE.html" title="Location/LunarGatewayPPE">Lunar Gateway Power and Propulsion Element</a>
+            </td>
+            <td>
+<p>Lunar Gateway Power and Propulsion Element</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LunarSouthPoleBases.html"
+                  title="Location/LunarSouthPoleBases">Lunar South Pole Base</a>
+            </td>
+            <td>
+<p>Permanent lunar base near the South Pole</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-MarsAscentVehicle.html"
+                  title="Location/MarsAscentVehicle">Mars Ascent Vehicle</a>
+            </td>
+            <td>
+<p>Mars surface to orbit transport</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-MarsBaseAlpha.html" title="Location/MarsBaseAlpha">Mars Base Alpha</a>
+            </td>
+            <td>
+<p>First permanent Mars surface base</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-MarsTransitVehicle.html"
+                  title="Location/MarsTransitVehicle">Mars Transit Vehicle</a>
+            </td>
+            <td>
+<p>Deep space transport for Mars missions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-MayoAerospaceMedicine.html"
+                  title="Location/MayoAerospaceMedicine">Mayo Clinic Aerospace Medicine</a>
+            </td>
+            <td>
+<p>Mayo Clinic aerospace medicine and altitude research</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-NASAAmesResearchCenter.html"
+                  title="Location/NASAAmesResearchCenter">NASA Ames Research Center</a>
+            </td>
+            <td>
+<p>NASA Ames centrifuge and spatial disorientation research</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-NASAHyperbaricFacility.html"
+                  title="Location/NASAHyperbaricFacility">NASA Hyperbaric Facility</a>
+            </td>
+            <td>
+<p>NASA's hyperbaric chamber for diving medicine and space analog training</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-NASANeutralBuoyancyLaboratory.html"
+                  title="Location/NASANeutralBuoyancyLaboratory">NASA Neutral Buoyancy Laboratory</a>
+            </td>
+            <td>
+<p>NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-NavalMedicalResearchUnit.html"
+                  title="Location/NavalMedicalResearchUnit">Naval Medical Research Unit</a>
+            </td>
+            <td>
+<p>US Navy diving medicine and hyperbaric research facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-NeutralBuoyancyFacilityEquipment.html"
+                  title="Device/NeutralBuoyancyFacilityEquipment">Neutral Buoyancy Facility Equipment</a>
+            </td>
+            <td>
+<p>Equipment used in neutral buoyancy training facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-Observation.Environmental-1.html"
                   title="Observation/Observation.Environmental-1">Observation - Environmental</a>
             </td>
@@ -1471,6 +2786,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Location-PatuxentRiverNavalAirStation.html"
+                  title="Location/PatuxentRiverNavalAirStation">Patuxent River Naval Air Station</a>
+            </td>
+            <td>
+<p>US Navy Test Pilot School</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Procedure-ProcedureBoneDensitometry.html"
                   title="Procedure/ProcedureBoneDensitometry">Procedure - Bone Densitometry</a>
             </td>
@@ -1577,6 +2901,112 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Overall mission risk assessment for a space mission</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Device-ScubaDivingEquipment.html"
+                  title="Device/ScubaDivingEquipment">SCUBA Diving Equipment</a>
+            </td>
+            <td>
+<p>Self-contained underwater breathing apparatus</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-ShackletonCraterBase.html"
+                  title="Location/ShackletonCraterBase">Shackleton Crater Base</a>
+            </td>
+            <td>
+<p>Research station at Shackleton Crater rim</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-SoyuzMS.html" title="Location/SoyuzMS">Soyuz MS Spacecraft</a>
+            </td>
+            <td>
+<p>Russian Soyuz MS crew vehicle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-SpaceXHawthorneFactory.html"
+                  title="Location/SpaceXHawthorneFactory">SpaceX Hawthorne Factory</a>
+            </td>
+            <td>
+<p>SpaceX manufacturing and mission control facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-SpaceXBocaChica.html" title="Location/SpaceXBocaChica">SpaceX Starbase</a>
+            </td>
+            <td>
+<p>SpaceX Starship development and launch facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-VirginGalacticSpaceport.html"
+                  title="Location/VirginGalacticSpaceport">Spaceport America</a>
+            </td>
+            <td>
+<p>Virgin Galactic commercial spaceport</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-SunEarthL1Station.html"
+                  title="Location/SunEarthL1Station">Sun-Earth L1 Observatory</a>
+            </td>
+            <td>
+<p>Space weather monitoring station at L1</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-NASCOMRussianCentrifuge.html"
+                  title="Location/NASCOMRussianCentrifuge">TsPK Centrifuge Complex</a>
+            </td>
+            <td>
+<p>Russian cosmonaut centrifuge training facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-UTMBAerospaceResearch.html"
+                  title="Location/UTMBAerospaceResearch">UTMB Aerospace Medicine Research</a>
+            </td>
+            <td>
+<p>University of Texas Medical Branch aerospace medicine program</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-UniversityOfPennsylvaniaHyperbaric.html"
+                  title="Location/UniversityOfPennsylvaniaHyperbaric">University of Pennsylvania Hyperbaric Center</a>
+            </td>
+            <td>
+<p>Academic hyperbaric medicine and research center</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-WrightPattersonAerospaceResearch.html"
+                  title="Location/WrightPattersonAerospaceResearch">Wright-Patterson Aerospace Research Laboratory</a>
+            </td>
+            <td>
+<p>USAF aerospace medicine research facility</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-YuriGagarinCosmonautTrainingCenter.html"
+                  title="Location/YuriGagarinCosmonautTrainingCenter">Yuri Gagarin Cosmonaut Training Center</a>
+            </td>
+            <td>
+<p>Russian cosmonaut training facility with underwater training capabilities</p>
+</td>
+         </tr>
       </tbody>
    </table>
 </div>
@@ -1597,7 +3027,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 17:14-0500">2025-06-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 22:57-0500">2025-06-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,8 +1,34 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "LocationCapabilitiesVS",
+      "title" : "Location Capabilities Value Set",
+      "description" : "Capabilities and services available at aerospace medicine locations",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "OperationalStatusVS",
+      "title" : "Operational Status Value Set",
+      "description" : "Operational status codes for facilities and vehicles",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-operational-status.html" : "Operational Status"
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "AircraftFumeExposureValueSet",
       "title" : "Aircraft Fume Exposure",
@@ -11,7 +37,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "AstronautBackPain",
       "title" : "Back Pain and Space Travel",
@@ -20,7 +46,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "GimbalContraindicatedConditions",
       "title" : "Gimbal Contraindications",
@@ -29,7 +55,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/LunarDustToxicityValueSet",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "LunarDustToxicityValueSet",
       "title" : "Lunar Dust Toxicity",
@@ -38,7 +64,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "MuscleStiffnessAndSpaceHealth",
       "title" : "Muscle Stiffness",
@@ -47,7 +73,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SleepLossHypoxiaEffect",
       "title" : "Sleep Loss and Hypoxia Effects",
@@ -56,7 +82,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SleepLossHypoxiaResponses",
       "title" : "Sleep Loss and Hypoxia Responses",
@@ -65,7 +91,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceAdaptationBoneHealth",
       "title" : "Adaptations of Bone Health",
@@ -74,7 +100,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceRadiationRisksVS",
       "title" : "Space Radiation Risks ValueSet",
@@ -83,7 +109,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceTravelBrainChanges",
       "title" : "Brain and Neurologic Changes",
@@ -92,7 +118,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceflightStressFactors",
       "title" : "Stress and Physiological Factors",
@@ -100,8 +126,182 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DecompressionProcedures",
+      "title" : "Decompression Procedures",
+      "description" : "Standardized decompression procedures and protocols",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
+      "StructureDefinition-decompression-algorithm.html" : "Decompression Algorithm Used",
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-environmental-factors.html" : "Environmental Factors"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DivingContraindicatedConditions",
+      "title" : "Diving Medical Contraindications",
+      "description" : "Medical conditions that contraindicate diving activities",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DivingMedicalExaminations",
+      "title" : "Diving Medical Examinations",
+      "description" : "Types of medical examinations for diving fitness",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/dosimeter-type-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "DosimeterTypeVS",
+      "title" : "Dosimeter Types",
+      "description" : "Types of radiation dosimeters",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "HyperbaricCapabilitiesVS",
+      "title" : "Hyperbaric Chamber Capabilities",
+      "description" : "Capabilities available in hyperbaric chambers",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-hyperbaric-capabilities.html" : "Hyperbaric Chamber Capabilities"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "HyperbaricChamberTypeVS",
+      "title" : "Hyperbaric Chamber Types",
+      "description" : "Types of hyperbaric chambers",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-chamber-type.html" : "Hyperbaric Chamber Type"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "NeutralBuoyancyTrainingActivities",
+      "title" : "Neutral Buoyancy Training Activities",
+      "description" : "Types of training activities conducted in neutral buoyancy environments",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-enhanced-neutral-buoyancy-session.html" : "Enhanced Neutral Buoyancy Training Session"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "OrganDoseCodesVSComplete",
+      "title" : "Complete Organ-Specific Dose Codes",
+      "description" : "Comprehensive codes for organ-specific radiation dose measurements",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RadiationCountermeasuresVS",
+      "title" : "Radiation Countermeasures",
+      "description" : "Protective measures against radiation",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiation-countermeasures.html" : "Radiation Countermeasures"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "RadiationCountermeasuresVSComplete",
+      "title" : "Complete Radiation Countermeasures",
+      "description" : "Comprehensive list of protective measures against space radiation",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "RadiationDetectorTypeVSComplete",
+      "title" : "Complete Radiation Detector Types",
+      "description" : "Comprehensive list of radiation detection devices used in space",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+        "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiation-detector.html" : "Radiation Detection Device (Fixed)"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RadiationDoseUnitsVS",
+      "title" : "Radiation Dose Units",
+      "description" : "Units for radiation dose measurements",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/regulatory-standards",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RegulatoryStandards",
+      "title" : "Regulatory Standards for Diving and Space Medicine",
+      "description" : "Regulatory standards and compliance requirements",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
+      "StructureDefinition-safety-protocols.html" : "Safety Protocols"
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceCardiovascularEffectsValueSet",
       "title" : "Space Cardiovascular Effects",
@@ -110,7 +310,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceEnvironmentalFactorsValueSet",
       "title" : "Space Environmental Factors",
@@ -119,7 +319,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-monitoring-procedures",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceMonitoringProceduresValueSet",
       "title" : "Space Monitoring Procedures",
@@ -128,7 +328,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceNeurologicalEffectsValueSet",
       "title" : "Space Neurological Effects",
@@ -137,7 +337,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-physiological-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpacePhysiologicalEffectsValueSet",
       "title" : "Space Physiological Effects",
@@ -146,7 +346,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpacePsychologicalEffectsValueSet",
       "title" : "Space Psychological Effects",
@@ -154,8 +354,23 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "SpaceRadiationDoseCodesVSComplete",
+      "title" : "Complete Space Radiation Dose Measurement Codes",
+      "description" : "Comprehensive codes for radiation dose measurements in space environments",
+      "systems" : [
+        "http://loinc.org",
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-space-radiation-exposure.html" : "Space Radiation Exposure (Fixed)"
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceRadiationEffectsValueSet",
       "title" : "Space Radiation Effects",
@@ -163,13 +378,65 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "SpaceRadiationTypeVS",
+      "title" : "Space Radiation Types",
+      "description" : "Types of radiation encountered in space",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-radiation-type.html" : "Space Radiation Type"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "SpaceRadiationTypeVSComplete",
+      "title" : "Complete Space Radiation Types",
+      "description" : "Comprehensive list of ionizing radiation types encountered in space",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-visual-effects",
-      "version" : "0.4.1",
+      "version" : "0.4.2",
       "status" : "draft",
       "name" : "SpaceVisualEffectsValueSet",
       "title" : "Space Visual Effects",
       "description" : "Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-communication-systems",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "UnderwaterCommunicationSystems",
+      "title" : "Underwater Communication Systems",
+      "description" : "Communication systems used in underwater training operations",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-underwater-communication-system.html" : "Underwater Communication System"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "UnderwaterTrainingProcedures",
+      "title" : "Underwater Training Procedures",
+      "description" : "Procedures and activities conducted during underwater training",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-underwater-emergency-response.html" : "Underwater Emergency Response"
     }
   ]
 }

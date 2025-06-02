@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="regulatory-standards"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet regulatory-standards</b></p><a name="regulatory-standards"> </a><a name="hcregulatory-standards"> </a><a name="regulatory-standards-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-regulatory-compliance-cs.html"><code>https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs</code></a></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/79492003">79492003</a></td><td>Diving medical examination</td></tr><tr><td><a href="http://snomed.info/id/182813001">182813001</a></td><td>Training activity</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://mitre.org/fhir/space-health/ValueSet/regulatory-standards"/>
+  <version value="0.4.2"/>
+  <name value="RegulatoryStandards"/>
+  <title value="Regulatory Standards for Diving and Space Medicine"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-06-01T22:56:50-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org/"/>
+    </telecom>
+  </contact>
+  <description value="Regulatory standards and compliance requirements"/>
+  <compose>
+    <include>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="79492003"/>
+        <display value="Diving medical examination"/>
+      </concept>
+      <concept>
+        <code value="182813001"/>
+        <display value="Training activity"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

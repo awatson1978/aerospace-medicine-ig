@@ -1,6 +1,62 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "HyperbaricCapabilitiesCS",
+      "title" : "Hyperbaric Chamber Capabilities",
+      "description" : "Capabilities and services available in hyperbaric chambers",
+      "uses" : {
+      },
+      "ValueSet-hyperbaric-capabilities-vs.html" : "Hyperbaric Chamber Capabilities"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "HyperbaricChamberTypeCS",
+      "title" : "Hyperbaric Chamber Types",
+      "description" : "Types of hyperbaric chambers",
+      "uses" : {
+      },
+      "ValueSet-hyperbaric-chamber-type-vs.html" : "Hyperbaric Chamber Types"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "LocationCapabilitiesCS",
+      "title" : "Location Capabilities Code System",
+      "description" : "Capabilities and services available at aerospace medicine locations",
+      "uses" : {
+      },
+      "ValueSet-location-capabilities-vs.html" : "Location Capabilities Value Set"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "OperationalStatusCS",
+      "title" : "Operational Status Code System",
+      "description" : "Operational status codes for facilities and vehicles",
+      "uses" : {
+      },
+      "ValueSet-operational-status-vs.html" : "Operational Status Value Set"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-space-radiation-dose-codes-vs-complete.html" : "Complete Space Radiation Dose Measurement Codes"
+    },
+    {
       "url" : "http://snomed.info/sct",
       "version" : null,
       "status" : "active",
@@ -10,25 +66,134 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-space-cardiovascular-effects.html" : "Space Cardiovascular Effects",
-      "ValueSet-space-neurological-effects.html" : "Space Neurological Effects",
-      "ValueSet-SpaceflightStressFactors.html" : "Stress and Physiological Factors",
-      "ValueSet-SpaceAdaptationBoneHealth.html" : "Adaptations of Bone Health",
-      "ValueSet-LunarDustToxicityValueSet.html" : "Lunar Dust Toxicity",
-      "ValueSet-space-radiation-effects.html" : "Space Radiation Effects",
-      "ValueSet-SleepLossHypoxiaResponses.html" : "Sleep Loss and Hypoxia Responses",
-      "ValueSet-space-psychological-effects.html" : "Space Psychological Effects",
-      "ValueSet-SpaceRadiationRisksVS.html" : "Space Radiation Risks ValueSet",
-      "ValueSet-space-monitoring-procedures.html" : "Space Monitoring Procedures",
-      "ValueSet-SpaceTravelBrainChanges.html" : "Brain and Neurologic Changes",
       "ValueSet-AstronautBackPain.html" : "Back Pain and Space Travel",
-      "ValueSet-SleepLossHypoxiaEffect.html" : "Sleep Loss and Hypoxia Effects",
+      "ValueSet-regulatory-standards.html" : "Regulatory Standards for Diving and Space Medicine",
+      "ValueSet-space-psychological-effects.html" : "Space Psychological Effects",
+      "ValueSet-diving-contraindicated-conditions.html" : "Diving Medical Contraindications",
       "ValueSet-space-physiological-effects.html" : "Space Physiological Effects",
+      "ValueSet-space-cardiovascular-effects.html" : "Space Cardiovascular Effects",
+      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
+      "ValueSet-space-visual-effects.html" : "Space Visual Effects",
+      "ValueSet-SpaceTravelBrainChanges.html" : "Brain and Neurologic Changes",
+      "ValueSet-SpaceflightStressFactors.html" : "Stress and Physiological Factors",
+      "ValueSet-GimbalContraindicatedConditions.html" : "Gimbal Contraindications",
+      "ValueSet-space-monitoring-procedures.html" : "Space Monitoring Procedures",
+      "ValueSet-SpaceAdaptationBoneHealth.html" : "Adaptations of Bone Health",
+      "ValueSet-decompression-procedures.html" : "Decompression Procedures",
+      "ValueSet-SleepLossHypoxiaEffect.html" : "Sleep Loss and Hypoxia Effects",
       "ValueSet-AircraftFumeExposureValueSet.html" : "Aircraft Fume Exposure",
       "ValueSet-space-environmental-factors.html" : "Space Environmental Factors",
-      "ValueSet-GimbalContraindicatedConditions.html" : "Gimbal Contraindications",
+      "ValueSet-space-radiation-effects.html" : "Space Radiation Effects",
+      "ValueSet-LunarDustToxicityValueSet.html" : "Lunar Dust Toxicity",
+      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures",
       "ValueSet-MuscleStiffnessAndSpaceHealth.html" : "Muscle Stiffness",
-      "ValueSet-space-visual-effects.html" : "Space Visual Effects"
+      "ValueSet-space-neurological-effects.html" : "Space Neurological Effects",
+      "ValueSet-underwater-training-procedures.html" : "Underwater Training Procedures",
+      "ValueSet-SpaceRadiationRisksVS.html" : "Space Radiation Risks ValueSet",
+      "ValueSet-SleepLossHypoxiaResponses.html" : "Sleep Loss and Hypoxia Responses"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "ValueSet-radiation-dose-units-vs.html" : "Radiation Dose Units"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "DecompressionProtocolCS",
+      "title" : "Decompression Protocols and Procedures",
+      "description" : "Standardized decompression protocols and safety procedures",
+      "uses" : {
+      },
+      "ValueSet-decompression-procedures.html" : "Decompression Procedures"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "DivingMedicineCS",
+      "title" : "Diving Medicine Code System",
+      "description" : "Medical codes specific to diving medicine and hyperbaric treatments",
+      "uses" : {
+      },
+      "ValueSet-diving-medical-examinations.html" : "Diving Medical Examinations"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "NeutralBuoyancyTrainingCS",
+      "title" : "Neutral Buoyancy Training Code System",
+      "description" : "Specialized codes for neutral buoyancy training activities and assessments",
+      "uses" : {
+      },
+      "ValueSet-neutral-buoyancy-training-activities.html" : "Neutral Buoyancy Training Activities"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RadiationCountermeasuresCS",
+      "title" : "Radiation Countermeasures Code System",
+      "description" : "Protective measures against space radiation",
+      "uses" : {
+      },
+      "ValueSet-radiation-countermeasures-vs.html" : "Radiation Countermeasures",
+      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "RadiationDetectorTypeCS",
+      "title" : "Radiation Detector Type Code System",
+      "description" : "Types of radiation detection equipment",
+      "uses" : {
+      },
+      "ValueSet-radiation-detector-type-vs-complete.html" : "Complete Radiation Detector Types",
+      "ValueSet-dosimeter-type-vs.html" : "Dosimeter Types"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "RegulatoryComplianceCS",
+      "title" : "Diving and Space Medicine Regulatory Compliance",
+      "description" : "Regulatory standards and compliance codes for diving and space medicine",
+      "uses" : {
+      },
+      "ValueSet-regulatory-standards.html" : "Regulatory Standards for Diving and Space Medicine"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs",
+      "version" : "0.4.2",
+      "status" : "draft",
+      "name" : "SpaceRadiationTypeCS",
+      "title" : "Space Radiation Type Code System",
+      "description" : "Types of radiation encountered in space environments",
+      "uses" : {
+      },
+      "ValueSet-space-radiation-type-vs.html" : "Space Radiation Types",
+      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types"
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "UnderwaterCommunicationCS",
+      "title" : "Underwater Communication Systems",
+      "description" : "Communication systems and protocols for underwater training operations",
+      "uses" : {
+      },
+      "ValueSet-underwater-communication-systems.html" : "Underwater Communication Systems"
     }
   ]
 }

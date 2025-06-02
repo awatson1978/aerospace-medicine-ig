@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Location/NASANeutralBuoyancyLaboratory> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NASANeutralBuoyancyLaboratory"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"^^xsd:anyURI ;
+       fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location NASANeutralBuoyancyLaboratory</b></p><a name=\"NASANeutralBuoyancyLaboratory\"> </a><a name=\"hcNASANeutralBuoyancyLaboratory\"> </a><a name=\"NASANeutralBuoyancyLaboratory-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-NeutralBuoyancyFacility.html\">Neutral Buoyancy Facility</a></p></div><p><b>name</b>: NASA Neutral Buoyancy Laboratory (NBL)</p><p><b>description</b>: 202 x 102 x 40 feet deep training pool for EVA simulation</p><p><b>address</b>: 2101 NASA Parkway Houston TX 77058 US </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "NASA Neutral Buoyancy Laboratory (NBL)"] ; # 
+  fhir:description [ fhir:v "202 x 102 x 40 feet deep training pool for EVA simulation"] ; # 
+  fhir:address [
+     fhir:line ( [ fhir:v "2101 NASA Parkway" ] ) ;
+     fhir:city [ fhir:v "Houston" ] ;
+     fhir:state [ fhir:v "TX" ] ;
+     fhir:postalCode [ fhir:v "77058" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/ExampleDiveMedicalClearance> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleDiveMedicalClearance"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance"^^xsd:anyURI ;
+       fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ExampleDiveMedicalClearance</b></p><a name=\"ExampleDiveMedicalClearance\"> </a><a name=\"hcExampleDiveMedicalClearance\"> </a><a name=\"ExampleDiveMedicalClearance-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiveMedicalClearance.html\">Dive Medical Clearance</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 79492003}\">Diving medical examination</span></p><p><b>subject</b>: <a href=\"Patient-janeway.html\">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>performed</b>: 2025-05-15 14:00:00+0000</p><p><b>outcome</b>: <span title=\"Codes:\">Cleared for diving operations</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:79492003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "79492003" ] ;
+       fhir:display [ fhir:v "Diving medical examination" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://mitre.org/fhir/space-health/Patient/janeway> ;
+     fhir:reference [ fhir:v "Patient/janeway" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:dateTime ;
+     fhir:v "2025-05-15T14:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:outcome [
+     fhir:text [ fhir:v "Cleared for diving operations" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

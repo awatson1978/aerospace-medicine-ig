@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><a name=\"mitre.fhir.spacehealth-en-US\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"
   },
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.4.1",
+  "version" : "0.4.2",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-06-01T17:14:01-05:00",
+  "date" : "2025-06-01T22:56:50-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -618,6 +618,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/advanced-dive-profile"
+      },
+      "name" : "Advanced Dive Profile",
+      "description" : "Comprehensive dive profile with enhanced data collection and regulatory compliance",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -626,6 +638,30 @@
       "name" : "Aircraft Fume Exposure",
       "description" : "Health impacts from exposure to aircraft contaminated air and fume events.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/AquariusUnderwaterLaboratory"
+      },
+      "name" : "Aquarius Underwater Laboratory",
+      "description" : "NOAA's Aquarius underwater research station used for NEEMO missions",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ArtemisBaseCampHabitat"
+      },
+      "name" : "Artemis Base Camp Habitat",
+      "description" : "Artemis lunar surface habitat module",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
     },
     {
       "extension" : [{
@@ -642,18 +678,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Astronaut"
-      },
-      "name" : "Astronaut",
-      "description" : "STUB - Patient profile for flight crew on space craft.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -661,6 +685,18 @@
       },
       "name" : "Astronaut and Space Tourist Medical Screening Questionnaire",
       "description" : "A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Astronaut"
+      },
+      "name" : "Astronaut Patient Profile",
+      "description" : "Patient profile for astronauts and space travelers",
       "exampleBoolean" : false
     },
     {
@@ -693,6 +729,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/BarotraumaAssessment"
+      },
+      "name" : "Barotrauma Assessment",
+      "description" : "Assessment of pressure-related injuries (barotrauma)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/Biosphere2UnderseaHabitat"
+      },
+      "name" : "Biosphere 2 Undersea Habitat",
+      "description" : "University of Arizona Biosphere 2 analog training facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/bp-device"
       },
       "name" : "Blood Pressure Device",
@@ -710,6 +770,18 @@
       "name" : "Blood Pressure Panel",
       "description" : "Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/BlueOriginWestTexas"
+      },
+      "name" : "Blue Origin West Texas Facility",
+      "description" : "Blue Origin suborbital flight operations",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -762,6 +834,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/StarlinerCalypso"
+      },
+      "name" : "Boeing Starliner Calypso",
+      "description" : "Boeing CST-100 Starliner spacecraft",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -774,6 +858,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/BrooksAltitudeChamber"
+      },
+      "name" : "Brooks Altitude Chamber",
+      "description" : "High-altitude environmental training facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/BrooksAerospaceMedicine"
+      },
+      "name" : "Brooks School of Aerospace Medicine",
+      "description" : "USAF School of Aerospace Medicine hyperbaric facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cardiovascular-fitness"
+      },
+      "name" : "Cardiovascular Fitness Assessment",
+      "description" : "Assessment of cardiovascular fitness for diving",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/CHESAUnderseaLaboratory"
+      },
+      "name" : "CHESA Undersea Laboratory",
+      "description" : "Commercial underwater training facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -781,6 +913,102 @@
       },
       "name" : "Commercial Space Equipment",
       "description" : "STUB - Device profile for commercial space equipment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/communication-session-assessment"
+      },
+      "name" : "Communication Session Assessment",
+      "description" : "Assessment of communication system performance during underwater training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/communication-systems"
+      },
+      "name" : "Communication Systems Used",
+      "description" : "Communication systems and protocols used during training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/organ-dose-codes-vs-complete"
+      },
+      "name" : "Complete Organ-Specific Dose Codes",
+      "description" : "Comprehensive codes for organ-specific radiation dose measurements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/radiation-countermeasures-vs-complete"
+      },
+      "name" : "Complete Radiation Countermeasures",
+      "description" : "Comprehensive list of protective measures against space radiation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/radiation-detector-type-vs-complete"
+      },
+      "name" : "Complete Radiation Detector Types",
+      "description" : "Comprehensive list of radiation detection devices used in space",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-radiation-dose-codes-vs-complete"
+      },
+      "name" : "Complete Space Radiation Dose Measurement Codes",
+      "description" : "Comprehensive codes for radiation dose measurements in space environments",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-radiation-type-vs-complete"
+      },
+      "name" : "Complete Space Radiation Types",
+      "description" : "Comprehensive list of ionizing radiation types encountered in space",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/complication-monitoring"
+      },
+      "name" : "Complication Monitoring",
+      "description" : "Monitoring for treatment complications",
       "exampleBoolean" : false
     },
     {
@@ -902,6 +1130,138 @@
       "name" : "Condition - Stroke",
       "description" : "Cerebrovascular accident (disorder)",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/crew-coordination"
+      },
+      "name" : "Crew Coordination Assessment",
+      "description" : "Assessment of crew coordination during simulation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/CrewDragonEndeavour"
+      },
+      "name" : "Crew Dragon Endeavour",
+      "description" : "SpaceX Crew Dragon spacecraft Endeavour",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/CrewDragonResilience"
+      },
+      "name" : "Crew Dragon Resilience",
+      "description" : "SpaceX Crew Dragon spacecraft Resilience",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/CSADavidFloridaLaboratory"
+      },
+      "name" : "CSA David Florida Laboratory",
+      "description" : "Canadian Space Agency testing facility",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/CSALifeSciencesResearch"
+      },
+      "name" : "CSA Life Sciences Research",
+      "description" : "Canadian Space Agency life sciences research division",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cumulative-radiation-dose"
+      },
+      "name" : "Cumulative Radiation Dose (Fixed)",
+      "description" : "Enhanced cumulative radiation dose tracking with comprehensive time periods",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/decompression-algorithm"
+      },
+      "name" : "Decompression Algorithm Used",
+      "description" : "The specific decompression algorithm or table used",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/decompression-procedures"
+      },
+      "name" : "Decompression Procedures",
+      "description" : "Standardized decompression procedures and protocols",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/decompression-protocol"
+      },
+      "name" : "Decompression Protocol",
+      "description" : "Standardized decompression procedures for diving operations and space analog training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/decompression-protocol-cs"
+      },
+      "name" : "Decompression Protocols and Procedures",
+      "description" : "Standardized decompression protocols and safety procedures",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DecompressionSickness"
+      },
+      "name" : "Decompression Sickness",
+      "description" : "Decompression sickness occurring during diving or altitude training",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1173,6 +1533,246 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DiveMedicalClearance"
+      },
+      "name" : "Dive Medical Clearance",
+      "description" : "Medical clearance examination for diving operations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiveProfile"
+      },
+      "name" : "Dive Profile",
+      "description" : "Comprehensive dive profile including depth, time, and environmental data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/regulatory-compliance-cs"
+      },
+      "name" : "Diving and Space Medicine Regulatory Compliance",
+      "description" : "Regulatory standards and compliance codes for diving and space medicine",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DivingEquipment"
+      },
+      "name" : "Diving Equipment",
+      "description" : "Equipment used for diving operations and underwater training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/diving-contraindications"
+      },
+      "name" : "Diving Medical Contraindications",
+      "description" : "Medical conditions that contraindicate diving",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/diving-contraindicated-conditions"
+      },
+      "name" : "Diving Medical Contraindications",
+      "description" : "Medical conditions that contraindicate diving activities",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/diving-medical-examinations"
+      },
+      "name" : "Diving Medical Examinations",
+      "description" : "Types of medical examinations for diving fitness",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/diving-medicine-cs"
+      },
+      "name" : "Diving Medicine Code System",
+      "description" : "Medical codes specific to diving medicine and hyperbaric treatments",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/DLRAerospaceMedicine"
+      },
+      "name" : "DLR Institute of Aerospace Medicine",
+      "description" : "German Aerospace Center medical research institute",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/dosimeter-type-vs"
+      },
+      "name" : "Dosimeter Types",
+      "description" : "Types of radiation dosimeters",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/EarthMoonL4L5Stations"
+      },
+      "name" : "Earth-Moon L4/L5 Stations",
+      "description" : "Space habitats at Earth-Moon Lagrange points",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/EdwardsAirForceBase"
+      },
+      "name" : "Edwards Air Force Base",
+      "description" : "USAF Test Pilot School and aerospace medicine research",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/emergency-procedures"
+      },
+      "name" : "Emergency Procedures",
+      "description" : "Emergency decompression procedures if applicable",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/emergency-response"
+      },
+      "name" : "Emergency Response Assessment",
+      "description" : "Assessment of emergency response procedures",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/response-time"
+      },
+      "name" : "Emergency Response Time",
+      "description" : "Time from emergency recognition to response initiation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/aerospace-code-system-enhanced"
+      },
+      "name" : "Enhanced Aerospace Medicine Code System",
+      "description" : "Comprehensive code system for aerospace medicine concepts including all referenced codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/enhanced-hyperbaric-treatment"
+      },
+      "name" : "Enhanced Hyperbaric Treatment",
+      "description" : "Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/enhanced-neutral-buoyancy-session"
+      },
+      "name" : "Enhanced Neutral Buoyancy Training Session",
+      "description" : "Comprehensive neutral buoyancy training session with full regulatory compliance tracking",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/environmental-conditions"
+      },
+      "name" : "Environmental Conditions",
+      "description" : "Environmental conditions during training session",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/environmental-factors"
+      },
+      "name" : "Environmental Factors",
+      "description" : "Environmental conditions affecting decompression requirements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/EnvironmentalMonitoring"
       },
       "name" : "Environmental Monitoring",
@@ -1190,6 +1790,90 @@
       "name" : "Environmental Monitoring API for Closed Biome Systems",
       "description" : "A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ESACentrfugeCologne"
+      },
+      "name" : "ESA Human Centrifuge",
+      "description" : "European Space Agency centrifuge facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/EuropeanAstronautCentreNBL"
+      },
+      "name" : "European Astronaut Centre NBL",
+      "description" : "ESA's neutral buoyancy facility in Cologne, Germany",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExampleAstronaut"
+      },
+      "name" : "Example Astronaut",
+      "description" : "Example astronaut for testing radiation tracking",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ExampleDiveMedicalClearance"
+      },
+      "name" : "Example Dive Medical Clearance",
+      "description" : "Example medical clearance for diving operations",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ExampleHyperbaricChamber"
+      },
+      "name" : "Example Hyperbaric Chamber",
+      "description" : "Example hyperbaric chamber facility",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ExampleNeutralBuoyancySession"
+      },
+      "name" : "Example Neutral Buoyancy Training Session",
+      "description" : "Example of a typical neutral buoyancy training session",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancySession"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleDiveProfile"
+      },
+      "name" : "Example Training Dive Profile",
+      "description" : "Example dive profile from neutral buoyancy training",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile"
     },
     {
       "extension" : [{
@@ -1254,6 +1938,138 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hyperbaric-chamber"
+      },
+      "name" : "Hyperbaric Chamber",
+      "description" : "A medical facility equipped with a hyperbaric chamber for pressurized treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hyperbaric-capabilities"
+      },
+      "name" : "Hyperbaric Chamber Capabilities",
+      "description" : "Specific capabilities of the hyperbaric chamber",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/hyperbaric-capabilities-vs"
+      },
+      "name" : "Hyperbaric Chamber Capabilities",
+      "description" : "Capabilities available in hyperbaric chambers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/hyperbaric-capabilities-cs"
+      },
+      "name" : "Hyperbaric Chamber Capabilities",
+      "description" : "Capabilities and services available in hyperbaric chambers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chamber-configuration"
+      },
+      "name" : "Hyperbaric Chamber Configuration",
+      "description" : "Configuration and setup of the hyperbaric chamber",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chamber-type"
+      },
+      "name" : "Hyperbaric Chamber Type",
+      "description" : "Type of hyperbaric chamber (monoplace, multiplace, etc.)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/hyperbaric-chamber-type-vs"
+      },
+      "name" : "Hyperbaric Chamber Types",
+      "description" : "Types of hyperbaric chambers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/hyperbaric-chamber-type-cs"
+      },
+      "name" : "Hyperbaric Chamber Types",
+      "description" : "Types of hyperbaric chambers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/HyperbaricTreatment"
+      },
+      "name" : "Hyperbaric Treatment",
+      "description" : "Hyperbaric oxygen therapy or chamber treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/HyperbaricChamberFacility"
+      },
+      "name" : "Hyperbaric Treatment Chamber",
+      "description" : "Hyperbaric medicine treatment facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-table"
+      },
+      "name" : "Hyperbaric Treatment Table",
+      "description" : "Specific treatment table used (e.g., USN Table 6)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Contract"
       }],
       "reference" : {
@@ -1274,6 +2090,126 @@
       "name" : "Insurance - Plan",
       "description" : "Space tourist insurance plan.",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InternationalSpaceStationColumbus"
+      },
+      "name" : "ISS Columbus Laboratory",
+      "description" : "International Space Station European laboratory module",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InternationalSpaceStationCupola"
+      },
+      "name" : "ISS Cupola Module",
+      "description" : "International Space Station Cupola observation module",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InternationalSpaceStationDestiny"
+      },
+      "name" : "ISS Destiny Laboratory",
+      "description" : "International Space Station US laboratory module",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InternationalSpaceStationKibo"
+      },
+      "name" : "ISS Kibo Laboratory",
+      "description" : "International Space Station Japanese laboratory module",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InternationalSpaceStationUnity"
+      },
+      "name" : "ISS Unity Node",
+      "description" : "International Space Station Unity connecting node",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/InternationalSpaceStationZvezda"
+      },
+      "name" : "ISS Zvezda Service Module",
+      "description" : "International Space Station Russian service module with enhanced shielding",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/JamesWebbSpaceTelescope"
+      },
+      "name" : "James Webb Space Telescope Location",
+      "description" : "James Webb Space Telescope at Sun-Earth L2",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/JAXASpaceBiomedicalResearch"
+      },
+      "name" : "JAXA Space Biomedical Research Office",
+      "description" : "Japan Aerospace Exploration Agency medical research",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/KSCMedicalFacility"
+      },
+      "name" : "Kennedy Space Center Medical Facility",
+      "description" : "KSC astronaut medical support facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lessons-learned"
+      },
+      "name" : "Lessons Learned",
+      "description" : "Lessons learned and recommendations from emergency response",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1578,6 +2514,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/location-capabilities"
+      },
+      "name" : "Location Capabilities",
+      "description" : "Specific capabilities and equipment available at location",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/location-capabilities-cs"
+      },
+      "name" : "Location Capabilities Code System",
+      "description" : "Capabilities and services available at aerospace medicine locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/location-capabilities-vs"
+      },
+      "name" : "Location Capabilities Value Set",
+      "description" : "Capabilities and services available at aerospace medicine locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/location-hierarchy"
+      },
+      "name" : "Location Hierarchy",
+      "description" : "Hierarchical relationship between locations (parent/child)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1585,6 +2569,162 @@
       },
       "name" : "Lunar Dust Toxicity",
       "description" : "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LunarGatewayHALO"
+      },
+      "name" : "Lunar Gateway HALO Module",
+      "description" : "Lunar Gateway Habitation and Logistics Outpost",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LunarGatewayPPE"
+      },
+      "name" : "Lunar Gateway Power and Propulsion Element",
+      "description" : "Lunar Gateway Power and Propulsion Element",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LunarSouthPoleBases"
+      },
+      "name" : "Lunar South Pole Base",
+      "description" : "Permanent lunar base near the South Pole",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/MarsAscentVehicle"
+      },
+      "name" : "Mars Ascent Vehicle",
+      "description" : "Mars surface to orbit transport",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/MarsBaseAlpha"
+      },
+      "name" : "Mars Base Alpha",
+      "description" : "First permanent Mars surface base",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/MarsTransitVehicle"
+      },
+      "name" : "Mars Transit Vehicle",
+      "description" : "Deep space transport for Mars missions",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/maximum-depth-reached"
+      },
+      "name" : "Maximum Depth Reached",
+      "description" : "Maximum depth reached during the dive requiring decompression",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/maximum-pressure"
+      },
+      "name" : "Maximum Operating Pressure",
+      "description" : "Maximum pressure the chamber can safely operate at",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/maximum-depth"
+      },
+      "name" : "Maximum Training Depth",
+      "description" : "Maximum depth reached during training session",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/MayoAerospaceMedicine"
+      },
+      "name" : "Mayo Clinic Aerospace Medicine",
+      "description" : "Mayo Clinic aerospace medicine and altitude research",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medical-intervention"
+      },
+      "name" : "Medical Intervention",
+      "description" : "Medical interventions provided during emergency response",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mission-context"
+      },
+      "name" : "Mission Context",
+      "description" : "Links radiation exposure to specific space missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/diagnostic-report-mission-context"
+      },
+      "name" : "Mission Context for Diagnostic Reports",
+      "description" : "Links diagnostic reports to specific space missions",
       "exampleBoolean" : false
     },
     {
@@ -1614,6 +2754,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/NASAAmesResearchCenter"
+      },
+      "name" : "NASA Ames Research Center",
+      "description" : "NASA Ames centrifuge and spatial disorientation research",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -1621,6 +2773,102 @@
       },
       "name" : "NASA HERA Analog Mission Application",
       "description" : "Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/NASAHyperbaricFacility"
+      },
+      "name" : "NASA Hyperbaric Facility",
+      "description" : "NASA's hyperbaric chamber for diving medicine and space analog training",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/NASANeutralBuoyancyLaboratory"
+      },
+      "name" : "NASA Neutral Buoyancy Laboratory",
+      "description" : "NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/NavalMedicalResearchUnit"
+      },
+      "name" : "Naval Medical Research Unit",
+      "description" : "US Navy diving medicine and hyperbaric research facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NeutralBuoyancyFacility"
+      },
+      "name" : "Neutral Buoyancy Facility",
+      "description" : "Facility for underwater astronaut training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/NeutralBuoyancyFacilityEquipment"
+      },
+      "name" : "Neutral Buoyancy Facility Equipment",
+      "description" : "Equipment used in neutral buoyancy training facility",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/neutral-buoyancy-training-activities"
+      },
+      "name" : "Neutral Buoyancy Training Activities",
+      "description" : "Types of training activities conducted in neutral buoyancy environments",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/neutral-buoyancy-training-cs"
+      },
+      "name" : "Neutral Buoyancy Training Code System",
+      "description" : "Specialized codes for neutral buoyancy training activities and assessments",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NeutralBuoyancySession"
+      },
+      "name" : "Neutral Buoyancy Training Session",
+      "description" : "Training session in neutral buoyancy facility for EVA simulation",
       "exampleBoolean" : false
     },
     {
@@ -1646,6 +2894,42 @@
       "name" : "Observation - Orbital Elements",
       "description" : "Observation - Orbital Elements",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/operational-status"
+      },
+      "name" : "Operational Status",
+      "description" : "Current operational status of the facility",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/operational-status-cs"
+      },
+      "name" : "Operational Status Code System",
+      "description" : "Operational status codes for facilities and vehicles",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/operational-status-vs"
+      },
+      "name" : "Operational Status Value Set",
+      "description" : "Operational status codes for facilities and vehicles",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1806,6 +3090,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oxygen-concentration"
+      },
+      "name" : "Oxygen Concentration",
+      "description" : "Oxygen concentration during treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/oxygen-capability"
+      },
+      "name" : "Oxygen Delivery Capability",
+      "description" : "Oxygen delivery capabilities of the chamber",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1926,6 +3234,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-monitoring"
+      },
+      "name" : "Patient Monitoring",
+      "description" : "Continuous patient monitoring during hyperbaric treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/PatuxentRiverNavalAirStation"
+      },
+      "name" : "Patuxent River Naval Air Station",
+      "description" : "US Navy Test Pilot School",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Procedure"
       }],
       "reference" : {
@@ -1994,6 +3326,138 @@
       "name" : "Procedure - Ultrasound",
       "description" : "Ultrasound scan of the abdomen",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pulmonary-function"
+      },
+      "name" : "Pulmonary Function Assessment",
+      "description" : "Assessment of respiratory function for diving",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/radiation-countermeasures"
+      },
+      "name" : "Radiation Countermeasures",
+      "description" : "Protective measures taken during radiation exposure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/radiation-countermeasures-vs"
+      },
+      "name" : "Radiation Countermeasures",
+      "description" : "Protective measures against radiation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/radiation-countermeasures-cs"
+      },
+      "name" : "Radiation Countermeasures Code System",
+      "description" : "Protective measures against space radiation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/radiation-detector"
+      },
+      "name" : "Radiation Detection Device (Fixed)",
+      "description" : "Fixed device profile for radiation monitoring in space with properly constrained properties",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/radiation-detector-type-cs"
+      },
+      "name" : "Radiation Detector Type Code System",
+      "description" : "Types of radiation detection equipment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/radiation-dose-units-vs"
+      },
+      "name" : "Radiation Dose Units",
+      "description" : "Units for radiation dose measurements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/regulatory-compliance"
+      },
+      "name" : "Regulatory Compliance",
+      "description" : "Regulatory standards compliance during training session",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/regulatory-compliance-assessment"
+      },
+      "name" : "Regulatory Compliance Assessment",
+      "description" : "Assessment of compliance with diving and space medicine regulatory standards",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/regulatory-standards"
+      },
+      "name" : "Regulatory Standards for Diving and Space Medicine",
+      "description" : "Regulatory standards and compliance requirements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rescue-procedures"
+      },
+      "name" : "Rescue Procedures Used",
+      "description" : "Specific rescue procedures and techniques employed",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2082,6 +3546,66 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/safety-protocols"
+      },
+      "name" : "Safety Protocols",
+      "description" : "Safety protocols and procedures followed during training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/safety-stop-compliance"
+      },
+      "name" : "Safety Stop Compliance",
+      "description" : "Compliance with required safety stops during ascent",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ScubaDivingEquipment"
+      },
+      "name" : "SCUBA Diving Equipment",
+      "description" : "Self-contained underwater breathing apparatus",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/ShackletonCraterBase"
+      },
+      "name" : "Shackleton Crater Base",
+      "description" : "Research station at Shackleton Crater rim",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/shielding-mass"
+      },
+      "name" : "Shielding Mass",
+      "description" : "Effective shielding mass in g/cm²",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2102,6 +3626,18 @@
       "name" : "Sleep Loss and Hypoxia Responses",
       "description" : "Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/SoyuzMS"
+      },
+      "name" : "Soyuz MS Spacecraft",
+      "description" : "Russian Soyuz MS crew vehicle",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
     },
     {
       "extension" : [{
@@ -2334,6 +3870,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-radiation-exposure"
+      },
+      "name" : "Space Radiation Exposure (Fixed)",
+      "description" : "Corrected radiation dose measurement for space missions with proper extension contexts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-radiation-summary"
+      },
+      "name" : "Space Radiation Exposure Summary (Fixed)",
+      "description" : "Comprehensive radiation dose summary with proper mission context",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2341,6 +3901,54 @@
       },
       "name" : "Space Radiation Risks ValueSet",
       "description" : "Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/radiation-type"
+      },
+      "name" : "Space Radiation Type",
+      "description" : "Type of space radiation exposure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-radiation-type-cs"
+      },
+      "name" : "Space Radiation Type Code System",
+      "description" : "Types of radiation encountered in space environments",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-radiation-type-vs"
+      },
+      "name" : "Space Radiation Types",
+      "description" : "Types of radiation encountered in space",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/suit-configuration"
+      },
+      "name" : "Space Suit Configuration",
+      "description" : "Configuration of space suit simulator used in training",
       "exampleBoolean" : false
     },
     {
@@ -2406,6 +4014,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/VirginGalacticSpaceport"
+      },
+      "name" : "Spaceport America",
+      "description" : "Virgin Galactic commercial spaceport",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/SpaceXHawthorneFactory"
+      },
+      "name" : "SpaceX Hawthorne Factory",
+      "description" : "SpaceX manufacturing and mission control facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/SpaceXBocaChica"
+      },
+      "name" : "SpaceX Starbase",
+      "description" : "SpaceX Starship development and launch facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2418,6 +4062,102 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/SunEarthL1Station"
+      },
+      "name" : "Sun-Earth L1 Observatory",
+      "description" : "Space weather monitoring station at L1",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/task-completion-metrics"
+      },
+      "name" : "Task Completion Metrics",
+      "description" : "Performance metrics for tasks completed during training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tool-usage-assessment"
+      },
+      "name" : "Tool Usage Assessment",
+      "description" : "Assessment of tool manipulation and usage effectiveness",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/total-decompression-time"
+      },
+      "name" : "Total Decompression Time",
+      "description" : "Total time required for decompression including all stops",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/session-duration"
+      },
+      "name" : "Training Session Duration",
+      "description" : "Duration of the neutral buoyancy training session",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/training-objectives"
+      },
+      "name" : "Training Session Objectives",
+      "description" : "Specific training objectives for the session",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/treatment-duration"
+      },
+      "name" : "Treatment Duration",
+      "description" : "Total duration of hyperbaric treatment",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/NASCOMRussianCentrifuge"
+      },
+      "name" : "TsPK Centrifuge Complex",
+      "description" : "Russian cosmonaut centrifuge training facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2425,6 +4165,126 @@
       },
       "name" : "Twenty Four Hour Blood Pressure",
       "description" : "An average blood pressure (systolic and diastolic) over a twenty four hour period.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/emergency-type"
+      },
+      "name" : "Type of Emergency",
+      "description" : "Classification of the emergency situation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/underwater-communication-system"
+      },
+      "name" : "Underwater Communication System",
+      "description" : "Communication equipment for underwater training operations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/underwater-communication-systems"
+      },
+      "name" : "Underwater Communication Systems",
+      "description" : "Communication systems used in underwater training operations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/underwater-communication-cs"
+      },
+      "name" : "Underwater Communication Systems",
+      "description" : "Communication systems and protocols for underwater training operations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/underwater-emergency-response"
+      },
+      "name" : "Underwater Emergency Response",
+      "description" : "Emergency response procedures during underwater training operations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/UnderwaterEVASimulation"
+      },
+      "name" : "Underwater EVA Simulation",
+      "description" : "Extravehicular activity simulation conducted underwater",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/underwater-training-procedures"
+      },
+      "name" : "Underwater Training Procedures",
+      "description" : "Procedures and activities conducted during underwater training",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/UniversityOfPennsylvaniaHyperbaric"
+      },
+      "name" : "University of Pennsylvania Hyperbaric Center",
+      "description" : "Academic hyperbaric medicine and research center",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/UTMBAerospaceResearch"
+      },
+      "name" : "UTMB Aerospace Medicine Research",
+      "description" : "University of Texas Medical Branch aerospace medicine program",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vestibular-assessment"
+      },
+      "name" : "Vestibular Function Assessment",
+      "description" : "Assessment of inner ear and balance function",
       "exampleBoolean" : false
     },
     {
@@ -2442,6 +4302,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/WrightPattersonAerospaceResearch"
+      },
+      "name" : "Wright-Patterson Aerospace Research Laboratory",
+      "description" : "USAF aerospace medicine research facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2450,6 +4322,18 @@
       "name" : "xGeo Locations",
       "description" : "STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/YuriGagarinCosmonautTrainingCenter"
+      },
+      "name" : "Yuri Gagarin Cosmonaut Training Center",
+      "description" : "Russian cosmonaut training facility with underwater training capabilities",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
     }],
     "page" : {
       "extension" : [{
@@ -2538,6 +4422,24 @@
         }],
         "nameUrl" : "screening-astronaut.html",
         "title" : "Astronaut Training",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "radiation-tracking.html"
+        }],
+        "nameUrl" : "radiation-tracking.html",
+        "title" : "Radiation Tracking",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "neutral-boyancy.html"
+        }],
+        "nameUrl" : "neutral-boyancy.html",
+        "title" : "Neutral Boyancy Training",
         "generation" : "markdown"
       }]
     },

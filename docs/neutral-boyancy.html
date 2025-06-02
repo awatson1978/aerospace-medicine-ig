@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Neutral Boyancy Training -  v0.4.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.4.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-boyancy.html">Neutral Boyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Neutral Boyancy Training</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Neutral Boyancy Training</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#underwater-training-and-decompression-medicine" id="markdown-toc-underwater-training-and-decompression-medicine">Underwater Training and Decompression Medicine</a>    <ul>
+      <li><a href="#fhir-implementation-framework" id="markdown-toc-fhir-implementation-framework">FHIR Implementation Framework</a>        <ul>
+          <li><a href="#core-profiles-overview" id="markdown-toc-core-profiles-overview">Core Profiles Overview</a></li>
+        </ul>
+      </li>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#neutral-buoyancy-training" id="markdown-toc-neutral-buoyancy-training">Neutral Buoyancy Training</a>        <ul>
+          <li><a href="#training-session-implementation" id="markdown-toc-training-session-implementation">Training Session Implementation</a></li>
+          <li><a href="#training-performance-metrics" id="markdown-toc-training-performance-metrics">Training Performance Metrics</a></li>
+          <li><a href="#eva-simulation-fidelity" id="markdown-toc-eva-simulation-fidelity">EVA simulation fidelity</a></li>
+        </ul>
+      </li>
+      <li><a href="#scuba-and-diving-medicine-integration" id="markdown-toc-scuba-and-diving-medicine-integration">SCUBA and Diving Medicine Integration</a>        <ul>
+          <li><a href="#medical-clearance-framework" id="markdown-toc-medical-clearance-framework">Medical Clearance Framework</a></li>
+          <li><a href="#dive-profile-and-exposure-tracking" id="markdown-toc-dive-profile-and-exposure-tracking">Dive Profile and Exposure Tracking</a></li>
+        </ul>
+      </li>
+      <li><a href="#standardized-medical-terminologies" id="markdown-toc-standardized-medical-terminologies">Standardized Medical Terminologies</a>        <ul>
+          <li><a href="#training-and-procedure-codes" id="markdown-toc-training-and-procedure-codes">Training and Procedure Codes</a></li>
+          <li><a href="#communication-and-equipment" id="markdown-toc-communication-and-equipment">Communication and Equipment</a></li>
+          <li><a href="#value-sets-for-implementation" id="markdown-toc-value-sets-for-implementation">Value Sets for Implementation</a></li>
+        </ul>
+      </li>
+      <li><a href="#compression-and-decompression-medicine" id="markdown-toc-compression-and-decompression-medicine">Compression and Decompression Medicine</a>        <ul>
+          <li><a href="#hyperbaric-treatment-capabilities" id="markdown-toc-hyperbaric-treatment-capabilities">Hyperbaric Treatment Capabilities</a></li>
+          <li><a href="#decompression-sickness-management" id="markdown-toc-decompression-sickness-management">Decompression Sickness Management</a></li>
+        </ul>
+      </li>
+      <li><a href="#pressure-environment-safety" id="markdown-toc-pressure-environment-safety">Pressure Environment Safety</a>        <ul>
+          <li><a href="#atmospheric-transition-monitoring" id="markdown-toc-atmospheric-transition-monitoring">Atmospheric Transition Monitoring</a></li>
+          <li><a href="#equipment-integration-and-safety" id="markdown-toc-equipment-integration-and-safety">Equipment Integration and Safety</a></li>
+        </ul>
+      </li>
+      <li><a href="#clinical-integration" id="markdown-toc-clinical-integration">Clinical Integration</a>        <ul>
+          <li><a href="#space-medicine-correlation" id="markdown-toc-space-medicine-correlation">Space Medicine Correlation</a></li>
+          <li><a href="#training-effectiveness-assessment" id="markdown-toc-training-effectiveness-assessment">Training Effectiveness Assessment</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a>        <ul>
+          <li><a href="#complete-training-session-example" id="markdown-toc-complete-training-session-example">Complete Training Session Example</a></li>
+          <li><a href="#dive-profile-example" id="markdown-toc-dive-profile-example">Dive Profile Example</a></li>
+          <li><a href="#medical-clearance-example" id="markdown-toc-medical-clearance-example">Medical Clearance Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementation-considerations" id="markdown-toc-implementation-considerations">Implementation Considerations</a>        <ul>
+          <li><a href="#data-integration" id="markdown-toc-data-integration">Data Integration</a></li>
+          <li><a href="#quality-assurance" id="markdown-toc-quality-assurance">Quality Assurance</a></li>
+        </ul>
+      </li>
+      <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="underwater-training-and-decompression-medicine">Underwater Training and Decompression Medicine</h1>
+
+<p>Underwater training facilities serve as realistic Earth-based analogs for space missions. For example, NASA's Neutral Buoyancy Laboratory (NBL) – one of the world's largest indoor training pools – is used for mission planning, procedure development, hardware verification, and astronaut training in preparation for spacewalks¹. In parallel, NASA's NEEMO missions immerse crews in the Aquarius undersea habitat (62 feet deep off Key Largo) for 1–3 week "saturation" dives, effectively simulating long-duration spacecraft habitation and hyperbaric exposures²'³. These environments allow multinational teams (NASA, ESA, CSA, UAE and others) to practice complex tasks like assembling habitat mockups, cargo handling, and emergency drills in an isolated, high-pressure setting⁴'³. By training underwater, astronauts and support personnel confront stressors analogous to those in space – from life-support dependency to confined isolation – making these dual-use operations invaluable for both diving medicine and space medicine.</p>
+
+<h2 id="fhir-implementation-framework">FHIR Implementation Framework</h2>
+
+<p>This implementation guide provides comprehensive FHIR profiles for underwater training environments that serve as space analogs. The data model supports:</p>
+
+<ul>
+  <li><a name="l505">​</a><strong>Training Session Documentation</strong>: Using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile</li>
+  <li><a name="l514">​</a><strong>Medical Clearance Tracking</strong>: Via the <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile</li>
+  <li><a name="l523">​</a><strong>Dive Profile Analytics</strong>: Through the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles</li>
+  <li><strong>Equipment Integration</strong>: Using specialized device profiles for diving and communication equipment</li>
+  <li><strong>Regulatory Compliance</strong>: Through the <a href="StructureDefinition-regulatory-compliance-assessment.html"><code class="language-plaintext highlighter-rouge">RegulatoryComplianceAssessment</code></a> profile</li>
+</ul>
+
+<h3 id="core-profiles-overview">Core Profiles Overview</h3>
+
+<p>The implementation includes several key profile categories:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile Category</th>
+      <th>Primary Profiles</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Training Procedures</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code>, <code class="language-plaintext highlighter-rouge">UnderwaterEVASimulation</code></td>
+      <td>Document training activities and performance</td>
+    </tr>
+    <tr>
+      <td><strong>Medical Assessments</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code>, <code class="language-plaintext highlighter-rouge">BarotraumaAssessment</code></td>
+      <td>Track medical fitness and injuries</td>
+    </tr>
+    <tr>
+      <td><strong>Dive Operations</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">DiveProfile</code>, <code class="language-plaintext highlighter-rouge">DecompressionProtocol</code></td>
+      <td>Capture operational data and safety protocols</td>
+    </tr>
+    <tr>
+      <td><strong>Emergency Response</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">DecompressionSickness</code>, <code class="language-plaintext highlighter-rouge">HyperbaricTreatment</code>, <code class="language-plaintext highlighter-rouge">UnderwaterEmergencyResponse</code></td>
+      <td>Manage incidents and treatments</td>
+    </tr>
+    <tr>
+      <td><strong>Equipment &amp; Facilities</strong></td>
+      <td><code class="language-plaintext highlighter-rouge">DivingEquipment</code>, <code class="language-plaintext highlighter-rouge">HyperbaricChamber</code>, <code class="language-plaintext highlighter-rouge">UnderwaterCommunicationSystem</code></td>
+      <td>Track devices and locations</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="overview">Overview</h2>
+
+<p>The physiological and operational challenges of underwater environments closely parallel those encountered in space:</p>
+
+<ul>
+  <li>
+    <p><strong>Confined, hostile environments</strong>: Underwater habitats and spacecraft are closed systems where even minor equipment failures can become critical. Life support (breathing gas, pressure regulation, thermal control) is mandatory in both settings¹. Crew members work in limited spaces, isolated from immediate external aid, which demands strict life-support and evacuation protocols.</p>
+  </li>
+  <li>
+    <p><strong>Complex task performance</strong>: Astronauts must perform intricate tasks (tool handling, assembly, repair) while burdened by bulky gear or buoyancy effects. Underwater neutrality is often adjusted to simulate weightlessness, so that manipulating large masses feels akin to microgravity operations⁵. These simulations test fine motor skills and decision-making under physical strain and altered proprioception.</p>
+  </li>
+  <li>
+    <p><strong>Emergency response protocols</strong>: Whether under water or in orbit, emergency scenarios (e.g. rapid depressurization, equipment failures, diver "out-of-air" events) require rigorously practiced procedures. In both domains, crews train for remote rescues and on-site first response – for example, using onboard oxygen supplies, communicating with support teams, and executing contingency escapes.</p>
+  </li>
+  <li>
+    <p><strong>Equipment dependency</strong>: Survival depends on sophisticated life-support and mobility systems in both domains. Submersible breathing apparatus (SCUBA or mixed-gas regulators) and space suits provide breathable gas, pressure control, and thermal regulation. Facilities like the NBL maintain SCUBA and surface-supplied dive systems (air and nitrox) and even house an on-site hyperbaric chamber⁶. Similarly, spacecraft suits and vehicles carry redundant systems for gas supply, carbon dioxide scrubbing, and overheating prevention. Both require stringent pre-dive/airlock checks and backup contingencies.</p>
+  </li>
+  <li>
+    <p><strong>Pressure-related medical considerations</strong>: Changes in ambient pressure affect the human body in comparable ways. Increased ambient pressure (immersion) increases tissue nitrogen load, while transitioning to lower pressures (surfacing or suit depressurization) risks inert gas bubbles and decompression sickness (DCS). For instance, NASA must prevent DCS during EVA by using 100% oxygen prebreathe to purge nitrogen before the suit's lower-pressure environment⁷. Similarly, divers follow staged decompression schedules and gas-switch protocols to avoid DCS.</p>
+  </li>
+</ul>
+
+<p>This dual-use approach enables NASA and other agencies to apply spaceflight medical standards to dive training and vice versa. Underwater training leverages precise monitoring and safety practices so that lessons learned about human physiology, equipment, and procedures can directly improve space mission readiness and diving program safety.</p>
+
+<h2 id="neutral-buoyancy-training">Neutral Buoyancy Training</h2>
+
+<p>The Neutral Buoyancy Laboratory (NBL) and similar facilities provide the highest-fidelity analog for EVA tasks on Earth. Astronauts wear full pressure suits and conduct simulated spacewalks beneath the pool surface, with expert divers providing safety and technical support⁶'⁵. In these sessions, every aspect of the dive is meticulously managed and recorded:</p>
+
+<h3 id="training-session-implementation">Training Session Implementation</h3>
+
+<p><a name="l730">​</a>Each neutral buoyancy session is documented using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile, which captures:</p>
+
+<ul>
+  <li><strong>Session Metadata</strong>: Duration, maximum depth, training objectives</li>
+  <li><strong>Performance Metrics</strong>: Task completion times, movement efficiency, communication quality</li>
+  <li><strong>Safety Protocols</strong>: Emergency procedures, equipment status, environmental conditions</li>
+  <li><strong>Regulatory Compliance</strong>: Standards adherence and certification tracking</li>
+</ul>
+
+<p><strong>Example Training Session:</strong></p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Procedure"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/neutral-buoyancy-session"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/neutral-buoyancy-training-cs"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eva-simulation"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EVA Simulation Training"</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/CaptainJaneway"</span><span class="p">},</span><span class="w">
+  </span><span class="nl">"performedDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T09:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Location/NASANeutralBuoyancyLaboratory"</span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><a name="l943">​</a>For EVA-specific simulations, the <a href="StructureDefinition-underwater-eva-simulation.html"><code class="language-plaintext highlighter-rouge">UnderwaterEVASimulation</code></a> profile extends the base training session with:</p>
+
+<ul>
+  <li><strong>Suit Configuration</strong>: Space suit simulator specifications</li>
+  <li><strong>Tool Usage Assessment</strong>: Effectiveness metrics for equipment manipulation</li>
+  <li><strong>Crew Coordination</strong>: Multi-astronaut task coordination evaluation</li>
+  <li><strong>Emergency Response</strong>: Assessment of emergency procedure execution</li>
+</ul>
+
+<p>See the <a href="Procedure-ExampleNeutralBuoyancySession.html">example training session</a> for a complete implementation.</p>
+
+<h3 id="training-performance-metrics">Training Performance Metrics</h3>
+
+<p>The standardized <a href="CodeSystem-neutral-buoyancy-training-cs.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancyTrainingCS</code></a> code system defines:</p>
+
+<ul>
+  <li><strong>Training Types</strong>: EVA simulation, tool manipulation, emergency egress, crew coordination</li>
+  <li><strong>Performance Metrics</strong>: Task completion time, movement efficiency, communication clarity</li>
+  <li><strong>Assessment Categories</strong>: Equipment handling proficiency, spatial orientation, stress management</li>
+</ul>
+
+<h3 id="eva-simulation-fidelity">EVA simulation fidelity</h3>
+
+<p>Underwater training allows detailed emulation of spacewalk conditions. Trainers measure how effectively crew members manipulate tools while weightless and wearing pressurized suits. They evaluate team coordination during multi-astronaut operations (e.g. mock ISS assembly or habitat construction) and monitor cognitive load and fatigue accumulation over hours of work. Communications systems (including specialized underwater full-face masks with hardwired links) are tested for clarity and reliability in the noisy environment⁸. Emergency drills (such as rapid ascent protocols or suit breach scenarios) are practiced with realism. All these factors—task performance, teamwork, fatigue, comms integrity, emergency responsiveness—are documented so that training effectiveness can be quantified and EVA procedures refined.</p>
+
+<h2 id="scuba-and-diving-medicine-integration">SCUBA and Diving Medicine Integration</h2>
+
+<h3 id="medical-clearance-framework">Medical Clearance Framework</h3>
+
+<p><a name="l1019">​</a>Diving for space analog training requires extending standard astronaut health screening to include dive-specific evaluations. The <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile documents comprehensive medical assessments including:</p>
+
+<p><strong>Core Medical Evaluations:</strong></p>
+<ul>
+  <li><strong>Pulmonary Function</strong>: Spirometry and lung imaging via the <code class="language-plaintext highlighter-rouge">PulmonaryFunction</code> extension</li>
+  <li><strong>Cardiovascular Fitness</strong>: Exercise tolerance and cardiac assessment through <code class="language-plaintext highlighter-rouge">CardiovascularFitness</code> extension</li>
+  <li><strong>Vestibular Assessment</strong>: Inner ear and balance function evaluation using <code class="language-plaintext highlighter-rouge">VestibularAssessment</code> extension</li>
+  <li><strong>Contraindications Screening</strong>: Medical conditions that preclude diving through <code class="language-plaintext highlighter-rouge">DivingContraindications</code> extension</li>
+</ul>
+
+<p>In addition to routine aerospace medical exams, candidates undergo protocols similar to the NOAA Diving Medical Program. For example, all potential divers must demonstrate adequate respiratory function via spirometry and lung imaging⁹, ensuring no obstructive or restrictive disease impairs breathing under pressure. <strong>Cardiovascular fitness</strong> is also assessed (e.g. treadmill tests, ECG, lipid profile) to certify that the diver can handle the exertion and stress of diving¹⁰. A thorough <strong>neurological and vestibular exam</strong> is critical; inner-ear disorders (such as Meniere's disease, chronic otitis, or prior ear surgery) can prevent proper pressure equalization and are disqualifying¹¹.</p>
+
+<p><strong>Medical Contraindications:</strong>
+The <a href="ValueSet-diving-contraindicated-conditions.html"><code class="language-plaintext highlighter-rouge">DivingContraindicatedConditions</code></a> value set includes conditions such as:</p>
+<ul>
+  <li>Asthma and respiratory disorders</li>
+  <li>Cardiac arrhythmias and heart disease</li>
+  <li>History of decompression sickness</li>
+  <li>Claustrophobia and anxiety disorders</li>
+  <li>Pregnancy and certain medications</li>
+</ul>
+
+<p>Medical history reviews emphasize any previous dive-related incidents (decompression illness, arterial gas embolism, barotrauma) as potential contraindications or criteria for individualized assessment. Clearance to dive is granted only after all these factors meet conservative standards (e.g. absence of disqualifying conditions)⁹'¹¹. This multi-domain screening helps prevent medical emergencies during training dives.</p>
+
+<h3 id="dive-profile-and-exposure-tracking">Dive Profile and Exposure Tracking</h3>
+
+<p><a name="l1107">​</a>Modern dive operations generate extensive digital logs that feed directly into training records using the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles. These capture:</p>
+
+<p><strong>Core Dive Parameters:</strong></p>
+<ul>
+  <li><strong>Maximum Depth</strong>: Deepest point reached during dive</li>
+  <li><strong>Bottom Time</strong>: Duration at working depth</li>
+  <li><strong>Surface Interval</strong>: Rest time between dives</li>
+  <li><strong>Ascent Rate</strong>: Rate of return to surface</li>
+  <li><strong>Environmental Conditions</strong>: Water temperature, visibility, currents</li>
+</ul>
+
+<p><strong>Advanced Analytics</strong> (via <code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code>):</p>
+<ul>
+  <li><strong>Nitrogen Loading</strong>: Tissue saturation calculations</li>
+  <li><strong>Breathing Gas Mixture</strong>: Gas composition used</li>
+  <li><strong>Decompression Obligations</strong>: Required safety stops</li>
+  <li><strong>Communication Logs</strong>: Underwater communication records</li>
+  <li><strong>Emergency Procedures</strong>: Any emergency responses</li>
+</ul>
+
+<p>Commercial dive computers continuously record depth and time profiles for each dive, calculate decompression requirements, and monitor nitrogen saturation in tissues. After each dive, these logs (often in standard formats) can be uploaded to training databases. Key data such as maximum depth, bottom time, ascent rate, and required decompression stops are captured. Decompression obligations are computed using established dive tables or algorithms, and actual ascent profiles are compared to planned schedules. Environmental conditions (water temperature, visibility, currents) and the breathing gas mix used (air, nitrox, trimix) are annotated. Importantly, repetitive dives over days or weeks are tracked to quantify cumulative nitrogen loading; for example, NOAA requires dive computers for multi-day operations and mandates recording of residual nitrogen¹². This rich dive-exposure record integrates with the diver's health monitoring, enabling evaluation of cumulative decompression risk and informing safe scheduling of future dives.</p>
+
+<h2 id="standardized-medical-terminologies">Standardized Medical Terminologies</h2>
+
+<p>This implementation guide defines comprehensive code systems for underwater training medicine:</p>
+
+<h3 id="training-and-procedure-codes">Training and Procedure Codes</h3>
+<ul>
+  <li><strong><a href="CodeSystem-neutral-buoyancy-training-cs.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancyTrainingCS</code></a></strong>: Training activities, performance metrics, environments</li>
+  <li><strong><a href="CodeSystem-diving-medicine-cs.html"><code class="language-plaintext highlighter-rouge">DivingMedicineCS</code></a></strong>: Medical examinations, dive profiles, hyperbaric treatments</li>
+  <li><strong><a href="CodeSystem-decompression-protocol-cs.html"><code class="language-plaintext highlighter-rouge">DecompressionProtocolCS</code></a></strong>: Decompression algorithms, safety procedures, ascent protocols</li>
+</ul>
+
+<h3 id="communication-and-equipment">Communication and Equipment</h3>
+<ul>
+  <li><strong><a href="CodeSystem-underwater-communication-cs.html"><code class="language-plaintext highlighter-rouge">UnderwaterCommunicationCS</code></a></strong>: Communication systems, protocols, equipment status</li>
+  <li><strong><a href="CodeSystem-regulatory-compliance-cs.html"><code class="language-plaintext highlighter-rouge">RegulatoryComplianceCS</code></a></strong>: NOAA, OSHA, NASA, and international standards</li>
+</ul>
+
+<h3 id="value-sets-for-implementation">Value Sets for Implementation</h3>
+<ul>
+  <li><strong><a href="ValueSet-neutral-buoyancy-training-activities.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancyTrainingActivities</code></a></strong>: Training procedures and assessments</li>
+  <li><strong><a href="ValueSet-underwater-training-procedures.html"><code class="language-plaintext highlighter-rouge">UnderwaterTrainingProcedures</code></a></strong>: Underwater training and emergency procedures</li>
+  <li><strong><a href="ValueSet-diving-contraindicated-conditions.html"><code class="language-plaintext highlighter-rouge">DivingContraindicatedConditions</code></a></strong>: Medical conditions that preclude diving</li>
+</ul>
+
+<h2 id="compression-and-decompression-medicine">Compression and Decompression Medicine</h2>
+
+<h3 id="hyperbaric-treatment-capabilities">Hyperbaric Treatment Capabilities</h3>
+
+<p><a name="l1275">​</a>Underwater training centers often include on-site hyperbaric chambers that serve both as safety assets and research platforms. The <a href="StructureDefinition-hyperbaric-chamber.html"><code class="language-plaintext highlighter-rouge">HyperbaricChamber</code></a> location profile and <a href="StructureDefinition-hyperbaric-treatment.html"><code class="language-plaintext highlighter-rouge">HyperbaricTreatment</code></a> procedure profile document:</p>
+
+<p><strong>Chamber Specifications:</strong></p>
+<ul>
+  <li><strong>Chamber Type</strong>: Monoplace, multiplace, portable configurations</li>
+  <li><strong>Maximum Pressure</strong>: Operating pressure capabilities</li>
+  <li><strong>Treatment Capabilities</strong>: DCS treatment, wound healing, research applications</li>
+  <li><strong>Safety Systems</strong>: Monitoring equipment, emergency protocols</li>
+</ul>
+
+<p><strong>Treatment Protocols:</strong>
+The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class="language-plaintext highlighter-rouge">EnhancedHyperbaricTreatment</code></a> profile captures:</p>
+<ul>
+  <li><strong>Treatment Tables</strong>: Specific protocols (USN Table 6, Table 5, etc.)</li>
+  <li><strong>Pressure Profiles</strong>: Maximum pressure and duration</li>
+  <li><strong>Gas Administration</strong>: Oxygen concentration and air breaks</li>
+  <li><strong>Patient Monitoring</strong>: Continuous physiological monitoring</li>
+  <li><strong>Complication Management</strong>: Monitoring for oxygen toxicity and other adverse effects</li>
+</ul>
+
+<p>These chambers can be multi-place (housing multiple people) or monoplace. Treatment protocols for any decompression sickness or other dive injuries follow established hyperbaric tables (e.g. U.S. Navy or NOAA recompression tables), which are documented and tracked in the training records. Physicians and chamber operators use standardized logbooks to record chamber pressure, gas mixtures, and schedule steps. Physiological monitoring under pressure is maintained for anyone undergoing compression: vital signs (heart rate, SpO₂) are tracked, and oxygen exposures are carefully controlled. Protocols for oxygen toxicity surveillance are strictly enforced: personnel are trained to watch for early CNS oxygen toxicity symptoms using mnemonics (e.g. VENTID‑C) and to apply air-breaks as needed¹³. Chamber operations include redundancies in breathing systems and emergency air sources, analogous to spacecraft life support. Thus, hyperbaric facilities not only treat DCS but also allow controlled exposure studies, validating equipment and procedures for high-pressure environments.</p>
+
+<h3 id="decompression-sickness-management">Decompression Sickness Management</h3>
+
+<p><a name="l1356">​</a>Decompression sickness (DCS) risk is a key concern shared by divers and astronauts. The <a href="StructureDefinition-decompression-sickness.html"><code class="language-plaintext highlighter-rouge">DecompressionSickness</code></a> profile extends the space medicine condition profile to capture:</p>
+
+<p><strong>DCS Documentation:</strong></p>
+<ul>
+  <li><strong>Severity Classification</strong>: Type I (musculoskeletal) vs Type II (neurological)</li>
+  <li><strong>Onset Timeline</strong>: Relationship to dive profile</li>
+  <li><strong>Symptoms</strong>: Detailed symptom tracking and progression</li>
+  <li><strong>Treatment Response</strong>: Hyperbaric therapy effectiveness</li>
+</ul>
+
+<p><strong>Associated Procedures:</strong></p>
+<ul>
+  <li><strong><a href="StructureDefinition-decompression-protocol.html"><code class="language-plaintext highlighter-rouge">DecompressionProtocol</code></a></strong>: Standardized decompression procedures</li>
+  <li><strong><a name="l1404">​</a><a href="StructureDefinition-barotrauma-assessment.html"><code class="language-plaintext highlighter-rouge">BarotraumaAssessment</code></a></strong>: Assessment of pressure-related injuries</li>
+</ul>
+
+<p>Comprehensive DCS management begins with rapid symptom identification (joint pain, neurological signs) and classification of severity. If DCS is suspected, the affected individual is promptly transferred to hyperbaric treatment. Treatment response is closely monitored: symptoms are recorded before, during, and after recompression therapy, ensuring that the protocol (e.g. USN Table 6) is followed and adjusted as needed. After treatment, <strong>outcome assessment</strong> documents resolution or any residual deficits. Detailed medical notes and follow-up evaluations inform the astronaut's return-to-training timeline. Training programs also analyze DCS incidents to improve prevention: for example, gas switch schedules, depth/time limits, and pre-dive oxygen prebreathe are reviewed in light of any "near miss" or decompression case. This iterative profiling of DCS events and responses supports evidence-based refinements to both dive practices and spaceflight pre-breathing protocols.</p>
+
+<h2 id="pressure-environment-safety">Pressure Environment Safety</h2>
+
+<h3 id="atmospheric-transition-monitoring">Atmospheric Transition Monitoring</h3>
+
+<p>Rapid pressure changes are hazardous in both diving and spaceflight. Training programs continuously monitor pressure change rates during descent/ascent and ensure strict adherence to equalization protocols (e.g. ear clearing, mask balancing). The breathing gas composition is managed closely: divers often use nitrox (oxygen-enriched air) or mixed gases to optimize decompression, while spacecraft might adjust cabin O₂ levels for missions. Biophysically, models of nitrogen uptake and elimination are applied to predict tissue loading; these models are analogous to NASA's microgravity denitrogenation protocols. In an emergency (e.g. rapid ascent from a disabled submersible), divers and crews are trained in emergency decompress procedures, including rapid oxygen breathing and immediate chamber therapy. Sensors in the facility and suits track ambient pressure and gas partial pressures in real-time, alerting the team if thresholds are approached. All these measures ensure safe atmospheric transitions during analog missions.</p>
+
+<h3 id="equipment-integration-and-safety">Equipment Integration and Safety</h3>
+
+<p><a name="l1429">​</a>Diving and spacecraft life-support equipment share many design principles. The <a href="StructureDefinition-diving-equipment.html"><code class="language-plaintext highlighter-rouge">DivingEquipment</code></a> and <a href="StructureDefinition-underwater-communication-system.html"><code class="language-plaintext highlighter-rouge">UnderwaterCommunicationSystem</code></a> profiles track:</p>
+
+<p><strong>Life Support Equipment:</strong></p>
+<ul>
+  <li><strong>Breathing Systems</strong>: SCUBA, surface-supplied, mixed-gas systems</li>
+  <li><strong>Pressure Monitoring</strong>: Depth gauges, pressure sensors, safety alarms</li>
+  <li><strong>Thermal Protection</strong>: Wetsuits, dry suits, heating systems</li>
+  <li><strong>Emergency Equipment</strong>: Bailout bottles, emergency ascent devices</li>
+</ul>
+
+<p><strong>Communication Systems:</strong></p>
+<ul>
+  <li><strong>Hardwired Communication</strong>: Physical cable-based systems</li>
+  <li><strong>Through-Water Communication</strong>: Wireless underwater systems</li>
+  <li><strong>Emergency Signaling</strong>: Standard hand signals, emergency protocols</li>
+  <li><strong>Range and Quality</strong>: Communication effectiveness metrics</li>
+</ul>
+
+<p>Breathing gas quality is closely monitored: filter cartridges and compressors are inspected to prevent contamination (nitrogen dioxide, carbon monoxide, etc.). Life-support gear is built with redundancies – for instance, space suits have backup oxygen tanks, and divers carry independent bailout bottles. Training emphasizes failure response drills: if a regulator or suit fan fails, the diver/astronaut must switch to secondary systems immediately. Diving teams follow maintenance schedules (e.g. calibrating pressure gauges, servicing valves) that mirror aerospace maintenance protocols. Emergency life support durations are computed into mission plans: divers train to know exactly how long their bailout supply lasts at working depths, similar to how EVAs are planned around consumables. Communication systems are also stress-tested underwater: full-face masks with wired communication (used during SEATEST-7 and NEEMO) show how to maintain clear audio/video links even when handling cables⁸. By treating diving gear and spacecraft systems under a unified safety doctrine, programs ensure that astronauts can seamlessly apply space-proven life-support strategies in the water, and vice versa.</p>
+
+<h2 id="clinical-integration">Clinical Integration</h2>
+
+<h3 id="space-medicine-correlation">Space Medicine Correlation</h3>
+
+<p>Studying crewmembers in underwater analogs yields valuable insights into human physiology that overlap with space medicine. For example, immersion-induced fluid shifts (centralization of blood volume due to buoyancy) share features with microgravity fluid redistribution. Research has shown that immersion reduces peripheral fluid extravasation and increases central blood volume, much like fluid moves cephalad in space¹⁴. Thermal regulation is another common challenge: wearing pressurized suits or wetsuits in water can lead to heat stress similar to extravehicular activity overheating. Cognitive performance and crew psychology under stress are monitored (mission planners track workload, team dynamics, and stress markers during long dives). Because these analog studies occur in controlled environments, physiologic measurements (heart rate variability, oxygen consumption, sleep patterns) from underwater missions can be directly compared with spaceflight data. Patterns of deconditioning (muscle fatigue, bone stress) during repeated long dives can inform countermeasures for microgravity effects. In essence, the underwater analog acts as a surrogate laboratory where hypotheses about space physiology can be tested and refined.</p>
+
+<h3 id="training-effectiveness-assessment">Training Effectiveness Assessment</h3>
+
+<p>Quantitative evaluation is built into every dive program using the performance metrics captured in our FHIR profiles. The "skills transfer" from underwater training to space missions is assessed by comparing performance in neutral-buoyancy or saturation dives with performance in microgravity or simulator trials. Benchmark tasks (e.g. timed assembly of mock satellite components) are repeated across simulation modes to verify that underwater proficiency correlates with expected EVA performance. Medical monitoring is continuous: divers who train for weeks may undergo serial health checks to ensure continuity of medical data (e.g. tracking any signs of cumulative nitrogen exposure or stress). All mission logs, dive profiles, and medical observations feed into risk models. For instance, data on crew fatigue and decompression exposures can be used to predict DCS risk for upcoming training schedules. Likewise, psychological measures (mood questionnaires, decision-making tasks) are used to quantify cognitive effects of the extreme environment. This integrated monitoring allows for dynamic risk assessments – if certain profiles (e.g. repeated deep dives without adequate surface interval) are correlated with higher bubble scores, the program will adjust training protocols. The end goal is an evidence-based curriculum where individual response (fitness, stress tolerance, learning curves) informs personalized dive schedules and training loads.</p>
+
+<h2 id="implementation-examples">Implementation Examples</h2>
+
+<h3 id="complete-training-session-example">Complete Training Session Example</h3>
+
+<p>The <a href="Procedure-ExampleNeutralBuoyancySession.html"><code class="language-plaintext highlighter-rouge">ExampleNeutralBuoyancySession</code></a> demonstrates a typical 3-hour EVA simulation session with:</p>
+<ul>
+  <li>Session duration and depth parameters</li>
+  <li>Training objectives and task completion metrics</li>
+  <li>Safety protocol compliance</li>
+  <li>Equipment configuration details</li>
+</ul>
+
+<h3 id="dive-profile-example">Dive Profile Example</h3>
+
+<p>The <a href="Observation-ExampleDiveProfile.html"><code class="language-plaintext highlighter-rouge">ExampleDiveProfile</code></a> shows comprehensive dive data collection including:</p>
+<ul>
+  <li>Maximum depth of 12 meters for 180 minutes</li>
+  <li>Water temperature and visibility conditions</li>
+  <li>Decompression requirements and nitrogen loading</li>
+  <li>Communication system performance</li>
+</ul>
+
+<h3 id="medical-clearance-example">Medical Clearance Example</h3>
+
+<p>The <a href="Procedure-ExampleDiveMedicalClearance.html"><code class="language-plaintext highlighter-rouge">ExampleDiveMedicalClearance</code></a> illustrates the medical clearance process with:</p>
+<ul>
+  <li>Comprehensive fitness assessments</li>
+  <li>Contraindication screening</li>
+  <li>Certification level and restrictions</li>
+  <li>Follow-up requirements</li>
+</ul>
+
+<h2 id="implementation-considerations">Implementation Considerations</h2>
+
+<h3 id="data-integration">Data Integration</h3>
+
+<p>Successfully managing underwater training requires fusing diverse data streams into a cohesive record. Dive computers export standardized log files (often in Garmin/CSV formats) that can be parsed into electronic health records. Physiological monitors (biotelemetry for heart rate, temperature, oximetry) feed into mission databases in real-time. Performance metrics (task timing, error counts) and environmental sensors (pool temperature, gas composition) are linked to each training session. These data should be codified with consistent units and time stamps. Medical evaluations (pre- and post-dive physical exams, imaging results, lab tests) are tracked alongside dive history. In an HL7 FHIR context (R4), this could involve using Observation resources for dive vitals, Procedure resources for dive events, Condition for any decompression illness, and Device for equipment logs. Notably, future FHIR versions introduce even more relevant features: for example, FHIR v6 (ballot) has a dedicated provider taxonomy entry for "Undersea and Hyperbaric Medicine" specialists¹⁵, and R5 is expected to add environmental exposure profiling. Leveraging these standards, the analog dive program can ensure interoperability of its health and training data with broader aerospace medical records.</p>
+
+<h3 id="quality-assurance">Quality Assurance</h3>
+
+<p>Robust QA is essential for safe diving operations. All hardware (suits, breathing regulators, chamber valves) is calibrated and maintained on strict schedules parallel to aerospace quality protocols. Personnel are certified to diving standards: e.g. NASA divers often hold NOAA/AAUS certifications and attend requalification courses annually. Safety procedures are audited: checklists for dive briefings, emergency drills, and chamber operations are standardized and training sessions are observed for compliance. Incident reporting systems capture near-misses to continually refine safety plans. Medical surveillance includes routine follow-ups for divers, monitoring for late-onset dive-related effects (like ear trauma or subtle neurological symptoms). To ensure consistency across facilities, standardized training curricula and protocols are adopted (for instance, using common dive tables or preload protocols). By applying rigorous QA — analogous to spacecraft safety reviews — the underwater analog program maintains a "mission-ready" culture where both diving and spaceflight best practices reinforce each other.</p>
+
+<h2 id="future-directions">Future Directions</h2>
+
+<p>Underwater analog training continues to evolve with advancing technology and medical knowledge:</p>
+
+<ul>
+  <li>
+    <p><strong>Advanced simulation technologies</strong>: Virtual reality and haptic feedback may be integrated into underwater training (as in NASA's AMADEE/MOONDIVE projects) to superimpose mission visuals on divers, enhancing realism without additional physical hazard.</p>
+  </li>
+  <li>
+    <p><strong>Enhanced physiological monitoring</strong>: Wearable sensors (e.g. NIRS, ECG patches) and AI-based analytics can provide richer real-time insight into diver health, allowing finer correlations between analog and spaceflight data.</p>
+  </li>
+  <li>
+    <p><strong>Predictive risk modeling</strong>: Sophisticated models (possibly based on machine learning) could predict individual DCS or fatigue risk from prior dive history, customizing training regimens.</p>
+  </li>
+  <li>
+    <p><strong>Personalized training protocols</strong>: Based on individual medical responses (heart rate trends, cognitive scores), dive exposures and prebreathe procedures could be tailored to optimize safety and learning for each astronaut candidate.</p>
+  </li>
+  <li>
+    <p><strong>Dual-use equipment development</strong>: New life-support hardware (e.g. closed-loop rebreathers or hybrid buoyancy-suit systems) may be designed for both deep diving and planetary EVA, streamlining research for both fields.</p>
+  </li>
+</ul>
+
+<p>In summary, leveraging underwater training and decompression medicine in a unified framework creates an evidence-based foundation for astronaut preparation. This approach not only enhances the safety and effectiveness of spacewalk and mission training, but also drives advances in diving and hyperbaric medicine that benefit the broader medical community.</p>
+
+<h2 id="references">References</h2>
+
+<p>¹ <a href="https://www.nasa.gov/johnson/neutral-buoyancy-laboratory/">Neutral Buoyancy Laboratory - NASA</a></p>
+
+<p>² <a href="https://pubmed.ncbi.nlm.nih.gov/33510647/">Human Adaptations to Multiday Saturation on NASA NEEMO - PubMed</a></p>
+
+<p>³ <a href="https://www.space.com/astronauts-test-retro-spacesuit-ocean-floor.html">Astronauts Test Retro Spacesuit Tech for Mock Mars Missions Under the Sea &amp; Space</a></p>
+
+<p>⁴ <a href="https://dan.org/alert-diver/article/from-sea-to-space/">From Sea to Space - Divers Alert Network</a></p>
+
+<p>⁵ <a href="https://www.nasa.gov/directorates/esdmd/hhp/space-suits-and-exploration-operations/">EVA and Environmental Physiology - NASA</a></p>
+
+<p>⁶ <a href="https://www.omao.noaa.gov/sites/default/files/documents/Diving%20Medical%20Standards%20and%20Procedures%20Manual%2C%202010.pdf">NOAA DIVING PROGRAM</a></p>
+
+<p>⁹ <a href="https://omao.noaa.gov/sites/default/files/2023-05/NDSSM%20MAY%202023%20FINAL.pdf">NOAA Diving Medical Standards and Procedures Manual</a></p>
+
+<p>¹³ <a href="https://www.omao.noaa.gov/sites/default/files/documents/NOAA%20Operating%20Standards%20for%20Hyperbaric%20Chambers%20Final%2001-2017.pdf">RECOMPRESSION CHAMBER OPERATIONS</a></p>
+
+<p>¹⁴ <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8326965/">The Circulatory Effects of Increased Hydrostatic Pressure Due to Immersion and Submersion - PMC</a></p>
+
+<p>¹⁵ <a href="https://build.fhir.org/valueset-provider-taxonomy.html">Valueset-provider-taxonomy - FHIR v6.0.0-ballot2</a></p>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 22:57-0500">2025-06-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

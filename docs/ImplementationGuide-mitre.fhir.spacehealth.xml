@@ -7,10 +7,10 @@
 </div></div>
   </text>
   <url value="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth"/>
-  <version value="0.4.1"/>
+  <version value="0.4.2"/>
   <name value="SpaceflightHealthSimulationsReferenceDocumentation"/>
   <status value="draft"/>
-  <date value="2025-06-01T17:14:01-05:00"/>
+  <date value="2025-06-01T22:56:50-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -461,6 +461,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/advanced-dive-profile"/>
+      </reference>
+      <name value="Advanced Dive Profile"/>
+      <description value="Comprehensive dive profile with enhanced data collection and regulatory compliance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -469,6 +480,28 @@
       <name value="Aircraft Fume Exposure"/>
       <description value="Health impacts from exposure to aircraft contaminated air and fume events."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/AquariusUnderwaterLaboratory"/>
+      </reference>
+      <name value="Aquarius Underwater Laboratory"/>
+      <description value="NOAA's Aquarius underwater research station used for NEEMO missions"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/ArtemisBaseCampHabitat"/>
+      </reference>
+      <name value="Artemis Base Camp Habitat"/>
+      <description value="Artemis lunar surface habitat module"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -483,17 +516,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Astronaut"/>
-      </reference>
-      <name value="Astronaut"/>
-      <description value="STUB - Patient profile for flight crew on space craft."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -501,6 +523,17 @@
       </reference>
       <name value="Astronaut and Space Tourist Medical Screening Questionnaire"/>
       <description value="A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Astronaut"/>
+      </reference>
+      <name value="Astronaut Patient Profile"/>
+      <description value="Patient profile for astronauts and space travelers"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -530,6 +563,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BarotraumaAssessment"/>
+      </reference>
+      <name value="Barotrauma Assessment"/>
+      <description value="Assessment of pressure-related injuries (barotrauma)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Biosphere2UnderseaHabitat"/>
+      </reference>
+      <name value="Biosphere 2 Undersea Habitat"/>
+      <description value="University of Arizona Biosphere 2 analog training facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/bp-device"/>
       </reference>
       <name value="Blood Pressure Device"/>
@@ -546,6 +601,17 @@
       <name value="Blood Pressure Panel"/>
       <description value="Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/BlueOriginWestTexas"/>
+      </reference>
+      <name value="Blue Origin West Texas Facility"/>
+      <description value="Blue Origin suborbital flight operations"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -593,6 +659,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/StarlinerCalypso"/>
+      </reference>
+      <name value="Boeing Starliner Calypso"/>
+      <description value="Boeing CST-100 Starliner spacecraft"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -604,6 +681,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/BrooksAltitudeChamber"/>
+      </reference>
+      <name value="Brooks Altitude Chamber"/>
+      <description value="High-altitude environmental training facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/BrooksAerospaceMedicine"/>
+      </reference>
+      <name value="Brooks School of Aerospace Medicine"/>
+      <description value="USAF School of Aerospace Medicine hyperbaric facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cardiovascular-fitness"/>
+      </reference>
+      <name value="Cardiovascular Fitness Assessment"/>
+      <description value="Assessment of cardiovascular fitness for diving"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/CHESAUnderseaLaboratory"/>
+      </reference>
+      <name value="CHESA Undersea Laboratory"/>
+      <description value="Commercial underwater training facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -611,6 +732,94 @@
       </reference>
       <name value="Commercial Space Equipment"/>
       <description value="STUB - Device profile for commercial space equipment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-session-assessment"/>
+      </reference>
+      <name value="Communication Session Assessment"/>
+      <description value="Assessment of communication system performance during underwater training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-systems"/>
+      </reference>
+      <name value="Communication Systems Used"/>
+      <description value="Communication systems and protocols used during training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/organ-dose-codes-vs-complete"/>
+      </reference>
+      <name value="Complete Organ-Specific Dose Codes"/>
+      <description value="Comprehensive codes for organ-specific radiation dose measurements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiation-countermeasures-vs-complete"/>
+      </reference>
+      <name value="Complete Radiation Countermeasures"/>
+      <description value="Comprehensive list of protective measures against space radiation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiation-detector-type-vs-complete"/>
+      </reference>
+      <name value="Complete Radiation Detector Types"/>
+      <description value="Comprehensive list of radiation detection devices used in space"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-radiation-dose-codes-vs-complete"/>
+      </reference>
+      <name value="Complete Space Radiation Dose Measurement Codes"/>
+      <description value="Comprehensive codes for radiation dose measurements in space environments"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-radiation-type-vs-complete"/>
+      </reference>
+      <name value="Complete Space Radiation Types"/>
+      <description value="Comprehensive list of ionizing radiation types encountered in space"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/complication-monitoring"/>
+      </reference>
+      <name value="Complication Monitoring"/>
+      <description value="Monitoring for treatment complications"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -722,6 +931,127 @@
       <name value="Condition - Stroke"/>
       <description value="Cerebrovascular accident (disorder)"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/crew-coordination"/>
+      </reference>
+      <name value="Crew Coordination Assessment"/>
+      <description value="Assessment of crew coordination during simulation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/CrewDragonEndeavour"/>
+      </reference>
+      <name value="Crew Dragon Endeavour"/>
+      <description value="SpaceX Crew Dragon spacecraft Endeavour"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/CrewDragonResilience"/>
+      </reference>
+      <name value="Crew Dragon Resilience"/>
+      <description value="SpaceX Crew Dragon spacecraft Resilience"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/CSADavidFloridaLaboratory"/>
+      </reference>
+      <name value="CSA David Florida Laboratory"/>
+      <description value="Canadian Space Agency testing facility"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/CSALifeSciencesResearch"/>
+      </reference>
+      <name value="CSA Life Sciences Research"/>
+      <description value="Canadian Space Agency life sciences research division"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/cumulative-radiation-dose"/>
+      </reference>
+      <name value="Cumulative Radiation Dose (Fixed)"/>
+      <description value="Enhanced cumulative radiation dose tracking with comprehensive time periods"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/decompression-algorithm"/>
+      </reference>
+      <name value="Decompression Algorithm Used"/>
+      <description value="The specific decompression algorithm or table used"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/decompression-procedures"/>
+      </reference>
+      <name value="Decompression Procedures"/>
+      <description value="Standardized decompression procedures and protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/decompression-protocol"/>
+      </reference>
+      <name value="Decompression Protocol"/>
+      <description value="Standardized decompression procedures for diving operations and space analog training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/decompression-protocol-cs"/>
+      </reference>
+      <name value="Decompression Protocols and Procedures"/>
+      <description value="Standardized decompression protocols and safety procedures"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DecompressionSickness"/>
+      </reference>
+      <name value="Decompression Sickness"/>
+      <description value="Decompression sickness occurring during diving or altitude training"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -970,6 +1300,226 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DiveMedicalClearance"/>
+      </reference>
+      <name value="Dive Medical Clearance"/>
+      <description value="Medical clearance examination for diving operations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DiveProfile"/>
+      </reference>
+      <name value="Dive Profile"/>
+      <description value="Comprehensive dive profile including depth, time, and environmental data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/regulatory-compliance-cs"/>
+      </reference>
+      <name value="Diving and Space Medicine Regulatory Compliance"/>
+      <description value="Regulatory standards and compliance codes for diving and space medicine"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DivingEquipment"/>
+      </reference>
+      <name value="Diving Equipment"/>
+      <description value="Equipment used for diving operations and underwater training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diving-contraindications"/>
+      </reference>
+      <name value="Diving Medical Contraindications"/>
+      <description value="Medical conditions that contraindicate diving"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/diving-contraindicated-conditions"/>
+      </reference>
+      <name value="Diving Medical Contraindications"/>
+      <description value="Medical conditions that contraindicate diving activities"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/diving-medical-examinations"/>
+      </reference>
+      <name value="Diving Medical Examinations"/>
+      <description value="Types of medical examinations for diving fitness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/diving-medicine-cs"/>
+      </reference>
+      <name value="Diving Medicine Code System"/>
+      <description value="Medical codes specific to diving medicine and hyperbaric treatments"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/DLRAerospaceMedicine"/>
+      </reference>
+      <name value="DLR Institute of Aerospace Medicine"/>
+      <description value="German Aerospace Center medical research institute"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/dosimeter-type-vs"/>
+      </reference>
+      <name value="Dosimeter Types"/>
+      <description value="Types of radiation dosimeters"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/EarthMoonL4L5Stations"/>
+      </reference>
+      <name value="Earth-Moon L4/L5 Stations"/>
+      <description value="Space habitats at Earth-Moon Lagrange points"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/EdwardsAirForceBase"/>
+      </reference>
+      <name value="Edwards Air Force Base"/>
+      <description value="USAF Test Pilot School and aerospace medicine research"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emergency-procedures"/>
+      </reference>
+      <name value="Emergency Procedures"/>
+      <description value="Emergency decompression procedures if applicable"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emergency-response"/>
+      </reference>
+      <name value="Emergency Response Assessment"/>
+      <description value="Assessment of emergency response procedures"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/response-time"/>
+      </reference>
+      <name value="Emergency Response Time"/>
+      <description value="Time from emergency recognition to response initiation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/aerospace-code-system-enhanced"/>
+      </reference>
+      <name value="Enhanced Aerospace Medicine Code System"/>
+      <description value="Comprehensive code system for aerospace medicine concepts including all referenced codes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/enhanced-hyperbaric-treatment"/>
+      </reference>
+      <name value="Enhanced Hyperbaric Treatment"/>
+      <description value="Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/enhanced-neutral-buoyancy-session"/>
+      </reference>
+      <name value="Enhanced Neutral Buoyancy Training Session"/>
+      <description value="Comprehensive neutral buoyancy training session with full regulatory compliance tracking"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/environmental-conditions"/>
+      </reference>
+      <name value="Environmental Conditions"/>
+      <description value="Environmental conditions during training session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/environmental-factors"/>
+      </reference>
+      <name value="Environmental Factors"/>
+      <description value="Environmental conditions affecting decompression requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/EnvironmentalMonitoring"/>
       </reference>
       <name value="Environmental Monitoring"/>
@@ -986,6 +1536,83 @@
       <name value="Environmental Monitoring API for Closed Biome Systems"/>
       <description value="A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/ESACentrfugeCologne"/>
+      </reference>
+      <name value="ESA Human Centrifuge"/>
+      <description value="European Space Agency centrifuge facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/EuropeanAstronautCentreNBL"/>
+      </reference>
+      <name value="European Astronaut Centre NBL"/>
+      <description value="ESA's neutral buoyancy facility in Cologne, Germany"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExampleAstronaut"/>
+      </reference>
+      <name value="Example Astronaut"/>
+      <description value="Example astronaut for testing radiation tracking"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ExampleDiveMedicalClearance"/>
+      </reference>
+      <name value="Example Dive Medical Clearance"/>
+      <description value="Example medical clearance for diving operations"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/ExampleHyperbaricChamber"/>
+      </reference>
+      <name value="Example Hyperbaric Chamber"/>
+      <description value="Example hyperbaric chamber facility"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ExampleNeutralBuoyancySession"/>
+      </reference>
+      <name value="Example Neutral Buoyancy Training Session"/>
+      <description value="Example of a typical neutral buoyancy training session"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancySession"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleDiveProfile"/>
+      </reference>
+      <name value="Example Training Dive Profile"/>
+      <description value="Example dive profile from neutral buoyancy training"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1044,6 +1671,127 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hyperbaric-chamber"/>
+      </reference>
+      <name value="Hyperbaric Chamber"/>
+      <description value="A medical facility equipped with a hyperbaric chamber for pressurized treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hyperbaric-capabilities"/>
+      </reference>
+      <name value="Hyperbaric Chamber Capabilities"/>
+      <description value="Specific capabilities of the hyperbaric chamber"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hyperbaric-capabilities-vs"/>
+      </reference>
+      <name value="Hyperbaric Chamber Capabilities"/>
+      <description value="Capabilities available in hyperbaric chambers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hyperbaric-capabilities-cs"/>
+      </reference>
+      <name value="Hyperbaric Chamber Capabilities"/>
+      <description value="Capabilities and services available in hyperbaric chambers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chamber-configuration"/>
+      </reference>
+      <name value="Hyperbaric Chamber Configuration"/>
+      <description value="Configuration and setup of the hyperbaric chamber"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chamber-type"/>
+      </reference>
+      <name value="Hyperbaric Chamber Type"/>
+      <description value="Type of hyperbaric chamber (monoplace, multiplace, etc.)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hyperbaric-chamber-type-vs"/>
+      </reference>
+      <name value="Hyperbaric Chamber Types"/>
+      <description value="Types of hyperbaric chambers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/hyperbaric-chamber-type-cs"/>
+      </reference>
+      <name value="Hyperbaric Chamber Types"/>
+      <description value="Types of hyperbaric chambers"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/HyperbaricTreatment"/>
+      </reference>
+      <name value="Hyperbaric Treatment"/>
+      <description value="Hyperbaric oxygen therapy or chamber treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/HyperbaricChamberFacility"/>
+      </reference>
+      <name value="Hyperbaric Treatment Chamber"/>
+      <description value="Hyperbaric medicine treatment facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatment-table"/>
+      </reference>
+      <name value="Hyperbaric Treatment Table"/>
+      <description value="Specific treatment table used (e.g., USN Table 6)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Contract"/>
       </extension>
       <reference>
@@ -1063,6 +1811,116 @@
       <name value="Insurance - Plan"/>
       <description value="Space tourist insurance plan."/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InternationalSpaceStationColumbus"/>
+      </reference>
+      <name value="ISS Columbus Laboratory"/>
+      <description value="International Space Station European laboratory module"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InternationalSpaceStationCupola"/>
+      </reference>
+      <name value="ISS Cupola Module"/>
+      <description value="International Space Station Cupola observation module"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InternationalSpaceStationDestiny"/>
+      </reference>
+      <name value="ISS Destiny Laboratory"/>
+      <description value="International Space Station US laboratory module"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InternationalSpaceStationKibo"/>
+      </reference>
+      <name value="ISS Kibo Laboratory"/>
+      <description value="International Space Station Japanese laboratory module"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InternationalSpaceStationUnity"/>
+      </reference>
+      <name value="ISS Unity Node"/>
+      <description value="International Space Station Unity connecting node"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/InternationalSpaceStationZvezda"/>
+      </reference>
+      <name value="ISS Zvezda Service Module"/>
+      <description value="International Space Station Russian service module with enhanced shielding"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/JamesWebbSpaceTelescope"/>
+      </reference>
+      <name value="James Webb Space Telescope Location"/>
+      <description value="James Webb Space Telescope at Sun-Earth L2"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/JAXASpaceBiomedicalResearch"/>
+      </reference>
+      <name value="JAXA Space Biomedical Research Office"/>
+      <description value="Japan Aerospace Exploration Agency medical research"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/KSCMedicalFacility"/>
+      </reference>
+      <name value="Kennedy Space Center Medical Facility"/>
+      <description value="KSC astronaut medical support facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lessons-learned"/>
+      </reference>
+      <name value="Lessons Learned"/>
+      <description value="Lessons learned and recommendations from emergency response"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1341,6 +2199,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-capabilities"/>
+      </reference>
+      <name value="Location Capabilities"/>
+      <description value="Specific capabilities and equipment available at location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/location-capabilities-cs"/>
+      </reference>
+      <name value="Location Capabilities Code System"/>
+      <description value="Capabilities and services available at aerospace medicine locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/location-capabilities-vs"/>
+      </reference>
+      <name value="Location Capabilities Value Set"/>
+      <description value="Capabilities and services available at aerospace medicine locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/location-hierarchy"/>
+      </reference>
+      <name value="Location Hierarchy"/>
+      <description value="Hierarchical relationship between locations (parent/child)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1348,6 +2250,149 @@
       </reference>
       <name value="Lunar Dust Toxicity"/>
       <description value="Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LunarGatewayHALO"/>
+      </reference>
+      <name value="Lunar Gateway HALO Module"/>
+      <description value="Lunar Gateway Habitation and Logistics Outpost"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LunarGatewayPPE"/>
+      </reference>
+      <name value="Lunar Gateway Power and Propulsion Element"/>
+      <description value="Lunar Gateway Power and Propulsion Element"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LunarSouthPoleBases"/>
+      </reference>
+      <name value="Lunar South Pole Base"/>
+      <description value="Permanent lunar base near the South Pole"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/MarsAscentVehicle"/>
+      </reference>
+      <name value="Mars Ascent Vehicle"/>
+      <description value="Mars surface to orbit transport"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/MarsBaseAlpha"/>
+      </reference>
+      <name value="Mars Base Alpha"/>
+      <description value="First permanent Mars surface base"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/MarsTransitVehicle"/>
+      </reference>
+      <name value="Mars Transit Vehicle"/>
+      <description value="Deep space transport for Mars missions"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/maximum-depth-reached"/>
+      </reference>
+      <name value="Maximum Depth Reached"/>
+      <description value="Maximum depth reached during the dive requiring decompression"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/maximum-pressure"/>
+      </reference>
+      <name value="Maximum Operating Pressure"/>
+      <description value="Maximum pressure the chamber can safely operate at"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/maximum-depth"/>
+      </reference>
+      <name value="Maximum Training Depth"/>
+      <description value="Maximum depth reached during training session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/MayoAerospaceMedicine"/>
+      </reference>
+      <name value="Mayo Clinic Aerospace Medicine"/>
+      <description value="Mayo Clinic aerospace medicine and altitude research"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medical-intervention"/>
+      </reference>
+      <name value="Medical Intervention"/>
+      <description value="Medical interventions provided during emergency response"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mission-context"/>
+      </reference>
+      <name value="Mission Context"/>
+      <description value="Links radiation exposure to specific space missions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnostic-report-mission-context"/>
+      </reference>
+      <name value="Mission Context for Diagnostic Reports"/>
+      <description value="Links diagnostic reports to specific space missions"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1374,6 +2419,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/NASAAmesResearchCenter"/>
+      </reference>
+      <name value="NASA Ames Research Center"/>
+      <description value="NASA Ames centrifuge and spatial disorientation research"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -1381,6 +2437,94 @@
       </reference>
       <name value="NASA HERA Analog Mission Application"/>
       <description value="Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/NASAHyperbaricFacility"/>
+      </reference>
+      <name value="NASA Hyperbaric Facility"/>
+      <description value="NASA's hyperbaric chamber for diving medicine and space analog training"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/NASANeutralBuoyancyLaboratory"/>
+      </reference>
+      <name value="NASA Neutral Buoyancy Laboratory"/>
+      <description value="NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/NavalMedicalResearchUnit"/>
+      </reference>
+      <name value="Naval Medical Research Unit"/>
+      <description value="US Navy diving medicine and hyperbaric research facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NeutralBuoyancyFacility"/>
+      </reference>
+      <name value="Neutral Buoyancy Facility"/>
+      <description value="Facility for underwater astronaut training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/NeutralBuoyancyFacilityEquipment"/>
+      </reference>
+      <name value="Neutral Buoyancy Facility Equipment"/>
+      <description value="Equipment used in neutral buoyancy training facility"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/neutral-buoyancy-training-activities"/>
+      </reference>
+      <name value="Neutral Buoyancy Training Activities"/>
+      <description value="Types of training activities conducted in neutral buoyancy environments"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/neutral-buoyancy-training-cs"/>
+      </reference>
+      <name value="Neutral Buoyancy Training Code System"/>
+      <description value="Specialized codes for neutral buoyancy training activities and assessments"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/NeutralBuoyancySession"/>
+      </reference>
+      <name value="Neutral Buoyancy Training Session"/>
+      <description value="Training session in neutral buoyancy facility for EVA simulation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1404,6 +2548,39 @@
       <name value="Observation - Orbital Elements"/>
       <description value="Observation - Orbital Elements"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/operational-status"/>
+      </reference>
+      <name value="Operational Status"/>
+      <description value="Current operational status of the facility"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/operational-status-cs"/>
+      </reference>
+      <name value="Operational Status Code System"/>
+      <description value="Operational status codes for facilities and vehicles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/operational-status-vs"/>
+      </reference>
+      <name value="Operational Status Value Set"/>
+      <description value="Operational status codes for facilities and vehicles"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1550,6 +2727,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oxygen-concentration"/>
+      </reference>
+      <name value="Oxygen Concentration"/>
+      <description value="Oxygen concentration during treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/oxygen-capability"/>
+      </reference>
+      <name value="Oxygen Delivery Capability"/>
+      <description value="Oxygen delivery capabilities of the chamber"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1660,6 +2859,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-monitoring"/>
+      </reference>
+      <name value="Patient Monitoring"/>
+      <description value="Continuous patient monitoring during hyperbaric treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/PatuxentRiverNavalAirStation"/>
+      </reference>
+      <name value="Patuxent River Naval Air Station"/>
+      <description value="US Navy Test Pilot School"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Procedure"/>
       </extension>
       <reference>
@@ -1723,6 +2944,127 @@
       <name value="Procedure - Ultrasound"/>
       <description value="Ultrasound scan of the abdomen"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pulmonary-function"/>
+      </reference>
+      <name value="Pulmonary Function Assessment"/>
+      <description value="Assessment of respiratory function for diving"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiation-countermeasures"/>
+      </reference>
+      <name value="Radiation Countermeasures"/>
+      <description value="Protective measures taken during radiation exposure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiation-countermeasures-vs"/>
+      </reference>
+      <name value="Radiation Countermeasures"/>
+      <description value="Protective measures against radiation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/radiation-countermeasures-cs"/>
+      </reference>
+      <name value="Radiation Countermeasures Code System"/>
+      <description value="Protective measures against space radiation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiation-detector"/>
+      </reference>
+      <name value="Radiation Detection Device (Fixed)"/>
+      <description value="Fixed device profile for radiation monitoring in space with properly constrained properties"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/radiation-detector-type-cs"/>
+      </reference>
+      <name value="Radiation Detector Type Code System"/>
+      <description value="Types of radiation detection equipment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/radiation-dose-units-vs"/>
+      </reference>
+      <name value="Radiation Dose Units"/>
+      <description value="Units for radiation dose measurements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/regulatory-compliance"/>
+      </reference>
+      <name value="Regulatory Compliance"/>
+      <description value="Regulatory standards compliance during training session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/regulatory-compliance-assessment"/>
+      </reference>
+      <name value="Regulatory Compliance Assessment"/>
+      <description value="Assessment of compliance with diving and space medicine regulatory standards"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/regulatory-standards"/>
+      </reference>
+      <name value="Regulatory Standards for Diving and Space Medicine"/>
+      <description value="Regulatory standards and compliance requirements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/rescue-procedures"/>
+      </reference>
+      <name value="Rescue Procedures Used"/>
+      <description value="Specific rescue procedures and techniques employed"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1803,6 +3145,61 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/safety-protocols"/>
+      </reference>
+      <name value="Safety Protocols"/>
+      <description value="Safety protocols and procedures followed during training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/safety-stop-compliance"/>
+      </reference>
+      <name value="Safety Stop Compliance"/>
+      <description value="Compliance with required safety stops during ascent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ScubaDivingEquipment"/>
+      </reference>
+      <name value="SCUBA Diving Equipment"/>
+      <description value="Self-contained underwater breathing apparatus"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/ShackletonCraterBase"/>
+      </reference>
+      <name value="Shackleton Crater Base"/>
+      <description value="Research station at Shackleton Crater rim"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shielding-mass"/>
+      </reference>
+      <name value="Shielding Mass"/>
+      <description value="Effective shielding mass in g/cm²"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1822,6 +3219,17 @@
       <name value="Sleep Loss and Hypoxia Responses"/>
       <description value="Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/SoyuzMS"/>
+      </reference>
+      <name value="Soyuz MS Spacecraft"/>
+      <description value="Russian Soyuz MS crew vehicle"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2034,6 +3442,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/space-radiation-exposure"/>
+      </reference>
+      <name value="Space Radiation Exposure (Fixed)"/>
+      <description value="Corrected radiation dose measurement for space missions with proper extension contexts"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/space-radiation-summary"/>
+      </reference>
+      <name value="Space Radiation Exposure Summary (Fixed)"/>
+      <description value="Comprehensive radiation dose summary with proper mission context"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -2041,6 +3471,50 @@
       </reference>
       <name value="Space Radiation Risks ValueSet"/>
       <description value="Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiation-type"/>
+      </reference>
+      <name value="Space Radiation Type"/>
+      <description value="Type of space radiation exposure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-radiation-type-cs"/>
+      </reference>
+      <name value="Space Radiation Type Code System"/>
+      <description value="Types of radiation encountered in space environments"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-radiation-type-vs"/>
+      </reference>
+      <name value="Space Radiation Types"/>
+      <description value="Types of radiation encountered in space"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/suit-configuration"/>
+      </reference>
+      <name value="Space Suit Configuration"/>
+      <description value="Configuration of space suit simulator used in training"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2100,6 +3574,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/VirginGalacticSpaceport"/>
+      </reference>
+      <name value="Spaceport America"/>
+      <description value="Virgin Galactic commercial spaceport"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/SpaceXHawthorneFactory"/>
+      </reference>
+      <name value="SpaceX Hawthorne Factory"/>
+      <description value="SpaceX manufacturing and mission control facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/SpaceXBocaChica"/>
+      </reference>
+      <name value="SpaceX Starbase"/>
+      <description value="SpaceX Starship development and launch facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -2111,6 +3618,94 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/SunEarthL1Station"/>
+      </reference>
+      <name value="Sun-Earth L1 Observatory"/>
+      <description value="Space weather monitoring station at L1"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/task-completion-metrics"/>
+      </reference>
+      <name value="Task Completion Metrics"/>
+      <description value="Performance metrics for tasks completed during training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tool-usage-assessment"/>
+      </reference>
+      <name value="Tool Usage Assessment"/>
+      <description value="Assessment of tool manipulation and usage effectiveness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/total-decompression-time"/>
+      </reference>
+      <name value="Total Decompression Time"/>
+      <description value="Total time required for decompression including all stops"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/session-duration"/>
+      </reference>
+      <name value="Training Session Duration"/>
+      <description value="Duration of the neutral buoyancy training session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/training-objectives"/>
+      </reference>
+      <name value="Training Session Objectives"/>
+      <description value="Specific training objectives for the session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/treatment-duration"/>
+      </reference>
+      <name value="Treatment Duration"/>
+      <description value="Total duration of hyperbaric treatment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/NASCOMRussianCentrifuge"/>
+      </reference>
+      <name value="TsPK Centrifuge Complex"/>
+      <description value="Russian cosmonaut centrifuge training facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -2118,6 +3713,116 @@
       </reference>
       <name value="Twenty Four Hour Blood Pressure"/>
       <description value="An average blood pressure (systolic and diastolic) over a twenty four hour period."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/emergency-type"/>
+      </reference>
+      <name value="Type of Emergency"/>
+      <description value="Classification of the emergency situation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/underwater-communication-system"/>
+      </reference>
+      <name value="Underwater Communication System"/>
+      <description value="Communication equipment for underwater training operations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/underwater-communication-systems"/>
+      </reference>
+      <name value="Underwater Communication Systems"/>
+      <description value="Communication systems used in underwater training operations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/underwater-communication-cs"/>
+      </reference>
+      <name value="Underwater Communication Systems"/>
+      <description value="Communication systems and protocols for underwater training operations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/underwater-emergency-response"/>
+      </reference>
+      <name value="Underwater Emergency Response"/>
+      <description value="Emergency response procedures during underwater training operations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UnderwaterEVASimulation"/>
+      </reference>
+      <name value="Underwater EVA Simulation"/>
+      <description value="Extravehicular activity simulation conducted underwater"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/underwater-training-procedures"/>
+      </reference>
+      <name value="Underwater Training Procedures"/>
+      <description value="Procedures and activities conducted during underwater training"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/UniversityOfPennsylvaniaHyperbaric"/>
+      </reference>
+      <name value="University of Pennsylvania Hyperbaric Center"/>
+      <description value="Academic hyperbaric medicine and research center"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/UTMBAerospaceResearch"/>
+      </reference>
+      <name value="UTMB Aerospace Medicine Research"/>
+      <description value="University of Texas Medical Branch aerospace medicine program"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vestibular-assessment"/>
+      </reference>
+      <name value="Vestibular Function Assessment"/>
+      <description value="Assessment of inner ear and balance function"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2133,6 +3838,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/WrightPattersonAerospaceResearch"/>
+      </reference>
+      <name value="Wright-Patterson Aerospace Research Laboratory"/>
+      <description value="USAF aerospace medicine research facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -2141,6 +3857,17 @@
       <name value="xGeo Locations"/>
       <description value="STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/YuriGagarinCosmonautTrainingCenter"/>
+      </reference>
+      <name value="Yuri Gagarin Cosmonaut Training Center"/>
+      <description value="Russian cosmonaut training facility with underwater training capabilities"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -2219,6 +3946,22 @@
         </extension>
         <nameUrl value="screening-astronaut.html"/>
         <title value="Astronaut Training"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="radiation-tracking.html"/>
+        </extension>
+        <nameUrl value="radiation-tracking.html"/>
+        <title value="Radiation Tracking"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="neutral-boyancy.html"/>
+        </extension>
+        <nameUrl value="neutral-boyancy.html"/>
+        <title value="Neutral Boyancy Training"/>
         <generation value="markdown"/>
       </page>
     </page>
