@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/GCRExposureISS> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "GCRExposureISS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure"^^xsd:anyURI ;
+       fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation GCRExposureISS</b></p><a name=\"GCRExposureISS\"> </a><a name=\"hcGCRExposureISS\"> </a><a name=\"GCRExposureISS-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-radiation-exposure.html\">Space Radiation Exposure</a></p></div><p><b>Space Radiation Type</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs gcr}\">Galactic Cosmic Radiation</span></p><p><b>Mission Context</b>: <a href=\"Encounter-ISSExpedition71.html\">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = ISS Expedition; period = 2024-03-01 --&gt; 2024-09-15</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 73569-6}\">Radiation dose and image quality indicators</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace gcr-dose}\">Galactic Cosmic Radiation Dose</span></p><p><b>subject</b>: <a href=\"Patient-janeway.html\">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2024-03-15 12:00:00+0000</p><p><b>value</b>: 450 microsievert<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeuSv = 'uSv')</span></p><p><b>device</b>: <a href=\"Device-EPDUnit001.html\">Device: status = active; manufacturer = Aerospace Dosimetry Systems; serialNumber = EPD001; modelNumber = EPD-2024; type = Electronic Personal Dosimeter</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 77638-4}\">Irradiation dose rate</span></p><p><b>value</b>: 19 microsievert per hour<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeuSv/h = 'uSv/h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace let}\">Linear Energy Transfer</span></p><p><b>value</b>: 150 keV per micrometer<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekeV/um = 'keV/um')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/radiation-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "gcr" ] ;
+         fhir:display [ fhir:v "Galactic Cosmic Radiation" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-context"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:link <https://mitre.org/fhir/space-health/Encounter/ISSExpedition71> ;
+       fhir:reference [ fhir:v "Encounter/ISSExpedition71" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:73569-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73569-6" ] ;
+       fhir:display [ fhir:v "Radiation dose and image quality indicators" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/aerospace"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "gcr-dose" ] ;
+       fhir:display [ fhir:v "Galactic Cosmic Radiation Dose" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://mitre.org/fhir/space-health/Patient/janeway> ;
+     fhir:reference [ fhir:v "Patient/janeway" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:dateTime ;
+     fhir:v "2024-03-15T12:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "450"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "microsievert" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "uSv" ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://mitre.org/fhir/space-health/Device/EPDUnit001> ;
+     fhir:reference [ fhir:v "Device/EPDUnit001" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:77638-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "77638-4" ] ;
+         fhir:display [ fhir:v "Irradiation dose rate" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "19"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "microsievert per hour" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "uSv/h" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/aerospace"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "let" ] ;
+         fhir:display [ fhir:v "Linear Energy Transfer" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "150"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "keV per micrometer" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "keV/um" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,25 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Location/LocationLunarGateway> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LocationLunarGateway"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"^^xsd:anyURI ;
+       fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location LocationLunarGateway</b></p><a name=\"LocationLunarGateway\"> </a><a name=\"hcLocationLunarGateway\"> </a><a name=\"LocationLunarGateway-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SpaceLocation.html\">xGeo Locations</a></p></div><p><b>name</b>: Location - Gateway</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "Location - Gateway"] . # 
+
+# -------------------------------------------------------------------------------------
+

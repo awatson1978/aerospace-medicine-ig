@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="GCRExposureISS"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation GCRExposureISS</b></p><a name="GCRExposureISS"> </a><a name="hcGCRExposureISS"> </a><a name="GCRExposureISS-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-radiation-exposure.html">Space Radiation Exposure</a></p></div><p><b>Space Radiation Type</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs gcr}">Galactic Cosmic Radiation</span></p><p><b>Mission Context</b>: <a href="Encounter-ISSExpedition71.html">Encounter: status = finished; class = ambulatory (ActCode#AMB); type = ISS Expedition; period = 2024-03-01 --&gt; 2024-09-15</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://loinc.org 73569-6}">Radiation dose and image quality indicators</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace gcr-dose}">Galactic Cosmic Radiation Dose</span></p><p><b>subject</b>: <a href="Patient-janeway.html">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2024-03-15 12:00:00+0000</p><p><b>value</b>: 450 microsievert<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuSv = 'uSv')</span></p><p><b>device</b>: <a href="Device-EPDUnit001.html">Device: status = active; manufacturer = Aerospace Dosimetry Systems; serialNumber = EPD001; modelNumber = EPD-2024; type = Electronic Personal Dosimeter</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 77638-4}">Irradiation dose rate</span></p><p><b>value</b>: 19 microsievert per hour<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuSv/h = 'uSv/h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace let}">Linear Energy Transfer</span></p><p><b>value</b>: 150 keV per micrometer<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekeV/um = 'keV/um')</span></p></blockquote></div>
+  </text>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/radiation-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs"/>
+        <code value="gcr"/>
+        <display value="Galactic Cosmic Radiation"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/ISSExpedition71"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="73569-6"/>
+      <display value="Radiation dose and image quality indicators"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/aerospace"/>
+      <code value="gcr-dose"/>
+      <display value="Galactic Cosmic Radiation Dose"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/janeway"/>
+  </subject>
+  <effectiveDateTime value="2024-03-15T12:00:00Z"/>
+  <valueQuantity>
+    <value value="450"/>
+    <unit value="microsievert"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="uSv"/>
+  </valueQuantity>
+  <device>
+    <reference value="Device/EPDUnit001"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="77638-4"/>
+        <display value="Irradiation dose rate"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="19"/>
+      <unit value="microsievert per hour"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="uSv/h"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/aerospace"/>
+        <code value="let"/>
+        <display value="Linear Energy Transfer"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="150"/>
+      <unit value="keV per micrometer"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="keV/um"/>
+    </valueQuantity>
+  </component>
+</Observation>

@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/Observation.Kepler.ECI.1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Observation.Kepler.ECI.1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Observation.Kepler.ECI.1</b></p><a name=\"Observation.Kepler.ECI.1\"> </a><a name=\"hcObservation.Kepler.ECI.1\"> </a><a name=\"Observation.Kepler.ECI.1-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org ECI}\">Satellite Observation</span></p><p><b>method</b>: <span title=\"Codes:\">Earth Centered Inertial</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Eccentricity</span></p><p><b>value</b>: 0.6</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Semimajor Axis</span></p><p><b>value</b>: 2.7</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Angle of Inclination</span></p><p><b>value</b>: 53 deg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Longitude of the ascending node</span></p><p><b>value</b>: 0 deg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Argument of Periapsis</span></p><p><b>value</b>: 22.1 deg</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">True anomaly</span></p><p><b>value</b>: 30 s</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:ECI ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ECI" ] ;
+       fhir:display [ fhir:v "Satellite Observation" ]
+     ] )
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:code [ fhir:v "ECI" ] ;
+       fhir:display [ fhir:v "Earth Centered Inertial" ]
+     ] ) ;
+     fhir:text [ fhir:v "Earth Centered Inertial" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "e" ] ;
+         fhir:display [ fhir:v "Eccentricity" ]
+       ] ) ;
+       fhir:text [ fhir:v "Eccentricity" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.6 ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "a" ] ;
+         fhir:display [ fhir:v "Semimajor Axis" ]
+       ] ) ;
+       fhir:text [ fhir:v "Semimajor Axis" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 2.7 ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "i" ] ;
+         fhir:display [ fhir:v "Inclination" ]
+       ] ) ;
+       fhir:text [ fhir:v "Angle of Inclination" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "53"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "deg" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "Ω" ] ;
+         fhir:display [ fhir:v "Longitude of the ascending node" ]
+       ] ) ;
+       fhir:text [ fhir:v "Longitude of the ascending node" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "deg" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "ω" ] ;
+         fhir:display [ fhir:v "Periapsis" ]
+       ] ) ;
+       fhir:text [ fhir:v "Argument of Periapsis" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 22.1 ] ;
+       fhir:unit [ fhir:v "deg" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:code [ fhir:v "θ" ] ;
+         fhir:display [ fhir:v "True Anomaly" ]
+       ] ) ;
+       fhir:text [ fhir:v "True anomaly" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "s" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

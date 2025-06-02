@@ -28,8 +28,10 @@ open output/index.html
 #### License  
 This project is licensed under the Apache License. See the `LICENSE` file for details.
 
+
+
 #### Release Statement and Copyright
 
 Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.
-
 ©2025 The MITRE Corporation. ALL RIGHTS RESERVED. 
+

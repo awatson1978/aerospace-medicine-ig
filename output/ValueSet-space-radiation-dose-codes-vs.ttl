@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-radiation-dose-codes-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet space-radiation-dose-codes-vs</b></p><a name=\"space-radiation-dose-codes-vs\"> </a><a name=\"hcspace-radiation-dose-codes-vs\"> </a><a name=\"space-radiation-dose-codes-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/73536-5/\">73536-5</a></td><td>Radiation dose total</td></tr><tr><td><a href=\"https://loinc.org/73537-3/\">73537-3</a></td><td>Radiation dose rate</td></tr></table></li><li>Include these codes as defined in <code>http://hl7.org/fhir/uv/aerospace</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>gcr-dose</td><td>Galactic Cosmic Radiation Dose</td></tr><tr><td>spe-dose</td><td>Solar Particle Event Dose</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "SpaceRadiationDoseCodesVS"] ; # 
+  fhir:title [ fhir:v "Space Radiation Dose Measurement Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-06-01T17:51:37-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "73536-5" ] ;
+         fhir:display [ fhir:v "Radiation dose total" ]
+       ] [
+         fhir:code [ fhir:v "73537-3" ] ;
+         fhir:display [ fhir:v "Radiation dose rate" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/uv/aerospace"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "gcr-dose" ] ;
+         fhir:display [ fhir:v "Galactic Cosmic Radiation Dose" ]
+       ] [
+         fhir:code [ fhir:v "spe-dose" ] ;
+         fhir:display [ fhir:v "Solar Particle Event Dose" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/aerospace-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "aerospace-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem aerospace-code-system</b></p><a name=\"aerospace-code-system\"> </a><a name=\"hcaerospace-code-system\"> </a><a name=\"aerospace-code-system-en-US\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/aerospace-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">sensitivity<a name=\"aerospace-code-system-sensitivity\"> </a></td><td>Detector Sensitivity</td></tr><tr><td style=\"white-space:nowrap\">energy-range-min<a name=\"aerospace-code-system-energy-range-min\"> </a></td><td>Minimum Energy Range</td></tr><tr><td style=\"white-space:nowrap\">energy-range-max<a name=\"aerospace-code-system-energy-range-max\"> </a></td><td>Maximum Energy Range</td></tr><tr><td style=\"white-space:nowrap\">dosimeter-type<a name=\"aerospace-code-system-dosimeter-type\"> </a></td><td>Dosimeter Type</td></tr><tr><td style=\"white-space:nowrap\">let<a name=\"aerospace-code-system-let\"> </a></td><td>Linear Energy Transfer</td></tr><tr><td style=\"white-space:nowrap\">quality-factor<a name=\"aerospace-code-system-quality-factor\"> </a></td><td>Radiation Quality Factor</td></tr><tr><td style=\"white-space:nowrap\">career-dose<a name=\"aerospace-code-system-career-dose\"> </a></td><td>Career Radiation Dose</td></tr><tr><td style=\"white-space:nowrap\">mission-dose<a name=\"aerospace-code-system-mission-dose\"> </a></td><td>Mission Radiation Dose</td></tr><tr><td style=\"white-space:nowrap\">annual-dose<a name=\"aerospace-code-system-annual-dose\"> </a></td><td>Annual Radiation Dose</td></tr><tr><td style=\"white-space:nowrap\">monthly-dose<a name=\"aerospace-code-system-monthly-dose\"> </a></td><td>30-Day Radiation Dose</td></tr><tr><td style=\"white-space:nowrap\">gcr-dose<a name=\"aerospace-code-system-gcr-dose\"> </a></td><td>Galactic Cosmic Radiation Dose</td></tr><tr><td style=\"white-space:nowrap\">spe-dose<a name=\"aerospace-code-system-spe-dose\"> </a></td><td>Solar Particle Event Dose</td></tr><tr><td style=\"white-space:nowrap\">radiation-summary<a name=\"aerospace-code-system-radiation-summary\"> </a></td><td>Space Radiation Exposure Summary</td></tr><tr><td style=\"white-space:nowrap\">bone-marrow-dose<a name=\"aerospace-code-system-bone-marrow-dose\"> </a></td><td>Bone Marrow Dose</td></tr><tr><td style=\"white-space:nowrap\">eye-lens-dose<a name=\"aerospace-code-system-eye-lens-dose\"> </a></td><td>Eye Lens Dose</td></tr><tr><td style=\"white-space:nowrap\">skin-dose<a name=\"aerospace-code-system-skin-dose\"> </a></td><td>Skin Dose</td></tr><tr><td style=\"white-space:nowrap\">cns-dose<a name=\"aerospace-code-system-cns-dose\"> </a></td><td>Central Nervous System Dose</td></tr><tr><td style=\"white-space:nowrap\">tld<a name=\"aerospace-code-system-tld\"> </a></td><td>Thermoluminescent Dosimeter</td></tr><tr><td style=\"white-space:nowrap\">osld<a name=\"aerospace-code-system-osld\"> </a></td><td>Optically Stimulated Luminescence Detector</td></tr><tr><td style=\"white-space:nowrap\">epd<a name=\"aerospace-code-system-epd\"> </a></td><td>Electronic Personal Dosimeter</td></tr><tr><td style=\"white-space:nowrap\">tepc<a name=\"aerospace-code-system-tepc\"> </a></td><td>Tissue Equivalent Proportional Counter</td></tr><tr><td style=\"white-space:nowrap\">area-monitor<a name=\"aerospace-code-system-area-monitor\"> </a></td><td>Area Radiation Monitor</td></tr><tr><td style=\"white-space:nowrap\">passive<a name=\"aerospace-code-system-passive\"> </a></td><td>Passive Dosimeter</td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"aerospace-code-system-active\"> </a></td><td>Active Real-time Dosimeter</td></tr><tr><td style=\"white-space:nowrap\">area<a name=\"aerospace-code-system-area\"> </a></td><td>Area Monitor</td></tr><tr><td style=\"white-space:nowrap\">iss-expedition<a name=\"aerospace-code-system-iss-expedition\"> </a></td><td>ISS Expedition</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/aerospace-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "AerospaceCodeSystem"] ; # 
+  fhir:title [ fhir:v "Aerospace Medicine Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-06-01T17:51:37-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Code system for aerospace medicine concepts"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "26"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "sensitivity" ] ;
+     fhir:display [ fhir:v "Detector Sensitivity" ]
+  ] [
+     fhir:code [ fhir:v "energy-range-min" ] ;
+     fhir:display [ fhir:v "Minimum Energy Range" ]
+  ] [
+     fhir:code [ fhir:v "energy-range-max" ] ;
+     fhir:display [ fhir:v "Maximum Energy Range" ]
+  ] [
+     fhir:code [ fhir:v "dosimeter-type" ] ;
+     fhir:display [ fhir:v "Dosimeter Type" ]
+  ] [
+     fhir:code [ fhir:v "let" ] ;
+     fhir:display [ fhir:v "Linear Energy Transfer" ]
+  ] [
+     fhir:code [ fhir:v "quality-factor" ] ;
+     fhir:display [ fhir:v "Radiation Quality Factor" ]
+  ] [
+     fhir:code [ fhir:v "career-dose" ] ;
+     fhir:display [ fhir:v "Career Radiation Dose" ]
+  ] [
+     fhir:code [ fhir:v "mission-dose" ] ;
+     fhir:display [ fhir:v "Mission Radiation Dose" ]
+  ] [
+     fhir:code [ fhir:v "annual-dose" ] ;
+     fhir:display [ fhir:v "Annual Radiation Dose" ]
+  ] [
+     fhir:code [ fhir:v "monthly-dose" ] ;
+     fhir:display [ fhir:v "30-Day Radiation Dose" ]
+  ] [
+     fhir:code [ fhir:v "gcr-dose" ] ;
+     fhir:display [ fhir:v "Galactic Cosmic Radiation Dose" ]
+  ] [
+     fhir:code [ fhir:v "spe-dose" ] ;
+     fhir:display [ fhir:v "Solar Particle Event Dose" ]
+  ] [
+     fhir:code [ fhir:v "radiation-summary" ] ;
+     fhir:display [ fhir:v "Space Radiation Exposure Summary" ]
+  ] [
+     fhir:code [ fhir:v "bone-marrow-dose" ] ;
+     fhir:display [ fhir:v "Bone Marrow Dose" ]
+  ] [
+     fhir:code [ fhir:v "eye-lens-dose" ] ;
+     fhir:display [ fhir:v "Eye Lens Dose" ]
+  ] [
+     fhir:code [ fhir:v "skin-dose" ] ;
+     fhir:display [ fhir:v "Skin Dose" ]
+  ] [
+     fhir:code [ fhir:v "cns-dose" ] ;
+     fhir:display [ fhir:v "Central Nervous System Dose" ]
+  ] [
+     fhir:code [ fhir:v "tld" ] ;
+     fhir:display [ fhir:v "Thermoluminescent Dosimeter" ]
+  ] [
+     fhir:code [ fhir:v "osld" ] ;
+     fhir:display [ fhir:v "Optically Stimulated Luminescence Detector" ]
+  ] [
+     fhir:code [ fhir:v "epd" ] ;
+     fhir:display [ fhir:v "Electronic Personal Dosimeter" ]
+  ] [
+     fhir:code [ fhir:v "tepc" ] ;
+     fhir:display [ fhir:v "Tissue Equivalent Proportional Counter" ]
+  ] [
+     fhir:code [ fhir:v "area-monitor" ] ;
+     fhir:display [ fhir:v "Area Radiation Monitor" ]
+  ] [
+     fhir:code [ fhir:v "passive" ] ;
+     fhir:display [ fhir:v "Passive Dosimeter" ]
+  ] [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active Real-time Dosimeter" ]
+  ] [
+     fhir:code [ fhir:v "area" ] ;
+     fhir:display [ fhir:v "Area Monitor" ]
+  ] [
+     fhir:code [ fhir:v "iss-expedition" ] ;
+     fhir:display [ fhir:v "ISS Expedition" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

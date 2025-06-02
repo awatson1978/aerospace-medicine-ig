@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/CareerDoseSummary> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CareerDoseSummary"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose"^^xsd:anyURI ;
+       fhir:link <https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation CareerDoseSummary</b></p><a name=\"CareerDoseSummary\"> </a><a name=\"hcCareerDoseSummary\"> </a><a name=\"CareerDoseSummary-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cumulative-radiation-dose.html\">Cumulative Radiation Dose</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 73569-6}\">Radiation dose and image quality indicators</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 73536-5}\">Radiation dose total</span></p><p><b>subject</b>: <a href=\"Patient-janeway.html\">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2020-01-01 --&gt; 2024-12-31</p><p><b>value</b>: 180 millisievert<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace career-dose}\">Career Radiation Dose</span></p><p><b>value</b>: 180 millisievert<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace annual-dose}\">Annual Radiation Dose</span></p><p><b>value</b>: 45 millisievert<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace eye-lens-dose}\">Eye Lens Dose</span></p><p><b>value</b>: 120 millisievert<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:73569-6 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73569-6" ] ;
+       fhir:display [ fhir:v "Radiation dose and image quality indicators" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73536-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "73536-5" ] ;
+       fhir:display [ fhir:v "Radiation dose total" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://mitre.org/fhir/space-health/Patient/janeway> ;
+     fhir:reference [ fhir:v "Patient/janeway" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2020-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2024-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "180"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "millisievert" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "mSv" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/aerospace"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "career-dose" ] ;
+         fhir:display [ fhir:v "Career Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "180"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "millisievert" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/aerospace"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "annual-dose" ] ;
+         fhir:display [ fhir:v "Annual Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "45"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "millisievert" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/aerospace"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "eye-lens-dose" ] ;
+         fhir:display [ fhir:v "Eye Lens Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "millisievert" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
