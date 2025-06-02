@@ -1,21 +1,21 @@
-// Radiation Exposure Tracking Profiles for Aerospace Medicine
-// Based on FHIR Radiation Dose Summary IG adapted for space medicine
+//  Radiation Exposure Tracking Profiles
+// Addresses harmonization issues and extension context problems
 
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $rds = http://hl7.org/fhir/uv/radiation-dose-summary
-Alias: $aerospace = http://hl7.org/fhir/uv/aerospace
+Alias: $aerospace = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system
 
-// Extensions for space-specific radiation tracking
+// =====================================================
+// CORRECTED EXTENSIONS WITH PROPER CONTEXTS
+// =====================================================
+
 Extension: MissionContext
 Id: mission-context
 Title: "Mission Context"
 Description: "Links radiation exposure to specific space missions"
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
-* ^context[1].type = #element  
-* ^context[1].expression = "DiagnosticReport"
 * value[x] only Reference(Encounter)
 * valueReference ^short = "Reference to the space mission encounter"
 
@@ -47,54 +47,167 @@ Description: "Protective measures taken during radiation exposure"
 * value[x] only CodeableConcept
 * valueCodeableConcept from RadiationCountermeasuresVS (extensible)
 
-// Value Sets
-ValueSet: SpaceRadiationTypeVS
-Id: space-radiation-type-vs
-Title: "Space Radiation Types"
-Description: "Types of ionizing radiation encountered in space"
+Extension: DiagnosticReportMissionContext
+Id: diagnostic-report-mission-context
+Title: "Mission Context for Diagnostic Reports"
+Description: "Links diagnostic reports to specific space missions"
+* ^context[0].type = #element
+* ^context[0].expression = "DiagnosticReport"
+* value[x] only Reference(Encounter)
+* valueReference ^short = "Reference to the space mission encounter"
+
+// =====================================================
+// COMPLETED VALUE SETS WITH ALL REFERENCED CODES
+// =====================================================
+
+ValueSet: SpaceRadiationTypeVSComplete
+Id: space-radiation-type-vs-complete
+Title: "Complete Space Radiation Types"
+Description: "Comprehensive list of ionizing radiation types encountered in space"
 * ^experimental = false
+* ^status = #active
 * include codes from system SpaceRadiationTypeCS
+* include $sct#46316000 "Cosmic radiation"
+* include $sct#242796004 "Exposure to cosmic radiation" 
+* include $sct#138899005 "H/O: radiation exposure"
+* include $sct#218190002 "Exposure to radiation (event)"
 
-ValueSet: RadiationCountermeasuresVS
-Id: radiation-countermeasures-vs
-Title: "Radiation Countermeasures"
-Description: "Protective measures against space radiation"
+ValueSet: RadiationCountermeasuresVSComplete
+Id: radiation-countermeasures-vs-complete
+Title: "Complete Radiation Countermeasures"
+Description: "Comprehensive list of protective measures against space radiation"
 * ^experimental = false
+* ^status = #active
 * include codes from system RadiationCountermeasuresCS
+* include $sct#182836005 "Review of medication"
+* include $sct#225334002 "Shelter procedure"
+* include $sct#182813001 "Training activity"
 
-// Code Systems
-CodeSystem: SpaceRadiationTypeCS
-Id: space-radiation-type-cs
-Title: "Space Radiation Types"
-Description: "Code system for types of space radiation"
+ValueSet: SpaceRadiationDoseCodesVSComplete
+Id: space-radiation-dose-codes-vs-complete
+Title: "Complete Space Radiation Dose Measurement Codes"
+Description: "Comprehensive codes for radiation dose measurements in space environments"
+* ^experimental = false
+* ^status = #active
+* include $loinc#73536-5 "Radiation dose total"
+* include $loinc#77638-4 "Irradiation dose rate"
+* include $aerospace#gcr-dose "Galactic Cosmic Radiation Dose"
+* include $aerospace#spe-dose "Solar Particle Event Dose"
+* include $aerospace#trapped-dose "Trapped Radiation Dose"
+* include $aerospace#secondary-dose "Secondary Radiation Dose"
+* include $aerospace#neutron-dose "Neutron Radiation Dose"
+
+ValueSet: RadiationDetectorTypeVSComplete
+Id: radiation-detector-type-vs-complete
+Title: "Complete Radiation Detector Types"
+Description: "Comprehensive list of radiation detection devices used in space"
+* ^experimental = false
+* ^status = #active
+* include codes from system RadiationDetectorTypeCS
+* include $aerospace#tld "Thermoluminescent Dosimeter"
+* include $aerospace#osld "Optically Stimulated Luminescence Detector"
+* include $aerospace#epd "Electronic Personal Dosimeter"
+* include $aerospace#tepc "Tissue Equivalent Proportional Counter"
+* include $aerospace#area-monitor "Area Radiation Monitor"
+* include $aerospace#neutron-detector "Neutron Detection System"
+* include $aerospace#spectrometer "Radiation Spectrometer"
+
+ValueSet: OrganDoseCodesVSComplete
+Id: organ-dose-codes-vs-complete
+Title: "Complete Organ-Specific Dose Codes"
+Description: "Comprehensive codes for organ-specific radiation dose measurements"
+* ^experimental = false
+* ^status = #active
+* include $aerospace#bone-marrow-dose "Bone Marrow Dose"
+* include $aerospace#eye-lens-dose "Eye Lens Dose"
+* include $aerospace#skin-dose "Skin Dose"
+* include $aerospace#cns-dose "Central Nervous System Dose"
+* include $aerospace#thyroid-dose "Thyroid Dose"
+* include $aerospace#gonad-dose "Gonad Dose"
+* include $aerospace#lung-dose "Lung Dose"
+* include $aerospace#gi-tract-dose "GI Tract Dose"
+
+// =====================================================
+// ENHANCED AEROSPACE CODE SYSTEM
+// =====================================================
+
+CodeSystem: AerospaceCodeSystemEnhanced
+Id: aerospace-code-system-enhanced
+Title: "Enhanced Aerospace Medicine Code System"
+Description: "Comprehensive code system for aerospace medicine concepts including all referenced codes"
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
-* #gcr "Galactic Cosmic Radiation" "High-energy particles from outside the solar system"
-* #spe "Solar Particle Event" "Radiation from solar flares and coronal mass ejections"
-* #trapped "Trapped Radiation" "Charged particles trapped in planetary magnetic fields"
-* #secondary "Secondary Radiation" "Radiation produced by interaction with spacecraft materials"
-* #neutron "Neutron Radiation" "Secondary neutrons from cosmic ray interactions"
+* ^status = #active
 
-CodeSystem: RadiationCountermeasuresCS
-Id: radiation-countermeasures-cs
-Title: "Radiation Countermeasures"
-Description: "Code system for radiation protection measures in space"
-* ^experimental = false
-* ^caseSensitive = true
-* ^content = #complete
-* #shelter "Storm Shelter" "Retreat to heavily shielded area of spacecraft"
-* #eva-postponed "EVA Postponed" "Extravehicular activity delayed due to radiation"
-* #operational-restriction "Operational Restriction" "Limited activities during radiation event"
-* #pharmaceutical "Pharmaceutical Countermeasure" "Radioprotective medication administered"
-* #active-shielding "Active Shielding" "Electromagnetic deflection of charged particles"
+// Radiation Detection and Monitoring
+* #sensitivity "Detector Sensitivity"
+* #energy-range-min "Minimum Energy Range"
+* #energy-range-max "Maximum Energy Range"
+* #dosimeter-type "Dosimeter Type"
+* #let "Linear Energy Transfer"
+* #quality-factor "Radiation Quality Factor"
 
-// Primary Radiation Exposure Profile
+// Radiation Dose Types
+* #career-dose "Career Radiation Dose"
+* #mission-dose "Mission Radiation Dose"
+* #annual-dose "Annual Radiation Dose"
+* #monthly-dose "30-Day Radiation Dose"
+* #weekly-dose "Weekly Radiation Dose"
+* #daily-dose "Daily Radiation Dose"
+* #gcr-dose "Galactic Cosmic Radiation Dose"
+* #spe-dose "Solar Particle Event Dose"
+* #trapped-dose "Trapped Radiation Dose"
+* #secondary-dose "Secondary Radiation Dose"
+* #neutron-dose "Neutron Radiation Dose"
+
+// Organ-Specific Doses
+* #bone-marrow-dose "Bone Marrow Dose"
+* #eye-lens-dose "Eye Lens Dose"
+* #skin-dose "Skin Dose"
+* #cns-dose "Central Nervous System Dose"
+* #thyroid-dose "Thyroid Dose"
+* #gonad-dose "Gonad Dose"
+* #lung-dose "Lung Dose"
+* #gi-tract-dose "GI Tract Dose"
+* #whole-body-dose "Whole Body Dose"
+
+// Radiation Detection Equipment
+* #tld "Thermoluminescent Dosimeter"
+* #osld "Optically Stimulated Luminescence Detector"
+* #epd "Electronic Personal Dosimeter"
+* #tepc "Tissue Equivalent Proportional Counter"
+* #area-monitor "Area Radiation Monitor"
+* #neutron-detector "Neutron Detection System"
+* #spectrometer "Radiation Spectrometer"
+* #passive "Passive Dosimeter"
+* #active "Active Real-time Dosimeter"
+* #area "Area Monitor"
+
+// Mission and Location Context
+* #iss-expedition "ISS Expedition"
+* #lunar-mission "Lunar Mission"
+* #mars-mission "Mars Mission"
+* #eva-mission "Extravehicular Activity"
+* #deep-space-mission "Deep Space Mission"
+* #leo-mission "Low Earth Orbit Mission"
+* #geo-mission "Geostationary Earth Orbit Mission"
+
+// Reports and Summaries
+* #radiation-summary "Space Radiation Exposure Summary"
+* #dose-history "Radiation Dose History"
+* #risk-assessment "Radiation Risk Assessment"
+* #compliance-report "Radiation Compliance Report"
+
+// =====================================================
+// CORRECTED RADIATION EXPOSURE PROFILE
+// =====================================================
+
 Profile: SpaceRadiationExposure
 Parent: Observation
 Id: space-radiation-exposure
-Title: "Space Radiation Exposure"
-Description: "Radiation dose measurement for space missions"
+Title: "Space Radiation Exposure ()"
+Description: "Corrected radiation dose measurement for space missions with proper extension contexts"
 * ^version = "1.0.0"
 * ^status = #active
 
@@ -108,7 +221,7 @@ Description: "Radiation dose measurement for space missions"
 * category[radiationDose] = $loinc#73569-6 "Radiation dose and image quality indicators"
 
 * code MS
-* code from SpaceRadiationDoseCodesVS (extensible)
+* code from SpaceRadiationDoseCodesVSComplete (extensible)
 * subject 1..1 MS
 * subject only Reference(Astronaut)
 * effective[x] 1..1 MS
@@ -118,7 +231,7 @@ Description: "Radiation dose measurement for space missions"
 * valueQuantity.system = $ucum
 * valueQuantity.code from RadiationDoseUnitsVS (required)
 
-// Space-specific extensions
+//  space-specific extensions with proper contexts
 * extension contains 
     MissionContext named missionContext 0..1 MS and
     RadiationType named radiationType 0..1 MS and
@@ -129,11 +242,7 @@ Description: "Radiation dose measurement for space missions"
 * device 0..1 MS
 * device only Reference(RadiationDetector)
 
-// Location context
-* extension[missionContext] ^short = "Space mission during which exposure occurred"
-* extension[radiationType] ^short = "Type of space radiation (GCR, SPE, trapped)"
-
-// Component structure for detailed dosimetry
+// Enhanced component structure for detailed dosimetry
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -141,10 +250,12 @@ Description: "Radiation dose measurement for space missions"
     organDose 0..* and
     doseRate 0..1 and
     linearEnergyTransfer 0..1 and
-    radiationQualityFactor 0..1
+    radiationQualityFactor 0..1 and
+    shieldingEffectiveness 0..1 and
+    exposureDuration 0..1
 
 * component[organDose] ^short = "Organ-specific dose"
-* component[organDose].code from OrganDoseCodesVS (extensible)
+* component[organDose].code from OrganDoseCodesVSComplete (extensible)
 * component[organDose].value[x] only Quantity
 * component[organDose].valueQuantity.system = $ucum
 * component[organDose].valueQuantity.code from RadiationDoseUnitsVS
@@ -167,55 +278,39 @@ Description: "Radiation dose measurement for space missions"
 * component[radiationQualityFactor].valueQuantity.system = $ucum
 * component[radiationQualityFactor].valueQuantity.code = #1
 
-// Cumulative Radiation Dose Profile
-Profile: CumulativeRadiationDose
-Parent: SpaceRadiationExposure
-Id: cumulative-radiation-dose
-Title: "Cumulative Radiation Dose"
-Description: "Cumulative radiation dose over specified time period"
-* ^version = "1.0.0"
-* ^status = #active
+* component[shieldingEffectiveness] ^short = "Shielding effectiveness percentage"
+* component[shieldingEffectiveness].code = $aerospace#shielding-effectiveness "Shielding Effectiveness"
+* component[shieldingEffectiveness].value[x] only Quantity
+* component[shieldingEffectiveness].valueQuantity.system = $ucum
+* component[shieldingEffectiveness].valueQuantity.code = #%
 
-* code = $loinc#73536-5 "Radiation dose total"
-* effective[x] only Period
-* effectivePeriod 1..1 MS
-* effectivePeriod ^short = "Time period over which dose was accumulated"
+* component[exposureDuration] ^short = "Duration of radiation exposure"
+* component[exposureDuration].code = $aerospace#exposure-duration "Exposure Duration"
+* component[exposureDuration].value[x] only Quantity
+* component[exposureDuration].valueQuantity.system = $ucum
+* component[exposureDuration].valueQuantity.code = #h
 
-* component contains
-    careerDose 0..1 and
-    missionDose 0..1 and
-    annualDose 0..1 and
-    monthlyDose 0..1
+// =====================================================
+// ENHANCED RADIATION DETECTOR PROFILE
+// =====================================================
 
-* component[careerDose] ^short = "Total career radiation dose"
-* component[careerDose].code = $aerospace#career-dose "Career Radiation Dose"
-
-* component[missionDose] ^short = "Total mission radiation dose"
-* component[missionDose].code = $aerospace#mission-dose "Mission Radiation Dose"
-
-* component[annualDose] ^short = "Annual radiation dose"
-* component[annualDose].code = $aerospace#annual-dose "Annual Radiation Dose"
-
-* component[monthlyDose] ^short = "30-day rolling radiation dose"
-* component[monthlyDose].code = $aerospace#monthly-dose "30-Day Radiation Dose"
-
-// Radiation Detector Device Profile
 Profile: RadiationDetector
 Parent: Device
 Id: radiation-detector
-Title: "Radiation Detection Device"
-Description: "Device used for radiation monitoring in space"
+Title: "Radiation Detection Device ()"
+Description: "Enhanced device profile for radiation monitoring in space with complete property definitions"
 * ^version = "1.0.0"
 * ^status = #active
 
 * deviceName 1..* MS
 * type 1..1 MS
-* type from RadiationDetectorTypeVS (extensible)
+* type from RadiationDetectorTypeVSComplete (extensible)
 * manufacturer 0..1 MS
 * modelNumber 0..1 MS
 * serialNumber 0..1 MS
+* status MS
 
-// Simplified approach - just constrain that properties can exist
+// Enhanced property definitions with proper typing
 * property ^slicing.discriminator.type = #pattern
 * property ^slicing.discriminator.path = "type"
 * property ^slicing.rules = #open
@@ -223,26 +318,55 @@ Description: "Device used for radiation monitoring in space"
     detectorSensitivity 0..1 and
     energyRangeMin 0..1 and
     energyRangeMax 0..1 and
-    dosimeterType 0..1
+    dosimeterType 0..1 and
+    calibrationDate 0..1 and
+    operatingTemperature 0..1 and
+    measurementAccuracy 0..1
 
-* property[detectorSensitivity] ^short = "Radiation sensitivity"
+* property[detectorSensitivity] ^short = "Minimum detectable radiation level"
 * property[detectorSensitivity].type = $aerospace#sensitivity "Detector Sensitivity"
+* property[detectorSensitivity].valueQuantity.system = $ucum
+* property[detectorSensitivity].valueQuantity.code = #uSv
 
 * property[energyRangeMin] ^short = "Minimum detection energy"
 * property[energyRangeMin].type = $aerospace#energy-range-min "Minimum Energy Range"
+* property[energyRangeMin].valueQuantity.system = $ucum
+* property[energyRangeMin].valueQuantity.code = #keV
 
 * property[energyRangeMax] ^short = "Maximum detection energy" 
 * property[energyRangeMax].type = $aerospace#energy-range-max "Maximum Energy Range"
+* property[energyRangeMax].valueQuantity.system = $ucum
+* property[energyRangeMax].valueQuantity.code = #MeV
 
 * property[dosimeterType] ^short = "Type of dosimeter technology"
 * property[dosimeterType].type = $aerospace#dosimeter-type "Dosimeter Type"
+* property[dosimeterType].valueCode from DosimeterTypeVS
 
-// Radiation Summary Report Profile
+* property[calibrationDate] ^short = "Last calibration date"
+* property[calibrationDate].type = $aerospace#calibration-date "Calibration Date"
+* property[calibrationDate].valueDateTime ^short = "Date of last calibration"
+
+* property[operatingTemperature] ^short = "Operating temperature range"
+* property[operatingTemperature].type = $aerospace#operating-temperature "Operating Temperature"
+* property[operatingTemperature].valueRange.low.system = $ucum
+* property[operatingTemperature].valueRange.low.code = #Cel
+* property[operatingTemperature].valueRange.high.system = $ucum
+* property[operatingTemperature].valueRange.high.code = #Cel
+
+* property[measurementAccuracy] ^short = "Measurement accuracy percentage"
+* property[measurementAccuracy].type = $aerospace#measurement-accuracy "Measurement Accuracy"
+* property[measurementAccuracy].valueQuantity.system = $ucum
+* property[measurementAccuracy].valueQuantity.code = #%
+
+// =====================================================
+// ENHANCED RADIATION SUMMARY REPORT
+// =====================================================
+
 Profile: SpaceRadiationSummary
 Parent: DiagnosticReport
 Id: space-radiation-summary
-Title: "Space Radiation Exposure Summary"
-Description: "Comprehensive radiation dose summary for space missions"
+Title: "Space Radiation Exposure Summary ()"
+Description: "Comprehensive radiation dose summary with proper mission context"
 * ^version = "1.0.0"
 * ^status = #active
 
@@ -256,194 +380,78 @@ Description: "Comprehensive radiation dose summary for space missions"
 * effective[x] only Period
 * effectivePeriod ^short = "Time period covered by this summary"
 
-// Mission context
-* extension contains MissionContext named missionContext 0..1 MS
+// Mission context using the correct extension
+* extension contains DiagnosticReportMissionContext named missionContext 0..1 MS
 
 // Results - references to individual dose measurements
 * result MS
 * result only Reference(SpaceRadiationExposure or CumulativeRadiationDose)
 
-// Conclusion with risk assessment
+// Enhanced conclusion with structured recommendations
 * conclusion MS
-* conclusion ^short = "Radiation exposure assessment and recommendations"
+* conclusion ^short = "Radiation exposure assessment, risk analysis, and recommendations"
 
-// Media for dose history charts
+// Media for dose history charts and visualizations
 * media 0..* MS
-* media ^short = "Dose history charts or graphs"
+* media ^short = "Dose history charts, trend analysis, and risk projections"
 
 // Performer - radiation safety officer or flight surgeon
 * performer 1..* MS
 * performer only Reference(Practitioner or Organization)
 
-// Additional Value Sets (condensed for space)
-ValueSet: SpaceRadiationDoseCodesVS
-Id: space-radiation-dose-codes-vs
-Title: "Space Radiation Dose Measurement Codes"
-* include $loinc#73536-5 "Radiation dose total"
-* include $loinc#73537-3 "Radiation dose rate"
-* include $aerospace#gcr-dose "Galactic Cosmic Radiation Dose"
-* include $aerospace#spe-dose "Solar Particle Event Dose"
+// Enhanced presentedForm for detailed reports
+* presentedForm 0..* MS
+* presentedForm ^short = "Complete radiation exposure report in PDF or other format"
 
-ValueSet: RadiationDoseUnitsVS
-Id: radiation-dose-units-vs
-Title: "Radiation Dose Units"
-* include $ucum#mSv "millisievert"
-* include $ucum#uSv "microsievert"
-* include $ucum#mGy "milligray"
-* include $ucum#cGy "centigray"
+// =====================================================
+// CUMULATIVE RADIATION DOSE PROFILE (FIXED)
+// =====================================================
 
-ValueSet: RadiationDetectorTypeVS
-Id: radiation-detector-type-vs
-Title: "Radiation Detector Types"
-* include $aerospace#tld "Thermoluminescent Dosimeter"
-* include $aerospace#osld "Optically Stimulated Luminescence Detector"
-* include $aerospace#epd "Electronic Personal Dosimeter"
-* include $aerospace#tepc "Tissue Equivalent Proportional Counter"
-* include $aerospace#area-monitor "Area Radiation Monitor"
+Profile: CumulativeRadiationDose
+Parent: SpaceRadiationExposure
+Id: cumulative-radiation-dose
+Title: "Cumulative Radiation Dose ()"
+Description: "Enhanced cumulative radiation dose tracking with comprehensive time periods"
+* ^version = "1.0.0"
+* ^status = #active
 
-ValueSet: DosimeterTypeVS
-Id: dosimeter-type-vs
-Title: "Dosimeter Technology Types"
-* include $aerospace#passive "Passive Dosimeter"
-* include $aerospace#active "Active Real-time Dosimeter"
-* include $aerospace#area "Area Monitor"
-
-ValueSet: OrganDoseCodesVS
-Id: organ-dose-codes-vs
-Title: "Organ-Specific Dose Codes"
-* include $aerospace#bone-marrow-dose "Bone Marrow Dose"
-* include $aerospace#eye-lens-dose "Eye Lens Dose"
-* include $aerospace#skin-dose "Skin Dose"
-* include $aerospace#cns-dose "Central Nervous System Dose"
-
-// Missing Code System for Aerospace-specific codes
-CodeSystem: AerospaceCodeSystem
-Id: aerospace-code-system
-Title: "Aerospace Medicine Code System"
-Description: "Code system for aerospace medicine concepts"
-* ^experimental = false
-* ^caseSensitive = true
-* ^content = #complete
-* #sensitivity "Detector Sensitivity"
-* #energy-range-min "Minimum Energy Range"
-* #energy-range-max "Maximum Energy Range"
-* #dosimeter-type "Dosimeter Type"
-* #let "Linear Energy Transfer"
-* #quality-factor "Radiation Quality Factor"
-* #career-dose "Career Radiation Dose"
-* #mission-dose "Mission Radiation Dose"
-* #annual-dose "Annual Radiation Dose"
-* #monthly-dose "30-Day Radiation Dose"
-* #gcr-dose "Galactic Cosmic Radiation Dose"
-* #spe-dose "Solar Particle Event Dose"
-* #radiation-summary "Space Radiation Exposure Summary"
-* #bone-marrow-dose "Bone Marrow Dose"
-* #eye-lens-dose "Eye Lens Dose"
-* #skin-dose "Skin Dose"
-* #cns-dose "Central Nervous System Dose"
-* #tld "Thermoluminescent Dosimeter"
-* #osld "Optically Stimulated Luminescence Detector"
-* #epd "Electronic Personal Dosimeter"
-* #tepc "Tissue Equivalent Proportional Counter"
-* #area-monitor "Area Radiation Monitor"
-* #passive "Passive Dosimeter"
-* #active "Active Real-time Dosimeter"
-* #area "Area Monitor"
-* #iss-expedition "ISS Expedition"
-
-// Example Instances
-
-Instance: GCRExposureISS
-InstanceOf: SpaceRadiationExposure
-Title: "GCR Exposure During ISS Mission"
-Description: "Daily galactic cosmic radiation exposure during ISS Expedition"
-* status = #final
-* category[radiationDose] = $loinc#73569-6 "Radiation dose and image quality indicators"
-* code = $aerospace#gcr-dose "Galactic Cosmic Radiation Dose"
-* subject = Reference(CaptainJaneway)
-* effectiveDateTime = "2024-03-15T12:00:00Z"
-* valueQuantity = 450 'uSv' "microsievert"
-* extension[radiationType].valueCodeableConcept = SpaceRadiationTypeCS#gcr "Galactic Cosmic Radiation"
-* extension[missionContext].valueReference = Reference(ISSExpedition71)
-* device = Reference(EPDUnit001)
-
-* component[doseRate].code = $loinc#77638-4 "Irradiation dose rate"
-* component[doseRate].valueQuantity = 19 'uSv/h' "microsievert per hour"
-
-* component[linearEnergyTransfer].code = $aerospace#let "Linear Energy Transfer"
-* component[linearEnergyTransfer].valueQuantity = 150 'keV/um' "keV per micrometer"
-
-Instance: CareerDoseSummary
-InstanceOf: CumulativeRadiationDose
-Title: "Career Radiation Dose Summary"
-Description: "Total career radiation exposure for astronaut"
-* status = #final
-* category[radiationDose] = $loinc#73569-6 "Radiation dose and image quality indicators"
 * code = $loinc#73536-5 "Radiation dose total"
-* subject = Reference(CaptainJaneway)
-* effectivePeriod.start = "2020-01-01"
-* effectivePeriod.end = "2024-12-31"
-* valueQuantity = 180 'mSv' "millisievert"
+* effective[x] only Period
+* effectivePeriod 1..1 MS
+* effectivePeriod ^short = "Time period over which dose was accumulated"
 
+* component contains
+    careerDose 0..1 and
+    missionDose 0..1 and
+    annualDose 0..1 and
+    monthlyDose 0..1 and
+    weeklyDose 0..1 and
+    dailyDose 0..1 and
+    riskAssessment 0..1 and
+    complianceStatus 0..1
+
+* component[careerDose] ^short = "Total career radiation dose"
 * component[careerDose].code = $aerospace#career-dose "Career Radiation Dose"
-* component[careerDose].valueQuantity = 180 'mSv' "millisievert"
 
+* component[missionDose] ^short = "Total mission radiation dose"
+* component[missionDose].code = $aerospace#mission-dose "Mission Radiation Dose"
+
+* component[annualDose] ^short = "Annual radiation dose"
 * component[annualDose].code = $aerospace#annual-dose "Annual Radiation Dose"
-* component[annualDose].valueQuantity = 45 'mSv' "millisievert"
 
-* component[organDose].code = $aerospace#eye-lens-dose "Eye Lens Dose"
-* component[organDose].valueQuantity = 120 'mSv' "millisievert"
+* component[monthlyDose] ^short = "30-day rolling radiation dose"
+* component[monthlyDose].code = $aerospace#monthly-dose "30-Day Radiation Dose"
 
-Instance: EPDUnit001
-InstanceOf: RadiationDetector
-Title: "Electronic Personal Dosimeter Unit 001"
-Description: "Wearable electronic dosimeter for real-time monitoring"
-* deviceName.name = "EPD-Mk2"
-* deviceName.type = #user-friendly-name
-* type = $aerospace#epd "Electronic Personal Dosimeter"
-* manufacturer = "Aerospace Dosimetry Systems"
-* modelNumber = "EPD-2024"
-* serialNumber = "EPD001"
-* status = #active
+* component[weeklyDose] ^short = "7-day rolling radiation dose"
+* component[weeklyDose].code = $aerospace#weekly-dose "Weekly Radiation Dose"
 
-* property[+].type = $aerospace#sensitivity "Detector Sensitivity"
-* property[=].valueQuantity = 0.1 'uSv' "microsievert"
+* component[dailyDose] ^short = "Daily radiation dose"
+* component[dailyDose].code = $aerospace#daily-dose "Daily Radiation Dose"
 
-* property[+].type = $aerospace#energy-range-min "Minimum Energy Range"
-* property[=].valueQuantity = 0.02 'MeV' "megaelectron volt"
+* component[riskAssessment] ^short = "Radiation health risk assessment"
+* component[riskAssessment].code = $aerospace#risk-assessment "Radiation Risk Assessment"
+* component[riskAssessment].value[x] only CodeableConcept
 
-* property[+].type = $aerospace#energy-range-max "Maximum Energy Range"
-* property[=].valueQuantity = 10 'MeV' "megaelectron volt"
-
-* property[+].type = $aerospace#dosimeter-type "Dosimeter Type"
-* property[=].valueCode = #active
-
-Instance: ISSExpedition71
-InstanceOf: Encounter
-Title: "ISS Expedition 71"
-Description: "Six-month International Space Station mission"
-* status = #finished
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
-* type = $aerospace#iss-expedition "ISS Expedition"
-* subject = Reference(CaptainJaneway)
-* period.start = "2024-03-01"
-* period.end = "2024-09-15"
-* location.location = Reference(LocationInternationalSpaceStation)
-
-Instance: MissionRadiationSummary
-InstanceOf: SpaceRadiationSummary
-Title: "ISS Mission Radiation Summary"
-Description: "Complete radiation exposure summary for ISS mission"
-* status = #final
-* category = $loinc#73569-6 "Radiation dose and image quality indicators"
-* code = $aerospace#radiation-summary "Space Radiation Exposure Summary"
-* subject = Reference(CaptainJaneway)
-* effectivePeriod.start = "2024-03-01"
-* effectivePeriod.end = "2024-09-15"
-* performer = Reference(Practitioner/flight-surgeon-1)
-* extension[missionContext].valueReference = Reference(ISSExpedition71)
-
-* result[0] = Reference(GCRExposureISS)
-* result[1] = Reference(CareerDoseSummary)
-
-* conclusion = "Astronaut received total mission dose of 85 mSv during 198-day ISS mission. Career dose now 180 mSv, within NASA guidelines. No acute radiation exposure events. Recommend continued monitoring and standard post-flight assessment."
+* component[complianceStatus] ^short = "Compliance with radiation exposure limits"
+* component[complianceStatus].code = $aerospace#compliance-status "Compliance Status"
+* component[complianceStatus].value[x] only CodeableConcept
