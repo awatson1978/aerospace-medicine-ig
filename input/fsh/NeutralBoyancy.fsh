@@ -360,17 +360,10 @@ Parent: SpaceLocation
 Title: "Neutral Buoyancy Facility"
 Description: "Facility for underwater astronaut training"
 
-Instance: NASANeutralBuoyancyLaboratory
-InstanceOf: NeutralBuoyancyFacility
-Title: "NASA Neutral Buoyancy Laboratory"
-Description: "NASA's Neutral Buoyancy Laboratory at Johnson Space Center"
-* name = "NASA Neutral Buoyancy Laboratory"
-* description = "Large pool facility for underwater EVA training"
-
 Instance: HyperbaricChamberFacility
 InstanceOf: Location
 Title: "Hyperbaric Treatment Chamber"
-Description = "Hyperbaric medicine treatment facility"
+Description: "Hyperbaric medicine treatment facility"
 * name = "Hyperbaric Treatment Chamber"
 * description = "Medical facility for hyperbaric oxygen therapy"
 

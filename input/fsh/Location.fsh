@@ -234,7 +234,7 @@ Description: "USAF School of Aerospace Medicine hyperbaric facility"
 Instance: NavalMedicalResearchUnit
 InstanceOf: Location
 Title: "Naval Medical Research Unit"
-Description = "US Navy diving medicine and hyperbaric research facility"
+Description: "US Navy diving medicine and hyperbaric research facility"
 * name = "Naval Medical Research Unit Dayton"
 * description = "Navy diving medicine research and hyperbaric treatment"
 * address.city = "Dayton"
@@ -244,7 +244,7 @@ Description = "US Navy diving medicine and hyperbaric research facility"
 Instance: UniversityOfPennsylvaniaHyperbaric
 InstanceOf: Location
 Title: "University of Pennsylvania Hyperbaric Center"
-Description = "Academic hyperbaric medicine and research center"
+Description: "Academic hyperbaric medicine and research center"
 * name = "University of Pennsylvania Hyperbaric Center"
 * description = "Academic medical center with hyperbaric chambers"
 * address.city = "Philadelphia"
@@ -603,7 +603,7 @@ Description: "SpaceX manufacturing and mission control facility"
 Instance: SpaceXBocaChica
 InstanceOf: Location
 Title: "SpaceX Starbase"
-Description = "SpaceX Starship development and launch facility"
+Description: "SpaceX Starship development and launch facility"
 * name = "SpaceX Starbase"
 * description = "Starship and Super Heavy development facility"
 * address.city = "Boca Chica"
@@ -614,7 +614,7 @@ Description = "SpaceX Starship development and launch facility"
 Instance: BlueOriginWestTexas
 InstanceOf: Location
 Title: "Blue Origin West Texas Facility"
-Description = "Blue Origin suborbital flight operations"
+Description: "Blue Origin suborbital flight operations"
 * name = "Blue Origin West Texas"
 * description = "New Shepard suborbital tourist flights and crew training"
 * address.city = "Van Horn"
@@ -625,7 +625,7 @@ Description = "Blue Origin suborbital flight operations"
 Instance: VirginGalacticSpaceport
 InstanceOf: Location
 Title: "Spaceport America"
-Description = "Virgin Galactic commercial spaceport"
+Description: "Virgin Galactic commercial spaceport"
 * name = "Spaceport America"
 * description = "Commercial suborbital spaceflight operations"
 * address.city = "Truth or Consequences"
@@ -662,34 +662,105 @@ Description: "Current operational status of the facility"
 * value[x] only code
 * valueCode from OperationalStatusVS
 
-// Value Sets for Location Management
+
+// =====================================================
+// OPERATIONAL STATUS CODE SYSTEM
+// =====================================================
+
+CodeSystem: OperationalStatusCS
+Id: operational-status-cs
+Title: "Operational Status Code System"
+Description: "Operational status codes for facilities and vehicles"
+* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs"
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+* ^status = #active
+* ^version = "1.0.0"
+* ^publisher = "HL7 International / Aerospace Medicine"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* #active "Active and operational" "The facility or vehicle is currently active and operational"
+* #maintenance "Under maintenance" "The facility or vehicle is temporarily offline for maintenance"
+* #standby "Standby/ready state" "The facility or vehicle is in standby mode, ready for activation"
+* #inactive "Inactive/offline" "The facility or vehicle is inactive or offline"
+* #decommissioned "Permanently decommissioned" "The facility or vehicle has been permanently decommissioned"
+* #construction "Under construction" "The facility or vehicle is currently under construction"
+* #planning "In planning phase" "The facility or vehicle is in the planning phase"
+
+// =====================================================
+// LOCATION CAPABILITIES CODE SYSTEM
+// =====================================================
+
+CodeSystem: LocationCapabilitiesCS
+Id: location-capabilities-cs
+Title: "Location Capabilities Code System"
+Description: "Capabilities and services available at aerospace medicine locations"
+* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs"
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+* ^status = #active
+* ^version = "1.0.0"
+* ^publisher = "HL7 International / Aerospace Medicine"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* #eva-simulation "EVA Simulation Training" "Facility capable of extravehicular activity simulation training"
+* #hyperbaric-treatment "Hyperbaric Treatment" "Facility with hyperbaric oxygen therapy capabilities"
+* #secure-communication "Secure Communication" "Facility with secure communication systems"
+* #altitude-chamber "Altitude Chamber Training" "Facility with altitude chamber for hypobaric training"
+* #centrifuge-training "Centrifuge Training" "Facility with centrifuge for high-G training"
+* #medical-emergency "Emergency Medical Services" "Facility with emergency medical response capabilities"
+* #radiation-monitoring "Radiation Monitoring" "Facility with radiation detection and monitoring systems"
+* #psychological-support "Psychological Support Services" "Facility with psychological counseling and support services"
+* #rehabilitation "Medical Rehabilitation" "Facility with medical rehabilitation services"
+* #research-laboratory "Research Laboratory" "Facility with research laboratory capabilities"
+* #neutral-buoyancy "Neutral Buoyancy Training" "Facility with underwater neutral buoyancy training pool"
+* #mission-control "Mission Control" "Facility with mission control and monitoring capabilities"
+* #life-support-testing "Life Support Testing" "Facility for testing life support systems"
+* #spacesuit-testing "Spacesuit Testing" "Facility for spacesuit testing and validation"
+
+// =====================================================
+// UPDATED VALUE SETS WITH PROPER SYSTEM REFERENCES
+// =====================================================
+
 ValueSet: OperationalStatusVS
 Id: operational-status-vs
-Title: "Operational Status"
+Title: "Operational Status Value Set"
 Description: "Operational status codes for facilities and vehicles"
-* include #active "Active and operational"
-* include #maintenance "Under maintenance"
-* include #standby "Standby/ready state"
-* include #inactive "Inactive/offline"
-* include #decommissioned "Permanently decommissioned"
-* include #construction "Under construction"
-* include #planning "In planning phase"
+* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs"
+* ^experimental = false
+* ^status = #active
+* ^version = "1.0.0"
+* ^publisher = "HL7 International / Aerospace Medicine"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* include codes from system OperationalStatusCS
 
 ValueSet: LocationCapabilitiesVS
 Id: location-capabilities-vs
-Title: "Location Capabilities"
+Title: "Location Capabilities Value Set"
 Description: "Capabilities and services available at aerospace medicine locations"
-* include $nb-training#eva-simulation "EVA Simulation Training"
-* include $diving-med#hyperbaric-treatment "Hyperbaric Treatment"
-* include $underwater-comm#secure-communication "Secure Communication"
-* include #altitude-chamber "Altitude Chamber Training"
-* include #centrifuge-training "Centrifuge Training"
-* include #medical-emergency "Emergency Medical Services"
-* include #radiation-monitoring "Radiation Monitoring"
-* include #psychological-support "Psychological Support Services"
-* include #rehabilitation "Medical Rehabilitation"
-* include #research-laboratory "Research Laboratory"
+* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs"
+* ^experimental = false
+* ^status = #active
+* ^version = "1.0.0"
+* ^publisher = "HL7 International / Aerospace Medicine"
+* ^contact.telecom.system = #url
+* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
+* include codes from system LocationCapabilitiesCS
 
+// =====================================================
+// ALIAS DEFINITIONS (if needed in other files)
+// =====================================================
+
+// Add these aliases to files that need to reference these systems
+Alias: $operational-status = http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs
+Alias: $location-capabilities = http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs
 // =====================================================
 // LOCATION SUMMARY AND RECOMMENDATIONS
 // =====================================================
