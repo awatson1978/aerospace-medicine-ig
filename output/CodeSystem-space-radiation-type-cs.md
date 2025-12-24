@@ -33,7 +33,7 @@ Types of radiation encountered in space environments
   "title" : "Space Radiation Type Code System",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

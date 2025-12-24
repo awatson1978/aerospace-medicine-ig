@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-treatment-table.csv)
   "name" : "TreatmentTable",
   "title" : "Hyperbaric Treatment Table",
   "status" : "draft",
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SpaceProcedure.csv),
   "name" : "SpaceProcedure",
   "title" : "Space Health Procedure",
   "status" : "draft",
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

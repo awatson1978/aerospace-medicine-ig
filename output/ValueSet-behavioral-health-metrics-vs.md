@@ -51,7 +51,7 @@ Key behavioral health state metrics used in aerospace behavioral health monitori
   "name" : "BehavioralHealthMetricsVS",
   "title" : "Behavioral Health Metrics Value Set",
   "status" : "active",
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-session-duration.csv
   "name" : "SessionDuration",
   "title" : "Training Session Duration",
   "status" : "draft",
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

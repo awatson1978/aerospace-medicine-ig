@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
   "name" : "SpaceRadiationSummary",
   "title" : "Space Radiation Exposure Summary (Fixed)",
   "status" : "active",
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

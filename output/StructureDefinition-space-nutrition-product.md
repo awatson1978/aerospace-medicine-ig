@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-space-nutrition-prod
   "name" : "SpaceNutritionProduct",
   "title" : "Space Nutrition Product",
   "status" : "active",
-  "date" : "2025-12-24T13:59:08-07:00",
+  "date" : "2025-12-24T15:11:38-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
