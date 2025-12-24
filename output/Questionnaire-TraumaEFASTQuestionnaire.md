@@ -23,7 +23,7 @@
   "version" : "0.4.2",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2025-12-24T12:48:12-07:00",
+  "date" : "2025-12-24T13:07:45-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

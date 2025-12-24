@@ -51,7 +51,7 @@ Types of radiation encountered in space
   "title" : "Space Radiation Types",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-24T12:48:12-07:00",
+  "date" : "2025-12-24T13:07:45-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

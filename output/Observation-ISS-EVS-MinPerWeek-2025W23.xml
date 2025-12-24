@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ISS-EVS-MinPerWeek-2025W23"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ISS-EVS-MinPerWeek-2025W23</b></p><a name="ISS-EVS-MinPerWeek-2025W23"> </a><a name="hcISS-EVS-MinPerWeek-2025W23"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-evs-minutes-per-week.html">Space Exercise Vital Sign Minutes Per Week</a></p></div><p><b>Mission Context</b>: <a href="Encounter-ISS-Exp75-InFlight.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Derived From Activity Group</b>: <a href="Observation-ISS-T2-Run-Group-001.html">Observation Physical activity panel</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}">Activity</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 82290-8}">Frequency of moderate to vigorous aerobic physical activity</span></p><p><b>subject</b>: <a href="Patient/AstronautExample">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-02 00:00:00+0000 --&gt; 2025-06-09 00:00:00+0000</p><p><b>value</b>: 420 min/wk<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemin/wk = 'min/wk')</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/ISS-Exp75-InFlight"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group">
+    <valueReference>
+      <reference value="Observation/ISS-T2-Run-Group-001"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="activity"/>
+      <display value="Activity"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82290-8"/>
+      <display value="Frequency of moderate to vigorous aerobic physical activity"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/AstronautExample"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2025-06-02T00:00:00Z"/>
+    <end value="2025-06-09T00:00:00Z"/>
+  </effectivePeriod>
+  <valueQuantity>
+    <value value="420"/>
+    <unit value="min/wk"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="min/wk"/>
+  </valueQuantity>
+</Observation>

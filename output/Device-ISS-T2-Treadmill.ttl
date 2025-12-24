@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Device/ISS-T2-Treadmill> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ISS-T2-Treadmill"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device ISS-T2-Treadmill</b></p><a name=\"ISS-T2-Treadmill\"> </a><a name=\"hcISS-T2-Treadmill\"> </a><p><b>status</b>: Active</p><p><b>manufacturer</b>: NASA</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Treadmill 2 with Vibration Isolation and Stabilization (TVIS)</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: T2-TVIS</p><p><b>type</b>: <span title=\"Codes:\">Treadmill with vibration isolation</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "NASA"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Treadmill 2 with Vibration Isolation and Stabilization (TVIS)" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "T2-TVIS"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Treadmill with vibration isolation" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

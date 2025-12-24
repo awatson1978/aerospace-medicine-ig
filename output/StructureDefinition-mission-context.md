@@ -19,7 +19,8 @@ Links radiation exposure to specific space missions
 
 **Usages:**
 
-* Use this Extension: [Calorie Deficit Assessment](StructureDefinition-calorie-deficit-assessment.md), [Cumulative Stress Burden](StructureDefinition-cumulative-stress-burden.md), [Hydration Status Observation](StructureDefinition-hydration-status-observation.md), [Psychological Countermeasure Activity](StructureDefinition-psychological-countermeasure-activity.md)...Show 2 more,[Space Nutrition Intake](StructureDefinition-space-nutrition-intake.md)and[Space Radiation Exposure (Fixed)](StructureDefinition-space-radiation-exposure.md)
+* Use this Extension: [Calorie Deficit Assessment](StructureDefinition-calorie-deficit-assessment.md), [Cumulative Stress Burden](StructureDefinition-cumulative-stress-burden.md), [Hydration Status Observation](StructureDefinition-hydration-status-observation.md), [Psychological Countermeasure Activity](StructureDefinition-psychological-countermeasure-activity.md)...Show 6 more,[Space Exercise Vital Sign Minutes Per Week](StructureDefinition-space-evs-minutes-per-week.md),[Space Exercise Activity Group](StructureDefinition-space-exercise-activity-group.md),[Space Exercise Activity Measure](StructureDefinition-space-exercise-activity-measure.md),[Space Exercise Session](StructureDefinition-space-exercise-session.md),[Space Nutrition Intake](StructureDefinition-space-nutrition-intake.md)and[Space Radiation Exposure (Fixed)](StructureDefinition-space-radiation-exposure.md)
+* Examples for this Extension: [Observation/ISS-EVS-MinPerWeek-2025W23](Observation-ISS-EVS-MinPerWeek-2025W23.md), [Observation/ISS-T2-Run-Group-001](Observation-ISS-T2-Run-Group-001.md) and [Procedure/ISS-Exercise-Session-Proc-001](Procedure-ISS-Exercise-Session-Proc-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/mission-context)
 
@@ -46,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-mission-context.csv)
   "name" : "MissionContext",
   "title" : "Mission Context",
   "status" : "active",
-  "date" : "2025-12-24T12:48:12-07:00",
+  "date" : "2025-12-24T13:07:45-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -78,8 +78,19 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-operational-status.html" : "Operational Status",
-      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-operational-status.html" : "Operational Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "SpaceExerciseModalityVS",
+      "title" : "Space Exercise Modality Value Set",
+      "description" : "Permitted space exercise modalities, derived from the Space Exercise Modality Code System.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"
+      ]
     },
     {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs",
@@ -221,10 +232,10 @@
       ],
       "uses" : {
       },
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
       "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
       "StructureDefinition-decompression-algorithm.html" : "Decompression Algorithm Used",
-      "StructureDefinition-environmental-factors.html" : "Environmental Factors",
-      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment"
+      "StructureDefinition-environmental-factors.html" : "Environmental Factors"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
@@ -256,6 +267,18 @@
       "systems" : [
         "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
       ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/evs-units-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "EVSUnitsVS",
+      "title" : "EVS Units",
+      "description" : "Units for Exercise Vital Sign measurements",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-space-evs-minutes-per-week.html" : "Space Exercise Vital Sign Minutes Per Week"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/hydration-type-vs",
@@ -476,6 +499,20 @@
       "StructureDefinition-space-nutrition-product.html" : "Space Nutrition Product"
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "SpacePerformanceMetricVS",
+      "title" : "Space Exercise Performance Metrics",
+      "description" : "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-space-exercise-activity-measure.html" : "Space Exercise Activity Measure"
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-physiological-effects",
       "version" : "0.4.2",
       "status" : "draft",
@@ -588,8 +625,8 @@
       "systems" : ["http://unitsofmeasure.org"],
       "uses" : {
       },
-      "StructureDefinition-hydration-status-observation.html" : "Hydration Status Observation",
-      "StructureDefinition-rehydration-requirement.html" : "Rehydration Requirement"
+      "StructureDefinition-rehydration-requirement.html" : "Rehydration Requirement",
+      "StructureDefinition-hydration-status-observation.html" : "Hydration Status Observation"
     }
   ]
 }

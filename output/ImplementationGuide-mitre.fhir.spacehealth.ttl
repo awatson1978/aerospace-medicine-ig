@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.4.2"] ; # 
   fhir:name [ fhir:v "SpaceflightHealthSimulationsReferenceDocumentation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-24T12:48:12-07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-24T13:07:45-07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -2677,6 +2677,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/derived-from-group> ;
+         fhir:reference [ fhir:v "StructureDefinition/derived-from-group" ]
+       ] ;
+       fhir:name [ fhir:v "Derived From Activity Group" ] ;
+       fhir:description [ fhir:v "Links aggregated metrics to source activity group observations" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Device"
          ]
        ] ) ;
@@ -3666,6 +3687,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/evs-units-vs> ;
+         fhir:reference [ fhir:v "ValueSet/evs-units-vs" ]
+       ] ;
+       fhir:name [ fhir:v "EVS Units" ] ;
+       fhir:description [ fhir:v "Units for Exercise Vital Sign measurements" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Patient"
          ]
        ] ) ;
@@ -3776,6 +3818,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/exercise-device> ;
+         fhir:reference [ fhir:v "StructureDefinition/exercise-device" ]
+       ] ;
+       fhir:name [ fhir:v "Exercise Device" ] ;
+       fhir:description [ fhir:v "Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Questionnaire"
          ]
        ] ) ;
@@ -3848,6 +3911,27 @@
        ] ;
        fhir:name [ fhir:v "Gimbal Screening" ] ;
        fhir:description [ fhir:v "Screening protocol for Multi Axis Gimbal training device." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/harness-load> ;
+         fhir:reference [ fhir:v "StructureDefinition/harness-load" ]
+       ] ;
+       fhir:name [ fhir:v "Harness Load" ] ;
+       fhir:description [ fhir:v "Percentage of body weight applied by harness during treadmill exercise" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4390,6 +4474,49 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-EVS-MinPerWeek-2025W23> ;
+         fhir:reference [ fhir:v "Observation/ISS-EVS-MinPerWeek-2025W23" ]
+       ] ;
+       fhir:name [ fhir:v "ISS EVS Minutes per Week - Week 23 2025" ] ;
+       fhir:description [ fhir:v "EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> ;
+         fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Expedition 75 In-Flight Period" ] ;
+       fhir:description [ fhir:v "Encounter representing the in-flight period of ISS Expedition 75" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -4403,6 +4530,137 @@
          a fhir:Canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"^^xsd:anyURI ;
          fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Device/ISS-T2-Treadmill> ;
+         fhir:reference [ fhir:v "Device/ISS-T2-Treadmill" ]
+       ] ;
+       fhir:name [ fhir:v "ISS T2 Treadmill" ] ;
+       fhir:description [ fhir:v "Treadmill 2 (T2) on the International Space Station with vibration isolation" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-T2-Run-Type-001> ;
+         fhir:reference [ fhir:v "Observation/ISS-T2-Run-Type-001" ]
+       ] ;
+       fhir:name [ fhir:v "ISS T2 Treadmill Run - Activity Type" ] ;
+       fhir:description [ fhir:v "Activity-based measure indicating the type of ISS T2 treadmill running." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-T2-Run-Duration-001> ;
+         fhir:reference [ fhir:v "Observation/ISS-T2-Run-Duration-001" ]
+       ] ;
+       fhir:name [ fhir:v "ISS T2 Treadmill Run - Duration" ] ;
+       fhir:description [ fhir:v "Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-T2-Run-MeanHR-001> ;
+         fhir:reference [ fhir:v "Observation/ISS-T2-Run-MeanHR-001" ]
+       ] ;
+       fhir:name [ fhir:v "ISS T2 Treadmill Run - Mean Heart Rate" ] ;
+       fhir:description [ fhir:v "Mean heart rate during an ISS treadmill session." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-T2-Run-Group-001> ;
+         fhir:reference [ fhir:v "Observation/ISS-T2-Run-Group-001" ]
+       ] ;
+       fhir:name [ fhir:v "ISS T2 Treadmill Session - Activity Group" ] ;
+       fhir:description [ fhir:v "Panel Observation representing a single 30-minute ISS T2 treadmill session." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/ISS-Exercise-Session-Proc-001> ;
+         fhir:reference [ fhir:v "Procedure/ISS-Exercise-Session-Proc-001" ]
+       ] ;
+       fhir:name [ fhir:v "ISS T2 Treadmill Session - Procedure" ] ;
+       fhir:description [ fhir:v "Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session>
        ]
      ] [
        fhir:extension ( [
@@ -7346,6 +7604,174 @@
        ] ;
        fhir:name [ fhir:v "Space Environmental Factors" ] ;
        fhir:description [ fhir:v "CodeSystem for space environmental factors not found in SNOMED CT" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group> ;
+         fhir:reference [ fhir:v "StructureDefinition/space-exercise-activity-group" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Activity Group" ] ;
+       fhir:description [ fhir:v "Panel observation grouping related exercise measures for a single session (type, duration, intensity, HR)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure> ;
+         fhir:reference [ fhir:v "StructureDefinition/space-exercise-activity-measure" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Activity Measure" ] ;
+       fhir:description [ fhir:v "Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-exercise-modality-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-exercise-modality-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Modality Code System" ] ;
+       fhir:description [ fhir:v "Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/space-exercise-modality-vs> ;
+         fhir:reference [ fhir:v "ValueSet/space-exercise-modality-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Modality Value Set" ] ;
+       fhir:description [ fhir:v "Permitted space exercise modalities, derived from the Space Exercise Modality Code System." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-performance-metric-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/space-performance-metric-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Performance Metric Code System" ] ;
+       fhir:description [ fhir:v "Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs> ;
+         fhir:reference [ fhir:v "ValueSet/space-performance-metric-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Performance Metrics" ] ;
+       fhir:description [ fhir:v "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session> ;
+         fhir:reference [ fhir:v "StructureDefinition/space-exercise-session" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Session" ] ;
+       fhir:description [ fhir:v "Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week> ;
+         fhir:reference [ fhir:v "StructureDefinition/space-evs-minutes-per-week" ]
+       ] ;
+       fhir:name [ fhir:v "Space Exercise Vital Sign Minutes Per Week" ] ;
+       fhir:description [ fhir:v "Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

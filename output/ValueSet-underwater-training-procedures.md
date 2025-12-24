@@ -50,7 +50,7 @@ Procedures and activities conducted during underwater training
   "name" : "UnderwaterTrainingProcedures",
   "title" : "Underwater Training Procedures",
   "status" : "draft",
-  "date" : "2025-12-24T12:48:12-07:00",
+  "date" : "2025-12-24T13:07:45-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

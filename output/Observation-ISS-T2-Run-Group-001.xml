@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ISS-T2-Run-Group-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ISS-T2-Run-Group-001</b></p><a name="ISS-T2-Run-Group-001"> </a><a name="hcISS-T2-Run-Group-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-exercise-activity-group.html">Space Exercise Activity Group</a></p></div><p><b>Mission Context</b>: <a href="Encounter-ISS-Exp75-InFlight.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Exercise Device</b>: <a href="Device-ISS-T2-Treadmill.html">Device: status = active; manufacturer = NASA; modelNumber = T2-TVIS; type = </a></p><p><b>Harness Load</b>: 75 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}">Activity</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes PAPanel}">ISS T2 treadmill session</span></p><p><b>subject</b>: <a href="Patient/AstronautExample">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-01 13:00:00+0000 --&gt; 2025-06-01 13:30:00+0000</p><p><b>hasMember</b>: </p><ul><li><a href="Observation-ISS-T2-Run-Type-001.html">Observation Treadmill running in microgravity</a></li><li><a href="Observation-ISS-T2-Run-Duration-001.html">Observation Duration of physical activity</a></li><li><a href="Observation-ISS-T2-Run-MeanHR-001.html">Observation Heart rate</a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/ISS-Exp75-InFlight"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device">
+    <valueReference>
+      <reference value="Device/ISS-T2-Treadmill"/>
+    </valueReference>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load">
+    <valueQuantity>
+      <value value="75"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="activity"/>
+      <display value="Activity"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes"/>
+      <code value="PAPanel"/>
+      <display value="Physical activity panel"/>
+    </coding>
+    <text value="ISS T2 treadmill session"/>
+  </code>
+  <subject>
+    <reference value="Patient/AstronautExample"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2025-06-01T13:00:00Z"/>
+    <end value="2025-06-01T13:30:00Z"/>
+  </effectivePeriod>
+  <hasMember>
+    <reference value="Observation/ISS-T2-Run-Type-001"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ISS-T2-Run-Duration-001"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ISS-T2-Run-MeanHR-001"/>
+  </hasMember>
+</Observation>

@@ -14,12 +14,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:4378
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:48:26 GMT
+date:Wed, 24 Dec 2025 20:08:01 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279245
+x-request-id:252-1279506
 
-{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Local User Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v4.0.1 released 20251208221453.000Z. Server version 4.0.7 built 20251208221453.000Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;subsumes: see OperationDefinition/fso-subsumes&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;4.0.1-4.0.7&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2025-12-24T19:48:26.191Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.7&quot;,&quot;releaseDate&quot; : &quot;2025-12-08T22:14:53.000Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://tx.fhir.org/r4&quot;,&quot;url&quot; : &quot;http://tx.fhir.org/r4&quot;},&quot;fhirVersion&quot; : &quot;4.0.1&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;subsumes&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://tx.fhir.org/r4/OperationDefinition/fso-versions&quot;}]}]}
+{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Local User Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v4.0.1 released 20251208221453.000Z. Server version 4.0.7 built 20251208221453.000Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;subsumes: see OperationDefinition/fso-subsumes&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;4.0.1-4.0.7&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2025-12-24T20:08:01.141Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.7&quot;,&quot;releaseDate&quot; : &quot;2025-12-08T22:14:53.000Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://tx.fhir.org/r4&quot;,&quot;url&quot; : &quot;http://tx.fhir.org/r4&quot;},&quot;fhirVersion&quot; : &quot;4.0.1&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;subsumes&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://tx.fhir.org/r4/OperationDefinition/fso-versions&quot;}]}]}
 </pre>
 <hr/><a name="l2"> </a>
 <p>#2</p>
@@ -29,7 +29,196 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs","code":"dive-profile","display":"Dive Profile"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"min/wk"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:768
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:09 GMT
+last-modified:Wed, 24 Dec 2025 20:08:09 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279510
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;min/wk&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;min/wk&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://unitsofmeasure.org#min/wk (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://unitsofmeasure.org#min/wk\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://unitsofmeasure.org|2.2\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"%"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:748
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:09 GMT
+last-modified:Wed, 24 Dec 2025 20:08:09 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279511
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;%&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;%&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://unitsofmeasure.org#% (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://unitsofmeasure.org#%\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://unitsofmeasure.org|2.2\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"/min"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:760
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:10 GMT
+last-modified:Wed, 24 Dec 2025 20:08:10 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279512
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;/min&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;/min&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://unitsofmeasure.org#/min (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://unitsofmeasure.org#/min\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://unitsofmeasure.org|2.2\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"{activity}"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:784
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:10 GMT
+last-modified:Wed, 24 Dec 2025 20:08:10 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279513
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;{activity}&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;{activity}&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://unitsofmeasure.org#{activity} (\&quot;\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://unitsofmeasure.org#{activity}\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://unitsofmeasure.org|2.2\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":false,"include":[{"system":"http://unitsofmeasure.org","concept":[{"code":"min/wk","display":"minutes per week"},{"code":"min","display":"minutes"}]}]}}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:583
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:12 GMT
+last-modified:Wed, 24 Dec 2025 20:08:12 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279514
+
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:8214a0b5-39a0-4d62-9440-643363b06996&quot;,&quot;timestamp&quot; : &quot;2025-12-24T20:08:12.313Z&quot;,&quot;total&quot; : 2,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org|2.2&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://unitsofmeasure.org&quot;,&quot;code&quot; : &quot;min/wk&quot;,&quot;display&quot; : &quot;min/wk&quot;},{&quot;system&quot; : &quot;http://unitsofmeasure.org&quot;,&quot;code&quot; : &quot;min&quot;,&quot;display&quot; : &quot;min&quot;}]}}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"min/wk","display":"minutes per week"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"mode","valueString":"lenient-display-validation"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1601
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:13 GMT
+last-modified:Wed, 24 Dec 2025 20:08:13 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279515
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;min/wk&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;min/wk&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'minutes per week' for http://unitsofmeasure.org#min/wk. Valid display is 'min/wk' (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'minutes per week' for http://unitsofmeasure.org#min/wk. Valid display is 'min/wk' (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest, display-warning\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://unitsofmeasure.org#min/wk (\&quot;minutes per week\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://unitsofmeasure.org#min/wk\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://unitsofmeasure.org|2.2\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST https://tx.fhir.org/r4/ValueSet/$batch-validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"validation","resource":{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://unitsofmeasure.org","code":"min","display":"minutes"}},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"lenient-display-validation","valueBoolean":true},{"name":"default-to-latest-version","valueBoolean":true}]}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1125
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:13 GMT
+last-modified:Wed, 24 Dec 2025 20:08:13 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279516
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;validation&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;min&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;min&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'minutes' for http://unitsofmeasure.org#min. Valid display is 'min' (for the language(s) 'en, en-US')&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;warning&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'minutes' for http://unitsofmeasure.org#min. Valid display is 'min' (for the language(s) 'en, en-US')&quot;},&quot;location&quot; : [&quot;Coding.display&quot;],&quot;expression&quot; : [&quot;Coding.display&quot;]}]}}]}}]}
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs","code":"dive-profile","display":"Dive Profile"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -40,23 +229,23 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1741
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:48:37 GMT
-last-modified:Wed, 24 Dec 2025 19:48:37 GMT
+date:Wed, 24 Dec 2025 20:08:15 GMT
+last-modified:Wed, 24 Dec 2025 20:08:15 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279246
+x-request-id:252-1279517
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;dive-profile&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs#dive-profile (\&quot;Dive Profile\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs#dive-profile\&quot;\r\n16 0    : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs\&quot;\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;dive-profile&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs#dive-profile (\&quot;Dive Profile\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs#dive-profile\&quot;\r\n0 0     : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs\&quot;\r\n&quot;}]}
 </pre>
-<hr/><a name="l3"> </a>
-<p>#3</p>
+<hr/><a name="l10"> </a>
+<p>#10</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs","code":"communication-log"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs","code":"communication-log"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -67,23 +256,23 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1807
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:48:38 GMT
-last-modified:Wed, 24 Dec 2025 19:48:38 GMT
+date:Wed, 24 Dec 2025 20:08:16 GMT
+last-modified:Wed, 24 Dec 2025 20:08:16 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279247
+x-request-id:252-1279518
 
 {&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;communication-log&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs#communication-log (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs#communication-log\&quot;\r\n0 0     : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs\&quot;\r\n&quot;}]}
 </pre>
-<hr/><a name="l4"> </a>
-<p>#4</p>
+<hr/><a name="l11"> </a>
+<p>#11</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system","code":"let","display":"Linear Energy Transfer"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system","code":"let","display":"Linear Energy Transfer"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -94,23 +283,23 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1745
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:48:40 GMT
-last-modified:Wed, 24 Dec 2025 19:48:40 GMT
+date:Wed, 24 Dec 2025 20:08:18 GMT
+last-modified:Wed, 24 Dec 2025 20:08:18 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279248
+x-request-id:252-1279519
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;let&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system#let (\&quot;Linear Energy Transfer\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system#let\&quot;\r\n15 0    : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system\&quot;\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;let&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system#let (\&quot;Linear Energy Transfer\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system#let\&quot;\r\n0 0     : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system\&quot;\r\n&quot;}]}
 </pre>
-<hr/><a name="l5"> </a>
-<p>#5</p>
+<hr/><a name="l12"> </a>
+<p>#12</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs","code":"compliance-status"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs","code":"compliance-status"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -121,23 +310,23 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1786
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:48:41 GMT
-last-modified:Wed, 24 Dec 2025 19:48:41 GMT
+date:Wed, 24 Dec 2025 20:08:20 GMT
+last-modified:Wed, 24 Dec 2025 20:08:20 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279249
+x-request-id:252-1279520
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;compliance-status&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs#compliance-status (\&quot;\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs#compliance-status\&quot;\r\n15 0    : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs\&quot;\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;compliance-status&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs#compliance-status (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs#compliance-status\&quot;\r\n0 0     : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs\&quot;\r\n&quot;}]}
 </pre>
-<hr/><a name="l6"> </a>
-<p>#6</p>
+<hr/><a name="l13"> </a>
+<p>#13</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"182922004"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"82290-8","display":"Frequency of moderate to vigorous aerobic physical activity"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -146,25 +335,25 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:887
+content-length:849
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:49:33 GMT
-last-modified:Wed, 24 Dec 2025 19:49:33 GMT
+date:Wed, 24 Dec 2025 20:08:21 GMT
+last-modified:Wed, 24 Dec 2025 20:08:21 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279266
+x-request-id:252-1279521
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;182922004&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Dietary regime&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://snomed.info/sct#182922004 (\&quot;\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://snomed.info/sct#182922004\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;82290-8&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Frequency of moderate to vigorous aerobic physical activity&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://loinc.org#82290-8 (\&quot;Frequency of moderate to vigorous aerobic physical activity\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#82290-8\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
-<hr/><a name="l7"> </a>
-<p>#7</p>
+<hr/><a name="l14"> </a>
+<p>#14</p>
 <pre>
 POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"169833004"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://loinc.org","code":"82290-8","display":"Frequency of moderate to vigorous aerobic physical activity"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -173,25 +362,25 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:1553
+content-length:1043
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:49:34 GMT
-last-modified:Wed, 24 Dec 2025 19:49:34 GMT
+date:Wed, 24 Dec 2025 20:08:27 GMT
+last-modified:Wed, 24 Dec 2025 20:08:27 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279267
+x-request-id:252-1279522
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;169833004&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Unknown code '169833004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Unknown_Code_in_Version&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-code&quot;}],&quot;text&quot; : &quot;Unknown code '169833004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201' (International Edition)&quot;},&quot;location&quot; : [&quot;Coding.code&quot;],&quot;expression&quot; : [&quot;Coding.code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://snomed.info/sct#169833004 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://snomed.info/sct#169833004\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;82290-8&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Frequency of moderate to vigorous aerobic physical activity&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;82290-8&quot;,&quot;display&quot; : &quot;Frequency of moderate to vigorous aerobic physical activity&quot;}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#82290-8 (\&quot;Frequency of moderate to vigorous aerobic physical activity\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#82290-8\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
 </pre>
-<hr/><a name="l8"> </a>
-<p>#8</p>
+<hr/><a name="l15"> </a>
+<p>#15</p>
 <pre>
-POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+POST https://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://snomed.info/sct","code":"226379006"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+{"resourceType":"Parameters","parameter":[{"name":"inferSystem","valueBoolean":true},{"name":"code","valueCode":"min/wk"},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"evs-units-vs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"https://mitre.org/fhir/space-health/ValueSet/evs-units-vs","version":"0.4.2","name":"EVSUnitsVS","title":"EVS Units","status":"active","experimental":false,"date":"2025-12-24T13:07:45-07:00","publisher":"MITRE","contact":[{"name":"MITRE","telecom":[{"system":"url","value":"https://www.mitre.org/"}]}],"description":"Units for Exercise Vital Sign measurements","compose":{"include":[{"system":"http://unitsofmeasure.org","concept":[{"code":"min/wk","display":"minutes per week"},{"code":"min","display":"minutes"}]}]}}},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -200,25 +389,22 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:884
+content-length:1105
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:49:34 GMT
-last-modified:Wed, 24 Dec 2025 19:49:34 GMT
+date:Wed, 24 Dec 2025 20:08:28 GMT
+last-modified:Wed, 24 Dec 2025 20:08:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279268
+x-request-id:252-1279523
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://snomed.info/sct&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;226379006&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Food intake&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://snomed.info/sct#226379006 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://snomed.info/sct#226379006\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;min/wk&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.2&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;min/wk&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing https://mitre.org/fhir/space-health/ValueSet/evs-units-vs|0.4.2 for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;(http://unitsofmeasure.org)(min/wk,min)\&quot;\r\n16 0    : 0ms  : CodeSystem found: \&quot;http://unitsofmeasure.org|2.2\&quot;\r\n16 0    : 0ms  : Validate \&quot;[#min/wk (\&quot;\&quot;)]\&quot; and infer system\r\n16 0    : 0ms  : Check \&quot;#min/wk\&quot;\r\n16 0    : 0ms  : Inferred CodeSystem = \&quot;http://unitsofmeasure.org\&quot;\r\n16 0    : 0ms  : CodeSystem found: http://unitsofmeasure.org|2.2 for http://unitsofmeasure.org\r\n16 0    : 0ms  : check code in (http://unitsofmeasure.org)(min/wk,min) at \r\n16 0    : 0ms  : Code \&quot;min/wk\&quot; found in http://unitsofmeasure.org|2.2\r\n&quot;}]}
 </pre>
-<hr/><a name="l9"> </a>
-<p>#9</p>
+<hr/><a name="l16"> </a>
+<p>#16</p>
 <pre>
-POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+GET https://tx.fhir.org/r4/metadata HTTP/1.0
 Accept: application/fhir+json; fhirVersion=4.0
-Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
-
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"9052-2"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -227,25 +413,21 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:752
+content-length:4378
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:49:34 GMT
-last-modified:Wed, 24 Dec 2025 19:49:34 GMT
+date:Wed, 24 Dec 2025 20:08:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279269
+x-request-id:252-1279524
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;9052-2&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Calorie intake total&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#9052-2 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#9052-2\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;Local User Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v4.0.1 released 20251208221453.000Z. Server version 4.0.7 built 20251208221453.000Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;subsumes: see OperationDefinition/fso-subsumes&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;4.0.1-4.0.7&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2025-12-24T20:08:28.626Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.7&quot;,&quot;releaseDate&quot; : &quot;2025-12-08T22:14:53.000Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://tx.fhir.org/r4&quot;,&quot;url&quot; : &quot;http://tx.fhir.org/r4&quot;},&quot;fhirVersion&quot; : &quot;4.0.1&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;subsumes&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://tx.fhir.org/r4/OperationDefinition/fso-versions&quot;}]}]}
 </pre>
-<hr/><a name="l10"> </a>
-<p>#10</p>
+<hr/><a name="l17"> </a>
+<p>#17</p>
 <pre>
-POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+GET https://tx.fhir.org/r4/CodeSystem?_format=json&url=http%3A%2F%2Fhl7.org%2Ffhir%2Fus%2Fphysical-activity%2FCodeSystem%2Fpa-temporary-codes HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
 Accept: application/fhir+json; fhirVersion=4.0
-Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
-User-Agent: fhir/publisher
-
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://loinc.org","code":"2692-2"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d96c8b6b-6851-4b7a-be64-d2e2abbcd915"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
 </pre>
 <pre>
 200
@@ -254,13 +436,147 @@ access-control-allow-origin:*
 access-control-expose-headers:Content-Location, Location
 cache-control:public, max-age=600
 connection:keep-alive
-content-length:761
+content-length:288
 content-type:application/fhir+json
-date:Wed, 24 Dec 2025 19:49:35 GMT
-last-modified:Wed, 24 Dec 2025 19:49:35 GMT
+date:Wed, 24 Dec 2025 20:08:28 GMT
 pragma:no-cache
 server:nginx
-x-request-id:252-1279270
+x-request-id:252-1279525
 
-{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;2692-2&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Osmolality of Serum or Plasma&quot;},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en, en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://loinc.org#2692-2 (\&quot;\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://loinc.org#2692-2\&quot;\r\n0 0     : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+{&quot;resourceType&quot; : &quot;Bundle&quot;,&quot;id&quot; : &quot;91579a21-4ec7-4b06-a95b-1c8b90f70c&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2025-12-24T20:08:28.969Z&quot;},&quot;type&quot; : &quot;searchset&quot;,&quot;total&quot; : 0,&quot;link&quot; : [{&quot;relation&quot; : &quot;self&quot;,&quot;url&quot; : &quot;CodeSystem?&amp;url=http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes&quot;}]}
+</pre>
+<hr/><a name="l18"> </a>
+<p>#18</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes","code":"duration","display":"Duration of physical activity"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1802
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:29 GMT
+last-modified:Wed, 24 Dec 2025 20:08:29 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279526
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;duration&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n0 0     : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n0 0     : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n0 0     : 0ms  : Prepare include: \&quot;()\&quot;\r\n0 0     : 0ms  : Validate \&quot;[http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes#duration (\&quot;Duration of physical activity\&quot;)]\&quot;\r\n0 0     : 0ms  : Check \&quot;http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes#duration\&quot;\r\n0 0     : 0ms  : Didn't find CodeSystem \&quot;http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l19"> </a>
+<p>#19</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs","code":"treadmill"},{"system":"http://loinc.org","code":"8867-4","display":"Heart rate"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"space-exercise-modality-cs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs","version":"0.4.2","name":"SpaceExerciseModalityCS","title":"Space Exercise Modality Code System","status":"active","experimental":false,"date":"2025-12-24T13:07:45-07:00","publisher":"MITRE","contact":[{"name":"MITRE","telecom":[{"system":"url","value":"https://www.mitre.org/"}]}],"description":"Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity).","caseSensitive":true,"content":"complete","count":9,"concept":[{"code":"treadmill","display":"Treadmill running in microgravity","definition":"Running or walking on a vibration-isolated treadmill with harness-based body-weight simulation."},{"code":"cycle-ergometer","display":"Cycle ergometer (CEVIS or equivalent)","definition":"Seated or supine cycling on a vibration-isolated ergometer with adjustable resistance."},{"code":"ared-resistive","display":"ARED resistive exercise","definition":"Heavy-load resistive exercise using a flywheel or vacuum-based Advanced Resistive Exercise Device."},{"code":"resistive-squat","display":"Resistive squats","definition":"Squat movements using ARED or equivalent resistive hardware."},{"code":"resistive-deadlift","display":"Resistive deadlifts","definition":"Deadlift movements using ARED or equivalent resistive hardware."},{"code":"resistive-calfraise","display":"Resistive calf raises","definition":"Calf-raise movements using ARED or equivalent resistive hardware."},{"code":"ag-centrifuge","display":"Artificial gravity centrifuge exercise","definition":"Exercise performed in a short-radius or long-radius centrifuge providing partial or full gravity."},{"code":"elastic-band","display":"Elastic band exercise","definition":"Portable elastic-band or bungee-based resistive training."},{"code":"body-weight-sim","display":"Body-weight simulation harness","definition":"Exercise performed with harness-based body-weight simulation, typically on a treadmill."}]}},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1338
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:30 GMT
+last-modified:Wed, 24 Dec 2025 20:08:30 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279527
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;8867-4&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Heart rate&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs&quot;,&quot;code&quot; : &quot;treadmill&quot;},{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;8867-4&quot;,&quot;display&quot; : &quot;Heart rate&quot;}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill (\&quot;\&quot;), http://loinc.org#8867-4 (\&quot;Heart rate\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs|0.4.2\&quot; (content = complete)\r\n16 0    : 0ms  : Check \&quot;http://loinc.org#8867-4\&quot;\r\n16 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l20"> </a>
+<p>#20</p>
+<pre>
+POST https://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs","code":"treadmill"},{"system":"http://loinc.org","code":"8867-4","display":"Heart rate"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"valueSet","resource":{"resourceType":"ValueSet","id":"observation-vitalsignresult","meta":{"lastUpdated":"2019-11-01T09:29:23.356+11:00","profile":["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]},"extension":[{"url":"http://hl7.org/fhir/StructureDefinition/structuredefinition-wg","valueCode":"oo"}],"url":"http://hl7.org/fhir/ValueSet/observation-vitalsignresult","identifier":[{"system":"urn:ietf:rfc:3986","value":"urn:oid:2.16.840.1.113883.3.88.12.80.62"}],"version":"4.0.1","name":"VitalSigns","title":"Vital Signs","status":"active","experimental":false,"date":"2019-11-01T09:29:23+11:00","publisher":"FHIR project team","contact":[{"telecom":[{"system":"url","value":"http://hl7.org/fhir"}]}],"description":"This value set indicates the allowed vital sign result types.   The LOINC code for Vitals Signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).","copyright":"This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use","compose":{"include":[{"system":"http://loinc.org","concept":[{"code":"85353-1"},{"code":"9279-1"},{"code":"8867-4"},{"code":"2708-6"},{"code":"8310-5"},{"code":"8302-2"},{"code":"9843-4"},{"code":"29463-7"},{"code":"39156-5"},{"code":"85354-9"},{"code":"8480-6"},{"code":"8462-4"},{"code":"8478-0"}]}]}}},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"space-exercise-modality-cs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs","version":"0.4.2","name":"SpaceExerciseModalityCS","title":"Space Exercise Modality Code System","status":"active","experimental":false,"date":"2025-12-24T13:07:45-07:00","publisher":"MITRE","contact":[{"name":"MITRE","telecom":[{"system":"url","value":"https://www.mitre.org/"}]}],"description":"Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity).","caseSensitive":true,"content":"complete","count":9,"concept":[{"code":"treadmill","display":"Treadmill running in microgravity","definition":"Running or walking on a vibration-isolated treadmill with harness-based body-weight simulation."},{"code":"cycle-ergometer","display":"Cycle ergometer (CEVIS or equivalent)","definition":"Seated or supine cycling on a vibration-isolated ergometer with adjustable resistance."},{"code":"ared-resistive","display":"ARED resistive exercise","definition":"Heavy-load resistive exercise using a flywheel or vacuum-based Advanced Resistive Exercise Device."},{"code":"resistive-squat","display":"Resistive squats","definition":"Squat movements using ARED or equivalent resistive hardware."},{"code":"resistive-deadlift","display":"Resistive deadlifts","definition":"Deadlift movements using ARED or equivalent resistive hardware."},{"code":"resistive-calfraise","display":"Resistive calf raises","definition":"Calf-raise movements using ARED or equivalent resistive hardware."},{"code":"ag-centrifuge","display":"Artificial gravity centrifuge exercise","definition":"Exercise performed in a short-radius or long-radius centrifuge providing partial or full gravity."},{"code":"elastic-band","display":"Elastic band exercise","definition":"Portable elastic-band or bungee-based resistive training."},{"code":"body-weight-sim","display":"Body-weight simulation harness","definition":"Exercise performed with harness-based body-weight simulation, typically on a treadmill."}]}},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:2423
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:30 GMT
+last-modified:Wed, 24 Dec 2025 20:08:30 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279528
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;0.4.2&quot;},{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : true},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;8867-4&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Heart rate&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs&quot;,&quot;code&quot; : &quot;treadmill&quot;},{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;8867-4&quot;,&quot;display&quot; : &quot;Heart rate&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;None_of_the_provided_codes_are_in_the_value_set_one&quot;}],&quot;severity&quot; : &quot;information&quot;,&quot;code&quot; : &quot;code-invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;this-code-not-in-vs&quot;}],&quot;text&quot; : &quot;The provided code 'http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill' was not found in the value set 'http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1'&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].code&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].code&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n16 16   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/observation-vitalsignresult|4.0.1 for validation purposes\r\n16 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n16 0    : 0ms  : Prepare include: \&quot;(http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0)\&quot;\r\n16 0    : 0ms  : CodeSystem found: \&quot;http://loinc.org|2.81\&quot;\r\n16 0    : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill (\&quot;\&quot;), http://loinc.org#8867-4 (\&quot;Heart rate\&quot;)]\&quot;\r\n16 0    : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill\&quot;\r\n31 15   : 15ms : Check \&quot;http://loinc.org#8867-4\&quot;\r\n31 0    : 15ms : CodeSystem found: http://loinc.org|2.81 for http://loinc.org\r\n31 0    : 15ms : check code in (http://loinc.org)(85353-1,9279-1,8867-4,2708-6,8310-5,8302-2,9843-4,29463-7,39156-5,85354-9,8480-6,8462-4,8478-0) at CodeableConcept.coding[1]\r\n31 0    : 15ms : Code \&quot;8867-4\&quot; found in http://loinc.org|2.81\r\n&quot;}]}
+</pre>
+<hr/><a name="l21"> </a>
+<p>#21</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs","code":"treadmill","display":"Treadmill running in microgravity"},{"system":"http://loinc.org","code":"74010-0","display":"Type of exercise"}]}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"space-exercise-modality-cs","text":{"status":"generated","div":"&lt;div&gt;!-- Narrative removed --&gt;&lt;/div&gt;"},"url":"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs","version":"0.4.2","name":"SpaceExerciseModalityCS","title":"Space Exercise Modality Code System","status":"active","experimental":false,"date":"2025-12-24T13:07:45-07:00","publisher":"MITRE","contact":[{"name":"MITRE","telecom":[{"system":"url","value":"https://www.mitre.org/"}]}],"description":"Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity).","caseSensitive":true,"content":"complete","count":9,"concept":[{"code":"treadmill","display":"Treadmill running in microgravity","definition":"Running or walking on a vibration-isolated treadmill with harness-based body-weight simulation."},{"code":"cycle-ergometer","display":"Cycle ergometer (CEVIS or equivalent)","definition":"Seated or supine cycling on a vibration-isolated ergometer with adjustable resistance."},{"code":"ared-resistive","display":"ARED resistive exercise","definition":"Heavy-load resistive exercise using a flywheel or vacuum-based Advanced Resistive Exercise Device."},{"code":"resistive-squat","display":"Resistive squats","definition":"Squat movements using ARED or equivalent resistive hardware."},{"code":"resistive-deadlift","display":"Resistive deadlifts","definition":"Deadlift movements using ARED or equivalent resistive hardware."},{"code":"resistive-calfraise","display":"Resistive calf raises","definition":"Calf-raise movements using ARED or equivalent resistive hardware."},{"code":"ag-centrifuge","display":"Artificial gravity centrifuge exercise","definition":"Exercise performed in a short-radius or long-radius centrifuge providing partial or full gravity."},{"code":"elastic-band","display":"Elastic band exercise","definition":"Portable elastic-band or bungee-based resistive training."},{"code":"body-weight-sim","display":"Body-weight simulation harness","definition":"Exercise performed with harness-based body-weight simulation, typically on a treadmill."}]}},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:2485
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:08:31 GMT
+last-modified:Wed, 24 Dec 2025 20:08:31 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279529
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://loinc.org&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;74010-0&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;2.81&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Date quit tobacco smoking&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;Wrong Display Name 'Type of exercise' for http://loinc.org#74010-0. Valid display is one of 3 choices: 'Date quit tobacco smoking' (en-US), 'Date quit tobacco smoking' (en-US) or 'Date quit smoking' (en-US) (for the language(s) 'en-US')&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs&quot;,&quot;code&quot; : &quot;treadmill&quot;,&quot;display&quot; : &quot;Treadmill running in microgravity&quot;},{&quot;system&quot; : &quot;http://loinc.org&quot;,&quot;code&quot; : &quot;74010-0&quot;,&quot;display&quot; : &quot;Type of exercise&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;Display_Name_for__should_be_one_of__instead_of&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;invalid-display&quot;}],&quot;text&quot; : &quot;Wrong Display Name 'Type of exercise' for http://loinc.org#74010-0. Valid display is one of 3 choices: 'Date quit tobacco smoking' (en-US), 'Date quit tobacco smoking' (en-US) or 'Date quit smoking' (en-US) (for the language(s) 'en-US')&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[1].display&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[1].display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n15 15   : 0ms  : Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n15 0    : 0ms  : Parameters: disp-lang=en-US, default-to-latest\r\n15 0    : 0ms  : Prepare include: \&quot;()\&quot;\r\n15 0    : 0ms  : Validate \&quot;[http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill (\&quot;Treadmill running in microgravity\&quot;), http://loinc.org#74010-0 (\&quot;Type of exercise\&quot;)]\&quot;\r\n15 0    : 0ms  : Check \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs#treadmill\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs|0.4.2\&quot; (content = complete)\r\n15 0    : 0ms  : Check \&quot;http://loinc.org#74010-0\&quot;\r\n15 0    : 0ms  : Using CodeSystem \&quot;http://loinc.org|2.81\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l22"> </a>
+<p>#22</p>
+<pre>
+POST https://tx.fhir.org/r4/ValueSet/$expand HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"defaultDisplayLanguage","valueCode":"en-US"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":false},{"name":"cache-id","valueId":"0059b01a-c0bb-4b64-90f4-859a54a838fd"},{"name":"count","valueInteger":1000},{"name":"offset","valueInteger":0},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"http://unitsofmeasure.org","concept":[{"code":"min/wk","display":"minutes per week"},{"code":"min","display":"minutes"}]}]}}}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:583
+content-type:application/fhir+json
+date:Wed, 24 Dec 2025 20:09:03 GMT
+last-modified:Wed, 24 Dec 2025 20:09:03 GMT
+pragma:no-cache
+server:nginx
+x-request-id:252-1279530
+
+{&quot;resourceType&quot; : &quot;ValueSet&quot;,&quot;status&quot; : &quot;active&quot;,&quot;expansion&quot; : {&quot;identifier&quot; : &quot;urn:uuid:ada64630-d795-46ee-838c-cc704a0f35c7&quot;,&quot;timestamp&quot; : &quot;2025-12-24T20:09:03.360Z&quot;,&quot;total&quot; : 2,&quot;offset&quot; : 0,&quot;parameter&quot; : [{&quot;name&quot; : &quot;excludeNested&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;offset&quot;,&quot;valueInteger&quot; : 0},{&quot;name&quot; : &quot;count&quot;,&quot;valueInteger&quot; : 1000},{&quot;name&quot; : &quot;used-codesystem&quot;,&quot;valueUri&quot; : &quot;http://unitsofmeasure.org|2.2&quot;}],&quot;contains&quot; : [{&quot;system&quot; : &quot;http://unitsofmeasure.org&quot;,&quot;code&quot; : &quot;min/wk&quot;,&quot;display&quot; : &quot;min/wk&quot;},{&quot;system&quot; : &quot;http://unitsofmeasure.org&quot;,&quot;code&quot; : &quot;min&quot;,&quot;display&quot; : &quot;min&quot;}]}}
 </pre>

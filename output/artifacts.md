@@ -73,6 +73,10 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Radiation Detection Device (Fixed)](StructureDefinition-radiation-detector.md) | Fixed device profile for radiation monitoring in space with properly constrained properties |
 | [Regulatory Compliance Assessment](StructureDefinition-regulatory-compliance-assessment.md) | Assessment of compliance with diving and space medicine regulatory standards |
 | [Respiratory Rate](StructureDefinition-respiratory-rate.md) | The measured number of breaths taken in a minute. |
+| [Space Exercise Activity Group](StructureDefinition-space-exercise-activity-group.md) | Panel observation grouping related exercise measures for a single session (type, duration, intensity, HR) |
+| [Space Exercise Activity Measure](StructureDefinition-space-exercise-activity-measure.md) | Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity |
+| [Space Exercise Session](StructureDefinition-space-exercise-session.md) | Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations |
+| [Space Exercise Vital Sign Minutes Per Week](StructureDefinition-space-evs-minutes-per-week.md) | Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign) |
 | [Space Health Condition](StructureDefinition-SpaceCondition.md) | Health conditions specific to outerspace environment. |
 | [Space Health Procedure](StructureDefinition-SpaceProcedure.md) | STUB - Health procedures specific to outerspace environment. |
 | [Space Insurance Contract](StructureDefinition-SpaceInsuranceContract.md) | STUB - Specialized contract coverage for space travel |
@@ -102,6 +106,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Complication Monitoring](StructureDefinition-complication-monitoring.md) | Monitoring for treatment complications |
 | [Crew Coordination Assessment](StructureDefinition-crew-coordination.md) | Assessment of crew coordination during simulation |
 | [Decompression Algorithm Used](StructureDefinition-decompression-algorithm.md) | The specific decompression algorithm or table used |
+| [Derived From Activity Group](StructureDefinition-derived-from-group.md) | Links aggregated metrics to source activity group observations |
 | [Diving Medical Contraindications](StructureDefinition-diving-contraindications.md) | Medical conditions that contraindicate diving |
 | [Emergency Procedures](StructureDefinition-emergency-procedures.md) | Emergency decompression procedures if applicable |
 | [Emergency Response Assessment](StructureDefinition-emergency-response.md) | Assessment of emergency response procedures |
@@ -109,6 +114,8 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Energy Expenditure](StructureDefinition-energy-expenditure.md) | Total daily energy expenditure in kcal/day |
 | [Environmental Conditions](StructureDefinition-environmental-conditions.md) | Environmental conditions during training session |
 | [Environmental Factors](StructureDefinition-environmental-factors.md) | Environmental conditions affecting decompression requirements |
+| [Exercise Device](StructureDefinition-exercise-device.md) | Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS) |
+| [Harness Load](StructureDefinition-harness-load.md) | Percentage of body weight applied by harness during treadmill exercise |
 | [Hydration Deficit](StructureDefinition-hydration-deficit.md) | Daily hydration deficit in liters per day |
 | [Hyperbaric Chamber Capabilities](StructureDefinition-hyperbaric-capabilities.md) | Specific capabilities of the hyperbaric chamber |
 | [Hyperbaric Chamber Configuration](StructureDefinition-chamber-configuration.md) | Configuration and setup of the hyperbaric chamber |
@@ -171,6 +178,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Diving Medical Contraindications](ValueSet-diving-contraindicated-conditions.md) | Medical conditions that contraindicate diving activities |
 | [Diving Medical Examinations](ValueSet-diving-medical-examinations.md) | Types of medical examinations for diving fitness |
 | [Dosimeter Types](ValueSet-dosimeter-type-vs.md) | Types of radiation dosimeters |
+| [EVS Units](ValueSet-evs-units-vs.md) | Units for Exercise Vital Sign measurements |
 | [Gimbal Contraindications](ValueSet-GimbalContraindicatedConditions.md) | Contraindicated conditions for riding a multi-axis gimbal |
 | [Hydration Types](ValueSet-hydration-type-vs.md) | Types of hydration products used in space |
 | [Hyperbaric Chamber Capabilities](ValueSet-hyperbaric-capabilities-vs.md) | Capabilities available in hyperbaric chambers |
@@ -190,6 +198,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Sleep Loss and Hypoxia Responses](ValueSet-SleepLossHypoxiaResponses.md) | Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia. |
 | [Space Cardiovascular Effects](ValueSet-space-cardiovascular-effects.md) | Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure |
 | [Space Environmental Factors](ValueSet-space-environmental-factors.md) | Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression |
+| [Space Exercise Modality Value Set](ValueSet-space-exercise-modality-vs.md) | Permitted space exercise modalities, derived from the Space Exercise Modality Code System. |
+| [Space Exercise Performance Metrics](ValueSet-space-performance-metric-vs.md) | Performance metrics for space exercise (defined in SpacePerformanceMetricCS) |
 | [Space Monitoring Procedures](ValueSet-space-monitoring-procedures.md) | Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring |
 | [Space Neurological Effects](ValueSet-space-neurological-effects.md) | Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes |
 | [Space Nutrition Types](ValueSet-space-nutrition-type-vs.md) | Types of nutritional products available in space missions |
@@ -232,6 +242,8 @@ These define new code systems used by systems conforming to this implementation 
 | [Radiation Detector Type Code System](CodeSystem-radiation-detector-type-cs.md) | Types of radiation detection equipment |
 | [Space Cardiovascular Effects](CodeSystem-space-cardiovascular-effects-cs.md) | CodeSystem for space cardiovascular effects not found in SNOMED CT |
 | [Space Environmental Factors](CodeSystem-space-environmental-factors-cs.md) | CodeSystem for space environmental factors not found in SNOMED CT |
+| [Space Exercise Modality Code System](CodeSystem-space-exercise-modality-cs.md) | Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity). |
+| [Space Exercise Performance Metric Code System](CodeSystem-space-performance-metric-cs.md) | Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force). |
 | [Space Monitoring Procedures](CodeSystem-space-monitoring-procedures-cs.md) | CodeSystem for space monitoring procedures not found in SNOMED CT |
 | [Space Neurological Effects](CodeSystem-space-neurological-effects-cs.md) | CodeSystem for space neurological effects not found in SNOMED CT |
 | [Space Nutrition Product Types](CodeSystem-space-nutrition-type-cs.md) | Types of nutritional products used in space missions |
@@ -307,7 +319,15 @@ These are example instances that show what data produced and consumed by systems
 | [ISS Columbus Laboratory](Location-InternationalSpaceStationColumbus.md) | International Space Station European laboratory module |
 | [ISS Cupola Module](Location-InternationalSpaceStationCupola.md) | International Space Station Cupola observation module |
 | [ISS Destiny Laboratory](Location-InternationalSpaceStationDestiny.md) | International Space Station US laboratory module |
+| [ISS EVS Minutes per Week - Week 23 2025](Observation-ISS-EVS-MinPerWeek-2025W23.md) | EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23. |
+| [ISS Expedition 75 In-Flight Period](Encounter-ISS-Exp75-InFlight.md) | Encounter representing the in-flight period of ISS Expedition 75 |
 | [ISS Kibo Laboratory](Location-InternationalSpaceStationKibo.md) | International Space Station Japanese laboratory module |
+| [ISS T2 Treadmill](Device-ISS-T2-Treadmill.md) | Treadmill 2 (T2) on the International Space Station with vibration isolation |
+| [ISS T2 Treadmill Run - Activity Type](Observation-ISS-T2-Run-Type-001.md) | Activity-based measure indicating the type of ISS T2 treadmill running. |
+| [ISS T2 Treadmill Run - Duration](Observation-ISS-T2-Run-Duration-001.md) | Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session. |
+| [ISS T2 Treadmill Run - Mean Heart Rate](Observation-ISS-T2-Run-MeanHR-001.md) | Mean heart rate during an ISS treadmill session. |
+| [ISS T2 Treadmill Session - Activity Group](Observation-ISS-T2-Run-Group-001.md) | Panel Observation representing a single 30-minute ISS T2 treadmill session. |
+| [ISS T2 Treadmill Session - Procedure](Procedure-ISS-Exercise-Session-Proc-001.md) | Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel. |
 | [ISS Unity Node](Location-InternationalSpaceStationUnity.md) | International Space Station Unity connecting node |
 | [ISS Zvezda Service Module](Location-InternationalSpaceStationZvezda.md) | International Space Station Russian service module with enhanced shielding |
 | [Insurance - Contract](Contract-SpaceTourismTravelInsuranceContract.md) | STUB - Space tourist insurance coverage. |

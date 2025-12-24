@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/ISS-Exercise-Session-Proc-001> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ISS-Exercise-Session-Proc-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ISS-Exercise-Session-Proc-001</b></p><a name=\"ISS-Exercise-Session-Proc-001\"> </a><a name=\"hcISS-Exercise-Session-Proc-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-exercise-session.html\">Space Exercise Session</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:\">ISS T2 treadmill running session</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>encounter</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>performed</b>: 2025-06-01 13:00:00+0000 --&gt; 2025-06-01 13:30:00+0000</p><p><b>usedReference</b>: <a href=\"Device-ISS-T2-Treadmill.html\">Device: status = active; manufacturer = NASA; modelNumber = T2-TVIS; type = </a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> ;
+       fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "ISS T2 treadmill running session" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
+     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> ;
+     fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-06-01T13:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2025-06-01T13:30:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:usedReference ( [
+     fhir:l <https://mitre.org/fhir/space-health/Device/ISS-T2-Treadmill> ;
+     fhir:reference [ fhir:v "Device/ISS-T2-Treadmill" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -53,7 +53,7 @@ Ultimately, this implementation guide is not only a tool for simulating patients
   "version" : "0.4.2",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-12-24T12:48:12-07:00",
+  "date" : "2025-12-24T13:07:45-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -1674,6 +1674,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/derived-from-group"
+        },
+        "name" : "Derived From Activity Group",
+        "description" : "Links aggregated metrics to source activity group observations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Device"
           }
         ],
@@ -2318,6 +2332,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/evs-units-vs"
+        },
+        "name" : "EVS Units",
+        "description" : "Units for Exercise Vital Sign measurements",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Patient"
           }
         ],
@@ -2388,6 +2416,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/exercise-device"
+        },
+        "name" : "Exercise Device",
+        "description" : "Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Questionnaire"
           }
         ],
@@ -2438,6 +2480,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         },
         "name" : "Gimbal Screening",
         "description" : "Screening protocol for Multi Axis Gimbal training device.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/harness-load"
+        },
+        "name" : "Harness Load",
+        "description" : "Percentage of body weight applied by harness during treadmill exercise",
         "exampleBoolean" : false
       },
       {
@@ -2794,6 +2850,34 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ISS-EVS-MinPerWeek-2025W23"
+        },
+        "name" : "ISS EVS Minutes per Week - Week 23 2025",
+        "description" : "EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23.",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/ISS-Exp75-InFlight"
+        },
+        "name" : "ISS Expedition 75 In-Flight Period",
+        "description" : "Encounter representing the in-flight period of ISS Expedition 75",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -2803,6 +2887,90 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "name" : "ISS Kibo Laboratory",
         "description" : "International Space Station Japanese laboratory module",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/ISS-T2-Treadmill"
+        },
+        "name" : "ISS T2 Treadmill",
+        "description" : "Treadmill 2 (T2) on the International Space Station with vibration isolation",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ISS-T2-Run-Type-001"
+        },
+        "name" : "ISS T2 Treadmill Run - Activity Type",
+        "description" : "Activity-based measure indicating the type of ISS T2 treadmill running.",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ISS-T2-Run-Duration-001"
+        },
+        "name" : "ISS T2 Treadmill Run - Duration",
+        "description" : "Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session.",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ISS-T2-Run-MeanHR-001"
+        },
+        "name" : "ISS T2 Treadmill Run - Mean Heart Rate",
+        "description" : "Mean heart rate during an ISS treadmill session.",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ISS-T2-Run-Group-001"
+        },
+        "name" : "ISS T2 Treadmill Session - Activity Group",
+        "description" : "Panel Observation representing a single 30-minute ISS T2 treadmill session.",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/ISS-Exercise-Session-Proc-001"
+        },
+        "name" : "ISS T2 Treadmill Session - Procedure",
+        "description" : "Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel.",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"
       },
       {
         "extension" : [
@@ -4734,6 +4902,118 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         },
         "name" : "Space Environmental Factors",
         "description" : "CodeSystem for space environmental factors not found in SNOMED CT",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-exercise-activity-group"
+        },
+        "name" : "Space Exercise Activity Group",
+        "description" : "Panel observation grouping related exercise measures for a single session (type, duration, intensity, HR)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-exercise-activity-measure"
+        },
+        "name" : "Space Exercise Activity Measure",
+        "description" : "Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-exercise-modality-cs"
+        },
+        "name" : "Space Exercise Modality Code System",
+        "description" : "Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-exercise-modality-vs"
+        },
+        "name" : "Space Exercise Modality Value Set",
+        "description" : "Permitted space exercise modalities, derived from the Space Exercise Modality Code System.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-performance-metric-cs"
+        },
+        "name" : "Space Exercise Performance Metric Code System",
+        "description" : "Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-performance-metric-vs"
+        },
+        "name" : "Space Exercise Performance Metrics",
+        "description" : "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-exercise-session"
+        },
+        "name" : "Space Exercise Session",
+        "description" : "Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-evs-minutes-per-week"
+        },
+        "name" : "Space Exercise Vital Sign Minutes Per Week",
+        "description" : "Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign)",
         "exampleBoolean" : false
       },
       {

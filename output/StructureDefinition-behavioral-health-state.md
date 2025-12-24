@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
   "name" : "BehavioralHealthState",
   "title" : "Behavioral Health State",
   "status" : "active",
-  "date" : "2025-12-24T12:48:12-07:00",
+  "date" : "2025-12-24T13:07:45-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

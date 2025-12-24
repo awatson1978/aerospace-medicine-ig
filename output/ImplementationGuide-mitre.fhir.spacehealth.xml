@@ -10,7 +10,7 @@
   <version value="0.4.2"/>
   <name value="SpaceflightHealthSimulationsReferenceDocumentation"/>
   <status value="draft"/>
-  <date value="2025-12-24T12:48:12-07:00"/>
+  <date value="2025-12-24T13:07:45-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -1165,6 +1165,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/derived-from-group"/>
+      </reference>
+      <name value="Derived From Activity Group"/>
+      <description value="Links aggregated metrics to source activity group observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Device"/>
       </extension>
       <reference>
@@ -1671,6 +1682,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/evs-units-vs"/>
+      </reference>
+      <name value="EVS Units"/>
+      <description value="Units for Exercise Vital Sign measurements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -1726,6 +1748,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/exercise-device"/>
+      </reference>
+      <name value="Exercise Device"/>
+      <description value="Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -1766,6 +1799,17 @@
       </reference>
       <name value="Gimbal Screening"/>
       <description value="Screening protocol for Multi Axis Gimbal training device."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/harness-load"/>
+      </reference>
+      <name value="Harness Load"/>
+      <description value="Percentage of body weight applied by harness during treadmill exercise"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2045,6 +2089,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-EVS-MinPerWeek-2025W23"/>
+      </reference>
+      <name value="ISS EVS Minutes per Week - Week 23 2025"/>
+      <description value="EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23."/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/ISS-Exp75-InFlight"/>
+      </reference>
+      <name value="ISS Expedition 75 In-Flight Period"/>
+      <description value="Encounter representing the in-flight period of ISS Expedition 75"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -2053,6 +2119,72 @@
       <name value="ISS Kibo Laboratory"/>
       <description value="International Space Station Japanese laboratory module"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ISS-T2-Treadmill"/>
+      </reference>
+      <name value="ISS T2 Treadmill"/>
+      <description value="Treadmill 2 (T2) on the International Space Station with vibration isolation"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-T2-Run-Type-001"/>
+      </reference>
+      <name value="ISS T2 Treadmill Run - Activity Type"/>
+      <description value="Activity-based measure indicating the type of ISS T2 treadmill running."/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-T2-Run-Duration-001"/>
+      </reference>
+      <name value="ISS T2 Treadmill Run - Duration"/>
+      <description value="Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session."/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-T2-Run-MeanHR-001"/>
+      </reference>
+      <name value="ISS T2 Treadmill Run - Mean Heart Rate"/>
+      <description value="Mean heart rate during an ISS treadmill session."/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-T2-Run-Group-001"/>
+      </reference>
+      <name value="ISS T2 Treadmill Session - Activity Group"/>
+      <description value="Panel Observation representing a single 30-minute ISS T2 treadmill session."/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ISS-Exercise-Session-Proc-001"/>
+      </reference>
+      <name value="ISS T2 Treadmill Session - Procedure"/>
+      <description value="Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel."/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -3570,6 +3702,94 @@
       </reference>
       <name value="Space Environmental Factors"/>
       <description value="CodeSystem for space environmental factors not found in SNOMED CT"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/space-exercise-activity-group"/>
+      </reference>
+      <name value="Space Exercise Activity Group"/>
+      <description value="Panel observation grouping related exercise measures for a single session (type, duration, intensity, HR)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/space-exercise-activity-measure"/>
+      </reference>
+      <name value="Space Exercise Activity Measure"/>
+      <description value="Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-exercise-modality-cs"/>
+      </reference>
+      <name value="Space Exercise Modality Code System"/>
+      <description value="Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-exercise-modality-vs"/>
+      </reference>
+      <name value="Space Exercise Modality Value Set"/>
+      <description value="Permitted space exercise modalities, derived from the Space Exercise Modality Code System."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/space-performance-metric-cs"/>
+      </reference>
+      <name value="Space Exercise Performance Metric Code System"/>
+      <description value="Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/space-performance-metric-vs"/>
+      </reference>
+      <name value="Space Exercise Performance Metrics"/>
+      <description value="Performance metrics for space exercise (defined in SpacePerformanceMetricCS)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/space-exercise-session"/>
+      </reference>
+      <name value="Space Exercise Session"/>
+      <description value="Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/space-evs-minutes-per-week"/>
+      </reference>
+      <name value="Space Exercise Vital Sign Minutes Per Week"/>
+      <description value="Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

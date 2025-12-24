@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ISS-Exercise-Session-Proc-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure ISS-Exercise-Session-Proc-001</b></p><a name="ISS-Exercise-Session-Proc-001"> </a><a name="hcISS-Exercise-Session-Proc-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-exercise-session.html">Space Exercise Session</a></p></div><p><b>Mission Context</b>: <a href="Encounter-ISS-Exp75-InFlight.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:">ISS T2 treadmill running session</span></p><p><b>subject</b>: <a href="Patient/AstronautExample">Patient/AstronautExample</a></p><p><b>encounter</b>: <a href="Encounter-ISS-Exp75-InFlight.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>performed</b>: 2025-06-01 13:00:00+0000 --&gt; 2025-06-01 13:30:00+0000</p><p><b>usedReference</b>: <a href="Device-ISS-T2-Treadmill.html">Device: status = active; manufacturer = NASA; modelNumber = T2-TVIS; type = </a></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/ISS-Exp75-InFlight"/>
+    </valueReference>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <text value="ISS T2 treadmill running session"/>
+  </code>
+  <subject>
+    <reference value="Patient/AstronautExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ISS-Exp75-InFlight"/>
+  </encounter>
+  <performedPeriod>
+    <start value="2025-06-01T13:00:00Z"/>
+    <end value="2025-06-01T13:30:00Z"/>
+  </performedPeriod>
+  <usedReference>
+    <reference value="Device/ISS-T2-Treadmill"/>
+  </usedReference>
+</Procedure>

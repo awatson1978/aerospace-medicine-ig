@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/ISS-T2-Run-Type-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ISS-T2-Run-Type-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-T2-Run-Type-001</b></p><a name=\"ISS-T2-Run-Type-001\"> </a><a name=\"hcISS-T2-Run-Type-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-exercise-activity-measure.html\">Space Exercise Activity Measure</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}\">Activity</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs treadmill}, {http://loinc.org 74010-0}\">Treadmill running in microgravity</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-01 13:00:00+0000</p><p><b>value</b>: 1 {activity}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{activity} = '{activity}')</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "activity" ] ;
+       fhir:display [ fhir:v "Activity" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs>
+       ] ;
+       fhir:code [ fhir:v "treadmill" ] ;
+       fhir:display [ fhir:v "Treadmill running in microgravity" ]
+     ] [
+       a loinc:74010-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "74010-0" ] ;
+       fhir:display [ fhir:v "Type of exercise" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
+     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-06-01T13:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "{activity}" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "{activity}" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
