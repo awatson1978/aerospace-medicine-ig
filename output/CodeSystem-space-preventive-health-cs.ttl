@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-preventive-health-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-preventive-health-cs</b></p><a name=\"space-preventive-health-cs\"> </a><a name=\"hcspace-preventive-health-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pre-flight-medical-screening<a name=\"space-preventive-health-cs-pre-flight-medical-screening\"> </a></td><td>Pre-flight Medical Screening</td><td>Comprehensive medical evaluation conducted before spaceflight</td></tr><tr><td style=\"white-space:nowrap\">radiation-exposure-monitoring<a name=\"space-preventive-health-cs-radiation-exposure-monitoring\"> </a></td><td>Radiation Exposure Monitoring</td><td>Tracking and recording astronaut exposure to radiation during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">bone-density-countermeasures<a name=\"space-preventive-health-cs-bone-density-countermeasures\"> </a></td><td>Bone Density Countermeasures</td><td>Interventions to prevent bone loss during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">muscle-maintenance-protocols<a name=\"space-preventive-health-cs-muscle-maintenance-protocols\"> </a></td><td>Muscle Maintenance Protocols</td><td>Protocols designed to maintain muscle mass and strength during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">cardiovascular-conditioning<a name=\"space-preventive-health-cs-cardiovascular-conditioning\"> </a></td><td>Cardiovascular Conditioning</td><td>Exercises and interventions to maintain cardiovascular health during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">psychological-resilience-training<a name=\"space-preventive-health-cs-psychological-resilience-training\"> </a></td><td>Psychological Resilience Training</td><td>Training to enhance psychological coping and resilience for spaceflight</td></tr><tr><td style=\"white-space:nowrap\">circadian-rhythm-management<a name=\"space-preventive-health-cs-circadian-rhythm-management\"> </a></td><td>Circadian Rhythm Management</td><td>Strategies to maintain normal circadian rhythms during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">nutrition-optimization<a name=\"space-preventive-health-cs-nutrition-optimization\"> </a></td><td>Space Nutrition Optimization</td><td>Tailoring of nutrition to prevent physiological deconditioning during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">immune-system-support<a name=\"space-preventive-health-cs-immune-system-support\"> </a></td><td>Immune System Support</td><td>Interventions to maintain immune function during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">ocular-health-monitoring<a name=\"space-preventive-health-cs-ocular-health-monitoring\"> </a></td><td>Ocular Health Monitoring</td><td>Regular monitoring of eye health to detect SANS early</td></tr><tr><td style=\"white-space:nowrap\">cardiovascular-screening<a name=\"space-preventive-health-cs-cardiovascular-screening\"> </a></td><td>Space Cardiovascular Screening</td><td>Regular monitoring of cardiovascular health during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">neurocognitive-assessment<a name=\"space-preventive-health-cs-neurocognitive-assessment\"> </a></td><td>Space Neurocognitive Assessment</td><td>Regular assessment of cognitive function during spaceflight</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "SpacePreventiveHealthCodeSystem"] ; # 
+  fhir:title [ fhir:v "Space Preventive Health"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-24T12:48:12-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem for space preventive health concepts not found in SNOMED CT"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "12"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pre-flight-medical-screening" ] ;
+     fhir:display [ fhir:v "Pre-flight Medical Screening" ] ;
+     fhir:definition [ fhir:v "Comprehensive medical evaluation conducted before spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "radiation-exposure-monitoring" ] ;
+     fhir:display [ fhir:v "Radiation Exposure Monitoring" ] ;
+     fhir:definition [ fhir:v "Tracking and recording astronaut exposure to radiation during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "bone-density-countermeasures" ] ;
+     fhir:display [ fhir:v "Bone Density Countermeasures" ] ;
+     fhir:definition [ fhir:v "Interventions to prevent bone loss during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "muscle-maintenance-protocols" ] ;
+     fhir:display [ fhir:v "Muscle Maintenance Protocols" ] ;
+     fhir:definition [ fhir:v "Protocols designed to maintain muscle mass and strength during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "cardiovascular-conditioning" ] ;
+     fhir:display [ fhir:v "Cardiovascular Conditioning" ] ;
+     fhir:definition [ fhir:v "Exercises and interventions to maintain cardiovascular health during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "psychological-resilience-training" ] ;
+     fhir:display [ fhir:v "Psychological Resilience Training" ] ;
+     fhir:definition [ fhir:v "Training to enhance psychological coping and resilience for spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "circadian-rhythm-management" ] ;
+     fhir:display [ fhir:v "Circadian Rhythm Management" ] ;
+     fhir:definition [ fhir:v "Strategies to maintain normal circadian rhythms during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "nutrition-optimization" ] ;
+     fhir:display [ fhir:v "Space Nutrition Optimization" ] ;
+     fhir:definition [ fhir:v "Tailoring of nutrition to prevent physiological deconditioning during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "immune-system-support" ] ;
+     fhir:display [ fhir:v "Immune System Support" ] ;
+     fhir:definition [ fhir:v "Interventions to maintain immune function during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "ocular-health-monitoring" ] ;
+     fhir:display [ fhir:v "Ocular Health Monitoring" ] ;
+     fhir:definition [ fhir:v "Regular monitoring of eye health to detect SANS early" ]
+  ] [
+     fhir:code [ fhir:v "cardiovascular-screening" ] ;
+     fhir:display [ fhir:v "Space Cardiovascular Screening" ] ;
+     fhir:definition [ fhir:v "Regular monitoring of cardiovascular health during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "neurocognitive-assessment" ] ;
+     fhir:display [ fhir:v "Space Neurocognitive Assessment" ] ;
+     fhir:definition [ fhir:v "Regular assessment of cognitive function during spaceflight" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

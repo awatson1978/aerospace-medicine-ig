@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/nutrition-inventory-status-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nutrition-inventory-status-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nutrition-inventory-status-vs</b></p><a name=\"nutrition-inventory-status-vs\"> </a><a name=\"hcnutrition-inventory-status-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-nutrition-inventory-status-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.4.2</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/nutrition-inventory-status-vs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/nutrition-inventory-status-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "NutritionInventoryStatusVS"] ; # 
+  fhir:title [ fhir:v "Nutrition Inventory Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-24T12:48:12-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Status levels for nutrition inventory management"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

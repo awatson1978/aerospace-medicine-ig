@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-environmental-factors"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet space-environmental-factors</b></p><a name=\"space-environmental-factors\"> </a><a name=\"hcspace-environmental-factors\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/37247000\">37247000</a></td><td>Weightlessness</td></tr><tr><td><a href=\"http://snomed.info/id/212989002\">212989002</a></td><td>Weightlessness</td></tr><tr><td><a href=\"http://snomed.info/id/242028000\">242028000</a></td><td>Weightlessness</td></tr><tr><td><a href=\"http://snomed.info/id/46316000\">46316000</a></td><td>Cosmic radiation</td></tr><tr><td><a href=\"http://snomed.info/id/242796004\">242796004</a></td><td>Exposure to cosmic radiation</td></tr><tr><td><a href=\"http://snomed.info/id/138899005\">138899005</a></td><td>H/O: radiation exposure</td></tr><tr><td><a href=\"http://snomed.info/id/148459003\">148459003</a></td><td>Radiation exposure screening</td></tr><tr><td><a href=\"http://snomed.info/id/16197009\">16197009</a></td><td>Social isolation</td></tr><tr><td><a href=\"http://snomed.info/id/64441002\">64441002</a></td><td>Social isolation</td></tr><tr><td><a href=\"http://snomed.info/id/19842001\">19842001</a></td><td>Isolation after contact with infectious disease</td></tr><tr><td><a href=\"http://snomed.info/id/44532001\">44532001</a></td><td>Barotrauma</td></tr><tr><td><a href=\"http://snomed.info/id/49252004\">49252004</a></td><td>Otitic barotrauma</td></tr><tr><td><a href=\"http://snomed.info/id/123672002\">123672002</a></td><td>Pulmonary barotrauma</td></tr><tr><td><a href=\"http://snomed.info/id/33499000\">33499000</a></td><td>Oxygen toxicity</td></tr><tr><td><a href=\"http://snomed.info/id/78427001\">78427001</a></td><td>Occupational noise exposure</td></tr><tr><td><a href=\"http://snomed.info/id/44016006\">44016006</a></td><td>Decompression sickness</td></tr><tr><td><a href=\"http://snomed.info/id/89684003\">89684003</a></td><td>Decompression sickness</td></tr><tr><td><a href=\"http://snomed.info/id/5770003\">5770003</a></td><td>Decompression injury</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors>
+  ] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "SpaceEnvironmentalFactorsValueSet"] ; # 
+  fhir:title [ fhir:v "Space Environmental Factors"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-12-24T12:48:12-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "37247000" ] ;
+         fhir:display [ fhir:v "Weightlessness" ]
+       ] [
+         fhir:code [ fhir:v "212989002" ] ;
+         fhir:display [ fhir:v "Weightlessness" ]
+       ] [
+         fhir:code [ fhir:v "242028000" ] ;
+         fhir:display [ fhir:v "Weightlessness" ]
+       ] [
+         fhir:code [ fhir:v "46316000" ] ;
+         fhir:display [ fhir:v "Cosmic radiation" ]
+       ] [
+         fhir:code [ fhir:v "242796004" ] ;
+         fhir:display [ fhir:v "Exposure to cosmic radiation" ]
+       ] [
+         fhir:code [ fhir:v "138899005" ] ;
+         fhir:display [ fhir:v "H/O: radiation exposure" ]
+       ] [
+         fhir:code [ fhir:v "148459003" ] ;
+         fhir:display [ fhir:v "Radiation exposure screening" ]
+       ] [
+         fhir:code [ fhir:v "16197009" ] ;
+         fhir:display [ fhir:v "Social isolation" ]
+       ] [
+         fhir:code [ fhir:v "64441002" ] ;
+         fhir:display [ fhir:v "Social isolation" ]
+       ] [
+         fhir:code [ fhir:v "19842001" ] ;
+         fhir:display [ fhir:v "Isolation after contact with infectious disease" ]
+       ] [
+         fhir:code [ fhir:v "44532001" ] ;
+         fhir:display [ fhir:v "Barotrauma" ]
+       ] [
+         fhir:code [ fhir:v "49252004" ] ;
+         fhir:display [ fhir:v "Otitic barotrauma" ]
+       ] [
+         fhir:code [ fhir:v "123672002" ] ;
+         fhir:display [ fhir:v "Pulmonary barotrauma" ]
+       ] [
+         fhir:code [ fhir:v "33499000" ] ;
+         fhir:display [ fhir:v "Oxygen toxicity" ]
+       ] [
+         fhir:code [ fhir:v "78427001" ] ;
+         fhir:display [ fhir:v "Occupational noise exposure" ]
+       ] [
+         fhir:code [ fhir:v "44016006" ] ;
+         fhir:display [ fhir:v "Decompression sickness" ]
+       ] [
+         fhir:code [ fhir:v "89684003" ] ;
+         fhir:display [ fhir:v "Decompression sickness" ]
+       ] [
+         fhir:code [ fhir:v "5770003" ] ;
+         fhir:display [ fhir:v "Decompression injury" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

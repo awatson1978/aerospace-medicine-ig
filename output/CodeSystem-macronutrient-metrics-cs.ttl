@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "macronutrient-metrics-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem macronutrient-metrics-cs</b></p><a name=\"macronutrient-metrics-cs\"> </a><a name=\"hcmacronutrient-metrics-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">calorie-intake<a name=\"macronutrient-metrics-cs-calorie-intake\"> </a></td><td>Calorie Intake</td></tr><tr><td style=\"white-space:nowrap\">calorie-expenditure<a name=\"macronutrient-metrics-cs-calorie-expenditure\"> </a></td><td>Calorie Expenditure</td></tr><tr><td style=\"white-space:nowrap\">calorie-deficit<a name=\"macronutrient-metrics-cs-calorie-deficit\"> </a></td><td>Calorie Deficit</td></tr><tr><td style=\"white-space:nowrap\">calorie-surplus<a name=\"macronutrient-metrics-cs-calorie-surplus\"> </a></td><td>Calorie Surplus</td></tr><tr><td style=\"white-space:nowrap\">protein-grams<a name=\"macronutrient-metrics-cs-protein-grams\"> </a></td><td>Protein Intake (grams)</td></tr><tr><td style=\"white-space:nowrap\">carbohydrate-grams<a name=\"macronutrient-metrics-cs-carbohydrate-grams\"> </a></td><td>Carbohydrate Intake (grams)</td></tr><tr><td style=\"white-space:nowrap\">fat-grams<a name=\"macronutrient-metrics-cs-fat-grams\"> </a></td><td>Fat Intake (grams)</td></tr><tr><td style=\"white-space:nowrap\">fiber-grams<a name=\"macronutrient-metrics-cs-fiber-grams\"> </a></td><td>Fiber Intake (grams)</td></tr><tr><td style=\"white-space:nowrap\">protein-per-kg<a name=\"macronutrient-metrics-cs-protein-per-kg\"> </a></td><td>Protein per Kilogram Body Weight</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "MacronutrientMetricsCS"] ; # 
+  fhir:title [ fhir:v "Macronutrient Metrics"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-24T12:48:12-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Measurement types for macronutrient tracking"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "calorie-intake" ] ;
+     fhir:display [ fhir:v "Calorie Intake" ]
+  ] [
+     fhir:code [ fhir:v "calorie-expenditure" ] ;
+     fhir:display [ fhir:v "Calorie Expenditure" ]
+  ] [
+     fhir:code [ fhir:v "calorie-deficit" ] ;
+     fhir:display [ fhir:v "Calorie Deficit" ]
+  ] [
+     fhir:code [ fhir:v "calorie-surplus" ] ;
+     fhir:display [ fhir:v "Calorie Surplus" ]
+  ] [
+     fhir:code [ fhir:v "protein-grams" ] ;
+     fhir:display [ fhir:v "Protein Intake (grams)" ]
+  ] [
+     fhir:code [ fhir:v "carbohydrate-grams" ] ;
+     fhir:display [ fhir:v "Carbohydrate Intake (grams)" ]
+  ] [
+     fhir:code [ fhir:v "fat-grams" ] ;
+     fhir:display [ fhir:v "Fat Intake (grams)" ]
+  ] [
+     fhir:code [ fhir:v "fiber-grams" ] ;
+     fhir:display [ fhir:v "Fiber Intake (grams)" ]
+  ] [
+     fhir:code [ fhir:v "protein-per-kg" ] ;
+     fhir:display [ fhir:v "Protein per Kilogram Body Weight" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

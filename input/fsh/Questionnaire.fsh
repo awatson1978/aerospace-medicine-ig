@@ -1627,3 +1627,124 @@ Usage: #definition
 * item[=].item[+].linkId = "certDate"
 * item[=].item[=].text = "Date of Medical Certification"
 * item[=].item[=].type = #date
+
+
+Instance: TraumaEFASTQuestionnaire
+InstanceOf: Questionnaire
+Title: "Trauma EFAST Exam"
+Usage: #example
+* status = #draft
+* subjectType = #Patient
+
+* item[+].linkId = "pericardial"
+* item[=].text = "Pericardial (Cardiac) View"
+* item[=].type = #group
+* item[=].item[+].linkId = "pericardialFluid"
+* item[=].item[=].text = "Pericardial free fluid (effusion) present?"
+* item[=].item[=].type = #boolean
+* item[=].item[+].linkId = "cardiacMotion"
+* item[=].item[=].text = "Cardiac motion present?"
+* item[=].item[=].type = #boolean
+* item[=].item[+].linkId = "cardiacImageQuality"
+* item[=].item[=].text = "Image quality (cardiac view)"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "Good"
+* item[=].item[=].answerOption[1].valueString = "Moderate"
+* item[=].item[=].answerOption[2].valueString = "Poor"
+* item[=].item[+].linkId = "cardiacComments"
+* item[=].item[=].text = "Comments (cardiac view)"
+* item[=].item[=].type = #string
+
+* item[+].linkId = "ruq"
+* item[=].text = "Right Upper Quadrant (RUQ) View"
+* item[=].type = #group
+* item[=].item[0].linkId = "ruqFreeFluid"
+* item[=].item[=].text = "Free fluid in RUQ (Morison’s pouch) present?"
+* item[=].item[=].type = #boolean
+* item[=].item[+].linkId = "ruqImageQuality"
+* item[=].item[=].text = "Image quality (RUQ view)"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "Good"
+* item[=].item[=].answerOption[1].valueString = "Moderate"
+* item[=].item[=].answerOption[2].valueString = "Poor"
+* item[=].item[+].linkId = "ruqComments"
+* item[=].item[=].text = "Comments (RUQ view)"
+* item[=].item[=].type = #string
+
+* item[+].linkId = "luq"
+* item[=].text = "Left Upper Quadrant (LUQ) View"
+* item[=].type = #group
+* item[=].item[0].linkId = "luqFreeFluid"
+* item[=].item[=].text = "Free fluid in LUQ (spleno-renal recess) present?"
+* item[=].item[=].type = #boolean
+* item[=].item[+].linkId = "luqImageQuality"
+* item[=].item[=].text = "Image quality (LUQ view)"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "Good"
+* item[=].item[=].answerOption[1].valueString = "Moderate"
+* item[=].item[=].answerOption[2].valueString = "Poor"
+* item[=].item[+].linkId = "luqComments"
+* item[=].item[=].text = "Comments (LUQ view)"
+* item[=].item[=].type = #string
+
+* item[+].linkId = "pelvis"
+* item[=].text = "Pelvic (Suprapubic) View"
+* item[=].type = #group
+* item[=].item[0].linkId = "pelvicFreeFluid"
+* item[=].item[=].text = "Free fluid in pelvic view present?"
+* item[=].item[=].type = #boolean
+* item[=].item[+].linkId = "pelvicImageQuality"
+* item[=].item[=].text = "Image quality (pelvic view)"
+* item[=].item[=].type = #choice
+* item[=].item[=].answerOption[0].valueString = "Good"
+* item[=].item[=].answerOption[1].valueString = "Moderate"
+* item[=].item[=].answerOption[2].valueString = "Poor"
+* item[=].item[+].linkId = "pelvicComments"
+* item[=].item[=].text = "Comments (pelvic view)"
+* item[=].item[=].type = #string
+
+* item[+].linkId = "lungs"
+* item[=].text = "Lung Views (Pleura)"
+* item[=].type = #group
+
+* item[=].item[+].linkId = "rightLung"
+* item[=].item[=].text = "Right Lung View"
+* item[=].item[=].type = #group
+* item[=].item[=].item[0].linkId = "rightLungSliding"
+* item[=].item[=].item[=].text = "Lung sliding present (right side)?"
+* item[=].item[=].item[=].type = #boolean
+* item[=].item[=].item[+].linkId = "rightLungImageQuality"
+* item[=].item[=].item[=].text = "Image quality (right lung)"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerOption[0].valueString = "Good"
+* item[=].item[=].item[=].answerOption[1].valueString = "Moderate"
+* item[=].item[=].item[=].answerOption[2].valueString = "Poor"
+* item[=].item[=].item[+].linkId = "rightLungComments"
+* item[=].item[=].item[=].text = "Comments (right lung)"
+* item[=].item[=].item[=].type = #string
+
+* item[=].item[+].linkId = "leftLung"
+* item[=].item[=].text = "Left Lung View"
+* item[=].item[=].type = #group
+* item[=].item[=].item[0].linkId = "leftLungSliding"
+* item[=].item[=].item[=].text = "Lung sliding present (left side)?"
+* item[=].item[=].item[=].type = #boolean
+* item[=].item[=].item[+].linkId = "leftLungImageQuality"
+* item[=].item[=].item[=].text = "Image quality (left lung)"
+* item[=].item[=].item[=].type = #choice
+* item[=].item[=].item[=].answerOption[0].valueString = "Good"
+* item[=].item[=].item[=].answerOption[1].valueString = "Moderate"
+* item[=].item[=].item[=].answerOption[2].valueString = "Poor"
+* item[=].item[=].item[+].linkId = "leftLungComments"
+* item[=].item[=].item[=].text = "Comments (left lung)"
+* item[=].item[=].item[=].type = #string
+
+* item[+].linkId = "overallInterpretation"
+* item[=].text = "Overall EFAST Interpretation"
+* item[=].type = #choice
+* item[=].answerOption[0].valueCoding.code = #positive
+* item[=].answerOption[0].valueCoding.display = "Positive – free fluid and/or pneumothorax identified"
+* item[=].answerOption[1].valueCoding.code = #negative
+* item[=].answerOption[1].valueCoding.display = "Negative – no free fluid or pneumothorax found"
+* item[=].answerOption[2].valueCoding.code = #indeterminate
+* item[=].answerOption[2].valueCoding.display = "Indeterminate / limited exam"

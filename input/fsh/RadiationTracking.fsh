@@ -14,8 +14,12 @@ Extension: MissionContext
 Id: mission-context
 Title: "Mission Context"
 Description: "Links radiation exposure to specific space missions"
+* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
+* ^context[1].type = #element
+* ^context[1].expression = "Procedure"
 * value[x] only Reference(Encounter)
 * valueReference ^short = "Reference to the space mission encounter"
 

@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/behavioral-biomarker-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "behavioral-biomarker-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem behavioral-biomarker-cs</b></p><a name=\"behavioral-biomarker-cs\"> </a><a name=\"hcbehavioral-biomarker-cs\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cortisol-ugdl<a name=\"behavioral-biomarker-cs-cortisol-ugdl\"> </a></td><td>Cortisol (µg/dL)</td><td>Cortisol concentration used as a stress biomarker.</td></tr><tr><td style=\"white-space:nowrap\">hrv-ms<a name=\"behavioral-biomarker-cs-hrv-ms\"> </a></td><td>Heart rate variability (ms)</td><td>Root-mean-square or similar measure of HRV in milliseconds.</td></tr><tr><td style=\"white-space:nowrap\">sleep-duration-h<a name=\"behavioral-biomarker-cs-sleep-duration-h\"> </a></td><td>Sleep duration (hours)</td><td>Total nightly sleep duration in hours.</td></tr><tr><td style=\"white-space:nowrap\">sleep-efficiency-pct<a name=\"behavioral-biomarker-cs-sleep-efficiency-pct\"> </a></td><td>Sleep efficiency (%)</td><td>Percentage of time in bed spent asleep.</td></tr><tr><td style=\"white-space:nowrap\">awakenings-count<a name=\"behavioral-biomarker-cs-awakenings-count\"> </a></td><td>Nocturnal awakenings (count)</td><td>Number of awakenings during sleep period.</td></tr><tr><td style=\"white-space:nowrap\">speech-stress-index<a name=\"behavioral-biomarker-cs-speech-stress-index\"> </a></td><td>Speech stress index</td><td>Derived metric from speech prosody indicating stress level.</td></tr><tr><td style=\"white-space:nowrap\">activity-level<a name=\"behavioral-biomarker-cs-activity-level\"> </a></td><td>Activity level</td><td>Gross motor activity level from accelerometry.</td></tr><tr><td style=\"white-space:nowrap\">reaction-time-ms<a name=\"behavioral-biomarker-cs-reaction-time-ms\"> </a></td><td>Reaction time (ms)</td><td>Reaction time in milliseconds from vigilance or cognitive tests.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:name [ fhir:v "BehavioralBiomarkerCS"] ; # 
+  fhir:title [ fhir:v "Behavioral Biomarker Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-24T12:48:12-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for physiologic and digital biomarkers related to behavioral health and stress."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cortisol-ugdl" ] ;
+     fhir:display [ fhir:v "Cortisol (µg/dL)" ] ;
+     fhir:definition [ fhir:v "Cortisol concentration used as a stress biomarker." ]
+  ] [
+     fhir:code [ fhir:v "hrv-ms" ] ;
+     fhir:display [ fhir:v "Heart rate variability (ms)" ] ;
+     fhir:definition [ fhir:v "Root-mean-square or similar measure of HRV in milliseconds." ]
+  ] [
+     fhir:code [ fhir:v "sleep-duration-h" ] ;
+     fhir:display [ fhir:v "Sleep duration (hours)" ] ;
+     fhir:definition [ fhir:v "Total nightly sleep duration in hours." ]
+  ] [
+     fhir:code [ fhir:v "sleep-efficiency-pct" ] ;
+     fhir:display [ fhir:v "Sleep efficiency (%)" ] ;
+     fhir:definition [ fhir:v "Percentage of time in bed spent asleep." ]
+  ] [
+     fhir:code [ fhir:v "awakenings-count" ] ;
+     fhir:display [ fhir:v "Nocturnal awakenings (count)" ] ;
+     fhir:definition [ fhir:v "Number of awakenings during sleep period." ]
+  ] [
+     fhir:code [ fhir:v "speech-stress-index" ] ;
+     fhir:display [ fhir:v "Speech stress index" ] ;
+     fhir:definition [ fhir:v "Derived metric from speech prosody indicating stress level." ]
+  ] [
+     fhir:code [ fhir:v "activity-level" ] ;
+     fhir:display [ fhir:v "Activity level" ] ;
+     fhir:definition [ fhir:v "Gross motor activity level from accelerometry." ]
+  ] [
+     fhir:code [ fhir:v "reaction-time-ms" ] ;
+     fhir:display [ fhir:v "Reaction time (ms)" ] ;
+     fhir:definition [ fhir:v "Reaction time in milliseconds from vigilance or cognitive tests." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

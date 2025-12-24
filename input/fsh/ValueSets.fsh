@@ -158,3 +158,58 @@ Description: "Concepts relevant to space radiation risks and associated health c
 * http://snomed.info/sct#95722004 "Bilateral cataracts"
 * http://snomed.info/sct#229040007 "radiation absorbed dose"
 
+
+// ---------------------------------------------------------
+// ValueSet: Behavioral Health Metrics
+// ---------------------------------------------------------
+ValueSet: BehavioralHealthMetricsVS
+Id: behavioral-health-metrics-vs
+Title: "Behavioral Health Metrics Value Set"
+Description: "Key behavioral health state metrics used in aerospace behavioral health monitoring."
+* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs"
+* ^status = #active
+
+* AerospaceBehavioralStateCS#mood-level
+* AerospaceBehavioralStateCS#anxiety-level
+* AerospaceBehavioralStateCS#irritability-score
+* AerospaceBehavioralStateCS#sleep-quality
+* AerospaceBehavioralStateCS#cognitive-readiness
+
+// ---------------------------------------------------------
+// ValueSet: Cognitive Performance Indicators
+// ---------------------------------------------------------
+ValueSet: CognitivePerformanceIndicatorsVS
+Id: cognitive-performance-indicators-vs
+Title: "Cognitive Performance Indicators Value Set"
+Description: "Cognitive and vigilance performance indicators relevant to operational readiness."
+* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs"
+* ^status = #active
+
+* BehavioralBiomarkerCS#reaction-time-ms
+* BehavioralBiomarkerCS#hrv-ms
+* BehavioralBiomarkerCS#activity-level
+* AerospaceBehavioralStateCS#cognitive-readiness
+
+// ---------------------------------------------------------
+// ValueSet: Stress Countermeasures
+// ---------------------------------------------------------
+ValueSet: StressCountermeasuresVS
+Id: stress-countermeasures-vs
+Title: "Stress Countermeasures Value Set"
+Description: "Standardized set of psychological countermeasures used to mitigate stress and support mental health."
+* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs"
+* ^status = #active
+
+* include codes from system PsychologicalCountermeasureCS
+
+// ---------------------------------------------------------
+// ValueSet: Isolation Syndrome Factors
+// ---------------------------------------------------------
+ValueSet: IsolationSyndromeFactorsVS
+Id: isolation-syndrome-factors-vs
+Title: "Isolation Syndrome Factors Value Set"
+Description: "Risk factors related to isolation and confinement that affect behavioral health."
+* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs"
+* ^status = #active
+
+* include codes from system IsolationSyndromeFactorCS

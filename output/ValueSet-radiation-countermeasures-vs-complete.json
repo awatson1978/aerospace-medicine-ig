@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "radiation-countermeasures-vs-complete",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet radiation-countermeasures-vs-complete</b></p><a name=\"radiation-countermeasures-vs-complete\"> </a><a name=\"hcradiation-countermeasures-vs-complete\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-radiation-countermeasures-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.4.2</span></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/182836005\">182836005</a></td><td>Review of medication</td></tr><tr><td><a href=\"http://snomed.info/id/225334002\">225334002</a></td><td>Shelter procedure</td></tr><tr><td><a href=\"http://snomed.info/id/182813001\">182813001</a></td><td>Training activity</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete",
+  "version" : "0.4.2",
+  "name" : "RadiationCountermeasuresVSComplete",
+  "title" : "Complete Radiation Countermeasures",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-12-24T12:48:12-07:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org/"
+    }]
+  }],
+  "description" : "Comprehensive list of protective measures against space radiation",
+  "compose" : {
+    "include" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "182836005",
+        "display" : "Review of medication"
+      },
+      {
+        "code" : "225334002",
+        "display" : "Shelter procedure"
+      },
+      {
+        "code" : "182813001",
+        "display" : "Training activity"
+      }]
+    }]
+  }
+}

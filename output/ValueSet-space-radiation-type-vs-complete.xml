@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="space-radiation-type-vs-complete"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet space-radiation-type-vs-complete</b></p><a name="space-radiation-type-vs-complete"> </a><a name="hcspace-radiation-type-vs-complete"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-space-radiation-type-cs.html"><code>https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.4.2</span></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/46316000">46316000</a></td><td>Cosmic radiation</td></tr><tr><td><a href="http://snomed.info/id/242796004">242796004</a></td><td>Exposure to cosmic radiation</td></tr><tr><td><a href="http://snomed.info/id/138899005">138899005</a></td><td>H/O: radiation exposure</td></tr><tr><td><a href="http://snomed.info/id/218190002">218190002</a></td><td>Exposure to radiation (event)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete"/>
+  <version value="0.4.2"/>
+  <name value="SpaceRadiationTypeVSComplete"/>
+  <title value="Complete Space Radiation Types"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-12-24T12:48:12-07:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org/"/>
+    </telecom>
+  </contact>
+  <description value="Comprehensive list of ionizing radiation types encountered in space"/>
+  <compose>
+    <include>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="46316000"/>
+        <display value="Cosmic radiation"/>
+      </concept>
+      <concept>
+        <code value="242796004"/>
+        <display value="Exposure to cosmic radiation"/>
+      </concept>
+      <concept>
+        <code value="138899005"/>
+        <display value="H/O: radiation exposure"/>
+      </concept>
+      <concept>
+        <code value="218190002"/>
+        <display value="Exposure to radiation (event)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
