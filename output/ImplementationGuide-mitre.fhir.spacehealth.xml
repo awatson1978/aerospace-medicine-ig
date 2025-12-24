@@ -10,7 +10,7 @@
   <version value="0.4.2"/>
   <name value="SpaceflightHealthSimulationsReferenceDocumentation"/>
   <status value="draft"/>
-  <date value="2025-12-24T13:07:45-07:00"/>
+  <date value="2025-12-24T13:59:08-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -2056,6 +2056,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-AnxietyAssessment-PreEVA"/>
+      </reference>
+      <name value="ISS Anxiety Assessment - Pre-EVA"/>
+      <description value="Pre-EVA anxiety assessment with HRV biomarker showing elevated stress."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ISS-BrightLightTherapy-Week8"/>
+      </reference>
+      <name value="ISS Bright Light Therapy - Mission Week 8"/>
+      <description value="Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ISS-CBT-Session-Week12"/>
+      </reference>
+      <name value="ISS CBT Session - Mission Week 12"/>
+      <description value="Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-CognitiveReadiness-PostAnomaly"/>
+      </reference>
+      <name value="ISS Cognitive Readiness - Post-Anomaly"/>
+      <description value="Cognitive readiness assessment following ammonia leak alarm (false positive)."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -2064,6 +2108,39 @@
       <name value="ISS Columbus Laboratory"/>
       <description value="International Space Station European laboratory module"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ISS-CrewDebrief-PostAnomaly"/>
+      </reference>
+      <name value="ISS Crew Debrief - Post-Anomaly"/>
+      <description value="Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-StressBurden-Day180"/>
+      </reference>
+      <name value="ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)"/>
+      <description value="End-of-mission cumulative stress burden showing sustained elevation despite countermeasures."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-StressBurden-Day90"/>
+      </reference>
+      <name value="ISS Cumulative Stress Burden - Mission Day 90"/>
+      <description value="Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2111,6 +2188,50 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ISS-GuidedMeditation-Daily"/>
+      </reference>
+      <name value="ISS Guided Meditation - Daily Practice"/>
+      <description value="Daily 15-minute guided meditation session for stress reduction and mood regulation."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-IsolationFactor-CircadianDrift"/>
+      </reference>
+      <name value="ISS Isolation Factor - Circadian Drift"/>
+      <description value="Sleep-wake cycle misalignment due to shift work and 16 sunrises per day."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-IsolationFactor-Confinement"/>
+      </reference>
+      <name value="ISS Isolation Factor - Confinement"/>
+      <description value="Assessment of confinement stress during prolonged mission."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-IsolationFactor-InterpersonalFriction"/>
+      </reference>
+      <name value="ISS Isolation Factor - Interpersonal Friction"/>
+      <description value="Documented interpersonal tension between crew members during third quarter."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -2119,6 +2240,17 @@
       <name value="ISS Kibo Laboratory"/>
       <description value="International Space Station Japanese laboratory module"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISS-MoodAssessment-Week12"/>
+      </reference>
+      <name value="ISS Mood Assessment - Mission Week 12"/>
+      <description value="Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period."/>
+      <exampleCanonical value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

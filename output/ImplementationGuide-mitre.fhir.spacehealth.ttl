@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.4.2"] ; # 
   fhir:name [ fhir:v "SpaceflightHealthSimulationsReferenceDocumentation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-24T13:07:45-07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-24T13:59:08-07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -4408,6 +4408,94 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-AnxietyAssessment-PreEVA> ;
+         fhir:reference [ fhir:v "Observation/ISS-AnxietyAssessment-PreEVA" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Anxiety Assessment - Pre-EVA" ] ;
+       fhir:description [ fhir:v "Pre-EVA anxiety assessment with HRV biomarker showing elevated stress." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/ISS-BrightLightTherapy-Week8> ;
+         fhir:reference [ fhir:v "Procedure/ISS-BrightLightTherapy-Week8" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Bright Light Therapy - Mission Week 8" ] ;
+       fhir:description [ fhir:v "Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/ISS-CBT-Session-Week12> ;
+         fhir:reference [ fhir:v "Procedure/ISS-CBT-Session-Week12" ]
+       ] ;
+       fhir:name [ fhir:v "ISS CBT Session - Mission Week 12" ] ;
+       fhir:description [ fhir:v "Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-CognitiveReadiness-PostAnomaly> ;
+         fhir:reference [ fhir:v "Observation/ISS-CognitiveReadiness-PostAnomaly" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Cognitive Readiness - Post-Anomaly" ] ;
+       fhir:description [ fhir:v "Cognitive readiness assessment following ammonia leak alarm (false positive)." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -4421,6 +4509,72 @@
          a fhir:Canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"^^xsd:anyURI ;
          fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/ISS-CrewDebrief-PostAnomaly> ;
+         fhir:reference [ fhir:v "Procedure/ISS-CrewDebrief-PostAnomaly" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Crew Debrief - Post-Anomaly" ] ;
+       fhir:description [ fhir:v "Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-StressBurden-Day180> ;
+         fhir:reference [ fhir:v "Observation/ISS-StressBurden-Day180" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)" ] ;
+       fhir:description [ fhir:v "End-of-mission cumulative stress burden showing sustained elevation despite countermeasures." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-StressBurden-Day90> ;
+         fhir:reference [ fhir:v "Observation/ISS-StressBurden-Day90" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Cumulative Stress Burden - Mission Day 90" ] ;
+       fhir:description [ fhir:v "Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden>
        ]
      ] [
        fhir:extension ( [
@@ -4517,6 +4671,91 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/ISS-GuidedMeditation-Daily> ;
+         fhir:reference [ fhir:v "Procedure/ISS-GuidedMeditation-Daily" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Guided Meditation - Daily Practice" ] ;
+       fhir:description [ fhir:v "Daily 15-minute guided meditation session for stress reduction and mood regulation." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-IsolationFactor-CircadianDrift> ;
+         fhir:reference [ fhir:v "Observation/ISS-IsolationFactor-CircadianDrift" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Isolation Factor - Circadian Drift" ] ;
+       fhir:description [ fhir:v "Sleep-wake cycle misalignment due to shift work and 16 sunrises per day." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-IsolationFactor-Confinement> ;
+         fhir:reference [ fhir:v "Observation/ISS-IsolationFactor-Confinement" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Isolation Factor - Confinement" ] ;
+       fhir:description [ fhir:v "Assessment of confinement stress during prolonged mission." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-IsolationFactor-InterpersonalFriction> ;
+         fhir:reference [ fhir:v "Observation/ISS-IsolationFactor-InterpersonalFriction" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Isolation Factor - Interpersonal Friction" ] ;
+       fhir:description [ fhir:v "Documented interpersonal tension between crew members during third quarter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -4530,6 +4769,28 @@
          a fhir:Canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"^^xsd:anyURI ;
          fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-MoodAssessment-Week12> ;
+         fhir:reference [ fhir:v "Observation/ISS-MoodAssessment-Week12" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Mood Assessment - Mission Week 12" ] ;
+       fhir:description [ fhir:v "Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state>
        ]
      ] [
        fhir:extension ( [

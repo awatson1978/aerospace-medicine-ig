@@ -16,7 +16,7 @@ Longitudinal, integrated measure of cumulative stress burden analogous to cumula
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/ISS-StressBurden-Day180](Observation-ISS-StressBurden-Day180.md) and [Observation/ISS-StressBurden-Day90](Observation-ISS-StressBurden-Day90.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/cumulative-stress-burden)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
   "name" : "CumulativeStressBurden",
   "title" : "Cumulative Stress Burden",
   "status" : "active",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

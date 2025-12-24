@@ -316,12 +316,24 @@ These are example instances that show what data produced and consumed by systems
 | [Example Neutral Buoyancy Training Session](Procedure-ExampleNeutralBuoyancySession.md) | Example of a typical neutral buoyancy training session |
 | [Example Training Dive Profile](Observation-ExampleDiveProfile.md) | Example dive profile from neutral buoyancy training |
 | [Hyperbaric Treatment Chamber](Location-HyperbaricChamberFacility.md) | Hyperbaric medicine treatment facility |
+| [ISS Anxiety Assessment - Pre-EVA](Observation-ISS-AnxietyAssessment-PreEVA.md) | Pre-EVA anxiety assessment with HRV biomarker showing elevated stress. |
+| [ISS Bright Light Therapy - Mission Week 8](Procedure-ISS-BrightLightTherapy-Week8.md) | Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality. |
+| [ISS CBT Session - Mission Week 12](Procedure-ISS-CBT-Session-Week12.md) | Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline. |
+| [ISS Cognitive Readiness - Post-Anomaly](Observation-ISS-CognitiveReadiness-PostAnomaly.md) | Cognitive readiness assessment following ammonia leak alarm (false positive). |
 | [ISS Columbus Laboratory](Location-InternationalSpaceStationColumbus.md) | International Space Station European laboratory module |
+| [ISS Crew Debrief - Post-Anomaly](Procedure-ISS-CrewDebrief-PostAnomaly.md) | Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion. |
+| [ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)](Observation-ISS-StressBurden-Day180.md) | End-of-mission cumulative stress burden showing sustained elevation despite countermeasures. |
+| [ISS Cumulative Stress Burden - Mission Day 90](Observation-ISS-StressBurden-Day90.md) | Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains. |
 | [ISS Cupola Module](Location-InternationalSpaceStationCupola.md) | International Space Station Cupola observation module |
 | [ISS Destiny Laboratory](Location-InternationalSpaceStationDestiny.md) | International Space Station US laboratory module |
 | [ISS EVS Minutes per Week - Week 23 2025](Observation-ISS-EVS-MinPerWeek-2025W23.md) | EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23. |
 | [ISS Expedition 75 In-Flight Period](Encounter-ISS-Exp75-InFlight.md) | Encounter representing the in-flight period of ISS Expedition 75 |
+| [ISS Guided Meditation - Daily Practice](Procedure-ISS-GuidedMeditation-Daily.md) | Daily 15-minute guided meditation session for stress reduction and mood regulation. |
+| [ISS Isolation Factor - Circadian Drift](Observation-ISS-IsolationFactor-CircadianDrift.md) | Sleep-wake cycle misalignment due to shift work and 16 sunrises per day. |
+| [ISS Isolation Factor - Confinement](Observation-ISS-IsolationFactor-Confinement.md) | Assessment of confinement stress during prolonged mission. |
+| [ISS Isolation Factor - Interpersonal Friction](Observation-ISS-IsolationFactor-InterpersonalFriction.md) | Documented interpersonal tension between crew members during third quarter. |
 | [ISS Kibo Laboratory](Location-InternationalSpaceStationKibo.md) | International Space Station Japanese laboratory module |
+| [ISS Mood Assessment - Mission Week 12](Observation-ISS-MoodAssessment-Week12.md) | Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period. |
 | [ISS T2 Treadmill](Device-ISS-T2-Treadmill.md) | Treadmill 2 (T2) on the International Space Station with vibration isolation |
 | [ISS T2 Treadmill Run - Activity Type](Observation-ISS-T2-Run-Type-001.md) | Activity-based measure indicating the type of ISS T2 treadmill running. |
 | [ISS T2 Treadmill Run - Duration](Observation-ISS-T2-Run-Duration-001.md) | Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session. |

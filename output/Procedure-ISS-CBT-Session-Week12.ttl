@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/ISS-CBT-Session-Week12> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ISS-CBT-Session-Week12"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ISS-CBT-Session-Week12</b></p><a name=\"ISS-CBT-Session-Week12\"> </a><a name=\"hcISS-CBT-Session-Week12\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-psychological-countermeasure-activity.html\">Psychological Countermeasure Activity</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs cbt-session}\">Cognitive behavioral therapy session</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>performed</b>: 2025-06-02 16:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>Dr. Sarah Chen, Behavioral Health Specialist</td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs mood-level}\">Mood level</span></p><p><b>reasonReference</b>: <a href=\"Observation-ISS-MoodAssessment-Week12.html\">Observation Mood level</a></p><p><b>outcome</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs mood-level}\">Mood level</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> ;
+       fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs>
+       ] ;
+       fhir:code [ fhir:v "cbt-session" ] ;
+       fhir:display [ fhir:v "Cognitive behavioral therapy session" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
+     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:DateTime ;
+     fhir:v "2025-06-02T16:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:display [ fhir:v "Dr. Sarah Chen, Behavioral Health Specialist" ]
+     ]
+  ] ) ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+       ] ;
+       fhir:code [ fhir:v "mood-level" ] ;
+       fhir:display [ fhir:v "Mood level" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-MoodAssessment-Week12> ;
+     fhir:reference [ fhir:v "Observation/ISS-MoodAssessment-Week12" ]
+  ] ) ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+       ] ;
+       fhir:code [ fhir:v "mood-level" ] ;
+       fhir:display [ fhir:v "Mood level" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

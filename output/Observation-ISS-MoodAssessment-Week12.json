@@ -1,0 +1,63 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ISS-MoodAssessment-Week12",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-MoodAssessment-Week12</b></p><a name=\"ISS-MoodAssessment-Week12\"> </a><a name=\"hcISS-MoodAssessment-Week12\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-behavioral-health-state.html\">Behavioral Health State</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 55467-8}\">Psychological assessment</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs mood-level}\">Mood level</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-01 10:00:00+0000</p><p><b>value</b>: -1 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs cortisol-ugdl}\">Cortisol (µg/dL)</span></p><p><b>value</b>: 18.5 µg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeug/dL = 'ug/dL')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs sleep-efficiency-pct}\">Sleep efficiency (%)</span></p><p><b>value</b>: 72 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "55467-8",
+      "display" : "Psychological assessment"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+      "code" : "mood-level",
+      "display" : "Mood level"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/AstronautExample"
+  },
+  "effectiveDateTime" : "2025-06-01T10:00:00Z",
+  "valueQuantity" : {
+    "value" : -1,
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{score}"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
+        "code" : "cortisol-ugdl"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 18.5,
+      "unit" : "µg/dL",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "ug/dL"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
+        "code" : "sleep-efficiency-pct"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 72,
+      "unit" : "%",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "%"
+    }
+  }]
+}

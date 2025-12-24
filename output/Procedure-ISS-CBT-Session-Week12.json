@@ -1,0 +1,51 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ISS-CBT-Session-Week12",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ISS-CBT-Session-Week12</b></p><a name=\"ISS-CBT-Session-Week12\"> </a><a name=\"hcISS-CBT-Session-Week12\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-psychological-countermeasure-activity.html\">Psychological Countermeasure Activity</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs cbt-session}\">Cognitive behavioral therapy session</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>performed</b>: 2025-06-02 16:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>Dr. Sarah Chen, Behavioral Health Specialist</td></tr></table><p><b>reasonCode</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs mood-level}\">Mood level</span></p><p><b>reasonReference</b>: <a href=\"Observation-ISS-MoodAssessment-Week12.html\">Observation Mood level</a></p><p><b>outcome</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs mood-level}\">Mood level</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/ISS-Exp75-InFlight"
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs",
+      "code" : "cbt-session",
+      "display" : "Cognitive behavioral therapy session"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/AstronautExample"
+  },
+  "performedDateTime" : "2025-06-02T16:00:00Z",
+  "performer" : [{
+    "actor" : {
+      "display" : "Dr. Sarah Chen, Behavioral Health Specialist"
+    }
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+      "code" : "mood-level",
+      "display" : "Mood level"
+    }]
+  }],
+  "reasonReference" : [{
+    "reference" : "Observation/ISS-MoodAssessment-Week12"
+  }],
+  "outcome" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+      "code" : "mood-level",
+      "display" : "Mood level"
+    }]
+  }
+}

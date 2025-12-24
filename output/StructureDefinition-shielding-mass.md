@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-shielding-mass.csv),
   "name" : "ShieldingMass",
   "title" : "Shielding Mass",
   "status" : "draft",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

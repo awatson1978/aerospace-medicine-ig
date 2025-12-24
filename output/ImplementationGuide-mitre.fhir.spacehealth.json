@@ -9,7 +9,7 @@
   "version" : "0.4.2",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -2358,6 +2358,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-AnxietyAssessment-PreEVA"
+      },
+      "name" : "ISS Anxiety Assessment - Pre-EVA",
+      "description" : "Pre-EVA anxiety assessment with HRV biomarker showing elevated stress.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-BrightLightTherapy-Week8"
+      },
+      "name" : "ISS Bright Light Therapy - Mission Week 8",
+      "description" : "Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-CBT-Session-Week12"
+      },
+      "name" : "ISS CBT Session - Mission Week 12",
+      "description" : "Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-CognitiveReadiness-PostAnomaly"
+      },
+      "name" : "ISS Cognitive Readiness - Post-Anomaly",
+      "description" : "Cognitive readiness assessment following ammonia leak alarm (false positive).",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -2366,6 +2414,42 @@
       "name" : "ISS Columbus Laboratory",
       "description" : "International Space Station European laboratory module",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-CrewDebrief-PostAnomaly"
+      },
+      "name" : "ISS Crew Debrief - Post-Anomaly",
+      "description" : "Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-StressBurden-Day180"
+      },
+      "name" : "ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)",
+      "description" : "End-of-mission cumulative stress burden showing sustained elevation despite countermeasures.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-StressBurden-Day90"
+      },
+      "name" : "ISS Cumulative Stress Burden - Mission Day 90",
+      "description" : "Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
     },
     {
       "extension" : [{
@@ -2418,6 +2502,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-GuidedMeditation-Daily"
+      },
+      "name" : "ISS Guided Meditation - Daily Practice",
+      "description" : "Daily 15-minute guided meditation session for stress reduction and mood regulation.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-IsolationFactor-CircadianDrift"
+      },
+      "name" : "ISS Isolation Factor - Circadian Drift",
+      "description" : "Sleep-wake cycle misalignment due to shift work and 16 sunrises per day.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-IsolationFactor-Confinement"
+      },
+      "name" : "ISS Isolation Factor - Confinement",
+      "description" : "Assessment of confinement stress during prolonged mission.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-IsolationFactor-InterpersonalFriction"
+      },
+      "name" : "ISS Isolation Factor - Interpersonal Friction",
+      "description" : "Documented interpersonal tension between crew members during third quarter.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -2426,6 +2558,18 @@
       "name" : "ISS Kibo Laboratory",
       "description" : "International Space Station Japanese laboratory module",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-MoodAssessment-Week12"
+      },
+      "name" : "ISS Mood Assessment - Mission Week 12",
+      "description" : "Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
     },
     {
       "extension" : [{

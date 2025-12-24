@@ -51,7 +51,7 @@ Communication systems used in underwater training operations
   "title" : "Underwater Communication Systems",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

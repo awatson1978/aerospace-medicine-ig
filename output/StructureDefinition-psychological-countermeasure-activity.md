@@ -16,7 +16,7 @@ Documentation of psychological countermeasure interventions for behavioral healt
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Procedure/ISS-BrightLightTherapy-Week8](Procedure-ISS-BrightLightTherapy-Week8.md), [Procedure/ISS-CBT-Session-Week12](Procedure-ISS-CBT-Session-Week12.md), [Procedure/ISS-CrewDebrief-PostAnomaly](Procedure-ISS-CrewDebrief-PostAnomaly.md) and [Procedure/ISS-GuidedMeditation-Daily](Procedure-ISS-GuidedMeditation-Daily.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/psychological-countermeasure-activity)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
   "name" : "PsychologicalCountermeasureActivity",
   "title" : "Psychological Countermeasure Activity",
   "status" : "active",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

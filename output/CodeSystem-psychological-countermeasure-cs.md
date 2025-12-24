@@ -31,7 +31,7 @@ Codes for psychological countermeasure interventions in aerospace missions.
   "name" : "PsychologicalCountermeasureCS",
   "title" : "Psychological Countermeasure Code System",
   "status" : "active",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

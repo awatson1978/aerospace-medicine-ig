@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-SpaceCondition.csv),
   "name" : "SpaceCondition",
   "title" : "Space Health Condition",
   "status" : "draft",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

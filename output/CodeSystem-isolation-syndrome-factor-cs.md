@@ -31,7 +31,7 @@ Factors contributing to isolation, confinement, and psychosocial risk in aerospa
   "name" : "IsolationSyndromeFactorCS",
   "title" : "Isolation Syndrome Factor Code System",
   "status" : "active",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

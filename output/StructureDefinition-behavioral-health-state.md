@@ -16,7 +16,7 @@ Point-in-time behavioral and psychological state assessment for aerospace missio
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [Observation/ISS-AnxietyAssessment-PreEVA](Observation-ISS-AnxietyAssessment-PreEVA.md), [Observation/ISS-CognitiveReadiness-PostAnomaly](Observation-ISS-CognitiveReadiness-PostAnomaly.md) and [Observation/ISS-MoodAssessment-Week12](Observation-ISS-MoodAssessment-Week12.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/behavioral-health-state)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
   "name" : "BehavioralHealthState",
   "title" : "Behavioral Health State",
   "status" : "active",
-  "date" : "2025-12-24T13:07:45-07:00",
+  "date" : "2025-12-24T13:59:08-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

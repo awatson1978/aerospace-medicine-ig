@@ -203,9 +203,519 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#mental-health-and-behavioral-monitoring" id="markdown-toc-mental-health-and-behavioral-monitoring">Mental Health and Behavioral Monitoring</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a>        <ul>
+          <li><a href="#core-profiles" id="markdown-toc-core-profiles">Core Profiles</a></li>
+          <li><a href="#data-architecture" id="markdown-toc-data-architecture">Data Architecture</a></li>
+          <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+        </ul>
+      </li>
+      <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a>        <ul>
+          <li><a href="#isolation-and-confinement" id="markdown-toc-isolation-and-confinement">Isolation and Confinement</a></li>
+          <li><a href="#circadian-disruption" id="markdown-toc-circadian-disruption">Circadian Disruption</a></li>
+          <li><a href="#interpersonal-dynamics" id="markdown-toc-interpersonal-dynamics">Interpersonal Dynamics</a></li>
+          <li><a href="#communication-latency" id="markdown-toc-communication-latency">Communication Latency</a></li>
+          <li><a href="#workload-and-monotony" id="markdown-toc-workload-and-monotony">Workload and Monotony</a></li>
+        </ul>
+      </li>
+      <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a>        <ul>
+          <li><a href="#self-report-assessments" id="markdown-toc-self-report-assessments">Self-Report Assessments</a></li>
+          <li><a href="#physiologic-biomarkers" id="markdown-toc-physiologic-biomarkers">Physiologic Biomarkers</a></li>
+          <li><a href="#crew-observations" id="markdown-toc-crew-observations">Crew Observations</a></li>
+          <li><a href="#environmental-monitoring" id="markdown-toc-environmental-monitoring">Environmental Monitoring</a></li>
+          <li><a href="#risk-threshold-alerts" id="markdown-toc-risk-threshold-alerts">Risk Threshold Alerts</a></li>
+        </ul>
+      </li>
+      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a>        <ul>
+          <li><a href="#core-fhir-resources" id="markdown-toc-core-fhir-resources">Core FHIR Resources</a></li>
+          <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+        </ul>
+      </li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a>        <ul>
+          <li><a href="#1-pre-flight-psychiatric-screening" id="markdown-toc-1-pre-flight-psychiatric-screening">1. Pre-Flight Psychiatric Screening</a></li>
+          <li><a href="#2-routine-in-flight-monitoring" id="markdown-toc-2-routine-in-flight-monitoring">2. Routine In-Flight Monitoring</a></li>
+          <li><a href="#3-high-stress-event-response" id="markdown-toc-3-high-stress-event-response">3. High-Stress Event Response</a></li>
+          <li><a href="#4-cumulative-stress-burden-tracking" id="markdown-toc-4-cumulative-stress-burden-tracking">4. Cumulative Stress Burden Tracking</a></li>
+          <li><a href="#5-interpersonal-conflict-intervention" id="markdown-toc-5-interpersonal-conflict-intervention">5. Interpersonal Conflict Intervention</a></li>
+          <li><a href="#6-post-mission-psychological-recovery" id="markdown-toc-6-post-mission-psychological-recovery">6. Post-Mission Psychological Recovery</a></li>
+        </ul>
+      </li>
+      <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a>        <ul>
+          <li><a href="#advanced-biomarkers" id="markdown-toc-advanced-biomarkers">Advanced Biomarkers</a></li>
+          <li><a href="#digital-phenotyping" id="markdown-toc-digital-phenotyping">Digital Phenotyping</a></li>
+          <li><a href="#environmental-sensors" id="markdown-toc-environmental-sensors">Environmental Sensors</a></li>
+        </ul>
+      </li>
+      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a>        <ul>
+          <li><a href="#crew-health-and-medical-systems" id="markdown-toc-crew-health-and-medical-systems">Crew Health and Medical Systems</a></li>
+          <li><a href="#mission-operations-and-scheduling" id="markdown-toc-mission-operations-and-scheduling">Mission Operations and Scheduling</a></li>
+          <li><a href="#longitudinal-study-of-astronaut-health-lsah" id="markdown-toc-longitudinal-study-of-astronaut-health-lsah">Longitudinal Study of Astronaut Health (LSAH)</a></li>
+          <li><a href="#ground-support-and-telemedicine" id="markdown-toc-ground-support-and-telemedicine">Ground Support and Telemedicine</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a>        <ul>
+          <li><a href="#example-1-behavioralhealthstate---weekly-mood-assessment" id="markdown-toc-example-1-behavioralhealthstate---weekly-mood-assessment">Example 1: BehavioralHealthState - Weekly Mood Assessment</a></li>
+          <li><a href="#example-2-cumulative-stress-burden---mission-day-90" id="markdown-toc-example-2-cumulative-stress-burden---mission-day-90">Example 2: Cumulative Stress Burden - Mission Day 90</a></li>
+        </ul>
+      </li>
+      <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
+      <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a>        <ul>
+          <li><a href="#predictive-analytics" id="markdown-toc-predictive-analytics">Predictive Analytics</a></li>
+          <li><a href="#advanced-countermeasures" id="markdown-toc-advanced-countermeasures">Advanced Countermeasures</a></li>
+          <li><a href="#planetary-surface-psychology" id="markdown-toc-planetary-surface-psychology">Planetary Surface Psychology</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
 </div>
+<h1 id="mental-health-and-behavioral-monitoring">Mental Health and Behavioral Monitoring</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>In 1961, Soviet cosmonaut Yuri Gagarin became the first human in spacehis mission lasted just 108 minutes. Today, astronauts routinely spend six months or more aboard the International Space Station, and future Mars missions will require crews to endure <strong>two to three years</strong> in deep space, isolated from Earth, confined in small habitats, and facing communication delays of up to 20 minutes each way. The question that haunts mission planners is not whether the crew can survive physically, but whether they can remain psychologically intact. History provides sobering lessons: Antarctic winter-over crews have experienced depression, interpersonal conflicts escalating to violence, and cognitive decline. Submarine crews report similar patterns. In space, where there is no escape, no privacy, and no easy rescue, a behavioral health crisis could doom an entire mission.</p>
+
+<p>Unlike radiation exposure or bone losswhich accumulate predictably and can be measured with instruments<strong>psychological stress is invisible, cumulative, and deeply personal</strong>. An astronaut might report feeling fine while their cortisol levels climb, their sleep fragments, and their reaction times slow. Crew members trained to be stoic and high-performing often suppress emotional distress until it erupts in critical moments. This module recognizes that mental health in space requires the same systematic, data-driven approach as physical health: <strong>continuous monitoring, evidence-based countermeasures, and longitudinal tracking across missions</strong>treating psychological wellbeing not as a soft skill, but as a mission-critical physiological system.</p>
+
+<p>This module extends the HL7 Aerospace Medicine Implementation Guidebuilding on architectural principles from <a href="radiation-tracking.html">Radiation Tracking</a>, <a href="nutrition.html">Nutrition</a>, and <a href="fitness.html">Exercise</a>into a comprehensive <strong>Mental Health and Behavioral Monitoring</strong> framework leveraging <strong>FHIR Observation, Procedure, Condition</strong>, and mission-context extensions to track psychological state, cumulative stress burden, and countermeasure interventions.</p>
+
+<h2 id="fhir-implementation-architecture">FHIR Implementation Architecture</h2>
+
+<h3 id="core-profiles">Core Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Purpose</th>
+      <th>Key Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>BehavioralHealthState</strong></td>
+      <td>Point-in-time psychological assessments</td>
+      <td>Mood, anxiety, cognitive readiness, sleep quality, with biomarker components</td>
+    </tr>
+    <tr>
+      <td><strong>CumulativeStressBurden</strong></td>
+      <td>Longitudinal stress accumulation</td>
+      <td>Integrated stress "dose" analogous to radiation exposure tracking</td>
+    </tr>
+    <tr>
+      <td><strong>PsychologicalCountermeasureActivity</strong></td>
+      <td>Mental health interventions</td>
+      <td>CBT sessions, meditation, bright light therapy, pharmacologic support</td>
+    </tr>
+    <tr>
+      <td><strong>IsolationRiskFactor</strong></td>
+      <td>Confinement and psychosocial stressors</td>
+      <td>Factors like interpersonal friction, sensory monotony, communication latency</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These profiles follow the same architectural patterns as radiation dosimetry and nutrition trackingseparating individual measurements, cumulative burden, and intervention documentation while linking all to mission context.</p>
+
+<h3 id="data-architecture">Data Architecture</h3>
+
+<p>Mental health tracking in space incorporates multiple concurrent dimensions:</p>
+
+<ul>
+  <li><strong>Temporal Context</strong>: Point-in-time assessments, daily trends, weekly summaries, mission phases, career-long patterns</li>
+  <li><strong>Psychological Domains</strong>: Mood, anxiety, cognitive performance, sleep quality, social connectedness</li>
+  <li><strong>Biomarkers</strong>: Cortisol, heart rate variability (HRV), sleep metrics, reaction time, speech stress indicators</li>
+  <li><strong>Environmental Stressors</strong>: Confinement, sensory monotony, interpersonal friction, circadian drift, communication latency</li>
+  <li><strong>Countermeasures</strong>: Therapy sessions, exercise interventions, pharmacologic support, crew debriefs, VR relaxation</li>
+  <li><strong>Mission Context</strong>: Pre-flight screening, nominal operations, EVA prep stress, anomaly response, post-landing recovery</li>
+</ul>
+
+<p>All measurements link to <strong>MissionContext</strong> extensions used throughout the IG, enabling correlation with radiation exposure, nutrition deficits, and exercise adherence.</p>
+
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<p>New code systems and value sets include:</p>
+
+<ul>
+  <li><strong>AerospaceBehavioralStateCS</strong>: mood-level, anxiety-level, irritability-score, conflict-index, cognitive-readiness</li>
+  <li><strong>BehavioralBiomarkerCS</strong>: cortisol-ugdl, hrv-ms, sleep-duration-h, reaction-time-ms, speech-stress-index</li>
+  <li><strong>IsolationSyndromeFactorCS</strong>: confinement, sensory-monotony, interpersonal-friction, circadian-drift, communications-latency</li>
+  <li><strong>PsychologicalCountermeasureCS</strong>: cbt-session, guided-meditation, bright-light-therapy, crew-debrief, pharmacologic-anxiolytic</li>
+  <li><strong>BehavioralHealthMetricsVS, CognitivePerformanceIndicatorsVS, StressCountermeasuresVS</strong>: curated bindings</li>
+</ul>
+
+<h2 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h2>
+
+<p>The psychological challenges of spaceflight are not abstract stressorsthey are <strong>concrete, measurable physiologic responses</strong> to an environment fundamentally hostile to human psychology. Picture an astronaut three months into a six-month mission: they wake in a sleeping bag attached to a wall, work shoulder-to-shoulder with the same five people they'll see every day for three more months, hear the constant hum of life support systems, smell the same recycled air, and look out the window to see the same view of Earth rotating below. There is no weather, no seasons, no spontaneity, no privacy. Every conversation with family on Earth has a multi-second delay. This is not adventurethis is sensory deprivation with interpersonal pressure, and the human brain was not designed for it.</p>
+
+<h3 id="isolation-and-confinement">Isolation and Confinement</h3>
+
+<ul>
+  <li><strong>ICE syndrome</strong> (Isolated, Confined Environment) documented in Antarctic, submarine, and simulation studies</li>
+  <li>Symptoms include: depression, anxiety, irritability, social withdrawal, sleep disturbance, cognitive decline</li>
+  <li><strong>Third-quarter phenomenon</strong>: predictable mid-mission psychological nadir when novelty has worn off but end is not yet in sight</li>
+  <li>Reduced personal space (ISS: ~cubicle-sized sleeping quarters) eliminates solitude and privacy</li>
+</ul>
+
+<h3 id="circadian-disruption">Circadian Disruption</h3>
+
+<ul>
+  <li><strong>16 sunrises/sunsets per day</strong> in LEO disrupts natural light-dark cycles</li>
+  <li>Shift work schedules for 24-hour operations create chronic circadian misalignment</li>
+  <li>Poor sleep quality despite adequate sleep opportunity</li>
+  <li>Melatonin dysregulation affects mood, cognition, and immune function</li>
+</ul>
+
+<h3 id="interpersonal-dynamics">Interpersonal Dynamics</h3>
+
+<ul>
+  <li><strong>Forced cohabitation</strong> with crew members you didn't choose, can't escape, and must depend on for survival</li>
+  <li>Cultural differences in communication styles, conflict resolution, and emotional expression</li>
+  <li>Power dynamics between commanders, specialists, and international partners</li>
+  <li><strong>Scapegoating</strong> formation documented in analog missions</li>
+</ul>
+
+<h3 id="communication-latency">Communication Latency</h3>
+
+<ul>
+  <li>Earth-Mars communication: <strong>3-20 minutes one-way delay</strong> depending on planetary positions</li>
+  <li>Makes real-time counseling impossible; crew must be more autonomous</li>
+  <li>Families and loved ones feel distant and disconnected</li>
+  <li>News from Earth arrives stale and out of context</li>
+</ul>
+
+<h3 id="workload-and-monotony">Workload and Monotony</h3>
+
+<ul>
+  <li><strong>Paradox of boredom and overwhelm</strong>: tedious routine punctuated by intense crisis demands</li>
+  <li>Role ambiguity when tasks overlap or conflict</li>
+  <li>Perfectionism and fear of failure in high-stakes environment</li>
+  <li>Loss of control and autonomy despite being highly trained experts</li>
+</ul>
+
+<h2 id="monitoring-strategy">Monitoring Strategy</h2>
+
+<p>Unlike exercise or nutritionwhere compliance can be directly observed<strong>mental health monitoring requires multi-modal integration of subjective self-reports, objective biomarkers, crew observations, and environmental context</strong>. The challenge is detecting deterioration early enough to intervene, while respecting crew autonomy and avoiding stigma.</p>
+
+<h3 id="self-report-assessments">Self-Report Assessments</h3>
+
+<ul>
+  <li><strong>Daily mood and sleep logs</strong> (brief, 2-3 minute check-ins)</li>
+  <li><strong>Weekly validated instruments</strong>: PHQ-9 (depression), GAD-7 (anxiety), Pittsburgh Sleep Quality Index</li>
+  <li><strong>Pre/post EVA cognitive assessments</strong>: Psychomotor Vigilance Test (PVT), reaction time tasks</li>
+  <li><strong>Subjective stress ratings</strong> during high-workload periods</li>
+</ul>
+
+<h3 id="physiologic-biomarkers">Physiologic Biomarkers</h3>
+
+<ul>
+  <li><strong>Cortisol</strong>: Salivary or urinary cortisol as HPA axis stress indicator</li>
+  <li><strong>Heart rate variability (HRV)</strong>: Continuous or spot-check HRV as autonomic balance metric</li>
+  <li><strong>Actigraphy</strong>: Sleep-wake patterns, sleep efficiency, nocturnal awakenings</li>
+  <li><strong>Reaction time trends</strong>: Longitudinal tracking of cognitive speed and accuracy</li>
+  <li><strong>Speech analysis</strong>: Prosody, pitch, and lexical markers of stress (passive monitoring)</li>
+</ul>
+
+<h3 id="crew-observations">Crew Observations</h3>
+
+<ul>
+  <li><strong>Behavioral Observation Checklists</strong> completed by crew medical officer or commander</li>
+  <li>Social withdrawal, irritability, interpersonal conflicts documented</li>
+  <li>Changes in hygiene, eating patterns, or work performance</li>
+  <li>Peer support check-ins (buddy system)</li>
+</ul>
+
+<h3 id="environmental-monitoring">Environmental Monitoring</h3>
+
+<ul>
+  <li><strong>Mission phase tracking</strong>: Launch, nominal ops, anomaly events, EVA prep, pre-landing</li>
+  <li><strong>Workload metrics</strong>: Scheduled hours, sleep opportunity, timeline margin</li>
+  <li><strong>Communication patterns</strong>: Frequency and tone of ground communications, family calls</li>
+</ul>
+
+<h3 id="risk-threshold-alerts">Risk Threshold Alerts</h3>
+
+<ul>
+  <li><strong>PHQ-9 score e10</strong> (moderate depression) triggers clinical consultation</li>
+  <li><strong>Three consecutive days of poor sleep</strong> (&lt;5 hours, efficiency &lt;70%)</li>
+  <li><strong>Significant HRV decline</strong> below individual baseline</li>
+  <li><strong>Interpersonal conflict reports</strong> from multiple crew members</li>
+  <li><strong>Critical incident stress</strong> (near-miss, injury, equipment failure)</li>
+</ul>
+
+<h2 id="data-model-architecture">Data Model Architecture</h2>
+
+<h3 id="core-fhir-resources">Core FHIR Resources</h3>
+
+<ul>
+  <li><strong>Observation</strong> � BehavioralHealthState, CumulativeStressBurden, IsolationRiskFactor</li>
+  <li><strong>Procedure</strong> � PsychologicalCountermeasureActivity</li>
+  <li><strong>Condition</strong> � Diagnosed mental health conditions (adjustment disorder, acute stress reaction)</li>
+  <li><strong>DiagnosticReport</strong> � Comprehensive psychiatric evaluation summaries</li>
+  <li><strong>Goal</strong> � Behavioral health targets (maintain sleep &gt;7h/night, weekly crew social time)</li>
+</ul>
+
+<h3 id="extensions">Extensions</h3>
+
+<ul>
+  <li><strong>missionContext</strong> (consistent with radiation, nutrition, exercise modules)</li>
+  <li><strong>isolationRisk</strong> (array of isolation syndrome factors contributing to current state)</li>
+  <li><strong>behavioralFactor</strong> (environmental or interpersonal context for assessments)</li>
+</ul>
+
+<h2 id="use-cases">Use Cases</h2>
+
+<h3 id="1-pre-flight-psychiatric-screening">1. Pre-Flight Psychiatric Screening</h3>
+
+<p>Comprehensive psychiatric evaluation establishing baseline psychological profile, coping strategies, stressor vulnerabilities, and contraindications for long-duration missions.</p>
+
+<h3 id="2-routine-in-flight-monitoring">2. Routine In-Flight Monitoring</h3>
+
+<p>Daily self-report logs aggregated into weekly BehavioralHealthState observations; biomarker trending identifies early warning signs before subjective deterioration.</p>
+
+<h3 id="3-high-stress-event-response">3. High-Stress Event Response</h3>
+
+<p>Post-EVA or post-anomaly assessments capture acute stress reactions; immediate countermeasures (crew debrief, supportive counseling) documented as PsychologicalCountermeasureActivity.</p>
+
+<h3 id="4-cumulative-stress-burden-tracking">4. Cumulative Stress Burden Tracking</h3>
+
+<p>Longitudinal CumulativeStressBurden observations analogous to radiation dose tracking; identify crew members approaching psychological thresholds requiring intervention or role adjustment.</p>
+
+<h3 id="5-interpersonal-conflict-intervention">5. Interpersonal Conflict Intervention</h3>
+
+<p>IsolationRiskFactor observations document specific friction points; structured crew debriefs and mediation sessions recorded as interventions.</p>
+
+<h3 id="6-post-mission-psychological-recovery">6. Post-Mission Psychological Recovery</h3>
+
+<p>Structured debriefs, re-adaptation assessments, and long-term mental health outcomes tracked to inform future crew selection and countermeasure protocols.</p>
+
+<h2 id="enhanced-data-collection">Enhanced Data Collection</h2>
+
+<h3 id="advanced-biomarkers">Advanced Biomarkers</h3>
+
+<ul>
+  <li><strong>Cytokine profiles</strong> (IL-6, TNF-�) as inflammatory stress markers</li>
+  <li><strong>Brain-derived neurotrophic factor (BDNF)</strong> for neuroplasticity and resilience</li>
+  <li><strong>Electroencephalography (EEG)</strong> for sleep architecture and cognitive state</li>
+  <li><strong>Eye tracking</strong> for attention, vigilance, and cognitive load</li>
+</ul>
+
+<h3 id="digital-phenotyping">Digital Phenotyping</h3>
+
+<ul>
+  <li><strong>Smartphone/tablet interaction patterns</strong>: Typing speed, app usage, screen time</li>
+  <li><strong>Voice analysis</strong>: Automated speech stress detection from routine communications</li>
+  <li><strong>Activity patterns</strong>: Deviations from normal movement and social interaction routines</li>
+</ul>
+
+<h3 id="environmental-sensors">Environmental Sensors</h3>
+
+<ul>
+  <li><strong>Ambient sound levels</strong> and acoustic environment quality</li>
+  <li><strong>Lighting conditions</strong> correlated with circadian phase markers</li>
+  <li><strong>Social proximity sensors</strong> tracking crew interaction patterns</li>
+</ul>
+
+<h2 id="integration-with-existing-systems">Integration with Existing Systems</h2>
+
+<h3 id="crew-health-and-medical-systems">Crew Health and Medical Systems</h3>
+
+<ul>
+  <li>Mental health data feeds into integrated crew health dashboards</li>
+  <li>Cross-domain correlation: poor sleep + calorie deficit + declining exercise adherence = behavioral health risk</li>
+  <li>Automated alerting for multi-domain deterioration patterns</li>
+</ul>
+
+<h3 id="mission-operations-and-scheduling">Mission Operations and Scheduling</h3>
+
+<ul>
+  <li>High stress burden may trigger workload reduction or task reallocation</li>
+  <li>EVA assignments consider current psychological readiness scores</li>
+  <li>Communication windows prioritized for crew members with declining social connectedness</li>
+</ul>
+
+<h3 id="longitudinal-study-of-astronaut-health-lsah">Longitudinal Study of Astronaut Health (LSAH)</h3>
+
+<ul>
+  <li>Career-long mental health trajectories</li>
+  <li>Identify protective factors and vulnerabilities</li>
+  <li>Inform selection criteria and training protocols</li>
+</ul>
+
+<h3 id="ground-support-and-telemedicine">Ground Support and Telemedicine</h3>
+
+<ul>
+  <li>Secure psychiatric telemedicine sessions</li>
+  <li>Asynchronous messaging with behavioral health team</li>
+  <li>Family support coordination</li>
+</ul>
+
+<h2 id="implementation-examples">Implementation Examples</h2>
+
+<h3 id="example-1-behavioralhealthstate---weekly-mood-assessment">Example 1: BehavioralHealthState - Weekly Mood Assessment</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"55467-8"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Psychological assessment"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mood-level"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mood level"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T10:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{score}"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cortisol-ugdl"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">18.5</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"�g/dL"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ug/dL"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Encounter/ISS-Exp75-InFlight"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="example-2-cumulative-stress-burden---mission-day-90">Example 2: Cumulative Stress Burden - Mission Day 90</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cumulative-stress"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Cumulative stress burden"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T00:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">245</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"stress units"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{stress_units}"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mood-level"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">-1.2</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{score}"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Encounter/ISS-Exp75-InFlight"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="regulatory-and-standards-alignment">Regulatory and Standards Alignment</h2>
+
+<ul>
+  <li><strong>NASA-STD-3001 Vol. 1</strong>: Crew Health standards including behavioral health requirements</li>
+  <li><strong>DSM-5</strong>: Diagnostic criteria for adjustment disorders and acute stress reactions</li>
+  <li><strong>WHO ICD-11</strong>: Mental health condition coding</li>
+  <li><strong>DoD Psychological Health Standards</strong>: Military and operational psychology frameworks</li>
+  <li><strong>LOINC</strong>: Psychological assessment and screening instrument codes</li>
+</ul>
+
+<h2 id="future-directions">Future Directions</h2>
+
+<h3 id="predictive-analytics">Predictive Analytics</h3>
+
+<ul>
+  <li><strong>Machine learning models</strong> predicting behavioral health decline from multi-modal data streams</li>
+  <li><strong>Digital twin</strong> psychological models for crew selection and mission planning</li>
+  <li><strong>Personalized risk profiles</strong> based on genetic markers and pre-flight assessments</li>
+</ul>
+
+<h3 id="advanced-countermeasures">Advanced Countermeasures</h3>
+
+<ul>
+  <li><strong>Virtual reality environments</strong> for relaxation, social connection simulation, and Earth immersion</li>
+  <li><strong>Transcranial direct current stimulation (tDCS)</strong> for mood and cognitive enhancement</li>
+  <li><strong>Pharmacogenomic-guided</strong> medication selection for individualized psychiatric treatment</li>
+</ul>
+
+<h3 id="planetary-surface-psychology">Planetary Surface Psychology</h3>
+
+<ul>
+  <li><strong>Partial gravity effects</strong> on mood and cognition (Moon 1/6 g, Mars 3/8 g)</li>
+  <li><strong>Surface habitat design</strong> incorporating psychological needs (windows, personal space, varied sensory environments)</li>
+  <li><strong>Long-duration isolation protocols</strong> for 2-3 year Mars missions with no resupply or evacuation option</li>
+</ul>
 
 
 
@@ -226,7 +736,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 24, 2025 13:07-0700">2025-12-24</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 24, 2025 13:59-0700">2025-12-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
