@@ -15,6 +15,20 @@
       "StructureDefinition-psychological-countermeasure-activity.html" : "Psychological Countermeasure Activity"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyWeightUnits",
+      "title" : "Body Weight Units",
+      "description" : "UCUM units for recording Body Weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.956"],
+      "sources" : ["2.16.840.1.113883.4.642.3.956"],
+      "uses" : {
+      },
+      "StructureDefinition-isru-production-log.html" : "ISRU Production Log"
+    },
+    {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-all-devices-vs",
       "version" : "0.4.2",
       "status" : "active",
@@ -82,8 +96,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-behavioral-health-state.html" : "Behavioral Health State",
-      "StructureDefinition-psychological-countermeasure-activity.html" : "Psychological Countermeasure Activity"
+      "StructureDefinition-psychological-countermeasure-activity.html" : "Psychological Countermeasure Activity",
+      "StructureDefinition-behavioral-health-state.html" : "Behavioral Health State"
     },
     {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs",
@@ -95,6 +109,17 @@
       "systems" : [
         "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
         "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "CrewedMarsMissionsVS",
+      "title" : "Human Mars Mission Plans",
+      "description" : "Proposed and conceptual human mission architectures to Mars",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs"
       ]
     },
     {
@@ -123,6 +148,62 @@
       ]
     },
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsAllDevicesVS",
+      "title" : "All Mars Mission Devices",
+      "description" : "Both certified and prototype Mars devices",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs",
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsCertifiedDevicesVS",
+      "title" : "Mars Mission Devices - Certified",
+      "description" : "Flight-qualified hardware for Mars missions",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-prototype-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsPrototypeDevicesVS",
+      "title" : "Mars Mission Devices - Prototype",
+      "description" : "Developmental and test hardware for Mars missions",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-landing-sites-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsLandingSitesVS",
+      "title" : "Mars Landing Sites",
+      "description" : "Candidate landing sites for human Mars missions",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsMissionsVS",
+      "title" : "Mars Missions",
+      "description" : "All Mars missions (robotic and human, completed and planned)",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs",
       "version" : "0.4.2",
       "status" : "active",
@@ -134,8 +215,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-operational-status.html" : "Operational Status",
-      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber"
+      "StructureDefinition-hyperbaric-chamber.html" : "Hyperbaric Chamber",
+      "StructureDefinition-operational-status.html" : "Operational Status"
     },
     {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs",
@@ -288,10 +369,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-decompression-algorithm.html" : "Decompression Algorithm Used",
-      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol",
       "StructureDefinition-environmental-factors.html" : "Environmental Factors",
-      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment"
+      "StructureDefinition-enhanced-hyperbaric-treatment.html" : "Enhanced Hyperbaric Treatment",
+      "StructureDefinition-decompression-algorithm.html" : "Decompression Algorithm Used",
+      "StructureDefinition-decompression-protocol.html" : "Decompression Protocol"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
@@ -390,8 +471,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-space-nutrition-intake.html" : "Space Nutrition Intake",
-      "StructureDefinition-calorie-deficit-assessment.html" : "Calorie Deficit Assessment"
+      "StructureDefinition-calorie-deficit-assessment.html" : "Calorie Deficit Assessment",
+      "StructureDefinition-space-nutrition-intake.html" : "Space Nutrition Intake"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities",
@@ -501,8 +582,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment",
-      "StructureDefinition-safety-protocols.html" : "Safety Protocols"
+      "StructureDefinition-safety-protocols.html" : "Safety Protocols",
+      "StructureDefinition-regulatory-compliance-assessment.html" : "Regulatory Compliance Assessment"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects",

@@ -5,8 +5,6 @@
 
 ## References
 
-Got it — here’s the grouped, clean Markdown you can drop into your repo:
-
 # Aerospace Medicine Links (Grouped)
 
 ## Policy & Regulations

@@ -32,7 +32,7 @@ Spaceflight-specific exercise modalities used in microgravity and partial gravit
   "title" : "Space Exercise Modality Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-24T17:35:27-07:00",
+  "date" : "2025-12-24T19:44:53-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

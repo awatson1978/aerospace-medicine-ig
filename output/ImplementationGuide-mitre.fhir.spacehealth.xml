@@ -10,7 +10,7 @@
   <version value="0.4.2"/>
   <name value="SpaceflightHealthSimulationsReferenceDocumentation"/>
   <status value="draft"/>
-  <date value="2025-12-24T17:35:27-07:00"/>
+  <date value="2025-12-24T19:44:53-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -505,6 +505,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mars-all-devices-vs"/>
+      </reference>
+      <name value="All Mars Mission Devices"/>
+      <description value="Both certified and prototype Mars devices"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -513,6 +524,17 @@
       <name value="Aquarius Underwater Laboratory"/>
       <description value="NOAA's Aquarius underwater research station used for NEEMO missions"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/areographic-coordinates"/>
+      </reference>
+      <name value="Areographic Coordinates"/>
+      <description value="Mars latitude and longitude for surface locations"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -722,6 +744,28 @@
       <name value="Astronaut Patient Profile"/>
       <description value="Patient profile for astronauts and space travelers"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/autonomous-medical-encounter"/>
+      </reference>
+      <name value="Autonomous Medical Encounter"/>
+      <description value="Encounter profile for crew-led medical events with no real-time ground support due to communication delays"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Emergency-Appendicitis-Sol189"/>
+      </reference>
+      <name value="Autonomous Medical Encounter - Appendicitis Sol 189"/>
+      <description value="Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -996,6 +1040,17 @@
       </reference>
       <name value="Commercial Space Equipment"/>
       <description value="STUB - Device profile for commercial space equipment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/communication-delay"/>
+      </reference>
+      <name value="Communication Delay"/>
+      <description value="Earth-Mars light-time delay for data transmission context"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2001,6 +2056,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HabitatEnvironment-Sol125"/>
+      </reference>
+      <name value="Habitat Environmental Conditions - Sol 125"/>
+      <description value="Atmospheric monitoring inside Mars habitat on Sol 125"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/habitat-environmental-observation"/>
+      </reference>
+      <name value="Habitat Environmental Monitoring"/>
+      <description value="Observation of environmental conditions inside Mars habitat (pressure, O2, CO2, temperature, humidity, dust)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -2030,6 +2107,28 @@
       </reference>
       <name value="Heart Rate"/>
       <description value="The number of heart beats in a minute."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/crewed-mars-missions-vs"/>
+      </reference>
+      <name value="Human Mars Mission Plans"/>
+      <description value="Proposed and conceptual human mission architectures to Mars"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/crewed-mars-missions-cs"/>
+      </reference>
+      <name value="Human Mars Mission Plans"/>
+      <description value="Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2261,6 +2360,50 @@
       </reference>
       <name value="Isolation Syndrome Factors Value Set"/>
       <description value="Risk factors related to isolation and confinement that affect behavioral health."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/isru-production-log"/>
+      </reference>
+      <name value="ISRU Production Log"/>
+      <description value="Tracking ISRU propellant production (CH4/O2) for Mars return journey"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ISRU-Production-Sol210"/>
+      </reference>
+      <name value="ISRU Production Log - Sol 210"/>
+      <description value="Cumulative propellant production by Sol 210 (7 months operation)"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/ISRU-Plant-Jezero-1"/>
+      </reference>
+      <name value="ISRU Propellant Production Plant"/>
+      <description value="In-situ resource utilization plant for CH4/O2 production from Martian atmosphere"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/isru-status"/>
+      </reference>
+      <name value="ISRU System Status"/>
+      <description value="In-Situ Resource Utilization system status and propellant production levels"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3035,6 +3178,182 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/MarsCrewMember1"/>
+      </reference>
+      <name value="Mars Crew Member - Commander Chen"/>
+      <description value="Example Mars crew member (Commander Sarah Chen) with baseline health data"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mars-crew-member"/>
+      </reference>
+      <name value="Mars Crew Member Profile"/>
+      <description value="Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/MarsDirectMission2040"/>
+      </reference>
+      <name value="Mars Direct Mission 2040"/>
+      <description value="Entire Mars Direct mission encounter (launch to splashdown)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/MarsDirectMissionPlan2040"/>
+      </reference>
+      <name value="Mars Direct Mission Plan 2040"/>
+      <description value="Complete mission timeline for Mars Direct architecture mission"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/MarsEVA-Sol147"/>
+      </reference>
+      <name value="Mars EVA - Sol 147"/>
+      <description value="Surface EVA to collect geological samples at crater rim, duration 6.5 hours"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mars-eva-procedure"/>
+      </reference>
+      <name value="Mars Extravehicular Activity Procedure"/>
+      <description value="Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mars-landing-sites-vs"/>
+      </reference>
+      <name value="Mars Landing Sites"/>
+      <description value="Candidate landing sites for human Mars missions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mars-landing-sites-cs"/>
+      </reference>
+      <name value="Mars Landing Sites (Candidate)"/>
+      <description value="Candidate landing sites for human Mars missions with are&#xA;&#xA;ographic coordinates and site characteristics"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mars-devices-certified-vs"/>
+      </reference>
+      <name value="Mars Mission Devices - Certified"/>
+      <description value="Flight-qualified hardware for Mars missions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mars-devices-certified-cs"/>
+      </reference>
+      <name value="Mars Mission Devices - Certified"/>
+      <description value="Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mars-devices-prototype-vs"/>
+      </reference>
+      <name value="Mars Mission Devices - Prototype"/>
+      <description value="Developmental and test hardware for Mars missions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mars-devices-prototype-cs"/>
+      </reference>
+      <name value="Mars Mission Devices - Prototype"/>
+      <description value="Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/mars-missions-vs"/>
+      </reference>
+      <name value="Mars Missions"/>
+      <description value="All Mars missions (robotic and human, completed and planned)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/mars-missions-cs"/>
+      </reference>
+      <name value="Mars Missions"/>
+      <description value="NASA and international missions to Mars (robotic and conceptual human missions)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mars-radiation-risk-assessment"/>
+      </reference>
+      <name value="Mars Radiation Risk Assessment"/>
+      <description value="Radiation exposure risk assessment for long-duration deep space missions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/MarsHabitat-Jezero"/>
+      </reference>
+      <name value="Mars Surface Habitat - Jezero Crater"/>
+      <description value="Pressurized habitat module at Jezero Crater landing site"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -3152,6 +3471,17 @@
       </reference>
       <name value="Mission Risk Assessment"/>
       <description value="STUB - Risk assessment for space missions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mission-timeline-plan"/>
+      </reference>
+      <name value="Mission Timeline Plan"/>
+      <description value="Mars mission timeline with phases, events, EVA schedules, and medical protocols"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3813,6 +4143,17 @@
       <name value="Radiation Dose Units"/>
       <description value="Units for radiation dose measurements"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RiskAssessment"/>
+      </extension>
+      <reference>
+        <reference value="RiskAssessment/RadiationRisk-PostTransit"/>
+      </reference>
+      <name value="Radiation Risk Assessment - Post Outbound Transit"/>
+      <description value="Cancer risk assessment after 6-month outbound transit to Mars"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

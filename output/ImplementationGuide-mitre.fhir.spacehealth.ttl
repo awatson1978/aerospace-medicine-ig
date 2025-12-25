@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.4.2"] ; # 
   fhir:name [ fhir:v "SpaceflightHealthSimulationsReferenceDocumentation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-24T17:35:27-07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-24T19:44:53-07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -1402,6 +1402,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mars-all-devices-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mars-all-devices-vs" ]
+       ] ;
+       fhir:name [ fhir:v "All Mars Mission Devices" ] ;
+       fhir:description [ fhir:v "Both certified and prototype Mars devices" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -1414,6 +1435,27 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/areographic-coordinates> ;
+         fhir:reference [ fhir:v "StructureDefinition/areographic-coordinates" ]
+       ] ;
+       fhir:name [ fhir:v "Areographic Coordinates" ] ;
+       fhir:description [ fhir:v "Mars latitude and longitude for surface locations" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -1819,6 +1861,49 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/autonomous-medical-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Autonomous Medical Encounter" ] ;
+       fhir:description [ fhir:v "Encounter profile for crew-led medical events with no real-time ground support due to communication delays" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Encounter/Emergency-Appendicitis-Sol189> ;
+         fhir:reference [ fhir:v "Encounter/Emergency-Appendicitis-Sol189" ]
+       ] ;
+       fhir:name [ fhir:v "Autonomous Medical Encounter - Appendicitis Sol 189" ] ;
+       fhir:description [ fhir:v "Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter>
        ]
      ] [
        fhir:extension ( [
@@ -2342,6 +2427,27 @@
        ] ;
        fhir:name [ fhir:v "Commercial Space Equipment" ] ;
        fhir:description [ fhir:v "STUB - Device profile for commercial space equipment." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/communication-delay> ;
+         fhir:reference [ fhir:v "StructureDefinition/communication-delay" ]
+       ] ;
+       fhir:name [ fhir:v "Communication Delay" ] ;
+       fhir:description [ fhir:v "Earth-Mars light-time delay for data transmission context" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4306,6 +4412,49 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/HabitatEnvironment-Sol125> ;
+         fhir:reference [ fhir:v "Observation/HabitatEnvironment-Sol125" ]
+       ] ;
+       fhir:name [ fhir:v "Habitat Environmental Conditions - Sol 125" ] ;
+       fhir:description [ fhir:v "Atmospheric monitoring inside Mars habitat on Sol 125" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/habitat-environmental-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Habitat Environmental Monitoring" ] ;
+       fhir:description [ fhir:v "Observation of environmental conditions inside Mars habitat (pressure, O2, CO2, temperature, humidity, dust)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -4357,6 +4506,48 @@
        ] ;
        fhir:name [ fhir:v "Heart Rate" ] ;
        fhir:description [ fhir:v "The number of heart beats in a minute." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/crewed-mars-missions-vs> ;
+         fhir:reference [ fhir:v "ValueSet/crewed-mars-missions-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Human Mars Mission Plans" ] ;
+       fhir:description [ fhir:v "Proposed and conceptual human mission architectures to Mars" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/crewed-mars-missions-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/crewed-mars-missions-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Human Mars Mission Plans" ] ;
+       fhir:description [ fhir:v "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -4800,6 +4991,91 @@
        ] ;
        fhir:name [ fhir:v "Isolation Syndrome Factors Value Set" ] ;
        fhir:description [ fhir:v "Risk factors related to isolation and confinement that affect behavioral health." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log> ;
+         fhir:reference [ fhir:v "StructureDefinition/isru-production-log" ]
+       ] ;
+       fhir:name [ fhir:v "ISRU Production Log" ] ;
+       fhir:description [ fhir:v "Tracking ISRU propellant production (CH4/O2) for Mars return journey" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/ISRU-Production-Sol210> ;
+         fhir:reference [ fhir:v "Observation/ISRU-Production-Sol210" ]
+       ] ;
+       fhir:name [ fhir:v "ISRU Production Log - Sol 210" ] ;
+       fhir:description [ fhir:v "Cumulative propellant production by Sol 210 (7 months operation)" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Device/ISRU-Plant-Jezero-1> ;
+         fhir:reference [ fhir:v "Device/ISRU-Plant-Jezero-1" ]
+       ] ;
+       fhir:name [ fhir:v "ISRU Propellant Production Plant" ] ;
+       fhir:description [ fhir:v "In-situ resource utilization plant for CH4/O2 production from Martian atmosphere" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/isru-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/isru-status" ]
+       ] ;
+       fhir:name [ fhir:v "ISRU System Status" ] ;
+       fhir:description [ fhir:v "In-Situ Resource Utilization system status and propellant production levels" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -6322,6 +6598,344 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Patient/MarsCrewMember1> ;
+         fhir:reference [ fhir:v "Patient/MarsCrewMember1" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Crew Member - Commander Chen" ] ;
+       fhir:description [ fhir:v "Example Mars crew member (Commander Sarah Chen) with baseline health data" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member> ;
+         fhir:reference [ fhir:v "StructureDefinition/mars-crew-member" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Crew Member Profile" ] ;
+       fhir:description [ fhir:v "Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Encounter/MarsDirectMission2040> ;
+         fhir:reference [ fhir:v "Encounter/MarsDirectMission2040" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Direct Mission 2040" ] ;
+       fhir:description [ fhir:v "Entire Mars Direct mission encounter (launch to splashdown)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "PlanDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040> ;
+         fhir:reference [ fhir:v "PlanDefinition/MarsDirectMissionPlan2040" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Direct Mission Plan 2040" ] ;
+       fhir:description [ fhir:v "Complete mission timeline for Mars Direct architecture mission" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/MarsEVA-Sol147> ;
+         fhir:reference [ fhir:v "Procedure/MarsEVA-Sol147" ]
+       ] ;
+       fhir:name [ fhir:v "Mars EVA - Sol 147" ] ;
+       fhir:description [ fhir:v "Surface EVA to collect geological samples at crater rim, duration 6.5 hours" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/mars-eva-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Extravehicular Activity Procedure" ] ;
+       fhir:description [ fhir:v "Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mars-landing-sites-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mars-landing-sites-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Landing Sites" ] ;
+       fhir:description [ fhir:v "Candidate landing sites for human Mars missions" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mars-landing-sites-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mars-landing-sites-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Landing Sites (Candidate)" ] ;
+       fhir:description [ fhir:v "Candidate landing sites for human Mars missions with are\n\nographic coordinates and site characteristics" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mars-devices-certified-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mars-devices-certified-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Mission Devices - Certified" ] ;
+       fhir:description [ fhir:v "Flight-qualified hardware for Mars missions" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mars-devices-certified-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mars-devices-certified-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Mission Devices - Certified" ] ;
+       fhir:description [ fhir:v "Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mars-devices-prototype-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mars-devices-prototype-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Mission Devices - Prototype" ] ;
+       fhir:description [ fhir:v "Developmental and test hardware for Mars missions" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mars-devices-prototype-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mars-devices-prototype-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Mission Devices - Prototype" ] ;
+       fhir:description [ fhir:v "Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mars-missions-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mars-missions-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Missions" ] ;
+       fhir:description [ fhir:v "All Mars missions (robotic and human, completed and planned)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mars-missions-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mars-missions-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Missions" ] ;
+       fhir:description [ fhir:v "NASA and international missions to Mars (robotic and conceptual human missions)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment> ;
+         fhir:reference [ fhir:v "StructureDefinition/mars-radiation-risk-assessment" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Radiation Risk Assessment" ] ;
+       fhir:description [ fhir:v "Radiation exposure risk assessment for long-duration deep space missions" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Location/MarsHabitat-Jezero> ;
+         fhir:reference [ fhir:v "Location/MarsHabitat-Jezero" ]
+       ] ;
+       fhir:name [ fhir:v "Mars Surface Habitat - Jezero Crater" ] ;
+       fhir:description [ fhir:v "Pressurized habitat module at Jezero Crater landing site" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -6542,6 +7156,27 @@
        ] ;
        fhir:name [ fhir:v "Mission Risk Assessment" ] ;
        fhir:description [ fhir:v "STUB - Risk assessment for space missions." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan> ;
+         fhir:reference [ fhir:v "StructureDefinition/mission-timeline-plan" ]
+       ] ;
+       fhir:name [ fhir:v "Mission Timeline Plan" ] ;
+       fhir:description [ fhir:v "Mars mission timeline with phases, events, EVA schedules, and medical protocols" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -7824,6 +8459,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "RiskAssessment"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/RiskAssessment/RadiationRisk-PostTransit> ;
+         fhir:reference [ fhir:v "RiskAssessment/RadiationRisk-PostTransit" ]
+       ] ;
+       fhir:name [ fhir:v "Radiation Risk Assessment - Post Outbound Transit" ] ;
+       fhir:description [ fhir:v "Cancer risk assessment after 6-month outbound transit to Mars" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment>
        ]
      ] [
        fhir:extension ( [

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RiskAssessment xmlns="http://hl7.org/fhir">
+  <id value="RadiationRisk-PostTransit"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RiskAssessment RadiationRisk-PostTransit</b></p><a name="RadiationRisk-PostTransit"> </a><a name="hcRadiationRisk-PostTransit"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mars-radiation-risk-assessment.html">Mars Radiation Risk Assessment</a></p></div><p><b>Mission Context</b>: <a href="Encounter-MarsDirectMission2040.html">Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --&gt; (ongoing); reasonCode = </a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 225338004}">Risk assessment</span></p><p><b>subject</b>: <a href="Patient-MarsCrewMember1.html">Sarah Chen  Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)</a></p><p><b>occurrence</b>: 2041-03-01 00:00:00+0000</p><p><b>basis</b>: <a href="Observation/CumulativeDose-Transit">Cumulative GCR dose during transit: 360 mSv</a></p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Outcome</b></td><td><b>Probability[x]</b></td><td><b>Rationale</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 363346000}">Malignant neoplastic disease</span></td><td>0.018</td><td>Based on 360 mSv GCR exposure during 6-month deep space transit using BEIR VII risk model. Assumes nominal spacecraft shielding (~10 g/cm² aluminum equivalent). Total mission dose projected 750-900 mSv (transit + surface + return), conferring ~3.5-4.2% lifetime cancer risk increase.</td></tr></table><p><b>note</b>: </p><blockquote><div><p>Mitigation: Continue radiation monitoring throughout surface operations. Utilize habitat shielding (regolith berms if available). Implement storm shelter protocols for any solar particle events. Consider pharmacologic radioprotectants for return transit if cumulative dose approaches career limits.</p>
+</div></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/MarsDirectMission2040"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="225338004"/>
+      <display value="Risk assessment"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/MarsCrewMember1"/>
+  </subject>
+  <occurrenceDateTime value="2041-03-01T00:00:00Z"/>
+  <basis>
+    <reference value="Observation/CumulativeDose-Transit"/>
+    <display value="Cumulative GCR dose during transit: 360 mSv"/>
+  </basis>
+  <prediction>
+    <outcome>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="363346000"/>
+        <display value="Malignant neoplastic disease"/>
+      </coding>
+    </outcome>
+    <probabilityDecimal value="0.018"/>
+    <rationale value="Based on 360 mSv GCR exposure during 6-month deep space transit using BEIR VII risk model. Assumes nominal spacecraft shielding (~10 g/cm² aluminum equivalent). Total mission dose projected 750-900 mSv (transit + surface + return), conferring ~3.5-4.2% lifetime cancer risk increase."/>
+  </prediction>
+  <note>
+    <text value="Mitigation: Continue radiation monitoring throughout surface operations. Utilize habitat shielding (regolith berms if available). Implement storm shelter protocols for any solar particle events. Consider pharmacologic radioprotectants for return transit if cumulative dose approaches career limits."/>
+  </note>
+</RiskAssessment>

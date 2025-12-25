@@ -37,6 +37,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Artemis Radiation Exposure](StructureDefinition-artemis-radiation-exposure.md) | Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context |
 | [Astrodynamics Observation](StructureDefinition-AstrodynamicsObservation.md) | An observation of a satellite or celestial object's orbital characteristics, using orbital elements. |
 | [Astronaut Patient Profile](StructureDefinition-Astronaut.md) | Patient profile for astronauts and space travelers |
+| [Autonomous Medical Encounter](StructureDefinition-autonomous-medical-encounter.md) | Encounter profile for crew-led medical events with no real-time ground support due to communication delays |
 | [Average Blood Pressure](StructureDefinition-average-blood-pressure.md) | A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol. The average blood pressure has a systolic and a diastolic component. |
 | [Barotrauma Assessment](StructureDefinition-BarotraumaAssessment.md) | Assessment of pressure-related injuries (barotrauma) |
 | [Behavioral Health State](StructureDefinition-behavioral-health-state.md) | Point-in-time behavioral and psychological state assessment for aerospace missions. |
@@ -61,14 +62,20 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Environmental Monitoring](StructureDefinition-EnvironmentalMonitoring.md) | Profile for environmental monitoring. |
 | [Extravehicular Activity Procedure](StructureDefinition-eva-procedure.md) | Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data |
 | [Gimbal Screening](StructureDefinition-GimbalScreening.md) | Screening protocol for Multi Axis Gimbal training device. |
+| [Habitat Environmental Monitoring](StructureDefinition-habitat-environmental-observation.md) | Observation of environmental conditions inside Mars habitat (pressure, O2, CO2, temperature, humidity, dust) |
 | [Habitat Location](StructureDefinition-habitat-location.md) | Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code |
 | [Heart Rate](StructureDefinition-heart-rate.md) | The number of heart beats in a minute. |
 | [Hydration Status Observation](StructureDefinition-hydration-status-observation.md) | Hydration status monitoring for space missions |
 | [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md) | A medical facility equipped with a hyperbaric chamber for pressurized treatment |
 | [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md) | Hyperbaric oxygen therapy or chamber treatment |
+| [ISRU Production Log](StructureDefinition-isru-production-log.md) | Tracking ISRU propellant production (CH4/O2) for Mars return journey |
+| [Mars Crew Member Profile](StructureDefinition-mars-crew-member.md) | Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics |
+| [Mars Extravehicular Activity Procedure](StructureDefinition-mars-eva-procedure.md) | Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure |
+| [Mars Radiation Risk Assessment](StructureDefinition-mars-radiation-risk-assessment.md) | Radiation exposure risk assessment for long-duration deep space missions |
 | [Metabolic Risk Summary](StructureDefinition-metabolic-risk-summary.md) | Evaluates risk from prolonged caloric deficits and metabolic stress |
 | [Mission Plan](StructureDefinition-mission-plan.md) | Artemis mission timeline with phases, events, constraints, and medical protocols |
 | [Mission Risk Assessment](StructureDefinition-SpaceRiskAssesment.md) | STUB - Risk assessment for space missions. |
+| [Mission Timeline Plan](StructureDefinition-mission-timeline-plan.md) | Mars mission timeline with phases, events, EVA schedules, and medical protocols |
 | [Neutral Buoyancy Facility](StructureDefinition-NeutralBuoyancyFacility.md) | Facility for underwater astronaut training |
 | [Neutral Buoyancy Training Session](StructureDefinition-NeutralBuoyancySession.md) | Training session in neutral buoyancy facility for EVA simulation |
 | [Oxygen Saturation in Arterial Blood by Pulse Oximetry](StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.md) | A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood via pulse oximetry. |
@@ -105,7 +112,9 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
+| [Areographic Coordinates](StructureDefinition-areographic-coordinates.md) | Mars latitude and longitude for surface locations |
 | [Cardiovascular Fitness Assessment](StructureDefinition-cardiovascular-fitness.md) | Assessment of cardiovascular fitness for diving |
+| [Communication Delay](StructureDefinition-communication-delay.md) | Earth-Mars light-time delay for data transmission context |
 | [Communication Systems Used](StructureDefinition-communication-systems.md) | Communication systems and protocols used during training |
 | [Complication Monitoring](StructureDefinition-complication-monitoring.md) | Monitoring for treatment complications |
 | [Crew Coordination Assessment](StructureDefinition-crew-coordination.md) | Assessment of crew coordination during simulation |
@@ -126,6 +135,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Hyperbaric Chamber Configuration](StructureDefinition-chamber-configuration.md) | Configuration and setup of the hyperbaric chamber |
 | [Hyperbaric Chamber Type](StructureDefinition-chamber-type.md) | Type of hyperbaric chamber (monoplace, multiplace, etc.) |
 | [Hyperbaric Treatment Table](StructureDefinition-treatment-table.md) | Specific treatment table used (e.g., USN Table 6) |
+| [ISRU System Status](StructureDefinition-isru-status.md) | In-Situ Resource Utilization system status and propellant production levels |
 | [Inventory Risk Flag](StructureDefinition-inventory-risk-flag.md) | Risk level for nutrition inventory status |
 | [Isolation Risk Factor](StructureDefinition-isolation-risk.md) | Captures isolation and confinement risk factors affecting behavioral health |
 | [Lessons Learned](StructureDefinition-lessons-learned.md) | Lessons learned and recommendations from emergency response |
@@ -172,6 +182,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Adaptations of Bone Health](ValueSet-SpaceAdaptationBoneHealth.md) | Bone health adaptations observed in spaceflight conditions. |
 | [Aircraft Fume Exposure](ValueSet-AircraftFumeExposureValueSet.md) | Health impacts from exposure to aircraft contaminated air and fume events. |
 | [All Artemis Devices](ValueSet-artemis-all-devices-vs.md) | Both certified and prototype Artemis devices |
+| [All Mars Mission Devices](ValueSet-mars-all-devices-vs.md) | Both certified and prototype Mars devices |
 | [Artemis Certified Devices](ValueSet-artemis-certified-devices-vs.md) | Flight-qualified Artemis mission hardware |
 | [Artemis Landing Regions](ValueSet-artemis-landing-region-vs.md) | Candidate Artemis III south pole landing regions for Location bindings |
 | [Artemis Missions](ValueSet-artemis-mission-vs.md) | All Artemis program missions I-V |
@@ -192,6 +203,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Dosimeter Types](ValueSet-dosimeter-type-vs.md) | Types of radiation dosimeters |
 | [EVS Units](ValueSet-evs-units-vs.md) | Units for Exercise Vital Sign measurements |
 | [Gimbal Contraindications](ValueSet-GimbalContraindicatedConditions.md) | Contraindicated conditions for riding a multi-axis gimbal |
+| [Human Mars Mission Plans](ValueSet-crewed-mars-missions-vs.md) | Proposed and conceptual human mission architectures to Mars |
 | [Hydration Types](ValueSet-hydration-type-vs.md) | Types of hydration products used in space |
 | [Hyperbaric Chamber Capabilities](ValueSet-hyperbaric-capabilities-vs.md) | Capabilities available in hyperbaric chambers |
 | [Hyperbaric Chamber Types](ValueSet-hyperbaric-chamber-type-vs.md) | Types of hyperbaric chambers |
@@ -199,6 +211,10 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Location Capabilities Value Set](ValueSet-location-capabilities-vs.md) | Capabilities and services available at aerospace medicine locations |
 | [Lunar Dust Toxicity](ValueSet-LunarDustToxicityValueSet.md) | Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities. |
 | [Macronutrient Metrics](ValueSet-macronutrient-metrics-vs.md) | Measurement types for macronutrient tracking |
+| [Mars Landing Sites](ValueSet-mars-landing-sites-vs.md) | Candidate landing sites for human Mars missions |
+| [Mars Mission Devices - Certified](ValueSet-mars-devices-certified-vs.md) | Flight-qualified hardware for Mars missions |
+| [Mars Mission Devices - Prototype](ValueSet-mars-devices-prototype-vs.md) | Developmental and test hardware for Mars missions |
+| [Mars Missions](ValueSet-mars-missions-vs.md) | All Mars missions (robotic and human, completed and planned) |
 | [Muscle Stiffness](ValueSet-MuscleStiffnessAndSpaceHealth.md) | Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications. |
 | [Neutral Buoyancy Training Activities](ValueSet-neutral-buoyancy-training-activities.md) | Types of training activities conducted in neutral buoyancy environments |
 | [Nutrition Inventory Status](ValueSet-nutrition-inventory-status-vs.md) | Status levels for nutrition inventory management |
@@ -244,12 +260,17 @@ These define new code systems used by systems conforming to this implementation 
 | [Diving Medicine Code System](CodeSystem-diving-medicine-cs.md) | Medical codes specific to diving medicine and hyperbaric treatments |
 | [Diving and Space Medicine Regulatory Compliance](CodeSystem-regulatory-compliance-cs.md) | Regulatory standards and compliance codes for diving and space medicine |
 | [Enhanced Aerospace Medicine Code System](CodeSystem-aerospace-code-system-enhanced.md) | Comprehensive code system for aerospace medicine concepts including all referenced codes |
+| [Human Mars Mission Plans](CodeSystem-crewed-mars-missions-cs.md) | Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.) |
 | [Hydration Product Types](CodeSystem-hydration-type-cs.md) | Types of hydration products used in space |
 | [Hyperbaric Chamber Capabilities](CodeSystem-hyperbaric-capabilities-cs.md) | Capabilities and services available in hyperbaric chambers |
 | [Hyperbaric Chamber Types](CodeSystem-hyperbaric-chamber-type-cs.md) | Types of hyperbaric chambers |
 | [Isolation Syndrome Factor Code System](CodeSystem-isolation-syndrome-factor-cs.md) | Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions. |
 | [Location Capabilities Code System](CodeSystem-location-capabilities-cs.md) | Capabilities and services available at aerospace medicine locations |
 | [Macronutrient Metrics](CodeSystem-macronutrient-metrics-cs.md) | Measurement types for macronutrient tracking |
+| [Mars Landing Sites (Candidate)](CodeSystem-mars-landing-sites-cs.md) | Candidate landing sites for human Mars missions with areographic coordinates and site characteristics |
+| [Mars Mission Devices - Certified](CodeSystem-mars-devices-certified-cs.md) | Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.) |
+| [Mars Mission Devices - Prototype](CodeSystem-mars-devices-prototype-cs.md) | Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems) |
+| [Mars Missions](CodeSystem-mars-missions-cs.md) | NASA and international missions to Mars (robotic and conceptual human missions) |
 | [Neutral Buoyancy Training Code System](CodeSystem-neutral-buoyancy-training-cs.md) | Specialized codes for neutral buoyancy training activities and assessments |
 | [Nutrition Inventory Status](CodeSystem-nutrition-inventory-status-cs.md) | Status levels for nutrition inventory management |
 | [Operational Status Code System](CodeSystem-operational-status-cs.md) | Operational status codes for facilities and vehicles |
@@ -285,6 +306,7 @@ These are example instances that show what data produced and consumed by systems
 | [Artemis III Mission Encounter](Encounter-Artemis-III-Mission.md) | Encounter representing the entire Artemis III mission from launch to splashdown |
 | [Artemis III Mission Plan](PlanDefinition-Artemis-III-Mission-Plan.md) | Complete mission plan for Artemis III including phases, timelines, and EVA schedules |
 | [Artemis III Translunar Radiation Exposure](Observation-Artemis-III-Translunar-Radiation.md) | Cumulative radiation dose during 4-day translunar cruise |
+| [Autonomous Medical Encounter - Appendicitis Sol 189](Encounter-Emergency-Appendicitis-Sol189.md) | Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay |
 | [Biosphere 2 Undersea Habitat](Location-Biosphere2UnderseaHabitat.md) | University of Arizona Biosphere 2 analog training facility |
 | [Blue Origin West Texas Facility](Location-BlueOriginWestTexas.md) | Blue Origin suborbital flight operations |
 | [Boeing Starliner Calypso](Location-StarlinerCalypso.md) | Boeing CST-100 Starliner spacecraft |
@@ -337,7 +359,10 @@ These are example instances that show what data produced and consumed by systems
 | [Example Hyperbaric Chamber](Location-ExampleHyperbaricChamber.md) | Example hyperbaric chamber facility |
 | [Example Neutral Buoyancy Training Session](Procedure-ExampleNeutralBuoyancySession.md) | Example of a typical neutral buoyancy training session |
 | [Example Training Dive Profile](Observation-ExampleDiveProfile.md) | Example dive profile from neutral buoyancy training |
+| [Habitat Environmental Conditions - Sol 125](Observation-HabitatEnvironment-Sol125.md) | Atmospheric monitoring inside Mars habitat on Sol 125 |
 | [Hyperbaric Treatment Chamber](Location-HyperbaricChamberFacility.md) | Hyperbaric medicine treatment facility |
+| [ISRU Production Log - Sol 210](Observation-ISRU-Production-Sol210.md) | Cumulative propellant production by Sol 210 (7 months operation) |
+| [ISRU Propellant Production Plant](Device-ISRU-Plant-Jezero-1.md) | In-situ resource utilization plant for CH4/O2 production from Martian atmosphere |
 | [ISS Anxiety Assessment - Pre-EVA](Observation-ISS-AnxietyAssessment-PreEVA.md) | Pre-EVA anxiety assessment with HRV biomarker showing elevated stress. |
 | [ISS Bright Light Therapy - Mission Week 8](Procedure-ISS-BrightLightTherapy-Week8.md) | Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality. |
 | [ISS CBT Session - Mission Week 12](Procedure-ISS-CBT-Session-Week12.md) | Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline. |
@@ -401,6 +426,11 @@ These are example instances that show what data produced and consumed by systems
 | [Malapert Massif Landing Site](Location-Malapert-Massif-Landing-Site.md) | Artemis III landing site at Malapert Massif, lunar south pole region |
 | [Mars Ascent Vehicle](Location-MarsAscentVehicle.md) | Mars surface to orbit transport |
 | [Mars Base Alpha](Location-MarsBaseAlpha.md) | First permanent Mars surface base |
+| [Mars Crew Member - Commander Chen](Patient-MarsCrewMember1.md) | Example Mars crew member (Commander Sarah Chen) with baseline health data |
+| [Mars Direct Mission 2040](Encounter-MarsDirectMission2040.md) | Entire Mars Direct mission encounter (launch to splashdown) |
+| [Mars Direct Mission Plan 2040](PlanDefinition-MarsDirectMissionPlan2040.md) | Complete mission timeline for Mars Direct architecture mission |
+| [Mars EVA - Sol 147](Procedure-MarsEVA-Sol147.md) | Surface EVA to collect geological samples at crater rim, duration 6.5 hours |
+| [Mars Surface Habitat - Jezero Crater](Location-MarsHabitat-Jezero.md) | Pressurized habitat module at Jezero Crater landing site |
 | [Mars Transit Vehicle](Location-MarsTransitVehicle.md) | Deep space transport for Mars missions |
 | [Mayo Clinic Aerospace Medicine](Location-MayoAerospaceMedicine.md) | Mayo Clinic aerospace medicine and altitude research |
 | [NASA Ames Research Center](Location-NASAAmesResearchCenter.md) | NASA Ames centrifuge and spatial disorientation research |
@@ -438,6 +468,7 @@ These are example instances that show what data produced and consumed by systems
 | [Procedure - Eye Exam](Procedure-ProcedureEyeExam.md) | Eye exam |
 | [Procedure - Hearing Exam](Procedure-ProcedureHearingExam.md) | Hearing exam |
 | [Procedure - Ultrasound](Procedure-ProcedureUltrasound.md) | Ultrasound scan of the abdomen |
+| [Radiation Risk Assessment - Post Outbound Transit](RiskAssessment-RadiationRisk-PostTransit.md) | Cancer risk assessment after 6-month outbound transit to Mars |
 | [Risk - Atmosphere](RiskAssessment-RiskAssesmentAtmosphere.md) | Risk of flight running out of breathable atmosphere. (i.e. suffocation) |
 | [Risk - Calorie Ristrction](RiskAssessment-RiskAssesmentCalorieRestriction.md) | Risk of calorie restriction among passengers. (i.e. starvation) |
 | [Risk - Cancer](RiskAssessment-RiskAssesmentCancer.md) | Post-flight risk of cancer. (i.e. cancer) |

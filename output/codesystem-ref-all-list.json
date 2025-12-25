@@ -397,6 +397,30 @@
       "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "oids" : ["2.16.840.1.113883.4.642.4.263"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-location-status.html" : "EncounterLocationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "oids" : ["2.16.840.1.113883.4.642.4.247"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
+    },
+    {
       "url" : "http://hl7.org/fhir/event-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -526,8 +550,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
-      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
+      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -623,6 +647,17 @@
       "ValueSet-cognitive-performance-indicators-vs.html" : "Cognitive Performance Indicators Value Set"
     },
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "CrewedMarsMissionsCS",
+      "title" : "Human Mars Mission Plans",
+      "description" : "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)",
+      "uses" : {
+      },
+      "ValueSet-crewed-mars-missions-vs.html" : "Human Mars Mission Plans"
+    },
+    {
       "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs",
       "version" : "0.4.2",
       "status" : "active",
@@ -665,6 +700,52 @@
       "uses" : {
       },
       "ValueSet-location-capabilities-vs.html" : "Location Capabilities Value Set"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsCertifiedDevicesCS",
+      "title" : "Mars Mission Devices - Certified",
+      "description" : "Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)",
+      "uses" : {
+      },
+      "ValueSet-mars-devices-certified-vs.html" : "Mars Mission Devices - Certified",
+      "ValueSet-mars-all-devices-vs.html" : "All Mars Mission Devices"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsPrototypeDevicesCS",
+      "title" : "Mars Mission Devices - Prototype",
+      "description" : "Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)",
+      "uses" : {
+      },
+      "ValueSet-mars-devices-prototype-vs.html" : "Mars Mission Devices - Prototype",
+      "ValueSet-mars-all-devices-vs.html" : "All Mars Mission Devices"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsLandingSitesCS",
+      "title" : "Mars Landing Sites (Candidate)",
+      "description" : "Candidate landing sites for human Mars missions with are\n\nographic coordinates and site characteristics",
+      "uses" : {
+      },
+      "ValueSet-mars-landing-sites-vs.html" : "Mars Landing Sites"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "MarsMissionsCS",
+      "title" : "Mars Missions",
+      "description" : "NASA and international missions to Mars (robotic and conceptual human missions)",
+      "uses" : {
+      },
+      "ValueSet-mars-missions-vs.html" : "Mars Missions"
     },
     {
       "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs",
@@ -720,51 +801,52 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-decompression-procedures.html" : "Decompression Procedures",
-      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "ValueSet-SleepLossHypoxiaEffect.html" : "Sleep Loss and Hypoxia Effects",
-      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "ValueSet-SpaceRadiationRisksVS.html" : "Space Radiation Risks ValueSet",
       "ValueSet-space-physiological-effects.html" : "Space Physiological Effects",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "ValueSet-space-cardiovascular-effects.html" : "Space Cardiovascular Effects",
-      "ValueSet-SpaceflightStressFactors.html" : "Stress and Physiological Factors",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "ValueSet-underwater-training-procedures.html" : "Underwater Training Procedures",
       "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "ValueSet-AircraftFumeExposureValueSet.html" : "Aircraft Fume Exposure",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "ValueSet-diving-contraindicated-conditions.html" : "Diving Medical Contraindications",
+      "ValueSet-SleepLossHypoxiaEffect.html" : "Sleep Loss and Hypoxia Effects",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "ValueSet-SpaceTravelBrainChanges.html" : "Brain and Neurologic Changes",
+      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "ValueSet-space-radiation-effects.html" : "Space Radiation Effects",
+      "ValueSet-space-visual-effects.html" : "Space Visual Effects",
+      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "ValueSet-GimbalContraindicatedConditions.html" : "Gimbal Contraindications",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "ValueSet-MuscleStiffnessAndSpaceHealth.html" : "Muscle Stiffness",
+      "ValueSet-space-neurological-effects.html" : "Space Neurological Effects",
+      "ValueSet-SleepLossHypoxiaResponses.html" : "Sleep Loss and Hypoxia Responses",
+      "ValueSet-space-psychological-effects.html" : "Space Psychological Effects",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "ValueSet-LunarDustToxicityValueSet.html" : "Lunar Dust Toxicity",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-space-environmental-factors.html" : "Space Environmental Factors",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
       "ValueSet-regulatory-standards.html" : "Regulatory Standards for Diving and Space Medicine",
       "ValueSet-SpaceAdaptationBoneHealth.html" : "Adaptations of Bone Health",
-      "ValueSet-AstronautBackPain.html" : "Back Pain and Space Travel",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-space-neurological-effects.html" : "Space Neurological Effects",
-      "ValueSet-underwater-training-procedures.html" : "Underwater Training Procedures",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "ValueSet-GimbalContraindicatedConditions.html" : "Gimbal Contraindications",
-      "ValueSet-diving-contraindicated-conditions.html" : "Diving Medical Contraindications",
-      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "ValueSet-SpaceRadiationRisksVS.html" : "Space Radiation Risks ValueSet",
       "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
-      "ValueSet-SleepLossHypoxiaResponses.html" : "Sleep Loss and Hypoxia Responses",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "ValueSet-LunarDustToxicityValueSet.html" : "Lunar Dust Toxicity",
-      "ValueSet-SpaceTravelBrainChanges.html" : "Brain and Neurologic Changes",
-      "ValueSet-MuscleStiffnessAndSpaceHealth.html" : "Muscle Stiffness",
-      "ValueSet-space-psychological-effects.html" : "Space Psychological Effects",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "ValueSet-space-radiation-effects.html" : "Space Radiation Effects",
+      "ValueSet-AircraftFumeExposureValueSet.html" : "Aircraft Fume Exposure",
       "ValueSet-space-monitoring-procedures.html" : "Space Monitoring Procedures",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "ValueSet-space-environmental-factors.html" : "Space Environmental Factors",
-      "ValueSet-space-visual-effects.html" : "Space Visual Effects",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event"
+      "ValueSet-decompression-procedures.html" : "Decompression Procedures",
+      "ValueSet-SpaceflightStressFactors.html" : "Stress and Physiological Factors",
+      "ValueSet-AstronautBackPain.html" : "Back Pain and Space Travel"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/action-type",
@@ -777,6 +859,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-action-type.html" : "ActionType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1092"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-admit-source.html" : "Admit source"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/applicability",
@@ -983,6 +1077,66 @@
       "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "DiagnosisRole",
+      "title" : "Diagnosis Role",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1054"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-diagnosis-role.html" : "DiagnosisRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/diet",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1091"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-diet.html" : "Diet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1093"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1090"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1088"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/goal-category",
       "version" : "2.0.0",
       "status" : "active",
@@ -1055,6 +1209,18 @@
       "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
       "version" : "2.0.0",
       "status" : "active",
@@ -1103,6 +1269,18 @@
       "http://hl7.org/fhir/R4/valueset-risk-probability.html" : "Risk Probability"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/service-type",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1145"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
       "version" : "3.0.0",
       "status" : "active",
@@ -1113,6 +1291,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ReAdmissionIndicator",
+      "title" : "re-admissionIndicator",
+      "description" : "Code system of concepts which are used to specify that a patient is being re admitted to a healthcare facilityin from which they were discharged, and indicates the circumstances around such re-admission.  Used in HL7 Version 2.x messagine in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.36"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0116",
@@ -1148,7 +1338,20 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActConsentDirective.html" : "ActConsentDirective"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActConsentDirective.html" : "ActConsentDirective",
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
+      "oids" : ["2.16.840.1.113883.5.7"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -1161,6 +1364,18 @@
       "uses" : {
       },
       "http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "EncounterSpecialCourtesy",
+      "title" : "EncounterSpecialCourtesy",
+      "description" : "**** MISSING DESCRIPTION ****",
+      "oids" : ["2.16.840.1.113883.5.40"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
@@ -1184,7 +1399,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -1197,6 +1413,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "oids" : ["2.16.840.1.113883.5.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -1342,8 +1570,8 @@
       "description" : "Types of radiation encountered in space environments",
       "uses" : {
       },
-      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
-      "ValueSet-space-radiation-type-vs.html" : "Space Radiation Types"
+      "ValueSet-space-radiation-type-vs.html" : "Space Radiation Types",
+      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs",

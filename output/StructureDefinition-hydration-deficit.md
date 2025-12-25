@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-hydration-deficit.cs
   "name" : "HydrationDeficit",
   "title" : "Hydration Deficit",
   "status" : "active",
-  "date" : "2025-12-24T17:35:27-07:00",
+  "date" : "2025-12-24T19:44:53-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

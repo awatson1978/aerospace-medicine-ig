@@ -19,8 +19,8 @@ Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)
 
 **Usages:**
 
-* Use this Extension: [Extravehicular Activity Procedure](StructureDefinition-eva-procedure.md)
-* Examples for this Extension: [Procedure/Artemis-III-EVA-1](Procedure-Artemis-III-EVA-1.md) and [Procedure/Artemis-III-EVA-2](Procedure-Artemis-III-EVA-2.md)
+* Use this Extension: [Extravehicular Activity Procedure](StructureDefinition-eva-procedure.md) and [Mars Extravehicular Activity Procedure](StructureDefinition-mars-eva-procedure.md)
+* Examples for this Extension: [Procedure/Artemis-III-EVA-1](Procedure-Artemis-III-EVA-1.md), [Procedure/Artemis-III-EVA-2](Procedure-Artemis-III-EVA-2.md) and [Procedure/MarsEVA-Sol147](Procedure-MarsEVA-Sol147.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/eva-number)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-eva-number.csv), [Ex
   "name" : "EVANumber",
   "title" : "EVA Number",
   "status" : "active",
-  "date" : "2025-12-24T17:35:27-07:00",
+  "date" : "2025-12-24T19:44:53-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

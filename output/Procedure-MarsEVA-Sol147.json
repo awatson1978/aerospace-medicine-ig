@@ -1,0 +1,69 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "MarsEVA-Sol147",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure MarsEVA-Sol147</b></p><a name=\"MarsEVA-Sol147\"> </a><a name=\"hcMarsEVA-Sol147\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mars-eva-procedure.html\">Mars Extravehicular Activity Procedure</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-MarsDirectMission2040.html\">Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --&gt; (ongoing); reasonCode = </a></p><p><b>EVA Number</b>: EVA-147</p><p><b>Communication Delay</b>: 12.5 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 103741001}\">Mars Surface Extravehicular Activity</span></p><p><b>subject</b>: <a href=\"Patient-MarsCrewMember1.html\">Sarah Chen  Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)</a></p><p><b>performed</b>: 2041-04-06 08:30:00+0000 --&gt; 2041-04-06 15:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-MarsCrewMember1.html\">CDR Sarah Chen</a></td></tr></table><p><b>location</b>: <a href=\"Location-MarsHabitat-Jezero.html\">Jezero Crater rim region, 2.3 km from habitat</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">Geological sample collection and crater rim survey</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>Crew reported excellent mobility in xEMU suit. Peak heart rate 145 bpm during crater ascent. No suit anomalies. Dust contamination moderate, decontamination protocols completed post-EVA.</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/MarsDirectMission2040"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number",
+    "valueString" : "EVA-147"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay",
+    "valueQuantity" : {
+      "value" : 12.5,
+      "unit" : "min",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "min"
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "103741001",
+      "display" : "Extravehicular activity (procedure)"
+    }],
+    "text" : "Mars Surface Extravehicular Activity"
+  },
+  "subject" : {
+    "reference" : "Patient/MarsCrewMember1"
+  },
+  "performedPeriod" : {
+    "start" : "2041-04-06T08:30:00Z",
+    "end" : "2041-04-06T15:00:00Z"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Patient/MarsCrewMember1",
+      "display" : "CDR Sarah Chen"
+    }
+  }],
+  "location" : {
+    "reference" : "Location/MarsHabitat-Jezero",
+    "display" : "Jezero Crater rim region, 2.3 km from habitat"
+  },
+  "reasonCode" : [{
+    "text" : "Geological sample collection and crater rim survey"
+  }],
+  "outcome" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385669000",
+      "display" : "Successful"
+    }]
+  },
+  "note" : [{
+    "text" : "Crew reported excellent mobility in xEMU suit. Peak heart rate 145 bpm during crater ascent. No suit anomalies. Dust contamination moderate, decontamination protocols completed post-EVA."
+  }]
+}

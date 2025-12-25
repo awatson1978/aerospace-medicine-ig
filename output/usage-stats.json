@@ -4,6 +4,78 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates",
+      "title": "Areographic Coordinates",
+      "types": [
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay",
+      "title": "Communication Delay",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group",
       "title": "Derived From Activity Group",
       "types": [
@@ -78,6 +150,64 @@
       "title": "Isolation Risk Factor",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status",
+      "title": "ISRU System Status",
+      "types": [
+        "code",
+        "Quantity",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -694,8 +824,8 @@
     ],
     "Patient": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut",
-        "title": "Astronaut Patient Profile"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member",
+        "title": "Mars Crew Member Profile"
       }
     ],
     "Condition": [
@@ -736,8 +866,14 @@
     ],
     "RiskAssessment": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment",
-        "title": "Mission Risk Assessment"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment",
+        "title": "Mars Radiation Risk Assessment"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter",
+        "title": "Autonomous Medical Encounter"
       }
     ],
     "DiagnosticReport": [
@@ -750,6 +886,10 @@
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan",
         "title": "Mission Plan"
+      },
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan",
+        "title": "Mission Timeline Plan"
       }
     ],
     "Basic": [
@@ -851,6 +991,10 @@
     "http://hl7.org/fhir/us/vitals/StructureDefinition/bp-cuff-size-ext": [
       "Device"
     ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay": [
+      "Encounter",
+      "Procedure"
+    ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group": [
       "Observation"
     ],
@@ -879,9 +1023,11 @@
       "Location"
     ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context": [
+      "Encounter",
       "Observation",
       "PlanDefinition",
-      "Procedure"
+      "Procedure",
+      "RiskAssessment"
     ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding": [
       "Location"

@@ -46,11 +46,15 @@ All measurements link to **MissionContext** extensions (consistent with other IG
 
 New code systems and value sets for Artemis:
 
-* **ArtemisMissionCS**: Mission codes (ARTEMIS-I, ARTEMIS-II, ARTEMIS-III, ARTEMIS-IV, ARTEMIS-V) with properties for target destination, launch date, status
-* **ArtemisLandingRegionCS**: 13 candidate Artemis III south pole landing regions (Faustini Rim A, Peak Near Shackleton, Malapert Massif, Nobile Rim, Haworth, etc.) with approximate coordinates
-* **ArtemisCertifiedDevicesCS**: Flight-qualified hardware (Orion, SLS, xEMU EVA suit, Starship-HLS, LTV rover, Gateway-HALO, BaseCampHab)
-* **ArtemisPrototypeDevicesCS**: Developmental/test hardware (xEMU Demo Unit, Pressurized Rover Prototype, Habitat Test Module, NextGen PLSS)
-* **ArtemisLandingRegionsVS**: ValueSet binding for location profiles
+* **[ArtemisMissionCS](CodeSystem-artemis-mission-cs.md)**: Mission codes (ARTEMIS-I, ARTEMIS-II, ARTEMIS-III, ARTEMIS-IV, ARTEMIS-V) with properties for target destination, launch date, status
+* **[ArtemisMissionVS](ValueSet-artemis-mission-vs.md)**: ValueSet for all Artemis program missions I-V
+* **[ArtemisLandingRegionCS](CodeSystem-artemis-landing-region-cs.md)**: 13 candidate Artemis III south pole landing regions (Faustini Rim A, Peak Near Shackleton, Malapert Massif, Nobile Rim, Haworth, etc.) with approximate coordinates
+* **[ArtemisLandingRegionVS](ValueSet-artemis-landing-region-vs.md)**: ValueSet binding for location profiles
+* **[ArtemisCertifiedDevicesCS](CodeSystem-artemis-certified-devices-cs.md)**: Flight-qualified hardware (Orion, SLS, xEMU EVA suit, Starship-HLS, LTV rover, Gateway-HALO, BaseCampHab)
+* **[ArtemisCertifiedDevicesVS](ValueSet-artemis-certified-devices-vs.md)**: ValueSet for certified Artemis devices
+* **[ArtemisPrototypeDevicesCS](CodeSystem-artemis-prototype-devices-cs.md)**: Developmental/test hardware (xEMU Demo Unit, Pressurized Rover Prototype, Habitat Test Module, NextGen PLSS)
+* **[ArtemisPrototypeDevicesVS](ValueSet-artemis-prototype-devices-vs.md)**: ValueSet for prototype Artemis devices
+* **[ArtemisAllDevicesVS](ValueSet-artemis-all-devices-vs.md)**: ValueSet combining both certified and prototype devices
 
 Integration with existing terminologies:
 

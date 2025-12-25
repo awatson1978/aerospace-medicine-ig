@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Emergency-Appendicitis-Sol189"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter Emergency-Appendicitis-Sol189</b></p><a name="Emergency-Appendicitis-Sol189"> </a><a name="hcEmergency-Appendicitis-Sol189"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-autonomous-medical-encounter.html">Autonomous Medical Encounter</a></p></div><p><b>Communication Delay</b>: 15.2 min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemin = 'min')</span></p><p><b>Mission Context</b>: <a href="Encounter-MarsDirectMission2040.html">Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --&gt; (ongoing); reasonCode = </a></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActCode.html#v3-ActCode-EMER">ActCode: EMER</a> (emergency)</p><p><b>subject</b>: <a href="Patient/MarsCrewMember2">Patient/MarsCrewMember2</a></p><p><b>period</b>: 2041-05-18 03:00:00+0000 --&gt; 2041-05-19 08:00:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 85189001}">Acute appendicitis</span></p><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Condition</b></td><td><b>Use</b></td></tr><tr><td style="display: none">*</td><td>Acute appendicitis, confirmed by ultrasound</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/diagnosis-role AD}">Admission diagnosis</span></td></tr></table><h3>Hospitalizations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:">Crew Medical Officer performed successful appendectomy with ground guidance. Patient stable post-op, full recovery expected. Demonstrates autonomous medical capability critical for Mars missions.</span></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay">
+    <valueQuantity>
+      <value value="15.2"/>
+      <unit value="min"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="min"/>
+    </valueQuantity>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/MarsDirectMission2040"/>
+    </valueReference>
+  </extension>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="EMER"/>
+    <display value="emergency"/>
+  </class>
+  <subject>
+    <reference value="Patient/MarsCrewMember2"/>
+  </subject>
+  <period>
+    <start value="2041-05-18T03:00:00Z"/>
+    <end value="2041-05-19T08:00:00Z"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="85189001"/>
+      <display value="Acute appendicitis"/>
+    </coding>
+  </reasonCode>
+  <diagnosis>
+    <condition>
+      <display value="Acute appendicitis, confirmed by ultrasound"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/diagnosis-role"/>
+        <code value="AD"/>
+        <display value="Admission diagnosis"/>
+      </coding>
+    </use>
+  </diagnosis>
+  <hospitalization>
+    <dischargeDisposition>
+      <text value="Crew Medical Officer performed successful appendectomy with ground guidance. Patient stable post-op, full recovery expected. Demonstrates autonomous medical capability critical for Mars missions."/>
+    </dischargeDisposition>
+  </hospitalization>
+</Encounter>
