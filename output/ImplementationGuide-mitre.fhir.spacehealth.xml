@@ -10,7 +10,7 @@
   <version value="0.4.2"/>
   <name value="SpaceflightHealthSimulationsReferenceDocumentation"/>
   <status value="draft"/>
-  <date value="2025-12-24T15:11:38-07:00"/>
+  <date value="2025-12-24T17:35:27-07:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -494,6 +494,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/artemis-all-devices-vs"/>
+      </reference>
+      <name value="All Artemis Devices"/>
+      <description value="Both certified and prototype Artemis devices"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Location"/>
       </extension>
       <reference>
@@ -513,6 +524,171 @@
       <name value="Artemis Base Camp Habitat"/>
       <description value="Artemis lunar surface habitat module"/>
       <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/artemis-certified-devices-vs"/>
+      </reference>
+      <name value="Artemis Certified Devices"/>
+      <description value="Flight-qualified Artemis mission hardware"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/artemis-certified-devices-cs"/>
+      </reference>
+      <name value="Artemis Certified Devices"/>
+      <description value="Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/Artemis-III-EVA-1"/>
+      </reference>
+      <name value="Artemis III EVA-1"/>
+      <description value="First lunar surface EVA of Artemis III mission at Malapert Massif"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Artemis-III-EVA1-Radiation"/>
+      </reference>
+      <name value="Artemis III EVA-1 Radiation Exposure"/>
+      <description value="Radiation dose during first lunar surface EVA (6.5 hours unshielded)"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/Artemis-III-EVA-2"/>
+      </reference>
+      <name value="Artemis III EVA-2"/>
+      <description value="Second lunar surface EVA of Artemis III mission exploring shadowed crater"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Artemis-III-Mission"/>
+      </reference>
+      <name value="Artemis III Mission Encounter"/>
+      <description value="Encounter representing the entire Artemis III mission from launch to splashdown"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/Artemis-III-Mission-Plan"/>
+      </reference>
+      <name value="Artemis III Mission Plan"/>
+      <description value="Complete mission plan for Artemis III including phases, timelines, and EVA schedules"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Artemis-III-Translunar-Radiation"/>
+      </reference>
+      <name value="Artemis III Translunar Radiation Exposure"/>
+      <description value="Cumulative radiation dose during 4-day translunar cruise"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/artemis-landing-region-vs"/>
+      </reference>
+      <name value="Artemis Landing Regions"/>
+      <description value="Candidate Artemis III south pole landing regions for Location bindings"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/artemis-landing-region-cs"/>
+      </reference>
+      <name value="Artemis Landing Regions"/>
+      <description value="Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/artemis-mission-vs"/>
+      </reference>
+      <name value="Artemis Missions"/>
+      <description value="All Artemis program missions I-V"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/artemis-mission-cs"/>
+      </reference>
+      <name value="Artemis Missions"/>
+      <description value="Historical and planned Artemis program missions with target destinations, launch dates, and status"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/artemis-prototype-devices-vs"/>
+      </reference>
+      <name value="Artemis Prototype Devices"/>
+      <description value="Developmental and test Artemis hardware"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/artemis-prototype-devices-cs"/>
+      </reference>
+      <name value="Artemis Prototype Devices"/>
+      <description value="Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/artemis-radiation-exposure"/>
+      </reference>
+      <name value="Artemis Radiation Exposure"/>
+      <description value="Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1682,6 +1858,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eva-number"/>
+      </reference>
+      <name value="EVA Number"/>
+      <description value="Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1759,6 +1946,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/eva-procedure"/>
+      </reference>
+      <name value="Extravehicular Activity Procedure"/>
+      <description value="Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Questionnaire"/>
       </extension>
       <reference>
@@ -1799,6 +1997,17 @@
       </reference>
       <name value="Gimbal Screening"/>
       <description value="Screening protocol for Multi Axis Gimbal training device."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/habitat-location"/>
+      </reference>
+      <name value="Habitat Location"/>
+      <description value="Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2705,6 +2914,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lunar-coordinates"/>
+      </reference>
+      <name value="Lunar Coordinates"/>
+      <description value="Selenographic latitude and longitude for lunar surface locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -2713,6 +2933,17 @@
       <name value="Lunar Dust Toxicity"/>
       <description value="Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Gateway-HALO-Module"/>
+      </reference>
+      <name value="Lunar Gateway HALO Module"/>
+      <description value="Habitation and Logistics Outpost module of Lunar Gateway in NRHO"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2768,6 +2999,17 @@
       <name value="Macronutrient Metrics"/>
       <description value="Measurement types for macronutrient tracking"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/Malapert-Massif-Landing-Site"/>
+      </reference>
+      <name value="Malapert Massif Landing Site"/>
+      <description value="Artemis III landing site at Malapert Massif, lunar south pole region"/>
+      <exampleCanonical value="https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2888,6 +3130,17 @@
       </reference>
       <name value="Mission Context for Diagnostic Reports"/>
       <description value="Links diagnostic reports to specific space missions"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mission-plan"/>
+      </reference>
+      <name value="Mission Plan"/>
+      <description value="Artemis mission timeline with phases, events, constraints, and medical protocols"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -3559,6 +3812,17 @@
       </reference>
       <name value="Radiation Dose Units"/>
       <description value="Units for radiation dose measurements"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/radiation-shielding"/>
+      </reference>
+      <name value="Radiation Shielding"/>
+      <description value="Shielding mass and composition for habitat or vehicle"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -4311,6 +4575,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/Starship-HLS-Artemis-III"/>
+      </reference>
+      <name value="Starship HLS for Artemis III"/>
+      <description value="SpaceX Starship Human Landing System variant for Artemis III lunar landing"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -4581,6 +4856,17 @@
       </reference>
       <name value="Wright-Patterson Aerospace Research Laboratory"/>
       <description value="USAF aerospace medicine research facility"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/xEMU-Suit-001"/>
+      </reference>
+      <name value="xEMU EVA Suit #001"/>
+      <description value="First xEMU suit certified for Artemis III lunar surface EVAs"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

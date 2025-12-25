@@ -53,7 +53,7 @@ Ultimately, this implementation guide is not only a tool for simulating patients
   "version" : "0.4.2",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-12-24T15:11:38-07:00",
+  "date" : "2025-12-24T17:35:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -820,6 +820,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/artemis-all-devices-vs"
+        },
+        "name" : "All Artemis Devices",
+        "description" : "Both certified and prototype Artemis devices",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -843,6 +857,216 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "name" : "Artemis Base Camp Habitat",
         "description" : "Artemis lunar surface habitat module",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/artemis-certified-devices-vs"
+        },
+        "name" : "Artemis Certified Devices",
+        "description" : "Flight-qualified Artemis mission hardware",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/artemis-certified-devices-cs"
+        },
+        "name" : "Artemis Certified Devices",
+        "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/Artemis-III-EVA-1"
+        },
+        "name" : "Artemis III EVA-1",
+        "description" : "First lunar surface EVA of Artemis III mission at Malapert Massif",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Artemis-III-EVA1-Radiation"
+        },
+        "name" : "Artemis III EVA-1 Radiation Exposure",
+        "description" : "Radiation dose during first lunar surface EVA (6.5 hours unshielded)",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/Artemis-III-EVA-2"
+        },
+        "name" : "Artemis III EVA-2",
+        "description" : "Second lunar surface EVA of Artemis III mission exploring shadowed crater",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/Artemis-III-Mission"
+        },
+        "name" : "Artemis III Mission Encounter",
+        "description" : "Encounter representing the entire Artemis III mission from launch to splashdown",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "PlanDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "PlanDefinition/Artemis-III-Mission-Plan"
+        },
+        "name" : "Artemis III Mission Plan",
+        "description" : "Complete mission plan for Artemis III including phases, timelines, and EVA schedules",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Artemis-III-Translunar-Radiation"
+        },
+        "name" : "Artemis III Translunar Radiation Exposure",
+        "description" : "Cumulative radiation dose during 4-day translunar cruise",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/artemis-landing-region-vs"
+        },
+        "name" : "Artemis Landing Regions",
+        "description" : "Candidate Artemis III south pole landing regions for Location bindings",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/artemis-landing-region-cs"
+        },
+        "name" : "Artemis Landing Regions",
+        "description" : "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/artemis-mission-vs"
+        },
+        "name" : "Artemis Missions",
+        "description" : "All Artemis program missions I-V",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/artemis-mission-cs"
+        },
+        "name" : "Artemis Missions",
+        "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/artemis-prototype-devices-vs"
+        },
+        "name" : "Artemis Prototype Devices",
+        "description" : "Developmental and test Artemis hardware",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/artemis-prototype-devices-cs"
+        },
+        "name" : "Artemis Prototype Devices",
+        "description" : "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/artemis-radiation-exposure"
+        },
+        "name" : "Artemis Radiation Exposure",
+        "description" : "Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -2332,6 +2556,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/eva-number"
+        },
+        "name" : "EVA Number",
+        "description" : "Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -2430,6 +2668,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/eva-procedure"
+        },
+        "name" : "Extravehicular Activity Procedure",
+        "description" : "Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Questionnaire"
           }
         ],
@@ -2480,6 +2732,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         },
         "name" : "Gimbal Screening",
         "description" : "Screening protocol for Multi Axis Gimbal training device.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/habitat-location"
+        },
+        "name" : "Habitat Location",
+        "description" : "Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code",
         "exampleBoolean" : false
       },
       {
@@ -3634,6 +3900,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/lunar-coordinates"
+        },
+        "name" : "Lunar Coordinates",
+        "description" : "Selenographic latitude and longitude for lunar surface locations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -3643,6 +3923,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "name" : "Lunar Dust Toxicity",
         "description" : "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/Gateway-HALO-Module"
+        },
+        "name" : "Lunar Gateway HALO Module",
+        "description" : "Habitation and Logistics Outpost module of Lunar Gateway in NRHO",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
       },
       {
         "extension" : [
@@ -3713,6 +4007,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "name" : "Macronutrient Metrics",
         "description" : "Measurement types for macronutrient tracking",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Location"
+          }
+        ],
+        "reference" : {
+          "reference" : "Location/Malapert-Massif-Landing-Site"
+        },
+        "name" : "Malapert Massif Landing Site",
+        "description" : "Artemis III landing site at Malapert Massif, lunar south pole region",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
       },
       {
         "extension" : [
@@ -3866,6 +4174,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         },
         "name" : "Mission Context for Diagnostic Reports",
         "description" : "Links diagnostic reports to specific space missions",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mission-plan"
+        },
+        "name" : "Mission Plan",
+        "description" : "Artemis mission timeline with phases, events, constraints, and medical protocols",
         "exampleBoolean" : false
       },
       {
@@ -4720,6 +5042,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         },
         "name" : "Radiation Dose Units",
         "description" : "Units for radiation dose measurements",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/radiation-shielding"
+        },
+        "name" : "Radiation Shielding",
+        "description" : "Shielding mass and composition for habitat or vehicle",
         "exampleBoolean" : false
       },
       {
@@ -5678,6 +6014,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/Starship-HLS-Artemis-III"
+        },
+        "name" : "Starship HLS for Artemis III",
+        "description" : "SpaceX Starship Human Landing System variant for Artemis III lunar landing",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -6021,6 +6371,20 @@ Ultimately, this implementation guide is not only a tool for simulating patients
         },
         "name" : "Wright-Patterson Aerospace Research Laboratory",
         "description" : "USAF aerospace medicine research facility",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/xEMU-Suit-001"
+        },
+        "name" : "xEMU EVA Suit #001",
+        "description" : "First xEMU suit certified for Artemis III lunar surface EVAs",
         "exampleBoolean" : true
       },
       {

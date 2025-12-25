@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Artemis-III-Mission-Plan"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">Artemis-III-Mission-Plan</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Url: </b></th>\n            <td style=\"padding-left: 4px;\"><a href=\"PlanDefinition-Artemis-III-Mission-Plan.html\">Artemis III Mission Plan - First Crewed Lunar South Pole Landing</a></td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.4.2</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">Artemis III Mission Plan - First Crewed Lunar South Pole Landing</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Type: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>system: </b> <span><a href=\"http://terminology.hl7.org/7.0.1/CodeSystem-plan-definition-type.html\">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>\n                        </p>\n                        \n                        \n                        <p style=\"margin-bottom: 5px;\">\n                            <b>code: </b> <span>workflow-definition</span>\n                        </p>\n                        \n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date: </b></th>\n            <td style=\"padding-left: 4px;\">2025-12-24 17:35:27-0700</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher: </b></th>\n            <td style=\"padding-left: 4px;\">MITRE</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EVAs over 6.5 days, and return. Objectives include lunar south pole exploration, ice sample collection, xEMU suit validation, and Starship-HLS demonstration.</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Actions: </b></th>\n            <td style=\"padding-left: 4px;\">\n                <table class=\"grid-dict\">\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Launch:</b> SLS launch from Kennedy Space Center with Orion crew vehicle. Target: 2027-09-01, T+0 hours.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Translunar Cruise:</b> 4-day transit from Earth to lunar orbit with health monitoring and radiation dosimetry. Duration: T+10 hours to T+106 hours (4 days).\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Gateway Docking:</b> Orion docks with Lunar Gateway HALO module. Planned: T+108 hours, duration 2 hours.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> HLS Transfer and Descent:</b> Crew transfers to Starship HLS and descends to Malapert Massif landing site. Planned: Mission day 6, duration 10 hours.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Surface Operations EVA-1:</b> First lunar surface EVA - site characterization and sample collection. Planned: Mission day 10, duration 6.5 hours.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Surface Operations EVA-2:</b> Second lunar surface EVA - shadowed crater exploration and ice sampling. Planned: Mission day 12, duration 7 hours.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Ascent and Gateway Rendezvous:</b> HLS ascent from lunar surface and rendezvous with Gateway. Planned: Mission day 13, duration 10 hours.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Trans-Earth Injection:</b> Orion departs Gateway for return to Earth. Planned: Mission day 15, duration 30 minutes (propulsive maneuver).\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                    <tr>\n                        <td>\n                            \n                            <b> Splashdown:</b> Orion splashdown in Pacific Ocean. Planned: Mission day 20, entry interface to splashdown 30 minutes.\n                            \n                            <br/>\n                            \n                            \n                            \n                            \n                            \n                        </td>\n                    </tr>\n                    \n                </table>\n            </td>\n        </tr>\n        \n    </table>\n</div>\n</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan>
+  ] ; # 
+  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:title [ fhir:v "Artemis III Mission Plan - First Crewed Lunar South Pole Landing"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/plan-definition-type>
+       ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-24T17:35:27-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EVAs over 6.5 days, and return. Objectives include lunar south pole exploration, ice sample collection, xEMU suit validation, and Starship-HLS demonstration."] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "Launch" ] ;
+     fhir:description [ fhir:v "SLS launch from Kennedy Space Center with Orion crew vehicle. Target: 2027-09-01, T+0 hours." ]
+  ] [
+     fhir:title [ fhir:v "Translunar Cruise" ] ;
+     fhir:description [ fhir:v "4-day transit from Earth to lunar orbit with health monitoring and radiation dosimetry. Duration: T+10 hours to T+106 hours (4 days)." ]
+  ] [
+     fhir:title [ fhir:v "Gateway Docking" ] ;
+     fhir:description [ fhir:v "Orion docks with Lunar Gateway HALO module. Planned: T+108 hours, duration 2 hours." ]
+  ] [
+     fhir:title [ fhir:v "HLS Transfer and Descent" ] ;
+     fhir:description [ fhir:v "Crew transfers to Starship HLS and descends to Malapert Massif landing site. Planned: Mission day 6, duration 10 hours." ]
+  ] [
+     fhir:title [ fhir:v "Surface Operations EVA-1" ] ;
+     fhir:description [ fhir:v "First lunar surface EVA - site characterization and sample collection. Planned: Mission day 10, duration 6.5 hours." ]
+  ] [
+     fhir:title [ fhir:v "Surface Operations EVA-2" ] ;
+     fhir:description [ fhir:v "Second lunar surface EVA - shadowed crater exploration and ice sampling. Planned: Mission day 12, duration 7 hours." ]
+  ] [
+     fhir:title [ fhir:v "Ascent and Gateway Rendezvous" ] ;
+     fhir:description [ fhir:v "HLS ascent from lunar surface and rendezvous with Gateway. Planned: Mission day 13, duration 10 hours." ]
+  ] [
+     fhir:title [ fhir:v "Trans-Earth Injection" ] ;
+     fhir:description [ fhir:v "Orion departs Gateway for return to Earth. Planned: Mission day 15, duration 30 minutes (propulsive maneuver)." ]
+  ] [
+     fhir:title [ fhir:v "Splashdown" ] ;
+     fhir:description [ fhir:v "Orion splashdown in Pacific Ocean. Planned: Mission day 20, entry interface to splashdown 30 minutes." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-total-decompression-
   "name" : "TotalDecompressionTime",
   "title" : "Total Decompression Time",
   "status" : "draft",
-  "date" : "2025-12-24T15:11:38-07:00",
+  "date" : "2025-12-24T17:35:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

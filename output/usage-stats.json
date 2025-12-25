@@ -25,6 +25,13 @@
       ]
     },
     {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number",
+      "title": "EVA Number",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device",
       "title": "Exercise Device",
       "types": [
@@ -74,10 +81,126 @@
       ]
     },
     {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates",
+      "title": "Lunar Coordinates",
+      "types": [
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
       "title": "Mission Context",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding",
+      "title": "Radiation Shielding",
+      "types": [
+        "Quantity",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -623,6 +746,12 @@
         "title": "Space Radiation Exposure Summary (Fixed)"
       }
     ],
+    "PlanDefinition": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan",
+        "title": "Mission Plan"
+      }
+    ],
     "Basic": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item",
@@ -728,6 +857,9 @@
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure": [
       "Observation"
     ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number": [
+      "Procedure"
+    ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device": [
       "Observation"
     ],
@@ -743,9 +875,16 @@
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk": [
       "Procedure"
     ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates": [
+      "Location"
+    ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context": [
       "Observation",
+      "PlanDefinition",
       "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding": [
+      "Location"
     ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement": [
       "Medication"

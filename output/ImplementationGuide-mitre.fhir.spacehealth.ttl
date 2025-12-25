@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.4.2"] ; # 
   fhir:name [ fhir:v "SpaceflightHealthSimulationsReferenceDocumentation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-24T15:11:38-07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-24T17:35:27-07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -1381,6 +1381,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/artemis-all-devices-vs> ;
+         fhir:reference [ fhir:v "ValueSet/artemis-all-devices-vs" ]
+       ] ;
+       fhir:name [ fhir:v "All Artemis Devices" ] ;
+       fhir:description [ fhir:v "Both certified and prototype Artemis devices" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -1415,6 +1436,326 @@
          a fhir:Canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"^^xsd:anyURI ;
          fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/artemis-certified-devices-vs> ;
+         fhir:reference [ fhir:v "ValueSet/artemis-certified-devices-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Certified Devices" ] ;
+       fhir:description [ fhir:v "Flight-qualified Artemis mission hardware" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/artemis-certified-devices-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/artemis-certified-devices-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Certified Devices" ] ;
+       fhir:description [ fhir:v "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/Artemis-III-EVA-1> ;
+         fhir:reference [ fhir:v "Procedure/Artemis-III-EVA-1" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis III EVA-1" ] ;
+       fhir:description [ fhir:v "First lunar surface EVA of Artemis III mission at Malapert Massif" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/Artemis-III-EVA1-Radiation> ;
+         fhir:reference [ fhir:v "Observation/Artemis-III-EVA1-Radiation" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis III EVA-1 Radiation Exposure" ] ;
+       fhir:description [ fhir:v "Radiation dose during first lunar surface EVA (6.5 hours unshielded)" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Procedure"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Procedure/Artemis-III-EVA-2> ;
+         fhir:reference [ fhir:v "Procedure/Artemis-III-EVA-2" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis III EVA-2" ] ;
+       fhir:description [ fhir:v "Second lunar surface EVA of Artemis III mission exploring shadowed crater" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
+         fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis III Mission Encounter" ] ;
+       fhir:description [ fhir:v "Encounter representing the entire Artemis III mission from launch to splashdown" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "PlanDefinition"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan> ;
+         fhir:reference [ fhir:v "PlanDefinition/Artemis-III-Mission-Plan" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis III Mission Plan" ] ;
+       fhir:description [ fhir:v "Complete mission plan for Artemis III including phases, timelines, and EVA schedules" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-plan>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Observation"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Observation/Artemis-III-Translunar-Radiation> ;
+         fhir:reference [ fhir:v "Observation/Artemis-III-Translunar-Radiation" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis III Translunar Radiation Exposure" ] ;
+       fhir:description [ fhir:v "Cumulative radiation dose during 4-day translunar cruise" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/artemis-landing-region-vs> ;
+         fhir:reference [ fhir:v "ValueSet/artemis-landing-region-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Landing Regions" ] ;
+       fhir:description [ fhir:v "Candidate Artemis III south pole landing regions for Location bindings" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/artemis-landing-region-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/artemis-landing-region-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Landing Regions" ] ;
+       fhir:description [ fhir:v "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/artemis-mission-vs> ;
+         fhir:reference [ fhir:v "ValueSet/artemis-mission-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Missions" ] ;
+       fhir:description [ fhir:v "All Artemis program missions I-V" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/artemis-mission-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/artemis-mission-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Missions" ] ;
+       fhir:description [ fhir:v "Historical and planned Artemis program missions with target destinations, launch dates, and status" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/artemis-prototype-devices-vs> ;
+         fhir:reference [ fhir:v "ValueSet/artemis-prototype-devices-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Prototype Devices" ] ;
+       fhir:description [ fhir:v "Developmental and test Artemis hardware" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/artemis-prototype-devices-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/artemis-prototype-devices-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Prototype Devices" ] ;
+       fhir:description [ fhir:v "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure> ;
+         fhir:reference [ fhir:v "StructureDefinition/artemis-radiation-exposure" ]
+       ] ;
+       fhir:name [ fhir:v "Artemis Radiation Exposure" ] ;
+       fhir:description [ fhir:v "Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -3687,6 +4028,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/eva-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/eva-number" ]
+       ] ;
+       fhir:name [ fhir:v "EVA Number" ] ;
+       fhir:description [ fhir:v "Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -3839,6 +4201,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/eva-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Extravehicular Activity Procedure" ] ;
+       fhir:description [ fhir:v "Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Questionnaire"
          ]
        ] ) ;
@@ -3911,6 +4294,27 @@
        ] ;
        fhir:name [ fhir:v "Gimbal Screening" ] ;
        fhir:description [ fhir:v "Screening protocol for Multi Axis Gimbal training device." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/habitat-location" ]
+       ] ;
+       fhir:name [ fhir:v "Habitat Location" ] ;
+       fhir:description [ fhir:v "Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -5680,6 +6084,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/lunar-coordinates> ;
+         fhir:reference [ fhir:v "StructureDefinition/lunar-coordinates" ]
+       ] ;
+       fhir:name [ fhir:v "Lunar Coordinates" ] ;
+       fhir:description [ fhir:v "Selenographic latitude and longitude for lunar surface locations" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -5692,6 +6117,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Location/Gateway-HALO-Module> ;
+         fhir:reference [ fhir:v "Location/Gateway-HALO-Module" ]
+       ] ;
+       fhir:name [ fhir:v "Lunar Gateway HALO Module" ] ;
+       fhir:description [ fhir:v "Habitation and Logistics Outpost module of Lunar Gateway in NRHO" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-location>
        ]
      ] [
        fhir:extension ( [
@@ -5800,6 +6247,28 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Location"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Location/Malapert-Massif-Landing-Site> ;
+         fhir:reference [ fhir:v "Location/Malapert-Massif-Landing-Site" ]
+       ] ;
+       fhir:name [ fhir:v "Malapert Massif Landing Site" ] ;
+       fhir:description [ fhir:v "Artemis III landing site at Malapert Massif, lunar south pole region" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-location>
        ]
      ] [
        fhir:extension ( [
@@ -6031,6 +6500,27 @@
        ] ;
        fhir:name [ fhir:v "Mission Context for Diagnostic Reports" ] ;
        fhir:description [ fhir:v "Links diagnostic reports to specific space missions" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-plan> ;
+         fhir:reference [ fhir:v "StructureDefinition/mission-plan" ]
+       ] ;
+       fhir:name [ fhir:v "Mission Plan" ] ;
+       fhir:description [ fhir:v "Artemis mission timeline with phases, events, constraints, and medical protocols" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -7331,6 +7821,27 @@
        ] ;
        fhir:name [ fhir:v "Radiation Dose Units" ] ;
        fhir:description [ fhir:v "Units for radiation dose measurements" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/radiation-shielding> ;
+         fhir:reference [ fhir:v "StructureDefinition/radiation-shielding" ]
+       ] ;
+       fhir:name [ fhir:v "Radiation Shielding" ] ;
+       fhir:description [ fhir:v "Shielding mass and composition for habitat or vehicle" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -8780,6 +9291,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Device/Starship-HLS-Artemis-III> ;
+         fhir:reference [ fhir:v "Device/Starship-HLS-Artemis-III" ]
+       ] ;
+       fhir:name [ fhir:v "Starship HLS for Artemis III" ] ;
+       fhir:description [ fhir:v "SpaceX Starship Human Landing System variant for Artemis III lunar landing" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -9293,6 +9825,27 @@
        ] ;
        fhir:name [ fhir:v "Wright-Patterson Aerospace Research Laboratory" ] ;
        fhir:description [ fhir:v "USAF aerospace medicine research facility" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Device"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Device/xEMU-Suit-001> ;
+         fhir:reference [ fhir:v "Device/xEMU-Suit-001" ]
+       ] ;
+       fhir:name [ fhir:v "xEMU EVA Suit #001" ] ;
+       fhir:description [ fhir:v "First xEMU suit certified for Artemis III lunar surface EVAs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v true

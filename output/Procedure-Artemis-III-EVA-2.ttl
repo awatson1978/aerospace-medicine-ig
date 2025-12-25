@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/Artemis-III-EVA-2> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Artemis-III-EVA-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure Artemis-III-EVA-2</b></p><a name=\"Artemis-III-EVA-2\"> </a><a name=\"hcArtemis-III-EVA-2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eva-procedure.html\">Extravehicular Activity Procedure</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>EVA Number</b>: EVA-2</p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 103741001}\">Extravehicular Activity (EVA)</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>performed</b>: 2027-09-12 09:00:00+0000 --&gt; 2027-09-12 16:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient/AstronautExample\">Commander Sarah Chen</a></td></tr></table><p><b>location</b>: <a href=\"Location-Malapert-Massif-Landing-Site.html\">Malapert Massif Landing Site - Crater exploration</a></p><p><b>usedReference</b>: <a href=\"Device-xEMU-Suit-001.html\">Device: status = active; manufacturer = Axiom Space; type = xEMU EVA Suit</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "EVA-2"
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:103741001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "103741001" ] ;
+       fhir:display [ fhir:v "Extravehicular activity (procedure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Extravehicular Activity (EVA)" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
+     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2027-09-12T09:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2027-09-12T16:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
+       fhir:reference [ fhir:v "Patient/AstronautExample" ] ;
+       fhir:display [ fhir:v "Commander Sarah Chen" ]
+     ]
+  ] ) ; # 
+  fhir:location [
+     fhir:l <https://mitre.org/fhir/space-health/Location/Malapert-Massif-Landing-Site> ;
+     fhir:reference [ fhir:v "Location/Malapert-Massif-Landing-Site" ] ;
+     fhir:display [ fhir:v "Malapert Massif Landing Site - Crater exploration" ]
+  ] ; # 
+  fhir:usedReference ( [
+     fhir:l <https://mitre.org/fhir/space-health/Device/xEMU-Suit-001> ;
+     fhir:reference [ fhir:v "Device/xEMU-Suit-001" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -34,6 +34,7 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [Advanced Dive Profile](StructureDefinition-advanced-dive-profile.md) | Comprehensive dive profile with enhanced data collection and regulatory compliance |
+| [Artemis Radiation Exposure](StructureDefinition-artemis-radiation-exposure.md) | Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context |
 | [Astrodynamics Observation](StructureDefinition-AstrodynamicsObservation.md) | An observation of a satellite or celestial object's orbital characteristics, using orbital elements. |
 | [Astronaut Patient Profile](StructureDefinition-Astronaut.md) | Patient profile for astronauts and space travelers |
 | [Average Blood Pressure](StructureDefinition-average-blood-pressure.md) | A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol. The average blood pressure has a systolic and a diastolic component. |
@@ -58,12 +59,15 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) | Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols |
 | [Enhanced Neutral Buoyancy Training Session](StructureDefinition-enhanced-neutral-buoyancy-session.md) | Comprehensive neutral buoyancy training session with full regulatory compliance tracking |
 | [Environmental Monitoring](StructureDefinition-EnvironmentalMonitoring.md) | Profile for environmental monitoring. |
+| [Extravehicular Activity Procedure](StructureDefinition-eva-procedure.md) | Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data |
 | [Gimbal Screening](StructureDefinition-GimbalScreening.md) | Screening protocol for Multi Axis Gimbal training device. |
+| [Habitat Location](StructureDefinition-habitat-location.md) | Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code |
 | [Heart Rate](StructureDefinition-heart-rate.md) | The number of heart beats in a minute. |
 | [Hydration Status Observation](StructureDefinition-hydration-status-observation.md) | Hydration status monitoring for space missions |
 | [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md) | A medical facility equipped with a hyperbaric chamber for pressurized treatment |
 | [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md) | Hyperbaric oxygen therapy or chamber treatment |
 | [Metabolic Risk Summary](StructureDefinition-metabolic-risk-summary.md) | Evaluates risk from prolonged caloric deficits and metabolic stress |
+| [Mission Plan](StructureDefinition-mission-plan.md) | Artemis mission timeline with phases, events, constraints, and medical protocols |
 | [Mission Risk Assessment](StructureDefinition-SpaceRiskAssesment.md) | STUB - Risk assessment for space missions. |
 | [Neutral Buoyancy Facility](StructureDefinition-NeutralBuoyancyFacility.md) | Facility for underwater astronaut training |
 | [Neutral Buoyancy Training Session](StructureDefinition-NeutralBuoyancySession.md) | Training session in neutral buoyancy facility for EVA simulation |
@@ -108,6 +112,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Decompression Algorithm Used](StructureDefinition-decompression-algorithm.md) | The specific decompression algorithm or table used |
 | [Derived From Activity Group](StructureDefinition-derived-from-group.md) | Links aggregated metrics to source activity group observations |
 | [Diving Medical Contraindications](StructureDefinition-diving-contraindications.md) | Medical conditions that contraindicate diving |
+| [EVA Number](StructureDefinition-eva-number.md) | Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2) |
 | [Emergency Procedures](StructureDefinition-emergency-procedures.md) | Emergency decompression procedures if applicable |
 | [Emergency Response Assessment](StructureDefinition-emergency-response.md) | Assessment of emergency response procedures |
 | [Emergency Response Time](StructureDefinition-response-time.md) | Time from emergency recognition to response initiation |
@@ -126,6 +131,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Lessons Learned](StructureDefinition-lessons-learned.md) | Lessons learned and recommendations from emergency response |
 | [Location Capabilities](StructureDefinition-location-capabilities.md) | Specific capabilities and equipment available at location |
 | [Location Hierarchy](StructureDefinition-location-hierarchy.md) | Hierarchical relationship between locations (parent/child) |
+| [Lunar Coordinates](StructureDefinition-lunar-coordinates.md) | Selenographic latitude and longitude for lunar surface locations |
 | [Maximum Depth Reached](StructureDefinition-maximum-depth-reached.md) | Maximum depth reached during the dive requiring decompression |
 | [Maximum Operating Pressure](StructureDefinition-maximum-pressure.md) | Maximum pressure the chamber can safely operate at |
 | [Maximum Training Depth](StructureDefinition-maximum-depth.md) | Maximum depth reached during training session |
@@ -138,6 +144,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Patient Monitoring](StructureDefinition-patient-monitoring.md) | Continuous patient monitoring during hyperbaric treatment |
 | [Pulmonary Function Assessment](StructureDefinition-pulmonary-function.md) | Assessment of respiratory function for diving |
 | [Radiation Countermeasures](StructureDefinition-radiation-countermeasures.md) | Protective measures taken during radiation exposure |
+| [Radiation Shielding](StructureDefinition-radiation-shielding.md) | Shielding mass and composition for habitat or vehicle |
 | [Regulatory Compliance](StructureDefinition-regulatory-compliance.md) | Regulatory standards compliance during training session |
 | [Rehydration Requirement](StructureDefinition-rehydration-requirement.md) | Amount of water required to prepare space food |
 | [Rescue Procedures Used](StructureDefinition-rescue-procedures.md) | Specific rescue procedures and techniques employed |
@@ -164,6 +171,11 @@ These define sets of codes used by systems conforming to this implementation gui
 | :--- | :--- |
 | [Adaptations of Bone Health](ValueSet-SpaceAdaptationBoneHealth.md) | Bone health adaptations observed in spaceflight conditions. |
 | [Aircraft Fume Exposure](ValueSet-AircraftFumeExposureValueSet.md) | Health impacts from exposure to aircraft contaminated air and fume events. |
+| [All Artemis Devices](ValueSet-artemis-all-devices-vs.md) | Both certified and prototype Artemis devices |
+| [Artemis Certified Devices](ValueSet-artemis-certified-devices-vs.md) | Flight-qualified Artemis mission hardware |
+| [Artemis Landing Regions](ValueSet-artemis-landing-region-vs.md) | Candidate Artemis III south pole landing regions for Location bindings |
+| [Artemis Missions](ValueSet-artemis-mission-vs.md) | All Artemis program missions I-V |
+| [Artemis Prototype Devices](ValueSet-artemis-prototype-devices-vs.md) | Developmental and test Artemis hardware |
 | [Back Pain and Space Travel](ValueSet-AstronautBackPain.md) | Back pain and associated conditions observed in astronauts and their potential terrestrial applications. |
 | [Behavioral Health Metrics Value Set](ValueSet-behavioral-health-metrics-vs.md) | Key behavioral health state metrics used in aerospace behavioral health monitoring. |
 | [Brain and Neurologic Changes](ValueSet-SpaceTravelBrainChanges.md) | Concepts related to physiological and neurological changes from prolonged space travel. |
@@ -222,6 +234,10 @@ These define new code systems used by systems conforming to this implementation 
 | | |
 | :--- | :--- |
 | [Aerospace Behavioral State Code System](CodeSystem-aerospace-behavioral-state-cs.md) | Codes describing behavioral and psychological state parameters in aerospace missions. |
+| [Artemis Certified Devices](CodeSystem-artemis-certified-devices-cs.md) | Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.) |
+| [Artemis Landing Regions](CodeSystem-artemis-landing-region-cs.md) | Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters) |
+| [Artemis Missions](CodeSystem-artemis-mission-cs.md) | Historical and planned Artemis program missions with target destinations, launch dates, and status |
+| [Artemis Prototype Devices](CodeSystem-artemis-prototype-devices-cs.md) | Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes) |
 | [Behavioral Biomarker Code System](CodeSystem-behavioral-biomarker-cs.md) | Codes for physiologic and digital biomarkers related to behavioral health and stress. |
 | [Calorie Deficit Risk Levels](CodeSystem-calorie-deficit-risk-cs.md) | Risk categorization for caloric deficits |
 | [Decompression Protocols and Procedures](CodeSystem-decompression-protocol-cs.md) | Standardized decompression protocols and safety procedures |
@@ -263,6 +279,12 @@ These are example instances that show what data produced and consumed by systems
 | :--- | :--- |
 | [Aquarius Underwater Laboratory](Location-AquariusUnderwaterLaboratory.md) | NOAA's Aquarius underwater research station used for NEEMO missions |
 | [Artemis Base Camp Habitat](Location-ArtemisBaseCampHabitat.md) | Artemis lunar surface habitat module |
+| [Artemis III EVA-1](Procedure-Artemis-III-EVA-1.md) | First lunar surface EVA of Artemis III mission at Malapert Massif |
+| [Artemis III EVA-1 Radiation Exposure](Observation-Artemis-III-EVA1-Radiation.md) | Radiation dose during first lunar surface EVA (6.5 hours unshielded) |
+| [Artemis III EVA-2](Procedure-Artemis-III-EVA-2.md) | Second lunar surface EVA of Artemis III mission exploring shadowed crater |
+| [Artemis III Mission Encounter](Encounter-Artemis-III-Mission.md) | Encounter representing the entire Artemis III mission from launch to splashdown |
+| [Artemis III Mission Plan](PlanDefinition-Artemis-III-Mission-Plan.md) | Complete mission plan for Artemis III including phases, timelines, and EVA schedules |
+| [Artemis III Translunar Radiation Exposure](Observation-Artemis-III-Translunar-Radiation.md) | Cumulative radiation dose during 4-day translunar cruise |
 | [Biosphere 2 Undersea Habitat](Location-Biosphere2UnderseaHabitat.md) | University of Arizona Biosphere 2 analog training facility |
 | [Blue Origin West Texas Facility](Location-BlueOriginWestTexas.md) | Blue Origin suborbital flight operations |
 | [Boeing Starliner Calypso](Location-StarlinerCalypso.md) | Boeing CST-100 Starliner spacecraft |
@@ -372,9 +394,11 @@ These are example instances that show what data produced and consumed by systems
 | [Location - Space Lab](Location-LocationSpaceLabSpaceStation.md) | Space Lab (Decomissioned) |
 | [Location - SpaceGarage1](Location-LocationSpaceGarage.md) | Space Garage |
 | [Location - Telescope Crater](Location-LocationCrater2.md) | Lunar crater suitable for a space telescope. |
+| [Lunar Gateway HALO Module](Location-Gateway-HALO-Module.md) | Habitation and Logistics Outpost module of Lunar Gateway in NRHO |
 | [Lunar Gateway HALO Module](Location-LunarGatewayHALO.md) | Lunar Gateway Habitation and Logistics Outpost |
 | [Lunar Gateway Power and Propulsion Element](Location-LunarGatewayPPE.md) | Lunar Gateway Power and Propulsion Element |
 | [Lunar South Pole Base](Location-LunarSouthPoleBases.md) | Permanent lunar base near the South Pole |
+| [Malapert Massif Landing Site](Location-Malapert-Massif-Landing-Site.md) | Artemis III landing site at Malapert Massif, lunar south pole region |
 | [Mars Ascent Vehicle](Location-MarsAscentVehicle.md) | Mars surface to orbit transport |
 | [Mars Base Alpha](Location-MarsBaseAlpha.md) | First permanent Mars surface base |
 | [Mars Transit Vehicle](Location-MarsTransitVehicle.md) | Deep space transport for Mars missions |
@@ -426,6 +450,7 @@ These are example instances that show what data produced and consumed by systems
 | [SpaceX Hawthorne Factory](Location-SpaceXHawthorneFactory.md) | SpaceX manufacturing and mission control facility |
 | [SpaceX Starbase](Location-SpaceXBocaChica.md) | SpaceX Starship development and launch facility |
 | [Spaceport America](Location-VirginGalacticSpaceport.md) | Virgin Galactic commercial spaceport |
+| [Starship HLS for Artemis III](Device-Starship-HLS-Artemis-III.md) | SpaceX Starship Human Landing System variant for Artemis III lunar landing |
 | [Sun-Earth L1 Observatory](Location-SunEarthL1Station.md) | Space weather monitoring station at L1 |
 | [Trauma EFAST Exam](Questionnaire-TraumaEFASTQuestionnaire.md) |  |
 | [TsPK Centrifuge Complex](Location-NASCOMRussianCentrifuge.md) | Russian cosmonaut centrifuge training facility |
@@ -433,4 +458,5 @@ These are example instances that show what data produced and consumed by systems
 | [University of Pennsylvania Hyperbaric Center](Location-UniversityOfPennsylvaniaHyperbaric.md) | Academic hyperbaric medicine and research center |
 | [Wright-Patterson Aerospace Research Laboratory](Location-WrightPattersonAerospaceResearch.md) | USAF aerospace medicine research facility |
 | [Yuri Gagarin Cosmonaut Training Center](Location-YuriGagarinCosmonautTrainingCenter.md) | Russian cosmonaut training facility with underwater training capabilities |
+| [xEMU EVA Suit #001](Device-xEMU-Suit-001.md) | First xEMU suit certified for Artemis III lunar surface EVAs |
 

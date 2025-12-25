@@ -13,6 +13,102 @@
       "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
     },
     {
+      "url" : "http://hl7.org/fhir/action-cardinality-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionCardinalityBehavior",
+      "title" : "ActionCardinalityBehavior",
+      "description" : "Defines behavior for an action or a group for how many times that item may be repeated.",
+      "oids" : ["2.16.840.1.113883.4.642.4.808"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-cardinality-behavior.html" : "ActionCardinalityBehavior"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-condition-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionConditionKind",
+      "title" : "ActionConditionKind",
+      "description" : "Defines the kinds of conditions that can appear on actions.",
+      "oids" : ["2.16.840.1.113883.4.642.4.816"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-condition-kind.html" : "ActionConditionKind"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-grouping-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionGroupingBehavior",
+      "title" : "ActionGroupingBehavior",
+      "description" : "Defines organization behavior of a group.",
+      "oids" : ["2.16.840.1.113883.4.642.4.800"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-grouping-behavior.html" : "ActionGroupingBehavior"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionParticipantType",
+      "title" : "ActionParticipantType",
+      "description" : "The type of participant for the action.",
+      "oids" : ["2.16.840.1.113883.4.642.4.812"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-participant-type.html" : "ActionParticipantType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-precheck-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionPrecheckBehavior",
+      "title" : "ActionPrecheckBehavior",
+      "description" : "Defines selection frequency behavior for an action or group.",
+      "oids" : ["2.16.840.1.113883.4.642.4.806"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-precheck-behavior.html" : "ActionPrecheckBehavior"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionRelationshipType",
+      "title" : "ActionRelationshipType",
+      "description" : "Defines the types of relationships between actions.",
+      "oids" : ["2.16.840.1.113883.4.642.4.814"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-relationship-type.html" : "ActionRelationshipType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-required-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionRequiredBehavior",
+      "title" : "ActionRequiredBehavior",
+      "description" : "Defines expectations around whether an action or action group is required.",
+      "oids" : ["2.16.840.1.113883.4.642.4.804"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-required-behavior.html" : "ActionRequiredBehavior"
+    },
+    {
+      "url" : "http://hl7.org/fhir/action-selection-behavior",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionSelectionBehavior",
+      "title" : "ActionSelectionBehavior",
+      "description" : "Defines selection behavior of a group.",
+      "oids" : ["2.16.840.1.113883.4.642.4.802"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-selection-behavior.html" : "ActionSelectionBehavior"
+    },
+    {
       "url" : "http://hl7.org/fhir/administrative-gender",
       "version" : "4.0.1",
       "status" : "active",
@@ -409,6 +505,18 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
       "url" : "http://hl7.org/fhir/resource-types",
       "version" : "4.0.1",
       "status" : "active",
@@ -417,8 +525,9 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+      "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
     },
     {
       "url" : "http://hl7.org/fhir/search-entry-mode",
@@ -453,8 +562,54 @@
       "description" : "Codes describing behavioral and psychological state parameters in aerospace missions.",
       "uses" : {
       },
-      "ValueSet-cognitive-performance-indicators-vs.html" : "Cognitive Performance Indicators Value Set",
-      "ValueSet-behavioral-health-metrics-vs.html" : "Behavioral Health Metrics Value Set"
+      "ValueSet-behavioral-health-metrics-vs.html" : "Behavioral Health Metrics Value Set",
+      "ValueSet-cognitive-performance-indicators-vs.html" : "Cognitive Performance Indicators Value Set"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "ArtemisCertifiedDevicesCS",
+      "title" : "Artemis Certified Devices",
+      "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)",
+      "uses" : {
+      },
+      "ValueSet-artemis-certified-devices-vs.html" : "Artemis Certified Devices",
+      "ValueSet-artemis-all-devices-vs.html" : "All Artemis Devices"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "ArtemisLandingRegionCS",
+      "title" : "Artemis Landing Regions",
+      "description" : "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)",
+      "uses" : {
+      },
+      "ValueSet-artemis-landing-region-vs.html" : "Artemis Landing Regions"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "ArtemisMissionCS",
+      "title" : "Artemis Missions",
+      "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status",
+      "uses" : {
+      },
+      "ValueSet-artemis-mission-vs.html" : "Artemis Missions"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs",
+      "version" : "0.4.2",
+      "status" : "active",
+      "name" : "ArtemisPrototypeDevicesCS",
+      "title" : "Artemis Prototype Devices",
+      "description" : "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)",
+      "uses" : {
+      },
+      "ValueSet-artemis-prototype-devices-vs.html" : "Artemis Prototype Devices",
+      "ValueSet-artemis-all-devices-vs.html" : "All Artemis Devices"
     },
     {
       "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
@@ -565,50 +720,63 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-AstronautBackPain.html" : "Back Pain and Space Travel",
       "ValueSet-decompression-procedures.html" : "Decompression Procedures",
-      "ValueSet-space-physiological-effects.html" : "Space Physiological Effects",
-      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
-      "ValueSet-LunarDustToxicityValueSet.html" : "Lunar Dust Toxicity",
-      "ValueSet-SleepLossHypoxiaResponses.html" : "Sleep Loss and Hypoxia Responses",
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "ValueSet-SpaceflightStressFactors.html" : "Stress and Physiological Factors",
-      "ValueSet-space-monitoring-procedures.html" : "Space Monitoring Procedures",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
-      "ValueSet-MuscleStiffnessAndSpaceHealth.html" : "Muscle Stiffness",
-      "ValueSet-SleepLossHypoxiaEffect.html" : "Sleep Loss and Hypoxia Effects",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "ValueSet-space-cardiovascular-effects.html" : "Space Cardiovascular Effects",
-      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
-      "ValueSet-diving-contraindicated-conditions.html" : "Diving Medical Contraindications",
-      "ValueSet-space-visual-effects.html" : "Space Visual Effects",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
-      "ValueSet-underwater-training-procedures.html" : "Underwater Training Procedures",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-      "ValueSet-space-neurological-effects.html" : "Space Neurological Effects",
-      "ValueSet-SpaceAdaptationBoneHealth.html" : "Adaptations of Bone Health",
-      "ValueSet-space-environmental-factors.html" : "Space Environmental Factors",
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "ValueSet-regulatory-standards.html" : "Regulatory Standards for Diving and Space Medicine",
-      "ValueSet-SpaceTravelBrainChanges.html" : "Brain and Neurologic Changes",
-      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
-      "ValueSet-space-radiation-effects.html" : "Space Radiation Effects",
-      "ValueSet-AircraftFumeExposureValueSet.html" : "Aircraft Fume Exposure",
-      "ValueSet-SpaceRadiationRisksVS.html" : "Space Radiation Risks ValueSet",
-      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures",
-      "ValueSet-GimbalContraindicatedConditions.html" : "Gimbal Contraindications",
-      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "ValueSet-SleepLossHypoxiaEffect.html" : "Sleep Loss and Hypoxia Effects",
+      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "ValueSet-space-physiological-effects.html" : "Space Physiological Effects",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "ValueSet-space-cardiovascular-effects.html" : "Space Cardiovascular Effects",
+      "ValueSet-SpaceflightStressFactors.html" : "Stress and Physiological Factors",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "ValueSet-AircraftFumeExposureValueSet.html" : "Aircraft Fume Exposure",
+      "ValueSet-regulatory-standards.html" : "Regulatory Standards for Diving and Space Medicine",
+      "ValueSet-SpaceAdaptationBoneHealth.html" : "Adaptations of Bone Health",
+      "ValueSet-AstronautBackPain.html" : "Back Pain and Space Travel",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-space-neurological-effects.html" : "Space Neurological Effects",
+      "ValueSet-underwater-training-procedures.html" : "Underwater Training Procedures",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "ValueSet-GimbalContraindicatedConditions.html" : "Gimbal Contraindications",
+      "ValueSet-diving-contraindicated-conditions.html" : "Diving Medical Contraindications",
+      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
-      "ValueSet-space-psychological-effects.html" : "Space Psychological Effects"
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "ValueSet-SpaceRadiationRisksVS.html" : "Space Radiation Risks ValueSet",
+      "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+      "ValueSet-SleepLossHypoxiaResponses.html" : "Sleep Loss and Hypoxia Responses",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-LunarDustToxicityValueSet.html" : "Lunar Dust Toxicity",
+      "ValueSet-SpaceTravelBrainChanges.html" : "Brain and Neurologic Changes",
+      "ValueSet-MuscleStiffnessAndSpaceHealth.html" : "Muscle Stiffness",
+      "ValueSet-space-psychological-effects.html" : "Space Psychological Effects",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "ValueSet-space-radiation-effects.html" : "Space Radiation Effects",
+      "ValueSet-space-monitoring-procedures.html" : "Space Monitoring Procedures",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "ValueSet-space-environmental-factors.html" : "Space Environmental Factors",
+      "ValueSet-space-visual-effects.html" : "Space Visual Effects",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-goal-start-event.html" : "Goal start event"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/action-type",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ActionType",
+      "title" : "ActionType",
+      "description" : "The type of action to be performed.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1246"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-type.html" : "ActionType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/applicability",
@@ -791,6 +959,18 @@
       "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/definition-topic",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "DefinitionTopic",
+      "title" : "DefinitionTopic",
+      "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1244"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-definition-topic.html" : "DefinitionTopic"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
       "version" : "1.0.0",
       "status" : "draft",
@@ -801,6 +981,30 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-category",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "GoalCategory",
+      "title" : "Goal category",
+      "description" : "Codes for grouping goals to use for filtering or presentation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1097"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-category.html" : "Goal category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/goal-priority",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1096"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-goal-priority.html" : "Goal priority"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/insurance-plan-type",
@@ -849,6 +1053,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "PlanDefinitionType",
+      "title" : "PlanDefinitionType",
+      "description" : "The type of PlanDefinition.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-plan-definition-type.html" : "PlanDefinitionType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
@@ -1080,8 +1296,8 @@
       "description" : "Protective measures against space radiation",
       "uses" : {
       },
-      "ValueSet-radiation-countermeasures-vs.html" : "Radiation Countermeasures",
-      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures"
+      "ValueSet-radiation-countermeasures-vs-complete.html" : "Complete Radiation Countermeasures",
+      "ValueSet-radiation-countermeasures-vs.html" : "Radiation Countermeasures"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs",
@@ -1092,8 +1308,8 @@
       "description" : "Types of radiation detection equipment",
       "uses" : {
       },
-      "ValueSet-radiation-detector-type-vs-complete.html" : "Complete Radiation Detector Types",
-      "ValueSet-dosimeter-type-vs.html" : "Dosimeter Types"
+      "ValueSet-dosimeter-type-vs.html" : "Dosimeter Types",
+      "ValueSet-radiation-detector-type-vs-complete.html" : "Complete Radiation Detector Types"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
@@ -1126,8 +1342,8 @@
       "description" : "Types of radiation encountered in space environments",
       "uses" : {
       },
-      "ValueSet-space-radiation-type-vs.html" : "Space Radiation Types",
-      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types"
+      "ValueSet-space-radiation-type-vs-complete.html" : "Complete Space Radiation Types",
+      "ValueSet-space-radiation-type-vs.html" : "Space Radiation Types"
     },
     {
       "url" : "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs",

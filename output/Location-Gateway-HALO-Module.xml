@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="Gateway-HALO-Module"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location Gateway-HALO-Module</b></p><a name="Gateway-HALO-Module"> </a><a name="hcGateway-HALO-Module"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-habitat-location.html">Habitat Location</a></p></div><blockquote><p><b>Radiation Shielding</b></p><ul><li>shieldingMass: 12.5 g/cm²<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeg/cm2 = 'g/cm2')</span></li><li>shieldingComposition: Aluminum alloy with polyethylene water walls</li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Lunar Gateway - HALO Module</p><p><b>description</b>: Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions.</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs orbital-station}">Lunar orbital habitat module</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding">
+    <extension url="shieldingMass">
+      <valueQuantity>
+        <value value="12.5"/>
+        <unit value="g/cm²"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="g/cm2"/>
+      </valueQuantity>
+    </extension>
+    <extension url="shieldingComposition">
+      <valueString value="Aluminum alloy with polyethylene water walls"/>
+    </extension>
+  </extension>
+  <status value="active"/>
+  <name value="Lunar Gateway - HALO Module"/>
+  <description value="Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions."/>
+  <mode value="instance"/>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs"/>
+      <code value="orbital-station"/>
+    </coding>
+    <text value="Lunar orbital habitat module"/>
+  </type>
+</Location>

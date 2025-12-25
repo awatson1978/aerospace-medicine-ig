@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-neutral-buo
   "name" : "EnhancedNeutralBuoyancySession",
   "title" : "Enhanced Neutral Buoyancy Training Session",
   "status" : "draft",
-  "date" : "2025-12-24T15:11:38-07:00",
+  "date" : "2025-12-24T17:35:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
