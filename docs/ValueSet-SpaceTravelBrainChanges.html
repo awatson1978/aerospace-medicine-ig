@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Brain and Neurologic Changes -  v0.4.2</title>
+    <title>Brain and Neurologic Changes -  v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -30,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12.103"}
-    h3,h4,h5,h6{--heading-prefix:"12.103"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.149"}
+    h3,h4,h5,h6{--heading-prefix:"17.149"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.4.2 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -93,6 +93,15 @@
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -105,6 +114,19 @@
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
       </li>
     </ul>
   </li>
@@ -158,7 +180,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -210,7 +232,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.4.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges|0.4.2"/></span>
+      <span class="copy-text">0.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges|0.5.0"/></span>
       </td>
     </tr>
 
@@ -226,7 +248,7 @@
         
           Draft
           
-            as of 2025-06-01
+            as of 2025-12-25
           
         
       </td>
@@ -263,14 +285,14 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet SpaceTravelBrainChanges</b></p><a name="SpaceTravelBrainChanges"> </a><a name="hcSpaceTravelBrainChanges"> </a><a name="SpaceTravelBrainChanges-en-US"> </a>
-<ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/65124004">65124004</a></td><td>Part of body puffy</td></tr><tr><td><a href="http://snomed.info/id/361533001">361533001</a></td><td>Vestibular system</td></tr><tr><td><a href="http://snomed.info/id/68523003">68523003</a></td><td>Cerebral white matter</td></tr><tr><td><a href="http://snomed.info/id/90545009">90545009</a></td><td>Sensory perception</td></tr><tr><td><a href="http://snomed.info/id/37031009">37031009</a></td><td>Motion sickness</td></tr><tr><td><a href="http://snomed.info/id/102957003">102957003</a></td><td>Neuro-obs</td></tr><tr><td><a href="http://snomed.info/id/56246009">56246009</a></td><td>Enlargement</td></tr><tr><td><a href="http://snomed.info/id/258450006">258450006</a></td><td>CSF - Cerebrospinal fluid sample</td></tr><tr><td><a href="http://snomed.info/id/148269006">148269006</a></td><td>Health education - exercise</td></tr></table></li></ul></div>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="SpaceTravelBrainChanges"> </a><a name="hcSpaceTravelBrainChanges"> </a>
+<ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/65124004">65124004</a></td><td>Part of body puffy</td></tr><tr><td><a href="http://snomed.info/id/361533001">361533001</a></td><td>Vestibular system</td></tr><tr><td><a href="http://snomed.info/id/68523003">68523003</a></td><td>Cerebral white matter</td></tr><tr><td><a href="http://snomed.info/id/90545009">90545009</a></td><td>Sensory perception</td></tr><tr><td><a href="http://snomed.info/id/37031009">37031009</a></td><td>Motion sickness</td></tr><tr><td><a href="http://snomed.info/id/102957003">102957003</a></td><td>Neuro-obs</td></tr><tr><td><a href="http://snomed.info/id/56246009">56246009</a></td><td>Enlargement</td></tr><tr><td><a href="http://snomed.info/id/258450006">258450006</a></td><td>CSF - Cerebrospinal fluid sample</td></tr><tr><td><a href="http://snomed.info/id/148269006">148269006</a></td><td>Health education - exercise</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p><p>This value set contains 9 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Inactive</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-65124004"> </a>  <a href="http://snomed.info/id/65124004">65124004</a></td><td>http://snomed.info/sct</td><td>Swelling</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-361533001"> </a>  <a href="http://snomed.info/id/361533001">361533001</a></td><td>http://snomed.info/sct</td><td>Vestibular system</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-68523003"> </a>  <a href="http://snomed.info/id/68523003">68523003</a></td><td>http://snomed.info/sct</td><td>Cerebral white matter</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-90545009"> </a>  <a href="http://snomed.info/id/90545009">90545009</a></td><td>http://snomed.info/sct</td><td>Finding of sensation</td><td>inactive</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-37031009"> </a>  <a href="http://snomed.info/id/37031009">37031009</a></td><td>http://snomed.info/sct</td><td>Motion sickness</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-102957003"> </a>  <a href="http://snomed.info/id/102957003">102957003</a></td><td>http://snomed.info/sct</td><td>Neurological finding</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-56246009"> </a>  <a href="http://snomed.info/id/56246009">56246009</a></td><td>http://snomed.info/sct</td><td>Hypertrophy</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-258450006"> </a>  <a href="http://snomed.info/id/258450006">258450006</a></td><td>http://snomed.info/sct</td><td>Cerebrospinal fluid sample</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-148269006"> </a>  <a href="http://snomed.info/id/148269006">148269006</a></td><td>http://snomed.info/sct</td><td>Health education - exercise</td><td>inactive</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class="copy-text-inline"><button data-clipboard-text="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 9 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Inactive</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://snomed.info/sct-65124004"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/65124004">65124004</a></td><td>Swelling</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;65124004&quot;, &quot;display&quot;: &quot;Swelling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;65124004&quot;&gt;&lt;display value=&quot;Swelling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-361533001"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/361533001">361533001</a></td><td>Vestibular system</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;361533001&quot;, &quot;display&quot;: &quot;Vestibular system&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;361533001&quot;&gt;&lt;display value=&quot;Vestibular system&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-68523003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/68523003">68523003</a></td><td>Cerebral white matter</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;68523003&quot;, &quot;display&quot;: &quot;Cerebral white matter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;68523003&quot;&gt;&lt;display value=&quot;Cerebral white matter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-90545009"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/90545009">90545009</a></td><td>Finding of sensation</td><td>inactive</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;90545009&quot;, &quot;display&quot;: &quot;Finding of sensation&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;90545009&quot;&gt;&lt;display value=&quot;Finding of sensation&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-37031009"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/37031009">37031009</a></td><td>Motion sickness</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;37031009&quot;, &quot;display&quot;: &quot;Motion sickness&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;37031009&quot;&gt;&lt;display value=&quot;Motion sickness&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-102957003"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/102957003">102957003</a></td><td>Neurological finding</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;102957003&quot;, &quot;display&quot;: &quot;Neurological finding&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;102957003&quot;&gt;&lt;display value=&quot;Neurological finding&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-56246009"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/56246009">56246009</a></td><td>Hypertrophy</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;56246009&quot;, &quot;display&quot;: &quot;Hypertrophy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;56246009&quot;&gt;&lt;display value=&quot;Hypertrophy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-258450006"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/258450006">258450006</a></td><td>Cerebrospinal fluid sample</td><td/><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;258450006&quot;, &quot;display&quot;: &quot;Cerebrospinal fluid sample&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;258450006&quot;&gt;&lt;display value=&quot;Cerebrospinal fluid sample&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://snomed.info/sct-148269006"> </a><code>http://snomed.info/sct</code></td><td style="white-space:nowrap">  <a href="http://snomed.info/id/148269006">148269006</a></td><td>Health education - exercise</td><td>inactive</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;148269006&quot;, &quot;display&quot;: &quot;Health education - exercise&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;&gt;&lt;code value=&quot;148269006&quot;&gt;&lt;display value=&quot;Health education - exercise&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
 
   <hr/>
   <p>
@@ -329,7 +351,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 23:37-0500">2025-06-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

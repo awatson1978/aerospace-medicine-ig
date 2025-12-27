@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Mars Direct Mission Plan 2040 -  v0.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.374"}
+    h3,h4,h5,h6{--heading-prefix:"17.374"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Mars Direct Mission Plan 2040</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="PlanDefinition-MarsDirectMissionPlan2040.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="PlanDefinition-MarsDirectMissionPlan2040.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="PlanDefinition-MarsDirectMissionPlan2040.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">PlanDefinition: Mars Direct Mission Plan 2040
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.5.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040|0.5.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2025-12-25
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;"></span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="PlanDefinition-MarsDirectMissionPlan2040.xml.html">XML</a>, <a href="PlanDefinition-MarsDirectMissionPlan2040.json.html">JSON</a>, <a href="PlanDefinition-MarsDirectMissionPlan2040.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml">
+<div>
+    <table class="grid dict">
+        
+        <tr>
+            <th scope="row"><b>Id: </b></th>
+            <td style="padding-left: 4px;">MarsDirectMissionPlan2040</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Url: </b></th>
+            <td style="padding-left: 4px;"><a href="PlanDefinition-MarsDirectMissionPlan2040.html">Mars Direct Mission 2040 - Jezero Crater Landing</a></td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Version: </b></th>
+            <td style="padding-left: 4px;">0.5.0</td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Title: </b></th>
+            <td style="padding-left: 4px;">Mars Direct Mission 2040 - Jezero Crater Landing</td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Type: </b></th>
+            <td style="padding-left: 4px;">
+                
+                    
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>system: </b> <span><a href="http://terminology.hl7.org/7.0.1/CodeSystem-plan-definition-type.html">http://terminology.hl7.org/CodeSystem/plan-definition-type</a></span>
+                        </p>
+                        
+                        
+                        <p style="margin-bottom: 5px;">
+                            <b>code: </b> <span>workflow-definition</span>
+                        </p>
+                        
+                        
+                    
+                
+                
+            </td>
+        </tr>
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Date: </b></th>
+            <td style="padding-left: 4px;">2025-12-25 11:43:35-0700</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Publisher: </b></th>
+            <td style="padding-left: 4px;">MITRE</td>
+        </tr>
+        
+
+        
+        <tr>
+            <th scope="row"><b>Description: </b></th>
+            <td style="padding-left: 4px;"><div><p>Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems.</p>
+</div></td>
+        </tr>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+        <tr>
+            <th scope="row"><b>Actions: </b></th>
+            <td style="padding-left: 4px;">
+                <table class="grid-dict">
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Launch - Earth Return Vehicle (ERV):</b> Uncrewed ERV launch with Sabatier reactor, nuclear power unit, hydrogen supply. Target: Mars arrival 6 months later, land at Jezero. Begin ISRU propellant production immediately.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Launch - Crew in Mars Habitat Unit:</b> Crew of 4 launches 26 months after ERV (once ISRU confirms propellant production). 6-month transit with artificial gravity tether.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Outbound Transit:</b> 6-month deep space cruise. Continuous radiation monitoring, exercise countermeasures, health assessments, crew training for surface operations.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Mars Orbit Insertion and Descent:</b> Direct entry and landing at Jezero site near pre-positioned ERV. Habitat establishes life support upon landing.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Surface Operations - 18 Months:</b> Extended surface mission with ~400-500 EVAs total. Geological surveys, sample collection, ISRU monitoring, equipment maintenance, health monitoring. Weekly medical checkups, monthly radiation assessments.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Ascent and Earth Return:</b> Crew boards fueled ERV, launches from Mars, 6-month return transit. Total mission duration: ~30 months (900 days).
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            
+                            <b> Earth Atmospheric Entry and Recovery:</b> ERV capsule atmospheric entry, parachute descent, splashdown in Pacific. Crew medical evaluation and reconditioning.
+                            
+                            <br/>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+</div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

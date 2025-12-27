@@ -1,0 +1,310 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/crewed-mars-missions-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "crewed-mars-missions-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem crewed-mars-missions-cs</b></p><a name=\"crewed-mars-missions-cs\"> </a><a name=\"hccrewed-mars-missions-cs\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>proposer</td><td>proposer</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#proposer</td><td>string</td><td>Organization or individual proposing the architecture</td></tr><tr><td>year</td><td>year</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#year</td><td>integer</td><td>Year of proposal or major update</td></tr><tr><td>crewSize</td><td>crewSize</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#crewSize</td><td>integer</td><td>Nominal crew size</td></tr><tr><td>surfaceStayDays</td><td>surfaceStayDays</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#surfaceStayDays</td><td>integer</td><td>Planned surface stay duration in days</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>proposer</b></td><td><b>year</b></td><td><b>crewSize</b></td><td><b>surfaceStayDays</b></td></tr><tr><td style=\"white-space:nowrap\">marsDirect<a name=\"crewed-mars-missions-cs-marsDirect\"> </a></td><td>Mars Direct (Zubrin 1990)</td><td>Two-launch architecture with ISRU propellant production on Mars, direct Earth-Mars transit, 18-month surface stay, artificial gravity tether, crew of 4</td><td>Robert Zubrin / Mars Society</td><td>1990</td><td>4</td><td>550</td></tr><tr><td style=\"white-space:nowrap\">nasaDRM1<a name=\"crewed-mars-missions-cs-nasaDRM1\"> </a></td><td>NASA Design Reference Mission 1.0 (1993)</td><td>NASA's first Mars Semi-Direct adaptation, split missions with ISRU but added Mars Orbit Rendezvous with MAV</td><td>NASA</td><td>1993</td><td>4</td><td/></tr><tr><td style=\"white-space:nowrap\">nasaDRM3<a name=\"crewed-mars-missions-cs-nasaDRM3\"> </a></td><td>NASA Design Reference Mission 3.0 (1998)</td><td>NASA DRM evolution with increased crew size (6) and hardware redundancy, Semi-Direct architecture</td><td>NASA</td><td>1998</td><td>6</td><td/></tr><tr><td style=\"white-space:nowrap\">nasaDRA5<a name=\"crewed-mars-missions-cs-nasaDRA5\"> </a></td><td>NASA Design Reference Architecture 5.0 (2009)</td><td>Conjunction-class mission with ~3 launches, nuclear thermal rockets for cargo, fission surface power (~25 kW), long surface stays</td><td>NASA</td><td>2009</td><td>6</td><td>500</td></tr><tr><td style=\"white-space:nowrap\">austereMars<a name=\"crewed-mars-missions-cs-austereMars\"> </a></td><td>NASA Austere Human Missions to Mars (2009)</td><td>Cost-reduced DRA 5.0 variant with simplified technology, 4 crew, reduced infrastructure</td><td>NASA</td><td>2009</td><td>4</td><td/></tr><tr><td style=\"white-space:nowrap\">journeyToMars<a name=\"crewed-mars-missions-cs-journeyToMars\"> </a></td><td>NASA Journey to Mars (2015)</td><td>Moon-first strategy (Artemis), then Mars in 2030s, incremental capability buildup, Gateway staging</td><td>NASA</td><td>2015</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">spacexStarship<a name=\"crewed-mars-missions-cs-spacexStarship\"> </a></td><td>SpaceX Starship Mars Plan (2016-present)</td><td>Commercial plan using fully reusable Starship, orbital refueling (10-14 tankers), ISRU for return, target ~2029-2031</td><td>SpaceX / Elon Musk</td><td>2016</td><td>12</td><td>180</td></tr><tr><td style=\"white-space:nowrap\">marsOne<a name=\"crewed-mars-missions-cs-marsOne\"> </a></td><td>Mars One (2012-2019)</td><td>Private one-way colonization concept, planned 2023 launch, project defunct 2019</td><td>Mars One / Bas Lansdorp</td><td>2012</td><td>4</td><td/></tr><tr><td style=\"white-space:nowrap\">inspirationMars<a name=\"crewed-mars-missions-cs-inspirationMars\"> </a></td><td>Inspiration Mars (2013)</td><td>Proposed crewed Mars flyby (Dennis Tito plan for 2018 launch window), not surface landing</td><td>Dennis Tito / Inspiration Mars Foundation</td><td>2013</td><td>2</td><td/></tr><tr><td style=\"white-space:nowrap\">projectOlympus<a name=\"crewed-mars-missions-cs-projectOlympus\"> </a></td><td>Project Olympus / Athena (2025)</td><td>Jared Isaacman plan for accelerated NASA-commercial Mars efforts, uncrewed demo by 2026, nuclear-electric propulsion priority</td><td>Jared Isaacman</td><td>2025</td><td/><td/></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "CrewedMarsMissionsCS"] ; # 
+  fhir:title [ fhir:v "Human Mars Mission Plans"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-25T11:43:35-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "proposer" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#proposer"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#proposer>
+     ] ;
+     fhir:description [ fhir:v "Organization or individual proposing the architecture" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "year" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#year"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#year>
+     ] ;
+     fhir:description [ fhir:v "Year of proposal or major update" ] ;
+     fhir:type [ fhir:v "integer" ]
+  ] [
+     fhir:code [ fhir:v "crewSize" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#crewSize"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#crewSize>
+     ] ;
+     fhir:description [ fhir:v "Nominal crew size" ] ;
+     fhir:type [ fhir:v "integer" ]
+  ] [
+     fhir:code [ fhir:v "surfaceStayDays" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#surfaceStayDays"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#surfaceStayDays>
+     ] ;
+     fhir:description [ fhir:v "Planned surface stay duration in days" ] ;
+     fhir:type [ fhir:v "integer" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "marsDirect" ] ;
+     fhir:display [ fhir:v "Mars Direct (Zubrin 1990)" ] ;
+     fhir:definition [ fhir:v "Two-launch architecture with ISRU propellant production on Mars, direct Earth-Mars transit, 18-month surface stay, artificial gravity tether, crew of 4" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Robert Zubrin / Mars Society"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 1990
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 4
+       ]
+     ] [
+       fhir:code [ fhir:v "surfaceStayDays" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 550
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "nasaDRM1" ] ;
+     fhir:display [ fhir:v "NASA Design Reference Mission 1.0 (1993)" ] ;
+     fhir:definition [ fhir:v "NASA's first Mars Semi-Direct adaptation, split missions with ISRU but added Mars Orbit Rendezvous with MAV" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 1993
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "nasaDRM3" ] ;
+     fhir:display [ fhir:v "NASA Design Reference Mission 3.0 (1998)" ] ;
+     fhir:definition [ fhir:v "NASA DRM evolution with increased crew size (6) and hardware redundancy, Semi-Direct architecture" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 1998
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 6
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "nasaDRA5" ] ;
+     fhir:display [ fhir:v "NASA Design Reference Architecture 5.0 (2009)" ] ;
+     fhir:definition [ fhir:v "Conjunction-class mission with ~3 launches, nuclear thermal rockets for cargo, fission surface power (~25 kW), long surface stays" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2009
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 6
+       ]
+     ] [
+       fhir:code [ fhir:v "surfaceStayDays" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 500
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "austereMars" ] ;
+     fhir:display [ fhir:v "NASA Austere Human Missions to Mars (2009)" ] ;
+     fhir:definition [ fhir:v "Cost-reduced DRA 5.0 variant with simplified technology, 4 crew, reduced infrastructure" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2009
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "journeyToMars" ] ;
+     fhir:display [ fhir:v "NASA Journey to Mars (2015)" ] ;
+     fhir:definition [ fhir:v "Moon-first strategy (Artemis), then Mars in 2030s, incremental capability buildup, Gateway staging" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2015
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "spacexStarship" ] ;
+     fhir:display [ fhir:v "SpaceX Starship Mars Plan (2016-present)" ] ;
+     fhir:definition [ fhir:v "Commercial plan using fully reusable Starship, orbital refueling (10-14 tankers), ISRU for return, target ~2029-2031" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "SpaceX / Elon Musk"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2016
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 12
+       ]
+     ] [
+       fhir:code [ fhir:v "surfaceStayDays" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 180
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "marsOne" ] ;
+     fhir:display [ fhir:v "Mars One (2012-2019)" ] ;
+     fhir:definition [ fhir:v "Private one-way colonization concept, planned 2023 launch, project defunct 2019" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Mars One / Bas Lansdorp"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2012
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 4
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "inspirationMars" ] ;
+     fhir:display [ fhir:v "Inspiration Mars (2013)" ] ;
+     fhir:definition [ fhir:v "Proposed crewed Mars flyby (Dennis Tito plan for 2018 launch window), not surface landing" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Dennis Tito / Inspiration Mars Foundation"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2013
+       ]
+     ] [
+       fhir:code [ fhir:v "crewSize" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "projectOlympus" ] ;
+     fhir:display [ fhir:v "Project Olympus / Athena (2025)" ] ;
+     fhir:definition [ fhir:v "Jared Isaacman plan for accelerated NASA-commercial Mars efforts, uncrewed demo by 2026, nuclear-electric propulsion priority" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "proposer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Jared Isaacman"
+       ]
+     ] [
+       fhir:code [ fhir:v "year" ] ;
+       fhir:value [
+         a fhir:Integer ;
+         fhir:v 2025
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Decompression Protocols and Procedures - TTL Representation -  v0.4.2</title>
+    <title>Decompression Protocols and Procedures - TTL Representation -  v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12.139"}
-    h3,h4,h5,h6{--heading-prefix:"12.139"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.209"}
+    h3,h4,h5,h6{--heading-prefix:"17.209"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.4.2 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -95,6 +95,15 @@
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -107,6 +116,19 @@
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
       </li>
     </ul>
   </li>
@@ -160,7 +182,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -215,7 +237,7 @@
         
           Active
           
-            as of 2025-06-01
+            as of 2025-12-25
           
         
       </td>
@@ -231,7 +253,7 @@
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
+  <pre class="rdf" data-fhir="generated" style="white-space: pre; overflow: hidden"><code class="language-turtle">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
 @prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
@@ -242,18 +264,21 @@
 
  a fhir:CodeSystem ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;decompression-protocol-cs&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
+  <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;decompression-protocol-cs&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem decompression-protocol-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;decompression-protocol-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcdecompression-protocol-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;decompression-protocol-cs-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;buhlmann-zh-l16c&lt;a name=\&quot;decompression-protocol-cs-buhlmann-zh-l16c\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bühlmann ZH-L16C&lt;/td&gt;&lt;td&gt;Bühlmann decompression algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rgbm&lt;a name=\&quot;decompression-protocol-cs-rgbm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reduced Gradient Bubble Model&lt;/td&gt;&lt;td&gt;RGBM decompression algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vpm&lt;a name=\&quot;decompression-protocol-cs-vpm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varying Permeability Model&lt;/td&gt;&lt;td&gt;VPM decompression algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;usn-tables&lt;a name=\&quot;decompression-protocol-cs-usn-tables\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;US Navy Tables&lt;/td&gt;&lt;td&gt;US Navy decompression tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;noaa-tables&lt;a name=\&quot;decompression-protocol-cs-noaa-tables\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOAA Tables&lt;/td&gt;&lt;td&gt;NOAA decompression tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;padi-tables&lt;a name=\&quot;decompression-protocol-cs-padi-tables\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PADI Tables&lt;/td&gt;&lt;td&gt;PADI recreational decompression tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;safety-stop-3min&lt;a name=\&quot;decompression-protocol-cs-safety-stop-3min\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;3-Minute Safety Stop&lt;/td&gt;&lt;td&gt;Standard 3-minute safety stop at 15 feet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;safety-stop-5min&lt;a name=\&quot;decompression-protocol-cs-safety-stop-5min\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;5-Minute Safety Stop&lt;/td&gt;&lt;td&gt;Extended 5-minute safety stop&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deep-stop&lt;a name=\&quot;decompression-protocol-cs-deep-stop\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deep Stop&lt;/td&gt;&lt;td&gt;Deep safety stop at half maximum depth&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mandatory-deco&lt;a name=\&quot;decompression-protocol-cs-mandatory-deco\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mandatory Decompression&lt;/td&gt;&lt;td&gt;Required decompression stop&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-deco&lt;a name=\&quot;decompression-protocol-cs-emergency-deco\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Decompression&lt;/td&gt;&lt;td&gt;Emergency decompression procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;normal-ascent&lt;a name=\&quot;decompression-protocol-cs-normal-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normal Ascent&lt;/td&gt;&lt;td&gt;Standard controlled ascent procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-ascent&lt;a name=\&quot;decompression-protocol-cs-emergency-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Ascent&lt;/td&gt;&lt;td&gt;Rapid emergency ascent procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;assisted-ascent&lt;a name=\&quot;decompression-protocol-cs-assisted-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assisted Ascent&lt;/td&gt;&lt;td&gt;Ascent with assistance from dive partner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;controlled-emergency-ascent&lt;a name=\&quot;decompression-protocol-cs-controlled-emergency-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Controlled Emergency Ascent&lt;/td&gt;&lt;td&gt;Controlled emergency swimming ascent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;buoyant-ascent&lt;a name=\&quot;decompression-protocol-cs-buoyant-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Buoyant Emergency Ascent&lt;/td&gt;&lt;td&gt;Emergency ascent using buoyancy control&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nitrox-switch&lt;a name=\&quot;decompression-protocol-cs-nitrox-switch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nitrox Gas Switch&lt;/td&gt;&lt;td&gt;Switching to nitrox decompression gas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;oxygen-switch&lt;a name=\&quot;decompression-protocol-cs-oxygen-switch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oxygen Switch&lt;/td&gt;&lt;td&gt;Switching to pure oxygen for decompression&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;trimix-switch&lt;a name=\&quot;decompression-protocol-cs-trimix-switch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trimix Switch&lt;/td&gt;&lt;td&gt;Switching between trimix breathing gases&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;air-break&lt;a name=\&quot;decompression-protocol-cs-air-break\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Air Break&lt;/td&gt;&lt;td&gt;Air break during oxygen decompression&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;altitude-diving&lt;a name=\&quot;decompression-protocol-cs-altitude-diving\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Altitude Diving&lt;/td&gt;&lt;td&gt;Decompression procedures for altitude diving&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cold-water&lt;a name=\&quot;decompression-protocol-cs-cold-water\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cold Water Diving&lt;/td&gt;&lt;td&gt;Cold water decompression considerations&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;overhead-environment&lt;a name=\&quot;decompression-protocol-cs-overhead-environment\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Overhead Environment&lt;/td&gt;&lt;td&gt;Decompression in overhead environments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;repetitive-diving&lt;a name=\&quot;decompression-protocol-cs-repetitive-diving\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Repetitive Diving&lt;/td&gt;&lt;td&gt;Multiple dive decompression planning&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem decompression-protocol-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;decompression-protocol-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcdecompression-protocol-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;buhlmann-zh-l16c&lt;a name=\&quot;decompression-protocol-cs-buhlmann-zh-l16c\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bühlmann ZH-L16C&lt;/td&gt;&lt;td&gt;Bühlmann decompression algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rgbm&lt;a name=\&quot;decompression-protocol-cs-rgbm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Reduced Gradient Bubble Model&lt;/td&gt;&lt;td&gt;RGBM decompression algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vpm&lt;a name=\&quot;decompression-protocol-cs-vpm\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Varying Permeability Model&lt;/td&gt;&lt;td&gt;VPM decompression algorithm&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;usn-tables&lt;a name=\&quot;decompression-protocol-cs-usn-tables\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;US Navy Tables&lt;/td&gt;&lt;td&gt;US Navy decompression tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;noaa-tables&lt;a name=\&quot;decompression-protocol-cs-noaa-tables\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NOAA Tables&lt;/td&gt;&lt;td&gt;NOAA decompression tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;padi-tables&lt;a name=\&quot;decompression-protocol-cs-padi-tables\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;PADI Tables&lt;/td&gt;&lt;td&gt;PADI recreational decompression tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;safety-stop-3min&lt;a name=\&quot;decompression-protocol-cs-safety-stop-3min\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;3-Minute Safety Stop&lt;/td&gt;&lt;td&gt;Standard 3-minute safety stop at 15 feet&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;safety-stop-5min&lt;a name=\&quot;decompression-protocol-cs-safety-stop-5min\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;5-Minute Safety Stop&lt;/td&gt;&lt;td&gt;Extended 5-minute safety stop&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deep-stop&lt;a name=\&quot;decompression-protocol-cs-deep-stop\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deep Stop&lt;/td&gt;&lt;td&gt;Deep safety stop at half maximum depth&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;mandatory-deco&lt;a name=\&quot;decompression-protocol-cs-mandatory-deco\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mandatory Decompression&lt;/td&gt;&lt;td&gt;Required decompression stop&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-deco&lt;a name=\&quot;decompression-protocol-cs-emergency-deco\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Decompression&lt;/td&gt;&lt;td&gt;Emergency decompression procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;normal-ascent&lt;a name=\&quot;decompression-protocol-cs-normal-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Normal Ascent&lt;/td&gt;&lt;td&gt;Standard controlled ascent procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-ascent&lt;a name=\&quot;decompression-protocol-cs-emergency-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Ascent&lt;/td&gt;&lt;td&gt;Rapid emergency ascent procedure&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;assisted-ascent&lt;a name=\&quot;decompression-protocol-cs-assisted-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assisted Ascent&lt;/td&gt;&lt;td&gt;Ascent with assistance from dive partner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;controlled-emergency-ascent&lt;a name=\&quot;decompression-protocol-cs-controlled-emergency-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Controlled Emergency Ascent&lt;/td&gt;&lt;td&gt;Controlled emergency swimming ascent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;buoyant-ascent&lt;a name=\&quot;decompression-protocol-cs-buoyant-ascent\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Buoyant Emergency Ascent&lt;/td&gt;&lt;td&gt;Emergency ascent using buoyancy control&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nitrox-switch&lt;a name=\&quot;decompression-protocol-cs-nitrox-switch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nitrox Gas Switch&lt;/td&gt;&lt;td&gt;Switching to nitrox decompression gas&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;oxygen-switch&lt;a name=\&quot;decompression-protocol-cs-oxygen-switch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Oxygen Switch&lt;/td&gt;&lt;td&gt;Switching to pure oxygen for decompression&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;trimix-switch&lt;a name=\&quot;decompression-protocol-cs-trimix-switch\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Trimix Switch&lt;/td&gt;&lt;td&gt;Switching between trimix breathing gases&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;air-break&lt;a name=\&quot;decompression-protocol-cs-air-break\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Air Break&lt;/td&gt;&lt;td&gt;Air break during oxygen decompression&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;altitude-diving&lt;a name=\&quot;decompression-protocol-cs-altitude-diving\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Altitude Diving&lt;/td&gt;&lt;td&gt;Decompression procedures for altitude diving&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cold-water&lt;a name=\&quot;decompression-protocol-cs-cold-water\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cold Water Diving&lt;/td&gt;&lt;td&gt;Cold water decompression considerations&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;overhead-environment&lt;a name=\&quot;decompression-protocol-cs-overhead-environment\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Overhead Environment&lt;/td&gt;&lt;td&gt;Decompression in overhead environments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;repetitive-diving&lt;a name=\&quot;decompression-protocol-cs-repetitive-diving\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Repetitive Diving&lt;/td&gt;&lt;td&gt;Multiple dive decompression planning&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.4.2&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs&gt;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.5.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DecompressionProtocolCS&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Decompression Protocols and Procedures&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-06-01T23:37:11-05:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-12-25T11:43:35-07:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MITRE&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MITRE&quot; ] ;
@@ -388,7 +413,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 23:37-0500">2025-06-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

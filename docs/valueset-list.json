@@ -1,8 +1,109 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-all-devices-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "ArtemisAllDevicesVS",
+      "title" : "All Artemis Devices",
+      "description" : "Both certified and prototype Artemis devices",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs",
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-certified-devices-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "ArtemisCertifiedDevicesVS",
+      "title" : "Artemis Certified Devices",
+      "description" : "Flight-qualified Artemis mission hardware",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-landing-region-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "ArtemisLandingRegionVS",
+      "title" : "Artemis Landing Regions",
+      "description" : "Candidate Artemis III south pole landing regions for Location bindings",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "ArtemisMissionVS",
+      "title" : "Artemis Missions",
+      "description" : "All Artemis program missions I-V",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-prototype-devices-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "ArtemisPrototypeDevicesVS",
+      "title" : "Artemis Prototype Devices",
+      "description" : "Developmental and test Artemis hardware",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "BehavioralHealthMetricsVS",
+      "title" : "Behavioral Health Metrics Value Set",
+      "description" : "Key behavioral health state metrics used in aerospace behavioral health monitoring.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "CognitivePerformanceIndicatorsVS",
+      "title" : "Cognitive Performance Indicators Value Set",
+      "description" : "Cognitive and vigilance performance indicators relevant to operational readiness.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "CrewedMarsMissionsVS",
+      "title" : "Human Mars Mission Plans",
+      "description" : "Proposed and conceptual human mission architectures to Mars",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "IsolationSyndromeFactorsVS",
+      "title" : "Isolation Syndrome Factors Value Set",
+      "description" : "Risk factors related to isolation and confinement that affect behavioral health.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "LocationCapabilitiesVS",
       "title" : "Location Capabilities Value Set",
@@ -12,8 +113,64 @@
       ]
     },
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "MarsAllDevicesVS",
+      "title" : "All Mars Mission Devices",
+      "description" : "Both certified and prototype Mars devices",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs",
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "MarsCertifiedDevicesVS",
+      "title" : "Mars Mission Devices - Certified",
+      "description" : "Flight-qualified hardware for Mars missions",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-prototype-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "MarsPrototypeDevicesVS",
+      "title" : "Mars Mission Devices - Prototype",
+      "description" : "Developmental and test hardware for Mars missions",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-landing-sites-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "MarsLandingSitesVS",
+      "title" : "Mars Landing Sites",
+      "description" : "Candidate landing sites for human Mars missions",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "MarsMissionsVS",
+      "title" : "Mars Missions",
+      "description" : "All Mars missions (robotic and human, completed and planned)",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs"
+      ]
+    },
+    {
       "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "OperationalStatusVS",
       "title" : "Operational Status Value Set",
@@ -23,8 +180,30 @@
       ]
     },
     {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "SpaceExerciseModalityVS",
+      "title" : "Space Exercise Modality Value Set",
+      "description" : "Permitted space exercise modalities, derived from the Space Exercise Modality Code System.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"
+      ]
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "StressCountermeasuresVS",
+      "title" : "Stress Countermeasures Value Set",
+      "description" : "Standardized set of psychological countermeasures used to mitigate stress and support mental health.",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "AircraftFumeExposureValueSet",
       "title" : "Aircraft Fume Exposure",
@@ -33,7 +212,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "AstronautBackPain",
       "title" : "Back Pain and Space Travel",
@@ -42,7 +221,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "GimbalContraindicatedConditions",
       "title" : "Gimbal Contraindications",
@@ -51,7 +230,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/LunarDustToxicityValueSet",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "LunarDustToxicityValueSet",
       "title" : "Lunar Dust Toxicity",
@@ -60,7 +239,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "MuscleStiffnessAndSpaceHealth",
       "title" : "Muscle Stiffness",
@@ -69,7 +248,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SleepLossHypoxiaEffect",
       "title" : "Sleep Loss and Hypoxia Effects",
@@ -78,7 +257,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SleepLossHypoxiaResponses",
       "title" : "Sleep Loss and Hypoxia Responses",
@@ -87,7 +266,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceAdaptationBoneHealth",
       "title" : "Adaptations of Bone Health",
@@ -96,7 +275,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceRadiationRisksVS",
       "title" : "Space Radiation Risks ValueSet",
@@ -105,7 +284,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceTravelBrainChanges",
       "title" : "Brain and Neurologic Changes",
@@ -114,7 +293,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceflightStressFactors",
       "title" : "Stress and Physiological Factors",
@@ -122,8 +301,19 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "CalorieDeficitRiskVS",
+      "title" : "Calorie Deficit Risk Levels",
+      "description" : "Risk categorization for caloric deficits",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/calorie-deficit-risk-cs"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "DecompressionProcedures",
       "title" : "Decompression Procedures",
@@ -135,7 +325,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "DivingContraindicatedConditions",
       "title" : "Diving Medical Contraindications",
@@ -144,7 +334,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "DivingMedicalExaminations",
       "title" : "Diving Medical Examinations",
@@ -155,7 +345,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/dosimeter-type-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "DosimeterTypeVS",
       "title" : "Dosimeter Types",
@@ -165,8 +355,28 @@
       ]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/evs-units-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "EVSUnitsVS",
+      "title" : "EVS Units",
+      "description" : "Units for Exercise Vital Sign measurements",
+      "systems" : ["http://unitsofmeasure.org"]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/hydration-type-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "HydrationTypeVS",
+      "title" : "Hydration Types",
+      "description" : "Types of hydration products used in space",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/hydration-type-cs"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "HyperbaricCapabilitiesVS",
       "title" : "Hyperbaric Chamber Capabilities",
@@ -177,7 +387,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "HyperbaricChamberTypeVS",
       "title" : "Hyperbaric Chamber Types",
@@ -187,8 +397,19 @@
       ]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "MacronutrientMetricsVS",
+      "title" : "Macronutrient Metrics",
+      "description" : "Measurement types for macronutrient tracking",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "NeutralBuoyancyTrainingActivities",
       "title" : "Neutral Buoyancy Training Activities",
@@ -198,8 +419,19 @@
       ]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/nutrition-inventory-status-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "NutritionInventoryStatusVS",
+      "title" : "Nutrition Inventory Status",
+      "description" : "Status levels for nutrition inventory management",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "OrganDoseCodesVSComplete",
       "title" : "Complete Organ-Specific Dose Codes",
@@ -210,7 +442,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RadiationCountermeasuresVS",
       "title" : "Radiation Countermeasures",
@@ -221,7 +453,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "RadiationCountermeasuresVSComplete",
       "title" : "Complete Radiation Countermeasures",
@@ -233,7 +465,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "RadiationDetectorTypeVSComplete",
       "title" : "Complete Radiation Detector Types",
@@ -245,7 +477,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RadiationDoseUnitsVS",
       "title" : "Radiation Dose Units",
@@ -254,7 +486,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/regulatory-standards",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "RegulatoryStandards",
       "title" : "Regulatory Standards for Diving and Space Medicine",
@@ -266,7 +498,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceCardiovascularEffectsValueSet",
       "title" : "Space Cardiovascular Effects",
@@ -275,7 +507,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceEnvironmentalFactorsValueSet",
       "title" : "Space Environmental Factors",
@@ -284,7 +516,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-monitoring-procedures",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceMonitoringProceduresValueSet",
       "title" : "Space Monitoring Procedures",
@@ -293,7 +525,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceNeurologicalEffectsValueSet",
       "title" : "Space Neurological Effects",
@@ -301,8 +533,30 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-nutrition-type-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "SpaceNutritionTypeVS",
+      "title" : "Space Nutrition Types",
+      "description" : "Types of nutritional products available in space missions",
+      "systems" : [
+        "https://mitre.org/fhir/space-health/CodeSystem/space-nutrition-type-cs"
+      ]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "SpacePerformanceMetricVS",
+      "title" : "Space Exercise Performance Metrics",
+      "description" : "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)",
+      "systems" : [
+        "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs"
+      ]
+    },
+    {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-physiological-effects",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpacePhysiologicalEffectsValueSet",
       "title" : "Space Physiological Effects",
@@ -311,7 +565,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpacePsychologicalEffectsValueSet",
       "title" : "Space Psychological Effects",
@@ -320,7 +574,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "SpaceRadiationDoseCodesVSComplete",
       "title" : "Complete Space Radiation Dose Measurement Codes",
@@ -332,7 +586,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-effects",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceRadiationEffectsValueSet",
       "title" : "Space Radiation Effects",
@@ -341,7 +595,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceRadiationTypeVS",
       "title" : "Space Radiation Types",
@@ -352,7 +606,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "active",
       "name" : "SpaceRadiationTypeVSComplete",
       "title" : "Complete Space Radiation Types",
@@ -364,7 +618,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/space-visual-effects",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "SpaceVisualEffectsValueSet",
       "title" : "Space Visual Effects",
@@ -373,7 +627,7 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-communication-systems",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "UnderwaterCommunicationSystems",
       "title" : "Underwater Communication Systems",
@@ -384,12 +638,21 @@
     },
     {
       "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures",
-      "version" : "0.4.2",
+      "version" : "0.5.0",
       "status" : "draft",
       "name" : "UnderwaterTrainingProcedures",
       "title" : "Underwater Training Procedures",
       "description" : "Procedures and activities conducted during underwater training",
       "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://mitre.org/fhir/space-health/ValueSet/water-volume-units-vs",
+      "version" : "0.5.0",
+      "status" : "active",
+      "name" : "WaterVolumeUnitsVS",
+      "title" : "Water Volume Units",
+      "description" : "Units for measuring water volume",
+      "systems" : ["http://unitsofmeasure.org"]
     }
   ]
 }

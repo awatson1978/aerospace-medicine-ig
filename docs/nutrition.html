@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Nutrition -  v0.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Nutrition</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Nutrition</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#nutrition-and-calorie-deficient-diets" id="markdown-toc-nutrition-and-calorie-deficient-diets">Nutrition and Calorie-Deficient Diets</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a>        <ul>
+          <li><a href="#core-profiles" id="markdown-toc-core-profiles">Core Profiles</a></li>
+          <li><a href="#data-architecture" id="markdown-toc-data-architecture">Data Architecture</a></li>
+          <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+        </ul>
+      </li>
+      <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a>        <ul>
+          <li><a href="#microgravity-effects" id="markdown-toc-microgravity-effects">Microgravity Effects</a></li>
+          <li><a href="#energy-expenditure" id="markdown-toc-energy-expenditure">Energy Expenditure</a></li>
+          <li><a href="#cognitive-and-immune-function" id="markdown-toc-cognitive-and-immune-function">Cognitive and Immune Function</a></li>
+          <li><a href="#hydration" id="markdown-toc-hydration">Hydration</a></li>
+          <li><a href="#biosphere-2-as-an-analog" id="markdown-toc-biosphere-2-as-an-analog">Biosphere 2 as an Analog</a></li>
+        </ul>
+      </li>
+      <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a>        <ul>
+          <li><a href="#daily-macronutrient-logging" id="markdown-toc-daily-macronutrient-logging">Daily Macronutrient Logging</a></li>
+          <li><a href="#device-assisted-measurement" id="markdown-toc-device-assisted-measurement">Device-Assisted Measurement</a></li>
+          <li><a href="#physiologic-observations" id="markdown-toc-physiologic-observations">Physiologic Observations</a></li>
+          <li><a href="#inventory-telemetry" id="markdown-toc-inventory-telemetry">Inventory Telemetry</a></li>
+          <li><a href="#risk-threshold-alerts" id="markdown-toc-risk-threshold-alerts">Risk Threshold Alerts</a></li>
+        </ul>
+      </li>
+      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a>        <ul>
+          <li><a href="#core-fhir-resources" id="markdown-toc-core-fhir-resources">Core FHIR Resources</a></li>
+          <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
+        </ul>
+      </li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a>        <ul>
+          <li><a href="#1-pre-flight-nutritional-baseline-assessment" id="markdown-toc-1-pre-flight-nutritional-baseline-assessment">1. Pre-Flight Nutritional Baseline Assessment</a></li>
+          <li><a href="#2-mission-menu-planning-and-shelf-life-optimization" id="markdown-toc-2-mission-menu-planning-and-shelf-life-optimization">2. Mission Menu Planning and Shelf-Life Optimization</a></li>
+          <li><a href="#3-real-time-intake-monitoring-and-calorie-deficit-alerts" id="markdown-toc-3-real-time-intake-monitoring-and-calorie-deficit-alerts">3. Real-Time Intake Monitoring and Calorie Deficit Alerts</a></li>
+          <li><a href="#4-post-mission-metabolic-assessment" id="markdown-toc-4-post-mission-metabolic-assessment">4. Post-Mission Metabolic Assessment</a></li>
+          <li><a href="#5-career-nutrition-profile-management" id="markdown-toc-5-career-nutrition-profile-management">5. Career Nutrition Profile Management</a></li>
+          <li><a href="#6-research-and-epidemiology" id="markdown-toc-6-research-and-epidemiology">6. Research and Epidemiology</a></li>
+        </ul>
+      </li>
+      <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a>        <ul>
+          <li><a href="#biochemical-tracking" id="markdown-toc-biochemical-tracking">Biochemical Tracking</a></li>
+          <li><a href="#environmental-integration" id="markdown-toc-environmental-integration">Environmental Integration</a></li>
+          <li><a href="#organ-specific-nutritional-considerations" id="markdown-toc-organ-specific-nutritional-considerations">Organ-Specific Nutritional Considerations</a></li>
+        </ul>
+      </li>
+      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a>        <ul>
+          <li><a href="#environmental-control-and-life-support-systems-eclss" id="markdown-toc-environmental-control-and-life-support-systems-eclss">Environmental Control and Life Support Systems (ECLSS)</a></li>
+          <li><a href="#mission-control-systems" id="markdown-toc-mission-control-systems">Mission Control Systems</a></li>
+          <li><a href="#longitudinal-study-of-astronaut-health" id="markdown-toc-longitudinal-study-of-astronaut-health">Longitudinal Study of Astronaut Health</a></li>
+          <li><a href="#space-logistics-and-supply-chain-systems" id="markdown-toc-space-logistics-and-supply-chain-systems">Space Logistics and Supply Chain Systems</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a>        <ul>
+          <li><a href="#example-1-spacenutritionintake" id="markdown-toc-example-1-spacenutritionintake">Example 1: SpaceNutritionIntake</a></li>
+          <li><a href="#example-2-caloriedeficitassessment" id="markdown-toc-example-2-caloriedeficitassessment">Example 2: CalorieDeficitAssessment</a></li>
+        </ul>
+      </li>
+      <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
+      <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a>        <ul>
+          <li><a href="#adaptive-menu-systems" id="markdown-toc-adaptive-menu-systems">Adaptive Menu Systems</a></li>
+          <li><a href="#next-generation-food-production" id="markdown-toc-next-generation-food-production">Next-Generation Food Production</a></li>
+          <li><a href="#personalized-nutrition" id="markdown-toc-personalized-nutrition">Personalized Nutrition</a></li>
+          <li><a href="#smart-packaging" id="markdown-toc-smart-packaging">Smart Packaging</a></li>
+          <li><a href="#behavioral-nudging" id="markdown-toc-behavioral-nudging">Behavioral Nudging</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="nutrition-and-calorie-deficient-diets">Nutrition and Calorie-Deficient Diets</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>When the crew of <strong>Biosphere 2</strong> emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited <strong>improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity</strong>findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: <strong>astronauts often operate at an energetic deficit</strong>, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.</p>
+
+<p>On the <strong>International Space Station</strong>, astronauts routinely burn <strong>2,5003,500 kcal/day</strong> yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.</p>
+
+<p>This module extends the HL7 Aerospace Medicine Implementation Guideincluding the architectural principles demonstrated in <a href="neutral-buoyancy.html">Neutral Buoyancy</a> and <a href="radiation-tracking.html">Radiation Tracking</a>into a comprehensive <strong>Nutrition and Calorie Deficit Management</strong> framework leveraging <strong>FHIR NutritionIntake, NutritionProduct, Observation, InventoryItem, Device</strong>, and mission-context extensions.</p>
+
+<h2 id="fhir-implementation-architecture">FHIR Implementation Architecture</h2>
+
+<h3 id="core-profiles">Core Profiles</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Purpose</th>
+      <th>Key Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SpaceNutritionIntake</strong></td>
+      <td>Document actual daily intake and hydration events</td>
+      <td>Macronutrient breakdown, micronutrient sufficiency, hydration type/volume, route</td>
+    </tr>
+    <tr>
+      <td><strong>SpaceNutritionProduct</strong></td>
+      <td>Describe space-rated food, supplements, electrolytes</td>
+      <td>Shelf-life, rehydration requirements, preparation method, hazard analysis</td>
+    </tr>
+    <tr>
+      <td><strong>SpaceNutritionInventoryItem</strong></td>
+      <td>Track stores aboard spacecraft or planetary habitats</td>
+      <td>Lot number, mass, burn rate, expired/shortage flags</td>
+    </tr>
+    <tr>
+      <td><strong>CalorieDeficitAssessment</strong></td>
+      <td>Quantify acute and cumulative calorie deficits</td>
+      <td>Resting metabolic rate, total expenditure, intake vs. requirement</td>
+    </tr>
+    <tr>
+      <td><strong>MetabolicRiskSummary</strong></td>
+      <td>Evaluate risk from prolonged deficits</td>
+      <td>Muscle wasting, bone turnover, hormonal signs of underfeeding</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These profiles parallel the architectural pattern used in radiation trackingseparating individual measurement, device/product specification, and longitudinal summaries.</p>
+
+<h3 id="data-architecture">Data Architecture</h3>
+
+<p>Nutrition tracking incorporates multiple concurrent dimensions:</p>
+
+<ul>
+  <li><strong>Temporal Context</strong>: Per-meal, per-day, weekly, expedition-level summaries</li>
+  <li><strong>Macronutrient Spectrum</strong>: Carbohydrates, proteins, fats, fiber</li>
+  <li><strong>Micronutrient Sufficiency</strong>: Iron, B12, vitamin D, electrolytes</li>
+  <li><strong>Hydration Balance</strong>: Water, electrolyte mixes, IV hydration events</li>
+  <li><strong>Inventory State</strong>: Store levels, consumption rates, spoilage, supply chain limits</li>
+  <li><strong>Mission Context</strong>: EVA days, exercise workloads, planetary gravity differences</li>
+</ul>
+
+<p>All measurements link to <strong>MissionContext</strong> extensions used in other IG modules.</p>
+
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<p>New code systems and value sets include:</p>
+
+<ul>
+  <li><strong>SpaceNutritionTypeCS</strong>: freeze-dried meal, thermo-stabilized entr�e, fresh produce payload, supplemental electrolyte mix</li>
+  <li><strong>MacronutrientMetricsCS</strong>: kcal, carb-grams, fat-grams, protein-grams</li>
+  <li><strong>HydrationTypeCS</strong>: potable water, ORS, electrolyte packet, IV saline</li>
+  <li><strong>NutritionInventoryStatusCS</strong>: adequate, low, critical, expired</li>
+  <li><strong>CalorieDeficitRiskVS</strong>: mild (&lt;300 kcal/day), moderate (300600), severe (&gt;600), extreme (&gt;1,000 kcal/day)</li>
+</ul>
+
+<h2 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h2>
+
+<p>Caloric deficit in space is not merely a dietary inconvenienceit is a <strong>whole-system physiologic perturbation</strong>. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutritiona constant battle between physiologic needs and environmental constraints.</p>
+
+<h3 id="microgravity-effects">Microgravity Effects</h3>
+
+<ul>
+  <li>Loss of mechanical loading accelerates <strong>muscle atrophy</strong> and <strong>bone resorption</strong>, amplifying nutritional demands for protein and calcium</li>
+  <li>Appetite suppression is common, partly due to <strong>fluid shifts</strong>, a phenomenon also seen in underwater training analogs</li>
+</ul>
+
+<h3 id="energy-expenditure">Energy Expenditure</h3>
+
+<ul>
+  <li>Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by <strong>400800 kcal/day</strong>, especially during EVA prep</li>
+  <li>Planetary surface operations (Moon/Mars) significantly increase caloric expenditure due to suit mass and reduced-but-nonzero gravity</li>
+</ul>
+
+<h3 id="cognitive-and-immune-function">Cognitive and Immune Function</h3>
+
+<p>Chronic deficits degrade reaction time, stress tolerance, and immune resistancecritical for long-duration missions.</p>
+
+<h3 id="hydration">Hydration</h3>
+
+<p>Dehydration exacerbates orthostatic intolerance, kidney stone risk, and thermoregulation challenges during EVA.</p>
+
+<h3 id="biosphere-2-as-an-analog">Biosphere 2 as an Analog</h3>
+
+<p>Long-term calorie deficit produced <strong>improved metabolic markers</strong> but also measurable <strong>loss of lean mass</strong>requiring careful management in space analogs and missions.</p>
+
+<h2 id="monitoring-strategy">Monitoring Strategy</h2>
+
+<p>Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picturecombining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.</p>
+
+<h3 id="daily-macronutrient-logging">Daily Macronutrient Logging</h3>
+
+<p>Recorded via SpaceNutritionIntake. Includes caloric estimation error margins.</p>
+
+<h3 id="device-assisted-measurement">Device-Assisted Measurement</h3>
+
+<ul>
+  <li>Smart utensils/sensors (mass tracking)</li>
+  <li>Rehydration water meters</li>
+  <li>Meal scanners for barcodes/QR tags (common on ISS inventory)</li>
+</ul>
+
+<h3 id="physiologic-observations">Physiologic Observations</h3>
+
+<ul>
+  <li>Weight, circumferences</li>
+  <li>Bone turnover markers (CTX, P1NP)</li>
+  <li>Resting Metabolic Rate (portable indirect calorimetry)</li>
+  <li>Hydration biomarkers: urine osmolality, Naz/Kz balance</li>
+</ul>
+
+<h3 id="inventory-telemetry">Inventory Telemetry</h3>
+
+<p>Habitat systems continuously track <strong>remaining consumables</strong>, mirroring ECLSS environmental data integration in radiation tracking.</p>
+
+<h3 id="risk-threshold-alerts">Risk Threshold Alerts</h3>
+
+<ul>
+  <li>Greater than 600 kcal/day deficit for 3 consecutive days</li>
+  <li>Less than 1.2 g/kg protein</li>
+  <li>Fluid deficit greater than 1.5 L/day</li>
+</ul>
+
+<p>Alerts feed mission control decision algorithms.</p>
+
+<h2 id="data-model-architecture">Data Model Architecture</h2>
+
+<h3 id="core-fhir-resources">Core FHIR Resources</h3>
+
+<ul>
+  <li><strong>NutritionIntake</strong> � SpaceNutritionIntake</li>
+  <li><strong>NutritionProduct</strong> � SpaceNutritionProduct</li>
+  <li><strong>Observation</strong> � CalorieDeficitAssessment, HydrationStatusObservation</li>
+  <li><strong>InventoryItem</strong> � SpaceNutritionInventoryItem</li>
+  <li><strong>DiagnosticReport</strong> � MetabolicRiskSummary</li>
+</ul>
+
+<h3 id="extensions">Extensions</h3>
+
+<ul>
+  <li><strong>missionContext</strong> (consistent with radiation and NBL modules)</li>
+  <li><strong>energyExpenditure</strong> (kcal/day)</li>
+  <li><strong>hydrationDeficit</strong> (L/day)</li>
+  <li><strong>inventoryRiskFlag</strong> (critical, caution, nominal)</li>
+</ul>
+
+<h2 id="use-cases">Use Cases</h2>
+
+<p>Modeled after the 6-category structure of radiation tracking.</p>
+
+<h3 id="1-pre-flight-nutritional-baseline-assessment">1. Pre-Flight Nutritional Baseline Assessment</h3>
+
+<p>RMR measurement, body composition, micronutrient labs, dietary pattern history.</p>
+
+<h3 id="2-mission-menu-planning-and-shelf-life-optimization">2. Mission Menu Planning and Shelf-Life Optimization</h3>
+
+<p>Match caloric requirements to storage mass limits; adjust based on mission length and resupply cadence.</p>
+
+<h3 id="3-real-time-intake-monitoring-and-calorie-deficit-alerts">3. Real-Time Intake Monitoring and Calorie Deficit Alerts</h3>
+
+<p>Automated detection of chronic underfeeding; feedback to training regimens and EVA planning.</p>
+
+<h3 id="4-post-mission-metabolic-assessment">4. Post-Mission Metabolic Assessment</h3>
+
+<p>Bone markers, endocrine recovery, lean mass changes, comparison to analog missions (NEEMO, NBL).</p>
+
+<h3 id="5-career-nutrition-profile-management">5. Career Nutrition Profile Management</h3>
+
+<p>Trends across multiple missions; risk accumulation for osteoporosis, metabolic disease.</p>
+
+<h3 id="6-research-and-epidemiology">6. Research and Epidemiology</h3>
+
+<p>Study effects of long-term calorie deficit, nutrient timing, circadian misalignment, and analog environments such as Biosphere 2.</p>
+
+<h2 id="enhanced-data-collection">Enhanced Data Collection</h2>
+
+<p>Advanced parameters enable deeper physiologic monitoring and risk assessment:</p>
+
+<h3 id="biochemical-tracking">Biochemical Tracking</h3>
+
+<ul>
+  <li><strong>Amino acid profile tracking</strong> for muscle preservation</li>
+  <li><strong>Omega-3 index</strong> for inflammation control</li>
+  <li><strong>Glycemic variability</strong> (CGM patch)</li>
+</ul>
+
+<h3 id="environmental-integration">Environmental Integration</h3>
+
+<ul>
+  <li><strong>Water reclamation telemetry</strong> integrated with habitat ECLSS data</li>
+  <li><strong>Shelf-life decay curves</strong> for food exposed to radiation or partial gravity</li>
+</ul>
+
+<h3 id="organ-specific-nutritional-considerations">Organ-Specific Nutritional Considerations</h3>
+
+<ul>
+  <li><strong>Bone metabolism</strong>: Ca�z, PTH, vitamin D, collagen breakdown markers</li>
+  <li><strong>Ocular health</strong>: Vitamin A tracking for risk of SANS analogs</li>
+  <li><strong>Cognitive load</strong>: Omega-3, B12, folate sufficiency</li>
+</ul>
+
+<h2 id="integration-with-existing-systems">Integration with Existing Systems</h2>
+
+<h3 id="environmental-control-and-life-support-systems-eclss">Environmental Control and Life Support Systems (ECLSS)</h3>
+
+<ul>
+  <li>Hydration data integrates with water recycling systems (parallel to radiation area monitors)</li>
+  <li>Food warmers, freezers, and rehydration stations report inventory and thermal stability</li>
+</ul>
+
+<h3 id="mission-control-systems">Mission Control Systems</h3>
+
+<ul>
+  <li>Deficit warnings influence EVA scheduling</li>
+  <li>Automated menus adjust to resupply shortages</li>
+  <li>Predictive algorithms forecast protein/water depletion</li>
+</ul>
+
+<h3 id="longitudinal-study-of-astronaut-health">Longitudinal Study of Astronaut Health</h3>
+
+<ul>
+  <li>Nutritional intake inputs population-level studies, similar to LSAH radiation datasets</li>
+</ul>
+
+<h3 id="space-logistics-and-supply-chain-systems">Space Logistics and Supply Chain Systems</h3>
+
+<ul>
+  <li>FHIR InventoryItem records synchronize with manifest systems for lunar/Mars surface caches</li>
+</ul>
+
+<h2 id="implementation-examples">Implementation Examples</h2>
+
+<h3 id="example-1-spacenutritionintake">Example 1: SpaceNutritionIntake</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NutritionIntake"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-nutrition-intake"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"occurenceDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T12:30:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"consumedItem"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"nutritionProduct"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NutritionProduct/FD-Lasagna-01"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"package"</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"nutrient"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"nutrientCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Energy"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">420</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"nutrientCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Protein"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"nutrientCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carbohydrate"</span><span class="w"> </span><span class="p">},</span><span class="w">
+          </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w"> </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iss-expedition-72"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="example-2-caloriedeficitassessment">Example 2: CalorieDeficitAssessment</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/calorie-deficit-assessment"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calorie-deficit"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Daily Calorie Balance"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T23:59:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">-650</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Energy Expenditure"</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">3100</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Energy Intake"</span><span class="w"> </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">2450</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eva-day"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="regulatory-and-standards-alignment">Regulatory and Standards Alignment</h2>
+
+<p>Although nutritional regulation in space is not governed by the same frameworks as radiation exposure, several terrestrial standards apply:</p>
+
+<ul>
+  <li><strong>NASA-STD-3001 Vol. 1 &amp; 2</strong>: Nutritional and metabolic requirements integrated with crew health and human factors</li>
+  <li><strong>DoD &amp; USDA Military Nutrition Standards</strong>: Macronutrient and hydration guidelines for operational environments</li>
+  <li><strong>Codex Alimentarius</strong>: Food safety and shelf-life requirements for packaged foods</li>
+  <li><strong>FDA Nutritional Labeling Standards</strong>: Applied to mission foods and supplements</li>
+  <li><strong>Human Research Program Nutritional Biochemistry Requirements</strong>: NASA metabolic and biochemical surveillance protocols</li>
+</ul>
+
+<h2 id="future-directions">Future Directions</h2>
+
+<h3 id="adaptive-menu-systems">Adaptive Menu Systems</h3>
+
+<p>AI-driven adjustments to inventory, crew preference, and metabolic needs.</p>
+
+<h3 id="next-generation-food-production">Next-Generation Food Production</h3>
+
+<p>In-situ agriculture on lunar/Martian surfaces; hydroponics and algal bioreactors.</p>
+
+<h3 id="personalized-nutrition">Personalized Nutrition</h3>
+
+<p>Genotype-informed macronutrient ratios, microbiome analysis, and precision supplementation.</p>
+
+<h3 id="smart-packaging">Smart Packaging</h3>
+
+<p>Embedded RFID, ripeness sensors, radiation-induced degradation tracking.</p>
+
+<h3 id="behavioral-nudging">Behavioral Nudging</h3>
+
+<p>Interfaces that promote adequate intake during appetite suppression phases.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

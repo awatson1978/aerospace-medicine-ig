@@ -1,8 +1,359 @@
 {
   "package": "mitre.fhir.spacehealth",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "fhirVersion": "4.0.1",
   "extensions": [
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates",
+      "title": "Areographic Coordinates",
+      "types": [
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay",
+      "title": "Communication Delay",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group",
+      "title": "Derived From Activity Group",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure",
+      "title": "Energy Expenditure",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number",
+      "title": "EVA Number",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device",
+      "title": "Exercise Device",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load",
+      "title": "Harness Load",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/hydration-deficit",
+      "title": "Hydration Deficit",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/inventory-risk-flag",
+      "title": "Inventory Risk Flag",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk",
+      "title": "Isolation Risk Factor",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status",
+      "title": "ISRU System Status",
+      "types": [
+        "code",
+        "Quantity",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates",
+      "title": "Lunar Coordinates",
+      "types": [
+        "decimal",
+        "decimal",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "title": "Mission Context",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding",
+      "title": "Radiation Shielding",
+      "types": [
+        "Quantity",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement",
+      "title": "Rehydration Requirement",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay",
+      "title": "Shelf Life Decay",
+      "types": [
+        "Ratio"
+      ]
+    },
     {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness",
       "title": "Cardiovascular Fitness Assessment",
@@ -227,13 +578,6 @@
     {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention",
       "title": "Medical Intervention",
-      "types": [
-        "Reference"
-      ]
-    },
-    {
-      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-context",
-      "title": "Mission Context",
       "types": [
         "Reference"
       ]
@@ -472,22 +816,22 @@
         "title": "Underwater Communication System"
       }
     ],
+    "Procedure": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response",
+        "title": "Underwater Emergency Response"
+      }
+    ],
     "Patient": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut",
-        "title": "Astronaut Patient Profile"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member",
+        "title": "Mars Crew Member Profile"
       }
     ],
     "Condition": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition",
         "title": "Space Health Condition"
-      }
-    ],
-    "Procedure": [
-      {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response",
-        "title": "Underwater Emergency Response"
       }
     ],
     "Bundle": [
@@ -522,14 +866,42 @@
     ],
     "RiskAssessment": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment",
-        "title": "Mission Risk Assessment"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment",
+        "title": "Mars Radiation Risk Assessment"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter",
+        "title": "Autonomous Medical Encounter"
       }
     ],
     "DiagnosticReport": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary",
         "title": "Space Radiation Exposure Summary (Fixed)"
+      }
+    ],
+    "PlanDefinition": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan",
+        "title": "Mission Plan"
+      },
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan",
+        "title": "Mission Timeline Plan"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item",
+        "title": "Space Nutrition Inventory Item"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-product",
+        "title": "Space Nutrition Product"
       }
     ]
   },
@@ -543,14 +915,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/maxValue": [
       "Questionnaire.item.item"
@@ -578,9 +950,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -621,6 +990,53 @@
     ],
     "http://hl7.org/fhir/us/vitals/StructureDefinition/bp-cuff-size-ext": [
       "Device"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay": [
+      "Encounter",
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/hydration-deficit": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/inventory-risk-flag": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates": [
+      "Location"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context": [
+      "Encounter",
+      "Observation",
+      "PlanDefinition",
+      "Procedure",
+      "RiskAssessment"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding": [
+      "Location"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement": [
+      "Medication"
+    ],
+    "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay": [
+      "Medication"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness": [
       "Procedure"
@@ -682,9 +1098,6 @@
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention": [
       "Procedure"
-    ],
-    "https://mitre.org/fhir/space-health/StructureDefinition/mission-context": [
-      "Observation"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability": [
       "Location"

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Space Psychological Effects - XML Representation -  v0.4.2</title>
+    <title>Space Psychological Effects - XML Representation -  v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12.156"}
-    h3,h4,h5,h6{--heading-prefix:"12.156"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.239"}
+    h3,h4,h5,h6{--heading-prefix:"17.239"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.4.2 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -95,6 +95,15 @@
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -107,6 +116,19 @@
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
       </li>
     </ul>
   </li>
@@ -160,7 +182,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -215,7 +237,7 @@
         
           Draft
           
-            as of 2025-06-01
+            as of 2025-12-25
           
         
       </td>
@@ -231,29 +253,29 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;space-psychological-effects-cs&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;space-psychological-effects-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem space-psychological-effects-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;space-psychological-effects-cs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcspace-psychological-effects-cs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;space-psychological-effects-cs-en-US&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://mitre.org/fhir/space-health/CodeSystem/space-psychological-effects-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;confinement-anxiety&lt;a name=&quot;space-psychological-effects-cs-confinement-anxiety&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confinement Anxiety&lt;/td&gt;&lt;td&gt;Anxiety specifically related to the confined conditions of spacecraft&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;chronic-mission-stress&lt;a name=&quot;space-psychological-effects-cs-chronic-mission-stress&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chronic Mission Stress&lt;/td&gt;&lt;td&gt;Prolonged stress experienced during extended space missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;earth-out-of-view-phenomenon&lt;a name=&quot;space-psychological-effects-cs-earth-out-of-view-phenomenon&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Earth-Out-of-View Phenomenon&lt;/td&gt;&lt;td&gt;Psychological effects of not being able to see Earth during deep space missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;crew-cohesion-issues&lt;a name=&quot;space-psychological-effects-cs-crew-cohesion-issues&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Crew Cohesion Issues&lt;/td&gt;&lt;td&gt;Problems with interpersonal relationships and group dynamics during spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;mission-fatigue&lt;a name=&quot;space-psychological-effects-cs-mission-fatigue&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mission Fatigue&lt;/td&gt;&lt;td&gt;Cumulative fatigue, both physical and mental, experienced during long-duration missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;space-asthenia&lt;a name=&quot;space-psychological-effects-cs-space-asthenia&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Space Asthenia&lt;/td&gt;&lt;td&gt;A condition characterized by weakness, fatigue, and emotional lability during long-duration spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;behavioral-health&lt;a name=&quot;space-psychological-effects-cs-behavioral-health&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Space Behavioral Health&lt;/td&gt;&lt;td&gt;Overall mental and behavioral well-being during spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;communication-delay-stress&lt;a name=&quot;space-psychological-effects-cs-communication-delay-stress&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication Delay Stress&lt;/td&gt;&lt;td&gt;Psychological effects of delayed communications with Earth during deep space missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;third-quarter-phenomenon&lt;a name=&quot;space-psychological-effects-cs-third-quarter-phenomenon&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Third-Quarter Phenomenon&lt;/td&gt;&lt;td&gt;A period of decreased motivation and morale that often occurs after the midpoint of a mission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;salutogenesis&lt;a name=&quot;space-psychological-effects-cs-salutogenesis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Salutogenesis in Space&lt;/td&gt;&lt;td&gt;Positive psychological effects and personal growth experienced during spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;space-euphoria&lt;a name=&quot;space-psychological-effects-cs-space-euphoria&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Space Euphoria&lt;/td&gt;&lt;td&gt;Intense feelings of bliss and connectedness reported by some astronauts, particularly during spacewalks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;overview-effect&lt;a name=&quot;space-psychological-effects-cs-overview-effect&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Overview Effect&lt;/td&gt;&lt;td&gt;Profound cognitive shift in awareness reported by astronauts while viewing Earth from space&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem space-psychological-effects-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;space-psychological-effects-cs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcspace-psychological-effects-cs&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://mitre.org/fhir/space-health/CodeSystem/space-psychological-effects-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;confinement-anxiety&lt;a name=&quot;space-psychological-effects-cs-confinement-anxiety&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Confinement Anxiety&lt;/td&gt;&lt;td&gt;Anxiety specifically related to the confined conditions of spacecraft&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;chronic-mission-stress&lt;a name=&quot;space-psychological-effects-cs-chronic-mission-stress&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Chronic Mission Stress&lt;/td&gt;&lt;td&gt;Prolonged stress experienced during extended space missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;earth-out-of-view-phenomenon&lt;a name=&quot;space-psychological-effects-cs-earth-out-of-view-phenomenon&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Earth-Out-of-View Phenomenon&lt;/td&gt;&lt;td&gt;Psychological effects of not being able to see Earth during deep space missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;crew-cohesion-issues&lt;a name=&quot;space-psychological-effects-cs-crew-cohesion-issues&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Crew Cohesion Issues&lt;/td&gt;&lt;td&gt;Problems with interpersonal relationships and group dynamics during spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;mission-fatigue&lt;a name=&quot;space-psychological-effects-cs-mission-fatigue&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Mission Fatigue&lt;/td&gt;&lt;td&gt;Cumulative fatigue, both physical and mental, experienced during long-duration missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;space-asthenia&lt;a name=&quot;space-psychological-effects-cs-space-asthenia&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Space Asthenia&lt;/td&gt;&lt;td&gt;A condition characterized by weakness, fatigue, and emotional lability during long-duration spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;behavioral-health&lt;a name=&quot;space-psychological-effects-cs-behavioral-health&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Space Behavioral Health&lt;/td&gt;&lt;td&gt;Overall mental and behavioral well-being during spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;communication-delay-stress&lt;a name=&quot;space-psychological-effects-cs-communication-delay-stress&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication Delay Stress&lt;/td&gt;&lt;td&gt;Psychological effects of delayed communications with Earth during deep space missions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;third-quarter-phenomenon&lt;a name=&quot;space-psychological-effects-cs-third-quarter-phenomenon&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Third-Quarter Phenomenon&lt;/td&gt;&lt;td&gt;A period of decreased motivation and morale that often occurs after the midpoint of a mission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;salutogenesis&lt;a name=&quot;space-psychological-effects-cs-salutogenesis&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Salutogenesis in Space&lt;/td&gt;&lt;td&gt;Positive psychological effects and personal growth experienced during spaceflight&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;space-euphoria&lt;a name=&quot;space-psychological-effects-cs-space-euphoria&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Space Euphoria&lt;/td&gt;&lt;td&gt;Intense feelings of bliss and connectedness reported by some astronauts, particularly during spacewalks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;overview-effect&lt;a name=&quot;space-psychological-effects-cs-overview-effect&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Overview Effect&lt;/td&gt;&lt;td&gt;Profound cognitive shift in awareness reported by astronauts while viewing Earth from space&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://mitre.org/fhir/space-health/CodeSystem/space-psychological-effects-cs&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.4.2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.5.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SpacePsychologicalEffectsCodeSystem&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Space Psychological Effects&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-06-01T23:37:11-05:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-12-25T11:43:35-07:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MITRE&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MITRE&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.mitre.org/&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
                <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;CodeSystem for space psychological effects not found in SNOMED CT&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
@@ -264,74 +286,74 @@
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Confinement Anxiety&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anxiety specifically related to the confined conditions of spacecraft&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;chronic-mission-stress&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Chronic Mission Stress&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Prolonged stress experienced during extended space missions&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;earth-out-of-view-phenomenon&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Earth-Out-of-View Phenomenon&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Psychological effects of not being able to see Earth during deep space missions&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;crew-cohesion-issues&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Crew Cohesion Issues&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Problems with interpersonal relationships and group dynamics during spaceflight&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;mission-fatigue&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mission Fatigue&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cumulative fatigue, both physical and mental, experienced during long-duration missions&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;space-asthenia&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Space Asthenia&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A condition characterized by weakness, fatigue, and emotional lability during long-duration spaceflight&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;behavioral-health&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Space Behavioral Health&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Overall mental and behavioral well-being during spaceflight&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;communication-delay-stress&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Communication Delay Stress&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Psychological effects of delayed communications with Earth during deep space missions&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;third-quarter-phenomenon&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Third-Quarter Phenomenon&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;A period of decreased motivation and morale that often occurs after the midpoint of a mission&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;salutogenesis&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Salutogenesis in Space&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Positive psychological effects and personal growth experienced during spaceflight&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;space-euphoria&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Space Euphoria&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Intense feelings of bliss and connectedness reported by some astronauts, particularly during spacewalks&quot;/&gt;
-  &lt;/concept&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;overview-effect&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Overview Effect&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Profound cognitive shift in awareness reported by astronauts while viewing Earth from space&quot;/&gt;
-  &lt;/concept&gt;
-&lt;/CodeSystem&gt;</code></pre>
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -355,7 +377,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 23:37-0500">2025-06-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

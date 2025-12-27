@@ -3,13 +3,13 @@
   "id" : "mitre.fhir.spacehealth",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><a name=\"mitre.fhir.spacehealth-en-US\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"
   },
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.4.2",
+  "version" : "0.5.0",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-06-01T23:37:11-05:00",
+  "date" : "2025-12-25T11:43:35-07:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -30,7 +30,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.4.0"
+    "version" : "7.0.1"
   },
   {
     "id" : "hl7ext",
@@ -326,7 +326,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
     },
     {
       "extension" : [{
@@ -630,6 +630,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/aerospace-behavioral-state-cs"
+      },
+      "name" : "Aerospace Behavioral State Code System",
+      "description" : "Codes describing behavioral and psychological state parameters in aerospace missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -637,6 +649,30 @@
       },
       "name" : "Aircraft Fume Exposure",
       "description" : "Health impacts from exposure to aircraft contaminated air and fume events.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/artemis-all-devices-vs"
+      },
+      "name" : "All Artemis Devices",
+      "description" : "Both certified and prototype Artemis devices",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mars-all-devices-vs"
+      },
+      "name" : "All Mars Mission Devices",
+      "description" : "Both certified and prototype Mars devices",
       "exampleBoolean" : false
     },
     {
@@ -654,6 +690,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/areographic-coordinates"
+      },
+      "name" : "Areographic Coordinates",
+      "description" : "Mars latitude and longitude for surface locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -662,6 +710,186 @@
       "name" : "Artemis Base Camp Habitat",
       "description" : "Artemis lunar surface habitat module",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/artemis-certified-devices-vs"
+      },
+      "name" : "Artemis Certified Devices",
+      "description" : "Flight-qualified Artemis mission hardware",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/artemis-certified-devices-cs"
+      },
+      "name" : "Artemis Certified Devices",
+      "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/Artemis-III-EVA-1"
+      },
+      "name" : "Artemis III EVA-1",
+      "description" : "First lunar surface EVA of Artemis III mission at Malapert Massif",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Artemis-III-EVA1-Radiation"
+      },
+      "name" : "Artemis III EVA-1 Radiation Exposure",
+      "description" : "Radiation dose during first lunar surface EVA (6.5 hours unshielded)",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/Artemis-III-EVA-2"
+      },
+      "name" : "Artemis III EVA-2",
+      "description" : "Second lunar surface EVA of Artemis III mission exploring shadowed crater",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/Artemis-III-Mission"
+      },
+      "name" : "Artemis III Mission Encounter",
+      "description" : "Encounter representing the entire Artemis III mission from launch to splashdown",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/Artemis-III-Mission-Plan"
+      },
+      "name" : "Artemis III Mission Plan",
+      "description" : "Complete mission plan for Artemis III including phases, timelines, and EVA schedules",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Artemis-III-Translunar-Radiation"
+      },
+      "name" : "Artemis III Translunar Radiation Exposure",
+      "description" : "Cumulative radiation dose during 4-day translunar cruise",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/artemis-landing-region-vs"
+      },
+      "name" : "Artemis Landing Regions",
+      "description" : "Candidate Artemis III south pole landing regions for Location bindings",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/artemis-landing-region-cs"
+      },
+      "name" : "Artemis Landing Regions",
+      "description" : "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/artemis-mission-vs"
+      },
+      "name" : "Artemis Missions",
+      "description" : "All Artemis program missions I-V",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/artemis-mission-cs"
+      },
+      "name" : "Artemis Missions",
+      "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/artemis-prototype-devices-vs"
+      },
+      "name" : "Artemis Prototype Devices",
+      "description" : "Developmental and test Artemis hardware",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/artemis-prototype-devices-cs"
+      },
+      "name" : "Artemis Prototype Devices",
+      "description" : "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/artemis-radiation-exposure"
+      },
+      "name" : "Artemis Radiation Exposure",
+      "description" : "Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -705,6 +933,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/autonomous-medical-encounter"
+      },
+      "name" : "Autonomous Medical Encounter",
+      "description" : "Encounter profile for crew-led medical events with no real-time ground support due to communication delays",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/Emergency-Appendicitis-Sol189"
+      },
+      "name" : "Autonomous Medical Encounter - Appendicitis Sol 189",
+      "description" : "Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/average-blood-pressure"
       },
       "name" : "Average Blood Pressure",
@@ -733,6 +985,42 @@
       },
       "name" : "Barotrauma Assessment",
       "description" : "Assessment of pressure-related injuries (barotrauma)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/behavioral-biomarker-cs"
+      },
+      "name" : "Behavioral Biomarker Code System",
+      "description" : "Codes for physiologic and digital biomarkers related to behavioral health and stress.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/behavioral-health-metrics-vs"
+      },
+      "name" : "Behavioral Health Metrics Value Set",
+      "description" : "Key behavioral health state metrics used in aerospace behavioral health monitoring.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/behavioral-health-state"
+      },
+      "name" : "Behavioral Health State",
+      "description" : "Point-in-time behavioral and psychological state assessment for aerospace missions.",
       "exampleBoolean" : false
     },
     {
@@ -882,6 +1170,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/calorie-deficit-assessment"
+      },
+      "name" : "Calorie Deficit Assessment",
+      "description" : "Quantifies acute and cumulative calorie deficits for astronauts",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/calorie-deficit-risk-vs"
+      },
+      "name" : "Calorie Deficit Risk Levels",
+      "description" : "Risk categorization for caloric deficits",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/calorie-deficit-risk-cs"
+      },
+      "name" : "Calorie Deficit Risk Levels",
+      "description" : "Risk categorization for caloric deficits",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -906,6 +1230,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/cognitive-performance-indicators-vs"
+      },
+      "name" : "Cognitive Performance Indicators Value Set",
+      "description" : "Cognitive and vigilance performance indicators relevant to operational readiness.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -913,6 +1249,18 @@
       },
       "name" : "Commercial Space Equipment",
       "description" : "STUB - Device profile for commercial space equipment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/communication-delay"
+      },
+      "name" : "Communication Delay",
+      "description" : "Earth-Mars light-time delay for data transmission context",
       "exampleBoolean" : false
     },
     {
@@ -1206,6 +1554,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cumulative-stress-burden"
+      },
+      "name" : "Cumulative Stress Burden",
+      "description" : "Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1274,6 +1634,18 @@
       "name" : "Department of Defense",
       "description" : "Organization - Department of Defense",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/derived-from-group"
+      },
+      "name" : "Derived From Activity Group",
+      "description" : "Links aggregated metrics to source activity group observations",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1710,6 +2082,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/energy-expenditure"
+      },
+      "name" : "Energy Expenditure",
+      "description" : "Total daily energy expenditure in kcal/day",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1818,6 +2202,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eva-number"
+      },
+      "name" : "EVA Number",
+      "description" : "Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/evs-units-vs"
+      },
+      "name" : "EVS Units",
+      "description" : "Units for Exercise Vital Sign measurements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
@@ -1878,6 +2286,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/exercise-device"
+      },
+      "name" : "Exercise Device",
+      "description" : "Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eva-procedure"
+      },
+      "name" : "Extravehicular Activity Procedure",
+      "description" : "Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -1926,6 +2358,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HabitatEnvironment-Sol125"
+      },
+      "name" : "Habitat Environmental Conditions - Sol 125",
+      "description" : "Atmospheric monitoring inside Mars habitat on Sol 125",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/habitat-environmental-observation"
+      },
+      "name" : "Habitat Environmental Monitoring",
+      "description" : "Observation of environmental conditions inside Mars habitat (pressure, O2, CO2, temperature, humidity, dust)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/habitat-location"
+      },
+      "name" : "Habitat Location",
+      "description" : "Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/harness-load"
+      },
+      "name" : "Harness Load",
+      "description" : "Percentage of body weight applied by harness during treadmill exercise",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1933,6 +2413,78 @@
       },
       "name" : "Heart Rate",
       "description" : "The number of heart beats in a minute.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/crewed-mars-missions-vs"
+      },
+      "name" : "Human Mars Mission Plans",
+      "description" : "Proposed and conceptual human mission architectures to Mars",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/crewed-mars-missions-cs"
+      },
+      "name" : "Human Mars Mission Plans",
+      "description" : "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hydration-deficit"
+      },
+      "name" : "Hydration Deficit",
+      "description" : "Daily hydration deficit in liters per day",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/hydration-type-cs"
+      },
+      "name" : "Hydration Product Types",
+      "description" : "Types of hydration products used in space",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hydration-status-observation"
+      },
+      "name" : "Hydration Status Observation",
+      "description" : "Hydration status monitoring for space missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/hydration-type-vs"
+      },
+      "name" : "Hydration Types",
+      "description" : "Types of hydration products used in space",
       "exampleBoolean" : false
     },
     {
@@ -2094,6 +2646,150 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/inventory-risk-flag"
+      },
+      "name" : "Inventory Risk Flag",
+      "description" : "Risk level for nutrition inventory status",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/isolation-risk"
+      },
+      "name" : "Isolation Risk Factor",
+      "description" : "Captures isolation and confinement risk factors affecting behavioral health",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/isolation-syndrome-factor-cs"
+      },
+      "name" : "Isolation Syndrome Factor Code System",
+      "description" : "Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/isolation-syndrome-factors-vs"
+      },
+      "name" : "Isolation Syndrome Factors Value Set",
+      "description" : "Risk factors related to isolation and confinement that affect behavioral health.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/isru-production-log"
+      },
+      "name" : "ISRU Production Log",
+      "description" : "Tracking ISRU propellant production (CH4/O2) for Mars return journey",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISRU-Production-Sol210"
+      },
+      "name" : "ISRU Production Log - Sol 210",
+      "description" : "Cumulative propellant production by Sol 210 (7 months operation)",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ISRU-Plant-Jezero-1"
+      },
+      "name" : "ISRU Propellant Production Plant",
+      "description" : "In-situ resource utilization plant for CH4/O2 production from Martian atmosphere",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/isru-status"
+      },
+      "name" : "ISRU System Status",
+      "description" : "In-Situ Resource Utilization system status and propellant production levels",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-AnxietyAssessment-PreEVA"
+      },
+      "name" : "ISS Anxiety Assessment - Pre-EVA",
+      "description" : "Pre-EVA anxiety assessment with HRV biomarker showing elevated stress.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-BrightLightTherapy-Week8"
+      },
+      "name" : "ISS Bright Light Therapy - Mission Week 8",
+      "description" : "Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-CBT-Session-Week12"
+      },
+      "name" : "ISS CBT Session - Mission Week 12",
+      "description" : "Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-CognitiveReadiness-PostAnomaly"
+      },
+      "name" : "ISS Cognitive Readiness - Post-Anomaly",
+      "description" : "Cognitive readiness assessment following ammonia leak alarm (false positive).",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -2102,6 +2798,42 @@
       "name" : "ISS Columbus Laboratory",
       "description" : "International Space Station European laboratory module",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-CrewDebrief-PostAnomaly"
+      },
+      "name" : "ISS Crew Debrief - Post-Anomaly",
+      "description" : "Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-StressBurden-Day180"
+      },
+      "name" : "ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)",
+      "description" : "End-of-mission cumulative stress burden showing sustained elevation despite countermeasures.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-StressBurden-Day90"
+      },
+      "name" : "ISS Cumulative Stress Burden - Mission Day 90",
+      "description" : "Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
     },
     {
       "extension" : [{
@@ -2130,6 +2862,78 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-EVS-MinPerWeek-2025W23"
+      },
+      "name" : "ISS EVS Minutes per Week - Week 23 2025",
+      "description" : "EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23.",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/ISS-Exp75-InFlight"
+      },
+      "name" : "ISS Expedition 75 In-Flight Period",
+      "description" : "Encounter representing the in-flight period of ISS Expedition 75",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-GuidedMeditation-Daily"
+      },
+      "name" : "ISS Guided Meditation - Daily Practice",
+      "description" : "Daily 15-minute guided meditation session for stress reduction and mood regulation.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-IsolationFactor-CircadianDrift"
+      },
+      "name" : "ISS Isolation Factor - Circadian Drift",
+      "description" : "Sleep-wake cycle misalignment due to shift work and 16 sunrises per day.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-IsolationFactor-Confinement"
+      },
+      "name" : "ISS Isolation Factor - Confinement",
+      "description" : "Assessment of confinement stress during prolonged mission.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-IsolationFactor-InterpersonalFriction"
+      },
+      "name" : "ISS Isolation Factor - Interpersonal Friction",
+      "description" : "Documented interpersonal tension between crew members during third quarter.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -2138,6 +2942,90 @@
       "name" : "ISS Kibo Laboratory",
       "description" : "International Space Station Japanese laboratory module",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-MoodAssessment-Week12"
+      },
+      "name" : "ISS Mood Assessment - Mission Week 12",
+      "description" : "Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period.",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/ISS-T2-Treadmill"
+      },
+      "name" : "ISS T2 Treadmill",
+      "description" : "Treadmill 2 (T2) on the International Space Station with vibration isolation",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-T2-Run-Type-001"
+      },
+      "name" : "ISS T2 Treadmill Run - Activity Type",
+      "description" : "Activity-based measure indicating the type of ISS T2 treadmill running.",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-T2-Run-Duration-001"
+      },
+      "name" : "ISS T2 Treadmill Run - Duration",
+      "description" : "Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session.",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-T2-Run-MeanHR-001"
+      },
+      "name" : "ISS T2 Treadmill Run - Mean Heart Rate",
+      "description" : "Mean heart rate during an ISS treadmill session.",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ISS-T2-Run-Group-001"
+      },
+      "name" : "ISS T2 Treadmill Session - Activity Group",
+      "description" : "Panel Observation representing a single 30-minute ISS T2 treadmill session.",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ISS-Exercise-Session-Proc-001"
+      },
+      "name" : "ISS T2 Treadmill Session - Procedure",
+      "description" : "Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel.",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"
     },
     {
       "extension" : [{
@@ -2562,6 +3450,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lunar-coordinates"
+      },
+      "name" : "Lunar Coordinates",
+      "description" : "Selenographic latitude and longitude for lunar surface locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2570,6 +3470,18 @@
       "name" : "Lunar Dust Toxicity",
       "description" : "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/Gateway-HALO-Module"
+      },
+      "name" : "Lunar Gateway HALO Module",
+      "description" : "Habitation and Logistics Outpost module of Lunar Gateway in NRHO",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
     },
     {
       "extension" : [{
@@ -2610,6 +3522,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/macronutrient-metrics-vs"
+      },
+      "name" : "Macronutrient Metrics",
+      "description" : "Measurement types for macronutrient tracking",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/macronutrient-metrics-cs"
+      },
+      "name" : "Macronutrient Metrics",
+      "description" : "Measurement types for macronutrient tracking",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/Malapert-Massif-Landing-Site"
+      },
+      "name" : "Malapert Massif Landing Site",
+      "description" : "Artemis III landing site at Malapert Massif, lunar south pole region",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -2630,6 +3578,198 @@
       "name" : "Mars Base Alpha",
       "description" : "First permanent Mars surface base",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MarsCrewMember1"
+      },
+      "name" : "Mars Crew Member - Commander Chen",
+      "description" : "Example Mars crew member (Commander Sarah Chen) with baseline health data",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mars-crew-member"
+      },
+      "name" : "Mars Crew Member Profile",
+      "description" : "Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/MarsDirectMission2040"
+      },
+      "name" : "Mars Direct Mission 2040",
+      "description" : "Entire Mars Direct mission encounter (launch to splashdown)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/MarsDirectMissionPlan2040"
+      },
+      "name" : "Mars Direct Mission Plan 2040",
+      "description" : "Complete mission timeline for Mars Direct architecture mission",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/MarsEVA-Sol147"
+      },
+      "name" : "Mars EVA - Sol 147",
+      "description" : "Surface EVA to collect geological samples at crater rim, duration 6.5 hours",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mars-eva-procedure"
+      },
+      "name" : "Mars Extravehicular Activity Procedure",
+      "description" : "Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mars-landing-sites-vs"
+      },
+      "name" : "Mars Landing Sites",
+      "description" : "Candidate landing sites for human Mars missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mars-landing-sites-cs"
+      },
+      "name" : "Mars Landing Sites (Candidate)",
+      "description" : "Candidate landing sites for human Mars missions with are\n\nographic coordinates and site characteristics",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mars-devices-certified-vs"
+      },
+      "name" : "Mars Mission Devices - Certified",
+      "description" : "Flight-qualified hardware for Mars missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mars-devices-certified-cs"
+      },
+      "name" : "Mars Mission Devices - Certified",
+      "description" : "Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mars-devices-prototype-vs"
+      },
+      "name" : "Mars Mission Devices - Prototype",
+      "description" : "Developmental and test hardware for Mars missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mars-devices-prototype-cs"
+      },
+      "name" : "Mars Mission Devices - Prototype",
+      "description" : "Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mars-missions-vs"
+      },
+      "name" : "Mars Missions",
+      "description" : "All Mars missions (robotic and human, completed and planned)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mars-missions-cs"
+      },
+      "name" : "Mars Missions",
+      "description" : "NASA and international missions to Mars (robotic and conceptual human missions)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mars-radiation-risk-assessment"
+      },
+      "name" : "Mars Radiation Risk Assessment",
+      "description" : "Radiation exposure risk assessment for long-duration deep space missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/MarsHabitat-Jezero"
+      },
+      "name" : "Mars Surface Habitat - Jezero Crater",
+      "description" : "Pressurized habitat module at Jezero Crater landing site",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -2706,6 +3846,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/metabolic-risk-summary"
+      },
+      "name" : "Metabolic Risk Summary",
+      "description" : "Evaluates risk from prolonged caloric deficits and metabolic stress",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2733,10 +3885,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/mission-plan"
+      },
+      "name" : "Mission Plan",
+      "description" : "Artemis mission timeline with phases, events, constraints, and medical protocols",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/SpaceRiskAssesment"
       },
       "name" : "Mission Risk Assessment",
       "description" : "STUB - Risk assessment for space missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mission-timeline-plan"
+      },
+      "name" : "Mission Timeline Plan",
+      "description" : "Mars mission timeline with phases, events, EVA schedules, and medical protocols",
       "exampleBoolean" : false
     },
     {
@@ -2869,6 +4045,30 @@
       },
       "name" : "Neutral Buoyancy Training Session",
       "description" : "Training session in neutral buoyancy facility for EVA simulation",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nutrition-inventory-status-vs"
+      },
+      "name" : "Nutrition Inventory Status",
+      "description" : "Status levels for nutrition inventory management",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nutrition-inventory-status-cs"
+      },
+      "name" : "Nutrition Inventory Status",
+      "description" : "Status levels for nutrition inventory management",
       "exampleBoolean" : false
     },
     {
@@ -3330,6 +4530,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/psychological-countermeasure-activity"
+      },
+      "name" : "Psychological Countermeasure Activity",
+      "description" : "Documentation of psychological countermeasure interventions for behavioral health in aerospace missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/psychological-countermeasure-cs"
+      },
+      "name" : "Psychological Countermeasure Code System",
+      "description" : "Codes for psychological countermeasure interventions in aerospace missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -3414,6 +4638,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RiskAssessment"
+      }],
+      "reference" : {
+        "reference" : "RiskAssessment/RadiationRisk-PostTransit"
+      },
+      "name" : "Radiation Risk Assessment - Post Outbound Transit",
+      "description" : "Cancer risk assessment after 6-month outbound transit to Mars",
+      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/radiation-shielding"
+      },
+      "name" : "Radiation Shielding",
+      "description" : "Shielding mass and composition for habitat or vehicle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -3445,6 +4693,18 @@
       },
       "name" : "Regulatory Standards for Diving and Space Medicine",
       "description" : "Regulatory standards and compliance requirements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/rehydration-requirement"
+      },
+      "name" : "Rehydration Requirement",
+      "description" : "Amount of water required to prepare space food",
       "exampleBoolean" : false
     },
     {
@@ -3597,6 +4857,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/shelf-life-decay"
+      },
+      "name" : "Shelf Life Decay",
+      "description" : "Degradation of nutritional value over time in space conditions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/shielding-mass"
       },
       "name" : "Shielding Mass",
@@ -3693,6 +4965,102 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/space-exercise-activity-group"
+      },
+      "name" : "Space Exercise Activity Group",
+      "description" : "Panel observation grouping related exercise measures for a single session (type, duration, intensity, HR)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-exercise-activity-measure"
+      },
+      "name" : "Space Exercise Activity Measure",
+      "description" : "Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-exercise-modality-cs"
+      },
+      "name" : "Space Exercise Modality Code System",
+      "description" : "Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-exercise-modality-vs"
+      },
+      "name" : "Space Exercise Modality Value Set",
+      "description" : "Permitted space exercise modalities, derived from the Space Exercise Modality Code System.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-performance-metric-cs"
+      },
+      "name" : "Space Exercise Performance Metric Code System",
+      "description" : "Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-performance-metric-vs"
+      },
+      "name" : "Space Exercise Performance Metrics",
+      "description" : "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-exercise-session"
+      },
+      "name" : "Space Exercise Session",
+      "description" : "Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-evs-minutes-per-week"
+      },
+      "name" : "Space Exercise Vital Sign Minutes Per Week",
+      "description" : "Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/SpaceCondition"
       },
       "name" : "Space Health Condition",
@@ -3781,6 +5149,66 @@
       },
       "name" : "Space Neurological Effects",
       "description" : "CodeSystem for space neurological effects not found in SNOMED CT",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-nutrition-intake"
+      },
+      "name" : "Space Nutrition Intake",
+      "description" : "Documentation of actual daily intake and hydration events for space missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-nutrition-inventory-item"
+      },
+      "name" : "Space Nutrition Inventory Item",
+      "description" : "Tracks food stores aboard spacecraft or planetary habitats",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/space-nutrition-product"
+      },
+      "name" : "Space Nutrition Product",
+      "description" : "Space-rated food, supplements, and electrolytes with mission-specific properties",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/space-nutrition-type-cs"
+      },
+      "name" : "Space Nutrition Product Types",
+      "description" : "Types of nutritional products used in space missions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/space-nutrition-type-vs"
+      },
+      "name" : "Space Nutrition Types",
+      "description" : "Types of nutritional products available in space missions",
       "exampleBoolean" : false
     },
     {
@@ -4050,6 +5478,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/Starship-HLS-Artemis-III"
+      },
+      "name" : "Starship HLS for Artemis III",
+      "description" : "SpaceX Starship Human Landing System variant for Artemis III lunar landing",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -4057,6 +5497,18 @@
       },
       "name" : "Stress and Physiological Factors",
       "description" : "Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/stress-countermeasures-vs"
+      },
+      "name" : "Stress Countermeasures Value Set",
+      "description" : "Standardized set of psychological countermeasures used to mitigate stress and support mental health.",
       "exampleBoolean" : false
     },
     {
@@ -4130,6 +5582,17 @@
       "name" : "Training Session Objectives",
       "description" : "Specific training objectives for the session",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/TraumaEFASTQuestionnaire"
+      },
+      "name" : "Trauma EFAST Exam",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -4302,6 +5765,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/water-volume-units-vs"
+      },
+      "name" : "Water Volume Units",
+      "description" : "Units for measuring water volume",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -4309,6 +5784,18 @@
       },
       "name" : "Wright-Patterson Aerospace Research Laboratory",
       "description" : "USAF aerospace medicine research facility",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/xEMU-Suit-001"
+      },
+      "name" : "xEMU EVA Suit #001",
+      "description" : "First xEMU suit certified for Artemis III lunar surface EVAs",
       "exampleBoolean" : true
     },
     {
@@ -4440,6 +5927,51 @@
         }],
         "nameUrl" : "neutral-buoyancy.html",
         "title" : "Neutral Buoyancy Training",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "nutrition.html"
+        }],
+        "nameUrl" : "nutrition.html",
+        "title" : "Nutrition",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "fitness.html"
+        }],
+        "nameUrl" : "fitness.html",
+        "title" : "Fitness",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mentalhealth.html"
+        }],
+        "nameUrl" : "mentalhealth.html",
+        "title" : "Mental Health",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "missions-artemis.html"
+        }],
+        "nameUrl" : "missions-artemis.html",
+        "title" : "Artemis",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "missions-marsdirect.html"
+        }],
+        "nameUrl" : "missions-marsdirect.html",
+        "title" : "Mars Direct",
         "generation" : "markdown"
       }]
     },

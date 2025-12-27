@@ -14,7 +14,7 @@
     "valueCode" : "business"
   }],
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/bp-device",
-  "version" : "0.4.2",
+  "version" : "0.5.0",
   "name" : "BloodPressureDevice",
   "title" : "Blood Pressure Device",
   "status" : "active",
@@ -51,6 +51,10 @@
   "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Device",
   "derivation" : "constraint",
   "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "4.0.1"
+    }],
     "element" : [{
       "id" : "Device",
       "path" : "Device",
@@ -233,14 +237,10 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/languages|4.0.1"
       }
     },
     {
@@ -351,7 +351,7 @@
       "path" : "Device.extension",
       "sliceName" : "cuffSize",
       "short" : "Cuff Size",
-      "definition" : "The size of pressure cuff used to measure blood pressure.",
+      "definition" : "An Extension",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -363,7 +363,6 @@
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/us/vitals/StructureDefinition/bp-cuff-size-ext"]
       }],
-      "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
@@ -377,10 +376,11 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
-      "isModifier" : false
+      "isModifier" : false,
+      "isSummary" : false
     },
     {
       "id" : "Device.modifierExtension",
@@ -478,7 +478,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DeviceDefinition"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/DeviceDefinition|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -496,7 +496,7 @@
       "path" : "Device.udiCarrier",
       "short" : "Unique Device Identifier (UDI) Barcode string",
       "definition" : "Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold.",
-      "comment" : "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
+      "comment" : "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](http://hl7.org/fhir/R4/device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
       "min" : 0,
       "max" : "*",
       "base" : {
@@ -932,7 +932,7 @@
         }],
         "strength" : "extensible",
         "description" : "The availability status reason of the device.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/device-status-reason"
+        "valueSet" : "http://hl7.org/fhir/ValueSet/device-status-reason|4.0.1"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -2120,7 +2120,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2159,7 +2159,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2230,7 +2230,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Location|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -2360,7 +2360,7 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device|4.0.1"]
       }],
       "constraint" : [{
         "key" : "ele-1",

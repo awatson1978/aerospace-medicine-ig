@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "diving-medical-examinations"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet diving-medical-examinations</b></p><a name=\"diving-medical-examinations\"> </a><a name=\"hcdiving-medical-examinations\"> </a><a name=\"diving-medical-examinations-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-dive-medical-exam\">dive-medical-exam</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-hyperbaric-clearance\">hyperbaric-clearance</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-fitness-assessment\">fitness-assessment</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-post-incident-eval\">post-incident-eval</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-annual-recert\">annual-recert</a></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet diving-medical-examinations</b></p><a name=\"diving-medical-examinations\"> </a><a name=\"hcdiving-medical-examinations\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-dive-medical-exam\">dive-medical-exam</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-hyperbaric-clearance\">hyperbaric-clearance</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-fitness-assessment\">fitness-assessment</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-post-incident-eval\">post-incident-eval</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-annual-recert\">annual-recert</a></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.4.2"] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
   fhir:name [ fhir:v "DivingMedicalExaminations"] ; # 
   fhir:title [ fhir:v "Diving Medical Examinations"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-06-01T23:37:11-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-25T11:43:35-07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -31,35 +34,50 @@
   fhir:description [ fhir:v "Types of medical examinations for diving fitness"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;
          fhir:value [ fhir:v "dive-medical-exam" ]
        ] )
      ] [
-       fhir:system [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;
          fhir:value [ fhir:v "hyperbaric-clearance" ]
        ] )
      ] [
-       fhir:system [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;
          fhir:value [ fhir:v "fitness-assessment" ]
        ] )
      ] [
-       fhir:system [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;
          fhir:value [ fhir:v "post-incident-eval" ]
        ] )
      ] [
-       fhir:system [ fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs>
+       ] ;
        fhir:filter ( [
          fhir:property [ fhir:v "concept" ] ;
          fhir:op [ fhir:v "is-a" ] ;

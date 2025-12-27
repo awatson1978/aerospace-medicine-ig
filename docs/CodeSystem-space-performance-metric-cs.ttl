@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-performance-metric-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-performance-metric-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-performance-metric-cs</b></p><a name=\"space-performance-metric-cs\"> </a><a name=\"hcspace-performance-metric-cs\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mean-power<a name=\"space-performance-metric-cs-mean-power\"> </a></td><td>Mean power output</td><td>Average mechanical power output over the activity interval.</td></tr><tr><td style=\"white-space:nowrap\">peak-power<a name=\"space-performance-metric-cs-peak-power\"> </a></td><td>Peak power output</td><td>Maximum mechanical power achieved during the activity.</td></tr><tr><td style=\"white-space:nowrap\">simulated-bw<a name=\"space-performance-metric-cs-simulated-bw\"> </a></td><td>Simulated body weight</td><td>Effective body-weight load, typically as a fraction of 1-g weight, during harness or artificial gravity exercise.</td></tr><tr><td style=\"white-space:nowrap\">total-work<a name=\"space-performance-metric-cs-total-work\"> </a></td><td>Total mechanical work</td><td>Total work performed across the activity interval.</td></tr><tr><td style=\"white-space:nowrap\">vo2-surrogate<a name=\"space-performance-metric-cs-vo2-surrogate\"> </a></td><td>VO2 surrogate index</td><td>Computed surrogate for oxygen uptake based on HR, power, and subject parameters.</td></tr><tr><td style=\"white-space:nowrap\">recovery-hr<a name=\"space-performance-metric-cs-recovery-hr\"> </a></td><td>1-minute recovery heart rate</td><td>Heart rate recorded one minute after cessation of exercise.</td></tr><tr><td style=\"white-space:nowrap\">hr-reserve-percent<a name=\"space-performance-metric-cs-hr-reserve-percent\"> </a></td><td>Percentage heart rate reserve</td><td>Intensity expressed as % of heart rate reserve.</td></tr><tr><td style=\"white-space:nowrap\">ground-reaction-force<a name=\"space-performance-metric-cs-ground-reaction-force\"> </a></td><td>Ground reaction force</td><td>Effective ground reaction force during treadmill exercise with harness loading.</td></tr><tr><td style=\"white-space:nowrap\">resistance-level<a name=\"space-performance-metric-cs-resistance-level\"> </a></td><td>Resistance level setting</td><td>Resistance setting on exercise equipment.</td></tr><tr><td style=\"white-space:nowrap\">cadence<a name=\"space-performance-metric-cs-cadence\"> </a></td><td>Exercise cadence</td><td>Steps per minute (treadmill) or revolutions per minute (cycle ergometer).</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "SpacePerformanceMetricCS"] ; # 
+  fhir:title [ fhir:v "Space Exercise Performance Metric Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-25T11:43:35-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mean-power" ] ;
+     fhir:display [ fhir:v "Mean power output" ] ;
+     fhir:definition [ fhir:v "Average mechanical power output over the activity interval." ]
+  ] [
+     fhir:code [ fhir:v "peak-power" ] ;
+     fhir:display [ fhir:v "Peak power output" ] ;
+     fhir:definition [ fhir:v "Maximum mechanical power achieved during the activity." ]
+  ] [
+     fhir:code [ fhir:v "simulated-bw" ] ;
+     fhir:display [ fhir:v "Simulated body weight" ] ;
+     fhir:definition [ fhir:v "Effective body-weight load, typically as a fraction of 1-g weight, during harness or artificial gravity exercise." ]
+  ] [
+     fhir:code [ fhir:v "total-work" ] ;
+     fhir:display [ fhir:v "Total mechanical work" ] ;
+     fhir:definition [ fhir:v "Total work performed across the activity interval." ]
+  ] [
+     fhir:code [ fhir:v "vo2-surrogate" ] ;
+     fhir:display [ fhir:v "VO2 surrogate index" ] ;
+     fhir:definition [ fhir:v "Computed surrogate for oxygen uptake based on HR, power, and subject parameters." ]
+  ] [
+     fhir:code [ fhir:v "recovery-hr" ] ;
+     fhir:display [ fhir:v "1-minute recovery heart rate" ] ;
+     fhir:definition [ fhir:v "Heart rate recorded one minute after cessation of exercise." ]
+  ] [
+     fhir:code [ fhir:v "hr-reserve-percent" ] ;
+     fhir:display [ fhir:v "Percentage heart rate reserve" ] ;
+     fhir:definition [ fhir:v "Intensity expressed as % of heart rate reserve." ]
+  ] [
+     fhir:code [ fhir:v "ground-reaction-force" ] ;
+     fhir:display [ fhir:v "Ground reaction force" ] ;
+     fhir:definition [ fhir:v "Effective ground reaction force during treadmill exercise with harness loading." ]
+  ] [
+     fhir:code [ fhir:v "resistance-level" ] ;
+     fhir:display [ fhir:v "Resistance level setting" ] ;
+     fhir:definition [ fhir:v "Resistance setting on exercise equipment." ]
+  ] [
+     fhir:code [ fhir:v "cadence" ] ;
+     fhir:display [ fhir:v "Exercise cadence" ] ;
+     fhir:definition [ fhir:v "Steps per minute (treadmill) or revolutions per minute (cycle ergometer)." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

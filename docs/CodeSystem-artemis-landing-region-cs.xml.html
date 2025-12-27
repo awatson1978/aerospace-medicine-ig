@@ -1,0 +1,590 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artemis Landing Regions - XML Representation -  v0.5.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"17.204"}
+    h3,h4,h5,h6{--heading-prefix:"17.204"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Artemis Landing Regions</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-artemis-landing-region-cs.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-artemis-landing-region-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-artemis-landing-region-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Artemis Landing Regions - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2025-12-25
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-artemis-landing-region-cs.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-artemis-landing-region-cs.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;artemis-landing-region-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem artemis-landing-region-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;artemis-landing-region-cs&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcartemis-landing-region-cs&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;latitude&lt;/td&gt;&lt;td&gt;latitude&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#latitude&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Approximate selenographic latitude (degrees)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;longitude&lt;/td&gt;&lt;td&gt;longitude&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#longitude&lt;/td&gt;&lt;td&gt;decimal&lt;/td&gt;&lt;td&gt;Approximate selenographic longitude (degrees)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;feature&lt;/td&gt;&lt;td&gt;feature&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#feature&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;Primary topographic feature (crater, massif, plateau, ridge)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;latitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;longitude&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;feature&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;faustini-rim-a&lt;a name=&quot;artemis-landing-region-cs-faustini-rim-a&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Faustini Rim A&lt;/td&gt;&lt;td&gt;Rim of Faustini crater (~87°S, 84°E)&lt;/td&gt;&lt;td&gt;-87&lt;/td&gt;&lt;td&gt;84&lt;/td&gt;&lt;td&gt;Faustini crater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;peak-near-shackleton&lt;a name=&quot;artemis-landing-region-cs-peak-near-shackleton&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Peak Near Shackleton&lt;/td&gt;&lt;td&gt;High point near Shackleton crater, south pole (~89°S, 126°E)&lt;/td&gt;&lt;td&gt;-89&lt;/td&gt;&lt;td&gt;126&lt;/td&gt;&lt;td&gt;Shackleton vicinity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;connecting-ridge&lt;a name=&quot;artemis-landing-region-cs-connecting-ridge&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Connecting Ridge&lt;/td&gt;&lt;td&gt;Ridge connecting crater rims in Shackleton–de Gerlache area (~89.5°S, 210°E)&lt;/td&gt;&lt;td&gt;-89.5&lt;/td&gt;&lt;td&gt;210&lt;/td&gt;&lt;td&gt;Ridge between Shackleton and de Gerlache&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;connecting-ridge-ext&lt;a name=&quot;artemis-landing-region-cs-connecting-ridge-ext&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Connecting Ridge Extension&lt;/td&gt;&lt;td&gt;Extension of Connecting Ridge (~89.3°S, 210°E)&lt;/td&gt;&lt;td&gt;-89.3&lt;/td&gt;&lt;td&gt;210&lt;/td&gt;&lt;td&gt;Extended ridge&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;de-gerlache-rim-1&lt;a name=&quot;artemis-landing-region-cs-de-gerlache-rim-1&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;de Gerlache Rim 1&lt;/td&gt;&lt;td&gt;One site on rim of de Gerlache crater (~88.5°S, 270°E)&lt;/td&gt;&lt;td&gt;-88.5&lt;/td&gt;&lt;td&gt;270&lt;/td&gt;&lt;td&gt;de Gerlache crater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;de-gerlache-rim-2&lt;a name=&quot;artemis-landing-region-cs-de-gerlache-rim-2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;de Gerlache Rim 2&lt;/td&gt;&lt;td&gt;Another site on rim of de Gerlache crater (~88.8°S, 250°E)&lt;/td&gt;&lt;td&gt;-88.8&lt;/td&gt;&lt;td&gt;250&lt;/td&gt;&lt;td&gt;de Gerlache crater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;de-gerlache-kocher-massif&lt;a name=&quot;artemis-landing-region-cs-de-gerlache-kocher-massif&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;de Gerlache–Kocher Massif&lt;/td&gt;&lt;td&gt;Massif between de Gerlache and Kocher craters (~85°S, 236°E)&lt;/td&gt;&lt;td&gt;-85&lt;/td&gt;&lt;td&gt;236&lt;/td&gt;&lt;td&gt;Mountainous highland&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;haworth&lt;a name=&quot;artemis-landing-region-cs-haworth&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Haworth&lt;/td&gt;&lt;td&gt;Vicinity of Haworth crater floor/rim (~86.9°S, 356°E)&lt;/td&gt;&lt;td&gt;-86.9&lt;/td&gt;&lt;td&gt;356&lt;/td&gt;&lt;td&gt;Haworth crater&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;malapert-massif&lt;a name=&quot;artemis-landing-region-cs-malapert-massif&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Malapert Massif&lt;/td&gt;&lt;td&gt;Malapert Mountain, high elevation near pole (~86°S, 0°E)&lt;/td&gt;&lt;td&gt;-86&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Malapert peak&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;leibnitz-beta-plateau&lt;a name=&quot;artemis-landing-region-cs-leibnitz-beta-plateau&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Leibnitz Beta Plateau&lt;/td&gt;&lt;td&gt;Elevated plateau in Mons Mouton area (~85.4°S, 32°E)&lt;/td&gt;&lt;td&gt;-85.4&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;Leibnitz Beta region&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;nobile-rim-1&lt;a name=&quot;artemis-landing-region-cs-nobile-rim-1&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nobile Rim 1&lt;/td&gt;&lt;td&gt;Rim of Nobile crater, site 1 (~85.7°S, 45°E)&lt;/td&gt;&lt;td&gt;-85.7&lt;/td&gt;&lt;td&gt;45&lt;/td&gt;&lt;td&gt;Nobile crater region&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;nobile-rim-2&lt;a name=&quot;artemis-landing-region-cs-nobile-rim-2&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nobile Rim 2&lt;/td&gt;&lt;td&gt;Rim of Nobile crater, site 2 (~84.2°S, 60.7°E)&lt;/td&gt;&lt;td&gt;-84.2&lt;/td&gt;&lt;td&gt;60.7&lt;/td&gt;&lt;td&gt;Nobile crater region&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;amundsen-rim&lt;a name=&quot;artemis-landing-region-cs-amundsen-rim&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Amundsen Rim&lt;/td&gt;&lt;td&gt;Rim of Amundsen crater (~84.5°S, 83°E)&lt;/td&gt;&lt;td&gt;-84.5&lt;/td&gt;&lt;td&gt;83&lt;/td&gt;&lt;td&gt;Amundsen crater region&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.5.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ArtemisLandingRegionCS&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Artemis Landing Regions&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-12-25T11:43:35-07:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MITRE&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;MITRE&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.mitre.org/&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>=&quot;13&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#latitude&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Approximate selenographic latitude (degrees)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;decimal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#longitude&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Approximate selenographic longitude (degrees)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;decimal&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#feature&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Primary topographic feature (crater, massif, plateau, ridge)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;string&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;faustini-rim-a&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Faustini Rim A&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rim of Faustini crater (~87°S, 84°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-87&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;84&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Faustini crater&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;peak-near-shackleton&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Peak Near Shackleton&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;High point near Shackleton crater, south pole (~89°S, 126°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-89&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;126&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Shackleton vicinity&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;connecting-ridge&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Connecting Ridge&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ridge connecting crater rims in Shackleton–de Gerlache area (~89.5°S, 210°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-89.5&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;210&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Ridge between Shackleton and de Gerlache&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;connecting-ridge-ext&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Connecting Ridge Extension&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extension of Connecting Ridge (~89.3°S, 210°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-89.3&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;210&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Extended ridge&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-gerlache-rim-1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;de Gerlache Rim 1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;One site on rim of de Gerlache crater (~88.5°S, 270°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-88.5&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;270&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;de Gerlache crater&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-gerlache-rim-2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;de Gerlache Rim 2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Another site on rim of de Gerlache crater (~88.8°S, 250°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-88.8&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;250&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;de Gerlache crater&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;de-gerlache-kocher-massif&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;de Gerlache–Kocher Massif&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Massif between de Gerlache and Kocher craters (~85°S, 236°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-85&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;236&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Mountainous highland&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;haworth&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Haworth&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Vicinity of Haworth crater floor/rim (~86.9°S, 356°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-86.9&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;356&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Haworth crater&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;malapert-massif&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Malapert Massif&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Malapert Mountain, high elevation near pole (~86°S, 0°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-86&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;0&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Malapert peak&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;leibnitz-beta-plateau&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Leibnitz Beta Plateau&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Elevated plateau in Mons Mouton area (~85.4°S, 32°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-85.4&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;32&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Leibnitz Beta region&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nobile-rim-1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nobile Rim 1&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rim of Nobile crater, site 1 (~85.7°S, 45°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-85.7&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;45&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nobile crater region&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;nobile-rim-2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nobile Rim 2&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rim of Nobile crater, site 2 (~84.2°S, 60.7°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-84.2&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;60.7&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Nobile crater region&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;amundsen-rim&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Amundsen Rim&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Rim of Amundsen crater (~84.5°S, 83°E)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;latitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;-84.5&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;longitude&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueDecimal</a> <a href="http://hl7.org/fhir/R4/datatypes.html#decimal">value</a>=&quot;83&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;feature&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Amundsen crater region&quot;/&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a>&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

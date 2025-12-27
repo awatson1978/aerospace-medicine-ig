@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Neutral Buoyancy Training -  v0.4.2</title>
+    <title>Neutral Buoyancy Training -  v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -30,10 +30,10 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.4.2 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -93,6 +93,15 @@
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -105,6 +114,19 @@
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
       </li>
     </ul>
   </li>
@@ -165,7 +187,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Neutral Buoyancy Training</h2>
   
 
@@ -248,9 +270,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This implementation guide provides comprehensive FHIR profiles for underwater training environments that serve as space analogs. The data model supports:</p>
 
 <ul>
-  <li><a name="l505">​</a><strong>Training Session Documentation</strong>: Using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile</li>
-  <li><a name="l514">​</a><strong>Medical Clearance Tracking</strong>: Via the <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile</li>
-  <li><a name="l523">​</a><strong>Dive Profile Analytics</strong>: Through the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles</li>
+  <li><a name="l546">​</a><strong>Training Session Documentation</strong>: Using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile</li>
+  <li><a name="l555">​</a><strong>Medical Clearance Tracking</strong>: Via the <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile</li>
+  <li><a name="l564">​</a><strong>Dive Profile Analytics</strong>: Through the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles</li>
   <li><strong>Equipment Integration</strong>: Using specialized device profiles for diving and communication equipment</li>
   <li><strong>Regulatory Compliance</strong>: Through the <a href="StructureDefinition-regulatory-compliance-assessment.html"><code class="language-plaintext highlighter-rouge">RegulatoryComplianceAssessment</code></a> profile</li>
 </ul>
@@ -326,7 +348,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="training-session-implementation">Training Session Implementation</h3>
 
-<p><a name="l730">​</a>Each neutral buoyancy session is documented using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile, which captures:</p>
+<p><a name="l771">​</a>Each neutral buoyancy session is documented using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile, which captures:</p>
 
 <ul>
   <li><strong>Session Metadata</strong>: Duration, maximum depth, training objectives</li>
@@ -355,7 +377,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p><a name="l943">​</a>For EVA-specific simulations, the <a href="StructureDefinition-underwater-eva-simulation.html"><code class="language-plaintext highlighter-rouge">UnderwaterEVASimulation</code></a> profile extends the base training session with:</p>
+<p><a name="l984">​</a>For EVA-specific simulations, the <a href="StructureDefinition-underwater-eva-simulation.html"><code class="language-plaintext highlighter-rouge">UnderwaterEVASimulation</code></a> profile extends the base training session with:</p>
 
 <ul>
   <li><strong>Suit Configuration</strong>: Space suit simulator specifications</li>
@@ -384,7 +406,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="medical-clearance-framework">Medical Clearance Framework</h3>
 
-<p><a name="l1019">​</a>Diving for space analog training requires extending standard astronaut health screening to include dive-specific evaluations. The <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile documents comprehensive medical assessments including:</p>
+<p><a name="l1060">​</a>Diving for space analog training requires extending standard astronaut health screening to include dive-specific evaluations. The <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile documents comprehensive medical assessments including:</p>
 
 <p><strong>Core Medical Evaluations:</strong></p>
 <ul>
@@ -410,7 +432,7 @@ The <a href="ValueSet-diving-contraindicated-conditions.html"><code class="langu
 
 <h3 id="dive-profile-and-exposure-tracking">Dive Profile and Exposure Tracking</h3>
 
-<p><a name="l1107">​</a>Modern dive operations generate extensive digital logs that feed directly into training records using the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles. These capture:</p>
+<p><a name="l1148">​</a>Modern dive operations generate extensive digital logs that feed directly into training records using the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles. These capture:</p>
 
 <p><strong>Core Dive Parameters:</strong></p>
 <ul>
@@ -460,7 +482,7 @@ The <a href="ValueSet-diving-contraindicated-conditions.html"><code class="langu
 
 <h3 id="hyperbaric-treatment-capabilities">Hyperbaric Treatment Capabilities</h3>
 
-<p><a name="l1275">​</a>Underwater training centers often include on-site hyperbaric chambers that serve both as safety assets and research platforms. The <a href="StructureDefinition-hyperbaric-chamber.html"><code class="language-plaintext highlighter-rouge">HyperbaricChamber</code></a> location profile and <a href="StructureDefinition-hyperbaric-treatment.html"><code class="language-plaintext highlighter-rouge">HyperbaricTreatment</code></a> procedure profile document:</p>
+<p><a name="l1316">​</a>Underwater training centers often include on-site hyperbaric chambers that serve both as safety assets and research platforms. The <a href="StructureDefinition-hyperbaric-chamber.html"><code class="language-plaintext highlighter-rouge">HyperbaricChamber</code></a> location profile and <a href="StructureDefinition-hyperbaric-treatment.html"><code class="language-plaintext highlighter-rouge">HyperbaricTreatment</code></a> procedure profile document:</p>
 
 <p><strong>Chamber Specifications:</strong></p>
 <ul>
@@ -484,7 +506,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 
 <h3 id="decompression-sickness-management">Decompression Sickness Management</h3>
 
-<p><a name="l1356">​</a>Decompression sickness (DCS) risk is a key concern shared by divers and astronauts. The <a href="StructureDefinition-decompression-sickness.html"><code class="language-plaintext highlighter-rouge">DecompressionSickness</code></a> profile extends the space medicine condition profile to capture:</p>
+<p><a name="l1397">​</a>Decompression sickness (DCS) risk is a key concern shared by divers and astronauts. The <a href="StructureDefinition-decompression-sickness.html"><code class="language-plaintext highlighter-rouge">DecompressionSickness</code></a> profile extends the space medicine condition profile to capture:</p>
 
 <p><strong>DCS Documentation:</strong></p>
 <ul>
@@ -497,7 +519,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 <p><strong>Associated Procedures:</strong></p>
 <ul>
   <li><strong><a href="StructureDefinition-decompression-protocol.html"><code class="language-plaintext highlighter-rouge">DecompressionProtocol</code></a></strong>: Standardized decompression procedures</li>
-  <li><strong><a name="l1404">​</a><a href="StructureDefinition-barotrauma-assessment.html"><code class="language-plaintext highlighter-rouge">BarotraumaAssessment</code></a></strong>: Assessment of pressure-related injuries</li>
+  <li><strong><a name="l1445">​</a><a href="StructureDefinition-barotrauma-assessment.html"><code class="language-plaintext highlighter-rouge">BarotraumaAssessment</code></a></strong>: Assessment of pressure-related injuries</li>
 </ul>
 
 <p>Comprehensive DCS management begins with rapid symptom identification (joint pain, neurological signs) and classification of severity. If DCS is suspected, the affected individual is promptly transferred to hyperbaric treatment. Treatment response is closely monitored: symptoms are recorded before, during, and after recompression therapy, ensuring that the protocol (e.g. USN Table 6) is followed and adjusted as needed. After treatment, <strong>outcome assessment</strong> documents resolution or any residual deficits. Detailed medical notes and follow-up evaluations inform the astronaut's return-to-training timeline. Training programs also analyze DCS incidents to improve prevention: for example, gas switch schedules, depth/time limits, and pre-dive oxygen prebreathe are reviewed in light of any "near miss" or decompression case. This iterative profiling of DCS events and responses supports evidence-based refinements to both dive practices and spaceflight pre-breathing protocols.</p>
@@ -510,7 +532,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 
 <h3 id="equipment-integration-and-safety">Equipment Integration and Safety</h3>
 
-<p><a name="l1429">​</a>Diving and spacecraft life-support equipment share many design principles. The <a href="StructureDefinition-diving-equipment.html"><code class="language-plaintext highlighter-rouge">DivingEquipment</code></a> and <a href="StructureDefinition-underwater-communication-system.html"><code class="language-plaintext highlighter-rouge">UnderwaterCommunicationSystem</code></a> profiles track:</p>
+<p><a name="l1470">​</a>Diving and spacecraft life-support equipment share many design principles. The <a href="StructureDefinition-diving-equipment.html"><code class="language-plaintext highlighter-rouge">DivingEquipment</code></a> and <a href="StructureDefinition-underwater-communication-system.html"><code class="language-plaintext highlighter-rouge">UnderwaterCommunicationSystem</code></a> profiles track:</p>
 
 <p><strong>Life Support Equipment:</strong></p>
 <ul>
@@ -646,7 +668,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 23:37-0500">2025-06-01</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

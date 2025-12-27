@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/behavioral-health-metrics-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "behavioral-health-metrics-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet behavioral-health-metrics-vs</b></p><a name=\"behavioral-health-metrics-vs\"> </a><a name=\"hcbehavioral-health-metrics-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-aerospace-behavioral-state-cs.html\"><code>http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-aerospace-behavioral-state-cs.html#aerospace-behavioral-state-cs-mood-level\">mood-level</a></td><td style=\"color: #cccccc\">Mood level</td><td>Numeric or ordinal scoring of current mood (e.g., -3 to +3).</td></tr><tr><td><a href=\"CodeSystem-aerospace-behavioral-state-cs.html#aerospace-behavioral-state-cs-anxiety-level\">anxiety-level</a></td><td style=\"color: #cccccc\">Anxiety level</td><td>Numeric or ordinal scoring of current anxiety state.</td></tr><tr><td><a href=\"CodeSystem-aerospace-behavioral-state-cs.html#aerospace-behavioral-state-cs-irritability-score\">irritability-score</a></td><td style=\"color: #cccccc\">Irritability score</td><td>Behavioral metric representing irritability and frustration.</td></tr><tr><td><a href=\"CodeSystem-aerospace-behavioral-state-cs.html#aerospace-behavioral-state-cs-sleep-quality\">sleep-quality</a></td><td style=\"color: #cccccc\">Sleep quality</td><td>Subjective or composite index of sleep quality.</td></tr><tr><td><a href=\"CodeSystem-aerospace-behavioral-state-cs.html#aerospace-behavioral-state-cs-cognitive-readiness\">cognitive-readiness</a></td><td style=\"color: #cccccc\">Cognitive readiness</td><td>Readiness for complex decision-making and EVA or critical operations.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.0"] ; # 
+  fhir:name [ fhir:v "BehavioralHealthMetricsVS"] ; # 
+  fhir:title [ fhir:v "Behavioral Health Metrics Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-25T11:43:35-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Key behavioral health state metrics used in aerospace behavioral health monitoring."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "mood-level" ]
+       ] [
+         fhir:code [ fhir:v "anxiety-level" ]
+       ] [
+         fhir:code [ fhir:v "irritability-score" ]
+       ] [
+         fhir:code [ fhir:v "sleep-quality" ]
+       ] [
+         fhir:code [ fhir:v "cognitive-readiness" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

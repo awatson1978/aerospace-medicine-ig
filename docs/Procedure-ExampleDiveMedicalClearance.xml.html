@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Example Dive Medical Clearance - XML Representation -  v0.4.2</title>
+    <title>Example Dive Medical Clearance - XML Representation -  v0.5.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -32,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12.211"}
-    h3,h4,h5,h6{--heading-prefix:"12.211"}</style>
+    <style type="text/css">h2{--heading-prefix:"17.301"}
+    h3,h4,h5,h6{--heading-prefix:"17.301"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.4.2 - ci-build
+            <span style="display:inline-block;">0.5.0 - ci-build
 
 
             </span>
@@ -95,6 +95,15 @@
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -107,6 +116,19 @@
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
       </li>
     </ul>
   </li>
@@ -160,7 +182,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.4.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -216,33 +238,33 @@
 
 
 
-  <pre class="xml" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
+  <pre class="xml" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">Procedure</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ExampleDiveMedicalClearance&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Procedure.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ExampleDiveMedicalClearance&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/resource.html#Procedure.meta">meta</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.text">text</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/resource.html#Procedure.meta">meta</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#Procedure.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Procedure ExampleDiveMedicalClearance&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ExampleDiveMedicalClearance&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExampleDiveMedicalClearance&quot;&gt; &lt;/a&gt;&lt;a name=&quot;ExampleDiveMedicalClearance-en-US&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-DiveMedicalClearance.html&quot;&gt;Dive Medical Clearance&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 79492003}&quot;&gt;Diving medical examination&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-janeway.html&quot;&gt;Catherine Janeway  (no stated gender), DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2025-05-15 14:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Cleared for diving operations&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p class=&quot;res-header-id&quot;&gt;&lt;b&gt;Generated Narrative: Procedure ExampleDiveMedicalClearance&lt;/b&gt;&lt;/p&gt;&lt;a name=&quot;ExampleDiveMedicalClearance&quot;&gt; &lt;/a&gt;&lt;a name=&quot;hcExampleDiveMedicalClearance&quot;&gt; &lt;/a&gt;&lt;div style=&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%&quot;&gt;&lt;p style=&quot;margin-bottom: 0px&quot;/&gt;&lt;p style=&quot;margin-bottom: 0px&quot;&gt;Profile: &lt;a href=&quot;StructureDefinition-DiveMedicalClearance.html&quot;&gt;Dive Medical Clearance&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Completed&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=&quot;Codes:{http://snomed.info/sct 79492003}&quot;&gt;Diving medical examination&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=&quot;Patient-janeway.html&quot;&gt;Catherine Janeway  (no stated gender), DoB Unknown&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;performed&lt;/b&gt;: 2025-05-15 14:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;outcome&lt;/b&gt;: &lt;span title=&quot;Codes:&quot;&gt;Cleared for diving operations&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#Procedure.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;completed&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;79492003&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Diving medical examination&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/code&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.code">code</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>&gt;<a href="Patient-janeway.html" style="color: Maroon">&#x1F517;</a> 
     &lt;<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient/janeway&quot;/&gt;
-  &lt;/subject&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed[x]">performedDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-05-15T14:00:00Z&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.subject">subject</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.performed_x_">performedDateTime</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2025-05-15T14:00:00Z&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.outcome">outcome</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Cleared for diving operations&quot;/&gt;
-  &lt;/outcome&gt;
-&lt;/Procedure&gt;</code></pre>
+  &lt;/<a href="http://hl7.org/fhir/R4/procedure.html#Procedure.outcome">outcome</a>&gt;
+&lt;/<a href="http://hl7.org/fhir/R4/procedure.html#Procedure">Procedure</a>&gt;</code></pre>
 
 
   <!-- insert notes if present -->
@@ -266,7 +288,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.4.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Jun 1, 2025 23:37-0500">2025-06-01</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
