@@ -1,4 +1,4 @@
-# Artemis Certified Devices - v0.5.5
+# Artemis Certified Devices - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-certified-devices-vs | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-certified-devices-vs | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:ArtemisCertifiedDevicesVS |
 
  
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "artemis-certified-devices-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-certified-devices-vs",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "ArtemisCertifiedDevicesVS",
   "title" : "Artemis Certified Devices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

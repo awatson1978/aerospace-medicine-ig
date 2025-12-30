@@ -1,4 +1,4 @@
-# Communication Delay - v0.5.5
+# Communication Delay - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:CommunicationDelay |
 
 Earth-Mars light-time delay for data transmission context
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-communication-delay.
   "resourceType" : "StructureDefinition",
   "id" : "communication-delay",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "CommunicationDelay",
   "title" : "Communication Delay",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

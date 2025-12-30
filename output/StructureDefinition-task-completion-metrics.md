@@ -1,4 +1,4 @@
-# Task Completion Metrics - v0.5.5
+# Task Completion Metrics - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/task-completion-metrics | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/task-completion-metrics | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:TaskCompletionMetrics |
 
 Performance metrics for tasks completed during training
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-task-completion-metr
   "resourceType" : "StructureDefinition",
   "id" : "task-completion-metrics",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/task-completion-metrics",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "TaskCompletionMetrics",
   "title" : "Task Completion Metrics",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

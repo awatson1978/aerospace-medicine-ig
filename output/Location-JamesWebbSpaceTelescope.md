@@ -1,4 +1,4 @@
-# James Webb Space Telescope Location - v0.5.5
+# James Webb Space Telescope Location - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

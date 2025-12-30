@@ -1,4 +1,4 @@
-# Neutral Buoyancy Training Session - v0.5.5
+# Neutral Buoyancy Training Session - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancySession | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancySession | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:NeutralBuoyancySession |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-NeutralBuoyancySessi
   "resourceType" : "StructureDefinition",
   "id" : "NeutralBuoyancySession",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancySession",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "NeutralBuoyancySession",
   "title" : "Neutral Buoyancy Training Session",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Back Pain and Space Travel - v0.5.5
+# Back Pain and Space Travel - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:AstronautBackPain |
 
  
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AstronautBackPain",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "AstronautBackPain",
   "title" : "Back Pain and Space Travel",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

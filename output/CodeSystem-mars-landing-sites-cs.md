@@ -1,4 +1,4 @@
-# Mars Landing Sites (Candidate) - v0.5.5
+# Mars Landing Sites (Candidate) - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:MarsLandingSitesCS |
 
  
@@ -28,12 +28,12 @@ ographic coordinates and site characteristics
   "resourceType" : "CodeSystem",
   "id" : "mars-landing-sites-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "MarsLandingSitesCS",
   "title" : "Mars Landing Sites (Candidate)",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

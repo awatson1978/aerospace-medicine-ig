@@ -1,4 +1,4 @@
-# Training Session Objectives - v0.5.5
+# Training Session Objectives - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/training-objectives | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/training-objectives | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:TrainingObjectives |
 
 Specific training objectives for the session
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-training-objectives.
   "resourceType" : "StructureDefinition",
   "id" : "training-objectives",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/training-objectives",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "TrainingObjectives",
   "title" : "Training Session Objectives",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

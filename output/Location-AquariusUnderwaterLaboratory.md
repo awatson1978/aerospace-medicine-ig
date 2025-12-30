@@ -1,4 +1,4 @@
-# Aquarius Underwater Laboratory - v0.5.5
+# Aquarius Underwater Laboratory - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

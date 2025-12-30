@@ -1,4 +1,4 @@
-# ISRU System Status - v0.5.5
+# ISRU System Status - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:ISRUStatus |
 
 In-Situ Resource Utilization system status and propellant production levels
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-isru-status.csv), [E
   "resourceType" : "StructureDefinition",
   "id" : "isru-status",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "ISRUStatus",
   "title" : "ISRU System Status",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

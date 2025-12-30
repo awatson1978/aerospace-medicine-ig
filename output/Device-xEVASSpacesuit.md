@@ -1,4 +1,4 @@
-# Device - xEVAS Spacesuit - v0.5.5
+# Device - xEVAS Spacesuit - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

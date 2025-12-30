@@ -1,4 +1,4 @@
-# Blood Pressure Device - v0.5.5
+# Blood Pressure Device - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/bp-device | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/bp-device | *Version*:0.5.6 |
 | Active as of 2022-09-11 | *Computable Name*:BloodPressureDevice |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-bp-device.csv), [Exc
     }
   ],
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/bp-device",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "BloodPressureDevice",
   "title" : "Blood Pressure Device",
   "status" : "active",

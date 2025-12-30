@@ -1,4 +1,4 @@
-# ISRU Production Log - v0.5.5
+# ISRU Production Log - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:ISRUProductionLog |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
   "resourceType" : "StructureDefinition",
   "id" : "isru-production-log",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "ISRUProductionLog",
   "title" : "ISRU Production Log",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

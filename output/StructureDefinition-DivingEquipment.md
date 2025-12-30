@@ -1,4 +1,4 @@
-# Diving Equipment - v0.5.5
+# Diving Equipment - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:DivingEquipment |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-DivingEquipment.csv)
   "resourceType" : "StructureDefinition",
   "id" : "DivingEquipment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "DivingEquipment",
   "title" : "Diving Equipment",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

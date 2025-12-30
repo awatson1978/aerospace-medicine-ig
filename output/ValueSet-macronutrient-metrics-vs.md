@@ -1,4 +1,4 @@
-# Macronutrient Metrics - v0.5.5
+# Macronutrient Metrics - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:MacronutrientMetricsVS |
 
  
@@ -47,12 +47,12 @@ Measurement types for macronutrient tracking
   "resourceType" : "ValueSet",
   "id" : "macronutrient-metrics-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "MacronutrientMetricsVS",
   "title" : "Macronutrient Metrics",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# UTMB Aerospace Medicine Research - v0.5.5
+# UTMB Aerospace Medicine Research - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

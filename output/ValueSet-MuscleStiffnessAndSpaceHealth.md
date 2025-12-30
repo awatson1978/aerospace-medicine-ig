@@ -1,4 +1,4 @@
-# Muscle Stiffness - v0.5.5
+# Muscle Stiffness - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:MuscleStiffnessAndSpaceHealth |
 
  
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "MuscleStiffnessAndSpaceHealth",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "MuscleStiffnessAndSpaceHealth",
   "title" : "Muscle Stiffness",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Radiation Shielding - v0.5.5
+# Radiation Shielding - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:RadiationShielding |
 
 Shielding mass and composition for habitat or vehicle
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-radiation-shielding.
   "resourceType" : "StructureDefinition",
   "id" : "radiation-shielding",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "RadiationShielding",
   "title" : "Radiation Shielding",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Cumulative Radiation Dose (Fixed) - v0.5.5
+# Cumulative Radiation Dose (Fixed) - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:CumulativeRadiationDose |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
   "resourceType" : "StructureDefinition",
   "id" : "cumulative-radiation-dose",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "CumulativeRadiationDose",
   "title" : "Cumulative Radiation Dose (Fixed)",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

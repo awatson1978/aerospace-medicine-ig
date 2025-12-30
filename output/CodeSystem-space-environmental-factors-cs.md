@@ -1,4 +1,4 @@
-# Space Environmental Factors - v0.5.5
+# Space Environmental Factors - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:SpaceEnvironmentalFactorsCodeSystem |
 
  
@@ -27,12 +27,12 @@ CodeSystem for space environmental factors not found in SNOMED CT
   "resourceType" : "CodeSystem",
   "id" : "space-environmental-factors-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-environmental-factors-cs",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "SpaceEnvironmentalFactorsCodeSystem",
   "title" : "Space Environmental Factors",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

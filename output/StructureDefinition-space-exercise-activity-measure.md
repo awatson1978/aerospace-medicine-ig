@@ -1,4 +1,4 @@
-# Space Exercise Activity Measure - v0.5.5
+# Space Exercise Activity Measure - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:SpaceExerciseActivityMeasure |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
   "resourceType" : "StructureDefinition",
   "id" : "space-exercise-activity-measure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "SpaceExerciseActivityMeasure",
   "title" : "Space Exercise Activity Measure",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

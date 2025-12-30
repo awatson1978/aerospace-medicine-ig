@@ -1,4 +1,4 @@
-# Mars Crew Member Profile - v0.5.5
+# Mars Crew Member Profile - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member | *Version*:0.5.6 |
 | Active as of 2025-12-30 | *Computable Name*:MarsCrewMemberProfile |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mars-crew-member.csv
   "resourceType" : "StructureDefinition",
   "id" : "mars-crew-member",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "MarsCrewMemberProfile",
   "title" : "Mars Crew Member Profile",
   "status" : "active",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

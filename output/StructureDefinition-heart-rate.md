@@ -1,4 +1,4 @@
-# Heart Rate - v0.5.5
+# Heart Rate - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/heart-rate | *Version*:0.5.5 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/heart-rate | *Version*:0.5.6 |
 | Active as of 2022-09-11 | *Computable Name*:HeartRate |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-heart-rate.csv), [Ex
   "resourceType" : "StructureDefinition",
   "id" : "heart-rate",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/heart-rate",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "HeartRate",
   "title" : "Heart Rate",
   "status" : "active",

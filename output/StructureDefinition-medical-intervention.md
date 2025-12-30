@@ -1,4 +1,4 @@
-# Medical Intervention - v0.5.5
+# Medical Intervention - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:MedicalIntervention |
 
 Medical interventions provided during emergency response
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-medical-intervention
   "resourceType" : "StructureDefinition",
   "id" : "medical-intervention",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "MedicalIntervention",
   "title" : "Medical Intervention",
   "status" : "draft",
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

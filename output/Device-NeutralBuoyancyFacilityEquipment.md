@@ -1,4 +1,4 @@
-# Neutral Buoyancy Facility Equipment - v0.5.5
+# Neutral Buoyancy Facility Equipment - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

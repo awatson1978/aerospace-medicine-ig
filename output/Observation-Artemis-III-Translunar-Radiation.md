@@ -1,4 +1,4 @@
-# Artemis III Translunar Radiation Exposure - v0.5.5
+# Artemis III Translunar Radiation Exposure - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

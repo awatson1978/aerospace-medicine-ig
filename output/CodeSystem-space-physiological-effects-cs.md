@@ -1,4 +1,4 @@
-# Space Physiological Effects - v0.5.5
+# Space Physiological Effects - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-physiological-effects-cs | *Version*:0.5.5 |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-physiological-effects-cs | *Version*:0.5.6 |
 | Draft as of 2025-12-30 | *Computable Name*:SpacePhysiologicalEffectsCodeSystem |
 
  
@@ -27,12 +27,12 @@ CodeSystem for space physiological effects not found in SNOMED CT
   "resourceType" : "CodeSystem",
   "id" : "space-physiological-effects-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-physiological-effects-cs",
-  "version" : "0.5.5",
+  "version" : "0.5.6",
   "name" : "SpacePhysiologicalEffectsCodeSystem",
   "title" : "Space Physiological Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-30T10:45:53-07:00",
+  "date" : "2025-12-30T13:15:27-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

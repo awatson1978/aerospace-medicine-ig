@@ -14,10 +14,6 @@ The following package file includes an NPM package file used by many of the FHIR
 ### General Data Model
 General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHIR and other CMS approved interoperability data standards.
 
-- SpaceHealth.Conditions.ndjson
-- SpaceHealth.Devices.ndjson
-- SpaceHealth.Organizations.ndjson
-- SpaceHealth.Procedures.ndjson
 - [SpaceHealth.CodeSystems.ndjson](SpaceHealth.CodeSystems.ndjson)
 - [SpaceHealth.ValueSets.ndjson](SpaceHealth.ValueSets.ndjson)
 
@@ -26,9 +22,9 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 - [Artemis.Locations.ndjson](Artemis.Locations.ndjson)
 - [Artemis.CodeSystems.ndjson](Artemis.CodeSystems.ndjson)
 - [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
-- Artemis.Devices.ndjson
-- Artemis.Organizations.ndjson
-- Artemis.Crew.ndjson
+- [Artemis.Organizations.ndjson](Artemis.Organizations.ndjson)  
+- [Artemis.Devices.ndjson](Artemis.Devices.ndjson)
+- [Artemis.Crew.ndjson](Artemis.Crew.ndjson)  
 
 ### Mars Direct
 
@@ -48,7 +44,7 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 ### Star Trek
 
-- SpaceHealth.Patients.StarTrek.ndjson
+- [SpaceHealth.Patients.StarTrek.ndjson](SpaceHealth.Patients.StarTrek.ndjson)  
 
 
 

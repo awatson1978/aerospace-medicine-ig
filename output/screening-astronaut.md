@@ -1,4 +1,4 @@
-# Astronaut Training - v0.5.5
+# Astronaut Training - v0.5.6
 
 * [**Table of Contents**](toc.md)
 * **Astronaut Training**
