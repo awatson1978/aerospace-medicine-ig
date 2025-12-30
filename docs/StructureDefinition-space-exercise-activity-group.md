@@ -1,4 +1,4 @@
-# Space Exercise Activity Group - v0.5.4
+# Space Exercise Activity Group - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:SpaceExerciseActivityGroup |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:SpaceExerciseActivityGroup |
 
  
 Panel observation grouping related exercise measures for a single session (type, duration, intensity, HR) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
   "resourceType" : "StructureDefinition",
   "id" : "space-exercise-activity-group",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "SpaceExerciseActivityGroup",
   "title" : "Space Exercise Activity Group",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

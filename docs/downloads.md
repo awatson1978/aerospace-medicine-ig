@@ -1,4 +1,4 @@
-# Downloads - v0.5.4
+# Downloads - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * **Downloads**
@@ -26,8 +26,8 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 * Artemis.Devices.ndjson
 * Artemis.Crew.ndjson
-* Artemis.Locations.ndjson
 * Artemis.Organizations.ndjson
+* [Artemis.Locations.ndjson](Artemis.Locations.ndjson)
 * [Artemis.CodeSystems.ndjson](Artemis.CodeSystems.ndjson)
 * [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
 

@@ -1,4 +1,4 @@
-# Cognitive Performance Indicators Value Set - v0.5.4
+# Cognitive Performance Indicators Value Set - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:CognitivePerformanceIndicatorsVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:CognitivePerformanceIndicatorsVS |
 
  
 Cognitive and vigilance performance indicators relevant to operational readiness. 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "cognitive-performance-indicators-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "CognitivePerformanceIndicatorsVS",
   "title" : "Cognitive Performance Indicators Value Set",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

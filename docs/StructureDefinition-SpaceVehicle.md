@@ -1,4 +1,4 @@
-# Space Vehicle - v0.5.4
+# Space Vehicle - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:SpaceVehicle |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:SpaceVehicle |
 
  
 STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-SpaceVehicle.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "SpaceVehicle",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "SpaceVehicle",
   "title" : "Space Vehicle",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

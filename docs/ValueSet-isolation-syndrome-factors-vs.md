@@ -1,4 +1,4 @@
-# Isolation Syndrome Factors Value Set - v0.5.4
+# Isolation Syndrome Factors Value Set - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:IsolationSyndromeFactorsVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:IsolationSyndromeFactorsVS |
 
  
 Risk factors related to isolation and confinement that affect behavioral health. 
@@ -46,11 +46,11 @@ Risk factors related to isolation and confinement that affect behavioral health.
   "resourceType" : "ValueSet",
   "id" : "isolation-syndrome-factors-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "IsolationSyndromeFactorsVS",
   "title" : "Isolation Syndrome Factors Value Set",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

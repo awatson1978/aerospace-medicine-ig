@@ -1,4 +1,4 @@
-# Radiation Dose Units - v0.5.4
+# Radiation Dose Units - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:RadiationDoseUnitsVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:RadiationDoseUnitsVS |
 
  
 Units for radiation dose measurements 
@@ -46,12 +46,12 @@ Units for radiation dose measurements
   "resourceType" : "ValueSet",
   "id" : "radiation-dose-units-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "RadiationDoseUnitsVS",
   "title" : "Radiation Dose Units",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

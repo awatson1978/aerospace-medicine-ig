@@ -1,4 +1,4 @@
-# Mars Extravehicular Activity Procedure - v0.5.4
+# Mars Extravehicular Activity Procedure - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:MarsEVAProcedure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:MarsEVAProcedure |
 
  
 Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
   "resourceType" : "StructureDefinition",
   "id" : "mars-eva-procedure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "MarsEVAProcedure",
   "title" : "Mars Extravehicular Activity Procedure",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

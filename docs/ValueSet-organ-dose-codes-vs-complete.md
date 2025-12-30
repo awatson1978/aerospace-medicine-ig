@@ -1,4 +1,4 @@
-# Complete Organ-Specific Dose Codes - v0.5.4
+# Complete Organ-Specific Dose Codes - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:OrganDoseCodesVSComplete |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:OrganDoseCodesVSComplete |
 
  
 Comprehensive codes for organ-specific radiation dose measurements 
@@ -48,12 +48,12 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "organ-dose-codes-vs-complete",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "OrganDoseCodesVSComplete",
   "title" : "Complete Organ-Specific Dose Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

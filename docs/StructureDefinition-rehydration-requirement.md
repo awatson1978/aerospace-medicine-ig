@@ -1,4 +1,4 @@
-# Rehydration Requirement - v0.5.4
+# Rehydration Requirement - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:RehydrationRequirement |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:RehydrationRequirement |
 
 Amount of water required to prepare space food
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-rehydration-requirem
   "resourceType" : "StructureDefinition",
   "id" : "rehydration-requirement",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "RehydrationRequirement",
   "title" : "Rehydration Requirement",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

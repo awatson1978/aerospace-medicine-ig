@@ -1,4 +1,4 @@
-# Nutrition Inventory Status - v0.5.4
+# Nutrition Inventory Status - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:NutritionInventoryStatusCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:NutritionInventoryStatusCS |
 
  
 Status levels for nutrition inventory management 
@@ -27,12 +27,12 @@ Status levels for nutrition inventory management
   "resourceType" : "CodeSystem",
   "id" : "nutrition-inventory-status-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "NutritionInventoryStatusCS",
   "title" : "Nutrition Inventory Status",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Isolation Risk Factor - v0.5.4
+# Isolation Risk Factor - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:IsolationRisk |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:IsolationRisk |
 
 Captures isolation and confinement risk factors affecting behavioral health
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-isolation-risk.csv),
   "resourceType" : "StructureDefinition",
   "id" : "isolation-risk",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "IsolationRisk",
   "title" : "Isolation Risk Factor",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

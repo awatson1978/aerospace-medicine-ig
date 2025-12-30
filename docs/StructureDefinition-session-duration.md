@@ -1,4 +1,4 @@
-# Training Session Duration - v0.5.4
+# Training Session Duration - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/session-duration | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:SessionDuration |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/session-duration | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:SessionDuration |
 
 Duration of the neutral buoyancy training session
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-session-duration.csv
   "resourceType" : "StructureDefinition",
   "id" : "session-duration",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/session-duration",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "SessionDuration",
   "title" : "Training Session Duration",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

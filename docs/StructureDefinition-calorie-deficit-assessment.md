@@ -1,4 +1,4 @@
-# Calorie Deficit Assessment - v0.5.4
+# Calorie Deficit Assessment - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/calorie-deficit-assessment | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:CalorieDeficitAssessment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/calorie-deficit-assessment | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:CalorieDeficitAssessment |
 
  
 Quantifies acute and cumulative calorie deficits for astronauts 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
   "resourceType" : "StructureDefinition",
   "id" : "calorie-deficit-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/calorie-deficit-assessment",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "CalorieDeficitAssessment",
   "title" : "Calorie Deficit Assessment",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Diving and Space Medicine Regulatory Compliance - v0.5.4
+# Diving and Space Medicine Regulatory Compliance - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:RegulatoryComplianceCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:RegulatoryComplianceCS |
 
  
 Regulatory standards and compliance codes for diving and space medicine 
@@ -27,12 +27,12 @@ Regulatory standards and compliance codes for diving and space medicine
   "resourceType" : "CodeSystem",
   "id" : "regulatory-compliance-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "RegulatoryComplianceCS",
   "title" : "Diving and Space Medicine Regulatory Compliance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

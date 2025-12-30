@@ -1,4 +1,4 @@
-# Mental Health - v0.5.4
+# Mental Health - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * **Mental Health**
@@ -142,11 +142,11 @@ Unlike exercise or nutritionwhere compliance can be directly observed**mental 
 
 #### Core FHIR Resources
 
-* **Observation** � BehavioralHealthState, CumulativeStressBurden, IsolationRiskFactor
-* **Procedure** � PsychologicalCountermeasureActivity
-* **Condition** � Diagnosed mental health conditions (adjustment disorder, acute stress reaction)
-* **DiagnosticReport** � Comprehensive psychiatric evaluation summaries
-* **Goal** � Behavioral health targets (maintain sleep >7h/night, weekly crew social time)
+* **Observation** —BehavioralHealthState, CumulativeStressBurden, IsolationRiskFactor
+* **Procedure** —PsychologicalCountermeasureActivity
+* **Condition** —Diagnosed mental health conditions (adjustment disorder, acute stress reaction)
+* **DiagnosticReport** —Comprehensive psychiatric evaluation summaries
+* **Goal** —Behavioral health targets (maintain sleep >7h/night, weekly crew social time)
 
 #### Extensions
 
@@ -184,7 +184,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
 
 #### Advanced Biomarkers
 
-* **Cytokine profiles** (IL-6, TNF-�) as inflammatory stress markers
+* **Cytokine profiles** (IL-6, TNF-α) as inflammatory stress markers
 * **Brain-derived neurotrophic factor (BDNF)** for neuroplasticity and resilience
 * **Electroencephalography (EEG)** for sleep architecture and cognitive state
 * **Eye tracking** for attention, vigilance, and cognitive load
@@ -281,7 +281,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
       },
       "valueQuantity": {
         "value": 18.5,
-        "unit": "�g/dL",
+        "unit": "μg/dL",
         "system": "http://unitsofmeasure.org",
         "code": "ug/dL"
       }

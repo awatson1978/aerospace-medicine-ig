@@ -1,4 +1,4 @@
-# Underwater EVA Simulation - v0.5.4
+# Underwater EVA Simulation - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/UnderwaterEVASimulation | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:UnderwaterEVASimulation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/UnderwaterEVASimulation | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:UnderwaterEVASimulation |
 
  
 Extravehicular activity simulation conducted underwater 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-UnderwaterEVASimulat
   "resourceType" : "StructureDefinition",
   "id" : "UnderwaterEVASimulation",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/UnderwaterEVASimulation",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "UnderwaterEVASimulation",
   "title" : "Underwater EVA Simulation",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

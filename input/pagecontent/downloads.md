@@ -25,8 +25,8 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 - Artemis.Devices.ndjson
 - Artemis.Crew.ndjson
-- Artemis.Locations.ndjson
 - Artemis.Organizations.ndjson
+- [Artemis.Locations.ndjson](Artemis.Locations.ndjson)
 - [Artemis.CodeSystems.ndjson](Artemis.CodeSystems.ndjson)
 - [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
 

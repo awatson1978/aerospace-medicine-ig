@@ -1,4 +1,4 @@
-# Rescue Procedures Used - v0.5.4
+# Rescue Procedures Used - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:RescueProcedures |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:RescueProcedures |
 
 Specific rescue procedures and techniques employed
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-rescue-procedures.cs
   "resourceType" : "StructureDefinition",
   "id" : "rescue-procedures",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "RescueProcedures",
   "title" : "Rescue Procedures Used",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

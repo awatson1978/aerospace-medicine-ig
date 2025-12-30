@@ -1,4 +1,4 @@
-# Pulmonary Function Assessment - v0.5.4
+# Pulmonary Function Assessment - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/pulmonary-function | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:PulmonaryFunction |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/pulmonary-function | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:PulmonaryFunction |
 
 Assessment of respiratory function for diving
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-pulmonary-function.c
   "resourceType" : "StructureDefinition",
   "id" : "pulmonary-function",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/pulmonary-function",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "PulmonaryFunction",
   "title" : "Pulmonary Function Assessment",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Insurance - Plan - v0.5.4
+# Insurance - Plan - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

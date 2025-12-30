@@ -1,4 +1,4 @@
-# Location Hierarchy - v0.5.4
+# Location Hierarchy - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:LocationHierarchy |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:LocationHierarchy |
 
 Hierarchical relationship between locations (parent/child)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-location-hierarchy.c
   "resourceType" : "StructureDefinition",
   "id" : "location-hierarchy",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "LocationHierarchy",
   "title" : "Location Hierarchy",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

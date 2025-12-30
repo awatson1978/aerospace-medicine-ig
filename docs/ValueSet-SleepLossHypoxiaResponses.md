@@ -1,4 +1,4 @@
-# Sleep Loss and Hypoxia Responses - v0.5.4
+# Sleep Loss and Hypoxia Responses - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:SleepLossHypoxiaResponses |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:SleepLossHypoxiaResponses |
 
  
 Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia. 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SleepLossHypoxiaResponses",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "SleepLossHypoxiaResponses",
   "title" : "Sleep Loss and Hypoxia Responses",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

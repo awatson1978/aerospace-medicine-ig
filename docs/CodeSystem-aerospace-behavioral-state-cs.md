@@ -1,4 +1,4 @@
-# Aerospace Behavioral State Code System - v0.5.4
+# Aerospace Behavioral State Code System - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:AerospaceBehavioralStateCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:AerospaceBehavioralStateCS |
 
  
 Codes describing behavioral and psychological state parameters in aerospace missions. 
@@ -28,11 +28,11 @@ Codes describing behavioral and psychological state parameters in aerospace miss
   "resourceType" : "CodeSystem",
   "id" : "aerospace-behavioral-state-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "AerospaceBehavioralStateCS",
   "title" : "Aerospace Behavioral State Code System",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

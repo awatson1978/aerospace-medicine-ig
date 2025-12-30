@@ -1,4 +1,4 @@
-# Body Mass Index - v0.5.4
+# Body Mass Index - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/body-mass-index | *Version*:0.5.4 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/body-mass-index | *Version*:0.5.5 |
 | Active as of 2022-09-11 | *Computable Name*:BodyMassIndex |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-body-mass-index.csv)
   "resourceType" : "StructureDefinition",
   "id" : "body-mass-index",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/body-mass-index",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "BodyMassIndex",
   "title" : "Body Mass Index",
   "status" : "active",

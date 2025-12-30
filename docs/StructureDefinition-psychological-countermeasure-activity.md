@@ -1,4 +1,4 @@
-# Psychological Countermeasure Activity - v0.5.4
+# Psychological Countermeasure Activity - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:PsychologicalCountermeasureActivity |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:PsychologicalCountermeasureActivity |
 
  
 Documentation of psychological countermeasure interventions for behavioral health in aerospace missions. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
   "resourceType" : "StructureDefinition",
   "id" : "psychological-countermeasure-activity",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "PsychologicalCountermeasureActivity",
   "title" : "Psychological Countermeasure Activity",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

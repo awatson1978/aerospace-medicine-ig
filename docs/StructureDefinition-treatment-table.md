@@ -1,4 +1,4 @@
-# Hyperbaric Treatment Table - v0.5.4
+# Hyperbaric Treatment Table - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/treatment-table | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:TreatmentTable |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/treatment-table | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:TreatmentTable |
 
 Specific treatment table used (e.g., USN Table 6)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-treatment-table.csv)
   "resourceType" : "StructureDefinition",
   "id" : "treatment-table",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/treatment-table",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "TreatmentTable",
   "title" : "Hyperbaric Treatment Table",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Astronaut Patient Profile - v0.5.4
+# Astronaut Patient Profile - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/Astronaut | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:Astronaut |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/Astronaut | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:Astronaut |
 
  
 Patient profile for astronauts and space travelers 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-Astronaut.csv), [Exc
   "resourceType" : "StructureDefinition",
   "id" : "Astronaut",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "Astronaut",
   "title" : "Astronaut Patient Profile",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

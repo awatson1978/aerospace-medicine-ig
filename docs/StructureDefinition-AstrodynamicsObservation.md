@@ -1,4 +1,4 @@
-# Astrodynamics Observation - v0.5.4
+# Astrodynamics Observation - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/AstrodynamicsObservation | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:AstrodynamicsObservation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/AstrodynamicsObservation | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:AstrodynamicsObservation |
 
  
 An observation of a satellite or celestial object's orbital characteristics, using orbital elements. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-AstrodynamicsObserva
   "resourceType" : "StructureDefinition",
   "id" : "AstrodynamicsObservation",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/AstrodynamicsObservation",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "AstrodynamicsObservation",
   "title" : "Astrodynamics Observation",
   "status" : "draft",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

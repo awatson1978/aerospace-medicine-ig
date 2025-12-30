@@ -1,4 +1,4 @@
-# Artemis Radiation Exposure - v0.5.4
+# Artemis Radiation Exposure - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:ArtemisRadiationExposure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:ArtemisRadiationExposure |
 
  
 Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
   "resourceType" : "StructureDefinition",
   "id" : "artemis-radiation-exposure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "ArtemisRadiationExposure",
   "title" : "Artemis Radiation Exposure",
   "status" : "active",
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

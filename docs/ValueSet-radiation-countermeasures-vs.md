@@ -1,4 +1,4 @@
-# Radiation Countermeasures - v0.5.4
+# Radiation Countermeasures - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs | *Version*:0.5.4 |
-| Draft as of 2025-12-29 | *Computable Name*:RadiationCountermeasuresVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs | *Version*:0.5.5 |
+| Draft as of 2025-12-30 | *Computable Name*:RadiationCountermeasuresVS |
 
  
 Protective measures against radiation 
@@ -46,12 +46,12 @@ Protective measures against radiation
   "resourceType" : "ValueSet",
   "id" : "radiation-countermeasures-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "RadiationCountermeasuresVS",
   "title" : "Radiation Countermeasures",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

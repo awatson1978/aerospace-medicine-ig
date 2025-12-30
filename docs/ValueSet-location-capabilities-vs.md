@@ -1,4 +1,4 @@
-# Location Capabilities Value Set - v0.5.4
+# Location Capabilities Value Set - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs | *Version*:0.5.4 |
-| Active as of 2025-12-29 | *Computable Name*:LocationCapabilitiesVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs | *Version*:0.5.5 |
+| Active as of 2025-12-30 | *Computable Name*:LocationCapabilitiesVS |
 
  
 Capabilities and services available at aerospace medicine locations 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "location-capabilities-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs",
-  "version" : "0.5.4",
+  "version" : "0.5.5",
   "name" : "LocationCapabilitiesVS",
   "title" : "Location Capabilities Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T23:18:22-07:00",
+  "date" : "2025-12-30T00:07:25-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

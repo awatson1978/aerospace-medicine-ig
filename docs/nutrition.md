@@ -1,4 +1,4 @@
-# Nutrition - v0.5.4
+# Nutrition - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * **Nutrition**
@@ -123,11 +123,11 @@ Alerts feed mission control decision algorithms.
 
 #### Core FHIR Resources
 
-* **NutritionIntake** � SpaceNutritionIntake
-* **NutritionProduct** � SpaceNutritionProduct
-* **Observation** � CalorieDeficitAssessment, HydrationStatusObservation
-* **InventoryItem** � SpaceNutritionInventoryItem
-* **DiagnosticReport** � MetabolicRiskSummary
+* **NutritionIntake** —SpaceNutritionIntake
+* **NutritionProduct** —SpaceNutritionProduct
+* **Observation** —CalorieDeficitAssessment, HydrationStatusObservation
+* **InventoryItem** —SpaceNutritionInventoryItem
+* **DiagnosticReport** —MetabolicRiskSummary
 
 #### Extensions
 
@@ -181,7 +181,7 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
 
 #### Organ-Specific Nutritional Considerations
 
-* **Bone metabolism**: Ca�z, PTH, vitamin D, collagen breakdown markers
+* **Bone metabolism**: Ca²⁺, PTH, vitamin D, collagen breakdown markers
 * **Ocular health**: Vitamin A tracking for risk of SANS analogs
 * **Cognitive load**: Omega-3, B12, folate sufficiency
 

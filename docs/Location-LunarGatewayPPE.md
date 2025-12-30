@@ -1,4 +1,4 @@
-# Lunar Gateway Power and Propulsion Element - v0.5.4
+# Lunar Gateway Power and Propulsion Element - v0.5.5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
