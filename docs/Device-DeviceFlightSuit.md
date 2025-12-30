@@ -1,4 +1,4 @@
-# Device - Flight Suit - v0.5.2
+# Device - Flight Suit - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

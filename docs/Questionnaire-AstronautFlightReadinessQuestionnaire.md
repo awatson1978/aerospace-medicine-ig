@@ -1,4 +1,4 @@
-# Astronaut and Space Tourist Medical Screening Questionnaire - v0.5.2
+# Astronaut and Space Tourist Medical Screening Questionnaire - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/AstronautFlightReadinessQuestionnaire | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/AstronautFlightReadinessQuestionnaire | *Version*:0.5.3 |
 | Active as of 2025-05-18 | *Computable Name*:AstronautFlightReadinessQuestionnaire |
 
  
@@ -23,7 +23,7 @@ A medical screening form for astronaut or space tourism flight readiness, based 
   "resourceType" : "Questionnaire",
   "id" : "AstronautFlightReadinessQuestionnaire",
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/AstronautFlightReadinessQuestionnaire",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "AstronautFlightReadinessQuestionnaire",
   "title" : "Astronaut and Space Tourist Medical Screening Questionnaire",
   "status" : "active",

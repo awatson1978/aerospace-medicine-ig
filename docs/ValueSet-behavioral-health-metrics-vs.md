@@ -1,4 +1,4 @@
-# Behavioral Health Metrics Value Set - v0.5.2
+# Behavioral Health Metrics Value Set - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs | *Version*:0.5.2 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs | *Version*:0.5.3 |
 | Active as of 2025-12-29 | *Computable Name*:BehavioralHealthMetricsVS |
 
  
@@ -47,11 +47,11 @@ Key behavioral health state metrics used in aerospace behavioral health monitori
   "resourceType" : "ValueSet",
   "id" : "behavioral-health-metrics-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "BehavioralHealthMetricsVS",
   "title" : "Behavioral Health Metrics Value Set",
   "status" : "active",
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

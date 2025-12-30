@@ -1,4 +1,4 @@
-# Decompression Procedures - v0.5.2
+# Decompression Procedures - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/decompression-procedures | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/decompression-procedures | *Version*:0.5.3 |
 | Draft as of 2025-12-29 | *Computable Name*:DecompressionProcedures |
 
  
@@ -49,12 +49,12 @@ Standardized decompression procedures and protocols
   "resourceType" : "ValueSet",
   "id" : "decompression-procedures",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "DecompressionProcedures",
   "title" : "Decompression Procedures",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

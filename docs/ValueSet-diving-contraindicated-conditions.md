@@ -1,4 +1,4 @@
-# Diving Medical Contraindications - v0.5.2
+# Diving Medical Contraindications - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions | *Version*:0.5.3 |
 | Draft as of 2025-12-29 | *Computable Name*:DivingContraindicatedConditions |
 
  
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "diving-contraindicated-conditions",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "DivingContraindicatedConditions",
   "title" : "Diving Medical Contraindications",
   "status" : "draft",
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

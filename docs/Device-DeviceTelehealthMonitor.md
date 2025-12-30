@@ -1,4 +1,4 @@
-# Device - Telehealth Monitor - v0.5.2
+# Device - Telehealth Monitor - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

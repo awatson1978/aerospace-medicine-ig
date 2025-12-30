@@ -1,4 +1,4 @@
-# ISS T2 Treadmill Session - Procedure - v0.5.2
+# ISS T2 Treadmill Session - Procedure - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

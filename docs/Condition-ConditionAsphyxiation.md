@@ -1,4 +1,4 @@
-# Condition - Asphyxiation - v0.5.2
+# Condition - Asphyxiation - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

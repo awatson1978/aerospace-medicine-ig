@@ -1,4 +1,4 @@
-# Location - Cyber Truck - v0.5.2
+# Location - Cyber Truck - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

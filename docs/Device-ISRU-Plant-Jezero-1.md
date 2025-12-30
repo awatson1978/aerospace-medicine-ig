@@ -1,4 +1,4 @@
-# ISRU Propellant Production Plant - v0.5.2
+# ISRU Propellant Production Plant - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

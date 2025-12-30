@@ -1,4 +1,4 @@
-# Mental Health - v0.5.2
+# Mental Health - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * **Mental Health**
@@ -43,13 +43,23 @@ All measurements link to **MissionContext** extensions used throughout the IG, e
 
 #### Standardized Terminologies
 
-New code systems and value sets include:
+New code systems and value sets:
 
-* **AerospaceBehavioralStateCS**: mood-level, anxiety-level, irritability-score, conflict-index, cognitive-readiness
-* **BehavioralBiomarkerCS**: cortisol-ugdl, hrv-ms, sleep-duration-h, reaction-time-ms, speech-stress-index
-* **IsolationSyndromeFactorCS**: confinement, sensory-monotony, interpersonal-friction, circadian-drift, communications-latency
-* **PsychologicalCountermeasureCS**: cbt-session, guided-meditation, bright-light-therapy, crew-debrief, pharmacologic-anxiolytic
-* **BehavioralHealthMetricsVS, CognitivePerformanceIndicatorsVS, StressCountermeasuresVS**: curated bindings
+* **[AerospaceBehavioralStateCS](CodeSystem-aerospace-behavioral-state-cs.md)**: mood-level, anxiety-level, irritability-score, conflict-index, cognitive-readiness
+* **[BehavioralBiomarkerCS](CodeSystem-behavioral-biomarker-cs.md)**: cortisol-ugdl, hrv-ms, sleep-duration-h, reaction-time-ms, speech-stress-index
+* **[IsolationSyndromeFactorCS](CodeSystem-isolation-syndrome-factor-cs.md)**: confinement, sensory-monotony, interpersonal-friction, circadian-drift, communications-latency
+* **[PsychologicalCountermeasureCS](CodeSystem-psychological-countermeasure-cs.md)**: cbt-session, guided-meditation, bright-light-therapy, crew-debrief, pharmacologic-anxiolytic
+* **[BehavioralHealthMetricsVS](ValueSet-behavioral-health-metrics-vs.md)**: Curated behavioral health measurements
+* **[CognitivePerformanceIndicatorsVS](ValueSet-cognitive-performance-indicators-vs.md)**: Cognitive assessment metrics
+* **[StressCountermeasuresVS](ValueSet-stress-countermeasures-vs.md)**: Psychological intervention bindings
+* **[IsolationSyndromeFactorsVS](ValueSet-isolation-syndrome-factors-vs.md)**: ICE environment stressor factors
+
+Integration with existing terminologies:
+
+* **LOINC**: Psychological assessments (55467-8), mood scales, sleep quality
+* **SNOMED CT**: Mental health conditions, psychological procedures
+* **DSM-5/ICD-11**: Psychiatric diagnoses
+* **NASA Standards**: Behavioral health and performance requirements
 
 ### Physiologic and Environmental Considerations
 

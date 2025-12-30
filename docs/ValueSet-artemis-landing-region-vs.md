@@ -1,4 +1,4 @@
-# Artemis Landing Regions - v0.5.2
+# Artemis Landing Regions - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-landing-region-vs | *Version*:0.5.2 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-landing-region-vs | *Version*:0.5.3 |
 | Active as of 2025-12-29 | *Computable Name*:ArtemisLandingRegionVS |
 
  
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "artemis-landing-region-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-landing-region-vs",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "ArtemisLandingRegionVS",
   "title" : "Artemis Landing Regions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

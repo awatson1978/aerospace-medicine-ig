@@ -1,4 +1,4 @@
-# Operational Status Value Set - v0.5.2
+# Operational Status Value Set - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs | *Version*:0.5.2 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs | *Version*:0.5.3 |
 | Active as of 2025-12-29 | *Computable Name*:OperationalStatusVS |
 
  
@@ -47,12 +47,12 @@ Operational status codes for facilities and vehicles
   "resourceType" : "ValueSet",
   "id" : "operational-status-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "OperationalStatusVS",
   "title" : "Operational Status Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

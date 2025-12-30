@@ -1,4 +1,4 @@
-# Procedure - Hearing Exam - v0.5.2
+# Procedure - Hearing Exam - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

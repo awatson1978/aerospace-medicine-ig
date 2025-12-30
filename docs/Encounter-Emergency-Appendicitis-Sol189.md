@@ -1,4 +1,4 @@
-# Autonomous Medical Encounter - Appendicitis Sol 189 - v0.5.2
+# Autonomous Medical Encounter - Appendicitis Sol 189 - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

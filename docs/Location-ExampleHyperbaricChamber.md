@@ -1,4 +1,4 @@
-# Example Hyperbaric Chamber - v0.5.2
+# Example Hyperbaric Chamber - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

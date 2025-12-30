@@ -1,4 +1,4 @@
-# Location Capabilities - v0.5.2
+# Location Capabilities - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/location-capabilities | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/location-capabilities | *Version*:0.5.3 |
 | Draft as of 2025-12-29 | *Computable Name*:LocationCapabilities |
 
 Specific capabilities and equipment available at location
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-location-capabilitie
   "resourceType" : "StructureDefinition",
   "id" : "location-capabilities",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/location-capabilities",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "LocationCapabilities",
   "title" : "Location Capabilities",
   "status" : "draft",
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

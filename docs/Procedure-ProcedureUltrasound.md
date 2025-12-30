@@ -1,4 +1,4 @@
-# Procedure - Ultrasound - v0.5.2
+# Procedure - Ultrasound - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Space Cardiovascular Effects - v0.5.2
+# Space Cardiovascular Effects - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-cardiovascular-effects-cs | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-cardiovascular-effects-cs | *Version*:0.5.3 |
 | Draft as of 2025-12-29 | *Computable Name*:SpaceCardiovascularEffectsCodeSystem |
 
  
@@ -27,12 +27,12 @@ CodeSystem for space cardiovascular effects not found in SNOMED CT
   "resourceType" : "CodeSystem",
   "id" : "space-cardiovascular-effects-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-cardiovascular-effects-cs",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "SpaceCardiovascularEffectsCodeSystem",
   "title" : "Space Cardiovascular Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

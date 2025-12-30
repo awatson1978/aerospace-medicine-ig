@@ -1,4 +1,4 @@
-# Downloads - v0.5.2
+# Downloads - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * **Downloads**
@@ -11,44 +11,44 @@ The following package file includes an NPM package file used by many of the FHIR
 
 * [Package](package.tgz)
 
-### Artemis
+### General Data Model
 
 General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHIR and other CMS approved interoperability data standards.
 
-* [SpaceHealth.Conditions.ndjson](SpaceHealth.Conditions.ndjson)
-* [SpaceHealth.Devices.ndjson](SpaceHealth.Devices.ndjson)
-* [SpaceHealth.Organizations.ndjson](SpaceHealth.Organizations.ndjson)
-* [SpaceHealth.Procedures.ndjson](SpaceHealth.Procedures.ndjson)
+* SpaceHealth.Conditions.ndjson
+* SpaceHealth.Devices.ndjson
+* SpaceHealth.Organizations.ndjson
+* SpaceHealth.Procedures.ndjson
+* [SpaceHealth.CodeSystems.ndjson](SpaceHealth.CodeSystems.ndjson)
+* [SpaceHealth.ValueSets.ndjson](SpaceHealth.ValueSets.ndjson)
 
 ### Artemis
 
-Data collection from news sources and otherwise in public domain is provided below. The following bulk-data files can be loaded directly into a JSON collection or table, using a tool such as [Mongo Compass](https://www.mongodb.com/products/compass).
-
-* [Artemis.Devices.ndjson](Artemis.Devices.ndjson)
-* [Artemis.Crew.ndjson](Artemis.Crew.ndjson)
-* [Artemis.Locations.ndjson](Artemis.Locations.ndjson)
-* [Artemis.Organizations.ndjson](Artemis.Organizations.ndjson)
-* [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
+* Artemis.Devices.ndjson
+* Artemis.Crew.ndjson
+* Artemis.Locations.ndjson
+* Artemis.Organizations.ndjson
 * [Artemis.CodeSystems.ndjson](Artemis.CodeSystems.ndjson)
+* [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
 
 ### Mars Direct
 
-* [MarsDirect.Devices.ndjson](MarsDirect.Conditions.ndjson)
-* [MarsDirect.Crew.ndjson](MarsDirect.Crew.ndjson)
-* [MarsDirect.Locations.ndjson](MarsDirect.Locations.ndjson)
-* [MarsDirect.Organizations.ndjson](MarsDirect.Organizations.ndjson)
-* [MarsDirect.ValueSets.ndjson](MarsDirect.ValueSets.ndjson)
+* MarsDirect.Devices.ndjson
+* MarsDirect.Crew.ndjson
+* MarsDirect.Locations.ndjson
+* MarsDirect.Organizations.ndjson
 * [MarsDirect.CodeSystems.ndjson](MarsDirect.CodeSystems.ndjson)
+* [MarsDirect.ValueSets.ndjson](MarsDirect.ValueSets.ndjson)
+
+### Commercial Space
+
+* CommercialSpace.Organizations.ndjson
+* CommercialSpace.Locations.ndjson
+* CommercialSpace.Devices.ndjson
 
 ### Star Trek
 
-* [SpaceHealth.Patients.StarTrek.ndjson](SpaceHealth.Patients.StarTrek.ndjson)
-
-### Registry Collections
-
-Data collection from news sources and otherwise in public domain is provided below. The following bulk-data files can be loaded directly into a JSON collection or table, using a tool such as [Mongo Compass](https://www.mongodb.com/products/compass).
-
-* [SpaceHealth.Patients.Astronauts.ndjson](SpaceHealth.Patients.Astronauts.ndjson)
+* SpaceHealth.Patients.StarTrek.ndjson
 
 ### Examples
 

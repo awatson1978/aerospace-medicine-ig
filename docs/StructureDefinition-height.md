@@ -1,4 +1,4 @@
-# Body Height - v0.5.2
+# Body Height - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/height | *Version*:0.5.2 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/height | *Version*:0.5.3 |
 | Active as of 2022-09-11 | *Computable Name*:Height |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-height.csv), [Excel]
   "resourceType" : "StructureDefinition",
   "id" : "height",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/height",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "Height",
   "title" : "Body Height",
   "status" : "active",

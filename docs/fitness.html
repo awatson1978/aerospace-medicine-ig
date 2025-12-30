@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Fitness -  v0.5.2</title>
+    <title>Fitness -  v0.5.3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.2 - ci-build
+            <span style="display:inline-block;">0.5.3 - ci-build
 
 
             </span>
@@ -190,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Fitness</h2>
   
 
@@ -291,13 +291,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="standardized-terminologies">Standardized Terminologies</h4>
 
-<p>New code systems and value sets include:</p>
+<p>New code systems and value sets:</p>
 
 <ul>
-  <li><strong>SpaceExerciseModalityCS</strong>: treadmill, cycle-ergometer, ARED-resistive, resistive-squat, resistive-deadlift, ag-centrifuge</li>
-  <li><strong>SpacePerformanceMetricCS</strong>: mean-power, peak-power, simulated-bw, total-work, vo2-surrogate, recovery-hr</li>
-  <li><strong>Physical Activity Temporary Codes</strong>: PAPanel, duration, intensity (from PA IG)</li>
-  <li><strong>LOINC Exercise Codes</strong>: Exercise frequency, type of exercise, heart rate</li>
+  <li><strong><a href="CodeSystem-space-exercise-modality-cs.html">SpaceExerciseModalityCS</a></strong>: treadmill, cycle-ergometer, ARED-resistive, resistive-squat, resistive-deadlift, ag-centrifuge</li>
+  <li><strong><a href="ValueSet-space-exercise-modality-vs.html">SpaceExerciseModalityVS</a></strong>: ValueSet for space exercise modalities</li>
+  <li><strong><a href="CodeSystem-space-performance-metric-cs.html">SpacePerformanceMetricCS</a></strong>: mean-power, peak-power, simulated-bw, total-work, vo2-surrogate, recovery-hr</li>
+  <li><strong><a href="ValueSet-space-performance-metric-vs.html">SpacePerformanceMetricVS</a></strong>: ValueSet for exercise performance metrics</li>
+  <li><strong><a href="ValueSet-evs-units-vs.html">EVSUnitsVS</a></strong>: Exercise Vital Sign (EVS) unit measurements</li>
+</ul>
+
+<p>Integration with existing terminologies:</p>
+<ul>
+  <li><strong>Physical Activity IG</strong>: PAPanel, duration, intensity codes</li>
+  <li><strong>LOINC</strong>: Exercise frequency (89555-7), type of exercise (73985-4), heart rate measurements</li>
+  <li><strong>SNOMED CT</strong>: Exercise procedures, musculoskeletal conditions</li>
+  <li><strong>NASA Standards</strong>: Exercise countermeasure requirements</li>
 </ul>
 
 <h3 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h3>
@@ -728,7 +737,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 20:17-0700">2025-12-29</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 22:23-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

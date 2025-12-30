@@ -1,4 +1,4 @@
-# CSA Life Sciences Research - v0.5.2
+# CSA Life Sciences Research - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Exercise Device - v0.5.2
+# Exercise Device - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device | *Version*:0.5.2 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device | *Version*:0.5.3 |
 | Active as of 2025-12-29 | *Computable Name*:ExerciseDevice |
 
 Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS)
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-exercise-device.csv)
   "resourceType" : "StructureDefinition",
   "id" : "exercise-device",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "ExerciseDevice",
   "title" : "Exercise Device",
   "status" : "active",
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

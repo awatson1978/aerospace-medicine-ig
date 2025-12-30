@@ -1,4 +1,4 @@
-# Gimbal Training - v0.5.2
+# Gimbal Training - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * **Gimbal Training**

@@ -36,13 +36,22 @@ All measurements link to **MissionContext** extensions used throughout the IG, e
 
 #### Standardized Terminologies
 
-New code systems and value sets include:
+New code systems and value sets:
 
-- **AerospaceBehavioralStateCS**: mood-level, anxiety-level, irritability-score, conflict-index, cognitive-readiness
-- **BehavioralBiomarkerCS**: cortisol-ugdl, hrv-ms, sleep-duration-h, reaction-time-ms, speech-stress-index
-- **IsolationSyndromeFactorCS**: confinement, sensory-monotony, interpersonal-friction, circadian-drift, communications-latency
-- **PsychologicalCountermeasureCS**: cbt-session, guided-meditation, bright-light-therapy, crew-debrief, pharmacologic-anxiolytic
-- **BehavioralHealthMetricsVS, CognitivePerformanceIndicatorsVS, StressCountermeasuresVS**: curated bindings
+- **[AerospaceBehavioralStateCS](CodeSystem-aerospace-behavioral-state-cs.html)**: mood-level, anxiety-level, irritability-score, conflict-index, cognitive-readiness
+- **[BehavioralBiomarkerCS](CodeSystem-behavioral-biomarker-cs.html)**: cortisol-ugdl, hrv-ms, sleep-duration-h, reaction-time-ms, speech-stress-index
+- **[IsolationSyndromeFactorCS](CodeSystem-isolation-syndrome-factor-cs.html)**: confinement, sensory-monotony, interpersonal-friction, circadian-drift, communications-latency
+- **[PsychologicalCountermeasureCS](CodeSystem-psychological-countermeasure-cs.html)**: cbt-session, guided-meditation, bright-light-therapy, crew-debrief, pharmacologic-anxiolytic
+- **[BehavioralHealthMetricsVS](ValueSet-behavioral-health-metrics-vs.html)**: Curated behavioral health measurements
+- **[CognitivePerformanceIndicatorsVS](ValueSet-cognitive-performance-indicators-vs.html)**: Cognitive assessment metrics
+- **[StressCountermeasuresVS](ValueSet-stress-countermeasures-vs.html)**: Psychological intervention bindings
+- **[IsolationSyndromeFactorsVS](ValueSet-isolation-syndrome-factors-vs.html)**: ICE environment stressor factors
+
+Integration with existing terminologies:
+- **LOINC**: Psychological assessments (55467-8), mood scales, sleep quality
+- **SNOMED CT**: Mental health conditions, psychological procedures
+- **DSM-5/ICD-11**: Psychiatric diagnoses
+- **NASA Standards**: Behavioral health and performance requirements
 
 ### Physiologic and Environmental Considerations
 

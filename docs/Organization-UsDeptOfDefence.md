@@ -1,4 +1,4 @@
-# Department of Defense - v0.5.2
+# Department of Defense - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

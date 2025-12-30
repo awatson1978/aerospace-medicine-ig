@@ -1,4 +1,4 @@
-# Space Radiation Exposure Summary (Fixed) - v0.5.2
+# Space Radiation Exposure Summary (Fixed) - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary | *Version*:0.5.3 |
 | Active as of 2025-12-29 | *Computable Name*:SpaceRadiationSummary |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
   "resourceType" : "StructureDefinition",
   "id" : "space-radiation-summary",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "SpaceRadiationSummary",
   "title" : "Space Radiation Exposure Summary (Fixed)",
   "status" : "active",
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

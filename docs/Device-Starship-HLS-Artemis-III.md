@@ -1,4 +1,4 @@
-# Starship HLS for Artemis III - v0.5.2
+# Starship HLS for Artemis III - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

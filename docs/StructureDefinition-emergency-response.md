@@ -1,4 +1,4 @@
-# Emergency Response Assessment - v0.5.2
+# Emergency Response Assessment - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/emergency-response | *Version*:0.5.2 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/emergency-response | *Version*:0.5.3 |
 | Draft as of 2025-12-29 | *Computable Name*:EmergencyResponse |
 
 Assessment of emergency response procedures
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-emergency-response.c
   "resourceType" : "StructureDefinition",
   "id" : "emergency-response",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-response",
-  "version" : "0.5.2",
+  "version" : "0.5.3",
   "name" : "EmergencyResponse",
   "title" : "Emergency Response Assessment",
   "status" : "draft",
-  "date" : "2025-12-29T20:17:52-07:00",
+  "date" : "2025-12-29T22:23:37-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

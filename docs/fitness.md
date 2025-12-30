@@ -1,4 +1,4 @@
-# Fitness - v0.5.2
+# Fitness - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * **Fitness**
@@ -43,12 +43,20 @@ All measurements link to **MissionContext** extensions used throughout the IG.
 
 #### Standardized Terminologies
 
-New code systems and value sets include:
+New code systems and value sets:
 
-* **SpaceExerciseModalityCS**: treadmill, cycle-ergometer, ARED-resistive, resistive-squat, resistive-deadlift, ag-centrifuge
-* **SpacePerformanceMetricCS**: mean-power, peak-power, simulated-bw, total-work, vo2-surrogate, recovery-hr
-* **Physical Activity Temporary Codes**: PAPanel, duration, intensity (from PA IG)
-* **LOINC Exercise Codes**: Exercise frequency, type of exercise, heart rate
+* **[SpaceExerciseModalityCS](CodeSystem-space-exercise-modality-cs.md)**: treadmill, cycle-ergometer, ARED-resistive, resistive-squat, resistive-deadlift, ag-centrifuge
+* **[SpaceExerciseModalityVS](ValueSet-space-exercise-modality-vs.md)**: ValueSet for space exercise modalities
+* **[SpacePerformanceMetricCS](CodeSystem-space-performance-metric-cs.md)**: mean-power, peak-power, simulated-bw, total-work, vo2-surrogate, recovery-hr
+* **[SpacePerformanceMetricVS](ValueSet-space-performance-metric-vs.md)**: ValueSet for exercise performance metrics
+* **[EVSUnitsVS](ValueSet-evs-units-vs.md)**: Exercise Vital Sign (EVS) unit measurements
+
+Integration with existing terminologies:
+
+* **Physical Activity IG**: PAPanel, duration, intensity codes
+* **LOINC**: Exercise frequency (89555-7), type of exercise (73985-4), heart rate measurements
+* **SNOMED CT**: Exercise procedures, musculoskeletal conditions
+* **NASA Standards**: Exercise countermeasure requirements
 
 ### Physiologic and Environmental Considerations
 

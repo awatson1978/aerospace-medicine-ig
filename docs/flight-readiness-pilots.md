@@ -1,4 +1,4 @@
-# EHR Use for Pilot Certification - v0.5.2
+# EHR Use for Pilot Certification - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * **EHR Use for Pilot Certification**

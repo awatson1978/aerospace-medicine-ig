@@ -37,13 +37,22 @@ All measurements link to **MissionContext** extensions used in other IG modules.
 
 #### Standardized Terminologies
 
-New code systems and value sets include:
+New code systems and value sets:
 
-- **SpaceNutritionTypeCS**: freeze-dried meal, thermo-stabilized entr�e, fresh produce payload, supplemental electrolyte mix
-- **MacronutrientMetricsCS**: kcal, carb-grams, fat-grams, protein-grams
-- **HydrationTypeCS**: potable water, ORS, electrolyte packet, IV saline
-- **NutritionInventoryStatusCS**: adequate, low, critical, expired
-- **CalorieDeficitRiskVS**: mild (<300 kcal/day), moderate (300600), severe (>600), extreme (>1,000 kcal/day)
+- **[SpaceNutritionTypeCS](CodeSystem-space-nutrition-type-cs.html)**: freeze-dried meal, thermo-stabilized entrée, fresh produce payload, supplemental electrolyte mix
+- **[SpaceNutritionTypeVS](ValueSet-space-nutrition-type-vs.html)**: ValueSet for space food types
+- **[MacronutrientMetricsCS](CodeSystem-macronutrient-metrics-cs.html)**: kcal, carb-grams, fat-grams, protein-grams
+- **[MacronutrientMetricsVS](ValueSet-macronutrient-metrics-vs.html)**: ValueSet for macronutrient measurements
+- **[HydrationTypeCS](CodeSystem-hydration-type-cs.html)**: potable water, ORS, electrolyte packet, IV saline
+- **[HydrationTypeVS](ValueSet-hydration-type-vs.html)**: ValueSet for hydration types
+- **[NutritionInventoryStatusCS](CodeSystem-nutrition-inventory-status-cs.html)**: adequate, low, critical, expired
+- **[NutritionInventoryStatusVS](ValueSet-nutrition-inventory-status-vs.html)**: ValueSet for inventory status
+- **[CalorieDeficitRiskVS](ValueSet-calorie-deficit-risk-vs.html)**: mild (<300 kcal/day), moderate (300–600), severe (>600), extreme (>1,000 kcal/day)
+
+Integration with existing terminologies:
+- **LOINC**: Nutritional observations, dietary intake measurements
+- **SNOMED CT**: Nutritional disorders, dietary patterns
+- **NASA Standards**: Nutritional requirements for spaceflight
 
 ### Physiologic and Environmental Considerations
 

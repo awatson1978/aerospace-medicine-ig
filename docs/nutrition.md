@@ -1,4 +1,4 @@
-# Nutrition - v0.5.2
+# Nutrition - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * **Nutrition**
@@ -44,13 +44,23 @@ All measurements link to **MissionContext** extensions used in other IG modules.
 
 #### Standardized Terminologies
 
-New code systems and value sets include:
+New code systems and value sets:
 
-* **SpaceNutritionTypeCS**: freeze-dried meal, thermo-stabilized entr�e, fresh produce payload, supplemental electrolyte mix
-* **MacronutrientMetricsCS**: kcal, carb-grams, fat-grams, protein-grams
-* **HydrationTypeCS**: potable water, ORS, electrolyte packet, IV saline
-* **NutritionInventoryStatusCS**: adequate, low, critical, expired
-* **CalorieDeficitRiskVS**: mild (<300 kcal/day), moderate (300600), severe (>600), extreme (>1,000 kcal/day)
+* **[SpaceNutritionTypeCS](CodeSystem-space-nutrition-type-cs.md)**: freeze-dried meal, thermo-stabilized entrée, fresh produce payload, supplemental electrolyte mix
+* **[SpaceNutritionTypeVS](ValueSet-space-nutrition-type-vs.md)**: ValueSet for space food types
+* **[MacronutrientMetricsCS](CodeSystem-macronutrient-metrics-cs.md)**: kcal, carb-grams, fat-grams, protein-grams
+* **[MacronutrientMetricsVS](ValueSet-macronutrient-metrics-vs.md)**: ValueSet for macronutrient measurements
+* **[HydrationTypeCS](CodeSystem-hydration-type-cs.md)**: potable water, ORS, electrolyte packet, IV saline
+* **[HydrationTypeVS](ValueSet-hydration-type-vs.md)**: ValueSet for hydration types
+* **[NutritionInventoryStatusCS](CodeSystem-nutrition-inventory-status-cs.md)**: adequate, low, critical, expired
+* **[NutritionInventoryStatusVS](ValueSet-nutrition-inventory-status-vs.md)**: ValueSet for inventory status
+* **[CalorieDeficitRiskVS](ValueSet-calorie-deficit-risk-vs.md)**: mild (<300 kcal/day), moderate (300–600), severe (>600), extreme (>1,000 kcal/day)
+
+Integration with existing terminologies:
+
+* **LOINC**: Nutritional observations, dietary intake measurements
+* **SNOMED CT**: Nutritional disorders, dietary patterns
+* **NASA Standards**: Nutritional requirements for spaceflight
 
 ### Physiologic and Environmental Considerations
 

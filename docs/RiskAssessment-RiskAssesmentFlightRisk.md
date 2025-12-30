@@ -1,4 +1,4 @@
-# Risk - Catastrophic Failure - v0.5.2
+# Risk - Catastrophic Failure - v0.5.3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
