@@ -1,4 +1,4 @@
-# Fitness - v0.5.1
+# Fitness - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * **Fitness**
@@ -386,4 +386,33 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 * **Partial gravity exercise** protocols for Moon (1/6 g) and Mars (3/8 g)
 * **Suit-integrated exercise** enabling movement training in EVA suits
 * **Reduced equipment mass** for surface habitat fitness systems
+
+### References
+
+#### Exercise Equipment and Protocols
+
+* [Astronaut Exercise - NASA](https://www.nasa.gov/missions/station/iss-research/astronaut-exercise/)
+* [Exercise Overview Technical Brief (NASA-STD-3001)](https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-031-exercise-overview.pdf)
+* [Exercise Countermeasures Lab - NASA Glenn](https://www1.grc.nasa.gov/space/human-research-program/advanced-exercise-concepts/exercise-countermeasures-lab/)
+* [Astronaut workout regimen on ISS](https://www.inverse.com/science/inside-the-extreme-workout-regimen-of-an-astronaut-stuck-at-the-international-space-station)
+* [Countermeasures (ARED, CEVIS, T2) Critical Readiness Review (NASA NTRS)](https://ntrs.nasa.gov/citations/20100008451)
+
+#### Research on Exercise Countermeasures
+
+* [Effects of exercise countermeasures on multisystem function (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9898566/)
+* [Exercise in space: ESA approach to in-flight countermeasures (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4971634/)
+* [High intensity training during spaceflight: NASA Sprint Study (npj Microgravity)](https://www.nature.com/articles/s41526-020-00111-x)
+* [Effects of Replacing Treadmill Running with Alternative Exercise Countermeasures (NASA NTRS)](https://ntrs.nasa.gov/citations/20240000929)
+
+#### Bone and Muscle Research
+
+* [Counteracting Bone and Muscle Loss in Microgravity - NASA](https://www.nasa.gov/missions/station/iss-research/counteracting-bone-and-muscle-loss-in-microgravity/)
+* [Bone and Mineral Evaluation and Analysis - NASA](https://www.nasa.gov/directorates/esdmd/hhp/bone-and-mineral-evaluation-and-analysis/)
+* [How our bones adapt in space](https://ispyphysiology.com/2023/01/11/how-our-bones-adapt-in-space/)
+* [Pre-flight exercise and bone metabolism predict bone loss](https://bjsm.bmj.com/content/56/4/196)
+* [Effect of active muscles on astronaut kinematics](https://pubmed.ncbi.nlm.nih.gov/36652027/)
+* [The High-Bar and Low-Bar Back-Squats: A Biomechanical Analysis](https://pubmed.ncbi.nlm.nih.gov/28195975/)
+* [MuscleMap: Whole Body Quantitative MRI](https://pubmed.ncbi.nlm.nih.gov/39590726/)
+* [Astronaut physiological deconditioning (NASA/SP-20250000273)](https://www.nasa.gov/wp-content/uploads/2025/02/sp-20250000273.pdf)
+* [Staying Strong: Spaceflight Muscle Loss Study](https://www.nasa.gov/ames/space-biosciences/staying-strong-spaceflight-muscle-loss-study-aims-to-benefit-patients-on-earth/)
 

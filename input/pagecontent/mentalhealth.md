@@ -368,3 +368,43 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
 - **Partial gravity effects** on mood and cognition (Moon 1/6 g, Mars 3/8 g)
 - **Surface habitat design** incorporating psychological needs (windows, personal space, varied sensory environments)
 - **Long-duration isolation protocols** for 2-3 year Mars missions with no resupply or evacuation option
+
+### References
+
+#### NASA Behavioral Health Programs
+
+- [Behavioral Health & Performance - NASA](https://www.nasa.gov/reference/jsc-behavioral-health/)
+- [Human Factors and Behavioral Performance - NASA](https://www.nasa.gov/hrp/human-factors-and-behavioral-performance/)
+- [Behavioral Health and Performance Technical Brief (NASA OCHMO-TB-016)](https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-016-behavioral-health.pdf)
+- [About Human Factors and Behavioral Performance - NASA](https://www.nasa.gov/reference/about-human-factors-and-behavioral-performance/)
+- [Behavioral Health and Performance - Safe Passage (NCBI Bookshelf)](https://www.ncbi.nlm.nih.gov/books/NBK223770/)
+
+#### Third Quarter Phenomenon Research
+
+- [The third quarter phenomenon revisited (ScienceDirect)](https://www.sciencedirect.com/science/article/abs/pii/S0272494424001889)
+- [Whither the Third Quarter Phenomenon? (PubMed)](https://pubmed.ncbi.nlm.nih.gov/34503622/)
+- [The Third-Quarter Time phenomenon in ICE environments (ScienceDirect)](https://www.sciencedirect.com/science/article/abs/pii/S1873965225001914)
+- [Psychological and sociological effects of spaceflight - Wikipedia](https://en.wikipedia.org/wiki/Psychological_and_sociological_effects_of_spaceflight)
+
+#### Operational Behavioral Health
+
+- [Operational behavioral health resources for ISS crews (PubMed)](https://pubmed.ncbi.nlm.nih.gov/15943193/)
+- [Human Behavior and Performance Support for ISS Operations (NASA NTRS)](https://ntrs.nasa.gov/citations/20100036824)
+
+#### Analog Studies and Isolation Research
+
+- [Self-Care in Space](https://www.psychologytoday.com/intl/blog/between-cultures/202402/self-care-in-space)
+- [Biobehavioral & psychosocial stress in analog missions](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.898841/full)
+- [Leading the crew to Mars: Evidence from NASA HERA](https://www.sciencedirect.com/science/article/abs/pii/S0094576525005314)
+- [Getting Even or Being at Odds? Cohesion in Even- and Odd-Sized Groups](https://business.columbia.edu/faculty/research/getting-even-or-being-odds-cohesion-even-and-odd-sized-small-groups)
+- [Mars Desert Research Station - Apply to Become a Crew Member](https://reports.marssociety.org/apply-to-become-a-crew-member/)
+
+#### Sleep and Cognitive Performance
+
+- [Sleep loss effects on physiology & cognition](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.1046166/full)
+- [Task impairment during spaceflight missions](https://www.sciencedirect.com/science/article/abs/pii/S2468896722001434)
+
+#### Related Studies
+
+- [Pope Francis and Expedition 53 Crew Exchange](https://www.nasa.gov/blogs/spacestation/2017/10/26/pope-francis-and-expedition-53-crew-exchange-thoughts-about-humanitys-deepest-and-oldest-questions/)
+- [Why Pilots Don't Get Therapy (The Atlantic)](https://www.theatlantic.com/politics/archive/2025/05/why-pilots-dont-get-therapy/682959/)

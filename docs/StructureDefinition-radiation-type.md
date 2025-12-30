@@ -1,4 +1,4 @@
-# Space Radiation Type - v0.5.1
+# Space Radiation Type - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-type | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-type | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:RadiationType |
 
 Type of space radiation exposure
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-radiation-type.csv),
   "resourceType" : "StructureDefinition",
   "id" : "radiation-type",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/radiation-type",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "RadiationType",
   "title" : "Space Radiation Type",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

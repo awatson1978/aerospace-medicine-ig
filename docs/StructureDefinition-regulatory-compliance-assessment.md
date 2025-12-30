@@ -1,4 +1,4 @@
-# Regulatory Compliance Assessment - v0.5.1
+# Regulatory Compliance Assessment - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance-assessment | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance-assessment | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:RegulatoryComplianceAssessment |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
   "resourceType" : "StructureDefinition",
   "id" : "regulatory-compliance-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance-assessment",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "RegulatoryComplianceAssessment",
   "title" : "Regulatory Compliance Assessment",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

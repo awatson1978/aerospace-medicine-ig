@@ -1,4 +1,4 @@
-# Decompression Sickness - v0.5.1
+# Decompression Sickness - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DecompressionSickness | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DecompressionSickness | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:DecompressionSickness |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-DecompressionSicknes
   "resourceType" : "StructureDefinition",
   "id" : "DecompressionSickness",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/DecompressionSickness",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "DecompressionSickness",
   "title" : "Decompression Sickness",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

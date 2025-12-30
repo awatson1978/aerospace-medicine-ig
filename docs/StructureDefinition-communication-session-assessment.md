@@ -1,4 +1,4 @@
-# Communication Session Assessment - v0.5.1
+# Communication Session Assessment - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-session-assessment | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-session-assessment | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:CommunicationSessionAssessment |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-communication-sessio
   "resourceType" : "StructureDefinition",
   "id" : "communication-session-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/communication-session-assessment",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "CommunicationSessionAssessment",
   "title" : "Communication Session Assessment",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

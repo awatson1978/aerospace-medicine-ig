@@ -1,4 +1,4 @@
-# Enhanced Aerospace Medicine Code System - v0.5.1
+# Enhanced Aerospace Medicine Code System - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/aerospace-code-system-enhanced | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/aerospace-code-system-enhanced | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:AerospaceCodeSystemEnhanced |
 
  
@@ -27,12 +27,12 @@ Comprehensive code system for aerospace medicine concepts including all referenc
   "resourceType" : "CodeSystem",
   "id" : "aerospace-code-system-enhanced",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/aerospace-code-system-enhanced",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "AerospaceCodeSystemEnhanced",
   "title" : "Enhanced Aerospace Medicine Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

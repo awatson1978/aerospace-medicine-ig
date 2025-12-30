@@ -1,4 +1,4 @@
-# Space Neurological Effects - v0.5.1
+# Space Neurological Effects - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:SpaceNeurologicalEffectsValueSet |
 
  
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-neurological-effects",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpaceNeurologicalEffectsValueSet",
   "title" : "Space Neurological Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

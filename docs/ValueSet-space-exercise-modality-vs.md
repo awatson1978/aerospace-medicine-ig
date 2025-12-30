@@ -1,4 +1,4 @@
-# Space Exercise Modality Value Set - v0.5.1
+# Space Exercise Modality Value Set - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs | *Version*:0.5.1 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:SpaceExerciseModalityVS |
 
  
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-exercise-modality-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpaceExerciseModalityVS",
   "title" : "Space Exercise Modality Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

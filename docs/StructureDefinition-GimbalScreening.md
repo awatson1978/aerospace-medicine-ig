@@ -1,4 +1,4 @@
-# Gimbal Screening - v0.5.1
+# Gimbal Screening - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreening | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreening | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:GimbalScreening |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-GimbalScreening.csv)
   "resourceType" : "StructureDefinition",
   "id" : "GimbalScreening",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreening",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "GimbalScreening",
   "title" : "Gimbal Screening",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

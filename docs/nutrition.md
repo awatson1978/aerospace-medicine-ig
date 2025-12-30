@@ -1,4 +1,4 @@
-# Nutrition - v0.5.1
+# Nutrition - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * **Nutrition**
@@ -322,4 +322,45 @@ Embedded RFID, ripeness sensors, radiation-induced degradation tracking.
 #### Behavioral Nudging
 
 Interfaces that promote adequate intake during appetite suppression phases.
+
+### References
+
+#### Biosphere 2 Calorie Restriction Studies
+
+* [Calorie restriction in Biosphere 2: physiology, hematology, hormones](https://academic.oup.com/biomedgerontology/article/57/6/B211/573699)
+* [Changes in plasma lipids and lipoproteins during Biosphere 2 diet](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/484893)
+* [Nutrient-dense low-calorie diets in Biosphere 2](https://www.pnas.org/doi/10.1073/pnas.89.23.11533)
+* [The legacy of Roy Walford and Biosphere 2](https://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736%2804%2917699-7.pdf)
+
+#### Space Food Systems and Standards
+
+* [Space Food Systems - NASA](https://www.nasa.gov/directorates/esdmd/hhp/space-food-systems/)
+* [NASA's Food for Space Flight](https://www.nasa.gov/sites/default/files/atoms/files/food_for_space_flight_tagged.pdf)
+* [Space Station 20th: Food on ISS](https://www.nasa.gov/history/space-station-20th-food-on-iss/)
+* [Dining in Space: How astronauts eat aboard ISS](https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-do-astronauts-eat-58.html)
+* [Historical NASA menus from Apollo & Shuttle](https://airandspace.si.edu/stories/editorial/astronaut-food-then-and-now)
+* [Daily rations and caloric needs in space](https://www.nasa.gov/pdf/146558main_Space_Food.pdf)
+* [Developing the NASA Food System for Long-Duration Missions (Journal of Food Science)](https://ift.onlinelibrary.wiley.com/doi/10.1111/j.1750-3841.2010.01982.x)
+
+#### Long-Duration Mission Nutrition
+
+* [Long-Term Space Nutrition: A Scoping Review (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8747021/)
+* [Initial assessment of nutritional quality over 3 years storage (npj Microgravity)](https://www.nature.com/articles/s41526-017-0022-z)
+* [The Menu for Mars: Designing a Deep Space Food System](https://www.nasa.gov/humans-in-space/the-menu-for-mars-designing-a-deep-space-food-system/)
+* [Space Food for Thought: Challenges and Considerations for Food and Nutrition on Exploration Missions (The Journal of Nutrition)](https://jn.nutrition.org/article/S0022-3166(22)02310-0/fulltext)
+
+#### Food Production in Space
+
+* [NASA's Veggie Plant Growth System on ISS](https://www.nasa.gov/content/growing-plants-in-space)
+* [NASA astronauts eat first lettuce grown in space](https://www.nasa.gov/mission_pages/station/research/news/meals_ready_to_eat)
+* [NASA/Fairchild "Growing Beyond Earth" program](https://fairchildgarden.org/gbe)
+* [Innovation Studio for space farming R&D](https://www.nasa.gov/centers-and-facilities/kennedy/nasa-and-partners-open-first-public-space-agriculture-makerspace/)
+* [NASA Harvests Lettuce for Space Station Study](https://www.nasa.gov/image-article/nasa-harvests-lettuce-for-space-station-study/)
+* [Deep Space Food Challenge](https://www.nasa.gov/prizes-challenges-and-crowdsourcing/centennial-challenges/deep-space-food-challenge/)
+* [Mission to Mars: food production and processing (PubMed)](https://pubmed.ncbi.nlm.nih.gov/22136130/)
+
+#### Food Waste and Trash Management
+
+* [Managing trash and food waste on the ISS](https://www.nasa.gov/mission_pages/station/research/news/trash_in_space)
+* [The dirty job of space garbage](https://www.nasa.gov/feature/space-station-trash)
 

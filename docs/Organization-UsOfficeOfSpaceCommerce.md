@@ -1,4 +1,4 @@
-# Org - Office of Space Commerce - v0.5.1
+# Org - Office of Space Commerce - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Tool Usage Assessment - v0.5.1
+# Tool Usage Assessment - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:ToolUsageAssessment |
 
 Assessment of tool manipulation and usage effectiveness
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-tool-usage-assessmen
   "resourceType" : "StructureDefinition",
   "id" : "tool-usage-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "ToolUsageAssessment",
   "title" : "Tool Usage Assessment",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

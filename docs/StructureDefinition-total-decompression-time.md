@@ -1,4 +1,4 @@
-# Total Decompression Time - v0.5.1
+# Total Decompression Time - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:TotalDecompressionTime |
 
 Total time required for decompression including all stops
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-total-decompression-
   "resourceType" : "StructureDefinition",
   "id" : "total-decompression-time",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "TotalDecompressionTime",
   "title" : "Total Decompression Time",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

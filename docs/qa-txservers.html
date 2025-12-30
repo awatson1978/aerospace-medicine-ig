@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for SpaceflightHealthSimulationsReferenceDocumentation</h1>
- <p>Generated Mon Dec 29 13:19:20 MST 2025, FHIR version 4.0.1 for mitre.fhir.spacehealth#0.5.1 (canonical = <a href="https://mitre.org/fhir/space-health">https://mitre.org/fhir/space-health</a> (<a href="https://mitre.org/fhir/space-health/history.html">history</a>))</p>
+ <p>Generated Mon Dec 29 20:21:36 MST 2025, FHIR version 4.0.1 for mitre.fhir.spacehealth#0.5.2 (canonical = <a href="https://mitre.org/fhir/space-health">https://mitre.org/fhir/space-health</a> (<a href="https://mitre.org/fhir/space-health/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -223,16 +223,44 @@
     <td>auth = http://tx.fhir.org/r4, candidates=</td>
   </tr>
   <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://mitre.org/fhir/space-health/ValueSet/evs-units-vs|0.5.2</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.hl7chile.cl/r4</td>
+  </tr>
+  <tr>
     <td>Found authoritative server http://tx.fhir.org/r4</td>
     <td>http://tx.fhir.org/r4</td>
     <td>null</td>
     <td>http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes</td>
     <td>auth = http://tx.fhir.org/r4, candidates=</td>
   </tr>
+  <tr>
+    <td>Found partially authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete|0.5.2</td>
+    <td>[http://loinc.org, http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|https://tx.hl7.org.au/fhir|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://tx.hl7chile.cl/r4, auth = http://tx.fhir.org/r4, candidates=]</td>
+  </tr>
+  <tr>
+    <td>Found authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete|0.5.2</td>
+    <td>http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system</td>
+    <td>auth = http://tx.fhir.org/r4, candidates=</td>
+  </tr>
+  <tr>
+    <td>Found most authoritative server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete|0.5.2</td>
+    <td>[http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system, https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs]</td>
+    <td>[auth = http://tx.fhir.org/r4, candidates=, auth = , candidates=]</td>
+  </tr>
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 19. Code Systems used: </p>
+<p>Use Count: 23. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -256,7 +284,7 @@
   </tr>
   <tr>
     <td>http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system</td>
-    <td>0</td>
+    <td>3</td>
     <td>2</td>
     <td></td>
   </tr>
@@ -316,7 +344,7 @@
   </tr>
   <tr>
     <td>http://loinc.org</td>
-    <td>0</td>
+    <td>1</td>
     <td>1</td>
     <td></td>
   </tr>
@@ -331,8 +359,16 @@
   <tr>
     <td>http://unitsofmeasure.org</td>
     <td>0</td>
-    <td>1</td>
+    <td>2</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="CodeSystem-radiation-detector-type-cs.html">Radiation Detector Type Code System</a>
+    </td>
   </tr>
 </table>
 </body>

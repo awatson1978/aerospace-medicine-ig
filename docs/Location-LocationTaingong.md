@@ -1,4 +1,4 @@
-# Location - Palace in the Sky - v0.5.1
+# Location - Palace in the Sky - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

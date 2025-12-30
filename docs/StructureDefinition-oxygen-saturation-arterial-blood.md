@@ -1,4 +1,4 @@
-# Oxygen Saturation in Arterial blood, method not specified - v0.5.1
+# Oxygen Saturation in Arterial blood, method not specified - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/oxygen-saturation-arterial-blood | *Version*:0.5.1 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/oxygen-saturation-arterial-blood | *Version*:0.5.2 |
 | Active as of 2022-09-11 | *Computable Name*:OxygenSaturationArterialBlood |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-saturation-ar
   "resourceType" : "StructureDefinition",
   "id" : "oxygen-saturation-arterial-blood",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/oxygen-saturation-arterial-blood",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "OxygenSaturationArterialBlood",
   "title" : "Oxygen Saturation in Arterial blood, method not specified",
   "status" : "active",

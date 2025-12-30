@@ -1,4 +1,4 @@
-# Artemis Radiation Exposure - v0.5.1
+# Artemis Radiation Exposure - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:ArtemisRadiationExposure |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
   "resourceType" : "StructureDefinition",
   "id" : "artemis-radiation-exposure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "ArtemisRadiationExposure",
   "title" : "Artemis Radiation Exposure",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

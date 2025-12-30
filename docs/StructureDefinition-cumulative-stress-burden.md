@@ -1,4 +1,4 @@
-# Cumulative Stress Burden - v0.5.1
+# Cumulative Stress Burden - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden | *Version*:0.5.1 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:CumulativeStressBurden |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
   "resourceType" : "StructureDefinition",
   "id" : "cumulative-stress-burden",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "CumulativeStressBurden",
   "title" : "Cumulative Stress Burden",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Radiation Detection Device (Fixed) - v0.5.1
+# Radiation Detection Device (Fixed) - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-detector | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-detector | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:RadiationDetector |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
   "resourceType" : "StructureDefinition",
   "id" : "radiation-detector",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/radiation-detector",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "RadiationDetector",
   "title" : "Radiation Detection Device (Fixed)",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

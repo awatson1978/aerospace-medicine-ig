@@ -1,4 +1,4 @@
-# Behavioral Health State - v0.5.1
+# Behavioral Health State - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state | *Version*:0.5.1 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:BehavioralHealthState |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
   "resourceType" : "StructureDefinition",
   "id" : "behavioral-health-state",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "BehavioralHealthState",
   "title" : "Behavioral Health State",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

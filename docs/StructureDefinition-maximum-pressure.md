@@ -1,4 +1,4 @@
-# Maximum Operating Pressure - v0.5.1
+# Maximum Operating Pressure - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:MaximumPressure |
 
 Maximum pressure the chamber can safely operate at
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-maximum-pressure.csv
   "resourceType" : "StructureDefinition",
   "id" : "maximum-pressure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "MaximumPressure",
   "title" : "Maximum Operating Pressure",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

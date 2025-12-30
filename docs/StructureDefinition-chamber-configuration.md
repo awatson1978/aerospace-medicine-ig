@@ -1,4 +1,4 @@
-# Hyperbaric Chamber Configuration - v0.5.1
+# Hyperbaric Chamber Configuration - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/chamber-configuration | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/chamber-configuration | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:ChamberConfiguration |
 
 Configuration and setup of the hyperbaric chamber
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-chamber-configuratio
   "resourceType" : "StructureDefinition",
   "id" : "chamber-configuration",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/chamber-configuration",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "ChamberConfiguration",
   "title" : "Hyperbaric Chamber Configuration",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

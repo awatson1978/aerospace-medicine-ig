@@ -1,4 +1,4 @@
-# Artemis III EVA-1 Radiation Exposure - v0.5.1
+# Artemis III EVA-1 Radiation Exposure - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

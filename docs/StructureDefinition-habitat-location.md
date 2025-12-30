@@ -1,4 +1,4 @@
-# Habitat Location - v0.5.1
+# Habitat Location - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/habitat-location | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/habitat-location | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:HabitatLocation |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-habitat-location.csv
   "resourceType" : "StructureDefinition",
   "id" : "habitat-location",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "HabitatLocation",
   "title" : "Habitat Location",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Decompression Algorithm Used - v0.5.1
+# Decompression Algorithm Used - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:DecompressionAlgorithm |
 
 The specific decompression algorithm or table used
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-decompression-algori
   "resourceType" : "StructureDefinition",
   "id" : "decompression-algorithm",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "DecompressionAlgorithm",
   "title" : "Decompression Algorithm Used",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

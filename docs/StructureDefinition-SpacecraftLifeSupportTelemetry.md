@@ -1,4 +1,4 @@
-# Spacecraft Life Support Telemetry - v0.5.1
+# Spacecraft Life Support Telemetry - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:SpacecraftLifeSupportTelemetry |
 
  
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-SpacecraftLifeSuppor
   "resourceType" : "StructureDefinition",
   "id" : "SpacecraftLifeSupportTelemetry",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpacecraftLifeSupportTelemetry",
   "title" : "Spacecraft Life Support Telemetry",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

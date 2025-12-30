@@ -1,4 +1,4 @@
-# Mayo Clinic Aerospace Medicine - v0.5.1
+# Mayo Clinic Aerospace Medicine - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

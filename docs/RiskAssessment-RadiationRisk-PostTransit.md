@@ -1,4 +1,4 @@
-# Radiation Risk Assessment - Post Outbound Transit - v0.5.1
+# Radiation Risk Assessment - Post Outbound Transit - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

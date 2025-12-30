@@ -1,4 +1,4 @@
-# Type of Emergency - v0.5.1
+# Type of Emergency - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/emergency-type | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/emergency-type | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:EmergencyType |
 
 Classification of the emergency situation
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-emergency-type.csv),
   "resourceType" : "StructureDefinition",
   "id" : "emergency-type",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-type",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "EmergencyType",
   "title" : "Type of Emergency",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Brain and Neurologic Changes - v0.5.1
+# Brain and Neurologic Changes - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:SpaceTravelBrainChanges |
 
  
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SpaceTravelBrainChanges",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpaceTravelBrainChanges",
   "title" : "Brain and Neurologic Changes",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

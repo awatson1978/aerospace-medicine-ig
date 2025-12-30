@@ -1,4 +1,4 @@
-# Lessons Learned - v0.5.1
+# Lessons Learned - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:LessonsLearned |
 
 Lessons learned and recommendations from emergency response
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-lessons-learned.csv)
   "resourceType" : "StructureDefinition",
   "id" : "lessons-learned",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "LessonsLearned",
   "title" : "Lessons Learned",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

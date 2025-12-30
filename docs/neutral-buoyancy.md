@@ -1,4 +1,4 @@
-# Neutral Buoyancy Training - v0.5.1
+# Neutral Buoyancy Training - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * **Neutral Buoyancy Training**

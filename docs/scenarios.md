@@ -1,4 +1,4 @@
-# Scenarios - v0.5.1
+# Scenarios - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * **Scenarios**

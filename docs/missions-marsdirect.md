@@ -1,4 +1,4 @@
-# Mars Direct - v0.5.1
+# Mars Direct - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * **Mars Direct**
@@ -177,4 +177,47 @@ Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks
 -------
 
 **Mars Direct was never just about rocketsit was about believing humans could adapt and thrive in the most alien environment imaginable.** The FHIR architectures in this Implementation Guide ensure every breath, heartbeat, millisievert, and moment of courage on Mars will be captured, preserved, and transformed into knowledge guiding future crews until Mars becomes humanity's second home.
+
+### References
+
+#### Mars Direct Mission Architecture
+
+* [Mars Direct: A Simple, Robust, and Cost Effective Architecture (Zubrin 1991 AIAA Paper)](https://marspapers.org/paper/Zubrin_1991.pdf)
+* [The Case for Mars - Wikipedia](https://en.wikipedia.org/wiki/The_Case_for_Mars)
+* [Mars Direct - The Mars Society](https://www.marssociety.org/concepts/mars-direct/)
+* [Mars Society Founder Makes Case for 'Mars Direct' Path to the Red Planet](https://www.space.com/crewed-mars-direct-missions-robert-zubrin-iac-2019.html)
+
+#### NASA Design Reference Architectures
+
+* [Human Exploration of Mars Design Reference Architecture 5.0 (NASA SP-2009-566)](https://www.nasa.gov/wp-content/uploads/2015/09/373665main_nasa-sp-2009-566.pdf)
+* [Mars Design Reference Mission - Wikipedia](https://en.wikipedia.org/wiki/Mars_Design_Reference_Mission)
+* [Proceedings of the Symposium on Manned Planetary Mission 1963](https://ntrs.nasa.gov/api/citations/19640017065/downloads/19640017065.pdf)
+* [Manned Mars Landing Presentation To The Space Task Group (von Braun)](https://newspaceeconomy.ca/wp-content/uploads/2023/08/19690804_manned_mars_landing_presentation_to_the_space_task_group_by_dr._wernher_von_braun.pdf)
+* [The Post-Apollo Space Program: Directions for the Future](https://www.nasa.gov/history/the-post-apollo-space-program-directions-for-the-future/)
+
+#### SpaceX and Commercial Mars Missions
+
+* [SpaceX Mars colonization program - Wikipedia](https://en.wikipedia.org/wiki/SpaceX_Mars_colonization_program)
+* [Mission Architecture Using SpaceX Starship for Mars (New Space Journal)](https://www.liebertpub.com/doi/10.1089/space.2020.0058)
+* [3 months transit time to Mars using SpaceX Starship (Scientific Reports)](https://www.nature.com/articles/s41598-025-00565-7)
+* [About feasibility of SpaceX's human exploration Mars mission scenario with Starship (Scientific Reports)](https://www.nature.com/articles/s41598-024-54012-0)
+* [SpaceX: To The Moon and Beyond](https://www.spacex.com/updates#moon-and-beyond)
+
+#### ISRU and Propulsion Systems
+
+* [Sabatier System Design Study for Mars ISRU Propellant Production (NASA)](https://ntrs.nasa.gov/api/citations/20180004697/downloads/20180004697.pdf)
+* [A membrane Sabatier system for water recovery and rocket propellant production (Nature)](https://www.nature.com/articles/s41467-025-63667-w)
+* [National Strategy for Space Nuclear Power and Propulsion](https://www.federalregister.gov/documents/2020/12/23/2020-28457/posting-of-the-presidential-policy-directive-6-space-policy-national-strategy-for-space-nuclear)
+* [NASA tests compact nuclear reactor for Mars base](https://gizmodo.com/nasa-runs-successful-first-tests-of-compact-nuclear-rea-1822233354)
+* [Kilopower passes big ground test](https://www.space.com/40479-space-nuclear-reactor-kilopower-passes-big-test.html)
+
+#### Robotics and Surface Operations
+
+* [Mars Relay Network - Orbital Dynamics](https://x.com/nasamars/status/1962990877128982696?s=61)
+* [Cooperative robotic exploration of a planetary skylight surface and lava cave](https://www.science.org/doi/10.1126/scirobotics.adj9699)
+
+#### NASA Research and Data
+
+* [NASA Open Science Data Repository](https://smce.nasa.gov/open-science-data-repository-osdr/)
+* [NASA OSDR-GeneLab Enabled Publications](https://scholar.google.com/citations?user=8T1QuYEAAAAJ&hl=en)
 

@@ -1,4 +1,4 @@
-# Stress and Physiological Factors - v0.5.1
+# Stress and Physiological Factors - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:SpaceflightStressFactors |
 
  
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SpaceflightStressFactors",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpaceflightStressFactors",
   "title" : "Stress and Physiological Factors",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

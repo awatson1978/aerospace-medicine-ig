@@ -248,3 +248,57 @@ Individual astronauts participating in multiple Artemis missionscareer radiatio
 ---
 
 **The Artemis program is not just about returning to the Moonit's about learning to live and work in deep space.** Every data point captured, every health metric trended, every environmental threshold monitored brings us closer to understanding whether humans can survive the journey to Mars. The FHIR-based architectures defined in this Implementation Guide ensure that the lessons learned from Artemiswritten in the physiology and psychology of the crews who venture beyond Earth's protective embracewill be preserved, analyzed, and applied to the next giant leap for humanity.
+
+### References
+
+#### Artemis Program Overview
+
+- [Artemis - NASA](https://www.nasa.gov/humans-in-space/artemis/)
+- [NASA Artemis Official Hub](https://www3.nasa.gov/specials/artemis/)
+- [Artemis Programs: NASA Should Document Plans (GAO Report)](https://www.gao.gov/products/gao-24-106878)
+- [NASA's Return To Moon Top Priority For Acting Administrator](https://aviationweek.com/space/space-exploration/nasas-return-moon-top-priority-acting-administrator)
+- ['We're really on a different trajectory': How NASA's Artemis moon missions aim to prepare us for Mars](https://www.space.com/space-exploration/artemis/were-really-on-a-different-trajectory-how-nasas-artemis-moon-missions-can-help-prepare-us-for-mars)
+
+#### Gateway Lunar Space Station
+
+- [Gateway - NASA](https://www.nasa.gov/mission/gateway/)
+- [NASA's Artemis IV: Building First Lunar Space Station](https://www.nasa.gov/general/nasas-artemis-iv-building-first-lunar-space-station/)
+- [NASA Marks Artemis Progress With Gateway Lunar Space Station](https://www.nasa.gov/missions/artemis/nasa-marks-artemis-progress-with-gateway-lunar-space-station/)
+- [NASA Prepares Gateway Lunar Space Station for Journey to Moon](https://www.nasa.gov/missions/artemis/nasa-prepares-gateway-lunar-space-station-for-journey-to-moon/)
+- [Lunar Gateway - Wikipedia](https://en.wikipedia.org/wiki/Lunar_Gateway)
+
+#### Orion Spacecraft
+
+- [Orion Spacecraft - NASA](https://www.nasa.gov/humans-in-space/orion-spacecraft/)
+- [Orion Overview - NASA](https://www.nasa.gov/humans-in-space/orion-spacecraft/orion-overview/)
+- [Orion Technical Specifications (NASA Fact Sheet)](https://www.lpi.usra.edu/lunar/artemis/orion/factsheet.pdf)
+- [Once unthinkable, NASA and Lockheed now consider launching Orion on other rockets](https://arstechnica.com/space/2025/10/once-unthinkable-nasa-and-lockheed-now-consider-launching-orion-on-other-rockets/)
+
+#### Landing Sites and Surface Operations
+
+- [NASA updates on Artemis III landing regions](https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/)
+- [NASA's LRO: Lunar ice deposits are widespread](https://science.nasa.gov/solar-system/moon/nasas-lro-lunar-ice-deposits-are-widespread/)
+- [Evaluating potential landing sites for the Artemis III mission using a multi-criteria decision making approach](https://www.sciencedirect.com/science/article/pii/S0094576524006234)
+- [NASA Opens 2026 Human Lander Challenge for Life Support Systems](https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/human-lander-challenge/nasa-opens-2026-human-lander-challenge-for-life-support-systems-more/)
+- [NASA Selects Blue Origin to Deliver VIPER Rover to Moon's South Pole](https://www.nasa.gov/news-release/nasa-selects-blue-origin-to-deliver-viper-rover-to-moons-south-pole/)
+- [NASA revives VIPER moon rover, taps Blue Origin for lunar landing](https://www.astronomy.com/space-exploration/nasa-revives-viper-moon-rover-taps-blue-origin-for-lunar-landing/)
+
+#### Spacesuits and EVA Systems
+
+- [Exploration Extravehicular Mobility Unit (xEMU)](https://www.nasa.gov/image-article/exploration-extravehicular-mobility-unit-xemu/)
+- [Spacesuit for NASA's Artemis III Moon Surface Mission Debuts](https://www.nasa.gov/humans-in-space/spacesuit-for-nasas-artemis-iii-moon-surface-mission-debuts/)
+- [Axiom Space reveals next-generation spacesuit (AxEMU)](https://www.axiomspace.com/release/axemu)
+- [NASA's Management of ISS Extravehicular Activity Spacesuits](https://oig.nasa.gov/office-of-inspector-general-oig/audit-reports/nasas-management-of-iss-extravehicular-activity-spacesuits/)
+- [Remcom develops wireless modeling for Artemis lunar spacesuits and vehicles](https://www.militaryaerospace.com/communications/news/55319584/remcom-develops-wireless-modeling-for-artemis-lunar-spacesuits-and-vehicles)
+
+#### Radiation and Crew Health
+
+- [Space radiation measurements during Artemis I](https://www.nature.com/articles/s41586-024-07927-7)
+- [Artemis 2 astronauts will double as human science experiments on their trip around the moon](https://www.space.com/space-exploration/artemis/artemis-2-astronauts-will-double-as-human-science-experiments-on-their-trip-around-the-moon)
+- [Purposeful Passenger: Artemis I manikin](https://www.nasa.gov/feature/purposeful-passenger-artemis-i-manikin-helps-prepare-for-moon-missions-with-crew/)
+- [AFRL helps NASA test equipment for Artemis II](https://afresearchlab.com/news/afrl-helps-nasa-test-equipment-for-artemis-ii-mission/)
+
+#### Mission Tracking and Engagement
+
+- [NASA Seeks Volunteers to Track Artemis II Mission](https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-volunteers-to-track-artemis-ii-mission/)
+- [Sean Duffy Opens up Artemis III Contract](https://x.com/_abbie_watson_/status/1980375993950122466?s=61)

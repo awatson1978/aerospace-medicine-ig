@@ -1,4 +1,4 @@
-# References - v0.5.1
+# References - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * **References**

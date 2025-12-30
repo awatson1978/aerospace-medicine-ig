@@ -1,4 +1,4 @@
-# Hyperbaric Chamber Types - v0.5.1
+# Hyperbaric Chamber Types - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:HyperbaricChamberTypeVS |
 
  
@@ -46,12 +46,12 @@ Types of hyperbaric chambers
   "resourceType" : "ValueSet",
   "id" : "hyperbaric-chamber-type-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "HyperbaricChamberTypeVS",
   "title" : "Hyperbaric Chamber Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

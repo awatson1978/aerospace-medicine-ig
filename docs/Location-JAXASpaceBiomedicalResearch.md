@@ -1,4 +1,4 @@
-# JAXA Space Biomedical Research Office - v0.5.1
+# JAXA Space Biomedical Research Office - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

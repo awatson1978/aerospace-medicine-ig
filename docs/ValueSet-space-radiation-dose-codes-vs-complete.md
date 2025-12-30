@@ -1,4 +1,4 @@
-# Complete Space Radiation Dose Measurement Codes - v0.5.1
+# Complete Space Radiation Dose Measurement Codes - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:SpaceRadiationDoseCodesVSComplete |
 
  
@@ -48,12 +48,12 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "space-radiation-dose-codes-vs-complete",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpaceRadiationDoseCodesVSComplete",
   "title" : "Complete Space Radiation Dose Measurement Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

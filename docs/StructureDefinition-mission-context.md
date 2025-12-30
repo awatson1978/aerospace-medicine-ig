@@ -1,4 +1,4 @@
-# Mission Context - v0.5.1
+# Mission Context - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context | *Version*:0.5.1 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context | *Version*:0.5.2 |
 | Active as of 2025-12-29 | *Computable Name*:MissionContext |
 
 Links radiation exposure to specific space missions
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-mission-context.csv)
   "resourceType" : "StructureDefinition",
   "id" : "mission-context",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "MissionContext",
   "title" : "Mission Context",
   "status" : "active",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

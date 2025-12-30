@@ -1,4 +1,4 @@
-# Patient Monitoring - v0.5.1
+# Patient Monitoring - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:PatientMonitoring |
 
 Continuous patient monitoring during hyperbaric treatment
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-patient-monitoring.c
   "resourceType" : "StructureDefinition",
   "id" : "patient-monitoring",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "PatientMonitoring",
   "title" : "Patient Monitoring",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

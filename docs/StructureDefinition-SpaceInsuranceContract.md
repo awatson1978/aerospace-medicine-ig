@@ -1,4 +1,4 @@
-# Space Insurance Contract - v0.5.1
+# Space Insurance Contract - v0.5.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract | *Version*:0.5.1 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract | *Version*:0.5.2 |
 | Draft as of 2025-12-29 | *Computable Name*:SpaceInsuranceContract |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-SpaceInsuranceContra
   "resourceType" : "StructureDefinition",
   "id" : "SpaceInsuranceContract",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract",
-  "version" : "0.5.1",
+  "version" : "0.5.2",
   "name" : "SpaceInsuranceContract",
   "title" : "Space Insurance Contract",
   "status" : "draft",
-  "date" : "2025-12-29T13:16:13-07:00",
+  "date" : "2025-12-29T20:17:52-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
