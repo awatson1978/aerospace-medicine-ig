@@ -1,4 +1,4 @@
-# Kennedy Space Center Medical Facility - v0.5.3
+# Kennedy Space Center Medical Facility - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

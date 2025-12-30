@@ -1,4 +1,4 @@
-# Space Exercise Modality Code System - v0.5.3
+# Space Exercise Modality Code System - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs | *Version*:0.5.3 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*:SpaceExerciseModalityCS |
 
  
@@ -27,12 +27,12 @@ Spaceflight-specific exercise modalities used in microgravity and partial gravit
   "resourceType" : "CodeSystem",
   "id" : "space-exercise-modality-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "SpaceExerciseModalityCS",
   "title" : "Space Exercise Modality Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

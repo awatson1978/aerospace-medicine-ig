@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artemis -  v0.5.3</title>
+    <title>Artemis -  v0.5.4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.3 - ci-build
+            <span style="display:inline-block;">0.5.4 - ci-build
 
 
             </span>
@@ -190,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.4) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artemis</h2>
   
 
@@ -215,7 +215,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
       <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
       <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
-      <li><a href="#1-artemis-ii-lunar-flyby-health-monitoring" id="markdown-toc-1-artemis-ii-lunar-flyby-health-monitoring">1. Artemis II Lunar Flyby Health Monitoring</a></li>
       <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
       <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
       <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
@@ -235,9 +234,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The question that keeps mission planners awake at night is not whether the rockets will work or the habitats will seal. It's whether the crew will remain healthyphysically and psychologicallyin an environment that evolution never prepared us for. <strong>Artemis astronauts will face radiation exposure far exceeding ISS levels, bone and muscle loss in 1/6th gravity, circadian disruption from extreme lunar day-night cycles, isolation in cramped habitats, and the constant risk of equipment failure with no immediate rescue.</strong> Every heartbeat, every milligram of cortisol, every hour of sleep, every rad of radiation dose must be tracked, correlated, and analyzed to ensure crew safety and mission success.</p>
 
-<p>This module extends the HL7 Aerospace Medicine Implementation Guide into the <strong>Artemis program domain</strong>building on architectural principles from <a href="radiation-tracking.html">Radiation Tracking</a>, <a href="nutrition.html">Nutrition</a>, <a href="fitness.html">Exercise</a>, and <a href="mentalhealth.html">Mental Health</a>to provide FHIR-based data modeling for lunar mission health monitoring, environmental systems, EVA operations, and mission timeline integration.</p>
+<p><img src="artemis_ii_mission_october_2021.jpeg" alt="Artemis II Mission" width="100%" /></p>
 
 <h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
+
+<h4 id="mission-timeline">Mission Timeline</h4>
+
+<p><strong>Artemis I</strong> - Uncrewed test flight, November 16 - December 11, 2022<br />
+<a href="artemis_i_mission_2021.jpg" width="100%">Artemis I Mission</a></p>
+
+<p><strong>Artemis II</strong> - First crewed lunar flyby since Apollo 17, planned 2026<br />
+<a href="artemis_ii_mission_october_2021.jpeg" width="100%">Artemis II Mission</a></p>
+
+<p><strong>Artemis III</strong> - First woman and person of color on the Moon, lunar south pole landing, planned 2027<br />
+<a href="artemis_iii_mission_map_2022.jpeg" width="100%">Artemis III Landing Region Map</a></p>
+
+<p><strong>Artemis IV</strong> - Establishing Lunar Gateway space station, planned 2028<br />
+<a href="artemis_iv_mission.jpeg" width="100%">Artemis IV Mission</a></p>
+
+<p><strong>Artemis V</strong> - Expanding Artemis Base Camp and sustained lunar presence, planned 2029<br />
+<a href="artemis_v_mission_may_2023.jpg" width="100%">Artemis V Mission</a></p>
 
 <h4 id="core-concepts">Core Concepts</h4>
 
@@ -251,7 +267,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><strong>Deep Space Environment</strong>: Beyond Earth's magnetosphere, crews face galactic cosmic rays and solar particle events at doses 2-3 orders of magnitude higher than LEO. Continuous dosimetry, risk assessment, and shielding strategies are mission-critical.</p>
   </li>
   <li>
-    <p><strong>Lunar Surface Operations</strong>: 1/6th gravity (not microgravity), extreme temperature variations (-173�C in shadow to +127�C in sunlight), lunar dust exposure, and EVA operations in South Pole terrain with permanent shadows and high illumination ridges.</p>
+    <p><strong>Lunar Surface Operations</strong>: 1/6th gravity (not microgravity), extreme temperature variations (-173°C in shadow to +127°C in sunlight), lunar dust exposure, and EVA operations in South Pole terrain with permanent shadows and high illumination ridges.</p>
   </li>
   <li>
     <p><strong>Distributed Infrastructure</strong>: Gateway (lunar orbit station), Human Landing System (Starship-HLS), Orion crew vehicle, lunar surface habitats, and Lunar Terrain Vehicleeach with distinct life support, telemetry, and medical capabilities.</p>
@@ -268,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li><strong>Mission Timeline</strong>: Launch, translunar cruise (4 days), lunar orbit insertion, Gateway docking, HLS transfer, lunar descent, surface EVAs, ascent, trans-Earth returneach phase with distinct medical protocols and risk profiles</li>
   <li><strong>Radiation Dosimetry</strong>: Real-time dose rates, cumulative GCR exposure, SPE alerts, tissue-specific doses, career limits tracking</li>
-  <li><strong>Environmental Monitoring</strong>: Habitat cabin pressure, O�/CO� levels, temperature, dust contamination, suit telemetry during EVAs</li>
+  <li><strong>Environmental Monitoring</strong>: Habitat cabin pressure, O₂/CO₂ levels, temperature, dust contamination, suit telemetry during EVAs</li>
   <li><strong>Physiologic Data</strong>: Vital signs, sleep metrics, bone density scans, cardiovascular assessments, cognitive performance tests, behavioral health surveys</li>
   <li><strong>Operational Events</strong>: EVA schedules, habitat transfers, emergency procedures, medical interventions, equipment malfunctions</li>
   <li><strong>Location Context</strong>: Gateway modules, HLS interior, lunar surface regions, specific landing sites with selenographic coordinates</li>
@@ -301,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h3>
 
-<p>The challenges of Artemis missions are not incremental improvements over ISS operationsthey are categorically different. Picture the Artemis III crew: they have just landed at Malapert Massif, a rugged highland near the lunar south pole. Outside, the temperature in shadow is -230�C. The Sun hangs low on the horizon, never rising more than a few degreesproviding near-continuous daylight for solar power but casting deep, permanent shadows where no sunlight has touched the surface in billions of years. The regolith is electrostatically charged, clinging to every surface. There is no atmosphere, no magnetosphere, no protection from cosmic radiation. The crew will spend 6.5 days here, conducting two EVAs, collecting samples, and testing technologies for future Mars missions. <strong>Every breath they take, every step they make, every moment of sleep is monitored because there is no margin for error.</strong></p>
+<p>The challenges of Artemis missions are not incremental improvements over ISS operationsthey are categorically different. Picture the Artemis III crew: they have just landed at Malapert Massif, a rugged highland near the lunar south pole. Outside, the temperature in shadow is -230°C. The Sun hangs low on the horizon, never rising more than a few degreesproviding near-continuous daylight for solar power but casting deep, permanent shadows where no sunlight has touched the surface in billions of years. The regolith is electrostatically charged, clinging to every surface. There is no atmosphere, no magnetosphere, no protection from cosmic radiation. The crew will spend 6.5 days here, conducting two EVAs, collecting samples, and testing technologies for future Mars missions. <strong>Every breath they take, every step they make, every moment of sleep is monitored because there is no margin for error.</strong></p>
 
 <h4 id="beyond-the-magnetosphere">Beyond the Magnetosphere</h4>
 
@@ -334,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Artemis III Plans</strong>: Minimum two EVAs, ~6.5 days surface time, south pole terrain (slopes, boulders, shadows)</li>
   <li><strong>xEMU Suit</strong>: Next-generation EVA suit with improved mobility, longer life support duration (8 hours), lower operating pressure (8 psi vs 4.3 psi in Apollo)reduced prebreathe time</li>
   <li><strong>Metabolic Demands</strong>: EVA work rates 200-400 kcal/hrhigher than treadmill exercisewith limited cooling, hydration, and waste management</li>
-  <li><strong>Thermal Extremes</strong>: Suit must protect against -230�C in shadow and +120�C in sunlight simultaneously</li>
+  <li><strong>Thermal Extremes</strong>: Suit must protect against -230°C in shadow and +120°C in sunlight simultaneously</li>
   <li><strong>Communication</strong>: Line-of-sight only (no atmosphere for radio bounce)Gateway relay or direct Earth link required</li>
 </ul>
 
@@ -373,7 +389,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Continuous Vital Signs</strong>: Heart rate, blood pressure, SpO2, temperaturewearable sensors integrated with suit telemetry during EVAs</li>
   <li><strong>Daily Health Logs</strong>: Self-reported sleep quality, appetite, mood, pain, fatiguestructured questionnaires (PHQ-9, GAD-7, NASA-TLX workload)</li>
   <li><strong>Radiation Dosimetry</strong>: Active Personal Dosimeters (APDs) with real-time dose rate display, tissue equivalent proportional counters (TEPC), area monitors in habitats</li>
-  <li><strong>Environmental Sensors</strong>: Cabin pressure, O�/CO� levels, temperature, humidity, dust particle counts, microbial contamination</li>
+  <li><strong>Environmental Sensors</strong>: Cabin pressure, O₂/CO₂ levels, temperature, humidity, dust particle counts, microbial contamination</li>
   <li><strong>Cognitive Performance</strong>: Weekly reaction time tests (PVT), memory tasks, spatial orientation assessmentsdetect early CNS effects from radiation or stress</li>
 </ul>
 
@@ -392,7 +408,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Cardiovascular</strong>: Resting HR &gt;100 bpm, BP &gt;140/90, arrhythmias, orthostatic intolerance</li>
   <li><strong>Sleep</strong>: &lt;5 hours for 3 consecutive nights, sleep efficiency &lt;70%, excessive daytime sleepiness</li>
   <li><strong>Behavioral Health</strong>: PHQ-9 e10 (moderate depression), GAD-7 e10 (moderate anxiety), interpersonal conflict reports, suicidal ideation (immediate psych consult)</li>
-  <li><strong>Environmental</strong>: Cabin pressure drop, O� &lt;19.5%, CO� &gt;0.5%, temperature extremes, dust contamination above threshold</li>
+  <li><strong>Environmental</strong>: Cabin pressure drop, O₂ &lt;19.5%, CO₂ &gt;0.5%, temperature extremes, dust contamination above threshold</li>
 </ul>
 
 <h3 id="data-model-architecture">Data Model Architecture</h3>
@@ -400,23 +416,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="core-fhir-resources">Core FHIR Resources</h4>
 
 <ul>
-  <li><strong>Observation</strong> � Radiation dose measurements, environmental sensors, vital signs, cognitive assessments, biomarkers</li>
-  <li><strong>Procedure</strong> � EVAProcedure (moonwalks), habitat transfers, emergency medical interventions, suit maintenance</li>
-  <li><strong>Condition</strong> � Diagnosed conditions (space adaptation syndrome, radiation dermatitis, decompression injury)</li>
-  <li><strong>Device</strong> � Orion, Starship-HLS, xEMU suits, Gateway modules, LTV rover, dosimeters, medical equipment</li>
-  <li><strong>Location</strong> � Gateway modules, HLS compartments, lunar landing sites (with selenographic coordinates), surface habitats</li>
-  <li><strong>Encounter</strong> � Mission phases (launch, translunar, lunar orbit, surface operations, return)</li>
-  <li><strong>PlanDefinition</strong> � Mission timelines, EVA schedules, medical protocols, contingency procedures</li>
-  <li><strong>RiskAssessment</strong> � Radiation risk models, bone loss projections, behavioral health vulnerability scores</li>
+  <li><strong>Observation</strong> — Radiation dose measurements, environmental sensors, vital signs, cognitive assessments, biomarkers</li>
+  <li><strong>Procedure</strong> — EVAProcedure (moonwalks), habitat transfers, emergency medical interventions, suit maintenance</li>
+  <li><strong>Condition</strong> — Diagnosed conditions (space adaptation syndrome, radiation dermatitis, decompression injury)</li>
+  <li><strong>Device</strong> — Orion, Starship-HLS, xEMU suits, Gateway modules, LTV rover, dosimeters, medical equipment</li>
+  <li><strong>Location</strong> — Gateway modules, HLS compartments, lunar landing sites (with selenographic coordinates), surface habitats</li>
+  <li><strong>Encounter</strong> — Mission phases (launch, translunar, lunar orbit, surface operations, return)</li>
+  <li><strong>PlanDefinition</strong> — Mission timelines, EVA schedules, medical protocols, contingency procedures</li>
+  <li><strong>RiskAssessment</strong> — Radiation risk models, bone loss projections, behavioral health vulnerability scores</li>
 </ul>
 
 <h4 id="extensions">Extensions</h4>
 
 <ul>
-  <li><strong>missionContext</strong> (reused from other modules) � Links all resources to specific Artemis mission and phase</li>
-  <li><strong>lunarCoordinates</strong> � Selenographic latitude/longitude for Location resources</li>
-  <li><strong>radiationShielding</strong> � Shielding mass/composition for habitat or vehicle Device resources</li>
-  <li><strong>evaNumber</strong> � Sequential EVA identifier within a mission (e.g., "EVA-1", "EVA-2")</li>
+  <li><strong>missionContext</strong> (reused from other modules) — Links all resources to specific Artemis mission and phase</li>
+  <li><strong>lunarCoordinates</strong> — Selenographic latitude/longitude for Location resources</li>
+  <li><strong>radiationShielding</strong> — Shielding mass/composition for habitat or vehicle Device resources</li>
+  <li><strong>evaNumber</strong> — Sequential EVA identifier within a mission (e.g., "EVA-1", "EVA-2")</li>
 </ul>
 
 <h4 id="profiles">Profiles</h4>
@@ -430,7 +446,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="use-cases">Use Cases</h3>
 
-<h3 id="1-artemis-ii-lunar-flyby-health-monitoring">1. Artemis II Lunar Flyby Health Monitoring</h3>
+<h4 id="1-artemis-ii-lunar-flyby-health-monitoring">1. Artemis II Lunar Flyby Health Monitoring</h4>
 
 <p>Comprehensive health surveillance during 10-day crewed lunar flybycontinuous vital signs, daily health logs, radiation dosimetry, behavioral health assessments. First human exposure to deep space radiation since Apollo.</p>
 
@@ -469,7 +485,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Environmental alerts trigger operational responses (crew relocation, timeline adjustments, emergency procedures)</li>
   <li>EVA schedules synchronized with medical readiness, radiation conditions, crew fatigue levels</li>
-  <li>Gateway resource management (O�, water, food, medical supplies) integrated with health monitoring</li>
+  <li>Gateway resource management (O₂, water, food, medical supplies) integrated with health monitoring</li>
 </ul>
 
 <h4 id="radiation-protection">Radiation Protection</h4>
@@ -621,7 +637,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 22:23-0700">2025-12-29</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.4 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 23:18-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

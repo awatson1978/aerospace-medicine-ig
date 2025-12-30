@@ -1,4 +1,4 @@
-# Location - Gateway - v0.5.3
+# Location - Gateway - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Mental Health - v0.5.3
+# Mental Health - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * **Mental Health**
@@ -12,8 +12,6 @@
 In 1961, Soviet cosmonaut Yuri Gagarin became the first human in spacehis mission lasted just 108 minutes. Today, astronauts routinely spend six months or more aboard the International Space Station, and future Mars missions will require crews to endure **two to three years** in deep space, isolated from Earth, confined in small habitats, and facing communication delays of up to 20 minutes each way. The question that haunts mission planners is not whether the crew can survive physically, but whether they can remain psychologically intact. History provides sobering lessons: Antarctic winter-over crews have experienced depression, interpersonal conflicts escalating to violence, and cognitive decline. Submarine crews report similar patterns. In space, where there is no escape, no privacy, and no easy rescue, a behavioral health crisis could doom an entire mission.
 
 Unlike radiation exposure or bone losswhich accumulate predictably and can be measured with instruments**psychological stress is invisible, cumulative, and deeply personal**. An astronaut might report feeling fine while their cortisol levels climb, their sleep fragments, and their reaction times slow. Crew members trained to be stoic and high-performing often suppress emotional distress until it erupts in critical moments. This module recognizes that mental health in space requires the same systematic, data-driven approach as physical health: **continuous monitoring, evidence-based countermeasures, and longitudinal tracking across missions**treating psychological wellbeing not as a soft skill, but as a mission-critical physiological system.
-
-This module extends the HL7 Aerospace Medicine Implementation Guidebuilding on architectural principles from [Radiation Tracking](radiation-tracking.md), [Nutrition](nutrition.md), and [Exercise](fitness.md)into a comprehensive **Mental Health and Behavioral Monitoring** framework leveraging **FHIR Observation, Procedure, Condition**, and mission-context extensions to track psychological state, cumulative stress burden, and countermeasure interventions.
 
 ### FHIR Implementation Architecture
 

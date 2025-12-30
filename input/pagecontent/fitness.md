@@ -25,7 +25,7 @@ Exercise tracking in space incorporates multiple data dimensions:
 
 - **Temporal Context**: Per-session, daily, weekly, mission-phase, career-long summaries
 - **Exercise Modalities**: Treadmill running (T2), resistive training (ARED), cycling (CEVIS), elastic bands, artificial gravity
-- **Performance Metrics**: Power output, simulated body weight, heart rate reserve, VO� surrogate, recovery heart rate
+- **Performance Metrics**: Power output, simulated body weight, heart rate reserve, VO₂ surrogate, recovery heart rate
 - **Equipment Configuration**: Device settings, harness load percentage, resistance levels, vibration isolation status
 - **Mission Context**: EVA preparation days, pre-flight conditioning, post-landing recovery
 - **Physiologic Outcomes**: Muscle mass preservation, bone density maintenance, cardiovascular fitness
@@ -71,7 +71,7 @@ Exercise in microgravity is fundamentally different from Earth-based trainingit
 - Heart becomes more spherical, stroke volume decreases
 - Orthostatic intolerance develops (difficulty standing after landing)
 - Target heart rate zones must account for fluid shifts and altered cardiac geometry
-- VO�max declines despite exercise due to plasma volume reduction
+- VO₂max declines despite exercise due to plasma volume reduction
 
 #### Equipment-Specific Challenges
 
@@ -110,7 +110,7 @@ Analogous to radiation dosimetry's multi-layered approach, exercise monitoring i
 
 #### Longitudinal Assessments
 
-- **VO�max testing**: Periodic maximal exercise tests pre-flight, in-flight, post-flight
+- **VO₂max testing**: Periodic maximal exercise tests pre-flight, in-flight, post-flight
 - **Muscle ultrasonography**: Quadriceps and gastrocnemius thickness
 - **Bone density scans**: DXA pre-flight and post-flight
 - **Functional performance**: Jump height, grip strength, sit-to-stand tests
@@ -126,11 +126,11 @@ Analogous to radiation dosimetry's multi-layered approach, exercise monitoring i
 
 #### Core FHIR Resources
 
-- **Observation** � SpaceExerciseActivityMeasure, SpaceExerciseActivityGroup, SpaceEVSMinutesPerWeek
-- **Procedure** � SpaceExerciseSession
-- **Device** � Exercise equipment (T2 Treadmill, ARED, CEVIS)
-- **ServiceRequest** � Exercise prescriptions
-- **Goal** � Fitness targets (maintain VO�max, bone density goals)
+- **Observation** —SpaceExerciseActivityMeasure, SpaceExerciseActivityGroup, SpaceEVSMinutesPerWeek
+- **Procedure** —SpaceExerciseSession
+- **Device** —Exercise equipment (T2 Treadmill, ARED, CEVIS)
+- **ServiceRequest** —Exercise prescriptions
+- **Goal** —Fitness targets (maintain VO₂max, bone density goals)
 
 #### Extensions
 
@@ -143,7 +143,7 @@ Analogous to radiation dosimetry's multi-layered approach, exercise monitoring i
 
 #### 1. Pre-Flight Baseline Assessment
 
-Comprehensive fitness testing including VO�max, strength assessment, and functional movement screening to establish astronaut's baseline capabilities and inform personalized exercise prescriptions.
+Comprehensive fitness testing including VO₂max, strength assessment, and functional movement screening to establish astronaut's baseline capabilities and inform personalized exercise prescriptions.
 
 #### 2. In-Flight Exercise Prescription and Monitoring
 
@@ -206,7 +206,7 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 #### Environmental Control and Life Support Systems (ECLSS)
 
 - Metabolic heat generation during exercise affects cabin cooling
-- Oxygen consumption and CO� production rates
+- Oxygen consumption and CO₂ production rates
 - Water usage for post-exercise hygiene
 
 ### Implementation Examples

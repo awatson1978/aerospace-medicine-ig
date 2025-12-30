@@ -1,4 +1,4 @@
-# Mars Direct Mission 2040 - v0.5.3
+# Mars Direct Mission 2040 - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

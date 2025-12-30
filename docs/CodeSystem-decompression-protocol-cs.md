@@ -1,4 +1,4 @@
-# Decompression Protocols and Procedures - v0.5.3
+# Decompression Protocols and Procedures - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*:DecompressionProtocolCS |
 
  
@@ -27,12 +27,12 @@ Standardized decompression protocols and safety procedures
   "resourceType" : "CodeSystem",
   "id" : "decompression-protocol-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "DecompressionProtocolCS",
   "title" : "Decompression Protocols and Procedures",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

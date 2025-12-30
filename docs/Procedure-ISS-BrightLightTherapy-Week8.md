@@ -1,4 +1,4 @@
-# ISS Bright Light Therapy - Mission Week 8 - v0.5.3
+# ISS Bright Light Therapy - Mission Week 8 - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

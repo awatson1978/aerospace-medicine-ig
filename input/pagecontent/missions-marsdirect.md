@@ -4,11 +4,11 @@
 
 On November 16, 1990, Robert Zubrin unveiled **Mars Direct** at the Case for Mars conferencea plan so audacious yet elegant that it reshaped how humanity thought about reaching the Red Planet. Unlike NASA's 1989 Space Exploration Initiative (requiring 30 launches and $450 billion), Mars Direct proposed just **two heavy-lift launches per mission**, leveraging **in-situ resource utilization (ISRU)** to produce propellant on Mars itself.
 
-The concept: Send an Earth Return Vehicle (ERV) first, equipped with a small nuclear reactor and chemical plant. Over 10 months, this automated system harvests CO� from Mars' atmosphere, combines it with hydrogen brought from Earth via the Sabatier reaction, and produces 112 tons of methane/oxygen propellant. Only after fuel production is confirmed does a second launch deliver four crew members in a Mars Habitat Unit. They spend **18 months on Mars**a long-stay conjunction-class mission maximizing surface scienceconducting EVAs, living in the habitat, then returning in the fueled ERV.
+The concept: Send an Earth Return Vehicle (ERV) first, equipped with a small nuclear reactor and chemical plant. Over 10 months, this automated system harvests CO₂ from Mars' atmosphere, combines it with hydrogen brought from Earth via the Sabatier reaction, and produces 112 tons of methane/oxygen propellant. Only after fuel production is confirmed does a second launch deliver four crew members in a Mars Habitat Unit. They spend **18 months on Mars**a long-stay conjunction-class mission maximizing surface scienceconducting EVAs, living in the habitat, then returning in the fueled ERV.
 
 Mars Direct's elegance lay in **leveraging proven 1990s technology**: chemical rockets, nuclear power, cryogenic storage, robust life supportavoiding risky orbital rendezvous and on-orbit assembly. For transit, Zubrin proposed a tether to a spent stage, spinning to generate 1g artificial gravity, mitigating bone loss and muscle atrophy. A storm shelter surrounded by water/provisions would protect crew during solar particle events.
 
-**The legacy lives on.** NASA's 1993 Design Reference Mission (DRM 1.0) explicitly adapted Mars Direct into "Mars Semi-Direct," keeping split missions and ISRU but adding Mars Orbit Rendezvous. NASA's Design Reference Architecture 5.0 (DRA 5.0, 2009) envisions nuclear thermal rockets, fission surface power (~25 kW for ISRU), and multiple heavy launches per missionmore complex but building on Mars Direct's ISRU foundation. SpaceX's Starship Mars Plan represents a modern private-sector embodiment: fully reusable rockets, orbital refueling (10-14 tanker flights per Mars-bound Starship), direct Earth�Mars trajectories, and massive ISRU (hundreds of tons CH�/O�, requiring ~600 kW power). Project Athena (2025), championed by Jared Isaacman, proposes accelerating Mars efforts with uncrewed infrastructure missions by 2026, nuclear-electric propulsion development, and NASA-commercial partnerships.
+**The legacy lives on.** NASA's 1993 Design Reference Mission (DRM 1.0) explicitly adapted Mars Direct into "Mars Semi-Direct," keeping split missions and ISRU but adding Mars Orbit Rendezvous. NASA's Design Reference Architecture 5.0 (DRA 5.0, 2009) envisions nuclear thermal rockets, fission surface power (~25 kW for ISRU), and multiple heavy launches per missionmore complex but building on Mars Direct's ISRU foundation. SpaceX's Starship Mars Plan represents a modern private-sector embodiment: fully reusable rockets, orbital refueling (10-14 tanker flights per Mars-bound Starship), direct Earth→Mars trajectories, and massive ISRU (hundreds of tons CH₄/O₂, requiring ~600 kW power). Project Athena (2025), championed by Jared Isaacman, proposes accelerating Mars efforts with uncrewed infrastructure missions by 2026, nuclear-electric propulsion development, and NASA-commercial partnerships.
 
 But **rockets are only half the story.** A Mars mission is a **biomedical crucible**: ~2.5 years in the most hostile environment humans have attemptedsix months microgravity transit each way, 18 months on Mars in 0.38g, communication delays of 5-20 minutes rendering real-time ground support impossible, cumulative radiation exposure ~600-1000 mSv (approaching NASA career limits), Martian dust exposure (perchlorates, lung irritation risk), autonomous medical operations with no evacuation option. Every heartbeat, every milligram of calcium lost, every millisievert absorbed, every moment of psychological strain must be tracked, analyzed, mitigated.
 
@@ -17,18 +17,18 @@ But **rockets are only half the story.** A Mars mission is a **biomedical crucib
 
 | **Architecture** | **Key Features** | **Commonalities** | **Differences** |
 |---|---|---|---|
-| **Mars Direct (1990)** | 2 launches (ERV + Hab); ISRU CH�/O�; 18-month surface stay; artificial gravity tether; 4 crew | Baseline |  |
-| **NASA DRA 5.0 (2009)** | 4-5 launches; Mars orbit rendezvous; crew of 6; nuclear thermal rockets; fission surface power; 2030s timeline | ISRU (O� via MOXIE tested on Perseverance); long surface stays; pre-deploy cargo | More infrastructure; slower timeline; Gateway staging vs. direct transit |
-| **SpaceX Starship (2016)** | Fully reusable 100t vehicle; orbital refueling (10-14 tankers); land entire Starship; ISRU for return; ~2029-2031 target | ISRU CH�/O�; direct flights; bold schedule | Orbital refueling required; 200-ton lander (new challenges); no artificial gravity; commercial funding |
+| **Mars Direct (1990)** | 2 launches (ERV + Hab); ISRU CH₄/O₂; 18-month surface stay; artificial gravity tether; 4 crew | Baseline |  |
+| **NASA DRA 5.0 (2009)** | 4-5 launches; Mars orbit rendezvous; crew of 6; nuclear thermal rockets; fission surface power; 2030s timeline | ISRU (O₂ via MOXIE tested on Perseverance); long surface stays; pre-deploy cargo | More infrastructure; slower timeline; Gateway staging vs. direct transit |
+| **SpaceX Starship (2016)** | Fully reusable 100t vehicle; orbital refueling (10-14 tankers); land entire Starship; ISRU for return; ~2029-2031 target | ISRU CH₄/O₂; direct flights; bold schedule | Orbital refueling required; 200-ton lander (new challenges); no artificial gravity; commercial funding |
 | **Project Athena (2025)** | Uncrewed demo by 2026; nuclear-electric propulsion; NASA-commercial partnership; post-Artemis pivot to Mars | Leverages SpaceX heavy lift; ISRU & nuclear power priority | Far faster timeline; NEP technology push; NASA reorganization proposal |
 
 ### Aerospace Medicine Challenges
 
 #### The 2.5-Year Gauntlet
 
-**Outbound Transit (6 months, microgravity)**: Bone loss ~1-2%/month, muscle atrophy, cardiovascular deconditioning, fluid shift � SANS (vision changes), immune dysregulation, circadian disruption
+**Outbound Transit (6 months, microgravity)**: Bone loss ~1-2%/month, muscle atrophy, cardiovascular deconditioning, fluid shift → SANS (vision changes), immune dysregulation, circadian disruption
 
-**Mars Surface (18 months, 0.38g)**: Partial gravity insufficient to prevent bone/muscle loss (unknown long-term effects); Martian dust (perchlorates, silica-like particles � respiratory irritation, equipment degradation); thermal extremes (-173�C to +127�C); EVA workloads; habitat confinement; psychological isolation
+**Mars Surface (18 months, 0.38g)**: Partial gravity insufficient to prevent bone/muscle loss (unknown long-term effects); Martian dust (perchlorates, silica-like particles → respiratory irritation, equipment degradation); thermal extremes (-173°C to +127°C); EVA workloads; habitat confinement; psychological isolation
 
 **Return Transit (6 months, microgravity)**: Cumulative bone loss ~12-24 months total; radiation approaching career limits; crew fatigue; aging equipment
 
@@ -36,15 +36,15 @@ But **rockets are only half the story.** A Mars mission is a **biomedical crucib
 
 #### Mars Surface Operations
 
-**Martian dust**: Jagged, electrostatically charged, ~0.5% perchlorates (ClO�{)toxic oxidizing compounds. Clings to suits, infiltrates habitats. Inhalation � lung irritation (analogous to silicosis), potential bloodstream entry. Equipment degradation (seal wear, optics scratching). EVA decontamination protocols mission-critical.
+**Martian dust**: Jagged, electrostatically charged, ~0.5% perchlorates (ClO₄⁻) toxic oxidizing compounds. Clings to suits, infiltrates habitats. Inhalation → lung irritation (analogous to silicosis), potential bloodstream entry. Equipment degradation (seal wear, optics scratching). EVA decontamination protocols mission-critical.
 
-**EVAs**: Unlike zero-G spacewalks, Mars EVAs involve walking/climbing in 0.38g, suits at ~4 psi O� (pre-breathe to avoid decompression sickness). Hundreds of EVAs over 500 sols � repetitive orthopedic strain (shoulder injuries common on ISS), chronic fatigue, cumulative dust exposure. Biomedical telemetry: heart rate, suit pressure, O�, thermal regulation.
+**EVAs**: Unlike zero-G spacewalks, Mars EVAs involve walking/climbing in 0.38g, suits at ~4 psi O₂ (pre-breathe to avoid decompression sickness). Hundreds of EVAs over 500 sols → repetitive orthopedic strain (shoulder injuries common on ISS), chronic fatigue, cumulative dust exposure. Biomedical telemetry: heart rate, suit pressure, O₂, thermal regulation.
 
-**Habitat life support**: 21% O�, ~8-14.7 psi pressure, temperature/humidity control. O� generation (water electrolysis), CO� scrubbing (solid amine/Sabatier), trace contaminant removal, dust monitoring. Power (solar, batteries, possibly Kilopower fission reactor) sustains life supportfailure � rapid CO� buildup or hypoxia. Water recycling (urine�potable, humidity recovery) closed-loop with minimal resupply.
+**Habitat life support**: 21% O₂, ~8-14.7 psi pressure, temperature/humidity control. O₂ generation (water electrolysis), CO₂ scrubbing (solid amine/Sabatier), trace contaminant removal, dust monitoring. Power (solar, batteries, possibly Kilopower fission reactor) sustains life supportfailure —rapid CO₂ buildup or hypoxia. Water recycling (urine→potable, humidity recovery) closed-loop with minimal resupply.
 
 #### Autonomous Medical Operations
 
-**5-20 minute communication delays** � crew must diagnose/treat themselves. Crew Medical Officer (CMO) leads, all trained in basic trauma response. Medical kit: portable ultrasound, handheld lab analyzers, vital signs monitors, medications (antibiotics, analgesics, sedatives), surgical instruments, defibrillator, airway management, limited blood products.
+**5-20 minute communication delays** → crew must diagnose/treat themselves. Crew Medical Officer (CMO) leads, all trained in basic trauma response. Medical kit: portable ultrasound, handheld lab analyzers, vital signs monitors, medications (antibiotics, analgesics, sedatives), surgical instruments, defibrillator, airway management, limited blood products.
 
 **Worst-case scenarios**: appendicitis requiring surgery in 0.38g without sterile OR/anesthesiologist; kidney stones (elevated risk from bone calcium loss); traumatic injury; acute radiation sickness from solar storm. NASA developing AI-driven diagnostic aids, structured digital checklists.
 
@@ -52,9 +52,9 @@ But **rockets are only half the story.** A Mars mission is a **biomedical crucib
 
 #### In-Situ Resource Utilization (ISRU)
 
-**Mission-critical**: Propellant production failure strands crew. Sabatier reaction: CO� + 4H� � CH� + 2H�O; electrolysis: 2H�O � 2H� + O�. Mars Direct ERV: ~8 tons H� � 112 tons propellant. SpaceX Starship: ~600 tons needed, demanding ~600 kW continuous power (solar arrays >38,000 m�).
+**Mission-critical**: Propellant production failure strands crew. Sabatier reaction: CO₂ + 4H₂ → CH₄ + 2H₂O; electrolysis: 2H₂O → 2H₂ + O₂. Mars Direct ERV: ~8 tons H₂ → 112 tons propellant. SpaceX Starship: ~600 tons needed, demanding ~600 kW continuous power (solar arrays >38,000 m²).
 
-**Health implications**: Handling cryogenic CH�/O�, high-pressure H� (explosive risk); ISRU failure � existential mission risk, severe crew psychological stress; byproduct contamination (CO leaks) � air quality monitoring.
+**Health implications**: Handling cryogenic CH₄/O₂, high-pressure H₂ (explosive risk); ISRU failure → existential mission risk, severe crew psychological stress; byproduct contamination (CO leaks) → air quality monitoring.
 
 **FHIR modeling**: ISRUProductionLog Observations tracking output, reactor status, alarms. Not directly medical, but ISRU status feeds risk assessments and crew stress monitoring.
 
@@ -62,17 +62,17 @@ But **rockets are only half the story.** A Mars mission is a **biomedical crucib
 
 #### Core Concepts
 
-- **Mission Duration**: 2.5 years vs. 6-month ISS rotations � longitudinal health tracking, career dose limits, cumulative bone loss trends
-- **Communication Latency**: 5-20 min delays � asynchronous data exchange, offline decision support, batch transmission
-- **Autonomous Medicine**: Crew-led diagnosis/treatment � structured protocols, decision trees, comprehensive local FHIR repositories
-- **Mars Environment**: 0.38g, dust, thermal/radiation extremes � new Observation profiles
-- **ISRU Dependency**: Production success tied to mission viability and crew psychology � ISRU status as operational health indicator
+- **Mission Duration**: 2.5 years vs. 6-month ISS rotations —longitudinal health tracking, career dose limits, cumulative bone loss trends
+- **Communication Latency**: 5-20 min delays —asynchronous data exchange, offline decision support, batch transmission
+- **Autonomous Medicine**: Crew-led diagnosis/treatment —structured protocols, decision trees, comprehensive local FHIR repositories
+- **Mars Environment**: 0.38g, dust, thermal/radiation extremes —new Observation profiles
+- **ISRU Dependency**: Production success tied to mission viability and crew psychology —ISRU status as operational health indicator
 
 #### Data Architecture
 
 - **Mission Timeline**: Launch, outbound transit (6 mo), orbit insertion, descent, surface ops (18 mo, hundreds of EVAs), ascent, return transit (6 mo), re-entry
 - **Radiation Dosimetry**: Real-time dose rates, cumulative GCR, SPE tracking, tissue-specific doses, career limits
-- **Environmental Monitoring**: Cabin pressure, O�/CO�, temperature, dust, ISRU status
+- **Environmental Monitoring**: Cabin pressure, O₂/CO₂, temperature, dust, ISRU status
 - **Physiologic Data**: Daily vitals, weekly bone density, cardiovascular, cognitive tests (PVT), behavioral surveys (PHQ-9, GAD-7)
 - **Operational Events**: EVA schedules, transfers, ISRU milestones, malfunctions, interventions
 - **Location Context**: Mars landing sites (areographic coordinates), habitat modules, rover excursions
@@ -108,11 +108,11 @@ Integration with existing terminologies:
 
 #### 2. SpaceX Starship Surface Operations
 
-6-12 crew, 6-month stay (next return window). ISRU monitoring (600 tons O�/CH� production), habitat environmental control (larger crew � higher CO�), EVA deploying solar arrays, autonomous medical for larger crew (higher medical event probability), psychological dynamics in Starship interior.
+6-12 crew, 6-month stay (next return window). ISRU monitoring (600 tons O₂/CH₄ production), habitat environmental control (larger crew —higher CO₂), EVA deploying solar arrays, autonomous medical for larger crew (higher medical event probability), psychological dynamics in Starship interior.
 
 #### 3. Solar Storm Radiation Management
 
-Dosimetry detects sudden spike (SPE begins). Automated alert � crew to storm shelter (water-walled). Continuous monitoring 24-48 hr SPE, cumulative dose vs. acute thresholds, post-event assessment (nausea, fatigue, lymphocyte drop), cancer risk recalculation, mission continuation evaluation.
+Dosimetry detects sudden spike (SPE begins). Automated alert —crew to storm shelter (water-walled). Continuous monitoring 24-48 hr SPE, cumulative dose vs. acute thresholds, post-event assessment (nausea, fatigue, lymphocyte drop), cancer risk recalculation, mission continuation evaluation.
 
 #### 4. Autonomous Emergency Surgery: Appendicitis
 
@@ -120,7 +120,7 @@ Crew develops RLQ pain, fever, elevated WBC. Ultrasound confirms appendicitis. 1
 
 #### 5. ISRU Failure and Crew Stress
 
-Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks. Anxiety spikes (GAD-7 increases), sleep deteriorates (wearable sensors show reduced REM), interpersonal tension. RiskAssessment updated: if not restored, one-way or rescue (neither realisticimmense psychological burden). Reactor repaired Sol 201. Post-crisis behavioral interventions. Data shows ISRU as critical psychological stressor.
+Sabatier reactor fault Sol 180, CH₄ production drops 40%. Repairs take 3 weeks. Anxiety spikes (GAD-7 increases), sleep deteriorates (wearable sensors show reduced REM), interpersonal tension. RiskAssessment updated: if not restored, one-way or rescue (neither realisticimmense psychological burden). Reactor repaired Sol 201. Post-crisis behavioral interventions. Data shows ISRU as critical psychological stressor.
 
 #### 6. Long-Duration Bone Loss Fracture
 
@@ -130,30 +130,30 @@ Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks
 
 #### Core FHIR Resources
 
-- **Observation** � Radiation, environmental, vitals, cognitive, biomarkers, bone density, blood chemistry
-- **Procedure** � MarsEVAProcedure, transfers, interventions, ISRU maintenance
-- **Condition** � Space adaptation syndrome, SANS, radiation effects, DCS, dust pneumoconiosis, fractures
-- **Device** � Orion, Starship, habitats, xEMU, rovers, dosimeters, medical equipment, ISRU plant
-- **Location** � Landing sites (areographic coordinates), habitat compartments, storm shelter
-- **Encounter** � Mission phases (launch, transit, orbit, descent, surface ops, ascent, return, re-entry)
-- **PlanDefinition** � Mission timelines, EVA schedules, medical protocols, countermeasures
-- **RiskAssessment** � Radiation (cancer, CNS), bone fracture, behavioral vulnerability, ISRU failure impact
-- **MedicationAdministration** � All meds (antibiotics, analgesics, sedatives, radiation countermeasures, bone protective)
-- **CarePlan** � Individual health plans (exercise, nutrition, radiation limits, behavioral support)
+- **Observation** —Radiation, environmental, vitals, cognitive, biomarkers, bone density, blood chemistry
+- **Procedure** —MarsEVAProcedure, transfers, interventions, ISRU maintenance
+- **Condition** —Space adaptation syndrome, SANS, radiation effects, DCS, dust pneumoconiosis, fractures
+- **Device** —Orion, Starship, habitats, xEMU, rovers, dosimeters, medical equipment, ISRU plant
+- **Location** —Landing sites (areographic coordinates), habitat compartments, storm shelter
+- **Encounter** —Mission phases (launch, transit, orbit, descent, surface ops, ascent, return, re-entry)
+- **PlanDefinition** —Mission timelines, EVA schedules, medical protocols, countermeasures
+- **RiskAssessment** —Radiation (cancer, CNS), bone fracture, behavioral vulnerability, ISRU failure impact
+- **MedicationAdministration** —All meds (antibiotics, analgesics, sedatives, radiation countermeasures, bone protective)
+- **CarePlan** —Individual health plans (exercise, nutrition, radiation limits, behavioral support)
 
 #### Extensions
 
-- **missionContext** � Links to specific Mars mission and phase
-- **areographicCoordinates** � Mars lat/long for Locations
-- **isruStatus** � Links to ISRU production status
-- **evaNumber** � Sequential EVA identifier
-- **communicationDelay** � Time lag for transmissions
+- **missionContext** —Links to specific Mars mission and phase
+- **areographicCoordinates** —Mars lat/long for Locations
+- **isruStatus** —Links to ISRU production status
+- **evaNumber** —Sequential EVA identifier
+- **communicationDelay** —Time lag for transmissions
 
 #### Profiles
 
 - **MarsEVAProcedure**: Surface EVAsduration, location, participants, suit, metabolic data, dust exposure, post-EVA health check
-- **HabitatEnvironmentalObservation**: Atmospheric monitoringO�%, CO�, pressure, temp, humidity, dust; subject = habitat Location
-- **ISRUProductionLog**: ISRU outputpropellant mass (kg CH�, O�), reactor status, power; links to Device (ISRU plant)
+- **HabitatEnvironmentalObservation**: Atmospheric monitoringO₂%, CO₂, pressure, temp, humidity, dust; subject = habitat Location
+- **ISRUProductionLog**: ISRU outputpropellant mass (kg CH₄, O₂), reactor status, power; links to Device (ISRU plant)
 - **MarsCrewMemberProfile**: Patientradiation career dose, flight certification, bone baseline, resilience score
 - **MissionTimelinePlan**: PlanDefinitionphases (launch, transit, ops, return), medical protocols, EVA schedules
 - **MarsRadiationRiskAssessment**: Long-duration exposurebasis = cumulative dose; prediction = cancer/CNS risk
@@ -161,7 +161,7 @@ Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks
 
 ### Integration and Future Directions
 
-**Integration**: Mars data � NASA LSAH database (longitudinal tracking); terrestrial EHR handoff; real-time (delayed) dashboards for Mission Control; environmental alerts trigger operational responses; career dose enforces exposure limits
+**Integration**: Mars data —NASA LSAH database (longitudinal tracking); terrestrial EHR handoff; real-time (delayed) dashboards for Mission Control; environmental alerts trigger operational responses; career dose enforces exposure limits
 
 **Future**: Interplanetary standardization (asteroid, Jupiter/Saturn moons); AI-driven autonomous medicine (digital twins, predictive models); closed-loop life support + medical ISRU (3D-printed pharmaceuticals, regenerative medicine); Mars permanent settlement medicine (obstetrics, pediatrics, colonial healthcare)
 

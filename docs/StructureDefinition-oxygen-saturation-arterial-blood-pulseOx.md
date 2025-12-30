@@ -1,4 +1,4 @@
-# Oxygen Saturation in Arterial Blood by Pulse Oximetry - v0.5.3
+# Oxygen Saturation in Arterial Blood by Pulse Oximetry - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/oxygen-saturation-arterial-blood-pulseOx | *Version*:0.5.3 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/oxygen-saturation-arterial-blood-pulseOx | *Version*:0.5.4 |
 | Active as of 2022-09-11 | *Computable Name*:OxygenSaturationArterialBloodPulseOx |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-saturation-ar
   "resourceType" : "StructureDefinition",
   "id" : "oxygen-saturation-arterial-blood-pulseOx",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/oxygen-saturation-arterial-blood-pulseOx",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "OxygenSaturationArterialBloodPulseOx",
   "title" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
   "status" : "active",

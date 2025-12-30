@@ -1,4 +1,4 @@
-# Location - Artemis Space Camp - v0.5.3
+# Location - Artemis Space Camp - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Fitness - v0.5.3
+# Fitness - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * **Fitness**
@@ -12,8 +12,6 @@
 When astronaut Scott Kelly completed his 340-day mission aboard the International Space Station, he spent an average of **2.5 hours every single day** exercisingrunning on a treadmill with a harness pulling him down to simulate Earth's gravity, lifting weights on the Advanced Resistive Exercise Device (ARED), and cycling on the stationary bike. Despite this heroic effort, he still lost significant bone density and muscle mass. This stark reality reveals the fundamental challenge of human spaceflight: in microgravity, the human body begins to atrophy almost immediately, and exercise becomes not just fitness training, but a **medical countermeasure critical to mission success and crew survival**.
 
 On the ISS, astronauts face a paradox: they must exercise more intensely than Olympic athletes, yet they're doing it in an environment where even simple movements require conscious effort. The ARED system can simulate loads exceeding 600 pounds, making it possible to perform squats and deadlifts in space. The T2 treadmill, vibration-isolated to prevent shaking the entire station, allows running at speeds up to 12 mph while a harness system pulls the astronaut downward with carefully calibrated force. Every workout session generates data: heart rate, simulated body weight, power output, exercise duration, and recovery metricsall critical for physicians on the ground to assess whether the crew's fitness program is preventing the inexorable physiologic decline of spaceflight.
-
-This module extends the HL7 Aerospace Medicine Implementation Guidebuilding on architectural principles from [Radiation Tracking](radiation-tracking.md) and [Nutrition](nutrition.md)into a comprehensive **Exercise and Fitness Monitoring** framework leveraging **FHIR Observation, Procedure, Device**, and mission-context extensions, aligned with the Physical Activity Implementation Guide.
 
 ### FHIR Implementation Architecture
 

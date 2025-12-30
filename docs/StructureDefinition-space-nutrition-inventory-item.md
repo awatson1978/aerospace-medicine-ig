@@ -1,4 +1,4 @@
-# Space Nutrition Inventory Item - v0.5.3
+# Space Nutrition Inventory Item - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*:SpaceNutritionInventoryItem |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-nutrition-inve
   "resourceType" : "StructureDefinition",
   "id" : "space-nutrition-inventory-item",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "SpaceNutritionInventoryItem",
   "title" : "Space Nutrition Inventory Item",
   "status" : "active",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

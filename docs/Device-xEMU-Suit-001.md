@@ -1,4 +1,4 @@
-# xEMU EVA Suit #001 - v0.5.3
+# xEMU EVA Suit #001 - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

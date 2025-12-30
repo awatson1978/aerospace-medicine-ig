@@ -1,4 +1,4 @@
-# Mars Direct Mission Plan 2040 - v0.5.3
+# Mars Direct Mission Plan 2040 - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040 | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040 | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*: |
 
  
@@ -17,11 +17,11 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
 * **Actions:**: **Url:**
   * : [Mars Direct Mission 2040 - Jezero Crater Landing](PlanDefinition-MarsDirectMissionPlan2040.md)
 * **Actions:**: **Version:**
-  * : 0.5.3
+  * : 0.5.4
 * **Actions:**: **Title:**
   * : Mars Direct Mission 2040 - Jezero Crater Landing
 * **Actions:**: **Date:**
-  * : 2025-12-29 22:23:37-0700
+  * : 2025-12-29 23:18:22-0700
 * **Actions:**: **Publisher:**
   * : MITRE
 * **Actions:**: **Description:**
@@ -49,7 +49,7 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "title" : "Mars Direct Mission 2040 - Jezero Crater Landing",
   "type" : {
     "coding" : [
@@ -60,7 +60,7 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
     ]
   },
   "status" : "active",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

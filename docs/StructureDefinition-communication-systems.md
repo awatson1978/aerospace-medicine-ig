@@ -1,4 +1,4 @@
-# Communication Systems Used - v0.5.3
+# Communication Systems Used - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-systems | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-systems | *Version*:0.5.4 |
 | Draft as of 2025-12-29 | *Computable Name*:CommunicationSystems |
 
 Communication systems and protocols used during training
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-communication-system
   "resourceType" : "StructureDefinition",
   "id" : "communication-systems",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/communication-systems",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "CommunicationSystems",
   "title" : "Communication Systems Used",
   "status" : "draft",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Calorie Deficit Risk Levels - v0.5.3
+# Calorie Deficit Risk Levels - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*:CalorieDeficitRiskVS |
 
  
@@ -46,12 +46,12 @@ Risk categorization for caloric deficits
   "resourceType" : "ValueSet",
   "id" : "calorie-deficit-risk-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "CalorieDeficitRiskVS",
   "title" : "Calorie Deficit Risk Levels",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

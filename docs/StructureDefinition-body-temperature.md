@@ -1,4 +1,4 @@
-# Body Temperature - v0.5.3
+# Body Temperature - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/body-temperature | *Version*:0.5.3 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/body-temperature | *Version*:0.5.4 |
 | Active as of 2022-09-11 | *Computable Name*:BodyTemperature |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-body-temperature.csv
   "resourceType" : "StructureDefinition",
   "id" : "body-temperature",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/body-temperature",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "BodyTemperature",
   "title" : "Body Temperature",
   "status" : "active",

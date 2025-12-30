@@ -1,4 +1,4 @@
-# Environmental Monitoring API for Closed Biome Systems - v0.5.3
+# Environmental Monitoring API for Closed Biome Systems - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/EnvironmentalMonitoringLogicalModel | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/EnvironmentalMonitoringLogicalModel | *Version*:0.5.4 |
 | Draft as of 2025-12-29 | *Computable Name*:EnvironmentalMonitoringLogicalModel |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-EnvironmentalMonitor
   "resourceType" : "StructureDefinition",
   "id" : "EnvironmentalMonitoringLogicalModel",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/EnvironmentalMonitoringLogicalModel",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "EnvironmentalMonitoringLogicalModel",
   "title" : "Environmental Monitoring API for Closed Biome Systems",
   "status" : "draft",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

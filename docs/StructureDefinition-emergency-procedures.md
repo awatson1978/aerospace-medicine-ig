@@ -1,4 +1,4 @@
-# Emergency Procedures - v0.5.3
+# Emergency Procedures - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures | *Version*:0.5.4 |
 | Draft as of 2025-12-29 | *Computable Name*:EmergencyProcedures |
 
 Emergency decompression procedures if applicable
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-emergency-procedures
   "resourceType" : "StructureDefinition",
   "id" : "emergency-procedures",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "EmergencyProcedures",
   "title" : "Emergency Procedures",
   "status" : "draft",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,7 +1,5 @@
 ## Artemis Missions
 
-![Artemis II Mission Overview](artemis_ii_mission_october_2021.jpeg){:width="100%"}
-
 
 
 ### Overview
@@ -19,20 +17,20 @@ The question that keeps mission planners awake at night is not whether the rocke
 
 #### Mission Timeline
 
-**Artemis I** - Uncrewed test flight, November 16 - December 11, 2022
-<!-- ![Artemis I Mission](artemis_i_mission_2021.jpg){:width="100%"} -->
+**Artemis I** - Uncrewed test flight, November 16 - December 11, 2022  
+[Artemis I Mission](artemis_i_mission_2021.jpg){:width="100%"}  
 
-**Artemis II** - First crewed lunar flyby since Apollo 17, planned 2026
-<!-- ![Artemis II Mission](artemis_ii_mission_october_2021.jpeg){:width="100%"} -->
+**Artemis II** - First crewed lunar flyby since Apollo 17, planned 2026  
+[Artemis II Mission](artemis_ii_mission_october_2021.jpeg){:width="100%"}  
 
-**Artemis III** - First woman and person of color on the Moon, lunar south pole landing, planned 2027
-<!-- ![Artemis III Landing Region Map](artemis_iii_mission_map_2022.jpeg){:width="100%"} -->
+**Artemis III** - First woman and person of color on the Moon, lunar south pole landing, planned 2027  
+[Artemis III Landing Region Map](artemis_iii_mission_map_2022.jpeg){:width="100%"}  
 
-**Artemis IV** - Establishing Lunar Gateway space station, planned 2028
-<!-- ![Artemis IV Mission](artemis_iv_mission.jpeg){:width="100%"} -->
+**Artemis IV** - Establishing Lunar Gateway space station, planned 2028  
+[Artemis IV Mission](artemis_iv_mission.jpeg){:width="100%"}  
 
-**Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029
-<!-- ![Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"} -->
+**Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029  
+[Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"}  
 
 #### Core Concepts
 
@@ -42,7 +40,7 @@ Artemis missions introduce unique data modeling requirements distinct from ISS o
 
 - **Deep Space Environment**: Beyond Earth's magnetosphere, crews face galactic cosmic rays and solar particle events at doses 2-3 orders of magnitude higher than LEO. Continuous dosimetry, risk assessment, and shielding strategies are mission-critical.
 
-- **Lunar Surface Operations**: 1/6th gravity (not microgravity), extreme temperature variations (-173�C in shadow to +127�C in sunlight), lunar dust exposure, and EVA operations in South Pole terrain with permanent shadows and high illumination ridges.
+- **Lunar Surface Operations**: 1/6th gravity (not microgravity), extreme temperature variations (-173°C in shadow to +127°C in sunlight), lunar dust exposure, and EVA operations in South Pole terrain with permanent shadows and high illumination ridges.
 
 - **Distributed Infrastructure**: Gateway (lunar orbit station), Human Landing System (Starship-HLS), Orion crew vehicle, lunar surface habitats, and Lunar Terrain Vehicleeach with distinct life support, telemetry, and medical capabilities.
 
@@ -54,7 +52,7 @@ Artemis health data spans multiple interconnected dimensions:
 
 - **Mission Timeline**: Launch, translunar cruise (4 days), lunar orbit insertion, Gateway docking, HLS transfer, lunar descent, surface EVAs, ascent, trans-Earth returneach phase with distinct medical protocols and risk profiles
 - **Radiation Dosimetry**: Real-time dose rates, cumulative GCR exposure, SPE alerts, tissue-specific doses, career limits tracking
-- **Environmental Monitoring**: Habitat cabin pressure, O�/CO� levels, temperature, dust contamination, suit telemetry during EVAs
+- **Environmental Monitoring**: Habitat cabin pressure, O₂/CO₂ levels, temperature, dust contamination, suit telemetry during EVAs
 - **Physiologic Data**: Vital signs, sleep metrics, bone density scans, cardiovascular assessments, cognitive performance tests, behavioral health surveys
 - **Operational Events**: EVA schedules, habitat transfers, emergency procedures, medical interventions, equipment malfunctions
 - **Location Context**: Gateway modules, HLS interior, lunar surface regions, specific landing sites with selenographic coordinates
@@ -82,7 +80,7 @@ Integration with existing terminologies:
 
 ### Physiologic and Environmental Considerations
 
-The challenges of Artemis missions are not incremental improvements over ISS operationsthey are categorically different. Picture the Artemis III crew: they have just landed at Malapert Massif, a rugged highland near the lunar south pole. Outside, the temperature in shadow is -230�C. The Sun hangs low on the horizon, never rising more than a few degreesproviding near-continuous daylight for solar power but casting deep, permanent shadows where no sunlight has touched the surface in billions of years. The regolith is electrostatically charged, clinging to every surface. There is no atmosphere, no magnetosphere, no protection from cosmic radiation. The crew will spend 6.5 days here, conducting two EVAs, collecting samples, and testing technologies for future Mars missions. **Every breath they take, every step they make, every moment of sleep is monitored because there is no margin for error.**
+The challenges of Artemis missions are not incremental improvements over ISS operationsthey are categorically different. Picture the Artemis III crew: they have just landed at Malapert Massif, a rugged highland near the lunar south pole. Outside, the temperature in shadow is -230°C. The Sun hangs low on the horizon, never rising more than a few degreesproviding near-continuous daylight for solar power but casting deep, permanent shadows where no sunlight has touched the surface in billions of years. The regolith is electrostatically charged, clinging to every surface. There is no atmosphere, no magnetosphere, no protection from cosmic radiation. The crew will spend 6.5 days here, conducting two EVAs, collecting samples, and testing technologies for future Mars missions. **Every breath they take, every step they make, every moment of sleep is monitored because there is no margin for error.**
 
 #### Beyond the Magnetosphere
 
@@ -108,7 +106,7 @@ The challenges of Artemis missions are not incremental improvements over ISS ope
 - **Artemis III Plans**: Minimum two EVAs, ~6.5 days surface time, south pole terrain (slopes, boulders, shadows)
 - **xEMU Suit**: Next-generation EVA suit with improved mobility, longer life support duration (8 hours), lower operating pressure (8 psi vs 4.3 psi in Apollo)reduced prebreathe time
 - **Metabolic Demands**: EVA work rates 200-400 kcal/hrhigher than treadmill exercisewith limited cooling, hydration, and waste management
-- **Thermal Extremes**: Suit must protect against -230�C in shadow and +120�C in sunlight simultaneously
+- **Thermal Extremes**: Suit must protect against -230°C in shadow and +120°C in sunlight simultaneously
 - **Communication**: Line-of-sight only (no atmosphere for radio bounce)Gateway relay or direct Earth link required
 
 #### Circadian Disruption
@@ -139,7 +137,7 @@ Artemis missions require **integrated, real-time health and environmental monito
 - **Continuous Vital Signs**: Heart rate, blood pressure, SpO2, temperaturewearable sensors integrated with suit telemetry during EVAs
 - **Daily Health Logs**: Self-reported sleep quality, appetite, mood, pain, fatiguestructured questionnaires (PHQ-9, GAD-7, NASA-TLX workload)
 - **Radiation Dosimetry**: Active Personal Dosimeters (APDs) with real-time dose rate display, tissue equivalent proportional counters (TEPC), area monitors in habitats
-- **Environmental Sensors**: Cabin pressure, O�/CO� levels, temperature, humidity, dust particle counts, microbial contamination
+- **Environmental Sensors**: Cabin pressure, O₂/CO₂ levels, temperature, humidity, dust particle counts, microbial contamination
 - **Cognitive Performance**: Weekly reaction time tests (PVT), memory tasks, spatial orientation assessmentsdetect early CNS effects from radiation or stress
 
 #### Post-EVA Assessments
@@ -154,27 +152,27 @@ Artemis missions require **integrated, real-time health and environmental monito
 - **Cardiovascular**: Resting HR >100 bpm, BP >140/90, arrhythmias, orthostatic intolerance
 - **Sleep**: <5 hours for 3 consecutive nights, sleep efficiency <70%, excessive daytime sleepiness
 - **Behavioral Health**: PHQ-9 e10 (moderate depression), GAD-7 e10 (moderate anxiety), interpersonal conflict reports, suicidal ideation (immediate psych consult)
-- **Environmental**: Cabin pressure drop, O� <19.5%, CO� >0.5%, temperature extremes, dust contamination above threshold
+- **Environmental**: Cabin pressure drop, O₂ <19.5%, CO₂ >0.5%, temperature extremes, dust contamination above threshold
 
 ### Data Model Architecture
 
 #### Core FHIR Resources
 
-- **Observation** � Radiation dose measurements, environmental sensors, vital signs, cognitive assessments, biomarkers
-- **Procedure** � EVAProcedure (moonwalks), habitat transfers, emergency medical interventions, suit maintenance
-- **Condition** � Diagnosed conditions (space adaptation syndrome, radiation dermatitis, decompression injury)
-- **Device** � Orion, Starship-HLS, xEMU suits, Gateway modules, LTV rover, dosimeters, medical equipment
-- **Location** � Gateway modules, HLS compartments, lunar landing sites (with selenographic coordinates), surface habitats
-- **Encounter** � Mission phases (launch, translunar, lunar orbit, surface operations, return)
-- **PlanDefinition** � Mission timelines, EVA schedules, medical protocols, contingency procedures
-- **RiskAssessment** � Radiation risk models, bone loss projections, behavioral health vulnerability scores
+- **Observation** — Radiation dose measurements, environmental sensors, vital signs, cognitive assessments, biomarkers
+- **Procedure** — EVAProcedure (moonwalks), habitat transfers, emergency medical interventions, suit maintenance
+- **Condition** — Diagnosed conditions (space adaptation syndrome, radiation dermatitis, decompression injury)
+- **Device** — Orion, Starship-HLS, xEMU suits, Gateway modules, LTV rover, dosimeters, medical equipment
+- **Location** — Gateway modules, HLS compartments, lunar landing sites (with selenographic coordinates), surface habitats
+- **Encounter** — Mission phases (launch, translunar, lunar orbit, surface operations, return)
+- **PlanDefinition** — Mission timelines, EVA schedules, medical protocols, contingency procedures
+- **RiskAssessment** — Radiation risk models, bone loss projections, behavioral health vulnerability scores
 
 #### Extensions
 
-- **missionContext** (reused from other modules) � Links all resources to specific Artemis mission and phase
-- **lunarCoordinates** � Selenographic latitude/longitude for Location resources
-- **radiationShielding** � Shielding mass/composition for habitat or vehicle Device resources
-- **evaNumber** � Sequential EVA identifier within a mission (e.g., "EVA-1", "EVA-2")
+- **missionContext** (reused from other modules) — Links all resources to specific Artemis mission and phase
+- **lunarCoordinates** — Selenographic latitude/longitude for Location resources
+- **radiationShielding** — Shielding mass/composition for habitat or vehicle Device resources
+- **evaNumber** — Sequential EVA identifier within a mission (e.g., "EVA-1", "EVA-2")
 
 #### Profiles
 
@@ -221,7 +219,7 @@ Individual astronauts participating in multiple Artemis missionscareer radiatio
 
 - Environmental alerts trigger operational responses (crew relocation, timeline adjustments, emergency procedures)
 - EVA schedules synchronized with medical readiness, radiation conditions, crew fatigue levels
-- Gateway resource management (O�, water, food, medical supplies) integrated with health monitoring
+- Gateway resource management (O₂, water, food, medical supplies) integrated with health monitoring
 
 #### Radiation Protection
 

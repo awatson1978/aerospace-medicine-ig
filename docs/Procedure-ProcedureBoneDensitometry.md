@@ -1,4 +1,4 @@
-# Procedure - Bone Densitometry - v0.5.3
+# Procedure - Bone Densitometry - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

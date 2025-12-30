@@ -1,4 +1,4 @@
-# Stress Countermeasures Value Set - v0.5.3
+# Stress Countermeasures Value Set - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs | *Version*:0.5.3 |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*:StressCountermeasuresVS |
 
  
@@ -46,11 +46,11 @@ Standardized set of psychological countermeasures used to mitigate stress and su
   "resourceType" : "ValueSet",
   "id" : "stress-countermeasures-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "StressCountermeasuresVS",
   "title" : "Stress Countermeasures Value Set",
   "status" : "active",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

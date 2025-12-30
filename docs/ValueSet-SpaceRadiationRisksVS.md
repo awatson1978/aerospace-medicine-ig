@@ -1,4 +1,4 @@
-# Space Radiation Risks ValueSet - v0.5.3
+# Space Radiation Risks ValueSet - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS | *Version*:0.5.4 |
 | Draft as of 2025-12-29 | *Computable Name*:SpaceRadiationRisksVS |
 
  
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SpaceRadiationRisksVS",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "SpaceRadiationRisksVS",
   "title" : "Space Radiation Risks ValueSet",
   "status" : "draft",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

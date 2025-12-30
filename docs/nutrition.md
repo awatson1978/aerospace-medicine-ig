@@ -1,4 +1,4 @@
-# Nutrition - v0.5.3
+# Nutrition - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * **Nutrition**
@@ -12,8 +12,6 @@
 When the crew of **Biosphere 2** emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited **improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity**findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: **astronauts often operate at an energetic deficit**, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.
 
 On the **International Space Station**, astronauts routinely burn **2,5003,500 kcal/day** yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.
-
-This module extends the HL7 Aerospace Medicine Implementation Guideincluding the architectural principles demonstrated in [Neutral Buoyancy](neutral-buoyancy.md) and [Radiation Tracking](radiation-tracking.md)into a comprehensive **Nutrition and Calorie Deficit Management** framework leveraging **FHIR NutritionIntake, NutritionProduct, Observation, InventoryItem, Device**, and mission-context extensions.
 
 ### FHIR Implementation Architecture
 

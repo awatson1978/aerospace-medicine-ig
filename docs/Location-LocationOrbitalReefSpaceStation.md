@@ -1,4 +1,4 @@
-# Location - Orbital Reef - v0.5.3
+# Location - Orbital Reef - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

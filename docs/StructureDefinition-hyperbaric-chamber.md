@@ -1,4 +1,4 @@
-# Hyperbaric Chamber - v0.5.3
+# Hyperbaric Chamber - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber | *Version*:0.5.3 |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber | *Version*:0.5.4 |
 | Active as of 2025-12-29 | *Computable Name*:HyperbaricChamber |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
   "resourceType" : "StructureDefinition",
   "id" : "hyperbaric-chamber",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber",
-  "version" : "0.5.3",
+  "version" : "0.5.4",
   "name" : "HyperbaricChamber",
   "title" : "Hyperbaric Chamber",
   "status" : "active",
-  "date" : "2025-12-29T22:23:37-07:00",
+  "date" : "2025-12-29T23:18:22-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

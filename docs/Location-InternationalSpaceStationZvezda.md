@@ -1,4 +1,4 @@
-# ISS Zvezda Service Module - v0.5.3
+# ISS Zvezda Service Module - v0.5.4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
