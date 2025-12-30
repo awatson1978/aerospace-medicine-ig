@@ -23,28 +23,27 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 ### Artemis
 
-- Artemis.Devices.ndjson
-- Artemis.Crew.ndjson
-- Artemis.Organizations.ndjson
 - [Artemis.Locations.ndjson](Artemis.Locations.ndjson)
 - [Artemis.CodeSystems.ndjson](Artemis.CodeSystems.ndjson)
 - [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
+- Artemis.Devices.ndjson
+- Artemis.Organizations.ndjson
+- Artemis.Crew.ndjson
 
 ### Mars Direct
 
-- MarsDirect.Devices.ndjson
-- MarsDirect.Crew.ndjson
-- MarsDirect.Locations.ndjson
-- MarsDirect.Organizations.ndjson
 - [MarsDirect.CodeSystems.ndjson](MarsDirect.CodeSystems.ndjson)
 - [MarsDirect.ValueSets.ndjson](MarsDirect.ValueSets.ndjson)
+- MarsDirect.Organizations.ndjson
+- MarsDirect.Devices.ndjson
+- MarsDirect.Locations.ndjson
 
 
 ### Commercial Space
 
-- CommercialSpace.Organizations.ndjson
-- CommercialSpace.Locations.ndjson
-- CommercialSpace.Devices.ndjson
+- [CommercialSpace.Organizations.ndjson](CommercialSpace.Organizations.ndjson)  
+- [CommercialSpace.Devices.ndjson](CommercialSpace.Devices.ndjson)  
+- CommercialSpace.Locations.ndjson  
 
 
 ### Star Trek

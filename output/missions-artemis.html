@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artemis -  v0.5.5</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.5 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artemis</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artemis</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#artemis-missions" id="markdown-toc-artemis-missions">Artemis Missions</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
+      <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a></li>
+      <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
+      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
+      <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
+      <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="artemis-missions">Artemis Missions</h2>
+
+<h3 id="overview">Overview</h3>
+
+<p>On November 16, 2022, at 1:47 AM EST, the Space Launch System rocket lit up the night sky over Kennedy Space Center. Riding atop this most powerful rocket ever built was Orionan uncrewed capsule bound for lunar orbit. Artemis I had begun. For 25.5 days, Orion flew farther from Earth than any spacecraft designed for humans had ever gone, testing heat shields, life support systems, and navigation in deep space. It splashed down in the Pacific Ocean on December 11, 2022, proving that the hardware worked. <strong>But hardware is only half the story.</strong> The Artemis program is not about sending machines to the Moonit's about sending people. And people are fragile.</p>
+
+<p>Artemis II (planned for 2026) will be the first crewed lunar flyby since Apollo 17 in 1972. Artemis III (planned for 2027) aims to land the first woman and first person of color on the Moon, targeting the harsh, shadowed terrain near the lunar south polea place no human has ever set foot. Artemis IV and V will establish the Lunar Gateway space station and begin constructing an Artemis Base Camp on the surface, enabling sustained human presence beyond low-Earth orbit for the first time. These missions will test technologies, countermeasures, and medical protocols for eventual Mars missions2-3 year journeys where there is no quick abort, no resupply, and no evacuation option.</p>
+
+<p>The question that keeps mission planners awake at night is not whether the rockets will work or the habitats will seal. It's whether the crew will remain healthyphysically and psychologicallyin an environment that evolution never prepared us for. <strong>Artemis astronauts will face radiation exposure far exceeding ISS levels, bone and muscle loss in 1/6th gravity, circadian disruption from extreme lunar day-night cycles, isolation in cramped habitats, and the constant risk of equipment failure with no immediate rescue.</strong> Every heartbeat, every milligram of cortisol, every hour of sleep, every rad of radiation dose must be tracked, correlated, and analyzed to ensure crew safety and mission success.</p>
+
+<p><img src="artemis_ii_mission_october_2021.jpeg" alt="Artemis II Mission" width="100%" /></p>
+
+<h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
+
+<h4 id="mission-timeline">Mission Timeline</h4>
+
+<p><strong>Artemis I</strong> - Uncrewed test flight, November 16 - December 11, 2022<br />
+<a href="artemis_i_mission_2021.jpg" width="100%">Artemis I Mission</a></p>
+
+<p><strong>Artemis II</strong> - First crewed lunar flyby since Apollo 17, planned 2026<br />
+<a href="artemis_ii_mission_october_2021.jpeg" width="100%">Artemis II Mission</a></p>
+
+<p><strong>Artemis III</strong> - First woman and person of color on the Moon, lunar south pole landing, planned 2027<br />
+<a href="artemis_iii_mission_map_2022.jpeg" width="100%">Artemis III Landing Region Map</a></p>
+
+<p><strong>Artemis IV</strong> - Establishing Lunar Gateway space station, planned 2028<br />
+<a href="artemis_iv_mission.jpeg" width="100%">Artemis IV Mission</a></p>
+
+<p><strong>Artemis V</strong> - Expanding Artemis Base Camp and sustained lunar presence, planned 2029<br />
+<a href="artemis_v_mission_may_2023.jpg" width="100%">Artemis V Mission</a></p>
+
+<h4 id="core-concepts">Core Concepts</h4>
+
+<p>Artemis missions introduce unique data modeling requirements distinct from ISS operations:</p>
+
+<ul>
+  <li>
+    <p><strong>Mission Context</strong>: Unlike ISS (continuous habitation with regular crew rotation), Artemis missions are discrete expeditions with defined phases: launch, translunar injection, lunar orbit, descent, surface operations, ascent, trans-Earth injection, and re-entry. All health and environmental data must be tagged with mission ID and phase.</p>
+  </li>
+  <li>
+    <p><strong>Deep Space Environment</strong>: Beyond Earth's magnetosphere, crews face galactic cosmic rays and solar particle events at doses 2-3 orders of magnitude higher than LEO. Continuous dosimetry, risk assessment, and shielding strategies are mission-critical.</p>
+  </li>
+  <li>
+    <p><strong>Lunar Surface Operations</strong>: 1/6th gravity (not microgravity), extreme temperature variations (-173°C in shadow to +127°C in sunlight), lunar dust exposure, and EVA operations in South Pole terrain with permanent shadows and high illumination ridges.</p>
+  </li>
+  <li>
+    <p><strong>Distributed Infrastructure</strong>: Gateway (lunar orbit station), Human Landing System (Starship-HLS), Orion crew vehicle, lunar surface habitats, and Lunar Terrain Vehicleeach with distinct life support, telemetry, and medical capabilities.</p>
+  </li>
+  <li>
+    <p><strong>Communication Latency</strong>: Minimal for lunar missions (~1.3 second one-way light time), but this architecture must scale to Mars missions with 3-20 minute delaysrequiring asynchronous data exchange and autonomous medical decision support.</p>
+  </li>
+</ul>
+
+<h4 id="data-architecture">Data Architecture</h4>
+
+<p>Artemis health data spans multiple interconnected dimensions:</p>
+
+<ul>
+  <li><strong>Mission Timeline</strong>: Launch, translunar cruise (4 days), lunar orbit insertion, Gateway docking, HLS transfer, lunar descent, surface EVAs, ascent, trans-Earth returneach phase with distinct medical protocols and risk profiles</li>
+  <li><strong>Radiation Dosimetry</strong>: Real-time dose rates, cumulative GCR exposure, SPE alerts, tissue-specific doses, career limits tracking</li>
+  <li><strong>Environmental Monitoring</strong>: Habitat cabin pressure, O₂/CO₂ levels, temperature, dust contamination, suit telemetry during EVAs</li>
+  <li><strong>Physiologic Data</strong>: Vital signs, sleep metrics, bone density scans, cardiovascular assessments, cognitive performance tests, behavioral health surveys</li>
+  <li><strong>Operational Events</strong>: EVA schedules, habitat transfers, emergency procedures, medical interventions, equipment malfunctions</li>
+  <li><strong>Location Context</strong>: Gateway modules, HLS interior, lunar surface regions, specific landing sites with selenographic coordinates</li>
+</ul>
+
+<p>All measurements link to <strong>MissionContext</strong> extensions (consistent with other IG modules) and <strong>ArtemisMissions</strong> CodeSystem entries (Artemis I, II, III, IV, V) to enable mission-specific filtering and cross-mission analysis.</p>
+
+<h4 id="standardized-terminologies">Standardized Terminologies</h4>
+
+<p>New code systems and value sets for Artemis:</p>
+
+<ul>
+  <li><strong><a href="CodeSystem-artemis-mission-cs.html">ArtemisMissionCS</a></strong>: Mission codes (ARTEMIS-I, ARTEMIS-II, ARTEMIS-III, ARTEMIS-IV, ARTEMIS-V) with properties for target destination, launch date, status</li>
+  <li><strong><a href="ValueSet-artemis-mission-vs.html">ArtemisMissionVS</a></strong>: ValueSet for all Artemis program missions I-V</li>
+  <li><strong><a href="CodeSystem-artemis-landing-region-cs.html">ArtemisLandingRegionCS</a></strong>: 13 candidate Artemis III south pole landing regions (Faustini Rim A, Peak Near Shackleton, Malapert Massif, Nobile Rim, Haworth, etc.) with approximate coordinates</li>
+  <li><strong><a href="ValueSet-artemis-landing-region-vs.html">ArtemisLandingRegionVS</a></strong>: ValueSet binding for location profiles</li>
+  <li><strong><a href="CodeSystem-artemis-certified-devices-cs.html">ArtemisCertifiedDevicesCS</a></strong>: Flight-qualified hardware (Orion, SLS, xEMU EVA suit, Starship-HLS, LTV rover, Gateway-HALO, BaseCampHab)</li>
+  <li><strong><a href="ValueSet-artemis-certified-devices-vs.html">ArtemisCertifiedDevicesVS</a></strong>: ValueSet for certified Artemis devices</li>
+  <li><strong><a href="CodeSystem-artemis-prototype-devices-cs.html">ArtemisPrototypeDevicesCS</a></strong>: Developmental/test hardware (xEMU Demo Unit, Pressurized Rover Prototype, Habitat Test Module, NextGen PLSS)</li>
+  <li><strong><a href="ValueSet-artemis-prototype-devices-vs.html">ArtemisPrototypeDevicesVS</a></strong>: ValueSet for prototype Artemis devices</li>
+  <li><strong><a href="ValueSet-artemis-all-devices-vs.html">ArtemisAllDevicesVS</a></strong>: ValueSet combining both certified and prototype devices</li>
+</ul>
+
+<p>Integration with existing terminologies:</p>
+<ul>
+  <li><strong>SNOMED CT</strong>: Clinical conditions (radiation sickness, space adaptation syndrome), exposures ("Exposure to ionizing radiation from cosmic sources"), proceduresnoting gaps like "Extravehicular activity (procedure)" or "Lunar dust exposure"</li>
+  <li><strong>LOINC</strong>: Radiation measurements (77638-4 "Irradiation dose rate"), vital signs, atmospheric composition, environmental sensors</li>
+  <li><strong>NASA HMTA</strong>: Health and Medical Technical Authority standards for exposure limits, medical event categories, crew health requirements</li>
+</ul>
+
+<h3 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h3>
+
+<p>The challenges of Artemis missions are not incremental improvements over ISS operationsthey are categorically different. Picture the Artemis III crew: they have just landed at Malapert Massif, a rugged highland near the lunar south pole. Outside, the temperature in shadow is -230°C. The Sun hangs low on the horizon, never rising more than a few degreesproviding near-continuous daylight for solar power but casting deep, permanent shadows where no sunlight has touched the surface in billions of years. The regolith is electrostatically charged, clinging to every surface. There is no atmosphere, no magnetosphere, no protection from cosmic radiation. The crew will spend 6.5 days here, conducting two EVAs, collecting samples, and testing technologies for future Mars missions. <strong>Every breath they take, every step they make, every moment of sleep is monitored because there is no margin for error.</strong></p>
+
+<h4 id="beyond-the-magnetosphere">Beyond the Magnetosphere</h4>
+
+<ul>
+  <li><strong>Galactic Cosmic Rays (GCR)</strong>: Continuous background radiation from distant supernovaehigh-energy protons and heavy ions that penetrate spacecraft walls and human tissue, damaging DNA and increasing cancer risk</li>
+  <li><strong>Solar Particle Events (SPE)</strong>: Unpredictable bursts of radiation from solar flarescan deliver lethal doses in hours without adequate shielding (storm shelters in Gateway and HLS)</li>
+  <li><strong>Dose Limits</strong>: NASA career limits (varies by age/sex, typically 150-400 mSv for LEO missions) are exceeded far more quickly in deep spaceArtemis III crew may accumulate 20-30 mSv in 30 days</li>
+  <li><strong>ALARA Principle</strong>: "As Low As Reasonably Achievable"continuous dosimetry, shielding optimization, mission timeline adjustments to minimize exposure</li>
+</ul>
+
+<h4 id="lunar-gravity-and-musculoskeletal-effects">Lunar Gravity and Musculoskeletal Effects</h4>
+
+<ul>
+  <li><strong>1/6th Gravity</strong>: Not microgravity (like ISS) but also not Earthsufficient to maintain some load-bearing but insufficient to prevent bone loss and muscle atrophy over weeks to months</li>
+  <li><strong>EVA Countermeasures</strong>: Walking, hopping, sample collection in EVA suits provides some resistance exercise, but not equivalent to ARED/T2 protocols</li>
+  <li><strong>Post-Mission Reconditioning</strong>: Astronauts returning from lunar surface may have different reconditioning needs than ISS crew (partial gravity vs microgravity adaptation)</li>
+</ul>
+
+<h4 id="lunar-dust-hazards">Lunar Dust Hazards</h4>
+
+<ul>
+  <li><strong>Regolith Characteristics</strong>: Jagged, electrostatically charged, abrasive particlescling to suits, equipment, habitat surfaces</li>
+  <li><strong>Inhalation Risk</strong>: Dust tracked into habitats can cause respiratory irritation, inflammation, potential long-term lung damage (analogous to silicosis)</li>
+  <li><strong>Equipment Degradation</strong>: Dust fouls seals, jams mechanisms, scratches visorsrequiring meticulous decontamination procedures</li>
+</ul>
+
+<h4 id="eva-challenges">EVA Challenges</h4>
+
+<ul>
+  <li><strong>Artemis III Plans</strong>: Minimum two EVAs, ~6.5 days surface time, south pole terrain (slopes, boulders, shadows)</li>
+  <li><strong>xEMU Suit</strong>: Next-generation EVA suit with improved mobility, longer life support duration (8 hours), lower operating pressure (8 psi vs 4.3 psi in Apollo)reduced prebreathe time</li>
+  <li><strong>Metabolic Demands</strong>: EVA work rates 200-400 kcal/hrhigher than treadmill exercisewith limited cooling, hydration, and waste management</li>
+  <li><strong>Thermal Extremes</strong>: Suit must protect against -230°C in shadow and +120°C in sunlight simultaneously</li>
+  <li><strong>Communication</strong>: Line-of-sight only (no atmosphere for radio bounce)Gateway relay or direct Earth link required</li>
+</ul>
+
+<h4 id="circadian-disruption">Circadian Disruption</h4>
+
+<ul>
+  <li><strong>Lunar Day</strong>: 29.5 Earth days (14.75 days sunlight, 14.75 days darkness)but south pole sites chosen for near-continuous sunlight during surface missions</li>
+  <li><strong>Artificial Light-Dark Cycles</strong>: Habitat lighting must simulate Earth day-night to maintain circadian rhythmsbut external lighting cues absent or abnormal</li>
+  <li><strong>Sleep Quality</strong>: Confined spaces, operational stress, radiation concerns, suit discomfortall degrade sleep despite adequate opportunity</li>
+</ul>
+
+<h4 id="habitat-confinement">Habitat Confinement</h4>
+
+<ul>
+  <li><strong>Gateway HALO Module</strong>: ~8.5 meters long, 3 meters diameterapproximately the size of a large RV for 4 crew members</li>
+  <li><strong>Starship-HLS Interior</strong>: More spacious (9-meter diameter, 18-meter pressurized height) but still confined during multi-day transits</li>
+  <li><strong>Surface Hab (Future)</strong>: Artemis Base Camp will provide larger living quarters, but early missions operate out of HLS</li>
+  <li><strong>Psychological Factors</strong>: Isolation, interpersonal friction, monotony, communication delays (minimal for Moon, but training for Mars)</li>
+</ul>
+
+<h3 id="monitoring-strategy">Monitoring Strategy</h3>
+
+<p>Artemis missions require <strong>integrated, real-time health and environmental monitoring</strong> with automated alerting, ground-loop medical consultation, and autonomous crew decision support. Unlike ISS (continuous communication, predictable environment, regular resupply), Artemis crews must be more self-sufficient.</p>
+
+<h4 id="pre-flight-baseline">Pre-Flight Baseline</h4>
+
+<ul>
+  <li><strong>Comprehensive Medical Evaluation</strong>: Bone density (DEXA), cardiovascular fitness (VO2max), cognitive baseline (PVT, memory tests), psychiatric screening, radiation sensitivity biomarkers</li>
+  <li><strong>Countermeasure Training</strong>: EVA conditioning, partial gravity simulators, suit familiarization, emergency medical procedures</li>
+  <li><strong>Mission-Specific Risk Assessment</strong>: Individualized radiation limits, nutrition plans, exercise protocols, psychological support strategies</li>
+</ul>
+
+<h4 id="in-flight-monitoring">In-Flight Monitoring</h4>
+
+<ul>
+  <li><strong>Continuous Vital Signs</strong>: Heart rate, blood pressure, SpO2, temperaturewearable sensors integrated with suit telemetry during EVAs</li>
+  <li><strong>Daily Health Logs</strong>: Self-reported sleep quality, appetite, mood, pain, fatiguestructured questionnaires (PHQ-9, GAD-7, NASA-TLX workload)</li>
+  <li><strong>Radiation Dosimetry</strong>: Active Personal Dosimeters (APDs) with real-time dose rate display, tissue equivalent proportional counters (TEPC), area monitors in habitats</li>
+  <li><strong>Environmental Sensors</strong>: Cabin pressure, O₂/CO₂ levels, temperature, humidity, dust particle counts, microbial contamination</li>
+  <li><strong>Cognitive Performance</strong>: Weekly reaction time tests (PVT), memory tasks, spatial orientation assessmentsdetect early CNS effects from radiation or stress</li>
+</ul>
+
+<h4 id="post-eva-assessments">Post-EVA Assessments</h4>
+
+<ul>
+  <li><strong>Immediate</strong>: Suit telemetry review (metabolic rate, heart rate, fluid consumption, thermal regulation), post-EVA physical exam, dehydration assessment</li>
+  <li><strong>24-Hour</strong>: Sleep quality, muscle soreness, any injuries or skin irritation from suit contact, dust exposure symptoms</li>
+  <li><strong>Cumulative</strong>: EVA workload integration with overall energy expenditure, correlation with sleep deficits, stress burden</li>
+</ul>
+
+<h4 id="risk-threshold-alerts">Risk Threshold Alerts</h4>
+
+<ul>
+  <li><strong>Radiation</strong>: Dose rate &gt;0.5 mGy/hr (SPE warning), cumulative dose approaching career limits, tissue-specific thresholds</li>
+  <li><strong>Cardiovascular</strong>: Resting HR &gt;100 bpm, BP &gt;140/90, arrhythmias, orthostatic intolerance</li>
+  <li><strong>Sleep</strong>: &lt;5 hours for 3 consecutive nights, sleep efficiency &lt;70%, excessive daytime sleepiness</li>
+  <li><strong>Behavioral Health</strong>: PHQ-9 e10 (moderate depression), GAD-7 e10 (moderate anxiety), interpersonal conflict reports, suicidal ideation (immediate psych consult)</li>
+  <li><strong>Environmental</strong>: Cabin pressure drop, O₂ &lt;19.5%, CO₂ &gt;0.5%, temperature extremes, dust contamination above threshold</li>
+</ul>
+
+<h3 id="data-model-architecture">Data Model Architecture</h3>
+
+<h4 id="core-fhir-resources">Core FHIR Resources</h4>
+
+<ul>
+  <li><strong>Observation</strong> — Radiation dose measurements, environmental sensors, vital signs, cognitive assessments, biomarkers</li>
+  <li><strong>Procedure</strong> — EVAProcedure (moonwalks), habitat transfers, emergency medical interventions, suit maintenance</li>
+  <li><strong>Condition</strong> — Diagnosed conditions (space adaptation syndrome, radiation dermatitis, decompression injury)</li>
+  <li><strong>Device</strong> — Orion, Starship-HLS, xEMU suits, Gateway modules, LTV rover, dosimeters, medical equipment</li>
+  <li><strong>Location</strong> — Gateway modules, HLS compartments, lunar landing sites (with selenographic coordinates), surface habitats</li>
+  <li><strong>Encounter</strong> — Mission phases (launch, translunar, lunar orbit, surface operations, return)</li>
+  <li><strong>PlanDefinition</strong> — Mission timelines, EVA schedules, medical protocols, contingency procedures</li>
+  <li><strong>RiskAssessment</strong> — Radiation risk models, bone loss projections, behavioral health vulnerability scores</li>
+</ul>
+
+<h4 id="extensions">Extensions</h4>
+
+<ul>
+  <li><strong>missionContext</strong> (reused from other modules) — Links all resources to specific Artemis mission and phase</li>
+  <li><strong>lunarCoordinates</strong> — Selenographic latitude/longitude for Location resources</li>
+  <li><strong>radiationShielding</strong> — Shielding mass/composition for habitat or vehicle Device resources</li>
+  <li><strong>evaNumber</strong> — Sequential EVA identifier within a mission (e.g., "EVA-1", "EVA-2")</li>
+</ul>
+
+<h4 id="profiles">Profiles</h4>
+
+<ul>
+  <li><strong>EVAProcedure</strong>: Procedure profile for extravehicular activities with required fields for duration, location, participants, suit device, metabolic data</li>
+  <li><strong>HabitatLocation</strong>: Location profile for lunar habitats, Gateway modules, landing sitesincludes selenographic coordinates, region code, environmental type (orbital/surface)</li>
+  <li><strong>ArtemisRadiationExposure</strong>: Observation profile extending base radiation tracking with deep space context (GCR vs SPE, shielding conditions)</li>
+  <li><strong>MissionPlan</strong>: PlanDefinition profile for Artemis mission timelines with phases, events, constraints, medical protocols</li>
+</ul>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<h4 id="1-artemis-ii-lunar-flyby-health-monitoring">1. Artemis II Lunar Flyby Health Monitoring</h4>
+
+<p>Comprehensive health surveillance during 10-day crewed lunar flybycontinuous vital signs, daily health logs, radiation dosimetry, behavioral health assessments. First human exposure to deep space radiation since Apollo.</p>
+
+<h4 id="2-artemis-iii-eva-operations">2. Artemis III EVA Operations</h4>
+
+<p>Two surface EVAs at Malapert Massifpre-EVA readiness assessments, continuous suit telemetry, post-EVA recovery monitoring, dust exposure tracking, cumulative workload integration.</p>
+
+<h4 id="3-radiation-exposure-management">3. Radiation Exposure Management</h4>
+
+<p>Real-time dosimetry during translunar cruise, SPE alert response (crew relocates to storm shelter in Gateway), cumulative dose tracking against career limits, post-mission risk assessment for stochastic effects.</p>
+
+<h4 id="4-gateway-long-duration-habitation">4. Gateway Long-Duration Habitation</h4>
+
+<p>Multi-week stays in Gateway modulesenvironmental monitoring (air quality, temperature, noise), exercise countermeasures (adapted T2/ARED protocols), nutrition tracking (limited resupply), interpersonal dynamics assessment.</p>
+
+<h4 id="5-lunar-south-pole-environmental-challenges">5. Lunar South Pole Environmental Challenges</h4>
+
+<p>Surface operations in extreme thermal, radiation, and dust conditionshabitat air quality monitoring, suit decontamination effectiveness, crew sleep quality in partial gravity, circadian entrainment strategies.</p>
+
+<h4 id="6-cross-mission-longitudinal-tracking">6. Cross-Mission Longitudinal Tracking</h4>
+
+<p>Individual astronauts participating in multiple Artemis missionscareer radiation dose accumulation, bone density trends, cardiovascular adaptation, psychological resilience factorsinforming crew selection for Mars missions.</p>
+
+<h3 id="integration-with-existing-systems">Integration with Existing Systems</h3>
+
+<h4 id="crew-health-and-medical-systems">Crew Health and Medical Systems</h4>
+
+<ul>
+  <li>Artemis data feeds into NASA's Lifetime Surveillance of Astronaut Health (LSAH) database</li>
+  <li>Integration with terrestrial EHR systems for pre-flight and post-flight clinical care</li>
+  <li>Real-time health dashboards for flight surgeons at Mission Control</li>
+</ul>
+
+<h4 id="mission-operations">Mission Operations</h4>
+
+<ul>
+  <li>Environmental alerts trigger operational responses (crew relocation, timeline adjustments, emergency procedures)</li>
+  <li>EVA schedules synchronized with medical readiness, radiation conditions, crew fatigue levels</li>
+  <li>Gateway resource management (O₂, water, food, medical supplies) integrated with health monitoring</li>
+</ul>
+
+<h4 id="radiation-protection">Radiation Protection</h4>
+
+<ul>
+  <li>Active dosimetry data informs trajectory optimization, shielding configurations, activity scheduling</li>
+  <li>SPE forecasting integrated with crew shelter protocols</li>
+  <li>Career dose tracking enforces exposure limits, disqualifies crew from future missions if thresholds exceeded</li>
+</ul>
+
+<h4 id="research-and-development">Research and Development</h4>
+
+<ul>
+  <li>Artemis health data validates models for Mars mission planning (bone loss rates, radiation effects, psychological stressors)</li>
+  <li>Countermeasure effectiveness studies (exercise protocols, pharmacologic interventions, behavioral health strategies)</li>
+  <li>Technology demonstrations (wearable sensors, autonomous diagnostics, telemedicine platforms)</li>
+</ul>
+
+<h3 id="regulatory-and-standards-alignment">Regulatory and Standards Alignment</h3>
+
+<ul>
+  <li><strong>NASA-STD-3001</strong>: NASA Human Spaceflight Standardscrew health, habitat design, EVA systems, life support</li>
+  <li><strong>NASA HMTA</strong>: Health and Medical Technical Authoritymedical certification, exposure limits, clinical protocols</li>
+  <li><strong>SNOMED CT</strong>: Clinical terminology for conditions, procedures, findingsnoting gaps for space-specific concepts</li>
+  <li><strong>LOINC</strong>: Laboratory and clinical measurementsradiation, environmental sensors, physiological parameters</li>
+  <li><strong>HL7 FHIR R4</strong>: Core standard for all resource profiles, ensuring interoperability with terrestrial healthcare systems</li>
+</ul>
+
+<h3 id="future-directions">Future Directions</h3>
+
+<h4 id="mars-mission-preparation">Mars Mission Preparation</h4>
+
+<ul>
+  <li>Artemis serves as proving ground for Mars medical systemslonger durations, greater communication delays, more austere environments</li>
+  <li>Longitudinal crew health trends inform crew selection, mission design, countermeasure strategies for 2-3 year Mars expeditions</li>
+</ul>
+
+<h4 id="autonomous-medical-systems">Autonomous Medical Systems</h4>
+
+<ul>
+  <li>Machine learning models for early detection of radiation sickness, bone loss, behavioral health decline</li>
+  <li>Decision support systems for crew medical officers (limited physician training)diagnosis, treatment protocols, emergency procedures</li>
+  <li>Telemedicine platforms robust to communication latency, bandwidth constraints</li>
+</ul>
+
+<h4 id="sustainable-lunar-presence">Sustainable Lunar Presence</h4>
+
+<ul>
+  <li>Artemis Base Camp (2030s) requires permanent medical infrastructurediagnostic equipment, surgical capability, pharmaceutical inventory</li>
+  <li>ISRU (In-Situ Resource Utilization) for medical supplieswater purification, oxygen generation, 3D-printed pharmaceuticals</li>
+</ul>
+
+<h4 id="international-collaboration">International Collaboration</h4>
+
+<ul>
+  <li>Gateway partners (NASA, ESA, JAXA, CSA) require interoperable health data standards</li>
+  <li>Commercial lunar landers (Blue Moon, Starship-HLS) must integrate with NASA medical systems</li>
+  <li>Global space medicine research networkdata sharing, protocol harmonization, joint countermeasure development</li>
+</ul>
+
+<hr />
+
+<p><strong>The Artemis program is not just about returning to the Moonit's about learning to live and work in deep space.</strong> Every data point captured, every health metric trended, every environmental threshold monitored brings us closer to understanding whether humans can survive the journey to Mars. The FHIR-based architectures defined in this Implementation Guide ensure that the lessons learned from Artemiswritten in the physiology and psychology of the crews who venture beyond Earth's protective embracewill be preserved, analyzed, and applied to the next giant leap for humanity.</p>
+
+<h3 id="references">References</h3>
+
+<h4 id="artemis-program-overview">Artemis Program Overview</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/humans-in-space/artemis/">Artemis - NASA</a></li>
+  <li><a href="https://www3.nasa.gov/specials/artemis/">NASA Artemis Official Hub</a></li>
+  <li><a href="https://www.gao.gov/products/gao-24-106878">Artemis Programs: NASA Should Document Plans (GAO Report)</a></li>
+  <li><a href="https://aviationweek.com/space/space-exploration/nasas-return-moon-top-priority-acting-administrator">NASA's Return To Moon Top Priority For Acting Administrator</a></li>
+  <li><a href="https://www.space.com/space-exploration/artemis/were-really-on-a-different-trajectory-how-nasas-artemis-moon-missions-can-help-prepare-us-for-mars">'We're really on a different trajectory': How NASA's Artemis moon missions aim to prepare us for Mars</a></li>
+</ul>
+
+<h4 id="gateway-lunar-space-station">Gateway Lunar Space Station</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/mission/gateway/">Gateway - NASA</a></li>
+  <li><a href="https://www.nasa.gov/general/nasas-artemis-iv-building-first-lunar-space-station/">NASA's Artemis IV: Building First Lunar Space Station</a></li>
+  <li><a href="https://www.nasa.gov/missions/artemis/nasa-marks-artemis-progress-with-gateway-lunar-space-station/">NASA Marks Artemis Progress With Gateway Lunar Space Station</a></li>
+  <li><a href="https://www.nasa.gov/missions/artemis/nasa-prepares-gateway-lunar-space-station-for-journey-to-moon/">NASA Prepares Gateway Lunar Space Station for Journey to Moon</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Lunar_Gateway">Lunar Gateway - Wikipedia</a></li>
+</ul>
+
+<h4 id="orion-spacecraft">Orion Spacecraft</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/humans-in-space/orion-spacecraft/">Orion Spacecraft - NASA</a></li>
+  <li><a href="https://www.nasa.gov/humans-in-space/orion-spacecraft/orion-overview/">Orion Overview - NASA</a></li>
+  <li><a href="https://www.lpi.usra.edu/lunar/artemis/orion/factsheet.pdf">Orion Technical Specifications (NASA Fact Sheet)</a></li>
+  <li><a href="https://arstechnica.com/space/2025/10/once-unthinkable-nasa-and-lockheed-now-consider-launching-orion-on-other-rockets/">Once unthinkable, NASA and Lockheed now consider launching Orion on other rockets</a></li>
+</ul>
+
+<h4 id="landing-sites-and-surface-operations">Landing Sites and Surface Operations</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/">NASA updates on Artemis III landing regions</a></li>
+  <li><a href="https://science.nasa.gov/solar-system/moon/nasas-lro-lunar-ice-deposits-are-widespread/">NASA's LRO: Lunar ice deposits are widespread</a></li>
+  <li><a href="https://www.sciencedirect.com/science/article/pii/S0094576524006234">Evaluating potential landing sites for the Artemis III mission using a multi-criteria decision making approach</a></li>
+  <li><a href="https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/human-lander-challenge/nasa-opens-2026-human-lander-challenge-for-life-support-systems-more/">NASA Opens 2026 Human Lander Challenge for Life Support Systems</a></li>
+  <li><a href="https://www.nasa.gov/news-release/nasa-selects-blue-origin-to-deliver-viper-rover-to-moons-south-pole/">NASA Selects Blue Origin to Deliver VIPER Rover to Moon's South Pole</a></li>
+  <li><a href="https://www.astronomy.com/space-exploration/nasa-revives-viper-moon-rover-taps-blue-origin-for-lunar-landing/">NASA revives VIPER moon rover, taps Blue Origin for lunar landing</a></li>
+</ul>
+
+<h4 id="spacesuits-and-eva-systems">Spacesuits and EVA Systems</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/image-article/exploration-extravehicular-mobility-unit-xemu/">Exploration Extravehicular Mobility Unit (xEMU)</a></li>
+  <li><a href="https://www.nasa.gov/humans-in-space/spacesuit-for-nasas-artemis-iii-moon-surface-mission-debuts/">Spacesuit for NASA's Artemis III Moon Surface Mission Debuts</a></li>
+  <li><a href="https://www.axiomspace.com/release/axemu">Axiom Space reveals next-generation spacesuit (AxEMU)</a></li>
+  <li><a href="https://oig.nasa.gov/office-of-inspector-general-oig/audit-reports/nasas-management-of-iss-extravehicular-activity-spacesuits/">NASA's Management of ISS Extravehicular Activity Spacesuits</a></li>
+  <li><a href="https://www.militaryaerospace.com/communications/news/55319584/remcom-develops-wireless-modeling-for-artemis-lunar-spacesuits-and-vehicles">Remcom develops wireless modeling for Artemis lunar spacesuits and vehicles</a></li>
+</ul>
+
+<h4 id="radiation-and-crew-health">Radiation and Crew Health</h4>
+
+<ul>
+  <li><a href="https://www.nature.com/articles/s41586-024-07927-7">Space radiation measurements during Artemis I</a></li>
+  <li><a href="https://www.space.com/space-exploration/artemis/artemis-2-astronauts-will-double-as-human-science-experiments-on-their-trip-around-the-moon">Artemis 2 astronauts will double as human science experiments on their trip around the moon</a></li>
+  <li><a href="https://www.nasa.gov/feature/purposeful-passenger-artemis-i-manikin-helps-prepare-for-moon-missions-with-crew/">Purposeful Passenger: Artemis I manikin</a></li>
+  <li><a href="https://afresearchlab.com/news/afrl-helps-nasa-test-equipment-for-artemis-ii-mission/">AFRL helps NASA test equipment for Artemis II</a></li>
+</ul>
+
+<h4 id="mission-tracking-and-engagement">Mission Tracking and Engagement</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-volunteers-to-track-artemis-ii-mission/">NASA Seeks Volunteers to Track Artemis II Mission</a></li>
+  <li><a href="https://x.com/_abbie_watson_/status/1980375993950122466?s=61">Sean Duffy Opens up Artemis III Contract</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 30, 2025 10:45-0700">2025-12-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

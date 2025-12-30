@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Fitness -  v0.5.5</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.5 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Fitness</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Fitness</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#exercise-and-fitness" id="markdown-toc-exercise-and-fitness">Exercise and Fitness</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
+      <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a></li>
+      <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
+      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+      <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a></li>
+      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
+      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a></li>
+      <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
+      <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="exercise-and-fitness">Exercise and Fitness</h2>
+
+<h3 id="overview">Overview</h3>
+
+<p>When astronaut Scott Kelly completed his 340-day mission aboard the International Space Station, he spent an average of <strong>2.5 hours every single day</strong> exercisingrunning on a treadmill with a harness pulling him down to simulate Earth's gravity, lifting weights on the Advanced Resistive Exercise Device (ARED), and cycling on the stationary bike. Despite this heroic effort, he still lost significant bone density and muscle mass. This stark reality reveals the fundamental challenge of human spaceflight: in microgravity, the human body begins to atrophy almost immediately, and exercise becomes not just fitness training, but a <strong>medical countermeasure critical to mission success and crew survival</strong>.</p>
+
+<p>On the ISS, astronauts face a paradox: they must exercise more intensely than Olympic athletes, yet they're doing it in an environment where even simple movements require conscious effort. The ARED system can simulate loads exceeding 600 pounds, making it possible to perform squats and deadlifts in space. The T2 treadmill, vibration-isolated to prevent shaking the entire station, allows running at speeds up to 12 mph while a harness system pulls the astronaut downward with carefully calibrated force. Every workout session generates data: heart rate, simulated body weight, power output, exercise duration, and recovery metricsall critical for physicians on the ground to assess whether the crew's fitness program is preventing the inexorable physiologic decline of spaceflight.</p>
+
+<h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
+
+<h4 id="core-profiles">Core Profiles</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Purpose</th>
+      <th>Key Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>SpaceExerciseActivityMeasure</strong></td>
+      <td>Individual exercise measurements</td>
+      <td>Duration, intensity, heart rate, power output, modality-specific metrics</td>
+    </tr>
+    <tr>
+      <td><strong>SpaceExerciseActivityGroup</strong></td>
+      <td>Panel grouping related measures</td>
+      <td>Links type, duration, intensity for a single session; mission context</td>
+    </tr>
+    <tr>
+      <td><strong>SpaceEVSMinutesPerWeek</strong></td>
+      <td>Weekly exercise volume summary</td>
+      <td>EVS (Exercise Vital Sign) minutes, aggregated across modalities</td>
+    </tr>
+    <tr>
+      <td><strong>SpaceExerciseSession</strong></td>
+      <td>Procedural record of exercise event</td>
+      <td>Links to prescriptions, goals, devices, and observation panels</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These profiles extend standard FHIR resources while incorporating space-specific terminology and requirements, following the same architectural patterns established in radiation and nutrition tracking modules.</p>
+
+<h4 id="data-architecture">Data Architecture</h4>
+
+<p>Exercise tracking in space incorporates multiple data dimensions:</p>
+
+<ul>
+  <li><strong>Temporal Context</strong>: Per-session, daily, weekly, mission-phase, career-long summaries</li>
+  <li><strong>Exercise Modalities</strong>: Treadmill running (T2), resistive training (ARED), cycling (CEVIS), elastic bands, artificial gravity</li>
+  <li><strong>Performance Metrics</strong>: Power output, simulated body weight, heart rate reserve, VO₂ surrogate, recovery heart rate</li>
+  <li><strong>Equipment Configuration</strong>: Device settings, harness load percentage, resistance levels, vibration isolation status</li>
+  <li><strong>Mission Context</strong>: EVA preparation days, pre-flight conditioning, post-landing recovery</li>
+  <li><strong>Physiologic Outcomes</strong>: Muscle mass preservation, bone density maintenance, cardiovascular fitness</li>
+</ul>
+
+<p>All measurements link to <strong>MissionContext</strong> extensions used throughout the IG.</p>
+
+<h4 id="standardized-terminologies">Standardized Terminologies</h4>
+
+<p>New code systems and value sets:</p>
+
+<ul>
+  <li><strong><a href="CodeSystem-space-exercise-modality-cs.html">SpaceExerciseModalityCS</a></strong>: treadmill, cycle-ergometer, ARED-resistive, resistive-squat, resistive-deadlift, ag-centrifuge</li>
+  <li><strong><a href="ValueSet-space-exercise-modality-vs.html">SpaceExerciseModalityVS</a></strong>: ValueSet for space exercise modalities</li>
+  <li><strong><a href="CodeSystem-space-performance-metric-cs.html">SpacePerformanceMetricCS</a></strong>: mean-power, peak-power, simulated-bw, total-work, vo2-surrogate, recovery-hr</li>
+  <li><strong><a href="ValueSet-space-performance-metric-vs.html">SpacePerformanceMetricVS</a></strong>: ValueSet for exercise performance metrics</li>
+  <li><strong><a href="ValueSet-evs-units-vs.html">EVSUnitsVS</a></strong>: Exercise Vital Sign (EVS) unit measurements</li>
+</ul>
+
+<p>Integration with existing terminologies:</p>
+<ul>
+  <li><strong>Physical Activity IG</strong>: PAPanel, duration, intensity codes</li>
+  <li><strong>LOINC</strong>: Exercise frequency (89555-7), type of exercise (73985-4), heart rate measurements</li>
+  <li><strong>SNOMED CT</strong>: Exercise procedures, musculoskeletal conditions</li>
+  <li><strong>NASA Standards</strong>: Exercise countermeasure requirements</li>
+</ul>
+
+<h3 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h3>
+
+<p>Exercise in microgravity is fundamentally different from Earth-based trainingit's not about athletic performance enhancement, but about <strong>preventing catastrophic physiologic deterioration</strong>. Picture an astronaut six months into a mission: without exercise, their bones would be losing 1-2% of their mass every month, their muscles would have atrophied by 20%, and their cardiovascular system would have adapted to the point where standing up after landing could cause them to faint. Exercise is the primary countermeasure against this collapse.</p>
+
+<h4 id="muscle-atrophy">Muscle Atrophy</h4>
+
+<ul>
+  <li>Antigravity muscles (legs, back) lose mass at <strong>1-2% per week</strong> without countermeasures</li>
+  <li>Type I slow-twitch fibers convert to Type II fast-twitch, reducing endurance capacity</li>
+  <li>ARED resistive training provides loads up to <strong>600 lbs equivalent</strong> to maintain muscle stimulus</li>
+  <li>Eccentric loading (muscle lengthening under tension) is critical but difficult to achieve in microgravity</li>
+</ul>
+
+<h4 id="bone-loss">Bone Loss</h4>
+
+<ul>
+  <li>Weight-bearing bones lose <strong>1-1.5% density per month</strong> in microgravity</li>
+  <li>Hip and spine are most affected, increasing fracture risk post-landing</li>
+  <li>Ground reaction forces during treadmill running with harness (70-80% body weight) provide mechanical loading</li>
+  <li>Resistance exercises with high loads stimulate osteoblast activity</li>
+</ul>
+
+<h4 id="cardiovascular-deconditioning">Cardiovascular Deconditioning</h4>
+
+<ul>
+  <li>Heart becomes more spherical, stroke volume decreases</li>
+  <li>Orthostatic intolerance develops (difficulty standing after landing)</li>
+  <li>Target heart rate zones must account for fluid shifts and altered cardiac geometry</li>
+  <li>VO₂max declines despite exercise due to plasma volume reduction</li>
+</ul>
+
+<h4 id="equipment-specific-challenges">Equipment-Specific Challenges</h4>
+
+<p><strong>T2 Treadmill:</strong></p>
+<ul>
+  <li>Vibration isolation prevents disturbing microgravity experiments</li>
+  <li>Harness system creates uneven loading patterns</li>
+  <li>Running biomechanics differ significantly from Earth</li>
+</ul>
+
+<p><strong>ARED (Advanced Resistive Exercise Device):</strong></p>
+<ul>
+  <li>Vacuum cylinder system provides smooth resistance</li>
+  <li>Inertial loads during exercise can destabilize the astronaut</li>
+  <li>Requires careful spotting and technique in microgravity</li>
+</ul>
+
+<p><strong>CEVIS (Cycle Ergometer with Vibration Isolation and Stabilization):</strong></p>
+<ul>
+  <li>Cardiovascular conditioning with minimal station disturbance</li>
+  <li>Power output measurement calibrated for microgravity biomechanics</li>
+</ul>
+
+<h3 id="monitoring-strategy">Monitoring Strategy</h3>
+
+<p>Analogous to radiation dosimetry's multi-layered approach, exercise monitoring integrates real-time telemetry, physiologic measurements, and long-term trend analysis. Every exercise session becomes a data-rich event that physicians analyze for signs of adequate countermeasure effectiveness or early indicators of deconditioning.</p>
+
+<h4 id="real-time-session-monitoring">Real-Time Session Monitoring</h4>
+
+<ul>
+  <li>Heart rate telemetry (continuous)</li>
+  <li>Power output and resistance levels (device-recorded)</li>
+  <li>Exercise duration and modality</li>
+  <li>Simulated body weight percentage (for treadmill)</li>
+  <li>Subjective exertion ratings (Borg RPE scale)</li>
+</ul>
+
+<h4 id="weekly-aggregated-metrics">Weekly Aggregated Metrics</h4>
+
+<ul>
+  <li><strong>EVS (Exercise Vital Sign)</strong>: Total minutes of moderate-to-vigorous physical activity per week</li>
+  <li>Target: <strong>150+ minutes MVPA per week</strong> minimum</li>
+  <li>Actual ISS prescription: <strong>~2.5 hours per day, 6 days per week</strong> = 900 minutes/week</li>
+  <li>Modality breakdown: aerobic vs. resistive vs. combination</li>
+</ul>
+
+<h4 id="longitudinal-assessments">Longitudinal Assessments</h4>
+
+<ul>
+  <li><strong>VO₂max testing</strong>: Periodic maximal exercise tests pre-flight, in-flight, post-flight</li>
+  <li><strong>Muscle ultrasonography</strong>: Quadriceps and gastrocnemius thickness</li>
+  <li><strong>Bone density scans</strong>: DXA pre-flight and post-flight</li>
+  <li><strong>Functional performance</strong>: Jump height, grip strength, sit-to-stand tests</li>
+</ul>
+
+<h4 id="risk-threshold-alerts">Risk Threshold Alerts</h4>
+
+<ul>
+  <li>Heart rate anomalies during exercise (too high or too low for prescribed intensity)</li>
+  <li>Declining power output trends over mission duration</li>
+  <li>Insufficient weekly EVS minutes (&lt;150 min/week)</li>
+  <li>Equipment malfunction or calibration drift</li>
+</ul>
+
+<h3 id="data-model-architecture">Data Model Architecture</h3>
+
+<h4 id="core-fhir-resources">Core FHIR Resources</h4>
+
+<ul>
+  <li><strong>Observation</strong> —SpaceExerciseActivityMeasure, SpaceExerciseActivityGroup, SpaceEVSMinutesPerWeek</li>
+  <li><strong>Procedure</strong> —SpaceExerciseSession</li>
+  <li><strong>Device</strong> —Exercise equipment (T2 Treadmill, ARED, CEVIS)</li>
+  <li><strong>ServiceRequest</strong> —Exercise prescriptions</li>
+  <li><strong>Goal</strong> —Fitness targets (maintain VO₂max, bone density goals)</li>
+</ul>
+
+<h4 id="extensions">Extensions</h4>
+
+<ul>
+  <li><strong>missionContext</strong> (consistent with radiation, nutrition, and NBL modules)</li>
+  <li><strong>exerciseDevice</strong> (reference to specific equipment used)</li>
+  <li><strong>harnessLoad</strong> (percentage body weight for treadmill sessions)</li>
+  <li><strong>derivedFromGroup</strong> (links EVS summary to constituent activity groups)</li>
+</ul>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<h4 id="1-pre-flight-baseline-assessment">1. Pre-Flight Baseline Assessment</h4>
+
+<p>Comprehensive fitness testing including VO₂max, strength assessment, and functional movement screening to establish astronaut's baseline capabilities and inform personalized exercise prescriptions.</p>
+
+<h4 id="2-in-flight-exercise-prescription-and-monitoring">2. In-Flight Exercise Prescription and Monitoring</h4>
+
+<p>Daily exercise sessions logged as Procedures with linked ActivityGroup observations, tracking compliance with individualized prescriptions based on mission requirements and crew member fitness status.</p>
+
+<h4 id="3-eva-preparation-training">3. EVA Preparation Training</h4>
+
+<p>Intensified resistive training protocols in the weeks before scheduled EVAs, with increased focus on upper body strength and endurance to handle 7-hour suited operations.</p>
+
+<h4 id="4-post-mission-recovery-tracking">4. Post-Mission Recovery Tracking</h4>
+
+<p>Structured reconditioning program post-landing, monitoring return to baseline fitness levels and identifying any residual deficits requiring rehabilitation.</p>
+
+<h4 id="5-career-fitness-profile-management">5. Career Fitness Profile Management</h4>
+
+<p>Longitudinal tracking across multiple missions to identify trends, optimize training protocols, and assess cumulative effects of spaceflight on musculoskeletal and cardiovascular systems.</p>
+
+<h4 id="6-research-and-population-studies">6. Research and Population Studies</h4>
+
+<p>Aggregated de-identified data enabling studies of exercise countermeasure effectiveness, equipment performance, and correlation between in-flight exercise adherence and post-flight outcomes.</p>
+
+<h3 id="enhanced-data-collection">Enhanced Data Collection</h3>
+
+<h4 id="advanced-metrics">Advanced Metrics</h4>
+
+<ul>
+  <li><strong>Power-to-weight ratios</strong> adjusted for simulated body weight</li>
+  <li><strong>Eccentric vs. concentric strength</strong> imbalances</li>
+  <li><strong>Heart rate variability</strong> (HRV) during recovery periods</li>
+  <li><strong>Cadence analysis</strong> for treadmill running biomechanics</li>
+  <li><strong>Load-velocity curves</strong> for resistive exercises</li>
+</ul>
+
+<h4 id="equipment-telemetry-integration">Equipment Telemetry Integration</h4>
+
+<ul>
+  <li>ARED vacuum pressure readings</li>
+  <li>T2 treadmill harness tension sensors</li>
+  <li>CEVIS power output calibration data</li>
+  <li>Vibration isolation system performance logs</li>
+</ul>
+
+<h4 id="biomechanical-assessments">Biomechanical Assessments</h4>
+
+<ul>
+  <li>Joint angle analysis during resistive exercises</li>
+  <li>Gait analysis from treadmill accelerometers</li>
+  <li>Impact force patterns during running</li>
+  <li>Muscle activation patterns (if EMG available)</li>
+</ul>
+
+<h3 id="integration-with-existing-systems">Integration with Existing Systems</h3>
+
+<h4 id="mission-control-systems">Mission Control Systems</h4>
+
+<ul>
+  <li>Exercise data feeds into crew health dashboards</li>
+  <li>Alerts for missed sessions or declining performance</li>
+  <li>Equipment maintenance schedules based on usage telemetry</li>
+</ul>
+
+<h4 id="longitudinal-study-of-astronaut-health-lsah">Longitudinal Study of Astronaut Health (LSAH)</h4>
+
+<ul>
+  <li>Exercise adherence correlated with bone density outcomes</li>
+  <li>Cardiovascular fitness trends across career</li>
+  <li>Injury and musculoskeletal complaint patterns</li>
+</ul>
+
+<h4 id="environmental-control-and-life-support-systems-eclss">Environmental Control and Life Support Systems (ECLSS)</h4>
+
+<ul>
+  <li>Metabolic heat generation during exercise affects cabin cooling</li>
+  <li>Oxygen consumption and CO₂ production rates</li>
+  <li>Water usage for post-exercise hygiene</li>
+</ul>
+
+<h3 id="implementation-examples">Implementation Examples</h3>
+
+<h4 id="example-1-spaceexerciseactivitymeasure---duration">Example 1: SpaceExerciseActivityMeasure - Duration</h4>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-exercise-activity-measure"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"activity"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Activity"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"duration"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duration of physical activity"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"treadmill"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Treadmill running in microgravity"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T13:30:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"min"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"min"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iss-expedition-75"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="example-2-spaceexerciseactivitygroup---panel">Example 2: SpaceExerciseActivityGroup - Panel</h4>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-exercise-activity-group"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/observation-category"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"activity"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Activity"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PAPanel"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Physical activity panel"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ISS T2 treadmill session"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectivePeriod"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T13:00:00Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T13:30:00Z"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"hasMember"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/ISS-T2-Run-Type-001"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/ISS-T2-Run-Duration-001"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation/ISS-T2-Run-MeanHR-001"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iss-expedition-75"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device/ISS-T2-Treadmill"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">75</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"%"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="regulatory-and-standards-alignment">Regulatory and Standards Alignment</h3>
+
+<ul>
+  <li><strong>NASA-STD-3001 Vol. 2</strong>: Crew health standards including exercise countermeasure requirements</li>
+  <li><strong>ISS Exercise Countermeasures</strong>: Operational requirements documents</li>
+  <li><strong>Physical Activity Implementation Guide (FHIR)</strong>: Base architecture for activity tracking</li>
+  <li><strong>LOINC</strong>: Standard codes for exercise and vital sign measurements</li>
+  <li><strong>SNOMED CT</strong>: Clinical terminology for procedures and findings</li>
+</ul>
+
+<h3 id="future-directions">Future Directions</h3>
+
+<h4 id="advanced-exercise-equipment">Advanced Exercise Equipment</h4>
+
+<ul>
+  <li><strong>Artificial gravity centrifuges</strong> for short-radius AG exercise on Gateway and Mars transit vehicles</li>
+  <li><strong>Exoskeleton-assisted exercise</strong> providing adjustable resistance</li>
+  <li><strong>Virtual reality integration</strong> for motivation and biomechanical guidance</li>
+</ul>
+
+<h4 id="personalized-exercise-prescriptions">Personalized Exercise Prescriptions</h4>
+
+<ul>
+  <li><strong>AI-driven optimization</strong> based on real-time physiologic response</li>
+  <li><strong>Genetic markers</strong> influencing response to exercise countermeasures</li>
+  <li><strong>Bone turnover biomarkers</strong> enabling dynamic adjustment of loading protocols</li>
+</ul>
+
+<h4 id="planetary-surface-operations">Planetary Surface Operations</h4>
+
+<ul>
+  <li><strong>Partial gravity exercise</strong> protocols for Moon (1/6 g) and Mars (3/8 g)</li>
+  <li><strong>Suit-integrated exercise</strong> enabling movement training in EVA suits</li>
+  <li><strong>Reduced equipment mass</strong> for surface habitat fitness systems</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<h4 id="exercise-equipment-and-protocols">Exercise Equipment and Protocols</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/missions/station/iss-research/astronaut-exercise/">Astronaut Exercise - NASA</a></li>
+  <li><a href="https://www.nasa.gov/wp-content/uploads/2023/12/ochmo-tb-031-exercise-overview.pdf">Exercise Overview Technical Brief (NASA-STD-3001)</a></li>
+  <li><a href="https://www1.grc.nasa.gov/space/human-research-program/advanced-exercise-concepts/exercise-countermeasures-lab/">Exercise Countermeasures Lab - NASA Glenn</a></li>
+  <li><a href="https://www.inverse.com/science/inside-the-extreme-workout-regimen-of-an-astronaut-stuck-at-the-international-space-station">Astronaut workout regimen on ISS</a></li>
+  <li><a href="https://ntrs.nasa.gov/citations/20100008451">Countermeasures (ARED, CEVIS, T2) Critical Readiness Review (NASA NTRS)</a></li>
+</ul>
+
+<h4 id="research-on-exercise-countermeasures">Research on Exercise Countermeasures</h4>
+
+<ul>
+  <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9898566/">Effects of exercise countermeasures on multisystem function (PMC)</a></li>
+  <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4971634/">Exercise in space: ESA approach to in-flight countermeasures (PMC)</a></li>
+  <li><a href="https://www.nature.com/articles/s41526-020-00111-x">High intensity training during spaceflight: NASA Sprint Study (npj Microgravity)</a></li>
+  <li><a href="https://ntrs.nasa.gov/citations/20240000929">Effects of Replacing Treadmill Running with Alternative Exercise Countermeasures (NASA NTRS)</a></li>
+</ul>
+
+<h4 id="bone-and-muscle-research">Bone and Muscle Research</h4>
+
+<ul>
+  <li><a href="https://www.nasa.gov/missions/station/iss-research/counteracting-bone-and-muscle-loss-in-microgravity/">Counteracting Bone and Muscle Loss in Microgravity - NASA</a></li>
+  <li><a href="https://www.nasa.gov/directorates/esdmd/hhp/bone-and-mineral-evaluation-and-analysis/">Bone and Mineral Evaluation and Analysis - NASA</a></li>
+  <li><a href="https://ispyphysiology.com/2023/01/11/how-our-bones-adapt-in-space/">How our bones adapt in space</a></li>
+  <li><a href="https://bjsm.bmj.com/content/56/4/196">Pre-flight exercise and bone metabolism predict bone loss</a></li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/36652027/">Effect of active muscles on astronaut kinematics</a></li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/28195975/">The High-Bar and Low-Bar Back-Squats: A Biomechanical Analysis</a></li>
+  <li><a href="https://pubmed.ncbi.nlm.nih.gov/39590726/">MuscleMap: Whole Body Quantitative MRI</a></li>
+  <li><a href="https://www.nasa.gov/wp-content/uploads/2025/02/sp-20250000273.pdf">Astronaut physiological deconditioning (NASA/SP-20250000273)</a></li>
+  <li><a href="https://www.nasa.gov/ames/space-biosciences/staying-strong-spaceflight-muscle-loss-study-aims-to-benefit-patients-on-earth/">Staying Strong: Spaceflight Muscle Loss Study</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 30, 2025 10:45-0700">2025-12-30</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

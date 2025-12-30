@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diving-contraindicated-conditions"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet diving-contraindicated-conditions</b></p><a name=\"diving-contraindicated-conditions\"> </a><a name=\"hcdiving-contraindicated-conditions\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/49436004\">49436004</a></td><td>Atrial fibrillation</td></tr><tr><td><a href=\"http://snomed.info/id/195967001\">195967001</a></td><td>Asthma</td></tr><tr><td><a href=\"http://snomed.info/id/84757009\">84757009</a></td><td>Epilepsy</td></tr><tr><td><a href=\"http://snomed.info/id/230690007\">230690007</a></td><td>Cerebrovascular accident</td></tr><tr><td><a href=\"http://snomed.info/id/19887002\">19887002</a></td><td>Claustrophobia</td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Pregnancy</td></tr><tr><td><a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>Hypertensive disorder</td></tr><tr><td><a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>Diabetes mellitus</td></tr><tr><td><a href=\"http://snomed.info/id/44016006\">44016006</a></td><td>Decompression sickness</td></tr><tr><td><a href=\"http://snomed.info/id/49532004\">49532004</a></td><td>Barotrauma</td></tr><tr><td><a href=\"http://snomed.info/id/233604007\">233604007</a></td><td>Pneumothorax</td></tr><tr><td><a href=\"http://snomed.info/id/128238001\">128238001</a></td><td>Chronic heart disease</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "DivingContraindicatedConditions"] ; # 
+  fhir:title [ fhir:v "Diving Medical Contraindications"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical conditions that contraindicate diving activities"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "49436004" ] ;
+         fhir:display [ fhir:v "Atrial fibrillation" ]
+       ] [
+         fhir:code [ fhir:v "195967001" ] ;
+         fhir:display [ fhir:v "Asthma" ]
+       ] [
+         fhir:code [ fhir:v "84757009" ] ;
+         fhir:display [ fhir:v "Epilepsy" ]
+       ] [
+         fhir:code [ fhir:v "230690007" ] ;
+         fhir:display [ fhir:v "Cerebrovascular accident" ]
+       ] [
+         fhir:code [ fhir:v "19887002" ] ;
+         fhir:display [ fhir:v "Claustrophobia" ]
+       ] [
+         fhir:code [ fhir:v "77386006" ] ;
+         fhir:display [ fhir:v "Pregnancy" ]
+       ] [
+         fhir:code [ fhir:v "38341003" ] ;
+         fhir:display [ fhir:v "Hypertensive disorder" ]
+       ] [
+         fhir:code [ fhir:v "73211009" ] ;
+         fhir:display [ fhir:v "Diabetes mellitus" ]
+       ] [
+         fhir:code [ fhir:v "44016006" ] ;
+         fhir:display [ fhir:v "Decompression sickness" ]
+       ] [
+         fhir:code [ fhir:v "49532004" ] ;
+         fhir:display [ fhir:v "Barotrauma" ]
+       ] [
+         fhir:code [ fhir:v "233604007" ] ;
+         fhir:display [ fhir:v "Pneumothorax" ]
+       ] [
+         fhir:code [ fhir:v "128238001" ] ;
+         fhir:display [ fhir:v "Chronic heart disease" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

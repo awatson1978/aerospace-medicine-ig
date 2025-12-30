@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiation-countermeasures-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem radiation-countermeasures-cs</b></p><a name=\"radiation-countermeasures-cs\"> </a><a name=\"hcradiation-countermeasures-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">shielding<a name=\"radiation-countermeasures-cs-shielding\"> </a></td><td>Physical Shielding</td></tr><tr><td style=\"white-space:nowrap\">shelter<a name=\"radiation-countermeasures-cs-shelter\"> </a></td><td>Radiation Shelter</td></tr><tr><td style=\"white-space:nowrap\">medication<a name=\"radiation-countermeasures-cs-medication\"> </a></td><td>Radioprotective Medication</td></tr><tr><td style=\"white-space:nowrap\">monitoring<a name=\"radiation-countermeasures-cs-monitoring\"> </a></td><td>Enhanced Monitoring</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "RadiationCountermeasuresCS"] ; # 
+  fhir:title [ fhir:v "Radiation Countermeasures Code System"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Protective measures against space radiation"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "shielding" ] ;
+     fhir:display [ fhir:v "Physical Shielding" ]
+  ] [
+     fhir:code [ fhir:v "shelter" ] ;
+     fhir:display [ fhir:v "Radiation Shelter" ]
+  ] [
+     fhir:code [ fhir:v "medication" ] ;
+     fhir:display [ fhir:v "Radioprotective Medication" ]
+  ] [
+     fhir:code [ fhir:v "monitoring" ] ;
+     fhir:display [ fhir:v "Enhanced Monitoring" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

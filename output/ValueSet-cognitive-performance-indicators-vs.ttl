@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/cognitive-performance-indicators-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cognitive-performance-indicators-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet cognitive-performance-indicators-vs</b></p><a name=\"cognitive-performance-indicators-vs\"> </a><a name=\"hccognitive-performance-indicators-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-behavioral-biomarker-cs.html\"><code>http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.5</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-behavioral-biomarker-cs.html#behavioral-biomarker-cs-reaction-time-ms\">reaction-time-ms</a></td><td style=\"color: #cccccc\">Reaction time (ms)</td><td>Reaction time in milliseconds from vigilance or cognitive tests.</td></tr><tr><td><a href=\"CodeSystem-behavioral-biomarker-cs.html#behavioral-biomarker-cs-hrv-ms\">hrv-ms</a></td><td style=\"color: #cccccc\">Heart rate variability (ms)</td><td>Root-mean-square or similar measure of HRV in milliseconds.</td></tr><tr><td><a href=\"CodeSystem-behavioral-biomarker-cs.html#behavioral-biomarker-cs-activity-level\">activity-level</a></td><td style=\"color: #cccccc\">Activity level</td><td>Gross motor activity level from accelerometry.</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-aerospace-behavioral-state-cs.html\"><code>http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.5</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-aerospace-behavioral-state-cs.html#aerospace-behavioral-state-cs-cognitive-readiness\">cognitive-readiness</a></td><td style=\"color: #cccccc\">Cognitive readiness</td><td>Readiness for complex decision-making and EVA or critical operations.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "CognitivePerformanceIndicatorsVS"] ; # 
+  fhir:title [ fhir:v "Cognitive Performance Indicators Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cognitive and vigilance performance indicators relevant to operational readiness."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "reaction-time-ms" ]
+       ] [
+         fhir:code [ fhir:v "hrv-ms" ]
+       ] [
+         fhir:code [ fhir:v "activity-level" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "cognitive-readiness" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

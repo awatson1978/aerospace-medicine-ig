@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "diving-medical-examinations",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet diving-medical-examinations</b></p><a name=\"diving-medical-examinations\"> </a><a name=\"hcdiving-medical-examinations\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.5</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-dive-medical-exam\">dive-medical-exam</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.5</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-hyperbaric-clearance\">hyperbaric-clearance</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.5</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-fitness-assessment\">fitness-assessment</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.5</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-post-incident-eval\">post-incident-eval</a></li><li>Include codes from<a href=\"CodeSystem-diving-medicine-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.5</span> where concept  is-a <a href=\"CodeSystem-diving-medicine-cs.html#diving-medicine-cs-annual-recert\">annual-recert</a></li></ul></div>"
+  },
+  "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations",
+  "version" : "0.5.5",
+  "name" : "DivingMedicalExaminations",
+  "title" : "Diving Medical Examinations",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-12-30T10:45:53-07:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org/"
+    }]
+  }],
+  "description" : "Types of medical examinations for diving fitness",
+  "compose" : {
+    "include" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "dive-medical-exam"
+      }]
+    },
+    {
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "hyperbaric-clearance"
+      }]
+    },
+    {
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "fitness-assessment"
+      }]
+    },
+    {
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "post-incident-eval"
+      }]
+    },
+    {
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "annual-recert"
+      }]
+    }]
+  }
+}

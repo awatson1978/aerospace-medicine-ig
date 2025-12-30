@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/hyperbaric-capabilities-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hyperbaric-capabilities-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem hyperbaric-capabilities-cs</b></p><a name=\"hyperbaric-capabilities-cs\"> </a><a name=\"hchyperbaric-capabilities-cs\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">decompression-treatment<a name=\"hyperbaric-capabilities-cs-decompression-treatment\"> </a></td><td>Decompression Sickness Treatment</td></tr><tr><td style=\"white-space:nowrap\">wound-healing<a name=\"hyperbaric-capabilities-cs-wound-healing\"> </a></td><td>Wound Healing Therapy</td></tr><tr><td style=\"white-space:nowrap\">carbon-monoxide-treatment<a name=\"hyperbaric-capabilities-cs-carbon-monoxide-treatment\"> </a></td><td>Carbon Monoxide Poisoning Treatment</td></tr><tr><td style=\"white-space:nowrap\">emergency-treatment<a name=\"hyperbaric-capabilities-cs-emergency-treatment\"> </a></td><td>Emergency Hyperbaric Treatment</td></tr><tr><td style=\"white-space:nowrap\">research<a name=\"hyperbaric-capabilities-cs-research\"> </a></td><td>Research and Training</td></tr><tr><td style=\"white-space:nowrap\">multi-patient<a name=\"hyperbaric-capabilities-cs-multi-patient\"> </a></td><td>Multi-Patient Capability</td></tr><tr><td style=\"white-space:nowrap\">critical-care<a name=\"hyperbaric-capabilities-cs-critical-care\"> </a></td><td>Critical Care Monitoring</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "HyperbaricCapabilitiesCS"] ; # 
+  fhir:title [ fhir:v "Hyperbaric Chamber Capabilities"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Capabilities and services available in hyperbaric chambers"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "decompression-treatment" ] ;
+     fhir:display [ fhir:v "Decompression Sickness Treatment" ]
+  ] [
+     fhir:code [ fhir:v "wound-healing" ] ;
+     fhir:display [ fhir:v "Wound Healing Therapy" ]
+  ] [
+     fhir:code [ fhir:v "carbon-monoxide-treatment" ] ;
+     fhir:display [ fhir:v "Carbon Monoxide Poisoning Treatment" ]
+  ] [
+     fhir:code [ fhir:v "emergency-treatment" ] ;
+     fhir:display [ fhir:v "Emergency Hyperbaric Treatment" ]
+  ] [
+     fhir:code [ fhir:v "research" ] ;
+     fhir:display [ fhir:v "Research and Training" ]
+  ] [
+     fhir:code [ fhir:v "multi-patient" ] ;
+     fhir:display [ fhir:v "Multi-Patient Capability" ]
+  ] [
+     fhir:code [ fhir:v "critical-care" ] ;
+     fhir:display [ fhir:v "Critical Care Monitoring" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

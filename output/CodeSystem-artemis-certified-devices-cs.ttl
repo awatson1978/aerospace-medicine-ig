@@ -1,0 +1,245 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/artemis-certified-devices-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artemis-certified-devices-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem artemis-certified-devices-cs</b></p><a name=\"artemis-certified-devices-cs\"> </a><a name=\"hcartemis-certified-devices-cs\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>deviceType</td><td>deviceType</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#deviceType</td><td>code</td><td>Device category (spacecraft, suit, vehicle, habitat, equipment)</td></tr><tr><td>manufacturer</td><td>manufacturer</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#manufacturer</td><td>string</td><td>Device manufacturer/contractor</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>manufacturer</b></td></tr><tr><td style=\"white-space:nowrap\">orion<a name=\"artemis-certified-devices-cs-orion\"> </a></td><td>Orion Crew Vehicle</td><td>Orion Crew Module and Service Module (CM/SM) - spacecraft carrying crew to lunar orbit. Manufacturer: Lockheed Martin/NASA.</td><td>spacecraft</td><td>Lockheed Martin / NASA</td></tr><tr><td style=\"white-space:nowrap\">sls<a name=\"artemis-certified-devices-cs-sls\"> </a></td><td>Space Launch System</td><td>Space Launch System rocket - heavy-lift launch vehicle for Artemis missions. Manufacturer: Boeing/NASA.</td><td>launch-vehicle</td><td>Boeing / NASA</td></tr><tr><td style=\"white-space:nowrap\">xemu-suit<a name=\"artemis-certified-devices-cs-xemu-suit\"> </a></td><td>xEMU EVA Suit</td><td>Exploration Extravehicular Mobility Unit - next-generation spacesuit for lunar surface EVAs. Manufacturer: Axiom Space/Collins Aerospace.</td><td>suit</td><td>Axiom Space / Collins Aerospace</td></tr><tr><td style=\"white-space:nowrap\">starship-hls<a name=\"artemis-certified-devices-cs-starship-hls\"> </a></td><td>Starship Human Landing System</td><td>SpaceX Starship variant serving as lunar lander for Artemis III. Manufacturer: SpaceX.</td><td>lander</td><td>SpaceX</td></tr><tr><td style=\"white-space:nowrap\">ltv<a name=\"artemis-certified-devices-cs-ltv\"> </a></td><td>Lunar Terrain Vehicle</td><td>Unpressurized rover for surface mobility (Artemis V and later). Manufacturer: TBD.</td><td>rover</td><td>TBD</td></tr><tr><td style=\"white-space:nowrap\">gateway-halo<a name=\"artemis-certified-devices-cs-gateway-halo\"> </a></td><td>Gateway HALO Module</td><td>Habitation and Logistics Outpost module of Lunar Gateway (primary habitat). Manufacturer: Northrop Grumman.</td><td>habitat</td><td>Northrop Grumman</td></tr><tr><td style=\"white-space:nowrap\">gateway-ppe<a name=\"artemis-certified-devices-cs-gateway-ppe\"> </a></td><td>Gateway PPE Module</td><td>Power and Propulsion Element module of Lunar Gateway. Manufacturer: Maxar Technologies.</td><td>propulsion</td><td>Maxar Technologies</td></tr><tr><td style=\"white-space:nowrap\">basecamp-hab<a name=\"artemis-certified-devices-cs-basecamp-hab\"> </a></td><td>Artemis Base Camp Surface Habitat</td><td>Planned future lunar base living quarters on surface. Manufacturer: TBD.</td><td>habitat</td><td>TBD</td></tr><tr><td style=\"white-space:nowrap\">lunanet-comm<a name=\"artemis-certified-devices-cs-lunanet-comm\"> </a></td><td>LunaNet Communication System</td><td>Lunar communication network elements (relay satellites or surface comm devices). Manufacturer: NASA/Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">medical-kit<a name=\"artemis-certified-devices-cs-medical-kit\"> </a></td><td>Artemis Medical Kit</td><td>Artemis mission medical equipment set (emergency medical pack, diagnostics). Manufacturer: NASA.</td><td>medical-equipment</td><td>NASA</td></tr><tr><td style=\"white-space:nowrap\">plss<a name=\"artemis-certified-devices-cs-plss\"> </a></td><td>Portable Life Support System</td><td>PLSS backpack for xEMU suit (life support during EVA). Manufacturer: Collins Aerospace.</td><td>life-support</td><td>Collins Aerospace</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "ArtemisCertifiedDevicesCS"] ; # 
+  fhir:title [ fhir:v "Artemis Certified Devices"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "deviceType" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#deviceType"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#deviceType>
+     ] ;
+     fhir:description [ fhir:v "Device category (spacecraft, suit, vehicle, habitat, equipment)" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "manufacturer" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#manufacturer"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#manufacturer>
+     ] ;
+     fhir:description [ fhir:v "Device manufacturer/contractor" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "orion" ] ;
+     fhir:display [ fhir:v "Orion Crew Vehicle" ] ;
+     fhir:definition [ fhir:v "Orion Crew Module and Service Module (CM/SM) - spacecraft carrying crew to lunar orbit. Manufacturer: Lockheed Martin/NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "spacecraft"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Lockheed Martin / NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sls" ] ;
+     fhir:display [ fhir:v "Space Launch System" ] ;
+     fhir:definition [ fhir:v "Space Launch System rocket - heavy-lift launch vehicle for Artemis missions. Manufacturer: Boeing/NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "launch-vehicle"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Boeing / NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "xemu-suit" ] ;
+     fhir:display [ fhir:v "xEMU EVA Suit" ] ;
+     fhir:definition [ fhir:v "Exploration Extravehicular Mobility Unit - next-generation spacesuit for lunar surface EVAs. Manufacturer: Axiom Space/Collins Aerospace." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "suit"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Axiom Space / Collins Aerospace"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "starship-hls" ] ;
+     fhir:display [ fhir:v "Starship Human Landing System" ] ;
+     fhir:definition [ fhir:v "SpaceX Starship variant serving as lunar lander for Artemis III. Manufacturer: SpaceX." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "lander"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "SpaceX"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ltv" ] ;
+     fhir:display [ fhir:v "Lunar Terrain Vehicle" ] ;
+     fhir:definition [ fhir:v "Unpressurized rover for surface mobility (Artemis V and later). Manufacturer: TBD." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "TBD"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "gateway-halo" ] ;
+     fhir:display [ fhir:v "Gateway HALO Module" ] ;
+     fhir:definition [ fhir:v "Habitation and Logistics Outpost module of Lunar Gateway (primary habitat). Manufacturer: Northrop Grumman." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "habitat"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Northrop Grumman"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "gateway-ppe" ] ;
+     fhir:display [ fhir:v "Gateway PPE Module" ] ;
+     fhir:definition [ fhir:v "Power and Propulsion Element module of Lunar Gateway. Manufacturer: Maxar Technologies." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "propulsion"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Maxar Technologies"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "basecamp-hab" ] ;
+     fhir:display [ fhir:v "Artemis Base Camp Surface Habitat" ] ;
+     fhir:definition [ fhir:v "Planned future lunar base living quarters on surface. Manufacturer: TBD." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "habitat"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "TBD"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "lunanet-comm" ] ;
+     fhir:display [ fhir:v "LunaNet Communication System" ] ;
+     fhir:definition [ fhir:v "Lunar communication network elements (relay satellites or surface comm devices). Manufacturer: NASA/Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "medical-kit" ] ;
+     fhir:display [ fhir:v "Artemis Medical Kit" ] ;
+     fhir:definition [ fhir:v "Artemis mission medical equipment set (emergency medical pack, diagnostics). Manufacturer: NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "medical-equipment"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "plss" ] ;
+     fhir:display [ fhir:v "Portable Life Support System" ] ;
+     fhir:definition [ fhir:v "PLSS backpack for xEMU suit (life support during EVA). Manufacturer: Collins Aerospace." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "life-support"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Collins Aerospace"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

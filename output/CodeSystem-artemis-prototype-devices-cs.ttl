@@ -1,0 +1,160 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/artemis-prototype-devices-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artemis-prototype-devices-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem artemis-prototype-devices-cs</b></p><a name=\"artemis-prototype-devices-cs\"> </a><a name=\"hcartemis-prototype-devices-cs\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>deviceType</td><td>deviceType</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType</td><td>code</td><td>Device category (spacecraft, suit, vehicle, habitat, equipment)</td></tr><tr><td>testEnvironment</td><td>testEnvironment</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment</td><td>code</td><td>Primary test environment (ground, ISS, analog-mission)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>testEnvironment</b></td></tr><tr><td style=\"white-space:nowrap\">xemu-demo<a name=\"artemis-prototype-devices-cs-xemu-demo\"> </a></td><td>xEMU Demo Unit</td><td>Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground.</td><td>suit</td><td>ground</td></tr><tr><td style=\"white-space:nowrap\">pressurized-rover-proto<a name=\"artemis-prototype-devices-cs-pressurized-rover-proto\"> </a></td><td>Pressurized Rover Prototype</td><td>Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.</td><td>rover</td><td>ground</td></tr><tr><td style=\"white-space:nowrap\">habitat-test-module<a name=\"artemis-prototype-devices-cs-habitat-test-module\"> </a></td><td>Habitat Test Module</td><td>Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.</td><td>habitat</td><td>analog-mission</td></tr><tr><td style=\"white-space:nowrap\">nextgen-plss<a name=\"artemis-prototype-devices-cs-nextgen-plss\"> </a></td><td>Next-Generation PLSS</td><td>Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground.</td><td>life-support</td><td>ground</td></tr><tr><td style=\"white-space:nowrap\">biomonitor-wearable<a name=\"artemis-prototype-devices-cs-biomonitor-wearable\"> </a></td><td>BioMonitor Wearable Prototype</td><td>Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS.</td><td>medical-equipment</td><td>iss</td></tr><tr><td style=\"white-space:nowrap\">autonomous-medical-unit<a name=\"artemis-prototype-devices-cs-autonomous-medical-unit\"> </a></td><td>Autonomous Medical Unit Prototype</td><td>Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground.</td><td>medical-equipment</td><td>ground</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "ArtemisPrototypeDevicesCS"] ; # 
+  fhir:title [ fhir:v "Artemis Prototype Devices"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "deviceType" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType>
+     ] ;
+     fhir:description [ fhir:v "Device category (spacecraft, suit, vehicle, habitat, equipment)" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "testEnvironment" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment>
+     ] ;
+     fhir:description [ fhir:v "Primary test environment (ground, ISS, analog-mission)" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "xemu-demo" ] ;
+     fhir:display [ fhir:v "xEMU Demo Unit" ] ;
+     fhir:definition [ fhir:v "Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "suit"
+       ]
+     ] [
+       fhir:code [ fhir:v "testEnvironment" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "ground"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pressurized-rover-proto" ] ;
+     fhir:display [ fhir:v "Pressurized Rover Prototype" ] ;
+     fhir:definition [ fhir:v "Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "testEnvironment" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "ground"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "habitat-test-module" ] ;
+     fhir:display [ fhir:v "Habitat Test Module" ] ;
+     fhir:definition [ fhir:v "Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "habitat"
+       ]
+     ] [
+       fhir:code [ fhir:v "testEnvironment" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "analog-mission"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "nextgen-plss" ] ;
+     fhir:display [ fhir:v "Next-Generation PLSS" ] ;
+     fhir:definition [ fhir:v "Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "life-support"
+       ]
+     ] [
+       fhir:code [ fhir:v "testEnvironment" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "ground"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "biomonitor-wearable" ] ;
+     fhir:display [ fhir:v "BioMonitor Wearable Prototype" ] ;
+     fhir:definition [ fhir:v "Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "medical-equipment"
+       ]
+     ] [
+       fhir:code [ fhir:v "testEnvironment" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "iss"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "autonomous-medical-unit" ] ;
+     fhir:display [ fhir:v "Autonomous Medical Unit Prototype" ] ;
+     fhir:definition [ fhir:v "Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "medical-equipment"
+       ]
+     ] [
+       fhir:code [ fhir:v "testEnvironment" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "ground"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

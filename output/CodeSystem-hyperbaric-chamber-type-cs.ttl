@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/hyperbaric-chamber-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hyperbaric-chamber-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem hyperbaric-chamber-type-cs</b></p><a name=\"hyperbaric-chamber-type-cs\"> </a><a name=\"hchyperbaric-chamber-type-cs\"> </a><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">monoplace<a name=\"hyperbaric-chamber-type-cs-monoplace\"> </a></td><td>Monoplace Chamber</td></tr><tr><td style=\"white-space:nowrap\">multiplace<a name=\"hyperbaric-chamber-type-cs-multiplace\"> </a></td><td>Multiplace Chamber</td></tr><tr><td style=\"white-space:nowrap\">portable<a name=\"hyperbaric-chamber-type-cs-portable\"> </a></td><td>Portable Chamber</td></tr><tr><td style=\"white-space:nowrap\">research<a name=\"hyperbaric-chamber-type-cs-research\"> </a></td><td>Research Chamber</td></tr><tr><td style=\"white-space:nowrap\">veterinary<a name=\"hyperbaric-chamber-type-cs-veterinary\"> </a></td><td>Veterinary Chamber</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.5"] ; # 
+  fhir:name [ fhir:v "HyperbaricChamberTypeCS"] ; # 
+  fhir:title [ fhir:v "Hyperbaric Chamber Types"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-12-30T10:45:53-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of hyperbaric chambers"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "monoplace" ] ;
+     fhir:display [ fhir:v "Monoplace Chamber" ]
+  ] [
+     fhir:code [ fhir:v "multiplace" ] ;
+     fhir:display [ fhir:v "Multiplace Chamber" ]
+  ] [
+     fhir:code [ fhir:v "portable" ] ;
+     fhir:display [ fhir:v "Portable Chamber" ]
+  ] [
+     fhir:code [ fhir:v "research" ] ;
+     fhir:display [ fhir:v "Research Chamber" ]
+  ] [
+     fhir:code [ fhir:v "veterinary" ] ;
+     fhir:display [ fhir:v "Veterinary Chamber" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
