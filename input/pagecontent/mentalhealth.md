@@ -6,7 +6,6 @@ In 1961, Soviet cosmonaut Yuri Gagarin became the first human in spacehis missi
 
 Unlike radiation exposure or bone losswhich accumulate predictably and can be measured with instruments**psychological stress is invisible, cumulative, and deeply personal**. An astronaut might report feeling fine while their cortisol levels climb, their sleep fragments, and their reaction times slow. Crew members trained to be stoic and high-performing often suppress emotional distress until it erupts in critical moments. This module recognizes that mental health in space requires the same systematic, data-driven approach as physical health: **continuous monitoring, evidence-based countermeasures, and longitudinal tracking across missions**treating psychological wellbeing not as a soft skill, but as a mission-critical physiological system.
 
-This module extends the HL7 Aerospace Medicine Implementation Guidebuilding on architectural principles from [Radiation Tracking](radiation-tracking.html), [Nutrition](nutrition.html), and [Exercise](fitness.html)into a comprehensive **Mental Health and Behavioral Monitoring** framework leveraging **FHIR Observation, Procedure, Condition**, and mission-context extensions to track psychological state, cumulative stress burden, and countermeasure interventions.
 
 ### FHIR Implementation Architecture
 

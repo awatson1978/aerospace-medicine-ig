@@ -6,7 +6,6 @@ When the crew of **Biosphere 2** emerged after two years of sealed-habitat livin
 
 On the **International Space Station**, astronauts routinely burn **2,5003,500 kcal/day** yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.
 
-This module extends the HL7 Aerospace Medicine Implementation Guideincluding the architectural principles demonstrated in [Neutral Buoyancy](neutral-buoyancy.html) and [Radiation Tracking](radiation-tracking.html)into a comprehensive **Nutrition and Calorie Deficit Management** framework leveraging **FHIR NutritionIntake, NutritionProduct, Observation, InventoryItem, Device**, and mission-context extensions.
 
 ### FHIR Implementation Architecture
 

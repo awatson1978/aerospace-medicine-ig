@@ -1,5 +1,9 @@
 ## Artemis Missions
 
+![Artemis II Mission Overview](artemis_ii_mission_october_2021.jpeg){:width="100%"}
+
+
+
 ### Overview
 
 On November 16, 2022, at 1:47 AM EST, the Space Launch System rocket lit up the night sky over Kennedy Space Center. Riding atop this most powerful rocket ever built was Orionan uncrewed capsule bound for lunar orbit. Artemis I had begun. For 25.5 days, Orion flew farther from Earth than any spacecraft designed for humans had ever gone, testing heat shields, life support systems, and navigation in deep space. It splashed down in the Pacific Ocean on December 11, 2022, proving that the hardware worked. **But hardware is only half the story.** The Artemis program is not about sending machines to the Moonit's about sending people. And people are fragile.
@@ -8,9 +12,27 @@ Artemis II (planned for 2026) will be the first crewed lunar flyby since Apollo 
 
 The question that keeps mission planners awake at night is not whether the rockets will work or the habitats will seal. It's whether the crew will remain healthyphysically and psychologicallyin an environment that evolution never prepared us for. **Artemis astronauts will face radiation exposure far exceeding ISS levels, bone and muscle loss in 1/6th gravity, circadian disruption from extreme lunar day-night cycles, isolation in cramped habitats, and the constant risk of equipment failure with no immediate rescue.** Every heartbeat, every milligram of cortisol, every hour of sleep, every rad of radiation dose must be tracked, correlated, and analyzed to ensure crew safety and mission success.
 
-This module extends the HL7 Aerospace Medicine Implementation Guide into the **Artemis program domain**building on architectural principles from [Radiation Tracking](radiation-tracking.html), [Nutrition](nutrition.html), [Exercise](fitness.html), and [Mental Health](mentalhealth.html)to provide FHIR-based data modeling for lunar mission health monitoring, environmental systems, EVA operations, and mission timeline integration.
+![Artemis II Mission](artemis_ii_mission_october_2021.jpeg){:width="100%"}
+
 
 ### FHIR Implementation Architecture
+
+#### Mission Timeline
+
+**Artemis I** - Uncrewed test flight, November 16 - December 11, 2022
+<!-- ![Artemis I Mission](artemis_i_mission_2021.jpg){:width="100%"} -->
+
+**Artemis II** - First crewed lunar flyby since Apollo 17, planned 2026
+<!-- ![Artemis II Mission](artemis_ii_mission_october_2021.jpeg){:width="100%"} -->
+
+**Artemis III** - First woman and person of color on the Moon, lunar south pole landing, planned 2027
+<!-- ![Artemis III Landing Region Map](artemis_iii_mission_map_2022.jpeg){:width="100%"} -->
+
+**Artemis IV** - Establishing Lunar Gateway space station, planned 2028
+<!-- ![Artemis IV Mission](artemis_iv_mission.jpeg){:width="100%"} -->
+
+**Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029
+<!-- ![Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"} -->
 
 #### Core Concepts
 
@@ -163,7 +185,7 @@ Artemis missions require **integrated, real-time health and environmental monito
 
 ### Use Cases
 
-### 1. Artemis II Lunar Flyby Health Monitoring
+#### 1. Artemis II Lunar Flyby Health Monitoring
 
 Comprehensive health surveillance during 10-day crewed lunar flybycontinuous vital signs, daily health logs, radiation dosimetry, behavioral health assessments. First human exposure to deep space radiation since Apollo.
 

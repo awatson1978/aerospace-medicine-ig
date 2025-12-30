@@ -12,7 +12,6 @@ Mars Direct's elegance lay in **leveraging proven 1990s technology**: chemical r
 
 But **rockets are only half the story.** A Mars mission is a **biomedical crucible**: ~2.5 years in the most hostile environment humans have attemptedsix months microgravity transit each way, 18 months on Mars in 0.38g, communication delays of 5-20 minutes rendering real-time ground support impossible, cumulative radiation exposure ~600-1000 mSv (approaching NASA career limits), Martian dust exposure (perchlorates, lung irritation risk), autonomous medical operations with no evacuation option. Every heartbeat, every milligram of calcium lost, every millisievert absorbed, every moment of psychological strain must be tracked, analyzed, mitigated.
 
-This module extends the HL7 Aerospace Medicine Implementation Guide into the Mars mission domainbuilding on [Radiation Tracking](radiation-tracking.html), [Nutrition](nutrition.html), [Exercise](fitness.html), [Mental Health](mentalhealth.html), and [Artemis Missions](missions-artemis.html)to provide FHIR-based modeling for long-duration deep space health monitoring, autonomous medicine, ISRU safety, Mars surface hazards, and mission integration.
 
 ### Mission Architecture Comparison
 
