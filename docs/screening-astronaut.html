@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Astronaut Training -  v0.5.0</title>
+    <title>Astronaut Training -  v0.5.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.1 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
@@ -117,37 +149,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="missions-artemis.html">Artemis</a>
-      </li>
-      <li>
-        <a href="missions-marsdirect.html">Mars Direct</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
-      </li>
-      <li>
-        <a href="screening-astronaut.html">Astronaut Training</a>
-      </li>
-      <li>
-        <a href="screening-gimbal.html">Gimbal Training</a>
-      </li>
-      <li>
-        <a href="screening-analog.html">Analog Missions</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -187,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Astronaut Training</h2>
   
 
@@ -207,30 +210,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#astronaut-medical-screening-and-flight-readiness-certification" id="markdown-toc-astronaut-medical-screening-and-flight-readiness-certification">Astronaut Medical Screening and Flight Readiness Certification</a>    <ul>
       <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-      <li><a href="#government-astronaut-medical-standards" id="markdown-toc-government-astronaut-medical-standards">Government Astronaut Medical Standards</a>        <ul>
-          <li><a href="#nasa-united-states" id="markdown-toc-nasa-united-states">NASA (United States)</a></li>
-          <li><a href="#international-and-iss-standards" id="markdown-toc-international-and-iss-standards">International and ISS Standards</a></li>
-        </ul>
-      </li>
-      <li><a href="#commercial-spaceflight-participant-medical-screening" id="markdown-toc-commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</a>        <ul>
-          <li><a href="#regulatory-context" id="markdown-toc-regulatory-context">Regulatory Context</a></li>
-          <li><a href="#commercial-provider-practices" id="markdown-toc-commercial-provider-practices">Commercial Provider Practices</a></li>
-        </ul>
-      </li>
+      <li><a href="#government-astronaut-medical-standards" id="markdown-toc-government-astronaut-medical-standards">Government Astronaut Medical Standards</a></li>
+      <li><a href="#commercial-spaceflight-participant-medical-screening" id="markdown-toc-commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</a></li>
       <li><a href="#faa-form-8500-8-and-spaceflight-readiness" id="markdown-toc-faa-form-8500-8-and-spaceflight-readiness">FAA Form 8500-8 and Spaceflight Readiness</a></li>
-      <li><a href="#fhir-based-medical-questionnaire-design" id="markdown-toc-fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</a>        <ul>
-          <li><a href="#1-applicant-demographics" id="markdown-toc-1-applicant-demographics">1. Applicant Demographics</a></li>
-          <li><a href="#2-flightrole-details" id="markdown-toc-2-flightrole-details">2. Flight/Role Details</a></li>
-          <li><a href="#3-medical-history" id="markdown-toc-3-medical-history">3. Medical History</a></li>
-          <li><a href="#4-family-history-optional" id="markdown-toc-4-family-history-optional">4. Family History (Optional)</a></li>
-          <li><a href="#5-current-medications-and-allergies" id="markdown-toc-5-current-medications-and-allergies">5. Current Medications and Allergies</a></li>
-          <li><a href="#6-physical-examination" id="markdown-toc-6-physical-examination">6. Physical Examination</a></li>
-          <li><a href="#7-labs-and-imaging" id="markdown-toc-7-labs-and-imaging">7. Labs and Imaging</a></li>
-          <li><a href="#8-fitness-tests" id="markdown-toc-8-fitness-tests">8. Fitness Tests</a></li>
-          <li><a href="#9-psychological-evaluation" id="markdown-toc-9-psychological-evaluation">9. Psychological Evaluation</a></li>
-          <li><a href="#10-disposition-and-certification" id="markdown-toc-10-disposition-and-certification">10. Disposition and Certification</a></li>
-        </ul>
-      </li>
+      <li><a href="#fhir-based-medical-questionnaire-design" id="markdown-toc-fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</a></li>
       <li><a href="#fhir-implementation-notes" id="markdown-toc-fhir-implementation-notes">FHIR Implementation Notes</a></li>
       <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
       <li><a href="#sources" id="markdown-toc-sources">Sources</a></li>
@@ -239,9 +222,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h1 id="astronaut-medical-screening-and-flight-readiness-certification">Astronaut Medical Screening and Flight Readiness Certification</h1>
+<h2 id="astronaut-medical-screening-and-flight-readiness-certification">Astronaut Medical Screening and Flight Readiness Certification</h2>
 
-<h2 id="introduction">Introduction</h2>
+<h3 id="introduction">Introduction</h3>
 
 <p>Astronauts and spaceflight participants must meet rigorous health criteria to ensure they can safely endure the stresses of space travel. Medical screening for space missions is designed to identify any conditions that could cause an in‑flight medical emergency or otherwise compromise crew safety.</p>
 
@@ -249,9 +232,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This report compares U.S. and international medical screening standards for astronauts versus tourists, discusses the FAA’s standard airman medical form (FAA Form 8500-8) in the space context, and explores current practices by commercial providers (SpaceX, Blue Origin, Virgin Galactic). Finally, it outlines how these requirements can be modeled in a FHIR (HL7 Fast Healthcare Interoperability Resources) Questionnaire, including key data fields and standardized coding (e.g. LOINC, SNOMED CT) to support implementation of a digital flight readiness assessment.</p>
 
-<h2 id="government-astronaut-medical-standards">Government Astronaut Medical Standards</h2>
+<h3 id="government-astronaut-medical-standards">Government Astronaut Medical Standards</h3>
 
-<h3 id="nasa-united-states">NASA (United States)</h3>
+<h4 id="nasa-united-states">NASA (United States)</h4>
 
 <p>NASA maintains rigorous medical certification standards for its astronaut corps. Basic requirements include:</p>
 
@@ -273,7 +256,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Certain conditions (e.g. kidney stones, arrhythmias) may disqualify candidates. Astronauts are re-certified annually.</p>
 
-<h3 id="international-and-iss-standards">International and ISS Standards</h3>
+<h4 id="international-and-iss-standards">International and ISS Standards</h4>
 
 <p>Agencies like ESA require a Class 2 (private pilot) medical certificate and have age caps (e.g., 50 years for ESA applicants). ISS-bound astronauts undergo common standards, certified by a Multilateral Space Medicine Board. Required evaluations include:</p>
 
@@ -283,13 +266,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Extensive lab and cardiopulmonary tests:contentReference[oaicite:1]{index=1}</li>
 </ul>
 
-<h2 id="commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</h2>
+<h3 id="commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</h3>
 
-<h3 id="regulatory-context">Regulatory Context</h3>
+<h4 id="regulatory-context">Regulatory Context</h4>
 
 <p>As of 2025, FAA does not enforce formal health rules for space tourists due to a Congressional moratorium lasting until at least 2028. Each company sets its own criteria. FAA’s 2006 guidance suggests a risk-based approach depending on flight profile:contentReference[oaicite:2]{index=2}.</p>
 
-<h4 id="suborbital-flights-3-gs">Suborbital Flights (≤3 Gs)</h4>
+<h5 id="suborbital-flights-3-gs">Suborbital Flights (≤3 Gs)</h5>
 
 <ul>
   <li>Basic health questionnaire</li>
@@ -297,7 +280,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Physicians may recommend further screening based on responses</li>
 </ul>
 
-<h4 id="orbital-or-high-g-flights-3-gs">Orbital or High-G Flights (&gt;3 Gs)</h4>
+<h5 id="orbital-or-high-g-flights-3-gs">Orbital or High-G Flights (&gt;3 Gs)</h5>
 
 <ul>
   <li>Comprehensive medical history and physical exam</li>
@@ -307,9 +290,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>NASA’s OCHMO-STD-100.1A (2022) adds psychosocial history, lifestyle review, infectious disease screening, imaging, cardiac and psychological assessments:contentReference[oaicite:3]{index=3}.</p>
 
-<h3 id="commercial-provider-practices">Commercial Provider Practices</h3>
+<h4 id="commercial-provider-practices">Commercial Provider Practices</h4>
 
-<h4 id="spacex">SpaceX</h4>
+<h5 id="spacex">SpaceX</h5>
 
 <p>Orbital missions (e.g., Inspiration4, Ax-1) follow NASA/ISS standards, including:</p>
 
@@ -319,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Participants may include individuals with controlled medical conditions:contentReference[oaicite:4]{index=4}</li>
 </ul>
 
-<h4 id="blue-origin">Blue Origin</h4>
+<h5 id="blue-origin">Blue Origin</h5>
 
 <p>Suborbital hops (New Shepard) require:</p>
 
@@ -331,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>No formal medical exam unless indicated. Has flown passengers in their 70s–80s:contentReference[oaicite:5]{index=5}.</p>
 
-<h4 id="virgin-galactic">Virgin Galactic</h4>
+<h5 id="virgin-galactic">Virgin Galactic</h5>
 
 <p>Also suborbital. Requirements include:</p>
 
@@ -342,11 +325,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Assumes standard conditions (e.g., well-controlled hypertension) are acceptable:contentReference[oaicite:6]{index=6}</li>
 </ul>
 
-<h4 id="other-providers">Other Providers</h4>
+<h5 id="other-providers">Other Providers</h5>
 
 <p>Companies like Axiom Space adhere to NASA/ISS guidelines. Boeing/SpaceX ISS missions follow NASA screening. Future orbital flights may blend these models. Aerospace Medical Association is developing voluntary standards:contentReference[oaicite:7]{index=7}.</p>
 
-<h2 id="faa-form-8500-8-and-spaceflight-readiness">FAA Form 8500-8 and Spaceflight Readiness</h2>
+<h3 id="faa-form-8500-8-and-spaceflight-readiness">FAA Form 8500-8 and Spaceflight Readiness</h3>
 
 <p>FAA Form 8500-8 is used for aviation medical certification. Key features:</p>
 
@@ -366,25 +349,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The structure offers a model for FHIR-based spaceflight medical forms:contentReference[oaicite:8]{index=8}.</p>
 
-<h2 id="fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</h2>
+<h3 id="fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</h3>
 
 <p>Key sections include:</p>
 
-<h3 id="1-applicant-demographics">1. Applicant Demographics</h3>
+<h4 id="1-applicant-demographics">1. Applicant Demographics</h4>
 
 <ul>
   <li>Name, DOB, Sex, Contact, Citizenship</li>
   <li>Use LOINC (e.g. 77606-2, 54121-8)</li>
 </ul>
 
-<h3 id="2-flightrole-details">2. Flight/Role Details</h3>
+<h4 id="2-flightrole-details">2. Flight/Role Details</h4>
 
 <ul>
   <li>Mission type (Suborbital/Orbital), Role, Duration</li>
   <li>Use SNOMED CT concepts</li>
 </ul>
 
-<h3 id="3-medical-history">3. Medical History</h3>
+<h4 id="3-medical-history">3. Medical History</h4>
 
 <p>Each condition as a yes/no item:</p>
 
@@ -402,48 +385,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Recent medical care:contentReference[oaicite:9]{index=9}</li>
 </ul>
 
-<h3 id="4-family-history-optional">4. Family History (Optional)</h3>
+<h4 id="4-family-history-optional">4. Family History (Optional)</h4>
 
-<h3 id="5-current-medications-and-allergies">5. Current Medications and Allergies</h3>
+<h4 id="5-current-medications-and-allergies">5. Current Medications and Allergies</h4>
 
 <ul>
   <li>Use LOINC 89261-2, 81629-1</li>
 </ul>
 
-<h3 id="6-physical-examination">6. Physical Examination</h3>
+<h4 id="6-physical-examination">6. Physical Examination</h4>
 
 <ul>
   <li>Vital signs (LOINC: 8302-2, 29463-7, etc.)</li>
   <li>System-specific assessments (e.g., vision, color, hearing, murmur, etc.)</li>
 </ul>
 
-<h3 id="7-labs-and-imaging">7. Labs and Imaging</h3>
+<h4 id="7-labs-and-imaging">7. Labs and Imaging</h4>
 
 <ul>
   <li>CBC, metabolic panel, glucose, EKG (LOINC 8684-8), X-ray (30750-2)</li>
   <li>Stress tests (e.g., LOINC 82287-9)</li>
 </ul>
 
-<h3 id="8-fitness-tests">8. Fitness Tests</h3>
+<h4 id="8-fitness-tests">8. Fitness Tests</h4>
 
 <ul>
   <li>Stair climb, seat fit checks</li>
 </ul>
 
-<h3 id="9-psychological-evaluation">9. Psychological Evaluation</h3>
+<h4 id="9-psychological-evaluation">9. Psychological Evaluation</h4>
 
 <ul>
   <li>Checklist or embedded screeners (PHQ-9, GAD-7)</li>
 </ul>
 
-<h3 id="10-disposition-and-certification">10. Disposition and Certification</h3>
+<h4 id="10-disposition-and-certification">10. Disposition and Certification</h4>
 
 <ul>
   <li>“Flight Ready” status</li>
   <li>Physician’s name, signature, date</li>
 </ul>
 
-<h2 id="fhir-implementation-notes">FHIR Implementation Notes</h2>
+<h3 id="fhir-implementation-notes">FHIR Implementation Notes</h3>
 
 <ul>
   <li>Use <code class="language-plaintext highlighter-rouge">LOINC</code> for labs, survey items</li>
@@ -453,7 +436,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Map responses to <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, and <code class="language-plaintext highlighter-rouge">MedicationStatement</code> resources</li>
 </ul>
 
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>Medical screening for spaceflight builds on decades of aviation and aerospace medicine. Government astronauts follow highly rigorous standards, while commercial passengers undergo lighter, but structured, assessments. FAA Form 8500-8 offers a strong baseline for screening.</p>
 
@@ -461,7 +444,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h2 id="sources">Sources</h2>
+<h3 id="sources">Sources</h3>
 
 <ul>
   <li><a href="https://www.faa.gov/media/72446">FAA Guidance for Medical Screening of Commercial Aerospace Passengers</a></li>
@@ -493,7 +476,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 13:16-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,4 +1,4 @@
-# Cardiovascular Fitness Assessment - v0.5.0
+# Cardiovascular Fitness Assessment - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:CardiovascularFitness |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:CardiovascularFitness |
 
 Assessment of cardiovascular fitness for diving
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-cardiovascular-fitne
   "resourceType" : "StructureDefinition",
   "id" : "cardiovascular-fitness",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "CardiovascularFitness",
   "title" : "Cardiovascular Fitness Assessment",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

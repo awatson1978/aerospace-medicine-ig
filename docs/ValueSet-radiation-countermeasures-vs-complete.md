@@ -1,4 +1,4 @@
-# Complete Radiation Countermeasures - v0.5.0
+# Complete Radiation Countermeasures - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:RadiationCountermeasuresVSComplete |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:RadiationCountermeasuresVSComplete |
 
  
 Comprehensive list of protective measures against space radiation 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "radiation-countermeasures-vs-complete",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "RadiationCountermeasuresVSComplete",
   "title" : "Complete Radiation Countermeasures",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

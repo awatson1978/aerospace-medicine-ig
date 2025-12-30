@@ -1,21 +1,21 @@
-# Gimbal Training - v0.5.0
+# Gimbal Training - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * **Gimbal Training**
 
 ## Gimbal Training
 
-# Multi-Axis Gimbal Simulator
+## Multi-Axis Gimbal Simulator
 
-## Introduction
+### Introduction
 
 Multi-axis gimbal training is a critical component of astronaut and space tourist preparation for spaceflight. This page provides guidance on the implementation of multi-axis gimbal training as part of the aerospace medicine practice, including screening requirements, medical monitoring protocols, and integration with FHIR-based health records.
 
-## G-SHOCK Centrifugal Trainer
+### G-SHOCK Centrifugal Trainer
 
 The G-SHOCK Centrifugal Trainer is designed to prepare astronauts and pilots for the disorienting effects of multi-axis rotation and G-forces experienced during spaceflight. The simulator provides controlled exposure to varying degrees of rotation across multiple axes simultaneously, challenging the vestibular system and developing the trainee's ability to maintain spatial awareness during complex maneuvers.
 
-## Medical Screening Requirements
+### Medical Screening Requirements
 
 Before participating in G-SHOCK training, all candidates must undergo a comprehensive medical screening to ensure safety. The following conditions are contraindications for multi-axis gimbal training:
 
@@ -28,9 +28,9 @@ Before participating in G-SHOCK training, all candidates must undergo a comprehe
 1. Height requirements: between 4'0" (1.22m) and 6'2" (1.88m)
 1. Weight limit: less than 250lbs (113.3kg)
 
-## Implementation in Aerospace Medicine Practice
+### Implementation in Aerospace Medicine Practice
 
-### Pre-Training Assessment
+#### Pre-Training Assessment
 
 Prior to scheduling G-SHOCK training, aerospace physicians should:
 
@@ -39,7 +39,7 @@ Prior to scheduling G-SHOCK training, aerospace physicians should:
 1. Complete the G-SHOCK Eligibility Questionnaire (see FHIR resources)
 1. Document clearance in the trainee's electronic health record
 
-### Physiological Monitoring During Training
+#### Physiological Monitoring During Training
 
 During G-SHOCK training sessions, the following physiological parameters should be monitored:
 
@@ -48,7 +48,7 @@ During G-SHOCK training sessions, the following physiological parameters should 
 * Oxygen saturation
 * Subjective symptoms (nausea, disorientation, visual disturbances)
 
-### Post-Training Evaluation
+#### Post-Training Evaluation
 
 After each G-SHOCK training session:
 
@@ -56,7 +56,7 @@ After each G-SHOCK training session:
 1. Document adaptation progress
 1. Update training progression plan based on performance and tolerance
 
-## FHIR Integration
+### FHIR Integration
 
 The G-SHOCK training program integrates with FHIR-based health records through:
 
@@ -65,13 +65,13 @@ The G-SHOCK training program integrates with FHIR-based health records through:
 1. **RiskAssessment**: Evaluation of individual risk factors for adverse reactions
 1. **CarePlan**: Personalized training progression based on adaptation and performance
 
-## References
+### References
 
 1. NASA Astronaut Training Manual: High-G and Spatial Disorientation Training
 1. Aerospace Medical Association: Guidelines for Centrifuge and Rotation Training
 1. International Space Station Medical Operations Requirements Document
 
-## Related Resources
+### Related Resources
 
 * [G-SHOCK Eligibility Questionnaire](Questionnaire-GShockEligibility.md)
 * [Vestibular Adaptation Protocol](Procedure-VestibularAdaptation.md)

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Analog Mission Training -  v0.5.0</title>
+    <title>Analog Mission Training -  v0.5.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.1 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
@@ -117,37 +149,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="missions-artemis.html">Artemis</a>
-      </li>
-      <li>
-        <a href="missions-marsdirect.html">Mars Direct</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
-      </li>
-      <li>
-        <a href="screening-astronaut.html">Astronaut Training</a>
-      </li>
-      <li>
-        <a href="screening-gimbal.html">Gimbal Training</a>
-      </li>
-      <li>
-        <a href="screening-analog.html">Analog Missions</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -187,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Analog Mission Training</h2>
   
 
@@ -207,28 +210,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#purpose-and-role-of-analog-missions-in-training" id="markdown-toc-purpose-and-role-of-analog-missions-in-training">Purpose and Role of Analog Missions in Training</a></li>
   <li><a href="#commercial-analog-training-programs-star-harbor-and-others" id="markdown-toc-commercial-analog-training-programs-star-harbor-and-others">Commercial Analog Training Programs (Star Harbor and Others)</a></li>
-  <li><a href="#screening-criteria-for-participant-selection" id="markdown-toc-screening-criteria-for-participant-selection">Screening Criteria for Participant Selection</a>    <ul>
-      <li><a href="#age-and-maturity" id="markdown-toc-age-and-maturity">Age and Maturity</a></li>
-      <li><a href="#physical-fitness-and-health" id="markdown-toc-physical-fitness-and-health">Physical Fitness and Health</a></li>
-      <li><a href="#psychological-readiness" id="markdown-toc-psychological-readiness">Psychological Readiness</a></li>
-      <li><a href="#teamwork-and-communication-skills" id="markdown-toc-teamwork-and-communication-skills">Teamwork and Communication Skills</a></li>
-      <li><a href="#relevant-experience-or-skills" id="markdown-toc-relevant-experience-or-skills">Relevant Experience or Skills</a></li>
-    </ul>
-  </li>
+  <li><a href="#screening-criteria-for-participant-selection" id="markdown-toc-screening-criteria-for-participant-selection">Screening Criteria for Participant Selection</a></li>
   <li><a href="#comparison-to-government-astronaut-program-selection" id="markdown-toc-comparison-to-government-astronaut-program-selection">Comparison to Government Astronaut Program Selection</a></li>
-  <li><a href="#analog-missions-vs-other-training-elements" id="markdown-toc-analog-missions-vs-other-training-elements">Analog Missions vs. Other Training Elements</a>    <ul>
-      <li><a href="#gimbal-rigs-and-centrifuge-training" id="markdown-toc-gimbal-rigs-and-centrifuge-training">Gimbal Rigs and Centrifuge Training</a></li>
-      <li><a href="#neutral-buoyancy--eva" id="markdown-toc-neutral-buoyancy--eva">Neutral Buoyancy &amp; EVA</a></li>
-      <li><a href="#other-short-courses" id="markdown-toc-other-short-courses">Other Short Courses</a></li>
-    </ul>
-  </li>
+  <li><a href="#analog-missions-vs-other-training-elements" id="markdown-toc-analog-missions-vs-other-training-elements">Analog Missions vs. Other Training Elements</a></li>
   <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
 
-<h2 id="purpose-and-role-of-analog-missions-in-training">Purpose and Role of Analog Missions in Training</h2>
+<h3 id="purpose-and-role-of-analog-missions-in-training">Purpose and Role of Analog Missions in Training</h3>
 
 <p>Analog missions are simulated space expeditions conducted on Earth to mimic the conditions and challenges of real spaceflight. They place crews in isolated, confined environments for days or months to perform mission-like tasks under stressors such as limited resources and communication delays:contentReference[oaicite:0]{index=0}.</p>
 
@@ -240,7 +231,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p><em>Image (Page 1)</em>: AMADEE-18 Mars simulation by the Austrian Space Forum in Oman. Crews live in habitats to experience isolation, perform science and maintenance tasks, and practice EVA protocols in a Mars-like desert environment:contentReference[oaicite:3]{index=3}.</p>
 </blockquote>
 
-<h2 id="commercial-analog-training-programs-star-harbor-and-others">Commercial Analog Training Programs (Star Harbor and Others)</h2>
+<h3 id="commercial-analog-training-programs-star-harbor-and-others">Commercial Analog Training Programs (Star Harbor and Others)</h3>
 
 <p>In recent years, commercial space companies have developed analog training programs to broaden access to astronaut-like experiences. <strong>Star Harbor</strong>, for instance, is establishing the world’s first private spaceflight training campus in Colorado, slated to open in 2026:contentReference[oaicite:4]{index=4}.</p>
 
@@ -261,9 +252,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h2 id="screening-criteria-for-participant-selection">Screening Criteria for Participant Selection</h2>
+<h3 id="screening-criteria-for-participant-selection">Screening Criteria for Participant Selection</h3>
 
-<h3 id="age-and-maturity">Age and Maturity</h3>
+<h4 id="age-and-maturity">Age and Maturity</h4>
 
 <ul>
   <li>Most programs require participants to be adults (minimum age 18).</li>
@@ -271,21 +262,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Star Harbor centrifuge tests included participants aged 22 to 88:contentReference[oaicite:8]{index=8}.</li>
 </ul>
 
-<h3 id="physical-fitness-and-health">Physical Fitness and Health</h3>
+<h4 id="physical-fitness-and-health">Physical Fitness and Health</h4>
 
 <ul>
   <li>General health clearance or a physician’s exam required.</li>
   <li>Analog participants may need to lift ~20 lbs, be non-smokers, or meet specialized health criteria (e.g., SCUBA-certified):contentReference[oaicite:9]{index=9}.</li>
 </ul>
 
-<h3 id="psychological-readiness">Psychological Readiness</h3>
+<h4 id="psychological-readiness">Psychological Readiness</h4>
 
 <ul>
   <li>Mental resilience is essential.</li>
   <li>NASA analogs conduct formal psychological screening; commercial programs use interviews to assess motivation and interpersonal skills:contentReference[oaicite:10]{index=10}.</li>
 </ul>
 
-<h3 id="teamwork-and-communication-skills">Teamwork and Communication Skills</h3>
+<h4 id="teamwork-and-communication-skills">Teamwork and Communication Skills</h4>
 
 <ul>
   <li>Emphasis on collaboration, communication, and team dynamics.</li>
@@ -293,7 +284,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>English proficiency is commonly required.</li>
 </ul>
 
-<h3 id="relevant-experience-or-skills">Relevant Experience or Skills</h3>
+<h4 id="relevant-experience-or-skills">Relevant Experience or Skills</h4>
 
 <ul>
   <li>Scientific, technical, or operational backgrounds are often favored.</li>
@@ -311,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h2 id="comparison-to-government-astronaut-program-selection">Comparison to Government Astronaut Program Selection</h2>
+<h3 id="comparison-to-government-astronaut-program-selection">Comparison to Government Astronaut Program Selection</h3>
 
 <p>Analog training screening differs from NASA/ESA astronaut selection:</p>
 
@@ -356,9 +347,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h2 id="analog-missions-vs-other-training-elements">Analog Missions vs. Other Training Elements</h2>
+<h3 id="analog-missions-vs-other-training-elements">Analog Missions vs. Other Training Elements</h3>
 
-<h3 id="gimbal-rigs-and-centrifuge-training">Gimbal Rigs and Centrifuge Training</h3>
+<h4 id="gimbal-rigs-and-centrifuge-training">Gimbal Rigs and Centrifuge Training</h4>
 
 <ul>
   <li>Short-duration drills for G-force tolerance and disorientation</li>
@@ -366,7 +357,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>No psychological or team-based screening needed:contentReference[oaicite:14]{index=14}</li>
 </ul>
 
-<h3 id="neutral-buoyancy--eva">Neutral Buoyancy &amp; EVA</h3>
+<h4 id="neutral-buoyancy--eva">Neutral Buoyancy &amp; EVA</h4>
 
 <ul>
   <li>Underwater training in neutral buoyancy pools</li>
@@ -375,7 +366,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Does not test isolation or group dynamics:contentReference[oaicite:15]{index=15}</li>
 </ul>
 
-<h3 id="other-short-courses">Other Short Courses</h3>
+<h4 id="other-short-courses">Other Short Courses</h4>
 
 <ul>
   <li>Includes parabolic flights, mock cockpits, wilderness survival</li>
@@ -389,7 +380,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h2 id="summary">Summary</h2>
+<h3 id="summary">Summary</h3>
 
 <p>Analog mission training:</p>
 
@@ -402,7 +393,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h2 id="references">References</h2>
+<h3 id="references">References</h3>
 
 <ol>
   <li>NASA (2023). "NASA Selects Participants for One-Year Mars Analog Mission."</li>
@@ -436,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 13:16-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

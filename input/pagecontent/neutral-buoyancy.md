@@ -1,8 +1,8 @@
-# Underwater Training and Decompression Medicine
+## Underwater Training and Decompression Medicine
 
 Underwater training facilities serve as realistic Earth-based analogs for space missions. For example, NASA's Neutral Buoyancy Laboratory (NBL) – one of the world's largest indoor training pools – is used for mission planning, procedure development, hardware verification, and astronaut training in preparation for spacewalks¹. In parallel, NASA's NEEMO missions immerse crews in the Aquarius undersea habitat (62 feet deep off Key Largo) for 1–3 week "saturation" dives, effectively simulating long-duration spacecraft habitation and hyperbaric exposures²'³. These environments allow multinational teams (NASA, ESA, CSA, UAE and others) to practice complex tasks like assembling habitat mockups, cargo handling, and emergency drills in an isolated, high-pressure setting⁴'³. By training underwater, astronauts and support personnel confront stressors analogous to those in space – from life-support dependency to confined isolation – making these dual-use operations invaluable for both diving medicine and space medicine.
 
-## FHIR Implementation Framework
+### FHIR Implementation Framework
 
 This implementation guide provides comprehensive FHIR profiles for underwater training environments that serve as space analogs. The data model supports:
 
@@ -12,7 +12,7 @@ This implementation guide provides comprehensive FHIR profiles for underwater tr
 - **Equipment Integration**: Using specialized device profiles for diving and communication equipment
 - **Regulatory Compliance**: Through the [`RegulatoryComplianceAssessment`](StructureDefinition-regulatory-compliance-assessment.html) profile
 
-### Core Profiles Overview
+#### Core Profiles Overview
 
 The implementation includes several key profile categories:
 
@@ -24,7 +24,7 @@ The implementation includes several key profile categories:
 | **Emergency Response** | `DecompressionSickness`, `HyperbaricTreatment`, `UnderwaterEmergencyResponse` | Manage incidents and treatments |
 | **Equipment & Facilities** | `DivingEquipment`, `HyperbaricChamber`, `UnderwaterCommunicationSystem` | Track devices and locations |
 
-## Overview
+### Overview
 
 The physiological and operational challenges of underwater environments closely parallel those encountered in space:
 
@@ -40,11 +40,11 @@ The physiological and operational challenges of underwater environments closely 
 
 This dual-use approach enables NASA and other agencies to apply spaceflight medical standards to dive training and vice versa. Underwater training leverages precise monitoring and safety practices so that lessons learned about human physiology, equipment, and procedures can directly improve space mission readiness and diving program safety.
 
-## Neutral Buoyancy Training
+### Neutral Buoyancy Training
 
 The Neutral Buoyancy Laboratory (NBL) and similar facilities provide the highest-fidelity analog for EVA tasks on Earth. Astronauts wear full pressure suits and conduct simulated spacewalks beneath the pool surface, with expert divers providing safety and technical support⁶'⁵. In these sessions, every aspect of the dive is meticulously managed and recorded:
 
-### Training Session Implementation
+#### Training Session Implementation
 
 Each neutral buoyancy session is documented using the [`NeutralBuoyancySession`](StructureDefinition-neutral-buoyancy-session.html) profile, which captures:
 
@@ -83,7 +83,7 @@ For EVA-specific simulations, the [`UnderwaterEVASimulation`](StructureDefinitio
 
 See the [example training session](Procedure-ExampleNeutralBuoyancySession.html) for a complete implementation.
 
-### Training Performance Metrics
+#### Training Performance Metrics
 
 The standardized [`NeutralBuoyancyTrainingCS`](CodeSystem-neutral-buoyancy-training-cs.html) code system defines:
 
@@ -91,13 +91,13 @@ The standardized [`NeutralBuoyancyTrainingCS`](CodeSystem-neutral-buoyancy-train
 - **Performance Metrics**: Task completion time, movement efficiency, communication clarity
 - **Assessment Categories**: Equipment handling proficiency, spatial orientation, stress management
 
-### EVA simulation fidelity
+#### EVA simulation fidelity
 
 Underwater training allows detailed emulation of spacewalk conditions. Trainers measure how effectively crew members manipulate tools while weightless and wearing pressurized suits. They evaluate team coordination during multi-astronaut operations (e.g. mock ISS assembly or habitat construction) and monitor cognitive load and fatigue accumulation over hours of work. Communications systems (including specialized underwater full-face masks with hardwired links) are tested for clarity and reliability in the noisy environment⁸. Emergency drills (such as rapid ascent protocols or suit breach scenarios) are practiced with realism. All these factors—task performance, teamwork, fatigue, comms integrity, emergency responsiveness—are documented so that training effectiveness can be quantified and EVA procedures refined.
 
-## SCUBA and Diving Medicine Integration
+### SCUBA and Diving Medicine Integration
 
-### Medical Clearance Framework
+#### Medical Clearance Framework
 
 Diving for space analog training requires extending standard astronaut health screening to include dive-specific evaluations. The [`DiveMedicalClearance`](StructureDefinition-dive-medical-clearance.html) profile documents comprehensive medical assessments including:
 
@@ -119,7 +119,7 @@ The [`DivingContraindicatedConditions`](ValueSet-diving-contraindicated-conditio
 
 Medical history reviews emphasize any previous dive-related incidents (decompression illness, arterial gas embolism, barotrauma) as potential contraindications or criteria for individualized assessment. Clearance to dive is granted only after all these factors meet conservative standards (e.g. absence of disqualifying conditions)⁹'¹¹. This multi-domain screening helps prevent medical emergencies during training dives.
 
-### Dive Profile and Exposure Tracking
+#### Dive Profile and Exposure Tracking
 
 Modern dive operations generate extensive digital logs that feed directly into training records using the [`DiveProfile`](StructureDefinition-dive-profile.html) and [`AdvancedDiveProfile`](StructureDefinition-advanced-dive-profile.html) profiles. These capture:
 
@@ -139,27 +139,27 @@ Modern dive operations generate extensive digital logs that feed directly into t
 
 Commercial dive computers continuously record depth and time profiles for each dive, calculate decompression requirements, and monitor nitrogen saturation in tissues. After each dive, these logs (often in standard formats) can be uploaded to training databases. Key data such as maximum depth, bottom time, ascent rate, and required decompression stops are captured. Decompression obligations are computed using established dive tables or algorithms, and actual ascent profiles are compared to planned schedules. Environmental conditions (water temperature, visibility, currents) and the breathing gas mix used (air, nitrox, trimix) are annotated. Importantly, repetitive dives over days or weeks are tracked to quantify cumulative nitrogen loading; for example, NOAA requires dive computers for multi-day operations and mandates recording of residual nitrogen¹². This rich dive-exposure record integrates with the diver's health monitoring, enabling evaluation of cumulative decompression risk and informing safe scheduling of future dives.
 
-## Standardized Medical Terminologies
+### Standardized Medical Terminologies
 
 This implementation guide defines comprehensive code systems for underwater training medicine:
 
-### Training and Procedure Codes
+#### Training and Procedure Codes
 - **[`NeutralBuoyancyTrainingCS`](CodeSystem-neutral-buoyancy-training-cs.html)**: Training activities, performance metrics, environments
 - **[`DivingMedicineCS`](CodeSystem-diving-medicine-cs.html)**: Medical examinations, dive profiles, hyperbaric treatments
 - **[`DecompressionProtocolCS`](CodeSystem-decompression-protocol-cs.html)**: Decompression algorithms, safety procedures, ascent protocols
 
-### Communication and Equipment
+#### Communication and Equipment
 - **[`UnderwaterCommunicationCS`](CodeSystem-underwater-communication-cs.html)**: Communication systems, protocols, equipment status
 - **[`RegulatoryComplianceCS`](CodeSystem-regulatory-compliance-cs.html)**: NOAA, OSHA, NASA, and international standards
 
-### Value Sets for Implementation
+#### Value Sets for Implementation
 - **[`NeutralBuoyancyTrainingActivities`](ValueSet-neutral-buoyancy-training-activities.html)**: Training procedures and assessments
 - **[`UnderwaterTrainingProcedures`](ValueSet-underwater-training-procedures.html)**: Underwater training and emergency procedures
 - **[`DivingContraindicatedConditions`](ValueSet-diving-contraindicated-conditions.html)**: Medical conditions that preclude diving
 
-## Compression and Decompression Medicine
+### Compression and Decompression Medicine
 
-### Hyperbaric Treatment Capabilities
+#### Hyperbaric Treatment Capabilities
 
 Underwater training centers often include on-site hyperbaric chambers that serve both as safety assets and research platforms. The [`HyperbaricChamber`](StructureDefinition-hyperbaric-chamber.html) location profile and [`HyperbaricTreatment`](StructureDefinition-hyperbaric-treatment.html) procedure profile document:
 
@@ -179,7 +179,7 @@ The [`EnhancedHyperbaricTreatment`](StructureDefinition-enhanced-hyperbaric-trea
 
 These chambers can be multi-place (housing multiple people) or monoplace. Treatment protocols for any decompression sickness or other dive injuries follow established hyperbaric tables (e.g. U.S. Navy or NOAA recompression tables), which are documented and tracked in the training records. Physicians and chamber operators use standardized logbooks to record chamber pressure, gas mixtures, and schedule steps. Physiological monitoring under pressure is maintained for anyone undergoing compression: vital signs (heart rate, SpO₂) are tracked, and oxygen exposures are carefully controlled. Protocols for oxygen toxicity surveillance are strictly enforced: personnel are trained to watch for early CNS oxygen toxicity symptoms using mnemonics (e.g. VENTID‑C) and to apply air-breaks as needed¹³. Chamber operations include redundancies in breathing systems and emergency air sources, analogous to spacecraft life support. Thus, hyperbaric facilities not only treat DCS but also allow controlled exposure studies, validating equipment and procedures for high-pressure environments.
 
-### Decompression Sickness Management
+#### Decompression Sickness Management
 
 Decompression sickness (DCS) risk is a key concern shared by divers and astronauts. The [`DecompressionSickness`](StructureDefinition-decompression-sickness.html) profile extends the space medicine condition profile to capture:
 
@@ -195,13 +195,13 @@ Decompression sickness (DCS) risk is a key concern shared by divers and astronau
 
 Comprehensive DCS management begins with rapid symptom identification (joint pain, neurological signs) and classification of severity. If DCS is suspected, the affected individual is promptly transferred to hyperbaric treatment. Treatment response is closely monitored: symptoms are recorded before, during, and after recompression therapy, ensuring that the protocol (e.g. USN Table 6) is followed and adjusted as needed. After treatment, **outcome assessment** documents resolution or any residual deficits. Detailed medical notes and follow-up evaluations inform the astronaut's return-to-training timeline. Training programs also analyze DCS incidents to improve prevention: for example, gas switch schedules, depth/time limits, and pre-dive oxygen prebreathe are reviewed in light of any "near miss" or decompression case. This iterative profiling of DCS events and responses supports evidence-based refinements to both dive practices and spaceflight pre-breathing protocols.
 
-## Pressure Environment Safety
+### Pressure Environment Safety
 
-### Atmospheric Transition Monitoring
+#### Atmospheric Transition Monitoring
 
 Rapid pressure changes are hazardous in both diving and spaceflight. Training programs continuously monitor pressure change rates during descent/ascent and ensure strict adherence to equalization protocols (e.g. ear clearing, mask balancing). The breathing gas composition is managed closely: divers often use nitrox (oxygen-enriched air) or mixed gases to optimize decompression, while spacecraft might adjust cabin O₂ levels for missions. Biophysically, models of nitrogen uptake and elimination are applied to predict tissue loading; these models are analogous to NASA's microgravity denitrogenation protocols. In an emergency (e.g. rapid ascent from a disabled submersible), divers and crews are trained in emergency decompress procedures, including rapid oxygen breathing and immediate chamber therapy. Sensors in the facility and suits track ambient pressure and gas partial pressures in real-time, alerting the team if thresholds are approached. All these measures ensure safe atmospheric transitions during analog missions.
 
-### Equipment Integration and Safety
+#### Equipment Integration and Safety
 
 Diving and spacecraft life-support equipment share many design principles. The [`DivingEquipment`](StructureDefinition-diving-equipment.html) and [`UnderwaterCommunicationSystem`](StructureDefinition-underwater-communication-system.html) profiles track:
 
@@ -219,19 +219,19 @@ Diving and spacecraft life-support equipment share many design principles. The [
 
 Breathing gas quality is closely monitored: filter cartridges and compressors are inspected to prevent contamination (nitrogen dioxide, carbon monoxide, etc.). Life-support gear is built with redundancies – for instance, space suits have backup oxygen tanks, and divers carry independent bailout bottles. Training emphasizes failure response drills: if a regulator or suit fan fails, the diver/astronaut must switch to secondary systems immediately. Diving teams follow maintenance schedules (e.g. calibrating pressure gauges, servicing valves) that mirror aerospace maintenance protocols. Emergency life support durations are computed into mission plans: divers train to know exactly how long their bailout supply lasts at working depths, similar to how EVAs are planned around consumables. Communication systems are also stress-tested underwater: full-face masks with wired communication (used during SEATEST-7 and NEEMO) show how to maintain clear audio/video links even when handling cables⁸. By treating diving gear and spacecraft systems under a unified safety doctrine, programs ensure that astronauts can seamlessly apply space-proven life-support strategies in the water, and vice versa.
 
-## Clinical Integration
+### Clinical Integration
 
-### Space Medicine Correlation
+#### Space Medicine Correlation
 
 Studying crewmembers in underwater analogs yields valuable insights into human physiology that overlap with space medicine. For example, immersion-induced fluid shifts (centralization of blood volume due to buoyancy) share features with microgravity fluid redistribution. Research has shown that immersion reduces peripheral fluid extravasation and increases central blood volume, much like fluid moves cephalad in space¹⁴. Thermal regulation is another common challenge: wearing pressurized suits or wetsuits in water can lead to heat stress similar to extravehicular activity overheating. Cognitive performance and crew psychology under stress are monitored (mission planners track workload, team dynamics, and stress markers during long dives). Because these analog studies occur in controlled environments, physiologic measurements (heart rate variability, oxygen consumption, sleep patterns) from underwater missions can be directly compared with spaceflight data. Patterns of deconditioning (muscle fatigue, bone stress) during repeated long dives can inform countermeasures for microgravity effects. In essence, the underwater analog acts as a surrogate laboratory where hypotheses about space physiology can be tested and refined.
 
-### Training Effectiveness Assessment
+#### Training Effectiveness Assessment
 
 Quantitative evaluation is built into every dive program using the performance metrics captured in our FHIR profiles. The "skills transfer" from underwater training to space missions is assessed by comparing performance in neutral-buoyancy or saturation dives with performance in microgravity or simulator trials. Benchmark tasks (e.g. timed assembly of mock satellite components) are repeated across simulation modes to verify that underwater proficiency correlates with expected EVA performance. Medical monitoring is continuous: divers who train for weeks may undergo serial health checks to ensure continuity of medical data (e.g. tracking any signs of cumulative nitrogen exposure or stress). All mission logs, dive profiles, and medical observations feed into risk models. For instance, data on crew fatigue and decompression exposures can be used to predict DCS risk for upcoming training schedules. Likewise, psychological measures (mood questionnaires, decision-making tasks) are used to quantify cognitive effects of the extreme environment. This integrated monitoring allows for dynamic risk assessments – if certain profiles (e.g. repeated deep dives without adequate surface interval) are correlated with higher bubble scores, the program will adjust training protocols. The end goal is an evidence-based curriculum where individual response (fitness, stress tolerance, learning curves) informs personalized dive schedules and training loads.
 
-## Implementation Examples
+### Implementation Examples
 
-### Complete Training Session Example
+#### Complete Training Session Example
 
 The [`ExampleNeutralBuoyancySession`](Procedure-ExampleNeutralBuoyancySession.html) demonstrates a typical 3-hour EVA simulation session with:
 - Session duration and depth parameters
@@ -239,7 +239,7 @@ The [`ExampleNeutralBuoyancySession`](Procedure-ExampleNeutralBuoyancySession.ht
 - Safety protocol compliance
 - Equipment configuration details
 
-### Dive Profile Example
+#### Dive Profile Example
 
 The [`ExampleDiveProfile`](Observation-ExampleDiveProfile.html) shows comprehensive dive data collection including:
 - Maximum depth of 12 meters for 180 minutes
@@ -247,7 +247,7 @@ The [`ExampleDiveProfile`](Observation-ExampleDiveProfile.html) shows comprehens
 - Decompression requirements and nitrogen loading
 - Communication system performance
 
-### Medical Clearance Example
+#### Medical Clearance Example
 
 The [`ExampleDiveMedicalClearance`](Procedure-ExampleDiveMedicalClearance.html) illustrates the medical clearance process with:
 - Comprehensive fitness assessments
@@ -255,17 +255,17 @@ The [`ExampleDiveMedicalClearance`](Procedure-ExampleDiveMedicalClearance.html) 
 - Certification level and restrictions
 - Follow-up requirements
 
-## Implementation Considerations
+### Implementation Considerations
 
-### Data Integration
+#### Data Integration
 
 Successfully managing underwater training requires fusing diverse data streams into a cohesive record. Dive computers export standardized log files (often in Garmin/CSV formats) that can be parsed into electronic health records. Physiological monitors (biotelemetry for heart rate, temperature, oximetry) feed into mission databases in real-time. Performance metrics (task timing, error counts) and environmental sensors (pool temperature, gas composition) are linked to each training session. These data should be codified with consistent units and time stamps. Medical evaluations (pre- and post-dive physical exams, imaging results, lab tests) are tracked alongside dive history. In an HL7 FHIR context (R4), this could involve using Observation resources for dive vitals, Procedure resources for dive events, Condition for any decompression illness, and Device for equipment logs. Notably, future FHIR versions introduce even more relevant features: for example, FHIR v6 (ballot) has a dedicated provider taxonomy entry for "Undersea and Hyperbaric Medicine" specialists¹⁵, and R5 is expected to add environmental exposure profiling. Leveraging these standards, the analog dive program can ensure interoperability of its health and training data with broader aerospace medical records.
 
-### Quality Assurance
+#### Quality Assurance
 
 Robust QA is essential for safe diving operations. All hardware (suits, breathing regulators, chamber valves) is calibrated and maintained on strict schedules parallel to aerospace quality protocols. Personnel are certified to diving standards: e.g. NASA divers often hold NOAA/AAUS certifications and attend requalification courses annually. Safety procedures are audited: checklists for dive briefings, emergency drills, and chamber operations are standardized and training sessions are observed for compliance. Incident reporting systems capture near-misses to continually refine safety plans. Medical surveillance includes routine follow-ups for divers, monitoring for late-onset dive-related effects (like ear trauma or subtle neurological symptoms). To ensure consistency across facilities, standardized training curricula and protocols are adopted (for instance, using common dive tables or preload protocols). By applying rigorous QA — analogous to spacecraft safety reviews — the underwater analog program maintains a "mission-ready" culture where both diving and spaceflight best practices reinforce each other.
 
-## Future Directions
+### Future Directions
 
 Underwater analog training continues to evolve with advancing technology and medical knowledge:
 
@@ -281,7 +281,7 @@ Underwater analog training continues to evolve with advancing technology and med
 
 In summary, leveraging underwater training and decompression medicine in a unified framework creates an evidence-based foundation for astronaut preparation. This approach not only enhances the safety and effectiveness of spacewalk and mission training, but also drives advances in diving and hyperbaric medicine that benefit the broader medical community.
 
-## References
+### References
 
 ¹ [Neutral Buoyancy Laboratory - NASA](https://www.nasa.gov/johnson/neutral-buoyancy-laboratory/)
 

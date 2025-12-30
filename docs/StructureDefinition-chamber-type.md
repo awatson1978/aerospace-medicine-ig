@@ -1,4 +1,4 @@
-# Hyperbaric Chamber Type - v0.5.0
+# Hyperbaric Chamber Type - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/chamber-type | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:ChamberType |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/chamber-type | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:ChamberType |
 
 Type of hyperbaric chamber (monoplace, multiplace, etc.)
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-chamber-type.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "chamber-type",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/chamber-type",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "ChamberType",
   "title" : "Hyperbaric Chamber Type",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

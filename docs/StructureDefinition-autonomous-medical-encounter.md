@@ -1,4 +1,4 @@
-# Autonomous Medical Encounter - v0.5.0
+# Autonomous Medical Encounter - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:AutonomousMedicalEncounter |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:AutonomousMedicalEncounter |
 
  
 Encounter profile for crew-led medical events with no real-time ground support due to communication delays 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-autonomous-medical-e
   "resourceType" : "StructureDefinition",
   "id" : "autonomous-medical-encounter",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "AutonomousMedicalEncounter",
   "title" : "Autonomous Medical Encounter",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

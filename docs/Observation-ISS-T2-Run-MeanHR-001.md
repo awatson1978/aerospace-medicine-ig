@@ -1,4 +1,4 @@
-# ISS T2 Treadmill Run - Mean Heart Rate - v0.5.0
+# ISS T2 Treadmill Run - Mean Heart Rate - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,4 +1,4 @@
-# Condition - Osteoporosis - v0.5.0
+# Condition - Osteoporosis - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

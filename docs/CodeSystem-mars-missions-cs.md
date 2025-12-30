@@ -1,4 +1,4 @@
-# Mars Missions - v0.5.0
+# Mars Missions - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:MarsMissionsCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:MarsMissionsCS |
 
  
 NASA and international missions to Mars (robotic and conceptual human missions) 
@@ -27,12 +27,12 @@ NASA and international missions to Mars (robotic and conceptual human missions)
   "resourceType" : "CodeSystem",
   "id" : "mars-missions-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "MarsMissionsCS",
   "title" : "Mars Missions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

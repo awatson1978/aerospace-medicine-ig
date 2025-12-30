@@ -1,4 +1,4 @@
-# Space Health Implementation Guide - v0.5.0
+# Space Health Implementation Guide - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * **Space Health Implementation Guide**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:SpaceflightHealthSimulationsReferenceDocumentation |
+| *Official URL*:https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:SpaceflightHealthSimulationsReferenceDocumentation |
 
 Welcome to the HL7 FHIR Aerospace Medicine Implementation Guide (IG). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.
 
@@ -50,10 +50,10 @@ Ultimately, this implementation guide is not only a tool for simulating patients
   "resourceType" : "ImplementationGuide",
   "id" : "mitre.fhir.spacehealth",
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -7035,6 +7035,17 @@ Ultimately, this implementation guide is not only a tool for simulating patients
           ],
           "nameUrl" : "missions-marsdirect.html",
           "title" : "Mars Direct",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "downloads.html"
+            }
+          ],
+          "nameUrl" : "downloads.html",
+          "title" : "Downloads",
           "generation" : "markdown"
         }
       ]

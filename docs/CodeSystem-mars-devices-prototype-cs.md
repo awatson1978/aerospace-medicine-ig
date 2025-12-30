@@ -1,4 +1,4 @@
-# Mars Mission Devices - Prototype - v0.5.0
+# Mars Mission Devices - Prototype - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:MarsPrototypeDevicesCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:MarsPrototypeDevicesCS |
 
  
 Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems) 
@@ -28,12 +28,12 @@ Developmental or conceptual hardware for Mars missions (prototypes, test article
   "resourceType" : "CodeSystem",
   "id" : "mars-devices-prototype-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "MarsPrototypeDevicesCS",
   "title" : "Mars Mission Devices - Prototype",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

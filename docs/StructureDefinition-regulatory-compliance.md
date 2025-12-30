@@ -1,4 +1,4 @@
-# Regulatory Compliance - v0.5.0
+# Regulatory Compliance - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:RegulatoryCompliance |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:RegulatoryCompliance |
 
 Regulatory standards compliance during training session
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
   "resourceType" : "StructureDefinition",
   "id" : "regulatory-compliance",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "RegulatoryCompliance",
   "title" : "Regulatory Compliance",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

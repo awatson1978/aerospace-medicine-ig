@@ -1,4 +1,4 @@
-# Space Nutrition Inventory Item - v0.5.0
+# Space Nutrition Inventory Item - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:SpaceNutritionInventoryItem |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:SpaceNutritionInventoryItem |
 
  
 Tracks food stores aboard spacecraft or planetary habitats 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-nutrition-inve
   "resourceType" : "StructureDefinition",
   "id" : "space-nutrition-inventory-item",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpaceNutritionInventoryItem",
   "title" : "Space Nutrition Inventory Item",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

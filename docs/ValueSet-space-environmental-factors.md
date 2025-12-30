@@ -1,4 +1,4 @@
-# Space Environmental Factors - v0.5.0
+# Space Environmental Factors - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:SpaceEnvironmentalFactorsValueSet |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:SpaceEnvironmentalFactorsValueSet |
 
  
 Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-environmental-factors",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpaceEnvironmentalFactorsValueSet",
   "title" : "Space Environmental Factors",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

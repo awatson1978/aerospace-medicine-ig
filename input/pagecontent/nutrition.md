@@ -1,6 +1,6 @@
-# Nutrition and Calorie-Deficient Diets
+## Nutrition and Calorie-Deficient Diets
 
-## Overview
+### Overview
 
 When the crew of **Biosphere 2** emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited **improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity**findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: **astronauts often operate at an energetic deficit**, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.
 
@@ -8,9 +8,9 @@ On the **International Space Station**, astronauts routinely burn **2,5003,500 
 
 This module extends the HL7 Aerospace Medicine Implementation Guideincluding the architectural principles demonstrated in [Neutral Buoyancy](neutral-buoyancy.html) and [Radiation Tracking](radiation-tracking.html)into a comprehensive **Nutrition and Calorie Deficit Management** framework leveraging **FHIR NutritionIntake, NutritionProduct, Observation, InventoryItem, Device**, and mission-context extensions.
 
-## FHIR Implementation Architecture
+### FHIR Implementation Architecture
 
-### Core Profiles
+#### Core Profiles
 
 | Profile | Purpose | Key Features |
 |---------|---------|--------------|
@@ -22,7 +22,7 @@ This module extends the HL7 Aerospace Medicine Implementation Guideincluding th
 
 These profiles parallel the architectural pattern used in radiation trackingseparating individual measurement, device/product specification, and longitudinal summaries.
 
-### Data Architecture
+#### Data Architecture
 
 Nutrition tracking incorporates multiple concurrent dimensions:
 
@@ -35,68 +35,68 @@ Nutrition tracking incorporates multiple concurrent dimensions:
 
 All measurements link to **MissionContext** extensions used in other IG modules.
 
-### Standardized Terminologies
+#### Standardized Terminologies
 
 New code systems and value sets include:
 
-- **SpaceNutritionTypeCS**: freeze-dried meal, thermo-stabilized entrée, fresh produce payload, supplemental electrolyte mix
+- **SpaceNutritionTypeCS**: freeze-dried meal, thermo-stabilized entrï¿½e, fresh produce payload, supplemental electrolyte mix
 - **MacronutrientMetricsCS**: kcal, carb-grams, fat-grams, protein-grams
 - **HydrationTypeCS**: potable water, ORS, electrolyte packet, IV saline
 - **NutritionInventoryStatusCS**: adequate, low, critical, expired
 - **CalorieDeficitRiskVS**: mild (<300 kcal/day), moderate (300600), severe (>600), extreme (>1,000 kcal/day)
 
-## Physiologic and Environmental Considerations
+### Physiologic and Environmental Considerations
 
 Caloric deficit in space is not merely a dietary inconvenienceit is a **whole-system physiologic perturbation**. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutritiona constant battle between physiologic needs and environmental constraints.
 
-### Microgravity Effects
+#### Microgravity Effects
 
 - Loss of mechanical loading accelerates **muscle atrophy** and **bone resorption**, amplifying nutritional demands for protein and calcium
 - Appetite suppression is common, partly due to **fluid shifts**, a phenomenon also seen in underwater training analogs
 
-### Energy Expenditure
+#### Energy Expenditure
 
 - Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by **400800 kcal/day**, especially during EVA prep
 - Planetary surface operations (Moon/Mars) significantly increase caloric expenditure due to suit mass and reduced-but-nonzero gravity
 
-### Cognitive and Immune Function
+#### Cognitive and Immune Function
 
 Chronic deficits degrade reaction time, stress tolerance, and immune resistancecritical for long-duration missions.
 
-### Hydration
+#### Hydration
 
 Dehydration exacerbates orthostatic intolerance, kidney stone risk, and thermoregulation challenges during EVA.
 
-### Biosphere 2 as an Analog
+#### Biosphere 2 as an Analog
 
 Long-term calorie deficit produced **improved metabolic markers** but also measurable **loss of lean mass**requiring careful management in space analogs and missions.
 
-## Monitoring Strategy
+### Monitoring Strategy
 
 Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picturecombining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.
 
-### Daily Macronutrient Logging
+#### Daily Macronutrient Logging
 
 Recorded via SpaceNutritionIntake. Includes caloric estimation error margins.
 
-### Device-Assisted Measurement
+#### Device-Assisted Measurement
 
 - Smart utensils/sensors (mass tracking)
 - Rehydration water meters
 - Meal scanners for barcodes/QR tags (common on ISS inventory)
 
-### Physiologic Observations
+#### Physiologic Observations
 
 - Weight, circumferences
 - Bone turnover markers (CTX, P1NP)
 - Resting Metabolic Rate (portable indirect calorimetry)
 - Hydration biomarkers: urine osmolality, Naz/Kz balance
 
-### Inventory Telemetry
+#### Inventory Telemetry
 
 Habitat systems continuously track **remaining consumables**, mirroring ECLSS environmental data integration in radiation tracking.
 
-### Risk Threshold Alerts
+#### Risk Threshold Alerts
 
 - Greater than 600 kcal/day deficit for 3 consecutive days
 - Less than 1.2 g/kg protein
@@ -104,96 +104,96 @@ Habitat systems continuously track **remaining consumables**, mirroring ECLSS en
 
 Alerts feed mission control decision algorithms.
 
-## Data Model Architecture
+### Data Model Architecture
 
-### Core FHIR Resources
+#### Core FHIR Resources
 
-- **NutritionIntake** ’ SpaceNutritionIntake
-- **NutritionProduct** ’ SpaceNutritionProduct
-- **Observation** ’ CalorieDeficitAssessment, HydrationStatusObservation
-- **InventoryItem** ’ SpaceNutritionInventoryItem
-- **DiagnosticReport** ’ MetabolicRiskSummary
+- **NutritionIntake** ï¿½ SpaceNutritionIntake
+- **NutritionProduct** ï¿½ SpaceNutritionProduct
+- **Observation** ï¿½ CalorieDeficitAssessment, HydrationStatusObservation
+- **InventoryItem** ï¿½ SpaceNutritionInventoryItem
+- **DiagnosticReport** ï¿½ MetabolicRiskSummary
 
-### Extensions
+#### Extensions
 
 - **missionContext** (consistent with radiation and NBL modules)
 - **energyExpenditure** (kcal/day)
 - **hydrationDeficit** (L/day)
 - **inventoryRiskFlag** (critical, caution, nominal)
 
-## Use Cases
+### Use Cases
 
 Modeled after the 6-category structure of radiation tracking.
 
-### 1. Pre-Flight Nutritional Baseline Assessment
+#### 1. Pre-Flight Nutritional Baseline Assessment
 
 RMR measurement, body composition, micronutrient labs, dietary pattern history.
 
-### 2. Mission Menu Planning and Shelf-Life Optimization
+#### 2. Mission Menu Planning and Shelf-Life Optimization
 
 Match caloric requirements to storage mass limits; adjust based on mission length and resupply cadence.
 
-### 3. Real-Time Intake Monitoring and Calorie Deficit Alerts
+#### 3. Real-Time Intake Monitoring and Calorie Deficit Alerts
 
 Automated detection of chronic underfeeding; feedback to training regimens and EVA planning.
 
-### 4. Post-Mission Metabolic Assessment
+#### 4. Post-Mission Metabolic Assessment
 
 Bone markers, endocrine recovery, lean mass changes, comparison to analog missions (NEEMO, NBL).
 
-### 5. Career Nutrition Profile Management
+#### 5. Career Nutrition Profile Management
 
 Trends across multiple missions; risk accumulation for osteoporosis, metabolic disease.
 
-### 6. Research and Epidemiology
+#### 6. Research and Epidemiology
 
 Study effects of long-term calorie deficit, nutrient timing, circadian misalignment, and analog environments such as Biosphere 2.
 
-## Enhanced Data Collection
+### Enhanced Data Collection
 
 Advanced parameters enable deeper physiologic monitoring and risk assessment:
 
-### Biochemical Tracking
+#### Biochemical Tracking
 
 - **Amino acid profile tracking** for muscle preservation
 - **Omega-3 index** for inflammation control
 - **Glycemic variability** (CGM patch)
 
-### Environmental Integration
+#### Environmental Integration
 
 - **Water reclamation telemetry** integrated with habitat ECLSS data
 - **Shelf-life decay curves** for food exposed to radiation or partial gravity
 
-### Organ-Specific Nutritional Considerations
+#### Organ-Specific Nutritional Considerations
 
-- **Bone metabolism**: Ca²z, PTH, vitamin D, collagen breakdown markers
+- **Bone metabolism**: Caï¿½z, PTH, vitamin D, collagen breakdown markers
 - **Ocular health**: Vitamin A tracking for risk of SANS analogs
 - **Cognitive load**: Omega-3, B12, folate sufficiency
 
-## Integration with Existing Systems
+### Integration with Existing Systems
 
-### Environmental Control and Life Support Systems (ECLSS)
+#### Environmental Control and Life Support Systems (ECLSS)
 
 - Hydration data integrates with water recycling systems (parallel to radiation area monitors)
 - Food warmers, freezers, and rehydration stations report inventory and thermal stability
 
-### Mission Control Systems
+#### Mission Control Systems
 
 - Deficit warnings influence EVA scheduling
 - Automated menus adjust to resupply shortages
 - Predictive algorithms forecast protein/water depletion
 
-### Longitudinal Study of Astronaut Health
+#### Longitudinal Study of Astronaut Health
 
 - Nutritional intake inputs population-level studies, similar to LSAH radiation datasets
 
-### Space Logistics and Supply Chain Systems
+#### Space Logistics and Supply Chain Systems
 
 - FHIR InventoryItem records synchronize with manifest systems for lunar/Mars surface caches
 
-## Implementation Examples
+### Implementation Examples
 
-### Example 1: SpaceNutritionIntake
+#### Example 1: SpaceNutritionIntake
 
 ```json
 {
@@ -237,7 +237,7 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
 }
 ```
 
-### Example 2: CalorieDeficitAssessment
+#### Example 2: CalorieDeficitAssessment
 
 ```json
 {
@@ -282,7 +282,7 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
 }
 ```
 
-## Regulatory and Standards Alignment
+### Regulatory and Standards Alignment
 
 Although nutritional regulation in space is not governed by the same frameworks as radiation exposure, several terrestrial standards apply:
 
@@ -292,24 +292,24 @@ Although nutritional regulation in space is not governed by the same frameworks 
 - **FDA Nutritional Labeling Standards**: Applied to mission foods and supplements
 - **Human Research Program Nutritional Biochemistry Requirements**: NASA metabolic and biochemical surveillance protocols
 
-## Future Directions
+### Future Directions
 
-### Adaptive Menu Systems
+#### Adaptive Menu Systems
 
 AI-driven adjustments to inventory, crew preference, and metabolic needs.
 
-### Next-Generation Food Production
+#### Next-Generation Food Production
 
 In-situ agriculture on lunar/Martian surfaces; hydroponics and algal bioreactors.
 
-### Personalized Nutrition
+#### Personalized Nutrition
 
 Genotype-informed macronutrient ratios, microbiome analysis, and precision supplementation.
 
-### Smart Packaging
+#### Smart Packaging
 
 Embedded RFID, ripeness sensors, radiation-induced degradation tracking.
 
-### Behavioral Nudging
+#### Behavioral Nudging
 
 Interfaces that promote adequate intake during appetite suppression phases.

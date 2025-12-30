@@ -1,4 +1,4 @@
-# EVA Number - v0.5.0
+# EVA Number - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:EVANumber |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:EVANumber |
 
 Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-eva-number.csv), [Ex
   "resourceType" : "StructureDefinition",
   "id" : "eva-number",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "EVANumber",
   "title" : "EVA Number",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

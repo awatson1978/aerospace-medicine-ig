@@ -1,6 +1,6 @@
-# Astronaut Medical Screening and Flight Readiness Certification
+## Astronaut Medical Screening and Flight Readiness Certification
 
-## Introduction
+### Introduction
 
 Astronauts and spaceflight participants must meet rigorous health criteria to ensure they can safely endure the stresses of space travel. Medical screening for space missions is designed to identify any conditions that could cause an in‑flight medical emergency or otherwise compromise crew safety.
 
@@ -8,9 +8,9 @@ Government space agencies (NASA, ESA, etc.) impose strict medical standards on c
 
 This report compares U.S. and international medical screening standards for astronauts versus tourists, discusses the FAA’s standard airman medical form (FAA Form 8500-8) in the space context, and explores current practices by commercial providers (SpaceX, Blue Origin, Virgin Galactic). Finally, it outlines how these requirements can be modeled in a FHIR (HL7 Fast Healthcare Interoperability Resources) Questionnaire, including key data fields and standardized coding (e.g. LOINC, SNOMED CT) to support implementation of a digital flight readiness assessment.
 
-## Government Astronaut Medical Standards
+### Government Astronaut Medical Standards
 
-### NASA (United States)
+#### NASA (United States)
 
 NASA maintains rigorous medical certification standards for its astronaut corps. Basic requirements include:
 
@@ -28,7 +28,7 @@ Additional evaluations include:
 
 Certain conditions (e.g. kidney stones, arrhythmias) may disqualify candidates. Astronauts are re-certified annually.
 
-### International and ISS Standards
+#### International and ISS Standards
 
 Agencies like ESA require a Class 2 (private pilot) medical certificate and have age caps (e.g., 50 years for ESA applicants). ISS-bound astronauts undergo common standards, certified by a Multilateral Space Medicine Board. Required evaluations include:
 
@@ -36,19 +36,19 @@ Agencies like ESA require a Class 2 (private pilot) medical certificate and have
 - Vision/auditory/psychiatric evaluations
 - Extensive lab and cardiopulmonary tests:contentReference[oaicite:1]{index=1}
 
-## Commercial Spaceflight Participant Medical Screening
+### Commercial Spaceflight Participant Medical Screening
 
-### Regulatory Context
+#### Regulatory Context
 
 As of 2025, FAA does not enforce formal health rules for space tourists due to a Congressional moratorium lasting until at least 2028. Each company sets its own criteria. FAA’s 2006 guidance suggests a risk-based approach depending on flight profile:contentReference[oaicite:2]{index=2}.
 
-#### Suborbital Flights (≤3 Gs)
+##### Suborbital Flights (≤3 Gs)
 
 - Basic health questionnaire
 - No physical or lab tests for healthy individuals
 - Physicians may recommend further screening based on responses
 
-#### Orbital or High-G Flights (>3 Gs)
+##### Orbital or High-G Flights (>3 Gs)
 
 - Comprehensive medical history and physical exam
 - Lab tests (EKG, blood chemistry, chest X-ray, etc.)
@@ -56,9 +56,9 @@ As of 2025, FAA does not enforce formal health rules for space tourists due to a
 
 NASA’s OCHMO-STD-100.1A (2022) adds psychosocial history, lifestyle review, infectious disease screening, imaging, cardiac and psychological assessments:contentReference[oaicite:3]{index=3}.
 
-### Commercial Provider Practices
+#### Commercial Provider Practices
 
-#### SpaceX
+##### SpaceX
 
 Orbital missions (e.g., Inspiration4, Ax-1) follow NASA/ISS standards, including:
 
@@ -66,7 +66,7 @@ Orbital missions (e.g., Inspiration4, Ax-1) follow NASA/ISS standards, including
 - Medical clearance by aerospace medicine professionals
 - Participants may include individuals with controlled medical conditions:contentReference[oaicite:4]{index=4}
 
-#### Blue Origin
+##### Blue Origin
 
 Suborbital hops (New Shepard) require:
 
@@ -76,7 +76,7 @@ Suborbital hops (New Shepard) require:
 
 No formal medical exam unless indicated. Has flown passengers in their 70s–80s:contentReference[oaicite:5]{index=5}.
 
-#### Virgin Galactic
+##### Virgin Galactic
 
 Also suborbital. Requirements include:
 
@@ -85,11 +85,11 @@ Also suborbital. Requirements include:
 - Light screening unless red flags arise
 - Assumes standard conditions (e.g., well-controlled hypertension) are acceptable:contentReference[oaicite:6]{index=6}
 
-#### Other Providers
+##### Other Providers
 
 Companies like Axiom Space adhere to NASA/ISS guidelines. Boeing/SpaceX ISS missions follow NASA screening. Future orbital flights may blend these models. Aerospace Medical Association is developing voluntary standards:contentReference[oaicite:7]{index=7}.
 
-## FAA Form 8500-8 and Spaceflight Readiness
+### FAA Form 8500-8 and Spaceflight Readiness
 
 FAA Form 8500-8 is used for aviation medical certification. Key features:
 
@@ -105,21 +105,21 @@ Spaceflight-specific modifications may include:
 
 The structure offers a model for FHIR-based spaceflight medical forms:contentReference[oaicite:8]{index=8}.
 
-## FHIR-Based Medical Questionnaire Design
+### FHIR-Based Medical Questionnaire Design
 
 Key sections include:
 
-### 1. Applicant Demographics
+#### 1. Applicant Demographics
 
 - Name, DOB, Sex, Contact, Citizenship
 - Use LOINC (e.g. 77606-2, 54121-8)
 
-### 2. Flight/Role Details
+#### 2. Flight/Role Details
 
 - Mission type (Suborbital/Orbital), Role, Duration
 - Use SNOMED CT concepts
 
-### 3. Medical History
+#### 3. Medical History
 
 Each condition as a yes/no item:
 
@@ -135,36 +135,36 @@ Each condition as a yes/no item:
 - Surgeries/hospitalizations
 - Recent medical care:contentReference[oaicite:9]{index=9}
 
-### 4. Family History (Optional)
+#### 4. Family History (Optional)
 
-### 5. Current Medications and Allergies
+#### 5. Current Medications and Allergies
 
 - Use LOINC 89261-2, 81629-1
 
-### 6. Physical Examination
+#### 6. Physical Examination
 
 - Vital signs (LOINC: 8302-2, 29463-7, etc.)
 - System-specific assessments (e.g., vision, color, hearing, murmur, etc.)
 
-### 7. Labs and Imaging
+#### 7. Labs and Imaging
 
 - CBC, metabolic panel, glucose, EKG (LOINC 8684-8), X-ray (30750-2)
 - Stress tests (e.g., LOINC 82287-9)
 
-### 8. Fitness Tests
+#### 8. Fitness Tests
 
 - Stair climb, seat fit checks
 
-### 9. Psychological Evaluation
+#### 9. Psychological Evaluation
 
 - Checklist or embedded screeners (PHQ-9, GAD-7)
 
-### 10. Disposition and Certification
+#### 10. Disposition and Certification
 
 - “Flight Ready” status
 - Physician’s name, signature, date
 
-## FHIR Implementation Notes
+### FHIR Implementation Notes
 
 - Use `LOINC` for labs, survey items
 - Use `SNOMED CT` for conditions
@@ -172,7 +172,7 @@ Each condition as a yes/no item:
 - Use `QuestionnaireResponse` for structured data capture
 - Map responses to `Observation`, `Condition`, and `MedicationStatement` resources
 
-## Conclusion
+### Conclusion
 
 Medical screening for spaceflight builds on decades of aviation and aerospace medicine. Government astronauts follow highly rigorous standards, while commercial passengers undergo lighter, but structured, assessments. FAA Form 8500-8 offers a strong baseline for screening.
 
@@ -180,7 +180,7 @@ Using FHIR with standard vocabularies enables consistent, interoperable data cap
 
 ---
 
-## Sources
+### Sources
 
 - [FAA Guidance for Medical Screening of Commercial Aerospace Passengers](https://www.faa.gov/media/72446)
 - [NASA OCHMO-STD-100.1A Medical Standards](https://www.nasa.gov/wp-content/uploads/2023/04/ochmo-std-100.1a.pdf)

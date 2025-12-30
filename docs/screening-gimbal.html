@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Gimbal Training -  v0.5.0</title>
+    <title>Gimbal Training -  v0.5.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.1 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
@@ -117,37 +149,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="missions-artemis.html">Artemis</a>
-      </li>
-      <li>
-        <a href="missions-marsdirect.html">Mars Direct</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
-      </li>
-      <li>
-        <a href="screening-astronaut.html">Astronaut Training</a>
-      </li>
-      <li>
-        <a href="screening-gimbal.html">Gimbal Training</a>
-      </li>
-      <li>
-        <a href="screening-analog.html">Analog Missions</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -187,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Gimbal Training</h2>
   
 
@@ -209,12 +212,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
       <li><a href="#g-shock-centrifugal-trainer" id="markdown-toc-g-shock-centrifugal-trainer">G-SHOCK Centrifugal Trainer</a></li>
       <li><a href="#medical-screening-requirements" id="markdown-toc-medical-screening-requirements">Medical Screening Requirements</a></li>
-      <li><a href="#implementation-in-aerospace-medicine-practice" id="markdown-toc-implementation-in-aerospace-medicine-practice">Implementation in Aerospace Medicine Practice</a>        <ul>
-          <li><a href="#pre-training-assessment" id="markdown-toc-pre-training-assessment">Pre-Training Assessment</a></li>
-          <li><a href="#physiological-monitoring-during-training" id="markdown-toc-physiological-monitoring-during-training">Physiological Monitoring During Training</a></li>
-          <li><a href="#post-training-evaluation" id="markdown-toc-post-training-evaluation">Post-Training Evaluation</a></li>
-        </ul>
-      </li>
+      <li><a href="#implementation-in-aerospace-medicine-practice" id="markdown-toc-implementation-in-aerospace-medicine-practice">Implementation in Aerospace Medicine Practice</a></li>
       <li><a href="#fhir-integration" id="markdown-toc-fhir-integration">FHIR Integration</a></li>
       <li><a href="#references" id="markdown-toc-references">References</a></li>
       <li><a href="#related-resources" id="markdown-toc-related-resources">Related Resources</a></li>
@@ -223,17 +221,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h1 id="multi-axis-gimbal-simulator">Multi-Axis Gimbal Simulator</h1>
+<h2 id="multi-axis-gimbal-simulator">Multi-Axis Gimbal Simulator</h2>
 
-<h2 id="introduction">Introduction</h2>
+<h3 id="introduction">Introduction</h3>
 
 <p>Multi-axis gimbal training is a critical component of astronaut and space tourist preparation for spaceflight. This page provides guidance on the implementation of multi-axis gimbal training as part of the aerospace medicine practice, including screening requirements, medical monitoring protocols, and integration with FHIR-based health records.</p>
 
-<h2 id="g-shock-centrifugal-trainer">G-SHOCK Centrifugal Trainer</h2>
+<h3 id="g-shock-centrifugal-trainer">G-SHOCK Centrifugal Trainer</h3>
 
 <p>The G-SHOCK Centrifugal Trainer is designed to prepare astronauts and pilots for the disorienting effects of multi-axis rotation and G-forces experienced during spaceflight. The simulator provides controlled exposure to varying degrees of rotation across multiple axes simultaneously, challenging the vestibular system and developing the trainee's ability to maintain spatial awareness during complex maneuvers.</p>
 
-<h2 id="medical-screening-requirements">Medical Screening Requirements</h2>
+<h3 id="medical-screening-requirements">Medical Screening Requirements</h3>
 
 <p>Before participating in G-SHOCK training, all candidates must undergo a comprehensive medical screening to ensure safety. The following conditions are contraindications for multi-axis gimbal training:</p>
 
@@ -248,9 +246,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Weight limit: less than 250lbs (113.3kg)</li>
 </ol>
 
-<h2 id="implementation-in-aerospace-medicine-practice">Implementation in Aerospace Medicine Practice</h2>
+<h3 id="implementation-in-aerospace-medicine-practice">Implementation in Aerospace Medicine Practice</h3>
 
-<h3 id="pre-training-assessment">Pre-Training Assessment</h3>
+<h4 id="pre-training-assessment">Pre-Training Assessment</h4>
 
 <p>Prior to scheduling G-SHOCK training, aerospace physicians should:</p>
 
@@ -261,7 +259,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Document clearance in the trainee's electronic health record</li>
 </ol>
 
-<h3 id="physiological-monitoring-during-training">Physiological Monitoring During Training</h3>
+<h4 id="physiological-monitoring-during-training">Physiological Monitoring During Training</h4>
 
 <p>During G-SHOCK training sessions, the following physiological parameters should be monitored:</p>
 
@@ -272,7 +270,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Subjective symptoms (nausea, disorientation, visual disturbances)</li>
 </ul>
 
-<h3 id="post-training-evaluation">Post-Training Evaluation</h3>
+<h4 id="post-training-evaluation">Post-Training Evaluation</h4>
 
 <p>After each G-SHOCK training session:</p>
 
@@ -282,7 +280,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Update training progression plan based on performance and tolerance</li>
 </ol>
 
-<h2 id="fhir-integration">FHIR Integration</h2>
+<h3 id="fhir-integration">FHIR Integration</h3>
 
 <p>The G-SHOCK training program integrates with FHIR-based health records through:</p>
 
@@ -293,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>CarePlan</strong>: Personalized training progression based on adaptation and performance</li>
 </ol>
 
-<h2 id="references">References</h2>
+<h3 id="references">References</h3>
 
 <ol>
   <li>NASA Astronaut Training Manual: High-G and Spatial Disorientation Training</li>
@@ -301,12 +299,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>International Space Station Medical Operations Requirements Document</li>
 </ol>
 
-<h2 id="related-resources">Related Resources</h2>
+<h3 id="related-resources">Related Resources</h3>
 
 <ul>
   <li><a href="Questionnaire-GShockEligibility.html">G-SHOCK Eligibility Questionnaire</a></li>
-  <li><a name="l576">​</a><a href="Procedure-VestibularAdaptation.html">Vestibular Adaptation Protocol</a></li>
-  <li><a name="l580">​</a><a href="MedicationRequest-MotionSickness.html">Space Motion Sickness Prevention</a></li>
+  <li><a name="l566">​</a><a href="Procedure-VestibularAdaptation.html">Vestibular Adaptation Protocol</a></li>
+  <li><a name="l570">​</a><a href="MedicationRequest-MotionSickness.html">Space Motion Sickness Prevention</a></li>
 </ul>
 
 
@@ -327,7 +325,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 13:16-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

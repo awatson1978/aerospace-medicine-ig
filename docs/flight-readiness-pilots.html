@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>EHR Use for Pilot Certification -  v0.5.0</title>
+    <title>EHR Use for Pilot Certification -  v0.5.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.1 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
@@ -117,37 +149,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="missions-artemis.html">Artemis</a>
-      </li>
-      <li>
-        <a href="missions-marsdirect.html">Mars Direct</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
-      </li>
-      <li>
-        <a href="screening-astronaut.html">Astronaut Training</a>
-      </li>
-      <li>
-        <a href="screening-gimbal.html">Gimbal Training</a>
-      </li>
-      <li>
-        <a href="screening-analog.html">Analog Missions</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -187,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>EHR Use for Pilot Certification</h2>
   
 
@@ -207,17 +210,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
   <li><a href="#current-process" id="markdown-toc-current-process">Current Process</a></li>
-  <li><a href="#ehr-integration-approach" id="markdown-toc-ehr-integration-approach">EHR Integration Approach</a>    <ul>
-      <li><a href="#technical-feasibility" id="markdown-toc-technical-feasibility">Technical Feasibility</a></li>
-      <li><a href="#implementation-use-cases" id="markdown-toc-implementation-use-cases">Implementation Use Cases</a></li>
-      <li><a href="#benefits-for-flight-readiness-assessment" id="markdown-toc-benefits-for-flight-readiness-assessment">Benefits for Flight Readiness Assessment</a></li>
-    </ul>
-  </li>
-  <li><a href="#implementation-considerations" id="markdown-toc-implementation-considerations">Implementation Considerations</a>    <ul>
-      <li><a href="#technical-considerations" id="markdown-toc-technical-considerations">Technical Considerations</a></li>
-      <li><a href="#policy-and-legal-considerations" id="markdown-toc-policy-and-legal-considerations">Policy and Legal Considerations</a></li>
-    </ul>
-  </li>
+  <li><a href="#ehr-integration-approach" id="markdown-toc-ehr-integration-approach">EHR Integration Approach</a></li>
+  <li><a href="#implementation-considerations" id="markdown-toc-implementation-considerations">Implementation Considerations</a></li>
   <li><a href="#future-implementation-roadmap" id="markdown-toc-future-implementation-roadmap">Future Implementation Roadmap</a></li>
   <li><a href="#faa-specific-value-sets" id="markdown-toc-faa-specific-value-sets">FAA-Specific Value Sets</a></li>
   <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
@@ -225,13 +219,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 
-<h2 id="overview">Overview</h2>
+<h3 id="overview">Overview</h3>
 
 <p>The Office of Aerospace Medicine (OAM) plays a critical role in aviation safety by establishing medical standards for flight fitness and issuing medical certificates to pilots. Integration of Electronic Health Records (EHR) with the aeromedical certification process presents an opportunity to enhance safety, improve efficiency, and reduce administrative burden.</p>
 
 <p>This guide describes the technical feasibility and implementation considerations for using EHR data to support pilot medical certification, with particular focus on the Form 8500-8 application process.</p>
 
-<h2 id="current-process">Current Process</h2>
+<h3 id="current-process">Current Process</h3>
 
 <p>The FAA uses a network of Aviation Medical Examiners (AMEs) who administer pilot examinations at specified intervals. The MedXPress digital platform facilitates the online submission of Form 8500-8 for medical certification. This form collects comprehensive medical history and examination findings to determine pilot fitness to fly.</p>
 
@@ -243,11 +237,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Delays in processing special issuance authorizations</li>
 </ul>
 
-<h2 id="ehr-integration-approach">EHR Integration Approach</h2>
+<h3 id="ehr-integration-approach">EHR Integration Approach</h3>
 
 <p>With new federal regulations such as the 21st Century Cures Act, Medicare Access and CHIP Reauthorization Act of 2015 (MACRA), and Trusted Exchange Framework and Common Agreement (TEFCA), the FAA can now leverage standardized health data to support the certification process.</p>
 
-<h3 id="technical-feasibility">Technical Feasibility</h3>
+<h4 id="technical-feasibility">Technical Feasibility</h4>
 
 <p>Research has demonstrated that all medically relevant fields in Form 8500-8 can be expressed and transmitted via Fast Healthcare Interoperability Resources (FHIR) APIs. Key findings include:</p>
 
@@ -258,7 +252,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>The FHIR standard fully supports all data elements required for certification</li>
 </ul>
 
-<h3 id="implementation-use-cases">Implementation Use Cases</h3>
+<h4 id="implementation-use-cases">Implementation Use Cases</h4>
 
 <p>Several workflows have been identified for EHR integration:</p>
 
@@ -268,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Continuous Monitoring</strong> - For special issuance cases, ongoing monitoring of specific health parameters through EHR data</li>
 </ol>
 
-<h3 id="benefits-for-flight-readiness-assessment">Benefits for Flight Readiness Assessment</h3>
+<h4 id="benefits-for-flight-readiness-assessment">Benefits for Flight Readiness Assessment</h4>
 
 <p>EHR integration provides several advantages for assessing pilot flight readiness:</p>
 
@@ -280,9 +274,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Safety Assurance</strong>: Improved detection of potentially disqualifying conditions</li>
 </ul>
 
-<h2 id="implementation-considerations">Implementation Considerations</h2>
+<h3 id="implementation-considerations">Implementation Considerations</h3>
 
-<h3 id="technical-considerations">Technical Considerations</h3>
+<h4 id="technical-considerations">Technical Considerations</h4>
 
 <ul>
   <li><strong>Data Location</strong>: Identifying where specific health data resides across multiple providers</li>
@@ -291,7 +285,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Security and Trust Networks</strong>: Implementing NIST 800-171 compliant servers, OAuth 2.0, and X.509 security certificates</li>
 </ul>
 
-<h3 id="policy-and-legal-considerations">Policy and Legal Considerations</h3>
+<h4 id="policy-and-legal-considerations">Policy and Legal Considerations</h4>
 
 <ul>
   <li><strong>Privacy Act of 1974</strong>: Governs collection and handling of personally identifiable information</li>
@@ -300,7 +294,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>TEFCA</strong>: Establishes nationwide framework for health information exchange</li>
 </ul>
 
-<h2 id="future-implementation-roadmap">Future Implementation Roadmap</h2>
+<h3 id="future-implementation-roadmap">Future Implementation Roadmap</h3>
 
 <p>A phased approach is recommended for implementing EHR integration:</p>
 
@@ -312,7 +306,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Incentivize Adoption</strong>: Offer faster processing times for pilots who provide EHR data</li>
 </ol>
 
-<h2 id="faa-specific-value-sets">FAA-Specific Value Sets</h2>
+<h3 id="faa-specific-value-sets">FAA-Specific Value Sets</h3>
 
 <p>To facilitate implementation, standardized value sets have been developed for:</p>
 
@@ -326,7 +320,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>These value sets, coded in FHIR-compatible terminologies, enable consistent interpretation of medical data across different EHR systems and support automated validation of flight readiness requirements.</p>
 
-<h2 id="conclusion">Conclusion</h2>
+<h3 id="conclusion">Conclusion</h3>
 
 <p>EHR integration with the pilot certification process is technically feasible and offers significant benefits for safety, efficiency, and administrative burden reduction. By leveraging standardized health data exchange protocols, the FAA can streamline the Form 8500-8 process while improving the accuracy and completeness of medical information used for certification decisions.</p>
 
@@ -350,7 +344,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 13:16-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

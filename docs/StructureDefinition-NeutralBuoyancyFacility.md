@@ -1,4 +1,4 @@
-# Neutral Buoyancy Facility - v0.5.0
+# Neutral Buoyancy Facility - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:NeutralBuoyancyFacility |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:NeutralBuoyancyFacility |
 
  
 Facility for underwater astronaut training 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-NeutralBuoyancyFacil
   "resourceType" : "StructureDefinition",
   "id" : "NeutralBuoyancyFacility",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "NeutralBuoyancyFacility",
   "title" : "Neutral Buoyancy Facility",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

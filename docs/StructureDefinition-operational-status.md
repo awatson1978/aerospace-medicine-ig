@@ -1,4 +1,4 @@
-# Operational Status - v0.5.0
+# Operational Status - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/operational-status | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:OperationalStatus |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/operational-status | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:OperationalStatus |
 
 Current operational status of the facility
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-operational-status.c
   "resourceType" : "StructureDefinition",
   "id" : "operational-status",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/operational-status",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "OperationalStatus",
   "title" : "Operational Status",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

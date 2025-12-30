@@ -1,4 +1,4 @@
-# Space Preventive Health - v0.5.0
+# Space Preventive Health - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:SpacePreventiveHealthCodeSystem |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:SpacePreventiveHealthCodeSystem |
 
  
 CodeSystem for space preventive health concepts not found in SNOMED CT 
@@ -27,12 +27,12 @@ CodeSystem for space preventive health concepts not found in SNOMED CT
   "resourceType" : "CodeSystem",
   "id" : "space-preventive-health-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-preventive-health-cs",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpacePreventiveHealthCodeSystem",
   "title" : "Space Preventive Health",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

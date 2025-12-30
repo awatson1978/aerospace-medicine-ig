@@ -1,4 +1,4 @@
-# Neutral Buoyancy Training Code System - v0.5.0
+# Neutral Buoyancy Training Code System - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:NeutralBuoyancyTrainingCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:NeutralBuoyancyTrainingCS |
 
  
 Specialized codes for neutral buoyancy training activities and assessments 
@@ -27,12 +27,12 @@ Specialized codes for neutral buoyancy training activities and assessments
   "resourceType" : "CodeSystem",
   "id" : "neutral-buoyancy-training-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "NeutralBuoyancyTrainingCS",
   "title" : "Neutral Buoyancy Training Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

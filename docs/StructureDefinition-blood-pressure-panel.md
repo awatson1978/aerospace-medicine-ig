@@ -1,4 +1,4 @@
-# Blood Pressure Panel - v0.5.0
+# Blood Pressure Panel - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/blood-pressure-panel | *Version*:0.5.0 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/blood-pressure-panel | *Version*:0.5.1 |
 | Active as of 2022-09-11 | *Computable Name*:BloodPressurePanel |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-blood-pressure-panel
   "resourceType" : "StructureDefinition",
   "id" : "blood-pressure-panel",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/blood-pressure-panel",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "BloodPressurePanel",
   "title" : "Blood Pressure Panel",
   "status" : "active",

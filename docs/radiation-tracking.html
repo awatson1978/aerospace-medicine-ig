@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Radiation Tracking -  v0.5.0</title>
+    <title>Radiation Tracking -  v0.5.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.1 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
@@ -117,37 +149,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="missions-artemis.html">Artemis</a>
-      </li>
-      <li>
-        <a href="missions-marsdirect.html">Mars Direct</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
-      </li>
-      <li>
-        <a href="screening-astronaut.html">Astronaut Training</a>
-      </li>
-      <li>
-        <a href="screening-gimbal.html">Gimbal Training</a>
-      </li>
-      <li>
-        <a href="screening-analog.html">Analog Missions</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -187,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Radiation Tracking</h2>
   
 
@@ -207,87 +210,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#radiation-exposure-tracking" id="markdown-toc-radiation-exposure-tracking">Radiation Exposure Tracking</a>    <ul>
       <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a>        <ul>
-          <li><a href="#core-profiles" id="markdown-toc-core-profiles">Core Profiles</a></li>
-          <li><a href="#data-architecture" id="markdown-toc-data-architecture">Data Architecture</a></li>
-          <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
-        </ul>
-      </li>
-      <li><a href="#space-radiation-environment" id="markdown-toc-space-radiation-environment">Space Radiation Environment</a>        <ul>
-          <li><a href="#galactic-cosmic-radiation-gcr" id="markdown-toc-galactic-cosmic-radiation-gcr">Galactic Cosmic Radiation (GCR)</a></li>
-          <li><a href="#solar-particle-events-spe" id="markdown-toc-solar-particle-events-spe">Solar Particle Events (SPE)</a></li>
-          <li><a href="#trapped-radiation" id="markdown-toc-trapped-radiation">Trapped Radiation</a></li>
-        </ul>
-      </li>
-      <li><a href="#radiation-monitoring-strategy" id="markdown-toc-radiation-monitoring-strategy">Radiation Monitoring Strategy</a>        <ul>
-          <li><a href="#personal-dosimetry-implementation" id="markdown-toc-personal-dosimetry-implementation">Personal Dosimetry Implementation</a></li>
-          <li><a href="#example-radiation-detector-configuration" id="markdown-toc-example-radiation-detector-configuration">Example Radiation Detector Configuration</a></li>
-          <li><a href="#dose-limits-and-guidelines" id="markdown-toc-dose-limits-and-guidelines">Dose Limits and Guidelines</a></li>
-        </ul>
-      </li>
-      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a>        <ul>
-          <li><a href="#core-resources-and-extensions" id="markdown-toc-core-resources-and-extensions">Core Resources and Extensions</a></li>
-          <li><a href="#example-radiation-exposure-measurement" id="markdown-toc-example-radiation-exposure-measurement">Example Radiation Exposure Measurement</a></li>
-        </ul>
-      </li>
-      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a>        <ul>
-          <li><a href="#1-pre-flight-baseline-assessment" id="markdown-toc-1-pre-flight-baseline-assessment">1. Pre-Flight Baseline Assessment</a></li>
-          <li><a href="#2-mission-planning-and-alara" id="markdown-toc-2-mission-planning-and-alara">2. Mission Planning and ALARA</a></li>
-          <li><a href="#3-real-time-mission-monitoring" id="markdown-toc-3-real-time-mission-monitoring">3. Real-Time Mission Monitoring</a></li>
-          <li><a href="#4-post-mission-assessment" id="markdown-toc-4-post-mission-assessment">4. Post-Mission Assessment</a></li>
-          <li><a href="#5-career-dose-management" id="markdown-toc-5-career-dose-management">5. Career Dose Management</a></li>
-          <li><a href="#6-research-and-epidemiology" id="markdown-toc-6-research-and-epidemiology">6. Research and Epidemiology</a></li>
-        </ul>
-      </li>
-      <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a>        <ul>
-          <li><a href="#organ-specific-dose-tracking" id="markdown-toc-organ-specific-dose-tracking">Organ-Specific Dose Tracking</a></li>
-          <li><a href="#advanced-dosimetry-parameters" id="markdown-toc-advanced-dosimetry-parameters">Advanced Dosimetry Parameters</a></li>
-          <li><a href="#mission-and-environmental-context" id="markdown-toc-mission-and-environmental-context">Mission and Environmental Context</a></li>
-        </ul>
-      </li>
-      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a>        <ul>
-          <li><a href="#environmental-control-and-life-support-systems-eclss" id="markdown-toc-environmental-control-and-life-support-systems-eclss">Environmental Control and Life Support Systems (ECLSS)</a></li>
-          <li><a href="#mission-control-systems" id="markdown-toc-mission-control-systems">Mission Control Systems</a></li>
-          <li><a href="#longitudinal-study-of-astronaut-health-lsah" id="markdown-toc-longitudinal-study-of-astronaut-health-lsah">Longitudinal Study of Astronaut Health (LSAH)</a></li>
-          <li><a href="#space-radiation-health-program" id="markdown-toc-space-radiation-health-program">Space Radiation Health Program</a></li>
-        </ul>
-      </li>
-      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a>        <ul>
-          <li><a href="#individual-dose-measurement-example" id="markdown-toc-individual-dose-measurement-example">Individual Dose Measurement Example</a></li>
-          <li><a href="#career-dose-summary-example" id="markdown-toc-career-dose-summary-example">Career Dose Summary Example</a></li>
-          <li><a href="#radiation-detection-equipment-example" id="markdown-toc-radiation-detection-equipment-example">Radiation Detection Equipment Example</a></li>
-          <li><a href="#mission-dose-summary-report" id="markdown-toc-mission-dose-summary-report">Mission Dose Summary Report</a></li>
-        </ul>
-      </li>
-      <li><a href="#regulatory-and-standards-compliance" id="markdown-toc-regulatory-and-standards-compliance">Regulatory and Standards Compliance</a>        <ul>
-          <li><a href="#nasa-standards" id="markdown-toc-nasa-standards">NASA Standards</a></li>
-          <li><a href="#international-standards" id="markdown-toc-international-standards">International Standards</a></li>
-          <li><a href="#regulatory-frameworks" id="markdown-toc-regulatory-frameworks">Regulatory Frameworks</a></li>
-        </ul>
-      </li>
-      <li><a href="#future-considerations" id="markdown-toc-future-considerations">Future Considerations</a>        <ul>
-          <li><a href="#extended-mission-durations" id="markdown-toc-extended-mission-durations">Extended Mission Durations</a></li>
-          <li><a href="#commercial-crew-programs" id="markdown-toc-commercial-crew-programs">Commercial Crew Programs</a></li>
-          <li><a href="#deep-space-missions" id="markdown-toc-deep-space-missions">Deep Space Missions</a></li>
-          <li><a href="#planetary-surface-operations" id="markdown-toc-planetary-surface-operations">Planetary Surface Operations</a></li>
-          <li><a href="#advanced-technologies" id="markdown-toc-advanced-technologies">Advanced Technologies</a></li>
-        </ul>
-      </li>
-      <li><a href="#references" id="markdown-toc-references">References</a>        <ul>
-          <li><a href="#nasa-standards-and-guidelines" id="markdown-toc-nasa-standards-and-guidelines">NASA Standards and Guidelines</a></li>
-          <li><a href="#international-standards-1" id="markdown-toc-international-standards-1">International Standards</a></li>
-          <li><a href="#federal-regulations" id="markdown-toc-federal-regulations">Federal Regulations</a></li>
-          <li><a href="#research-publications" id="markdown-toc-research-publications">Research Publications</a></li>
-        </ul>
-      </li>
+      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
+      <li><a href="#space-radiation-environment" id="markdown-toc-space-radiation-environment">Space Radiation Environment</a></li>
+      <li><a href="#radiation-monitoring-strategy" id="markdown-toc-radiation-monitoring-strategy">Radiation Monitoring Strategy</a></li>
+      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+      <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a></li>
+      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
+      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a></li>
+      <li><a href="#regulatory-and-standards-compliance" id="markdown-toc-regulatory-and-standards-compliance">Regulatory and Standards Compliance</a></li>
+      <li><a href="#future-considerations" id="markdown-toc-future-considerations">Future Considerations</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
     </ul>
   </li>
 </ul>
 
 </div>
-<h1 id="radiation-exposure-tracking">Radiation Exposure Tracking</h1>
+<h2 id="radiation-exposure-tracking">Radiation Exposure Tracking</h2>
 
-<h2 id="overview">Overview</h2>
+<h3 id="overview">Overview</h3>
 
 <p>When astronaut Scott Kelly returned to Earth after his historic 340-day mission aboard the International Space Station, one of the first questions researchers wanted to answer was: how much radiation had his body absorbed during his time in space? This seemingly simple question reveals the complex challenge at the heart of space medicine—tracking and managing radiation exposure in an environment where cosmic rays constantly bombard the human body with ionizing radiation levels hundreds of times higher than what we experience on Earth's surface.</p>
 
@@ -295,11 +236,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This implementation guide provides comprehensive FHIR profiles for radiation dosimetry tracking throughout an astronaut's career, from pre-flight baseline measurements through long-duration missions to post-flight monitoring.</p>
 
-<h2 id="fhir-implementation-architecture">FHIR Implementation Architecture</h2>
+<h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
 
 <p>The radiation tracking system is built on several core FHIR profiles that work together to provide comprehensive dose monitoring:</p>
 
-<h3 id="core-profiles">Core Profiles</h3>
+<h4 id="core-profiles">Core Profiles</h4>
 
 <table>
   <thead>
@@ -333,7 +274,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h3 id="data-architecture">Data Architecture</h3>
+<h4 id="data-architecture">Data Architecture</h4>
 
 <p>The radiation exposure data model captures multiple dimensions of dose information:</p>
 
@@ -345,7 +286,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Detection Method</strong>: Passive dosimeters, active monitors, area monitors</li>
 </ul>
 
-<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+<h4 id="standardized-terminologies">Standardized Terminologies</h4>
 
 <p>The implementation uses specialized code systems for space radiation medicine:</p>
 
@@ -356,13 +297,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong><a href="CodeSystem-aerospace-code-system-enhanced.html"><code class="language-plaintext highlighter-rouge">AerospaceCodeSystemEnhanced</code></a></strong>: Comprehensive aerospace medicine terminology</li>
 </ul>
 
-<h2 id="space-radiation-environment">Space Radiation Environment</h2>
+<h3 id="space-radiation-environment">Space Radiation Environment</h3>
 
 <p>Imagine leaving Earth's protective magnetic field and atmosphere behind—suddenly, you're exposed to a constant barrage of high-energy particles that have traveled across the galaxy for millions of years. This is the reality for astronauts venturing beyond low Earth orbit, where the very fabric of space itself becomes a health hazard. Unlike the predictable radiation exposures in hospitals or nuclear facilities, space radiation is dynamic, unpredictable, and fundamentally different from anything humans encounter on Earth.</p>
 
 <p>Space radiation presents unique challenges that differ fundamentally from terrestrial radiation exposure:</p>
 
-<h3 id="galactic-cosmic-radiation-gcr">Galactic Cosmic Radiation (GCR)</h3>
+<h4 id="galactic-cosmic-radiation-gcr">Galactic Cosmic Radiation (GCR)</h4>
 <ul>
   <li><strong>Source</strong>: High-energy particles from outside the solar system</li>
   <li><strong>Characteristics</strong>: Continuous, low dose rate, high linear energy transfer (LET)</li>
@@ -371,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>FHIR Coding</strong>: Uses <code class="language-plaintext highlighter-rouge">gcr-dose</code> from the enhanced aerospace code system</li>
 </ul>
 
-<h3 id="solar-particle-events-spe">Solar Particle Events (SPE)</h3>
+<h4 id="solar-particle-events-spe">Solar Particle Events (SPE)</h4>
 <ul>
   <li><strong>Source</strong>: Solar flares and coronal mass ejections</li>
   <li><strong>Characteristics</strong>: Episodic, high dose rate, predominantly protons</li>
@@ -380,7 +321,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>FHIR Coding</strong>: Uses <code class="language-plaintext highlighter-rouge">spe-dose</code> for tracking solar event exposures</li>
 </ul>
 
-<h3 id="trapped-radiation">Trapped Radiation</h3>
+<h4 id="trapped-radiation">Trapped Radiation</h4>
 <ul>
   <li><strong>Source</strong>: Charged particles trapped in Earth's magnetic field (Van Allen belts)</li>
   <li><strong>Characteristics</strong>: Predictable based on orbital parameters</li>
@@ -389,11 +330,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>FHIR Coding</strong>: Uses <code class="language-plaintext highlighter-rouge">trapped-dose</code> for Van Allen belt radiation</li>
 </ul>
 
-<h2 id="radiation-monitoring-strategy">Radiation Monitoring Strategy</h2>
+<h3 id="radiation-monitoring-strategy">Radiation Monitoring Strategy</h3>
 
 <p>Picture an astronaut's spacesuit as a sophisticated medical monitoring station—embedded within the fabric and equipment are multiple radiation detectors, each serving as a sentinel against an invisible threat. From passive dosimeters that silently accumulate dose information to active monitors that provide real-time alerts, these devices form a comprehensive network of protection. Mission Control watches these readings as closely as they monitor life support systems, because in space, radiation exposure management is literally a matter of life and death—both immediate survival and long-term health.</p>
 
-<h3 id="personal-dosimetry-implementation">Personal Dosimetry Implementation</h3>
+<h4 id="personal-dosimetry-implementation">Personal Dosimetry Implementation</h4>
 
 <p>All space travelers wear multiple types of radiation detectors documented using the <a href="StructureDefinition-radiation-detector.html"><code class="language-plaintext highlighter-rouge">RadiationDetector</code></a> profile:</p>
 
@@ -416,7 +357,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Environmental dosimetry</strong>: Habitat characterization</li>
 </ul>
 
-<h3 id="example-radiation-detector-configuration">Example Radiation Detector Configuration</h3>
+<h4 id="example-radiation-detector-configuration">Example Radiation Detector Configuration</h4>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Device"</span><span class="p">,</span><span class="w">
@@ -449,7 +390,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h3 id="dose-limits-and-guidelines">Dose Limits and Guidelines</h3>
+<h4 id="dose-limits-and-guidelines">Dose Limits and Guidelines</h4>
 
 <p>NASA maintains career dose limits based on the principle of limiting excess cancer mortality risk, tracked using the <a href="StructureDefinition-cumulative-radiation-dose.html"><code class="language-plaintext highlighter-rouge">CumulativeRadiationDose</code></a> profile:</p>
 
@@ -460,13 +401,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Organ-Specific Limits</strong>: Eye lens (1000 mSv career), skin (1500 mSv annual) - tracked using organ-specific dose components</li>
 </ul>
 
-<h2 id="data-model-architecture">Data Model Architecture</h2>
+<h3 id="data-model-architecture">Data Model Architecture</h3>
 
 <p>Behind every radiation measurement lies a complex story of risk management, career planning, and medical decision-making that spans decades. When NASA physicians review an astronaut's radiation exposure data, they're not just looking at numbers—they're piecing together a comprehensive narrative that includes mission contexts, equipment performance, environmental conditions, and individual health factors. This data becomes part of a lifelong medical record that influences everything from future mission assignments to retirement planning and long-term health surveillance.</p>
 
 <p>The radiation exposure tracking profiles extend the base FHIR resources to accommodate space-specific requirements:</p>
 
-<h3 id="core-resources-and-extensions">Core Resources and Extensions</h3>
+<h4 id="core-resources-and-extensions">Core Resources and Extensions</h4>
 
 <p><strong>Core FHIR Resources:</strong></p>
 <ul>
@@ -485,7 +426,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong><a href="StructureDefinition-radiation-countermeasures.html"><code class="language-plaintext highlighter-rouge">RadiationCountermeasures</code></a></strong>: Documents protective actions taken</li>
 </ul>
 
-<h3 id="example-radiation-exposure-measurement">Example Radiation Exposure Measurement</h3>
+<h4 id="example-radiation-exposure-measurement">Example Radiation Exposure Measurement</h4>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
@@ -561,11 +502,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<h2 id="use-cases">Use Cases</h2>
+<h3 id="use-cases">Use Cases</h3>
 
 <p>Consider the dramatic moment during Apollo 16 when a massive solar particle event erupted from the Sun, sending dangerous radiation racing toward the Moon. Had astronauts been conducting a lunar EVA at that moment, they could have received lethal doses within hours. This near-miss illustrates why radiation tracking isn't just about record-keeping—it's about enabling split-second decisions that can save lives. Modern space missions use sophisticated radiation monitoring systems to provide early warning, guide operational decisions, and ensure that every astronaut returns home safely within acceptable health risk parameters.</p>
 
-<h3 id="1-pre-flight-baseline-assessment">1. Pre-Flight Baseline Assessment</h3>
+<h4 id="1-pre-flight-baseline-assessment">1. Pre-Flight Baseline Assessment</h4>
 <p>Establish baseline radiation exposure from terrestrial sources using the <code class="language-plaintext highlighter-rouge">SpaceRadiationExposure</code> profile with baseline mission context. This includes:</p>
 <ul>
   <li>Medical procedure exposures (CT scans, X-rays)</li>
@@ -574,7 +515,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Previous space mission exposure</li>
 </ul>
 
-<h3 id="2-mission-planning-and-alara">2. Mission Planning and ALARA</h3>
+<h4 id="2-mission-planning-and-alara">2. Mission Planning and ALARA</h4>
 <p>Use predictive models and historical data captured in <code class="language-plaintext highlighter-rouge">SpaceRadiationSummary</code> reports to plan missions within dose limits using the As Low As Reasonably Achievable (ALARA) principle:</p>
 <ul>
   <li><strong>Mission Duration Optimization</strong>: Balance mission objectives with dose accumulation</li>
@@ -583,7 +524,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Activity Scheduling</strong>: Plan EVAs and surface operations during low-radiation periods</li>
 </ul>
 
-<h3 id="3-real-time-mission-monitoring">3. Real-Time Mission Monitoring</h3>
+<h4 id="3-real-time-mission-monitoring">3. Real-Time Mission Monitoring</h4>
 <p>Track cumulative dose during missions using <code class="language-plaintext highlighter-rouge">CumulativeRadiationDose</code> profiles and trigger alerts when approaching limits or during radiation storms:</p>
 <ul>
   <li><strong>Dose Rate Monitoring</strong>: Real-time exposure rate tracking</li>
@@ -592,7 +533,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Operational Decisions</strong>: EVA go/no-go based on radiation environment</li>
 </ul>
 
-<h3 id="4-post-mission-assessment">4. Post-Mission Assessment</h3>
+<h4 id="4-post-mission-assessment">4. Post-Mission Assessment</h4>
 <p>Comprehensive dose reconstruction and health risk assessment for long-term medical surveillance using <code class="language-plaintext highlighter-rouge">SpaceRadiationSummary</code> reports:</p>
 <ul>
   <li><strong>Dose Verification</strong>: Reconcile active and passive dosimeter readings</li>
@@ -601,7 +542,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Lessons Learned</strong>: Improve dose prediction models and countermeasures</li>
 </ul>
 
-<h3 id="5-career-dose-management">5. Career Dose Management</h3>
+<h4 id="5-career-dose-management">5. Career Dose Management</h4>
 <p>Longitudinal tracking of cumulative exposure using <code class="language-plaintext highlighter-rouge">CumulativeRadiationDose</code> profiles to inform future mission assignments and medical monitoring:</p>
 <ul>
   <li><strong>Career Planning</strong>: Optimize astronaut utilization across missions</li>
@@ -610,7 +551,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Family Planning</strong>: Consider reproductive health impacts</li>
 </ul>
 
-<h3 id="6-research-and-epidemiology">6. Research and Epidemiology</h3>
+<h4 id="6-research-and-epidemiology">6. Research and Epidemiology</h4>
 <p>Aggregate data for research on space radiation health effects and countermeasure effectiveness:</p>
 <ul>
   <li><strong>Dose-Response Studies</strong>: Correlate exposure with health outcomes</li>
@@ -619,11 +560,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Risk Model Validation</strong>: Improve radiation risk assessment models</li>
 </ul>
 
-<h2 id="enhanced-data-collection">Enhanced Data Collection</h2>
+<h3 id="enhanced-data-collection">Enhanced Data Collection</h3>
 
 <p>Every radiation measurement tells a story, but the most important stories are often in the details that traditional dosimetry might miss. When astronaut Karen Nyberg developed vision problems after her ISS mission, researchers wondered whether localized radiation exposure to her eyes might have contributed. This led to enhanced organ-specific dose tracking protocols that don't just measure total body dose, but carefully monitor radiation exposure to critical organs like the eye lens, bone marrow, and central nervous system. These detailed measurements help space medicine practitioners understand not just how much radiation astronauts receive, but where it goes and what it might do.</p>
 
-<h3 id="organ-specific-dose-tracking">Organ-Specific Dose Tracking</h3>
+<h4 id="organ-specific-dose-tracking">Organ-Specific Dose Tracking</h4>
 
 <p>The <a href="StructureDefinition-space-radiation-exposure.html"><code class="language-plaintext highlighter-rouge">SpaceRadiationExposure</code></a> profile includes components for organ-specific dose measurements using codes from the <a href="ValueSet-organ-dose-codes-vs-complete.html"><code class="language-plaintext highlighter-rouge">OrganDoseCodesVSComplete</code></a> value set:</p>
 
@@ -635,7 +576,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Reproductive Organ Dose</strong>: Family planning considerations</li>
 </ul>
 
-<h3 id="advanced-dosimetry-parameters">Advanced Dosimetry Parameters</h3>
+<h4 id="advanced-dosimetry-parameters">Advanced Dosimetry Parameters</h4>
 
 <p>The profiles capture sophisticated dosimetry data:</p>
 
@@ -646,7 +587,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Exposure Duration</strong>: Time-dependent dose accumulation</li>
 </ul>
 
-<h3 id="mission-and-environmental-context">Mission and Environmental Context</h3>
+<h4 id="mission-and-environmental-context">Mission and Environmental Context</h4>
 
 <p>Each radiation measurement includes contextual information:</p>
 
@@ -657,13 +598,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Activity Type</strong>: Routine operations, EVA, surface exploration</li>
 </ul>
 
-<h2 id="integration-with-existing-systems">Integration with Existing Systems</h2>
+<h3 id="integration-with-existing-systems">Integration with Existing Systems</h3>
 
 <p>Space radiation tracking doesn't exist in isolation—it's woven into the fabric of every space mission, from pre-launch planning to post-flight medical surveillance. When Mission Control makes the decision to delay an EVA due to solar activity, that decision flows from real-time radiation monitoring systems integrated with spacecraft environmental controls, flight rules databases, and crew health management systems. This interconnected approach ensures that radiation protection isn't an afterthought, but a fundamental consideration in every operational decision, creating a seamless safety net that spans Earth-based mission control, spacecraft systems, and long-term medical care.</p>
 
 <p>This radiation tracking system integrates with multiple aerospace medicine systems:</p>
 
-<h3 id="environmental-control-and-life-support-systems-eclss">Environmental Control and Life Support Systems (ECLSS)</h3>
+<h4 id="environmental-control-and-life-support-systems-eclss">Environmental Control and Life Support Systems (ECLSS)</h4>
 <p>Real-time environmental radiation data from spacecraft ECLSS feeds into the radiation tracking system through standardized interfaces, providing:</p>
 <ul>
   <li><strong>Area Dose Rates</strong>: Compartment-specific radiation levels</li>
@@ -671,7 +612,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Alert Integration</strong>: Automated notifications during radiation events</li>
 </ul>
 
-<h3 id="mission-control-systems">Mission Control Systems</h3>
+<h4 id="mission-control-systems">Mission Control Systems</h4>
 <p>Operational decision support during radiation events through integration with:</p>
 <ul>
   <li><strong>Flight Rules</strong>: Automated enforcement of radiation exposure limits</li>
@@ -679,7 +620,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Emergency Procedures</strong>: Storm shelter protocols and crew protection measures</li>
 </ul>
 
-<h3 id="longitudinal-study-of-astronaut-health-lsah">Longitudinal Study of Astronaut Health (LSAH)</h3>
+<h4 id="longitudinal-study-of-astronaut-health-lsah">Longitudinal Study of Astronaut Health (LSAH)</h4>
 <p>Long-term health surveillance through data sharing with epidemiological studies:</p>
 <ul>
   <li><strong>Health Outcomes</strong>: Correlation of radiation exposure with medical conditions</li>
@@ -687,7 +628,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Preventive Medicine</strong>: Personalized health monitoring protocols</li>
 </ul>
 
-<h3 id="space-radiation-health-program">Space Radiation Health Program</h3>
+<h4 id="space-radiation-health-program">Space Radiation Health Program</h4>
 <p>Research and risk assessment through integration with NASA's research programs:</p>
 <ul>
   <li><strong>Countermeasure Development</strong>: Assessment of radioprotective interventions</li>
@@ -695,13 +636,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Technology Development</strong>: Evaluation of new dosimetry and shielding technologies</li>
 </ul>
 
-<h2 id="implementation-examples">Implementation Examples</h2>
+<h3 id="implementation-examples">Implementation Examples</h3>
 
 <p>The true power of standardized radiation tracking becomes apparent when you see it in action across diverse scenarios—from routine ISS operations where radiation exposure is carefully monitored and managed within established limits, to emergency situations where real-time dose tracking enables critical decisions about crew safety. These implementation examples showcase how abstract data models translate into practical tools that protect astronaut health, whether documenting a routine measurement from an electronic personal dosimeter or generating comprehensive career dose summaries that guide mission planning and medical surveillance for decades to come.</p>
 
-<h3 id="individual-dose-measurement-example">Individual Dose Measurement Example</h3>
+<h4 id="individual-dose-measurement-example">Individual Dose Measurement Example</h4>
 
-<p><a name="l2412">​</a>See the <a href="Observation-space-radiation-exposure-example.html">SpaceRadiationExposure example</a> for a complete real-time dose measurement during an ISS expedition, including:</p>
+<p><a name="l2214">​</a>See the <a href="Observation-space-radiation-exposure-example.html">SpaceRadiationExposure example</a> for a complete real-time dose measurement during an ISS expedition, including:</p>
 <ul>
   <li>GCR exposure measurement</li>
   <li>Organ-specific dose components</li>
@@ -709,9 +650,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Detection equipment reference</li>
 </ul>
 
-<h3 id="career-dose-summary-example">Career Dose Summary Example</h3>
+<h4 id="career-dose-summary-example">Career Dose Summary Example</h4>
 
-<p><a name="l2436">​</a>The <a href="Observation-cumulative-radiation-dose-example.html">CumulativeRadiationDose example</a> demonstrates long-term dose tracking with:</p>
+<p><a name="l2238">​</a>The <a href="Observation-cumulative-radiation-dose-example.html">CumulativeRadiationDose example</a> demonstrates long-term dose tracking with:</p>
 <ul>
   <li>Career, mission, and time-period dose accumulations</li>
   <li>Risk assessment and compliance status</li>
@@ -719,9 +660,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Medical surveillance recommendations</li>
 </ul>
 
-<h3 id="radiation-detection-equipment-example">Radiation Detection Equipment Example</h3>
+<h4 id="radiation-detection-equipment-example">Radiation Detection Equipment Example</h4>
 
-<p><a name="l2460">​</a>The <a href="Device-radiation-detector-example.html">RadiationDetector example</a> shows comprehensive device documentation including:</p>
+<p><a name="l2262">​</a>The <a href="Device-radiation-detector-example.html">RadiationDetector example</a> shows comprehensive device documentation including:</p>
 <ul>
   <li>Detector specifications and capabilities</li>
   <li>Calibration data and accuracy metrics</li>
@@ -729,9 +670,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Maintenance and quality assurance records</li>
 </ul>
 
-<h3 id="mission-dose-summary-report">Mission Dose Summary Report</h3>
+<h4 id="mission-dose-summary-report">Mission Dose Summary Report</h4>
 
-<p><a name="l2484">​</a>The <a href="DiagnosticReport-space-radiation-summary-example.html">SpaceRadiationSummary example</a> provides a complete mission dose assessment with:</p>
+<p><a name="l2286">​</a>The <a href="DiagnosticReport-space-radiation-summary-example.html">SpaceRadiationSummary example</a> provides a complete mission dose assessment with:</p>
 <ul>
   <li>Comprehensive exposure analysis</li>
   <li>Risk assessment and recommendations</li>
@@ -739,40 +680,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Long-term health surveillance guidance</li>
 </ul>
 
-<h2 id="regulatory-and-standards-compliance">Regulatory and Standards Compliance</h2>
+<h3 id="regulatory-and-standards-compliance">Regulatory and Standards Compliance</h3>
 
 <p>Behind every radiation measurement and dose limit lies decades of scientific research, international collaboration, and hard-learned lessons from both space exploration and terrestrial radiation medicine. When NASA sets career dose limits for astronauts, those numbers represent the collective wisdom of radiation biologists, space medicine physicians, and international standards organizations working together to balance exploration goals with crew safety. These standards aren't just bureaucratic requirements—they're lifelines that ensure today's space explorers can pursue their missions while preserving their health for life after spaceflight.</p>
 
 <p>The implementation aligns with established radiation protection standards:</p>
 
-<h3 id="nasa-standards">NASA Standards</h3>
+<h4 id="nasa-standards">NASA Standards</h4>
 <ul>
   <li><strong>NASA-STD-3001</strong>: NASA Space Flight Human-System Standard for crew health</li>
   <li><strong>NASA Radiation Health Officer Requirements</strong>: Operational radiation safety protocols</li>
   <li><strong>NASA Space Radiation Health Program</strong>: Research and risk assessment guidelines</li>
 </ul>
 
-<h3 id="international-standards">International Standards</h3>
+<h4 id="international-standards">International Standards</h4>
 <ul>
   <li><strong>NCRP Report 98</strong>: Guidance on Radiation Received in Space Activities</li>
   <li><strong>ICRP Publications</strong>: International radiation protection recommendations</li>
   <li><strong>ANSI Standards</strong>: Personnel dosimetry performance criteria</li>
 </ul>
 
-<h3 id="regulatory-frameworks">Regulatory Frameworks</h3>
+<h4 id="regulatory-frameworks">Regulatory Frameworks</h4>
 <ul>
   <li><strong>21 CFR Part 1040</strong>: FDA performance standards for electronic products</li>
   <li><strong>10 CFR Part 20</strong>: NRC standards for protection against radiation</li>
   <li><strong>International Guidelines</strong>: ESA, Roscosmos, and other space agency standards</li>
 </ul>
 
-<h2 id="future-considerations">Future Considerations</h2>
+<h3 id="future-considerations">Future Considerations</h3>
 
 <p>As humanity prepares for missions to Mars and beyond, radiation protection faces unprecedented challenges that will reshape how we think about space medicine. A round-trip Mars mission could expose astronauts to radiation doses approaching current career limits, while deep space exploration will venture into radiation environments we've never directly experienced. The radiation tracking systems we develop today must evolve to support missions measured not in months but in years, where autonomous medical decision-making and advanced countermeasures will be essential for crew survival. These future considerations aren't just technical challenges—they represent the evolution of space medicine from Earth-supported operations to truly autonomous healthcare in the cosmos.</p>
 
 <p>As commercial spaceflight expands and missions extend to Mars and beyond, the radiation tracking system must evolve to accommodate:</p>
 
-<h3 id="extended-mission-durations">Extended Mission Durations</h3>
+<h4 id="extended-mission-durations">Extended Mission Durations</h4>
 <p>Multi-year missions requiring enhanced dose management:</p>
 <ul>
   <li><strong>Adaptive Dose Limits</strong>: Mission-specific dose budgets</li>
@@ -780,7 +721,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Real-Time Risk Assessment</strong>: Dynamic dose limit adjustments based on mission objectives</li>
 </ul>
 
-<h3 id="commercial-crew-programs">Commercial Crew Programs</h3>
+<h4 id="commercial-crew-programs">Commercial Crew Programs</h4>
 <p>Integration with private sector space operations:</p>
 <ul>
   <li><strong>Standardized Protocols</strong>: Common dose tracking across operators</li>
@@ -788,7 +729,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Data Sharing</strong>: Coordination between NASA and commercial partners</li>
 </ul>
 
-<h3 id="deep-space-missions">Deep Space Missions</h3>
+<h4 id="deep-space-missions">Deep Space Missions</h4>
 <p>Enhanced GCR exposure and communication delays:</p>
 <ul>
   <li><strong>Autonomous Systems</strong>: Self-managed dose tracking and response</li>
@@ -796,7 +737,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Medical Countermeasures</strong>: Pharmaceutical intervention capabilities</li>
 </ul>
 
-<h3 id="planetary-surface-operations">Planetary Surface Operations</h3>
+<h4 id="planetary-surface-operations">Planetary Surface Operations</h4>
 <p>Surface radiation environments on Moon and Mars:</p>
 <ul>
   <li><strong>Environmental Characterization</strong>: Surface radiation mapping and prediction</li>
@@ -804,7 +745,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>EVA Protection</strong>: Enhanced spacesuits and mobile shielding</li>
 </ul>
 
-<h3 id="advanced-technologies">Advanced Technologies</h3>
+<h4 id="advanced-technologies">Advanced Technologies</h4>
 <p>Next-generation radiation monitoring and protection:</p>
 <ul>
   <li><strong>Real-Time Biomarkers</strong>: Biological indicators of radiation exposure</li>
@@ -815,9 +756,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This comprehensive approach to radiation exposure tracking ensures that space medicine practitioners have the detailed dosimetry data needed to protect astronaut health while enabling the scientific exploration of space.</p>
 
-<h2 id="references">References</h2>
+<h3 id="references">References</h3>
 
-<h3 id="nasa-standards-and-guidelines">NASA Standards and Guidelines</h3>
+<h4 id="nasa-standards-and-guidelines">NASA Standards and Guidelines</h4>
 
 <ul>
   <li><a href="https://standards.nasa.gov/standard/nasa/nasa-std-3001-vol-1">NASA-STD-3001, Volume 1, Revision B - Crew Health</a></li>
@@ -826,7 +767,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://standards.nasa.gov/standard/nasa/nasa-hdbk-4003">NASA-HDBK-4003 - Radiation Health Officer Handbook</a></li>
 </ul>
 
-<h3 id="international-standards-1">International Standards</h3>
+<h4 id="international-standards-1">International Standards</h4>
 
 <ul>
   <li><a href="https://www.icrp.org/publication.asp?id=ICRP%20Publication%20103">ICRP Publication 103: The 2007 Recommendations of the International Commission on Radiological Protection</a></li>
@@ -835,7 +776,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://ncrponline.org/publications/reports/ncrp-report-153/">NCRP Report No. 153: Information Needed to Make Radiation Protection Recommendations for Space Missions Beyond Low Earth Orbit</a></li>
 </ul>
 
-<h3 id="federal-regulations">Federal Regulations</h3>
+<h4 id="federal-regulations">Federal Regulations</h4>
 
 <ul>
   <li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-J/part-1040">21 CFR Part 1040: Performance Standards for Electronic Products</a></li>
@@ -843,7 +784,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://www.ecfr.gov/current/title-14/chapter-III/subchapter-C/part-460">14 CFR Part 460: Human Space Flight Requirements</a></li>
 </ul>
 
-<h3 id="research-publications">Research Publications</h3>
+<h4 id="research-publications">Research Publications</h4>
 
 <ul>
   <li><a href="https://doi.org/10.1016/j.lssr.2014.02.003">Chancellor, J.C., et al. (2014). Space Radiation: The Number One Risk to Astronaut Health beyond Low Earth Orbit</a></li>
@@ -869,7 +810,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 13:16-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

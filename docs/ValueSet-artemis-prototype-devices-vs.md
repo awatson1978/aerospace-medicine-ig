@@ -1,4 +1,4 @@
-# Artemis Prototype Devices - v0.5.0
+# Artemis Prototype Devices - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-prototype-devices-vs | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:ArtemisPrototypeDevicesVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-prototype-devices-vs | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:ArtemisPrototypeDevicesVS |
 
  
 Developmental and test Artemis hardware 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "artemis-prototype-devices-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-prototype-devices-vs",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "ArtemisPrototypeDevicesVS",
   "title" : "Artemis Prototype Devices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Emergency Response Time - v0.5.0
+# Emergency Response Time - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/response-time | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:ResponseTime |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/response-time | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:ResponseTime |
 
 Time from emergency recognition to response initiation
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-response-time.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "response-time",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/response-time",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "ResponseTime",
   "title" : "Emergency Response Time",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

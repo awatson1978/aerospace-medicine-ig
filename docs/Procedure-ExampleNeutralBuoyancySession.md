@@ -1,4 +1,4 @@
-# Example Neutral Buoyancy Training Session - v0.5.0
+# Example Neutral Buoyancy Training Session - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

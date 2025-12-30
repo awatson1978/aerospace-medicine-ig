@@ -1,4 +1,4 @@
-# Crew Coordination Assessment - v0.5.0
+# Crew Coordination Assessment - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/crew-coordination | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:CrewCoordination |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/crew-coordination | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:CrewCoordination |
 
 Assessment of crew coordination during simulation
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-crew-coordination.cs
   "resourceType" : "StructureDefinition",
   "id" : "crew-coordination",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/crew-coordination",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "CrewCoordination",
   "title" : "Crew Coordination Assessment",
   "status" : "draft",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

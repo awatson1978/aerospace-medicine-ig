@@ -1,4 +1,4 @@
-# Respiratory Rate - v0.5.0
+# Respiratory Rate - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/respiratory-rate | *Version*:0.5.0 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/respiratory-rate | *Version*:0.5.1 |
 | Active as of 2022-09-11 | *Computable Name*:ResiratoryRate |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-respiratory-rate.csv
   "resourceType" : "StructureDefinition",
   "id" : "respiratory-rate",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/respiratory-rate",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "ResiratoryRate",
   "title" : "Respiratory Rate",
   "status" : "active",

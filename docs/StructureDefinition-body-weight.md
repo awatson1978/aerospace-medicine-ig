@@ -1,4 +1,4 @@
-# Body Weight - v0.5.0
+# Body Weight - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/body-weight | *Version*:0.5.0 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/body-weight | *Version*:0.5.1 |
 | Active as of 2022-09-11 | *Computable Name*:BodyWeight |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-body-weight.csv), [E
   "resourceType" : "StructureDefinition",
   "id" : "body-weight",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/body-weight",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "BodyWeight",
   "title" : "Body Weight",
   "status" : "active",

@@ -1,13 +1,13 @@
-# Mars Direct - v0.5.0
+# Mars Direct - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * **Mars Direct**
 
 ## Mars Direct
 
-# Mars Direct Mission Architecture
+## Mars Direct Mission Architecture
 
-## Overview
+### Overview
 
 On November 16, 1990, Robert Zubrin unveiled **Mars Direct** at the Case for Mars conferencea plan so audacious yet elegant that it reshaped how humanity thought about reaching the Red Planet. Unlike NASA's 1989 Space Exploration Initiative (requiring 30 launches and $450 billion), Mars Direct proposed just **two heavy-lift launches per mission**, leveraging **in-situ resource utilization (ISRU)** to produce propellant on Mars itself.
 
@@ -21,7 +21,7 @@ But **rockets are only half the story.** A Mars mission is a **biomedical crucib
 
 This module extends the HL7 Aerospace Medicine Implementation Guide into the Mars mission domainbuilding on [Radiation Tracking](radiation-tracking.md), [Nutrition](nutrition.md), [Exercise](fitness.md), [Mental Health](mentalhealth.md), and [Artemis Missions](missions-artemis.md)to provide FHIR-based modeling for long-duration deep space health monitoring, autonomous medicine, ISRU safety, Mars surface hazards, and mission integration.
 
-## Mission Architecture Comparison
+### Mission Architecture Comparison
 
 | | | | |
 | :--- | :--- | :--- | :--- |
@@ -30,9 +30,9 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 | **SpaceX Starship (2016)** | Fully reusable 100t vehicle; orbital refueling (10-14 tankers); land entire Starship; ISRU for return; ~2029-2031 target | ISRU CH�/O�; direct flights; bold schedule | Orbital refueling required; 200-ton lander (new challenges); no artificial gravity; commercial funding |
 | **Project Athena (2025)** | Uncrewed demo by 2026; nuclear-electric propulsion; NASA-commercial partnership; post-Artemis pivot to Mars | Leverages SpaceX heavy lift; ISRU & nuclear power priority | Far faster timeline; NEP technology push; NASA reorganization proposal |
 
-## Aerospace Medicine Challenges
+### Aerospace Medicine Challenges
 
-### The 2.5-Year Gauntlet
+#### The 2.5-Year Gauntlet
 
 **Outbound Transit (6 months, microgravity)**: Bone loss ~1-2%/month, muscle atrophy, cardiovascular deconditioning, fluid shift � SANS (vision changes), immune dysregulation, circadian disruption
 
@@ -42,7 +42,7 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 
 **Total radiation**: ~600-1000 mSv over 2.5 years vs. ISS ~50-200 mSv/year. Beyond Earth's magnetosphere, continuous **galactic cosmic rays (GCR)**high-energy protons, heavy ions from distant supernovaeplus unpredictable **solar particle events (SPEs)** that can deliver lethal doses in hours without shielding. Lifetime cancer risk increase ~3-5%.
 
-### Mars Surface Operations
+#### Mars Surface Operations
 
 **Martian dust**: Jagged, electrostatically charged, ~0.5% perchlorates (ClO�{)toxic oxidizing compounds. Clings to suits, infiltrates habitats. Inhalation � lung irritation (analogous to silicosis), potential bloodstream entry. Equipment degradation (seal wear, optics scratching). EVA decontamination protocols mission-critical.
 
@@ -50,7 +50,7 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 
 **Habitat life support**: 21% O�, ~8-14.7 psi pressure, temperature/humidity control. O� generation (water electrolysis), CO� scrubbing (solid amine/Sabatier), trace contaminant removal, dust monitoring. Power (solar, batteries, possibly Kilopower fission reactor) sustains life supportfailure � rapid CO� buildup or hypoxia. Water recycling (urine�potable, humidity recovery) closed-loop with minimal resupply.
 
-### Autonomous Medical Operations
+#### Autonomous Medical Operations
 
 **5-20 minute communication delays** � crew must diagnose/treat themselves. Crew Medical Officer (CMO) leads, all trained in basic trauma response. Medical kit: portable ultrasound, handheld lab analyzers, vital signs monitors, medications (antibiotics, analgesics, sedatives), surgical instruments, defibrillator, airway management, limited blood products.
 
@@ -58,7 +58,7 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 
 **FHIR perspective**: Offline clinical data capture, asynchronous transmission. Every diagnosis, procedure, medication, vital logged locally, downlinked when bandwidth permits. Structured resources (Observation, Procedure, Condition, MedicationAdministration) enable flight surgeons to reconstruct events days later.
 
-### In-Situ Resource Utilization (ISRU)
+#### In-Situ Resource Utilization (ISRU)
 
 **Mission-critical**: Propellant production failure strands crew. Sabatier reaction: CO� + 4H� � CH� + 2H�O; electrolysis: 2H�O � 2H� + O�. Mars Direct ERV: ~8 tons H� � 112 tons propellant. SpaceX Starship: ~600 tons needed, demanding ~600 kW continuous power (solar arrays >38,000 m�).
 
@@ -66,9 +66,9 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 
 **FHIR modeling**: ISRUProductionLog Observations tracking output, reactor status, alarms. Not directly medical, but ISRU status feeds risk assessments and crew stress monitoring.
 
-## FHIR Implementation Architecture
+### FHIR Implementation Architecture
 
-### Core Concepts
+#### Core Concepts
 
 * **Mission Duration**: 2.5 years vs. 6-month ISS rotations � longitudinal health tracking, career dose limits, cumulative bone loss trends
 * **Communication Latency**: 5-20 min delays � asynchronous data exchange, offline decision support, batch transmission
@@ -76,7 +76,7 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 * **Mars Environment**: 0.38g, dust, thermal/radiation extremes � new Observation profiles
 * **ISRU Dependency**: Production success tied to mission viability and crew psychology � ISRU status as operational health indicator
 
-### Data Architecture
+#### Data Architecture
 
 * **Mission Timeline**: Launch, outbound transit (6 mo), orbit insertion, descent, surface ops (18 mo, hundreds of EVAs), ascent, return transit (6 mo), re-entry
 * **Radiation Dosimetry**: Real-time dose rates, cumulative GCR, SPE tracking, tissue-specific doses, career limits
@@ -87,7 +87,7 @@ This module extends the HL7 Aerospace Medicine Implementation Guide into the Mar
 
 All link to **MissionContext** extensions and **Mars Mission** CodeSystem entries.
 
-### Standardized Terminologies
+#### Standardized Terminologies
 
 New code systems and value sets:
 
@@ -109,35 +109,35 @@ Integration with existing terminologies:
 * **LOINC**: Radiation, vitals, atmospheric compositionsome Mars metrics need new codes
 * **NASA HMTA**: Exposure limits, medical event categories, crew health requirements
 
-## Use Cases
+### Use Cases
 
-### 1. Mars Direct Mission Health Surveillance
+#### 1. Mars Direct Mission Health Surveillance
 
 4 crew, 18-month surface stay. Continuous vitals (transit), daily logs, radiation dosimetry with SPE alerts, post-EVA assessments (~200 surface EVAs), weekly bone trending, behavioral telecounseling bi-weekly. First humans >600 mSv cumulativelong-term cancer risk tracking essential.
 
-### 2. SpaceX Starship Surface Operations
+#### 2. SpaceX Starship Surface Operations
 
 6-12 crew, 6-month stay (next return window). ISRU monitoring (600 tons O�/CH� production), habitat environmental control (larger crew � higher CO�), EVA deploying solar arrays, autonomous medical for larger crew (higher medical event probability), psychological dynamics in Starship interior.
 
-### 3. Solar Storm Radiation Management
+#### 3. Solar Storm Radiation Management
 
 Dosimetry detects sudden spike (SPE begins). Automated alert � crew to storm shelter (water-walled). Continuous monitoring 24-48 hr SPE, cumulative dose vs. acute thresholds, post-event assessment (nausea, fatigue, lymphocyte drop), cancer risk recalculation, mission continuation evaluation.
 
-### 4. Autonomous Emergency Surgery: Appendicitis
+#### 4. Autonomous Emergency Surgery: Appendicitis
 
 Crew develops RLQ pain, fever, elevated WBC. Ultrasound confirms appendicitis. 12-min one-way delay. CMO consults digital protocol, ground sends guidance (24-min round trip). Crew administers anesthesia (ketamine), performs appendectomy in 0.38g, post-op antibiotics. Encounter captures: pre-op vitals/imaging, Procedure (steps), Medications, post-op wound healing, Condition resolved.
 
-### 5. ISRU Failure and Crew Stress
+#### 5. ISRU Failure and Crew Stress
 
 Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks. Anxiety spikes (GAD-7 increases), sleep deteriorates (wearable sensors show reduced REM), interpersonal tension. RiskAssessment updated: if not restored, one-way or rescue (neither realisticimmense psychological burden). Reactor repaired Sol 201. Post-crisis behavioral interventions. Data shows ISRU as critical psychological stressor.
 
-### 6. Long-Duration Bone Loss Fracture
+#### 6. Long-Duration Bone Loss Fracture
 
 18 months surface stay (~24 mo equivalent microgravity + partial gravity). Crew falls during EVA, severe ankle pain. Ultrasound suggests fracture, confirmed imaging. Closed reduction, splinting, pain management, non-weight-bearing 6-8 weeks (challenge in 0.38g). Healing monitored. Condition links fracture to bone demineralization (prior DEXA: 15% loss). Informs future countermeasure protocols.
 
-## Data Model Architecture
+### Data Model Architecture
 
-### Core FHIR Resources
+#### Core FHIR Resources
 
 * **Observation** � Radiation, environmental, vitals, cognitive, biomarkers, bone density, blood chemistry
 * **Procedure** � MarsEVAProcedure, transfers, interventions, ISRU maintenance
@@ -150,7 +150,7 @@ Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks
 * **MedicationAdministration** � All meds (antibiotics, analgesics, sedatives, radiation countermeasures, bone protective)
 * **CarePlan** � Individual health plans (exercise, nutrition, radiation limits, behavioral support)
 
-### Extensions
+#### Extensions
 
 * **missionContext** � Links to specific Mars mission and phase
 * **areographicCoordinates** � Mars lat/long for Locations
@@ -158,7 +158,7 @@ Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks
 * **evaNumber** � Sequential EVA identifier
 * **communicationDelay** � Time lag for transmissions
 
-### Profiles
+#### Profiles
 
 * **MarsEVAProcedure**: Surface EVAsduration, location, participants, suit, metabolic data, dust exposure, post-EVA health check
 * **HabitatEnvironmentalObservation**: Atmospheric monitoringO�%, CO�, pressure, temp, humidity, dust; subject = habitat Location
@@ -168,7 +168,7 @@ Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks
 * **MarsRadiationRiskAssessment**: Long-duration exposurebasis = cumulative dose; prediction = cancer/CNS risk
 * **AutonomousMedicalEncounter**: Crew-led eventsno real-time ground support; groups Obs/Procs/Conds/Meds; communication delay context
 
-## Integration and Future Directions
+### Integration and Future Directions
 
 **Integration**: Mars data � NASA LSAH database (longitudinal tracking); terrestrial EHR handoff; real-time (delayed) dashboards for Mission Control; environmental alerts trigger operational responses; career dose enforces exposure limits
 

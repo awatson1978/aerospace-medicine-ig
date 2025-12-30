@@ -1,4 +1,4 @@
-# Twenty Four Hour Blood Pressure - v0.5.0
+# Twenty Four Hour Blood Pressure - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/twenty-four-hour-blood-pressure | *Version*:0.5.0 |
+| *Official URL*:http://hl7.org/fhir/us/vitals/StructureDefinition/twenty-four-hour-blood-pressure | *Version*:0.5.1 |
 | Active as of 2022-09-11 | *Computable Name*:TwentyFourHourBloodPressure |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
@@ -38,7 +38,7 @@ Other representations of profile: [CSV](StructureDefinition-twenty-four-hour-blo
   "resourceType" : "StructureDefinition",
   "id" : "twenty-four-hour-blood-pressure",
   "url" : "http://hl7.org/fhir/us/vitals/StructureDefinition/twenty-four-hour-blood-pressure",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "TwentyFourHourBloodPressure",
   "title" : "Twenty Four Hour Blood Pressure",
   "status" : "active",

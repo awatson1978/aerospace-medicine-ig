@@ -1,4 +1,4 @@
-# Space Visual Effects - v0.5.0
+# Space Visual Effects - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs | *Version*:0.5.0 |
-| Draft as of 2025-12-25 | *Computable Name*:SpaceVisualEffectsCodeSystem |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs | *Version*:0.5.1 |
+| Draft as of 2025-12-29 | *Computable Name*:SpaceVisualEffectsCodeSystem |
 
  
 CodeSystem for space visual effects not found in SNOMED CT 
@@ -27,12 +27,12 @@ CodeSystem for space visual effects not found in SNOMED CT
   "resourceType" : "CodeSystem",
   "id" : "space-visual-effects-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpaceVisualEffectsCodeSystem",
   "title" : "Space Visual Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

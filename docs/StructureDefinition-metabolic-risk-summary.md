@@ -1,4 +1,4 @@
-# Metabolic Risk Summary - v0.5.0
+# Metabolic Risk Summary - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/metabolic-risk-summary | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:MetabolicRiskSummary |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/metabolic-risk-summary | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:MetabolicRiskSummary |
 
  
 Evaluates risk from prolonged caloric deficits and metabolic stress 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
   "resourceType" : "StructureDefinition",
   "id" : "metabolic-risk-summary",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/metabolic-risk-summary",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "MetabolicRiskSummary",
   "title" : "Metabolic Risk Summary",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

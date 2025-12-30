@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Mars Direct -  v0.5.0</title>
+    <title>Mars Direct -  v0.5.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.0 - ci-build
+            <span style="display:inline-block;">0.5.1 - ci-build
 
 
             </span>
@@ -81,6 +81,38 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
@@ -117,37 +149,8 @@
       </li>
     </ul>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="missions-artemis.html">Artemis</a>
-      </li>
-      <li>
-        <a href="missions-marsdirect.html">Mars Direct</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
-      </li>
-      <li>
-        <a href="screening-astronaut.html">Astronaut Training</a>
-      </li>
-      <li>
-        <a href="screening-gimbal.html">Gimbal Training</a>
-      </li>
-      <li>
-        <a href="screening-analog.html">Analog Missions</a>
-      </li>
-    </ul>
+  <li>
+    <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="references.html">References</a>
@@ -187,7 +190,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Mars Direct</h2>
   
 
@@ -208,43 +211,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#mars-direct-mission-architecture" id="markdown-toc-mars-direct-mission-architecture">Mars Direct Mission Architecture</a>    <ul>
       <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
       <li><a href="#mission-architecture-comparison" id="markdown-toc-mission-architecture-comparison">Mission Architecture Comparison</a></li>
-      <li><a href="#aerospace-medicine-challenges" id="markdown-toc-aerospace-medicine-challenges">Aerospace Medicine Challenges</a>        <ul>
-          <li><a href="#the-25-year-gauntlet" id="markdown-toc-the-25-year-gauntlet">The 2.5-Year Gauntlet</a></li>
-          <li><a href="#mars-surface-operations" id="markdown-toc-mars-surface-operations">Mars Surface Operations</a></li>
-          <li><a href="#autonomous-medical-operations" id="markdown-toc-autonomous-medical-operations">Autonomous Medical Operations</a></li>
-          <li><a href="#in-situ-resource-utilization-isru" id="markdown-toc-in-situ-resource-utilization-isru">In-Situ Resource Utilization (ISRU)</a></li>
-        </ul>
-      </li>
-      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a>        <ul>
-          <li><a href="#core-concepts" id="markdown-toc-core-concepts">Core Concepts</a></li>
-          <li><a href="#data-architecture" id="markdown-toc-data-architecture">Data Architecture</a></li>
-          <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
-        </ul>
-      </li>
-      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a>        <ul>
-          <li><a href="#1-mars-direct-mission-health-surveillance" id="markdown-toc-1-mars-direct-mission-health-surveillance">1. Mars Direct Mission Health Surveillance</a></li>
-          <li><a href="#2-spacex-starship-surface-operations" id="markdown-toc-2-spacex-starship-surface-operations">2. SpaceX Starship Surface Operations</a></li>
-          <li><a href="#3-solar-storm-radiation-management" id="markdown-toc-3-solar-storm-radiation-management">3. Solar Storm Radiation Management</a></li>
-          <li><a href="#4-autonomous-emergency-surgery-appendicitis" id="markdown-toc-4-autonomous-emergency-surgery-appendicitis">4. Autonomous Emergency Surgery: Appendicitis</a></li>
-          <li><a href="#5-isru-failure-and-crew-stress" id="markdown-toc-5-isru-failure-and-crew-stress">5. ISRU Failure and Crew Stress</a></li>
-          <li><a href="#6-long-duration-bone-loss-fracture" id="markdown-toc-6-long-duration-bone-loss-fracture">6. Long-Duration Bone Loss Fracture</a></li>
-        </ul>
-      </li>
-      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a>        <ul>
-          <li><a href="#core-fhir-resources" id="markdown-toc-core-fhir-resources">Core FHIR Resources</a></li>
-          <li><a href="#extensions" id="markdown-toc-extensions">Extensions</a></li>
-          <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
-        </ul>
-      </li>
+      <li><a href="#aerospace-medicine-challenges" id="markdown-toc-aerospace-medicine-challenges">Aerospace Medicine Challenges</a></li>
+      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
+      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
       <li><a href="#integration-and-future-directions" id="markdown-toc-integration-and-future-directions">Integration and Future Directions</a></li>
     </ul>
   </li>
 </ul>
 
 </div>
-<h1 id="mars-direct-mission-architecture">Mars Direct Mission Architecture</h1>
+<h2 id="mars-direct-mission-architecture">Mars Direct Mission Architecture</h2>
 
-<h2 id="overview">Overview</h2>
+<h3 id="overview">Overview</h3>
 
 <p>On November 16, 1990, Robert Zubrin unveiled <strong>Mars Direct</strong> at the Case for Mars conferencea plan so audacious yet elegant that it reshaped how humanity thought about reaching the Red Planet. Unlike NASA's 1989 Space Exploration Initiative (requiring 30 launches and $450 billion), Mars Direct proposed just <strong>two heavy-lift launches per mission</strong>, leveraging <strong>in-situ resource utilization (ISRU)</strong> to produce propellant on Mars itself.</p>
 
@@ -258,7 +237,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>This module extends the HL7 Aerospace Medicine Implementation Guide into the Mars mission domainbuilding on <a href="radiation-tracking.html">Radiation Tracking</a>, <a href="nutrition.html">Nutrition</a>, <a href="fitness.html">Exercise</a>, <a href="mentalhealth.html">Mental Health</a>, and <a href="missions-artemis.html">Artemis Missions</a>to provide FHIR-based modeling for long-duration deep space health monitoring, autonomous medicine, ISRU safety, Mars surface hazards, and mission integration.</p>
 
-<h2 id="mission-architecture-comparison">Mission Architecture Comparison</h2>
+<h3 id="mission-architecture-comparison">Mission Architecture Comparison</h3>
 
 <table>
   <thead>
@@ -297,9 +276,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h2 id="aerospace-medicine-challenges">Aerospace Medicine Challenges</h2>
+<h3 id="aerospace-medicine-challenges">Aerospace Medicine Challenges</h3>
 
-<h3 id="the-25-year-gauntlet">The 2.5-Year Gauntlet</h3>
+<h4 id="the-25-year-gauntlet">The 2.5-Year Gauntlet</h4>
 
 <p><strong>Outbound Transit (6 months, microgravity)</strong>: Bone loss ~1-2%/month, muscle atrophy, cardiovascular deconditioning, fluid shift � SANS (vision changes), immune dysregulation, circadian disruption</p>
 
@@ -309,7 +288,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Total radiation</strong>: ~600-1000 mSv over 2.5 years vs. ISS ~50-200 mSv/year. Beyond Earth's magnetosphere, continuous <strong>galactic cosmic rays (GCR)</strong>high-energy protons, heavy ions from distant supernovaeplus unpredictable <strong>solar particle events (SPEs)</strong> that can deliver lethal doses in hours without shielding. Lifetime cancer risk increase ~3-5%.</p>
 
-<h3 id="mars-surface-operations">Mars Surface Operations</h3>
+<h4 id="mars-surface-operations">Mars Surface Operations</h4>
 
 <p><strong>Martian dust</strong>: Jagged, electrostatically charged, ~0.5% perchlorates (ClO�{)toxic oxidizing compounds. Clings to suits, infiltrates habitats. Inhalation � lung irritation (analogous to silicosis), potential bloodstream entry. Equipment degradation (seal wear, optics scratching). EVA decontamination protocols mission-critical.</p>
 
@@ -317,7 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Habitat life support</strong>: 21% O�, ~8-14.7 psi pressure, temperature/humidity control. O� generation (water electrolysis), CO� scrubbing (solid amine/Sabatier), trace contaminant removal, dust monitoring. Power (solar, batteries, possibly Kilopower fission reactor) sustains life supportfailure � rapid CO� buildup or hypoxia. Water recycling (urine�potable, humidity recovery) closed-loop with minimal resupply.</p>
 
-<h3 id="autonomous-medical-operations">Autonomous Medical Operations</h3>
+<h4 id="autonomous-medical-operations">Autonomous Medical Operations</h4>
 
 <p><strong>5-20 minute communication delays</strong> � crew must diagnose/treat themselves. Crew Medical Officer (CMO) leads, all trained in basic trauma response. Medical kit: portable ultrasound, handheld lab analyzers, vital signs monitors, medications (antibiotics, analgesics, sedatives), surgical instruments, defibrillator, airway management, limited blood products.</p>
 
@@ -325,7 +304,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>FHIR perspective</strong>: Offline clinical data capture, asynchronous transmission. Every diagnosis, procedure, medication, vital logged locally, downlinked when bandwidth permits. Structured resources (Observation, Procedure, Condition, MedicationAdministration) enable flight surgeons to reconstruct events days later.</p>
 
-<h3 id="in-situ-resource-utilization-isru">In-Situ Resource Utilization (ISRU)</h3>
+<h4 id="in-situ-resource-utilization-isru">In-Situ Resource Utilization (ISRU)</h4>
 
 <p><strong>Mission-critical</strong>: Propellant production failure strands crew. Sabatier reaction: CO� + 4H� � CH� + 2H�O; electrolysis: 2H�O � 2H� + O�. Mars Direct ERV: ~8 tons H� � 112 tons propellant. SpaceX Starship: ~600 tons needed, demanding ~600 kW continuous power (solar arrays &gt;38,000 m�).</p>
 
@@ -333,9 +312,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>FHIR modeling</strong>: ISRUProductionLog Observations tracking output, reactor status, alarms. Not directly medical, but ISRU status feeds risk assessments and crew stress monitoring.</p>
 
-<h2 id="fhir-implementation-architecture">FHIR Implementation Architecture</h2>
+<h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
 
-<h3 id="core-concepts">Core Concepts</h3>
+<h4 id="core-concepts">Core Concepts</h4>
 
 <ul>
   <li><strong>Mission Duration</strong>: 2.5 years vs. 6-month ISS rotations � longitudinal health tracking, career dose limits, cumulative bone loss trends</li>
@@ -345,7 +324,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>ISRU Dependency</strong>: Production success tied to mission viability and crew psychology � ISRU status as operational health indicator</li>
 </ul>
 
-<h3 id="data-architecture">Data Architecture</h3>
+<h4 id="data-architecture">Data Architecture</h4>
 
 <ul>
   <li><strong>Mission Timeline</strong>: Launch, outbound transit (6 mo), orbit insertion, descent, surface ops (18 mo, hundreds of EVAs), ascent, return transit (6 mo), re-entry</li>
@@ -358,7 +337,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>All link to <strong>MissionContext</strong> extensions and <strong>Mars Mission</strong> CodeSystem entries.</p>
 
-<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+<h4 id="standardized-terminologies">Standardized Terminologies</h4>
 
 <p>New code systems and value sets:</p>
 
@@ -383,35 +362,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>NASA HMTA</strong>: Exposure limits, medical event categories, crew health requirements</li>
 </ul>
 
-<h2 id="use-cases">Use Cases</h2>
+<h3 id="use-cases">Use Cases</h3>
 
-<h3 id="1-mars-direct-mission-health-surveillance">1. Mars Direct Mission Health Surveillance</h3>
+<h4 id="1-mars-direct-mission-health-surveillance">1. Mars Direct Mission Health Surveillance</h4>
 
 <p>4 crew, 18-month surface stay. Continuous vitals (transit), daily logs, radiation dosimetry with SPE alerts, post-EVA assessments (~200 surface EVAs), weekly bone trending, behavioral telecounseling bi-weekly. First humans &gt;600 mSv cumulativelong-term cancer risk tracking essential.</p>
 
-<h3 id="2-spacex-starship-surface-operations">2. SpaceX Starship Surface Operations</h3>
+<h4 id="2-spacex-starship-surface-operations">2. SpaceX Starship Surface Operations</h4>
 
 <p>6-12 crew, 6-month stay (next return window). ISRU monitoring (600 tons O�/CH� production), habitat environmental control (larger crew � higher CO�), EVA deploying solar arrays, autonomous medical for larger crew (higher medical event probability), psychological dynamics in Starship interior.</p>
 
-<h3 id="3-solar-storm-radiation-management">3. Solar Storm Radiation Management</h3>
+<h4 id="3-solar-storm-radiation-management">3. Solar Storm Radiation Management</h4>
 
 <p>Dosimetry detects sudden spike (SPE begins). Automated alert � crew to storm shelter (water-walled). Continuous monitoring 24-48 hr SPE, cumulative dose vs. acute thresholds, post-event assessment (nausea, fatigue, lymphocyte drop), cancer risk recalculation, mission continuation evaluation.</p>
 
-<h3 id="4-autonomous-emergency-surgery-appendicitis">4. Autonomous Emergency Surgery: Appendicitis</h3>
+<h4 id="4-autonomous-emergency-surgery-appendicitis">4. Autonomous Emergency Surgery: Appendicitis</h4>
 
 <p>Crew develops RLQ pain, fever, elevated WBC. Ultrasound confirms appendicitis. 12-min one-way delay. CMO consults digital protocol, ground sends guidance (24-min round trip). Crew administers anesthesia (ketamine), performs appendectomy in 0.38g, post-op antibiotics. Encounter captures: pre-op vitals/imaging, Procedure (steps), Medications, post-op wound healing, Condition resolved.</p>
 
-<h3 id="5-isru-failure-and-crew-stress">5. ISRU Failure and Crew Stress</h3>
+<h4 id="5-isru-failure-and-crew-stress">5. ISRU Failure and Crew Stress</h4>
 
 <p>Sabatier reactor fault Sol 180, CH� production drops 40%. Repairs take 3 weeks. Anxiety spikes (GAD-7 increases), sleep deteriorates (wearable sensors show reduced REM), interpersonal tension. RiskAssessment updated: if not restored, one-way or rescue (neither realisticimmense psychological burden). Reactor repaired Sol 201. Post-crisis behavioral interventions. Data shows ISRU as critical psychological stressor.</p>
 
-<h3 id="6-long-duration-bone-loss-fracture">6. Long-Duration Bone Loss Fracture</h3>
+<h4 id="6-long-duration-bone-loss-fracture">6. Long-Duration Bone Loss Fracture</h4>
 
 <p>18 months surface stay (~24 mo equivalent microgravity + partial gravity). Crew falls during EVA, severe ankle pain. Ultrasound suggests fracture, confirmed imaging. Closed reduction, splinting, pain management, non-weight-bearing 6-8 weeks (challenge in 0.38g). Healing monitored. Condition links fracture to bone demineralization (prior DEXA: 15% loss). Informs future countermeasure protocols.</p>
 
-<h2 id="data-model-architecture">Data Model Architecture</h2>
+<h3 id="data-model-architecture">Data Model Architecture</h3>
 
-<h3 id="core-fhir-resources">Core FHIR Resources</h3>
+<h4 id="core-fhir-resources">Core FHIR Resources</h4>
 
 <ul>
   <li><strong>Observation</strong> � Radiation, environmental, vitals, cognitive, biomarkers, bone density, blood chemistry</li>
@@ -426,7 +405,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>CarePlan</strong> � Individual health plans (exercise, nutrition, radiation limits, behavioral support)</li>
 </ul>
 
-<h3 id="extensions">Extensions</h3>
+<h4 id="extensions">Extensions</h4>
 
 <ul>
   <li><strong>missionContext</strong> � Links to specific Mars mission and phase</li>
@@ -436,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>communicationDelay</strong> � Time lag for transmissions</li>
 </ul>
 
-<h3 id="profiles">Profiles</h3>
+<h4 id="profiles">Profiles</h4>
 
 <ul>
   <li><strong>MarsEVAProcedure</strong>: Surface EVAsduration, location, participants, suit, metabolic data, dust exposure, post-EVA health check</li>
@@ -448,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>AutonomousMedicalEncounter</strong>: Crew-led eventsno real-time ground support; groups Obs/Procs/Conds/Meds; communication delay context</li>
 </ul>
 
-<h2 id="integration-and-future-directions">Integration and Future Directions</h2>
+<h3 id="integration-and-future-directions">Integration and Future Directions</h3>
 
 <p><strong>Integration</strong>: Mars data � NASA LSAH database (longitudinal tracking); terrestrial EHR handoff; real-time (delayed) dashboards for Mission Control; environmental alerts trigger operational responses; career dose enforces exposure limits</p>
 
@@ -477,7 +456,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 25, 2025 11:43-0700">2025-12-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 29, 2025 13:16-0700">2025-12-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,4 +1,4 @@
-# Naval Medical Research Unit - v0.5.0
+# Naval Medical Research Unit - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

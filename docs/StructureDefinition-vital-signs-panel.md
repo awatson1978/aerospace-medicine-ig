@@ -1,4 +1,4 @@
-# Vital Signs Panel - v0.5.0
+# Vital Signs Panel - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/vital-signs-panel | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:SpaceVitalsPanel |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/vital-signs-panel | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:SpaceVitalsPanel |
 | **Copyright/Legal**: Logica Health, all rights reserved Creative Commons License | |
 
  
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-vital-signs-panel.cs
   "resourceType" : "StructureDefinition",
   "id" : "vital-signs-panel",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/vital-signs-panel",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpaceVitalsPanel",
   "title" : "Vital Signs Panel",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

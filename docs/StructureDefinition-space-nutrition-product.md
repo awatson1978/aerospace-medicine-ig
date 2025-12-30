@@ -1,4 +1,4 @@
-# Space Nutrition Product - v0.5.0
+# Space Nutrition Product - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-product | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:SpaceNutritionProduct |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-product | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:SpaceNutritionProduct |
 
  
 Space-rated food, supplements, and electrolytes with mission-specific properties 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-nutrition-prod
   "resourceType" : "StructureDefinition",
   "id" : "space-nutrition-product",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-product",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "SpaceNutritionProduct",
   "title" : "Space Nutrition Product",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

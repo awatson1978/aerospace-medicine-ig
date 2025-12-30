@@ -1,4 +1,4 @@
-# Hydration Deficit - v0.5.0
+# Hydration Deficit - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/hydration-deficit | *Version*:0.5.0 |
-| Active as of 2025-12-25 | *Computable Name*:HydrationDeficit |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/hydration-deficit | *Version*:0.5.1 |
+| Active as of 2025-12-29 | *Computable Name*:HydrationDeficit |
 
 Daily hydration deficit in liters per day
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-hydration-deficit.cs
   "resourceType" : "StructureDefinition",
   "id" : "hydration-deficit",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/hydration-deficit",
-  "version" : "0.5.0",
+  "version" : "0.5.1",
   "name" : "HydrationDeficit",
   "title" : "Hydration Deficit",
   "status" : "active",
-  "date" : "2025-12-25T11:43:35-07:00",
+  "date" : "2025-12-29T13:16:13-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -9,7 +9,7 @@ name: Spaceflight Health Simulations - Reference Documentation
 # title: Aerospace Medicine
 description: Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.
 status: draft # draft | active | retired | unknown
-version: 0.5.0
+version: 0.5.1
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 dependencies:
   hl7.fhir.us.core: 4.0.0
@@ -62,12 +62,19 @@ pages:
     title: Artemis
   missions-marsdirect.md:
     title: Mars Direct
-
-  # downloads.md:
-  #   title: Downloads
+  downloads.md:
+    title: Downloads
 
 menu:
   Home: index.html
+  Missions: 
+    Artemis: missions-artemis.html
+    Mars Direct: missions-marsdirect.html
+  Flight Readiness:
+    FAA Pilot Certification (Form 8500-8): flight-readiness-pilots.html
+    Astronaut Training: screening-astronaut.html
+    Gimbal Training: screening-gimbal.html
+    Analog Missions: screening-analog.html
   Astronaut Health:
     Neutral Buoyancy: neutral-buoyancy.html
     Radiation Tracking: radiation-tracking.html
@@ -77,18 +84,10 @@ menu:
   Environmental Monitoring: 
     Life Support Systems: eclss.html
     Biospheres: biomes.html
-  Missions: 
-    Artemis: missions-artemis.html
-    Mars Direct: missions-marsdirect.html
-  Flight Readiness:
-    FAA Pilot Certification (Form 8500-8): flight-readiness-pilots.html
-    Astronaut Training: screening-astronaut.html
-    Gimbal Training: screening-gimbal.html
-    Analog Missions: screening-analog.html
   # Scenarios: scenarios.html
   # Synthea: synthea.html
   # Health Registry: registry.html
-  # Downloads: downloads.html
+  Downloads: downloads.html
   References: references.html
   Artifacts: artifacts.html
 

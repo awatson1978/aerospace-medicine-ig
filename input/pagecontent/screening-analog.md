@@ -1,6 +1,6 @@
 
 
-## Purpose and Role of Analog Missions in Training
+### Purpose and Role of Analog Missions in Training
 
 Analog missions are simulated space expeditions conducted on Earth to mimic the conditions and challenges of real spaceflight. They place crews in isolated, confined environments for days or months to perform mission-like tasks under stressors such as limited resources and communication delays:contentReference[oaicite:0]{index=0}.
 
@@ -10,7 +10,7 @@ By practicing operations in realistic analog settings, crews can identify potent
 
 > *Image (Page 1)*: AMADEE-18 Mars simulation by the Austrian Space Forum in Oman. Crews live in habitats to experience isolation, perform science and maintenance tasks, and practice EVA protocols in a Mars-like desert environment:contentReference[oaicite:3]{index=3}.
 
-## Commercial Analog Training Programs (Star Harbor and Others)
+### Commercial Analog Training Programs (Star Harbor and Others)
 
 In recent years, commercial space companies have developed analog training programs to broaden access to astronaut-like experiences. **Star Harbor**, for instance, is establishing the world’s first private spaceflight training campus in Colorado, slated to open in 2026:contentReference[oaicite:4]{index=4}.
 
@@ -29,31 +29,31 @@ Other commercial efforts like **MMAARS** offer tiered analog missions for studen
 
 ---
 
-## Screening Criteria for Participant Selection
+### Screening Criteria for Participant Selection
 
-### Age and Maturity
+#### Age and Maturity
 
 - Most programs require participants to be adults (minimum age 18).
 - Some programs target specific age ranges (e.g., CHAPEA requires ages 30–55).
 - Star Harbor centrifuge tests included participants aged 22 to 88:contentReference[oaicite:8]{index=8}.
 
-### Physical Fitness and Health
+#### Physical Fitness and Health
 
 - General health clearance or a physician’s exam required.
 - Analog participants may need to lift ~20 lbs, be non-smokers, or meet specialized health criteria (e.g., SCUBA-certified):contentReference[oaicite:9]{index=9}.
 
-### Psychological Readiness
+#### Psychological Readiness
 
 - Mental resilience is essential.
 - NASA analogs conduct formal psychological screening; commercial programs use interviews to assess motivation and interpersonal skills:contentReference[oaicite:10]{index=10}.
 
-### Teamwork and Communication Skills
+#### Teamwork and Communication Skills
 
 - Emphasis on collaboration, communication, and team dynamics.
 - Some programs conduct panel interviews or group tasks:contentReference[oaicite:11]{index=11}.
 - English proficiency is commonly required.
 
-### Relevant Experience or Skills
+#### Relevant Experience or Skills
 
 - Scientific, technical, or operational backgrounds are often favored.
 - Commercial programs are more flexible but still expect high motivation and engagement:contentReference[oaicite:12]{index=12}.
@@ -67,7 +67,7 @@ Application processes often include:
 
 ---
 
-## Comparison to Government Astronaut Program Selection
+### Comparison to Government Astronaut Program Selection
 
 Analog training screening differs from NASA/ESA astronaut selection:
 
@@ -83,22 +83,22 @@ Despite differences, both value health, resilience, and teamwork. NASA integrate
 
 ---
 
-## Analog Missions vs. Other Training Elements
+### Analog Missions vs. Other Training Elements
 
-### Gimbal Rigs and Centrifuge Training
+#### Gimbal Rigs and Centrifuge Training
 
 - Short-duration drills for G-force tolerance and disorientation
 - Health screening (e.g., FAA Class 2/3 physical)
 - No psychological or team-based screening needed:contentReference[oaicite:14]{index=14}
 
-### Neutral Buoyancy & EVA
+#### Neutral Buoyancy & EVA
 
 - Underwater training in neutral buoyancy pools
 - Requires swim test and SCUBA certification
 - Medical clearance for underwater safety
 - Does not test isolation or group dynamics:contentReference[oaicite:15]{index=15}
 
-### Other Short Courses
+#### Other Short Courses
 
 - Includes parabolic flights, mock cockpits, wilderness survival
 - Physical screens based on course (e.g., inner ear or cardiac issues)
@@ -108,7 +108,7 @@ Despite differences, both value health, resilience, and teamwork. NASA integrate
 
 ---
 
-## Summary
+### Summary
 
 Analog mission training:
 
@@ -119,7 +119,7 @@ Analog mission training:
 
 ---
 
-## References
+### References
 
 1. NASA (2023). "NASA Selects Participants for One-Year Mars Analog Mission."  
 2. UNOOSA (2019). *My Two Weeks as an Analog Astronaut*.  

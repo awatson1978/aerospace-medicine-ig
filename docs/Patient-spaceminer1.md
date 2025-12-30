@@ -1,4 +1,4 @@
-# Patient - Space Miner 1 - v0.5.0
+# Patient - Space Miner 1 - v0.5.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
