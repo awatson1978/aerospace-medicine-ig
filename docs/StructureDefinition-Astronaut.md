@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Astronaut.csv), [Exc
   "name" : "Astronaut",
   "title" : "Astronaut Patient Profile",
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

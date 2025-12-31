@@ -21,7 +21,7 @@ Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EV
 * **Actions:**: **Title:**
   * : Artemis III Mission Plan - First Crewed Lunar South Pole Landing
 * **Actions:**: **Date:**
-  * : 2025-12-30 13:15:27-0700
+  * : 2025-12-30 19:11:20-0700
 * **Actions:**: **Publisher:**
   * : MITRE
 * **Actions:**: **Description:**
@@ -60,7 +60,7 @@ Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EV
     ]
   },
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-inventory-risk-flag.
   "name" : "InventoryRiskFlag",
   "title" : "Inventory Risk Flag",
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

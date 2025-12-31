@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
   "name" : "MarsEVAProcedure",
   "title" : "Mars Extravehicular Activity Procedure",
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

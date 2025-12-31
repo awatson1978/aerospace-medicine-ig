@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-vital-signs-panel.cs
   "name" : "SpaceVitalsPanel",
   "title" : "Vital Signs Panel",
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

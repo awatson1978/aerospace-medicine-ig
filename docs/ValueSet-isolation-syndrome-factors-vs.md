@@ -50,7 +50,7 @@ Risk factors related to isolation and confinement that affect behavioral health.
   "name" : "IsolationSyndromeFactorsVS",
   "title" : "Isolation Syndrome Factors Value Set",
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

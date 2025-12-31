@@ -28,18 +28,17 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 ### Mars Direct
 
-- [MarsDirect.CodeSystems.ndjson](MarsDirect.CodeSystems.ndjson)
-- [MarsDirect.ValueSets.ndjson](MarsDirect.ValueSets.ndjson)
-- MarsDirect.Organizations.ndjson
-- MarsDirect.Devices.ndjson
-- MarsDirect.Locations.ndjson
-
+- [MarsDirect.CodeSystems.ndjson](MarsDirect.CodeSystems.ndjson)  
+- [MarsDirect.ValueSets.ndjson](MarsDirect.ValueSets.ndjson)  
+- [MarsDirect.Organizations.ndjson](MarsDirect.Organizations.ndjson)  
+- [MarsDirect.Devices.ndjson](MarsDirect.Devices.ndjson)  
+- [MarsDirect.Locations.ndjson](MarsDirect.Locations.ndjson)  
 
 ### Commercial Space
 
 - [CommercialSpace.Organizations.ndjson](CommercialSpace.Organizations.ndjson)  
 - [CommercialSpace.Devices.ndjson](CommercialSpace.Devices.ndjson)  
-- CommercialSpace.Locations.ndjson  
+
 
 
 ### Star Trek
@@ -50,7 +49,7 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 ### Examples
 
-all the examples that are used in this Implementation Guide available for download:
+All the examples that are used in this Implementation Guide available for download:
 
 - [XML](space-health-registry-examples.xml.zip)
 - [JSON](space-health-registry-examples.json.zip)

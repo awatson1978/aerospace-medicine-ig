@@ -32,7 +32,7 @@ CodeSystem for space monitoring procedures not found in SNOMED CT
   "title" : "Space Monitoring Procedures",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

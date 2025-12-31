@@ -32,7 +32,7 @@ Key performance metrics for space-based exercise sessions (e.g., power output, V
   "title" : "Space Exercise Performance Metric Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

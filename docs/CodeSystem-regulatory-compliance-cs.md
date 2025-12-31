@@ -32,7 +32,7 @@ Regulatory standards and compliance codes for diving and space medicine
   "title" : "Diving and Space Medicine Regulatory Compliance",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

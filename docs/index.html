@@ -245,8 +245,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#publication-notice-and-acknowledgements" id="markdown-toc-publication-notice-and-acknowledgements">Publication Notice and Acknowledgements</a>    <ul>
+      <li><a href="#publication-and-release-notice" id="markdown-toc-publication-and-release-notice">Publication and Release Notice</a></li>
+      <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a></li>
+      <li><a href="#use-of-large-language-models" id="markdown-toc-use-of-large-language-models">Use of Large Language Models</a></li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 <p>Welcome to the HL7 FHIR Aerospace Medicine Implementation Guide (IG). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.</p>
 
@@ -303,6 +311,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ultimately, this implementation guide is not only a tool for simulating patients in space - it is a statement about the convergence of aerospace and clinical medicine, and a call to design our next-generation health systems with both Earth and space in mind. As we prepare for commercial space tourism, lunar occupations, and human Mars missions, the infrastructure we build must be informed by the highest standards of safety, interoperability, and resilience.</p>
 
+<h2 id="publication-notice-and-acknowledgements">Publication Notice and Acknowledgements</h2>
+
+<h3 id="publication-and-release-notice">Publication and Release Notice</h3>
+
+<p>This Implementation Guide was originated and developed by the author during the course of independent research and professional inquiry conducted while working within U.S. Federal laboratory environments, including the Centers for Medicare &amp; Medicaid Services (CMS) Alliance for Modernized Healthcare (AMH), the Center for Advanced Aviation System Development (CAASD), and the FAA Office of Aerospace Medicine.</p>
+
+<p>The work reflects the author’s independent technical analysis, research interests, and subject-matter expertise in aerospace medicine, space health systems, and clinical interoperability, and was developed outside the scope of any specific sponsored program, contract, or commissioned deliverable.</p>
+
+<p>This document was reviewed and approved for public release under established institutional public-release procedures.</p>
+
+<p>Approved for Public Release; Distribution Unlimited.<br />
+Public Release Case Number 25-1124.</p>
+
+<p>©2025 The MITRE Corporation.<br />
+©2026 Abigail Watson.<br />
+All rights reserved by their respective owners.</p>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+
+<p>The author acknowledges valuable discussions, domain insights, and informal technical feedback from collaborators and stakeholders across the aerospace medicine, clinical research, and space health communities.</p>
+
+<p>General domain awareness, conceptual framing, and use-case exploration reflected in this Implementation Guide have benefited from professional interactions with teams from Space ISAC, TrialX, HERMES, TRISH, and other NASA-affiliated researchers.  The views, specifications, and implementation guidance expressed in this document are solely those of the author and do not necessarily reflect the official views, policies, or endorsement of any organization referenced herein.</p>
+
+<h3 id="use-of-large-language-models">Use of Large Language Models</h3>
+
+<p>Significant portions of this Implementation Guide were developed with the assistance of Large Language Models (LLMs), used as research and development tools under the direct supervision and editorial control of the author. The author takes full responsibility for the accuracy, appropriateness, and scientific rigor of all content presented herein.</p>
+
+<p><strong>Tools Used:</strong></p>
+<ul>
+  <li><strong>Claude Code</strong> (Anthropic) — Primary assistant for FHIR resource development, CodeSystem generation, mission architecture research, and technical documentation</li>
+  <li><strong>ChatGPT Deep Research</strong> (OpenAI) — Supplemental research for source validation, cross-referencing, and domain exploration</li>
+</ul>
+
+<p><strong>LLM-Assisted Activities:</strong></p>
+<ul>
+  <li>Literature review and reference discovery (aerospace medicine, space health, mission architectures)</li>
+  <li>Summarization of key stakeholders, equipment, locations, studies, procedures, conditions, etc.</li>
+  <li>Medical terminology mapping to standardized vocabularies (SNOMED CT, LOINC, RxNorm, ICD-10)</li>
+  <li>FHIR resource modeling and profile development</li>
+  <li>CodeSystem and ValueSet creation for aerospace-specific terminologies</li>
+  <li>Generation of synthetic data files (NDJSON patient records, organization catalogs, device inventories)</li>
+  <li>Technical writing support for use cases, implementation guidance, and mission scenarios</li>
+  <li>Quality control through multi-LLM cross-checking and validation</li>
+</ul>
+
+<p><strong>Methodology:</strong>
+Multiple LLMs were used in an iterative, cross-checking approach to enhance accuracy and reduce hallucination risk. When LLMs generated content (including mission descriptions, device specifications, crew rosters, or landing site coordinates), outputs were systematically validated against authoritative sources (NASA documentation, peer-reviewed literature, official mission briefings, and published standards). The author exercised editorial judgment at every stage, including prompt engineering, output evaluation, fact-checking, and final approval.</p>
+
+<p><strong>Human Oversight:</strong>
+All clinical reasoning, medical safety considerations, FHIR conformance decisions, and implementation recommendations were reviewed and approved by the author. LLMs served as assistive tools to accelerate research, automate repetitive tasks (such as JSON file generation), and synthesize large volumes of source material—but did not autonomously author clinical guidance or make binding technical decisions.</p>
+
+<p><strong>Transparency and Limitations:</strong>
+While LLMs significantly enhanced the efficiency and scope of this work, they are imperfect tools subject to errors, outdated training data, and occasional factual inaccuracies. Users of this Implementation Guide should independently verify mission-critical information, especially where human safety, regulatory compliance, or clinical decision-making is concerned. The author welcomes feedback and corrections to improve the accuracy and utility of this guide.</p>
 
 
 
@@ -322,7 +383,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 30, 2025 13:15-0700">2025-12-30</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 30, 2025 19:11-0700">2025-12-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

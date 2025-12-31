@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-space-evs-minutes-pe
   "name" : "SpaceEVSMinutesPerWeek",
   "title" : "Space Exercise Vital Sign Minutes Per Week",
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -21,7 +21,7 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
 * **Actions:**: **Title:**
   * : Mars Direct Mission 2040 - Jezero Crater Landing
 * **Actions:**: **Date:**
-  * : 2025-12-30 13:15:27-0700
+  * : 2025-12-30 19:11:20-0700
 * **Actions:**: **Publisher:**
   * : MITRE
 * **Actions:**: **Description:**
@@ -60,7 +60,7 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
     ]
   },
   "status" : "active",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

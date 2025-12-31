@@ -41,6 +41,55 @@ This guide includes scenario-specific implementations of FHIR resources such as 
 
 Ultimately, this implementation guide is not only a tool for simulating patients in space - it is a statement about the convergence of aerospace and clinical medicine, and a call to design our next-generation health systems with both Earth and space in mind. As we prepare for commercial space tourism, lunar occupations, and human Mars missions, the infrastructure we build must be informed by the highest standards of safety, interoperability, and resilience.
 
+## Publication Notice and Acknowledgements
+
+### Publication and Release Notice
+
+This Implementation Guide was originated and developed by the author during the course of independent research and professional inquiry conducted while working within U.S. Federal laboratory environments, including the Centers for Medicare & Medicaid Services (CMS) Alliance for Modernized Healthcare (AMH), the Center for Advanced Aviation System Development (CAASD), and the FAA Office of Aerospace Medicine.
+
+The work reflects the author’s independent technical analysis, research interests, and subject-matter expertise in aerospace medicine, space health systems, and clinical interoperability, and was developed outside the scope of any specific sponsored program, contract, or commissioned deliverable.
+
+This document was reviewed and approved for public release under established institutional public-release procedures.
+
+Approved for Public Release; Distribution Unlimited.
+ Public Release Case Number 25-1124.
+
+©2025 The MITRE Corporation.
+ ©2026 Abigail Watson.
+ All rights reserved by their respective owners.
+
+### Acknowledgements
+
+The author acknowledges valuable discussions, domain insights, and informal technical feedback from collaborators and stakeholders across the aerospace medicine, clinical research, and space health communities.
+
+General domain awareness, conceptual framing, and use-case exploration reflected in this Implementation Guide have benefited from professional interactions with teams from Space ISAC, TrialX, HERMES, TRISH, and other NASA-affiliated researchers. The views, specifications, and implementation guidance expressed in this document are solely those of the author and do not necessarily reflect the official views, policies, or endorsement of any organization referenced herein.
+
+### Use of Large Language Models
+
+Significant portions of this Implementation Guide were developed with the assistance of Large Language Models (LLMs), used as research and development tools under the direct supervision and editorial control of the author. The author takes full responsibility for the accuracy, appropriateness, and scientific rigor of all content presented herein.
+
+**Tools Used:**
+
+* **Claude Code** (Anthropic) — Primary assistant for FHIR resource development, CodeSystem generation, mission architecture research, and technical documentation
+* **ChatGPT Deep Research** (OpenAI) — Supplemental research for source validation, cross-referencing, and domain exploration
+
+**LLM-Assisted Activities:**
+
+* Literature review and reference discovery (aerospace medicine, space health, mission architectures)
+* Summarization of key stakeholders, equipment, locations, studies, procedures, conditions, etc.
+* Medical terminology mapping to standardized vocabularies (SNOMED CT, LOINC, RxNorm, ICD-10)
+* FHIR resource modeling and profile development
+* CodeSystem and ValueSet creation for aerospace-specific terminologies
+* Generation of synthetic data files (NDJSON patient records, organization catalogs, device inventories)
+* Technical writing support for use cases, implementation guidance, and mission scenarios
+* Quality control through multi-LLM cross-checking and validation
+
+**Methodology:** Multiple LLMs were used in an iterative, cross-checking approach to enhance accuracy and reduce hallucination risk. When LLMs generated content (including mission descriptions, device specifications, crew rosters, or landing site coordinates), outputs were systematically validated against authoritative sources (NASA documentation, peer-reviewed literature, official mission briefings, and published standards). The author exercised editorial judgment at every stage, including prompt engineering, output evaluation, fact-checking, and final approval.
+
+**Human Oversight:** All clinical reasoning, medical safety considerations, FHIR conformance decisions, and implementation recommendations were reviewed and approved by the author. LLMs served as assistive tools to accelerate research, automate repetitive tasks (such as JSON file generation), and synthesize large volumes of source material—but did not autonomously author clinical guidance or make binding technical decisions.
+
+**Transparency and Limitations:** While LLMs significantly enhanced the efficiency and scope of this work, they are imperfect tools subject to errors, outdated training data, and occasional factual inaccuracies. Users of this Implementation Guide should independently verify mission-critical information, especially where human safety, regulatory compliance, or clinical decision-making is concerned. The author welcomes feedback and corrections to improve the accuracy and utility of this guide.
+
 
 
 ## Resource Content
@@ -53,7 +102,7 @@ Ultimately, this implementation guide is not only a tool for simulating patients
   "version" : "0.5.6",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

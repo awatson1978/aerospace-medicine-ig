@@ -32,7 +32,7 @@ Medical codes specific to diving medicine and hyperbaric treatments
   "title" : "Diving Medicine Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

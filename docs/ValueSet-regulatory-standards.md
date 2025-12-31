@@ -52,7 +52,7 @@ Regulatory standards and compliance requirements
   "title" : "Regulatory Standards for Diving and Space Medicine",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -33,7 +33,7 @@ Developmental and test hardware not yet flight-certified (demo units, ground ana
   "title" : "Artemis Prototype Devices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {

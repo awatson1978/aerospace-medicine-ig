@@ -51,7 +51,7 @@ Types of nutritional products available in space missions
   "title" : "Space Nutrition Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T13:15:27-07:00",
+  "date" : "2025-12-30T19:11:20-07:00",
   "publisher" : "MITRE",
   "contact" : [
     {
