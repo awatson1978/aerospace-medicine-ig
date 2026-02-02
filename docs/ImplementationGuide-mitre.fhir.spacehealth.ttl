@@ -17,10 +17,10 @@
      fhir:v "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth"^^xsd:anyURI ;
      fhir:l <https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth>
   ] ; # 
-  fhir:version [ fhir:v "0.5.6"] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
   fhir:name [ fhir:v "SpaceflightHealthSimulationsReferenceDocumentation"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-30T19:11:20-07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -77,6 +77,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.us.core" ] ;
      fhir:version [ fhir:v "4.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -2039,6 +2047,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/behavioral-readiness-vs> ;
+         fhir:reference [ fhir:v "ValueSet/behavioral-readiness-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Behavioral Readiness Assessment" ] ;
+       fhir:description [ fhir:v "Value set for behavioral/psychological flight readiness outcomes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -3839,6 +3868,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/ecg-interpretation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ECG Interpretation Results" ] ;
+       fhir:description [ fhir:v "Value set for ECG interpretation outcomes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -4337,6 +4387,27 @@
        ] ;
        fhir:name [ fhir:v "FAA Form 8500-8 Questionnaire" ] ;
        fhir:description [ fhir:v "FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/fitness-assessment-result-vs> ;
+         fhir:reference [ fhir:v "ValueSet/fitness-assessment-result-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Fitness Assessment Results" ] ;
+       fhir:description [ fhir:v "Value set for fitness test termination criteria and outcomes." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -5211,6 +5282,27 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
          fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/iss-crewmember-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/iss-crewmember-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ISS Crewmember Types" ] ;
+       fhir:description [ fhir:v "Value set for types of ISS crewmembers by agency." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -7042,6 +7134,384 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB110OphthalmologicExamQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB110OphthalmologicExamQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 1.10 Ophthalmologic Examination" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for ophthalmologic examination. Captures comprehensive eye examination data for monitoring Spaceflight Associated Neuro-ocular Syndrome (SANS)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB111BodyCompositionQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB111BodyCompositionQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 1.11 Body Composition/DEXA" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for body composition assessment using DEXA." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB114BodyMassQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB114BodyMassQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 1.14 Body Mass Measurement" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for body mass measurement tracking." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB16RestingECGQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB16RestingECGQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 1.6 Resting ECG" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for resting 12-lead ECG assessment. Captures pre- and postflight ECG recordings for cardiovascular evaluation of long-duration flight crew members." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB18AudiometryQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB18AudiometryQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 1.8 Audiometry" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for audiometric assessment. Captures pre- and postflight hearing threshold data to monitor crew hearing status." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB19DentalExamQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB19DentalExamQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 1.9 Dental Examination" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for dental examination. Captures comprehensive dental assessment data for spaceflight crew members." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB21RoutineLabPanelQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB21RoutineLabPanelQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 2.1 Routine Laboratory Panel" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for routine laboratory panel. Captures comprehensive blood chemistry, hematology, and urinalysis data for spaceflight crew members." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB22MRSAScreeningQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB22MRSAScreeningQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 2.2 MRSA Screening" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for MRSA screening. Screens crew members for Methicillin-resistant Staphylococcus aureus colonization prior to spaceflight." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB23TBTestingQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB23TBTestingQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 2.3 Tuberculosis Testing" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for tuberculosis screening. Screens crew members for TB infection prior to spaceflight." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB24HpyloriScreeningQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB24HpyloriScreeningQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 2.4 H. pylori Screening" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for Helicobacter pylori screening. Screens crew members for H. pylori infection prior to long-duration spaceflight." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB31RadiationMonitoringQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB31RadiationMonitoringQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for radiation monitoring and crew personal dosimetry. Captures crew radiation exposure data for occupational exposure documentation and health risk assessment." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB51AerobicFitnessQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB51AerobicFitnessQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 5.1 Aerobic Fitness Assessment" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for aerobic fitness assessment. Captures VO2max and related cardiovascular fitness data for spaceflight crew members." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB52StrengthAssessmentQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB52StrengthAssessmentQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 5.2 Strength Assessment" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for muscle strength assessment. Captures isokinetic and isometric strength data for spaceflight crew members." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB53ExercisePrescriptionQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB53ExercisePrescriptionQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 5.3 Exercise Prescription" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for exercise prescription. Documents in-flight exercise countermeasures protocol and adherence." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB61EVAMedicalRequirementsQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB61EVAMedicalRequirementsQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 6.1 EVA Medical Requirements" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for EVA medical requirements. Documents medical clearance, prebreathe protocol, and health monitoring for extravehicular activities." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB71PsychStatusQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB71PsychStatusQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 7.1 Preflight Psychiatric/Psychological Status Check" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for preflight behavioral health assessment. Captures psychiatric/psychological assessment of behavioral readiness for flight and review of psychological services." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB74CrewDynamicsQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB74CrewDynamicsQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 7.4 Crew Dynamics Assessment" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for crew dynamics assessment. Evaluates crew cohesion, interpersonal relationships, team functioning, and conflict management throughout mission phases." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MEDB75FamilySupportQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MEDB75FamilySupportQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MEDB 7.5 Family Support Evaluation" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for family support evaluation. Assesses family support systems, identifies needs, and coordinates support services throughout mission phases." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:extension"
          ]
        ] ) ;
@@ -7189,6 +7659,468 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR008LMedicalHardwareMaintenanceQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR008LMedicalHardwareMaintenanceQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR008L Medical Hardware Maintenance" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for medical hardware maintenance. Tracks calibration schedules, preventive maintenance, and equipment functionality verification." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR022SAirQualityQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR022SAirQualityQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR022S Air Quality Monitoring" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for atmospheric monitoring. Tracks air quality parameters to ensure crew health and safety." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR026LReconditioningQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR026LReconditioningQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR026L Reconditioning Assessment" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for postflight reconditioning. Tracks crew recovery and rehabilitation progress after long-duration spaceflight." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR032LTelemedicineSetupQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR032LTelemedicineSetupQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR032L Telemedicine Setup" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for telemedicine setup and operations. Configures communication links, verifies equipment, and ensures readiness for remote medical support." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR036LMedicalKitInventoryQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR036LMedicalKitInventoryQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR036L Medical Kit Inventory" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for medical kit inventory management. Tracks medical supplies, equipment status, and expiration dates aboard ISS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR050LPharmaceuticalManagementQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR050LPharmaceuticalManagementQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR050L Pharmaceutical Management" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for pharmaceutical management aboard ISS. Tracks medication inventory, storage conditions, dispensing, and stability monitoring." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR051LWaterQualityQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR051LWaterQualityQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR051L Water Quality Assessment" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for water quality monitoring. Tracks potable and technical water quality parameters aboard the International Space Station." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR054LMicrobialMonitoringQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR054LMicrobialMonitoringQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR054L Microbial Monitoring" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for microbial monitoring. Tracks microbial populations in air, water, and surfaces aboard ISS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR087SEVAPrebreathQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR087SEVAPrebreathQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR087S EVA Prebreathe Protocol" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for EVA prebreathe protocol. Tracks oxygen prebreathe procedures to prevent decompression sickness." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR092LSPEProtocolQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR092LSPEProtocolQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR092L Solar Particle Event Protocol" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for Solar Particle Event protocol. Monitors SPE alerts, coordinates crew protective actions, and tracks exposure during events." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Questionnaire"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/Questionnaire/MR093LRadiationContingencyQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MR093LRadiationContingencyQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MR093L Radiation Contingency" ] ;
+       fhir:description [ fhir:v "NASA Medical Requirements Integration Document for radiation contingency events. Documents unexpected radiation events, crew response, and medical assessment." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-discipline> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-discipline" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Discipline" ] ;
+       fhir:description [ fhir:v "The medical discipline category for the medical requirement" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-document-number" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Document Number" ] ;
+       fhir:description [ fhir:v "The official MRID document identifier (e.g., MEDB 3.1, MR004L, MR005S)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-flight-duration" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Flight Duration Requirement" ] ;
+       fhir:description [ fhir:v "Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days')" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-frequency> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-frequency" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Frequency" ] ;
+       fhir:description [ fhir:v "How often this medical requirement applies (e.g., 'Every ISS Increment', 'Annual', 'Per mission')" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-launch-context" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Launch Context" ] ;
+       fhir:description [ fhir:v "Context for pre-populating the questionnaire with astronaut/patient reference. Compatible with SDC launchContext pattern." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mrid-launch-context-name-vs" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Launch Context Name" ] ;
+       fhir:description [ fhir:v "Names for launch context variables in MRID questionnaires" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mrid-launch-context-name-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Launch Context Name CodeSystem" ] ;
+       fhir:description [ fhir:v "Names for launch context variables" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/mrid-launch-context-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Launch Context Type" ] ;
+       fhir:description [ fhir:v "FHIR resource types for launch context in MRID questionnaires" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/mrid-launch-context-type-cs" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Launch Context Type CodeSystem" ] ;
+       fhir:description [ fhir:v "FHIR resource types for launch context" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-questionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Questionnaire Profile" ] ;
+       fhir:description [ fhir:v "Profile for NASA Medical Requirements Integration Document (MRID) questionnaires.\nThis profile standardizes the structure and metadata for MEDB (Medical Evaluation\nDocument Baseline) and MR (Medical Requirements) documents translated to FHIR\nQuestionnaire resources for structured data capture.\n\nAll MRID questionnaires follow a standard structure with groups for:\n- Medical Requirements Overview (MRID metadata)\n- Preflight Training\n- Preflight Activities\n- In-Flight Activities\n- Postflight Activities\n- Data Delivery\n- Domain-Specific Results (e.g., radiation doses, ECG findings)\n- Postflight Debrief\n\nThe profile supports SDC-compatible extensions for:\n- Launch context (astronaut/patient reference)\n- Observation extraction from QuestionnaireResponse" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor> ;
+         fhir:reference [ fhir:v "StructureDefinition/mrid-sponsor" ]
+       ] ;
+       fhir:name [ fhir:v "MRID Sponsor" ] ;
+       fhir:description [ fhir:v "The NASA organizational sponsor responsible for the medical requirement" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -7222,6 +8154,48 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-cardiovascular-equipment-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-cardiovascular-equipment-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Cardiovascular Assessment Equipment" ] ;
+       fhir:description [ fhir:v "Value set for cardiovascular assessment hardware." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-exercise-equipment-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-exercise-equipment-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Exercise Equipment" ] ;
+       fhir:description [ fhir:v "Value set for exercise and fitness assessment hardware." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -7274,6 +8248,300 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-data-archive-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-data-archive-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Data Archive Systems" ] ;
+       fhir:description [ fhir:v "Value set for data archive and delivery systems." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-data-archive-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Data Archive Systems" ] ;
+       fhir:description [ fhir:v "Data archive and delivery systems for NASA medical data." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-medical-facility-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-medical-facility-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Facilities" ] ;
+       fhir:description [ fhir:v "Value set for medical testing facility locations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-medical-facility-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Facility Locations" ] ;
+       fhir:description [ fhir:v "Medical testing facility locations for NASA medical requirements." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-medical-hardware-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-medical-hardware-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Hardware" ] ;
+       fhir:description [ fhir:v "Complete value set for all NASA medical hardware." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-medical-hardware-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Hardware" ] ;
+       fhir:description [ fhir:v "Medical equipment and hardware used in NASA medical requirements." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-medical-roles-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-medical-roles-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Personnel Roles" ] ;
+       fhir:description [ fhir:v "Value set for medical personnel roles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-medical-roles-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Medical Personnel Roles" ] ;
+       fhir:description [ fhir:v "Personnel roles involved in NASA medical requirements." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-mission-phase-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Mission Phase Timing" ] ;
+       fhir:description [ fhir:v "Mission phases and timing codes for medical requirements scheduling." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-mission-phase-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-mission-phase-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Mission Phases" ] ;
+       fhir:description [ fhir:v "Value set for mission phase timing." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-discipline-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-mrid-discipline-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA MRID Medical Disciplines" ] ;
+       fhir:description [ fhir:v "Value set for NASA MRID medical disciplines." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-mrid-discipline-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA MRID Medical Disciplines" ] ;
+       fhir:description [ fhir:v "Medical disciplines categorizing NASA Medical Requirements Integration Documents." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-sponsor-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-mrid-sponsor-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA MRID Sponsor Organizations" ] ;
+       fhir:description [ fhir:v "Value set for NASA MRID sponsor organizations." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-mrid-sponsor-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA MRID Sponsor Organizations" ] ;
+       fhir:description [ fhir:v "Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "Location"
          ]
        ] ) ;
@@ -7287,6 +8555,111 @@
          a fhir:Canonical ;
          fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"^^xsd:anyURI ;
          fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-postflight-offset-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-postflight-offset-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Postflight Schedule Offsets" ] ;
+       fhir:description [ fhir:v "Value set for R-plus postflight schedule offsets." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-preflight-offset-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-preflight-offset-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Preflight Schedule Offsets" ] ;
+       fhir:description [ fhir:v "Value set for L-minus preflight schedule offsets." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-radiation-equipment-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-radiation-equipment-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Radiation Monitoring Equipment" ] ;
+       fhir:description [ fhir:v "Value set for radiation monitoring hardware." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/nasa-schedule-offset-cs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Schedule Offset Notation" ] ;
+       fhir:description [ fhir:v "L-minus and R-plus notation codes for mission timeline scheduling." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-schedule-offset-vs> ;
+         fhir:reference [ fhir:v "ValueSet/nasa-schedule-offset-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NASA Schedule Offsets" ] ;
+       fhir:description [ fhir:v "Complete value set for all mission schedule offsets." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
        ]
      ] [
        fhir:extension ( [
@@ -10740,6 +12113,25 @@
            fhir:l fhir:screening-astronaut.html
          ] ;
          fhir:title [ fhir:v "Astronaut Training" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "nasa-medical-requirements.html"^^xsd:anyURI ;
+             fhir:l fhir:nasa-medical-requirements.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "nasa-medical-requirements.html"^^xsd:anyURI ;
+           fhir:l fhir:nasa-medical-requirements.html
+         ] ;
+         fhir:title [ fhir:v "NASA Medical Requirements" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

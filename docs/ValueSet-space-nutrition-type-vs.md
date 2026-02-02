@@ -1,4 +1,4 @@
-# Space Nutrition Types - v0.5.6
+# Space Nutrition Types - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-nutrition-type-vs | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:SpaceNutritionTypeVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-nutrition-type-vs | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:SpaceNutritionTypeVS |
 
  
 Types of nutritional products available in space missions 
@@ -46,12 +46,12 @@ Types of nutritional products available in space missions
   "resourceType" : "ValueSet",
   "id" : "space-nutrition-type-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-nutrition-type-vs",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpaceNutritionTypeVS",
   "title" : "Space Nutrition Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

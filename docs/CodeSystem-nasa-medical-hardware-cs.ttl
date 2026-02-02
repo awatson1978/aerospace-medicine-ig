@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-medical-hardware-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-medical-hardware-cs</b></p><a name=\"nasa-medical-hardware-cs\"> </a><a name=\"hcnasa-medical-hardware-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cpd<a name=\"nasa-medical-hardware-cs-cpd\"> </a></td><td>Crew Passive Dosimeter</td><td>Personal radiation dosimeter worn continuously by crewmembers.</td></tr><tr><td style=\"white-space:nowrap\">tepc<a name=\"nasa-medical-hardware-cs-tepc\"> </a></td><td>Tissue Equivalent Proportional Counter</td><td>Active radiation detector measuring dose equivalent rates.</td></tr><tr><td style=\"white-space:nowrap\">evcpds<a name=\"nasa-medical-hardware-cs-evcpds\"> </a></td><td>EVA Crew Personal Dosimeter System</td><td>Dosimeter system worn during extravehicular activities.</td></tr><tr><td style=\"white-space:nowrap\">iv-tepc<a name=\"nasa-medical-hardware-cs-iv-tepc\"> </a></td><td>Intravehicular TEPC</td><td>TEPC for monitoring radiation inside the vehicle.</td></tr><tr><td style=\"white-space:nowrap\">ram<a name=\"nasa-medical-hardware-cs-ram\"> </a></td><td>Radiation Area Monitor</td><td>Fixed location radiation monitoring device.</td></tr><tr><td style=\"white-space:nowrap\">12-lead-ecg<a name=\"nasa-medical-hardware-cs-12-lead-ecg\"> </a></td><td>12-Lead ECG Machine</td><td>Electrocardiograph for recording 12-lead cardiac electrical activity.</td></tr><tr><td style=\"white-space:nowrap\">marquette-case<a name=\"nasa-medical-hardware-cs-marquette-case\"> </a></td><td>Marquette CASE 15</td><td>ECG system used for exercise stress testing.</td></tr><tr><td style=\"white-space:nowrap\">blood-pressure-monitor<a name=\"nasa-medical-hardware-cs-blood-pressure-monitor\"> </a></td><td>Blood Pressure Monitor</td><td>Device for measuring systolic and diastolic blood pressure.</td></tr><tr><td style=\"white-space:nowrap\">t2-treadmill<a name=\"nasa-medical-hardware-cs-t2-treadmill\"> </a></td><td>T2 Treadmill</td><td>ISS T2 treadmill for aerobic exercise countermeasures.</td></tr><tr><td style=\"white-space:nowrap\">ared<a name=\"nasa-medical-hardware-cs-ared\"> </a></td><td>Advanced Resistive Exercise Device</td><td>ISS resistive exercise device for strength training.</td></tr><tr><td style=\"white-space:nowrap\">cevis<a name=\"nasa-medical-hardware-cs-cevis\"> </a></td><td>Cycle Ergometer with Vibration Isolation</td><td>ISS cycle ergometer for cardiovascular exercise.</td></tr><tr><td style=\"white-space:nowrap\">quinton-treadmill<a name=\"nasa-medical-hardware-cs-quinton-treadmill\"> </a></td><td>Quinton 1860 Treadmill</td><td>Treadmill used for exercise stress testing on ground.</td></tr><tr><td style=\"white-space:nowrap\">cybex-leg-press<a name=\"nasa-medical-hardware-cs-cybex-leg-press\"> </a></td><td>Cybex Leg Press</td><td>Leg press machine for lower body strength assessment.</td></tr><tr><td style=\"white-space:nowrap\">hand-grip-dynamometer<a name=\"nasa-medical-hardware-cs-hand-grip-dynamometer\"> </a></td><td>Hand Grip Dynamometer</td><td>Device for measuring hand grip strength.</td></tr><tr><td style=\"white-space:nowrap\">sit-reach-bench<a name=\"nasa-medical-hardware-cs-sit-reach-bench\"> </a></td><td>Sit and Reach Bench</td><td>Equipment for flexibility assessment.</td></tr><tr><td style=\"white-space:nowrap\">smith-bench<a name=\"nasa-medical-hardware-cs-smith-bench\"> </a></td><td>Smith Bench</td><td>Bench press with guided barbell for strength testing.</td></tr><tr><td style=\"white-space:nowrap\">mmd<a name=\"nasa-medical-hardware-cs-mmd\"> </a></td><td>Mass Measurement Device</td><td>Russian device for measuring body mass in microgravity.</td></tr><tr><td style=\"white-space:nowrap\">dexa<a name=\"nasa-medical-hardware-cs-dexa\"> </a></td><td>DEXA Scanner</td><td>Dual-energy X-ray absorptiometry for bone density measurement.</td></tr><tr><td style=\"white-space:nowrap\">audiometer<a name=\"nasa-medical-hardware-cs-audiometer\"> </a></td><td>Audiometer</td><td>Device for measuring hearing thresholds.</td></tr><tr><td style=\"white-space:nowrap\">tympanometer<a name=\"nasa-medical-hardware-cs-tympanometer\"> </a></td><td>Tympanometer</td><td>Device for assessing middle ear function.</td></tr><tr><td style=\"white-space:nowrap\">ooha-headset<a name=\"nasa-medical-hardware-cs-ooha-headset\"> </a></td><td>OOHA Headset</td><td>On-Orbit Hearing Assessment headset.</td></tr><tr><td style=\"white-space:nowrap\">kuduwave<a name=\"nasa-medical-hardware-cs-kuduwave\"> </a></td><td>KUDUwave Software</td><td>Software for on-orbit audiometric testing.</td></tr><tr><td style=\"white-space:nowrap\">microbial-air-sampler<a name=\"nasa-medical-hardware-cs-microbial-air-sampler\"> </a></td><td>Microbial Air Sampler III</td><td>Device for collecting airborne microbial samples.</td></tr><tr><td style=\"white-space:nowrap\">water-sample-kit<a name=\"nasa-medical-hardware-cs-water-sample-kit\"> </a></td><td>Water Sample Collection Kit</td><td>Kit for collecting potable water samples.</td></tr><tr><td style=\"white-space:nowrap\">surface-swab-kit<a name=\"nasa-medical-hardware-cs-surface-swab-kit\"> </a></td><td>Surface Swab Collection Kit</td><td>Kit for collecting surface microbial samples.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "NASAMedicalHardwareCS"] ; # 
+  fhir:title [ fhir:v "NASA Medical Hardware"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical equipment and hardware used in NASA medical requirements."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cpd" ] ;
+     fhir:display [ fhir:v "Crew Passive Dosimeter" ] ;
+     fhir:definition [ fhir:v "Personal radiation dosimeter worn continuously by crewmembers." ]
+  ] [
+     fhir:code [ fhir:v "tepc" ] ;
+     fhir:display [ fhir:v "Tissue Equivalent Proportional Counter" ] ;
+     fhir:definition [ fhir:v "Active radiation detector measuring dose equivalent rates." ]
+  ] [
+     fhir:code [ fhir:v "evcpds" ] ;
+     fhir:display [ fhir:v "EVA Crew Personal Dosimeter System" ] ;
+     fhir:definition [ fhir:v "Dosimeter system worn during extravehicular activities." ]
+  ] [
+     fhir:code [ fhir:v "iv-tepc" ] ;
+     fhir:display [ fhir:v "Intravehicular TEPC" ] ;
+     fhir:definition [ fhir:v "TEPC for monitoring radiation inside the vehicle." ]
+  ] [
+     fhir:code [ fhir:v "ram" ] ;
+     fhir:display [ fhir:v "Radiation Area Monitor" ] ;
+     fhir:definition [ fhir:v "Fixed location radiation monitoring device." ]
+  ] [
+     fhir:code [ fhir:v "12-lead-ecg" ] ;
+     fhir:display [ fhir:v "12-Lead ECG Machine" ] ;
+     fhir:definition [ fhir:v "Electrocardiograph for recording 12-lead cardiac electrical activity." ]
+  ] [
+     fhir:code [ fhir:v "marquette-case" ] ;
+     fhir:display [ fhir:v "Marquette CASE 15" ] ;
+     fhir:definition [ fhir:v "ECG system used for exercise stress testing." ]
+  ] [
+     fhir:code [ fhir:v "blood-pressure-monitor" ] ;
+     fhir:display [ fhir:v "Blood Pressure Monitor" ] ;
+     fhir:definition [ fhir:v "Device for measuring systolic and diastolic blood pressure." ]
+  ] [
+     fhir:code [ fhir:v "t2-treadmill" ] ;
+     fhir:display [ fhir:v "T2 Treadmill" ] ;
+     fhir:definition [ fhir:v "ISS T2 treadmill for aerobic exercise countermeasures." ]
+  ] [
+     fhir:code [ fhir:v "ared" ] ;
+     fhir:display [ fhir:v "Advanced Resistive Exercise Device" ] ;
+     fhir:definition [ fhir:v "ISS resistive exercise device for strength training." ]
+  ] [
+     fhir:code [ fhir:v "cevis" ] ;
+     fhir:display [ fhir:v "Cycle Ergometer with Vibration Isolation" ] ;
+     fhir:definition [ fhir:v "ISS cycle ergometer for cardiovascular exercise." ]
+  ] [
+     fhir:code [ fhir:v "quinton-treadmill" ] ;
+     fhir:display [ fhir:v "Quinton 1860 Treadmill" ] ;
+     fhir:definition [ fhir:v "Treadmill used for exercise stress testing on ground." ]
+  ] [
+     fhir:code [ fhir:v "cybex-leg-press" ] ;
+     fhir:display [ fhir:v "Cybex Leg Press" ] ;
+     fhir:definition [ fhir:v "Leg press machine for lower body strength assessment." ]
+  ] [
+     fhir:code [ fhir:v "hand-grip-dynamometer" ] ;
+     fhir:display [ fhir:v "Hand Grip Dynamometer" ] ;
+     fhir:definition [ fhir:v "Device for measuring hand grip strength." ]
+  ] [
+     fhir:code [ fhir:v "sit-reach-bench" ] ;
+     fhir:display [ fhir:v "Sit and Reach Bench" ] ;
+     fhir:definition [ fhir:v "Equipment for flexibility assessment." ]
+  ] [
+     fhir:code [ fhir:v "smith-bench" ] ;
+     fhir:display [ fhir:v "Smith Bench" ] ;
+     fhir:definition [ fhir:v "Bench press with guided barbell for strength testing." ]
+  ] [
+     fhir:code [ fhir:v "mmd" ] ;
+     fhir:display [ fhir:v "Mass Measurement Device" ] ;
+     fhir:definition [ fhir:v "Russian device for measuring body mass in microgravity." ]
+  ] [
+     fhir:code [ fhir:v "dexa" ] ;
+     fhir:display [ fhir:v "DEXA Scanner" ] ;
+     fhir:definition [ fhir:v "Dual-energy X-ray absorptiometry for bone density measurement." ]
+  ] [
+     fhir:code [ fhir:v "audiometer" ] ;
+     fhir:display [ fhir:v "Audiometer" ] ;
+     fhir:definition [ fhir:v "Device for measuring hearing thresholds." ]
+  ] [
+     fhir:code [ fhir:v "tympanometer" ] ;
+     fhir:display [ fhir:v "Tympanometer" ] ;
+     fhir:definition [ fhir:v "Device for assessing middle ear function." ]
+  ] [
+     fhir:code [ fhir:v "ooha-headset" ] ;
+     fhir:display [ fhir:v "OOHA Headset" ] ;
+     fhir:definition [ fhir:v "On-Orbit Hearing Assessment headset." ]
+  ] [
+     fhir:code [ fhir:v "kuduwave" ] ;
+     fhir:display [ fhir:v "KUDUwave Software" ] ;
+     fhir:definition [ fhir:v "Software for on-orbit audiometric testing." ]
+  ] [
+     fhir:code [ fhir:v "microbial-air-sampler" ] ;
+     fhir:display [ fhir:v "Microbial Air Sampler III" ] ;
+     fhir:definition [ fhir:v "Device for collecting airborne microbial samples." ]
+  ] [
+     fhir:code [ fhir:v "water-sample-kit" ] ;
+     fhir:display [ fhir:v "Water Sample Collection Kit" ] ;
+     fhir:definition [ fhir:v "Kit for collecting potable water samples." ]
+  ] [
+     fhir:code [ fhir:v "surface-swab-kit" ] ;
+     fhir:display [ fhir:v "Surface Swab Collection Kit" ] ;
+     fhir:definition [ fhir:v "Kit for collecting surface microbial samples." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

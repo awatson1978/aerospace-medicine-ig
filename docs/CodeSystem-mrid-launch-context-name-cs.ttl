@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mrid-launch-context-name-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mrid-launch-context-name-cs</b></p><a name=\"mrid-launch-context-name-cs\"> </a><a name=\"hcmrid-launch-context-name-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">patient<a name=\"mrid-launch-context-name-cs-patient\"> </a></td><td>Patient</td><td>The astronaut/crewmember subject</td></tr><tr><td style=\"white-space:nowrap\">encounter<a name=\"mrid-launch-context-name-cs-encounter\"> </a></td><td>Encounter</td><td>The mission or medical encounter</td></tr><tr><td style=\"white-space:nowrap\">user<a name=\"mrid-launch-context-name-cs-user\"> </a></td><td>User</td><td>The user completing the questionnaire</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "MRIDLaunchContextNameCS"] ; # 
+  fhir:title [ fhir:v "MRID Launch Context Name CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Names for launch context variables"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "patient" ] ;
+     fhir:display [ fhir:v "Patient" ] ;
+     fhir:definition [ fhir:v "The astronaut/crewmember subject" ]
+  ] [
+     fhir:code [ fhir:v "encounter" ] ;
+     fhir:display [ fhir:v "Encounter" ] ;
+     fhir:definition [ fhir:v "The mission or medical encounter" ]
+  ] [
+     fhir:code [ fhir:v "user" ] ;
+     fhir:display [ fhir:v "User" ] ;
+     fhir:definition [ fhir:v "The user completing the questionnaire" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

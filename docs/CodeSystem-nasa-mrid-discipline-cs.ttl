@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-mrid-discipline-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-mrid-discipline-cs</b></p><a name=\"nasa-mrid-discipline-cs\"> </a><a name=\"hcnasa-mrid-discipline-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">radiation<a name=\"nasa-mrid-discipline-cs-radiation\"> </a></td><td>Radiation</td><td>Radiation monitoring, dosimetry, and protection.</td></tr><tr><td style=\"white-space:nowrap\">cardiovascular<a name=\"nasa-mrid-discipline-cs-cardiovascular\"> </a></td><td>Cardiovascular</td><td>Cardiovascular assessment including ECG, stress testing, and blood pressure monitoring.</td></tr><tr><td style=\"white-space:nowrap\">bone-muscle-exercise<a name=\"nasa-mrid-discipline-cs-bone-muscle-exercise\"> </a></td><td>Bone, Muscle &amp; Exercise</td><td>Musculoskeletal health, bone density, and exercise countermeasures.</td></tr><tr><td style=\"white-space:nowrap\">behavioral<a name=\"nasa-mrid-discipline-cs-behavioral\"> </a></td><td>Behavior and Performance</td><td>Psychological assessment, behavioral health, and cognitive performance.</td></tr><tr><td style=\"white-space:nowrap\">environmental<a name=\"nasa-mrid-discipline-cs-environmental\"> </a></td><td>Environmental Health</td><td>Environmental monitoring including air quality, water quality, and microbiology.</td></tr><tr><td style=\"white-space:nowrap\">neurovestibular<a name=\"nasa-mrid-discipline-cs-neurovestibular\"> </a></td><td>Neurovestibular</td><td>Balance, vestibular function, and spatial orientation assessment.</td></tr><tr><td style=\"white-space:nowrap\">ophthalmology<a name=\"nasa-mrid-discipline-cs-ophthalmology\"> </a></td><td>Ophthalmology</td><td>Eye examinations, visual acuity, and SANS monitoring.</td></tr><tr><td style=\"white-space:nowrap\">audiology<a name=\"nasa-mrid-discipline-cs-audiology\"> </a></td><td>Audiology</td><td>Hearing assessment and acoustic protection.</td></tr><tr><td style=\"white-space:nowrap\">dental<a name=\"nasa-mrid-discipline-cs-dental\"> </a></td><td>Dental</td><td>Dental examinations and oral health.</td></tr><tr><td style=\"white-space:nowrap\">laboratory<a name=\"nasa-mrid-discipline-cs-laboratory\"> </a></td><td>Laboratory Medicine</td><td>Clinical laboratory testing and screening.</td></tr><tr><td style=\"white-space:nowrap\">physical-examination<a name=\"nasa-mrid-discipline-cs-physical-examination\"> </a></td><td>Physical Examination</td><td>Comprehensive physical examinations and health status evaluations.</td></tr><tr><td style=\"white-space:nowrap\">eva-medical<a name=\"nasa-mrid-discipline-cs-eva-medical\"> </a></td><td>EVA Medical</td><td>Medical monitoring and support for extravehicular activities.</td></tr><tr><td style=\"white-space:nowrap\">reconditioning<a name=\"nasa-mrid-discipline-cs-reconditioning\"> </a></td><td>Reconditioning</td><td>Post-flight rehabilitation and reconditioning.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "NASAMRIDDisciplineCS"] ; # 
+  fhir:title [ fhir:v "NASA MRID Medical Disciplines"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical disciplines categorizing NASA Medical Requirements Integration Documents."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "radiation" ] ;
+     fhir:display [ fhir:v "Radiation" ] ;
+     fhir:definition [ fhir:v "Radiation monitoring, dosimetry, and protection." ]
+  ] [
+     fhir:code [ fhir:v "cardiovascular" ] ;
+     fhir:display [ fhir:v "Cardiovascular" ] ;
+     fhir:definition [ fhir:v "Cardiovascular assessment including ECG, stress testing, and blood pressure monitoring." ]
+  ] [
+     fhir:code [ fhir:v "bone-muscle-exercise" ] ;
+     fhir:display [ fhir:v "Bone, Muscle & Exercise" ] ;
+     fhir:definition [ fhir:v "Musculoskeletal health, bone density, and exercise countermeasures." ]
+  ] [
+     fhir:code [ fhir:v "behavioral" ] ;
+     fhir:display [ fhir:v "Behavior and Performance" ] ;
+     fhir:definition [ fhir:v "Psychological assessment, behavioral health, and cognitive performance." ]
+  ] [
+     fhir:code [ fhir:v "environmental" ] ;
+     fhir:display [ fhir:v "Environmental Health" ] ;
+     fhir:definition [ fhir:v "Environmental monitoring including air quality, water quality, and microbiology." ]
+  ] [
+     fhir:code [ fhir:v "neurovestibular" ] ;
+     fhir:display [ fhir:v "Neurovestibular" ] ;
+     fhir:definition [ fhir:v "Balance, vestibular function, and spatial orientation assessment." ]
+  ] [
+     fhir:code [ fhir:v "ophthalmology" ] ;
+     fhir:display [ fhir:v "Ophthalmology" ] ;
+     fhir:definition [ fhir:v "Eye examinations, visual acuity, and SANS monitoring." ]
+  ] [
+     fhir:code [ fhir:v "audiology" ] ;
+     fhir:display [ fhir:v "Audiology" ] ;
+     fhir:definition [ fhir:v "Hearing assessment and acoustic protection." ]
+  ] [
+     fhir:code [ fhir:v "dental" ] ;
+     fhir:display [ fhir:v "Dental" ] ;
+     fhir:definition [ fhir:v "Dental examinations and oral health." ]
+  ] [
+     fhir:code [ fhir:v "laboratory" ] ;
+     fhir:display [ fhir:v "Laboratory Medicine" ] ;
+     fhir:definition [ fhir:v "Clinical laboratory testing and screening." ]
+  ] [
+     fhir:code [ fhir:v "physical-examination" ] ;
+     fhir:display [ fhir:v "Physical Examination" ] ;
+     fhir:definition [ fhir:v "Comprehensive physical examinations and health status evaluations." ]
+  ] [
+     fhir:code [ fhir:v "eva-medical" ] ;
+     fhir:display [ fhir:v "EVA Medical" ] ;
+     fhir:definition [ fhir:v "Medical monitoring and support for extravehicular activities." ]
+  ] [
+     fhir:code [ fhir:v "reconditioning" ] ;
+     fhir:display [ fhir:v "Reconditioning" ] ;
+     fhir:definition [ fhir:v "Post-flight rehabilitation and reconditioning." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

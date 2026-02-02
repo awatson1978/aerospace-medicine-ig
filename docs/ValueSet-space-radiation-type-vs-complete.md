@@ -1,4 +1,4 @@
-# Complete Space Radiation Types - v0.5.6
+# Complete Space Radiation Types - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:SpaceRadiationTypeVSComplete |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:SpaceRadiationTypeVSComplete |
 
  
 Comprehensive list of ionizing radiation types encountered in space 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-radiation-type-vs-complete",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpaceRadiationTypeVSComplete",
   "title" : "Complete Space Radiation Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

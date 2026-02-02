@@ -1,4 +1,4 @@
-# Sun-Earth L1 Observatory - v0.5.6
+# Sun-Earth L1 Observatory - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

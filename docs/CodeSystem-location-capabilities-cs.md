@@ -1,4 +1,4 @@
-# Location Capabilities Code System - v0.5.6
+# Location Capabilities Code System - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:LocationCapabilitiesCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:LocationCapabilitiesCS |
 
  
 Capabilities and services available at aerospace medicine locations 
@@ -27,12 +27,12 @@ Capabilities and services available at aerospace medicine locations
   "resourceType" : "CodeSystem",
   "id" : "location-capabilities-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "LocationCapabilitiesCS",
   "title" : "Location Capabilities Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

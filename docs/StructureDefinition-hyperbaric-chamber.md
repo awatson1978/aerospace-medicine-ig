@@ -1,4 +1,4 @@
-# Hyperbaric Chamber - v0.5.6
+# Hyperbaric Chamber - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:HyperbaricChamber |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:HyperbaricChamber |
 
  
 A medical facility equipped with a hyperbaric chamber for pressurized treatment 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
   "resourceType" : "StructureDefinition",
   "id" : "hyperbaric-chamber",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "HyperbaricChamber",
   "title" : "Hyperbaric Chamber",
   "status" : "active",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

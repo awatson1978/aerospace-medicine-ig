@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-medical-roles-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-medical-roles-cs</b></p><a name=\"nasa-medical-roles-cs\"> </a><a name=\"hcnasa-medical-roles-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">flight-surgeon<a name=\"nasa-medical-roles-cs-flight-surgeon\"> </a></td><td>Flight Surgeon</td><td>NASA physician responsible for crew medical care and flight certification.</td></tr><tr><td style=\"white-space:nowrap\">crew-surgeon<a name=\"nasa-medical-roles-cs-crew-surgeon\"> </a></td><td>Crew Surgeon</td><td>Flight surgeon assigned to a specific crew.</td></tr><tr><td style=\"white-space:nowrap\">rho<a name=\"nasa-medical-roles-cs-rho\"> </a></td><td>Radiation Health Officer</td><td>Officer responsible for radiation exposure monitoring and risk assessment.</td></tr><tr><td style=\"white-space:nowrap\">bhp-specialist<a name=\"nasa-medical-roles-cs-bhp-specialist\"> </a></td><td>BHP Specialist</td><td>Behavioral Health and Performance specialist (psychiatrist or psychologist).</td></tr><tr><td style=\"white-space:nowrap\">ascr-specialist<a name=\"nasa-medical-roles-cs-ascr-specialist\"> </a></td><td>ASCR Specialist</td><td>Astronaut Strength, Conditioning, and Rehabilitation specialist.</td></tr><tr><td style=\"white-space:nowrap\">instructor<a name=\"nasa-medical-roles-cs-instructor\"> </a></td><td>Instructor</td><td>Training instructor for medical procedures.</td></tr><tr><td style=\"white-space:nowrap\">crewmember<a name=\"nasa-medical-roles-cs-crewmember\"> </a></td><td>Crewmember</td><td>ISS or mission crewmember subject to medical requirements.</td></tr><tr><td style=\"white-space:nowrap\">ame<a name=\"nasa-medical-roles-cs-ame\"> </a></td><td>Aviation Medical Examiner</td><td>Designated medical examiner for aviation/astronaut medical certification.</td></tr><tr><td style=\"white-space:nowrap\">landing-team<a name=\"nasa-medical-roles-cs-landing-team\"> </a></td><td>Landing Team</td><td>Personnel involved in crew recovery at landing site.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "NASAMedicalRolesCS"] ; # 
+  fhir:title [ fhir:v "NASA Medical Personnel Roles"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Personnel roles involved in NASA medical requirements."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "flight-surgeon" ] ;
+     fhir:display [ fhir:v "Flight Surgeon" ] ;
+     fhir:definition [ fhir:v "NASA physician responsible for crew medical care and flight certification." ]
+  ] [
+     fhir:code [ fhir:v "crew-surgeon" ] ;
+     fhir:display [ fhir:v "Crew Surgeon" ] ;
+     fhir:definition [ fhir:v "Flight surgeon assigned to a specific crew." ]
+  ] [
+     fhir:code [ fhir:v "rho" ] ;
+     fhir:display [ fhir:v "Radiation Health Officer" ] ;
+     fhir:definition [ fhir:v "Officer responsible for radiation exposure monitoring and risk assessment." ]
+  ] [
+     fhir:code [ fhir:v "bhp-specialist" ] ;
+     fhir:display [ fhir:v "BHP Specialist" ] ;
+     fhir:definition [ fhir:v "Behavioral Health and Performance specialist (psychiatrist or psychologist)." ]
+  ] [
+     fhir:code [ fhir:v "ascr-specialist" ] ;
+     fhir:display [ fhir:v "ASCR Specialist" ] ;
+     fhir:definition [ fhir:v "Astronaut Strength, Conditioning, and Rehabilitation specialist." ]
+  ] [
+     fhir:code [ fhir:v "instructor" ] ;
+     fhir:display [ fhir:v "Instructor" ] ;
+     fhir:definition [ fhir:v "Training instructor for medical procedures." ]
+  ] [
+     fhir:code [ fhir:v "crewmember" ] ;
+     fhir:display [ fhir:v "Crewmember" ] ;
+     fhir:definition [ fhir:v "ISS or mission crewmember subject to medical requirements." ]
+  ] [
+     fhir:code [ fhir:v "ame" ] ;
+     fhir:display [ fhir:v "Aviation Medical Examiner" ] ;
+     fhir:definition [ fhir:v "Designated medical examiner for aviation/astronaut medical certification." ]
+  ] [
+     fhir:code [ fhir:v "landing-team" ] ;
+     fhir:display [ fhir:v "Landing Team" ] ;
+     fhir:definition [ fhir:v "Personnel involved in crew recovery at landing site." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

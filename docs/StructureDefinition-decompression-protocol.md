@@ -1,4 +1,4 @@
-# Decompression Protocol - v0.5.6
+# Decompression Protocol - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/decompression-protocol | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:DecompressionProtocol |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/decompression-protocol | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:DecompressionProtocol |
 
  
 Standardized decompression procedures for diving operations and space analog training 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
   "resourceType" : "StructureDefinition",
   "id" : "decompression-protocol",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/decompression-protocol",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "DecompressionProtocol",
   "title" : "Decompression Protocol",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Mars Mission Devices - Certified - v0.5.6
+# Mars Mission Devices - Certified - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:MarsCertifiedDevicesVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:MarsCertifiedDevicesVS |
 
  
 Flight-qualified hardware for Mars missions 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mars-devices-certified-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "MarsCertifiedDevicesVS",
   "title" : "Mars Mission Devices - Certified",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

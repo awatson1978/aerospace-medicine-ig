@@ -1,4 +1,4 @@
-# Space Psychological Effects - v0.5.6
+# Space Psychological Effects - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:SpacePsychologicalEffectsValueSet |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:SpacePsychologicalEffectsValueSet |
 
  
 Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-psychological-effects",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpacePsychologicalEffectsValueSet",
   "title" : "Space Psychological Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

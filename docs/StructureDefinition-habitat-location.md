@@ -1,4 +1,4 @@
-# Habitat Location - v0.5.6
+# Habitat Location - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/habitat-location | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:HabitatLocation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/habitat-location | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:HabitatLocation |
 
  
 Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-habitat-location.csv
   "resourceType" : "StructureDefinition",
   "id" : "habitat-location",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "HabitatLocation",
   "title" : "Habitat Location",
   "status" : "active",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Advanced Dive Profile - v0.5.6
+# Advanced Dive Profile - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/advanced-dive-profile | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:AdvancedDiveProfile |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/advanced-dive-profile | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:AdvancedDiveProfile |
 
  
 Comprehensive dive profile with enhanced data collection and regulatory compliance 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
   "resourceType" : "StructureDefinition",
   "id" : "advanced-dive-profile",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/advanced-dive-profile",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "AdvancedDiveProfile",
   "title" : "Advanced Dive Profile",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

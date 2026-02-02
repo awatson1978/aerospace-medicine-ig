@@ -1,4 +1,4 @@
-# Harness Load - v0.5.6
+# Harness Load - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:HarnessLoad |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:HarnessLoad |
 
 Percentage of body weight applied by harness during treadmill exercise
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-harness-load.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "harness-load",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "HarnessLoad",
   "title" : "Harness Load",
   "status" : "active",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

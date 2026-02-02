@@ -1,4 +1,4 @@
-# Extravehicular Activity Procedure - v0.5.6
+# Extravehicular Activity Procedure - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:EVAProcedure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:EVAProcedure |
 
  
 Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-eva-procedure.csv), 
   "resourceType" : "StructureDefinition",
   "id" : "eva-procedure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "EVAProcedure",
   "title" : "Extravehicular Activity Procedure",
   "status" : "active",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

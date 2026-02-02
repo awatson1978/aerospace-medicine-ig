@@ -1,4 +1,4 @@
-# Artifacts Summary - v0.5.6
+# Artifacts Summary - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -25,6 +25,35 @@ These define forms used by systems conforming to this implementation guide to ca
 | [Astronaut and Space Tourist Medical Screening Questionnaire](Questionnaire-AstronautFlightReadinessQuestionnaire.md) | A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices. |
 | [FAA Form 8500-8 Questionnaire](Questionnaire-FAA8500Questionnaire.md) | FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format |
 | [G-SHOCK Centrifugal Trainer Eligibility Questionnaire](Questionnaire-GShockEligibility.md) | Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training |
+| [MEDB 1.10 Ophthalmologic Examination](Questionnaire-MEDB110OphthalmologicExamQuestionnaire.md) | NASA Medical Requirements Integration Document for ophthalmologic examination. Captures comprehensive eye examination data for monitoring Spaceflight Associated Neuro-ocular Syndrome (SANS). |
+| [MEDB 1.11 Body Composition/DEXA](Questionnaire-MEDB111BodyCompositionQuestionnaire.md) | NASA Medical Requirements Integration Document for body composition assessment using DEXA. |
+| [MEDB 1.14 Body Mass Measurement](Questionnaire-MEDB114BodyMassQuestionnaire.md) | NASA Medical Requirements Integration Document for body mass measurement tracking. |
+| [MEDB 1.6 Resting ECG](Questionnaire-MEDB16RestingECGQuestionnaire.md) | NASA Medical Requirements Integration Document for resting 12-lead ECG assessment. Captures pre- and postflight ECG recordings for cardiovascular evaluation of long-duration flight crew members. |
+| [MEDB 1.8 Audiometry](Questionnaire-MEDB18AudiometryQuestionnaire.md) | NASA Medical Requirements Integration Document for audiometric assessment. Captures pre- and postflight hearing threshold data to monitor crew hearing status. |
+| [MEDB 1.9 Dental Examination](Questionnaire-MEDB19DentalExamQuestionnaire.md) | NASA Medical Requirements Integration Document for dental examination. Captures comprehensive dental assessment data for spaceflight crew members. |
+| [MEDB 2.1 Routine Laboratory Panel](Questionnaire-MEDB21RoutineLabPanelQuestionnaire.md) | NASA Medical Requirements Integration Document for routine laboratory panel. Captures comprehensive blood chemistry, hematology, and urinalysis data for spaceflight crew members. |
+| [MEDB 2.2 MRSA Screening](Questionnaire-MEDB22MRSAScreeningQuestionnaire.md) | NASA Medical Requirements Integration Document for MRSA screening. Screens crew members for Methicillin-resistant Staphylococcus aureus colonization prior to spaceflight. |
+| [MEDB 2.3 Tuberculosis Testing](Questionnaire-MEDB23TBTestingQuestionnaire.md) | NASA Medical Requirements Integration Document for tuberculosis screening. Screens crew members for TB infection prior to spaceflight. |
+| [MEDB 2.4 H. pylori Screening](Questionnaire-MEDB24HpyloriScreeningQuestionnaire.md) | NASA Medical Requirements Integration Document for Helicobacter pylori screening. Screens crew members for H. pylori infection prior to long-duration spaceflight. |
+| [MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry](Questionnaire-MEDB31RadiationMonitoringQuestionnaire.md) | NASA Medical Requirements Integration Document for radiation monitoring and crew personal dosimetry. Captures crew radiation exposure data for occupational exposure documentation and health risk assessment. |
+| [MEDB 5.1 Aerobic Fitness Assessment](Questionnaire-MEDB51AerobicFitnessQuestionnaire.md) | NASA Medical Requirements Integration Document for aerobic fitness assessment. Captures VO2max and related cardiovascular fitness data for spaceflight crew members. |
+| [MEDB 5.2 Strength Assessment](Questionnaire-MEDB52StrengthAssessmentQuestionnaire.md) | NASA Medical Requirements Integration Document for muscle strength assessment. Captures isokinetic and isometric strength data for spaceflight crew members. |
+| [MEDB 5.3 Exercise Prescription](Questionnaire-MEDB53ExercisePrescriptionQuestionnaire.md) | NASA Medical Requirements Integration Document for exercise prescription. Documents in-flight exercise countermeasures protocol and adherence. |
+| [MEDB 6.1 EVA Medical Requirements](Questionnaire-MEDB61EVAMedicalRequirementsQuestionnaire.md) | NASA Medical Requirements Integration Document for EVA medical requirements. Documents medical clearance, prebreathe protocol, and health monitoring for extravehicular activities. |
+| [MEDB 7.1 Preflight Psychiatric/Psychological Status Check](Questionnaire-MEDB71PsychStatusQuestionnaire.md) | NASA Medical Requirements Integration Document for preflight behavioral health assessment. Captures psychiatric/psychological assessment of behavioral readiness for flight and review of psychological services. |
+| [MEDB 7.4 Crew Dynamics Assessment](Questionnaire-MEDB74CrewDynamicsQuestionnaire.md) | NASA Medical Requirements Integration Document for crew dynamics assessment. Evaluates crew cohesion, interpersonal relationships, team functioning, and conflict management throughout mission phases. |
+| [MEDB 7.5 Family Support Evaluation](Questionnaire-MEDB75FamilySupportQuestionnaire.md) | NASA Medical Requirements Integration Document for family support evaluation. Assesses family support systems, identifies needs, and coordinates support services throughout mission phases. |
+| [MR008L Medical Hardware Maintenance](Questionnaire-MR008LMedicalHardwareMaintenanceQuestionnaire.md) | NASA Medical Requirements Integration Document for medical hardware maintenance. Tracks calibration schedules, preventive maintenance, and equipment functionality verification. |
+| [MR022S Air Quality Monitoring](Questionnaire-MR022SAirQualityQuestionnaire.md) | NASA Medical Requirements Integration Document for atmospheric monitoring. Tracks air quality parameters to ensure crew health and safety. |
+| [MR026L Reconditioning Assessment](Questionnaire-MR026LReconditioningQuestionnaire.md) | NASA Medical Requirements Integration Document for postflight reconditioning. Tracks crew recovery and rehabilitation progress after long-duration spaceflight. |
+| [MR032L Telemedicine Setup](Questionnaire-MR032LTelemedicineSetupQuestionnaire.md) | NASA Medical Requirements Integration Document for telemedicine setup and operations. Configures communication links, verifies equipment, and ensures readiness for remote medical support. |
+| [MR036L Medical Kit Inventory](Questionnaire-MR036LMedicalKitInventoryQuestionnaire.md) | NASA Medical Requirements Integration Document for medical kit inventory management. Tracks medical supplies, equipment status, and expiration dates aboard ISS. |
+| [MR050L Pharmaceutical Management](Questionnaire-MR050LPharmaceuticalManagementQuestionnaire.md) | NASA Medical Requirements Integration Document for pharmaceutical management aboard ISS. Tracks medication inventory, storage conditions, dispensing, and stability monitoring. |
+| [MR051L Water Quality Assessment](Questionnaire-MR051LWaterQualityQuestionnaire.md) | NASA Medical Requirements Integration Document for water quality monitoring. Tracks potable and technical water quality parameters aboard the International Space Station. |
+| [MR054L Microbial Monitoring](Questionnaire-MR054LMicrobialMonitoringQuestionnaire.md) | NASA Medical Requirements Integration Document for microbial monitoring. Tracks microbial populations in air, water, and surfaces aboard ISS. |
+| [MR087S EVA Prebreathe Protocol](Questionnaire-MR087SEVAPrebreathQuestionnaire.md) | NASA Medical Requirements Integration Document for EVA prebreathe protocol. Tracks oxygen prebreathe procedures to prevent decompression sickness. |
+| [MR092L Solar Particle Event Protocol](Questionnaire-MR092LSPEProtocolQuestionnaire.md) | NASA Medical Requirements Integration Document for Solar Particle Event protocol. Monitors SPE alerts, coordinates crew protective actions, and tracks exposure during events. |
+| [MR093L Radiation Contingency](Questionnaire-MR093LRadiationContingencyQuestionnaire.md) | NASA Medical Requirements Integration Document for radiation contingency events. Documents unexpected radiation events, crew response, and medical assessment. |
 | [NASA HERA Analog Mission Application](Questionnaire-HERAAnalogMissionApplication.md) | Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center |
 
 ### Structures: Resource Profiles 
@@ -69,6 +98,17 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md) | A medical facility equipped with a hyperbaric chamber for pressurized treatment |
 | [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md) | Hyperbaric oxygen therapy or chamber treatment |
 | [ISRU Production Log](StructureDefinition-isru-production-log.md) | Tracking ISRU propellant production (CH4/O2) for Mars return journey |
+| [MRID Questionnaire Profile](StructureDefinition-mrid-questionnaire.md) | Profile for NASA Medical Requirements Integration Document (MRID) questionnaires. This profile standardizes the structure and metadata for MEDB (Medical Evaluation Document Baseline) and MR (Medical Requirements) documents translated to FHIR Questionnaire resources for structured data capture.All MRID questionnaires follow a standard structure with groups for:* Medical Requirements Overview (MRID metadata)
+* Preflight Training
+* Preflight Activities
+* In-Flight Activities
+* Postflight Activities
+* Data Delivery
+* Domain-Specific Results (e.g., radiation doses, ECG findings)
+* Postflight Debrief
+The profile supports SDC-compatible extensions for:* Launch context (astronaut/patient reference)
+* Observation extraction from QuestionnaireResponse
+ |
 | [Mars Crew Member Profile](StructureDefinition-mars-crew-member.md) | Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics |
 | [Mars Extravehicular Activity Procedure](StructureDefinition-mars-eva-procedure.md) | Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure |
 | [Mars Radiation Risk Assessment](StructureDefinition-mars-radiation-risk-assessment.md) | Radiation exposure risk assessment for long-duration deep space missions |
@@ -142,6 +182,12 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Location Capabilities](StructureDefinition-location-capabilities.md) | Specific capabilities and equipment available at location |
 | [Location Hierarchy](StructureDefinition-location-hierarchy.md) | Hierarchical relationship between locations (parent/child) |
 | [Lunar Coordinates](StructureDefinition-lunar-coordinates.md) | Selenographic latitude and longitude for lunar surface locations |
+| [MRID Discipline](StructureDefinition-mrid-discipline.md) | The medical discipline category for the medical requirement |
+| [MRID Document Number](StructureDefinition-mrid-document-number.md) | The official MRID document identifier (e.g., MEDB 3.1, MR004L, MR005S) |
+| [MRID Flight Duration Requirement](StructureDefinition-mrid-flight-duration.md) | Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days') |
+| [MRID Frequency](StructureDefinition-mrid-frequency.md) | How often this medical requirement applies (e.g., 'Every ISS Increment', 'Annual', 'Per mission') |
+| [MRID Launch Context](StructureDefinition-mrid-launch-context.md) | Context for pre-populating the questionnaire with astronaut/patient reference. Compatible with SDC launchContext pattern. |
+| [MRID Sponsor](StructureDefinition-mrid-sponsor.md) | The NASA organizational sponsor responsible for the medical requirement |
 | [Maximum Depth Reached](StructureDefinition-maximum-depth-reached.md) | Maximum depth reached during the dive requiring decompression |
 | [Maximum Operating Pressure](StructureDefinition-maximum-pressure.md) | Maximum pressure the chamber can safely operate at |
 | [Maximum Training Depth](StructureDefinition-maximum-depth.md) | Maximum depth reached during training session |
@@ -189,6 +235,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Artemis Prototype Devices](ValueSet-artemis-prototype-devices-vs.md) | Developmental and test Artemis hardware |
 | [Back Pain and Space Travel](ValueSet-AstronautBackPain.md) | Back pain and associated conditions observed in astronauts and their potential terrestrial applications. |
 | [Behavioral Health Metrics Value Set](ValueSet-behavioral-health-metrics-vs.md) | Key behavioral health state metrics used in aerospace behavioral health monitoring. |
+| [Behavioral Readiness Assessment](ValueSet-behavioral-readiness-vs.md) | Value set for behavioral/psychological flight readiness outcomes. |
 | [Brain and Neurologic Changes](ValueSet-SpaceTravelBrainChanges.md) | Concepts related to physiological and neurological changes from prolonged space travel. |
 | [Calorie Deficit Risk Levels](ValueSet-calorie-deficit-risk-vs.md) | Risk categorization for caloric deficits |
 | [Cognitive Performance Indicators Value Set](ValueSet-cognitive-performance-indicators-vs.md) | Cognitive and vigilance performance indicators relevant to operational readiness. |
@@ -201,21 +248,39 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Diving Medical Contraindications](ValueSet-diving-contraindicated-conditions.md) | Medical conditions that contraindicate diving activities |
 | [Diving Medical Examinations](ValueSet-diving-medical-examinations.md) | Types of medical examinations for diving fitness |
 | [Dosimeter Types](ValueSet-dosimeter-type-vs.md) | Types of radiation dosimeters |
+| [ECG Interpretation Results](ValueSet-ecg-interpretation-vs.md) | Value set for ECG interpretation outcomes. |
 | [EVS Units](ValueSet-evs-units-vs.md) | Units for Exercise Vital Sign measurements |
+| [Fitness Assessment Results](ValueSet-fitness-assessment-result-vs.md) | Value set for fitness test termination criteria and outcomes. |
 | [Gimbal Contraindications](ValueSet-GimbalContraindicatedConditions.md) | Contraindicated conditions for riding a multi-axis gimbal |
 | [Human Mars Mission Plans](ValueSet-crewed-mars-missions-vs.md) | Proposed and conceptual human mission architectures to Mars |
 | [Hydration Types](ValueSet-hydration-type-vs.md) | Types of hydration products used in space |
 | [Hyperbaric Chamber Capabilities](ValueSet-hyperbaric-capabilities-vs.md) | Capabilities available in hyperbaric chambers |
 | [Hyperbaric Chamber Types](ValueSet-hyperbaric-chamber-type-vs.md) | Types of hyperbaric chambers |
+| [ISS Crewmember Types](ValueSet-iss-crewmember-type-vs.md) | Value set for types of ISS crewmembers by agency. |
 | [Isolation Syndrome Factors Value Set](ValueSet-isolation-syndrome-factors-vs.md) | Risk factors related to isolation and confinement that affect behavioral health. |
 | [Location Capabilities Value Set](ValueSet-location-capabilities-vs.md) | Capabilities and services available at aerospace medicine locations |
 | [Lunar Dust Toxicity](ValueSet-LunarDustToxicityValueSet.md) | Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities. |
+| [MRID Launch Context Name](ValueSet-mrid-launch-context-name-vs.md) | Names for launch context variables in MRID questionnaires |
+| [MRID Launch Context Type](ValueSet-mrid-launch-context-type-vs.md) | FHIR resource types for launch context in MRID questionnaires |
 | [Macronutrient Metrics](ValueSet-macronutrient-metrics-vs.md) | Measurement types for macronutrient tracking |
 | [Mars Landing Sites](ValueSet-mars-landing-sites-vs.md) | Candidate landing sites for human Mars missions |
 | [Mars Mission Devices - Certified](ValueSet-mars-devices-certified-vs.md) | Flight-qualified hardware for Mars missions |
 | [Mars Mission Devices - Prototype](ValueSet-mars-devices-prototype-vs.md) | Developmental and test hardware for Mars missions |
 | [Mars Missions](ValueSet-mars-missions-vs.md) | All Mars missions (robotic and human, completed and planned) |
 | [Muscle Stiffness](ValueSet-MuscleStiffnessAndSpaceHealth.md) | Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications. |
+| [NASA Cardiovascular Assessment Equipment](ValueSet-nasa-cardiovascular-equipment-vs.md) | Value set for cardiovascular assessment hardware. |
+| [NASA Exercise Equipment](ValueSet-nasa-exercise-equipment-vs.md) | Value set for exercise and fitness assessment hardware. |
+| [NASA MRID Medical Disciplines](ValueSet-nasa-mrid-discipline-vs.md) | Value set for NASA MRID medical disciplines. |
+| [NASA MRID Sponsor Organizations](ValueSet-nasa-mrid-sponsor-vs.md) | Value set for NASA MRID sponsor organizations. |
+| [NASA Medical Data Archive Systems](ValueSet-nasa-data-archive-vs.md) | Value set for data archive and delivery systems. |
+| [NASA Medical Facilities](ValueSet-nasa-medical-facility-vs.md) | Value set for medical testing facility locations. |
+| [NASA Medical Hardware](ValueSet-nasa-medical-hardware-vs.md) | Complete value set for all NASA medical hardware. |
+| [NASA Medical Personnel Roles](ValueSet-nasa-medical-roles-vs.md) | Value set for medical personnel roles. |
+| [NASA Mission Phases](ValueSet-nasa-mission-phase-vs.md) | Value set for mission phase timing. |
+| [NASA Postflight Schedule Offsets](ValueSet-nasa-postflight-offset-vs.md) | Value set for R-plus postflight schedule offsets. |
+| [NASA Preflight Schedule Offsets](ValueSet-nasa-preflight-offset-vs.md) | Value set for L-minus preflight schedule offsets. |
+| [NASA Radiation Monitoring Equipment](ValueSet-nasa-radiation-equipment-vs.md) | Value set for radiation monitoring hardware. |
+| [NASA Schedule Offsets](ValueSet-nasa-schedule-offset-vs.md) | Complete value set for all mission schedule offsets. |
 | [Neutral Buoyancy Training Activities](ValueSet-neutral-buoyancy-training-activities.md) | Types of training activities conducted in neutral buoyancy environments |
 | [Nutrition Inventory Status](ValueSet-nutrition-inventory-status-vs.md) | Status levels for nutrition inventory management |
 | [Operational Status Value Set](ValueSet-operational-status-vs.md) | Operational status codes for facilities and vehicles |
@@ -266,11 +331,21 @@ These define new code systems used by systems conforming to this implementation 
 | [Hyperbaric Chamber Types](CodeSystem-hyperbaric-chamber-type-cs.md) | Types of hyperbaric chambers |
 | [Isolation Syndrome Factor Code System](CodeSystem-isolation-syndrome-factor-cs.md) | Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions. |
 | [Location Capabilities Code System](CodeSystem-location-capabilities-cs.md) | Capabilities and services available at aerospace medicine locations |
+| [MRID Launch Context Name CodeSystem](CodeSystem-mrid-launch-context-name-cs.md) | Names for launch context variables |
+| [MRID Launch Context Type CodeSystem](CodeSystem-mrid-launch-context-type-cs.md) | FHIR resource types for launch context |
 | [Macronutrient Metrics](CodeSystem-macronutrient-metrics-cs.md) | Measurement types for macronutrient tracking |
 | [Mars Landing Sites (Candidate)](CodeSystem-mars-landing-sites-cs.md) | Candidate landing sites for human Mars missions with areographic coordinates and site characteristics |
 | [Mars Mission Devices - Certified](CodeSystem-mars-devices-certified-cs.md) | Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.) |
 | [Mars Mission Devices - Prototype](CodeSystem-mars-devices-prototype-cs.md) | Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems) |
 | [Mars Missions](CodeSystem-mars-missions-cs.md) | NASA and international missions to Mars (robotic and conceptual human missions) |
+| [NASA MRID Medical Disciplines](CodeSystem-nasa-mrid-discipline-cs.md) | Medical disciplines categorizing NASA Medical Requirements Integration Documents. |
+| [NASA MRID Sponsor Organizations](CodeSystem-nasa-mrid-sponsor-cs.md) | Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents. |
+| [NASA Medical Data Archive Systems](CodeSystem-nasa-data-archive-cs.md) | Data archive and delivery systems for NASA medical data. |
+| [NASA Medical Facility Locations](CodeSystem-nasa-medical-facility-cs.md) | Medical testing facility locations for NASA medical requirements. |
+| [NASA Medical Hardware](CodeSystem-nasa-medical-hardware-cs.md) | Medical equipment and hardware used in NASA medical requirements. |
+| [NASA Medical Personnel Roles](CodeSystem-nasa-medical-roles-cs.md) | Personnel roles involved in NASA medical requirements. |
+| [NASA Mission Phase Timing](CodeSystem-nasa-mission-phase-cs.md) | Mission phases and timing codes for medical requirements scheduling. |
+| [NASA Schedule Offset Notation](CodeSystem-nasa-schedule-offset-cs.md) | L-minus and R-plus notation codes for mission timeline scheduling. |
 | [Neutral Buoyancy Training Code System](CodeSystem-neutral-buoyancy-training-cs.md) | Specialized codes for neutral buoyancy training activities and assessments |
 | [Nutrition Inventory Status](CodeSystem-nutrition-inventory-status-cs.md) | Status levels for nutrition inventory management |
 | [Operational Status Code System](CodeSystem-operational-status-cs.md) | Operational status codes for facilities and vehicles |

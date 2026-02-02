@@ -1,4 +1,4 @@
-# Commercial Space Equipment - v0.5.6
+# Commercial Space Equipment - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:SpaceEquipment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:SpaceEquipment |
 
  
 STUB - Device profile for commercial space equipment. 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](StructureDefinition-SpaceEquipment.csv),
   "resourceType" : "StructureDefinition",
   "id" : "SpaceEquipment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpaceEquipment",
   "title" : "Commercial Space Equipment",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/behavioral-readiness-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "behavioral-readiness-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet behavioral-readiness-vs</b></p><a name=\"behavioral-readiness-vs\"> </a><a name=\"hcbehavioral-readiness-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/17621005\">17621005</a></td><td>Normal</td></tr><tr><td><a href=\"http://snomed.info/id/263654008\">263654008</a></td><td>Abnormal</td></tr><tr><td><a href=\"http://snomed.info/id/260385009\">260385009</a></td><td>Negative</td></tr><tr><td><a href=\"http://snomed.info/id/10828004\">10828004</a></td><td>Positive</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/behavioral-readiness-vs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/behavioral-readiness-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "BehavioralReadinessVS"] ; # 
+  fhir:title [ fhir:v "Behavioral Readiness Assessment"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Value set for behavioral/psychological flight readiness outcomes."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "17621005" ] ;
+         fhir:display [ fhir:v "Normal" ]
+       ] [
+         fhir:code [ fhir:v "263654008" ] ;
+         fhir:display [ fhir:v "Abnormal" ]
+       ] [
+         fhir:code [ fhir:v "260385009" ] ;
+         fhir:display [ fhir:v "Negative" ]
+       ] [
+         fhir:code [ fhir:v "10828004" ] ;
+         fhir:display [ fhir:v "Positive" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

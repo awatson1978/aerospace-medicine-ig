@@ -1,4 +1,4 @@
-# Artemis III Mission Encounter - v0.5.6
+# Artemis III Mission Encounter - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

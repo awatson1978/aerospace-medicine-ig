@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"
   },
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -47,6 +47,12 @@
     "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
     "packageId" : "hl7.fhir.us.core",
     "version" : "4.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -1021,6 +1027,18 @@
       },
       "name" : "Behavioral Health State",
       "description" : "Point-in-time behavioral and psychological state assessment for aerospace missions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/behavioral-readiness-vs"
+      },
+      "name" : "Behavioral Readiness Assessment",
+      "description" : "Value set for behavioral/psychological flight readiness outcomes.",
       "exampleBoolean" : false
     },
     {
@@ -2034,6 +2052,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ecg-interpretation-vs"
+      },
+      "name" : "ECG Interpretation Results",
+      "description" : "Value set for ECG interpretation outcomes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -2317,6 +2347,18 @@
       },
       "name" : "FAA Form 8500-8 Questionnaire",
       "description" : "FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fitness-assessment-result-vs"
+      },
+      "name" : "Fitness Assessment Results",
+      "description" : "Value set for fitness test termination criteria and outcomes.",
       "exampleBoolean" : false
     },
     {
@@ -2810,6 +2852,18 @@
       "name" : "ISS Crew Debrief - Post-Anomaly",
       "description" : "Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion.",
       "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/iss-crewmember-type-vs"
+      },
+      "name" : "ISS Crewmember Types",
+      "description" : "Value set for types of ISS crewmembers by agency.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3834,6 +3888,222 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB110OphthalmologicExamQuestionnaire"
+      },
+      "name" : "MEDB 1.10 Ophthalmologic Examination",
+      "description" : "NASA Medical Requirements Integration Document for ophthalmologic examination. Captures comprehensive eye examination data for monitoring Spaceflight Associated Neuro-ocular Syndrome (SANS).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB111BodyCompositionQuestionnaire"
+      },
+      "name" : "MEDB 1.11 Body Composition/DEXA",
+      "description" : "NASA Medical Requirements Integration Document for body composition assessment using DEXA.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB114BodyMassQuestionnaire"
+      },
+      "name" : "MEDB 1.14 Body Mass Measurement",
+      "description" : "NASA Medical Requirements Integration Document for body mass measurement tracking.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB16RestingECGQuestionnaire"
+      },
+      "name" : "MEDB 1.6 Resting ECG",
+      "description" : "NASA Medical Requirements Integration Document for resting 12-lead ECG assessment. Captures pre- and postflight ECG recordings for cardiovascular evaluation of long-duration flight crew members.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB18AudiometryQuestionnaire"
+      },
+      "name" : "MEDB 1.8 Audiometry",
+      "description" : "NASA Medical Requirements Integration Document for audiometric assessment. Captures pre- and postflight hearing threshold data to monitor crew hearing status.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB19DentalExamQuestionnaire"
+      },
+      "name" : "MEDB 1.9 Dental Examination",
+      "description" : "NASA Medical Requirements Integration Document for dental examination. Captures comprehensive dental assessment data for spaceflight crew members.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB21RoutineLabPanelQuestionnaire"
+      },
+      "name" : "MEDB 2.1 Routine Laboratory Panel",
+      "description" : "NASA Medical Requirements Integration Document for routine laboratory panel. Captures comprehensive blood chemistry, hematology, and urinalysis data for spaceflight crew members.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB22MRSAScreeningQuestionnaire"
+      },
+      "name" : "MEDB 2.2 MRSA Screening",
+      "description" : "NASA Medical Requirements Integration Document for MRSA screening. Screens crew members for Methicillin-resistant Staphylococcus aureus colonization prior to spaceflight.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB23TBTestingQuestionnaire"
+      },
+      "name" : "MEDB 2.3 Tuberculosis Testing",
+      "description" : "NASA Medical Requirements Integration Document for tuberculosis screening. Screens crew members for TB infection prior to spaceflight.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB24HpyloriScreeningQuestionnaire"
+      },
+      "name" : "MEDB 2.4 H. pylori Screening",
+      "description" : "NASA Medical Requirements Integration Document for Helicobacter pylori screening. Screens crew members for H. pylori infection prior to long-duration spaceflight.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB31RadiationMonitoringQuestionnaire"
+      },
+      "name" : "MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry",
+      "description" : "NASA Medical Requirements Integration Document for radiation monitoring and crew personal dosimetry. Captures crew radiation exposure data for occupational exposure documentation and health risk assessment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB51AerobicFitnessQuestionnaire"
+      },
+      "name" : "MEDB 5.1 Aerobic Fitness Assessment",
+      "description" : "NASA Medical Requirements Integration Document for aerobic fitness assessment. Captures VO2max and related cardiovascular fitness data for spaceflight crew members.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB52StrengthAssessmentQuestionnaire"
+      },
+      "name" : "MEDB 5.2 Strength Assessment",
+      "description" : "NASA Medical Requirements Integration Document for muscle strength assessment. Captures isokinetic and isometric strength data for spaceflight crew members.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB53ExercisePrescriptionQuestionnaire"
+      },
+      "name" : "MEDB 5.3 Exercise Prescription",
+      "description" : "NASA Medical Requirements Integration Document for exercise prescription. Documents in-flight exercise countermeasures protocol and adherence.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB61EVAMedicalRequirementsQuestionnaire"
+      },
+      "name" : "MEDB 6.1 EVA Medical Requirements",
+      "description" : "NASA Medical Requirements Integration Document for EVA medical requirements. Documents medical clearance, prebreathe protocol, and health monitoring for extravehicular activities.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB71PsychStatusQuestionnaire"
+      },
+      "name" : "MEDB 7.1 Preflight Psychiatric/Psychological Status Check",
+      "description" : "NASA Medical Requirements Integration Document for preflight behavioral health assessment. Captures psychiatric/psychological assessment of behavioral readiness for flight and review of psychological services.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB74CrewDynamicsQuestionnaire"
+      },
+      "name" : "MEDB 7.4 Crew Dynamics Assessment",
+      "description" : "NASA Medical Requirements Integration Document for crew dynamics assessment. Evaluates crew cohesion, interpersonal relationships, team functioning, and conflict management throughout mission phases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MEDB75FamilySupportQuestionnaire"
+      },
+      "name" : "MEDB 7.5 Family Support Evaluation",
+      "description" : "NASA Medical Requirements Integration Document for family support evaluation. Assesses family support systems, identifies needs, and coordinates support services throughout mission phases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -3918,6 +4188,270 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR008LMedicalHardwareMaintenanceQuestionnaire"
+      },
+      "name" : "MR008L Medical Hardware Maintenance",
+      "description" : "NASA Medical Requirements Integration Document for medical hardware maintenance. Tracks calibration schedules, preventive maintenance, and equipment functionality verification.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR022SAirQualityQuestionnaire"
+      },
+      "name" : "MR022S Air Quality Monitoring",
+      "description" : "NASA Medical Requirements Integration Document for atmospheric monitoring. Tracks air quality parameters to ensure crew health and safety.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR026LReconditioningQuestionnaire"
+      },
+      "name" : "MR026L Reconditioning Assessment",
+      "description" : "NASA Medical Requirements Integration Document for postflight reconditioning. Tracks crew recovery and rehabilitation progress after long-duration spaceflight.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR032LTelemedicineSetupQuestionnaire"
+      },
+      "name" : "MR032L Telemedicine Setup",
+      "description" : "NASA Medical Requirements Integration Document for telemedicine setup and operations. Configures communication links, verifies equipment, and ensures readiness for remote medical support.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR036LMedicalKitInventoryQuestionnaire"
+      },
+      "name" : "MR036L Medical Kit Inventory",
+      "description" : "NASA Medical Requirements Integration Document for medical kit inventory management. Tracks medical supplies, equipment status, and expiration dates aboard ISS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR050LPharmaceuticalManagementQuestionnaire"
+      },
+      "name" : "MR050L Pharmaceutical Management",
+      "description" : "NASA Medical Requirements Integration Document for pharmaceutical management aboard ISS. Tracks medication inventory, storage conditions, dispensing, and stability monitoring.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR051LWaterQualityQuestionnaire"
+      },
+      "name" : "MR051L Water Quality Assessment",
+      "description" : "NASA Medical Requirements Integration Document for water quality monitoring. Tracks potable and technical water quality parameters aboard the International Space Station.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR054LMicrobialMonitoringQuestionnaire"
+      },
+      "name" : "MR054L Microbial Monitoring",
+      "description" : "NASA Medical Requirements Integration Document for microbial monitoring. Tracks microbial populations in air, water, and surfaces aboard ISS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR087SEVAPrebreathQuestionnaire"
+      },
+      "name" : "MR087S EVA Prebreathe Protocol",
+      "description" : "NASA Medical Requirements Integration Document for EVA prebreathe protocol. Tracks oxygen prebreathe procedures to prevent decompression sickness.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR092LSPEProtocolQuestionnaire"
+      },
+      "name" : "MR092L Solar Particle Event Protocol",
+      "description" : "NASA Medical Requirements Integration Document for Solar Particle Event protocol. Monitors SPE alerts, coordinates crew protective actions, and tracks exposure during events.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MR093LRadiationContingencyQuestionnaire"
+      },
+      "name" : "MR093L Radiation Contingency",
+      "description" : "NASA Medical Requirements Integration Document for radiation contingency events. Documents unexpected radiation events, crew response, and medical assessment.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-discipline"
+      },
+      "name" : "MRID Discipline",
+      "description" : "The medical discipline category for the medical requirement",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-document-number"
+      },
+      "name" : "MRID Document Number",
+      "description" : "The official MRID document identifier (e.g., MEDB 3.1, MR004L, MR005S)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-flight-duration"
+      },
+      "name" : "MRID Flight Duration Requirement",
+      "description" : "Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days')",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-frequency"
+      },
+      "name" : "MRID Frequency",
+      "description" : "How often this medical requirement applies (e.g., 'Every ISS Increment', 'Annual', 'Per mission')",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-launch-context"
+      },
+      "name" : "MRID Launch Context",
+      "description" : "Context for pre-populating the questionnaire with astronaut/patient reference. Compatible with SDC launchContext pattern.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mrid-launch-context-name-vs"
+      },
+      "name" : "MRID Launch Context Name",
+      "description" : "Names for launch context variables in MRID questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mrid-launch-context-name-cs"
+      },
+      "name" : "MRID Launch Context Name CodeSystem",
+      "description" : "Names for launch context variables",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mrid-launch-context-type-vs"
+      },
+      "name" : "MRID Launch Context Type",
+      "description" : "FHIR resource types for launch context in MRID questionnaires",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mrid-launch-context-type-cs"
+      },
+      "name" : "MRID Launch Context Type CodeSystem",
+      "description" : "FHIR resource types for launch context",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-questionnaire"
+      },
+      "name" : "MRID Questionnaire Profile",
+      "description" : "Profile for NASA Medical Requirements Integration Document (MRID) questionnaires.\nThis profile standardizes the structure and metadata for MEDB (Medical Evaluation\nDocument Baseline) and MR (Medical Requirements) documents translated to FHIR\nQuestionnaire resources for structured data capture.\n\nAll MRID questionnaires follow a standard structure with groups for:\n- Medical Requirements Overview (MRID metadata)\n- Preflight Training\n- Preflight Activities\n- In-Flight Activities\n- Postflight Activities\n- Data Delivery\n- Domain-Specific Results (e.g., radiation doses, ECG findings)\n- Postflight Debrief\n\nThe profile supports SDC-compatible extensions for:\n- Launch context (astronaut/patient reference)\n- Observation extraction from QuestionnaireResponse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mrid-sponsor"
+      },
+      "name" : "MRID Sponsor",
+      "description" : "The NASA organizational sponsor responsible for the medical requirement",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -3938,6 +4472,30 @@
       "name" : "NASA Ames Research Center",
       "description" : "NASA Ames centrifuge and spatial disorientation research",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-cardiovascular-equipment-vs"
+      },
+      "name" : "NASA Cardiovascular Assessment Equipment",
+      "description" : "Value set for cardiovascular assessment hardware.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-exercise-equipment-vs"
+      },
+      "name" : "NASA Exercise Equipment",
+      "description" : "Value set for exercise and fitness assessment hardware.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3966,6 +4524,174 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-data-archive-vs"
+      },
+      "name" : "NASA Medical Data Archive Systems",
+      "description" : "Value set for data archive and delivery systems.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-data-archive-cs"
+      },
+      "name" : "NASA Medical Data Archive Systems",
+      "description" : "Data archive and delivery systems for NASA medical data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-medical-facility-vs"
+      },
+      "name" : "NASA Medical Facilities",
+      "description" : "Value set for medical testing facility locations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-medical-facility-cs"
+      },
+      "name" : "NASA Medical Facility Locations",
+      "description" : "Medical testing facility locations for NASA medical requirements.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-medical-hardware-vs"
+      },
+      "name" : "NASA Medical Hardware",
+      "description" : "Complete value set for all NASA medical hardware.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-medical-hardware-cs"
+      },
+      "name" : "NASA Medical Hardware",
+      "description" : "Medical equipment and hardware used in NASA medical requirements.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-medical-roles-vs"
+      },
+      "name" : "NASA Medical Personnel Roles",
+      "description" : "Value set for medical personnel roles.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-medical-roles-cs"
+      },
+      "name" : "NASA Medical Personnel Roles",
+      "description" : "Personnel roles involved in NASA medical requirements.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-mission-phase-cs"
+      },
+      "name" : "NASA Mission Phase Timing",
+      "description" : "Mission phases and timing codes for medical requirements scheduling.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-mission-phase-vs"
+      },
+      "name" : "NASA Mission Phases",
+      "description" : "Value set for mission phase timing.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-mrid-discipline-vs"
+      },
+      "name" : "NASA MRID Medical Disciplines",
+      "description" : "Value set for NASA MRID medical disciplines.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-mrid-discipline-cs"
+      },
+      "name" : "NASA MRID Medical Disciplines",
+      "description" : "Medical disciplines categorizing NASA Medical Requirements Integration Documents.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-mrid-sponsor-vs"
+      },
+      "name" : "NASA MRID Sponsor Organizations",
+      "description" : "Value set for NASA MRID sponsor organizations.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-mrid-sponsor-cs"
+      },
+      "name" : "NASA MRID Sponsor Organizations",
+      "description" : "Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -3974,6 +4700,66 @@
       "name" : "NASA Neutral Buoyancy Laboratory",
       "description" : "NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas",
       "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-postflight-offset-vs"
+      },
+      "name" : "NASA Postflight Schedule Offsets",
+      "description" : "Value set for R-plus postflight schedule offsets.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-preflight-offset-vs"
+      },
+      "name" : "NASA Preflight Schedule Offsets",
+      "description" : "Value set for L-minus preflight schedule offsets.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-radiation-equipment-vs"
+      },
+      "name" : "NASA Radiation Monitoring Equipment",
+      "description" : "Value set for radiation monitoring hardware.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/nasa-schedule-offset-cs"
+      },
+      "name" : "NASA Schedule Offset Notation",
+      "description" : "L-minus and R-plus notation codes for mission timeline scheduling.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/nasa-schedule-offset-vs"
+      },
+      "name" : "NASA Schedule Offsets",
+      "description" : "Complete value set for all mission schedule offsets.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -5909,6 +6695,15 @@
         }],
         "nameUrl" : "screening-astronaut.html",
         "title" : "Astronaut Training",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "nasa-medical-requirements.html"
+        }],
+        "nameUrl" : "nasa-medical-requirements.html",
+        "title" : "NASA Medical Requirements",
         "generation" : "markdown"
       },
       {

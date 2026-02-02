@@ -1,4 +1,4 @@
-# Artemis Landing Regions - v0.5.6
+# Artemis Landing Regions - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:ArtemisLandingRegionCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:ArtemisLandingRegionCS |
 
  
 Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters) 
@@ -27,12 +27,12 @@ Candidate Artemis III landing regions near the lunar south pole (within 6° of p
   "resourceType" : "CodeSystem",
   "id" : "artemis-landing-region-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "ArtemisLandingRegionCS",
   "title" : "Artemis Landing Regions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

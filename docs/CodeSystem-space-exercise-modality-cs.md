@@ -1,4 +1,4 @@
-# Space Exercise Modality Code System - v0.5.6
+# Space Exercise Modality Code System - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:SpaceExerciseModalityCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:SpaceExerciseModalityCS |
 
  
 Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity). 
@@ -27,12 +27,12 @@ Spaceflight-specific exercise modalities used in microgravity and partial gravit
   "resourceType" : "CodeSystem",
   "id" : "space-exercise-modality-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpaceExerciseModalityCS",
   "title" : "Space Exercise Modality Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

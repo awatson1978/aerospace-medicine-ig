@@ -1,4 +1,4 @@
-# Space Organization - v0.5.6
+# Space Organization - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceOrg | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:SpaceOrg |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceOrg | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:SpaceOrg |
 
  
 STUB - Organizations involved with astronautics and space travel. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-SpaceOrg.csv), [Exce
   "resourceType" : "StructureDefinition",
   "id" : "SpaceOrg",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceOrg",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpaceOrg",
   "title" : "Space Organization",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

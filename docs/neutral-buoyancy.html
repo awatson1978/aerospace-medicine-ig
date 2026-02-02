@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Neutral Buoyancy Training -  v0.5.6</title>
+    <title>Neutral Buoyancy Training -  v0.5.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.6 - ci-build
+            <span style="display:inline-block;">0.5.8 - ci-build
 
 
             </span>
@@ -111,6 +111,9 @@
       </li>
       <li>
         <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
       </li>
     </ul>
   </li>
@@ -190,7 +193,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.6) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.8) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Neutral Buoyancy Training</h2>
   
 
@@ -235,9 +238,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>This implementation guide provides comprehensive FHIR profiles for underwater training environments that serve as space analogs. The data model supports:</p>
 
 <ul>
-  <li><a name="l436">​</a><strong>Training Session Documentation</strong>: Using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile</li>
-  <li><a name="l445">​</a><strong>Medical Clearance Tracking</strong>: Via the <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile</li>
-  <li><a name="l454">​</a><strong>Dive Profile Analytics</strong>: Through the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles</li>
+  <li><a name="l442">​</a><strong>Training Session Documentation</strong>: Using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile</li>
+  <li><a name="l451">​</a><strong>Medical Clearance Tracking</strong>: Via the <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile</li>
+  <li><a name="l460">​</a><strong>Dive Profile Analytics</strong>: Through the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles</li>
   <li><strong>Equipment Integration</strong>: Using specialized device profiles for diving and communication equipment</li>
   <li><strong>Regulatory Compliance</strong>: Through the <a href="StructureDefinition-regulatory-compliance-assessment.html"><code class="language-plaintext highlighter-rouge">RegulatoryComplianceAssessment</code></a> profile</li>
 </ul>
@@ -313,7 +316,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="training-session-implementation">Training Session Implementation</h4>
 
-<p><a name="l661">​</a>Each neutral buoyancy session is documented using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile, which captures:</p>
+<p><a name="l667">​</a>Each neutral buoyancy session is documented using the <a href="StructureDefinition-neutral-buoyancy-session.html"><code class="language-plaintext highlighter-rouge">NeutralBuoyancySession</code></a> profile, which captures:</p>
 
 <ul>
   <li><strong>Session Metadata</strong>: Duration, maximum depth, training objectives</li>
@@ -342,7 +345,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
-<p><a name="l874">​</a>For EVA-specific simulations, the <a href="StructureDefinition-underwater-eva-simulation.html"><code class="language-plaintext highlighter-rouge">UnderwaterEVASimulation</code></a> profile extends the base training session with:</p>
+<p><a name="l880">​</a>For EVA-specific simulations, the <a href="StructureDefinition-underwater-eva-simulation.html"><code class="language-plaintext highlighter-rouge">UnderwaterEVASimulation</code></a> profile extends the base training session with:</p>
 
 <ul>
   <li><strong>Suit Configuration</strong>: Space suit simulator specifications</li>
@@ -371,7 +374,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="medical-clearance-framework">Medical Clearance Framework</h4>
 
-<p><a name="l950">​</a>Diving for space analog training requires extending standard astronaut health screening to include dive-specific evaluations. The <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile documents comprehensive medical assessments including:</p>
+<p><a name="l956">​</a>Diving for space analog training requires extending standard astronaut health screening to include dive-specific evaluations. The <a href="StructureDefinition-dive-medical-clearance.html"><code class="language-plaintext highlighter-rouge">DiveMedicalClearance</code></a> profile documents comprehensive medical assessments including:</p>
 
 <p><strong>Core Medical Evaluations:</strong></p>
 <ul>
@@ -397,7 +400,7 @@ The <a href="ValueSet-diving-contraindicated-conditions.html"><code class="langu
 
 <h4 id="dive-profile-and-exposure-tracking">Dive Profile and Exposure Tracking</h4>
 
-<p><a name="l1038">​</a>Modern dive operations generate extensive digital logs that feed directly into training records using the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles. These capture:</p>
+<p><a name="l1044">​</a>Modern dive operations generate extensive digital logs that feed directly into training records using the <a href="StructureDefinition-dive-profile.html"><code class="language-plaintext highlighter-rouge">DiveProfile</code></a> and <a href="StructureDefinition-advanced-dive-profile.html"><code class="language-plaintext highlighter-rouge">AdvancedDiveProfile</code></a> profiles. These capture:</p>
 
 <p><strong>Core Dive Parameters:</strong></p>
 <ul>
@@ -447,7 +450,7 @@ The <a href="ValueSet-diving-contraindicated-conditions.html"><code class="langu
 
 <h4 id="hyperbaric-treatment-capabilities">Hyperbaric Treatment Capabilities</h4>
 
-<p><a name="l1206">​</a>Underwater training centers often include on-site hyperbaric chambers that serve both as safety assets and research platforms. The <a href="StructureDefinition-hyperbaric-chamber.html"><code class="language-plaintext highlighter-rouge">HyperbaricChamber</code></a> location profile and <a href="StructureDefinition-hyperbaric-treatment.html"><code class="language-plaintext highlighter-rouge">HyperbaricTreatment</code></a> procedure profile document:</p>
+<p><a name="l1212">​</a>Underwater training centers often include on-site hyperbaric chambers that serve both as safety assets and research platforms. The <a href="StructureDefinition-hyperbaric-chamber.html"><code class="language-plaintext highlighter-rouge">HyperbaricChamber</code></a> location profile and <a href="StructureDefinition-hyperbaric-treatment.html"><code class="language-plaintext highlighter-rouge">HyperbaricTreatment</code></a> procedure profile document:</p>
 
 <p><strong>Chamber Specifications:</strong></p>
 <ul>
@@ -471,7 +474,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 
 <h4 id="decompression-sickness-management">Decompression Sickness Management</h4>
 
-<p><a name="l1287">​</a>Decompression sickness (DCS) risk is a key concern shared by divers and astronauts. The <a href="StructureDefinition-decompression-sickness.html"><code class="language-plaintext highlighter-rouge">DecompressionSickness</code></a> profile extends the space medicine condition profile to capture:</p>
+<p><a name="l1293">​</a>Decompression sickness (DCS) risk is a key concern shared by divers and astronauts. The <a href="StructureDefinition-decompression-sickness.html"><code class="language-plaintext highlighter-rouge">DecompressionSickness</code></a> profile extends the space medicine condition profile to capture:</p>
 
 <p><strong>DCS Documentation:</strong></p>
 <ul>
@@ -484,7 +487,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 <p><strong>Associated Procedures:</strong></p>
 <ul>
   <li><strong><a href="StructureDefinition-decompression-protocol.html"><code class="language-plaintext highlighter-rouge">DecompressionProtocol</code></a></strong>: Standardized decompression procedures</li>
-  <li><strong><a name="l1335">​</a><a href="StructureDefinition-barotrauma-assessment.html"><code class="language-plaintext highlighter-rouge">BarotraumaAssessment</code></a></strong>: Assessment of pressure-related injuries</li>
+  <li><strong><a name="l1341">​</a><a href="StructureDefinition-barotrauma-assessment.html"><code class="language-plaintext highlighter-rouge">BarotraumaAssessment</code></a></strong>: Assessment of pressure-related injuries</li>
 </ul>
 
 <p>Comprehensive DCS management begins with rapid symptom identification (joint pain, neurological signs) and classification of severity. If DCS is suspected, the affected individual is promptly transferred to hyperbaric treatment. Treatment response is closely monitored: symptoms are recorded before, during, and after recompression therapy, ensuring that the protocol (e.g. USN Table 6) is followed and adjusted as needed. After treatment, <strong>outcome assessment</strong> documents resolution or any residual deficits. Detailed medical notes and follow-up evaluations inform the astronaut's return-to-training timeline. Training programs also analyze DCS incidents to improve prevention: for example, gas switch schedules, depth/time limits, and pre-dive oxygen prebreathe are reviewed in light of any "near miss" or decompression case. This iterative profiling of DCS events and responses supports evidence-based refinements to both dive practices and spaceflight pre-breathing protocols.</p>
@@ -497,7 +500,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 
 <h4 id="equipment-integration-and-safety">Equipment Integration and Safety</h4>
 
-<p><a name="l1360">​</a>Diving and spacecraft life-support equipment share many design principles. The <a href="StructureDefinition-diving-equipment.html"><code class="language-plaintext highlighter-rouge">DivingEquipment</code></a> and <a href="StructureDefinition-underwater-communication-system.html"><code class="language-plaintext highlighter-rouge">UnderwaterCommunicationSystem</code></a> profiles track:</p>
+<p><a name="l1366">​</a>Diving and spacecraft life-support equipment share many design principles. The <a href="StructureDefinition-diving-equipment.html"><code class="language-plaintext highlighter-rouge">DivingEquipment</code></a> and <a href="StructureDefinition-underwater-communication-system.html"><code class="language-plaintext highlighter-rouge">UnderwaterCommunicationSystem</code></a> profiles track:</p>
 
 <p><strong>Life Support Equipment:</strong></p>
 <ul>
@@ -633,7 +636,7 @@ The <a href="StructureDefinition-enhanced-hyperbaric-treatment.html"><code class
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 30, 2025 19:11-0700">2025-12-30</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 2, 2026 11:11-0600">2026-02-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

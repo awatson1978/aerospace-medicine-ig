@@ -1,4 +1,4 @@
-# Gimbal Screening - v0.5.6
+# Gimbal Screening - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreening | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:GimbalScreening |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreening | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:GimbalScreening |
 
  
 Screening protocol for Multi Axis Gimbal training device. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-GimbalScreening.csv)
   "resourceType" : "StructureDefinition",
   "id" : "GimbalScreening",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/GimbalScreening",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "GimbalScreening",
   "title" : "Gimbal Screening",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

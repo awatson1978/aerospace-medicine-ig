@@ -1,4 +1,4 @@
-# Underwater Training Procedures - v0.5.6
+# Underwater Training Procedures - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures | *Version*:0.5.6 |
-| Draft as of 2025-12-30 | *Computable Name*:UnderwaterTrainingProcedures |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures | *Version*:0.5.8 |
+| Draft as of 2026-02-02 | *Computable Name*:UnderwaterTrainingProcedures |
 
  
 Procedures and activities conducted during underwater training 
@@ -46,11 +46,11 @@ Procedures and activities conducted during underwater training
   "resourceType" : "ValueSet",
   "id" : "underwater-training-procedures",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "UnderwaterTrainingProcedures",
   "title" : "Underwater Training Procedures",
   "status" : "draft",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

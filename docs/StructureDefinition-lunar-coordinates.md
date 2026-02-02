@@ -1,4 +1,4 @@
-# Lunar Coordinates - v0.5.6
+# Lunar Coordinates - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:LunarCoordinates |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:LunarCoordinates |
 
 Selenographic latitude and longitude for lunar surface locations
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-lunar-coordinates.cs
   "resourceType" : "StructureDefinition",
   "id" : "lunar-coordinates",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "LunarCoordinates",
   "title" : "Lunar Coordinates",
   "status" : "active",
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

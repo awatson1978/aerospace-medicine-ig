@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-mrid-sponsor-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-mrid-sponsor-cs</b></p><a name=\"nasa-mrid-sponsor-cs\"> </a><a name=\"hcnasa-mrid-sponsor-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">medical-operations<a name=\"nasa-mrid-sponsor-cs-medical-operations\"> </a></td><td>Medical Operations</td><td>NASA Medical Operations branch responsible for crew health and medical care.</td></tr><tr><td style=\"white-space:nowrap\">bhp<a name=\"nasa-mrid-sponsor-cs-bhp\"> </a></td><td>Behavioral Health and Performance</td><td>NASA Behavioral Health and Performance group responsible for psychological services and crew behavioral readiness.</td></tr><tr><td style=\"white-space:nowrap\">srag<a name=\"nasa-mrid-sponsor-cs-srag\"> </a></td><td>Space Radiation Analysis Group</td><td>NASA Space Radiation Analysis Group responsible for radiation monitoring and risk assessment.</td></tr><tr><td style=\"white-space:nowrap\">environmental-health<a name=\"nasa-mrid-sponsor-cs-environmental-health\"> </a></td><td>Environmental Health System</td><td>NASA Environmental Health System responsible for habitat environmental monitoring.</td></tr><tr><td style=\"white-space:nowrap\">exercise-physiology<a name=\"nasa-mrid-sponsor-cs-exercise-physiology\"> </a></td><td>Exercise Physiology and Countermeasures</td><td>NASA Exercise Physiology team responsible for exercise countermeasures.</td></tr><tr><td style=\"white-space:nowrap\">flight-medicine<a name=\"nasa-mrid-sponsor-cs-flight-medicine\"> </a></td><td>Flight Medicine</td><td>NASA Flight Medicine responsible for clinical care during missions.</td></tr><tr><td style=\"white-space:nowrap\">ascr<a name=\"nasa-mrid-sponsor-cs-ascr\"> </a></td><td>Astronaut Strength Conditioning and Rehabilitation</td><td>NASA ASCR team responsible for fitness assessment and rehabilitation.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "NASAMRIDSponsorCS"] ; # 
+  fhir:title [ fhir:v "NASA MRID Sponsor Organizations"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "medical-operations" ] ;
+     fhir:display [ fhir:v "Medical Operations" ] ;
+     fhir:definition [ fhir:v "NASA Medical Operations branch responsible for crew health and medical care." ]
+  ] [
+     fhir:code [ fhir:v "bhp" ] ;
+     fhir:display [ fhir:v "Behavioral Health and Performance" ] ;
+     fhir:definition [ fhir:v "NASA Behavioral Health and Performance group responsible for psychological services and crew behavioral readiness." ]
+  ] [
+     fhir:code [ fhir:v "srag" ] ;
+     fhir:display [ fhir:v "Space Radiation Analysis Group" ] ;
+     fhir:definition [ fhir:v "NASA Space Radiation Analysis Group responsible for radiation monitoring and risk assessment." ]
+  ] [
+     fhir:code [ fhir:v "environmental-health" ] ;
+     fhir:display [ fhir:v "Environmental Health System" ] ;
+     fhir:definition [ fhir:v "NASA Environmental Health System responsible for habitat environmental monitoring." ]
+  ] [
+     fhir:code [ fhir:v "exercise-physiology" ] ;
+     fhir:display [ fhir:v "Exercise Physiology and Countermeasures" ] ;
+     fhir:definition [ fhir:v "NASA Exercise Physiology team responsible for exercise countermeasures." ]
+  ] [
+     fhir:code [ fhir:v "flight-medicine" ] ;
+     fhir:display [ fhir:v "Flight Medicine" ] ;
+     fhir:definition [ fhir:v "NASA Flight Medicine responsible for clinical care during missions." ]
+  ] [
+     fhir:code [ fhir:v "ascr" ] ;
+     fhir:display [ fhir:v "Astronaut Strength Conditioning and Rehabilitation" ] ;
+     fhir:definition [ fhir:v "NASA ASCR team responsible for fitness assessment and rehabilitation." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

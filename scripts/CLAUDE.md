@@ -51,6 +51,37 @@ Examples:
 
 ## Existing Scripts
 
+### generate_nasa_ndjson.py
+
+**Purpose**: Generate downloadable NDJSON file for NASA MEDB Questionnaires.
+
+**Source Pages**:
+- `input/fsh/questionnaires/MEDB-1-PhysicalExams.fsh`
+- `input/fsh/questionnaires/MEDB-2-Laboratory.fsh`
+- `input/fsh/questionnaires/MEDB-3-Radiation.fsh`
+- `input/fsh/questionnaires/MEDB-5-Fitness.fsh`
+- `input/fsh/questionnaires/MEDB-6-EVA.fsh`
+- `input/fsh/questionnaires/MEDB-7-Behavioral.fsh`
+
+**Output Files**:
+- `input/images/NASA.Questionnaires.ndjson` (18 Questionnaires)
+
+**Usage**:
+```bash
+cd scripts
+python3 generate_nasa_ndjson.py
+```
+
+**Resources Extracted**:
+
+*Questionnaires (18):*
+- MEDB 1 - Physical Exams: Resting ECG, Audiometry, Dental Exam, Ophthalmologic Exam, Body Composition/DEXA, Body Mass
+- MEDB 2 - Laboratory: Routine Lab Panel, MRSA Screening, TB Testing, H. pylori Screening
+- MEDB 3 - Radiation: Radiation Monitoring/Crew Personal Dosimetry
+- MEDB 5 - Fitness: Aerobic Fitness, Strength Assessment, Exercise Prescription
+- MEDB 6 - EVA: EVA Medical Requirements
+- MEDB 7 - Behavioral: Psychiatric/Psychological Status, Crew Dynamics, Family Support
+
 ### generate_artemis_ndjson.py
 
 **Purpose**: Generate downloadable NDJSON files for Artemis mission CodeSystems and ValueSets.

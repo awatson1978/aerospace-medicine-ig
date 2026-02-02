@@ -1,4 +1,4 @@
-# Space Exercise Performance Metrics - v0.5.6
+# Space Exercise Performance Metrics - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs | *Version*:0.5.6 |
-| Active as of 2025-12-30 | *Computable Name*:SpacePerformanceMetricVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs | *Version*:0.5.8 |
+| Active as of 2026-02-02 | *Computable Name*:SpacePerformanceMetricVS |
 
  
 Performance metrics for space exercise (defined in SpacePerformanceMetricCS) 
@@ -46,12 +46,12 @@ Performance metrics for space exercise (defined in SpacePerformanceMetricCS)
   "resourceType" : "ValueSet",
   "id" : "space-performance-metric-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs",
-  "version" : "0.5.6",
+  "version" : "0.5.8",
   "name" : "SpacePerformanceMetricVS",
   "title" : "Space Exercise Performance Metrics",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-30T19:11:20-07:00",
+  "date" : "2026-02-02T11:11:20-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

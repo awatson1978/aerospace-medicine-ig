@@ -1,4 +1,4 @@
-# Fitness - v0.5.6
+# Fitness - v0.5.8
 
 * [**Table of Contents**](toc.md)
 * **Fitness**

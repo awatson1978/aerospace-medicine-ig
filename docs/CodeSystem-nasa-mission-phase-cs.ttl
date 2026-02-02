@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-mission-phase-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-mission-phase-cs</b></p><a name=\"nasa-mission-phase-cs\"> </a><a name=\"hcnasa-mission-phase-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">preflight-training<a name=\"nasa-mission-phase-cs-preflight-training\"> </a></td><td>Preflight Training</td><td>Training activities conducted before launch to prepare crew for medical procedures.</td></tr><tr><td style=\"white-space:nowrap\">preflight-activity<a name=\"nasa-mission-phase-cs-preflight-activity\"> </a></td><td>Preflight Activity</td><td>Medical activities and examinations conducted before launch.</td></tr><tr><td style=\"white-space:nowrap\">inflight<a name=\"nasa-mission-phase-cs-inflight\"> </a></td><td>In-Flight</td><td>Medical activities conducted during spaceflight.</td></tr><tr><td style=\"white-space:nowrap\">postflight<a name=\"nasa-mission-phase-cs-postflight\"> </a></td><td>Postflight</td><td>Medical activities conducted after landing/return.</td></tr><tr><td style=\"white-space:nowrap\">postflight-debrief<a name=\"nasa-mission-phase-cs-postflight-debrief\"> </a></td><td>Postflight Debrief</td><td>Debriefing sessions conducted after mission completion.</td></tr><tr><td style=\"white-space:nowrap\">continuous<a name=\"nasa-mission-phase-cs-continuous\"> </a></td><td>Continuous Monitoring</td><td>Ongoing monitoring throughout the mission duration.</td></tr><tr><td style=\"white-space:nowrap\">ame<a name=\"nasa-mission-phase-cs-ame\"> </a></td><td>Annual Medical Examination</td><td>Annual astronaut medical examination period.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.8"] ; # 
+  fhir:name [ fhir:v "NASAMissionPhaseCS"] ; # 
+  fhir:title [ fhir:v "NASA Mission Phase Timing"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-02T11:11:20-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mission phases and timing codes for medical requirements scheduling."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "preflight-training" ] ;
+     fhir:display [ fhir:v "Preflight Training" ] ;
+     fhir:definition [ fhir:v "Training activities conducted before launch to prepare crew for medical procedures." ]
+  ] [
+     fhir:code [ fhir:v "preflight-activity" ] ;
+     fhir:display [ fhir:v "Preflight Activity" ] ;
+     fhir:definition [ fhir:v "Medical activities and examinations conducted before launch." ]
+  ] [
+     fhir:code [ fhir:v "inflight" ] ;
+     fhir:display [ fhir:v "In-Flight" ] ;
+     fhir:definition [ fhir:v "Medical activities conducted during spaceflight." ]
+  ] [
+     fhir:code [ fhir:v "postflight" ] ;
+     fhir:display [ fhir:v "Postflight" ] ;
+     fhir:definition [ fhir:v "Medical activities conducted after landing/return." ]
+  ] [
+     fhir:code [ fhir:v "postflight-debrief" ] ;
+     fhir:display [ fhir:v "Postflight Debrief" ] ;
+     fhir:definition [ fhir:v "Debriefing sessions conducted after mission completion." ]
+  ] [
+     fhir:code [ fhir:v "continuous" ] ;
+     fhir:display [ fhir:v "Continuous Monitoring" ] ;
+     fhir:definition [ fhir:v "Ongoing monitoring throughout the mission duration." ]
+  ] [
+     fhir:code [ fhir:v "ame" ] ;
+     fhir:display [ fhir:v "Annual Medical Examination" ] ;
+     fhir:definition [ fhir:v "Annual astronaut medical examination period." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

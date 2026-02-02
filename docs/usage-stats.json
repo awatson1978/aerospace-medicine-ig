@@ -1,6 +1,6 @@
 {
   "package": "mitre.fhir.spacehealth",
-  "version": "0.5.6",
+  "version": "0.5.8",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -583,6 +583,100 @@
       ]
     },
     {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-discipline",
+      "title": "MRID Discipline",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number",
+      "title": "MRID Document Number",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration",
+      "title": "MRID Flight Duration Requirement",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-frequency",
+      "title": "MRID Frequency",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context",
+      "title": "MRID Launch Context",
+      "types": [
+        "code",
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor",
+      "title": "MRID Sponsor",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/operational-status",
       "title": "Operational Status",
       "types": [
@@ -892,6 +986,12 @@
         "title": "Mission Timeline Plan"
       }
     ],
+    "Questionnaire": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire",
+        "title": "MRID Questionnaire Profile"
+      }
+    ],
     "Basic": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item",
@@ -1038,6 +1138,9 @@
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay": [
       "Medication"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext": [
+      "Questionnaire"
+    ],
     "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness": [
       "Procedure"
     ],
@@ -1098,6 +1201,18 @@
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention": [
       "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/mrid-discipline": [
+      "Questionnaire"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number": [
+      "Questionnaire"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context": [
+      "Questionnaire"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor": [
+      "Questionnaire"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability": [
       "Location"
