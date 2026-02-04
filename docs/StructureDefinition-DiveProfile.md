@@ -1,4 +1,4 @@
-# Dive Profile - v0.5.8
+# Dive Profile - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:DiveProfile |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:DiveProfile |
 
  
 Comprehensive dive profile including depth, time, and environmental data 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-DiveProfile.csv), [E
   "resourceType" : "StructureDefinition",
   "id" : "DiveProfile",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "DiveProfile",
   "title" : "Dive Profile",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# MEDB 1.6 Resting ECG - v0.5.8
+# MEDB 1.6 Resting ECG - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-6-resting-ecg | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-6-resting-ecg | *Version*:0.5.9 |
 | Active as of 2013-12-19 | *Computable Name*:MEDB16RestingECG |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-6-resting-ecg",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB16RestingECG",
   "title" : "MEDB 1.6 Resting ECG",
   "status" : "active",

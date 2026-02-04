@@ -1,4 +1,4 @@
-# Trauma EFAST Exam - v0.5.8
+# Trauma EFAST Exam - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/TraumaEFASTQuestionnaire | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*: |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/TraumaEFASTQuestionnaire | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*: |
 
 
 
@@ -20,10 +20,10 @@
   "resourceType" : "Questionnaire",
   "id" : "TraumaEFASTQuestionnaire",
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/TraumaEFASTQuestionnaire",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

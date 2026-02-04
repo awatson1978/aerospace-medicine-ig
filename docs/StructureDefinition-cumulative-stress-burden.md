@@ -1,4 +1,4 @@
-# Cumulative Stress Burden - v0.5.8
+# Cumulative Stress Burden - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:CumulativeStressBurden |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:CumulativeStressBurden |
 
  
 Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
   "resourceType" : "StructureDefinition",
   "id" : "cumulative-stress-burden",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "CumulativeStressBurden",
   "title" : "Cumulative Stress Burden",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -460,3 +460,4 @@ This comprehensive approach to radiation exposure tracking ensures that space me
 - [Chancellor, J.C., et al. (2014). Space Radiation: The Number One Risk to Astronaut Health beyond Low Earth Orbit](https://doi.org/10.1016/j.lssr.2014.02.003)
 - [Zeitlin, C., et al. (2013). Measurements of Energetic Particle Radiation in Transit to Mars on the Mars Science Laboratory](https://doi.org/10.1126/science.1235989)
 - [Durante, M., & Cucinotta, F.A. (2008). Heavy Ion Carcinogenesis and Human Space Exploration](https://doi.org/10.1038/nrc2391)
+- [INTO THE DEEP: As humans return to the Moon, researchers are trying to understand—and thwart—the biological toll of deep-space radiation](https://www.science.org/content/article/humans-return-moon-scientists-confront-dangers-deep-space-radiation)

@@ -396,6 +396,7 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 - [Exercise in space: ESA approach to in-flight countermeasures (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC4971634/)
 - [High intensity training during spaceflight: NASA Sprint Study (npj Microgravity)](https://www.nature.com/articles/s41526-020-00111-x)
 - [Effects of Replacing Treadmill Running with Alternative Exercise Countermeasures (NASA NTRS)](https://ntrs.nasa.gov/citations/20240000929)
+- [Entering a new era for exercise countermeasures in human spaceflight](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/EP093248)
 
 #### Bone and Muscle Research
 
@@ -408,3 +409,4 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 - [MuscleMap: Whole Body Quantitative MRI](https://pubmed.ncbi.nlm.nih.gov/39590726/)
 - [Astronaut physiological deconditioning (NASA/SP-20250000273)](https://www.nasa.gov/wp-content/uploads/2025/02/sp-20250000273.pdf)
 - [Staying Strong: Spaceflight Muscle Loss Study](https://www.nasa.gov/ames/space-biosciences/staying-strong-spaceflight-muscle-loss-study-aims-to-benefit-patients-on-earth/)
+- [Musculoskeletal responses to spaceflight: mechanisms, countermeasures, and key gaps](https://pubmed.ncbi.nlm.nih.gov/41217000/)

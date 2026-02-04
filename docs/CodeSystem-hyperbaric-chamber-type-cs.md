@@ -1,4 +1,4 @@
-# Hyperbaric Chamber Types - v0.5.8
+# Hyperbaric Chamber Types - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:HyperbaricChamberTypeCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:HyperbaricChamberTypeCS |
 
  
 Types of hyperbaric chambers 
@@ -27,12 +27,12 @@ Types of hyperbaric chambers
   "resourceType" : "CodeSystem",
   "id" : "hyperbaric-chamber-type-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "HyperbaricChamberTypeCS",
   "title" : "Hyperbaric Chamber Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

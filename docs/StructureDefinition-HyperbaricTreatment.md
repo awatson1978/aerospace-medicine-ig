@@ -1,4 +1,4 @@
-# Hyperbaric Treatment - v0.5.8
+# Hyperbaric Treatment - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/HyperbaricTreatment | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:HyperbaricTreatment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/HyperbaricTreatment | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:HyperbaricTreatment |
 
  
 Hyperbaric oxygen therapy or chamber treatment 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-HyperbaricTreatment.
   "resourceType" : "StructureDefinition",
   "id" : "HyperbaricTreatment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/HyperbaricTreatment",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "HyperbaricTreatment",
   "title" : "Hyperbaric Treatment",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

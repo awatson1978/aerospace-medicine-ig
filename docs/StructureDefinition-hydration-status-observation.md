@@ -1,4 +1,4 @@
-# Hydration Status Observation - v0.5.8
+# Hydration Status Observation - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hydration-status-observation | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:HydrationStatusObservation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hydration-status-observation | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:HydrationStatusObservation |
 
  
 Hydration status monitoring for space missions 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-hydration-status-obs
   "resourceType" : "StructureDefinition",
   "id" : "hydration-status-observation",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/hydration-status-observation",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "HydrationStatusObservation",
   "title" : "Hydration Status Observation",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

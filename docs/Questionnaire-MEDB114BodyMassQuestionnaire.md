@@ -1,4 +1,4 @@
-# MEDB 1.14 Body Mass Measurement - v0.5.8
+# MEDB 1.14 Body Mass Measurement - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-14-body-mass | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-14-body-mass | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB114BodyMass |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -45,7 +45,7 @@ To track body mass changes during spaceflight as an indicator of nutritional sta
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-14-body-mass",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB114BodyMass",
   "title" : "MEDB 1.14 Body Mass Measurement",
   "status" : "active",

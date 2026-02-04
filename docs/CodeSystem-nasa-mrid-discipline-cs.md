@@ -1,4 +1,4 @@
-# NASA MRID Medical Disciplines - v0.5.8
+# NASA MRID Medical Disciplines - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:NASAMRIDDisciplineCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:NASAMRIDDisciplineCS |
 
  
 Medical disciplines categorizing NASA Medical Requirements Integration Documents. 
@@ -27,12 +27,12 @@ Medical disciplines categorizing NASA Medical Requirements Integration Documents
   "resourceType" : "CodeSystem",
   "id" : "nasa-mrid-discipline-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "NASAMRIDDisciplineCS",
   "title" : "NASA MRID Medical Disciplines",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

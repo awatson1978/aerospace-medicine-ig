@@ -1,4 +1,4 @@
-# MRID Launch Context Name - v0.5.8
+# MRID Launch Context Name - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MRIDLaunchContextNameVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MRIDLaunchContextNameVS |
 
  
 Names for launch context variables in MRID questionnaires 
@@ -46,11 +46,11 @@ Names for launch context variables in MRID questionnaires
   "resourceType" : "ValueSet",
   "id" : "mrid-launch-context-name-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MRIDLaunchContextNameVS",
   "title" : "MRID Launch Context Name",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

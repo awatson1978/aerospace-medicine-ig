@@ -1,4 +1,4 @@
-# Location - Biosphere2 - v0.5.8
+# Location - Biosphere2 - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

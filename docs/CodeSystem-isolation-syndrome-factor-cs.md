@@ -1,4 +1,4 @@
-# Isolation Syndrome Factor Code System - v0.5.8
+# Isolation Syndrome Factor Code System - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:IsolationSyndromeFactorCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:IsolationSyndromeFactorCS |
 
  
 Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions. 
@@ -27,11 +27,11 @@ Factors contributing to isolation, confinement, and psychosocial risk in aerospa
   "resourceType" : "CodeSystem",
   "id" : "isolation-syndrome-factor-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "IsolationSyndromeFactorCS",
   "title" : "Isolation Syndrome Factor Code System",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

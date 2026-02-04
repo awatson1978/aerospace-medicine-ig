@@ -1,4 +1,4 @@
-# Oxygen Concentration - v0.5.8
+# Oxygen Concentration - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:OxygenConcentration |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:OxygenConcentration |
 
 Oxygen concentration during treatment
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-concentration
   "resourceType" : "StructureDefinition",
   "id" : "oxygen-concentration",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "OxygenConcentration",
   "title" : "Oxygen Concentration",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

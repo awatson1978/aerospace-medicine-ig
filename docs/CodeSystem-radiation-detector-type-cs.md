@@ -1,4 +1,4 @@
-# Radiation Detector Type Code System - v0.5.8
+# Radiation Detector Type Code System - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:RadiationDetectorTypeCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:RadiationDetectorTypeCS |
 
  
 Types of radiation detection equipment 
@@ -28,12 +28,12 @@ Types of radiation detection equipment
   "resourceType" : "CodeSystem",
   "id" : "radiation-detector-type-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "RadiationDetectorTypeCS",
   "title" : "Radiation Detector Type Code System",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Artemis III Mission Plan - v0.5.8
+# Artemis III Mission Plan - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*: |
+| *Official URL*:https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*: |
 
  
 Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EVAs over 6.5 days, and return. Objectives include lunar south pole exploration, ice sample collection, xEMU suit validation, and Starship-HLS demonstration. 
@@ -17,11 +17,11 @@ Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EV
 * **Actions:**: **Url:**
   * : [Artemis III Mission Plan - First Crewed Lunar South Pole Landing](PlanDefinition-Artemis-III-Mission-Plan.md)
 * **Actions:**: **Version:**
-  * : 0.5.8
+  * : 0.5.9
 * **Actions:**: **Title:**
   * : Artemis III Mission Plan - First Crewed Lunar South Pole Landing
 * **Actions:**: **Date:**
-  * : 2026-02-02 11:11:20-0600
+  * : 2026-02-04 10:26:00-0600
 * **Actions:**: **Publisher:**
   * : MITRE
 * **Actions:**: **Description:**
@@ -49,7 +49,7 @@ Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EV
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/PlanDefinition/Artemis-III-Mission-Plan",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "title" : "Artemis III Mission Plan - First Crewed Lunar South Pole Landing",
   "type" : {
     "coding" : [
@@ -60,7 +60,7 @@ Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EV
     ]
   },
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

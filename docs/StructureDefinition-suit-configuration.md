@@ -1,4 +1,4 @@
-# Space Suit Configuration - v0.5.8
+# Space Suit Configuration - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/suit-configuration | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:SuitConfiguration |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/suit-configuration | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:SuitConfiguration |
 
 Configuration of space suit simulator used in training
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-suit-configuration.c
   "resourceType" : "StructureDefinition",
   "id" : "suit-configuration",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/suit-configuration",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "SuitConfiguration",
   "title" : "Space Suit Configuration",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

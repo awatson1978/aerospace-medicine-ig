@@ -1,4 +1,4 @@
-# MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry - v0.5.8
+# MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-3-1-radiation-monitoring | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-3-1-radiation-monitoring | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB31RadiationMonitoring |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-3-1-radiation-monitoring",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB31RadiationMonitoring",
   "title" : "MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry",
   "status" : "active",

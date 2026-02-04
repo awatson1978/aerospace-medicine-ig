@@ -1,4 +1,4 @@
-# Fitness Assessment Results - v0.5.8
+# Fitness Assessment Results - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/fitness-assessment-result-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:FitnessAssessmentResultVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/fitness-assessment-result-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:FitnessAssessmentResultVS |
 
  
 Value set for fitness test termination criteria and outcomes. 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "fitness-assessment-result-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/fitness-assessment-result-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "FitnessAssessmentResultVS",
   "title" : "Fitness Assessment Results",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

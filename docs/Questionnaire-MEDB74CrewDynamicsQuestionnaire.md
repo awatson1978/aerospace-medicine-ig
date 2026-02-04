@@ -1,4 +1,4 @@
-# MEDB 7.4 Crew Dynamics Assessment - v0.5.8
+# MEDB 7.4 Crew Dynamics Assessment - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-7-4-crew-dynamics | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-7-4-crew-dynamics | *Version*:0.5.9 |
 | Active as of 2024-01-15 | *Computable Name*:MEDB74CrewDynamics |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) | |
 
@@ -49,7 +49,7 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-7-4-crew-dynamics",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB74CrewDynamics",
   "title" : "MEDB 7.4 Crew Dynamics Assessment",
   "status" : "active",

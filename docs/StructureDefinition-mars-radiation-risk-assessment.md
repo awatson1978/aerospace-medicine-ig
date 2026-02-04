@@ -1,4 +1,4 @@
-# Mars Radiation Risk Assessment - v0.5.8
+# Mars Radiation Risk Assessment - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MarsRadiationRiskAssessment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MarsRadiationRiskAssessment |
 
  
 Radiation exposure risk assessment for long-duration deep space missions 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mars-radiation-risk-
   "resourceType" : "StructureDefinition",
   "id" : "mars-radiation-risk-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MarsRadiationRiskAssessment",
   "title" : "Mars Radiation Risk Assessment",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

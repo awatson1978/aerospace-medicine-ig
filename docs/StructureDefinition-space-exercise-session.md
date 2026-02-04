@@ -1,4 +1,4 @@
-# Space Exercise Session - v0.5.8
+# Space Exercise Session - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:SpaceExerciseSession |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:SpaceExerciseSession |
 
  
 Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-sessi
   "resourceType" : "StructureDefinition",
   "id" : "space-exercise-session",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "SpaceExerciseSession",
   "title" : "Space Exercise Session",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

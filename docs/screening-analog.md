@@ -1,4 +1,4 @@
-# Analog Mission Training - v0.5.8
+# Analog Mission Training - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * **Analog Mission Training**
@@ -136,4 +136,5 @@ Analog mission training:
 1. NASTAR Center (2024). "Suborbital Spaceflight Participant Training."
 1. SpaceVIP (2024). "Nastar Center Earth Experiences."
 1. NASA JSC (2011). FS-2011-11-057.
+1. [Increasing fidelity in lunar and martian analogs for behavioral health and performance research](https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2025.1505823/full)
 

@@ -1,4 +1,4 @@
-# MEDB 5.2 Strength Assessment - v0.5.8
+# MEDB 5.2 Strength Assessment - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-5-2-strength-assessment | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-5-2-strength-assessment | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB52StrengthAssessment |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To assess pre- and postflight muscle strength using isokinetic and isometric tes
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-5-2-strength-assessment",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB52StrengthAssessment",
   "title" : "MEDB 5.2 Strength Assessment",
   "status" : "active",

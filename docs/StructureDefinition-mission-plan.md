@@ -1,4 +1,4 @@
-# Mission Plan - v0.5.8
+# Mission Plan - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mission-plan | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MissionPlan |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mission-plan | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MissionPlan |
 
  
 Artemis mission timeline with phases, events, constraints, and medical protocols 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mission-plan.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "mission-plan",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MissionPlan",
   "title" : "Mission Plan",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

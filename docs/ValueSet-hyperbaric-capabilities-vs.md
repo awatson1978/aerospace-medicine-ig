@@ -1,4 +1,4 @@
-# Hyperbaric Chamber Capabilities - v0.5.8
+# Hyperbaric Chamber Capabilities - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:HyperbaricCapabilitiesVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:HyperbaricCapabilitiesVS |
 
  
 Capabilities available in hyperbaric chambers 
@@ -46,12 +46,12 @@ Capabilities available in hyperbaric chambers
   "resourceType" : "ValueSet",
   "id" : "hyperbaric-capabilities-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "HyperbaricCapabilitiesVS",
   "title" : "Hyperbaric Chamber Capabilities",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

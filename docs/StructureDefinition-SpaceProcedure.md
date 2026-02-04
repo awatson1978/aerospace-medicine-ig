@@ -1,4 +1,4 @@
-# Space Health Procedure - v0.5.8
+# Space Health Procedure - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:SpaceProcedure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:SpaceProcedure |
 
  
 STUB - Health procedures specific to outerspace environment. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-SpaceProcedure.csv),
   "resourceType" : "StructureDefinition",
   "id" : "SpaceProcedure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "SpaceProcedure",
   "title" : "Space Health Procedure",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

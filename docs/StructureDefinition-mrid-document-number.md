@@ -1,4 +1,4 @@
-# MRID Document Number - v0.5.8
+# MRID Document Number - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MRIDDocumentNumber |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MRIDDocumentNumber |
 
 The official MRID document identifier (e.g., MEDB 3.1, MR004L, MR005S)
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-mrid-document-number
   "resourceType" : "StructureDefinition",
   "id" : "mrid-document-number",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MRIDDocumentNumber",
   "title" : "MRID Document Number",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

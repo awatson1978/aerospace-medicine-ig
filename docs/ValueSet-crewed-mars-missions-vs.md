@@ -1,4 +1,4 @@
-# Human Mars Mission Plans - v0.5.8
+# Human Mars Mission Plans - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:CrewedMarsMissionsVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:CrewedMarsMissionsVS |
 
  
 Proposed and conceptual human mission architectures to Mars 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "crewed-mars-missions-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "CrewedMarsMissionsVS",
   "title" : "Human Mars Mission Plans",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

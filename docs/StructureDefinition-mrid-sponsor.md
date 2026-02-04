@@ -1,4 +1,4 @@
-# MRID Sponsor - v0.5.8
+# MRID Sponsor - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MRIDSponsor |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MRIDSponsor |
 
 The NASA organizational sponsor responsible for the medical requirement
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-mrid-sponsor.csv), [
   "resourceType" : "StructureDefinition",
   "id" : "mrid-sponsor",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MRIDSponsor",
   "title" : "MRID Sponsor",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

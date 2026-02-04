@@ -1,4 +1,4 @@
-# MR022S Air Quality Monitoring - v0.5.8
+# MR022S Air Quality Monitoring - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr022s-air-quality | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr022s-air-quality | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MR022SAirQuality |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr022s-air-quality",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MR022SAirQuality",
   "title" : "MR022S Air Quality Monitoring",
   "status" : "active",

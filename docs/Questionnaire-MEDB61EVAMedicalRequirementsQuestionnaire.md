@@ -1,4 +1,4 @@
-# MEDB 6.1 EVA Medical Requirements - v0.5.8
+# MEDB 6.1 EVA Medical Requirements - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-6-1-eva-medical | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-6-1-eva-medical | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB61EVAMedical |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To document medical requirements for EVA including crew certification, prebreath
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-6-1-eva-medical",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB61EVAMedical",
   "title" : "MEDB 6.1 EVA Medical Requirements",
   "status" : "active",

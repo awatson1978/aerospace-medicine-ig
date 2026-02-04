@@ -1,4 +1,4 @@
-# Neutral Buoyancy Training Activities - v0.5.8
+# Neutral Buoyancy Training Activities - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:NeutralBuoyancyTrainingActivities |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:NeutralBuoyancyTrainingActivities |
 
  
 Types of training activities conducted in neutral buoyancy environments 
@@ -46,12 +46,12 @@ Types of training activities conducted in neutral buoyancy environments
   "resourceType" : "ValueSet",
   "id" : "neutral-buoyancy-training-activities",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "NeutralBuoyancyTrainingActivities",
   "title" : "Neutral Buoyancy Training Activities",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

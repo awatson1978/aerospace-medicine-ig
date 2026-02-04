@@ -1,4 +1,4 @@
-# Environmental Conditions - v0.5.8
+# Environmental Conditions - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/environmental-conditions | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:EnvironmentalConditions |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/environmental-conditions | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:EnvironmentalConditions |
 
 Environmental conditions during training session
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-environmental-condit
   "resourceType" : "StructureDefinition",
   "id" : "environmental-conditions",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/environmental-conditions",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "EnvironmentalConditions",
   "title" : "Environmental Conditions",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

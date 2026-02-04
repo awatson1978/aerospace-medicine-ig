@@ -1,4 +1,4 @@
-# Artemis Missions - v0.5.8
+# Artemis Missions - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:ArtemisMissionVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:ArtemisMissionVS |
 
  
 All Artemis program missions I-V 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "artemis-mission-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "ArtemisMissionVS",
   "title" : "Artemis Missions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

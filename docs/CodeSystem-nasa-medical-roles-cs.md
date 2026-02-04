@@ -1,4 +1,4 @@
-# NASA Medical Personnel Roles - v0.5.8
+# NASA Medical Personnel Roles - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:NASAMedicalRolesCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:NASAMedicalRolesCS |
 
  
 Personnel roles involved in NASA medical requirements. 
@@ -28,12 +28,12 @@ Personnel roles involved in NASA medical requirements.
   "resourceType" : "CodeSystem",
   "id" : "nasa-medical-roles-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "NASAMedicalRolesCS",
   "title" : "NASA Medical Personnel Roles",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

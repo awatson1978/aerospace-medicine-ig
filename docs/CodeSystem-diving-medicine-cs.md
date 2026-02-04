@@ -1,4 +1,4 @@
-# Diving Medicine Code System - v0.5.8
+# Diving Medicine Code System - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:DivingMedicineCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:DivingMedicineCS |
 
  
 Medical codes specific to diving medicine and hyperbaric treatments 
@@ -27,12 +27,12 @@ Medical codes specific to diving medicine and hyperbaric treatments
   "resourceType" : "CodeSystem",
   "id" : "diving-medicine-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "DivingMedicineCS",
   "title" : "Diving Medicine Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

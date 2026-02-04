@@ -1,4 +1,4 @@
-# Maximum Depth Reached - v0.5.8
+# Maximum Depth Reached - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:MaximumDepthReached |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:MaximumDepthReached |
 
 Maximum depth reached during the dive requiring decompression
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-maximum-depth-reache
   "resourceType" : "StructureDefinition",
   "id" : "maximum-depth-reached",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MaximumDepthReached",
   "title" : "Maximum Depth Reached",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

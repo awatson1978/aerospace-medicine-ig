@@ -1,4 +1,4 @@
-# Shelf Life Decay - v0.5.8
+# Shelf Life Decay - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:ShelfLifeDecay |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:ShelfLifeDecay |
 
 Degradation of nutritional value over time in space conditions
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-shelf-life-decay.csv
   "resourceType" : "StructureDefinition",
   "id" : "shelf-life-decay",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "ShelfLifeDecay",
   "title" : "Shelf Life Decay",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

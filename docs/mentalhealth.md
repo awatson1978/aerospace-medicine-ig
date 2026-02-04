@@ -1,4 +1,4 @@
-# Mental Health - v0.5.8
+# Mental Health - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * **Mental Health**
@@ -420,6 +420,8 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
 
 * [Sleep loss effects on physiology & cognition](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.1046166/full)
 * [Task impairment during spaceflight missions](https://www.sciencedirect.com/science/article/abs/pii/S2468896722001434)
+* [Identifying cognitive capabilities required for optimal surface extravehicular activity performance](https://www.nature.com/articles/s41526-025-00545-1?error=cookies_not_supported&code=b7a7d84a-1aed-44ed-8ff3-874edb58c05a)
+* [Characterizing cognitive workload during simulated surface extravehicular activity with integrated virtual reality](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1713354/full?utm_source=F-NTF&utm_medium=EMLX&utm_campaign=PRD_FEOPS_20170000_ARTICLE)
 
 #### Related Studies
 

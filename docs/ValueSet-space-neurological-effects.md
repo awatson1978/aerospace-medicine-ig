@@ -1,4 +1,4 @@
-# Space Neurological Effects - v0.5.8
+# Space Neurological Effects - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:SpaceNeurologicalEffectsValueSet |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:SpaceNeurologicalEffectsValueSet |
 
  
 Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-neurological-effects",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "SpaceNeurologicalEffectsValueSet",
   "title" : "Space Neurological Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

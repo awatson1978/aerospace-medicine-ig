@@ -1,4 +1,4 @@
-# MRID Flight Duration Requirement - v0.5.8
+# MRID Flight Duration Requirement - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MRIDFlightDuration |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MRIDFlightDuration |
 
 Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days')
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-mrid-flight-duration
   "resourceType" : "StructureDefinition",
   "id" : "mrid-flight-duration",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MRIDFlightDuration",
   "title" : "MRID Flight Duration Requirement",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

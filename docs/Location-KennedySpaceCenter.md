@@ -1,4 +1,4 @@
-# Location - Kennedy Space Center - v0.5.8
+# Location - Kennedy Space Center - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

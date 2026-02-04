@@ -1,4 +1,4 @@
-# Gimbal Contraindications - v0.5.8
+# Gimbal Contraindications - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:GimbalContraindicatedConditions |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:GimbalContraindicatedConditions |
 
  
 Contraindicated conditions for riding a multi-axis gimbal 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "GimbalContraindicatedConditions",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "GimbalContraindicatedConditions",
   "title" : "Gimbal Contraindications",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

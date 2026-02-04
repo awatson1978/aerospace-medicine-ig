@@ -1,4 +1,4 @@
-# Behavioral Biomarker Code System - v0.5.8
+# Behavioral Biomarker Code System - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:BehavioralBiomarkerCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:BehavioralBiomarkerCS |
 
  
 Codes for physiologic and digital biomarkers related to behavioral health and stress. 
@@ -27,11 +27,11 @@ Codes for physiologic and digital biomarkers related to behavioral health and st
   "resourceType" : "CodeSystem",
   "id" : "behavioral-biomarker-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "BehavioralBiomarkerCS",
   "title" : "Behavioral Biomarker Code System",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

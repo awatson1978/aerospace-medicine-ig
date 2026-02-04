@@ -1,4 +1,4 @@
-# NASA MRID Sponsor Organizations - v0.5.8
+# NASA MRID Sponsor Organizations - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-sponsor-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:NASAMRIDSponsorVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-sponsor-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:NASAMRIDSponsorVS |
 
  
 Value set for NASA MRID sponsor organizations. 
@@ -46,12 +46,12 @@ Value set for NASA MRID sponsor organizations.
   "resourceType" : "ValueSet",
   "id" : "nasa-mrid-sponsor-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-sponsor-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "NASAMRIDSponsorVS",
   "title" : "NASA MRID Sponsor Organizations",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

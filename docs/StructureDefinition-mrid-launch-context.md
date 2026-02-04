@@ -1,4 +1,4 @@
-# MRID Launch Context - v0.5.8
+# MRID Launch Context - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MRIDLaunchContext |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MRIDLaunchContext |
 
 Context for pre-populating the questionnaire with astronaut/patient reference. Compatible with SDC launchContext pattern.
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-mrid-launch-context.
   "resourceType" : "StructureDefinition",
   "id" : "mrid-launch-context",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MRIDLaunchContext",
   "title" : "MRID Launch Context",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Artemis Missions - v0.5.8
+# Artemis Missions - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:ArtemisMissionCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:ArtemisMissionCS |
 
  
 Historical and planned Artemis program missions with target destinations, launch dates, and status 
@@ -27,12 +27,12 @@ Historical and planned Artemis program missions with target destinations, launch
   "resourceType" : "CodeSystem",
   "id" : "artemis-mission-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "ArtemisMissionCS",
   "title" : "Artemis Missions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

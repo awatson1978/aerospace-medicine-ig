@@ -278,6 +278,8 @@ Individual astronauts participating in multiple Artemis missionscareer radiatio
 - [Artemis Programs: NASA Should Document Plans (GAO Report)](https://www.gao.gov/products/gao-24-106878)
 - [NASA's Return To Moon Top Priority For Acting Administrator](https://aviationweek.com/space/space-exploration/nasas-return-moon-top-priority-acting-administrator)
 - ['We're really on a different trajectory': How NASA's Artemis moon missions aim to prepare us for Mars](https://www.space.com/space-exploration/artemis/were-really-on-a-different-trajectory-how-nasas-artemis-moon-missions-can-help-prepare-us-for-mars)
+- [NASA safety panel recommends review of Artemis plans](https://spacenews.com/nasa-safety-panel-recommends-review-of-artemis-plans/?utm_source=linkedin&utm_medium=jetpack_social)
+- [NASA's Artemis II crewed mission to the Moon shows how US space strategy has changed since Apollo – and contrasts with China's closed program](https://theconversation.com/nasas-artemis-ii-crewed-mission-to-the-moon-shows-how-us-space-strategy-has-changed-since-apollo-and-contrasts-with-chinas-closed-program-270245)
 
 #### Gateway Lunar Space Station
 
@@ -310,6 +312,7 @@ Individual astronauts participating in multiple Artemis missionscareer radiatio
 - [Axiom Space reveals next-generation spacesuit (AxEMU)](https://www.axiomspace.com/release/axemu)
 - [NASA's Management of ISS Extravehicular Activity Spacesuits](https://oig.nasa.gov/office-of-inspector-general-oig/audit-reports/nasas-management-of-iss-extravehicular-activity-spacesuits/)
 - [Remcom develops wireless modeling for Artemis lunar spacesuits and vehicles](https://www.militaryaerospace.com/communications/news/55319584/remcom-develops-wireless-modeling-for-artemis-lunar-spacesuits-and-vehicles)
+- [Artemis Spacesuits Have 'a Lot of Flexibility Issues,' Per Former Astronaut](https://www.extremetech.com/aerospace/artemis-spacesuits-have-a-lot-of-flexibility-issues-per-former-astronaut)
 
 #### Radiation and Crew Health
 
@@ -317,8 +320,15 @@ Individual astronauts participating in multiple Artemis missionscareer radiatio
 - [Artemis 2 astronauts will double as human science experiments on their trip around the moon](https://www.space.com/space-exploration/artemis/artemis-2-astronauts-will-double-as-human-science-experiments-on-their-trip-around-the-moon)
 - [Purposeful Passenger: Artemis I manikin](https://www.nasa.gov/feature/purposeful-passenger-artemis-i-manikin-helps-prepare-for-moon-missions-with-crew/)
 - [AFRL helps NASA test equipment for Artemis II](https://afresearchlab.com/news/afrl-helps-nasa-test-equipment-for-artemis-ii-mission/)
+- [INTO THE DEEP: As humans return to the Moon, researchers are trying to understand—and thwart—the biological toll of deep-space radiation](https://www.science.org/content/article/humans-return-moon-scientists-confront-dangers-deep-space-radiation)
 
 #### Mission Tracking and Engagement
 
 - [NASA Seeks Volunteers to Track Artemis II Mission](https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-volunteers-to-track-artemis-ii-mission/)
 - [Sean Duffy Opens up Artemis III Contract](https://x.com/_abbie_watson_/status/1980375993950122466?s=61)
+
+#### Communications and Tracking
+
+- [Networks Keeping NASA's Artemis II Mission Connected](https://www.nasa.gov/missions/artemis/networks-keeping-nasas-artemis-ii-mission-connected/)
+- [Lasers could allow the world to watch Artemis II astronauts travel to the moon and back](https://abcnews.go.com/Technology/lasers-world-watch-artemis-ii-astronauts-travel-moon/story?id=129781981)
+- [NASA's SLS Rocket: Secondary Payloads](https://www.nasa.gov/image-article/nasas-sls-rocket-secondary-payloads/)

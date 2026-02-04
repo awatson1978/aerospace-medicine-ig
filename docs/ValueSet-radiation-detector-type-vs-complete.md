@@ -1,4 +1,4 @@
-# Complete Radiation Detector Types - v0.5.8
+# Complete Radiation Detector Types - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:RadiationDetectorTypeVSComplete |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:RadiationDetectorTypeVSComplete |
 
  
 Comprehensive list of radiation detection devices used in space 
@@ -48,12 +48,12 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "resourceType" : "ValueSet",
   "id" : "radiation-detector-type-vs-complete",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "RadiationDetectorTypeVSComplete",
   "title" : "Complete Radiation Detector Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

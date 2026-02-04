@@ -1,4 +1,4 @@
-# Mars Direct - v0.5.8
+# Mars Direct - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * **Mars Direct**

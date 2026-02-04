@@ -340,6 +340,7 @@ Interfaces that promote adequate intake during appetite suppression phases.
 - [Historical NASA menus from Apollo & Shuttle](https://airandspace.si.edu/stories/editorial/astronaut-food-then-and-now)
 - [Daily rations and caloric needs in space](https://www.nasa.gov/pdf/146558main_Space_Food.pdf)
 - [Developing the NASA Food System for Long-Duration Missions (Journal of Food Science)](https://ift.onlinelibrary.wiley.com/doi/10.1111/j.1750-3841.2010.01982.x)
+- [Food acceptability and selection by astronauts on International Space Station missions informs strategies and risks for deep space exploration](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1562044/full)
 
 #### Long-Duration Mission Nutrition
 

@@ -1,4 +1,4 @@
-# ECG Interpretation Results - v0.5.8
+# ECG Interpretation Results - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:ECGInterpretationVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:ECGInterpretationVS |
 
  
 Value set for ECG interpretation outcomes. 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ecg-interpretation-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "ECGInterpretationVS",
   "title" : "ECG Interpretation Results",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

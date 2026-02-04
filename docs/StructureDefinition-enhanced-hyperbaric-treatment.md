@@ -1,4 +1,4 @@
-# Enhanced Hyperbaric Treatment - v0.5.8
+# Enhanced Hyperbaric Treatment - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/enhanced-hyperbaric-treatment | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:EnhancedHyperbaricTreatment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/enhanced-hyperbaric-treatment | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:EnhancedHyperbaricTreatment |
 
  
 Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
   "resourceType" : "StructureDefinition",
   "id" : "enhanced-hyperbaric-treatment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/enhanced-hyperbaric-treatment",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "EnhancedHyperbaricTreatment",
   "title" : "Enhanced Hyperbaric Treatment",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

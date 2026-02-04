@@ -1,4 +1,4 @@
-# MEDB 1.11 Body Composition/DEXA - v0.5.8
+# MEDB 1.11 Body Composition/DEXA - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-11-body-composition | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-11-body-composition | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB111BodyComposition |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -45,7 +45,7 @@ To assess body composition including bone mineral density, lean mass, and fat ma
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-11-body-composition",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB111BodyComposition",
   "title" : "MEDB 1.11 Body Composition/DEXA",
   "status" : "active",

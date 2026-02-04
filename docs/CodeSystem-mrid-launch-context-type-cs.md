@@ -1,4 +1,4 @@
-# MRID Launch Context Type CodeSystem - v0.5.8
+# MRID Launch Context Type CodeSystem - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MRIDLaunchContextTypeCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MRIDLaunchContextTypeCS |
 
  
 FHIR resource types for launch context 
@@ -27,11 +27,11 @@ FHIR resource types for launch context
   "resourceType" : "CodeSystem",
   "id" : "mrid-launch-context-type-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MRIDLaunchContextTypeCS",
   "title" : "MRID Launch Context Type CodeSystem",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

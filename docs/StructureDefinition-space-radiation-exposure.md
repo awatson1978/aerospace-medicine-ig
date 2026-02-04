@@ -1,4 +1,4 @@
-# Space Radiation Exposure (Fixed) - v0.5.8
+# Space Radiation Exposure (Fixed) - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:SpaceRadiationExposure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:SpaceRadiationExposure |
 
  
 Corrected radiation dose measurement for space missions with proper extension contexts 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
   "resourceType" : "StructureDefinition",
   "id" : "space-radiation-exposure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "SpaceRadiationExposure",
   "title" : "Space Radiation Exposure (Fixed)",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

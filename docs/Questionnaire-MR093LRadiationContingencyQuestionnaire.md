@@ -1,4 +1,4 @@
-# MR093L Radiation Contingency - v0.5.8
+# MR093L Radiation Contingency - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr093l-radiation-contingency | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr093l-radiation-contingency | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MR093LRadiationContingency |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ Document radiation contingency events, crew protective response, exposure assess
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr093l-radiation-contingency",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MR093LRadiationContingency",
   "title" : "MR093L Radiation Contingency",
   "status" : "active",

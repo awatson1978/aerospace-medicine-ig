@@ -1,4 +1,4 @@
-# MEDB 5.3 Exercise Prescription - v0.5.8
+# MEDB 5.3 Exercise Prescription - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-5-3-exercise-prescription | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-5-3-exercise-prescription | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB53ExercisePrescription |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To document and track in-flight exercise countermeasures prescription and crew a
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-5-3-exercise-prescription",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB53ExercisePrescription",
   "title" : "MEDB 5.3 Exercise Prescription",
   "status" : "active",

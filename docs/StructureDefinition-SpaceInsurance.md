@@ -1,4 +1,4 @@
-# Space insurance - v0.5.8
+# Space insurance - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:SpaceInsurance |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:SpaceInsurance |
 
  
 STUB - Insurance plan for space travel 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-SpaceInsurance.csv),
   "resourceType" : "StructureDefinition",
   "id" : "SpaceInsurance",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "SpaceInsurance",
   "title" : "Space insurance",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

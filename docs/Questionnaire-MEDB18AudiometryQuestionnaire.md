@@ -1,4 +1,4 @@
-# MEDB 1.8 Audiometry - v0.5.8
+# MEDB 1.8 Audiometry - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-8-audiometry | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-8-audiometry | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB18Audiometry |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To assess pre- and postflight hearing thresholds on crew members using pure tone
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-8-audiometry",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB18Audiometry",
   "title" : "MEDB 1.8 Audiometry",
   "status" : "active",

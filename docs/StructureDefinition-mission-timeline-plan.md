@@ -1,4 +1,4 @@
-# Mission Timeline Plan - v0.5.8
+# Mission Timeline Plan - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:MissionTimelinePlan |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:MissionTimelinePlan |
 
  
 Mars mission timeline with phases, events, EVA schedules, and medical protocols 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mission-timeline-pla
   "resourceType" : "StructureDefinition",
   "id" : "mission-timeline-plan",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MissionTimelinePlan",
   "title" : "Mission Timeline Plan",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

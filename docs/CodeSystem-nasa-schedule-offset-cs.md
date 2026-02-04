@@ -1,4 +1,4 @@
-# NASA Schedule Offset Notation - v0.5.8
+# NASA Schedule Offset Notation - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:NASAScheduleOffsetCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:NASAScheduleOffsetCS |
 
  
 L-minus and R-plus notation codes for mission timeline scheduling. 
@@ -29,12 +29,12 @@ L-minus and R-plus notation codes for mission timeline scheduling.
   "resourceType" : "CodeSystem",
   "id" : "nasa-schedule-offset-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "NASAScheduleOffsetCS",
   "title" : "NASA Schedule Offset Notation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

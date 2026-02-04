@@ -1,4 +1,4 @@
-# MEDB 2.4 H. pylori Screening - v0.5.8
+# MEDB 2.4 H. pylori Screening - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-4-hpylori-screening | *Version*:0.5.8 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-4-hpylori-screening | *Version*:0.5.9 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB24HpyloriScreening |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-2-4-hpylori-screening",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "MEDB24HpyloriScreening",
   "title" : "MEDB 2.4 H. pylori Screening",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Diving Equipment - v0.5.8
+# Diving Equipment - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:DivingEquipment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:DivingEquipment |
 
  
 Equipment used for diving operations and underwater training 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-DivingEquipment.csv)
   "resourceType" : "StructureDefinition",
   "id" : "DivingEquipment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "DivingEquipment",
   "title" : "Diving Equipment",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

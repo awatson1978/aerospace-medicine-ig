@@ -1,4 +1,4 @@
-# NASA Medical Hardware - v0.5.8
+# NASA Medical Hardware - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:NASAMedicalHardwareCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:NASAMedicalHardwareCS |
 
  
 Medical equipment and hardware used in NASA medical requirements. 
@@ -30,12 +30,12 @@ Medical equipment and hardware used in NASA medical requirements.
   "resourceType" : "CodeSystem",
   "id" : "nasa-medical-hardware-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "NASAMedicalHardwareCS",
   "title" : "NASA Medical Hardware",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

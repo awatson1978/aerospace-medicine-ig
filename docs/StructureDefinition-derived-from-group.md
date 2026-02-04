@@ -1,4 +1,4 @@
-# Derived From Activity Group - v0.5.8
+# Derived From Activity Group - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:DerivedFromGroup |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:DerivedFromGroup |
 
 Links aggregated metrics to source activity group observations
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-derived-from-group.c
   "resourceType" : "StructureDefinition",
   "id" : "derived-from-group",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "DerivedFromGroup",
   "title" : "Derived From Activity Group",
   "status" : "active",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

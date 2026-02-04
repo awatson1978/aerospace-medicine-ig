@@ -1,4 +1,4 @@
-# Human Mars Mission Plans - v0.5.8
+# Human Mars Mission Plans - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs | *Version*:0.5.8 |
-| Active as of 2026-02-02 | *Computable Name*:CrewedMarsMissionsCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs | *Version*:0.5.9 |
+| Active as of 2026-02-04 | *Computable Name*:CrewedMarsMissionsCS |
 
  
 Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.) 
@@ -27,12 +27,12 @@ Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DR
   "resourceType" : "CodeSystem",
   "id" : "crewed-mars-missions-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "CrewedMarsMissionsCS",
   "title" : "Human Mars Mission Plans",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

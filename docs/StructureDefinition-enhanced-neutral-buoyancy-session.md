@@ -1,4 +1,4 @@
-# Enhanced Neutral Buoyancy Training Session - v0.5.8
+# Enhanced Neutral Buoyancy Training Session - v0.5.9
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/enhanced-neutral-buoyancy-session | *Version*:0.5.8 |
-| Draft as of 2026-02-02 | *Computable Name*:EnhancedNeutralBuoyancySession |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/enhanced-neutral-buoyancy-session | *Version*:0.5.9 |
+| Draft as of 2026-02-04 | *Computable Name*:EnhancedNeutralBuoyancySession |
 
  
 Comprehensive neutral buoyancy training session with full regulatory compliance tracking 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-neutral-buo
   "resourceType" : "StructureDefinition",
   "id" : "enhanced-neutral-buoyancy-session",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/enhanced-neutral-buoyancy-session",
-  "version" : "0.5.8",
+  "version" : "0.5.9",
   "name" : "EnhancedNeutralBuoyancySession",
   "title" : "Enhanced Neutral Buoyancy Training Session",
   "status" : "draft",
-  "date" : "2026-02-02T11:11:20-06:00",
+  "date" : "2026-02-04T10:26:00-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {
