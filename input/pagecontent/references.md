@@ -20,6 +20,7 @@
 * [Securing Space: A Plan for U.S. Action](https://www.cfr.org/task-force-reports/securing-space)
 * [Revisiting National Space Transportation Policy: It's Not Just Rockets Anymore](https://csps.aerospace.org/papers/revisiting-national-space-transportation-policy-its-not-just-rockets-anymore)
 * [SPACE SYSTEMS COMMAND: Command Plan](https://www.ssc.spaceforce.mil/Portals/3/Images/SSC%20Command%20Plan/SSC_Command_Plan_2026.pdf?ver=PEMi920bb15JP64fyNJ2lQ%3D%3D)
+* [NASA Aerospace Safety Advisory Panel Annual Report](https://www.nasa.gov/wp-content/uploads/2024/03/asap-2025-annual-report-tagged.pdf)
 
 ### Actuarial Analysis
 
@@ -75,6 +76,9 @@
 * [A key NASA commercial partner faces financial challenges](https://arstechnica.com/space/2024/09/a-key-nasa-commercial-partner-faces-severe-financial-challenges/)
 * [SpaceX Crew Dragon interior (4K UHD video)](https://www.youtube.com/watch?v=SQX3zcpOojQ)
 * [PERFORMANCE IMPROVEMENT IN END-TO-END TRAJECTORY OPTIMIZATION FOR HIGH-MASS MARS LANDING MISSIONS](https://media.licdn.com/dms/document/media/v2/D4E1FAQFC79GZSNlKSQ/feedshare-document-pdf-analyzed/B4EZwZvhH1JgAY-/0/1769958414855?e=1770854400&v=beta&t=K5eRAVjwCom9X4xs8zbDgmOZvlSFL99RbSEuPu1p-GI)
+* [A Message From Administrator Jared Isaacman (Starliner)](https://nasawatch.com/ask-the-administrator/a-message-from-administrator-jared-isaacman-starliner/)
+* [NASA Releases Report on Starliner Crewed Flight Test Investigation](https://www.nasa.gov/news-release/nasa-releases-report-on-starliner-crewed-flight-test-investigation/)
+* [Starliner Propulsion System Anomalies during the Crewed Flight Test - Investigation Report](https://www.nasa.gov/wp-content/uploads/2026/02/nasa-report-with-redactions-021926.pdf?emrc=76e561)
 * [NASA's SLS Rocket: Secondary Payloads](https://www.nasa.gov/image-article/nasas-sls-rocket-secondary-payloads/)
 
 ### Space Habitats & Environmental Health
@@ -92,6 +96,7 @@
 * [Bill Nye & Astro Mike on space radiation (video)](https://www.youtube.com/watch?v=Jumvuu1KcA0)
 * [MIT solar-powered dome tree habitats for Mars](https://inhabitat.com/mits-winning-solar-powered-dome-tree-habitats-for-mars-mimic-earthly-forests/)
 * [Biosphere 2](https://biosphere2.org/)
+* [A road map to truly sustainable water systems in space](https://phys.org/news/2026-02-road-sustainable-space.html)
 
 ### Spacesuits
 
@@ -282,6 +287,8 @@
 * [Daily rations and caloric needs in space](https://www.nasa.gov/pdf/146558main_Space_Food.pdf) – *NASA Fact Sheet*
 
 * [Food acceptability and selection by astronauts on International Space Station missions informs strategies and risks for deep space exploration](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1562044/full)
+* [Artemis II: What's on the Menu?](https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/)
+* [Artemis II - Crew Menu](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png)
 
 
 ### 🍅 Food Production & Farming in Space
@@ -359,6 +366,7 @@
 * [Evaluating potential landing sites for the Artemis III mission using a multi-criteria decision making approach](https://www.sciencedirect.com/science/article/pii/S0094576524006234)
 * [NASA safety panel recommends review of Artemis plans](https://spacenews.com/nasa-safety-panel-recommends-review-of-artemis-plans/?utm_source=linkedin&utm_medium=jetpack_social)
 * [NASA's Artemis II crewed mission to the Moon shows how US space strategy has changed since Apollo – and contrasts with China's closed program](https://theconversation.com/nasas-artemis-ii-crewed-mission-to-the-moon-shows-how-us-space-strategy-has-changed-since-apollo-and-contrasts-with-chinas-closed-program-270245)
+* [Artemis Update (Feb. 27, 2026)](https://www.youtube.com/watch?v=eCbQtyUopOM)
 
 ### Space Technology & Equipment
 
@@ -454,6 +462,9 @@
 ### Exercise & Biomechanics
 
 * [The High-Bar and Low-Bar Back-Squats: A Biomechanical Analysis](https://pubmed.ncbi.nlm.nih.gov/28195975/)
+* [High-Intensity Exercise With Blood Flow Restriction or in Hypoxia as Valuable Spaceflight Countermeasures?](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.01266/full)
+* [Application of Blood Flow Restriction to Optimize Exercise Countermeasures for Human Space Flight](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00033/full)
+* [Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts](https://www.nature.com/articles/s41526-023-00256-5)
 
 ### Historical Space Missions & Documents
 

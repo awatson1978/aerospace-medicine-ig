@@ -56,17 +56,22 @@ All rights reserved by their respective owners.
 
 ### Acknowledgements
 
-The author acknowledges valuable discussions, domain insights, and informal technical feedback from collaborators and stakeholders across the aerospace medicine, clinical research, and space health communities.
+The author acknowledges valuable discussions, domain insights, and informal technical feedback from collaborators and stakeholders across the aerospace medicine, clinical research, and space health communities. General domain awareness, conceptual framing, and use-case exploration reflected in this Implementation Guide have benefited from professional interactions with teams from Space ISAC and other NASA-affiliated researchers.
 
-General domain awareness, conceptual framing, and use-case exploration reflected in this Implementation Guide have benefited from professional interactions with teams from Space ISAC, TrialX, HERMES, TRISH, and other NASA-affiliated researchers.  The views, specifications, and implementation guidance expressed in this document are solely those of the author and do not necessarily reflect the official views, policies, or endorsement of any organization referenced herein.
+The [TrialX](https://trialx.com/) team has provided collaborative feedback and is among the first organizations to implement content from this IG. Their work on the **HERMES** health data management platform, funded by the  **Translational Research Institute for Space Health (TRISH)**, and in collaboration and stewardship of the **EXPAND** program — includes an ongoing effort to adopt FHIR-based interoperability standards in the HERMES platform. This independent adoption reflects a broader movement toward open, standards-based health data systems in human spaceflight.
+
+This Implementation Guide builds on a tradition of federally funded research and development in aerospace systems. MITRE's involvement in aerospace dates to the Apollo program and continues through its management of the CMS Alliance for Modernized Healthcare (AMH) and the Center for Advanced Aviation System Development (CAASD), where foundational work on clinical interoperability and aviation safety standards informs this guide's approach.
+
+The views, specifications, and implementation guidance expressed in this document are solely those of the author and do not necessarily reflect the official views, policies, or endorsement of any organization referenced herein.
 
 ### Use of Large Language Models
 
 Significant portions of this Implementation Guide were developed with the assistance of Large Language Models (LLMs), used as research and development tools under the direct supervision and editorial control of the author. The author takes full responsibility for the accuracy, appropriateness, and scientific rigor of all content presented herein.
 
 **Tools Used:**
-- **Claude Code** (Anthropic) — Primary assistant for FHIR resource development, CodeSystem generation, mission architecture research, and technical documentation
+
 - **ChatGPT Deep Research** (OpenAI) — Supplemental research for source validation, cross-referencing, and domain exploration
+- **Claude Code** (Anthropic) — Primary assistant for FHIR resource development, CodeSystem generation, mission architecture research, and technical documentation
 
 **LLM-Assisted Activities:**
 - Literature review and reference discovery (aerospace medicine, space health, mission architectures)
@@ -79,10 +84,10 @@ Significant portions of this Implementation Guide were developed with the assist
 - Quality control through multi-LLM cross-checking and validation
 
 **Methodology:**
-Multiple LLMs were used in an iterative, cross-checking approach to enhance accuracy and reduce hallucination risk. When LLMs generated content (including mission descriptions, device specifications, crew rosters, or landing site coordinates), outputs were systematically validated against authoritative sources (NASA documentation, peer-reviewed literature, official mission briefings, and published standards). The author exercised editorial judgment at every stage, including prompt engineering, output evaluation, fact-checking, and final approval.
+Multiple LLMs were used in an iterative, cross-checking approach to enhance accuracy and reduce hallucination risk. When LLMs generated content (including mission descriptions, device specifications, crew rosters, or landing site coordinates), outputs were systematically validated against authoritative sources (NASA documentation, peer-reviewed literature, official mission briefings, and published standards). The author exercised editorial judgment at every stage, including prompt engineering, output evaluation, fact-checking, FHIR data validation, and final approval.
 
 **Human Oversight:**
-All clinical reasoning, medical safety considerations, FHIR conformance decisions, and implementation recommendations were reviewed and approved by the author. LLMs served as assistive tools to accelerate research, automate repetitive tasks (such as JSON file generation), and synthesize large volumes of source material—but did not autonomously author clinical guidance or make binding technical decisions.
+All clinical reasoning, medical safety considerations, FHIR conformance decisions, and implementation recommendations were reviewed and approved by the author. LLMs served as assistive tools to accelerate research, automate repetitive tasks (such as JSON file generation), and synthesize large volumes of source material — but did not autonomously author clinical guidance or make binding technical decisions.
 
 **Transparency and Limitations:**
 While LLMs significantly enhanced the efficiency and scope of this work, they are imperfect tools subject to errors, outdated training data, and occasional factual inaccuracies. Users of this Implementation Guide should independently verify mission-critical information, especially where human safety, regulatory compliance, or clinical decision-making is concerned. The author welcomes feedback and corrections to improve the accuracy and utility of this guide.

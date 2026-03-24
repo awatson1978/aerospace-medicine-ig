@@ -157,6 +157,29 @@ Trends across multiple missions; risk accumulation for osteoporosis, metabolic d
 
 Study effects of long-term calorie deficit, nutrient timing, circadian misalignment, and analog environments such as Biosphere 2.
 
+### Artemis II Crew Menu
+
+NASA published the crew menu for the **Artemis II** mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories, each modeled as a FHIR [NutritionProduct](https://hl7.org/fhir/R5/nutritionproduct.html) resource in this IG.
+
+| Category | Items |
+|----------|-------|
+| **Beverage** | Coffee (black), Green tea, Berry smoothie, Orange juice, Apple cider, Grape drink, Orange-mango smoothie, Orange-pineapple drink, Hot chocolate, Cocoa |
+| **Grain** | Flour tortillas, Wheat flat bread |
+| **Entrée** | Vegetable quiche, Couscous with nuts and raisins, Macaroni and cheese |
+| **Protein** | Breakfast sausage patty, Barbecued beef brisket |
+| **Fruit** | Mango salad, Tropical fruit salad |
+| **Breakfast** | Granola with blueberries |
+| **Vegetable** | Broccoli au gratin, Spicy green beans, Butternut squash, Cauliflower au gratin |
+| **Snack** | Almonds, Cashews |
+| **Condiment** | Maple syrup, Chocolate hazelnut spread, Peanut butter, Almond butter, Hot sauce, Spicy mustard, Strawberry jam, Honey, Cinnamon sugar |
+| **Dessert** | Shortbread cookies, Chocolate, Lemon cake, Chocolate candy-coated almonds, Cherry-blueberry cobbler, Chocolate pudding |
+
+These resources are available for bulk download as [Artemis.NutritionProducts.ndjson](Artemis.NutritionProducts.ndjson) on the [Downloads](downloads.html) page.
+
+**Sources:**
+- [Artemis II: What's on the Menu?](https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/)
+- [Artemis II - Crew Menu Infographic](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png)
+
 ### Enhanced Data Collection
 
 Advanced parameters enable deeper physiologic monitoring and risk assessment:

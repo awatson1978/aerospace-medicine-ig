@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-data-archive-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-data-archive-cs</b></p><a name=\"nasa-data-archive-cs\"> </a><a name=\"hcnasa-data-archive-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mmis<a name=\"nasa-data-archive-cs-mmis\"> </a></td><td>Medical Mission Information System</td><td>Primary NASA medical information system for crew health records.</td></tr><tr><td style=\"white-space:nowrap\">areas<a name=\"nasa-data-archive-cs-areas\"> </a></td><td>Astronaut Radiation Exposure Assessment System</td><td>Protected database for astronaut radiation exposure records.</td></tr><tr><td style=\"white-space:nowrap\">meme<a name=\"nasa-data-archive-cs-meme\"> </a></td><td>Medical Equipment Management Environment</td><td>System for managing medical equipment and supplies.</td></tr><tr><td style=\"white-space:nowrap\">pacs<a name=\"nasa-data-archive-cs-pacs\"> </a></td><td>Picture Archiving and Communication System</td><td>System for storing and retrieving medical images.</td></tr><tr><td style=\"white-space:nowrap\">emr<a name=\"nasa-data-archive-cs-emr\"> </a></td><td>Electronic Medical Record</td><td>Astronaut electronic medical record system.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.10"] ; # 
+  fhir:name [ fhir:v "NASADataArchiveCS"] ; # 
+  fhir:title [ fhir:v "NASA Medical Data Archive Systems"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-03-12T10:22:25-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Data archive and delivery systems for NASA medical data."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "mmis" ] ;
+     fhir:display [ fhir:v "Medical Mission Information System" ] ;
+     fhir:definition [ fhir:v "Primary NASA medical information system for crew health records." ]
+  ] [
+     fhir:code [ fhir:v "areas" ] ;
+     fhir:display [ fhir:v "Astronaut Radiation Exposure Assessment System" ] ;
+     fhir:definition [ fhir:v "Protected database for astronaut radiation exposure records." ]
+  ] [
+     fhir:code [ fhir:v "meme" ] ;
+     fhir:display [ fhir:v "Medical Equipment Management Environment" ] ;
+     fhir:definition [ fhir:v "System for managing medical equipment and supplies." ]
+  ] [
+     fhir:code [ fhir:v "pacs" ] ;
+     fhir:display [ fhir:v "Picture Archiving and Communication System" ] ;
+     fhir:definition [ fhir:v "System for storing and retrieving medical images." ]
+  ] [
+     fhir:code [ fhir:v "emr" ] ;
+     fhir:display [ fhir:v "Electronic Medical Record" ] ;
+     fhir:definition [ fhir:v "Astronaut electronic medical record system." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
