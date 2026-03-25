@@ -23,16 +23,16 @@ The question that keeps mission planners awake at night is not whether the rocke
 **Artemis II** - First crewed lunar flyby since Apollo 17, planned 2026  
 [Artemis II Mission](artemis_ii_mission_october_2021.jpeg){:width="100%"}  
 
-**Artemis III** - Crewed low-Earth orbit test flight, planned 2027  
-[Artemis III Landing Region Map](artemis_iii_mission_map_2022.jpeg){:width="100%"}  
+**Artemis III** - Crewed low-Earth orbit test flight, planned 2027
 
-**Artemis IV** - Establishing Lunar Gateway space station, planned 2028  
-[Artemis IV Mission](artemis_iv_mission.jpeg){:width="100%"}  
+**Artemis IV** - First crewed lunar landing mission, planned 2028
+[Artemis Lunar Landing Mission](artemis_iii_mission_map_2022.jpeg){:width="100%"}
 
-**Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029  
-[Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"}
+**Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029
 
 **Artemis VI–XXX** - As of the Artemis IGNITE conference, the program anticipates 28+ lunar landings. Missions VI through XXX are placeholder entries in the CodeSystem for simulation, planning, and forecasting as mission profiles are defined.
+[Gateway Deployment Mission - Artemis IV (outdated, pre-IGNITE reference)](artemis_iv_mission.jpeg){:width="100%"}
+[Gateway Deployment Mission - Artemis V (outdated, pre-IGNITE reference)](artemis_v_mission_may_2023.jpg){:width="100%"}
 
 #### Core Concepts
 
