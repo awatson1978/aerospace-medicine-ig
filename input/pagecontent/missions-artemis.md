@@ -6,7 +6,7 @@
 
 On November 16, 2022, at 1:47 AM EST, the Space Launch System rocket lit up the night sky over Kennedy Space Center. Riding atop this most powerful rocket ever built was Orionan uncrewed capsule bound for lunar orbit. Artemis I had begun. For 25.5 days, Orion flew farther from Earth than any spacecraft designed for humans had ever gone, testing heat shields, life support systems, and navigation in deep space. It splashed down in the Pacific Ocean on December 11, 2022, proving that the hardware worked. **But hardware is only half the story.** The Artemis program is not about sending machines to the Moonit's about sending people. And people are fragile.
 
-Artemis II (planned for 2026) will be the first crewed lunar flyby since Apollo 17 in 1972. Artemis III (planned for 2027) aims to land the first woman and first person of color on the Moon, targeting the harsh, shadowed terrain near the lunar south polea place no human has ever set foot. Artemis IV and V will establish the Lunar Gateway space station and begin constructing an Artemis Base Camp on the surface, enabling sustained human presence beyond low-Earth orbit for the first time. These missions will test technologies, countermeasures, and medical protocols for eventual Mars missions2-3 year journeys where there is no quick abort, no resupply, and no evacuation option.
+Artemis II (planned for 2026) will be the first crewed lunar flyby since Apollo 17 in 1972. Artemis III (planned for 2027) will be a crewed low-Earth orbit test flight preparing systems for future lunar landings. Artemis IV and V will establish the Lunar Gateway space station and begin constructing an Artemis Base Camp on the surface, enabling sustained human presence beyond low-Earth orbit for the first time. These missions will test technologies, countermeasures, and medical protocols for eventual Mars missions2-3 year journeys where there is no quick abort, no resupply, and no evacuation option.
 
 The question that keeps mission planners awake at night is not whether the rockets will work or the habitats will seal. It's whether the crew will remain healthyphysically and psychologicallyin an environment that evolution never prepared us for. **Artemis astronauts will face radiation exposure far exceeding ISS levels, bone and muscle loss in 1/6th gravity, circadian disruption from extreme lunar day-night cycles, isolation in cramped habitats, and the constant risk of equipment failure with no immediate rescue.** Every heartbeat, every milligram of cortisol, every hour of sleep, every rad of radiation dose must be tracked, correlated, and analyzed to ensure crew safety and mission success.
 
@@ -23,14 +23,16 @@ The question that keeps mission planners awake at night is not whether the rocke
 **Artemis II** - First crewed lunar flyby since Apollo 17, planned 2026  
 [Artemis II Mission](artemis_ii_mission_october_2021.jpeg){:width="100%"}  
 
-**Artemis III** - First woman and person of color on the Moon, lunar south pole landing, planned 2027  
+**Artemis III** - Crewed low-Earth orbit test flight, planned 2027  
 [Artemis III Landing Region Map](artemis_iii_mission_map_2022.jpeg){:width="100%"}  
 
 **Artemis IV** - Establishing Lunar Gateway space station, planned 2028  
 [Artemis IV Mission](artemis_iv_mission.jpeg){:width="100%"}  
 
 **Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029  
-[Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"}  
+[Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"}
+
+**Artemis VI–XXX** - As of the Artemis IGNITE conference, the program anticipates 28+ lunar landings. Missions VI through XXX are placeholder entries in the CodeSystem for simulation, planning, and forecasting as mission profiles are defined.
 
 #### Core Concepts
 
@@ -57,14 +59,14 @@ Artemis health data spans multiple interconnected dimensions:
 - **Operational Events**: EVA schedules, habitat transfers, emergency procedures, medical interventions, equipment malfunctions
 - **Location Context**: Gateway modules, HLS interior, lunar surface regions, specific landing sites with selenographic coordinates
 
-All measurements link to **MissionContext** extensions (consistent with other IG modules) and **ArtemisMissions** CodeSystem entries (Artemis I, II, III, IV, V) to enable mission-specific filtering and cross-mission analysis.
+All measurements link to **MissionContext** extensions (consistent with other IG modules) and **ArtemisMissions** CodeSystem entries (Artemis I through XXX) to enable mission-specific filtering and cross-mission analysis.
 
 #### Standardized Terminologies
 
 New code systems and value sets for Artemis:
 
-- **[ArtemisMissionCS](CodeSystem-artemis-mission-cs.html)**: Mission codes (ARTEMIS-I, ARTEMIS-II, ARTEMIS-III, ARTEMIS-IV, ARTEMIS-V) with properties for target destination, launch date, status
-- **[ArtemisMissionVS](ValueSet-artemis-mission-vs.html)**: ValueSet for all Artemis program missions I-V
+- **[ArtemisMissionCS](CodeSystem-artemis-mission-cs.html)**: Mission codes (ARTEMIS-I through ARTEMIS-XXX) with properties for target destination, launch date, status
+- **[ArtemisMissionVS](ValueSet-artemis-mission-vs.html)**: ValueSet for all Artemis program missions I-XXX
 - **[ArtemisLandingRegionCS](CodeSystem-artemis-landing-region-cs.html)**: 13 candidate Artemis III south pole landing regions (Faustini Rim A, Peak Near Shackleton, Malapert Massif, Nobile Rim, Haworth, etc.) with approximate coordinates
 - **[ArtemisLandingRegionVS](ValueSet-artemis-landing-region-vs.html)**: ValueSet binding for location profiles
 - **[ArtemisCertifiedDevicesCS](CodeSystem-artemis-certified-devices-cs.html)**: Flight-qualified hardware (Orion, SLS, xEMU EVA suit, Starship-HLS, LTV rover, Gateway-HALO, BaseCampHab)
