@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-medical-facility-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-medical-facility-cs</b></p><a name=\"nasa-medical-facility-cs\"> </a><a name=\"hcnasa-medical-facility-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">jsc<a name=\"nasa-medical-facility-cs-jsc\"> </a></td><td>Johnson Space Center</td><td>NASA Johnson Space Center, Houston, Texas.</td></tr><tr><td style=\"white-space:nowrap\">ksc<a name=\"nasa-medical-facility-cs-ksc\"> </a></td><td>Kennedy Space Center</td><td>NASA Kennedy Space Center, Florida.</td></tr><tr><td style=\"white-space:nowrap\">russia-gctc<a name=\"nasa-medical-facility-cs-russia-gctc\"> </a></td><td>Gagarin Cosmonaut Training Center</td><td>Russian cosmonaut training center, Star City.</td></tr><tr><td style=\"white-space:nowrap\">russia-ibmp<a name=\"nasa-medical-facility-cs-russia-ibmp\"> </a></td><td>Institute for Biomedical Problems</td><td>Russian Institute for Biomedical Problems, Moscow.</td></tr><tr><td style=\"white-space:nowrap\">esa-eac<a name=\"nasa-medical-facility-cs-esa-eac\"> </a></td><td>European Astronaut Centre</td><td>ESA European Astronaut Centre, Cologne, Germany.</td></tr><tr><td style=\"white-space:nowrap\">jaxa-tsukuba<a name=\"nasa-medical-facility-cs-jaxa-tsukuba\"> </a></td><td>JAXA Tsukuba Space Center</td><td>JAXA facility in Tsukuba, Japan.</td></tr><tr><td style=\"white-space:nowrap\">csa-stjohn<a name=\"nasa-medical-facility-cs-csa-stjohn\"> </a></td><td>CSA St. John's</td><td>Canadian Space Agency facility.</td></tr><tr><td style=\"white-space:nowrap\">iss<a name=\"nasa-medical-facility-cs-iss\"> </a></td><td>International Space Station</td><td>On-orbit International Space Station.</td></tr><tr><td style=\"white-space:nowrap\">srdl<a name=\"nasa-medical-facility-cs-srdl\"> </a></td><td>Space Radiation Dosimetry Laboratory</td><td>NASA facility for radiation dosimetry analysis.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.12"] ; # 
+  fhir:name [ fhir:v "NASAMedicalFacilityCS"] ; # 
+  fhir:title [ fhir:v "NASA Medical Facility Locations"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-03-25T00:24:16-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical testing facility locations for NASA medical requirements."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "jsc" ] ;
+     fhir:display [ fhir:v "Johnson Space Center" ] ;
+     fhir:definition [ fhir:v "NASA Johnson Space Center, Houston, Texas." ]
+  ] [
+     fhir:code [ fhir:v "ksc" ] ;
+     fhir:display [ fhir:v "Kennedy Space Center" ] ;
+     fhir:definition [ fhir:v "NASA Kennedy Space Center, Florida." ]
+  ] [
+     fhir:code [ fhir:v "russia-gctc" ] ;
+     fhir:display [ fhir:v "Gagarin Cosmonaut Training Center" ] ;
+     fhir:definition [ fhir:v "Russian cosmonaut training center, Star City." ]
+  ] [
+     fhir:code [ fhir:v "russia-ibmp" ] ;
+     fhir:display [ fhir:v "Institute for Biomedical Problems" ] ;
+     fhir:definition [ fhir:v "Russian Institute for Biomedical Problems, Moscow." ]
+  ] [
+     fhir:code [ fhir:v "esa-eac" ] ;
+     fhir:display [ fhir:v "European Astronaut Centre" ] ;
+     fhir:definition [ fhir:v "ESA European Astronaut Centre, Cologne, Germany." ]
+  ] [
+     fhir:code [ fhir:v "jaxa-tsukuba" ] ;
+     fhir:display [ fhir:v "JAXA Tsukuba Space Center" ] ;
+     fhir:definition [ fhir:v "JAXA facility in Tsukuba, Japan." ]
+  ] [
+     fhir:code [ fhir:v "csa-stjohn" ] ;
+     fhir:display [ fhir:v "CSA St. John's" ] ;
+     fhir:definition [ fhir:v "Canadian Space Agency facility." ]
+  ] [
+     fhir:code [ fhir:v "iss" ] ;
+     fhir:display [ fhir:v "International Space Station" ] ;
+     fhir:definition [ fhir:v "On-orbit International Space Station." ]
+  ] [
+     fhir:code [ fhir:v "srdl" ] ;
+     fhir:display [ fhir:v "Space Radiation Dosimetry Laboratory" ] ;
+     fhir:definition [ fhir:v "NASA facility for radiation dosimetry analysis." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artemis Devices -  v0.5.12</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"19.259"}
+    h3,h4,h5,h6{--heading-prefix:"19.259"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.12 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Artemis Devices</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-artemis-devices-cs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-artemis-devices-cs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-artemis-devices-cs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Artemis Devices
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.5.12<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs|0.5.12"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-03-25
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ArtemisDevicesCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="artemis-devices-cs"> </a><a name="hcartemis-devices-cs"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>deviceType</td>
+<td>deviceType</td>
+<td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#deviceType</td>
+<td>code</td>
+<td>Device category (spacecraft, launch-vehicle, suit, life-support, lander, habitat, propulsion, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)</td></tr>
+<tr><td>manufacturer</td>
+<td>manufacturer</td>
+<td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#manufacturer</td>
+<td>string</td>
+<td>Device manufacturer or contractor</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>manufacturer</b></td></tr>
+<tr><td style="white-space:nowrap">orion<a name="artemis-devices-cs-orion"> </a></td>
+<td>Orion Crew Vehicle</td>
+<td>Spacecraft - Crew Module and Service Module. Manufacturer: Lockheed Martin / NASA.</td>
+<td>spacecraft</td>
+<td>Lockheed Martin / NASA</td></tr>
+<tr><td style="white-space:nowrap">sls<a name="artemis-devices-cs-sls"> </a></td>
+<td>Space Launch System</td>
+<td>Heavy-Lift Launch Vehicle. Manufacturer: Boeing / NASA.</td>
+<td>launch-vehicle</td>
+<td>Boeing / NASA</td></tr>
+<tr><td style="white-space:nowrap">exploration-eva-suit<a name="artemis-devices-cs-exploration-eva-suit"> </a></td>
+<td>Exploration EVA Suit</td>
+<td>Exploration Extravehicular Mobility Unit. Manufacturer: Axiom Space / Collins Aerospace.</td>
+<td>suit</td>
+<td>Axiom Space / Collins Aerospace</td></tr>
+<tr><td style="white-space:nowrap">plss<a name="artemis-devices-cs-plss"> </a></td>
+<td>Portable Life Support System</td>
+<td>EVA Suit Life Support Backpack. Manufacturer: Collins Aerospace.</td>
+<td>life-support</td>
+<td>Collins Aerospace</td></tr>
+<tr><td style="white-space:nowrap">human-landing-system<a name="artemis-devices-cs-human-landing-system"> </a></td>
+<td>Human Landing System</td>
+<td>Lunar Lander. Manufacturer: SpaceX.</td>
+<td>lander</td>
+<td>SpaceX</td></tr>
+<tr><td style="white-space:nowrap">clps-lander<a name="artemis-devices-cs-clps-lander"> </a></td>
+<td>CLPS Lander</td>
+<td>Commercial Lunar Payload Services Delivery Lander. Manufacturer: NASA / Commercial Providers.</td>
+<td>lander</td>
+<td>NASA / Commercial Providers</td></tr>
+<tr><td style="white-space:nowrap">gateway-halo<a name="artemis-devices-cs-gateway-halo"> </a></td>
+<td>Gateway HALO Module</td>
+<td>Habitation and Logistics Outpost Module. Manufacturer: Northrop Grumman.</td>
+<td>habitat</td>
+<td>Northrop Grumman</td></tr>
+<tr><td style="white-space:nowrap">gateway-ppe<a name="artemis-devices-cs-gateway-ppe"> </a></td>
+<td>Gateway PPE Module</td>
+<td>Power and Propulsion Element. Manufacturer: Maxar Technologies.</td>
+<td>propulsion</td>
+<td>Maxar Technologies</td></tr>
+<tr><td style="white-space:nowrap">medical-kit<a name="artemis-devices-cs-medical-kit"> </a></td>
+<td>Artemis Medical Kit</td>
+<td>Emergency Medical Equipment. Manufacturer: NASA.</td>
+<td>medical-equipment</td>
+<td>NASA</td></tr>
+<tr><td style="white-space:nowrap">lunanet<a name="artemis-devices-cs-lunanet"> </a></td>
+<td>LunaNet Communication Architecture</td>
+<td>Lunar Communication and Navigation Network. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">orbital-comm-relay<a name="artemis-devices-cs-orbital-comm-relay"> </a></td>
+<td>Orbital Communication Relay</td>
+<td>Orbital Relay Satellite for Lunar Communications. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">observation-satellite<a name="artemis-devices-cs-observation-satellite"> </a></td>
+<td>Observation Satellite</td>
+<td>Lunar Observation and Monitoring Satellite. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">relay-satellite-observability<a name="artemis-devices-cs-relay-satellite-observability"> </a></td>
+<td>Relay Satellite with Observability</td>
+<td>Relay Satellite with Observability Functions. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">surface-comm-nav-node<a name="artemis-devices-cs-surface-comm-nav-node"> </a></td>
+<td>Surface Communication and Navigation Node</td>
+<td>Lunar Surface Communication and Navigation Infrastructure. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">deployable-surface-comm-tower<a name="artemis-devices-cs-deployable-surface-comm-tower"> </a></td>
+<td>Deployable Surface Communication Tower</td>
+<td>Deployable Surface Communications Tower. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">high-throughput-surface-comms<a name="artemis-devices-cs-high-throughput-surface-comms"> </a></td>
+<td>High-Throughput Surface Communications Node</td>
+<td>High-Bandwidth Lunar Surface Communications. Manufacturer: NASA / Partners.</td>
+<td>communications</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">lunar-pnt-node<a name="artemis-devices-cs-lunar-pnt-node"> </a></td>
+<td>Lunar PNT Node</td>
+<td>Positioning Navigation and Timing Infrastructure. Manufacturer: NASA / Partners.</td>
+<td>navigation</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">clock-demo-node<a name="artemis-devices-cs-clock-demo-node"> </a></td>
+<td>Lunar Clock Demonstration Node</td>
+<td>Surface Timing and Synchronization Demonstrator. Manufacturer: NASA / Partners.</td>
+<td>navigation</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">navigation-capability-node<a name="artemis-devices-cs-navigation-capability-node"> </a></td>
+<td>Navigation Capability Node</td>
+<td>Lunar Navigation Infrastructure Element. Manufacturer: NASA / Partners.</td>
+<td>navigation</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">moonfall-drone<a name="artemis-devices-cs-moonfall-drone"> </a></td>
+<td>MoonFall Drone</td>
+<td>Lunar Surface Aerial or Descent Support Drone. Manufacturer: NASA / Partners.</td>
+<td>drone</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">ltv<a name="artemis-devices-cs-ltv"> </a></td>
+<td>Lunar Terrain Vehicle</td>
+<td>Lunar Surface Mobility Platform. Manufacturer: NASA / Industry Team.</td>
+<td>rover</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">crewed-ltv<a name="artemis-devices-cs-crewed-ltv"> </a></td>
+<td>Crewed LTV</td>
+<td>Crewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td>
+<td>rover</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">uncrewed-ltv<a name="artemis-devices-cs-uncrewed-ltv"> </a></td>
+<td>Uncrewed LTV</td>
+<td>Uncrewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td>
+<td>rover</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">advanced-ltv<a name="artemis-devices-cs-advanced-ltv"> </a></td>
+<td>Advanced LTV</td>
+<td>Advanced Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td>
+<td>rover</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">ltv-gen-2<a name="artemis-devices-cs-ltv-gen-2"> </a></td>
+<td>LTV Generation 2</td>
+<td>Second-Generation Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td>
+<td>rover</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">pressurized-rover<a name="artemis-devices-cs-pressurized-rover"> </a></td>
+<td>Pressurized Rover</td>
+<td>Pressurized Lunar Rover. Manufacturer: NASA / Partners.</td>
+<td>rover</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">viper-rover<a name="artemis-devices-cs-viper-rover"> </a></td>
+<td>VIPER Rover</td>
+<td>Volatiles Investigating Polar Exploration Rover. Manufacturer: NASA.</td>
+<td>rover</td>
+<td>NASA</td></tr>
+<tr><td style="white-space:nowrap">excavator-rover<a name="artemis-devices-cs-excavator-rover"> </a></td>
+<td>Excavator Rover</td>
+<td>Lunar Surface Excavation Rover. Manufacturer: NASA / Partners.</td>
+<td>rover</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">site-prep-logistics-rover<a name="artemis-devices-cs-site-prep-logistics-rover"> </a></td>
+<td>Site Preparation and Logistics Rover</td>
+<td>Rover for Site Preparation and Logistics Tasks. Manufacturer: NASA / Partners.</td>
+<td>rover</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">international-partner-rover<a name="artemis-devices-cs-international-partner-rover"> </a></td>
+<td>International Partner Rover</td>
+<td>Partner-Provided Lunar Rover. Manufacturer: International Partners.</td>
+<td>rover</td>
+<td>International Partners</td></tr>
+<tr><td style="white-space:nowrap">science-rover<a name="artemis-devices-cs-science-rover"> </a></td>
+<td>Science Rover</td>
+<td>Lunar Surface Science Rover. Manufacturer: NASA / Partners.</td>
+<td>rover</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">basecamp-habitat<a name="artemis-devices-cs-basecamp-habitat"> </a></td>
+<td>Artemis Base Camp Surface Habitat</td>
+<td>Lunar Surface Living Quarters. Manufacturer: NASA / Partners.</td>
+<td>habitat</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">surface-habitat-module<a name="artemis-devices-cs-surface-habitat-module"> </a></td>
+<td>Surface Habitat Module</td>
+<td>Lunar Surface Habitat Infrastructure. Manufacturer: NASA / Partners.</td>
+<td>habitat</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">logistics-demo-unit<a name="artemis-devices-cs-logistics-demo-unit"> </a></td>
+<td>Logistics Demonstration Unit</td>
+<td>Demonstrator for Lunar Surface Logistics. Manufacturer: NASA / Partners.</td>
+<td>logistics</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">logistics-delivery-vehicle<a name="artemis-devices-cs-logistics-delivery-vehicle"> </a></td>
+<td>Logistics Delivery Vehicle</td>
+<td>Lunar Surface or Cargo Delivery Logistics Asset. Manufacturer: NASA / Partners.</td>
+<td>logistics</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">cargo-return-vehicle<a name="artemis-devices-cs-cargo-return-vehicle"> </a></td>
+<td>Cargo Return Vehicle</td>
+<td>Vehicle for Returning Cargo from Lunar Surface Operations. Manufacturer: NASA / Partners.</td>
+<td>logistics</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">isru-plant<a name="artemis-devices-cs-isru-plant"> </a></td>
+<td>ISRU Plant</td>
+<td>In Situ Resource Utilization Processing System. Manufacturer: NASA / Partners.</td>
+<td>isru</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">solar-power-augmentation-unit<a name="artemis-devices-cs-solar-power-augmentation-unit"> </a></td>
+<td>Solar Power Augmentation Unit</td>
+<td>Solar Power Augmentation Infrastructure. Manufacturer: NASA / Partners.</td>
+<td>power</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">solar-battery-rfc-power-unit<a name="artemis-devices-cs-solar-battery-rfc-power-unit"> </a></td>
+<td>Solar Battery RFC Power Unit</td>
+<td>Solar Battery and Regenerative Fuel Cell Power System. Manufacturer: NASA / Partners.</td>
+<td>power</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">rtg-power-unit<a name="artemis-devices-cs-rtg-power-unit"> </a></td>
+<td>RTG Power Unit</td>
+<td>Radioisotope Thermoelectric Generator Power System. Manufacturer: NASA / DOE / Partners.</td>
+<td>power</td>
+<td>NASA / DOE / Partners</td></tr>
+<tr><td style="white-space:nowrap">rhu-thermal-survival-unit<a name="artemis-devices-cs-rhu-thermal-survival-unit"> </a></td>
+<td>RHU Thermal Survival Unit</td>
+<td>Radioisotope Heater Unit for Lunar Night Survival. Manufacturer: NASA / DOE / Partners.</td>
+<td>power</td>
+<td>NASA / DOE / Partners</td></tr>
+<tr><td style="white-space:nowrap">fission-surface-power-unit<a name="artemis-devices-cs-fission-surface-power-unit"> </a></td>
+<td>Fission Surface Power Unit</td>
+<td>Lunar Surface Fission Power System. Manufacturer: NASA / DOE / Partners.</td>
+<td>power</td>
+<td>NASA / DOE / Partners</td></tr>
+<tr><td style="white-space:nowrap">power-infrastructure-node<a name="artemis-devices-cs-power-infrastructure-node"> </a></td>
+<td>Power Infrastructure Node</td>
+<td>Surface Electrical Power Infrastructure. Manufacturer: NASA / Partners.</td>
+<td>power</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">power-distribution-node<a name="artemis-devices-cs-power-distribution-node"> </a></td>
+<td>Power Distribution Node</td>
+<td>Surface Power Distribution System. Manufacturer: NASA / Partners.</td>
+<td>power</td>
+<td>NASA / Partners</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 00:24-0500">2026-03-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

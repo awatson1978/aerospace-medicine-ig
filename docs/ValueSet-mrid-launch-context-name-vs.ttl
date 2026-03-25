@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mrid-launch-context-name-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mrid-launch-context-name-vs</b></p><a name=\"mrid-launch-context-name-vs\"> </a><a name=\"hcmrid-launch-context-name-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-mrid-launch-context-name-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.12</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.12"] ; # 
+  fhir:name [ fhir:v "MRIDLaunchContextNameVS"] ; # 
+  fhir:title [ fhir:v "MRID Launch Context Name"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-03-25T00:24:16-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Names for launch context variables in MRID questionnaires"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

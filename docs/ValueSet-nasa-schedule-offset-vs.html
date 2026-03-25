@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NASA Schedule Offsets -  v0.5.12</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"19.230"}
+    h3,h4,h5,h6{--heading-prefix:"19.230"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.5.12 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="fitness.html">Fitness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="references.html">References</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NASA Schedule Offsets</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-nasa-schedule-offset-vs.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-nasa-schedule-offset-vs.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-nasa-schedule-offset-vs.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: NASA Schedule Offsets
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://mitre.org/fhir/space-health/ValueSet/nasa-schedule-offset-vs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/nasa-schedule-offset-vs"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.5.12<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/nasa-schedule-offset-vs|0.5.12"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-03-25
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NASAScheduleOffsetVS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Complete value set for all mission schedule offsets.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="nasa-schedule-offset-vs"> </a><a name="hcnasa-schedule-offset-vs"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-nasa-schedule-offset-cs.html"><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.5.12</span></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-nasa-schedule-offset-cs.html">codesystem NASA Schedule Offset Notation v0.5.12 (CodeSystem)</a><span class="copy-text-inline"><button data-clipboard-text="https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs|0.5.12" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 24 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-24m"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-24m">L-24m</a></td><td>L-24 months</td><td>24 months before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-24m&quot;, &quot;display&quot;: &quot;L-24 months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-24m&quot;&gt;&lt;display value=&quot;L-24 months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-19m"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-19m">L-19m</a></td><td>L-19 months</td><td>19 months before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-19m&quot;, &quot;display&quot;: &quot;L-19 months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-19m&quot;&gt;&lt;display value=&quot;L-19 months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-12m"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-12m">L-12m</a></td><td>L-12 months</td><td>12 months before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-12m&quot;, &quot;display&quot;: &quot;L-12 months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-12m&quot;&gt;&lt;display value=&quot;L-12 months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-9m"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-9m">L-9m</a></td><td>L-9 months</td><td>9 months before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-9m&quot;, &quot;display&quot;: &quot;L-9 months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-9m&quot;&gt;&lt;display value=&quot;L-9 months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-6m"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-6m">L-6m</a></td><td>L-6 months</td><td>6 months before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-6m&quot;, &quot;display&quot;: &quot;L-6 months&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-6m&quot;&gt;&lt;display value=&quot;L-6 months&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-180d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-180d">L-180d</a></td><td>L-180 days</td><td>180 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-180d&quot;, &quot;display&quot;: &quot;L-180 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-180d&quot;&gt;&lt;display value=&quot;L-180 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-90d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-90d">L-90d</a></td><td>L-90 days</td><td>90 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-90d&quot;, &quot;display&quot;: &quot;L-90 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-90d&quot;&gt;&lt;display value=&quot;L-90 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-45d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-45d">L-45d</a></td><td>L-45 days</td><td>45 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-45d&quot;, &quot;display&quot;: &quot;L-45 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-45d&quot;&gt;&lt;display value=&quot;L-45 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-30d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-30d">L-30d</a></td><td>L-30 days</td><td>30 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-30d&quot;, &quot;display&quot;: &quot;L-30 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-30d&quot;&gt;&lt;display value=&quot;L-30 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-15d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-15d">L-15d</a></td><td>L-15 days</td><td>15 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-15d&quot;, &quot;display&quot;: &quot;L-15 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-15d&quot;&gt;&lt;display value=&quot;L-15 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-10d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-10d">L-10d</a></td><td>L-10 days</td><td>10 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-10d&quot;, &quot;display&quot;: &quot;L-10 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-10d&quot;&gt;&lt;display value=&quot;L-10 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-7d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-7d">L-7d</a></td><td>L-7 days</td><td>7 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-7d&quot;, &quot;display&quot;: &quot;L-7 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-7d&quot;&gt;&lt;display value=&quot;L-7 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-3d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-3d">L-3d</a></td><td>L-3 days</td><td>3 days before launch</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-3d&quot;, &quot;display&quot;: &quot;L-3 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-3d&quot;&gt;&lt;display value=&quot;L-3 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-L-0"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-L-0">L-0</a></td><td>L-0</td><td>Launch day</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;L-0&quot;, &quot;display&quot;: &quot;L-0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;L-0&quot;&gt;&lt;display value=&quot;L-0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-0"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-0">R-0</a></td><td>R+0</td><td>Return/landing day</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-0&quot;, &quot;display&quot;: &quot;R+0&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-0&quot;&gt;&lt;display value=&quot;R+0&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-3d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-3d">R-3d</a></td><td>R+3 days</td><td>3 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-3d&quot;, &quot;display&quot;: &quot;R+3 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-3d&quot;&gt;&lt;display value=&quot;R+3 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-5d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-5d">R-5d</a></td><td>R+5 days</td><td>5 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-5d&quot;, &quot;display&quot;: &quot;R+5 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-5d&quot;&gt;&lt;display value=&quot;R+5 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-7d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-7d">R-7d</a></td><td>R+7 days</td><td>7 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-7d&quot;, &quot;display&quot;: &quot;R+7 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-7d&quot;&gt;&lt;display value=&quot;R+7 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-14d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-14d">R-14d</a></td><td>R+14 days</td><td>14 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-14d&quot;, &quot;display&quot;: &quot;R+14 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-14d&quot;&gt;&lt;display value=&quot;R+14 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-30d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-30d">R-30d</a></td><td>R+30 days</td><td>30 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-30d&quot;, &quot;display&quot;: &quot;R+30 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-30d&quot;&gt;&lt;display value=&quot;R+30 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-45d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-45d">R-45d</a></td><td>R+45 days</td><td>45 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-45d&quot;, &quot;display&quot;: &quot;R+45 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-45d&quot;&gt;&lt;display value=&quot;R+45 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-R-60d"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-R-60d">R-60d</a></td><td>R+60 days</td><td>60 days after return</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;R-60d&quot;, &quot;display&quot;: &quot;R+60 days&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;R-60d&quot;&gt;&lt;display value=&quot;R+60 days&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-FD-21"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-FD-21">FD-21</a></td><td>Flight Day 21</td><td>21st day of flight</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;FD-21&quot;, &quot;display&quot;: &quot;Flight Day 21&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;FD-21&quot;&gt;&lt;display value=&quot;Flight Day 21&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs-FD-mid"> </a><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs</code></td><td style="white-space:nowrap">  <a href="CodeSystem-nasa-schedule-offset-cs.html#nasa-schedule-offset-cs-FD-mid">FD-mid</a></td><td>Mid-Mission</td><td>Midpoint of mission duration</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;, &quot;version&quot;: &quot;0.5.12&quot;, &quot;code&quot;: &quot;FD-mid&quot;, &quot;display&quot;: &quot;Mid-Mission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs&quot;&gt;&lt;version value=&quot;0.5.12&quot;&gt;&lt;code value=&quot;FD-mid&quot;&gt;&lt;display value=&quot;Mid-Mission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 00:24-0500">2026-03-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

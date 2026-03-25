@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/nasa-cardiovascular-equipment-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-cardiovascular-equipment-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet nasa-cardiovascular-equipment-vs</b></p><a name=\"nasa-cardiovascular-equipment-vs\"> </a><a name=\"hcnasa-cardiovascular-equipment-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-nasa-medical-hardware-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.5.12</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-nasa-medical-hardware-cs.html#nasa-medical-hardware-cs-12-lead-ecg\">12-lead-ecg</a></td><td style=\"color: #cccccc\">12-Lead ECG Machine</td><td>Electrocardiograph for recording 12-lead cardiac electrical activity.</td></tr><tr><td><a href=\"CodeSystem-nasa-medical-hardware-cs.html#nasa-medical-hardware-cs-marquette-case\">marquette-case</a></td><td style=\"color: #cccccc\">Marquette CASE 15</td><td>ECG system used for exercise stress testing.</td></tr><tr><td><a href=\"CodeSystem-nasa-medical-hardware-cs.html#nasa-medical-hardware-cs-blood-pressure-monitor\">blood-pressure-monitor</a></td><td style=\"color: #cccccc\">Blood Pressure Monitor</td><td>Device for measuring systolic and diastolic blood pressure.</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/nasa-cardiovascular-equipment-vs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/nasa-cardiovascular-equipment-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.12"] ; # 
+  fhir:name [ fhir:v "NASACardiovascularEquipmentVS"] ; # 
+  fhir:title [ fhir:v "NASA Cardiovascular Assessment Equipment"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-03-25T00:24:16-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Value set for cardiovascular assessment hardware."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "12-lead-ecg" ]
+       ] [
+         fhir:code [ fhir:v "marquette-case" ]
+       ] [
+         fhir:code [ fhir:v "blood-pressure-monitor" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

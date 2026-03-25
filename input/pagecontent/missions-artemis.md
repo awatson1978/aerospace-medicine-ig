@@ -52,12 +52,17 @@ Artemis missions introduce unique data modeling requirements distinct from ISS o
 
 Artemis health data spans multiple interconnected dimensions:
 
-- **Mission Timeline**: Launch, translunar cruise (4 days), lunar orbit insertion, Gateway docking, HLS transfer, lunar descent, surface EVAs, ascent, trans-Earth returneach phase with distinct medical protocols and risk profiles
-- **Radiation Dosimetry**: Real-time dose rates, cumulative GCR exposure, SPE alerts, tissue-specific doses, career limits tracking
-- **Environmental Monitoring**: Habitat cabin pressure, O₂/CO₂ levels, temperature, dust contamination, suit telemetry during EVAs
-- **Physiologic Data**: Vital signs, sleep metrics, bone density scans, cardiovascular assessments, cognitive performance tests, behavioral health surveys
-- **Operational Events**: EVA schedules, habitat transfers, emergency procedures, medical interventions, equipment malfunctions
-- **Location Context**: Gateway modules, HLS interior, lunar surface regions, specific landing sites with selenographic coordinates
+- **Mission Timeline**: Each Artemis mission follows a sequence of discrete phases—launch, translunar cruise (approximately 4 days), lunar orbit insertion, Gateway docking, HLS transfer, lunar descent, surface EVAs, ascent, and trans-Earth return. Every phase carries distinct medical protocols and risk profiles, so all health observations must be tagged with both mission identity and current phase to support meaningful analysis.
+
+- **Radiation Dosimetry**: Beyond the magnetosphere, crews face continuous galactic cosmic ray exposure and the threat of unpredictable solar particle events. The data architecture captures real-time dose rates from active personal dosimeters, cumulative GCR exposure, SPE alert triggers, tissue-specific dose estimates, and career dose limit tracking—all linked to shielding context and crew location at time of measurement.
+
+- **Environmental Monitoring**: Life support telemetry from habitats and suits forms a continuous stream of environmental data. This includes cabin pressure, O₂ and CO₂ partial pressures, temperature, humidity, and lunar dust particle counts inside habitats, as well as suit-level thermal regulation and consumables during EVAs.
+
+- **Physiologic Data**: Crew health monitoring generates a broad spectrum of physiologic observations—continuous vital signs (heart rate, blood pressure, SpO₂, temperature), daily sleep quality metrics, periodic bone density and cardiovascular assessments, cognitive performance test results, and structured behavioral health surveys. Together these form the longitudinal health record that flight surgeons use to assess crew fitness in real time.
+
+- **Operational Events**: Mission operations produce their own data stream that must be correlated with health observations. EVA schedules, habitat transfers between vehicles, emergency procedure activations, medical interventions, and equipment malfunctions all represent events that can directly affect crew health and must be captured as structured FHIR resources.
+
+- **Location Context**: Artemis missions operate across multiple distinct environments—Gateway modules in lunar orbit, the HLS interior during transit and surface stays, and specific lunar surface regions with selenographic coordinates. Tagging observations with precise location context enables researchers to correlate health effects with environmental conditions at each site.
 
 All measurements link to **MissionContext** extensions (consistent with other IG modules) and **ArtemisMissions** CodeSystem entries (Artemis I through XXX) to enable mission-specific filtering and cross-mission analysis.
 
@@ -159,6 +164,8 @@ Artemis missions require **integrated, real-time health and environmental monito
 
 ### Data Model Architecture
 
+The Artemis data model maps the full scope of deep-space mission operations onto FHIR R4 resources. Each resource type captures a distinct facet of crew health, environmental conditions, or operational context, and all are linked through MissionContext extensions and ArtemisMissions CodeSystem entries so that any observation can be traced back to a specific mission, phase, and location.
+
 #### Core FHIR Resources
 
 - **Observation** — Radiation dose measurements, environmental sensors, vital signs, cognitive assessments, biomarkers
@@ -198,17 +205,17 @@ Two surface EVAs at Malapert Massifpre-EVA readiness assessments, continuous su
 
 Real-time dosimetry during translunar cruise, SPE alert response (crew relocates to storm shelter in Gateway), cumulative dose tracking against career limits, post-mission risk assessment for stochastic effects.
 
-#### 4. Gateway Long-Duration Habitation
-
-Multi-week stays in Gateway modulesenvironmental monitoring (air quality, temperature, noise), exercise countermeasures (adapted T2/ARED protocols), nutrition tracking (limited resupply), interpersonal dynamics assessment.
-
-#### 5. Lunar South Pole Environmental Challenges
+#### 4. Lunar South Pole Environmental Challenges
 
 Surface operations in extreme thermal, radiation, and dust conditionshabitat air quality monitoring, suit decontamination effectiveness, crew sleep quality in partial gravity, circadian entrainment strategies.
 
-#### 6. Cross-Mission Longitudinal Tracking
+#### 5. Cross-Mission Longitudinal Tracking
 
 Individual astronauts participating in multiple Artemis missionscareer radiation dose accumulation, bone density trends, cardiovascular adaptation, psychological resilience factorsinforming crew selection for Mars missions.
+
+#### 6. Gateway Long-Duration Habitation
+
+Multi-week stays in Gateway modulesenvironmental monitoring (air quality, temperature, noise), exercise countermeasures (adapted T2/ARED protocols), nutrition tracking (limited resupply), interpersonal dynamics assessment.
 
 ### Integration with Existing Systems
 

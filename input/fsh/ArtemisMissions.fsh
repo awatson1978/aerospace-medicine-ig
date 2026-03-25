@@ -1,5 +1,5 @@
 // Artemis Missions CodeSystem
-// Enumerates Artemis program missions I-V with properties
+// Enumerates Artemis program missions I-XXX with properties
 
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
@@ -62,13 +62,13 @@ Description: "Historical and planned Artemis program missions with target destin
   * ^property[=].valueDateTime = "2026-09-01T00:00:00Z"
 
 * #ARTEMIS-III "Artemis III"
-  * ^definition = "First crewed lunar landing of Artemis program at south pole. Planned ~2027. Status: planned. Target: Lunar south pole landing."
+  * ^definition = "Crewed low-Earth orbit test flight preparing systems for future lunar landings. Planned ~2027. Status: planned. Target: LEO test flight (crewed)."
   * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
-  * ^designation[=].value = "Status: planned | Target: Lunar south pole landing | Launch: ~2027"
+  * ^designation[=].value = "Status: planned | Target: LEO test flight (crewed) | Launch: ~2027"
   * ^property[0].code = #status
   * ^property[=].valueCode = #planned
   * ^property[+].code = #target
-  * ^property[=].valueString = "Lunar south pole landing"
+  * ^property[=].valueString = "LEO test flight (crewed)"
   * ^property[+].code = #launchDate
   * ^property[=].valueDateTime = "2027-09-01T00:00:00Z"
 
@@ -94,6 +94,181 @@ Description: "Historical and planned Artemis program missions with target destin
   * ^property[+].code = #launchDate
   * ^property[=].valueDateTime = "2030-01-01T00:00:00Z"
 
+* #ARTEMIS-VI "Artemis VI"
+  * ^definition = "Placeholder entry for Artemis VI mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-VII "Artemis VII"
+  * ^definition = "Placeholder entry for Artemis VII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-VIII "Artemis VIII"
+  * ^definition = "Placeholder entry for Artemis VIII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-IX "Artemis IX"
+  * ^definition = "Placeholder entry for Artemis IX mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-X "Artemis X"
+  * ^definition = "Placeholder entry for Artemis X mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XI "Artemis XI"
+  * ^definition = "Placeholder entry for Artemis XI mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XII "Artemis XII"
+  * ^definition = "Placeholder entry for Artemis XII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XIII "Artemis XIII"
+  * ^definition = "Placeholder entry for Artemis XIII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XIV "Artemis XIV"
+  * ^definition = "Placeholder entry for Artemis XIV mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XV "Artemis XV"
+  * ^definition = "Placeholder entry for Artemis XV mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XVI "Artemis XVI"
+  * ^definition = "Placeholder entry for Artemis XVI mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XVII "Artemis XVII"
+  * ^definition = "Placeholder entry for Artemis XVII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XVIII "Artemis XVIII"
+  * ^definition = "Placeholder entry for Artemis XVIII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XIX "Artemis XIX"
+  * ^definition = "Placeholder entry for Artemis XIX mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XX "Artemis XX"
+  * ^definition = "Placeholder entry for Artemis XX mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXI "Artemis XXI"
+  * ^definition = "Placeholder entry for Artemis XXI mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXII "Artemis XXII"
+  * ^definition = "Placeholder entry for Artemis XXII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXIII "Artemis XXIII"
+  * ^definition = "Placeholder entry for Artemis XXIII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXIV "Artemis XXIV"
+  * ^definition = "Placeholder entry for Artemis XXIV mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXV "Artemis XXV"
+  * ^definition = "Placeholder entry for Artemis XXV mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXVI "Artemis XXVI"
+  * ^definition = "Placeholder entry for Artemis XXVI mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXVII "Artemis XXVII"
+  * ^definition = "Placeholder entry for Artemis XXVII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXVIII "Artemis XXVIII"
+  * ^definition = "Placeholder entry for Artemis XXVIII mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXIX "Artemis XXIX"
+  * ^definition = "Placeholder entry for Artemis XXIX mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
+* #ARTEMIS-XXX "Artemis XXX"
+  * ^definition = "Placeholder entry for Artemis XXX mission used for simulation, planning, and forecasting."
+  * ^designation[0].use = http://terminology.hl7.org/CodeSystem/designation-usage#definition
+  * ^designation[=].value = "Status: planned | Placeholder mission entry for simulation and forecasting"
+  * ^property[0].code = #status
+  * ^property[=].valueCode = #planned
+
 // =====================================================
 // VALUE SET
 // =====================================================
@@ -101,7 +276,7 @@ Description: "Historical and planned Artemis program missions with target destin
 ValueSet: ArtemisMissionVS
 Id: artemis-mission-vs
 Title: "Artemis Missions"
-Description: "All Artemis program missions I-V"
+Description: "All Artemis program missions I-XXX"
 * ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs"
 * ^version = "1.0.0"
 * ^status = #active

@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "iss-crewmember-type-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet iss-crewmember-type-vs</b></p><a name=\"iss-crewmember-type-vs\"> </a><a name=\"hciss-crewmember-type-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-nasa-medical-roles-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.5.12</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-nasa-medical-roles-cs.html#nasa-medical-roles-cs-crewmember\">crewmember</a></td><td>Crewmember</td><td>ISS or mission crewmember subject to medical requirements.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://mitre.org/fhir/space-health/ValueSet/iss-crewmember-type-vs",
+  "version" : "0.5.12",
+  "name" : "ISSCrewmemberTypeVS",
+  "title" : "ISS Crewmember Types",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-03-25T00:24:16-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org/"
+    }]
+  }],
+  "description" : "Value set for types of ISS crewmembers by agency.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+      "concept" : [{
+        "code" : "crewmember",
+        "display" : "Crewmember"
+      }]
+    }]
+  }
+}

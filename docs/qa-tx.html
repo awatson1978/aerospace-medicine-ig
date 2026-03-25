@@ -1,0 +1,517 @@
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+GET https://tx.fhir.org/r4/metadata HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+User-Agent: fhir/publisher
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:3933
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:24:48 GMT
+etag:W/&quot;f5d-RApac0lj3IrMQPREV31b8TsLHB8&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911506
+
+{&quot;resourceType&quot;:&quot;CapabilityStatement&quot;,&quot;id&quot;:&quot;FhirServer&quot;,&quot;extension&quot;:[{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;1.8.0&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;name&quot;,&quot;valueCode&quot;:&quot;mode&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueCode&quot;:&quot;tx.fhir.org&quot;}],&quot;url&quot;:&quot;qualifier&quot;}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot;:[{&quot;url&quot;:&quot;definition&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot;:&quot;value&quot;,&quot;valueBoolean&quot;:true}],&quot;url&quot;:&quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot;:&quot;https://node.tx.fhir.org/r4/CapabilityStatement/tx&quot;,&quot;version&quot;:&quot;4.0.1-0.7.5&quot;,&quot;name&quot;:&quot;FHIRTerminologyServer&quot;,&quot;title&quot;:&quot;FHIR Terminology Server&quot;,&quot;status&quot;:&quot;active&quot;,&quot;date&quot;:&quot;2026-03-25T05:24:48.701Z&quot;,&quot;contact&quot;:[{&quot;telecom&quot;:[{&quot;system&quot;:&quot;other&quot;,&quot;value&quot;:&quot;http://example.org/&quot;}]}],&quot;description&quot;:&quot;FHIR Terminology Server&quot;,&quot;kind&quot;:&quot;instance&quot;,&quot;instantiates&quot;:[&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot;:{&quot;name&quot;:&quot;FHIRsmith&quot;,&quot;version&quot;:&quot;0.7.5&quot;,&quot;releaseDate&quot;:&quot;2026-03-25T05:24:48.701Z&quot;},&quot;implementation&quot;:{&quot;description&quot;:&quot;FHIR Server running at https://node.tx.fhir.org/r4&quot;,&quot;url&quot;:&quot;https://node.tx.fhir.org/r4&quot;},&quot;fhirVersion&quot;:&quot;4.0.1&quot;,&quot;format&quot;:[&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot;:[{&quot;mode&quot;:&quot;server&quot;,&quot;security&quot;:{&quot;cors&quot;:true},&quot;resource&quot;:[{&quot;type&quot;:&quot;CodeSystem&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a code system&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the code systems&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;}]},{&quot;type&quot;:&quot;ValueSet&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ValueSet&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the value sets&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;}]},{&quot;type&quot;:&quot;ConceptMap&quot;,&quot;interaction&quot;:[{&quot;code&quot;:&quot;read&quot;,&quot;documentation&quot;:&quot;Read a ConceptMap&quot;},{&quot;code&quot;:&quot;search-type&quot;,&quot;documentation&quot;:&quot;Search the concept maps&quot;}],&quot;searchParam&quot;:[{&quot;name&quot;:&quot;url&quot;,&quot;type&quot;:&quot;uri&quot;},{&quot;name&quot;:&quot;version&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;title&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;name&quot;:&quot;status&quot;,&quot;type&quot;:&quot;token&quot;},{&quot;name&quot;:&quot;_id&quot;,&quot;type&quot;:&quot;token&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;}]}],&quot;interaction&quot;:[{&quot;code&quot;:&quot;transaction&quot;}],&quot;operation&quot;:[{&quot;name&quot;:&quot;expand&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot;:&quot;lookup&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;},{&quot;name&quot;:&quot;subsumes&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot;:&quot;validate-code&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot;:&quot;translate&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot;:&quot;closure&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot;:&quot;versions&quot;,&quot;definition&quot;:&quot;http://hl7.org/fhir/OperationDefinition/fhir-versions&quot;}]}]}
+</pre>
+<hr/><a name="l2"> </a>
+<p>#2</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs","code":"gcr"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1047
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:00 GMT
+etag:W/&quot;417-uwkBTZq0XKrsTgsn6Q3NrClpa1k&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911515
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;gcr&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs","code":"gcr"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1047
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:00 GMT
+etag:W/&quot;417-uwkBTZq0XKrsTgsn6Q3NrClpa1k&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911516
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;gcr&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs","code":"minimal-shielding"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1073
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:01 GMT
+etag:W/&quot;431-5QWOwTyTQGX7Hya7O0n4vb4OGRI&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911517
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;minimal-shielding&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs&quot;}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs","code":"gcr"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1047
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:01 GMT
+etag:W/&quot;417-uwkBTZq0XKrsTgsn6Q3NrClpa1k&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911518
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;gcr&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs","code":"nominal-shielding"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1073
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:01 GMT
+etag:W/&quot;431-frHPPknPz0ZS7ktE8VjHmGl0ubs&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911519
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;nominal-shielding&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs&quot;}]}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace","code":"operational"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1099
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:01 GMT
+etag:W/&quot;44b-Fg15xllMf5aXtzsD6S1NWmgcWpE&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911520
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;operational&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs","code":"power-consumption"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1045
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:02 GMT
+etag:W/&quot;415-qLn1vYNu6FnQ067QGzhXpCHin4g&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911521
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;power-consumption&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs&quot;}]}
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs","code":"reactor-status"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1042
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:02 GMT
+etag:W/&quot;412-b/4YJXAsHXLKnPTIvb3JyxdFPoA&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911523
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;reactor-status&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs&quot;}]}
+</pre>
+<hr/><a name="l10"> </a>
+<p>#10</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs","code":"dive-profile","display":"Dive Profile"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1052
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:06 GMT
+etag:W/&quot;41c-DpGvYdzcmdH9VKZWHgj83uKQHmE&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911528
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;dive-profile&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs&quot;}]}
+</pre>
+<hr/><a name="l11"> </a>
+<p>#11</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs","code":"communication-log"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1093
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:06 GMT
+etag:W/&quot;445-ngJi2/CUsniGuOxgJqHRIjc6DAI&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911531
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;communication-log&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs&quot;}]}
+</pre>
+<hr/><a name="l12"> </a>
+<p>#12</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system","code":"let","display":"Linear Energy Transfer"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1055
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:09 GMT
+etag:W/&quot;41f-LXxztEGNPSzBpsnmQx6FuU2wGh0&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911535
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;let&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system&quot;}]}
+</pre>
+<hr/><a name="l13"> </a>
+<p>#13</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs","code":"compliance-status"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1081
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:11 GMT
+etag:W/&quot;439-JomJMpIR9t1Nz1VxhUXW91O+olg&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911536
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;compliance-status&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs&quot;}]}
+</pre>
+<hr/><a name="l14"> </a>
+<p>#14</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs","code":"orbital-station"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1047
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:18 GMT
+etag:W/&quot;417-AF1iU0M0NRbJmA/mWCqgFWgxuJo&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911538
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;orbital-station&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs&quot;}]}
+</pre>
+<hr/><a name="l15"> </a>
+<p>#15</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs","code":"dose-rate","display":"Radiation dose rate"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1045
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:19 GMT
+etag:W/&quot;415-BJ+fFuikAAE+5Kliov1rVwJoBlc&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911539
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;dose-rate&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs&quot;}]}
+</pre>
+<hr/><a name="l16"> </a>
+<p>#16</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs","code":"gcr"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1047
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:19 GMT
+etag:W/&quot;417-uwkBTZq0XKrsTgsn6Q3NrClpa1k&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911540
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;gcr&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs&quot;}]}
+</pre>
+<hr/><a name="l17"> </a>
+<p>#17</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs","code":"minimal-shielding"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1073
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:19 GMT
+etag:W/&quot;431-5QWOwTyTQGX7Hya7O0n4vb4OGRI&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911541
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;minimal-shielding&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs&quot;}]}
+</pre>
+<hr/><a name="l18"> </a>
+<p>#18</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace","code":"operational"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1099
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:19 GMT
+etag:W/&quot;44b-Fg15xllMf5aXtzsD6S1NWmgcWpE&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911542
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;operational&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace&quot;}]}
+</pre>
+<hr/><a name="l19"> </a>
+<p>#19</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs","code":"cumulative-propellant","display":"Cumulative Propellant Production"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1049
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:20 GMT
+etag:W/&quot;419-YdXgdlcbD64LxSuwqPY9hL43PP8&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911543
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;cumulative-propellant&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs&quot;}]}
+</pre>
+<hr/><a name="l20"> </a>
+<p>#20</p>
+<pre>
+POST https://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes","code":"duration","display":"Duration of physical activity"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"d77611ec-f903-45a2-afae-171288faf0c0"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-headers:Origin, X-Requested-With, Content-Type, Accept
+access-control-allow-methods:GET, POST, OPTIONS
+access-control-allow-origin:*
+connection:keep-alive
+content-length:1080
+content-type:application/fhir+json; charset=utf-8
+date:Wed, 25 Mar 2026 05:25:20 GMT
+etag:W/&quot;438-ZDvyJ96YA6frxPWQA3n3srIsEsU&quot;
+server:nginx
+x-powered-by:Express
+x-request-id:tx-2911544
+
+{&quot;resourceType&quot;:&quot;Parameters&quot;,&quot;parameter&quot;:[{&quot;name&quot;:&quot;issues&quot;,&quot;resource&quot;:{&quot;resourceType&quot;:&quot;OperationOutcome&quot;,&quot;issue&quot;:[{&quot;severity&quot;:&quot;error&quot;,&quot;code&quot;:&quot;not-found&quot;,&quot;details&quot;:{&quot;text&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes' could not be found, so the code cannot be validated&quot;,&quot;coding&quot;:[{&quot;system&quot;:&quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot;:&quot;not-found&quot;}]},&quot;expression&quot;:[&quot;Coding.system&quot;],&quot;extension&quot;:[{&quot;url&quot;:&quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot;:&quot;UNKNOWN_CODESYSTEM&quot;}]}]}},{&quot;name&quot;:&quot;result&quot;,&quot;valueBoolean&quot;:false},{&quot;name&quot;:&quot;message&quot;,&quot;valueString&quot;:&quot;A definition for CodeSystem 'http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes' could not be found, so the code cannot be validated&quot;},{&quot;name&quot;:&quot;system&quot;,&quot;valueUri&quot;:&quot;http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes&quot;},{&quot;name&quot;:&quot;code&quot;,&quot;valueCode&quot;:&quot;duration&quot;},{&quot;name&quot;:&quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot;:&quot;http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes&quot;}]}
+</pre>

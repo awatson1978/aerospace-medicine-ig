@@ -1,0 +1,806 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/artemis-devices-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artemis-devices-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem artemis-devices-cs</b></p><a name=\"artemis-devices-cs\"> </a><a name=\"hcartemis-devices-cs\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>deviceType</td><td>deviceType</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#deviceType</td><td>code</td><td>Device category (spacecraft, launch-vehicle, suit, life-support, lander, habitat, propulsion, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)</td></tr><tr><td>manufacturer</td><td>manufacturer</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#manufacturer</td><td>string</td><td>Device manufacturer or contractor</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>manufacturer</b></td></tr><tr><td style=\"white-space:nowrap\">orion<a name=\"artemis-devices-cs-orion\"> </a></td><td>Orion Crew Vehicle</td><td>Spacecraft - Crew Module and Service Module. Manufacturer: Lockheed Martin / NASA.</td><td>spacecraft</td><td>Lockheed Martin / NASA</td></tr><tr><td style=\"white-space:nowrap\">sls<a name=\"artemis-devices-cs-sls\"> </a></td><td>Space Launch System</td><td>Heavy-Lift Launch Vehicle. Manufacturer: Boeing / NASA.</td><td>launch-vehicle</td><td>Boeing / NASA</td></tr><tr><td style=\"white-space:nowrap\">exploration-eva-suit<a name=\"artemis-devices-cs-exploration-eva-suit\"> </a></td><td>Exploration EVA Suit</td><td>Exploration Extravehicular Mobility Unit. Manufacturer: Axiom Space / Collins Aerospace.</td><td>suit</td><td>Axiom Space / Collins Aerospace</td></tr><tr><td style=\"white-space:nowrap\">plss<a name=\"artemis-devices-cs-plss\"> </a></td><td>Portable Life Support System</td><td>EVA Suit Life Support Backpack. Manufacturer: Collins Aerospace.</td><td>life-support</td><td>Collins Aerospace</td></tr><tr><td style=\"white-space:nowrap\">human-landing-system<a name=\"artemis-devices-cs-human-landing-system\"> </a></td><td>Human Landing System</td><td>Lunar Lander. Manufacturer: SpaceX.</td><td>lander</td><td>SpaceX</td></tr><tr><td style=\"white-space:nowrap\">clps-lander<a name=\"artemis-devices-cs-clps-lander\"> </a></td><td>CLPS Lander</td><td>Commercial Lunar Payload Services Delivery Lander. Manufacturer: NASA / Commercial Providers.</td><td>lander</td><td>NASA / Commercial Providers</td></tr><tr><td style=\"white-space:nowrap\">gateway-halo<a name=\"artemis-devices-cs-gateway-halo\"> </a></td><td>Gateway HALO Module</td><td>Habitation and Logistics Outpost Module. Manufacturer: Northrop Grumman.</td><td>habitat</td><td>Northrop Grumman</td></tr><tr><td style=\"white-space:nowrap\">gateway-ppe<a name=\"artemis-devices-cs-gateway-ppe\"> </a></td><td>Gateway PPE Module</td><td>Power and Propulsion Element. Manufacturer: Maxar Technologies.</td><td>propulsion</td><td>Maxar Technologies</td></tr><tr><td style=\"white-space:nowrap\">medical-kit<a name=\"artemis-devices-cs-medical-kit\"> </a></td><td>Artemis Medical Kit</td><td>Emergency Medical Equipment. Manufacturer: NASA.</td><td>medical-equipment</td><td>NASA</td></tr><tr><td style=\"white-space:nowrap\">lunanet<a name=\"artemis-devices-cs-lunanet\"> </a></td><td>LunaNet Communication Architecture</td><td>Lunar Communication and Navigation Network. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">orbital-comm-relay<a name=\"artemis-devices-cs-orbital-comm-relay\"> </a></td><td>Orbital Communication Relay</td><td>Orbital Relay Satellite for Lunar Communications. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">observation-satellite<a name=\"artemis-devices-cs-observation-satellite\"> </a></td><td>Observation Satellite</td><td>Lunar Observation and Monitoring Satellite. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">relay-satellite-observability<a name=\"artemis-devices-cs-relay-satellite-observability\"> </a></td><td>Relay Satellite with Observability</td><td>Relay Satellite with Observability Functions. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">surface-comm-nav-node<a name=\"artemis-devices-cs-surface-comm-nav-node\"> </a></td><td>Surface Communication and Navigation Node</td><td>Lunar Surface Communication and Navigation Infrastructure. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">deployable-surface-comm-tower<a name=\"artemis-devices-cs-deployable-surface-comm-tower\"> </a></td><td>Deployable Surface Communication Tower</td><td>Deployable Surface Communications Tower. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">high-throughput-surface-comms<a name=\"artemis-devices-cs-high-throughput-surface-comms\"> </a></td><td>High-Throughput Surface Communications Node</td><td>High-Bandwidth Lunar Surface Communications. Manufacturer: NASA / Partners.</td><td>communications</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">lunar-pnt-node<a name=\"artemis-devices-cs-lunar-pnt-node\"> </a></td><td>Lunar PNT Node</td><td>Positioning Navigation and Timing Infrastructure. Manufacturer: NASA / Partners.</td><td>navigation</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">clock-demo-node<a name=\"artemis-devices-cs-clock-demo-node\"> </a></td><td>Lunar Clock Demonstration Node</td><td>Surface Timing and Synchronization Demonstrator. Manufacturer: NASA / Partners.</td><td>navigation</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">navigation-capability-node<a name=\"artemis-devices-cs-navigation-capability-node\"> </a></td><td>Navigation Capability Node</td><td>Lunar Navigation Infrastructure Element. Manufacturer: NASA / Partners.</td><td>navigation</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">moonfall-drone<a name=\"artemis-devices-cs-moonfall-drone\"> </a></td><td>MoonFall Drone</td><td>Lunar Surface Aerial or Descent Support Drone. Manufacturer: NASA / Partners.</td><td>drone</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">ltv<a name=\"artemis-devices-cs-ltv\"> </a></td><td>Lunar Terrain Vehicle</td><td>Lunar Surface Mobility Platform. Manufacturer: NASA / Industry Team.</td><td>rover</td><td>NASA / Industry Team</td></tr><tr><td style=\"white-space:nowrap\">crewed-ltv<a name=\"artemis-devices-cs-crewed-ltv\"> </a></td><td>Crewed LTV</td><td>Crewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td><td>rover</td><td>NASA / Industry Team</td></tr><tr><td style=\"white-space:nowrap\">uncrewed-ltv<a name=\"artemis-devices-cs-uncrewed-ltv\"> </a></td><td>Uncrewed LTV</td><td>Uncrewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td><td>rover</td><td>NASA / Industry Team</td></tr><tr><td style=\"white-space:nowrap\">advanced-ltv<a name=\"artemis-devices-cs-advanced-ltv\"> </a></td><td>Advanced LTV</td><td>Advanced Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td><td>rover</td><td>NASA / Industry Team</td></tr><tr><td style=\"white-space:nowrap\">ltv-gen-2<a name=\"artemis-devices-cs-ltv-gen-2\"> </a></td><td>LTV Generation 2</td><td>Second-Generation Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team.</td><td>rover</td><td>NASA / Industry Team</td></tr><tr><td style=\"white-space:nowrap\">pressurized-rover<a name=\"artemis-devices-cs-pressurized-rover\"> </a></td><td>Pressurized Rover</td><td>Pressurized Lunar Rover. Manufacturer: NASA / Partners.</td><td>rover</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">viper-rover<a name=\"artemis-devices-cs-viper-rover\"> </a></td><td>VIPER Rover</td><td>Volatiles Investigating Polar Exploration Rover. Manufacturer: NASA.</td><td>rover</td><td>NASA</td></tr><tr><td style=\"white-space:nowrap\">excavator-rover<a name=\"artemis-devices-cs-excavator-rover\"> </a></td><td>Excavator Rover</td><td>Lunar Surface Excavation Rover. Manufacturer: NASA / Partners.</td><td>rover</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">site-prep-logistics-rover<a name=\"artemis-devices-cs-site-prep-logistics-rover\"> </a></td><td>Site Preparation and Logistics Rover</td><td>Rover for Site Preparation and Logistics Tasks. Manufacturer: NASA / Partners.</td><td>rover</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">international-partner-rover<a name=\"artemis-devices-cs-international-partner-rover\"> </a></td><td>International Partner Rover</td><td>Partner-Provided Lunar Rover. Manufacturer: International Partners.</td><td>rover</td><td>International Partners</td></tr><tr><td style=\"white-space:nowrap\">science-rover<a name=\"artemis-devices-cs-science-rover\"> </a></td><td>Science Rover</td><td>Lunar Surface Science Rover. Manufacturer: NASA / Partners.</td><td>rover</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">basecamp-habitat<a name=\"artemis-devices-cs-basecamp-habitat\"> </a></td><td>Artemis Base Camp Surface Habitat</td><td>Lunar Surface Living Quarters. Manufacturer: NASA / Partners.</td><td>habitat</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">surface-habitat-module<a name=\"artemis-devices-cs-surface-habitat-module\"> </a></td><td>Surface Habitat Module</td><td>Lunar Surface Habitat Infrastructure. Manufacturer: NASA / Partners.</td><td>habitat</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">logistics-demo-unit<a name=\"artemis-devices-cs-logistics-demo-unit\"> </a></td><td>Logistics Demonstration Unit</td><td>Demonstrator for Lunar Surface Logistics. Manufacturer: NASA / Partners.</td><td>logistics</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">logistics-delivery-vehicle<a name=\"artemis-devices-cs-logistics-delivery-vehicle\"> </a></td><td>Logistics Delivery Vehicle</td><td>Lunar Surface or Cargo Delivery Logistics Asset. Manufacturer: NASA / Partners.</td><td>logistics</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">cargo-return-vehicle<a name=\"artemis-devices-cs-cargo-return-vehicle\"> </a></td><td>Cargo Return Vehicle</td><td>Vehicle for Returning Cargo from Lunar Surface Operations. Manufacturer: NASA / Partners.</td><td>logistics</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">isru-plant<a name=\"artemis-devices-cs-isru-plant\"> </a></td><td>ISRU Plant</td><td>In Situ Resource Utilization Processing System. Manufacturer: NASA / Partners.</td><td>isru</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">solar-power-augmentation-unit<a name=\"artemis-devices-cs-solar-power-augmentation-unit\"> </a></td><td>Solar Power Augmentation Unit</td><td>Solar Power Augmentation Infrastructure. Manufacturer: NASA / Partners.</td><td>power</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">solar-battery-rfc-power-unit<a name=\"artemis-devices-cs-solar-battery-rfc-power-unit\"> </a></td><td>Solar Battery RFC Power Unit</td><td>Solar Battery and Regenerative Fuel Cell Power System. Manufacturer: NASA / Partners.</td><td>power</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">rtg-power-unit<a name=\"artemis-devices-cs-rtg-power-unit\"> </a></td><td>RTG Power Unit</td><td>Radioisotope Thermoelectric Generator Power System. Manufacturer: NASA / DOE / Partners.</td><td>power</td><td>NASA / DOE / Partners</td></tr><tr><td style=\"white-space:nowrap\">rhu-thermal-survival-unit<a name=\"artemis-devices-cs-rhu-thermal-survival-unit\"> </a></td><td>RHU Thermal Survival Unit</td><td>Radioisotope Heater Unit for Lunar Night Survival. Manufacturer: NASA / DOE / Partners.</td><td>power</td><td>NASA / DOE / Partners</td></tr><tr><td style=\"white-space:nowrap\">fission-surface-power-unit<a name=\"artemis-devices-cs-fission-surface-power-unit\"> </a></td><td>Fission Surface Power Unit</td><td>Lunar Surface Fission Power System. Manufacturer: NASA / DOE / Partners.</td><td>power</td><td>NASA / DOE / Partners</td></tr><tr><td style=\"white-space:nowrap\">power-infrastructure-node<a name=\"artemis-devices-cs-power-infrastructure-node\"> </a></td><td>Power Infrastructure Node</td><td>Surface Electrical Power Infrastructure. Manufacturer: NASA / Partners.</td><td>power</td><td>NASA / Partners</td></tr><tr><td style=\"white-space:nowrap\">power-distribution-node<a name=\"artemis-devices-cs-power-distribution-node\"> </a></td><td>Power Distribution Node</td><td>Surface Power Distribution System. Manufacturer: NASA / Partners.</td><td>power</td><td>NASA / Partners</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.12"] ; # 
+  fhir:name [ fhir:v "ArtemisDevicesCS"] ; # 
+  fhir:title [ fhir:v "Artemis Devices"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-03-25T00:24:16-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "44"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "deviceType" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#deviceType"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#deviceType>
+     ] ;
+     fhir:description [ fhir:v "Device category (spacecraft, launch-vehicle, suit, life-support, lander, habitat, propulsion, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "manufacturer" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#manufacturer"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#manufacturer>
+     ] ;
+     fhir:description [ fhir:v "Device manufacturer or contractor" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "orion" ] ;
+     fhir:display [ fhir:v "Orion Crew Vehicle" ] ;
+     fhir:definition [ fhir:v "Spacecraft - Crew Module and Service Module. Manufacturer: Lockheed Martin / NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "spacecraft"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Lockheed Martin / NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "sls" ] ;
+     fhir:display [ fhir:v "Space Launch System" ] ;
+     fhir:definition [ fhir:v "Heavy-Lift Launch Vehicle. Manufacturer: Boeing / NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "launch-vehicle"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Boeing / NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "exploration-eva-suit" ] ;
+     fhir:display [ fhir:v "Exploration EVA Suit" ] ;
+     fhir:definition [ fhir:v "Exploration Extravehicular Mobility Unit. Manufacturer: Axiom Space / Collins Aerospace." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "suit"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Axiom Space / Collins Aerospace"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "plss" ] ;
+     fhir:display [ fhir:v "Portable Life Support System" ] ;
+     fhir:definition [ fhir:v "EVA Suit Life Support Backpack. Manufacturer: Collins Aerospace." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "life-support"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Collins Aerospace"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "human-landing-system" ] ;
+     fhir:display [ fhir:v "Human Landing System" ] ;
+     fhir:definition [ fhir:v "Lunar Lander. Manufacturer: SpaceX." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "lander"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "SpaceX"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "clps-lander" ] ;
+     fhir:display [ fhir:v "CLPS Lander" ] ;
+     fhir:definition [ fhir:v "Commercial Lunar Payload Services Delivery Lander. Manufacturer: NASA / Commercial Providers." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "lander"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Commercial Providers"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "gateway-halo" ] ;
+     fhir:display [ fhir:v "Gateway HALO Module" ] ;
+     fhir:definition [ fhir:v "Habitation and Logistics Outpost Module. Manufacturer: Northrop Grumman." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "habitat"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Northrop Grumman"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "gateway-ppe" ] ;
+     fhir:display [ fhir:v "Gateway PPE Module" ] ;
+     fhir:definition [ fhir:v "Power and Propulsion Element. Manufacturer: Maxar Technologies." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "propulsion"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Maxar Technologies"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "medical-kit" ] ;
+     fhir:display [ fhir:v "Artemis Medical Kit" ] ;
+     fhir:definition [ fhir:v "Emergency Medical Equipment. Manufacturer: NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "medical-equipment"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "lunanet" ] ;
+     fhir:display [ fhir:v "LunaNet Communication Architecture" ] ;
+     fhir:definition [ fhir:v "Lunar Communication and Navigation Network. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "orbital-comm-relay" ] ;
+     fhir:display [ fhir:v "Orbital Communication Relay" ] ;
+     fhir:definition [ fhir:v "Orbital Relay Satellite for Lunar Communications. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "observation-satellite" ] ;
+     fhir:display [ fhir:v "Observation Satellite" ] ;
+     fhir:definition [ fhir:v "Lunar Observation and Monitoring Satellite. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "relay-satellite-observability" ] ;
+     fhir:display [ fhir:v "Relay Satellite with Observability" ] ;
+     fhir:definition [ fhir:v "Relay Satellite with Observability Functions. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "surface-comm-nav-node" ] ;
+     fhir:display [ fhir:v "Surface Communication and Navigation Node" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Communication and Navigation Infrastructure. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "deployable-surface-comm-tower" ] ;
+     fhir:display [ fhir:v "Deployable Surface Communication Tower" ] ;
+     fhir:definition [ fhir:v "Deployable Surface Communications Tower. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "high-throughput-surface-comms" ] ;
+     fhir:display [ fhir:v "High-Throughput Surface Communications Node" ] ;
+     fhir:definition [ fhir:v "High-Bandwidth Lunar Surface Communications. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "communications"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "lunar-pnt-node" ] ;
+     fhir:display [ fhir:v "Lunar PNT Node" ] ;
+     fhir:definition [ fhir:v "Positioning Navigation and Timing Infrastructure. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "navigation"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "clock-demo-node" ] ;
+     fhir:display [ fhir:v "Lunar Clock Demonstration Node" ] ;
+     fhir:definition [ fhir:v "Surface Timing and Synchronization Demonstrator. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "navigation"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "navigation-capability-node" ] ;
+     fhir:display [ fhir:v "Navigation Capability Node" ] ;
+     fhir:definition [ fhir:v "Lunar Navigation Infrastructure Element. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "navigation"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "moonfall-drone" ] ;
+     fhir:display [ fhir:v "MoonFall Drone" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Aerial or Descent Support Drone. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "drone"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ltv" ] ;
+     fhir:display [ fhir:v "Lunar Terrain Vehicle" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Mobility Platform. Manufacturer: NASA / Industry Team." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Industry Team"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "crewed-ltv" ] ;
+     fhir:display [ fhir:v "Crewed LTV" ] ;
+     fhir:definition [ fhir:v "Crewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Industry Team"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "uncrewed-ltv" ] ;
+     fhir:display [ fhir:v "Uncrewed LTV" ] ;
+     fhir:definition [ fhir:v "Uncrewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Industry Team"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "advanced-ltv" ] ;
+     fhir:display [ fhir:v "Advanced LTV" ] ;
+     fhir:definition [ fhir:v "Advanced Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Industry Team"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ltv-gen-2" ] ;
+     fhir:display [ fhir:v "LTV Generation 2" ] ;
+     fhir:definition [ fhir:v "Second-Generation Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Industry Team"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "pressurized-rover" ] ;
+     fhir:display [ fhir:v "Pressurized Rover" ] ;
+     fhir:definition [ fhir:v "Pressurized Lunar Rover. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "viper-rover" ] ;
+     fhir:display [ fhir:v "VIPER Rover" ] ;
+     fhir:definition [ fhir:v "Volatiles Investigating Polar Exploration Rover. Manufacturer: NASA." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "excavator-rover" ] ;
+     fhir:display [ fhir:v "Excavator Rover" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Excavation Rover. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "site-prep-logistics-rover" ] ;
+     fhir:display [ fhir:v "Site Preparation and Logistics Rover" ] ;
+     fhir:definition [ fhir:v "Rover for Site Preparation and Logistics Tasks. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "international-partner-rover" ] ;
+     fhir:display [ fhir:v "International Partner Rover" ] ;
+     fhir:definition [ fhir:v "Partner-Provided Lunar Rover. Manufacturer: International Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "International Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "science-rover" ] ;
+     fhir:display [ fhir:v "Science Rover" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Science Rover. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "rover"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "basecamp-habitat" ] ;
+     fhir:display [ fhir:v "Artemis Base Camp Surface Habitat" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Living Quarters. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "habitat"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "surface-habitat-module" ] ;
+     fhir:display [ fhir:v "Surface Habitat Module" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Habitat Infrastructure. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "habitat"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "logistics-demo-unit" ] ;
+     fhir:display [ fhir:v "Logistics Demonstration Unit" ] ;
+     fhir:definition [ fhir:v "Demonstrator for Lunar Surface Logistics. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "logistics"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "logistics-delivery-vehicle" ] ;
+     fhir:display [ fhir:v "Logistics Delivery Vehicle" ] ;
+     fhir:definition [ fhir:v "Lunar Surface or Cargo Delivery Logistics Asset. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "logistics"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "cargo-return-vehicle" ] ;
+     fhir:display [ fhir:v "Cargo Return Vehicle" ] ;
+     fhir:definition [ fhir:v "Vehicle for Returning Cargo from Lunar Surface Operations. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "logistics"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "isru-plant" ] ;
+     fhir:display [ fhir:v "ISRU Plant" ] ;
+     fhir:definition [ fhir:v "In Situ Resource Utilization Processing System. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "isru"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "solar-power-augmentation-unit" ] ;
+     fhir:display [ fhir:v "Solar Power Augmentation Unit" ] ;
+     fhir:definition [ fhir:v "Solar Power Augmentation Infrastructure. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "solar-battery-rfc-power-unit" ] ;
+     fhir:display [ fhir:v "Solar Battery RFC Power Unit" ] ;
+     fhir:definition [ fhir:v "Solar Battery and Regenerative Fuel Cell Power System. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "rtg-power-unit" ] ;
+     fhir:display [ fhir:v "RTG Power Unit" ] ;
+     fhir:definition [ fhir:v "Radioisotope Thermoelectric Generator Power System. Manufacturer: NASA / DOE / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / DOE / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "rhu-thermal-survival-unit" ] ;
+     fhir:display [ fhir:v "RHU Thermal Survival Unit" ] ;
+     fhir:definition [ fhir:v "Radioisotope Heater Unit for Lunar Night Survival. Manufacturer: NASA / DOE / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / DOE / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "fission-surface-power-unit" ] ;
+     fhir:display [ fhir:v "Fission Surface Power Unit" ] ;
+     fhir:definition [ fhir:v "Lunar Surface Fission Power System. Manufacturer: NASA / DOE / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / DOE / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "power-infrastructure-node" ] ;
+     fhir:display [ fhir:v "Power Infrastructure Node" ] ;
+     fhir:definition [ fhir:v "Surface Electrical Power Infrastructure. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "power-distribution-node" ] ;
+     fhir:display [ fhir:v "Power Distribution Node" ] ;
+     fhir:definition [ fhir:v "Surface Power Distribution System. Manufacturer: NASA / Partners." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "deviceType" ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "power"
+       ]
+     ] [
+       fhir:code [ fhir:v "manufacturer" ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "NASA / Partners"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

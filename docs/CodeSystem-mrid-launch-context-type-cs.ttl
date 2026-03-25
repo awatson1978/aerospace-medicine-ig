@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mrid-launch-context-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mrid-launch-context-type-cs</b></p><a name=\"mrid-launch-context-type-cs\"> </a><a name=\"hcmrid-launch-context-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Patient<a name=\"mrid-launch-context-type-cs-Patient\"> </a></td><td>Patient resource type</td></tr><tr><td style=\"white-space:nowrap\">Encounter<a name=\"mrid-launch-context-type-cs-Encounter\"> </a></td><td>Encounter resource type</td></tr><tr><td style=\"white-space:nowrap\">Practitioner<a name=\"mrid-launch-context-type-cs-Practitioner\"> </a></td><td>Practitioner resource type</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.5.12"] ; # 
+  fhir:name [ fhir:v "MRIDLaunchContextTypeCS"] ; # 
+  fhir:title [ fhir:v "MRID Launch Context Type CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-03-25T00:24:16-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "FHIR resource types for launch context"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Patient" ] ;
+     fhir:display [ fhir:v "Patient" ] ;
+     fhir:definition [ fhir:v "Patient resource type" ]
+  ] [
+     fhir:code [ fhir:v "Encounter" ] ;
+     fhir:display [ fhir:v "Encounter" ] ;
+     fhir:definition [ fhir:v "Encounter resource type" ]
+  ] [
+     fhir:code [ fhir:v "Practitioner" ] ;
+     fhir:display [ fhir:v "Practitioner" ] ;
+     fhir:definition [ fhir:v "Practitioner resource type" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
