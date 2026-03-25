@@ -30,6 +30,9 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 - [Artemis.Devices.ndjson](Artemis.Devices.ndjson)
 - [Artemis.Crew.ndjson](Artemis.Crew.ndjson)
 - [Artemis.NutritionProducts.ndjson](Artemis.NutritionProducts.ndjson)
+- [Artemis.ActivityDefinitions.ndjson](Artemis.ActivityDefinitions.ndjson)
+- [Artemis.PlanDefinitions.ndjson](Artemis.PlanDefinitions.ndjson)
+- [Artemis.Goals.ndjson](Artemis.Goals.ndjson)
 
 ### Mars Direct
 
