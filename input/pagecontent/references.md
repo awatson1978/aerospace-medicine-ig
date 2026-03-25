@@ -367,6 +367,9 @@
 * [NASA safety panel recommends review of Artemis plans](https://spacenews.com/nasa-safety-panel-recommends-review-of-artemis-plans/?utm_source=linkedin&utm_medium=jetpack_social)
 * [NASA's Artemis II crewed mission to the Moon shows how US space strategy has changed since Apollo – and contrasts with China's closed program](https://theconversation.com/nasas-artemis-ii-crewed-mission-to-the-moon-shows-how-us-space-strategy-has-changed-since-apollo-and-contrasts-with-chinas-closed-program-270245)
 * [Artemis Update (Feb. 27, 2026)](https://www.youtube.com/watch?v=eCbQtyUopOM)
+* [NASA Ignition - Moon Program Update (video)](https://www.youtube.com/watch?v=zRmCJ7tagGQ)
+* [NASA Ignition: NASA News Conference (video)](https://www.youtube.com/watch?v=LZea4h8zxLY)
+* [NASA Ignition: NASA's Plan for Science and Discovery (video)](https://www.youtube.com/watch?v=BYH6W9iCs2E)
 
 ### Space Technology & Equipment
 
