@@ -73,6 +73,7 @@ New code systems and value sets for Artemis:
 - **[ArtemisCertifiedDevicesVS](ValueSet-artemis-certified-devices-vs.html)**: ValueSet for certified Artemis devices
 - **[ArtemisPrototypeDevicesCS](CodeSystem-artemis-prototype-devices-cs.html)**: Developmental/test hardware (xEMU Demo Unit, Pressurized Rover Prototype, Habitat Test Module, NextGen PLSS)
 - **[ArtemisPrototypeDevicesVS](ValueSet-artemis-prototype-devices-vs.html)**: ValueSet for prototype Artemis devices
+- **[ArtemisDevicesCS](CodeSystem-artemis-devices-cs.html)**: Unified device inventory (44 entries) covering crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation, surface mobility, habitats, logistics, ISRU, and power systems
 - **[ArtemisAllDevicesVS](ValueSet-artemis-all-devices-vs.html)**: ValueSet combining both certified and prototype devices
 
 Integration with existing terminologies:
