@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ISS-CrewDebrief-PostAnomaly",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ISS-CrewDebrief-PostAnomaly</b></p><a name=\"ISS-CrewDebrief-PostAnomaly\"> </a><a name=\"hcISS-CrewDebrief-PostAnomaly\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-psychological-countermeasure-activity.html\">Psychological Countermeasure Activity</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs crew-debrief}\">Crew debrief</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>performed</b>: 2025-06-20 18:00:00+0000 --&gt; 2025-06-20 19:30:00+0000</p><blockquote><p><b>performer</b></p><p><b>actor</b>: Commander Johnson, ISS Expedition 75</p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: Dr. Martinez, Flight Surgeon</p></blockquote><p><b>reasonCode</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs anxiety-level}\">Anxiety level</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs interpersonal-friction}\">Interpersonal friction</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/ISS-Exp75-InFlight"
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs",
+      "code" : "crew-debrief",
+      "display" : "Crew debrief"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/AstronautExample"
+  },
+  "performedPeriod" : {
+    "start" : "2025-06-20T18:00:00Z",
+    "end" : "2025-06-20T19:30:00Z"
+  },
+  "performer" : [{
+    "actor" : {
+      "display" : "Commander Johnson, ISS Expedition 75"
+    }
+  },
+  {
+    "actor" : {
+      "display" : "Dr. Martinez, Flight Surgeon"
+    }
+  }],
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+      "code" : "anxiety-level",
+      "display" : "Anxiety level"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs",
+      "code" : "interpersonal-friction",
+      "display" : "Interpersonal friction"
+    }]
+  }]
+}

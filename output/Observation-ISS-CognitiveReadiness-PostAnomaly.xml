@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ISS-CognitiveReadiness-PostAnomaly"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ISS-CognitiveReadiness-PostAnomaly</b></p><a name="ISS-CognitiveReadiness-PostAnomaly"> </a><a name="hcISS-CognitiveReadiness-PostAnomaly"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-behavioral-health-state.html">Behavioral Health State</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://loinc.org 55467-8}">Psychological assessment</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs cognitive-readiness}">Cognitive readiness</span></p><p><b>subject</b>: <a href="Patient/AstronautExample">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-20 15:30:00+0000</p><p><b>value</b>: 7.5 {score}<span style="background: LightGoldenRodYellow"> (Details: UCUM  code{score} = '{score}')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="55467-8"/>
+      <display value="Psychological assessment"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"/>
+      <code value="cognitive-readiness"/>
+      <display value="Cognitive readiness"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/AstronautExample"/>
+  </subject>
+  <effectiveDateTime value="2025-06-20T15:30:00Z"/>
+  <valueQuantity>
+    <value value="7.5"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="{score}"/>
+  </valueQuantity>
+</Observation>

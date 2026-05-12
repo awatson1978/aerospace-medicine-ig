@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Artemis-III-EVA1-Radiation"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Artemis-III-EVA1-Radiation</b></p><a name="Artemis-III-EVA1-Radiation"> </a><a name="hcArtemis-III-EVA1-Radiation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-artemis-radiation-exposure.html">Artemis Radiation Exposure</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs dose-rate}">Radiation dose rate</span></p><p><b>subject</b>: <a href="Patient/AstronautExample">Patient/AstronautExample</a></p><p><b>effective</b>: 2027-09-10 11:00:00+0000</p><p><b>value</b>: 0.15 mSv/hr<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemSv/h = 'mSv/h')</span></p><p><b>derivedFrom</b>: <a href="Procedure-Artemis-III-EVA-1.html">Procedure Extravehicular activity (procedure)</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs gcr}">gcr</span></p><p><b>value</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs gcr}">gcr</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs minimal-shielding}">minimal-shielding</span></p><p><b>value</b>: Lunar surface EVA - suit fabric only (~0.3 g/cm²)</p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/Artemis-III-Mission"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs"/>
+      <code value="dose-rate"/>
+      <display value="Radiation dose rate"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/AstronautExample"/>
+  </subject>
+  <effectiveDateTime value="2027-09-10T11:00:00Z"/>
+  <valueQuantity>
+    <value value="0.15"/>
+    <unit value="mSv/hr"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mSv/h"/>
+  </valueQuantity>
+  <derivedFrom>
+    <reference value="Procedure/Artemis-III-EVA-1"/>
+  </derivedFrom>
+  <component>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"/>
+        <code value="gcr"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"/>
+        <code value="gcr"/>
+      </coding>
+    </valueCodeableConcept>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs"/>
+        <code value="minimal-shielding"/>
+      </coding>
+    </code>
+    <valueString value="Lunar surface EVA - suit fabric only (~0.3 g/cm²)"/>
+  </component>
+</Observation>

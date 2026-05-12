@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleDiveProfile"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleDiveProfile</b></p><a name="ExampleDiveProfile"> </a><a name="hcExampleDiveProfile"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DiveProfile.html">Dive Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org LA6156-8}">Dive profile</span></p><p><b>subject</b>: <a href="Patient-janeway.html">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2025-06-01 09:30:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 33747-0}">Maximum depth</span></p><p><b>value</b>: 12 m<span style="background: LightGoldenRodYellow"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org LA6157-6}">Bottom time</span></p><p><b>value</b>: 180 min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemin = 'min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 33746-2}">Water temperature</span></p><p><b>value</b>: 26 Cel<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="LA6156-8"/>
+      <display value="Dive profile"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/janeway"/>
+  </subject>
+  <effectiveDateTime value="2025-06-01T09:30:00Z"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="33747-0"/>
+        <display value="Maximum depth"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="12"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="m"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="LA6157-6"/>
+        <display value="Bottom time"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="180"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="min"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="33746-2"/>
+        <display value="Water temperature"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="26"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </component>
+</Observation>

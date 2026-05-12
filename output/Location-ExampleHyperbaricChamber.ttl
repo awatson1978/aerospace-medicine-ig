@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Location/ExampleHyperbaricChamber> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleHyperbaricChamber"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location ExampleHyperbaricChamber</b></p><a name=\"ExampleHyperbaricChamber\"> </a><a name=\"hcExampleHyperbaricChamber\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hyperbaric-chamber.html\">Hyperbaric Chamber</a></p></div><p><b>status</b>: Active</p><p><b>name</b>: Hyperbaric Medicine Center - Chamber 1</p><p><b>description</b>: Multiplace hyperbaric chamber for decompression treatment</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode HUSCS}\">Hospital Unit - Specialized Care Services</span></p><p><b>physicalType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/location-physical-type ro}\">Room</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Hyperbaric Medicine Center - Chamber 1"] ; # 
+  fhir:description [ fhir:v "Multiplace hyperbaric chamber for decompression treatment"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-RoleCode>
+       ] ;
+       fhir:code [ fhir:v "HUSCS" ] ;
+       fhir:display [ fhir:v "Hospital Unit - Specialized Care Services" ]
+     ] )
+  ] ) ; # 
+  fhir:physicalType [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/location-physical-type"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/location-physical-type>
+       ] ;
+       fhir:code [ fhir:v "ro" ] ;
+       fhir:display [ fhir:v "Room" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

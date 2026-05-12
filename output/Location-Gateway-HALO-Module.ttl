@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Location/Gateway-HALO-Module> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Gateway-HALO-Module"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location Gateway-HALO-Module</b></p><a name=\"Gateway-HALO-Module\"> </a><a name=\"hcGateway-HALO-Module\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-habitat-location.html\">Habitat Location</a></p></div><blockquote><p><b>Radiation Shielding</b></p><ul><li>shieldingMass: 12.5 g/cm²<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/cm2 = 'g/cm2')</span></li><li>shieldingComposition: Aluminum alloy with polyethylene water walls</li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Lunar Gateway - HALO Module</p><p><b>description</b>: Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions.</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs orbital-station}\">Lunar orbital habitat module</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "shieldingMass"^^xsd:anyURI ;
+         fhir:l fhir:shieldingMass
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v 12.5 ] ;
+         fhir:unit [ fhir:v "g/cm²" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "g/cm2" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "shieldingComposition"^^xsd:anyURI ;
+         fhir:l fhir:shieldingComposition
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Aluminum alloy with polyethylene water walls"
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding>
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Lunar Gateway - HALO Module"] ; # 
+  fhir:description [ fhir:v "Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions."] ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs>
+       ] ;
+       fhir:code [ fhir:v "orbital-station" ]
+     ] ) ;
+     fhir:text [ fhir:v "Lunar orbital habitat module" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

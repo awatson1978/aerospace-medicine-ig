@@ -1,0 +1,34 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Device/Starship-HLS-Artemis-III> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Starship-HLS-Artemis-III"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Starship-HLS-Artemis-III</b></p><a name=\"Starship-HLS-Artemis-III\"> </a><a name=\"hcStarship-HLS-Artemis-III\"> </a><p><b>status</b>: Active</p><p><b>manufacturer</b>: SpaceX</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Starship HLS (Artemis III)</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs starship-hls}\">Human Landing System</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "SpaceX"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Starship HLS (Artemis III)" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs>
+       ] ;
+       fhir:code [ fhir:v "starship-hls" ]
+     ] ) ;
+     fhir:text [ fhir:v "Human Landing System" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

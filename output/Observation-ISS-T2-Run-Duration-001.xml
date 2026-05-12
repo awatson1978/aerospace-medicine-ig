@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ISS-T2-Run-Duration-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ISS-T2-Run-Duration-001</b></p><a name="ISS-T2-Run-Duration-001"> </a><a name="hcISS-T2-Run-Duration-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-exercise-activity-measure.html">Space Exercise Activity Measure</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}">Activity</span></p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs treadmill}, {http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes duration}">Duration of physical activity</span></p><p><b>subject</b>: <a href="Patient/AstronautExample">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-01 13:30:00+0000</p><p><b>value</b>: 30 min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemin = 'min')</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="activity"/>
+      <display value="Activity"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"/>
+      <code value="treadmill"/>
+    </coding>
+    <coding>
+      <system value="http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes"/>
+      <code value="duration"/>
+      <display value="Duration of physical activity"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/AstronautExample"/>
+  </subject>
+  <effectiveDateTime value="2025-06-01T13:30:00Z"/>
+  <valueQuantity>
+    <value value="30"/>
+    <unit value="min"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="min"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/RiskAssessment/RadiationRisk-PostTransit> a fhir:RiskAssessment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RadiationRisk-PostTransit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RiskAssessment RadiationRisk-PostTransit</b></p><a name=\"RadiationRisk-PostTransit\"> </a><a name=\"hcRadiationRisk-PostTransit\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mars-radiation-risk-assessment.html\">Mars Radiation Risk Assessment</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-MarsDirectMission2040.html\">Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --&gt; (ongoing); reasonCode = </a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 225338004}\">Risk assessment</span></p><p><b>subject</b>: <a href=\"Patient-MarsCrewMember1.html\">Sarah Chen  Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)</a></p><p><b>occurrence</b>: 2041-03-01 00:00:00+0000</p><p><b>basis</b>: <a href=\"Observation/CumulativeDose-Transit\">Cumulative GCR dose during transit: 360 mSv</a></p><h3>Predictions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Outcome</b></td><td><b>Probability[x]</b></td><td><b>Rationale</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 363346000}\">Malignant neoplastic disease</span></td><td>0.018</td><td>Based on 360 mSv GCR exposure during 6-month deep space transit using BEIR VII risk model. Assumes nominal spacecraft shielding (~10 g/cm² aluminum equivalent). Total mission dose projected 750-900 mSv (transit + surface + return), conferring ~3.5-4.2% lifetime cancer risk increase.</td></tr></table><p><b>note</b>: </p><blockquote><div><p>Mitigation: Continue radiation monitoring throughout surface operations. Utilize habitat shielding (regolith berms if available). Implement storm shelter protocols for any solar particle events. Consider pharmacologic radioprotectants for return transit if cumulative dose approaches career limits.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/MarsDirectMission2040> ;
+       fhir:reference [ fhir:v "Encounter/MarsDirectMission2040" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:225338004 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "225338004" ] ;
+       fhir:display [ fhir:v "Risk assessment" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/MarsCrewMember1> ;
+     fhir:reference [ fhir:v "Patient/MarsCrewMember1" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:DateTime ;
+     fhir:v "2041-03-01T00:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:basis ( [
+     fhir:l <https://mitre.org/fhir/space-health/Observation/CumulativeDose-Transit> ;
+     fhir:reference [ fhir:v "Observation/CumulativeDose-Transit" ] ;
+     fhir:display [ fhir:v "Cumulative GCR dose during transit: 360 mSv" ]
+  ] ) ; # 
+  fhir:prediction ( [
+     fhir:outcome [
+       fhir:coding ( [
+         a sct:363346000 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "363346000" ] ;
+         fhir:display [ fhir:v "Malignant neoplastic disease" ]
+       ] )
+     ] ;
+     fhir:probability [
+       a fhir:Decimal ;
+       fhir:v 0.018
+     ] ;
+     fhir:rationale [ fhir:v "Based on 360 mSv GCR exposure during 6-month deep space transit using BEIR VII risk model. Assumes nominal spacecraft shielding (~10 g/cm² aluminum equivalent). Total mission dose projected 750-900 mSv (transit + surface + return), conferring ~3.5-4.2% lifetime cancer risk increase." ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Mitigation: Continue radiation monitoring throughout surface operations. Utilize habitat shielding (regolith berms if available). Implement storm shelter protocols for any solar particle events. Consider pharmacologic radioprotectants for return transit if cumulative dose approaches career limits." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

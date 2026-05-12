@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/MarsEVA-Sol147> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MarsEVA-Sol147"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure MarsEVA-Sol147</b></p><a name=\"MarsEVA-Sol147\"> </a><a name=\"hcMarsEVA-Sol147\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mars-eva-procedure.html\">Mars Extravehicular Activity Procedure</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-MarsDirectMission2040.html\">Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --&gt; (ongoing); reasonCode = </a></p><p><b>EVA Number</b>: EVA-147</p><p><b>Communication Delay</b>: 12.5 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 103741001}\">Mars Surface Extravehicular Activity</span></p><p><b>subject</b>: <a href=\"Patient-MarsCrewMember1.html\">Sarah Chen  Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)</a></p><p><b>performed</b>: 2041-04-06 08:30:00+0000 --&gt; 2041-04-06 15:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-MarsCrewMember1.html\">CDR Sarah Chen</a></td></tr></table><p><b>location</b>: <a href=\"Location-MarsHabitat-Jezero.html\">Jezero Crater rim region, 2.3 km from habitat</a></p><p><b>reasonCode</b>: <span title=\"Codes:\">Geological sample collection and crater rim survey</span></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>Crew reported excellent mobility in xEMU suit. Peak heart rate 145 bpm during crater ascent. No suit anomalies. Dust contamination moderate, decontamination protocols completed post-EVA.</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/MarsDirectMission2040> ;
+       fhir:reference [ fhir:v "Encounter/MarsDirectMission2040" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "EVA-147"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay>
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 12.5 ] ;
+       fhir:unit [ fhir:v "min" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "min" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:103741001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "103741001" ] ;
+       fhir:display [ fhir:v "Extravehicular activity (procedure)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Mars Surface Extravehicular Activity" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/MarsCrewMember1> ;
+     fhir:reference [ fhir:v "Patient/MarsCrewMember1" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2041-04-06T08:30:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2041-04-06T15:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:l <https://mitre.org/fhir/space-health/Patient/MarsCrewMember1> ;
+       fhir:reference [ fhir:v "Patient/MarsCrewMember1" ] ;
+       fhir:display [ fhir:v "CDR Sarah Chen" ]
+     ]
+  ] ) ; # 
+  fhir:location [
+     fhir:l <https://mitre.org/fhir/space-health/Location/MarsHabitat-Jezero> ;
+     fhir:reference [ fhir:v "Location/MarsHabitat-Jezero" ] ;
+     fhir:display [ fhir:v "Jezero Crater rim region, 2.3 km from habitat" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:text [ fhir:v "Geological sample collection and crater rim survey" ]
+  ] ) ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       a sct:385669000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "385669000" ] ;
+       fhir:display [ fhir:v "Successful" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Crew reported excellent mobility in xEMU suit. Peak heart rate 145 bpm during crater ascent. No suit anomalies. Dust contamination moderate, decontamination protocols completed post-EVA." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

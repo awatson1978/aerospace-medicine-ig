@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ISS-StressBurden-Day180",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-StressBurden-Day180</b></p><a name=\"ISS-StressBurden-Day180\"> </a><a name=\"hcISS-StressBurden-Day180\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cumulative-stress-burden.html\">Cumulative Stress Burden</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs cumulative-stress}\">Cumulative stress burden</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-09-01 00:00:00+0000</p><p><b>value</b>: 412 stress units<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{stress_units} = '{stress_units}')</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/ISS-Exp75-InFlight"
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+      "code" : "cumulative-stress",
+      "display" : "Cumulative stress burden"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/AstronautExample"
+  },
+  "effectiveDateTime" : "2025-09-01T00:00:00Z",
+  "valueQuantity" : {
+    "value" : 412,
+    "unit" : "stress units",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "{stress_units}"
+  }
+}
