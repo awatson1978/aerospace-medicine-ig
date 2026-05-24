@@ -81,6 +81,10 @@ Description: "Gravitational environment in which the observation, condition, or 
 * ^context[2].expression = "Procedure"
 * ^context[3].type = #element
 * ^context[3].expression = "MedicationAdministration"
+* ^context[4].type = #element
+* ^context[4].expression = "CarePlan"
+* ^context[5].type = #element
+* ^context[5].expression = "DeviceDefinition"
 * value[x] only CodeableConcept
 * valueCodeableConcept from GravityContextVS (extensible)
 
@@ -97,6 +101,10 @@ Description: "Phase of the space mission during which the clinical event occurre
 * ^context[2].expression = "Condition"
 * ^context[3].type = #element
 * ^context[3].expression = "MedicationAdministration"
+* ^context[4].type = #element
+* ^context[4].expression = "CarePlan"
+* ^context[5].type = #element
+* ^context[5].expression = "RiskAssessment"
 * value[x] only CodeableConcept
 * valueCodeableConcept from MissionPhaseVS (extensible)
 

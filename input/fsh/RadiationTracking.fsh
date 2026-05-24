@@ -36,6 +36,12 @@ Description: "Links clinical observations and events to specific space missions"
 * ^context[8].expression = "RiskAssessment"
 * ^context[9].type = #element
 * ^context[9].expression = "Device"
+* ^context[10].type = #element
+* ^context[10].expression = "ServiceRequest"
+* ^context[11].type = #element
+* ^context[11].expression = "CommunicationRequest"
+* ^context[12].type = #element
+* ^context[12].expression = "SupplyDelivery"
 * value[x] only Reference(Encounter)
 * valueReference ^short = "Reference to the space mission encounter"
 
