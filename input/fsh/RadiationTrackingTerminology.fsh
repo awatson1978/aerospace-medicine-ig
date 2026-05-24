@@ -57,6 +57,8 @@ Description: "Protective measures against space radiation"
 * #shelter "Radiation Shelter"
 * #medication "Radioprotective Medication"
 * #monitoring "Enhanced Monitoring"
+* #nac "N-Acetylcysteine (NAC)" "Antioxidant and glutathione precursor with radioprotective properties"
+* #amifostine "Amifostine" "Cytoprotective agent that scavenges free radicals from ionizing radiation"
 
 CodeSystem: RadiationDetectorTypeCS
 Id: radiation-detector-type-cs

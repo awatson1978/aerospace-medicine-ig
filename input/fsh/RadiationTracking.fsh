@@ -13,13 +13,29 @@ Alias: $aerospace = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-s
 Extension: MissionContext
 Id: mission-context
 Title: "Mission Context"
-Description: "Links radiation exposure to specific space missions"
+Description: "Links clinical observations and events to specific space missions"
 * ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
 * ^context[1].type = #element
 * ^context[1].expression = "Procedure"
+* ^context[2].type = #element
+* ^context[2].expression = "Condition"
+* ^context[3].type = #element
+* ^context[3].expression = "MedicationAdministration"
+* ^context[4].type = #element
+* ^context[4].expression = "CarePlan"
+* ^context[5].type = #element
+* ^context[5].expression = "AdverseEvent"
+* ^context[6].type = #element
+* ^context[6].expression = "DiagnosticReport"
+* ^context[7].type = #element
+* ^context[7].expression = "Specimen"
+* ^context[8].type = #element
+* ^context[8].expression = "RiskAssessment"
+* ^context[9].type = #element
+* ^context[9].expression = "Device"
 * value[x] only Reference(Encounter)
 * valueReference ^short = "Reference to the space mission encounter"
 

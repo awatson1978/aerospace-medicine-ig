@@ -1,8 +1,8 @@
 
 TODO List
 
-- Sleep & Circadian Rhythm
-- Ultrasound Evaluation
+- [x] Sleep & Circadian Rhythm (SleepMonitoring.fsh - WP4)
+- [x] Ultrasound Evaluation (AustereProcedures.fsh - SpacePOCUS, SpaceJointHealthAssessment)
 - Fungal Microbiome
 - Sewage & Recycling
 - Mission: Moon Base
@@ -11,7 +11,7 @@ TODO List
 - Environmental Monitoring: Space Suits
 - Distance and Locations
 - Timekeeping
-- ECG (Heartbeat) Monitoring 
+- [x] ECG (Heartbeat) Monitoring (CardiacMonitoring.fsh - SpaceECGObservation)
 - Atmospherics
 - X-Ray Evaluation
 
