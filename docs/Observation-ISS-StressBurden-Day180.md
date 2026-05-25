@@ -1,4 +1,4 @@
-# ISS Cumulative Stress Burden - Mission Day 180 (End of Mission) - v0.5.12
+# ISS Cumulative Stress Burden - Mission Day 180 (End of Mission) - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

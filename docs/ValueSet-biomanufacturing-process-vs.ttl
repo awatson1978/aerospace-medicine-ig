@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ValueSet/biomanufacturing-process-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "biomanufacturing-process-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet biomanufacturing-process-vs</b></p><a name=\"biomanufacturing-process-vs\"> </a><a name=\"hcbiomanufacturing-process-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-biomanufacturing-process-cs.html\"><code>https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.6.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ValueSet/biomanufacturing-process-vs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ValueSet/biomanufacturing-process-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "BiomanufacturingProcessVS"] ; # 
+  fhir:title [ fhir:v "Biomanufacturing Process Value Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Biomanufacturing process types"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

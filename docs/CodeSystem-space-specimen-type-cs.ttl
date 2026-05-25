@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-specimen-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-specimen-type-cs</b></p><a name=\"space-specimen-type-cs\"> </a><a name=\"hcspace-specimen-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dried-blood-spot<a name=\"space-specimen-type-cs-dried-blood-spot\"> </a></td><td>Dried Blood Spot</td><td>Capillary blood collected on filter paper for storage and analysis</td></tr><tr><td style=\"white-space:nowrap\">capillary-blood<a name=\"space-specimen-type-cs-capillary-blood\"> </a></td><td>Capillary Blood</td><td>Blood obtained via fingerstick or heelstick in microgravity</td></tr><tr><td style=\"white-space:nowrap\">venous-blood-microgravity<a name=\"space-specimen-type-cs-venous-blood-microgravity\"> </a></td><td>Venous Blood (Microgravity)</td><td>Venous blood draw adapted for microgravity conditions</td></tr><tr><td style=\"white-space:nowrap\">saliva-passive<a name=\"space-specimen-type-cs-saliva-passive\"> </a></td><td>Saliva (Passive Collection)</td><td>Saliva collected via passive drool in microgravity</td></tr><tr><td style=\"white-space:nowrap\">urine-void-bag<a name=\"space-specimen-type-cs-urine-void-bag\"> </a></td><td>Urine (Void Bag Collection)</td><td>Urine collected using microgravity-compatible void bag system</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceSpecimenTypeCS"] ; # 
+  fhir:title [ fhir:v "Space Specimen Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Specimen types collected during spaceflight with microgravity-adapted methods"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dried-blood-spot" ] ;
+     fhir:display [ fhir:v "Dried Blood Spot" ] ;
+     fhir:definition [ fhir:v "Capillary blood collected on filter paper for storage and analysis" ]
+  ] [
+     fhir:code [ fhir:v "capillary-blood" ] ;
+     fhir:display [ fhir:v "Capillary Blood" ] ;
+     fhir:definition [ fhir:v "Blood obtained via fingerstick or heelstick in microgravity" ]
+  ] [
+     fhir:code [ fhir:v "venous-blood-microgravity" ] ;
+     fhir:display [ fhir:v "Venous Blood (Microgravity)" ] ;
+     fhir:definition [ fhir:v "Venous blood draw adapted for microgravity conditions" ]
+  ] [
+     fhir:code [ fhir:v "saliva-passive" ] ;
+     fhir:display [ fhir:v "Saliva (Passive Collection)" ] ;
+     fhir:definition [ fhir:v "Saliva collected via passive drool in microgravity" ]
+  ] [
+     fhir:code [ fhir:v "urine-void-bag" ] ;
+     fhir:display [ fhir:v "Urine (Void Bag Collection)" ] ;
+     fhir:definition [ fhir:v "Urine collected using microgravity-compatible void bag system" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

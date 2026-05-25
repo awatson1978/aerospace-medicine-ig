@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mission-phase-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mission-phase-cs</b></p><a name=\"mission-phase-cs\"> </a><a name=\"hcmission-phase-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pre-flight<a name=\"mission-phase-cs-pre-flight\"> </a></td><td>Pre-flight</td><td>Period before launch including training and medical baseline</td></tr><tr><td style=\"white-space:nowrap\">launch-ascent<a name=\"mission-phase-cs-launch-ascent\"> </a></td><td>Launch and Ascent</td><td>From liftoff through orbital insertion or trans-lunar injection</td></tr><tr><td style=\"white-space:nowrap\">transit-outbound<a name=\"mission-phase-cs-transit-outbound\"> </a></td><td>Outbound Transit</td><td>Transit from Earth orbit to destination (Moon, Mars, etc.)</td></tr><tr><td style=\"white-space:nowrap\">orbital-ops<a name=\"mission-phase-cs-orbital-ops\"> </a></td><td>Orbital Operations</td><td>Operations while in orbit around Earth or another body</td></tr><tr><td style=\"white-space:nowrap\">lunar-surface-ops<a name=\"mission-phase-cs-lunar-surface-ops\"> </a></td><td>Lunar Surface Operations</td><td>Operations on the lunar surface including EVAs</td></tr><tr><td style=\"white-space:nowrap\">mars-surface-ops<a name=\"mission-phase-cs-mars-surface-ops\"> </a></td><td>Mars Surface Operations</td><td>Operations on the Mars surface</td></tr><tr><td style=\"white-space:nowrap\">transit-return<a name=\"mission-phase-cs-transit-return\"> </a></td><td>Return Transit</td><td>Transit from destination back toward Earth</td></tr><tr><td style=\"white-space:nowrap\">entry-descent<a name=\"mission-phase-cs-entry-descent\"> </a></td><td>Entry and Descent</td><td>Atmospheric re-entry and landing</td></tr><tr><td style=\"white-space:nowrap\">post-flight-acute<a name=\"mission-phase-cs-post-flight-acute\"> </a></td><td>Post-flight Acute</td><td>Immediate post-landing period, typically R+0 to R+3 days</td></tr><tr><td style=\"white-space:nowrap\">post-flight-reconditioning<a name=\"mission-phase-cs-post-flight-reconditioning\"> </a></td><td>Post-flight Reconditioning</td><td>Extended reconditioning period, typically R+3 days to R+45 days</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "MissionPhaseCS"] ; # 
+  fhir:title [ fhir:v "Mission Phase Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Phases of a space mission for temporal context of clinical observations"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "10"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pre-flight" ] ;
+     fhir:display [ fhir:v "Pre-flight" ] ;
+     fhir:definition [ fhir:v "Period before launch including training and medical baseline" ]
+  ] [
+     fhir:code [ fhir:v "launch-ascent" ] ;
+     fhir:display [ fhir:v "Launch and Ascent" ] ;
+     fhir:definition [ fhir:v "From liftoff through orbital insertion or trans-lunar injection" ]
+  ] [
+     fhir:code [ fhir:v "transit-outbound" ] ;
+     fhir:display [ fhir:v "Outbound Transit" ] ;
+     fhir:definition [ fhir:v "Transit from Earth orbit to destination (Moon, Mars, etc.)" ]
+  ] [
+     fhir:code [ fhir:v "orbital-ops" ] ;
+     fhir:display [ fhir:v "Orbital Operations" ] ;
+     fhir:definition [ fhir:v "Operations while in orbit around Earth or another body" ]
+  ] [
+     fhir:code [ fhir:v "lunar-surface-ops" ] ;
+     fhir:display [ fhir:v "Lunar Surface Operations" ] ;
+     fhir:definition [ fhir:v "Operations on the lunar surface including EVAs" ]
+  ] [
+     fhir:code [ fhir:v "mars-surface-ops" ] ;
+     fhir:display [ fhir:v "Mars Surface Operations" ] ;
+     fhir:definition [ fhir:v "Operations on the Mars surface" ]
+  ] [
+     fhir:code [ fhir:v "transit-return" ] ;
+     fhir:display [ fhir:v "Return Transit" ] ;
+     fhir:definition [ fhir:v "Transit from destination back toward Earth" ]
+  ] [
+     fhir:code [ fhir:v "entry-descent" ] ;
+     fhir:display [ fhir:v "Entry and Descent" ] ;
+     fhir:definition [ fhir:v "Atmospheric re-entry and landing" ]
+  ] [
+     fhir:code [ fhir:v "post-flight-acute" ] ;
+     fhir:display [ fhir:v "Post-flight Acute" ] ;
+     fhir:definition [ fhir:v "Immediate post-landing period, typically R+0 to R+3 days" ]
+  ] [
+     fhir:code [ fhir:v "post-flight-reconditioning" ] ;
+     fhir:display [ fhir:v "Post-flight Reconditioning" ] ;
+     fhir:definition [ fhir:v "Extended reconditioning period, typically R+3 days to R+45 days" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

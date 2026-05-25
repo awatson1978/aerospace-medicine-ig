@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "antiemetic-medication-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem antiemetic-medication-cs</b></p><a name=\"antiemetic-medication-cs\"> </a><a name=\"hcantiemetic-medication-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">promethazine-im<a name=\"antiemetic-medication-cs-promethazine-im\"> </a></td><td>Promethazine (Intramuscular)</td><td>Promethazine hydrochloride administered intramuscularly, standard NASA rescue antiemetic</td></tr><tr><td style=\"white-space:nowrap\">promethazine-oral<a name=\"antiemetic-medication-cs-promethazine-oral\"> </a></td><td>Promethazine (Oral)</td><td>Promethazine hydrochloride administered orally for prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">meclizine<a name=\"antiemetic-medication-cs-meclizine\"> </a></td><td>Meclizine</td><td>Meclizine hydrochloride, H1-receptor antagonist antiemetic</td></tr><tr><td style=\"white-space:nowrap\">scopolamine-patch<a name=\"antiemetic-medication-cs-scopolamine-patch\"> </a></td><td>Scopolamine (Transdermal Patch)</td><td>Transdermal scopolamine for motion sickness prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">ondansetron<a name=\"antiemetic-medication-cs-ondansetron\"> </a></td><td>Ondansetron</td><td>5-HT3 receptor antagonist antiemetic, alternative to promethazine</td></tr><tr><td style=\"white-space:nowrap\">scopolamine-dexedrine<a name=\"antiemetic-medication-cs-scopolamine-dexedrine\"> </a></td><td>Scopolamine-Dexedrine Combination</td><td>NASA standard combination of scopolamine and dextroamphetamine for SMS prophylaxis</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "AntiemeticMedicationCS"] ; # 
+  fhir:title [ fhir:v "Antiemetic Medication Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Antiemetic medications used for space motion sickness prophylaxis and treatment"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "promethazine-im" ] ;
+     fhir:display [ fhir:v "Promethazine (Intramuscular)" ] ;
+     fhir:definition [ fhir:v "Promethazine hydrochloride administered intramuscularly, standard NASA rescue antiemetic" ]
+  ] [
+     fhir:code [ fhir:v "promethazine-oral" ] ;
+     fhir:display [ fhir:v "Promethazine (Oral)" ] ;
+     fhir:definition [ fhir:v "Promethazine hydrochloride administered orally for prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "meclizine" ] ;
+     fhir:display [ fhir:v "Meclizine" ] ;
+     fhir:definition [ fhir:v "Meclizine hydrochloride, H1-receptor antagonist antiemetic" ]
+  ] [
+     fhir:code [ fhir:v "scopolamine-patch" ] ;
+     fhir:display [ fhir:v "Scopolamine (Transdermal Patch)" ] ;
+     fhir:definition [ fhir:v "Transdermal scopolamine for motion sickness prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "ondansetron" ] ;
+     fhir:display [ fhir:v "Ondansetron" ] ;
+     fhir:definition [ fhir:v "5-HT3 receptor antagonist antiemetic, alternative to promethazine" ]
+  ] [
+     fhir:code [ fhir:v "scopolamine-dexedrine" ] ;
+     fhir:display [ fhir:v "Scopolamine-Dexedrine Combination" ] ;
+     fhir:definition [ fhir:v "NASA standard combination of scopolamine and dextroamphetamine for SMS prophylaxis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

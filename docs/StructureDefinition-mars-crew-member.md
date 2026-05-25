@@ -1,4 +1,4 @@
-# Mars Crew Member Profile - v0.5.12
+# Mars Crew Member Profile - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:MarsCrewMemberProfile |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:MarsCrewMemberProfile |
 
  
 Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-mars-crew-member.csv
   "resourceType" : "StructureDefinition",
   "id" : "mars-crew-member",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MarsCrewMemberProfile",
   "title" : "Mars Crew Member Profile",
   "status" : "active",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Space Telemedicine -  v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"22"}
+    h3,h4,h5,h6{--heading-prefix:"22"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="motion-sickness.html">Motion Sickness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Space Telemedicine</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Space Telemedicine</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#space-telemedicine-in-aerospace-operations" id="markdown-toc-space-telemedicine-in-aerospace-operations">Space Telemedicine in Aerospace Operations</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#operational-challenges" id="markdown-toc-operational-challenges">Operational Challenges</a></li>
+      <li><a href="#key-systems-and-use-cases" id="markdown-toc-key-systems-and-use-cases">Key Systems and Use Cases</a></li>
+      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
+          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
+          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
+          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
+        </ul>
+      </li>
+      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+      <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h1 id="space-telemedicine-in-aerospace-operations">Space Telemedicine in Aerospace Operations</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Space telemedicine enables real-time or store-and-forward clinical support when crew medical officers (CMOs) or autonomous systems require ground-specialist consultation. From early ISS operations through commercial missions like Polaris Dawn and future Artemis lunar/Mars transits, telemedicine has evolved from basic voice/video to integrated remote diagnostics, device guidance, and high-bandwidth data transmission.</p>
+
+<p>NASA has used telemedicine on the ISS for decades (VSee video platform, remote ultrasound guidance). The 2025 ISRO–SCTIMST MoU explicitly advances telemedicine protocols and devices for India’s Gaganyaan program. Commercial providers are now testing Starlink-enabled real-time medical data exchange, while LunaNet and the Deep Space Network (DSN) will underpin lunar and deep-space connectivity.</p>
+
+<p>This page defines FHIR profiles for telemedicine encounters, consult requests, data transmission, and specialized devices to support standardized, interoperable space medical operations.</p>
+
+<h2 id="operational-challenges">Operational Challenges</h2>
+<ul>
+  <li><strong>Communication Latency</strong>: Near-zero in LEO; 1–2 seconds lunar; minutes-to-hours for Mars transit</li>
+  <li><strong>Bandwidth &amp; Reliability</strong>: Constrained by power, antenna size, and orbital geometry</li>
+  <li><strong>Autonomy Requirements</strong>: Deep-space missions demand store-and-forward, AI-assisted triage, and minimal ground dependency</li>
+  <li><strong>Security &amp; Privacy</strong>: Protected health information (PHI) transmission across public/commercial networks</li>
+  <li><strong>Regulatory Context</strong>: FCC spectrum rules for medical telemetry (MBANs, WMTS) and Supplemental Coverage from Space (SCS); FAA/Commercial Space Federation focus on performance-based medical standards</li>
+</ul>
+
+<h2 id="key-systems-and-use-cases">Key Systems and Use Cases</h2>
+<p><strong>ISS Operations</strong></p>
+<ul>
+  <li>VSee secure video for CMO-to-ground specialist consults</li>
+  <li>Remote guidance for ultrasound (Butterfly iQ3 and similar handheld devices)</li>
+  <li>Store-and-forward imaging and vital-signs transmission</li>
+</ul>
+
+<p><strong>Commercial Missions (e.g., Polaris Dawn)</strong></p>
+<ul>
+  <li>Starlink laser-based communications for real-time telemedicine, ultrasound, and vital-signs data</li>
+  <li>Experimental near-real-time diagnostic features tested in simulation</li>
+</ul>
+
+<p><strong>Artemis / Lunar Operations</strong></p>
+<ul>
+  <li>LunaNet interoperability specification (LNIS) for communications, navigation, and medical data relay</li>
+  <li>Hybrid LEO–lunar relay networks supporting high-bandwidth telemedicine</li>
+</ul>
+
+<p><strong>Deep-Space / Mars Transit</strong></p>
+<ul>
+  <li>Deep Space Network (DSN) for store-and-forward and low-bandwidth voice/data</li>
+  <li>Future hybrid constellations (Starlink-like) for improved latency and redundancy</li>
+</ul>
+
+<p><strong>ISRO Gaganyaan Program</strong></p>
+<ul>
+  <li>2025 ISRO–SCTIMST MoU explicitly includes telemedicine, biomedical support systems, and medical device development</li>
+</ul>
+
+<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+
+<h3 id="recommended-resources">Recommended Resources</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Encounter</code> – extended for telemedicine modality and latency</li>
+  <li><code class="language-plaintext highlighter-rouge">ServiceRequest</code> / <code class="language-plaintext highlighter-rouge">CommunicationRequest</code> – specialist consultation requests</li>
+  <li><code class="language-plaintext highlighter-rouge">Communication</code> – clinical data, image, and video transmission</li>
+  <li><code class="language-plaintext highlighter-rouge">Device</code> – telemedicine-specific hardware</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code> / <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> – transmitted clinical findings</li>
+</ul>
+
+<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
+<p><strong>Core Profiles</strong></p>
+<ul>
+  <li><strong><a href="StructureDefinition-telemedicine-encounter.html"><code class="language-plaintext highlighter-rouge">TelemedicineEncounter</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Encounter</code> with:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">modality</code> (video, audio, store-and-forward, remote-ultrasound)</li>
+      <li><code class="language-plaintext highlighter-rouge">communicationLatency</code> (Quantity in seconds or minutes)</li>
+      <li><code class="language-plaintext highlighter-rouge">networkProvider</code> (Starlink, LunaNet, DSN, TDRS, etc.)</li>
+      <li><code class="language-plaintext highlighter-rouge">autonomyLevel</code> (real-time, delayed, autonomous)</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong><a href="StructureDefinition-telemedicine-consult-request.html"><code class="language-plaintext highlighter-rouge">TelemedicineConsultRequest</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">ServiceRequest</code> for CMO-to-ground specialist requests, including urgency, suspected condition, and available onboard data</p>
+  </li>
+  <li>
+    <p><strong><a href="StructureDefinition-telemedicine-communication.html"><code class="language-plaintext highlighter-rouge">TelemedicineCommunication</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Communication</code> for transmission of images, video, waveforms, or device telemetry with payload metadata and quality metrics</p>
+  </li>
+  <li><strong><a href="StructureDefinition-telemedicine-device.html"><code class="language-plaintext highlighter-rouge">TelemedicineDevice</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> for specialized hardware (remote ultrasound probes, digital stethoscopes, handheld diagnostics) with calibration, connectivity, and latency characteristics</li>
+</ul>
+
+<p><strong>Supporting Profiles (suggested)</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">TelemedicineCarePlan</code> – Links encounters, consults, and transmitted data into a cohesive care episode</li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceTelemedicineSummary</code> – DiagnosticReport aggregating a telemedicine session</li>
+</ul>
+
+<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<ul>
+  <li><a href="CodeSystem-telemedicine-modality-cs.html"><code class="language-plaintext highlighter-rouge">TelemedicineModalityCS</code></a> – (real-time-video, store-and-forward, remote-ultrasound-guidance, etc.)</li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceCommunicationNetworkCS</code> – (Starlink, LunaNet, DSN, TDRS, commercial-relay)</li>
+  <li><code class="language-plaintext highlighter-rouge">TelemedicineLatencyCategoryVS</code> – (near-real-time, low-latency, high-latency, store-and-forward)</li>
+</ul>
+
+<h2 id="architectural-alignment">Architectural Alignment</h2>
+<p>This content directly supports and extends existing IG sections:</p>
+<ul>
+  <li>Crew Health Monitoring</li>
+  <li>ECLSS (integration with environmental data during consults)</li>
+  <li>Cardiovascular Countermeasures / Venous Flow (remote ultrasound guidance)</li>
+  <li>Neurocognitive Monitoring (tele-psychology and behavioral health consults)</li>
+  <li>Metabolic Suppression / Autonomous Medical Operations (deep-space autonomy)</li>
+  <li>Radiation Exposure Tracking (consults during solar-particle events)</li>
+</ul>
+
+<p>It enables a unified <strong>Autonomous &amp; Connected Medical Operations</strong> framework for commercial, lunar, and Mars-class missions.</p>
+
+<h2 id="references">References</h2>
+<h2 id="references-1">References</h2>
+
+<ul>
+  <li>
+    <p>National Aeronautics and Space Administration. <em>International Space Station Telemedicine Operations and Remote Medical Support Systems.</em> Houston, TX: NASA Johnson Space Center.</p>
+
+    <ul>
+      <li>ISS Operations: <a href="https://www.nasa.gov/mission_pages/station/">https://www.nasa.gov/mission_pages/station/</a></li>
+      <li>NASA Telehealth Overview: <a href="https://fedtechmagazine.com/article/2018/03/how-nasa-deploys-telehealth-care-astronauts">https://fedtechmagazine.com/article/2018/03/how-nasa-deploys-telehealth-care-astronauts</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>National Aeronautics and Space Administration. <em>Remote Guidance Ultrasound Procedures for Spaceflight Medical Operations.</em> Houston, TX: NASA Human Research Program.</p>
+
+    <ul>
+      <li>NASA Human Research Program: <a href="https://www.nasa.gov/hrp/">https://www.nasa.gov/hrp/</a></li>
+      <li>Butterfly Network Ultrasound: <a href="https://www.butterflynetwork.com/">https://www.butterflynetwork.com/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Polaris Program. <em>Polaris Dawn Mission Communications and Medical Operations.</em> Polaris Program / SpaceX, 2024.</p>
+
+    <ul>
+      <li>Polaris Dawn Mission: <a href="https://www.spacex.com/launches/mission/?missionId=polarisdawn">https://www.spacex.com/launches/mission/?missionId=polarisdawn</a></li>
+      <li>SpaceX Human Spaceflight: <a href="https://www.spacex.com/humanspaceflight/">https://www.spacex.com/humanspaceflight/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Indian Space Research Organisation and Sree Chitra Tirunal Institute for Medical Sciences and Technology. <em>Framework Memorandum of Understanding on Space Medicine and Telemedicine Systems.</em> Bengaluru and Thiruvananthapuram, April 2025.</p>
+
+    <ul>
+      <li>ISRO Space Medicine MoU: <a href="https://www.newindianexpress.com/states/karnataka/2025/Apr/26/isro-signs-mou-for-space-medicine">https://www.newindianexpress.com/states/karnataka/2025/Apr/26/isro-signs-mou-for-space-medicine</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>National Aeronautics and Space Administration. <em>LunaNet Interoperability Specification (LNIS).</em> Washington, DC: NASA Space Communications and Navigation (SCaN) Program.</p>
+
+    <ul>
+      <li>LunaNet Overview: <a href="https://www.nasa.gov/directorates/heo/scan/services/networks/deep_space_network/about_lunanet/">https://www.nasa.gov/directorates/heo/scan/services/networks/deep_space_network/about_lunanet/</a></li>
+      <li>Artemis Communications Networks: <a href="https://www.nasa.gov/missions/artemis/networks-keeping-nasas-artemis-ii-mission-connected/">https://www.nasa.gov/missions/artemis/networks-keeping-nasas-artemis-ii-mission-connected/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>National Aeronautics and Space Administration. <em>Deep Space Network (DSN).</em> Washington, DC: NASA Jet Propulsion Laboratory.</p>
+
+    <ul>
+      <li>DSN Overview: <a href="https://www.nasa.gov/directorates/somd/space-communications-navigation-program/deep-space-network/">https://www.nasa.gov/directorates/somd/space-communications-navigation-program/deep-space-network/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Federal Communications Commission. <em>Supplemental Coverage from Space (SCS) and Medical Telemetry Spectrum Policy.</em> Washington, DC: Federal Communications Commission.</p>
+
+    <ul>
+      <li>FCC Supplemental Coverage from Space: <a href="https://www.fcc.gov/document/fcc-adopts-framework-supplemental-coverage-space">https://www.fcc.gov/document/fcc-adopts-framework-supplemental-coverage-space</a></li>
+      <li>Wireless Medical Telemetry Service (WMTS): <a href="https://www.fcc.gov/wireless/bureau-divisions/mobility-division/wireless-medical-telemetry-service-wmts">https://www.fcc.gov/wireless/bureau-divisions/mobility-division/wireless-medical-telemetry-service-wmts</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>ASTM International Committee F47 on Commercial Spaceflight. <em>Consensus Standards for Human Spaceflight Medical Capabilities and Crew Safety.</em> West Conshohocken, PA: ASTM International.</p>
+
+    <ul>
+      <li>ASTM F47 Committee: <a href="https://www.astm.org/committee-f47-commercial-spaceflight.html">https://www.astm.org/committee-f47-commercial-spaceflight.html</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Overbey, Jessica, et al. “The Space Omics and Medical Atlas (SOMA) and International Astronaut Biobank.” <em>Nature</em> 631 (2024): 416–425. <a href="https://doi.org/10.1038/s41586-024-07639-y">https://doi.org/10.1038/s41586-024-07639-y</a>.</p>
+
+    <ul>
+      <li>Nature Article: <a href="https://www.nature.com/articles/s41586-024-07639-y">https://www.nature.com/articles/s41586-024-07639-y</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>Topol, Eric J., Daniel Kraft, and colleagues. “Biomonitoring and Precision Health in Deep Space Supported by Artificial Intelligence.” <em>Nature Machine Intelligence</em> 5 (2023): 583–599. <a href="https://doi.org/10.1038/s42256-023-00617-5">https://doi.org/10.1038/s42256-023-00617-5</a>.</p>
+
+    <ul>
+      <li>Nature Machine Intelligence: <a href="https://www.nature.com/articles/s42256-023-00617-5">https://www.nature.com/articles/s42256-023-00617-5</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

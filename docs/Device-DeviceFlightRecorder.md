@@ -1,4 +1,4 @@
-# Device - Flight Recorder (FHIR) - v0.5.12
+# Device - Flight Recorder (FHIR) - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="SMS-Episode-FD2"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition SMS-Episode-FD2</b></p><a name="SMS-Episode-FD2"> </a><a name="hcSMS-Episode-FD2"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-motion-sickness-condition.html">Space Motion Sickness Condition</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Gravity Context</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}">Microgravity</span></p><p><b>Flight Day</b>: 2</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>severity</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/graybiel-severity-cs grade-2}">Grade II-S - Moderate Malaise</span></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs sms}">Space Motion Sickness (SMS)</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>onset</b>: 2028-03-16 06:00:00+0000</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/Artemis-III-Mission"/>
+    </valueReference>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/gravity-context">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"/>
+        <code value="microgravity"/>
+        <display value="Microgravity"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/flight-day">
+    <valueInteger value="2"/>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <severity>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/graybiel-severity-cs"/>
+      <code value="grade-2"/>
+      <display value="Grade II-S - Moderate Malaise"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs"/>
+      <code value="sms"/>
+      <display value="Space Motion Sickness (SMS)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <onsetDateTime value="2028-03-16T06:00:00Z"/>
+</Condition>

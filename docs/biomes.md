@@ -1,4 +1,4 @@
-# Biospheres - v0.5.12
+# Biospheres - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **Biospheres**

@@ -1,4 +1,4 @@
-# MEDB 2.3 Tuberculosis Testing - v0.5.12
+# MEDB 2.3 Tuberculosis Testing - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-3-tb-testing | *Version*:0.5.12 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-3-tb-testing | *Version*:0.6.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB23TBTesting |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To screen crew members for tuberculosis infection prior to spaceflight
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-2-3-tb-testing",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MEDB23TBTesting",
   "title" : "MEDB 2.3 Tuberculosis Testing",
   "status" : "active",

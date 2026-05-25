@@ -1,4 +1,4 @@
-# Treatment Duration - v0.5.12
+# Treatment Duration - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/treatment-duration | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:TreatmentDuration |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/treatment-duration | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:TreatmentDuration |
 
 Total duration of hyperbaric treatment
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-treatment-duration.c
   "resourceType" : "StructureDefinition",
   "id" : "treatment-duration",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/treatment-duration",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "TreatmentDuration",
   "title" : "Treatment Duration",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

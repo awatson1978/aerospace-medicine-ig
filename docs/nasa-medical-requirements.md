@@ -1,4 +1,4 @@
-# NASA Medical Requirements - v0.5.12
+# NASA Medical Requirements - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **NASA Medical Requirements**

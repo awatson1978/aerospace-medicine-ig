@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Device",
+  "id" : "CGM-Dexcom-G7-001",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-device"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device CGM-Dexcom-G7-001</b></p><a name=\"CGM-Dexcom-G7-001\"> </a><a name=\"hcCGM-Dexcom-G7-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-cgm-device.html\">Space CGM Device</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Active</p><p><b>manufacturer</b>: Dexcom, Inc.</p><p><b>serialNumber</b>: DG7-2028-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Dexcom G7 Serial #DG7-2028-001</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: G7</p><p><b>type</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs dexcom-g7}\">Dexcom G7</span></p><p><b>patient</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/Artemis-III-Mission"
+    }
+  }],
+  "status" : "active",
+  "manufacturer" : "Dexcom, Inc.",
+  "serialNumber" : "DG7-2028-001",
+  "deviceName" : [{
+    "name" : "Dexcom G7 Serial #DG7-2028-001",
+    "type" : "user-friendly-name"
+  }],
+  "modelNumber" : "G7",
+  "type" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs",
+      "code" : "dexcom-g7",
+      "display" : "Dexcom G7"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/ExampleAstronaut"
+  }
+}

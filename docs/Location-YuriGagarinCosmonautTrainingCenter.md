@@ -1,4 +1,4 @@
-# Yuri Gagarin Cosmonaut Training Center - v0.5.12
+# Yuri Gagarin Cosmonaut Training Center - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

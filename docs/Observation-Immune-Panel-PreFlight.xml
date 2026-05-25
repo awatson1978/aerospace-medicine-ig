@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Immune-Panel-PreFlight"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/immune-biomarker-panel"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Immune-Panel-PreFlight</b></p><a name="Immune-Panel-PreFlight"> </a><a name="hcImmune-Panel-PreFlight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-immune-biomarker-panel.html">Immune Biomarker Panel</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs pre-flight}">Pre-flight</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 24359-3}">Immune function panel</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-02-15 10:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs il-6}">Interleukin-6 (IL-6)</span></p><p><b>value</b>: 1.5 pg/mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codepg/mL = 'pg/mL')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs tnf-alpha}">Tumor Necrosis Factor Alpha (TNF-α)</span></p><p><b>value</b>: 4.2 pg/mL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codepg/mL = 'pg/mL')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs cd4-cd8-ratio}">CD4/CD8 Ratio</span></p><p><b>value</b>: 1.8 1<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs nk-cell-pct}">Natural Killer Cell Percentage</span></p><p><b>value</b>: 12.5 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2143-6}">Cortisol [Mass/volume] in Serum or Plasma</span></p><p><b>value</b>: 15.2 ug/dL<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeug/dL = 'ug/dL')</span></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/Artemis-III-Mission"/>
+    </valueReference>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/mission-phase">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"/>
+        <code value="pre-flight"/>
+        <display value="Pre-flight"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="24359-3"/>
+      <display value="Immune function panel"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <effectiveDateTime value="2028-02-15T10:00:00Z"/>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs"/>
+        <code value="il-6"/>
+        <display value="Interleukin-6 (IL-6)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1.5"/>
+      <unit value="pg/mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="pg/mL"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs"/>
+        <code value="tnf-alpha"/>
+        <display value="Tumor Necrosis Factor Alpha (TNF-α)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="4.2"/>
+      <unit value="pg/mL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="pg/mL"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs"/>
+        <code value="cd4-cd8-ratio"/>
+        <display value="CD4/CD8 Ratio"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="1.8"/>
+      <unit value="1"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs"/>
+        <code value="nk-cell-pct"/>
+        <display value="Natural Killer Cell Percentage"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="12.5"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="2143-6"/>
+        <display value="Cortisol [Mass/volume] in Serum or Plasma"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="15.2"/>
+      <unit value="ug/dL"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="ug/dL"/>
+    </valueQuantity>
+  </component>
+</Observation>

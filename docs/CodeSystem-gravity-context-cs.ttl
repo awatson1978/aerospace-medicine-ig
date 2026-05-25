@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "gravity-context-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem gravity-context-cs</b></p><a name=\"gravity-context-cs\"> </a><a name=\"hcgravity-context-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">earth-1g<a name=\"gravity-context-cs-earth-1g\"> </a></td><td>Earth Standard Gravity (1g)</td><td>Standard Earth gravity at approximately 9.81 m/s²</td></tr><tr><td style=\"white-space:nowrap\">microgravity<a name=\"gravity-context-cs-microgravity\"> </a></td><td>Microgravity</td><td>Near-weightless conditions in orbital free-fall, typically 10⁻³ to 10⁻⁶ g</td></tr><tr><td style=\"white-space:nowrap\">lunar-gravity<a name=\"gravity-context-cs-lunar-gravity\"> </a></td><td>Lunar Gravity (1/6g)</td><td>Lunar surface gravity at approximately 1.62 m/s²</td></tr><tr><td style=\"white-space:nowrap\">mars-gravity<a name=\"gravity-context-cs-mars-gravity\"> </a></td><td>Mars Gravity (3/8g)</td><td>Mars surface gravity at approximately 3.72 m/s²</td></tr><tr><td style=\"white-space:nowrap\">partial-gravity<a name=\"gravity-context-cs-partial-gravity\"> </a></td><td>Partial Gravity</td><td>Partial gravity environment not otherwise specified</td></tr><tr><td style=\"white-space:nowrap\">hypergravity<a name=\"gravity-context-cs-hypergravity\"> </a></td><td>Hypergravity</td><td>Greater than 1g, as experienced during launch, re-entry, or centrifuge</td></tr><tr><td style=\"white-space:nowrap\">simulated-microgravity-hdt<a name=\"gravity-context-cs-simulated-microgravity-hdt\"> </a></td><td>Simulated Microgravity (Head-Down Tilt)</td><td>Head-down tilt bed rest used to simulate microgravity effects</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "GravityContextCS"] ; # 
+  fhir:title [ fhir:v "Gravity Context Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Gravitational environment contexts for observations and procedures"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "earth-1g" ] ;
+     fhir:display [ fhir:v "Earth Standard Gravity (1g)" ] ;
+     fhir:definition [ fhir:v "Standard Earth gravity at approximately 9.81 m/s²" ]
+  ] [
+     fhir:code [ fhir:v "microgravity" ] ;
+     fhir:display [ fhir:v "Microgravity" ] ;
+     fhir:definition [ fhir:v "Near-weightless conditions in orbital free-fall, typically 10⁻³ to 10⁻⁶ g" ]
+  ] [
+     fhir:code [ fhir:v "lunar-gravity" ] ;
+     fhir:display [ fhir:v "Lunar Gravity (1/6g)" ] ;
+     fhir:definition [ fhir:v "Lunar surface gravity at approximately 1.62 m/s²" ]
+  ] [
+     fhir:code [ fhir:v "mars-gravity" ] ;
+     fhir:display [ fhir:v "Mars Gravity (3/8g)" ] ;
+     fhir:definition [ fhir:v "Mars surface gravity at approximately 3.72 m/s²" ]
+  ] [
+     fhir:code [ fhir:v "partial-gravity" ] ;
+     fhir:display [ fhir:v "Partial Gravity" ] ;
+     fhir:definition [ fhir:v "Partial gravity environment not otherwise specified" ]
+  ] [
+     fhir:code [ fhir:v "hypergravity" ] ;
+     fhir:display [ fhir:v "Hypergravity" ] ;
+     fhir:definition [ fhir:v "Greater than 1g, as experienced during launch, re-entry, or centrifuge" ]
+  ] [
+     fhir:code [ fhir:v "simulated-microgravity-hdt" ] ;
+     fhir:display [ fhir:v "Simulated Microgravity (Head-Down Tilt)" ] ;
+     fhir:definition [ fhir:v "Head-down tilt bed rest used to simulate microgravity effects" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

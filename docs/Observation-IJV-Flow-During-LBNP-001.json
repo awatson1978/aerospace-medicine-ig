@@ -1,0 +1,80 @@
+{
+  "resourceType" : "Observation",
+  "id" : "IJV-Flow-During-LBNP-001",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-flow-observation"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation IJV-Flow-During-LBNP-001</b></p><a name=\"IJV-Flow-During-LBNP-001\"> </a><a name=\"hcIJV-Flow-During-LBNP-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-internal-jugular-vein-flow-observation.html\">Internal Jugular Vein Flow Observation</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>LBNP Pressure Level</b>: -30 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11042-7}\">IJV Flow Assessment</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2025-09-05 10:32:00+0000</p><p><b>value</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs grade-1}\">Grade 1 - Forward Flow</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 244403000}\">Right Internal Jugular Vein</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org LP74840-2}\">Flow velocity</span></td><td>0.85 ratio<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{ratio} = '{ratio}')</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+        "code" : "microgravity",
+        "display" : "Microgravity"
+      }]
+    }
+  },
+  {
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level",
+    "valueQuantity" : {
+      "value" : -30,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "11042-7",
+      "display" : "Flow velocity Doppler.max Blood vessel"
+    }],
+    "text" : "IJV Flow Assessment"
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "effectiveDateTime" : "2025-09-05T10:32:00Z",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs",
+      "code" : "grade-1",
+      "display" : "Grade 1 - Forward Flow"
+    }]
+  },
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "244403000",
+      "display" : "Internal jugular vein structure"
+    }],
+    "text" : "Right Internal Jugular Vein"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "LP74840-2",
+        "display" : "Flow velocity"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0.85,
+      "unit" : "ratio",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "{ratio}"
+    }
+  }]
+}

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sterilization-method-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sterilization-method-cs</b></p><a name=\"sterilization-method-cs\"> </a><a name=\"hcsterilization-method-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dhmr<a name=\"sterilization-method-cs-dhmr\"> </a></td><td>Dry Heat Microbial Reduction (DHMR)</td><td>Dry heat treatment for spore inactivation, typically 110-125°C</td></tr><tr><td style=\"white-space:nowrap\">uv-sterilization<a name=\"sterilization-method-cs-uv-sterilization\"> </a></td><td>UV Sterilization</td><td>Ultraviolet radiation for surface decontamination</td></tr><tr><td style=\"white-space:nowrap\">vhp<a name=\"sterilization-method-cs-vhp\"> </a></td><td>Vaporized Hydrogen Peroxide (VHP)</td><td>VHP exposure for surface sterilization</td></tr><tr><td style=\"white-space:nowrap\">gamma-irradiation<a name=\"sterilization-method-cs-gamma-irradiation\"> </a></td><td>Gamma Irradiation</td><td>Ionizing radiation for bulk sterilization</td></tr><tr><td style=\"white-space:nowrap\">ethylene-oxide<a name=\"sterilization-method-cs-ethylene-oxide\"> </a></td><td>Ethylene Oxide</td><td>Chemical gas sterilization for heat-sensitive materials</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SterilizationMethodCS"] ; # 
+  fhir:title [ fhir:v "Sterilization Method Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sterilization methods for planetary protection bioburden reduction"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dhmr" ] ;
+     fhir:display [ fhir:v "Dry Heat Microbial Reduction (DHMR)" ] ;
+     fhir:definition [ fhir:v "Dry heat treatment for spore inactivation, typically 110-125°C" ]
+  ] [
+     fhir:code [ fhir:v "uv-sterilization" ] ;
+     fhir:display [ fhir:v "UV Sterilization" ] ;
+     fhir:definition [ fhir:v "Ultraviolet radiation for surface decontamination" ]
+  ] [
+     fhir:code [ fhir:v "vhp" ] ;
+     fhir:display [ fhir:v "Vaporized Hydrogen Peroxide (VHP)" ] ;
+     fhir:definition [ fhir:v "VHP exposure for surface sterilization" ]
+  ] [
+     fhir:code [ fhir:v "gamma-irradiation" ] ;
+     fhir:display [ fhir:v "Gamma Irradiation" ] ;
+     fhir:definition [ fhir:v "Ionizing radiation for bulk sterilization" ]
+  ] [
+     fhir:code [ fhir:v "ethylene-oxide" ] ;
+     fhir:display [ fhir:v "Ethylene Oxide" ] ;
+     fhir:definition [ fhir:v "Chemical gas sterilization for heat-sensitive materials" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

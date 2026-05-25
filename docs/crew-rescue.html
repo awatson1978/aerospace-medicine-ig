@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Crew Rescue -  v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"21"}
+    h3,h4,h5,h6{--heading-prefix:"21"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="motion-sickness.html">Motion Sickness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Crew Rescue</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Crew Rescue</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#crew-evacuation-and-emergency-response" id="markdown-toc-crew-evacuation-and-emergency-response">Crew Evacuation and Emergency Response</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#operational-context" id="markdown-toc-operational-context">Operational Context</a></li>
+      <li><a href="#muster-and-egress-plans" id="markdown-toc-muster-and-egress-plans">Muster and Egress Plans</a></li>
+      <li><a href="#communication-protocols" id="markdown-toc-communication-protocols">Communication Protocols</a></li>
+      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
+          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
+          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
+          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
+        </ul>
+      </li>
+      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+      <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h1 id="crew-evacuation-and-emergency-response">Crew Evacuation and Emergency Response</h1>
+
+<h2 id="overview">Overview</h2>
+<p>Crew evacuation and emergency response procedures are the final layer of defense when onboard systems or crew health fail. NASA procedures for the ISS, commercial vehicles (Dragon, Soyuz), and Artemis lunar operations emphasize rapid, standardized actions to protect the crew and enable return to Earth or movement to a safe haven.</p>
+
+<p>This page defines FHIR profiles for documenting emergency conditions, evacuation procedures, risk context, and contingency plans. It supports seamless integration of onboard telemetry, ground consultation, and post-event analysis across LEO, lunar, and deep-space missions.</p>
+
+<h2 id="operational-context">Operational Context</h2>
+<p><strong>Primary Threats</strong> (ISS and exploration-class vehicles)</p>
+<ul>
+  <li>Rapid depressurization</li>
+  <li>Fire / smoke</li>
+  <li>Toxic atmosphere / chemical release</li>
+  <li>Medical emergency requiring immediate return</li>
+</ul>
+
+<p><strong>Key Constraints</strong></p>
+<ul>
+  <li>Limited time windows (minutes for depressurization/fire)</li>
+  <li>Communication latency (near-zero in LEO → minutes/hours in lunar or Mars transit)</li>
+  <li>Vehicle-specific egress paths (Dragon/Orion abort, Soyuz undock, lunar lander safe-haven)</li>
+  <li>NASA OIG audit (IG-26-004, 2026) notes that early Artemis lunar missions have no dedicated external crew-rescue capability — survival depends entirely on onboard evacuation and safe-haven protocols.</li>
+</ul>
+
+<h2 id="muster-and-egress-plans">Muster and Egress Plans</h2>
+<p>All procedures follow the proven <strong>Warn → Gather → Work</strong> framework:</p>
+
+<p><strong>Warn</strong></p>
+<ul>
+  <li>Automated alarms + crew annunciation</li>
+  <li>Immediate crew accountability (roll call via voice or digital checklist)</li>
+</ul>
+
+<p><strong>Gather (Muster)</strong></p>
+<ul>
+  <li>Crew moves to pre-designated muster point (usually the docked return vehicle or designated safe-haven module)</li>
+  <li>Don personal protective equipment (Portable Breathing Apparatus, suits)</li>
+  <li>Verify crew presence and vehicle integrity</li>
+</ul>
+
+<p><strong>Work</strong></p>
+<ul>
+  <li>Execute vehicle-specific checklists (seal hatches, isolate modules, prepare for undock/return)</li>
+  <li>Transition to evacuation if the threat cannot be contained</li>
+</ul>
+
+<p><strong>Egress Actions (Vehicle-Specific)</strong></p>
+<ul>
+  <li><strong>Dragon / Commercial Crew</strong>: Emergency undock and deorbit burn</li>
+  <li><strong>Soyuz</strong>: Rapid undock and ballistic reentry option</li>
+  <li><strong>Orion / Artemis</strong>: Launch abort system or lunar-orbit rendezvous with safe-haven</li>
+  <li><strong>Lunar Surface</strong>: Move to lander safe-haven or surface habitat</li>
+</ul>
+
+<p>These plans mirror EMT mass-casualty and firefighter rapid-intervention protocols: clear accountability, pre-assigned roles, and rehearsed egress paths.</p>
+
+<h2 id="communication-protocols">Communication Protocols</h2>
+<p>Standardized, concise communication is critical under stress:</p>
+
+<ul>
+  <li><strong>Onboard</strong>: Voice checklists, digital shared procedures, nonverbal signals (analogous to firefighter OATH or tap/tug protocols)</li>
+  <li><strong>Ground Link</strong>: Telemedicine consult (real-time when available) for complex decisions</li>
+  <li><strong>Telemetry</strong>: Real-time transmission of vehicle status, crew vitals, and location during muster/egress</li>
+  <li><strong>Post-Event</strong>: Structured reporting for lessons-learned and future risk refinement</li>
+</ul>
+
+<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+
+<h3 id="recommended-resources">Recommended Resources</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Condition</code> / <code class="language-plaintext highlighter-rouge">Observation</code> – emergency diagnosis</li>
+  <li><code class="language-plaintext highlighter-rouge">Procedure</code> – evacuation and abort actions</li>
+  <li><code class="language-plaintext highlighter-rouge">CarePlan</code> – contingency planning</li>
+  <li><code class="language-plaintext highlighter-rouge">RiskAssessment</code> – contextual probability framing (no actuarial computation)</li>
+</ul>
+
+<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
+<p><strong>Core Profiles</strong></p>
+<ul>
+  <li><strong><a href="StructureDefinition-space-emergency-condition.html"><code class="language-plaintext highlighter-rouge">SpaceEmergencyCondition</code></a></strong> – Standardized coding of emergency diagnosis (depressurization, fire, toxic atmosphere, medical) with severity, onset time, and affected modules/vehicles</li>
+  <li><strong><a href="StructureDefinition-emergency-evacuation-procedure.html"><code class="language-plaintext highlighter-rouge">EmergencyEvacuationProcedure</code></a></strong> – Documents the specific evacuation or abort action taken (Dragon return, Soyuz undock, safe-haven relocation) including timestamps, crew roles, and outcome</li>
+  <li><strong><a href="StructureDefinition-emergency-risk-assessment.html"><code class="language-plaintext highlighter-rouge">EmergencyRiskAssessment</code></a></strong> – Captures mission-phase and vehicle-specific risk context (e.g., probability categories for planning purposes) without performing statistical modeling</li>
+  <li><strong><a href="StructureDefinition-emergency-care-plan.html"><code class="language-plaintext highlighter-rouge">EmergencyCarePlan</code></a></strong> – Links identified conditions to the full contingency plan, muster point, egress path, and post-evacuation medical follow-up</li>
+</ul>
+
+<p><strong>Supporting Profiles (suggested)</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">EmergencyMusterLog</code> – Crew accountability and location tracking during Gather phase</li>
+  <li><code class="language-plaintext highlighter-rouge">EvacuationTelemetryBundle</code> – Composite of vitals, vehicle status, and communication logs</li>
+</ul>
+
+<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<ul>
+  <li><a href="CodeSystem-space-emergency-type-cs.html"><code class="language-plaintext highlighter-rouge">SpaceEmergencyTypeCS</code></a> – (depressurization, fire, toxic-atmosphere, medical-evac)</li>
+  <li><code class="language-plaintext highlighter-rouge">EvacuationActionCS</code> – (dragon-undock, soyuz-return, orion-abort, lunar-safe-haven)</li>
+  <li><code class="language-plaintext highlighter-rouge">MusterPointVS</code> – (vehicle-specific safe havens and assembly points)</li>
+</ul>
+
+<h2 id="architectural-alignment">Architectural Alignment</h2>
+<p>This content directly supports and extends existing IG sections:</p>
+<ul>
+  <li>Crew Health Monitoring</li>
+  <li>Space Telemedicine (real-time ground consultation during egress)</li>
+  <li>ECLSS (toxic atmosphere and depressurization response)</li>
+  <li>Cardiovascular / Venous Flow Countermeasures (medical evacuations)</li>
+  <li>Radiation Exposure Tracking (storm-shelter or abort decisions)</li>
+  <li>Metabolic Suppression (autonomous operations during comms blackout)</li>
+</ul>
+
+<p>It forms a critical bridge toward future <strong>autonomous medical operations</strong> and precision risk-informed planning for exploration missions.</p>
+
+<h2 id="references">References</h2>
+<h2 id="references-1">References</h2>
+
+<ul>
+  <li>NASA. <em>International Space Station Emergency Procedures and Crew Response Protocols (Warn-Gather-Work Framework).</em> Houston, TX: National Aeronautics and Space Administration, Johnson Space Center.
+    <ul>
+      <li>ISS Emergency Procedures: <a href="https://www.nasa.gov/reference/emergency-equipment-and-procedures/">https://www.nasa.gov/reference/emergency-equipment-and-procedures/</a></li>
+      <li>ISS Operations: <a href="https://www.nasa.gov/mission_pages/station/">https://www.nasa.gov/mission_pages/station/</a></li>
+    </ul>
+  </li>
+  <li>NASA Office of Inspector General. <em>Management of the Human Landing System Contracts</em>. Report No. IG-26-004. Washington, DC: National Aeronautics and Space Administration Office of Inspector General, 2026.
+    <ul>
+      <li>NASA OIG Reports: <a href="https://oig.nasa.gov/audits-and-reports/">https://oig.nasa.gov/audits-and-reports/</a></li>
+      <li>Related Artemis rescue discussion: <a href="https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/">https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/</a></li>
+    </ul>
+  </li>
+  <li>NASA. <em>Human Integration Design Handbook (HIDH).</em> NASA/SP-2010-3407. Washington, DC: National Aeronautics and Space Administration, 2010.
+    <ul>
+      <li>Human Integration Design Handbook: <a href="https://www.nasa.gov/human-integration-design-handbook/">https://www.nasa.gov/human-integration-design-handbook/</a></li>
+    </ul>
+  </li>
+  <li>NASA. <em>Orion Program: Crew Survival, Abort, and Contingency Operations.</em> Washington, DC: National Aeronautics and Space Administration.
+    <ul>
+      <li>Orion Program: <a href="https://www.nasa.gov/orion/">https://www.nasa.gov/orion/</a></li>
+      <li>Artemis Program: <a href="https://www.nasa.gov/artemis/">https://www.nasa.gov/artemis/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>NASA Commercial Crew Program. <em>Commercial Crew Contingency Operations and Emergency Return Capabilities (Crew Dragon and CST-100 Starliner).</em> Washington, DC: National Aeronautics and Space Administration.</p>
+
+    <ul>
+      <li>Commercial Crew Program: <a href="https://www.nasa.gov/commercialcrew/">https://www.nasa.gov/commercialcrew/</a></li>
+      <li>SpaceX Human Spaceflight: <a href="https://www.spacex.com/humanspaceflight/">https://www.spacex.com/humanspaceflight/</a></li>
+      <li>Boeing Starliner: <a href="https://www.boeing.com/space/starliner/">https://www.boeing.com/space/starliner/</a></li>
+    </ul>
+  </li>
+  <li>International Association of Fire Fighters. <em>Rapid Intervention Team Operations and Personnel Accountability Systems.</em> Washington, DC: IAFF.
+    <ul>
+      <li>IAFF Fire Ground Survival Program: <a href="https://www.iaff.org/fire-ground-survival/">https://www.iaff.org/fire-ground-survival/</a></li>
+    </ul>
+  </li>
+  <li>Federal Emergency Management Agency. <em>Incident Accountability and Rapid Intervention Concepts for High-Risk Environments.</em> Washington, DC: FEMA.
+    <ul>
+      <li>U.S. Fire Administration: <a href="https://www.usfa.fema.gov/">https://www.usfa.fema.gov/</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

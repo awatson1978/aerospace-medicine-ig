@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artemis -  v0.5.12</title>
+    <title>Artemis -  v0.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"16"}
-    h3,h4,h5,h6{--heading-prefix:"16"}</style>
+    <style type="text/css">h2{--heading-prefix:"30"}
+    h3,h4,h5,h6{--heading-prefix:"30"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.12 - ci-build
+            <span style="display:inline-block;">0.6.0 - ci-build
 
 
             </span>
@@ -113,6 +113,9 @@
         <a href="screening-analog.html">Analog Missions</a>
       </li>
       <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
         <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
       </li>
     </ul>
@@ -123,19 +126,43 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
       </li>
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
       <li>
-        <a href="fitness.html">Fitness</a>
+        <a href="motion-sickness.html">Motion Sickness</a>
       </li>
       <li>
         <a href="nutrition.html">Nutrition</a>
       </li>
       <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
         <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
       </li>
     </ul>
   </li>
@@ -150,13 +177,35 @@
       <li>
         <a href="biomes.html">Biospheres</a>
       </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
     </ul>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
-  </li>
-  <li>
-    <a href="references.html">References</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -193,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artemis</h2>
   
 
@@ -218,6 +267,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
       <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
       <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+      <li><a href="#health-investigations" id="markdown-toc-health-investigations">Health Investigations</a></li>
       <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
       <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
       <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
@@ -490,6 +540,134 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Multi-week stays in Gateway modulesenvironmental monitoring (air quality, temperature, noise), exercise countermeasures (adapted T2/ARED protocols), nutrition tracking (limited resupply), interpersonal dynamics assessment.</p>
 
+<h3 id="health-investigations">Health Investigations</h3>
+
+<p>The Artemis II mission carries a suite of Human Research Program (HRP) investigations designed to characterize crew health during deep space missions. The following FHIR profiles model data from these investigations.</p>
+
+<h4 id="archer---actigraphy-for-circadian-health-during-exploration-research">ARCHeR - Actigraphy for Circadian Health during Exploration Research</h4>
+
+<p>ARCHeR uses wrist-worn actigraphy to monitor rest-activity rhythms and circadian health throughout the mission. The <a href="StructureDefinition-archer-actigraphy-observation.html">ARCHeRActigraphyObservation</a> profile captures:</p>
+
+<ul>
+  <li>Rest-activity rhythm stability (Interdaily Stability)</li>
+  <li>Endogenous circadian period</li>
+  <li>Sleep-wake cycle timing and total sleep time</li>
+</ul>
+
+<p>Data is collected continuously pre-flight, in-flight, and post-flight to assess circadian disruption during deep space transit.</p>
+
+<h4 id="immune-biomarkers">Immune Biomarkers</h4>
+
+<p>Spaceflight-associated immune dysregulation is monitored through the <a href="StructureDefinition-immune-biomarker-panel.html">ImmuneBiomarkerPanel</a>, which tracks:</p>
+
+<ul>
+  <li><strong>Cytokines</strong>: IL-6, TNF-alpha, IFN-gamma</li>
+  <li><strong>T-cell subsets</strong>: CD4/CD8 ratio</li>
+  <li><strong>Innate immunity</strong>: NK cell percentage</li>
+  <li><strong>Viral reactivation</strong>: EBV and CMV PCR</li>
+  <li><strong>Mucosal immunity</strong>: Salivary IgA</li>
+  <li><strong>Stress markers</strong>: Cortisol</li>
+</ul>
+
+<p>Specimens are collected using the <a href="StructureDefinition-spaceflight-specimen.html">SpaceflightSpecimen</a> profile, which accounts for microgravity-adapted collection methods.</p>
+
+<h4 id="nasa-spaceflight-standard-measures">NASA Spaceflight Standard Measures</h4>
+
+<p>The Standard Measures program provides a common set of assessments across all HRP investigations. The <a href="StructureDefinition-standard-measures-observation.html">StandardMeasuresObservation</a> profile supports:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Assessment</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Functional Task Test</td>
+      <td>Sensorimotor performance battery</td>
+    </tr>
+    <tr>
+      <td>Field Test</td>
+      <td>Timed obstacle course</td>
+    </tr>
+    <tr>
+      <td>Grip Strength</td>
+      <td>Isometric dynamometry</td>
+    </tr>
+    <tr>
+      <td>Tandem Walk</td>
+      <td>Balance assessment</td>
+    </tr>
+    <tr>
+      <td>Visual Acuity</td>
+      <td>In-flight vision testing</td>
+    </tr>
+    <tr>
+      <td>Orthostatic Test</td>
+      <td>Tilt or stand test</td>
+    </tr>
+    <tr>
+      <td>Body Composition</td>
+      <td>DXA or bioimpedance</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each assessment is tagged with <a href="StructureDefinition-mission-phase.html">MissionPhase</a> to enable pre/in/post-flight comparison.</p>
+
+<h4 id="avatar---organ-on-chip">AVATAR - Organ-on-Chip</h4>
+
+<p>The AVATAR investigation uses microphysiological systems (organ-on-chip devices) to study cellular responses to spaceflight conditions. The <a href="StructureDefinition-avatar-organ-chip.html">AVATAROrganChip</a> profile models:</p>
+
+<ul>
+  <li><strong>Bone Marrow Chip</strong> - Hematopoiesis studies</li>
+  <li><strong>Immune Chip</strong> - Immune system modeling</li>
+  <li><strong>Gut Chip</strong> - Intestinal epithelium</li>
+  <li><strong>Lung Chip</strong> - Alveolar-capillary interface</li>
+  <li><strong>Kidney Chip</strong> - Renal tubular function</li>
+  <li><strong>Blood-Brain Barrier Chip</strong> - BBB integrity</li>
+</ul>
+
+<h4 id="fhir-profiles-summary">FHIR Profiles Summary</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Profile</th>
+      <th>Resource Type</th>
+      <th>Investigation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-archer-actigraphy-observation.html">ARCHeRActigraphyObservation</a></td>
+      <td>Observation</td>
+      <td>ARCHeR</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-immune-biomarker-panel.html">ImmuneBiomarkerPanel</a></td>
+      <td>Observation</td>
+      <td>Immune Biomarkers</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-spaceflight-specimen.html">SpaceflightSpecimen</a></td>
+      <td>Specimen</td>
+      <td>Multiple</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-standard-measures-observation.html">StandardMeasuresObservation</a></td>
+      <td>Observation</td>
+      <td>Standard Measures</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-avatar-organ-chip.html">AVATAROrganChip</a></td>
+      <td>Device</td>
+      <td>AVATAR</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="integration-with-existing-systems">Integration with Existing Systems</h3>
 
 <h4 id="crew-health-and-medical-systems">Crew Health and Medical Systems</h4>
@@ -669,7 +847,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 00:24-0500">2026-03-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "microgravity-countermeasure-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem microgravity-countermeasure-cs</b></p><a name=\"microgravity-countermeasure-cs\"> </a><a name=\"hcmicrogravity-countermeasure-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">lbnp<a name=\"microgravity-countermeasure-cs-lbnp\"> </a></td><td>Lower Body Negative Pressure</td><td>Application of sub-atmospheric pressure to the lower body to counteract cephalad fluid shift</td></tr><tr><td style=\"white-space:nowrap\">venous-flow-monitoring<a name=\"microgravity-countermeasure-cs-venous-flow-monitoring\"> </a></td><td>Venous Flow Monitoring</td><td>Ultrasound-based monitoring of venous flow dynamics including IJV assessment</td></tr><tr><td style=\"white-space:nowrap\">fluid-shift-mitigation<a name=\"microgravity-countermeasure-cs-fluid-shift-mitigation\"> </a></td><td>Fluid Shift Mitigation</td><td>Interventions to reduce headward fluid redistribution in microgravity</td></tr><tr><td style=\"white-space:nowrap\">anti-sans-protocol<a name=\"microgravity-countermeasure-cs-anti-sans-protocol\"> </a></td><td>Anti-SANS Protocol</td><td>Protocol designed to reduce risk of Spaceflight-Associated Neuro-Ocular Syndrome</td></tr><tr><td style=\"white-space:nowrap\">venous-thrombosis-prevention<a name=\"microgravity-countermeasure-cs-venous-thrombosis-prevention\"> </a></td><td>Venous Thrombosis Prevention</td><td>Measures to prevent venous stasis and thrombosis during spaceflight</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "MicrogravityCountermeasureCS"] ; # 
+  fhir:title [ fhir:v "Microgravity Countermeasure Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Countermeasure interventions for microgravity-induced cardiovascular and fluid shift effects"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "lbnp" ] ;
+     fhir:display [ fhir:v "Lower Body Negative Pressure" ] ;
+     fhir:definition [ fhir:v "Application of sub-atmospheric pressure to the lower body to counteract cephalad fluid shift" ]
+  ] [
+     fhir:code [ fhir:v "venous-flow-monitoring" ] ;
+     fhir:display [ fhir:v "Venous Flow Monitoring" ] ;
+     fhir:definition [ fhir:v "Ultrasound-based monitoring of venous flow dynamics including IJV assessment" ]
+  ] [
+     fhir:code [ fhir:v "fluid-shift-mitigation" ] ;
+     fhir:display [ fhir:v "Fluid Shift Mitigation" ] ;
+     fhir:definition [ fhir:v "Interventions to reduce headward fluid redistribution in microgravity" ]
+  ] [
+     fhir:code [ fhir:v "anti-sans-protocol" ] ;
+     fhir:display [ fhir:v "Anti-SANS Protocol" ] ;
+     fhir:definition [ fhir:v "Protocol designed to reduce risk of Spaceflight-Associated Neuro-Ocular Syndrome" ]
+  ] [
+     fhir:code [ fhir:v "venous-thrombosis-prevention" ] ;
+     fhir:display [ fhir:v "Venous Thrombosis Prevention" ] ;
+     fhir:definition [ fhir:v "Measures to prevent venous stasis and thrombosis during spaceflight" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Patient - James Kirk - v0.5.12
+# Patient - James Kirk - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

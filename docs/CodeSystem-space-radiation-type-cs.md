@@ -1,4 +1,4 @@
-# Space Radiation Type Code System - v0.5.12
+# Space Radiation Type Code System - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:SpaceRadiationTypeCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:SpaceRadiationTypeCS |
 
  
 Types of radiation encountered in space environments 
@@ -28,12 +28,12 @@ Types of radiation encountered in space environments
   "resourceType" : "CodeSystem",
   "id" : "space-radiation-type-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SpaceRadiationTypeCS",
   "title" : "Space Radiation Type Code System",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

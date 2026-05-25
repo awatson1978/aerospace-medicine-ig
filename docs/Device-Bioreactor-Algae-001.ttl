@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Device/Bioreactor-Algae-001> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Bioreactor-Algae-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/bioreactor-device"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/bioreactor-device>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Bioreactor-Algae-001</b></p><a name=\"Bioreactor-Algae-001\"> </a><a name=\"hcBioreactor-Algae-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bioreactor-device.html\">Bioreactor Device</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Techshot Inc.</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>PBR-3000 Photobioreactor #PBR-001</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: PBR-3000</p><p><b>type</b>: <span title=\"Codes:\">Algae Photobioreactor</span></p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:\">Volume</span></p><p><b>valueQuantity</b>: 50 L<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeL = 'L')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:\">Operating Temperature</span></p><p><b>valueQuantity</b>: 25 Cel<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote><p><b>note</b>: </p><blockquote><div><p>Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Techshot Inc."] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "PBR-3000 Photobioreactor #PBR-001" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "PBR-3000"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Algae Photobioreactor" ]
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:text [ fhir:v "Volume" ]
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "50"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "L" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "L" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:text [ fhir:v "Operating Temperature" ]
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "25"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Cel" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "Cel" ]
+     ] )
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

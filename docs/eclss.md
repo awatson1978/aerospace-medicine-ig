@@ -1,4 +1,4 @@
-# Environmental Control and Life Support Systems (ECLSS) - v0.5.12
+# Environmental Control and Life Support Systems (ECLSS) - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **Environmental Control and Life Support Systems (ECLSS)**

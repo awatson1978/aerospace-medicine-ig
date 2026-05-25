@@ -1,4 +1,4 @@
-# References - v0.5.12
+# References - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **References**
@@ -28,6 +28,8 @@
 * [Revisiting National Space Transportation Policy: It's Not Just Rockets Anymore](https://csps.aerospace.org/papers/revisiting-national-space-transportation-policy-its-not-just-rockets-anymore)
 * [SPACE SYSTEMS COMMAND: Command Plan](https://www.ssc.spaceforce.mil/Portals/3/Images/SSC%20Command%20Plan/SSC_Command_Plan_2026.pdf?ver=PEMi920bb15JP64fyNJ2lQ%3D%3D)
 * [NASA Aerospace Safety Advisory Panel Annual Report](https://www.nasa.gov/wp-content/uploads/2024/03/asap-2025-annual-report-tagged.pdf)
+* [Charting the Future of Space: A Collaborative Vision for Innovative Commercial Partnerships and Sustainable Space Exploration](https://journals.sagepub.com/doi/10.1089/space.2024.0041)
+* [How Do Moon Missions Reflect Changes in Science's Social Contract?](https://49197025.hs-sites.com/how-do-moon-missions-reflect-changes-in-sciences-social-contract)
 
 ### Actuarial Analysis
 
@@ -104,6 +106,8 @@
 * [MIT solar-powered dome tree habitats for Mars](https://inhabitat.com/mits-winning-solar-powered-dome-tree-habitats-for-mars-mimic-earthly-forests/)
 * [Biosphere 2](https://biosphere2.org/)
 * [A road map to truly sustainable water systems in space](https://phys.org/news/2026-02-road-sustainable-space.html)
+* [Survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions](https://journals.asm.org/doi/10.1128/aem.02065-25)
+* [Extraterrestrial infrastructures: Review of in-situ materials, envelope solutions, and energy performance of livable Martian and lunar habitats](https://www.sciencedirect.com/science/article/abs/pii/S0094576525006873)
 
 ### Spacesuits
 
@@ -123,6 +127,8 @@
 * [NASA’s next lunar spacesuit is impressive](https://gizmodo.com/nasa-s-next-moonsuit-is-going-to-be-damned-impressive-1845393104)
 * [The bra-maker who won spacesuit work](https://www.fastcompany.com/90375440/the-improbable-story-of-the-bra-maker-who-won-the-right-to-make-astronaut-spacesuits)
 * [Artemis Spacesuits Have 'a Lot of Flexibility Issues,' Per Former Astronaut](https://www.extremetech.com/aerospace/artemis-spacesuits-have-a-lot-of-flexibility-issues-per-former-astronaut)
+* [NASA's Acquisition of Next-Generation Spacesuit Services](https://oig.nasa.gov/audits/nasas-acquisition-of-next-generation-spacesuit-services/)
+* [Prioritization Strategies for Adapting EVA Spacesuit Architectures: Moon to Mars](https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/e/1448/files/2026/05/harwood26a.pdf)
 
 ### Research Programs
 
@@ -137,6 +143,7 @@
 * [TRISH seeking scientist proposals](https://www.bcm.edu/news/trish-seeking-scientist-proposals-to-advance-space-health-research)
 * [ISS National Lab – Areas of Research](https://www.issnationallab.org/research-on-the-iss/areas-of-research/)
 * [Josephine Allen broadens diversity in space health research](https://mse.ufl.edu/b-sure-program-josephine-allen-diversity-space-health-research/)
+* [ISRO signs MoU for space medicine](https://www.newindianexpress.com/states/karnataka/2025/Apr/26/isro-signs-mou-for-space-medicine)
 
 ### Hermes / LunaNet
 
@@ -351,6 +358,7 @@
 * [NASA Ignition - Moon Program Update (video)](https://www.youtube.com/watch?v=zRmCJ7tagGQ)
 * [NASA Ignition: NASA News Conference (video)](https://www.youtube.com/watch?v=LZea4h8zxLY)
 * [NASA Ignition: NASA's Plan for Science and Discovery (video)](https://www.youtube.com/watch?v=BYH6W9iCs2E)
+* [Watchdog: NASA 'Ruled Out' Crew Rescue Capability for Artemis Moon Landing](https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/)
 
 ### Space Technology & Equipment
 
@@ -360,6 +368,7 @@
 * [QUT to keep Australia's first lunar rover on track](https://spaceanddefense.io/qut-to-keep-australias-first-lunar-rover-on-track/)
 * [Yokogawa and Toyota Partner on Control Platform for Lunar Rover Development](https://www.arcweb.com/blog/yokogawa-toyota-partner-control-platform-lunar-rover-development)
 * [Komatsu lunar machine project #2](https://www.youtube.com/watch?v=rZ7WkQkp8sA)
+* [Space Logistics Supply Chain for Interplanetary Missions](https://arc.aiaa.org/doi/epdf/10.2514/6.2024-85933)
 
 ### Commercial Space & Private Missions
 
@@ -412,6 +421,7 @@
 * [Firefly Space Lunar Landing Video](https://x.com/djsnm/status/1896985918663434646?s=61)
 * [Money, shoes, poop, and other highlights from the 796 items we've left on the moon](https://www.popsci.com/trash-items-left-on-moon-apollo-maps/)
 * [NASA Harvests Lettuce for Space Station Study](https://www.nasa.gov/image-article/nasa-harvests-lettuce-for-space-station-study/)
+* [Biomanufacturing for a Lunar base—A sustainable vision for the future](https://www.sciencedirect.com/science/article/pii/S0265964626000196)
 
 ### NASA Programs, Research & Data
 
@@ -430,6 +440,9 @@
 * [NextSTEP-3 B: Moon to Mars Architecture Studies](https://www.nasa.gov/general/nextstep-3-b-moon-to-mars-architecture-studies/)
 * [NASA Bolsters Golden Age of Exploration with Technology Priorities](https://www.nasa.gov/directorates/stmd/nasa-bolsters-golden-age-of-exploration-with-technology-priorities/)
 * [INTERNATIONAL SPACE STATION NATIONAL LABORATORY ANNUAL REPORT FOR FISCAL YEAR 2025](https://issnationallab.org/about/annual-quarterly-reports-metrics/fy25-annual-report/)
+* [Highlighting a science strategy for human exploration of Mars](https://www.pnas.org/doi/10.1073/pnas.2611962123)
+* [NASA Transfers Management of Lunar Science Instruments](https://science.nasa.gov/blogs/science-news/2026/05/18/nasa-transfers-management-of-lunar-science-instruments/)
+* [The Space Omics and Medical Atlas (SOMA) and international astronaut biobank](https://www.nature.com/articles/s41586-024-07639-y)
 
 ### Robotics & Planetary Exploration
 
@@ -442,6 +455,7 @@
 * [Orbital Satellite Distances Visualization](https://x.com/pronounced_kyle/status/1882177709482340396?s=61)
 * [International Space Station Update: Thursday, Jan. 8, 2026](https://www.youtube.com/live/ffcV3jCwwPk)
 * [For the 1st time ever, 8 spacecraft are docked to the International Space Station](https://www.space.com/space-exploration/international-space-station/for-the-1st-time-ever-8-spacecraft-are-docked-to-the-international-space-station)
+* [The astronauts on the ISS see 16 sunrises and 16 sunsets every day](https://spacedaily.com/j-the-astronauts-on-the-international-space-station-see-16-sunrises-and-16-sunsets-every-day-and-the-question-of-when-to-sleep-when-to-pray-and-when-to-celebrate-birthdays-has-caused-genuine-philosoph/)
 
 ### Exercise & Biomechanics
 
@@ -449,6 +463,8 @@
 * [High-Intensity Exercise With Blood Flow Restriction or in Hypoxia as Valuable Spaceflight Countermeasures?](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.01266/full)
 * [Application of Blood Flow Restriction to Optimize Exercise Countermeasures for Human Space Flight](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00033/full)
 * [Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts](https://www.nature.com/articles/s41526-023-00256-5)
+* [Axial loading as a countermeasure to hypogravitational disorders in sensory-motor system](https://www.sciencedirect.com/science/article/pii/S0094576525006769)
+* [Blood flow restriction training in microgravity: a review of multisystem physiological benefits and implementation challenges for long-duration space missions](https://www.nature.com/articles/s41526-025-00515-7)
 
 ### Historical Space Missions & Documents
 
@@ -456,4 +472,5 @@
 * [Proceedings of the Symposium on Manned Planetary Mission 1963](https://ntrs.nasa.gov/api/citations/19640017065/downloads/19640017065.pdf)
 * [Manned Mars Landing Presentation To The Space Task Group](https://newspaceeconomy.ca/wp-content/uploads/2023/08/19690804_manned_mars_landing_presentation_to_the_space_task_group_by_dr._wernher_von_braun.pdf)
 * [Pope Francis and Expedition 53 Crew Exchange Thoughts About Humanity's Deepest and Oldest Questions](https://www.nasa.gov/blogs/spacestation/2017/10/26/pope-francis-and-expedition-53-crew-exchange-thoughts-about-humanitys-deepest-and-oldest-questions/)
+* [Apollo 16 Preliminary Science Report NASA SP-315](https://an.rsl.wustl.edu/apollo/data/a16/station4/srp/docs/soilmechanics_psr.pdf)
 

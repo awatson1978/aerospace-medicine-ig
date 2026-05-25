@@ -1,4 +1,4 @@
-# Space Health Implementation Guide - v0.5.12
+# Space Health Implementation Guide - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **Space Health Implementation Guide**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:SpaceflightHealthSimulationsReferenceDocumentation |
+| *Official URL*:https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:SpaceflightHealthSimulationsReferenceDocumentation |
 
 Welcome to the HL7 FHIR Aerospace Medicine Implementation Guide (IG). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.
 
@@ -103,10 +103,10 @@ Significant portions of this Implementation Guide were developed with the assist
   "resourceType" : "ImplementationGuide",
   "id" : "mitre.fhir.spacehealth",
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -146,7 +146,7 @@ Significant portions of this Implementation Guide were developed with the assist
       ],
       "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
       "packageId" : "hl7.fhir.uv.extensions.r4",
-      "version" : "5.2.0"
+      "version" : "5.3.0"
     },
     {
       "id" : "hl7_fhir_us_core",
@@ -849,6 +849,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DiagnosticReport"
+          }
+        ],
+        "reference" : {
+          "reference" : "DiagnosticReport/CGM-Summary-14Day"
+        },
+        "name" : "14-Day CGM Summary Report",
+        "description" : "14-day CGM summary report for spaceflight metabolic monitoring",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/actigraphy-metric-cs"
+        },
+        "name" : "Actigraphy Metric Code System",
+        "description" : "Metrics derived from wrist actigraphy for sleep-wake monitoring",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/actigraphy-metric-vs"
+        },
+        "name" : "Actigraphy Metric Value Set",
+        "description" : "Actigraphy-derived metrics",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/actigraphy-observation"
+        },
+        "name" : "Actigraphy Observation",
+        "description" : "Wrist actigraphy-derived sleep-wake and activity metrics during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -905,6 +961,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/Biomanufacturing-AlgaeCultivation-001"
+        },
+        "name" : "Algae Cultivation Procedure",
+        "description" : "Chlorella vulgaris cultivation cycle in ISS photobioreactor",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/biomanufacturing-procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/Bioreactor-Algae-001"
+        },
+        "name" : "Algae Photobioreactor",
+        "description" : "Closed-loop algae photobioreactor for O2 production and CO2 fixation",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bioreactor-device"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -933,6 +1017,146 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/antiemetic-care-plan"
+        },
+        "name" : "Antiemetic Care Plan",
+        "description" : "Care plan for antiemetic prophylaxis and rescue protocols across mission phases",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/antiemetic-medication"
+        },
+        "name" : "Antiemetic Medication",
+        "description" : "Antiemetic medications used for space motion sickness prophylaxis and treatment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/antiemetic-administration"
+        },
+        "name" : "Antiemetic Medication Administration",
+        "description" : "Record of antiemetic medication administration during space missions",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/antiemetic-medication-cs"
+        },
+        "name" : "Antiemetic Medication Code System",
+        "description" : "Antiemetic medications used for space motion sickness prophylaxis and treatment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/antiemetic-medication-vs"
+        },
+        "name" : "Antiemetic Medication Value Set",
+        "description" : "Antiemetic medications for spaceflight use",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/antiemetic-protocol-cs"
+        },
+        "name" : "Antiemetic Protocol Code System",
+        "description" : "Protocols for antiemetic administration in spaceflight contexts",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/antiemetic-protocol-vs"
+        },
+        "name" : "Antiemetic Protocol Value Set",
+        "description" : "Antiemetic administration protocols",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/antioxidant-biomarker-cs"
+        },
+        "name" : "Antioxidant Biomarker Code System",
+        "description" : "Biomarkers of oxidative stress and antioxidant status",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/antioxidant-biomarker-panel"
+        },
+        "name" : "Antioxidant Biomarker Panel",
+        "description" : "Panel of oxidative stress and antioxidant status biomarkers for monitoring radioprotective countermeasure efficacy",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/antioxidant-biomarker-vs"
+        },
+        "name" : "Antioxidant Biomarker Value Set",
+        "description" : "Oxidative stress and antioxidant biomarkers",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -942,6 +1166,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Aquarius Underwater Laboratory",
         "description" : "NOAA's Aquarius underwater research station used for NEEMO missions",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/ARCHeR-Actigraphy-FD5"
+        },
+        "name" : "ARCHeR Actigraphy - Flight Day 5",
+        "description" : "Actigraphy data from ARCHeR investigation on flight day 5 showing circadian adaptation",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/archer-actigraphy-observation"
+        },
+        "name" : "ARCHeR Actigraphy Observation",
+        "description" : "Actigraphy observation from the Actigraphy for Circadian Health during Exploration Research (ARCHeR) investigation",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1082,6 +1334,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Artemis III Mission Plan",
         "description" : "Complete mission plan for Artemis III including phases, timelines, and EVA schedules",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SupplyDelivery"
+          }
+        ],
+        "reference" : {
+          "reference" : "SupplyDelivery/ArtemisIII-SuitProvisioning-001"
+        },
+        "name" : "Artemis III Suit Provisioning",
+        "description" : "EVA suit provisioning record for Artemis III lunar landing mission",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-suit-provisioning-record"
       },
       {
         "extension" : [
@@ -1273,6 +1539,20 @@ Significant portions of this Implementation Guide were developed with the assist
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/avatar-organ-chip"
+        },
+        "name" : "AVATAR Organ-on-Chip Device",
+        "description" : "Organ-on-chip (microphysiological system) device from the AVATAR investigation for tissue-chip-based monitoring in spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/average-blood-pressure"
         },
         "name" : "Average Blood Pressure",
@@ -1367,6 +1647,258 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bfrt-activity-definition"
+        },
+        "name" : "BFRT Activity Definition",
+        "description" : "Prescribed BFRT protocol defining exercise parameters, occlusion pressure targets, and sex-specific adaptations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bfrt-care-plan"
+        },
+        "name" : "BFRT Care Plan",
+        "description" : "Care plan for blood flow restriction training addressing bone loss and muscle atrophy countermeasures",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bfrt-device"
+        },
+        "name" : "BFRT Device",
+        "description" : "Blood flow restriction training occlusion cuff device",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/bfrt-device-type-cs"
+        },
+        "name" : "BFRT Device Type Code System",
+        "description" : "Types of blood flow restriction devices",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/bfrt-device-type-vs"
+        },
+        "name" : "BFRT Device Type Value Set",
+        "description" : "BFRT device types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/bfrt-outcome-cs"
+        },
+        "name" : "BFRT Outcome Code System",
+        "description" : "Outcome measures for blood flow restriction training effectiveness",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bfrt-outcome-observation"
+        },
+        "name" : "BFRT Outcome Observation",
+        "description" : "Outcome measurements from blood flow restriction training including musculoskeletal and bone biomarkers",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/bfrt-outcome-vs"
+        },
+        "name" : "BFRT Outcome Value Set",
+        "description" : "BFRT outcome measures",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/BFRT-Pneumatic-Cuff-001"
+        },
+        "name" : "BFRT Pneumatic Cuff Device",
+        "description" : "Pneumatic occlusion cuff for blood flow restriction training on ISS",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-device"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bfrt-procedure"
+        },
+        "name" : "BFRT Procedure",
+        "description" : "Blood flow restriction training session performed in microgravity or partial gravity",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/bfrt-protocol-cs"
+        },
+        "name" : "BFRT Protocol Code System",
+        "description" : "Blood flow restriction training protocol types for microgravity exercise countermeasures",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/bfrt-protocol-vs"
+        },
+        "name" : "BFRT Protocol Value Set",
+        "description" : "Blood flow restriction training protocol types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/biobank-location"
+        },
+        "name" : "Biobank Location",
+        "description" : "Storage location details for astronaut biobank specimens",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/biological-feedstock"
+        },
+        "name" : "Biological Feedstock",
+        "description" : "Biological feedstock or bioproduct used in or produced by biomanufacturing processes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/biomanufacturing-procedure"
+        },
+        "name" : "Biomanufacturing Procedure",
+        "description" : "Biomanufacturing process execution for ISRU or life support production",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/biomanufacturing-process-cs"
+        },
+        "name" : "Biomanufacturing Process Code System",
+        "description" : "Biomanufacturing processes for in-situ resource utilization and life support",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/biomanufacturing-process-vs"
+        },
+        "name" : "Biomanufacturing Process Value Set",
+        "description" : "Biomanufacturing process types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bioreactor-device"
+        },
+        "name" : "Bioreactor Device",
+        "description" : "Bioreactor device for in-situ biomanufacturing including photobioreactors and fermentation vessels",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -1376,6 +1908,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Biosphere 2 Undersea Habitat",
         "description" : "University of Arizona Biosphere 2 analog training facility",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/BLiSS-O2-Production-001"
+        },
+        "name" : "BLiSS O2 Production Output",
+        "description" : "Daily O2 production observation from algae photobioreactor",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/bliss-output-cs"
+        },
+        "name" : "BLiSS Output Code System",
+        "description" : "Bioregenerative Life Support System (BLiSS) output types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/bliss-output-vs"
+        },
+        "name" : "BLiSS Output Value Set",
+        "description" : "Bioregenerative life support output types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bliss-resource-output"
+        },
+        "name" : "BLiSS Resource Output",
+        "description" : "Observation of bioregenerative life support system resource output quantities and rates",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1465,6 +2053,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Body-Temp-FD30-Morning"
+        },
+        "name" : "Body Temperature - Flight Day 30 Morning",
+        "description" : "Oral body temperature measurement on flight day 30 during morning circadian nadir",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1488,6 +2090,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Boeing Starliner Calypso",
         "description" : "Boeing CST-100 Starliner spacecraft",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/bone-density-site-vs"
+        },
+        "name" : "Bone Density Measurement Site Value Set",
+        "description" : "Anatomical sites for BMD measurement",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/bone-density-method-cs"
+        },
+        "name" : "Bone Density Method Code System",
+        "description" : "Methods for bone mineral density measurement in spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/bone-density-method-vs"
+        },
+        "name" : "Bone Density Method Value Set",
+        "description" : "Methods for BMD measurement",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/bone-density-observation"
+        },
+        "name" : "Bone Density Observation",
+        "description" : "Bone mineral density measurement during spaceflight with method, site, and T/Z-score components",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1535,6 +2193,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/Butterfly-iQ3-001"
+        },
+        "name" : "Butterfly iQ3 Ultrasound",
+        "description" : "Butterfly iQ3 point-of-care ultrasound for IJV cross-sectional area and flow assessment",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/ultrasound-monitoring-device"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1577,6 +2249,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/cardiac-monitoring-cs"
+        },
+        "name" : "Cardiac Monitoring Code System",
+        "description" : "Cardiac monitoring parameters for spaceflight ECG assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/cardiac-monitoring-vs"
+        },
+        "name" : "Cardiac Monitoring Value Set",
+        "description" : "Cardiac monitoring parameters",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1585,6 +2285,62 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Cardiovascular Fitness Assessment",
         "description" : "Assessment of cardiovascular fitness for diving",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/cgm-device-type-cs"
+        },
+        "name" : "CGM Device Type Code System",
+        "description" : "Types of continuous glucose monitoring devices",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/cgm-device-type-vs"
+        },
+        "name" : "CGM Device Type Value Set",
+        "description" : "Types of CGM devices",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/CGM-Reading-FD15"
+        },
+        "name" : "CGM Glucose Reading - Flight Day 15",
+        "description" : "Single CGM glucose reading on flight day 15 with summary metrics",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-observation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/cgm-metrics-vs"
+        },
+        "name" : "CGM Metrics Value Set",
+        "description" : "Standardized CGM metrics",
         "exampleBoolean" : false
       },
       {
@@ -1600,6 +2356,90 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "CHESA Undersea Laboratory",
         "description" : "Commercial underwater training facility",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/circadian-phase"
+        },
+        "name" : "Circadian Phase",
+        "description" : "Circadian rhythm phase at the time of observation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/circadian-phase-cs"
+        },
+        "name" : "Circadian Phase Code System",
+        "description" : "Circadian rhythm phases for contextualizing temperature and physiological measurements",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/circadian-phase-vs"
+        },
+        "name" : "Circadian Phase Value Set",
+        "description" : "Circadian rhythm phases",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/circadian-rhythm-assessment"
+        },
+        "name" : "Circadian Rhythm Assessment",
+        "description" : "Assessment of circadian rhythm parameters during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/circadian-assessment-cs"
+        },
+        "name" : "Circadian Rhythm Assessment Code System",
+        "description" : "Parameters for circadian rhythm assessment in spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/circadian-assessment-vs"
+        },
+        "name" : "Circadian Rhythm Assessment Value Set",
+        "description" : "Circadian rhythm assessment parameters",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -1641,6 +2481,20 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Communication Delay",
         "description" : "Earth-Mars light-time delay for data transmission context",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/communication-latency"
+        },
+        "name" : "Communication Latency",
+        "description" : "One-way signal latency for telemedicine encounters, complementing the Mars-specific CommunicationDelay extension with general-purpose latency tracking",
         "exampleBoolean" : false
       },
       {
@@ -1899,6 +2753,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/cgm-metrics-cs"
+        },
+        "name" : "Continuous Glucose Monitoring Metrics Code System",
+        "description" : "Standardized CGM metrics for spaceflight metabolic monitoring",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1997,6 +2865,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/dcs-risk-vs"
+        },
+        "name" : "DCS Risk Value Set",
+        "description" : "DCS risk factors and outcomes",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -2061,6 +2943,34 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Decompression Sickness",
         "description" : "Decompression sickness occurring during diving or altitude training",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/dcs-risk-assessment"
+        },
+        "name" : "Decompression Sickness Risk Assessment",
+        "description" : "Individual DCS susceptibility assessment for EVA planning",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/dcs-risk-cs"
+        },
+        "name" : "Decompression Sickness Risk Code System",
+        "description" : "Decompression sickness risk factors and outcomes for EVA risk assessment",
         "exampleBoolean" : false
       },
       {
@@ -2389,6 +3299,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/CGM-Dexcom-G7-001"
+        },
+        "name" : "Dexcom G7 CGM Device",
+        "description" : "Dexcom G7 continuous glucose monitor used during ISS expedition",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-device"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/Sterilization-DHMR-001"
+        },
+        "name" : "DHMR Sterilization at 125C/50hr",
+        "description" : "Dry heat microbial reduction sterilization of Mars lander component at 125°C for 50 hours",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -2529,6 +3467,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Specimen"
+          }
+        ],
+        "reference" : {
+          "reference" : "Specimen/DBS-Specimen-001"
+        },
+        "name" : "Dried Blood Spot Specimen with Biobank Metadata",
+        "description" : "Dried blood spot specimen collected in-flight and stored in astronaut biobank",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -2571,6 +3523,48 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/emergency-care-plan"
+        },
+        "name" : "Emergency Care Plan",
+        "description" : "Evacuation and contingency plan addressing spaceflight emergency conditions",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/Emergency-DragonReturn-001"
+        },
+        "name" : "Emergency Dragon Return",
+        "description" : "Emergency return to Earth via Crew Dragon following depressurization event",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-evacuation-procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/emergency-evacuation-procedure"
+        },
+        "name" : "Emergency Evacuation Procedure",
+        "description" : "Emergency evacuation or abort action performed during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -2599,6 +3593,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/emergency-response-cs"
+        },
+        "name" : "Emergency Response Code System",
+        "description" : "Emergency response and evacuation options for spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -2607,6 +3615,34 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Emergency Response Time",
         "description" : "Time from emergency recognition to response initiation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/emergency-response-vs"
+        },
+        "name" : "Emergency Response Value Set",
+        "description" : "Emergency response and evacuation options",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/emergency-risk-assessment"
+        },
+        "name" : "Emergency Risk Assessment",
+        "description" : "Probability prediction for spaceflight emergency types to support contingency planning",
         "exampleBoolean" : false
       },
       {
@@ -2767,6 +3803,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/eva-suit-provisioning-record"
+        },
+        "name" : "EVA Suit Provisioning Record",
+        "description" : "Logistics record for EVA suit provisioning, delivery, and positioning",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/eva-suit-state-cs"
+        },
+        "name" : "EVA Suit State Code System",
+        "description" : "Operational states of EVA suit systems",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/eva-suit-state-vs"
+        },
+        "name" : "EVA Suit State Value Set",
+        "description" : "EVA suit operational states",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/evidence-source"
+        },
+        "name" : "Evidence Source",
+        "description" : "Links clinical data to research evidence sources such as SHARED database entries or PubMed references",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -2865,6 +3957,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/expanded-specimen-type-cs"
+        },
+        "name" : "Expanded Specimen Type Code System",
+        "description" : "Specimen types for astronaut biobank and multi-omics analysis",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/expanded-specimen-type-vs"
+        },
+        "name" : "Expanded Specimen Type Value Set",
+        "description" : "Specimen types for astronaut biobank",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -2893,6 +4013,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/FDI-Components-001"
+        },
+        "name" : "FDI Observation with All Components",
+        "description" : "Flow Directionality Index observation with all five component measurements",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -2901,6 +4035,34 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Fitness Assessment Results",
         "description" : "Value set for fitness test termination criteria and outcomes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/flight-day"
+        },
+        "name" : "Flight Day",
+        "description" : "Flight day number relative to launch. Positive values indicate flight days (FD+N), negative values indicate return days (R+N)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/flow-directionality-index-observation"
+        },
+        "name" : "Flow Directionality Index Observation",
+        "description" : "FDI calculation with component times: FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total). Range [-1, 1].",
         "exampleBoolean" : false
       },
       {
@@ -2943,6 +4105,76 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Gimbal Screening",
         "description" : "Screening protocol for Multi Axis Gimbal training device.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/gravity-context"
+        },
+        "name" : "Gravity Context",
+        "description" : "Gravitational environment in which the observation, condition, or procedure occurred",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/gravity-context-cs"
+        },
+        "name" : "Gravity Context Code System",
+        "description" : "Gravitational environment contexts for observations and procedures",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/gravity-context-vs"
+        },
+        "name" : "Gravity Context Value Set",
+        "description" : "Gravitational environments for clinical context",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/graybiel-severity-cs"
+        },
+        "name" : "Graybiel Motion Sickness Severity Scale",
+        "description" : "Modified Graybiel scale for grading motion sickness severity in spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/graybiel-severity-vs"
+        },
+        "name" : "Graybiel Motion Sickness Severity Value Set",
+        "description" : "Graybiel severity grades for motion sickness",
         "exampleBoolean" : false
       },
       {
@@ -3257,6 +4489,104 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/IJV-Flow-During-LBNP-001"
+        },
+        "name" : "IJV Flow During LBNP (FDI = 0.85)",
+        "description" : "Internal jugular vein flow observation with FDI of 0.85 during LBNP at -30 mmHg",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-flow-observation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/ijv-flow-grade-cs"
+        },
+        "name" : "IJV Flow Grade Code System",
+        "description" : "Internal jugular vein flow grading system based on spectral pulse-wave Doppler assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/ijv-flow-grade-vs"
+        },
+        "name" : "IJV Flow Grade Value Set",
+        "description" : "Internal jugular vein flow grades",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/immune-biomarker-cs"
+        },
+        "name" : "Immune Biomarker Code System",
+        "description" : "Immune function biomarkers monitored during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/immune-biomarker-panel"
+        },
+        "name" : "Immune Biomarker Panel",
+        "description" : "Panel of immune function biomarkers for monitoring spaceflight-associated immune dysregulation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Immune-Panel-PreFlight"
+        },
+        "name" : "Immune Biomarker Panel - Pre-flight Baseline",
+        "description" : "Pre-flight baseline immune biomarker panel for Artemis II crew member",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/immune-biomarker-panel"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/immune-biomarker-vs"
+        },
+        "name" : "Immune Biomarker Value Set",
+        "description" : "Immune function biomarkers",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Contract"
           }
         ],
@@ -3280,6 +4610,48 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Insurance - Plan",
         "description" : "Space tourist insurance plan.",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/internal-jugular-vein-area-observation"
+        },
+        "name" : "Internal Jugular Vein Area Observation",
+        "description" : "IJV cross-sectional area measured by ultrasound at end-diastole",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/internal-jugular-vein-flow-observation"
+        },
+        "name" : "Internal Jugular Vein Flow Observation",
+        "description" : "IJV flow grade and Flow Directionality Index assessment via spectral pulse-wave Doppler",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/internal-jugular-vein-pressure-observation"
+        },
+        "name" : "Internal Jugular Vein Pressure Observation",
+        "description" : "IJV pressure measurement using ultrasound vessel wall near-closure method",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -3551,6 +4923,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CarePlan"
+          }
+        ],
+        "reference" : {
+          "reference" : "CarePlan/ISS-Emergency-Plan-001"
+        },
+        "name" : "ISS Emergency Contingency Plan",
+        "description" : "ISS crew contingency plan covering depressurization, fire, and toxic atmosphere scenarios",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-care-plan"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Observation"
           }
         ],
@@ -3658,6 +5044,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "ISS Mood Assessment - Mission Week 12",
         "description" : "Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period.",
         "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/SuitRedundancy-Assessment-001"
+        },
+        "name" : "ISS Suit Redundancy Assessment",
+        "description" : "Quarterly redundancy assessment for ISS EVA suit inventory",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment"
       },
       {
         "extension" : [
@@ -3803,6 +5203,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/joint-assessment-cs"
+        },
+        "name" : "Joint Assessment Code System",
+        "description" : "Parameters for ultrasound-based joint health assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -3812,6 +5226,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Kennedy Space Center Medical Facility",
         "description" : "KSC astronaut medical support facility",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/LBNP-Chamber-001"
+        },
+        "name" : "LBNP Chamber Device",
+        "description" : "Lower body negative pressure chamber with -50 mmHg capability for parabolic flight campaign",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-countermeasure-system"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/lbnp-countermeasure-system"
+        },
+        "name" : "LBNP Countermeasure System",
+        "description" : "Lower Body Negative Pressure device with configurable pressure range",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/lbnp-pressure-level"
+        },
+        "name" : "LBNP Pressure Level",
+        "description" : "Applied lower body negative pressure level in mmHg (negative values: -10 to -50 mmHg)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/LBNP-Session-Microgravity-001"
+        },
+        "name" : "LBNP Session at -30 mmHg During Microgravity",
+        "description" : "LBNP procedure at -30 mmHg during microgravity phase of 87th ESA Parabolic Flight Campaign",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure"
       },
       {
         "extension" : [
@@ -4237,6 +5707,48 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ActivityDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "ActivityDefinition/BFRT-Protocol-LowLoad-001"
+        },
+        "name" : "Low-Load BFRT Protocol",
+        "description" : "Prescribed low-load BFRT protocol for lower extremity countermeasures",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-activity-definition"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Procedure"
+          }
+        ],
+        "reference" : {
+          "reference" : "Procedure/BFRT-LowerBody-Session-001"
+        },
+        "name" : "Lower Body BFRT Session",
+        "description" : "Lower-body BFRT session at 30% 1RM with 80 mmHg occlusion pressure",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-procedure"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/lower-body-negative-pressure-procedure"
+        },
+        "name" : "Lower Body Negative Pressure Procedure",
+        "description" : "LBNP session applying sub-atmospheric pressure to the lower body as a countermeasure for cephalad fluid shift",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -4316,6 +5828,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Lunar South Pole Base",
         "description" : "Permanent lunar base near the South Pole",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Device"
+          }
+        ],
+        "reference" : {
+          "reference" : "Device/Telemedicine-LunarTerminal-001"
+        },
+        "name" : "Lunar Telemedicine Terminal",
+        "description" : "Integrated telemedicine terminal for Artemis lunar surface operations",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device"
       },
       {
         "extension" : [
@@ -4470,6 +5996,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Mars Extravehicular Activity Procedure",
         "description" : "Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "RiskAssessment"
+          }
+        ],
+        "reference" : {
+          "reference" : "RiskAssessment/ContaminationRisk-MarsLander-001"
+        },
+        "name" : "Mars Lander Contamination Risk",
+        "description" : "Forward contamination risk assessment for Mars lander mission",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-risk"
       },
       {
         "extension" : [
@@ -4965,6 +6505,118 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Metabolomics-Observation-001"
+        },
+        "name" : "Metabolomics Observation",
+        "description" : "Untargeted metabolomics analysis of dried blood spot from ISS crew member",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/microbial-contaminant-type-cs"
+        },
+        "name" : "Microbial Contaminant Type Code System",
+        "description" : "Types of microbial contamination relevant to planetary protection",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/microbial-contaminant-type-vs"
+        },
+        "name" : "Microbial Contaminant Type Value Set",
+        "description" : "Types of microbial contamination",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/microbial-contamination-condition"
+        },
+        "name" : "Microbial Contamination Condition",
+        "description" : "Diagnosis of microbial contamination on spacecraft surfaces or equipment with planetary protection classification",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/microbial-contamination-risk"
+        },
+        "name" : "Microbial Contamination Risk",
+        "description" : "Forward contamination risk prediction for planetary protection compliance",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/microbial-viability-assay"
+        },
+        "name" : "Microbial Viability Assay",
+        "description" : "Microbial viability assay measuring colony-forming units or most probable number on spacecraft surfaces",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/microgravity-countermeasure-cs"
+        },
+        "name" : "Microgravity Countermeasure Code System",
+        "description" : "Countermeasure interventions for microgravity-induced cardiovascular and fluid shift effects",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/microgravity-countermeasure-vs"
+        },
+        "name" : "Microgravity Countermeasure Value Set",
+        "description" : "Countermeasure interventions for microgravity cardiovascular effects",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -4972,7 +6624,7 @@ Significant portions of this Implementation Guide were developed with the assist
           "reference" : "StructureDefinition/mission-context"
         },
         "name" : "Mission Context",
-        "description" : "Links radiation exposure to specific space missions",
+        "description" : "Links clinical observations and events to specific space missions",
         "exampleBoolean" : false
       },
       {
@@ -4987,6 +6639,48 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Mission Context for Diagnostic Reports",
         "description" : "Links diagnostic reports to specific space missions",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/mission-phase"
+        },
+        "name" : "Mission Phase",
+        "description" : "Phase of the space mission during which the clinical event occurred",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/mission-phase-cs"
+        },
+        "name" : "Mission Phase Code System",
+        "description" : "Phases of a space mission for temporal context of clinical observations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/mission-phase-vs"
+        },
+        "name" : "Mission Phase Value Set",
+        "description" : "Phases of a space mission",
         "exampleBoolean" : false
       },
       {
@@ -5337,6 +7031,20 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "MRID Sponsor",
         "description" : "The NASA organizational sponsor responsible for the medical requirement",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/multi-omics-observation"
+        },
+        "name" : "Multi-Omics Observation",
+        "description" : "Multi-omics analysis observation from astronaut molecular profiling",
         "exampleBoolean" : false
       },
       {
@@ -5707,6 +7415,48 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/nasa-standard-measures-cs"
+        },
+        "name" : "NASA Spaceflight Standard Measures Code System",
+        "description" : "Standardized assessments from the NASA Spaceflight Standard Measures program",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/standard-measures-observation"
+        },
+        "name" : "NASA Standard Measures Observation",
+        "description" : "Standardized assessment from the NASA Spaceflight Standard Measures program for pre/in/post-flight comparison",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/nasa-standard-measures-vs"
+        },
+        "name" : "NASA Standard Measures Value Set",
+        "description" : "NASA Spaceflight Standard Measures assessments",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -5842,6 +7592,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Observation - Orbital Elements",
         "description" : "Observation - Orbital Elements",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/occlusion-pressure"
+        },
+        "name" : "Occlusion Pressure",
+        "description" : "Applied limb occlusion pressure during blood flow restriction training",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/omics-risk-assessment"
+        },
+        "name" : "Omics Risk Assessment",
+        "description" : "Personalized risk assessment derived from multi-omics molecular profiles",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -6071,6 +7849,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/organ-chip-type-cs"
+        },
+        "name" : "Organ-on-Chip Type Code System",
+        "description" : "Types of organ-on-chip (microphysiological systems) used in the AVATAR investigation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/organ-chip-type-vs"
+        },
+        "name" : "Organ-on-Chip Type Value Set",
+        "description" : "Types of organ-on-chip devices",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -6121,6 +7927,48 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Oxygen Saturation in Arterial blood, method not specified",
         "description" : "A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/parabolic-flight-exposure"
+        },
+        "name" : "Parabolic Flight Exposure",
+        "description" : "Parabolic flight session providing brief microgravity exposure for research",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/parabolic-flight-phase-cs"
+        },
+        "name" : "Parabolic Flight Phase Code System",
+        "description" : "Phases of a parabolic flight maneuver used in microgravity research",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/parabolic-flight-phase-vs"
+        },
+        "name" : "Parabolic Flight Phase Value Set",
+        "description" : "Phases of a parabolic flight maneuver",
         "exampleBoolean" : false
       },
       {
@@ -6267,6 +8115,76 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/personalized-countermeasure-plan"
+        },
+        "name" : "Personalized Countermeasure Plan",
+        "description" : "Individualized countermeasure plan informed by multi-omics data for spaceflight health optimization",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CarePlan"
+          }
+        ],
+        "reference" : {
+          "reference" : "CarePlan/PersonalizedPlan-001"
+        },
+        "name" : "Personalized Countermeasure Plan",
+        "description" : "Individualized countermeasure plan based on metabolomics and genomics data",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/personalized-countermeasure-plan"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/planetary-protection-category"
+        },
+        "name" : "Planetary Protection Category",
+        "description" : "COSPAR planetary protection category applicable to the procedure, device, or observation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/planetary-protection-category-cs"
+        },
+        "name" : "Planetary Protection Category Code System",
+        "description" : "COSPAR planetary protection categories for mission classification",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/planetary-protection-category-vs"
+        },
+        "name" : "Planetary Protection Category Value Set",
+        "description" : "COSPAR planetary protection categories",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Procedure"
           }
         ],
@@ -6351,6 +8269,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "MedicationAdministration"
+          }
+        ],
+        "reference" : {
+          "reference" : "MedicationAdministration/Promethazine-IM-Rescue"
+        },
+        "name" : "Promethazine IM Rescue Dose",
+        "description" : "Intramuscular promethazine 25mg for acute SMS rescue on flight day 2",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-administration"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -6388,6 +8320,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Pulmonary Function Assessment",
         "description" : "Assessment of respiratory function for diving",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/BFRT-Quadriceps-CSA-001"
+        },
+        "name" : "Quadriceps CSA Outcome",
+        "description" : "Quadriceps cross-sectional area measurement after 8 weeks of BFRT",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation"
       },
       {
         "extension" : [
@@ -6505,6 +8451,76 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/radioprotective-medication"
+        },
+        "name" : "Radioprotective Medication",
+        "description" : "Radioprotective and antioxidant medications used as countermeasures against space radiation",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/radioprotective-administration"
+        },
+        "name" : "Radioprotective Medication Administration",
+        "description" : "Administration of radioprotective medication during space missions, typically timed relative to radiation exposure",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/radioprotective-medication-cs"
+        },
+        "name" : "Radioprotective Medication Code System",
+        "description" : "Radioprotective and antioxidant medications for space radiation countermeasures",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/radioprotective-medication-vs"
+        },
+        "name" : "Radioprotective Medication Value Set",
+        "description" : "Radioprotective medications for spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/Emergency-RapidDepress-001"
+        },
+        "name" : "Rapid Depressurization Event",
+        "description" : "Rapid depressurization event on ISS requiring emergency response",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -6556,6 +8572,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Rehydration Requirement",
         "description" : "Amount of water required to prepare space food",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ServiceRequest"
+          }
+        ],
+        "reference" : {
+          "reference" : "ServiceRequest/Telemedicine-POCUS-Request-001"
+        },
+        "name" : "Remote-Guided POCUS Request",
+        "description" : "Request for remote-guided point-of-care ultrasound from ISS CMO to ground radiologist",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-consult-request"
       },
       {
         "extension" : [
@@ -6701,6 +8731,48 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/sans-assessment"
+        },
+        "name" : "SANS Assessment",
+        "description" : "Spaceflight-Associated Neuro-ocular Syndrome assessment including OCT, OCT-A, and clinical findings",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/sans-assessment-cs"
+        },
+        "name" : "SANS Assessment Code System",
+        "description" : "Parameters for Spaceflight-Associated Neuro-ocular Syndrome assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/sans-assessment-vs"
+        },
+        "name" : "SANS Assessment Value Set",
+        "description" : "SANS assessment parameters",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Device"
           }
         ],
@@ -6710,6 +8782,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "SCUBA Diving Equipment",
         "description" : "Self-contained underwater breathing apparatus",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/sex-specific-protocol"
+        },
+        "name" : "Sex-Specific Protocol",
+        "description" : "Indicates sex-specific adaptations to the BFRT protocol based on known differences in vascular and musculoskeletal response",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -6757,6 +8843,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/sleep-architecture-cs"
+        },
+        "name" : "Sleep Architecture Code System",
+        "description" : "Sleep architecture parameters measured during spaceflight sleep studies",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/sleep-architecture-vs"
+        },
+        "name" : "Sleep Architecture Value Set",
+        "description" : "Sleep architecture parameters",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -6785,6 +8899,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CarePlan"
+          }
+        ],
+        "reference" : {
+          "reference" : "CarePlan/SMS-Prophylaxis-Protocol"
+        },
+        "name" : "SMS Prophylaxis Protocol",
+        "description" : "Antiemetic care plan for SMS prophylaxis covering pre-flight through post-flight phases",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-care-plan"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -6794,6 +8922,132 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Soyuz MS Spacecraft",
         "description" : "Russian Soyuz MS crew vehicle",
         "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-adverse-event"
+        },
+        "name" : "Space Adverse Event",
+        "description" : "Adverse events from medications or procedures during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-adverse-event-cs"
+        },
+        "name" : "Space Adverse Event Code System",
+        "description" : "Adverse events associated with antiemetic and countermeasure medications in spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-adverse-event-vs"
+        },
+        "name" : "Space Adverse Event Value Set",
+        "description" : "Adverse events from spaceflight medications",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-anemia-cs"
+        },
+        "name" : "Space Anemia Code System",
+        "description" : "Parameters for spaceflight-associated anemia assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-anemia-vs"
+        },
+        "name" : "Space Anemia Value Set",
+        "description" : "Spaceflight anemia assessment parameters",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-blood-product"
+        },
+        "name" : "Space Blood Product",
+        "description" : "Blood products adapted for spaceflight including lyophilized RBCs and freeze-dried plasma",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-blood-product-cs"
+        },
+        "name" : "Space Blood Product Code System",
+        "description" : "Blood products adapted for spaceflight and austere environment use",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-blood-product-vs"
+        },
+        "name" : "Space Blood Product Value Set",
+        "description" : "Blood products for spaceflight use",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-body-temperature"
+        },
+        "name" : "Space Body Temperature Observation",
+        "description" : "Body temperature measurement during spaceflight with method, circadian context, and environmental factors",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -6821,6 +9075,104 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Space Cardiovascular Effects",
         "description" : "CodeSystem for space cardiovascular effects not found in SNOMED CT",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-cgm-device"
+        },
+        "name" : "Space CGM Device",
+        "description" : "Continuous glucose monitoring device used during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-cgm-observation"
+        },
+        "name" : "Space CGM Observation",
+        "description" : "Continuous glucose monitoring observation during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-cgm-summary"
+        },
+        "name" : "Space CGM Summary Report",
+        "description" : "Summary report of CGM data over a reporting period during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-ecg-observation"
+        },
+        "name" : "Space ECG Observation",
+        "description" : "Electrocardiogram observation during spaceflight for cardiac arrhythmia monitoring",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-emergency-condition"
+        },
+        "name" : "Space Emergency Condition",
+        "description" : "Diagnosis of an emergency situation during spaceflight requiring immediate response",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-emergency-type-cs"
+        },
+        "name" : "Space Emergency Type Code System",
+        "description" : "Types of emergency situations during spaceflight operations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-emergency-type-vs"
+        },
+        "name" : "Space Emergency Type Value Set",
+        "description" : "Types of spaceflight emergency situations",
         "exampleBoolean" : false
       },
       {
@@ -7023,6 +9375,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-joint-health-assessment"
+        },
+        "name" : "Space Joint Health Assessment",
+        "description" : "Ultrasound-based joint health assessment during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-molecular-sequence"
+        },
+        "name" : "Space Molecular Sequence",
+        "description" : "Molecular sequence data from astronaut genomic, transcriptomic, or proteomic analysis",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "ValueSet"
           }
         ],
@@ -7045,6 +9425,62 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Space Monitoring Procedures",
         "description" : "CodeSystem for space monitoring procedures not found in SNOMED CT",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-motion-sickness-cs"
+        },
+        "name" : "Space Motion Sickness Code System",
+        "description" : "Types of motion sickness encountered in space travel and related vestibular disorders",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-motion-sickness-condition"
+        },
+        "name" : "Space Motion Sickness Condition",
+        "description" : "Diagnosis and tracking of space motion sickness, terrestrial re-entry motion sickness, and related vestibular disorders",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Condition"
+          }
+        ],
+        "reference" : {
+          "reference" : "Condition/SMS-Episode-FD2"
+        },
+        "name" : "Space Motion Sickness Episode - Flight Day 2",
+        "description" : "Moderate SMS episode on flight day 2 during ISS expedition",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-motion-sickness-vs"
+        },
+        "name" : "Space Motion Sickness Value Set",
+        "description" : "Types of motion sickness in spaceflight",
         "exampleBoolean" : false
       },
       {
@@ -7149,6 +9585,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-omics-type-cs"
+        },
+        "name" : "Space Omics Type Code System",
+        "description" : "Multi-omics analysis types for astronaut molecular profiling",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-omics-type-vs"
+        },
+        "name" : "Space Omics Type Value Set",
+        "description" : "Multi-omics analysis types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -7185,6 +9649,48 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Space Physiological Effects",
         "description" : "CodeSystem for space physiological effects not found in SNOMED CT",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-pocus-type-cs"
+        },
+        "name" : "Space POCUS Type Code System",
+        "description" : "Point-of-care ultrasound examination types for austere spaceflight environments",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-pocus-type-vs"
+        },
+        "name" : "Space POCUS Type Value Set",
+        "description" : "POCUS examination types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-pocus"
+        },
+        "name" : "Space Point-of-Care Ultrasound (POCUS)",
+        "description" : "Point-of-care ultrasound examination in austere spaceflight environments",
         "exampleBoolean" : false
       },
       {
@@ -7331,6 +9837,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-sleep-study"
+        },
+        "name" : "Space Sleep Study Observation",
+        "description" : "Sleep architecture observation during spaceflight including PSG and actigraphy-derived measures",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-specimen-collection"
+        },
+        "name" : "Space Specimen Collection",
+        "description" : "Specimen collected during spaceflight using microgravity-adapted methods",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-specimen-type-cs"
+        },
+        "name" : "Space Specimen Type Code System",
+        "description" : "Specimen types collected during spaceflight with microgravity-adapted methods",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-specimen-type-vs"
+        },
+        "name" : "Space Specimen Type Value Set",
+        "description" : "Specimen types collected during spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -7339,6 +9901,90 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Space Suit Configuration",
         "description" : "Configuration of space suit simulator used in training",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-surgical-procedure"
+        },
+        "name" : "Space Surgical Procedure",
+        "description" : "Surgical procedure adapted for spaceflight austere environments, potentially using 3D-printed instruments",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-surgical-procedure-cs"
+        },
+        "name" : "Space Surgical Procedure Code System",
+        "description" : "Surgical procedures adapted for spaceflight austere environments",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-surgical-procedure-vs"
+        },
+        "name" : "Space Surgical Procedure Value Set",
+        "description" : "Surgical procedures for spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/space-transfusion-procedure"
+        },
+        "name" : "Space Transfusion Procedure",
+        "description" : "Blood transfusion procedure adapted for spaceflight and austere environments",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/space-transfusion-procedure-cs"
+        },
+        "name" : "Space Transfusion Procedure Code System",
+        "description" : "Transfusion procedures adapted for spaceflight and austere environments",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/space-transfusion-procedure-vs"
+        },
+        "name" : "Space Transfusion Procedure Value Set",
+        "description" : "Transfusion procedures for spaceflight",
         "exampleBoolean" : false
       },
       {
@@ -7415,6 +10061,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/spaceflight-anemia-panel"
+        },
+        "name" : "Spaceflight Anemia Panel",
+        "description" : "Panel of hematological markers for spaceflight-associated anemia assessment",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/spaceflight-specimen"
+        },
+        "name" : "Spaceflight Specimen",
+        "description" : "Biological specimen collected during spaceflight using microgravity-adapted methods",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -7457,6 +10131,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/Standard-Measures-Grip-PreFlight"
+        },
+        "name" : "Standard Measures Grip Strength - Pre-flight",
+        "description" : "NASA Standard Measures grip strength assessment at L-30 days",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/standard-measures-observation"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Device"
           }
         ],
@@ -7466,6 +10154,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "Starship HLS for Artemis III",
         "description" : "SpaceX Starship Human Landing System variant for Artemis III lunar landing",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/sterilization-method-cs"
+        },
+        "name" : "Sterilization Method Code System",
+        "description" : "Sterilization methods for planetary protection bioburden reduction",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/sterilization-method-vs"
+        },
+        "name" : "Sterilization Method Value Set",
+        "description" : "Sterilization methods for planetary protection",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/sterilization-procedure"
+        },
+        "name" : "Sterilization Procedure",
+        "description" : "Sterilization procedure for planetary protection bioburden reduction (UV, DHMR, VHP, etc.)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Encounter"
+          }
+        ],
+        "reference" : {
+          "reference" : "Encounter/Telemedicine-StoreForward-001"
+        },
+        "name" : "Store-and-Forward Telemedicine Encounter",
+        "description" : "Store-and-forward dermatology consultation from ISS to ground",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-encounter"
       },
       {
         "extension" : [
@@ -7499,6 +10243,62 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/suit-operational-state"
+        },
+        "name" : "Suit Operational State",
+        "description" : "Current operational configuration state of an EVA suit",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/suit-provisioning-status-cs"
+        },
+        "name" : "Suit Provisioning Status Code System",
+        "description" : "Provisioning and logistics status of EVA suit assets",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/suit-provisioning-status-vs"
+        },
+        "name" : "Suit Provisioning Status Value Set",
+        "description" : "Suit provisioning and logistics status",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/suit-redundancy-assessment"
+        },
+        "name" : "Suit Redundancy Assessment",
+        "description" : "Assessment of EVA suit redundancy status, consumables remaining, and maintenance schedule",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -7513,6 +10313,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Observation"
+          }
+        ],
+        "reference" : {
+          "reference" : "Observation/MicrobialAssay-SurfaceSwab-001"
+        },
+        "name" : "Surface Swab CFU Assay",
+        "description" : "Surface swab colony-forming unit assay of Mars lander deck panel",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/microbial-viability-assay"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -7521,6 +10335,146 @@ Significant portions of this Implementation Guide were developed with the assist
         },
         "name" : "Task Completion Metrics",
         "description" : "Performance metrics for tasks completed during training",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/telemedicine-communication"
+        },
+        "name" : "Telemedicine Communication",
+        "description" : "Telemedicine communication request with clinical data and imaging payloads",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/telemedicine-consult-request"
+        },
+        "name" : "Telemedicine Consult Request",
+        "description" : "Request for telemedicine consultation from crew medical officer to ground specialist",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/telemedicine-device"
+        },
+        "name" : "Telemedicine Device",
+        "description" : "Medical device used for telemedicine in spaceflight operations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/telemedicine-encounter"
+        },
+        "name" : "Telemedicine Encounter",
+        "description" : "Telemedicine encounter between crew and ground medical team",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/telemedicine-equipment-cs"
+        },
+        "name" : "Telemedicine Equipment Code System",
+        "description" : "Medical equipment used for telemedicine in spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/telemedicine-equipment-vs"
+        },
+        "name" : "Telemedicine Equipment Value Set",
+        "description" : "Telemedicine equipment types",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/telemedicine-modality-cs"
+        },
+        "name" : "Telemedicine Modality Code System",
+        "description" : "Telemedicine modalities for spaceflight medical operations",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/telemedicine-modality-vs"
+        },
+        "name" : "Telemedicine Modality Value Set",
+        "description" : "Telemedicine modalities",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/temperature-measurement-method-cs"
+        },
+        "name" : "Temperature Measurement Method Code System",
+        "description" : "Methods of body temperature measurement relevant to spaceflight",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/temperature-measurement-method-vs"
+        },
+        "name" : "Temperature Measurement Method Value Set",
+        "description" : "Methods of body temperature measurement",
         "exampleBoolean" : false
       },
       {
@@ -7656,6 +10610,20 @@ Significant portions of this Implementation Guide were developed with the assist
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/ultrasound-monitoring-device"
+        },
+        "name" : "Ultrasound Monitoring Device",
+        "description" : "Point-of-care ultrasound device for IJV imaging (e.g., Butterfly iQ3)",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/underwater-communication-system"
         },
         "name" : "Underwater Communication System",
@@ -7750,6 +10718,20 @@ Significant portions of this Implementation Guide were developed with the assist
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "AdverseEvent"
+          }
+        ],
+        "reference" : {
+          "reference" : "AdverseEvent/Urinary-Retention-Post-Promethazine"
+        },
+        "name" : "Urinary Retention After Promethazine",
+        "description" : "Urinary retention adverse event 4 hours after promethazine IM administration",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "Location"
           }
         ],
@@ -7829,6 +10811,34 @@ Significant portions of this Implementation Guide were developed with the assist
         "name" : "xEMU EVA Suit #001",
         "description" : "First xEMU suit certified for Artemis III lunar surface EVAs",
         "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DeviceDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "DeviceDefinition/xEVAS-LunarSuit-Def-001"
+        },
+        "name" : "xEVAS Lunar Suit Definition",
+        "description" : "Axiom Space xEVAS suit definition for Artemis lunar surface operations",
+        "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/xevas-suit-definition"
+        },
+        "name" : "xEVAS Suit Definition",
+        "description" : "Definition of an Exploration Extravehicular Activity Suit (xEVAS) including model, capabilities, and operational parameters",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -7942,6 +10952,17 @@ Significant portions of this Implementation Guide were developed with the assist
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "space-agriculture.html"
+            }
+          ],
+          "nameUrl" : "space-agriculture.html",
+          "title" : "Space Agriculture",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
               "valueUrl" : "flight-readiness-pilots.html"
             }
           ],
@@ -8008,11 +11029,22 @@ Significant portions of this Implementation Guide were developed with the assist
           "extension" : [
             {
               "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "neutral-buoyancy.html"
+              "valueUrl" : "scuba-training.html"
             }
           ],
-          "nameUrl" : "neutral-buoyancy.html",
-          "title" : "Neutral Buoyancy Training",
+          "nameUrl" : "scuba-training.html",
+          "title" : "SCUBA Training and Dive Operations",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "hyperbaric-medicine.html"
+            }
+          ],
+          "nameUrl" : "hyperbaric-medicine.html",
+          "title" : "Hyperbaric Medicine",
           "generation" : "markdown"
         },
         {
@@ -8046,6 +11078,138 @@ Significant portions of this Implementation Guide were developed with the assist
           ],
           "nameUrl" : "mentalhealth.html",
           "title" : "Mental Health",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "motion-sickness.html"
+            }
+          ],
+          "nameUrl" : "motion-sickness.html",
+          "title" : "Motion Sickness",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "asma-2026-abstracts.html"
+            }
+          ],
+          "nameUrl" : "asma-2026-abstracts.html",
+          "title" : "AsMA 2026 Abstracts",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "blood-flow-restriction.html"
+            }
+          ],
+          "nameUrl" : "blood-flow-restriction.html",
+          "title" : "Blood Flow Restriction Training",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "crew-rescue.html"
+            }
+          ],
+          "nameUrl" : "crew-rescue.html",
+          "title" : "Crew Rescue",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "space-telemedicine.html"
+            }
+          ],
+          "nameUrl" : "space-telemedicine.html",
+          "title" : "Space Telemedicine",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "space-omics.html"
+            }
+          ],
+          "nameUrl" : "space-omics.html",
+          "title" : "Space Omics",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "planetary-protection.html"
+            }
+          ],
+          "nameUrl" : "planetary-protection.html",
+          "title" : "Planetary Protection",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "eva-systems.html"
+            }
+          ],
+          "nameUrl" : "eva-systems.html",
+          "title" : "EVA Systems",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "biomanufacturing.html"
+            }
+          ],
+          "nameUrl" : "biomanufacturing.html",
+          "title" : "Biomanufacturing",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "cardiovascular-countermeasures.html"
+            }
+          ],
+          "nameUrl" : "cardiovascular-countermeasures.html",
+          "title" : "Cardiovascular Countermeasures",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "metabolic-hibernation.html"
+            }
+          ],
+          "nameUrl" : "metabolic-hibernation.html",
+          "title" : "Metabolic Suppression / Therapeutic Hibernation",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "neurocognitive-monitoring.html"
+            }
+          ],
+          "nameUrl" : "neurocognitive-monitoring.html",
+          "title" : "Neurocognitive Monitoring",
           "generation" : "markdown"
         },
         {

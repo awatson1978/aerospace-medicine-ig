@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="Biomanufacturing-AlgaeCultivation-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/biomanufacturing-procedure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure Biomanufacturing-AlgaeCultivation-001</b></p><a name="Biomanufacturing-AlgaeCultivation-001"> </a><a name="hcBiomanufacturing-AlgaeCultivation-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-biomanufacturing-procedure.html">Biomanufacturing Procedure</a></p></div><p><b>Gravity Context</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs algae-photobioreactor}">Algae Photobioreactor</span></p><p><b>subject</b>: International Space Station - Columbus Module</p><p><b>performed</b>: 2028-05-01 00:00:00+0000 --&gt; 2028-05-15 00:00:00+0000</p><p><b>outcome</b>: <span title="Codes:{http://snomed.info/sct 385669000}">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>14-day cultivation cycle. Harvested 2.1 kg wet biomass, achieving 95% O2 production target.</p>
+</div></blockquote><p><b>usedReference</b>: <a href="Device-Bioreactor-Algae-001.html">Device: status = active; manufacturer = Techshot Inc.; modelNumber = PBR-3000; type = ; note = Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle</a></p></div>
+  </text>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/gravity-context">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"/>
+        <code value="microgravity"/>
+        <display value="Microgravity"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs"/>
+      <code value="algae-photobioreactor"/>
+      <display value="Algae Photobioreactor"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="International Space Station - Columbus Module"/>
+  </subject>
+  <performedPeriod>
+    <start value="2028-05-01T00:00:00Z"/>
+    <end value="2028-05-15T00:00:00Z"/>
+  </performedPeriod>
+  <outcome>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385669000"/>
+      <display value="Successful"/>
+    </coding>
+  </outcome>
+  <note>
+    <text value="14-day cultivation cycle. Harvested 2.1 kg wet biomass, achieving 95% O2 production target."/>
+  </note>
+  <usedReference>
+    <reference value="Device/Bioreactor-Algae-001"/>
+  </usedReference>
+</Procedure>

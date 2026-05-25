@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "planetary-protection-category-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem planetary-protection-category-cs</b></p><a name=\"planetary-protection-category-cs\"> </a><a name=\"hcplanetary-protection-category-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">category-i<a name=\"planetary-protection-category-cs-category-i\"> </a></td><td>Category I</td><td>Missions to target bodies not of direct interest for understanding chemical evolution or origin of life (e.g., undifferentiated metamorphosed asteroids)</td></tr><tr><td style=\"white-space:nowrap\">category-ii<a name=\"planetary-protection-category-cs-category-ii\"> </a></td><td>Category II</td><td>Missions to target bodies of significant interest but low contamination concern (e.g., comets, Jupiter, Saturn)</td></tr><tr><td style=\"white-space:nowrap\">category-iii<a name=\"planetary-protection-category-cs-category-iii\"> </a></td><td>Category III</td><td>Flyby and orbiter missions to target bodies of chemical evolution and/or origin-of-life interest (e.g., Mars, Europa)</td></tr><tr><td style=\"white-space:nowrap\">category-iv<a name=\"planetary-protection-category-cs-category-iv\"> </a></td><td>Category IV</td><td>Lander and probe missions to target bodies of chemical evolution and/or origin-of-life interest</td></tr><tr><td style=\"white-space:nowrap\">category-v<a name=\"planetary-protection-category-cs-category-v\"> </a></td><td>Category V</td><td>All Earth-return missions; subcategories for restricted and unrestricted return</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "PlanetaryProtectionCategoryCS"] ; # 
+  fhir:title [ fhir:v "Planetary Protection Category Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "COSPAR planetary protection categories for mission classification"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "category-i" ] ;
+     fhir:display [ fhir:v "Category I" ] ;
+     fhir:definition [ fhir:v "Missions to target bodies not of direct interest for understanding chemical evolution or origin of life (e.g., undifferentiated metamorphosed asteroids)" ]
+  ] [
+     fhir:code [ fhir:v "category-ii" ] ;
+     fhir:display [ fhir:v "Category II" ] ;
+     fhir:definition [ fhir:v "Missions to target bodies of significant interest but low contamination concern (e.g., comets, Jupiter, Saturn)" ]
+  ] [
+     fhir:code [ fhir:v "category-iii" ] ;
+     fhir:display [ fhir:v "Category III" ] ;
+     fhir:definition [ fhir:v "Flyby and orbiter missions to target bodies of chemical evolution and/or origin-of-life interest (e.g., Mars, Europa)" ]
+  ] [
+     fhir:code [ fhir:v "category-iv" ] ;
+     fhir:display [ fhir:v "Category IV" ] ;
+     fhir:definition [ fhir:v "Lander and probe missions to target bodies of chemical evolution and/or origin-of-life interest" ]
+  ] [
+     fhir:code [ fhir:v "category-v" ] ;
+     fhir:display [ fhir:v "Category V" ] ;
+     fhir:definition [ fhir:v "All Earth-return missions; subcategories for restricted and unrestricted return" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

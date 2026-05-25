@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/ActivityDefinition/BFRT-Protocol-LowLoad-001> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BFRT-Protocol-LowLoad-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-activity-definition"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/bfrt-activity-definition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n<div>\n    <table class=\"grid dict\">\n\n        \n        <tr>\n            <th scope=\"row\"><b>Title: </b></th>\n            <td style=\"padding-left: 4px;\">Low-Load BFRT Protocol for Lower Extremity</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Id: </b></th>\n            <td style=\"padding-left: 4px;\">BFRT-Protocol-LowLoad-001</td>\n        </tr>\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Version: </b></th>\n            <td style=\"padding-left: 4px;\">0.6.0</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Date (date last changed): </b></th>\n            <td style=\"padding-left: 4px;\">2026-05-25 15:07:02-0600</td>\n        </tr>\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Publisher (steward): </b></th>\n            <td style=\"padding-left: 4px;\">MITRE</td>\n        </tr>\n        \n\n        \n\n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Description: </b></th>\n            <td style=\"padding-left: 4px;\"><div><p>3 sets x 15 reps at 20-30% 1RM, 60-80% limb occlusion pressure, 3 sessions per week</p>\n</div></td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n        \n        \n\n        \n        <tr>\n            <th scope=\"row\"><b>Code: </b></th>\n            <td style=\"padding-left: 4px;\">\n                \n                    \n                        \n                            <p><b>system: </b><span><a href=\"CodeSystem-bfrt-protocol-cs.html\">https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs</a></span></p>\n                        \n                        \n                            <p><b>code: </b><span>low-load-bfrt</span></p>\n                        \n                        \n                            <p><b>display: </b><span>Low-Load BFRT (20-30% 1RM)</span></p>\n                        \n                    \n                \n                \n            </td>\n        </tr>\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n\n        \n    </table>\n</div>\n</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/ActivityDefinition/BFRT-Protocol-LowLoad-001"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/ActivityDefinition/BFRT-Protocol-LowLoad-001>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "LowLoadBFRTProtocol"] ; # 
+  fhir:title [ fhir:v "Low-Load BFRT Protocol for Lower Extremity"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "3 sets x 15 reps at 20-30% 1RM, 60-80% limb occlusion pressure, 3 sessions per week"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs>
+       ] ;
+       fhir:code [ fhir:v "low-load-bfrt" ] ;
+       fhir:display [ fhir:v "Low-Load BFRT (20-30% 1RM)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

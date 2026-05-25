@@ -1,4 +1,4 @@
-# MR054L Microbial Monitoring - v0.5.12
+# MR054L Microbial Monitoring - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr054l-microbial-monitoring | *Version*:0.5.12 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr054l-microbial-monitoring | *Version*:0.6.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR054LMicrobialMonitoring |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To monitor microbial populations in air, water, and on surfaces aboard ISS to pr
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr054l-microbial-monitoring",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MR054LMicrobialMonitoring",
   "title" : "MR054L Microbial Monitoring",
   "status" : "active",

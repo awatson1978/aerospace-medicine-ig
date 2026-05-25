@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "telemedicine-equipment-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem telemedicine-equipment-cs</b></p><a name=\"telemedicine-equipment-cs\"> </a><a name=\"hctelemedicine-equipment-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">video-conferencing<a name=\"telemedicine-equipment-cs-video-conferencing\"> </a></td><td>Video Conferencing System</td><td>Audio-video communication system for medical consultations</td></tr><tr><td style=\"white-space:nowrap\">remote-ultrasound<a name=\"telemedicine-equipment-cs-remote-ultrasound\"> </a></td><td>Remote Ultrasound</td><td>Ultrasound device with remote guidance capability</td></tr><tr><td style=\"white-space:nowrap\">digital-stethoscope<a name=\"telemedicine-equipment-cs-digital-stethoscope\"> </a></td><td>Digital Stethoscope</td><td>Electronic stethoscope with signal transmission capability</td></tr><tr><td style=\"white-space:nowrap\">dermatoscope<a name=\"telemedicine-equipment-cs-dermatoscope\"> </a></td><td>Dermatoscope</td><td>Digital dermatoscope for skin lesion assessment</td></tr><tr><td style=\"white-space:nowrap\">portable-xray<a name=\"telemedicine-equipment-cs-portable-xray\"> </a></td><td>Portable X-ray</td><td>Portable radiography device for remote imaging</td></tr><tr><td style=\"white-space:nowrap\">ecg-transmitter<a name=\"telemedicine-equipment-cs-ecg-transmitter\"> </a></td><td>ECG Transmitter</td><td>Electrocardiogram device with data transmission capability</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "TelemedicineEquipmentCS"] ; # 
+  fhir:title [ fhir:v "Telemedicine Equipment Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Medical equipment used for telemedicine in spaceflight"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "video-conferencing" ] ;
+     fhir:display [ fhir:v "Video Conferencing System" ] ;
+     fhir:definition [ fhir:v "Audio-video communication system for medical consultations" ]
+  ] [
+     fhir:code [ fhir:v "remote-ultrasound" ] ;
+     fhir:display [ fhir:v "Remote Ultrasound" ] ;
+     fhir:definition [ fhir:v "Ultrasound device with remote guidance capability" ]
+  ] [
+     fhir:code [ fhir:v "digital-stethoscope" ] ;
+     fhir:display [ fhir:v "Digital Stethoscope" ] ;
+     fhir:definition [ fhir:v "Electronic stethoscope with signal transmission capability" ]
+  ] [
+     fhir:code [ fhir:v "dermatoscope" ] ;
+     fhir:display [ fhir:v "Dermatoscope" ] ;
+     fhir:definition [ fhir:v "Digital dermatoscope for skin lesion assessment" ]
+  ] [
+     fhir:code [ fhir:v "portable-xray" ] ;
+     fhir:display [ fhir:v "Portable X-ray" ] ;
+     fhir:definition [ fhir:v "Portable radiography device for remote imaging" ]
+  ] [
+     fhir:code [ fhir:v "ecg-transmitter" ] ;
+     fhir:display [ fhir:v "ECG Transmitter" ] ;
+     fhir:definition [ fhir:v "Electrocardiogram device with data transmission capability" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

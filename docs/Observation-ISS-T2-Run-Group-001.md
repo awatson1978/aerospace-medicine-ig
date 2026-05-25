@@ -1,4 +1,4 @@
-# ISS T2 Treadmill Session - Activity Group - v0.5.12
+# ISS T2 Treadmill Session - Activity Group - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

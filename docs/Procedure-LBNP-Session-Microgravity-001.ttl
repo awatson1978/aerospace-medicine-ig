@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/LBNP-Session-Microgravity-001> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LBNP-Session-Microgravity-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure LBNP-Session-Microgravity-001</b></p><a name=\"LBNP-Session-Microgravity-001\"> </a><a name=\"hcLBNP-Session-Microgravity-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lower-body-negative-pressure-procedure.html\">Lower Body Negative Pressure Procedure</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>LBNP Pressure Level</b>: -30 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs lbnp}\">Lower Body Negative Pressure</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2025-09-05 10:30:00+0000</p><p><b>note</b>: </p><blockquote><div><p>LBNP at -30 mmHg during 0g phase, parabola set 3 of 6, 87th ESA PFC</p>\n</div></blockquote><p><b>usedReference</b>: <a href=\"Device-LBNP-Chamber-001.html\">Device: status = active; manufacturer = ESA Life Sciences; serialNumber = LBNP-ESA-2025-001; modelNumber = LBNP-PFC-2025; type = Suction device</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/gravity-context>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+         ] ;
+         fhir:code [ fhir:v "microgravity" ] ;
+         fhir:display [ fhir:v "Microgravity" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level>
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "-30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs>
+       ] ;
+       fhir:code [ fhir:v "lbnp" ] ;
+       fhir:display [ fhir:v "Lower Body Negative Pressure" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:DateTime ;
+     fhir:v "2025-09-05T10:30:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "LBNP at -30 mmHg during 0g phase, parabola set 3 of 6, 87th ESA PFC" ]
+  ] ) ; # 
+  fhir:usedReference ( [
+     fhir:l <https://mitre.org/fhir/space-health/Device/LBNP-Chamber-001> ;
+     fhir:reference [ fhir:v "Device/LBNP-Chamber-001" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="Sterilization-DHMR-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure Sterilization-DHMR-001</b></p><a name="Sterilization-DHMR-001"> </a><a name="hcSterilization-DHMR-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-sterilization-procedure.html">Sterilization Procedure</a></p></div><p><b>Planetary Protection Category</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs category-iv}">Category IV</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs dhmr}">Dry Heat Microbial Reduction (DHMR)</span></p><p><b>subject</b>: Mars Sample Return Lander - Canister Assembly</p><p><b>performed</b>: 2028-01-10 08:00:00+0000 --&gt; 2028-01-12 10:00:00+0000</p><p><b>outcome</b>: <span title="Codes:{http://snomed.info/sct 385669000}">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>DHMR at 125°C for 50 hours. Pre-treatment bioburden: 3.2×10⁴ spores. Post-treatment: &lt;10 spores. 3.5-log reduction achieved.</p>
+</div></blockquote></div>
+  </text>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs"/>
+        <code value="category-iv"/>
+        <display value="Category IV"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs"/>
+      <code value="dhmr"/>
+      <display value="Dry Heat Microbial Reduction (DHMR)"/>
+    </coding>
+  </code>
+  <subject>
+    <display value="Mars Sample Return Lander - Canister Assembly"/>
+  </subject>
+  <performedPeriod>
+    <start value="2028-01-10T08:00:00Z"/>
+    <end value="2028-01-12T10:00:00Z"/>
+  </performedPeriod>
+  <outcome>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385669000"/>
+      <display value="Successful"/>
+    </coding>
+  </outcome>
+  <note>
+    <text value="DHMR at 125°C for 50 hours. Pre-treatment bioburden: 3.2×10⁴ spores. Post-treatment: &lt;10 spores. 3.5-log reduction achieved."/>
+  </note>
+</Procedure>

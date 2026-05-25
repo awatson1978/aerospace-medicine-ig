@@ -1,0 +1,52 @@
+{
+  "resourceType" : "AdverseEvent",
+  "id" : "Urinary-Retention-Post-Promethazine",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent Urinary-Retention-Post-Promethazine</b></p><a name=\"Urinary-Retention-Post-Promethazine\"> </a><a name=\"hcUrinary-Retention-Post-Promethazine\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-adverse-event.html\">Space Adverse Event</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Flight Day</b>: 2</p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs urinary-retention}\">Urinary Retention</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>date</b>: 2028-03-16 11:30:00+0000</p><p><b>seriousness</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-seriousness non-serious}\">Non-serious</span></p><p><b>outcome</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-outcome resolved}\">Resolved</span></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationAdministration-Promethazine-IM-Rescue.html\">MedicationAdministration: extension = -&gt;Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing),Microgravity; status = completed; medication[x] = Promethazine (Intramuscular); effective[x] = 2028-03-16 07:30:00+0000</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/Artemis-III-Mission"
+    }
+  },
+  {
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+    "valueInteger" : 2
+  }],
+  "actuality" : "actual",
+  "event" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs",
+      "code" : "urinary-retention",
+      "display" : "Urinary Retention"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "date" : "2028-03-16T11:30:00Z",
+  "seriousness" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness",
+      "code" : "non-serious",
+      "display" : "Non-serious"
+    }]
+  },
+  "outcome" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+      "code" : "resolved",
+      "display" : "Resolved"
+    }]
+  },
+  "suspectEntity" : [{
+    "instance" : {
+      "reference" : "MedicationAdministration/Promethazine-IM-Rescue"
+    }
+  }]
+}

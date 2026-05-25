@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-omics-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-omics-type-cs</b></p><a name=\"space-omics-type-cs\"> </a><a name=\"hcspace-omics-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">genomics<a name=\"space-omics-type-cs-genomics\"> </a></td><td>Genomics</td><td>Whole genome sequencing or genotyping analysis</td></tr><tr><td style=\"white-space:nowrap\">transcriptomics<a name=\"space-omics-type-cs-transcriptomics\"> </a></td><td>Transcriptomics</td><td>RNA sequencing or gene expression profiling</td></tr><tr><td style=\"white-space:nowrap\">proteomics<a name=\"space-omics-type-cs-proteomics\"> </a></td><td>Proteomics</td><td>Protein expression and modification analysis</td></tr><tr><td style=\"white-space:nowrap\">metabolomics<a name=\"space-omics-type-cs-metabolomics\"> </a></td><td>Metabolomics</td><td>Small molecule metabolite profiling</td></tr><tr><td style=\"white-space:nowrap\">epigenomics<a name=\"space-omics-type-cs-epigenomics\"> </a></td><td>Epigenomics</td><td>DNA methylation and histone modification analysis</td></tr><tr><td style=\"white-space:nowrap\">microbiomics<a name=\"space-omics-type-cs-microbiomics\"> </a></td><td>Microbiomics</td><td>Microbiome composition and diversity analysis</td></tr><tr><td style=\"white-space:nowrap\">lipidomics<a name=\"space-omics-type-cs-lipidomics\"> </a></td><td>Lipidomics</td><td>Lipid species profiling and quantification</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceOmicsTypeCS"] ; # 
+  fhir:title [ fhir:v "Space Omics Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Multi-omics analysis types for astronaut molecular profiling"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "genomics" ] ;
+     fhir:display [ fhir:v "Genomics" ] ;
+     fhir:definition [ fhir:v "Whole genome sequencing or genotyping analysis" ]
+  ] [
+     fhir:code [ fhir:v "transcriptomics" ] ;
+     fhir:display [ fhir:v "Transcriptomics" ] ;
+     fhir:definition [ fhir:v "RNA sequencing or gene expression profiling" ]
+  ] [
+     fhir:code [ fhir:v "proteomics" ] ;
+     fhir:display [ fhir:v "Proteomics" ] ;
+     fhir:definition [ fhir:v "Protein expression and modification analysis" ]
+  ] [
+     fhir:code [ fhir:v "metabolomics" ] ;
+     fhir:display [ fhir:v "Metabolomics" ] ;
+     fhir:definition [ fhir:v "Small molecule metabolite profiling" ]
+  ] [
+     fhir:code [ fhir:v "epigenomics" ] ;
+     fhir:display [ fhir:v "Epigenomics" ] ;
+     fhir:definition [ fhir:v "DNA methylation and histone modification analysis" ]
+  ] [
+     fhir:code [ fhir:v "microbiomics" ] ;
+     fhir:display [ fhir:v "Microbiomics" ] ;
+     fhir:definition [ fhir:v "Microbiome composition and diversity analysis" ]
+  ] [
+     fhir:code [ fhir:v "lipidomics" ] ;
+     fhir:display [ fhir:v "Lipidomics" ] ;
+     fhir:definition [ fhir:v "Lipid species profiling and quantification" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

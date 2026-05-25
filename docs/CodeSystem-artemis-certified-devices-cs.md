@@ -1,4 +1,4 @@
-# Artemis Certified Devices - v0.5.12
+# Artemis Certified Devices - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:ArtemisCertifiedDevicesCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:ArtemisCertifiedDevicesCS |
 
  
 Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.) 
@@ -28,12 +28,12 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
   "resourceType" : "CodeSystem",
   "id" : "artemis-certified-devices-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "ArtemisCertifiedDevicesCS",
   "title" : "Artemis Certified Devices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

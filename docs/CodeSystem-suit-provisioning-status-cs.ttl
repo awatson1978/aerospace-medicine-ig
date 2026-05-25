@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "suit-provisioning-status-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem suit-provisioning-status-cs</b></p><a name=\"suit-provisioning-status-cs\"> </a><a name=\"hcsuit-provisioning-status-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">pre-positioned<a name=\"suit-provisioning-status-cs-pre-positioned\"> </a></td><td>Pre-positioned</td><td>Suit pre-positioned at destination before crew arrival</td></tr><tr><td style=\"white-space:nowrap\">in-transit<a name=\"suit-provisioning-status-cs-in-transit\"> </a></td><td>In Transit</td><td>Suit in transit to destination</td></tr><tr><td style=\"white-space:nowrap\">deployed-primary<a name=\"suit-provisioning-status-cs-deployed-primary\"> </a></td><td>Deployed - Primary</td><td>Suit deployed as primary EVA asset</td></tr><tr><td style=\"white-space:nowrap\">deployed-backup<a name=\"suit-provisioning-status-cs-deployed-backup\"> </a></td><td>Deployed - Backup</td><td>Suit deployed as backup/contingency EVA asset</td></tr><tr><td style=\"white-space:nowrap\">maintenance-required<a name=\"suit-provisioning-status-cs-maintenance-required\"> </a></td><td>Maintenance Required</td><td>Suit requires maintenance before next EVA</td></tr><tr><td style=\"white-space:nowrap\">end-of-life<a name=\"suit-provisioning-status-cs-end-of-life\"> </a></td><td>End of Life</td><td>Suit has exceeded operational life limit</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SuitProvisioningStatusCS"] ; # 
+  fhir:title [ fhir:v "Suit Provisioning Status Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Provisioning and logistics status of EVA suit assets"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "pre-positioned" ] ;
+     fhir:display [ fhir:v "Pre-positioned" ] ;
+     fhir:definition [ fhir:v "Suit pre-positioned at destination before crew arrival" ]
+  ] [
+     fhir:code [ fhir:v "in-transit" ] ;
+     fhir:display [ fhir:v "In Transit" ] ;
+     fhir:definition [ fhir:v "Suit in transit to destination" ]
+  ] [
+     fhir:code [ fhir:v "deployed-primary" ] ;
+     fhir:display [ fhir:v "Deployed - Primary" ] ;
+     fhir:definition [ fhir:v "Suit deployed as primary EVA asset" ]
+  ] [
+     fhir:code [ fhir:v "deployed-backup" ] ;
+     fhir:display [ fhir:v "Deployed - Backup" ] ;
+     fhir:definition [ fhir:v "Suit deployed as backup/contingency EVA asset" ]
+  ] [
+     fhir:code [ fhir:v "maintenance-required" ] ;
+     fhir:display [ fhir:v "Maintenance Required" ] ;
+     fhir:definition [ fhir:v "Suit requires maintenance before next EVA" ]
+  ] [
+     fhir:code [ fhir:v "end-of-life" ] ;
+     fhir:display [ fhir:v "End of Life" ] ;
+     fhir:definition [ fhir:v "Suit has exceeded operational life limit" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

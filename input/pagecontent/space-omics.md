@@ -48,10 +48,10 @@ Cornell Aerospace Medicine Biobank (CAMbank) stores viably frozen specimens for 
 
 ### New / Enhanced Profiles
 **Core Profiles**
-- **`MultiOmicsObservation`** – Captures platform, read counts, quality metrics, and cross-omics correlations for any assay (genomics, proteomics, metabolomics, etc.)
-- **`SpaceMolecularSequence`** – Extends `MolecularSequence` with spaceflight context (mission phase, radiation exposure, microgravity duration, telomere dynamics)
-- **`OmicsRiskAssessment`** – Personalized risk scores derived from multi-omic signatures (telomere, cytokine, immune activation, cell-type shifts)
-- **`PersonalizedCountermeasurePlan`** – Links omics-derived risks to individualized interventions (exercise, nutrition, pharmacologic, sleep, radiation countermeasures)
+- **[`MultiOmicsObservation`](StructureDefinition-multi-omics-observation.html)** – Captures platform, read counts, quality metrics, and cross-omics correlations for any assay (genomics, proteomics, metabolomics, etc.)
+- **[`SpaceMolecularSequence`](StructureDefinition-space-molecular-sequence.html)** – Extends `MolecularSequence` with spaceflight context (mission phase, radiation exposure, microgravity duration, telomere dynamics)
+- **[`OmicsRiskAssessment`](StructureDefinition-omics-risk-assessment.html)** – Personalized risk scores derived from multi-omic signatures (telomere, cytokine, immune activation, cell-type shifts)
+- **[`PersonalizedCountermeasurePlan`](StructureDefinition-personalized-countermeasure-plan.html)** – Links omics-derived risks to individualized interventions (exercise, nutrition, pharmacologic, sleep, radiation countermeasures)
 
 **Supporting Profiles (suggested)**
 - `SpaceBiobankSpecimen` – Biobanking metadata and future re-analysis tracking
@@ -80,7 +80,7 @@ It enables a true **Precision Aerospace Medicine** layer for risk mitigation and
 - Integrate with NASA OSDR identifiers
 
 ## References
-- Overbey et al. (2024). The Space Omics and Medical Atlas (SOMA) and international astronaut biobank. *Nature* 632, 1145–1154. DOI: 10.1038/s41586-024-07639-y
-- SOMA Portal: https://soma.weill.cornell.edu
-- Cornell Aerospace Medicine Biobank (CAMbank)
-- NASA Open Science Data Repository (OSDR)
+- [Overbey et al. (2024). The Space Omics and Medical Atlas (SOMA) and international astronaut biobank. *Nature* 632, 1145–1154.](https://www.nature.com/articles/s41586-024-07639-y) DOI: 10.1038/s41586-024-07639-y  
+- [SOMA Portal](https://soma.weill.cornell.edu)  
+- [Cornell Aerospace Medicine Biobank (CAMbank)](https://cambank.weill.cornell.edu/#main)  
+- [NASA Open Science Data Repository (OSDR)](https://smce.nasa.gov/open-science-data-repository-osdr/)

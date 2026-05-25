@@ -143,7 +143,27 @@ It supports the broader **Environmental Exposure + Physiologic Countermeasure** 
 
 ### References
 
-- NASA HRP Cognitive Functions slides (Cognition battery & Polaris Dawn data)
-- Roberts et al. (2019) AJNR
-- Basner et al. (2015) Aerospace Medicine and Human Performance
-- Aerospace Medicine FHIR IG (MITRE)
+## References
+
+- Roberts, Donna R., Yiri E. Albrecht, Juan C. Collins, Rachel A. Asemani, and colleagues. “Prolonged Microgravity Affects Human Brain Structure and Function.” *American Journal of Neuroradiology* 40, no. 11 (2019): 1878–1885. [https://doi.org/10.3174/ajnr.A6249](https://doi.org/10.3174/ajnr.A6249).  
+
+- Basner, Mathias, David F. Dinges, Nicholas Mollicone, Adrian Ecker, and colleagues. “Development and Validation of the Cognition Test Battery for Spaceflight.” *Aerospace Medicine and Human Performance* 86, no. 11 (2015): 942–952. [https://doi.org/10.3357/AMHP.4343.2015](https://doi.org/10.3357/AMHP.4343.2015).
+
+- Basner, Mathias, Mathilde Savitt, David F. Dinges, and colleagues. “Cognition Test Battery: Performance Monitoring During Spaceflight Operations.” NASA Human Research Program Behavioral Health and Performance Element.
+
+  - NASA HRP Behavioral Health & Performance: [https://www.nasa.gov/hrp/elements/bhp/](https://www.nasa.gov/hrp/elements/bhp/)  
+  - Cognition Battery Overview: [https://bhp.nasa.gov/](https://bhp.nasa.gov/)  
+
+- National Aeronautics and Space Administration Human Research Program. *Cognition Battery and Neurocognitive Monitoring During Spaceflight Operations.* NASA HRP Cognitive Functions presentation materials, including Polaris Dawn Psychomotor Vigilance Test (PVT) longitudinal observations.
+
+- Lee, John K., Rachael D. Seidler, and colleagues. “The Effects of Long Duration Spaceflight on Sensorimotor Control and Cognition.” *Frontiers in Neural Circuits* 15 (2021). [https://doi.org/10.3389/fncir.2021.723504](https://doi.org/10.3389/fncir.2021.723504).  
+
+- Cassady, Katelyn, Heather R. McGregor, and colleagues. “Sensory Network Segregation as a Predictor of Post-Spaceflight Balance Impairments and Sensory Re-weighting.” *npj Microgravity* (2025). [https://pubmed.ncbi.nlm.nih.gov/41309651/](https://pubmed.ncbi.nlm.nih.gov/41309651/).
+
+- Yuan, Pengfei, and colleagues. “EEG Oscillations and Oxygen Saturation During Hypoxia Exposure.” *Human Brain Mapping* 45, no. 2 (2024). [https://doi.org/10.1002/hbm.26214](https://doi.org/10.1002/hbm.26214).
+
+- Nature Reviews Neurology / The Lancet Neurology Editorial Group. “Effects of Spaceflight on the Brain.” *The Lancet Neurology* 23, no. 9 (2024). [https://doi.org/10.1016/S1474-4422(24)00224-2](https://doi.org/10.1016/S1474-4422(24)00224-2).
+
+- National Aeronautics and Space Administration. *Behavioral Health and Performance Standard Measures.* NASA Human Research Program [https://www.nasa.gov/hrp/elements/bhp/](https://www.nasa.gov/hrp/elements/bhp/)  
+
+

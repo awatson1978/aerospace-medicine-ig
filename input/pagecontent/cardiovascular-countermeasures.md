@@ -105,25 +105,25 @@ $
 
 ### New Profiles (suggested)
 **Observation**
-- `InternalJugularVeinFlowObservation`
-- `InternalJugularVeinPressureObservation`
-- `InternalJugularVeinAreaObservation`
+- [`InternalJugularVeinFlowObservation`](StructureDefinition-internal-jugular-vein-flow-observation.html)
+- [`InternalJugularVeinPressureObservation`](StructureDefinition-internal-jugular-vein-pressure-observation.html)
+- [`InternalJugularVeinAreaObservation`](StructureDefinition-internal-jugular-vein-area-observation.html)
 - `CardiovascularCountermeasureObservation`
-- `FlowDirectionalityIndexObservation` (with components)
+- [`FlowDirectionalityIndexObservation`](StructureDefinition-flow-directionality-index-observation.html) (with components)
 
 **Procedure**
-- `LowerBodyNegativePressureProcedure`
-- `ParabolicFlightExposure`
+- [`LowerBodyNegativePressureProcedure`](StructureDefinition-lower-body-negative-pressure-procedure.html)
+- [`ParabolicFlightExposure`](StructureDefinition-parabolic-flight-exposure.html)
 
 **Device**
-- `UltrasoundMonitoringDevice`
+- [`UltrasoundMonitoringDevice`](StructureDefinition-ultrasound-monitoring-device.html)
 - `VenousPressureMonitoringDevice`
-- `LBNPCountermeasureSystem`
+- [`LBNPCountermeasureSystem`](StructureDefinition-lbnp-countermeasure-system.html)
 
 ### New CodeSystems / ValueSets
-- `MicrogravityCountermeasureCS` (lbnp, venous-flow-monitoring, fluid-shift-mitigation, anti-sans-protocol, venous-thrombosis-prevention)
-- `IJVFlowGradeCS` (grade-1 … grade-4)
-- `ParabolicFlightPhaseCS` (steady-1g, pull-up, microgravity, pull-out)
+- [`MicrogravityCountermeasureCS`](CodeSystem-microgravity-countermeasure-cs.html) (lbnp, venous-flow-monitoring, fluid-shift-mitigation, anti-sans-protocol, venous-thrombosis-prevention)
+- [`IJVFlowGradeCS`](CodeSystem-ijv-flow-grade-cs.html) (grade-1 … grade-4)
+- [`ParabolicFlightPhaseCS`](CodeSystem-parabolic-flight-phase-cs.html) (steady-1g, pull-up, microgravity, pull-out)
 
 ### FDI Observation Components
 - `forward-flow-time`
@@ -151,5 +151,5 @@ It contributes to a generalized **Environmental Exposure + Physiologic Counterme
 - Link to new ValueSets once published
 
 **References**
-- NASA Human Research Program – Cardiovascular Countermeasures slides (87th ESA Parabolic Flight Campaign)
-- Aerospace Medicine FHIR IG (MITRE-approved)
+- Pentinat-Llurba, Huc, Richard Whittle, Adrien Robin, Cort Reinarz, Dave Laygo, Rashika Rao, Madison Herrmann, Josephine Allen, Rachael Seidler, Oscar Flores, and Ana Diaz-Artiles. “Graded Lower Body Negative Pressure During Parabolic Flight: Progress to Date and Upcoming Campaigns.” Oral presentation presented at the 87th ESA Parabolic Flight Campaign session, April 7, 2026, Texas A&M University and collaborating institutions.
+- ESA Parabolic Flights Overview: [https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights](https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights)  

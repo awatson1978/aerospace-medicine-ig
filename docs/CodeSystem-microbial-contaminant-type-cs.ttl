@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "microbial-contaminant-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem microbial-contaminant-type-cs</b></p><a name=\"microbial-contaminant-type-cs\"> </a><a name=\"hcmicrobial-contaminant-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">bacterial-spore<a name=\"microbial-contaminant-type-cs-bacterial-spore\"> </a></td><td>Bacterial Spore</td><td>Heat-resistant bacterial endospore</td></tr><tr><td style=\"white-space:nowrap\">fungal-spore<a name=\"microbial-contaminant-type-cs-fungal-spore\"> </a></td><td>Fungal Spore</td><td>Fungal spore capable of surviving environmental extremes</td></tr><tr><td style=\"white-space:nowrap\">vegetative-bacteria<a name=\"microbial-contaminant-type-cs-vegetative-bacteria\"> </a></td><td>Vegetative Bacteria</td><td>Actively growing bacterial cell</td></tr><tr><td style=\"white-space:nowrap\">biofilm<a name=\"microbial-contaminant-type-cs-biofilm\"> </a></td><td>Biofilm</td><td>Microbial community embedded in extracellular polymer matrix</td></tr><tr><td style=\"white-space:nowrap\">viable-microbe<a name=\"microbial-contaminant-type-cs-viable-microbe\"> </a></td><td>Viable Microbe</td><td>Any culturable or metabolically active microorganism</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "MicrobialContaminantTypeCS"] ; # 
+  fhir:title [ fhir:v "Microbial Contaminant Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of microbial contamination relevant to planetary protection"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "bacterial-spore" ] ;
+     fhir:display [ fhir:v "Bacterial Spore" ] ;
+     fhir:definition [ fhir:v "Heat-resistant bacterial endospore" ]
+  ] [
+     fhir:code [ fhir:v "fungal-spore" ] ;
+     fhir:display [ fhir:v "Fungal Spore" ] ;
+     fhir:definition [ fhir:v "Fungal spore capable of surviving environmental extremes" ]
+  ] [
+     fhir:code [ fhir:v "vegetative-bacteria" ] ;
+     fhir:display [ fhir:v "Vegetative Bacteria" ] ;
+     fhir:definition [ fhir:v "Actively growing bacterial cell" ]
+  ] [
+     fhir:code [ fhir:v "biofilm" ] ;
+     fhir:display [ fhir:v "Biofilm" ] ;
+     fhir:definition [ fhir:v "Microbial community embedded in extracellular polymer matrix" ]
+  ] [
+     fhir:code [ fhir:v "viable-microbe" ] ;
+     fhir:display [ fhir:v "Viable Microbe" ] ;
+     fhir:definition [ fhir:v "Any culturable or metabolically active microorganism" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

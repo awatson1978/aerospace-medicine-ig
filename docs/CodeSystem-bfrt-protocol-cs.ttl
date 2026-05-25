@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bfrt-protocol-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem bfrt-protocol-cs</b></p><a name=\"bfrt-protocol-cs\"> </a><a name=\"hcbfrt-protocol-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">intermittent-bfrt<a name=\"bfrt-protocol-cs-intermittent-bfrt\"> </a></td><td>Intermittent BFRT</td><td>Alternating periods of occlusion and reperfusion during exercise</td></tr><tr><td style=\"white-space:nowrap\">continuous-bfrt<a name=\"bfrt-protocol-cs-continuous-bfrt\"> </a></td><td>Continuous BFRT</td><td>Sustained occlusion throughout the exercise set</td></tr><tr><td style=\"white-space:nowrap\">auto-regulated-bfrt<a name=\"bfrt-protocol-cs-auto-regulated-bfrt\"> </a></td><td>Auto-Regulated BFRT</td><td>Pressure automatically adjusted based on limb occlusion pressure</td></tr><tr><td style=\"white-space:nowrap\">low-load-bfrt<a name=\"bfrt-protocol-cs-low-load-bfrt\"> </a></td><td>Low-Load BFRT (20-30% 1RM)</td><td>Blood flow restriction with 20-30% of one-repetition maximum</td></tr><tr><td style=\"white-space:nowrap\">moderate-load-bfrt<a name=\"bfrt-protocol-cs-moderate-load-bfrt\"> </a></td><td>Moderate-Load BFRT (40-50% 1RM)</td><td>Blood flow restriction with 40-50% of one-repetition maximum</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "BFRTProtocolCS"] ; # 
+  fhir:title [ fhir:v "BFRT Protocol Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Blood flow restriction training protocol types for microgravity exercise countermeasures"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "intermittent-bfrt" ] ;
+     fhir:display [ fhir:v "Intermittent BFRT" ] ;
+     fhir:definition [ fhir:v "Alternating periods of occlusion and reperfusion during exercise" ]
+  ] [
+     fhir:code [ fhir:v "continuous-bfrt" ] ;
+     fhir:display [ fhir:v "Continuous BFRT" ] ;
+     fhir:definition [ fhir:v "Sustained occlusion throughout the exercise set" ]
+  ] [
+     fhir:code [ fhir:v "auto-regulated-bfrt" ] ;
+     fhir:display [ fhir:v "Auto-Regulated BFRT" ] ;
+     fhir:definition [ fhir:v "Pressure automatically adjusted based on limb occlusion pressure" ]
+  ] [
+     fhir:code [ fhir:v "low-load-bfrt" ] ;
+     fhir:display [ fhir:v "Low-Load BFRT (20-30% 1RM)" ] ;
+     fhir:definition [ fhir:v "Blood flow restriction with 20-30% of one-repetition maximum" ]
+  ] [
+     fhir:code [ fhir:v "moderate-load-bfrt" ] ;
+     fhir:display [ fhir:v "Moderate-Load BFRT (40-50% 1RM)" ] ;
+     fhir:definition [ fhir:v "Blood flow restriction with 40-50% of one-repetition maximum" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

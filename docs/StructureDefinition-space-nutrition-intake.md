@@ -1,4 +1,4 @@
-# Space Nutrition Intake - v0.5.12
+# Space Nutrition Intake - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-intake | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:SpaceNutritionIntake |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-intake | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:SpaceNutritionIntake |
 
  
 Documentation of actual daily intake and hydration events for space missions 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-nutrition-inta
   "resourceType" : "StructureDefinition",
   "id" : "space-nutrition-intake",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-intake",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SpaceNutritionIntake",
   "title" : "Space Nutrition Intake",
   "status" : "active",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

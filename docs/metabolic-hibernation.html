@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Metabolic Suppression / Therapeutic Hibernation -  v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"28"}
+    h3,h4,h5,h6{--heading-prefix:"28"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="motion-sickness.html">Motion Sickness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Metabolic Suppression / Therapeutic Hibernation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Metabolic Suppression / Therapeutic Hibernation</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#metabolic-suppression-and-therapeutic-hibernation" id="markdown-toc-metabolic-suppression-and-therapeutic-hibernation">Metabolic Suppression and Therapeutic Hibernation</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#operational-scenarios" id="markdown-toc-operational-scenarios">Operational Scenarios</a></li>
+      <li><a href="#pharmacologic-approach-alpha-2-adrenergic-agonists" id="markdown-toc-pharmacologic-approach-alpha-2-adrenergic-agonists">Pharmacologic Approach: Alpha-2 Adrenergic Agonists</a></li>
+      <li><a href="#metabolic-suppression-findings" id="markdown-toc-metabolic-suppression-findings">Metabolic Suppression Findings</a></li>
+      <li><a href="#sleep-based-metabolic-suppression" id="markdown-toc-sleep-based-metabolic-suppression">Sleep-Based Metabolic Suppression</a></li>
+      <li><a href="#study-methods" id="markdown-toc-study-methods">Study Methods</a></li>
+      <li><a href="#metabolic-measurement-methods" id="markdown-toc-metabolic-measurement-methods">Metabolic Measurement Methods</a></li>
+      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a></li>
+      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="metabolic-suppression-and-therapeutic-hibernation">Metabolic Suppression and Therapeutic Hibernation</h2>
+
+<h3 id="overview">Overview</h3>
+
+<p>Long-duration missions (Mars transit, lunar shelters, submarine analogs) face severe constraints on mass, power, and life-support consumables. NASA HRP is exploring pharmacologic and sleep-based metabolic suppression as countermeasures to reduce daily energy expenditure, oxygen consumption, and CO₂ production — effectively extending mission endurance during nominal operations or catastrophic life-support failures.</p>
+
+<p>This page documents the operational rationale, alpha-2 adrenergic agonist pharmacology, human study findings, and FHIR modeling for implementing metabolic suppression protocols in aerospace medicine.</p>
+
+<h3 id="operational-scenarios">Operational Scenarios</h3>
+
+<p><strong>Resource conservation for long-duration missions</strong></p>
+<ul>
+  <li>Nominal daily requirement: ~3000 kcal/day (~1.2 kg food), 350 L CO₂ scrubbing/day, 400 L O₂/day</li>
+  <li>Goal: meaningfully reduce these demands</li>
+</ul>
+
+<p><strong>Catastrophic life-support failure</strong></p>
+<ul>
+  <li>Return or rescue time (4 days) exceeds available supplies or scrubbing capability (3 days)</li>
+  <li>Applicable to: Mars transit, submarine operations, lunar shelters, polar expedition analogs</li>
+</ul>
+
+<h3 id="pharmacologic-approach-alpha-2-adrenergic-agonists">Pharmacologic Approach: Alpha-2 Adrenergic Agonists</h3>
+
+<p>FDA-approved agents with minimal respiratory depression and possible subcutaneous administration:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug</th>
+      <th>Route</th>
+      <th>Dose</th>
+      <th>Half-life</th>
+      <th>Approved Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dexmedetomidine</td>
+      <td>IV</td>
+      <td>1.0 µg/kg</td>
+      <td>2 hrs</td>
+      <td>Sedative</td>
+    </tr>
+    <tr>
+      <td>Dexmedetomidine</td>
+      <td>Nasal</td>
+      <td>1.0 µg/kg</td>
+      <td>2 hrs</td>
+      <td>Sedative</td>
+    </tr>
+    <tr>
+      <td>Dexmedetomidine</td>
+      <td>Oral</td>
+      <td>4.0 µg/kg</td>
+      <td>2 hrs</td>
+      <td>Sedative</td>
+    </tr>
+    <tr>
+      <td>Tizanidine</td>
+      <td>Oral</td>
+      <td>8–16 mg</td>
+      <td>1.2–2 hrs</td>
+      <td>Muscle Relaxant</td>
+    </tr>
+    <tr>
+      <td>Clonidine</td>
+      <td>Oral</td>
+      <td>0.2–0.3 mg</td>
+      <td>12–16 hrs</td>
+      <td>Blood Pressure Control</td>
+    </tr>
+    <tr>
+      <td>Lofexidine</td>
+      <td>Oral</td>
+      <td>0.72 mg</td>
+      <td>11 hrs</td>
+      <td>Opioid Withdrawal</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Supporting Research</strong></p>
+<ul>
+  <li>Alpha-2-adrenergic agonists reduce resting energy expenditure in humans during external cooling</li>
+  <li>Sustained metabolic reduction and hypothermia in humans</li>
+  <li>TRISH grant support: NNX16AO69A</li>
+</ul>
+
+<h3 id="metabolic-suppression-findings">Metabolic Suppression Findings</h3>
+
+<p><strong>6-hour suppression</strong></p>
+<ul>
+  <li>~200–400 kcal/day equivalent reduction</li>
+</ul>
+
+<p><strong>One-day infusion</strong></p>
+<ul>
+  <li>~30 % energy expenditure reduction</li>
+  <li>Core temperature reduction ~1.0 °C</li>
+</ul>
+
+<p><strong>Five-day suppression</strong></p>
+<ul>
+  <li>Predicted: 41 % reduction</li>
+  <li>Observed/estimated: 36 % reduction</li>
+  <li>Placebo comparison: 13 % reduction</li>
+</ul>
+
+<p><strong>Core temperature effect</strong></p>
+<ul>
+  <li>Reductions approached –1.5 °C</li>
+</ul>
+
+<h3 id="sleep-based-metabolic-suppression">Sleep-Based Metabolic Suppression</h3>
+
+<p><strong>Concept</strong></p>
+<ul>
+  <li>Baseline sleep ≈ 30 % of day</li>
+  <li>Awake expenditure ≈ 1.35× sleep expenditure</li>
+  <li>Experimental target: increase sleep to ~80 % of day</li>
+  <li>Projected: substantial daily energy, O₂, and CO₂ savings</li>
+</ul>
+
+<h3 id="study-methods">Study Methods</h3>
+
+<p>Prospective laboratory study in healthy humans with:</p>
+<ul>
+  <li>Normal ECG</li>
+  <li>Weight &gt; 55 kg, BMI &lt; 30</li>
+  <li>No sleep, medical, or psychiatric disorders</li>
+  <li>VO₂max within 20th–90th percentile</li>
+</ul>
+
+<p><strong>Protocol (5 days)</strong></p>
+<ul>
+  <li>Subcutaneous infusion</li>
+  <li>Oral loading dose: 2 µg/kg</li>
+  <li>Continuous infusion: 1 µg/kg/hour for 18 hours/day</li>
+  <li>6 hours off/day</li>
+</ul>
+
+<h3 id="metabolic-measurement-methods">Metabolic Measurement Methods</h3>
+
+<ul>
+  <li>Indirect calorimetry (baseline, 6-hour during-drug, 18-hour end-of-drug, 23-hour sitting, 23–24 hour exercise)</li>
+  <li>Doubly labeled water (DLW): 1.5 g/kg 10 % ²H₂¹⁸O</li>
+  <li>VO₂ and VCO₂ monitoring</li>
+</ul>
+
+<h3 id="fhir-implementation-guidance">FHIR Implementation Guidance</h3>
+
+<h4 id="recommended-resources">Recommended Resources</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code> – energy expenditure, core temperature, VO₂/VCO₂</li>
+  <li><code class="language-plaintext highlighter-rouge">MedicationAdministration</code> / <code class="language-plaintext highlighter-rouge">Medication</code> – alpha-2 agonist dosing</li>
+  <li><code class="language-plaintext highlighter-rouge">Procedure</code> – infusion protocols, sleep-extension sessions</li>
+  <li><code class="language-plaintext highlighter-rouge">CarePlan</code> – metabolic suppression protocol</li>
+  <li><code class="language-plaintext highlighter-rouge">DiagnosticReport</code> – metabolic suppression assessment</li>
+  <li><code class="language-plaintext highlighter-rouge">Device</code> – infusion pumps, calorimetry equipment</li>
+</ul>
+
+<h4 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h4>
+
+<p><strong>CodeSystems</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MetabolicSuppressionCS</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MetabolicMonitoringCS</code></li>
+  <li><code class="language-plaintext highlighter-rouge">TorporMedicationCS</code></li>
+</ul>
+
+<p><strong>ValueSets</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MetabolicSuppressionIndicationsVS</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MetabolicSuppressionComplicationsVS</code></li>
+</ul>
+
+<h4 id="suggested-profiles">Suggested Profiles</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MetabolicSuppressionProtocol</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MetabolicSuppressionObservation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ResourceConservationAssessment</code></li>
+</ul>
+
+<h4 id="potential-aerospace-medicine-concepts">Potential Aerospace Medicine Concepts</h4>
+
+<ul>
+  <li>Human torpor</li>
+  <li>Therapeutic hypothermia</li>
+  <li>Sleep extension</li>
+  <li>Resource conservation (CO₂ / O₂ reduction)</li>
+  <li>Deep-space survival</li>
+  <li>Long-duration transit medicine</li>
+  <li>Autonomous medical operations</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
+<p>This work integrates directly with existing IG sections:</p>
+<ul>
+  <li>ECLSS (resource modeling and life-support failure response)</li>
+  <li>Environmental Monitoring</li>
+  <li>Behavioral Health / Sleep Medicine</li>
+  <li>Crew Health Monitoring</li>
+  <li>Radiation Exposure Tracking (storm shelter confinement)</li>
+  <li>Neutral Buoyancy and Decompression Medicine (analog operations)</li>
+</ul>
+
+<p>It supports a broader <strong>Autonomous Medical Countermeasures</strong> framework for Mars-class missions.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>
+    <p>Callaway, Clifton W., Katharyn L. Flickinger, Alexandra Weissman, Raymond E. West III, and colleagues. “Alpha-2-Adrenergic Agonists Reduce Resting Energy Expenditure in Humans During External Cooling.” <em>Temperature</em> (2024). <a href="https://doi.org/10.1080/23328940.2024.2339781">https://doi.org/10.1080/23328940.2024.2339781</a>.</p>
+  </li>
+  <li>
+    <p>Weissman, Alexandra, Katharyn L. Flickinger, Victor Wu, and Clifton W. Callaway. “Quasi-Torpor for Long-Duration Space Missions.” <em>Frontiers in Space Technologies</em> (2024). <a href="https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1358288/full">https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1358288/full</a></p>
+  </li>
+  <li>
+    <p>Flickinger, Katharyn L., Alexandra Weissman, Francis Guyette, and Clifton W. Callaway. “Sustained Metabolic Reduction and Hypothermia in Humans.” <em>PLOS ONE</em> (2025). <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0321478">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0321478</a></p>
+  </li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

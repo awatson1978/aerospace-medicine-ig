@@ -1,0 +1,157 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/Body-Temp-FD30-Morning> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Body-Temp-FD30-Morning"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Body-Temp-FD30-Morning</b></p><a name=\"Body-Temp-FD30-Morning\"> </a><a name=\"hcBody-Temp-FD30-Morning\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-body-temperature.html\">Space Body Temperature Observation</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Circadian Phase</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs morning-nadir}\">Morning Nadir</span></p><p><b>Flight Day</b>: 30</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 8310-5}\">Body temperature</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-04-14 06:30:00+0000</p><p><b>value</b>: 36.8 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>method</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs oral-thermometer}\">Oral Thermometer</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 60832-3}\">Room temperature</span></p><p><b>value</b>: 22.5 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 68130003}\">Physical activity</span></p><p><b>value</b>: 120 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs>
+         ] ;
+         fhir:code [ fhir:v "morning-nadir" ] ;
+         fhir:display [ fhir:v "Morning Nadir" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/flight-day>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 30
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ] ;
+       fhir:display [ fhir:v "Vital Signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:8310-5 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "8310-5" ] ;
+       fhir:display [ fhir:v "Body temperature" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2028-04-14T06:30:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 36.8 ] ;
+     fhir:unit [ fhir:v "°C" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "Cel" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs>
+       ] ;
+       fhir:code [ fhir:v "oral-thermometer" ] ;
+       fhir:display [ fhir:v "Oral Thermometer" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:60832-3 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "60832-3" ] ;
+         fhir:display [ fhir:v "Room temperature" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 22.5 ] ;
+       fhir:unit [ fhir:v "°C" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "Cel" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:68130003 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "68130003" ] ;
+         fhir:display [ fhir:v "Physical activity" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "min" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "min" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

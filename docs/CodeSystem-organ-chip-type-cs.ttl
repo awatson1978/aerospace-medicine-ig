@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/organ-chip-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organ-chip-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem organ-chip-type-cs</b></p><a name=\"organ-chip-type-cs\"> </a><a name=\"hcorgan-chip-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/organ-chip-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">bone-marrow-chip<a name=\"organ-chip-type-cs-bone-marrow-chip\"> </a></td><td>Bone Marrow Chip</td><td>Microfluidic bone marrow model for hematopoiesis studies</td></tr><tr><td style=\"white-space:nowrap\">immune-chip<a name=\"organ-chip-type-cs-immune-chip\"> </a></td><td>Immune Chip</td><td>Microfluidic immune system model</td></tr><tr><td style=\"white-space:nowrap\">gut-chip<a name=\"organ-chip-type-cs-gut-chip\"> </a></td><td>Gut Chip</td><td>Intestinal epithelium microfluidic model</td></tr><tr><td style=\"white-space:nowrap\">lung-chip<a name=\"organ-chip-type-cs-lung-chip\"> </a></td><td>Lung Chip</td><td>Alveolar-capillary interface microfluidic model</td></tr><tr><td style=\"white-space:nowrap\">kidney-chip<a name=\"organ-chip-type-cs-kidney-chip\"> </a></td><td>Kidney Chip</td><td>Renal tubular epithelium microfluidic model</td></tr><tr><td style=\"white-space:nowrap\">bbb-chip<a name=\"organ-chip-type-cs-bbb-chip\"> </a></td><td>Blood-Brain Barrier Chip</td><td>Blood-brain barrier microfluidic model</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/organ-chip-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/organ-chip-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "OrganChipTypeCS"] ; # 
+  fhir:title [ fhir:v "Organ-on-Chip Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of organ-on-chip (microphysiological systems) used in the AVATAR investigation"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "bone-marrow-chip" ] ;
+     fhir:display [ fhir:v "Bone Marrow Chip" ] ;
+     fhir:definition [ fhir:v "Microfluidic bone marrow model for hematopoiesis studies" ]
+  ] [
+     fhir:code [ fhir:v "immune-chip" ] ;
+     fhir:display [ fhir:v "Immune Chip" ] ;
+     fhir:definition [ fhir:v "Microfluidic immune system model" ]
+  ] [
+     fhir:code [ fhir:v "gut-chip" ] ;
+     fhir:display [ fhir:v "Gut Chip" ] ;
+     fhir:definition [ fhir:v "Intestinal epithelium microfluidic model" ]
+  ] [
+     fhir:code [ fhir:v "lung-chip" ] ;
+     fhir:display [ fhir:v "Lung Chip" ] ;
+     fhir:definition [ fhir:v "Alveolar-capillary interface microfluidic model" ]
+  ] [
+     fhir:code [ fhir:v "kidney-chip" ] ;
+     fhir:display [ fhir:v "Kidney Chip" ] ;
+     fhir:definition [ fhir:v "Renal tubular epithelium microfluidic model" ]
+  ] [
+     fhir:code [ fhir:v "bbb-chip" ] ;
+     fhir:display [ fhir:v "Blood-Brain Barrier Chip" ] ;
+     fhir:definition [ fhir:v "Blood-brain barrier microfluidic model" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Org - Star Harbor Academy - v0.5.12
+# Org - Star Harbor Academy - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

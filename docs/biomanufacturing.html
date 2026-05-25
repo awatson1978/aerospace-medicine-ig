@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Biomanufacturing -  v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"26"}
+    h3,h4,h5,h6{--heading-prefix:"26"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="motion-sickness.html">Motion Sickness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Biomanufacturing</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Biomanufacturing</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#biomanufacturing-and-bioregenerative-life-support" id="markdown-toc-biomanufacturing-and-bioregenerative-life-support">Biomanufacturing and Bioregenerative Life Support</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#key-biomanufacturing-processes" id="markdown-toc-key-biomanufacturing-processes">Key Biomanufacturing Processes</a></li>
+      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
+          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
+          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
+          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
+          <li><a href="#references" id="markdown-toc-references">References</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#biomanufacturing-and-bioregenerative-life-support-1" id="markdown-toc-biomanufacturing-and-bioregenerative-life-support-1">Biomanufacturing and Bioregenerative Life Support</a>    <ul>
+      <li><a href="#overview-1" id="markdown-toc-overview-1">Overview</a></li>
+      <li><a href="#key-biomanufacturing-processes-1" id="markdown-toc-key-biomanufacturing-processes-1">Key Biomanufacturing Processes</a></li>
+      <li><a href="#fhir-implementation-guidance-1" id="markdown-toc-fhir-implementation-guidance-1">FHIR Implementation Guidance</a>        <ul>
+          <li><a href="#recommended-resources-1" id="markdown-toc-recommended-resources-1">Recommended Resources</a></li>
+          <li><a href="#new-profiles-suggested-1" id="markdown-toc-new-profiles-suggested-1">New Profiles (suggested)</a></li>
+          <li><a href="#candidate-codesystems--valuesets-1" id="markdown-toc-candidate-codesystems--valuesets-1">Candidate CodeSystems &amp; ValueSets</a></li>
+        </ul>
+      </li>
+      <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h1 id="biomanufacturing-and-bioregenerative-life-support">Biomanufacturing and Bioregenerative Life Support</h1>
+
+<h2 id="overview">Overview</h2>
+<p>In-situ biomanufacturing and bioregenerative life support systems (BLiSS) represent a critical technology for sustainable long-duration missions. By leveraging engineered microbes, algae, and cell cultures, crews can produce oxygen, food, pharmaceuticals, bioplastics, and water-recycling enzymes directly from local resources or recycled waste streams.</p>
+
+<p>Bell et al. (<em>Space Policy</em>, May 2026) and related extraterrestrial infrastructure reviews highlight the transition from proof-of-concept (ISS VEG and MELiSSA programs) to operational systems for Artemis, Mars transit, and surface habitats. FHIR profiles in this section standardize the capture of bioreactor configurations, manufacturing procedures, resource outputs, and biological feedstocks so that biomanufacturing data can be consistently recorded, audited, and integrated into crew health and ECLSS records.</p>
+
+<h2 id="key-biomanufacturing-processes">Key Biomanufacturing Processes</h2>
+<p><strong>Primary Applications</strong></p>
+<ul>
+  <li>Oxygen and CO₂ fixation (algae, cyanobacteria)</li>
+  <li>Protein-rich food and nutritional supplements (microbial fermentation, single-cell protein)</li>
+  <li>Biopolymer and material production (bacterial plastics)</li>
+  <li>Pharmaceutical synthesis (on-demand antibiotics, monoclonal antibodies)</li>
+  <li>Waste recycling (urine, feces, CO₂ → nutrients)</li>
+</ul>
+
+<p><strong>Common Bioreactor Types</strong></p>
+<ul>
+  <li>Photobioreactors (algae/cyanobacteria)</li>
+  <li>Heterotrophic fermenters (bacteria/yeast)</li>
+  <li>Hybrid systems (photo + heterotrophic)</li>
+</ul>
+
+<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+
+<h3 id="recommended-resources">Recommended Resources</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Device</code> – bioreactor hardware</li>
+  <li><code class="language-plaintext highlighter-rouge">Procedure</code> – biomanufacturing runs and process steps</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code> – resource output metrics and feedstock characterization</li>
+  <li><code class="language-plaintext highlighter-rouge">Substance</code> – biological feedstocks and finished bioproducts</li>
+</ul>
+
+<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
+<p><strong>Core Profiles</strong></p>
+<ul>
+  <li><strong><a href="StructureDefinition-bioreactor-device.html"><code class="language-plaintext highlighter-rouge">BioreactorDevice</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
+    <ul>
+      <li>Working volume, temperature control range, agitation parameters</li>
+      <li>Gas exchange (O₂/CO₂), lighting spectrum (for photobioreactors)</li>
+      <li>Sensor suite (pH, dissolved oxygen, biomass density)</li>
+      <li>Sterility status and planetary-protection compliance level</li>
+    </ul>
+  </li>
+  <li><strong><a href="StructureDefinition-biomanufacturing-procedure.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcedure</code></a></strong> – Documents ISRU bioprocessing, algae cultivation, fermentation, or downstream processing with:
+    <ul>
+      <li>Process parameters (duration, temperature, feedstock input)</li>
+      <li>Strain or cell line used</li>
+      <li>Yield and efficiency metrics</li>
+      <li>Quality control checkpoints</li>
+    </ul>
+  </li>
+  <li><strong><a href="StructureDefinition-bliss-resource-output.html"><code class="language-plaintext highlighter-rouge">BLiSSResourceOutput</code></a></strong> – Standardized observation of system-level outputs:
+    <ul>
+      <li>O₂ production rate</li>
+      <li>Food / biomass output</li>
+      <li>Water recycling efficiency</li>
+      <li>CO₂ fixation rate</li>
+      <li>By-product generation (e.g., bioplastics, pharmaceuticals)</li>
+    </ul>
+  </li>
+  <li><strong><a href="StructureDefinition-biological-feedstock.html"><code class="language-plaintext highlighter-rouge">BiologicalFeedstock</code></a></strong> – Characterizes input or output biological substances:
+    <ul>
+      <li>Feedstock type (CO₂, urine-derived nutrients, recycled biomass)</li>
+      <li>Output bioproduct (single-cell protein, biopolymer, therapeutic compound)</li>
+      <li>Purity, viability, and planetary-protection status</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Supporting Profiles (suggested)</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BiomanufacturingBatch</code> – Links procedures, bioreactor, feedstock, and output into a traceable production run</li>
+  <li><code class="language-plaintext highlighter-rouge">BLiSSPerformanceSummary</code> – DiagnosticReport aggregating system-level performance over a mission phase</li>
+</ul>
+
+<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BioreactorTypeCS</code> – (photobioreactor, heterotrophic-fermenter, hybrid, etc.)</li>
+  <li><a href="CodeSystem-biomanufacturing-process-cs.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcessCS</code></a> – (algae-cultivation, microbial-fermentation, enzymatic-recycling, isru-biopolymer)</li>
+  <li>`BLiSSResourceTypeVS</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<hr />
+<p>title: Biomanufacturing
+layout: default
+—</p>
+
+<h1 id="biomanufacturing-and-bioregenerative-life-support-1">Biomanufacturing and Bioregenerative Life Support</h1>
+
+<h2 id="overview-1">Overview</h2>
+<p>In-situ biomanufacturing and bioregenerative life support systems (BLiSS) represent a critical technology for sustainable long-duration missions. By leveraging engineered microbes, algae, and cell cultures, crews can produce oxygen, food, pharmaceuticals, bioplastics, and water-recycling enzymes directly from local resources or recycled waste streams.</p>
+
+<p><strong>Bell et al.</strong> (<em>Space Policy</em>, May 2026) and related extraterrestrial infrastructure reviews highlight the transition from proof-of-concept (ISS VEG and MELiSSA programs) to operational systems for Artemis, Mars transit, and surface habitats. FHIR profiles in this section standardize the capture of bioreactor configurations, manufacturing procedures, resource outputs, and biological feedstocks so that biomanufacturing data can be consistently recorded, audited, and integrated into crew health and ECLSS records.</p>
+
+<h2 id="key-biomanufacturing-processes-1">Key Biomanufacturing Processes</h2>
+
+<p><strong>Primary Applications</strong></p>
+<ul>
+  <li>Oxygen and CO₂ fixation (algae, cyanobacteria)</li>
+  <li>Protein-rich food and nutritional supplements (microbial fermentation, single-cell protein)</li>
+  <li>Biopolymer and material production (bacterial plastics)</li>
+  <li>Pharmaceutical synthesis (on-demand antibiotics, monoclonal antibodies)</li>
+  <li>Waste recycling (urine, feces, CO₂ → nutrients)</li>
+</ul>
+
+<p><strong>Common Bioreactor Types</strong></p>
+<ul>
+  <li>Photobioreactors (algae/cyanobacteria)</li>
+  <li>Heterotrophic fermenters (bacteria/yeast)</li>
+  <li>Hybrid systems (photo + heterotrophic)</li>
+</ul>
+
+<h2 id="fhir-implementation-guidance-1">FHIR Implementation Guidance</h2>
+
+<h3 id="recommended-resources-1">Recommended Resources</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Device</code> – bioreactor hardware</li>
+  <li><code class="language-plaintext highlighter-rouge">Procedure</code> – biomanufacturing runs and process steps</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code> – resource output metrics and feedstock characterization</li>
+  <li><code class="language-plaintext highlighter-rouge">Substance</code> – biological feedstocks and finished bioproducts</li>
+</ul>
+
+<h3 id="new-profiles-suggested-1">New Profiles (suggested)</h3>
+
+<p><strong>Core Profiles</strong></p>
+<ul>
+  <li><strong><a href="StructureDefinition-bioreactor-device.html"><code class="language-plaintext highlighter-rouge">BioreactorDevice</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
+    <ul>
+      <li>Working volume, temperature control range, agitation parameters</li>
+      <li>Gas exchange (O₂/CO₂), lighting spectrum (for photobioreactors)</li>
+      <li>Sensor suite (pH, dissolved oxygen, biomass density)</li>
+      <li>Sterility status and planetary-protection compliance level</li>
+    </ul>
+  </li>
+  <li><strong><a href="StructureDefinition-biomanufacturing-procedure.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcedure</code></a></strong> – Documents ISRU bioprocessing, algae cultivation, fermentation, or downstream processing with:
+    <ul>
+      <li>Process parameters (duration, temperature, feedstock input)</li>
+      <li>Strain or cell line used</li>
+      <li>Yield and efficiency metrics</li>
+      <li>Quality control checkpoints</li>
+    </ul>
+  </li>
+  <li><strong><a href="StructureDefinition-bliss-resource-output.html"><code class="language-plaintext highlighter-rouge">BLiSSResourceOutput</code></a></strong> – Standardized observation of system-level outputs:
+    <ul>
+      <li>O₂ production rate</li>
+      <li>Food / biomass output</li>
+      <li>Water recycling efficiency</li>
+      <li>CO₂ fixation rate</li>
+      <li>By-product generation (e.g., bioplastics, pharmaceuticals)</li>
+    </ul>
+  </li>
+  <li><strong><a href="StructureDefinition-biological-feedstock.html"><code class="language-plaintext highlighter-rouge">BiologicalFeedstock</code></a></strong> – Characterizes input or output biological substances:
+    <ul>
+      <li>Feedstock type (CO₂, urine-derived nutrients, recycled biomass)</li>
+      <li>Output bioproduct (single-cell protein, biopolymer, therapeutic compound)</li>
+      <li>Purity, viability, and planetary-protection status</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Supporting Profiles (suggested)</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BiomanufacturingBatch</code> – Links procedures, bioreactor, feedstock, and output into a traceable production run</li>
+  <li><code class="language-plaintext highlighter-rouge">BLiSSPerformanceSummary</code> – DiagnosticReport aggregating system-level performance over a mission phase</li>
+</ul>
+
+<h3 id="candidate-codesystems--valuesets-1">Candidate CodeSystems &amp; ValueSets</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BioreactorTypeCS</code> – (photobioreactor, heterotrophic-fermenter, hybrid, etc.)</li>
+  <li><a href="CodeSystem-biomanufacturing-process-cs.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcessCS</code></a> – (algae-cultivation, microbial-fermentation, enzymatic-recycling, isru-biopolymer)</li>
+  <li><code class="language-plaintext highlighter-rouge">BLiSSResourceTypeVS</code></li>
+</ul>
+
+<h2 id="references-1">References</h2>
+
+<ul>
+  <li>
+    <p>Bell, A., Yeh, D., Garretson, P., &amp; Roberson, L. (2026). Biomanufacturing for a Lunar base—A sustainable vision for the future. <em>Space Policy</em>. <a href="https://doi.org/10.1016/j.spacepol.2026.101XXX">https://doi.org/10.1016/j.spacepol.2026.101XXX</a></p>
+  </li>
+  <li>
+    <p>Porterfield, D. M., et al. (2025). Critical investments in bioregenerative life support systems for bioastronautics and sustainable lunar exploration. <em>npj Microgravity</em>, 11(57). <a href="https://doi.org/10.1038/s41526-025-00518-4">https://doi.org/10.1038/s41526-025-00518-4</a>.</p>
+  </li>
+  <li>
+    <p>Chander, A. M., et al. (including Fujimura, G.) (2026). Survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions. <em>Applied and Environmental Microbiology</em>. <a href="https://doi.org/10.1128/aem.02065-25">https://doi.org/10.1128/aem.02065-25</a>.</p>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

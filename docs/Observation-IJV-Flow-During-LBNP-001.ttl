@@ -1,0 +1,135 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/IJV-Flow-During-LBNP-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IJV-Flow-During-LBNP-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-flow-observation"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-flow-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation IJV-Flow-During-LBNP-001</b></p><a name=\"IJV-Flow-During-LBNP-001\"> </a><a name=\"hcIJV-Flow-During-LBNP-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-internal-jugular-vein-flow-observation.html\">Internal Jugular Vein Flow Observation</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>LBNP Pressure Level</b>: -30 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11042-7}\">IJV Flow Assessment</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2025-09-05 10:32:00+0000</p><p><b>value</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs grade-1}\">Grade 1 - Forward Flow</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://snomed.info/sct 244403000}\">Right Internal Jugular Vein</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org LP74840-2}\">Flow velocity</span></td><td>0.85 ratio<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{ratio} = '{ratio}')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/gravity-context>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+         ] ;
+         fhir:code [ fhir:v "microgravity" ] ;
+         fhir:display [ fhir:v "Microgravity" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level>
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "-30"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mmHg" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "exam" ] ;
+       fhir:display [ fhir:v "Exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11042-7 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11042-7" ] ;
+       fhir:display [ fhir:v "Flow velocity Doppler.max Blood vessel" ]
+     ] ) ;
+     fhir:text [ fhir:v "IJV Flow Assessment" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-09-05T10:32:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs>
+       ] ;
+       fhir:code [ fhir:v "grade-1" ] ;
+       fhir:display [ fhir:v "Grade 1 - Forward Flow" ]
+     ] )
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       a sct:244403000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "244403000" ] ;
+       fhir:display [ fhir:v "Internal jugular vein structure" ]
+     ] ) ;
+     fhir:text [ fhir:v "Right Internal Jugular Vein" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP74840-2 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "LP74840-2" ] ;
+         fhir:display [ fhir:v "Flow velocity" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.85 ] ;
+       fhir:unit [ fhir:v "ratio" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "{ratio}" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

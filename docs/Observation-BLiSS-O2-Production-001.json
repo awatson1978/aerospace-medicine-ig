@@ -1,0 +1,66 @@
+{
+  "resourceType" : "Observation",
+  "id" : "BLiSS-O2-Production-001",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BLiSS-O2-Production-001</b></p><a name=\"BLiSS-O2-Production-001\"> </a><a name=\"hcBLiSS-O2-Production-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bliss-resource-output.html\">BLiSS Resource Output</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs o2-production}\">O2 Production</span></p><p><b>subject</b>: <a href=\"Device-Bioreactor-Algae-001.html\">Device: status = active; manufacturer = Techshot Inc.; modelNumber = PBR-3000; type = ; note = Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle</a></p><p><b>effective</b>: 2028-05-15 18:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Output Quantity</span></p><p><b>value</b>: 0.85 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Output Rate</span></p><p><b>value</b>: 0.85 kg/d<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg/d = 'kg/d')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Energy Input</span></p><p><b>value</b>: 1.2 kW<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekW = 'kW')</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+        "code" : "microgravity",
+        "display" : "Microgravity"
+      }]
+    }
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs",
+      "code" : "o2-production",
+      "display" : "O2 Production"
+    }]
+  },
+  "subject" : {
+    "reference" : "Device/Bioreactor-Algae-001"
+  },
+  "effectiveDateTime" : "2028-05-15T18:00:00Z",
+  "component" : [{
+    "code" : {
+      "text" : "Output Quantity"
+    },
+    "valueQuantity" : {
+      "value" : 0.85,
+      "unit" : "kg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kg"
+    }
+  },
+  {
+    "code" : {
+      "text" : "Output Rate"
+    },
+    "valueQuantity" : {
+      "value" : 0.85,
+      "unit" : "kg/d",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kg/d"
+    }
+  },
+  {
+    "code" : {
+      "text" : "Energy Input"
+    },
+    "valueQuantity" : {
+      "value" : 1.2,
+      "unit" : "kW",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "kW"
+    }
+  }]
+}

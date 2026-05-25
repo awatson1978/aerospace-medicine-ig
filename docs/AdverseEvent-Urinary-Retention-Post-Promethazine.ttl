@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/AdverseEvent/Urinary-Retention-Post-Promethazine> a fhir:AdverseEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Urinary-Retention-Post-Promethazine"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AdverseEvent Urinary-Retention-Post-Promethazine</b></p><a name=\"Urinary-Retention-Post-Promethazine\"> </a><a name=\"hcUrinary-Retention-Post-Promethazine\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-adverse-event.html\">Space Adverse Event</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Flight Day</b>: 2</p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs urinary-retention}\">Urinary Retention</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>date</b>: 2028-03-16 11:30:00+0000</p><p><b>seriousness</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-seriousness non-serious}\">Non-serious</span></p><p><b>outcome</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-outcome resolved}\">Resolved</span></p><h3>SuspectEntities</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Instance</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"MedicationAdministration-Promethazine-IM-Rescue.html\">MedicationAdministration: extension = -&gt;Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing),Microgravity; status = completed; medication[x] = Promethazine (Intramuscular); effective[x] = 2028-03-16 07:30:00+0000</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/flight-day>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 2
+     ]
+  ] ) ; # 
+  fhir:actuality [ fhir:v "actual"] ; # 
+  fhir:event [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs>
+       ] ;
+       fhir:code [ fhir:v "urinary-retention" ] ;
+       fhir:display [ fhir:v "Urinary Retention" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:date [ fhir:v "2028-03-16T11:30:00Z"^^xsd:dateTime] ; # 
+  fhir:seriousness [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/adverse-event-seriousness"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/adverse-event-seriousness>
+       ] ;
+       fhir:code [ fhir:v "non-serious" ] ;
+       fhir:display [ fhir:v "Non-serious" ]
+     ] )
+  ] ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/adverse-event-outcome"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/adverse-event-outcome>
+       ] ;
+       fhir:code [ fhir:v "resolved" ] ;
+       fhir:display [ fhir:v "Resolved" ]
+     ] )
+  ] ; # 
+  fhir:suspectEntity ( [
+     fhir:instance [
+       fhir:l <https://mitre.org/fhir/space-health/MedicationAdministration/Promethazine-IM-Rescue> ;
+       fhir:reference [ fhir:v "MedicationAdministration/Promethazine-IM-Rescue" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

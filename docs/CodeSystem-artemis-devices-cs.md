@@ -1,4 +1,4 @@
-# Artemis Devices - v0.5.12
+# Artemis Devices - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:ArtemisDevicesCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:ArtemisDevicesCS |
 
  
 Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems 
@@ -27,12 +27,12 @@ Unified device inventory for the Artemis program including crewed vehicles, EVA 
   "resourceType" : "CodeSystem",
   "id" : "artemis-devices-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "ArtemisDevicesCS",
   "title" : "Artemis Devices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

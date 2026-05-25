@@ -1,4 +1,4 @@
-# Org - Collins Aerospace - v0.5.12
+# Org - Collins Aerospace - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

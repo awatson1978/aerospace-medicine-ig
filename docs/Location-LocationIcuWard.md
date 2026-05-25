@@ -1,4 +1,4 @@
-# Location - ICU Ward - v0.5.12
+# Location - ICU Ward - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

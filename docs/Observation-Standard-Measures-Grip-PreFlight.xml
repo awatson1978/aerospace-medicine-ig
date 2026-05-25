@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Standard-Measures-Grip-PreFlight"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/standard-measures-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Standard-Measures-Grip-PreFlight</b></p><a name="Standard-Measures-Grip-PreFlight"> </a><a name="hcStandard-Measures-Grip-PreFlight"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-standard-measures-observation.html">NASA Standard Measures Observation</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs pre-flight}">Pre-flight</span></p><p><b>Flight Day</b>: -30</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}">Exam</span></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs grip-strength}">Grip Strength</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-02-15 14:00:00+0000</p><p><b>value</b>: 45.2 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/Artemis-III-Mission"/>
+    </valueReference>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/mission-phase">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"/>
+        <code value="pre-flight"/>
+        <display value="Pre-flight"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/flight-day">
+    <valueInteger value="-30"/>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs"/>
+      <code value="grip-strength"/>
+      <display value="Grip Strength"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <effectiveDateTime value="2028-02-15T14:00:00Z"/>
+  <valueQuantity>
+    <value value="45.2"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+</Observation>

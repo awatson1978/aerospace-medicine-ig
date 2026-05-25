@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CarePlan",
+  "id" : "ISS-Emergency-Plan-001",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/emergency-care-plan"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan ISS-Emergency-Plan-001</b></p><a name=\"ISS-Emergency-Plan-001\"> </a><a name=\"hcISS-Emergency-Plan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-emergency-care-plan.html\">Emergency Care Plan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: ISS Expedition 75 Emergency Contingency Plan</p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs safe-haven}\">Safe Haven</span></td><td>Not Started</td><td>Retreat to Soyuz or Dragon for safe haven in case of toxic atmosphere or fire</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs crew-dragon-return}\">Crew Dragon Return</span></td><td>Not Started</td><td>Emergency return via Crew Dragon if safe haven insufficient</td></tr></table></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "plan",
+  "title" : "ISS Expedition 75 Emergency Contingency Plan",
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "activity" : [{
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs",
+          "code" : "safe-haven",
+          "display" : "Safe Haven"
+        }]
+      },
+      "status" : "not-started",
+      "description" : "Retreat to Soyuz or Dragon for safe haven in case of toxic atmosphere or fire"
+    }
+  },
+  {
+    "detail" : {
+      "code" : {
+        "coding" : [{
+          "system" : "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs",
+          "code" : "crew-dragon-return",
+          "display" : "Crew Dragon Return"
+        }]
+      },
+      "status" : "not-started",
+      "description" : "Emergency return via Crew Dragon if safe haven insufficient"
+    }
+  }]
+}

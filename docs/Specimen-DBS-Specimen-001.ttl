@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Specimen/DBS-Specimen-001> a fhir:Specimen ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DBS-Specimen-001"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Specimen DBS-Specimen-001</b></p><a name=\"DBS-Specimen-001\"> </a><a name=\"hcDBS-Specimen-001\"> </a><blockquote><p><b>Biobank Location</b></p><ul><li>facilityId: LSDA-JSC-BioBank-01</li><li>storageTemperature: -80 Cel<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></li><li>containerBarcode: BNK-2028-DBS-00142</li></ul></blockquote><p><b>status</b>: Available</p><p><b>type</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs dried-blood-spot}\">Dried Blood Spot</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style=\"display: none\">*</td><td>2028-04-20 07:00:00+0000</td><td><span title=\"Codes:{http://snomed.info/sct 278450005}\">Finger-prick sampling</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "facilityId"^^xsd:anyURI ;
+         fhir:l fhir:facilityId
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "LSDA-JSC-BioBank-01"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "storageTemperature"^^xsd:anyURI ;
+         fhir:l fhir:storageTemperature
+       ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "-80"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Cel" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "Cel" ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "containerBarcode"^^xsd:anyURI ;
+         fhir:l fhir:containerBarcode
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "BNK-2028-DBS-00142"
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/biobank-location"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/biobank-location>
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "available"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs>
+       ] ;
+       fhir:code [ fhir:v "dried-blood-spot" ] ;
+       fhir:display [ fhir:v "Dried Blood Spot" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:collection [
+     fhir:collected [
+       a fhir:DateTime ;
+       fhir:v "2028-04-20T07:00:00Z"^^xsd:dateTime
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:278450005 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:code [ fhir:v "278450005" ] ;
+         fhir:display [ fhir:v "Finger-prick sampling" ]
+       ] )
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

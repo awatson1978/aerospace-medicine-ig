@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Device/BFRT-Pneumatic-Cuff-001> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "BFRT-Pneumatic-Cuff-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-device"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/bfrt-device>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device BFRT-Pneumatic-Cuff-001</b></p><a name=\"BFRT-Pneumatic-Cuff-001\"> </a><a name=\"hcBFRT-Pneumatic-Cuff-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bfrt-device.html\">BFRT Device</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Kaatsu Global</p><p><b>serialNumber</b>: BFR-ISS-2028-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Kaatsu Nano BFR Unit #BFR-001</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: Nano</p><p><b>type</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs pneumatic-cuff}\">Pneumatic Cuff</span></p><p><b>patient</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Kaatsu Global"] ; # 
+  fhir:serialNumber [ fhir:v "BFR-ISS-2028-001"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Kaatsu Nano BFR Unit #BFR-001" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "Nano"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs>
+       ] ;
+       fhir:code [ fhir:v "pneumatic-cuff" ] ;
+       fhir:display [ fhir:v "Pneumatic Cuff" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

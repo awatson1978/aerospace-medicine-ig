@@ -1,4 +1,4 @@
-# Mission Context for Diagnostic Reports - v0.5.12
+# Mission Context for Diagnostic Reports - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:DiagnosticReportMissionContext |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:DiagnosticReportMissionContext |
 
 Links diagnostic reports to specific space missions
 
@@ -19,7 +19,8 @@ Links diagnostic reports to specific space missions
 
 **Usages:**
 
-* Use this Extension: [Metabolic Risk Summary](StructureDefinition-metabolic-risk-summary.md) and [Space Radiation Exposure Summary (Fixed)](StructureDefinition-space-radiation-summary.md)
+* Use this Extension: [Metabolic Risk Summary](StructureDefinition-metabolic-risk-summary.md), [Space CGM Summary Report](StructureDefinition-space-cgm-summary.md), [Space Point-of-Care Ultrasound (POCUS)](StructureDefinition-space-pocus.md) and [Space Radiation Exposure Summary (Fixed)](StructureDefinition-space-radiation-summary.md)
+* Examples for this Extension: [DiagnosticReport/CGM-Summary-14Day](DiagnosticReport-CGM-Summary-14Day.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/diagnostic-report-mission-context)
 
@@ -42,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-diagnostic-report-mi
   "resourceType" : "StructureDefinition",
   "id" : "diagnostic-report-mission-context",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "DiagnosticReportMissionContext",
   "title" : "Mission Context for Diagnostic Reports",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

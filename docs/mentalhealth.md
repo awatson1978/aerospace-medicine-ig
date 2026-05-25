@@ -1,4 +1,4 @@
-# Mental Health - v0.5.12
+# Mental Health - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **Mental Health**

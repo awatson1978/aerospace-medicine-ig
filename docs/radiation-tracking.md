@@ -1,4 +1,4 @@
-# Radiation Tracking - v0.5.12
+# Radiation Tracking - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **Radiation Tracking**
@@ -373,6 +373,92 @@ Research and risk assessment through integration with NASA's research programs:
 * **Countermeasure Development**: Assessment of radioprotective interventions
 * **Risk Model Validation**: Comparison of predicted vs. actual health outcomes
 * **Technology Development**: Evaluation of new dosimetry and shielding technologies
+
+### HERA Radiation Monitoring System (Polaris Dawn & Fram2)
+
+#### Overview
+
+The NASA Human Research Program (HRP) HERA (High-Energy Radiation Analyzer) is a fully autonomous radiation monitoring instrument designed for NASA exploration missions. It flew for the first time inside a crewed spacecraft on Polaris Dawn and again on Fram2, providing the first high-altitude and polar-orbit radiation measurements inside a Dragon-class vehicle. These data fill critical gaps in our understanding of radiation exposure beyond low Earth orbit (LEO) and in polar trajectories.
+
+This section documents the HERA hardware, mission results, space weather context, and FHIR modeling guidance for incorporating these measurements into the Aerospace Medicine IG.
+
+#### HERA System Description
+
+**HERA Radiation Monitoring System**
+
+* Fully autonomous instrument developed for NASA exploration programs
+* Modified from 110 V DC to 28 V DC to support Crew Dragon spacecraft
+* Polaris Dawn flew the Artemis I qualification unit
+* Fram2 flew a refly of the same Artemis I flight hardware
+* Configuration: one processing unit + two sensor units (Fram2 used processing unit only)
+* Qualified for shock, vibration, and thermal environments (additional SpaceX qualification performed)
+* No direct vehicle data connection on Fram2
+* Mass: approximately 0.7 kg (excluding cabling)
+* Power consumption: approximately 5 W
+* Outputs: dosimetry, science data, caution/warning, and crew display data
+
+#### Mission Results – Dose and Dose Equivalent Measurements
+
+**Key findings**
+
+* Total mission dose equivalent: approximately **8 mSv** per mission
+* Observed doses were lower than pre-flight predictions (15–20 mSv)
+* Peak dose rate: **0.2 mSv/min** (comparable to Artemis I outgoing Van Allen belt passage)
+* Vehicle and sensor shielding strongly influenced measured dose
+* Internal HERA clock drift required post-flight mission-time correction
+
+**Fram2 Polar Orbit Dose Rate Map**
+
+* Highest dose regions observed near the **South Atlantic Anomaly** and polar passes
+* Dose maps plotted in microgray per minute (µGy/min) with logarithmic scaling
+* Latitude and longitude-based orbital mapping performed
+
+#### Fram2 Space Weather Context
+
+* Fram2 launched during an NOAA **S2 moderate radiation storm**
+* Low-energy proton flux exceeded 100 PFU
+* Event associated with an **X1.1 solar flare** on March 28
+* Associated coronal mass ejection produced geomagnetic storming later in the mission
+* **No significant radiation increase observed inside Dragon** due to soft proton spectrum and spacecraft shielding
+
+#### Fram2 Space X-Ray Experiment Findings
+
+* X-ray exposures were clearly visible in detector imaging data
+* Total HERA X-ray exposure: approximately **2.3 µSv**
+* Estimated skin exposure: approximately **9 µSv ±50 %**
+* FD3 detector exposures were approximately 10× greater than FD1
+* Orientation and shielding geometry likely contributed to the difference
+
+#### Mission Radiation Exposure Comparison
+
+| | |
+| :--- | :--- |
+| Fram2 Space X-Ray | 0.009 mSv |
+| Fram2 CADS | 0.828–1.223 mSv |
+| Fram2 HERA | 1.2 mSv |
+| ISS (3.5 Days) | 1.2–1.5 mSv |
+| ISS (5 Days) | 1.9–2.3 mSv |
+| ISS (17 Days) | 6.4–8 mSv |
+| **Polaris Dawn** | **8 mSv** |
+| Artemis I (25 Days) | 27–36 mSv |
+| ISS (6 Months) | 68–82 mSv |
+| Biosentinel SPE Skin Dose | 1250 mSv |
+| Projected Mars Mission | 700–1300 mSv |
+
+#### FHIR Implementation Guidance
+
+##### Recommended Resources
+
+* `Observation` – total mission dose, dose equivalent, peak dose rate, SPE exposure, proton flux, solar flare measurements
+* `Device` – HERA and CADS detector documentation
+* `DiagnosticReport` – mission dose summaries and polar orbit maps
+* Extensions for: mission phase, shielding configuration, orbital region, organ-specific doses
+
+##### New / Enhanced Profiles (suggested)
+
+* `HERARadiationObservation` (or extend existing `SpaceRadiationExposure`)
+* `HERADetectorDevice`
+* `PolarOrbitRadiationMapReport`
 
 ### Implementation Examples
 

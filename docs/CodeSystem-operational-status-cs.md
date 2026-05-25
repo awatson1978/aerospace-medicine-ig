@@ -1,4 +1,4 @@
-# Operational Status Code System - v0.5.12
+# Operational Status Code System - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:OperationalStatusCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:OperationalStatusCS |
 
  
 Operational status codes for facilities and vehicles 
@@ -27,12 +27,12 @@ Operational status codes for facilities and vehicles
   "resourceType" : "CodeSystem",
   "id" : "operational-status-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "OperationalStatusCS",
   "title" : "Operational Status Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

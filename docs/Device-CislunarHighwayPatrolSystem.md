@@ -1,4 +1,4 @@
-# Device - Cislunar Highway Patrol System - v0.5.12
+# Device - Cislunar Highway Patrol System - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

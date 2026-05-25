@@ -1,4 +1,4 @@
-# Aircraft Fume Exposure - v0.5.12
+# Aircraft Fume Exposure - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:AircraftFumeExposureValueSet |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:AircraftFumeExposureValueSet |
 
  
 Health impacts from exposure to aircraft contaminated air and fume events. 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "AircraftFumeExposureValueSet",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "AircraftFumeExposureValueSet",
   "title" : "Aircraft Fume Exposure",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

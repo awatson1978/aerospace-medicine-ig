@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nasa-standard-measures-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem nasa-standard-measures-cs</b></p><a name=\"nasa-standard-measures-cs\"> </a><a name=\"hcnasa-standard-measures-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">functional-task-test<a name=\"nasa-standard-measures-cs-functional-task-test\"> </a></td><td>Functional Task Test</td><td>Standardized battery of functional tasks assessing sensorimotor performance</td></tr><tr><td style=\"white-space:nowrap\">field-test<a name=\"nasa-standard-measures-cs-field-test\"> </a></td><td>Field Test</td><td>Timed obstacle course for post-flight functional assessment</td></tr><tr><td style=\"white-space:nowrap\">grip-strength<a name=\"nasa-standard-measures-cs-grip-strength\"> </a></td><td>Grip Strength</td><td>Isometric hand grip dynamometry</td></tr><tr><td style=\"white-space:nowrap\">tandem-walk<a name=\"nasa-standard-measures-cs-tandem-walk\"> </a></td><td>Tandem Walk</td><td>Heel-to-toe walking balance assessment</td></tr><tr><td style=\"white-space:nowrap\">visual-acuity-flight<a name=\"nasa-standard-measures-cs-visual-acuity-flight\"> </a></td><td>In-flight Visual Acuity</td><td>Visual acuity testing during spaceflight</td></tr><tr><td style=\"white-space:nowrap\">orthostatic-test<a name=\"nasa-standard-measures-cs-orthostatic-test\"> </a></td><td>Orthostatic Tolerance Test</td><td>Tilt test or stand test for orthostatic assessment</td></tr><tr><td style=\"white-space:nowrap\">body-composition<a name=\"nasa-standard-measures-cs-body-composition\"> </a></td><td>Body Composition</td><td>DXA or bioimpedance body composition analysis</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "NASAStandardMeasuresCS"] ; # 
+  fhir:title [ fhir:v "NASA Spaceflight Standard Measures Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Standardized assessments from the NASA Spaceflight Standard Measures program"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "functional-task-test" ] ;
+     fhir:display [ fhir:v "Functional Task Test" ] ;
+     fhir:definition [ fhir:v "Standardized battery of functional tasks assessing sensorimotor performance" ]
+  ] [
+     fhir:code [ fhir:v "field-test" ] ;
+     fhir:display [ fhir:v "Field Test" ] ;
+     fhir:definition [ fhir:v "Timed obstacle course for post-flight functional assessment" ]
+  ] [
+     fhir:code [ fhir:v "grip-strength" ] ;
+     fhir:display [ fhir:v "Grip Strength" ] ;
+     fhir:definition [ fhir:v "Isometric hand grip dynamometry" ]
+  ] [
+     fhir:code [ fhir:v "tandem-walk" ] ;
+     fhir:display [ fhir:v "Tandem Walk" ] ;
+     fhir:definition [ fhir:v "Heel-to-toe walking balance assessment" ]
+  ] [
+     fhir:code [ fhir:v "visual-acuity-flight" ] ;
+     fhir:display [ fhir:v "In-flight Visual Acuity" ] ;
+     fhir:definition [ fhir:v "Visual acuity testing during spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "orthostatic-test" ] ;
+     fhir:display [ fhir:v "Orthostatic Tolerance Test" ] ;
+     fhir:definition [ fhir:v "Tilt test or stand test for orthostatic assessment" ]
+  ] [
+     fhir:code [ fhir:v "body-composition" ] ;
+     fhir:display [ fhir:v "Body Composition" ] ;
+     fhir:definition [ fhir:v "DXA or bioimpedance body composition analysis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# NASA MRID Sponsor Organizations - v0.5.12
+# NASA MRID Sponsor Organizations - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:NASAMRIDSponsorCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:NASAMRIDSponsorCS |
 
  
 Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents. 
@@ -27,12 +27,12 @@ Organizations that sponsor medical requirements within NASA's Medical Requiremen
   "resourceType" : "CodeSystem",
   "id" : "nasa-mrid-sponsor-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "NASAMRIDSponsorCS",
   "title" : "NASA MRID Sponsor Organizations",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

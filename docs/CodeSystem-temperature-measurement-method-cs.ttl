@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "temperature-measurement-method-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem temperature-measurement-method-cs</b></p><a name=\"temperature-measurement-method-cs\"> </a><a name=\"hctemperature-measurement-method-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">oral-thermometer<a name=\"temperature-measurement-method-cs-oral-thermometer\"> </a></td><td>Oral Thermometer</td><td>Standard oral digital thermometer measurement</td></tr><tr><td style=\"white-space:nowrap\">tympanic-ir<a name=\"temperature-measurement-method-cs-tympanic-ir\"> </a></td><td>Tympanic Infrared</td><td>Infrared tympanic membrane thermometry</td></tr><tr><td style=\"white-space:nowrap\">rectal<a name=\"temperature-measurement-method-cs-rectal\"> </a></td><td>Rectal Thermometer</td><td>Rectal temperature measurement</td></tr><tr><td style=\"white-space:nowrap\">skin-patch-continuous<a name=\"temperature-measurement-method-cs-skin-patch-continuous\"> </a></td><td>Continuous Skin Patch</td><td>Continuous skin temperature via adhesive sensor patch</td></tr><tr><td style=\"white-space:nowrap\">ingestible-thermopill<a name=\"temperature-measurement-method-cs-ingestible-thermopill\"> </a></td><td>Ingestible Thermopill</td><td>Telemetric core body temperature via ingestible capsule</td></tr><tr><td style=\"white-space:nowrap\">axillary<a name=\"temperature-measurement-method-cs-axillary\"> </a></td><td>Axillary Thermometer</td><td>Axillary (armpit) temperature measurement</td></tr><tr><td style=\"white-space:nowrap\">temporal-artery<a name=\"temperature-measurement-method-cs-temporal-artery\"> </a></td><td>Temporal Artery Scanner</td><td>Non-contact temporal artery infrared thermometry</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "TemperatureMeasurementMethodCS"] ; # 
+  fhir:title [ fhir:v "Temperature Measurement Method Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Methods of body temperature measurement relevant to spaceflight"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "oral-thermometer" ] ;
+     fhir:display [ fhir:v "Oral Thermometer" ] ;
+     fhir:definition [ fhir:v "Standard oral digital thermometer measurement" ]
+  ] [
+     fhir:code [ fhir:v "tympanic-ir" ] ;
+     fhir:display [ fhir:v "Tympanic Infrared" ] ;
+     fhir:definition [ fhir:v "Infrared tympanic membrane thermometry" ]
+  ] [
+     fhir:code [ fhir:v "rectal" ] ;
+     fhir:display [ fhir:v "Rectal Thermometer" ] ;
+     fhir:definition [ fhir:v "Rectal temperature measurement" ]
+  ] [
+     fhir:code [ fhir:v "skin-patch-continuous" ] ;
+     fhir:display [ fhir:v "Continuous Skin Patch" ] ;
+     fhir:definition [ fhir:v "Continuous skin temperature via adhesive sensor patch" ]
+  ] [
+     fhir:code [ fhir:v "ingestible-thermopill" ] ;
+     fhir:display [ fhir:v "Ingestible Thermopill" ] ;
+     fhir:definition [ fhir:v "Telemetric core body temperature via ingestible capsule" ]
+  ] [
+     fhir:code [ fhir:v "axillary" ] ;
+     fhir:display [ fhir:v "Axillary Thermometer" ] ;
+     fhir:definition [ fhir:v "Axillary (armpit) temperature measurement" ]
+  ] [
+     fhir:code [ fhir:v "temporal-artery" ] ;
+     fhir:display [ fhir:v "Temporal Artery Scanner" ] ;
+     fhir:definition [ fhir:v "Non-contact temporal artery infrared thermometry" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

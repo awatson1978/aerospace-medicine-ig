@@ -1,4 +1,4 @@
-# Mars Missions - v0.5.12
+# Mars Missions - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:MarsMissionsVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:MarsMissionsVS |
 
  
 All Mars missions (robotic and human, completed and planned) 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mars-missions-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MarsMissionsVS",
   "title" : "Mars Missions",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

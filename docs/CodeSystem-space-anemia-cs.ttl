@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-anemia-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-anemia-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-anemia-cs</b></p><a name=\"space-anemia-cs\"> </a><a name=\"hcspace-anemia-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-anemia-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">rbc-mass<a name=\"space-anemia-cs-rbc-mass\"> </a></td><td>Red Blood Cell Mass</td><td>Total red blood cell volume measurement</td></tr><tr><td style=\"white-space:nowrap\">co-breath-test<a name=\"space-anemia-cs-co-breath-test\"> </a></td><td>CO Breath Test</td><td>Carbon monoxide breath test for RBC destruction rate</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-anemia-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-anemia-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceAnemiaCS"] ; # 
+  fhir:title [ fhir:v "Space Anemia Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Parameters for spaceflight-associated anemia assessment"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "rbc-mass" ] ;
+     fhir:display [ fhir:v "Red Blood Cell Mass" ] ;
+     fhir:definition [ fhir:v "Total red blood cell volume measurement" ]
+  ] [
+     fhir:code [ fhir:v "co-breath-test" ] ;
+     fhir:display [ fhir:v "CO Breath Test" ] ;
+     fhir:definition [ fhir:v "Carbon monoxide breath test for RBC destruction rate" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

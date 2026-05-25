@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "circadian-assessment-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem circadian-assessment-cs</b></p><a name=\"circadian-assessment-cs\"> </a><a name=\"hccircadian-assessment-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">melatonin-onset<a name=\"circadian-assessment-cs-melatonin-onset\"> </a></td><td>Dim Light Melatonin Onset (DLMO)</td><td>Time of melatonin rise under dim light conditions</td></tr><tr><td style=\"white-space:nowrap\">core-temp-nadir<a name=\"circadian-assessment-cs-core-temp-nadir\"> </a></td><td>Core Body Temperature Nadir</td><td>Timing of circadian core body temperature minimum</td></tr><tr><td style=\"white-space:nowrap\">circadian-period<a name=\"circadian-assessment-cs-circadian-period\"> </a></td><td>Circadian Period (Tau)</td><td>Endogenous circadian period length</td></tr><tr><td style=\"white-space:nowrap\">phase-shift<a name=\"circadian-assessment-cs-phase-shift\"> </a></td><td>Phase Shift</td><td>Magnitude and direction of circadian phase shift</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "CircadianAssessmentCS"] ; # 
+  fhir:title [ fhir:v "Circadian Rhythm Assessment Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Parameters for circadian rhythm assessment in spaceflight"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "melatonin-onset" ] ;
+     fhir:display [ fhir:v "Dim Light Melatonin Onset (DLMO)" ] ;
+     fhir:definition [ fhir:v "Time of melatonin rise under dim light conditions" ]
+  ] [
+     fhir:code [ fhir:v "core-temp-nadir" ] ;
+     fhir:display [ fhir:v "Core Body Temperature Nadir" ] ;
+     fhir:definition [ fhir:v "Timing of circadian core body temperature minimum" ]
+  ] [
+     fhir:code [ fhir:v "circadian-period" ] ;
+     fhir:display [ fhir:v "Circadian Period (Tau)" ] ;
+     fhir:definition [ fhir:v "Endogenous circadian period length" ]
+  ] [
+     fhir:code [ fhir:v "phase-shift" ] ;
+     fhir:display [ fhir:v "Phase Shift" ] ;
+     fhir:definition [ fhir:v "Magnitude and direction of circadian phase shift" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

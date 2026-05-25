@@ -1,4 +1,4 @@
-# Mars Crew Member - Commander Chen - v0.5.12
+# Mars Crew Member - Commander Chen - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

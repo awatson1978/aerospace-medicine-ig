@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="DBS-Specimen-001"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen DBS-Specimen-001</b></p><a name="DBS-Specimen-001"> </a><a name="hcDBS-Specimen-001"> </a><blockquote><p><b>Biobank Location</b></p><ul><li>facilityId: LSDA-JSC-BioBank-01</li><li>storageTemperature: -80 Cel<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></li><li>containerBarcode: BNK-2028-DBS-00142</li></ul></blockquote><p><b>status</b>: Available</p><p><b>type</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs dried-blood-spot}">Dried Blood Spot</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>Method</b></td></tr><tr><td style="display: none">*</td><td>2028-04-20 07:00:00+0000</td><td><span title="Codes:{http://snomed.info/sct 278450005}">Finger-prick sampling</span></td></tr></table></div>
+  </text>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/biobank-location">
+    <extension url="facilityId">
+      <valueString value="LSDA-JSC-BioBank-01"/>
+    </extension>
+    <extension url="storageTemperature">
+      <valueQuantity>
+        <value value="-80"/>
+        <unit value="Cel"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="Cel"/>
+      </valueQuantity>
+    </extension>
+    <extension url="containerBarcode">
+      <valueString value="BNK-2028-DBS-00142"/>
+    </extension>
+  </extension>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs"/>
+      <code value="dried-blood-spot"/>
+      <display value="Dried Blood Spot"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <collection>
+    <collectedDateTime value="2028-04-20T07:00:00Z"/>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="278450005"/>
+        <display value="Finger-prick sampling"/>
+      </coding>
+    </method>
+  </collection>
+</Specimen>

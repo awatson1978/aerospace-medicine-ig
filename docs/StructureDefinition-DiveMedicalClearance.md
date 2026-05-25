@@ -1,4 +1,4 @@
-# Dive Medical Clearance - v0.5.12
+# Dive Medical Clearance - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:DiveMedicalClearance |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:DiveMedicalClearance |
 
  
 Medical clearance examination for diving operations 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-DiveMedicalClearance
   "resourceType" : "StructureDefinition",
   "id" : "DiveMedicalClearance",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "DiveMedicalClearance",
   "title" : "Dive Medical Clearance",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

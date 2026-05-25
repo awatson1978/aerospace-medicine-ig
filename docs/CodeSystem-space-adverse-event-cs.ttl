@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-adverse-event-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-adverse-event-cs</b></p><a name=\"space-adverse-event-cs\"> </a><a name=\"hcspace-adverse-event-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">urinary-retention<a name=\"space-adverse-event-cs-urinary-retention\"> </a></td><td>Urinary Retention</td><td>Inability to void bladder, common side effect of promethazine and scopolamine</td></tr><tr><td style=\"white-space:nowrap\">excessive-sedation<a name=\"space-adverse-event-cs-excessive-sedation\"> </a></td><td>Excessive Sedation</td><td>Sedation impairing crew performance, common with promethazine IM</td></tr><tr><td style=\"white-space:nowrap\">extrapyramidal<a name=\"space-adverse-event-cs-extrapyramidal\"> </a></td><td>Extrapyramidal Symptoms</td><td>Dystonia, akathisia, or other movement disorders from antiemetic use</td></tr><tr><td style=\"white-space:nowrap\">qt-prolongation<a name=\"space-adverse-event-cs-qt-prolongation\"> </a></td><td>QT Prolongation</td><td>Cardiac QT interval prolongation associated with ondansetron or promethazine</td></tr><tr><td style=\"white-space:nowrap\">dry-mouth<a name=\"space-adverse-event-cs-dry-mouth\"> </a></td><td>Dry Mouth (Xerostomia)</td><td>Anticholinergic dry mouth from scopolamine or promethazine</td></tr><tr><td style=\"white-space:nowrap\">blurred-vision<a name=\"space-adverse-event-cs-blurred-vision\"> </a></td><td>Blurred Vision</td><td>Visual disturbance from anticholinergic effects</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceAdverseEventCS"] ; # 
+  fhir:title [ fhir:v "Space Adverse Event Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Adverse events associated with antiemetic and countermeasure medications in spaceflight"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "urinary-retention" ] ;
+     fhir:display [ fhir:v "Urinary Retention" ] ;
+     fhir:definition [ fhir:v "Inability to void bladder, common side effect of promethazine and scopolamine" ]
+  ] [
+     fhir:code [ fhir:v "excessive-sedation" ] ;
+     fhir:display [ fhir:v "Excessive Sedation" ] ;
+     fhir:definition [ fhir:v "Sedation impairing crew performance, common with promethazine IM" ]
+  ] [
+     fhir:code [ fhir:v "extrapyramidal" ] ;
+     fhir:display [ fhir:v "Extrapyramidal Symptoms" ] ;
+     fhir:definition [ fhir:v "Dystonia, akathisia, or other movement disorders from antiemetic use" ]
+  ] [
+     fhir:code [ fhir:v "qt-prolongation" ] ;
+     fhir:display [ fhir:v "QT Prolongation" ] ;
+     fhir:definition [ fhir:v "Cardiac QT interval prolongation associated with ondansetron or promethazine" ]
+  ] [
+     fhir:code [ fhir:v "dry-mouth" ] ;
+     fhir:display [ fhir:v "Dry Mouth (Xerostomia)" ] ;
+     fhir:definition [ fhir:v "Anticholinergic dry mouth from scopolamine or promethazine" ]
+  ] [
+     fhir:code [ fhir:v "blurred-vision" ] ;
+     fhir:display [ fhir:v "Blurred Vision" ] ;
+     fhir:definition [ fhir:v "Visual disturbance from anticholinergic effects" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

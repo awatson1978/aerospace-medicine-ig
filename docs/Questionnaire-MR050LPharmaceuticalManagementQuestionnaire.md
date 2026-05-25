@@ -1,4 +1,4 @@
-# MR050L Pharmaceutical Management - v0.5.12
+# MR050L Pharmaceutical Management - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr050l-pharmaceutical-management | *Version*:0.5.12 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr050l-pharmaceutical-management | *Version*:0.6.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR050LPharmaceuticalManagement |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr050l-pharmaceutical-management",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MR050LPharmaceuticalManagement",
   "title" : "MR050L Pharmaceutical Management",
   "status" : "active",

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "circadian-phase-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem circadian-phase-cs</b></p><a name=\"circadian-phase-cs\"> </a><a name=\"hccircadian-phase-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">morning-nadir<a name=\"circadian-phase-cs-morning-nadir\"> </a></td><td>Morning Nadir</td><td>Circadian temperature nadir typically occurring in early morning hours</td></tr><tr><td style=\"white-space:nowrap\">afternoon-peak<a name=\"circadian-phase-cs-afternoon-peak\"> </a></td><td>Afternoon Peak</td><td>Circadian temperature acrophase typically occurring in late afternoon</td></tr><tr><td style=\"white-space:nowrap\">nocturnal-trough<a name=\"circadian-phase-cs-nocturnal-trough\"> </a></td><td>Nocturnal Trough</td><td>Overnight low temperature period during sleep</td></tr><tr><td style=\"white-space:nowrap\">circadian-acrophase<a name=\"circadian-phase-cs-circadian-acrophase\"> </a></td><td>Circadian Acrophase</td><td>Peak of the circadian temperature rhythm</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "CircadianPhaseCS"] ; # 
+  fhir:title [ fhir:v "Circadian Phase Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Circadian rhythm phases for contextualizing temperature and physiological measurements"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "morning-nadir" ] ;
+     fhir:display [ fhir:v "Morning Nadir" ] ;
+     fhir:definition [ fhir:v "Circadian temperature nadir typically occurring in early morning hours" ]
+  ] [
+     fhir:code [ fhir:v "afternoon-peak" ] ;
+     fhir:display [ fhir:v "Afternoon Peak" ] ;
+     fhir:definition [ fhir:v "Circadian temperature acrophase typically occurring in late afternoon" ]
+  ] [
+     fhir:code [ fhir:v "nocturnal-trough" ] ;
+     fhir:display [ fhir:v "Nocturnal Trough" ] ;
+     fhir:definition [ fhir:v "Overnight low temperature period during sleep" ]
+  ] [
+     fhir:code [ fhir:v "circadian-acrophase" ] ;
+     fhir:display [ fhir:v "Circadian Acrophase" ] ;
+     fhir:definition [ fhir:v "Peak of the circadian temperature rhythm" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

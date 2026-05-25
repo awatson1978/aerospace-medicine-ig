@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Cardiovascular Countermeasures -  v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"27"}
+    h3,h4,h5,h6{--heading-prefix:"27"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="motion-sickness.html">Motion Sickness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Cardiovascular Countermeasures</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Cardiovascular Countermeasures</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#cardiovascular-countermeasures-in-microgravity" id="markdown-toc-cardiovascular-countermeasures-in-microgravity">Cardiovascular Countermeasures in Microgravity</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#physiologic-challenges" id="markdown-toc-physiologic-challenges">Physiologic Challenges</a></li>
+  <li><a href="#countermeasure-lower-body-negative-pressure-lbnp" id="markdown-toc-countermeasure-lower-body-negative-pressure-lbnp">Countermeasure: Lower Body Negative Pressure (LBNP)</a></li>
+  <li><a href="#87th-esa-parabolic-flight-campaign" id="markdown-toc-87th-esa-parabolic-flight-campaign">87th ESA Parabolic Flight Campaign</a></li>
+  <li><a href="#observation-methods" id="markdown-toc-observation-methods">Observation Methods</a>    <ul>
+      <li><a href="#traditional-ijv-flow-grades" id="markdown-toc-traditional-ijv-flow-grades">Traditional IJV Flow Grades</a></li>
+      <li><a href="#flow-directionality-index-fdi" id="markdown-toc-flow-directionality-index-fdi">Flow Directionality Index (FDI)</a></li>
+    </ul>
+  </li>
+  <li><a href="#key-findings" id="markdown-toc-key-findings">Key Findings</a></li>
+  <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>    <ul>
+      <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
+      <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
+      <li><a href="#new-codesystems--valuesets" id="markdown-toc-new-codesystems--valuesets">New CodeSystems / ValueSets</a></li>
+      <li><a href="#fdi-observation-components" id="markdown-toc-fdi-observation-components">FDI Observation Components</a></li>
+      <li><a href="#example-researchstudy" id="markdown-toc-example-researchstudy">Example ResearchStudy</a></li>
+    </ul>
+  </li>
+  <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+  <li><a href="#next-steps--open-items" id="markdown-toc-next-steps--open-items">Next Steps / Open Items</a></li>
+</ul>
+
+</div>
+<h3 id="cardiovascular-countermeasures-in-microgravity">Cardiovascular Countermeasures in Microgravity</h3>
+
+<h2 id="overview">Overview</h2>
+<p>Exposure to microgravity induces a cephalad fluid shift that alters venous hemodynamics, increases intracranial pressure, and contributes to Spaceflight-Associated Neuro-Ocular Syndrome (SANS). Lower Body Negative Pressure (LBNP) is a primary countermeasure shown to reduce headward fluid redistribution, lower intraocular pressure, and improve internal jugular vein (IJV) flow.</p>
+
+<p>This page documents the physiologic effects observed during the <strong>87th ESA Parabolic Flight Campaign (September 1–13, 2025)</strong> and provides FHIR modeling guidance for capturing LBNP sessions, IJV ultrasound assessments, and Flow Directionality Index (FDI) calculations.</p>
+
+<h2 id="physiologic-challenges">Physiologic Challenges</h2>
+<p><strong>Primary concern:</strong> Cephalad fluid shift during microgravity exposure.</p>
+
+<p><strong>Conditions / Risks:</strong></p>
+<ul>
+  <li>Cephalad Fluid Shift</li>
+  <li>Spaceflight Associated Neuro-Ocular Syndrome (SANS)</li>
+  <li>Venous flow abnormalities</li>
+  <li>Venous thrombosis risk</li>
+  <li>Cardiovascular deconditioning</li>
+</ul>
+
+<p><strong>Observed effects:</strong></p>
+<ul>
+  <li>Altered venous pressure</li>
+  <li>Increased cephalad fluid redistribution</li>
+  <li>Stagnant or retrograde internal jugular vein (IJV) flow</li>
+  <li>Heart rate and cardiac output adaptation</li>
+</ul>
+
+<p><strong>Anatomy of Interest:</strong></p>
+<ul>
+  <li>Internal Jugular Vein (left and right IJV)</li>
+  <li>Cardiovascular system</li>
+  <li>Cerebral venous circulation</li>
+  <li>Ocular system</li>
+  <li>Central fluid compartment</li>
+</ul>
+
+<h2 id="countermeasure-lower-body-negative-pressure-lbnp">Countermeasure: Lower Body Negative Pressure (LBNP)</h2>
+<p><strong>Reported effects of LBNP:</strong></p>
+<ul>
+  <li>Reduces headward fluid shift</li>
+  <li>Reduces intraocular pressure (IOP)</li>
+  <li>Decreases probability of abnormal IJV flow</li>
+</ul>
+
+<p><strong>Tested pressure protocol:</strong></p>
+<ul>
+  <li>0 mmHg (baseline)</li>
+  <li>-10 mmHg</li>
+  <li>-20 mmHg</li>
+  <li>-30 mmHg</li>
+  <li>-40 mmHg</li>
+  <li>-50 mmHg</li>
+</ul>
+
+<h2 id="87th-esa-parabolic-flight-campaign">87th ESA Parabolic Flight Campaign</h2>
+<ul>
+  <li><strong>Dates:</strong> September 1–13, 2025</li>
+  <li><strong>Structure:</strong> 6 sets of 5 parabolas (30 total)</li>
+  <li><strong>Phases:</strong> Hypergravity ascent (1.5–1.8 g) → Microgravity (0 g) → Hypergravity recovery</li>
+</ul>
+
+<p><strong>Subjects:</strong> 3 primary (all female) + 2 backup (1 female / 1 male)</p>
+
+<p><strong>Data collected:</strong> Blood pressure, heart rate, cardiac output, ECG, IJV cross-sectional area, IJV pressure, IJV flow</p>
+
+<h2 id="observation-methods">Observation Methods</h2>
+<p><strong>IJV Cross-Sectional Area</strong></p>
+<ul>
+  <li>Butterfly iQ3 ultrasound</li>
+  <li>Compremium frames captured at end-diastole</li>
+  <li>Average of 2 blinded operators (3rd operator if discrepancy &gt;10 %)</li>
+</ul>
+
+<p><strong>IJV Pressure</strong></p>
+<ul>
+  <li>Compremium video assessment</li>
+  <li>Vessel wall near-closure method</li>
+</ul>
+
+<p><strong>IJV Flow</strong></p>
+<ul>
+  <li>Spectral pulse-wave Doppler</li>
+  <li>5-second flow image acquired ≥10 seconds into 0 g</li>
+</ul>
+
+<h3 id="traditional-ijv-flow-grades">Traditional IJV Flow Grades</h3>
+<p>| Grade | Description                  | Approximate FDI |
+|——-|——————————|—————–|
+| 1     | Forward flow                 | 1.0             |
+| 2     | Forward flow with intermittent no-flow | 0.65     |
+| 3     | Stagnant flow                | 0.03            |
+| 4     | Retrograde flow              | -0.5            |</p>
+
+<h3 id="flow-directionality-index-fdi">Flow Directionality Index (FDI)</h3>
+<p>$
+\text{FDI} = \left( \frac{t_{Q,\text{forward}} - t_{Q,\text{retrograde}}}{T_{\text{total}}} \right) \times \left( 1 - \frac{t_{Q,\text{zero}}}{T_{\text{total}}} \right)
+$</p>
+
+<p><strong>Range:</strong> [-1, 1]</p>
+<ul>
+  <li>1 = continuous forward flow</li>
+  <li>~0 = stagnant flow</li>
+  <li>Negative = retrograde flow</li>
+</ul>
+
+<h2 id="key-findings">Key Findings</h2>
+<ul>
+  <li>LBNP reduces IJV area during both 1 g and 0 g phases.</li>
+  <li>IJV area is larger in 0 g than in 1 g.</li>
+  <li>Greater incidence of abnormal IJV flow during 0 g.</li>
+  <li>LBNP improves IJV flow in both gravity conditions.</li>
+  <li>FDI provides greater granularity than traditional grading.</li>
+  <li>Heart rate increases with LBNP; cardiac output decreases with LBNP.</li>
+  <li>Additional subjects needed for stronger blood-pressure conclusions.</li>
+</ul>
+
+<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+
+<h3 id="recommended-resources">Recommended Resources</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Procedure</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Device</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ResearchStudy</code> / <code class="language-plaintext highlighter-rouge">ResearchSubject</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ImagingStudy</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Encounter</code> / <code class="language-plaintext highlighter-rouge">EpisodeOfCare</code></li>
+  <li><code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></li>
+</ul>
+
+<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
+<p><strong>Observation</strong></p>
+<ul>
+  <li><a href="StructureDefinition-internal-jugular-vein-flow-observation.html"><code class="language-plaintext highlighter-rouge">InternalJugularVeinFlowObservation</code></a></li>
+  <li><a href="StructureDefinition-internal-jugular-vein-pressure-observation.html"><code class="language-plaintext highlighter-rouge">InternalJugularVeinPressureObservation</code></a></li>
+  <li><a href="StructureDefinition-internal-jugular-vein-area-observation.html"><code class="language-plaintext highlighter-rouge">InternalJugularVeinAreaObservation</code></a></li>
+  <li><code class="language-plaintext highlighter-rouge">CardiovascularCountermeasureObservation</code></li>
+  <li><a href="StructureDefinition-flow-directionality-index-observation.html"><code class="language-plaintext highlighter-rouge">FlowDirectionalityIndexObservation</code></a> (with components)</li>
+</ul>
+
+<p><strong>Procedure</strong></p>
+<ul>
+  <li><a href="StructureDefinition-lower-body-negative-pressure-procedure.html"><code class="language-plaintext highlighter-rouge">LowerBodyNegativePressureProcedure</code></a></li>
+  <li><a href="StructureDefinition-parabolic-flight-exposure.html"><code class="language-plaintext highlighter-rouge">ParabolicFlightExposure</code></a></li>
+</ul>
+
+<p><strong>Device</strong></p>
+<ul>
+  <li><a href="StructureDefinition-ultrasound-monitoring-device.html"><code class="language-plaintext highlighter-rouge">UltrasoundMonitoringDevice</code></a></li>
+  <li><code class="language-plaintext highlighter-rouge">VenousPressureMonitoringDevice</code></li>
+  <li><a href="StructureDefinition-lbnp-countermeasure-system.html"><code class="language-plaintext highlighter-rouge">LBNPCountermeasureSystem</code></a></li>
+</ul>
+
+<h3 id="new-codesystems--valuesets">New CodeSystems / ValueSets</h3>
+<ul>
+  <li><a href="CodeSystem-microgravity-countermeasure-cs.html"><code class="language-plaintext highlighter-rouge">MicrogravityCountermeasureCS</code></a> (lbnp, venous-flow-monitoring, fluid-shift-mitigation, anti-sans-protocol, venous-thrombosis-prevention)</li>
+  <li><a href="CodeSystem-ijv-flow-grade-cs.html"><code class="language-plaintext highlighter-rouge">IJVFlowGradeCS</code></a> (grade-1 … grade-4)</li>
+  <li><a href="CodeSystem-parabolic-flight-phase-cs.html"><code class="language-plaintext highlighter-rouge">ParabolicFlightPhaseCS</code></a> (steady-1g, pull-up, microgravity, pull-out)</li>
+</ul>
+
+<h3 id="fdi-observation-components">FDI Observation Components</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">forward-flow-time</code></li>
+  <li><code class="language-plaintext highlighter-rouge">retrograde-flow-time</code></li>
+  <li><code class="language-plaintext highlighter-rouge">zero-flow-time</code></li>
+  <li><code class="language-plaintext highlighter-rouge">total-sample-time</code></li>
+  <li><code class="language-plaintext highlighter-rouge">fdi-ratio</code></li>
+</ul>
+
+<h3 id="example-researchstudy">Example ResearchStudy</h3>
+<p><strong>Title:</strong> Graded Lower Body Negative Pressure During Parabolic Microgravity Exposure
+<strong>Metadata:</strong> ESA Parabolic Flight Campaign 2025 – Cardiovascular countermeasure study</p>
+
+<h2 id="architectural-alignment">Architectural Alignment</h2>
+<p>This content aligns with and extends existing IG sections:</p>
+<ul>
+  <li>Neutral Buoyancy Training and Decompression Medicine</li>
+  <li>Radiation Exposure Tracking</li>
+  <li>Environmental Exposure Medicine</li>
+  <li>Physiologic Adaptation Tracking</li>
+</ul>
+
+<p>It contributes to a generalized <strong>Environmental Exposure + Physiologic Countermeasure</strong> framework applicable to microgravity, hypergravity, radiation, decompression, EVA stressors, and fluid redistribution.</p>
+
+<h2 id="next-steps--open-items">Next Steps / Open Items</h2>
+<ul>
+  <li>Add example FHIR instances (Observation bundles for IJV flow + LBNP session)</li>
+  <li>Create FSH definitions for the new profiles listed above</li>
+  <li>Link to new ValueSets once published</li>
+</ul>
+
+<p><strong>References</strong></p>
+<ul>
+  <li>Pentinat-Llurba, Huc, Richard Whittle, Adrien Robin, Cort Reinarz, Dave Laygo, Rashika Rao, Madison Herrmann, Josephine Allen, Rachael Seidler, Oscar Flores, and Ana Diaz-Artiles. “Graded Lower Body Negative Pressure During Parabolic Flight: Progress to Date and Upcoming Campaigns.” Oral presentation presented at the 87th ESA Parabolic Flight Campaign session, April 7, 2026, Texas A&amp;M University and collaborating institutions.</li>
+  <li>ESA Parabolic Flights Overview: <a href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights">https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights</a></li>
+</ul>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

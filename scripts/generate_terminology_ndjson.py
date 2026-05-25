@@ -9,38 +9,66 @@ astronaut health terminology sections of the HL7 FHIR Aerospace Medicine IG.
 Source Pages:
 - input/pagecontent/fitness.md (section 11.5)
 - input/pagecontent/mentalhealth.md (section 10.2.3)
-- input/pagecontent/neutral-buoyancy.md (section 13.2.3)
+- input/pagecontent/scuba-training.md
+- input/pagecontent/hyperbaric-medicine.md
 - input/pagecontent/radiation-tracking.md (section 12.2.3)
 - input/pagecontent/nutrition.md (section 14.2.3)
+- input/pagecontent/planetary-protection.md
+- input/pagecontent/biomanufacturing.md
+- input/pagecontent/crew-rescue.md
+- input/pagecontent/space-telemedicine.md
+- input/pagecontent/space-omics.md
+- input/pagecontent/eva-systems.md
+- input/pagecontent/cardiovascular-countermeasures.md
 
 Output Files:
-- input/images/SpaceHealth.CodeSystems.ndjson (19 CodeSystems)
-- input/images/SpaceHealth.ValueSets.ndjson (16 ValueSets)
+- input/images/SpaceHealth.CodeSystems.ndjson (38 CodeSystems)
+- input/images/SpaceHealth.ValueSets.ndjson (35 ValueSets)
 
 Resources Extracted:
 
-CodeSystems (19 total):
+CodeSystems (38 total):
 - Fitness: space-exercise-modality-cs, space-performance-metric-cs
 - Mental Health: aerospace-behavioral-state-cs, behavioral-biomarker-cs,
                  isolation-syndrome-factor-cs, psychological-countermeasure-cs
-- Neutral Buoyancy: neutral-buoyancy-training-cs, diving-medicine-cs,
+- SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-cs, diving-medicine-cs,
                     decompression-protocol-cs, underwater-communication-cs,
                     regulatory-compliance-cs
 - Radiation: space-radiation-type-cs, radiation-countermeasures-cs,
              radiation-detector-type-cs, aerospace-code-system-enhanced
 - Nutrition: space-nutrition-type-cs, macronutrient-metrics-cs,
              hydration-type-cs, nutrition-inventory-status-cs
+- Blood Flow Restriction: bfrt-protocol-cs, bfrt-outcome-cs, bfrt-device-type-cs
+- Planetary Protection: planetary-protection-category-cs, microbial-contaminant-type-cs,
+                        sterilization-method-cs
+- Biomanufacturing: biomanufacturing-process-cs, bliss-output-cs
+- Crew Rescue: space-emergency-type-cs, emergency-response-cs
+- Space Telemedicine: telemedicine-modality-cs, telemedicine-equipment-cs
+- Space Omics: space-omics-type-cs, expanded-specimen-type-cs
+- EVA Systems: eva-suit-state-cs, suit-provisioning-status-cs
+- Cardiovascular: microgravity-countermeasure-cs, ijv-flow-grade-cs,
+                  parabolic-flight-phase-cs
 
-ValueSets (16 total):
+ValueSets (35 total):
 - Fitness: space-exercise-modality-vs, space-performance-metric-vs, evs-units-vs
 - Mental Health: behavioral-health-metrics-vs, cognitive-performance-indicators-vs,
                  stress-countermeasures-vs, isolation-syndrome-factors-vs
-- Neutral Buoyancy: neutral-buoyancy-training-activities,
+- SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-activities,
                     underwater-training-procedures, diving-contraindicated-conditions
 - Radiation: organ-dose-codes-vs-complete
 - Nutrition: space-nutrition-type-vs, macronutrient-metrics-vs,
              hydration-type-vs, nutrition-inventory-status-vs,
              calorie-deficit-risk-vs
+- Blood Flow Restriction: bfrt-protocol-vs, bfrt-outcome-vs, bfrt-device-type-vs
+- Planetary Protection: planetary-protection-category-vs, microbial-contaminant-type-vs,
+                        sterilization-method-vs
+- Biomanufacturing: biomanufacturing-process-vs, bliss-output-vs
+- Crew Rescue: space-emergency-type-vs, emergency-response-vs
+- Space Telemedicine: telemedicine-modality-vs, telemedicine-equipment-vs
+- Space Omics: space-omics-type-vs, expanded-specimen-type-vs
+- EVA Systems: eva-suit-state-vs, suit-provisioning-status-vs
+- Cardiovascular: microgravity-countermeasure-vs, ijv-flow-grade-vs,
+                  parabolic-flight-phase-vs
 
 Usage:
     cd scripts
@@ -60,7 +88,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 FSH_RESOURCES_DIR = PROJECT_ROOT / 'fsh-generated' / 'resources'
 OUTPUT_DIR = PROJECT_ROOT / 'input' / 'images'
 
-# CodeSystems to extract (17 total)
+# CodeSystems to extract (38 total)
 CODESYSTEMS = [
     # Fitness (2)
     'space-exercise-modality-cs',
@@ -70,7 +98,7 @@ CODESYSTEMS = [
     'behavioral-biomarker-cs',
     'isolation-syndrome-factor-cs',
     'psychological-countermeasure-cs',
-    # Neutral Buoyancy (5)
+    # SCUBA Training / Hyperbaric Medicine (5)
     'neutral-buoyancy-training-cs',
     'diving-medicine-cs',
     'decompression-protocol-cs',
@@ -86,9 +114,36 @@ CODESYSTEMS = [
     'macronutrient-metrics-cs',
     'hydration-type-cs',
     'nutrition-inventory-status-cs',
+    # Blood Flow Restriction (3)
+    'bfrt-protocol-cs',
+    'bfrt-outcome-cs',
+    'bfrt-device-type-cs',
+    # Planetary Protection (3)
+    'planetary-protection-category-cs',
+    'microbial-contaminant-type-cs',
+    'sterilization-method-cs',
+    # Biomanufacturing (2)
+    'biomanufacturing-process-cs',
+    'bliss-output-cs',
+    # Crew Rescue (2)
+    'space-emergency-type-cs',
+    'emergency-response-cs',
+    # Space Telemedicine (2)
+    'telemedicine-modality-cs',
+    'telemedicine-equipment-cs',
+    # Space Omics (2)
+    'space-omics-type-cs',
+    'expanded-specimen-type-cs',
+    # EVA Systems (2)
+    'eva-suit-state-cs',
+    'suit-provisioning-status-cs',
+    # Cardiovascular (3)
+    'microgravity-countermeasure-cs',
+    'ijv-flow-grade-cs',
+    'parabolic-flight-phase-cs',
 ]
 
-# ValueSets to extract (18 total)
+# ValueSets to extract (35 total)
 VALUESETS = [
     # Fitness (3)
     'space-exercise-modality-vs',
@@ -99,7 +154,7 @@ VALUESETS = [
     'cognitive-performance-indicators-vs',
     'stress-countermeasures-vs',
     'isolation-syndrome-factors-vs',
-    # Neutral Buoyancy (3)
+    # SCUBA Training / Hyperbaric Medicine (3)
     'neutral-buoyancy-training-activities',
     'underwater-training-procedures',
     'diving-contraindicated-conditions',
@@ -111,6 +166,33 @@ VALUESETS = [
     'hydration-type-vs',
     'nutrition-inventory-status-vs',
     'calorie-deficit-risk-vs',
+    # Blood Flow Restriction (3)
+    'bfrt-protocol-vs',
+    'bfrt-outcome-vs',
+    'bfrt-device-type-vs',
+    # Planetary Protection (3)
+    'planetary-protection-category-vs',
+    'microbial-contaminant-type-vs',
+    'sterilization-method-vs',
+    # Biomanufacturing (2)
+    'biomanufacturing-process-vs',
+    'bliss-output-vs',
+    # Crew Rescue (2)
+    'space-emergency-type-vs',
+    'emergency-response-vs',
+    # Space Telemedicine (2)
+    'telemedicine-modality-vs',
+    'telemedicine-equipment-vs',
+    # Space Omics (2)
+    'space-omics-type-vs',
+    'expanded-specimen-type-vs',
+    # EVA Systems (2)
+    'eva-suit-state-vs',
+    'suit-provisioning-status-vs',
+    # Cardiovascular (3)
+    'microgravity-countermeasure-vs',
+    'ijv-flow-grade-vs',
+    'parabolic-flight-phase-vs',
 ]
 
 

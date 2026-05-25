@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/parabolic-flight-phase-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "parabolic-flight-phase-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem parabolic-flight-phase-cs</b></p><a name=\"parabolic-flight-phase-cs\"> </a><a name=\"hcparabolic-flight-phase-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/parabolic-flight-phase-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">steady-1g<a name=\"parabolic-flight-phase-cs-steady-1g\"> </a></td><td>Steady 1g</td><td>Level flight at standard gravity before or between parabolas</td></tr><tr><td style=\"white-space:nowrap\">pull-up<a name=\"parabolic-flight-phase-cs-pull-up\"> </a></td><td>Pull-Up</td><td>Hypergravity phase during aircraft pitch-up (1.5-1.8g)</td></tr><tr><td style=\"white-space:nowrap\">microgravity<a name=\"parabolic-flight-phase-cs-microgravity\"> </a></td><td>Microgravity</td><td>Free-fall phase at approximately 0g during parabolic arc</td></tr><tr><td style=\"white-space:nowrap\">pull-out<a name=\"parabolic-flight-phase-cs-pull-out\"> </a></td><td>Pull-Out</td><td>Hypergravity recovery phase during aircraft pitch-down (1.5-1.8g)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/parabolic-flight-phase-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/parabolic-flight-phase-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "ParabolicFlightPhaseCS"] ; # 
+  fhir:title [ fhir:v "Parabolic Flight Phase Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Phases of a parabolic flight maneuver used in microgravity research"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "steady-1g" ] ;
+     fhir:display [ fhir:v "Steady 1g" ] ;
+     fhir:definition [ fhir:v "Level flight at standard gravity before or between parabolas" ]
+  ] [
+     fhir:code [ fhir:v "pull-up" ] ;
+     fhir:display [ fhir:v "Pull-Up" ] ;
+     fhir:definition [ fhir:v "Hypergravity phase during aircraft pitch-up (1.5-1.8g)" ]
+  ] [
+     fhir:code [ fhir:v "microgravity" ] ;
+     fhir:display [ fhir:v "Microgravity" ] ;
+     fhir:definition [ fhir:v "Free-fall phase at approximately 0g during parabolic arc" ]
+  ] [
+     fhir:code [ fhir:v "pull-out" ] ;
+     fhir:display [ fhir:v "Pull-Out" ] ;
+     fhir:definition [ fhir:v "Hypergravity recovery phase during aircraft pitch-down (1.5-1.8g)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

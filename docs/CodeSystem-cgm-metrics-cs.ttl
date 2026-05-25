@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cgm-metrics-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cgm-metrics-cs</b></p><a name=\"cgm-metrics-cs\"> </a><a name=\"hccgm-metrics-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">time-in-range<a name=\"cgm-metrics-cs-time-in-range\"> </a></td><td>Time in Range (TIR)</td><td>Percentage of time glucose is within target range (70-180 mg/dL)</td></tr><tr><td style=\"white-space:nowrap\">glucose-variability-cv<a name=\"cgm-metrics-cs-glucose-variability-cv\"> </a></td><td>Glucose Variability (CV%)</td><td>Coefficient of variation of glucose readings</td></tr><tr><td style=\"white-space:nowrap\">mean-glucose<a name=\"cgm-metrics-cs-mean-glucose\"> </a></td><td>Mean Glucose</td><td>Average glucose level over reporting period</td></tr><tr><td style=\"white-space:nowrap\">gmi<a name=\"cgm-metrics-cs-gmi\"> </a></td><td>Glucose Management Indicator (GMI)</td><td>Estimated HbA1c based on mean glucose</td></tr><tr><td style=\"white-space:nowrap\">hypo-events<a name=\"cgm-metrics-cs-hypo-events\"> </a></td><td>Hypoglycemic Events</td><td>Number of glucose readings below 54 mg/dL</td></tr><tr><td style=\"white-space:nowrap\">hyper-events<a name=\"cgm-metrics-cs-hyper-events\"> </a></td><td>Hyperglycemic Events</td><td>Number of glucose readings above 250 mg/dL</td></tr><tr><td style=\"white-space:nowrap\">sensor-wear-pct<a name=\"cgm-metrics-cs-sensor-wear-pct\"> </a></td><td>Sensor Wear Percentage</td><td>Percentage of time CGM sensor was active and reporting</td></tr><tr><td style=\"white-space:nowrap\">time-below-range<a name=\"cgm-metrics-cs-time-below-range\"> </a></td><td>Time Below Range (TBR)</td><td>Percentage of time glucose below 70 mg/dL</td></tr><tr><td style=\"white-space:nowrap\">time-above-range<a name=\"cgm-metrics-cs-time-above-range\"> </a></td><td>Time Above Range (TAR)</td><td>Percentage of time glucose above 180 mg/dL</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "CGMMetricsCS"] ; # 
+  fhir:title [ fhir:v "Continuous Glucose Monitoring Metrics Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Standardized CGM metrics for spaceflight metabolic monitoring"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "time-in-range" ] ;
+     fhir:display [ fhir:v "Time in Range (TIR)" ] ;
+     fhir:definition [ fhir:v "Percentage of time glucose is within target range (70-180 mg/dL)" ]
+  ] [
+     fhir:code [ fhir:v "glucose-variability-cv" ] ;
+     fhir:display [ fhir:v "Glucose Variability (CV%)" ] ;
+     fhir:definition [ fhir:v "Coefficient of variation of glucose readings" ]
+  ] [
+     fhir:code [ fhir:v "mean-glucose" ] ;
+     fhir:display [ fhir:v "Mean Glucose" ] ;
+     fhir:definition [ fhir:v "Average glucose level over reporting period" ]
+  ] [
+     fhir:code [ fhir:v "gmi" ] ;
+     fhir:display [ fhir:v "Glucose Management Indicator (GMI)" ] ;
+     fhir:definition [ fhir:v "Estimated HbA1c based on mean glucose" ]
+  ] [
+     fhir:code [ fhir:v "hypo-events" ] ;
+     fhir:display [ fhir:v "Hypoglycemic Events" ] ;
+     fhir:definition [ fhir:v "Number of glucose readings below 54 mg/dL" ]
+  ] [
+     fhir:code [ fhir:v "hyper-events" ] ;
+     fhir:display [ fhir:v "Hyperglycemic Events" ] ;
+     fhir:definition [ fhir:v "Number of glucose readings above 250 mg/dL" ]
+  ] [
+     fhir:code [ fhir:v "sensor-wear-pct" ] ;
+     fhir:display [ fhir:v "Sensor Wear Percentage" ] ;
+     fhir:definition [ fhir:v "Percentage of time CGM sensor was active and reporting" ]
+  ] [
+     fhir:code [ fhir:v "time-below-range" ] ;
+     fhir:display [ fhir:v "Time Below Range (TBR)" ] ;
+     fhir:definition [ fhir:v "Percentage of time glucose below 70 mg/dL" ]
+  ] [
+     fhir:code [ fhir:v "time-above-range" ] ;
+     fhir:display [ fhir:v "Time Above Range (TAR)" ] ;
+     fhir:definition [ fhir:v "Percentage of time glucose above 180 mg/dL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

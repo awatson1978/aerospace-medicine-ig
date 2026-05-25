@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/eva-suit-state-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "eva-suit-state-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem eva-suit-state-cs</b></p><a name=\"eva-suit-state-cs\"> </a><a name=\"hceva-suit-state-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/eva-suit-state-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">microgravity-config<a name=\"eva-suit-state-cs-microgravity-config\"> </a></td><td>Microgravity Configuration</td><td>Suit configured for microgravity EVA operations</td></tr><tr><td style=\"white-space:nowrap\">planetary-surface-config<a name=\"eva-suit-state-cs-planetary-surface-config\"> </a></td><td>Planetary Surface Configuration</td><td>Suit configured for planetary surface EVA with lower-body mobility</td></tr><tr><td style=\"white-space:nowrap\">iva-rescue-config<a name=\"eva-suit-state-cs-iva-rescue-config\"> </a></td><td>IVA Rescue Configuration</td><td>Suit configured as emergency pressure garment for IVA rescue</td></tr><tr><td style=\"white-space:nowrap\">pressurization-test<a name=\"eva-suit-state-cs-pressurization-test\"> </a></td><td>Pressurization Test</td><td>Suit undergoing leak check and pressurization verification</td></tr><tr><td style=\"white-space:nowrap\">stowed<a name=\"eva-suit-state-cs-stowed\"> </a></td><td>Stowed</td><td>Suit in storage configuration, not actively deployed</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/eva-suit-state-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/eva-suit-state-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "EVASuitStateCS"] ; # 
+  fhir:title [ fhir:v "EVA Suit State Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Operational states of EVA suit systems"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "microgravity-config" ] ;
+     fhir:display [ fhir:v "Microgravity Configuration" ] ;
+     fhir:definition [ fhir:v "Suit configured for microgravity EVA operations" ]
+  ] [
+     fhir:code [ fhir:v "planetary-surface-config" ] ;
+     fhir:display [ fhir:v "Planetary Surface Configuration" ] ;
+     fhir:definition [ fhir:v "Suit configured for planetary surface EVA with lower-body mobility" ]
+  ] [
+     fhir:code [ fhir:v "iva-rescue-config" ] ;
+     fhir:display [ fhir:v "IVA Rescue Configuration" ] ;
+     fhir:definition [ fhir:v "Suit configured as emergency pressure garment for IVA rescue" ]
+  ] [
+     fhir:code [ fhir:v "pressurization-test" ] ;
+     fhir:display [ fhir:v "Pressurization Test" ] ;
+     fhir:definition [ fhir:v "Suit undergoing leak check and pressurization verification" ]
+  ] [
+     fhir:code [ fhir:v "stowed" ] ;
+     fhir:display [ fhir:v "Stowed" ] ;
+     fhir:definition [ fhir:v "Suit in storage configuration, not actively deployed" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

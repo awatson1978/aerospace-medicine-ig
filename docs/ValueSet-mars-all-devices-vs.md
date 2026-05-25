@@ -1,4 +1,4 @@
-# All Mars Mission Devices - v0.5.12
+# All Mars Mission Devices - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:MarsAllDevicesVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:MarsAllDevicesVS |
 
  
 Both certified and prototype Mars devices 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "mars-all-devices-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MarsAllDevicesVS",
   "title" : "All Mars Mission Devices",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/SuitRedundancy-Assessment-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SuitRedundancy-Assessment-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation SuitRedundancy-Assessment-001</b></p><a name=\"SuitRedundancy-Assessment-001\"> </a><a name=\"hcSuitRedundancy-Assessment-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-suit-redundancy-assessment.html\">Suit Redundancy Assessment</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:\">EVA Suit Redundancy Assessment</span></p><p><b>subject</b>: International Space Station</p><p><b>effective</b>: 2028-06-01 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Primary Suit Status</span></p><p><b>value</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs deployed-primary}\">Deployed - Primary</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Backup Suit Status</span></p><p><b>value</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs deployed-backup}\">Deployed - Backup</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Consumables Remaining</span></p><p><b>value</b>: 48 hours<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:\">Next Maintenance Due</span></p><p><b>value</b>: 2028-09-01</p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "EVA Suit Redundancy Assessment" ]
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "International Space Station" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2028-06-01T00:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:text [ fhir:v "Primary Suit Status" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs>
+         ] ;
+         fhir:code [ fhir:v "deployed-primary" ] ;
+         fhir:display [ fhir:v "Deployed - Primary" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Backup Suit Status" ]
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs>
+         ] ;
+         fhir:code [ fhir:v "deployed-backup" ] ;
+         fhir:display [ fhir:v "Deployed - Backup" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Consumables Remaining" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "48"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "hours" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "h" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:text [ fhir:v "Next Maintenance Due" ]
+     ] ;
+     fhir:value [
+       a fhir:DateTime ;
+       fhir:v "2028-09-01"^^xsd:date
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

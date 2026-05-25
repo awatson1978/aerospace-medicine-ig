@@ -1,6 +1,6 @@
 {
   "package": "mitre.fhir.spacehealth",
-  "version": "0.5.12",
+  "version": "0.6.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -355,6 +355,72 @@
       ]
     },
     {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/biobank-location",
+      "title": "Biobank Location",
+      "types": [
+        "string",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness",
       "title": "Cardiovascular Fitness Assessment",
       "types": [
@@ -373,6 +439,27 @@
       "title": "Hyperbaric Chamber Type",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase",
+      "title": "Circadian Phase",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/communication-latency",
+      "title": "Communication Latency",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
       ]
     },
     {
@@ -506,10 +593,45 @@
       ]
     },
     {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/evidence-source",
+      "title": "Evidence Source",
+      "types": [
+        "uri"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "title": "Flight Day",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "title": "Gravity Context",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-capabilities",
       "title": "Hyperbaric Chamber Capabilities",
       "types": [
         "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level",
+      "title": "LBNP Pressure Level",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
       ]
     },
     {
@@ -580,6 +702,13 @@
       "title": "Medical Intervention",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "title": "Mission Phase",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -677,6 +806,20 @@
       ]
     },
     {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/occlusion-pressure",
+      "title": "Occlusion Pressure",
+      "types": [
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code"
+      ]
+    },
+    {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/operational-status",
       "title": "Operational Status",
       "types": [
@@ -709,6 +852,13 @@
       "title": "Patient Monitoring",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category",
+      "title": "Planetary Protection Category",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -827,6 +977,13 @@
       ]
     },
     {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/sex-specific-protocol",
+      "title": "Sex-Specific Protocol",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass",
       "title": "Shielding Mass",
       "types": [
@@ -845,6 +1002,13 @@
       "title": "Space Suit Configuration",
       "types": [
         "Reference"
+      ]
+    },
+    {
+      "url": "https://mitre.org/fhir/space-health/StructureDefinition/suit-operational-state",
+      "title": "Suit Operational State",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -906,6 +1070,10 @@
     ],
     "Device": [
       {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/ultrasound-monitoring-device",
+        "title": "Ultrasound Monitoring Device"
+      },
+      {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/underwater-communication-system",
         "title": "Underwater Communication System"
       }
@@ -924,8 +1092,8 @@
     ],
     "Condition": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition",
-        "title": "Space Health Condition"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition",
+        "title": "Space Motion Sickness Condition"
       }
     ],
     "Bundle": [
@@ -966,14 +1134,50 @@
     ],
     "RiskAssessment": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment",
-        "title": "Mars Radiation Risk Assessment"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/omics-risk-assessment",
+        "title": "Omics Risk Assessment"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/radioprotective-administration",
+        "title": "Radioprotective Medication Administration"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/personalized-countermeasure-plan",
+        "title": "Personalized Countermeasure Plan"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-product",
+        "title": "Space Nutrition Product"
       }
     ],
     "Encounter": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter",
-        "title": "Autonomous Medical Encounter"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-encounter",
+        "title": "Telemedicine Encounter"
+      }
+    ],
+    "ActivityDefinition": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-activity-definition",
+        "title": "BFRT Activity Definition"
+      }
+    ],
+    "Substance": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/biological-feedstock",
+        "title": "Biological Feedstock"
+      }
+    ],
+    "SupplyDelivery": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/eva-suit-provisioning-record",
+        "title": "EVA Suit Provisioning Record"
       }
     ],
     "DiagnosticReport": [
@@ -998,16 +1202,52 @@
         "title": "MRID Questionnaire Profile"
       }
     ],
+    "AdverseEvent": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event",
+        "title": "Space Adverse Event"
+      }
+    ],
+    "BiologicallyDerivedProduct": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-blood-product",
+        "title": "Space Blood Product"
+      }
+    ],
+    "MolecularSequence": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-molecular-sequence",
+        "title": "Space Molecular Sequence"
+      }
+    ],
     "Basic": [
       {
         "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-inventory-item",
         "title": "Space Nutrition Inventory Item"
       }
     ],
-    "Medication": [
+    "Specimen": [
       {
-        "url": "https://mitre.org/fhir/space-health/StructureDefinition/space-nutrition-product",
-        "title": "Space Nutrition Product"
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/spaceflight-specimen",
+        "title": "Spaceflight Specimen"
+      }
+    ],
+    "CommunicationRequest": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-communication",
+        "title": "Telemedicine Communication"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-consult-request",
+        "title": "Telemedicine Consult Request"
+      }
+    ],
+    "DeviceDefinition": [
+      {
+        "url": "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition",
+        "title": "xEVAS Suit Definition"
       }
     ]
   },
@@ -1129,11 +1369,20 @@
       "Location"
     ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context": [
+      "AdverseEvent",
+      "CarePlan",
+      "CommunicationRequest",
+      "Condition",
+      "Device",
       "Encounter",
+      "MedicationAdministration",
       "Observation",
       "PlanDefinition",
       "Procedure",
-      "RiskAssessment"
+      "RiskAssessment",
+      "ServiceRequest",
+      "Specimen",
+      "SupplyDelivery"
     ],
     "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding": [
       "Location"
@@ -1147,6 +1396,9 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext": [
       "Questionnaire"
     ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/biobank-location": [
+      "Specimen"
+    ],
     "https://mitre.org/fhir/space-health/StructureDefinition/cardiovascular-fitness": [
       "Procedure"
     ],
@@ -1155,6 +1407,13 @@
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/chamber-type": [
       "Location"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase": [
+      "Observation"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/communication-latency": [
+      "Encounter",
+      "ServiceRequest"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/communication-systems": [
       "Procedure"
@@ -1189,8 +1448,25 @@
     "https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors": [
       "Procedure"
     ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/flight-day": [
+      "AdverseEvent",
+      "Condition",
+      "Observation"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context": [
+      "Condition",
+      "DeviceDefinition",
+      "MedicationAdministration",
+      "Observation",
+      "Procedure",
+      "Specimen"
+    ],
     "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-capabilities": [
       "Location"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level": [
+      "Observation",
+      "Procedure"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned": [
       "Procedure"
@@ -1208,6 +1484,12 @@
     "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention": [
       "Procedure"
     ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase": [
+      "CarePlan",
+      "Condition",
+      "Observation",
+      "RiskAssessment"
+    ],
     "https://mitre.org/fhir/space-health/StructureDefinition/mrid-discipline": [
       "Questionnaire"
     ],
@@ -1220,6 +1502,9 @@
     "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor": [
       "Questionnaire"
     ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/occlusion-pressure": [
+      "Procedure"
+    ],
     "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability": [
       "Location"
     ],
@@ -1228,6 +1513,12 @@
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring": [
       "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category": [
+      "Condition",
+      "Observation",
+      "Procedure",
+      "RiskAssessment"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/pulmonary-function": [
       "Procedure"
@@ -1255,6 +1546,10 @@
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/session-duration": [
       "Procedure"
+    ],
+    "https://mitre.org/fhir/space-health/StructureDefinition/sex-specific-protocol": [
+      "ActivityDefinition",
+      "CarePlan"
     ],
     "https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass": [
       "Observation"

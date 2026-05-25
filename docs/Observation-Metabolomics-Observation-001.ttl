@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/Metabolomics-Observation-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Metabolomics-Observation-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Metabolomics-Observation-001</b></p><a name=\"Metabolomics-Observation-001\"> </a><a name=\"hcMetabolomics-Observation-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-multi-omics-observation.html\">Multi-Omics Observation</a></p></div><p><b>Mission Phase</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs orbital-ops}\">Orbital Operations</span></p><p><b>Flight Day</b>: 35</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs metabolomics}\">Metabolomics</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-04-22 10:00:00+0000</p><p><b>specimen</b>: <a href=\"Specimen-DBS-Specimen-001.html\">Specimen: extension = ; status = available; type = Dried Blood Spot</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85069-3}\">Sequencing platform</span></p><p><b>value</b>: Thermo Q Exactive HF-X</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 98847-7}\">Sequence read count</span></p><p><b>value</b>: 8542 features</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 92822-6}\">Quality metric</span></p><p><b>value</b>: 92.3 %</p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-phase>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs>
+         ] ;
+         fhir:code [ fhir:v "orbital-ops" ] ;
+         fhir:display [ fhir:v "Orbital Operations" ]
+       ] )
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/flight-day>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 35
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs>
+       ] ;
+       fhir:code [ fhir:v "metabolomics" ] ;
+       fhir:display [ fhir:v "Metabolomics" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2028-04-22T10:00:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:specimen [
+     fhir:l <https://mitre.org/fhir/space-health/Specimen/DBS-Specimen-001> ;
+     fhir:reference [ fhir:v "Specimen/DBS-Specimen-001" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:85069-3 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "85069-3" ] ;
+         fhir:display [ fhir:v "Sequencing platform" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Thermo Q Exactive HF-X"
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:98847-7 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "98847-7" ] ;
+         fhir:display [ fhir:v "Sequence read count" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "8542"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "features" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:92822-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "92822-6" ] ;
+         fhir:display [ fhir:v "Quality metric" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 92.3 ] ;
+       fhir:unit [ fhir:v "%" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

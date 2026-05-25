@@ -1,4 +1,4 @@
-# Underwater Communication System - v0.5.12
+# Underwater Communication System - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/underwater-communication-system | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:UnderwaterCommunicationSystem |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/underwater-communication-system | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:UnderwaterCommunicationSystem |
 
  
 Communication equipment for underwater training operations 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-underwater-communica
   "resourceType" : "StructureDefinition",
   "id" : "underwater-communication-system",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/underwater-communication-system",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "UnderwaterCommunicationSystem",
   "title" : "Underwater Communication System",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

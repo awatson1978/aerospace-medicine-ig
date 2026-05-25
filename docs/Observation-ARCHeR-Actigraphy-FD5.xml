@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ARCHeR-Actigraphy-FD5"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ARCHeR-Actigraphy-FD5</b></p><a name="ARCHeR-Actigraphy-FD5"> </a><a name="hcARCHeR-Actigraphy-FD5"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-archer-actigraphy-observation.html">ARCHeR Actigraphy Observation</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs transit-outbound}">Outbound Transit</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}">Exam</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 129006008}">Activity monitoring</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-03-20 00:00:00+0000 --&gt; 2028-03-21 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs interdaily-stability}">Interdaily Stability (IS)</span></p><p><b>value</b>: 0.72 1<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs circadian-period}">Circadian Period (Tau)</span></p><p><b>value</b>: 24.3 h<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs total-sleep-time}">Total Sleep Time (TST)</span></p><p><b>value</b>: 390 min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemin = 'min')</span></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/Artemis-III-Mission"/>
+    </valueReference>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/mission-phase">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"/>
+        <code value="transit-outbound"/>
+        <display value="Outbound Transit"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="129006008"/>
+      <display value="Activity monitoring"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2028-03-20T00:00:00Z"/>
+    <end value="2028-03-21T00:00:00Z"/>
+  </effectivePeriod>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs"/>
+        <code value="interdaily-stability"/>
+        <display value="Interdaily Stability (IS)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="0.72"/>
+      <unit value="1"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs"/>
+        <code value="circadian-period"/>
+        <display value="Circadian Period (Tau)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="24.3"/>
+      <unit value="h"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="h"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs"/>
+        <code value="total-sleep-time"/>
+        <display value="Total Sleep Time (TST)"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="390"/>
+      <unit value="min"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="min"/>
+    </valueQuantity>
+  </component>
+</Observation>

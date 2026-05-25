@@ -131,6 +131,8 @@ It supports a broader **Autonomous Medical Countermeasures** framework for Mars-
 
 ### References
 
-- NASA HRP Metabolic Hibernation / Metabolic Suppression slides
-- Alpha-2-adrenergic agonist studies on resting energy expenditure and hypothermia (TRISH-supported)
-- Aerospace Medicine FHIR IG (MITRE)
+- Callaway, Clifton W., Katharyn L. Flickinger, Alexandra Weissman, Raymond E. West III, and colleagues. “Alpha-2-Adrenergic Agonists Reduce Resting Energy Expenditure in Humans During External Cooling.” *Temperature* (2024). [https://doi.org/10.1080/23328940.2024.2339781](https://doi.org/10.1080/23328940.2024.2339781).  
+
+- Weissman, Alexandra, Katharyn L. Flickinger, Victor Wu, and Clifton W. Callaway. “Quasi-Torpor for Long-Duration Space Missions.” *Frontiers in Space Technologies* (2024). [https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1358288/full](https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1358288/full)  
+
+- Flickinger, Katharyn L., Alexandra Weissman, Francis Guyette, and Clifton W. Callaway. “Sustained Metabolic Reduction and Hypothermia in Humans.” *PLOS ONE* (2025). [https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0321478](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0321478)  

@@ -1,4 +1,4 @@
-# Spacecraft Life Support Telemetry - v0.5.12
+# Spacecraft Life Support Telemetry - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:SpacecraftLifeSupportTelemetry |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:SpacecraftLifeSupportTelemetry |
 
  
 A logical model representing Environmental Control and Life Support Systems (ECLSS) parameters monitored in spacecraft habitat modules. 
@@ -40,11 +40,11 @@ Other representations of profile: [CSV](StructureDefinition-SpacecraftLifeSuppor
   "resourceType" : "StructureDefinition",
   "id" : "SpacecraftLifeSupportTelemetry",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/SpacecraftLifeSupportTelemetry",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SpacecraftLifeSupportTelemetry",
   "title" : "Spacecraft Life Support Telemetry",
   "status" : "active",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Sleep Loss and Hypoxia Effects - v0.5.12
+# Sleep Loss and Hypoxia Effects - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:SleepLossHypoxiaEffect |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:SleepLossHypoxiaEffect |
 
  
 Concepts related to the physiological and cognitive effects of sleep loss and hypoxia. 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SleepLossHypoxiaEffect",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SleepLossHypoxiaEffect",
   "title" : "Sleep Loss and Hypoxia Effects",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

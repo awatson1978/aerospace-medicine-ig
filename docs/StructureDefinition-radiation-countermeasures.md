@@ -1,4 +1,4 @@
-# Radiation Countermeasures - v0.5.12
+# Radiation Countermeasures - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-countermeasures | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:RadiationCountermeasures |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-countermeasures | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:RadiationCountermeasures |
 
 Protective measures taken during radiation exposure
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-radiation-countermea
   "resourceType" : "StructureDefinition",
   "id" : "radiation-countermeasures",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/radiation-countermeasures",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "RadiationCountermeasures",
   "title" : "Radiation Countermeasures",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

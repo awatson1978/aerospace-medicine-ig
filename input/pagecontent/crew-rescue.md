@@ -65,17 +65,17 @@ Standardized, concise communication is critical under stress:
 
 ### New Profiles (suggested)
 **Core Profiles**
-- **`SpaceEmergencyCondition`** – Standardized coding of emergency diagnosis (depressurization, fire, toxic atmosphere, medical) with severity, onset time, and affected modules/vehicles
-- **`EmergencyEvacuationProcedure`** – Documents the specific evacuation or abort action taken (Dragon return, Soyuz undock, safe-haven relocation) including timestamps, crew roles, and outcome
-- **`EmergencyRiskAssessment`** – Captures mission-phase and vehicle-specific risk context (e.g., probability categories for planning purposes) without performing statistical modeling
-- **`EmergencyCarePlan`** – Links identified conditions to the full contingency plan, muster point, egress path, and post-evacuation medical follow-up
+- **[`SpaceEmergencyCondition`](StructureDefinition-space-emergency-condition.html)** – Standardized coding of emergency diagnosis (depressurization, fire, toxic atmosphere, medical) with severity, onset time, and affected modules/vehicles
+- **[`EmergencyEvacuationProcedure`](StructureDefinition-emergency-evacuation-procedure.html)** – Documents the specific evacuation or abort action taken (Dragon return, Soyuz undock, safe-haven relocation) including timestamps, crew roles, and outcome
+- **[`EmergencyRiskAssessment`](StructureDefinition-emergency-risk-assessment.html)** – Captures mission-phase and vehicle-specific risk context (e.g., probability categories for planning purposes) without performing statistical modeling
+- **[`EmergencyCarePlan`](StructureDefinition-emergency-care-plan.html)** – Links identified conditions to the full contingency plan, muster point, egress path, and post-evacuation medical follow-up
 
 **Supporting Profiles (suggested)**
 - `EmergencyMusterLog` – Crew accountability and location tracking during Gather phase
 - `EvacuationTelemetryBundle` – Composite of vitals, vehicle status, and communication logs
 
 ### Candidate CodeSystems & ValueSets
-- `SpaceEmergencyTypeCS` – (depressurization, fire, toxic-atmosphere, medical-evac)
+- [`SpaceEmergencyTypeCS`](CodeSystem-space-emergency-type-cs.html) – (depressurization, fire, toxic-atmosphere, medical-evac)
 - `EvacuationActionCS` – (dragon-undock, soyuz-return, orion-abort, lunar-safe-haven)
 - `MusterPointVS` – (vehicle-specific safe havens and assembly points)
 
@@ -91,14 +91,31 @@ This content directly supports and extends existing IG sections:
 It forms a critical bridge toward future **autonomous medical operations** and precision risk-informed planning for exploration missions.
 
 ## References
-- NASA ISS Emergency Procedures (Warn-Gather-Work model)
-- NASA OIG Report IG-26-004: Management of the Human Landing System Contracts (2026) – crew rescue limitations
-- Artemis Emergency Egress System Demonstrations (Kennedy Space Center)
-- Commercial Crew Program contingency operations (Dragon / Starliner)
-- EMT and firefighter rapid intervention and accountability protocols (adapted for space)
+## References
 
----
+- NASA. *International Space Station Emergency Procedures and Crew Response Protocols (Warn-Gather-Work Framework).* Houston, TX: National Aeronautics and Space Administration, Johnson Space Center.
+  - ISS Emergency Procedures: [https://www.nasa.gov/reference/emergency-equipment-and-procedures/](https://www.nasa.gov/reference/emergency-equipment-and-procedures/)  
+  - ISS Operations: [https://www.nasa.gov/mission_pages/station/](https://www.nasa.gov/mission_pages/station/)  
 
-**Ready to go.** This version is tighter, operationally grounded, and clearly frames everything around **Crew Evacuation** while keeping the four profiles front-and-center. It subtly nods to actuarial/risk-modeling foundations without stepping into that territory.
+- NASA Office of Inspector General. *Management of the Human Landing System Contracts*. Report No. IG-26-004. Washington, DC: National Aeronautics and Space Administration Office of Inspector General, 2026.
+  - NASA OIG Reports: [https://oig.nasa.gov/audits-and-reports/](https://oig.nasa.gov/audits-and-reports/)
+  - Related Artemis rescue discussion: [https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/](https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/)  
 
-Claude can merge it into the Astronaut Health section whenever ready. Want me to generate FSH for these profiles next, or shall we keep knocking out stubs? 🚀
+- NASA. *Human Integration Design Handbook (HIDH).* NASA/SP-2010-3407. Washington, DC: National Aeronautics and Space Administration, 2010.
+  - Human Integration Design Handbook: [https://www.nasa.gov/human-integration-design-handbook/](https://www.nasa.gov/human-integration-design-handbook/)  
+
+- NASA. *Orion Program: Crew Survival, Abort, and Contingency Operations.* Washington, DC: National Aeronautics and Space Administration.
+  - Orion Program: [https://www.nasa.gov/orion/](https://www.nasa.gov/orion/)  
+  - Artemis Program: [https://www.nasa.gov/artemis/](https://www.nasa.gov/artemis/)  
+
+- NASA Commercial Crew Program. *Commercial Crew Contingency Operations and Emergency Return Capabilities (Crew Dragon and CST-100 Starliner).* Washington, DC: National Aeronautics and Space Administration.
+
+  - Commercial Crew Program: [https://www.nasa.gov/commercialcrew/](https://www.nasa.gov/commercialcrew/)  
+  - SpaceX Human Spaceflight: [https://www.spacex.com/humanspaceflight/](https://www.spacex.com/humanspaceflight/)  
+  - Boeing Starliner: [https://www.boeing.com/space/starliner/](https://www.boeing.com/space/starliner/)  
+
+- International Association of Fire Fighters. *Rapid Intervention Team Operations and Personnel Accountability Systems.* Washington, DC: IAFF.
+  - IAFF Fire Ground Survival Program: [https://www.iaff.org/fire-ground-survival/](https://www.iaff.org/fire-ground-survival/)  
+
+- Federal Emergency Management Agency. *Incident Accountability and Rapid Intervention Concepts for High-Risk Environments.* Washington, DC: FEMA.
+  - U.S. Fire Administration: [https://www.usfa.fema.gov/](https://www.usfa.fema.gov/)  

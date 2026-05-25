@@ -1,0 +1,57 @@
+{
+  "resourceType" : "MedicationAdministration",
+  "id" : "Promethazine-IM-Rescue",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-administration"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationAdministration Promethazine-IM-Rescue</b></p><a name=\"Promethazine-IM-Rescue\"> </a><a name=\"hcPromethazine-IM-Rescue\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-antiemetic-administration.html\">Antiemetic Medication Administration</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs promethazine-im}\">Promethazine (Intramuscular)</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-03-16 07:30:00+0000</p><p><b>reasonReference</b>: <a href=\"Condition-SMS-Episode-FD2.html\">Condition Space Motion Sickness (SMS)</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Route</b></td><td><b>Dose</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 78421000}\">Intramuscular route</span></td><td>25 mg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/Artemis-III-Mission"
+    }
+  },
+  {
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+        "code" : "microgravity",
+        "display" : "Microgravity"
+      }]
+    }
+  }],
+  "status" : "completed",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs",
+      "code" : "promethazine-im",
+      "display" : "Promethazine (Intramuscular)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "effectiveDateTime" : "2028-03-16T07:30:00Z",
+  "reasonReference" : [{
+    "reference" : "Condition/SMS-Episode-FD2"
+  }],
+  "dosage" : {
+    "route" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "78421000",
+        "display" : "Intramuscular route"
+      }]
+    },
+    "dose" : {
+      "value" : 25,
+      "unit" : "mg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mg"
+    }
+  }
+}

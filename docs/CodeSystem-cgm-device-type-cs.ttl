@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cgm-device-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cgm-device-type-cs</b></p><a name=\"cgm-device-type-cs\"> </a><a name=\"hccgm-device-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dexcom-g7<a name=\"cgm-device-type-cs-dexcom-g7\"> </a></td><td>Dexcom G7</td><td>Dexcom G7 continuous glucose monitoring system</td></tr><tr><td style=\"white-space:nowrap\">libre-3<a name=\"cgm-device-type-cs-libre-3\"> </a></td><td>FreeStyle Libre 3</td><td>Abbott FreeStyle Libre 3 flash glucose monitoring system</td></tr><tr><td style=\"white-space:nowrap\">guardian-4<a name=\"cgm-device-type-cs-guardian-4\"> </a></td><td>Guardian Sensor 4</td><td>Medtronic Guardian Sensor 4 CGM system</td></tr><tr><td style=\"white-space:nowrap\">eversense-e3<a name=\"cgm-device-type-cs-eversense-e3\"> </a></td><td>Eversense E3</td><td>Senseonics Eversense E3 implantable CGM system</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "CGMDeviceTypeCS"] ; # 
+  fhir:title [ fhir:v "CGM Device Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of continuous glucose monitoring devices"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dexcom-g7" ] ;
+     fhir:display [ fhir:v "Dexcom G7" ] ;
+     fhir:definition [ fhir:v "Dexcom G7 continuous glucose monitoring system" ]
+  ] [
+     fhir:code [ fhir:v "libre-3" ] ;
+     fhir:display [ fhir:v "FreeStyle Libre 3" ] ;
+     fhir:definition [ fhir:v "Abbott FreeStyle Libre 3 flash glucose monitoring system" ]
+  ] [
+     fhir:code [ fhir:v "guardian-4" ] ;
+     fhir:display [ fhir:v "Guardian Sensor 4" ] ;
+     fhir:definition [ fhir:v "Medtronic Guardian Sensor 4 CGM system" ]
+  ] [
+     fhir:code [ fhir:v "eversense-e3" ] ;
+     fhir:display [ fhir:v "Eversense E3" ] ;
+     fhir:definition [ fhir:v "Senseonics Eversense E3 implantable CGM system" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

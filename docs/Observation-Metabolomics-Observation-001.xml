@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Metabolomics-Observation-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Metabolomics-Observation-001</b></p><a name="Metabolomics-Observation-001"> </a><a name="hcMetabolomics-Observation-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-multi-omics-observation.html">Multi-Omics Observation</a></p></div><p><b>Mission Phase</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs orbital-ops}">Orbital Operations</span></p><p><b>Flight Day</b>: 35</p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs metabolomics}">Metabolomics</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-04-22 10:00:00+0000</p><p><b>specimen</b>: <a href="Specimen-DBS-Specimen-001.html">Specimen: extension = ; status = available; type = Dried Blood Spot</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 85069-3}">Sequencing platform</span></p><p><b>value</b>: Thermo Q Exactive HF-X</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 98847-7}">Sequence read count</span></p><p><b>value</b>: 8542 features</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 92822-6}">Quality metric</span></p><p><b>value</b>: 92.3 %</p></blockquote></div>
+  </text>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/mission-phase">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"/>
+        <code value="orbital-ops"/>
+        <display value="Orbital Operations"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/flight-day">
+    <valueInteger value="35"/>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs"/>
+      <code value="metabolomics"/>
+      <display value="Metabolomics"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <effectiveDateTime value="2028-04-22T10:00:00Z"/>
+  <specimen>
+    <reference value="Specimen/DBS-Specimen-001"/>
+  </specimen>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="85069-3"/>
+        <display value="Sequencing platform"/>
+      </coding>
+    </code>
+    <valueString value="Thermo Q Exactive HF-X"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="98847-7"/>
+        <display value="Sequence read count"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="8542"/>
+      <unit value="features"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="92822-6"/>
+        <display value="Quality metric"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="92.3"/>
+      <unit value="%"/>
+    </valueQuantity>
+  </component>
+</Observation>

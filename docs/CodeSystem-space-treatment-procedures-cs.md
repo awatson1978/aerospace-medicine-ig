@@ -1,4 +1,4 @@
-# Space Treatment Procedures - v0.5.12
+# Space Treatment Procedures - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:SpaceTreatmentProceduresCodeSystem |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:SpaceTreatmentProceduresCodeSystem |
 
  
 CodeSystem for space treatment procedures not found in SNOMED CT 
@@ -27,12 +27,12 @@ CodeSystem for space treatment procedures not found in SNOMED CT
   "resourceType" : "CodeSystem",
   "id" : "space-treatment-procedures-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-treatment-procedures-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SpaceTreatmentProceduresCodeSystem",
   "title" : "Space Treatment Procedures",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

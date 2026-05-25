@@ -1,4 +1,4 @@
-# MRID Questionnaire Profile - v0.5.12
+# MRID Questionnaire Profile - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:MRIDQuestionnaire |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:MRIDQuestionnaire |
 
  
 Profile for NASA Medical Requirements Integration Document (MRID) questionnaires. This profile standardizes the structure and metadata for MEDB (Medical Evaluation Document Baseline) and MR (Medical Requirements) documents translated to FHIR Questionnaire resources for structured data capture. 
@@ -51,11 +51,11 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
   "resourceType" : "StructureDefinition",
   "id" : "mrid-questionnaire",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MRIDQuestionnaire",
   "title" : "MRID Questionnaire Profile",
   "status" : "active",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Neurocognitive Monitoring -  v0.6.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"29"}
+    h3,h4,h5,h6{--heading-prefix:"29"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.6.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Missions
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="missions-artemis.html">Artemis</a>
+      </li>
+      <li>
+        <a href="missions-marsdirect.html">Mars Direct</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Flight Readiness
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="flight-readiness-pilots.html">FAA Pilot Certification (Form 8500-8)</a>
+      </li>
+      <li>
+        <a href="screening-astronaut.html">Astronaut Training</a>
+      </li>
+      <li>
+        <a href="screening-gimbal.html">Gimbal Training</a>
+      </li>
+      <li>
+        <a href="screening-analog.html">Analog Missions</a>
+      </li>
+      <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
+        <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Astronaut Health
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
+      </li>
+      <li>
+        <a href="radiation-tracking.html">Radiation Tracking</a>
+      </li>
+      <li>
+        <a href="motion-sickness.html">Motion Sickness</a>
+      </li>
+      <li>
+        <a href="nutrition.html">Nutrition</a>
+      </li>
+      <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
+        <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Environmental Monitoring
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="eclss.html">Life Support Systems</a>
+      </li>
+      <li>
+        <a href="biomes.html">Biospheres</a>
+      </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Neurocognitive Monitoring</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Neurocognitive Monitoring</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#neurocognitive-monitoring-in-spaceflight" id="markdown-toc-neurocognitive-monitoring-in-spaceflight">Neurocognitive Monitoring in Spaceflight</a>    <ul>
+      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#spaceflight-brain-changes" id="markdown-toc-spaceflight-brain-changes">Spaceflight Brain Changes</a></li>
+      <li><a href="#cognition-test-battery" id="markdown-toc-cognition-test-battery">Cognition Test Battery</a></li>
+      <li><a href="#key-results--cognition-accuracy-and-speed" id="markdown-toc-key-results--cognition-accuracy-and-speed">Key Results — Cognition Accuracy and Speed</a></li>
+      <li><a href="#polaris-dawn-pvt-individual-response-data" id="markdown-toc-polaris-dawn-pvt-individual-response-data">Polaris Dawn PVT Individual Response Data</a></li>
+      <li><a href="#longitudinal-monitoring-implications" id="markdown-toc-longitudinal-monitoring-implications">Longitudinal Monitoring Implications</a></li>
+      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a></li>
+      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+      <li><a href="#next-steps--open-items" id="markdown-toc-next-steps--open-items">Next Steps / Open Items</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
+    </ul>
+  </li>
+  <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
+</ul>
+
+</div>
+<h2 id="neurocognitive-monitoring-in-spaceflight">Neurocognitive Monitoring in Spaceflight</h2>
+
+<h3 id="overview">Overview</h3>
+
+<p>Spaceflight induces structural and functional brain changes (cephalad fluid shift, ventricular enlargement, neuroplasticity) that can affect cognitive performance, psychomotor vigilance, and operational readiness. The NASA HRP Cognition test battery provides a standardized, brief, repeatable assessment of key cognitive domains. This page documents spaceflight-induced brain changes, the Cognition battery, key research results (including Polaris Dawn PVT data), and FHIR modeling for longitudinal neurocognitive tracking.</p>
+
+<h3 id="spaceflight-brain-changes">Spaceflight Brain Changes</h3>
+
+<p><strong>Key physiologic effects:</strong></p>
+<ul>
+  <li>Head-ward fluid shift and upward shift of the brain</li>
+  <li>Increased ventricular volume (~10 %)
+    <ul>
+      <li>Brain tissue crowding at superior sagittal sinus (site of CSF reabsorption)</li>
+      <li>Twisting of the cerebral aqueduct (connects 4th and 3rd ventricle)</li>
+      <li>Changes not fully resolved 7–12 months post 6-month ISS missions</li>
+    </ul>
+  </li>
+  <li>Gray matter plasticity (primarily volume shifts, not tissue loss; largely resolved ~6 months post-mission)</li>
+  <li>White matter changes suggestive of adaptive motor and balance control</li>
+  <li>Elevated blood biomarkers of brain injury and degeneration</li>
+  <li>Spaceflight Associated Neuro-Ocular Syndrome (SANS) — severity increases with mission duration</li>
+</ul>
+
+<p><strong>Reference:</strong>
+D.R. Roberts et al. "Prolonged Microgravity Affects Human Brain Structure and Function." <em>American Journal of Neuroradiology</em> 2019 Nov 40(11):1878–1885.</p>
+
+<h3 id="cognition-test-battery">Cognition Test Battery</h3>
+
+<p>The Cognition battery consists of <strong>10 brief, well-validated tests</strong> (15–20 min total administration time) developed specifically for high-performing astronauts.</p>
+
+<p><strong>Test Domains Covered:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Emotion Recognition</td>
+      <td>Affective processing</td>
+    </tr>
+    <tr>
+      <td>Matrix Reasoning</td>
+      <td>Executive function / abstract reasoning</td>
+    </tr>
+    <tr>
+      <td>Digit Symbol Substitution (DSST)</td>
+      <td>Processing speed</td>
+    </tr>
+    <tr>
+      <td>Balloon Analog Risk Task (BART)</td>
+      <td>Risk behavior / decision making</td>
+    </tr>
+    <tr>
+      <td>Psychomotor Vigilance (PVT)</td>
+      <td>Attention / fatigue</td>
+    </tr>
+    <tr>
+      <td>Motor Praxis (MP)</td>
+      <td>Motor coordination</td>
+    </tr>
+    <tr>
+      <td>Visual Object Learning (VOLT)</td>
+      <td>Memory / visual learning</td>
+    </tr>
+    <tr>
+      <td>Fractal 2-Back (F2B)</td>
+      <td>Working memory</td>
+    </tr>
+    <tr>
+      <td>Abstract Matching (AM)</td>
+      <td>Cognitive flexibility</td>
+    </tr>
+    <tr>
+      <td>Line Orientation (LOT)</td>
+      <td>Spatial orientation</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Features:</strong></p>
+<ul>
+  <li>15 unique versions for repeated administration</li>
+  <li>Practice-effect corrections and stimulus-set controls</li>
+  <li>Sensitivity to spaceflight stressors demonstrated</li>
+  <li>Available on Windows, Apple iPad, and MRI (fCog) platforms</li>
+  <li>Multilingual (English, French, German, Italian, Russian)</li>
+  <li>Provides immediate feedback and performance history</li>
+  <li>Part of NASA Behavioral Health &amp; Performance (BHP) Standard Measures</li>
+</ul>
+
+<p><strong>Reference:</strong>
+Basner, M. et al. "Development and validation of the Cognition test battery." <em>Aerospace Medicine and Human Performance</em> 2015 Vol. 86 Issue 11 Pages 942–952.</p>
+
+<h3 id="key-results--cognition-accuracy-and-speed">Key Results — Cognition Accuracy and Speed</h3>
+
+<p>In-flight vs. pre-flight comparisons show statistically significant declines in several domains (z-score scale; slower/less accurate to faster/more accurate):</p>
+
+<p><strong>Highlighted significant changes:</strong></p>
+<ul>
+  <li>Psychomotor Vigilance Test (PVT) — Accuracy &amp; Speed</li>
+  <li>Digit Symbol Substitution (DSST) — Accuracy &amp; Speed</li>
+  <li>Motor Praxis (MP) — Accuracy &amp; Speed</li>
+</ul>
+
+<p><strong>Additional domains assessed:</strong> BART, Matrix Reasoning (MRT), Emotion Recognition (ERT), Line Orientation (LOT), Abstract Matching (AM), Fractal 2-Back (F2B), Visual Object Learning (VOLT).</p>
+
+<p>These decrements are operationally relevant for EVA tasks, docking, robotic operations, navigation, and emergency response.</p>
+
+<h3 id="polaris-dawn-pvt-individual-response-data">Polaris Dawn PVT Individual Response Data</h3>
+
+<p>Longitudinal Psychomotor Vigilance Testing demonstrates individualized neurocognitive trajectories:</p>
+
+<ul>
+  <li><strong>Pre-Flight:</strong> N = 5 PVTs</li>
+  <li><strong>In-Flight:</strong> N = 3 PVTs (FH8, FH71, FH92)</li>
+  <li><strong>Post-Flight:</strong> N = 2 PVTs (R+4h, R+39)</li>
+</ul>
+
+<p><strong>Units:</strong> milliseconds (reaction time).
+This dataset illustrates the value of repeated measures across mission phases for personalized risk modeling and operational readiness.</p>
+
+<h3 id="longitudinal-monitoring-implications">Longitudinal Monitoring Implications</h3>
+
+<p>Repeated Cognition and PVT testing supports:</p>
+<ul>
+  <li>Baseline / in-flight / post-flight Observation series</li>
+  <li>Mission-phase tagging</li>
+  <li>Time-series neurocognitive analytics</li>
+  <li>Fatigue and vigilance risk modeling</li>
+  <li>Operational readiness dashboards</li>
+</ul>
+
+<h3 id="fhir-implementation-guidance">FHIR Implementation Guidance</h3>
+
+<h4 id="recommended-resources">Recommended Resources</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Questionnaire</code> / <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Condition</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ImagingStudy</code></li>
+  <li><code class="language-plaintext highlighter-rouge">BodyStructure</code></li>
+</ul>
+
+<h4 id="new-profiles-suggested">New Profiles (suggested)</h4>
+
+<p><strong>Core</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightCognitionBattery</code></li>
+  <li><code class="language-plaintext highlighter-rouge">PsychomotorVigilanceObservation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ExecutiveFunctionAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NeurobehavioralAssessment</code></li>
+</ul>
+
+<p><strong>Structural / Biomarker</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightBrainMRI</code></li>
+  <li><code class="language-plaintext highlighter-rouge">WhiteMatterAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NeurodegenerationBiomarker</code></li>
+  <li><code class="language-plaintext highlighter-rouge">CSFShiftObservation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NeurovestibularAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">SANSAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">OperationalReadinessAssessment</code></li>
+</ul>
+
+<h4 id="suggested-valuesets--codesystems">Suggested ValueSets / CodeSystems</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">CognitiveTestCategoryVS</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NeurocognitiveDomainVS</code></li>
+  <li><code class="language-plaintext highlighter-rouge">NeurobehavioralOperationalStateVS</code></li>
+  <li><code class="language-plaintext highlighter-rouge">MissionPhaseCS</code> (pre-flight, ascent, inflight, EVA, transit, docking, reentry, recovery, post-flight-acute, post-flight-longitudinal)</li>
+</ul>
+
+<h4 id="example-use-cases">Example Use Cases</h4>
+
+<ul>
+  <li>Series of <code class="language-plaintext highlighter-rouge">Observation</code> resources linked to a <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code> from the Cognition battery</li>
+  <li>Longitudinal <code class="language-plaintext highlighter-rouge">DiagnosticReport</code> summarizing PVT trajectories tagged by mission phase</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
+<p>This content extends existing IG patterns for longitudinal physiologic monitoring and operational risk management. It integrates naturally with:</p>
+<ul>
+  <li>Radiation Exposure Tracking</li>
+  <li>Sleep &amp; Fatigue Monitoring</li>
+  <li>Vestibular Adaptation</li>
+  <li>Behavioral Health / Mental Health</li>
+  <li>EVA Workload Assessment</li>
+</ul>
+
+<p>It supports the broader <strong>Environmental Exposure + Physiologic Countermeasure</strong> framework and real-time operational readiness analytics.</p>
+
+<h3 id="next-steps--open-items">Next Steps / Open Items</h3>
+
+<ul>
+  <li>Add example FHIR instances (Cognition battery Questionnaire + PVT Observation bundle)</li>
+  <li>Publish new ValueSets for cognitive domains and mission phases</li>
+  <li>Link to related profiles (SANS, cephalad fluid shift)</li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<h2 id="references-1">References</h2>
+
+<ul>
+  <li>
+    <p>Roberts, Donna R., Yiri E. Albrecht, Juan C. Collins, Rachel A. Asemani, and colleagues. “Prolonged Microgravity Affects Human Brain Structure and Function.” <em>American Journal of Neuroradiology</em> 40, no. 11 (2019): 1878–1885. <a href="https://doi.org/10.3174/ajnr.A6249">https://doi.org/10.3174/ajnr.A6249</a>.</p>
+  </li>
+  <li>
+    <p>Basner, Mathias, David F. Dinges, Nicholas Mollicone, Adrian Ecker, and colleagues. “Development and Validation of the Cognition Test Battery for Spaceflight.” <em>Aerospace Medicine and Human Performance</em> 86, no. 11 (2015): 942–952. <a href="https://doi.org/10.3357/AMHP.4343.2015">https://doi.org/10.3357/AMHP.4343.2015</a>.</p>
+  </li>
+  <li>
+    <p>Basner, Mathias, Mathilde Savitt, David F. Dinges, and colleagues. “Cognition Test Battery: Performance Monitoring During Spaceflight Operations.” NASA Human Research Program Behavioral Health and Performance Element.</p>
+
+    <ul>
+      <li>NASA HRP Behavioral Health &amp; Performance: <a href="https://www.nasa.gov/hrp/elements/bhp/">https://www.nasa.gov/hrp/elements/bhp/</a></li>
+      <li>Cognition Battery Overview: <a href="https://bhp.nasa.gov/">https://bhp.nasa.gov/</a></li>
+    </ul>
+  </li>
+  <li>
+    <p>National Aeronautics and Space Administration Human Research Program. <em>Cognition Battery and Neurocognitive Monitoring During Spaceflight Operations.</em> NASA HRP Cognitive Functions presentation materials, including Polaris Dawn Psychomotor Vigilance Test (PVT) longitudinal observations.</p>
+  </li>
+  <li>
+    <p>Lee, John K., Rachael D. Seidler, and colleagues. “The Effects of Long Duration Spaceflight on Sensorimotor Control and Cognition.” <em>Frontiers in Neural Circuits</em> 15 (2021). <a href="https://doi.org/10.3389/fncir.2021.723504">https://doi.org/10.3389/fncir.2021.723504</a>.</p>
+  </li>
+  <li>
+    <p>Cassady, Katelyn, Heather R. McGregor, and colleagues. “Sensory Network Segregation as a Predictor of Post-Spaceflight Balance Impairments and Sensory Re-weighting.” <em>npj Microgravity</em> (2025). <a href="https://pubmed.ncbi.nlm.nih.gov/41309651/">https://pubmed.ncbi.nlm.nih.gov/41309651/</a>.</p>
+  </li>
+  <li>
+    <p>Yuan, Pengfei, and colleagues. “EEG Oscillations and Oxygen Saturation During Hypoxia Exposure.” <em>Human Brain Mapping</em> 45, no. 2 (2024). <a href="https://doi.org/10.1002/hbm.26214">https://doi.org/10.1002/hbm.26214</a>.</p>
+  </li>
+  <li>
+    <p>Nature Reviews Neurology / The Lancet Neurology Editorial Group. “Effects of Spaceflight on the Brain.” <em>The Lancet Neurology</em> 23, no. 9 (2024). <a href="https://doi.org/10.1016/S1474-4422(24)00224-2">https://doi.org/10.1016/S1474-4422(24)00224-2</a>.</p>
+  </li>
+  <li>
+    <p>National Aeronautics and Space Administration. <em>Behavioral Health and Performance Standard Measures.</em> NASA Human Research Program <a href="https://www.nasa.gov/hrp/elements/bhp/">https://www.nasa.gov/hrp/elements/bhp/</a></p>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

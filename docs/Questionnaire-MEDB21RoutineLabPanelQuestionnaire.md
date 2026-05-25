@@ -1,4 +1,4 @@
-# MEDB 2.1 Routine Laboratory Panel - v0.5.12
+# MEDB 2.1 Routine Laboratory Panel - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-1-routine-lab-panel | *Version*:0.5.12 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-1-routine-lab-panel | *Version*:0.6.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB21RoutineLabPanel |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To assess pre- and postflight clinical laboratory values for comprehensive healt
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-2-1-routine-lab-panel",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MEDB21RoutineLabPanel",
   "title" : "MEDB 2.1 Routine Laboratory Panel",
   "status" : "active",

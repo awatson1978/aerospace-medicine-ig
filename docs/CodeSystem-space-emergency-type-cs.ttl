@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-emergency-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-emergency-type-cs</b></p><a name=\"space-emergency-type-cs\"> </a><a name=\"hcspace-emergency-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">rapid-depress<a name=\"space-emergency-type-cs-rapid-depress\"> </a></td><td>Rapid Depressurization</td><td>Loss of cabin pressure requiring immediate response</td></tr><tr><td style=\"white-space:nowrap\">fire-onboard<a name=\"space-emergency-type-cs-fire-onboard\"> </a></td><td>Fire Onboard</td><td>Fire or combustion event in the spacecraft</td></tr><tr><td style=\"white-space:nowrap\">toxic-atmosphere<a name=\"space-emergency-type-cs-toxic-atmosphere\"> </a></td><td>Toxic Atmosphere</td><td>Contamination of cabin atmosphere with toxic substances</td></tr><tr><td style=\"white-space:nowrap\">medical-emergency<a name=\"space-emergency-type-cs-medical-emergency\"> </a></td><td>Medical Emergency</td><td>Crew medical emergency requiring evacuation or advanced care</td></tr><tr><td style=\"white-space:nowrap\">vehicle-malfunction<a name=\"space-emergency-type-cs-vehicle-malfunction\"> </a></td><td>Vehicle Malfunction</td><td>Critical spacecraft systems failure</td></tr><tr><td style=\"white-space:nowrap\">collision-debris<a name=\"space-emergency-type-cs-collision-debris\"> </a></td><td>Collision/Debris</td><td>Collision with orbital debris or micrometeorite impact</td></tr><tr><td style=\"white-space:nowrap\">abort-launch<a name=\"space-emergency-type-cs-abort-launch\"> </a></td><td>Launch Abort</td><td>Emergency abort during launch or ascent phase</td></tr><tr><td style=\"white-space:nowrap\">abort-entry<a name=\"space-emergency-type-cs-abort-entry\"> </a></td><td>Entry Abort</td><td>Emergency abort during atmospheric entry</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceEmergencyTypeCS"] ; # 
+  fhir:title [ fhir:v "Space Emergency Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of emergency situations during spaceflight operations"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "rapid-depress" ] ;
+     fhir:display [ fhir:v "Rapid Depressurization" ] ;
+     fhir:definition [ fhir:v "Loss of cabin pressure requiring immediate response" ]
+  ] [
+     fhir:code [ fhir:v "fire-onboard" ] ;
+     fhir:display [ fhir:v "Fire Onboard" ] ;
+     fhir:definition [ fhir:v "Fire or combustion event in the spacecraft" ]
+  ] [
+     fhir:code [ fhir:v "toxic-atmosphere" ] ;
+     fhir:display [ fhir:v "Toxic Atmosphere" ] ;
+     fhir:definition [ fhir:v "Contamination of cabin atmosphere with toxic substances" ]
+  ] [
+     fhir:code [ fhir:v "medical-emergency" ] ;
+     fhir:display [ fhir:v "Medical Emergency" ] ;
+     fhir:definition [ fhir:v "Crew medical emergency requiring evacuation or advanced care" ]
+  ] [
+     fhir:code [ fhir:v "vehicle-malfunction" ] ;
+     fhir:display [ fhir:v "Vehicle Malfunction" ] ;
+     fhir:definition [ fhir:v "Critical spacecraft systems failure" ]
+  ] [
+     fhir:code [ fhir:v "collision-debris" ] ;
+     fhir:display [ fhir:v "Collision/Debris" ] ;
+     fhir:definition [ fhir:v "Collision with orbital debris or micrometeorite impact" ]
+  ] [
+     fhir:code [ fhir:v "abort-launch" ] ;
+     fhir:display [ fhir:v "Launch Abort" ] ;
+     fhir:definition [ fhir:v "Emergency abort during launch or ascent phase" ]
+  ] [
+     fhir:code [ fhir:v "abort-entry" ] ;
+     fhir:display [ fhir:v "Entry Abort" ] ;
+     fhir:definition [ fhir:v "Emergency abort during atmospheric entry" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

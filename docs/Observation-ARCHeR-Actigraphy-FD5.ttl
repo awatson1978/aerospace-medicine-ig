@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/ARCHeR-Actigraphy-FD5> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ARCHeR-Actigraphy-FD5"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ARCHeR-Actigraphy-FD5</b></p><a name=\"ARCHeR-Actigraphy-FD5\"> </a><a name=\"hcARCHeR-Actigraphy-FD5\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-archer-actigraphy-observation.html\">ARCHeR Actigraphy Observation</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs transit-outbound}\">Outbound Transit</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 129006008}\">Activity monitoring</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-03-20 00:00:00+0000 --&gt; 2028-03-21 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs interdaily-stability}\">Interdaily Stability (IS)</span></p><p><b>value</b>: 0.72 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs circadian-period}\">Circadian Period (Tau)</span></p><p><b>value</b>: 24.3 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs total-sleep-time}\">Total Sleep Time (TST)</span></p><p><b>value</b>: 390 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-phase>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs>
+         ] ;
+         fhir:code [ fhir:v "transit-outbound" ] ;
+         fhir:display [ fhir:v "Outbound Transit" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "exam" ] ;
+       fhir:display [ fhir:v "Exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:129006008 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "129006008" ] ;
+       fhir:display [ fhir:v "Activity monitoring" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2028-03-20T00:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2028-03-21T00:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs>
+         ] ;
+         fhir:code [ fhir:v "interdaily-stability" ] ;
+         fhir:display [ fhir:v "Interdaily Stability (IS)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.72 ] ;
+       fhir:unit [ fhir:v "1" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "1" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs>
+         ] ;
+         fhir:code [ fhir:v "circadian-period" ] ;
+         fhir:display [ fhir:v "Circadian Period (Tau)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 24.3 ] ;
+       fhir:unit [ fhir:v "h" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "h" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs>
+         ] ;
+         fhir:code [ fhir:v "total-sleep-time" ] ;
+         fhir:display [ fhir:v "Total Sleep Time (TST)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "390"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "min" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "min" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

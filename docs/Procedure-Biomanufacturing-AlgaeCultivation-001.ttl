@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Procedure/Biomanufacturing-AlgaeCultivation-001> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Biomanufacturing-AlgaeCultivation-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/biomanufacturing-procedure"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/biomanufacturing-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure Biomanufacturing-AlgaeCultivation-001</b></p><a name=\"Biomanufacturing-AlgaeCultivation-001\"> </a><a name=\"hcBiomanufacturing-AlgaeCultivation-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-biomanufacturing-procedure.html\">Biomanufacturing Procedure</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs algae-photobioreactor}\">Algae Photobioreactor</span></p><p><b>subject</b>: International Space Station - Columbus Module</p><p><b>performed</b>: 2028-05-01 00:00:00+0000 --&gt; 2028-05-15 00:00:00+0000</p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>14-day cultivation cycle. Harvested 2.1 kg wet biomass, achieving 95% O2 production target.</p>\n</div></blockquote><p><b>usedReference</b>: <a href=\"Device-Bioreactor-Algae-001.html\">Device: status = active; manufacturer = Techshot Inc.; modelNumber = PBR-3000; type = ; note = Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/gravity-context>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+         ] ;
+         fhir:code [ fhir:v "microgravity" ] ;
+         fhir:display [ fhir:v "Microgravity" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs>
+       ] ;
+       fhir:code [ fhir:v "algae-photobioreactor" ] ;
+       fhir:display [ fhir:v "Algae Photobioreactor" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:display [ fhir:v "International Space Station - Columbus Module" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2028-05-01T00:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2028-05-15T00:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:outcome [
+     fhir:coding ( [
+       a sct:385669000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:code [ fhir:v "385669000" ] ;
+       fhir:display [ fhir:v "Successful" ]
+     ] )
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "14-day cultivation cycle. Harvested 2.1 kg wet biomass, achieving 95% O2 production target." ]
+  ] ) ; # 
+  fhir:usedReference ( [
+     fhir:l <https://mitre.org/fhir/space-health/Device/Bioreactor-Algae-001> ;
+     fhir:reference [ fhir:v "Device/Bioreactor-Algae-001" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

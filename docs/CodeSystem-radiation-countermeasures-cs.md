@@ -1,4 +1,4 @@
-# Radiation Countermeasures Code System - v0.5.12
+# Radiation Countermeasures Code System - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:RadiationCountermeasuresCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:RadiationCountermeasuresCS |
 
  
 Protective measures against space radiation 
@@ -28,12 +28,12 @@ Protective measures against space radiation
   "resourceType" : "CodeSystem",
   "id" : "radiation-countermeasures-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "RadiationCountermeasuresCS",
   "title" : "Radiation Countermeasures Code System",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -49,7 +49,7 @@ Protective measures against space radiation
   "description" : "Protective measures against space radiation",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 4,
+  "count" : 6,
   "concept" : [
     {
       "code" : "shielding",
@@ -66,6 +66,16 @@ Protective measures against space radiation
     {
       "code" : "monitoring",
       "display" : "Enhanced Monitoring"
+    },
+    {
+      "code" : "nac",
+      "display" : "N-Acetylcysteine (NAC)",
+      "definition" : "Antioxidant and glutathione precursor with radioprotective properties"
+    },
+    {
+      "code" : "amifostine",
+      "display" : "Amifostine",
+      "definition" : "Cytoprotective agent that scavenges free radicals from ionizing radiation"
     }
   ]
 }

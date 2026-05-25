@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Fitness -  v0.5.12</title>
+    <title>Fitness -  v0.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"14"}
-    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.12 - ci-build
+            <span style="display:inline-block;">0.6.0 - ci-build
 
 
             </span>
@@ -113,6 +113,9 @@
         <a href="screening-analog.html">Analog Missions</a>
       </li>
       <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
         <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
       </li>
     </ul>
@@ -123,19 +126,43 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
       </li>
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
       <li>
-        <a href="fitness.html">Fitness</a>
+        <a href="motion-sickness.html">Motion Sickness</a>
       </li>
       <li>
         <a href="nutrition.html">Nutrition</a>
       </li>
       <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
         <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
       </li>
     </ul>
   </li>
@@ -150,13 +177,35 @@
       <li>
         <a href="biomes.html">Biospheres</a>
       </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
     </ul>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
-  </li>
-  <li>
-    <a href="references.html">References</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -193,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.12) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Fitness</h2>
   
 
@@ -213,16 +262,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#exercise-and-fitness" id="markdown-toc-exercise-and-fitness">Exercise and Fitness</a>    <ul>
       <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+      <li><a href="#exploration-constraints" id="markdown-toc-exploration-constraints">Exploration Constraints</a></li>
+      <li><a href="#study-design-groups" id="markdown-toc-study-design-groups">Study Design Groups</a></li>
+      <li><a href="#physical-performance-assessments" id="markdown-toc-physical-performance-assessments">Physical Performance Assessments</a></li>
       <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
       <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a></li>
       <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
       <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
       <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
       <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a></li>
+      <li><a href="#venous-flow-abnormalities-and-hemostasis-monitoring" id="markdown-toc-venous-flow-abnormalities-and-hemostasis-monitoring">Venous Flow Abnormalities and Hemostasis Monitoring</a></li>
       <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
       <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a></li>
       <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
       <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
+      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+      <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a></li>
       <li><a href="#references" id="markdown-toc-references">References</a></li>
     </ul>
   </li>
@@ -236,6 +291,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>When astronaut Scott Kelly completed his 340-day mission aboard the International Space Station, he spent an average of <strong>2.5 hours every single day</strong> exercisingrunning on a treadmill with a harness pulling him down to simulate Earth's gravity, lifting weights on the Advanced Resistive Exercise Device (ARED), and cycling on the stationary bike. Despite this heroic effort, he still lost significant bone density and muscle mass. This stark reality reveals the fundamental challenge of human spaceflight: in microgravity, the human body begins to atrophy almost immediately, and exercise becomes not just fitness training, but a <strong>medical countermeasure critical to mission success and crew survival</strong>.</p>
 
 <p>On the ISS, astronauts face a paradox: they must exercise more intensely than Olympic athletes, yet they're doing it in an environment where even simple movements require conscious effort. The ARED system can simulate loads exceeding 600 pounds, making it possible to perform squats and deadlifts in space. The T2 treadmill, vibration-isolated to prevent shaking the entire station, allows running at speeds up to 12 mph while a harness system pulls the astronaut downward with carefully calibrated force. Every workout session generates data: heart rate, simulated body weight, power output, exercise duration, and recovery metricsall critical for physicians on the ground to assess whether the crew's fitness program is preventing the inexorable physiologic decline of spaceflight.</p>
+
+<h3 id="exploration-constraints">Exploration Constraints</h3>
+
+<p>Artemis-class vehicles impose severe mass, power, and volume limits. Future exercise systems must:</p>
+<ul>
+  <li>Use smaller footprints</li>
+  <li>Be lightweight</li>
+  <li>Consume fewer resources</li>
+</ul>
+
+<p>Future lunar and Mars EVAs will involve heavier suits, longer durations, higher cognitive and physical workloads, and increased injury risk.</p>
+
+<h3 id="study-design-groups">Study Design Groups</h3>
+
+<p><strong>Control Group</strong>
+Nominal ISS exercise protocol:</p>
+<ul>
+  <li>T2 treadmill</li>
+  <li>CEVIS cycling</li>
+  <li>ARED resistance exercise</li>
+</ul>
+
+<p><strong>Active Group 1</strong>
+ARED + CEVIS only (treadmill removed)</p>
+
+<p><strong>Active Group 2</strong>
+E4D multifunction exercise system:</p>
+<ul>
+  <li>Resistive exercise</li>
+  <li>Cycle ergometry</li>
+  <li>Rowing</li>
+  <li>Rope pulling</li>
+</ul>
+
+<h3 id="physical-performance-assessments">Physical Performance Assessments</h3>
+
+<p>Key metrics evaluated across all groups:</p>
+<ul>
+  <li>VO₂peak</li>
+  <li>Isokinetic strength and endurance</li>
+  <li>Bench press strength and endurance</li>
+  <li>Leg press strength and endurance</li>
+  <li>IMTP (Isometric Mid-Thigh Pull)</li>
+</ul>
 
 <h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
 
@@ -275,6 +374,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>These profiles extend standard FHIR resources while incorporating space-specific terminology and requirements, following the same architectural patterns established in radiation and nutrition tracking modules.</p>
 
+<h4 id="suggested-profiles-exercise-countermeasures--venous-hemostasis">Suggested Profiles (Exercise Countermeasures &amp; Venous Hemostasis)</h4>
+
+<p><strong>Primary (Exercise-focused)</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ExerciseCountermeasureSession</code></li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightFitnessAssessment</code></li>
+</ul>
+
+<p><strong>Supporting (Venous / Hemostasis)</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">VenousFlowAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightCoagulationPanel</code></li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightVenousMRI</code></li>
+  <li><code class="language-plaintext highlighter-rouge">VenousHemostasisAssessment</code></li>
+</ul>
+
 <h4 id="data-architecture">Data Architecture</h4>
 
 <p>Exercise tracking in space incorporates multiple data dimensions:</p>
@@ -308,6 +423,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>LOINC</strong>: Exercise frequency (89555-7), type of exercise (73985-4), heart rate measurements</li>
   <li><strong>SNOMED CT</strong>: Exercise procedures, musculoskeletal conditions</li>
   <li><strong>NASA Standards</strong>: Exercise countermeasure requirements</li>
+</ul>
+
+<h4 id="candidate-codesystems--valuesets">Candidate CodeSystems / ValueSets</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">e4d-training</code></li>
+  <li><code class="language-plaintext highlighter-rouge">cycle-ergometry</code></li>
+  <li><code class="language-plaintext highlighter-rouge">eva-conditioning</code></li>
+  <li><code class="language-plaintext highlighter-rouge">microgravity-deconditioning</code></li>
+  <li><code class="language-plaintext highlighter-rouge">ijv-flow-velocity</code></li>
+  <li><code class="language-plaintext highlighter-rouge">venous-flow-stasis</code></li>
+  <li><code class="language-plaintext highlighter-rouge">thrombin-generation</code></li>
+  <li><code class="language-plaintext highlighter-rouge">hypercoagulability-index</code></li>
 </ul>
 
 <h3 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h3>
@@ -479,6 +607,88 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Gait analysis from treadmill accelerometers</li>
   <li>Impact force patterns during running</li>
   <li>Muscle activation patterns (if EMG available)</li>
+</ul>
+
+<h3 id="venous-flow-abnormalities-and-hemostasis-monitoring">Venous Flow Abnormalities and Hemostasis Monitoring</h3>
+
+<p>Venous stasis has been identified in ISS crewmembers and represents a thrombosis risk factor consistent with Virchow's Triad. Only a subset of astronauts develop abnormal flow patterns. Measurements were collected pre-flight, in-flight, and post-flight under multiple conditions (supine, seated, head-down tilt, LBNP).</p>
+
+<h4 id="ultrasound-methods">Ultrasound Methods</h4>
+
+<ul>
+  <li>Quantification of right and left internal jugular vein (IJV) cross-sectional area</li>
+  <li>Flow characteristic measurements</li>
+  <li>Posture-based imaging protocols</li>
+  <li>In-flight imaging during weightlessness</li>
+  <li>Venoconstrictive thigh cuff testing</li>
+  <li>Valsalva and Mueller respiratory maneuvers</li>
+</ul>
+
+<h4 id="mri-methods">MRI Methods</h4>
+
+<p><strong>Objectives:</strong></p>
+<ul>
+  <li>Assess cerebral and neck venous anatomy</li>
+  <li>Identify anatomic variability associated with thrombosis risk</li>
+  <li>Evaluate altered venous hemodynamics during weightlessness</li>
+</ul>
+
+<p><strong>Sequences:</strong></p>
+<ul>
+  <li>4D Flow MRI</li>
+  <li>Thoracic duct imaging</li>
+  <li>Posture-arm maneuver protocols</li>
+</ul>
+
+<h4 id="targeted-biomarker-analysis">Targeted Biomarker Analysis</h4>
+
+<p>Thrombus formation stages and biomarkers:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Biomarkers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Systemic inflammation</td>
+      <td>C-Reactive Protein (CRP)</td>
+    </tr>
+    <tr>
+      <td>Endothelial activation</td>
+      <td>sVCAM-1, sE-Selectin</td>
+    </tr>
+    <tr>
+      <td>Platelet/leukocyte activation</td>
+      <td>Platelet Factor 4 (PF4), sCD40L, CitH3, Cell free DNA</td>
+    </tr>
+    <tr>
+      <td>Coagulation cascade activation</td>
+      <td>Prothrombin Fragment 1+2, Thrombin-Antithrombin Complex, D-Dimer</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="functional-coagulation-analysis">Functional Coagulation Analysis</h4>
+
+<ul>
+  <li>Prothrombin Time (PT)</li>
+  <li>Activated Partial Thromboplastin Time (aPTT)</li>
+  <li>Calibrated Automated Thrombography (CAT) — real-time thrombin generation</li>
+</ul>
+
+<h4 id="target-agnostic-plasma-biomarkers">Target-Agnostic Plasma Biomarkers</h4>
+
+<p>O-Link proximity extension assay platform measures ~5,400 plasma proteins simultaneously for biomarker discovery related to flow stasis and thrombosis progression.</p>
+
+<h4 id="mission-timeline-sampling">Mission Timeline Sampling</h4>
+
+<ul>
+  <li><strong>Preflight:</strong> L-270, L-180, L-90/50</li>
+  <li><strong>Inflight:</strong> FD7, FD45, FD90, FD150</li>
+  <li><strong>Postflight:</strong> R-1/4, R+1/2, R+5/7, R+14/21</li>
 </ul>
 
 <h3 id="integration-with-existing-systems">Integration with Existing Systems</h3>
@@ -684,6 +894,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Reduced equipment mass</strong> for surface habitat fitness systems</li>
 </ul>
 
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
+<p>This content extends the existing <strong>Fitness</strong> / <strong>Exercise Countermeasures</strong> section of the Aerospace Medicine IG and integrates tightly with:</p>
+<ul>
+  <li>Cardiovascular Countermeasures (LBNP, IJV hemodynamics, cephalad fluid shift)</li>
+  <li>Neutral Buoyancy and EVA simulation</li>
+  <li>Radiation Tracking</li>
+  <li>Longitudinal astronaut health surveillance</li>
+</ul>
+
+<p>It supports a unified <strong>Physiologic Countermeasure + Hemostasis Monitoring</strong> framework for exploration missions.</p>
+
+<h3 id="acknowledgements">Acknowledgements</h3>
+
+<p>NASA Cardiovascular &amp; Vision Laboratory, UTHealth Houston McGovern Medical School, UNC School of Medicine, Beth Israel Deaconess Medical Center, DLR, and European Space Agency collaborators.</p>
+
 <h3 id="references">References</h3>
 
 <h4 id="exercise-equipment-and-protocols">Exercise Equipment and Protocols</h4>
@@ -721,6 +947,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://pubmed.ncbi.nlm.nih.gov/41217000/">Musculoskeletal responses to spaceflight: mechanisms, countermeasures, and key gaps</a></li>
 </ul>
 
+<h4 id="exercise-countermeasures-and-venous-hemostasis">Exercise Countermeasures and Venous Hemostasis</h4>
+
+<ul>
+  <li>NASA HRP Exercise and Fitness / Venous Flow / Space Hemostasis workshop slides</li>
+  <li>Aerospace Medicine FHIR IG (MITRE)</li>
+</ul>
+
 
 
 
@@ -740,7 +973,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 00:24-0500">2026-03-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

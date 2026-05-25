@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Radiation Tracking -  v0.5.12</title>
+    <title>Radiation Tracking -  v0.6.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.5.12 - ci-build
+            <span style="display:inline-block;">0.6.0 - ci-build
 
 
             </span>
@@ -113,6 +113,9 @@
         <a href="screening-analog.html">Analog Missions</a>
       </li>
       <li>
+        <a href="scuba-training.html">SCUBA Training</a>
+      </li>
+      <li>
         <a href="nasa-medical-requirements.html">NASA Medical Requirements</a>
       </li>
     </ul>
@@ -123,19 +126,43 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="neutral-buoyancy.html">Neutral Buoyancy</a>
+        <a href="hyperbaric-medicine.html">Hyperbaric Medicine</a>
       </li>
       <li>
         <a href="radiation-tracking.html">Radiation Tracking</a>
       </li>
       <li>
-        <a href="fitness.html">Fitness</a>
+        <a href="motion-sickness.html">Motion Sickness</a>
       </li>
       <li>
         <a href="nutrition.html">Nutrition</a>
       </li>
       <li>
+        <a href="fitness.html">Exercise &amp; Fitness</a>
+      </li>
+      <li>
+        <a href="space-omics.html">Space Omics</a>
+      </li>
+      <li>
         <a href="mentalhealth.html">Mental Health</a>
+      </li>
+      <li>
+        <a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a>
+      </li>
+      <li>
+        <a href="metabolic-hibernation.html">Metabolic Hibernation</a>
+      </li>
+      <li>
+        <a href="space-telemedicine.html">Space Telemedicine</a>
+      </li>
+      <li>
+        <a href="crew-rescue.html">Crew Evacuation</a>
+      </li>
+      <li>
+        <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
+      </li>
+      <li>
+        <a href="blood-flow-restriction.html">Blood Flow Restriction Training</a>
       </li>
     </ul>
   </li>
@@ -150,13 +177,35 @@
       <li>
         <a href="biomes.html">Biospheres</a>
       </li>
+      <li>
+        <a href="space-agriculture.html">Space Agriculture</a>
+      </li>
+      <li>
+        <a href="planetary-protection.html">Planetary Protection</a>
+      </li>
+      <li>
+        <a href="biomanufacturing.html">Biomanufacturing</a>
+      </li>
+      <li>
+        <a href="eva-systems.html">EVA Systems</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">References
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="references.html">Articles &amp; Whitepapers</a>
+      </li>
+      <li>
+        <a href="asma-2026-abstracts.html">AsMA 2026 Abstracts</a>
+      </li>
     </ul>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
-  </li>
-  <li>
-    <a href="references.html">References</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -193,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.5.12) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Radiation Tracking</h2>
   
 
@@ -220,6 +269,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
       <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a></li>
       <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
+      <li><a href="#hera-radiation-monitoring-system-polaris-dawn--fram2" id="markdown-toc-hera-radiation-monitoring-system-polaris-dawn--fram2">HERA Radiation Monitoring System (Polaris Dawn &amp; Fram2)</a></li>
       <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a></li>
       <li><a href="#regulatory-and-standards-compliance" id="markdown-toc-regulatory-and-standards-compliance">Regulatory and Standards Compliance</a></li>
       <li><a href="#future-considerations" id="markdown-toc-future-considerations">Future Considerations</a></li>
@@ -639,13 +689,151 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Technology Development</strong>: Evaluation of new dosimetry and shielding technologies</li>
 </ul>
 
+<h3 id="hera-radiation-monitoring-system-polaris-dawn--fram2">HERA Radiation Monitoring System (Polaris Dawn &amp; Fram2)</h3>
+
+<h4 id="overview-1">Overview</h4>
+
+<p>The NASA Human Research Program (HRP) HERA (High-Energy Radiation Analyzer) is a fully autonomous radiation monitoring instrument designed for NASA exploration missions. It flew for the first time inside a crewed spacecraft on Polaris Dawn and again on Fram2, providing the first high-altitude and polar-orbit radiation measurements inside a Dragon-class vehicle. These data fill critical gaps in our understanding of radiation exposure beyond low Earth orbit (LEO) and in polar trajectories.</p>
+
+<p>This section documents the HERA hardware, mission results, space weather context, and FHIR modeling guidance for incorporating these measurements into the Aerospace Medicine IG.</p>
+
+<h4 id="hera-system-description">HERA System Description</h4>
+
+<p><strong>HERA Radiation Monitoring System</strong></p>
+<ul>
+  <li>Fully autonomous instrument developed for NASA exploration programs</li>
+  <li>Modified from 110 V DC to 28 V DC to support Crew Dragon spacecraft</li>
+  <li>Polaris Dawn flew the Artemis I qualification unit</li>
+  <li>Fram2 flew a refly of the same Artemis I flight hardware</li>
+  <li>Configuration: one processing unit + two sensor units (Fram2 used processing unit only)</li>
+  <li>Qualified for shock, vibration, and thermal environments (additional SpaceX qualification performed)</li>
+  <li>No direct vehicle data connection on Fram2</li>
+  <li>Mass: approximately 0.7 kg (excluding cabling)</li>
+  <li>Power consumption: approximately 5 W</li>
+  <li>Outputs: dosimetry, science data, caution/warning, and crew display data</li>
+</ul>
+
+<h4 id="mission-results--dose-and-dose-equivalent-measurements">Mission Results – Dose and Dose Equivalent Measurements</h4>
+
+<p><strong>Key findings</strong></p>
+<ul>
+  <li>Total mission dose equivalent: approximately <strong>8 mSv</strong> per mission</li>
+  <li>Observed doses were lower than pre-flight predictions (15–20 mSv)</li>
+  <li>Peak dose rate: <strong>0.2 mSv/min</strong> (comparable to Artemis I outgoing Van Allen belt passage)</li>
+  <li>Vehicle and sensor shielding strongly influenced measured dose</li>
+  <li>Internal HERA clock drift required post-flight mission-time correction</li>
+</ul>
+
+<p><strong>Fram2 Polar Orbit Dose Rate Map</strong></p>
+<ul>
+  <li>Highest dose regions observed near the <strong>South Atlantic Anomaly</strong> and polar passes</li>
+  <li>Dose maps plotted in microgray per minute (µGy/min) with logarithmic scaling</li>
+  <li>Latitude and longitude-based orbital mapping performed</li>
+</ul>
+
+<h4 id="fram2-space-weather-context">Fram2 Space Weather Context</h4>
+
+<ul>
+  <li>Fram2 launched during an NOAA <strong>S2 moderate radiation storm</strong></li>
+  <li>Low-energy proton flux exceeded 100 PFU</li>
+  <li>Event associated with an <strong>X1.1 solar flare</strong> on March 28</li>
+  <li>Associated coronal mass ejection produced geomagnetic storming later in the mission</li>
+  <li><strong>No significant radiation increase observed inside Dragon</strong> due to soft proton spectrum and spacecraft shielding</li>
+</ul>
+
+<h4 id="fram2-space-x-ray-experiment-findings">Fram2 Space X-Ray Experiment Findings</h4>
+
+<ul>
+  <li>X-ray exposures were clearly visible in detector imaging data</li>
+  <li>Total HERA X-ray exposure: approximately <strong>2.3 µSv</strong></li>
+  <li>Estimated skin exposure: approximately <strong>9 µSv ±50 %</strong></li>
+  <li>FD3 detector exposures were approximately 10× greater than FD1</li>
+  <li>Orientation and shielding geometry likely contributed to the difference</li>
+</ul>
+
+<h4 id="mission-radiation-exposure-comparison">Mission Radiation Exposure Comparison</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Approximate Dose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fram2 Space X-Ray</td>
+      <td>0.009 mSv</td>
+    </tr>
+    <tr>
+      <td>Fram2 CADS</td>
+      <td>0.828–1.223 mSv</td>
+    </tr>
+    <tr>
+      <td>Fram2 HERA</td>
+      <td>1.2 mSv</td>
+    </tr>
+    <tr>
+      <td>ISS (3.5 Days)</td>
+      <td>1.2–1.5 mSv</td>
+    </tr>
+    <tr>
+      <td>ISS (5 Days)</td>
+      <td>1.9–2.3 mSv</td>
+    </tr>
+    <tr>
+      <td>ISS (17 Days)</td>
+      <td>6.4–8 mSv</td>
+    </tr>
+    <tr>
+      <td><strong>Polaris Dawn</strong></td>
+      <td><strong>8 mSv</strong></td>
+    </tr>
+    <tr>
+      <td>Artemis I (25 Days)</td>
+      <td>27–36 mSv</td>
+    </tr>
+    <tr>
+      <td>ISS (6 Months)</td>
+      <td>68–82 mSv</td>
+    </tr>
+    <tr>
+      <td>Biosentinel SPE Skin Dose</td>
+      <td>1250 mSv</td>
+    </tr>
+    <tr>
+      <td>Projected Mars Mission</td>
+      <td>700–1300 mSv</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="fhir-implementation-guidance">FHIR Implementation Guidance</h4>
+
+<h5 id="recommended-resources">Recommended Resources</h5>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Observation</code> – total mission dose, dose equivalent, peak dose rate, SPE exposure, proton flux, solar flare measurements</li>
+  <li><code class="language-plaintext highlighter-rouge">Device</code> – HERA and CADS detector documentation</li>
+  <li><code class="language-plaintext highlighter-rouge">DiagnosticReport</code> – mission dose summaries and polar orbit maps</li>
+  <li>Extensions for: mission phase, shielding configuration, orbital region, organ-specific doses</li>
+</ul>
+
+<h5 id="new--enhanced-profiles-suggested">New / Enhanced Profiles (suggested)</h5>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">HERARadiationObservation</code> (or extend existing <code class="language-plaintext highlighter-rouge">SpaceRadiationExposure</code>)</li>
+  <li><code class="language-plaintext highlighter-rouge">HERADetectorDevice</code></li>
+  <li><code class="language-plaintext highlighter-rouge">PolarOrbitRadiationMapReport</code></li>
+</ul>
+
 <h3 id="implementation-examples">Implementation Examples</h3>
 
 <p>The true power of standardized radiation tracking becomes apparent when you see it in action across diverse scenarios—from routine ISS operations where radiation exposure is carefully monitored and managed within established limits, to emergency situations where real-time dose tracking enables critical decisions about crew safety. These implementation examples showcase how abstract data models translate into practical tools that protect astronaut health, whether documenting a routine measurement from an electronic personal dosimeter or generating comprehensive career dose summaries that guide mission planning and medical surveillance for decades to come.</p>
 
 <h4 id="individual-dose-measurement-example">Individual Dose Measurement Example</h4>
 
-<p><a name="l2220">​</a>See the <a href="Observation-space-radiation-exposure-example.html">SpaceRadiationExposure example</a> for a complete real-time dose measurement during an ISS expedition, including:</p>
+<p><a name="l2645">​</a>See the <a href="Observation-space-radiation-exposure-example.html">SpaceRadiationExposure example</a> for a complete real-time dose measurement during an ISS expedition, including:</p>
 <ul>
   <li>GCR exposure measurement</li>
   <li>Organ-specific dose components</li>
@@ -655,7 +843,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="career-dose-summary-example">Career Dose Summary Example</h4>
 
-<p><a name="l2244">​</a>The <a href="Observation-cumulative-radiation-dose-example.html">CumulativeRadiationDose example</a> demonstrates long-term dose tracking with:</p>
+<p><a name="l2669">​</a>The <a href="Observation-cumulative-radiation-dose-example.html">CumulativeRadiationDose example</a> demonstrates long-term dose tracking with:</p>
 <ul>
   <li>Career, mission, and time-period dose accumulations</li>
   <li>Risk assessment and compliance status</li>
@@ -665,7 +853,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="radiation-detection-equipment-example">Radiation Detection Equipment Example</h4>
 
-<p><a name="l2268">​</a>The <a href="Device-radiation-detector-example.html">RadiationDetector example</a> shows comprehensive device documentation including:</p>
+<p><a name="l2693">​</a>The <a href="Device-radiation-detector-example.html">RadiationDetector example</a> shows comprehensive device documentation including:</p>
 <ul>
   <li>Detector specifications and capabilities</li>
   <li>Calibration data and accuracy metrics</li>
@@ -675,7 +863,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="mission-dose-summary-report">Mission Dose Summary Report</h4>
 
-<p><a name="l2292">​</a>The <a href="DiagnosticReport-space-radiation-summary-example.html">SpaceRadiationSummary example</a> provides a complete mission dose assessment with:</p>
+<p><a name="l2717">​</a>The <a href="DiagnosticReport-space-radiation-summary-example.html">SpaceRadiationSummary example</a> provides a complete mission dose assessment with:</p>
 <ul>
   <li>Comprehensive exposure analysis</li>
   <li>Risk assessment and recommendations</li>
@@ -814,7 +1002,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.5.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 00:24-0500">2026-03-25</span>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 25, 2026 15:07-0600">2026-05-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

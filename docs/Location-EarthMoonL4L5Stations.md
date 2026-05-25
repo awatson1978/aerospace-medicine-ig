@@ -1,4 +1,4 @@
-# Earth-Moon L4/L5 Stations - v0.5.12
+# Earth-Moon L4/L5 Stations - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

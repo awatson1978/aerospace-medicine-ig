@@ -1,4 +1,4 @@
-# Safety Stop Compliance - v0.5.12
+# Safety Stop Compliance - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/safety-stop-compliance | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:SafetyStopCompliance |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/safety-stop-compliance | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:SafetyStopCompliance |
 
 Compliance with required safety stops during ascent
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-safety-stop-complian
   "resourceType" : "StructureDefinition",
   "id" : "safety-stop-compliance",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/safety-stop-compliance",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "SafetyStopCompliance",
   "title" : "Safety Stop Compliance",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

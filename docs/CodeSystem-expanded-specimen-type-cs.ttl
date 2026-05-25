@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "expanded-specimen-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem expanded-specimen-type-cs</b></p><a name=\"expanded-specimen-type-cs\"> </a><a name=\"hcexpanded-specimen-type-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dried-blood-spot<a name=\"expanded-specimen-type-cs-dried-blood-spot\"> </a></td><td>Dried Blood Spot</td><td>Capillary blood collected on filter paper for storage and analysis</td></tr><tr><td style=\"white-space:nowrap\">extracellular-vesicle<a name=\"expanded-specimen-type-cs-extracellular-vesicle\"> </a></td><td>Extracellular Vesicle</td><td>Isolated extracellular vesicles from blood or other biofluids</td></tr><tr><td style=\"white-space:nowrap\">microbiome-swab-nasal<a name=\"expanded-specimen-type-cs-microbiome-swab-nasal\"> </a></td><td>Nasal Microbiome Swab</td><td>Nasal swab for microbiome analysis</td></tr><tr><td style=\"white-space:nowrap\">microbiome-swab-skin<a name=\"expanded-specimen-type-cs-microbiome-swab-skin\"> </a></td><td>Skin Microbiome Swab</td><td>Skin swab for microbiome analysis</td></tr><tr><td style=\"white-space:nowrap\">microbiome-swab-oral<a name=\"expanded-specimen-type-cs-microbiome-swab-oral\"> </a></td><td>Oral Microbiome Swab</td><td>Oral swab for microbiome analysis</td></tr><tr><td style=\"white-space:nowrap\">microbiome-swab-gut<a name=\"expanded-specimen-type-cs-microbiome-swab-gut\"> </a></td><td>Gut Microbiome Sample</td><td>Fecal sample for gut microbiome analysis</td></tr><tr><td style=\"white-space:nowrap\">hair-follicle<a name=\"expanded-specimen-type-cs-hair-follicle\"> </a></td><td>Hair Follicle</td><td>Hair follicle sample for DNA or biomarker analysis</td></tr><tr><td style=\"white-space:nowrap\">exhaled-breath-condensate<a name=\"expanded-specimen-type-cs-exhaled-breath-condensate\"> </a></td><td>Exhaled Breath Condensate</td><td>Condensed exhaled breath for volatile organic compound analysis</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "ExpandedSpecimenTypeCS"] ; # 
+  fhir:title [ fhir:v "Expanded Specimen Type Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Specimen types for astronaut biobank and multi-omics analysis"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dried-blood-spot" ] ;
+     fhir:display [ fhir:v "Dried Blood Spot" ] ;
+     fhir:definition [ fhir:v "Capillary blood collected on filter paper for storage and analysis" ]
+  ] [
+     fhir:code [ fhir:v "extracellular-vesicle" ] ;
+     fhir:display [ fhir:v "Extracellular Vesicle" ] ;
+     fhir:definition [ fhir:v "Isolated extracellular vesicles from blood or other biofluids" ]
+  ] [
+     fhir:code [ fhir:v "microbiome-swab-nasal" ] ;
+     fhir:display [ fhir:v "Nasal Microbiome Swab" ] ;
+     fhir:definition [ fhir:v "Nasal swab for microbiome analysis" ]
+  ] [
+     fhir:code [ fhir:v "microbiome-swab-skin" ] ;
+     fhir:display [ fhir:v "Skin Microbiome Swab" ] ;
+     fhir:definition [ fhir:v "Skin swab for microbiome analysis" ]
+  ] [
+     fhir:code [ fhir:v "microbiome-swab-oral" ] ;
+     fhir:display [ fhir:v "Oral Microbiome Swab" ] ;
+     fhir:definition [ fhir:v "Oral swab for microbiome analysis" ]
+  ] [
+     fhir:code [ fhir:v "microbiome-swab-gut" ] ;
+     fhir:display [ fhir:v "Gut Microbiome Sample" ] ;
+     fhir:definition [ fhir:v "Fecal sample for gut microbiome analysis" ]
+  ] [
+     fhir:code [ fhir:v "hair-follicle" ] ;
+     fhir:display [ fhir:v "Hair Follicle" ] ;
+     fhir:definition [ fhir:v "Hair follicle sample for DNA or biomarker analysis" ]
+  ] [
+     fhir:code [ fhir:v "exhaled-breath-condensate" ] ;
+     fhir:display [ fhir:v "Exhaled Breath Condensate" ] ;
+     fhir:definition [ fhir:v "Condensed exhaled breath for volatile organic compound analysis" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,199 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Observation/FDI-Components-001> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FDI-Components-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FDI-Components-001</b></p><a name=\"FDI-Components-001\"> </a><a name=\"hcFDI-Components-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-flow-directionality-index-observation.html\">Flow Directionality Index Observation</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11042-7}\">Flow Directionality Index</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2025-09-05 10:33:00+0000</p><p><b>value</b>: 0.85 ratio<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{ratio} = '{ratio}')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP6960-1}\">Forward Flow Time</span></p><p><b>value</b>: 4.2 s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codes = 's')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP6960-1}\">Retrograde Flow Time</span></p><p><b>value</b>: 0.3 s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codes = 's')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP6960-1}\">Zero Flow Time</span></p><p><b>value</b>: 0.5 s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codes = 's')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP6960-1}\">Total Sample Time</span></p><p><b>value</b>: 5 s<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codes = 's')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LP74840-2}\">FDI Ratio</span></p><p><b>value</b>: 0.85 ratio<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{ratio} = '{ratio}')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/gravity-context>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+         ] ;
+         fhir:code [ fhir:v "microgravity" ] ;
+         fhir:display [ fhir:v "Microgravity" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "exam" ] ;
+       fhir:display [ fhir:v "Exam" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11042-7 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "11042-7" ] ;
+       fhir:display [ fhir:v "Flow velocity Doppler.max Blood vessel" ]
+     ] ) ;
+     fhir:text [ fhir:v "Flow Directionality Index" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2025-09-05T10:33:00Z"^^xsd:dateTime
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v 0.85 ] ;
+     fhir:unit [ fhir:v "ratio" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "{ratio}" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP6960-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "LP6960-1" ] ;
+         fhir:display [ fhir:v "Time" ]
+       ] ) ;
+       fhir:text [ fhir:v "Forward Flow Time" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 4.2 ] ;
+       fhir:unit [ fhir:v "s" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "s" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP6960-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "LP6960-1" ] ;
+         fhir:display [ fhir:v "Time" ]
+       ] ) ;
+       fhir:text [ fhir:v "Retrograde Flow Time" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.3 ] ;
+       fhir:unit [ fhir:v "s" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "s" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP6960-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "LP6960-1" ] ;
+         fhir:display [ fhir:v "Time" ]
+       ] ) ;
+       fhir:text [ fhir:v "Zero Flow Time" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.5 ] ;
+       fhir:unit [ fhir:v "s" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "s" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP6960-1 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "LP6960-1" ] ;
+         fhir:display [ fhir:v "Time" ]
+       ] ) ;
+       fhir:text [ fhir:v "Total Sample Time" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "s" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "s" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:LP74840-2 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "LP74840-2" ] ;
+         fhir:display [ fhir:v "Flow velocity" ]
+       ] ) ;
+       fhir:text [ fhir:v "FDI Ratio" ]
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.85 ] ;
+       fhir:unit [ fhir:v "ratio" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "{ratio}" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

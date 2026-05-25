@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-motion-sickness-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-motion-sickness-cs</b></p><a name=\"space-motion-sickness-cs\"> </a><a name=\"hcspace-motion-sickness-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sms<a name=\"space-motion-sickness-cs-sms\"> </a></td><td>Space Motion Sickness (SMS)</td><td>Motion sickness occurring during initial adaptation to microgravity, typically within the first 72 hours of spaceflight</td></tr><tr><td style=\"white-space:nowrap\">trms<a name=\"space-motion-sickness-cs-trms\"> </a></td><td>Terrestrial Re-entry Motion Sickness (TRMS)</td><td>Motion sickness occurring upon return to Earth gravity after spaceflight</td></tr><tr><td style=\"white-space:nowrap\">mal-de-debarquement<a name=\"space-motion-sickness-cs-mal-de-debarquement\"> </a></td><td>Mal de Debarquement Syndrome</td><td>Persistent sensation of rocking or swaying after spaceflight or prolonged motion exposure</td></tr><tr><td style=\"white-space:nowrap\">vestibular-conflict<a name=\"space-motion-sickness-cs-vestibular-conflict\"> </a></td><td>Vestibular Conflict Syndrome</td><td>Sensory conflict between vestibular, visual, and proprioceptive inputs in altered gravity</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceMotionSicknessCS"] ; # 
+  fhir:title [ fhir:v "Space Motion Sickness Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of motion sickness encountered in space travel and related vestibular disorders"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "sms" ] ;
+     fhir:display [ fhir:v "Space Motion Sickness (SMS)" ] ;
+     fhir:definition [ fhir:v "Motion sickness occurring during initial adaptation to microgravity, typically within the first 72 hours of spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "trms" ] ;
+     fhir:display [ fhir:v "Terrestrial Re-entry Motion Sickness (TRMS)" ] ;
+     fhir:definition [ fhir:v "Motion sickness occurring upon return to Earth gravity after spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "mal-de-debarquement" ] ;
+     fhir:display [ fhir:v "Mal de Debarquement Syndrome" ] ;
+     fhir:definition [ fhir:v "Persistent sensation of rocking or swaying after spaceflight or prolonged motion exposure" ]
+  ] [
+     fhir:code [ fhir:v "vestibular-conflict" ] ;
+     fhir:display [ fhir:v "Vestibular Conflict Syndrome" ] ;
+     fhir:definition [ fhir:v "Sensory conflict between vestibular, visual, and proprioceptive inputs in altered gravity" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

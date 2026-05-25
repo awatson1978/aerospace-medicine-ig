@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "LBNP-Session-Microgravity-001",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure LBNP-Session-Microgravity-001</b></p><a name=\"LBNP-Session-Microgravity-001\"> </a><a name=\"hcLBNP-Session-Microgravity-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-lower-body-negative-pressure-procedure.html\">Lower Body Negative Pressure Procedure</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>LBNP Pressure Level</b>: -30 mmHg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs lbnp}\">Lower Body Negative Pressure</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2025-09-05 10:30:00+0000</p><p><b>note</b>: </p><blockquote><div><p>LBNP at -30 mmHg during 0g phase, parabola set 3 of 6, 87th ESA PFC</p>\n</div></blockquote><p><b>usedReference</b>: <a href=\"Device-LBNP-Chamber-001.html\">Device: status = active; manufacturer = ESA Life Sciences; serialNumber = LBNP-ESA-2025-001; modelNumber = LBNP-PFC-2025; type = Suction device</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+        "code" : "microgravity",
+        "display" : "Microgravity"
+      }]
+    }
+  },
+  {
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level",
+    "valueQuantity" : {
+      "value" : -30,
+      "unit" : "mmHg",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm[Hg]"
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs",
+      "code" : "lbnp",
+      "display" : "Lower Body Negative Pressure"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "performedDateTime" : "2025-09-05T10:30:00Z",
+  "note" : [{
+    "text" : "LBNP at -30 mmHg during 0g phase, parabola set 3 of 6, 87th ESA PFC"
+  }],
+  "usedReference" : [{
+    "reference" : "Device/LBNP-Chamber-001"
+  }]
+}

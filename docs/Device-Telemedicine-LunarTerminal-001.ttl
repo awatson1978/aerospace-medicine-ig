@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/Device/Telemedicine-LunarTerminal-001> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Telemedicine-LunarTerminal-001"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device"^^xsd:anyURI ;
+       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Telemedicine-LunarTerminal-001</b></p><a name=\"Telemedicine-LunarTerminal-001\"> </a><a name=\"hcTelemedicine-LunarTerminal-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-telemedicine-device.html\">Telemedicine Device</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: NASA/JSC Medical Operations</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Artemis Surface Medical Terminal #ASMT-001</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: ASMT-v2</p><p><b>type</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs video-conferencing}\">Video Conferencing System</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "NASA/JSC Medical Operations"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Artemis Surface Medical Terminal #ASMT-001" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "ASMT-v2"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs"^^xsd:anyURI ;
+         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs>
+       ] ;
+       fhir:code [ fhir:v "video-conferencing" ] ;
+       fhir:display [ fhir:v "Video Conferencing System" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

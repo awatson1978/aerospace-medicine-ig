@@ -1,4 +1,4 @@
-# NASA Exercise Equipment - v0.5.12
+# NASA Exercise Equipment - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-exercise-equipment-vs | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:NASAExerciseEquipmentVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-exercise-equipment-vs | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:NASAExerciseEquipmentVS |
 
  
 Value set for exercise and fitness assessment hardware. 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "nasa-exercise-equipment-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-exercise-equipment-vs",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "NASAExerciseEquipmentVS",
   "title" : "NASA Exercise Equipment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

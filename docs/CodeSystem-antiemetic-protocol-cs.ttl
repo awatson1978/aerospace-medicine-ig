@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "antiemetic-protocol-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem antiemetic-protocol-cs</b></p><a name=\"antiemetic-protocol-cs\"> </a><a name=\"hcantiemetic-protocol-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">prophylactic-pre-flight<a name=\"antiemetic-protocol-cs-prophylactic-pre-flight\"> </a></td><td>Pre-flight Prophylaxis</td><td>Antiemetic administered before launch as prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">prophylactic-in-flight<a name=\"antiemetic-protocol-cs-prophylactic-in-flight\"> </a></td><td>In-flight Prophylaxis</td><td>Scheduled antiemetic during early mission phase</td></tr><tr><td style=\"white-space:nowrap\">rescue-treatment<a name=\"antiemetic-protocol-cs-rescue-treatment\"> </a></td><td>Rescue Treatment</td><td>Antiemetic administered in response to acute symptoms</td></tr><tr><td style=\"white-space:nowrap\">post-flight-prophylaxis<a name=\"antiemetic-protocol-cs-post-flight-prophylaxis\"> </a></td><td>Post-flight Prophylaxis</td><td>Antiemetic for re-entry and post-landing re-adaptation</td></tr><tr><td style=\"white-space:nowrap\">eva-prophylaxis<a name=\"antiemetic-protocol-cs-eva-prophylaxis\"> </a></td><td>EVA Prophylaxis</td><td>Antiemetic administered before EVA to prevent motion sickness</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "AntiemeticProtocolCS"] ; # 
+  fhir:title [ fhir:v "Antiemetic Protocol Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Protocols for antiemetic administration in spaceflight contexts"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "prophylactic-pre-flight" ] ;
+     fhir:display [ fhir:v "Pre-flight Prophylaxis" ] ;
+     fhir:definition [ fhir:v "Antiemetic administered before launch as prophylaxis" ]
+  ] [
+     fhir:code [ fhir:v "prophylactic-in-flight" ] ;
+     fhir:display [ fhir:v "In-flight Prophylaxis" ] ;
+     fhir:definition [ fhir:v "Scheduled antiemetic during early mission phase" ]
+  ] [
+     fhir:code [ fhir:v "rescue-treatment" ] ;
+     fhir:display [ fhir:v "Rescue Treatment" ] ;
+     fhir:definition [ fhir:v "Antiemetic administered in response to acute symptoms" ]
+  ] [
+     fhir:code [ fhir:v "post-flight-prophylaxis" ] ;
+     fhir:display [ fhir:v "Post-flight Prophylaxis" ] ;
+     fhir:definition [ fhir:v "Antiemetic for re-entry and post-landing re-adaptation" ]
+  ] [
+     fhir:code [ fhir:v "eva-prophylaxis" ] ;
+     fhir:display [ fhir:v "EVA Prophylaxis" ] ;
+     fhir:definition [ fhir:v "Antiemetic administered before EVA to prevent motion sickness" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

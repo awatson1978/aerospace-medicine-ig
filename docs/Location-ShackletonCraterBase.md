@@ -1,4 +1,4 @@
-# Shackleton Crater Base - v0.5.12
+# Shackleton Crater Base - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

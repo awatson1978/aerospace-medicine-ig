@@ -1,4 +1,4 @@
-# Oxygen Delivery Capability - v0.5.12
+# Oxygen Delivery Capability - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability | *Version*:0.5.12 |
-| Draft as of 2026-03-25 | *Computable Name*:OxygenCapability |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability | *Version*:0.6.0 |
+| Draft as of 2026-05-25 | *Computable Name*:OxygenCapability |
 
 Oxygen delivery capabilities of the chamber
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-capability.cs
   "resourceType" : "StructureDefinition",
   "id" : "oxygen-capability",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "OxygenCapability",
   "title" : "Oxygen Delivery Capability",
   "status" : "draft",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

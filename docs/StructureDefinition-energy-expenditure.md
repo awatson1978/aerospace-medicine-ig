@@ -1,4 +1,4 @@
-# Energy Expenditure - v0.5.12
+# Energy Expenditure - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure | *Version*:0.5.12 |
-| Active as of 2026-03-25 | *Computable Name*:EnergyExpenditure |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure | *Version*:0.6.0 |
+| Active as of 2026-05-25 | *Computable Name*:EnergyExpenditure |
 
 Total daily energy expenditure in kcal/day
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-energy-expenditure.c
   "resourceType" : "StructureDefinition",
   "id" : "energy-expenditure",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "EnergyExpenditure",
   "title" : "Energy Expenditure",
   "status" : "active",
-  "date" : "2026-03-25T00:24:16-05:00",
+  "date" : "2026-05-25T15:07:02-06:00",
   "publisher" : "MITRE",
   "contact" : [
     {

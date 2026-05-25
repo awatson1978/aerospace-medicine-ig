@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-blood-product-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-blood-product-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-blood-product-cs</b></p><a name=\"space-blood-product-cs\"> </a><a name=\"hcspace-blood-product-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-blood-product-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">lyophilized-rbc<a name=\"space-blood-product-cs-lyophilized-rbc\"> </a></td><td>Lyophilized Red Blood Cells</td><td>Freeze-dried RBCs for long-duration storage and reconstitution</td></tr><tr><td style=\"white-space:nowrap\">fresh-whole-blood<a name=\"space-blood-product-cs-fresh-whole-blood\"> </a></td><td>Fresh Whole Blood</td><td>Warm fresh whole blood from buddy donor</td></tr><tr><td style=\"white-space:nowrap\">freeze-dried-plasma<a name=\"space-blood-product-cs-freeze-dried-plasma\"> </a></td><td>Freeze-Dried Plasma</td><td>Lyophilized plasma for reconstitution</td></tr><tr><td style=\"white-space:nowrap\">rehydrated-rbc<a name=\"space-blood-product-cs-rehydrated-rbc\"> </a></td><td>Rehydrated Red Blood Cells</td><td>Reconstituted lyophilized RBCs ready for transfusion</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-blood-product-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-blood-product-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceBloodProductCS"] ; # 
+  fhir:title [ fhir:v "Space Blood Product Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Blood products adapted for spaceflight and austere environment use"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "lyophilized-rbc" ] ;
+     fhir:display [ fhir:v "Lyophilized Red Blood Cells" ] ;
+     fhir:definition [ fhir:v "Freeze-dried RBCs for long-duration storage and reconstitution" ]
+  ] [
+     fhir:code [ fhir:v "fresh-whole-blood" ] ;
+     fhir:display [ fhir:v "Fresh Whole Blood" ] ;
+     fhir:definition [ fhir:v "Warm fresh whole blood from buddy donor" ]
+  ] [
+     fhir:code [ fhir:v "freeze-dried-plasma" ] ;
+     fhir:display [ fhir:v "Freeze-Dried Plasma" ] ;
+     fhir:definition [ fhir:v "Lyophilized plasma for reconstitution" ]
+  ] [
+     fhir:code [ fhir:v "rehydrated-rbc" ] ;
+     fhir:display [ fhir:v "Rehydrated Red Blood Cells" ] ;
+     fhir:definition [ fhir:v "Reconstituted lyophilized RBCs ready for transfusion" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-transfusion-procedure-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-transfusion-procedure-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-transfusion-procedure-cs</b></p><a name=\"space-transfusion-procedure-cs\"> </a><a name=\"hcspace-transfusion-procedure-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-transfusion-procedure-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">buddy-transfusion<a name=\"space-transfusion-procedure-cs-buddy-transfusion\"> </a></td><td>Buddy Transfusion</td><td>Direct crew-to-crew whole blood transfusion</td></tr><tr><td style=\"white-space:nowrap\">lyophilized-rbc-transfusion<a name=\"space-transfusion-procedure-cs-lyophilized-rbc-transfusion\"> </a></td><td>Lyophilized RBC Transfusion</td><td>Transfusion of reconstituted lyophilized red blood cells</td></tr><tr><td style=\"white-space:nowrap\">fdp-transfusion<a name=\"space-transfusion-procedure-cs-fdp-transfusion\"> </a></td><td>Freeze-Dried Plasma Transfusion</td><td>Transfusion of reconstituted freeze-dried plasma</td></tr><tr><td style=\"white-space:nowrap\">autologous-pre-deposit<a name=\"space-transfusion-procedure-cs-autologous-pre-deposit\"> </a></td><td>Autologous Pre-Deposit</td><td>Pre-mission autologous blood collection for mission use</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-transfusion-procedure-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-transfusion-procedure-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceTransfusionProcedureCS"] ; # 
+  fhir:title [ fhir:v "Space Transfusion Procedure Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Transfusion procedures adapted for spaceflight and austere environments"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "buddy-transfusion" ] ;
+     fhir:display [ fhir:v "Buddy Transfusion" ] ;
+     fhir:definition [ fhir:v "Direct crew-to-crew whole blood transfusion" ]
+  ] [
+     fhir:code [ fhir:v "lyophilized-rbc-transfusion" ] ;
+     fhir:display [ fhir:v "Lyophilized RBC Transfusion" ] ;
+     fhir:definition [ fhir:v "Transfusion of reconstituted lyophilized red blood cells" ]
+  ] [
+     fhir:code [ fhir:v "fdp-transfusion" ] ;
+     fhir:display [ fhir:v "Freeze-Dried Plasma Transfusion" ] ;
+     fhir:definition [ fhir:v "Transfusion of reconstituted freeze-dried plasma" ]
+  ] [
+     fhir:code [ fhir:v "autologous-pre-deposit" ] ;
+     fhir:display [ fhir:v "Autologous Pre-Deposit" ] ;
+     fhir:definition [ fhir:v "Pre-mission autologous blood collection for mission use" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

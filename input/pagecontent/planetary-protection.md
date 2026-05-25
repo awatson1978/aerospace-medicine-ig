@@ -43,21 +43,21 @@ Recent work (Fujimura et al., *Applied and Environmental Microbiology*, April 20
 
 ### New Profiles (suggested)
 **Core Profiles**
-- **`MicrobialContaminationCondition`** – Records a detected or potential contamination event with:
+- **[`MicrobialContaminationCondition`](StructureDefinition-microbial-contamination-condition.html)** – Records a detected or potential contamination event with:
   - COSPAR category
   - Affected spacecraft/hardware location
   - Contaminant type (bacterial, fungal, viral, etc.)
   - Severity and mission impact
 
-- **`MicrobialContaminationRisk`** – Captures forward or backward contamination risk assessment, including probability category, mitigation status, and COSPAR compliance level
+- **[`MicrobialContaminationRisk`](StructureDefinition-microbial-contamination-risk.html)** – Captures forward or backward contamination risk assessment, including probability category, mitigation status, and COSPAR compliance level
 
-- **`SterilizationProcedure`** – Documents sterilization actions with:
+- **[`SterilizationProcedure`](StructureDefinition-sterilization-procedure.html)** – Documents sterilization actions with:
   - Method (DHMR, VHP, UV, etc.)
   - Process parameters (temperature, duration, dose, concentration)
   - Pre- and post-sterilization verification
   - Hardware or surface targeted
 
-- **`MicrobialViabilityAssay`** – Standardized assay results with:
+- **[`MicrobialViabilityAssay`](StructureDefinition-microbial-viability-assay.html)** – Standardized assay results with:
   - Method (MPN, CFU, ATP, qPCR)
   - Quantitative counts
   - Contaminant identification (genus/species or taxon)
@@ -69,7 +69,7 @@ Recent work (Fujimura et al., *Applied and Environmental Microbiology*, April 20
 
 ### Candidate CodeSystems & ValueSets
 - `COSPARCategoryCS` – I through V (with subcategories)
-- `SterilizationMethodCS` – (dhmr, vhp, uv, chemical-cleaning, etc.)
+- [`SterilizationMethodCS`](CodeSystem-sterilization-method-cs.html) – (dhmr, vhp, uv, chemical-cleaning, etc.)
 - `MicrobialAssayMethodCS` – (mpn, cfu, atp, qpcr)
 - `PlanetaryProtectionContaminantTypeVS` – (bacterial-spore, vegetative-bacteria, fungal, viral, archaea)
 
@@ -84,15 +84,28 @@ This content directly supports and extends existing IG sections:
 It enables a unified **Environmental Microbiology & Planetary Protection** framework essential for sample-return missions, crewed Mars operations, and commercial planetary missions.
 
 ## References
-- Fujimura et al. (2026). “Planetary Protection Microbial Monitoring and Control for Artemis and Beyond.” *Applied and Environmental Microbiology*, April 2026.
-- COSPAR Planetary Protection Policy (2021 revision)
-- NASA Planetary Protection Policy (NPD 8020.12)
-- NASA Planetary Protection Handbook
+## References
 
----
+- Fujimura, Kazuyuki, and colleagues. “Planetary Protection Microbial Monitoring and Control for Artemis and Beyond.” *Applied and Environmental Microbiology* 92, no. 4 (2026). American Society for Microbiology.
 
-**Ready to drop in.** This version is concise, operationally focused, and directly expands your four profiles while giving the page real substance. It feels like a natural peer to the other environmental / microbiology pages we’ve done.
+- Committee on Space Research (COSPAR). *COSPAR Planetary Protection Policy.* 2021 Revision. Paris: COSPAR, 2021.
 
-Claude can merge it into the Astronaut Health / Environmental Health section whenever the rest of the content is ready.
+  - [COSPAR Planetary Protection Policy](https://cosparhq.cnes.fr/scientific-structure/ppp/)  
+  - [COSPAR Policy PDF](ttps://cosparhq.cnes.fr/assets/uploads/2021/08/PPPolicy_2021_3.pdf)  
 
-Want me to generate FSH stubs for these four profiles next, or shall we keep rolling with more stubs? Your call. 🌍🚀
+- National Aeronautics and Space Administration. *Planetary Protection Provisions for Robotic Extraterrestrial Missions.* NASA Policy Directive NPD 8020.12D. Washington, DC: NASA.
+
+  - [NASA Planetary Protection Office](https://planetaryprotection.nasa.gov/)  
+  - [NPD 8020.12](https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&c=8020&s=12D)  
+
+- National Aeronautics and Space Administration. *NASA Planetary Protection Handbook.* Washington, DC: NASA Office of Safety and Mission Assurance. [https://planetaryprotection.nasa.gov/resources/sags/](https://planetaryprotection.nasa.gov/resources/sags/)
+
+- Moissl-Eichinger, Christine, Kasthuri Venkateswaran, and colleagues. “Microbiome Dynamics During Spacecraft Assembly, Integration, and Test Operations.” *Microbiome* 11 (2023). [https://doi.org/10.1186/s40168-023-01479-0](https://doi.org/10.1186/s40168-023-01479-0).
+
+- Mora, Marc, and colleagues. “Survival of NASA-Cleanroom Microbial Isolates Under Simulated Space and Martian Conditions.” *Applied and Environmental Microbiology* 92, no. 2 (2026). [https://doi.org/10.1128/aem.02065-25](https://doi.org/10.1128/aem.02065-25).
+
+- National Academies of Sciences, Engineering, and Medicine. *Review and Assessment of Planetary Protection Policy Development Processes.* Washington, DC: National Academies Press, 2018. [https://doi.org/10.17226/25172](https://doi.org/10.17226/25172).  
+
+- European Space Agency. *Planetary Protection Requirements and Contamination Control for Exploration Missions.* Noordwijk, Netherlands: ESA. [https://www.esa.int/Safety_Security/Planetary_Protection](https://www.esa.int/Safety_Security/Planetary_Protection)
+
+- Venkateswaran, Kasthuri, Duane L. Pierson, and Nitin K. Singh. “Non-Culture-Based Assays for Spacecraft Microbial Monitoring.” *Microbial Ecology* 47 (2004): 119–126. [https://doi.org/10.1007/s00248-003-1036-3](https://doi.org/10.1007/s00248-003-1036-3).

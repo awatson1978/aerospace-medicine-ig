@@ -1,4 +1,4 @@
-# Fitness - v0.5.12
+# Fitness - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * **Fitness**
@@ -13,6 +13,43 @@ When astronaut Scott Kelly completed his 340-day mission aboard the Internationa
 
 On the ISS, astronauts face a paradox: they must exercise more intensely than Olympic athletes, yet they're doing it in an environment where even simple movements require conscious effort. The ARED system can simulate loads exceeding 600 pounds, making it possible to perform squats and deadlifts in space. The T2 treadmill, vibration-isolated to prevent shaking the entire station, allows running at speeds up to 12 mph while a harness system pulls the astronaut downward with carefully calibrated force. Every workout session generates data: heart rate, simulated body weight, power output, exercise duration, and recovery metricsall critical for physicians on the ground to assess whether the crew's fitness program is preventing the inexorable physiologic decline of spaceflight.
 
+### Exploration Constraints
+
+Artemis-class vehicles impose severe mass, power, and volume limits. Future exercise systems must:
+
+* Use smaller footprints
+* Be lightweight
+* Consume fewer resources
+
+Future lunar and Mars EVAs will involve heavier suits, longer durations, higher cognitive and physical workloads, and increased injury risk.
+
+### Study Design Groups
+
+**Control Group** Nominal ISS exercise protocol:
+
+* T2 treadmill
+* CEVIS cycling
+* ARED resistance exercise
+
+**Active Group 1** ARED + CEVIS only (treadmill removed)
+
+**Active Group 2** E4D multifunction exercise system:
+
+* Resistive exercise
+* Cycle ergometry
+* Rowing
+* Rope pulling
+
+### Physical Performance Assessments
+
+Key metrics evaluated across all groups:
+
+* VO₂peak
+* Isokinetic strength and endurance
+* Bench press strength and endurance
+* Leg press strength and endurance
+* IMTP (Isometric Mid-Thigh Pull)
+
 ### FHIR Implementation Architecture
 
 #### Core Profiles
@@ -25,6 +62,20 @@ On the ISS, astronauts face a paradox: they must exercise more intensely than Ol
 | **SpaceExerciseSession** | Procedural record of exercise event | Links to prescriptions, goals, devices, and observation panels |
 
 These profiles extend standard FHIR resources while incorporating space-specific terminology and requirements, following the same architectural patterns established in radiation and nutrition tracking modules.
+
+#### Suggested Profiles (Exercise Countermeasures & Venous Hemostasis)
+
+**Primary (Exercise-focused)**
+
+* `ExerciseCountermeasureSession`
+* `SpaceflightFitnessAssessment`
+
+**Supporting (Venous / Hemostasis)**
+
+* `VenousFlowAssessment`
+* `SpaceflightCoagulationPanel`
+* `SpaceflightVenousMRI`
+* `VenousHemostasisAssessment`
 
 #### Data Architecture
 
@@ -55,6 +106,17 @@ Integration with existing terminologies:
 * **LOINC**: Exercise frequency (89555-7), type of exercise (73985-4), heart rate measurements
 * **SNOMED CT**: Exercise procedures, musculoskeletal conditions
 * **NASA Standards**: Exercise countermeasure requirements
+
+#### Candidate CodeSystems / ValueSets
+
+* `e4d-training`
+* `cycle-ergometry`
+* `eva-conditioning`
+* `microgravity-deconditioning`
+* `ijv-flow-velocity`
+* `venous-flow-stasis`
+* `thrombin-generation`
+* `hypercoagulability-index`
 
 ### Physiologic and Environmental Considerations
 
@@ -199,6 +261,60 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 * Gait analysis from treadmill accelerometers
 * Impact force patterns during running
 * Muscle activation patterns (if EMG available)
+
+### Venous Flow Abnormalities and Hemostasis Monitoring
+
+Venous stasis has been identified in ISS crewmembers and represents a thrombosis risk factor consistent with Virchow's Triad. Only a subset of astronauts develop abnormal flow patterns. Measurements were collected pre-flight, in-flight, and post-flight under multiple conditions (supine, seated, head-down tilt, LBNP).
+
+#### Ultrasound Methods
+
+* Quantification of right and left internal jugular vein (IJV) cross-sectional area
+* Flow characteristic measurements
+* Posture-based imaging protocols
+* In-flight imaging during weightlessness
+* Venoconstrictive thigh cuff testing
+* Valsalva and Mueller respiratory maneuvers
+
+#### MRI Methods
+
+**Objectives:**
+
+* Assess cerebral and neck venous anatomy
+* Identify anatomic variability associated with thrombosis risk
+* Evaluate altered venous hemodynamics during weightlessness
+
+**Sequences:**
+
+* 4D Flow MRI
+* Thoracic duct imaging
+* Posture-arm maneuver protocols
+
+#### Targeted Biomarker Analysis
+
+Thrombus formation stages and biomarkers:
+
+| | |
+| :--- | :--- |
+| Systemic inflammation | C-Reactive Protein (CRP) |
+| Endothelial activation | sVCAM-1, sE-Selectin |
+| Platelet/leukocyte activation | Platelet Factor 4 (PF4), sCD40L, CitH3, Cell free DNA |
+| Coagulation cascade activation | Prothrombin Fragment 1+2, Thrombin-Antithrombin Complex, D-Dimer |
+
+#### Functional Coagulation Analysis
+
+* Prothrombin Time (PT)
+* Activated Partial Thromboplastin Time (aPTT)
+* Calibrated Automated Thrombography (CAT) — real-time thrombin generation
+
+#### Target-Agnostic Plasma Biomarkers
+
+O-Link proximity extension assay platform measures ~5,400 plasma proteins simultaneously for biomarker discovery related to flow stasis and thrombosis progression.
+
+#### Mission Timeline Sampling
+
+* **Preflight:** L-270, L-180, L-90/50
+* **Inflight:** FD7, FD45, FD90, FD150
+* **Postflight:** R-1/4, R+1/2, R+5/7, R+14/21
 
 ### Integration with Existing Systems
 
@@ -393,6 +509,21 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 * **Suit-integrated exercise** enabling movement training in EVA suits
 * **Reduced equipment mass** for surface habitat fitness systems
 
+### Architectural Alignment
+
+This content extends the existing **Fitness** / **Exercise Countermeasures** section of the Aerospace Medicine IG and integrates tightly with:
+
+* Cardiovascular Countermeasures (LBNP, IJV hemodynamics, cephalad fluid shift)
+* Neutral Buoyancy and EVA simulation
+* Radiation Tracking
+* Longitudinal astronaut health surveillance
+
+It supports a unified **Physiologic Countermeasure + Hemostasis Monitoring** framework for exploration missions.
+
+### Acknowledgements
+
+NASA Cardiovascular & Vision Laboratory, UTHealth Houston McGovern Medical School, UNC School of Medicine, Beth Israel Deaconess Medical Center, DLR, and European Space Agency collaborators.
+
 ### References
 
 #### Exercise Equipment and Protocols
@@ -423,4 +554,9 @@ Aggregated de-identified data enabling studies of exercise countermeasure effect
 * [Astronaut physiological deconditioning (NASA/SP-20250000273)](https://www.nasa.gov/wp-content/uploads/2025/02/sp-20250000273.pdf)
 * [Staying Strong: Spaceflight Muscle Loss Study](https://www.nasa.gov/ames/space-biosciences/staying-strong-spaceflight-muscle-loss-study-aims-to-benefit-patients-on-earth/)
 * [Musculoskeletal responses to spaceflight: mechanisms, countermeasures, and key gaps](https://pubmed.ncbi.nlm.nih.gov/41217000/)
+
+#### Exercise Countermeasures and Venous Hemostasis
+
+* NASA HRP Exercise and Fitness / Venous Flow / Space Hemostasis workshop slides
+* Aerospace Medicine FHIR IG (MITRE)
 

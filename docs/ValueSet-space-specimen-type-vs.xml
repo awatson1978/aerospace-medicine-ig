@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="space-specimen-type-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet space-specimen-type-vs</b></p><a name="space-specimen-type-vs"> </a><a name="hcspace-specimen-type-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-space-specimen-type-cs.html"><code>https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.6.0</span></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/119297000">119297000</a></td><td>Blood specimen</td></tr><tr><td><a href="http://snomed.info/id/119364003">119364003</a></td><td>Serum specimen</td></tr><tr><td><a href="http://snomed.info/id/122575003">122575003</a></td><td>Urine specimen</td></tr><tr><td><a href="http://snomed.info/id/119342007">119342007</a></td><td>Saliva specimen</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://mitre.org/fhir/space-health/ValueSet/space-specimen-type-vs"/>
+  <version value="0.6.0"/>
+  <name value="SpaceSpecimenTypeVS"/>
+  <title value="Space Specimen Type Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-05-25T15:07:02-06:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org/"/>
+    </telecom>
+  </contact>
+  <description value="Specimen types collected during spaceflight"/>
+  <compose>
+    <include>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="119297000"/>
+        <display value="Blood specimen"/>
+      </concept>
+      <concept>
+        <code value="119364003"/>
+        <display value="Serum specimen"/>
+      </concept>
+      <concept>
+        <code value="122575003"/>
+        <display value="Urine specimen"/>
+      </concept>
+      <concept>
+        <code value="119342007"/>
+        <display value="Saliva specimen"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

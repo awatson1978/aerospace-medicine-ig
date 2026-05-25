@@ -1,0 +1,49 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "Emergency-DragonReturn-001",
+  "meta" : {
+    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/emergency-evacuation-procedure"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure Emergency-DragonReturn-001</b></p><a name=\"Emergency-DragonReturn-001\"> </a><a name=\"hcEmergency-DragonReturn-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-emergency-evacuation-procedure.html\">Emergency Evacuation Procedure</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs crew-dragon-return}\">Crew Dragon Return</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2028-07-15 15:00:00+0000 --&gt; 2028-07-16 03:45:00+0000</p><p><b>reasonReference</b>: <a href=\"Condition-Emergency-RapidDepress-001.html\">Condition Rapid Depressurization</a></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>Crew evacuated via Crew Dragon-8, undocking at T+30 min, splashdown at T+12.75 hr</p>\n</div></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+        "code" : "microgravity",
+        "display" : "Microgravity"
+      }]
+    }
+  }],
+  "status" : "completed",
+  "code" : {
+    "coding" : [{
+      "system" : "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs",
+      "code" : "crew-dragon-return",
+      "display" : "Crew Dragon Return"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "performedPeriod" : {
+    "start" : "2028-07-15T15:00:00Z",
+    "end" : "2028-07-16T03:45:00Z"
+  },
+  "reasonReference" : [{
+    "reference" : "Condition/Emergency-RapidDepress-001"
+  }],
+  "outcome" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385669000",
+      "display" : "Successful"
+    }]
+  },
+  "note" : [{
+    "text" : "Crew evacuated via Crew Dragon-8, undocking at T+30 min, splashdown at T+12.75 hr"
+  }]
+}

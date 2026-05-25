@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ijv-flow-grade-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ijv-flow-grade-cs</b></p><a name=\"ijv-flow-grade-cs\"> </a><a name=\"hcijv-flow-grade-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">grade-1<a name=\"ijv-flow-grade-cs-grade-1\"> </a></td><td>Grade 1 - Forward Flow</td><td>Continuous forward flow in the internal jugular vein (FDI ~ 1.0)</td></tr><tr><td style=\"white-space:nowrap\">grade-2<a name=\"ijv-flow-grade-cs-grade-2\"> </a></td><td>Grade 2 - Intermittent No-Flow</td><td>Forward flow with intermittent periods of no flow (FDI ~ 0.65)</td></tr><tr><td style=\"white-space:nowrap\">grade-3<a name=\"ijv-flow-grade-cs-grade-3\"> </a></td><td>Grade 3 - Stagnant Flow</td><td>Stagnant flow with minimal or no net movement (FDI ~ 0.03)</td></tr><tr><td style=\"white-space:nowrap\">grade-4<a name=\"ijv-flow-grade-cs-grade-4\"> </a></td><td>Grade 4 - Retrograde Flow</td><td>Reversed flow direction in the internal jugular vein (FDI ~ -0.5)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "IJVFlowGradeCS"] ; # 
+  fhir:title [ fhir:v "IJV Flow Grade Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Internal jugular vein flow grading system based on spectral pulse-wave Doppler assessment"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "grade-1" ] ;
+     fhir:display [ fhir:v "Grade 1 - Forward Flow" ] ;
+     fhir:definition [ fhir:v "Continuous forward flow in the internal jugular vein (FDI ~ 1.0)" ]
+  ] [
+     fhir:code [ fhir:v "grade-2" ] ;
+     fhir:display [ fhir:v "Grade 2 - Intermittent No-Flow" ] ;
+     fhir:definition [ fhir:v "Forward flow with intermittent periods of no flow (FDI ~ 0.65)" ]
+  ] [
+     fhir:code [ fhir:v "grade-3" ] ;
+     fhir:display [ fhir:v "Grade 3 - Stagnant Flow" ] ;
+     fhir:definition [ fhir:v "Stagnant flow with minimal or no net movement (FDI ~ 0.03)" ]
+  ] [
+     fhir:code [ fhir:v "grade-4" ] ;
+     fhir:display [ fhir:v "Grade 4 - Retrograde Flow" ] ;
+     fhir:definition [ fhir:v "Reversed flow direction in the internal jugular vein (FDI ~ -0.5)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

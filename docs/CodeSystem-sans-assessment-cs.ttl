@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sans-assessment-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sans-assessment-cs</b></p><a name=\"sans-assessment-cs\"> </a><a name=\"hcsans-assessment-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">optic-disc-edema-grade<a name=\"sans-assessment-cs-optic-disc-edema-grade\"> </a></td><td>Optic Disc Edema Grade</td><td>Frisen scale grade of optic disc edema</td></tr><tr><td style=\"white-space:nowrap\">globe-flattening<a name=\"sans-assessment-cs-globe-flattening\"> </a></td><td>Globe Flattening</td><td>Posterior globe flattening measured on MRI or OCT</td></tr><tr><td style=\"white-space:nowrap\">choroidal-folds-present<a name=\"sans-assessment-cs-choroidal-folds-present\"> </a></td><td>Choroidal Folds</td><td>Presence and severity of choroidal folds</td></tr><tr><td style=\"white-space:nowrap\">icp-estimate<a name=\"sans-assessment-cs-icp-estimate\"> </a></td><td>Intracranial Pressure Estimate</td><td>Estimated intracranial pressure</td></tr><tr><td style=\"white-space:nowrap\">retinal-vessel-density<a name=\"sans-assessment-cs-retinal-vessel-density\"> </a></td><td>Retinal Vessel Density</td><td>Retinal vascular density measured by OCT-A</td></tr><tr><td style=\"white-space:nowrap\">rnfl-thickness<a name=\"sans-assessment-cs-rnfl-thickness\"> </a></td><td>RNFL Thickness</td><td>Retinal nerve fiber layer thickness</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SANSAssessmentCS"] ; # 
+  fhir:title [ fhir:v "SANS Assessment Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Parameters for Spaceflight-Associated Neuro-ocular Syndrome assessment"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "optic-disc-edema-grade" ] ;
+     fhir:display [ fhir:v "Optic Disc Edema Grade" ] ;
+     fhir:definition [ fhir:v "Frisen scale grade of optic disc edema" ]
+  ] [
+     fhir:code [ fhir:v "globe-flattening" ] ;
+     fhir:display [ fhir:v "Globe Flattening" ] ;
+     fhir:definition [ fhir:v "Posterior globe flattening measured on MRI or OCT" ]
+  ] [
+     fhir:code [ fhir:v "choroidal-folds-present" ] ;
+     fhir:display [ fhir:v "Choroidal Folds" ] ;
+     fhir:definition [ fhir:v "Presence and severity of choroidal folds" ]
+  ] [
+     fhir:code [ fhir:v "icp-estimate" ] ;
+     fhir:display [ fhir:v "Intracranial Pressure Estimate" ] ;
+     fhir:definition [ fhir:v "Estimated intracranial pressure" ]
+  ] [
+     fhir:code [ fhir:v "retinal-vessel-density" ] ;
+     fhir:display [ fhir:v "Retinal Vessel Density" ] ;
+     fhir:definition [ fhir:v "Retinal vascular density measured by OCT-A" ]
+  ] [
+     fhir:code [ fhir:v "rnfl-thickness" ] ;
+     fhir:display [ fhir:v "RNFL Thickness" ] ;
+     fhir:definition [ fhir:v "Retinal nerve fiber layer thickness" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

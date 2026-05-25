@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sleep-architecture-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem sleep-architecture-cs</b></p><a name=\"sleep-architecture-cs\"> </a><a name=\"hcsleep-architecture-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">total-sleep-time<a name=\"sleep-architecture-cs-total-sleep-time\"> </a></td><td>Total Sleep Time (TST)</td><td>Total time spent asleep during the recording period</td></tr><tr><td style=\"white-space:nowrap\">sleep-efficiency<a name=\"sleep-architecture-cs-sleep-efficiency\"> </a></td><td>Sleep Efficiency</td><td>Percentage of time in bed spent asleep</td></tr><tr><td style=\"white-space:nowrap\">sleep-onset-latency<a name=\"sleep-architecture-cs-sleep-onset-latency\"> </a></td><td>Sleep Onset Latency (SOL)</td><td>Time from lights-off to first epoch of sleep</td></tr><tr><td style=\"white-space:nowrap\">waso<a name=\"sleep-architecture-cs-waso\"> </a></td><td>Wake After Sleep Onset (WASO)</td><td>Total wake time after initial sleep onset</td></tr><tr><td style=\"white-space:nowrap\">rem-latency<a name=\"sleep-architecture-cs-rem-latency\"> </a></td><td>REM Latency</td><td>Time from sleep onset to first REM period</td></tr><tr><td style=\"white-space:nowrap\">n1-pct<a name=\"sleep-architecture-cs-n1-pct\"> </a></td><td>N1 Sleep Percentage</td><td>Percentage of total sleep time in stage N1 (light sleep)</td></tr><tr><td style=\"white-space:nowrap\">n2-pct<a name=\"sleep-architecture-cs-n2-pct\"> </a></td><td>N2 Sleep Percentage</td><td>Percentage of total sleep time in stage N2</td></tr><tr><td style=\"white-space:nowrap\">n3-pct<a name=\"sleep-architecture-cs-n3-pct\"> </a></td><td>N3/SWS Sleep Percentage</td><td>Percentage of total sleep time in stage N3 slow-wave sleep</td></tr><tr><td style=\"white-space:nowrap\">rem-pct<a name=\"sleep-architecture-cs-rem-pct\"> </a></td><td>REM Sleep Percentage</td><td>Percentage of total sleep time in REM sleep</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SleepArchitectureCS"] ; # 
+  fhir:title [ fhir:v "Sleep Architecture Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Sleep architecture parameters measured during spaceflight sleep studies"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "total-sleep-time" ] ;
+     fhir:display [ fhir:v "Total Sleep Time (TST)" ] ;
+     fhir:definition [ fhir:v "Total time spent asleep during the recording period" ]
+  ] [
+     fhir:code [ fhir:v "sleep-efficiency" ] ;
+     fhir:display [ fhir:v "Sleep Efficiency" ] ;
+     fhir:definition [ fhir:v "Percentage of time in bed spent asleep" ]
+  ] [
+     fhir:code [ fhir:v "sleep-onset-latency" ] ;
+     fhir:display [ fhir:v "Sleep Onset Latency (SOL)" ] ;
+     fhir:definition [ fhir:v "Time from lights-off to first epoch of sleep" ]
+  ] [
+     fhir:code [ fhir:v "waso" ] ;
+     fhir:display [ fhir:v "Wake After Sleep Onset (WASO)" ] ;
+     fhir:definition [ fhir:v "Total wake time after initial sleep onset" ]
+  ] [
+     fhir:code [ fhir:v "rem-latency" ] ;
+     fhir:display [ fhir:v "REM Latency" ] ;
+     fhir:definition [ fhir:v "Time from sleep onset to first REM period" ]
+  ] [
+     fhir:code [ fhir:v "n1-pct" ] ;
+     fhir:display [ fhir:v "N1 Sleep Percentage" ] ;
+     fhir:definition [ fhir:v "Percentage of total sleep time in stage N1 (light sleep)" ]
+  ] [
+     fhir:code [ fhir:v "n2-pct" ] ;
+     fhir:display [ fhir:v "N2 Sleep Percentage" ] ;
+     fhir:definition [ fhir:v "Percentage of total sleep time in stage N2" ]
+  ] [
+     fhir:code [ fhir:v "n3-pct" ] ;
+     fhir:display [ fhir:v "N3/SWS Sleep Percentage" ] ;
+     fhir:definition [ fhir:v "Percentage of total sleep time in stage N3 slow-wave sleep" ]
+  ] [
+     fhir:code [ fhir:v "rem-pct" ] ;
+     fhir:display [ fhir:v "REM Sleep Percentage" ] ;
+     fhir:definition [ fhir:v "Percentage of total sleep time in REM sleep" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

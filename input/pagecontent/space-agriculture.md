@@ -107,7 +107,7 @@ This content extends the **ECLSS** and **Nutrition** sections of the Aerospace M
 It contributes to a generalized **Space Agriculture & Environmental Microbiology** framework for Artemis and Mars missions.
 
 ### References
-1. Bunchek et al. (2024). Pick-and-eat space crop production flight testing on the International Space Station. *Journal of Plant Interactions*, 19(1):2292220. DOI: 10.1080/17429145.2023.2292220
-2. Landon et al. (2025). Sustaining the Merry Space farmer with pick-and-eat crop production. *npj Microgravity* 11, 72. DOI: 10.1038/s41526-025-00513-9
-3. Spern et al. (2026). The microbial communities of a tomato crop grown in Veggie under different lighting regimes on the International Space Station. *Life Sciences in Space Research*. DOI: 10.1016/j.lssr.2026.01.010
+1. [Bunchek et al. (2024). Pick-and-eat space crop production flight testing on the International Space Station. *Journal of Plant Interactions*, 19(1):2292220.](https://doi.org/10.1080/17429145.2023.2292220) DOI: 10.1080/17429145.2023.2292220
+2. [Landon et al. (2025). Sustaining the Merry Space farmer with pick-and-eat crop production. *npj Microgravity* 11, 72.](https://doi.org/10.1038/s41526-025-00513-9) DOI: 10.1038/s41526-025-00513-9
+3. [Spern et al. (2026). The microbial communities of a tomato crop grown in Veggie under different lighting regimes on the International Space Station. *Life Sciences in Space Research*.](https://doi.org/10.1016/j.lssr.2026.01.010) DOI: 10.1016/j.lssr.2026.01.010
 4. Dixit et al. (2025). Stress and light spectral quality influence the transcriptome of a tomato crop on the International Space Station. *BMC Plant Biology*. In press.

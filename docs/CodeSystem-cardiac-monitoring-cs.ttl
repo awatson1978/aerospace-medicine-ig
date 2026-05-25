@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/cardiac-monitoring-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cardiac-monitoring-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cardiac-monitoring-cs</b></p><a name=\"cardiac-monitoring-cs\"> </a><a name=\"hccardiac-monitoring-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/cardiac-monitoring-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">qt-interval<a name=\"cardiac-monitoring-cs-qt-interval\"> </a></td><td>QT Interval</td><td>QT interval duration on ECG</td></tr><tr><td style=\"white-space:nowrap\">qtc-interval<a name=\"cardiac-monitoring-cs-qtc-interval\"> </a></td><td>Corrected QT Interval (QTc)</td><td>Rate-corrected QT interval</td></tr><tr><td style=\"white-space:nowrap\">pr-interval<a name=\"cardiac-monitoring-cs-pr-interval\"> </a></td><td>PR Interval</td><td>PR interval duration on ECG</td></tr><tr><td style=\"white-space:nowrap\">qrs-duration<a name=\"cardiac-monitoring-cs-qrs-duration\"> </a></td><td>QRS Duration</td><td>QRS complex duration on ECG</td></tr><tr><td style=\"white-space:nowrap\">arrhythmia-classification<a name=\"cardiac-monitoring-cs-arrhythmia-classification\"> </a></td><td>Arrhythmia Classification</td><td>Classification of detected cardiac arrhythmia</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/cardiac-monitoring-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/cardiac-monitoring-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "CardiacMonitoringCS"] ; # 
+  fhir:title [ fhir:v "Cardiac Monitoring Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Cardiac monitoring parameters for spaceflight ECG assessment"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "qt-interval" ] ;
+     fhir:display [ fhir:v "QT Interval" ] ;
+     fhir:definition [ fhir:v "QT interval duration on ECG" ]
+  ] [
+     fhir:code [ fhir:v "qtc-interval" ] ;
+     fhir:display [ fhir:v "Corrected QT Interval (QTc)" ] ;
+     fhir:definition [ fhir:v "Rate-corrected QT interval" ]
+  ] [
+     fhir:code [ fhir:v "pr-interval" ] ;
+     fhir:display [ fhir:v "PR Interval" ] ;
+     fhir:definition [ fhir:v "PR interval duration on ECG" ]
+  ] [
+     fhir:code [ fhir:v "qrs-duration" ] ;
+     fhir:display [ fhir:v "QRS Duration" ] ;
+     fhir:definition [ fhir:v "QRS complex duration on ECG" ]
+  ] [
+     fhir:code [ fhir:v "arrhythmia-classification" ] ;
+     fhir:display [ fhir:v "Arrhythmia Classification" ] ;
+     fhir:definition [ fhir:v "Classification of detected cardiac arrhythmia" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

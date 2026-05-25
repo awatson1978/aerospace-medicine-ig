@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/space-surgical-procedure-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-surgical-procedure-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem space-surgical-procedure-cs</b></p><a name=\"space-surgical-procedure-cs\"> </a><a name=\"hcspace-surgical-procedure-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/space-surgical-procedure-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">wound-closure<a name=\"space-surgical-procedure-cs-wound-closure\"> </a></td><td>Wound Closure</td><td>Suturing or stapling of wounds in microgravity</td></tr><tr><td style=\"white-space:nowrap\">abscess-drainage<a name=\"space-surgical-procedure-cs-abscess-drainage\"> </a></td><td>Abscess Drainage</td><td>Incision and drainage of abscess</td></tr><tr><td style=\"white-space:nowrap\">chest-tube<a name=\"space-surgical-procedure-cs-chest-tube\"> </a></td><td>Chest Tube Insertion</td><td>Tube thoracostomy in microgravity</td></tr><tr><td style=\"white-space:nowrap\">appendectomy-laparoscopic<a name=\"space-surgical-procedure-cs-appendectomy-laparoscopic\"> </a></td><td>Laparoscopic Appendectomy</td><td>Minimally invasive appendectomy adapted for microgravity</td></tr><tr><td style=\"white-space:nowrap\">dental-extraction<a name=\"space-surgical-procedure-cs-dental-extraction\"> </a></td><td>Dental Extraction</td><td>Emergency dental extraction in spaceflight</td></tr><tr><td style=\"white-space:nowrap\">fracture-reduction<a name=\"space-surgical-procedure-cs-fracture-reduction\"> </a></td><td>Fracture Reduction and Splinting</td><td>Closed reduction and immobilization of fractures</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/space-surgical-procedure-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/space-surgical-procedure-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "SpaceSurgicalProcedureCS"] ; # 
+  fhir:title [ fhir:v "Space Surgical Procedure Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Surgical procedures adapted for spaceflight austere environments"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "wound-closure" ] ;
+     fhir:display [ fhir:v "Wound Closure" ] ;
+     fhir:definition [ fhir:v "Suturing or stapling of wounds in microgravity" ]
+  ] [
+     fhir:code [ fhir:v "abscess-drainage" ] ;
+     fhir:display [ fhir:v "Abscess Drainage" ] ;
+     fhir:definition [ fhir:v "Incision and drainage of abscess" ]
+  ] [
+     fhir:code [ fhir:v "chest-tube" ] ;
+     fhir:display [ fhir:v "Chest Tube Insertion" ] ;
+     fhir:definition [ fhir:v "Tube thoracostomy in microgravity" ]
+  ] [
+     fhir:code [ fhir:v "appendectomy-laparoscopic" ] ;
+     fhir:display [ fhir:v "Laparoscopic Appendectomy" ] ;
+     fhir:definition [ fhir:v "Minimally invasive appendectomy adapted for microgravity" ]
+  ] [
+     fhir:code [ fhir:v "dental-extraction" ] ;
+     fhir:display [ fhir:v "Dental Extraction" ] ;
+     fhir:definition [ fhir:v "Emergency dental extraction in spaceflight" ]
+  ] [
+     fhir:code [ fhir:v "fracture-reduction" ] ;
+     fhir:display [ fhir:v "Fracture Reduction and Splinting" ] ;
+     fhir:definition [ fhir:v "Closed reduction and immobilization of fractures" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

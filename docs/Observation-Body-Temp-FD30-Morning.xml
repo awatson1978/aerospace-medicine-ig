@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Body-Temp-FD30-Morning"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Body-Temp-FD30-Morning</b></p><a name="Body-Temp-FD30-Morning"> </a><a name="hcBody-Temp-FD30-Morning"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-body-temperature.html">Space Body Temperature Observation</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Circadian Phase</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs morning-nadir}">Morning Nadir</span></p><p><b>Flight Day</b>: 30</p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8310-5}">Body temperature</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-04-14 06:30:00+0000</p><p><b>value</b>: 36.8 °C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p><p><b>method</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs oral-thermometer}">Oral Thermometer</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 60832-3}">Room temperature</span></p><p><b>value</b>: 22.5 °C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 68130003}">Physical activity</span></p><p><b>value</b>: 120 min<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemin = 'min')</span></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+    <valueReference>
+      <reference value="Encounter/Artemis-III-Mission"/>
+    </valueReference>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs"/>
+        <code value="morning-nadir"/>
+        <display value="Morning Nadir"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/flight-day">
+    <valueInteger value="30"/>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8310-5"/>
+      <display value="Body temperature"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <effectiveDateTime value="2028-04-14T06:30:00Z"/>
+  <valueQuantity>
+    <value value="36.8"/>
+    <unit value="°C"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+  <method>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs"/>
+      <code value="oral-thermometer"/>
+      <display value="Oral Thermometer"/>
+    </coding>
+  </method>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="60832-3"/>
+        <display value="Room temperature"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="22.5"/>
+      <unit value="°C"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="68130003"/>
+        <display value="Physical activity"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="120"/>
+      <unit value="min"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="min"/>
+    </valueQuantity>
+  </component>
+</Observation>

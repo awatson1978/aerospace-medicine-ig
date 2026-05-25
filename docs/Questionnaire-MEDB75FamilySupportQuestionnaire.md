@@ -1,4 +1,4 @@
-# MEDB 7.5 Family Support Evaluation - v0.5.12
+# MEDB 7.5 Family Support Evaluation - v0.6.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-7-5-family-support | *Version*:0.5.12 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-7-5-family-support | *Version*:0.6.0 |
 | Active as of 2024-01-15 | *Computable Name*:MEDB75FamilySupport |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) | |
 
@@ -49,7 +49,7 @@ Evaluate astronaut family support systems, identify needs, and coordinate approp
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-7-5-family-support",
-  "version" : "0.5.12",
+  "version" : "0.6.0",
   "name" : "MEDB75FamilySupport",
   "title" : "MEDB 7.5 Family Support Evaluation",
   "status" : "active",

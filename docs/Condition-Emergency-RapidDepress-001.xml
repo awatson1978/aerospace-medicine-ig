@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="Emergency-RapidDepress-001"/>
+  <meta>
+    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition Emergency-RapidDepress-001</b></p><a name="Emergency-RapidDepress-001"> </a><a name="hcEmergency-RapidDepress-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-emergency-condition.html">Space Emergency Condition</a></p></div><p><b>Mission Phase</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs orbital-ops}">Orbital Operations</span></p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>severity</b>: <span title="Codes:{http://snomed.info/sct 24484000}">Severe</span></p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs rapid-depress}">Rapid Depressurization</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>onset</b>: 2028-07-15 14:30:00+0000</p><p><b>note</b>: </p><blockquote><div><p>Pressure drop detected in Node 2, crew immediately donned masks and initiated isolation protocol</p>
+</div></blockquote></div>
+  </text>
+  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/mission-phase">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"/>
+        <code value="orbital-ops"/>
+        <display value="Orbital Operations"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="24484000"/>
+      <display value="Severe"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs"/>
+      <code value="rapid-depress"/>
+      <display value="Rapid Depressurization"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExampleAstronaut"/>
+  </subject>
+  <onsetDateTime value="2028-07-15T14:30:00Z"/>
+  <note>
+    <text value="Pressure drop detected in Node 2, crew immediately donned masks and initiated isolation protocol"/>
+  </note>
+</Condition>

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bfrt-outcome-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem bfrt-outcome-cs</b></p><a name=\"bfrt-outcome-cs\"> </a><a name=\"hcbfrt-outcome-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">muscle-csa<a name=\"bfrt-outcome-cs-muscle-csa\"> </a></td><td>Muscle Cross-Sectional Area</td><td>Cross-sectional area of muscle measured by imaging</td></tr><tr><td style=\"white-space:nowrap\">p1np<a name=\"bfrt-outcome-cs-p1np\"> </a></td><td>P1NP (Procollagen Type I N-Propeptide)</td><td>Bone formation marker indicating osteoblast activity</td></tr><tr><td style=\"white-space:nowrap\">ctx<a name=\"bfrt-outcome-cs-ctx\"> </a></td><td>CTX (C-Terminal Telopeptide)</td><td>Bone resorption marker indicating osteoclast activity</td></tr><tr><td style=\"white-space:nowrap\">limb-occlusion-pressure<a name=\"bfrt-outcome-cs-limb-occlusion-pressure\"> </a></td><td>Limb Occlusion Pressure</td><td>Arterial occlusion pressure measured at the proximal limb</td></tr><tr><td style=\"white-space:nowrap\">rep-max-1rm<a name=\"bfrt-outcome-cs-rep-max-1rm\"> </a></td><td>1-Repetition Maximum (1RM)</td><td>Maximum weight lifted for one complete repetition</td></tr><tr><td style=\"white-space:nowrap\">muscle-thickness<a name=\"bfrt-outcome-cs-muscle-thickness\"> </a></td><td>Muscle Thickness</td><td>Ultrasound-measured muscle thickness</td></tr><tr><td style=\"white-space:nowrap\">vascular-compliance<a name=\"bfrt-outcome-cs-vascular-compliance\"> </a></td><td>Vascular Compliance</td><td>Arterial compliance measured post-BFRT</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "BFRTOutcomeCS"] ; # 
+  fhir:title [ fhir:v "BFRT Outcome Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Outcome measures for blood flow restriction training effectiveness"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "muscle-csa" ] ;
+     fhir:display [ fhir:v "Muscle Cross-Sectional Area" ] ;
+     fhir:definition [ fhir:v "Cross-sectional area of muscle measured by imaging" ]
+  ] [
+     fhir:code [ fhir:v "p1np" ] ;
+     fhir:display [ fhir:v "P1NP (Procollagen Type I N-Propeptide)" ] ;
+     fhir:definition [ fhir:v "Bone formation marker indicating osteoblast activity" ]
+  ] [
+     fhir:code [ fhir:v "ctx" ] ;
+     fhir:display [ fhir:v "CTX (C-Terminal Telopeptide)" ] ;
+     fhir:definition [ fhir:v "Bone resorption marker indicating osteoclast activity" ]
+  ] [
+     fhir:code [ fhir:v "limb-occlusion-pressure" ] ;
+     fhir:display [ fhir:v "Limb Occlusion Pressure" ] ;
+     fhir:definition [ fhir:v "Arterial occlusion pressure measured at the proximal limb" ]
+  ] [
+     fhir:code [ fhir:v "rep-max-1rm" ] ;
+     fhir:display [ fhir:v "1-Repetition Maximum (1RM)" ] ;
+     fhir:definition [ fhir:v "Maximum weight lifted for one complete repetition" ]
+  ] [
+     fhir:code [ fhir:v "muscle-thickness" ] ;
+     fhir:display [ fhir:v "Muscle Thickness" ] ;
+     fhir:definition [ fhir:v "Ultrasound-measured muscle thickness" ]
+  ] [
+     fhir:code [ fhir:v "vascular-compliance" ] ;
+     fhir:display [ fhir:v "Vascular Compliance" ] ;
+     fhir:definition [ fhir:v "Arterial compliance measured post-BFRT" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

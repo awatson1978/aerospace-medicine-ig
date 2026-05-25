@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "antioxidant-biomarker-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem antioxidant-biomarker-cs</b></p><a name=\"antioxidant-biomarker-cs\"> </a><a name=\"hcantioxidant-biomarker-cs\"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">glutathione-reduced<a name=\"antioxidant-biomarker-cs-glutathione-reduced\"> </a></td><td>Reduced Glutathione (GSH)</td><td>Intracellular reduced glutathione level, primary cellular antioxidant</td></tr><tr><td style=\"white-space:nowrap\">malondialdehyde<a name=\"antioxidant-biomarker-cs-malondialdehyde\"> </a></td><td>Malondialdehyde (MDA)</td><td>Lipid peroxidation marker indicating oxidative damage</td></tr><tr><td style=\"white-space:nowrap\">8-ohdg<a name=\"antioxidant-biomarker-cs-8-ohdg\"> </a></td><td>8-Hydroxy-2'-Deoxyguanosine (8-OHdG)</td><td>Oxidative DNA damage marker</td></tr><tr><td style=\"white-space:nowrap\">sod-activity<a name=\"antioxidant-biomarker-cs-sod-activity\"> </a></td><td>Superoxide Dismutase (SOD) Activity</td><td>Antioxidant enzyme activity level</td></tr><tr><td style=\"white-space:nowrap\">catalase-activity<a name=\"antioxidant-biomarker-cs-catalase-activity\"> </a></td><td>Catalase Activity</td><td>Hydrogen peroxide decomposition enzyme activity</td></tr><tr><td style=\"white-space:nowrap\">tac<a name=\"antioxidant-biomarker-cs-tac\"> </a></td><td>Total Antioxidant Capacity (TAC)</td><td>Aggregate antioxidant capacity of biological sample</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs"^^xsd:anyURI ;
+     fhir:l <https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.6.0"] ; # 
+  fhir:name [ fhir:v "AntioxidantBiomarkerCS"] ; # 
+  fhir:title [ fhir:v "Antioxidant Biomarker Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-05-25T15:07:02-06:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Biomarkers of oxidative stress and antioxidant status"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "glutathione-reduced" ] ;
+     fhir:display [ fhir:v "Reduced Glutathione (GSH)" ] ;
+     fhir:definition [ fhir:v "Intracellular reduced glutathione level, primary cellular antioxidant" ]
+  ] [
+     fhir:code [ fhir:v "malondialdehyde" ] ;
+     fhir:display [ fhir:v "Malondialdehyde (MDA)" ] ;
+     fhir:definition [ fhir:v "Lipid peroxidation marker indicating oxidative damage" ]
+  ] [
+     fhir:code [ fhir:v "8-ohdg" ] ;
+     fhir:display [ fhir:v "8-Hydroxy-2'-Deoxyguanosine (8-OHdG)" ] ;
+     fhir:definition [ fhir:v "Oxidative DNA damage marker" ]
+  ] [
+     fhir:code [ fhir:v "sod-activity" ] ;
+     fhir:display [ fhir:v "Superoxide Dismutase (SOD) Activity" ] ;
+     fhir:definition [ fhir:v "Antioxidant enzyme activity level" ]
+  ] [
+     fhir:code [ fhir:v "catalase-activity" ] ;
+     fhir:display [ fhir:v "Catalase Activity" ] ;
+     fhir:definition [ fhir:v "Hydrogen peroxide decomposition enzyme activity" ]
+  ] [
+     fhir:code [ fhir:v "tac" ] ;
+     fhir:display [ fhir:v "Total Antioxidant Capacity (TAC)" ] ;
+     fhir:definition [ fhir:v "Aggregate antioxidant capacity of biological sample" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
