@@ -23,6 +23,7 @@
 * [NASA Aerospace Safety Advisory Panel Annual Report](https://www.nasa.gov/wp-content/uploads/2024/03/asap-2025-annual-report-tagged.pdf)
 * [Charting the Future of Space: A Collaborative Vision for Innovative Commercial Partnerships and Sustainable Space Exploration](https://journals.sagepub.com/doi/10.1089/space.2024.0041)
 * [How Do Moon Missions Reflect Changes in Science's Social Contract?](https://49197025.hs-sites.com/how-do-moon-missions-reflect-changes-in-sciences-social-contract)
+* [FAA Urged to Revise its Approach to Radiation Exposure for Flight Crewmembers](https://www.nationalacademies.org/news/faa-urged-to-revise-its-approach-to-radiation-exposure-for-flight-crewmembers-current-approaches-are-insufficient-says-new-report)
 
 ### Actuarial Analysis
 
@@ -101,6 +102,7 @@
 * [A road map to truly sustainable water systems in space](https://phys.org/news/2026-02-road-sustainable-space.html)
 * [Survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions](https://journals.asm.org/doi/10.1128/aem.02065-25)
 * [Extraterrestrial infrastructures: Review of in-situ materials, envelope solutions, and energy performance of livable Martian and lunar habitats](https://www.sciencedirect.com/science/article/abs/pii/S0094576525006873)
+* [Beneath The Moon: Designing lunar habitats for protection & permanence](https://spacecomsecondstage.com/beneath-the-moon/)
 
 ### Spacesuits
 
@@ -118,6 +120,10 @@
 * [Focus on next-gen spacesuit design](https://lifestyle.livemint.com/news/talking-point/we-need-to-focus-on-next-gen-spacesuit-design-111644896940713.html)
 * [ILC Dover on NASA next-gen suits team](https://www.ilcdover.com/2022/06/03/ilc-dover-among-industry-team-selected-to-provide-the-next-generation-of-spacesuits-for-nasa/)
 * [NASA’s next lunar spacesuit is impressive](https://gizmodo.com/nasa-s-next-moonsuit-is-going-to-be-damned-impressive-1845393104)
+* [The Space Suit Archive](https://www.thespacesuits.com/)
+* [Martian space suits will need to be 40% lighter](https://phys.org/news/2026-07-martian-space-lighter.html)
+* [Optimal space suit mass for Mars extravehicular activity](https://ieeexplore.ieee.org/document/7500869)
+* [Ultraviolet Testing of Space Suit Materials for Mars](https://ntrs.nasa.gov/api/citations/20170002050/downloads/20170002050.pdf)
 * [The bra-maker who won spacesuit work](https://www.fastcompany.com/90375440/the-improbable-story-of-the-bra-maker-who-won-the-right-to-make-astronaut-spacesuits)
 * [Artemis Spacesuits Have 'a Lot of Flexibility Issues,' Per Former Astronaut](https://www.extremetech.com/aerospace/artemis-spacesuits-have-a-lot-of-flexibility-issues-per-former-astronaut)
 * [NASA's Acquisition of Next-Generation Spacesuit Services](https://oig.nasa.gov/audits/nasas-acquisition-of-next-generation-spacesuit-services/)
@@ -137,6 +143,7 @@
 * [ISS National Lab – Areas of Research](https://www.issnationallab.org/research-on-the-iss/areas-of-research/)
 * [Josephine Allen broadens diversity in space health research](https://mse.ufl.edu/b-sure-program-josephine-allen-diversity-space-health-research/)
 * [ISRO signs MoU for space medicine](https://www.newindianexpress.com/states/karnataka/2025/Apr/26/isro-signs-mou-for-space-medicine)
+* [NASA Human Research Program Approach Plans](https://www.nasa.gov/wp-content/uploads/2026/06/hrp-rap-for-web-62026.pdf?emrc=3899e6)
 
 ### Hermes / LunaNet
 
@@ -155,6 +162,8 @@
 ### Analog Simulations
 
 * [Commander of NASA's yearlong analog Mars mission: month one](https://www.space.com/nasa-chapea-analog-mars-mission-one-month-interview)
+* [Lunar base agent-based modeling — A benchmark for simulating crewed space missions](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0348882)
+* [Agent Mars: Multi-Agent Simulation for Multi-Planetary Life Exploration and Settlement](https://arxiv.org/abs/2602.13291)
 
 ### Astronaut Training
 
@@ -199,6 +208,24 @@
 * [Patient-Led Smartwatch ECG Monitoring After AF Ablation: A Randomized Trial](https://www.sciencedirect.com/science/article/pii/S0735109725105792)
 * [Musculoskeletal responses to spaceflight: mechanisms, countermeasures, and key gaps](https://pubmed.ncbi.nlm.nih.gov/41217000/)
 * [Sensory network segregation as a predictor of post spaceflight balance impairments and sensory re-weighting](https://pubmed.ncbi.nlm.nih.gov/41309651/)
+* [The effect of spaceflight and simulated microgravity exposure on thermoregulation in humans: a systematic review](https://www.nature.com/articles/s41526-026-00601-4)
+* [Space Physiology and Technology: Adaptations, Countermeasures, and Opportunities for Wearable Systems](https://spj.science.org/doi/10.34133/cbsystems.0477)
+* [Cognition of lunar architectural spaces under simulated gravity via HUT10° and 2-hour lower limb compression](https://www.sciencedirect.com/science/article/pii/S2950616626000161)
+* [Organ aging signatures in the plasma proteome track health and disease](https://pubmed.ncbi.nlm.nih.gov/38057571/)
+* [Case study: dose-dependent internal jugular vein response to lower body negative pressure in microgravity quantified by the flow directionality index](https://pubmed.ncbi.nlm.nih.gov/41886283/)
+* [Comparison of musculoskeletal responses and its variability after long-term spaceflight and prolonged bed rest conditions](https://www.nature.com/articles/s41526-026-00611-2)
+* [Space Oddity: microgravity as a neurocognitive catalyst for transformative consciousness experiences](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1769177/full)
+* [Space radiation and microgravity as models of accelerated aging: modulation of hepatic miRNA-TGF-β networks associated with senescence and fibrosis](https://link.springer.com/article/10.1007/s11357-026-02365-x)
+* [A high-fidelity simulator for evaluation of hemodynamic response during cardiopulmonary resuscitation in hypogravity environments](https://www.nature.com/articles/s41526-026-00577-1)
+* [Spaceflight reshapes the gut microbiome: impact of microgravity and radiation on dysbiosis-associated oncogenic pathways](https://www.sciencedirect.com/science/article/pii/S2214552426000830)
+* [Spaceflight-associated neuro-ocular syndrome (SANS): expert consensus on diagnosis and management](https://www.nature.com/articles/s41433-026-04651-6)
+* [Female reproductive dysfunction and transgenerational consequences following prolonged spaceflight exposure](https://www.pnas.org/doi/10.1073/pnas.2606092123)
+* [Kaempferol Attenuates Spaceflight-Associated Knee Cartilage Degradation by Targeting NOX4-Mediated Mitochondrial Dysfunction](https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.76477)
+* [Oral health in space: Understanding impacts of microgravity and developing countermeasures for space applications](https://www.sciencedirect.com/science/article/pii/S2950616625000166)
+* [Why do astronauts’ bodies waste away? Space-station study points to mitochondria](https://www.nature.com/articles/d41586-026-02089-0)
+* [NASA Risk of Venous Thromboembolism in Spaceflight](https://www.nasa.gov/wp-content/uploads/2026/06/risk-venous-thromboembolism-assessment-sp20260005258.pdf?emrc=922888)
+* [Space travel does not significantly impact cardiac sarcomere function but does induce immune-related proteomic changes](https://www.nature.com/articles/s41526-026-00636-7)
+* [Persistent cognitive impairment and bone health following helium ion exposure: implications for space travel](https://www.nature.com/articles/s41526-026-00628-7)
 
 ### Aerospace Medicine Practice
 
@@ -223,6 +250,8 @@
 
 * [How space ops drive innovation in human healthcare](https://ieeexplore.ieee.org/document/10041983)
 * [AI for astronauts → remote patient monitoring](https://spinoff.nasa.gov/astronaut-remote-health-monitoring?msclkid=d3e32237c19211ec91fc866c6933e583)
+* [Noom — at-home blood test kit](https://www.noom.com/)
+* [A Bayesian framework for longitudinal EHR and genetic discovery](https://www.nature.com/articles/s41586-026-10780-5)
 
 ### Lunar Exploration
 
@@ -259,6 +288,7 @@
 * [Musk’s Boring Company LA tunnel](https://www.sciencealert.com/elon-musk-has-released-photos-of-his-underground-tunnels)
 * [Musk on ‘Blade Runner’ truck](https://www.theverge.com/2018/11/2/18055158/elon-musk-tesla-pickup-truck-bladerunner-futuristic)
 * [Purposeful Passenger: Artemis I manikin](https://www.nasa.gov/feature/purposeful-passenger-artemis-i-manikin-helps-prepare-for-moon-missions-with-crew/)
+* [Chandrayaan to Bharatiya Lunar Base: Vision 2047 - India's Strategic Roadmap for Lunar Exploration](https://www.researchgate.net/publication/392171229_Chandrayaan_to_Bharatiya_Lunar_Base_Vision_2047_-India's_Strategic_Roadmap_for_Lunar_Exploration)
 
 ### Nuclear Reactors in Space
 
@@ -296,6 +326,7 @@
 * [Food acceptability and selection by astronauts on International Space Station missions informs strategies and risks for deep space exploration](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1562044/full)
 * [Artemis II: What's on the Menu?](https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/)
 * [Artemis II - Crew Menu](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png)
+* [Mission critical: Astronaut food that is nutritious, yummy, and easy to produce](https://cen.acs.org/food/food-science/space-exploration-astronaut-food-nutrition/104/web/2026/07)
 
 
 ### 🍅 Food Production & Farming in Space
@@ -350,6 +381,10 @@
 * [Space station crew credits ultrasound machine for handling in-orbit health crisis](https://phys.org/news/2026-01-space-station-crew-credits-ultrasound.html)
 * [SpaceX Tourist Says Whole Crew Got Horribly Sick When They Reached Orbit](https://futurism.com/fram2-space-tourists-sick)
 * [Entering a new era for exercise countermeasures in human spaceflight](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/EP093248)
+* [Liquid Lifeline: NASA Tech Could Create IV Fluid In Space](https://www.nasa.gov/general/iv-fluid-in-space/)
+* [Monitoring and modulating interconnected physiological systems in space using portable closed-loop technologies](https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2026.1867627/full)
+* [Medical Astromicrobiology: The Framework](https://www.linkedin.com/pulse/medical-astromicrobiology-framework-frederick-browne-md-mba-bkokc)
+* [Microgravity Isn't the Moon: Rethinking Space Biology for Artemis and Mars](https://www.linkedin.com/pulse/microgravity-isnt-moon-rethinking-space-biology-artemis-mars-nzfyc/)
 
 ### Analog Missions & Crew Research
 
@@ -358,6 +393,8 @@
 * [Mars Desert Research Station - Apply to Become a Crew Member](https://reports.marssociety.org/apply-to-become-a-crew-member/)
 * [Increasing fidelity in lunar and martian analogs for behavioral health and performance research](https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2025.1505823/full)
 * [Characterizing cognitive workload during simulated surface extravehicular activity with integrated virtual reality](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1713354/full?utm_source=F-NTF&utm_medium=EMLX&utm_campaign=PRD_FEOPS_20170000_ARTICLE)
+* [A brief Meaningful Work and Enjoyment Scale (MeWES) for extreme operational environments](https://www.tandfonline.com/doi/full/10.1080/08995605.2026.2687217)
+* [Sleep structure and autonomic nervous system state during four months of isolation in a space analogue mission](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1720237/full)
 
 ### Artemis & Lunar Missions
 
@@ -388,6 +425,8 @@
 * [Yokogawa and Toyota Partner on Control Platform for Lunar Rover Development](https://www.arcweb.com/blog/yokogawa-toyota-partner-control-platform-lunar-rover-development)
 * [Komatsu lunar machine project #2](https://www.youtube.com/watch?v=rZ7WkQkp8sA)
 * [Space Logistics Supply Chain for Interplanetary Missions](https://arc.aiaa.org/doi/epdf/10.2514/6.2024-85933)
+* [Regolith Flow Mitigation and Control in Reduced Gravity via Vertically Vibrating Pocket Feeder](https://media.licdn.com/dms/document/media/v2/D4D1FAQGSl1pgWPoaeg/feedshare-document-pdf-analyzed/B4DZ9p.idvJQAY-/0/1784189432847)
+* [Multi-Layered Protection System for the ClamSat Platform – Shielding Against Lunar Extremes and Day-Night Thermal Cycling](https://www.linkedin.com/pulse/multi-layered-protection-system-clamsat-platform-against-sadlocha-1a0wc)
 
 ### Commercial Space & Private Missions
 
@@ -411,6 +450,10 @@
 * [Balerion Space Ventures invests in founders building the technologies that secure freedom and define the new space frontier](https://www.balerionspace.com/)
 * [Blue Origin to Pause New Shepard Flights for No Less Than Two Years](https://www.blueorigin.com/news/new-shepard-to-pause-flights)
 * [Mapping the Space-Native Economy](https://www.counterflowsolutions.com/post/mapping-the-space-native-economy)
+* [Economics of In-Orbit Refueling (IOR) Interoperability](https://inorbitrefueling.org/economics-of-in-orbit-refueling-ior-interoperability/)
+* [Instinct Space — Rideshare Lunar Landers](https://www.youtube.com/watch?v=-WG8NVonbOo)
+* [What’s next for the microgravity ecosystem?](https://www.linkedin.com/pulse/whats-next-microgravity-ecosystem-jeffrey-manber-oq2sf)
+* [From earth to orbit: mapping the economics of space tourism](https://www.emerald.com/jhth/article-abstract/2/2/318/1368772/From-earth-to-orbit-mapping-the-economics-of-space)
 
 ### Space Traffic Management & Safety
 
@@ -441,6 +484,11 @@
 * [Money, shoes, poop, and other highlights from the 796 items we've left on the moon](https://www.popsci.com/trash-items-left-on-moon-apollo-maps/)
 * [NASA Harvests Lettuce for Space Station Study](https://www.nasa.gov/image-article/nasa-harvests-lettuce-for-space-station-study/)
 * [Biomanufacturing for a Lunar base—A sustainable vision for the future](https://www.sciencedirect.com/science/article/pii/S0265964626000196)
+* [Buried Ice Deposits in Lunar Polar Cold Traps Were Disrupted by Ballistic Sedimentation](https://eps.rutgers.edu/images/EPS_Publications/Buried_Ice_Deposits_in_Lunar_Polar_Cold_Traps_Were_Disrupted_by_Ballistic_Sedimentation.pdf)
+* [Maps of Lunar Water Ice in Permanently Shadowed Regions from Ultraviolet and Infrared Analyses](https://www.hou.usra.edu/meetings/lpsc2026/pdf/1839.pdf)
+* [Impacts into the lunar permanently shadowed regions](https://www.clearskyscience.com/en/10.1038/s44453-026-00032-1)
+* [Lunar Innovation Park – Initial Surface Infrastructure to Kickstart a Space Resource Based Economy](https://ntrs.nasa.gov/api/citations/20260000627/downloads/328%20Lunar%20Innovation%20Park%20-%20Kickstarting%20STRIVES%203.pdf)
+* [Impact melt deposits in the south polar region of the Moon](https://www.sciencedirect.com/science/article/pii/S003206332600084X)
 
 ### NASA Programs, Research & Data
 
@@ -462,11 +510,18 @@
 * [Highlighting a science strategy for human exploration of Mars](https://www.pnas.org/doi/10.1073/pnas.2611962123)
 * [NASA Transfers Management of Lunar Science Instruments](https://science.nasa.gov/blogs/science-news/2026/05/18/nasa-transfers-management-of-lunar-science-instruments/)
 * [The Space Omics and Medical Atlas (SOMA) and international astronaut biobank](https://www.nature.com/articles/s41586-024-07639-y)
+* [NASA FY 2026 Spending Plan for Appropriations Provided by P.L. 119-74](https://www.nasa.gov/wp-content/uploads/2026/07/nasa-fy2026-spending-plan-for-appropriations-provided-by-pl11974.pdf)
+
+### Biomanufacturing & Synthetic Biology
+
+* [Orbital biomanufacturing: the key to space resiliency, operational persistence, and ethical sustainability](https://www.nature.com/articles/s41526-026-00571-7)
+* [Synthetic biology-driven microbial protein factories for space](https://www.sciencedirect.com/science/article/pii/S295061662600015X)
 
 ### Robotics & Planetary Exploration
 
 * [Cooperative robotic exploration of a planetary skylight surface and lava cave](https://www.science.org/doi/10.1126/scirobotics.adj9699)
 * [Mars Relay Network - Orbital Dynamics](https://x.com/nasamars/status/1962990877128982696?s=61)
+* [Digital Twin Models for Space Robotics: Objectives, Applications, and Challenges](https://www.sciencedirect.com/science/article/pii/S2590005626002250)
 
 ### ISS Operations & Tools
 
@@ -484,6 +539,10 @@
 * [Effects of exercise countermeasures on multisystem function in long duration spaceflight astronauts](https://www.nature.com/articles/s41526-023-00256-5)
 * [Axial loading as a countermeasure to hypogravitational disorders in sensory-motor system](https://www.sciencedirect.com/science/article/pii/S0094576525006769)
 * [Blood flow restriction training in microgravity: a review of multisystem physiological benefits and implementation challenges for long-duration space missions](https://www.nature.com/articles/s41526-025-00515-7)
+* [Neuromuscular Electrical Stimulation to Combat Muscle Atrophy During Spaceflight: A Narrative Review of Mechanisms and Potential Applications](https://pubmed.ncbi.nlm.nih.gov/41752896/)
+* [A systematic review identifying fitness metrics indicative of simulated astronaut extravehicular activity task performance](https://www.nature.com/articles/s41526-026-00619-8)
+* [The impact of 14-day head-down bed rest with or without an exercise countermeasure on standing balance control: a randomized controlled trial](https://www.nature.com/articles/s41526-026-00624-x)
+* [Block periodization versus traditional training theory: a review](https://pubmed.ncbi.nlm.nih.gov/18212712/)
 
 ### Historical Space Missions & Documents
 
