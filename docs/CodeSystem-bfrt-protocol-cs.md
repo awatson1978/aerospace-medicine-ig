@@ -1,4 +1,4 @@
-# BFRT Protocol Code System - v0.6.0
+# BFRT Protocol Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BFRTProtocolCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BFRTProtocolCS |
 
  
 Blood flow restriction training protocol types for microgravity exercise countermeasures 
@@ -27,12 +27,12 @@ Blood flow restriction training protocol types for microgravity exercise counter
   "resourceType" : "CodeSystem",
   "id" : "bfrt-protocol-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BFRTProtocolCS",
   "title" : "BFRT Protocol Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

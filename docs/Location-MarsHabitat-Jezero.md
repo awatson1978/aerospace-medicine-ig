@@ -1,4 +1,4 @@
-# Mars Surface Habitat - Jezero Crater - v0.6.0
+# Mars Surface Habitat - Jezero Crater - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

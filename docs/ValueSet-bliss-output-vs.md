@@ -1,4 +1,4 @@
-# BLiSS Output Value Set - v0.6.0
+# BLiSS Output Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BLiSSOutputVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BLiSSOutputVS |
 
  
 Bioregenerative life support output types 
@@ -46,12 +46,12 @@ Bioregenerative life support output types
   "resourceType" : "ValueSet",
   "id" : "bliss-output-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BLiSSOutputVS",
   "title" : "BLiSS Output Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Downloads - v0.6.0
+# Downloads - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Downloads**

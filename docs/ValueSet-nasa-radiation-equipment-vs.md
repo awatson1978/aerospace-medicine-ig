@@ -1,4 +1,4 @@
-# NASA Radiation Monitoring Equipment - v0.6.0
+# NASA Radiation Monitoring Equipment - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-radiation-equipment-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:NASARadiationEquipmentVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-radiation-equipment-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:NASARadiationEquipmentVS |
 
  
 Value set for radiation monitoring hardware. 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "nasa-radiation-equipment-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-radiation-equipment-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "NASARadiationEquipmentVS",
   "title" : "NASA Radiation Monitoring Equipment",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

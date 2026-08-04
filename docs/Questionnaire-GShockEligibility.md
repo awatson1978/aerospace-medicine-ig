@@ -1,4 +1,4 @@
-# G-SHOCK Centrifugal Trainer Eligibility Questionnaire - v0.6.0
+# G-SHOCK Centrifugal Trainer Eligibility Questionnaire - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://aerospace-medicine.org/fhir/Questionnaire/g-shock-eligibility | *Version*:0.6.0 |
+| *Official URL*:http://aerospace-medicine.org/fhir/Questionnaire/g-shock-eligibility | *Version*:0.6.2 |
 | Active as of 2025-05-19 | *Computable Name*:GShockEligibilityQuestionnaire |
 
  
@@ -23,7 +23,7 @@ Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-
   "resourceType" : "Questionnaire",
   "id" : "GShockEligibility",
   "url" : "http://aerospace-medicine.org/fhir/Questionnaire/g-shock-eligibility",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "GShockEligibilityQuestionnaire",
   "title" : "G-SHOCK Centrifugal Trainer Eligibility Questionnaire",
   "status" : "active",

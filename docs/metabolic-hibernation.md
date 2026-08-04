@@ -1,4 +1,4 @@
-# Metabolic Suppression / Therapeutic Hibernation - v0.6.0
+# Metabolic Suppression / Therapeutic Hibernation - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Metabolic Suppression / Therapeutic Hibernation**

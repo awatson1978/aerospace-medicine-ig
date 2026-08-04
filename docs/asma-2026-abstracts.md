@@ -1,4 +1,4 @@
-# AsMA 2026 Abstracts - v0.6.0
+# AsMA 2026 Abstracts - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **AsMA 2026 Abstracts**

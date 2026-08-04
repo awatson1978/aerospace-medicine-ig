@@ -1,4 +1,4 @@
-# SANS Assessment Code System - v0.6.0
+# SANS Assessment Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SANSAssessmentCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SANSAssessmentCS |
 
  
 Parameters for Spaceflight-Associated Neuro-ocular Syndrome assessment 
@@ -27,12 +27,12 @@ Parameters for Spaceflight-Associated Neuro-ocular Syndrome assessment
   "resourceType" : "CodeSystem",
   "id" : "sans-assessment-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SANSAssessmentCS",
   "title" : "SANS Assessment Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

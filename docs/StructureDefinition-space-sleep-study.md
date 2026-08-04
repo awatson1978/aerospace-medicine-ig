@@ -1,4 +1,4 @@
-# Space Sleep Study Observation - v0.6.0
+# Space Sleep Study Observation - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-sleep-study | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceSleepStudy |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-sleep-study | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceSleepStudy |
 
  
 Sleep architecture observation during spaceflight including PSG and actigraphy-derived measures 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
   "resourceType" : "StructureDefinition",
   "id" : "space-sleep-study",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-sleep-study",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceSleepStudy",
   "title" : "Space Sleep Study Observation",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

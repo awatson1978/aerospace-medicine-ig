@@ -1,4 +1,4 @@
-# Mars EVA - Sol 147 - v0.6.0
+# Mars EVA - Sol 147 - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

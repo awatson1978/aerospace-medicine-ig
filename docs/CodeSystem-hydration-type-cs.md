@@ -1,4 +1,4 @@
-# Hydration Product Types - v0.6.0
+# Hydration Product Types - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/hydration-type-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:HydrationTypeCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/hydration-type-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:HydrationTypeCS |
 
  
 Types of hydration products used in space 
@@ -27,12 +27,12 @@ Types of hydration products used in space
   "resourceType" : "CodeSystem",
   "id" : "hydration-type-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/hydration-type-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "HydrationTypeCS",
   "title" : "Hydration Product Types",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

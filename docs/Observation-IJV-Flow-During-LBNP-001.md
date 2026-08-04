@@ -1,4 +1,4 @@
-# IJV Flow During LBNP (FDI = 0.85) - v0.6.0
+# IJV Flow During LBNP (FDI = 0.85) - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

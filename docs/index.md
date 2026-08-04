@@ -1,4 +1,4 @@
-# Space Health Implementation Guide - v0.6.0
+# Space Health Implementation Guide - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Space Health Implementation Guide**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:SpaceflightHealthSimulationsReferenceDocumentation |
+| *Official URL*:https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:SpaceflightHealthSimulationsReferenceDocumentation |
 
 Welcome to the HL7 FHIR Aerospace Medicine Implementation Guide (IG). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.
 
@@ -103,10 +103,10 @@ Significant portions of this Implementation Guide were developed with the assist
   "resourceType" : "ImplementationGuide",
   "id" : "mitre.fhir.spacehealth",
   "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -134,7 +134,7 @@ Significant portions of this Implementation Guide were developed with the assist
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.1.0"
+      "version" : "7.3.0"
     },
     {
       "id" : "hl7ext",

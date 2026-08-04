@@ -1,4 +1,4 @@
-# Hyperbaric Chamber Capabilities - v0.6.0
+# Hyperbaric Chamber Capabilities - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:HyperbaricCapabilitiesCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:HyperbaricCapabilitiesCS |
 
  
 Capabilities and services available in hyperbaric chambers 
@@ -27,12 +27,12 @@ Capabilities and services available in hyperbaric chambers
   "resourceType" : "CodeSystem",
   "id" : "hyperbaric-capabilities-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "HyperbaricCapabilitiesCS",
   "title" : "Hyperbaric Chamber Capabilities",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

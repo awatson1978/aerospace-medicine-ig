@@ -1,4 +1,4 @@
-# Space Exercise Modality Value Set - v0.6.0
+# Space Exercise Modality Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceExerciseModalityVS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceExerciseModalityVS |
 
  
 Permitted space exercise modalities, derived from the Space Exercise Modality Code System. 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-exercise-modality-vs",
   "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceExerciseModalityVS",
   "title" : "Space Exercise Modality Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

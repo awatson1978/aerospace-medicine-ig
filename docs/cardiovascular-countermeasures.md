@@ -1,4 +1,4 @@
-# Cardiovascular Countermeasures - v0.6.0
+# Cardiovascular Countermeasures - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Cardiovascular Countermeasures**

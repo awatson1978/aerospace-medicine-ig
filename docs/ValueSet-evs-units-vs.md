@@ -1,4 +1,4 @@
-# EVS Units - v0.6.0
+# EVS Units - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/evs-units-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:EVSUnitsVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/evs-units-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:EVSUnitsVS |
 
  
 Units for Exercise Vital Sign measurements 
@@ -23,6 +23,8 @@ Units for Exercise Vital Sign measurements
  
 
 ### Expansion
+
+No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -46,12 +48,12 @@ Units for Exercise Vital Sign measurements
   "resourceType" : "ValueSet",
   "id" : "evs-units-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/evs-units-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "EVSUnitsVS",
   "title" : "EVS Units",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

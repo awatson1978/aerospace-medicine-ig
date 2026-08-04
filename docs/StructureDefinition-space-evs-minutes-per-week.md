@@ -1,4 +1,4 @@
-# Space Exercise Vital Sign Minutes Per Week - v0.6.0
+# Space Exercise Vital Sign Minutes Per Week - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceEVSMinutesPerWeek |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceEVSMinutesPerWeek |
 
  
 Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-evs-minutes-pe
   "resourceType" : "StructureDefinition",
   "id" : "space-evs-minutes-per-week",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceEVSMinutesPerWeek",
   "title" : "Space Exercise Vital Sign Minutes Per Week",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

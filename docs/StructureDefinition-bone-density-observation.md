@@ -1,4 +1,4 @@
-# Bone Density Observation - v0.6.0
+# Bone Density Observation - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bone-density-observation | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BoneDensityObservation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bone-density-observation | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BoneDensityObservation |
 
  
 Bone mineral density measurement during spaceflight with method, site, and T/Z-score components 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-bone-density-observa
   "resourceType" : "StructureDefinition",
   "id" : "bone-density-observation",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/bone-density-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BoneDensityObservation",
   "title" : "Bone Density Observation",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Hyperbaric Medicine - v0.6.0
+# Hyperbaric Medicine - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Hyperbaric Medicine**

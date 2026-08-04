@@ -1,4 +1,4 @@
-# Barotrauma Assessment - v0.6.0
+# Barotrauma Assessment - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/BarotraumaAssessment | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:BarotraumaAssessment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/BarotraumaAssessment | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:BarotraumaAssessment |
 
  
 Assessment of pressure-related injuries (barotrauma) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-BarotraumaAssessment
   "resourceType" : "StructureDefinition",
   "id" : "BarotraumaAssessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/BarotraumaAssessment",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BarotraumaAssessment",
   "title" : "Barotrauma Assessment",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

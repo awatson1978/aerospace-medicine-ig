@@ -1,4 +1,4 @@
-# Artemis - v0.6.0
+# Artemis - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Artemis**

@@ -1,4 +1,4 @@
-# Adaptations of Bone Health - v0.6.0
+# Adaptations of Bone Health - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:SpaceAdaptationBoneHealth |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:SpaceAdaptationBoneHealth |
 
  
 Bone health adaptations observed in spaceflight conditions. 
@@ -46,11 +46,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "SpaceAdaptationBoneHealth",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceAdaptationBoneHealth",
   "title" : "Adaptations of Bone Health",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

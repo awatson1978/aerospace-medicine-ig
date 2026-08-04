@@ -1,4 +1,4 @@
-# AVATAR Organ-on-Chip Device - v0.6.0
+# AVATAR Organ-on-Chip Device - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/avatar-organ-chip | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:AVATAROrganChip |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/avatar-organ-chip | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:AVATAROrganChip |
 
  
 Organ-on-chip (microphysiological system) device from the AVATAR investigation for tissue-chip-based monitoring in spaceflight 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
   "resourceType" : "StructureDefinition",
   "id" : "avatar-organ-chip",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/avatar-organ-chip",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "AVATAROrganChip",
   "title" : "AVATAR Organ-on-Chip Device",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

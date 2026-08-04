@@ -1,4 +1,4 @@
-# Sterilization Procedure - v0.6.0
+# Sterilization Procedure - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SterilizationProcedure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SterilizationProcedure |
 
  
 Sterilization procedure for planetary protection bioburden reduction (UV, DHMR, VHP, etc.) 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-sterilization-proced
   "resourceType" : "StructureDefinition",
   "id" : "sterilization-procedure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SterilizationProcedure",
   "title" : "Sterilization Procedure",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

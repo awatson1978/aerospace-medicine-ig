@@ -1,4 +1,4 @@
-# Planetary Protection Category Value Set - v0.6.0
+# Planetary Protection Category Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:PlanetaryProtectionCategoryVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:PlanetaryProtectionCategoryVS |
 
  
 COSPAR planetary protection categories 
@@ -46,12 +46,12 @@ COSPAR planetary protection categories
   "resourceType" : "ValueSet",
   "id" : "planetary-protection-category-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "PlanetaryProtectionCategoryVS",
   "title" : "Planetary Protection Category Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

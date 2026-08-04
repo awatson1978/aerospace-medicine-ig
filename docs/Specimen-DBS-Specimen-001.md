@@ -1,4 +1,4 @@
-# Dried Blood Spot Specimen with Biobank Metadata - v0.6.0
+# Dried Blood Spot Specimen with Biobank Metadata - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

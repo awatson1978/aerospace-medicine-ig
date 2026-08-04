@@ -1,4 +1,4 @@
-# Space Omics - v0.6.0
+# Space Omics - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Space Omics**

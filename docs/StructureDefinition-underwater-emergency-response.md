@@ -1,4 +1,4 @@
-# Underwater Emergency Response - v0.6.0
+# Underwater Emergency Response - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:UnderwaterEmergencyResponse |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:UnderwaterEmergencyResponse |
 
  
 Emergency response procedures during underwater training operations 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
   "resourceType" : "StructureDefinition",
   "id" : "underwater-emergency-response",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "UnderwaterEmergencyResponse",
   "title" : "Underwater Emergency Response",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

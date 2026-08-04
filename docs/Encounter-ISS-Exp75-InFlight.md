@@ -1,4 +1,4 @@
-# ISS Expedition 75 In-Flight Period - v0.6.0
+# ISS Expedition 75 In-Flight Period - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 **status**: In Progress
 
-**class**: [ActCode: AMB](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB) (ambulatory)
+**class**: [ActCode: AMB](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB) (ambulatory)
 
 **subject**: [Patient/AstronautExample](Patient/AstronautExample)
 

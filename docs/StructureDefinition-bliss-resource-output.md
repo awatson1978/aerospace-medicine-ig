@@ -1,4 +1,4 @@
-# BLiSS Resource Output - v0.6.0
+# BLiSS Resource Output - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BLiSSResourceOutput |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BLiSSResourceOutput |
 
  
 Observation of bioregenerative life support system resource output quantities and rates 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
   "resourceType" : "StructureDefinition",
   "id" : "bliss-resource-output",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BLiSSResourceOutput",
   "title" : "BLiSS Resource Output",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

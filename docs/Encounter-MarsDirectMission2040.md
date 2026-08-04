@@ -1,4 +1,4 @@
-# Mars Direct Mission 2040 - v0.6.0
+# Mars Direct Mission 2040 - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 **status**: In Progress
 
-**class**: [ActCode: FLD](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD) (field)
+**class**: [ActCode: FLD](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD) (field)
 
 **subject**: [Sarah Chen Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
 

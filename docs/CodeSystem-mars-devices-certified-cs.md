@@ -1,4 +1,4 @@
-# Mars Mission Devices - Certified - v0.6.0
+# Mars Mission Devices - Certified - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:MarsCertifiedDevicesCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:MarsCertifiedDevicesCS |
 
  
 Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.) 
@@ -28,12 +28,12 @@ Flight-qualified hardware and systems operational or used in Mars mission planni
   "resourceType" : "CodeSystem",
   "id" : "mars-devices-certified-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MarsCertifiedDevicesCS",
   "title" : "Mars Mission Devices - Certified",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

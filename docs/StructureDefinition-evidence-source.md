@@ -1,4 +1,4 @@
-# Evidence Source - v0.6.0
+# Evidence Source - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/evidence-source | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:EvidenceSource |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/evidence-source | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:EvidenceSource |
 
 Links clinical data to research evidence sources such as SHARED database entries or PubMed references
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-evidence-source.csv)
   "resourceType" : "StructureDefinition",
   "id" : "evidence-source",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/evidence-source",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "EvidenceSource",
   "title" : "Evidence Source",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

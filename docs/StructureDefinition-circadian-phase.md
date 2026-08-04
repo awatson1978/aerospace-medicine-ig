@@ -1,4 +1,4 @@
-# Circadian Phase - v0.6.0
+# Circadian Phase - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:CircadianPhase |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:CircadianPhase |
 
 Circadian rhythm phase at the time of observation
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-circadian-phase.csv)
   "resourceType" : "StructureDefinition",
   "id" : "circadian-phase",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "CircadianPhase",
   "title" : "Circadian Phase",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

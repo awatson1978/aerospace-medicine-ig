@@ -1,4 +1,4 @@
-# Location - Mir - v0.6.0
+# Location - Mir - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

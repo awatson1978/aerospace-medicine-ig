@@ -1,4 +1,4 @@
-# Joint Assessment Code System - v0.6.0
+# Joint Assessment Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/joint-assessment-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:JointAssessmentCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/joint-assessment-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:JointAssessmentCS |
 
  
 Parameters for ultrasound-based joint health assessment 
@@ -27,12 +27,12 @@ Parameters for ultrasound-based joint health assessment
   "resourceType" : "CodeSystem",
   "id" : "joint-assessment-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/joint-assessment-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "JointAssessmentCS",
   "title" : "Joint Assessment Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

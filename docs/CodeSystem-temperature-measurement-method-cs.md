@@ -1,4 +1,4 @@
-# Temperature Measurement Method Code System - v0.6.0
+# Temperature Measurement Method Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:TemperatureMeasurementMethodCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:TemperatureMeasurementMethodCS |
 
  
 Methods of body temperature measurement relevant to spaceflight 
@@ -27,12 +27,12 @@ Methods of body temperature measurement relevant to spaceflight
   "resourceType" : "CodeSystem",
   "id" : "temperature-measurement-method-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "TemperatureMeasurementMethodCS",
   "title" : "Temperature Measurement Method Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

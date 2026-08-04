@@ -1,4 +1,4 @@
-# Gravity Context Code System - v0.6.0
+# Gravity Context Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:GravityContextCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:GravityContextCS |
 
  
 Gravitational environment contexts for observations and procedures 
@@ -27,12 +27,12 @@ Gravitational environment contexts for observations and procedures
   "resourceType" : "CodeSystem",
   "id" : "gravity-context-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "GravityContextCS",
   "title" : "Gravity Context Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Space CGM Summary Report - v0.6.0
+# Space CGM Summary Report - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceCGMSummary |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceCGMSummary |
 
  
 Summary report of CGM data over a reporting period during spaceflight 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-cgm-summary.cs
   "resourceType" : "StructureDefinition",
   "id" : "space-cgm-summary",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceCGMSummary",
   "title" : "Space CGM Summary Report",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

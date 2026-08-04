@@ -1,4 +1,4 @@
-# Analog Mission Training - v0.6.0
+# Analog Mission Training - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Analog Mission Training**

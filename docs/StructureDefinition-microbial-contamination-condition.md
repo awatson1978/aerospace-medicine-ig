@@ -1,4 +1,4 @@
-# Microbial Contamination Condition - v0.6.0
+# Microbial Contamination Condition - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-condition | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:MicrobialContaminationCondition |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-condition | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:MicrobialContaminationCondition |
 
  
 Diagnosis of microbial contamination on spacecraft surfaces or equipment with planetary protection classification 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-microbial-contaminat
   "resourceType" : "StructureDefinition",
   "id" : "microbial-contamination-condition",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-condition",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MicrobialContaminationCondition",
   "title" : "Microbial Contamination Condition",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

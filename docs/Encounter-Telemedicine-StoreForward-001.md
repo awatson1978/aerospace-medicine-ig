@@ -1,4 +1,4 @@
-# Store-and-Forward Telemedicine Encounter - v0.6.0
+# Store-and-Forward Telemedicine Encounter - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@ Profile: [Telemedicine Encounter](StructureDefinition-telemedicine-encounter.md)
 
 **status**: Finished
 
-**class**: [ActCode: VR](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR) (virtual)
+**class**: [ActCode: VR](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR) (virtual)
 
 **type**: Store-and-Forward
 

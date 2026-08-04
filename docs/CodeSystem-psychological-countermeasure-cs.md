@@ -1,4 +1,4 @@
-# Psychological Countermeasure Code System - v0.6.0
+# Psychological Countermeasure Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:PsychologicalCountermeasureCS |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:PsychologicalCountermeasureCS |
 
  
 Codes for psychological countermeasure interventions in aerospace missions. 
@@ -27,11 +27,11 @@ Codes for psychological countermeasure interventions in aerospace missions.
   "resourceType" : "CodeSystem",
   "id" : "psychological-countermeasure-cs",
   "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "PsychologicalCountermeasureCS",
   "title" : "Psychological Countermeasure Code System",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

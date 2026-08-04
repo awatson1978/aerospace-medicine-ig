@@ -1,4 +1,4 @@
-# Biomanufacturing - v0.6.0
+# Biomanufacturing - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Biomanufacturing**

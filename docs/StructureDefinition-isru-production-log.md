@@ -1,4 +1,4 @@
-# ISRU Production Log - v0.6.0
+# ISRU Production Log - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:ISRUProductionLog |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:ISRUProductionLog |
 
  
 Tracking ISRU propellant production (CH4/O2) for Mars return journey 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
   "resourceType" : "StructureDefinition",
   "id" : "isru-production-log",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "ISRUProductionLog",
   "title" : "ISRU Production Log",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

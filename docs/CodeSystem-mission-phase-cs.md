@@ -1,4 +1,4 @@
-# Mission Phase Code System - v0.6.0
+# Mission Phase Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:MissionPhaseCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:MissionPhaseCS |
 
  
 Phases of a space mission for temporal context of clinical observations 
@@ -27,12 +27,12 @@ Phases of a space mission for temporal context of clinical observations
   "resourceType" : "CodeSystem",
   "id" : "mission-phase-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MissionPhaseCS",
   "title" : "Mission Phase Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Space Transfusion Procedure - v0.6.0
+# Space Transfusion Procedure - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-transfusion-procedure | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceTransfusionProcedure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-transfusion-procedure | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceTransfusionProcedure |
 
  
 Blood transfusion procedure adapted for spaceflight and austere environments 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-transfusion-pr
   "resourceType" : "StructureDefinition",
   "id" : "space-transfusion-procedure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-transfusion-procedure",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceTransfusionProcedure",
   "title" : "Space Transfusion Procedure",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

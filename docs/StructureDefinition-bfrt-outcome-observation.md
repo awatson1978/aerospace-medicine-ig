@@ -1,4 +1,4 @@
-# BFRT Outcome Observation - v0.6.0
+# BFRT Outcome Observation - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BFRTOutcomeObservation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BFRTOutcomeObservation |
 
  
 Outcome measurements from blood flow restriction training including musculoskeletal and bone biomarkers 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
   "resourceType" : "StructureDefinition",
   "id" : "bfrt-outcome-observation",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BFRTOutcomeObservation",
   "title" : "BFRT Outcome Observation",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

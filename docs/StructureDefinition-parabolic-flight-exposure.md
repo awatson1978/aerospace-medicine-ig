@@ -1,4 +1,4 @@
-# Parabolic Flight Exposure - v0.6.0
+# Parabolic Flight Exposure - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/parabolic-flight-exposure | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:ParabolicFlightExposure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/parabolic-flight-exposure | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:ParabolicFlightExposure |
 
  
 Parabolic flight session providing brief microgravity exposure for research 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-parabolic-flight-exp
   "resourceType" : "StructureDefinition",
   "id" : "parabolic-flight-exposure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/parabolic-flight-exposure",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "ParabolicFlightExposure",
   "title" : "Parabolic Flight Exposure",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

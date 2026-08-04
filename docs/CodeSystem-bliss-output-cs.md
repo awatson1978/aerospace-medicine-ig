@@ -1,4 +1,4 @@
-# BLiSS Output Code System - v0.6.0
+# BLiSS Output Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BLiSSOutputCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BLiSSOutputCS |
 
  
 Bioregenerative Life Support System (BLiSS) output types 
@@ -27,12 +27,12 @@ Bioregenerative Life Support System (BLiSS) output types
   "resourceType" : "CodeSystem",
   "id" : "bliss-output-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BLiSSOutputCS",
   "title" : "BLiSS Output Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

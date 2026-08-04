@@ -1,4 +1,4 @@
-# ISS Mood Assessment - Mission Week 12 - v0.6.0
+# ISS Mood Assessment - Mission Week 12 - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

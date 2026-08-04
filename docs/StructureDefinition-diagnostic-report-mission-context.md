@@ -1,4 +1,4 @@
-# Mission Context for Diagnostic Reports - v0.6.0
+# Mission Context for Diagnostic Reports - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:DiagnosticReportMissionContext |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:DiagnosticReportMissionContext |
 
 Links diagnostic reports to specific space missions
 
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-diagnostic-report-mi
   "resourceType" : "StructureDefinition",
   "id" : "diagnostic-report-mission-context",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "DiagnosticReportMissionContext",
   "title" : "Mission Context for Diagnostic Reports",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

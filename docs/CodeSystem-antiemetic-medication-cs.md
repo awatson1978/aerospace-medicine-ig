@@ -1,4 +1,4 @@
-# Antiemetic Medication Code System - v0.6.0
+# Antiemetic Medication Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:AntiemeticMedicationCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:AntiemeticMedicationCS |
 
  
 Antiemetic medications used for space motion sickness prophylaxis and treatment 
@@ -27,12 +27,12 @@ Antiemetic medications used for space motion sickness prophylaxis and treatment
   "resourceType" : "CodeSystem",
   "id" : "antiemetic-medication-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "AntiemeticMedicationCS",
   "title" : "Antiemetic Medication Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Nutrition - v0.6.0
+# Nutrition - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Nutrition**

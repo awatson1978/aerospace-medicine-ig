@@ -1,4 +1,4 @@
-# Temperature Measurement Method Value Set - v0.6.0
+# Temperature Measurement Method Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/temperature-measurement-method-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:TemperatureMeasurementMethodVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/temperature-measurement-method-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:TemperatureMeasurementMethodVS |
 
  
 Methods of body temperature measurement 
@@ -46,12 +46,12 @@ Methods of body temperature measurement
   "resourceType" : "ValueSet",
   "id" : "temperature-measurement-method-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/temperature-measurement-method-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "TemperatureMeasurementMethodVS",
   "title" : "Temperature Measurement Method Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

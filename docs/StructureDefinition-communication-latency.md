@@ -1,4 +1,4 @@
-# Communication Latency - v0.6.0
+# Communication Latency - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-latency | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:CommunicationLatency |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-latency | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:CommunicationLatency |
 
 One-way signal latency for telemedicine encounters, complementing the Mars-specific CommunicationDelay extension with general-purpose latency tracking
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-communication-latenc
   "resourceType" : "StructureDefinition",
   "id" : "communication-latency",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/communication-latency",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "CommunicationLatency",
   "title" : "Communication Latency",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

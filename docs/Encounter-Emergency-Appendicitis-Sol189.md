@@ -1,4 +1,4 @@
-# Autonomous Medical Encounter - Appendicitis Sol 189 - v0.6.0
+# Autonomous Medical Encounter - Appendicitis Sol 189 - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -14,7 +14,7 @@ Profile: [Autonomous Medical Encounter](StructureDefinition-autonomous-medical-e
 
 **status**: Finished
 
-**class**: [ActCode: EMER](http://terminology.hl7.org/7.1.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER) (emergency)
+**class**: [ActCode: EMER](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-EMER) (emergency)
 
 **subject**: [Patient/MarsCrewMember2](Patient/MarsCrewMember2)
 

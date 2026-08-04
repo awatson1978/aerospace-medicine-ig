@@ -1,4 +1,4 @@
-# Space Blood Product - v0.6.0
+# Space Blood Product - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-blood-product | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceBloodProduct |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-blood-product | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceBloodProduct |
 
  
 Blood products adapted for spaceflight including lyophilized RBCs and freeze-dried plasma 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-blood-product.
   "resourceType" : "StructureDefinition",
   "id" : "space-blood-product",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-blood-product",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceBloodProduct",
   "title" : "Space Blood Product",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

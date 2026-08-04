@@ -1,4 +1,4 @@
-# Blood Flow Restriction Training - v0.6.0
+# Blood Flow Restriction Training - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Blood Flow Restriction Training**

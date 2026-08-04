@@ -1,4 +1,4 @@
-# NASA Mission Phase Timing - v0.6.0
+# NASA Mission Phase Timing - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:NASAMissionPhaseCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:NASAMissionPhaseCS |
 
  
 Mission phases and timing codes for medical requirements scheduling. 
@@ -27,12 +27,12 @@ Mission phases and timing codes for medical requirements scheduling.
   "resourceType" : "CodeSystem",
   "id" : "nasa-mission-phase-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "NASAMissionPhaseCS",
   "title" : "NASA Mission Phase Timing",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

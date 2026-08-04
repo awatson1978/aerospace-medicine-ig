@@ -1,4 +1,4 @@
-# Lower Body Negative Pressure Procedure - v0.6.0
+# Lower Body Negative Pressure Procedure - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:LowerBodyNegativePressureProcedure |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:LowerBodyNegativePressureProcedure |
 
  
 LBNP session applying sub-atmospheric pressure to the lower body as a countermeasure for cephalad fluid shift 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
   "resourceType" : "StructureDefinition",
   "id" : "lower-body-negative-pressure-procedure",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "LowerBodyNegativePressureProcedure",
   "title" : "Lower Body Negative Pressure Procedure",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

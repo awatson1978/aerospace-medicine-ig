@@ -1,4 +1,4 @@
-# Space ECG Observation - v0.6.0
+# Space ECG Observation - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-ecg-observation | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceECGObservation |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-ecg-observation | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceECGObservation |
 
  
 Electrocardiogram observation during spaceflight for cardiac arrhythmia monitoring 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-ecg-observatio
   "resourceType" : "StructureDefinition",
   "id" : "space-ecg-observation",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-ecg-observation",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceECGObservation",
   "title" : "Space ECG Observation",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

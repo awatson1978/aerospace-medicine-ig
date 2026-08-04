@@ -1,4 +1,4 @@
-# MRID Launch Context Name CodeSystem - v0.6.0
+# MRID Launch Context Name CodeSystem - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:MRIDLaunchContextNameCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:MRIDLaunchContextNameCS |
 
  
 Names for launch context variables 
@@ -27,11 +27,11 @@ Names for launch context variables
   "resourceType" : "CodeSystem",
   "id" : "mrid-launch-context-name-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MRIDLaunchContextNameCS",
   "title" : "MRID Launch Context Name CodeSystem",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

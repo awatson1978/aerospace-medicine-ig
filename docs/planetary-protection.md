@@ -1,4 +1,4 @@
-# Planetary Protection - v0.6.0
+# Planetary Protection - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Planetary Protection**

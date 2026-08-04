@@ -1,4 +1,4 @@
-# Space Cardiovascular Effects - v0.6.0
+# Space Cardiovascular Effects - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:SpaceCardiovascularEffectsValueSet |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:SpaceCardiovascularEffectsValueSet |
 
  
 Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure 
@@ -46,12 +46,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "space-cardiovascular-effects",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceCardiovascularEffectsValueSet",
   "title" : "Space Cardiovascular Effects",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

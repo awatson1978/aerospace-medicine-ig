@@ -1,4 +1,4 @@
-# Space Body Temperature Observation - v0.6.0
+# Space Body Temperature Observation - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceBodyTemperature |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceBodyTemperature |
 
  
 Body temperature measurement during spaceflight with method, circadian context, and environmental factors 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-body-temperatu
   "resourceType" : "StructureDefinition",
   "id" : "space-body-temperature",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceBodyTemperature",
   "title" : "Space Body Temperature Observation",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Complication Monitoring - v0.6.0
+# Complication Monitoring - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/complication-monitoring | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:ComplicationMonitoring |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/complication-monitoring | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:ComplicationMonitoring |
 
 Monitoring for treatment complications
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-complication-monitor
   "resourceType" : "StructureDefinition",
   "id" : "complication-monitoring",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/complication-monitoring",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "ComplicationMonitoring",
   "title" : "Complication Monitoring",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

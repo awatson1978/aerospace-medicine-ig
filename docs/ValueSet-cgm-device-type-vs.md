@@ -1,4 +1,4 @@
-# CGM Device Type Value Set - v0.6.0
+# CGM Device Type Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/cgm-device-type-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:CGMDeviceTypeVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/cgm-device-type-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:CGMDeviceTypeVS |
 
  
 Types of CGM devices 
@@ -46,12 +46,12 @@ Types of CGM devices
   "resourceType" : "ValueSet",
   "id" : "cgm-device-type-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/cgm-device-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "CGMDeviceTypeVS",
   "title" : "CGM Device Type Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Radioprotective Medication Value Set - v0.6.0
+# Radioprotective Medication Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radioprotective-medication-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:RadioprotectiveMedicationVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/radioprotective-medication-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:RadioprotectiveMedicationVS |
 
  
 Radioprotective medications for spaceflight 
@@ -47,12 +47,12 @@ Radioprotective medications for spaceflight
   "resourceType" : "ValueSet",
   "id" : "radioprotective-medication-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/radioprotective-medication-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "RadioprotectiveMedicationVS",
   "title" : "Radioprotective Medication Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

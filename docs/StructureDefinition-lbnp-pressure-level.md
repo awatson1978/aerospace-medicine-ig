@@ -1,4 +1,4 @@
-# LBNP Pressure Level - v0.6.0
+# LBNP Pressure Level - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:LBNPPressureLevel |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:LBNPPressureLevel |
 
 Applied lower body negative pressure level in mmHg (negative values: -10 to -50 mmHg)
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](StructureDefinition-lbnp-pressure-level.
   "resourceType" : "StructureDefinition",
   "id" : "lbnp-pressure-level",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "LBNPPressureLevel",
   "title" : "LBNP Pressure Level",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

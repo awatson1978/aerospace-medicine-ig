@@ -1,4 +1,4 @@
-# Space Motion Sickness Value Set - v0.6.0
+# Space Motion Sickness Value Set - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-motion-sickness-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceMotionSicknessVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-motion-sickness-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceMotionSicknessVS |
 
  
 Types of motion sickness in spaceflight 
@@ -46,12 +46,12 @@ Types of motion sickness in spaceflight
   "resourceType" : "ValueSet",
   "id" : "space-motion-sickness-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-motion-sickness-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceMotionSicknessVS",
   "title" : "Space Motion Sickness Value Set",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

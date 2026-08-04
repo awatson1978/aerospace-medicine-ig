@@ -1,4 +1,4 @@
-# Microbial Viability Assay - v0.6.0
+# Microbial Viability Assay - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/microbial-viability-assay | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:MicrobialViabilityAssay |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/microbial-viability-assay | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:MicrobialViabilityAssay |
 
  
 Microbial viability assay measuring colony-forming units or most probable number on spacecraft surfaces 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-microbial-viability-
   "resourceType" : "StructureDefinition",
   "id" : "microbial-viability-assay",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/microbial-viability-assay",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MicrobialViabilityAssay",
   "title" : "Microbial Viability Assay",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

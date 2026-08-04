@@ -1,4 +1,4 @@
-# Surface Swab CFU Assay - v0.6.0
+# Surface Swab CFU Assay - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

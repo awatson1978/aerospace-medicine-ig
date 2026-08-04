@@ -1,4 +1,4 @@
-# Radiation Tracking - v0.6.0
+# Radiation Tracking - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * **Radiation Tracking**

@@ -1,4 +1,4 @@
-# xEVAS Suit Definition - v0.6.0
+# xEVAS Suit Definition - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:XEVASSuitDefinition |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:XEVASSuitDefinition |
 
  
 Definition of an Exploration Extravehicular Activity Suit (xEVAS) including model, capabilities, and operational parameters 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-xevas-suit-definitio
   "resourceType" : "StructureDefinition",
   "id" : "xevas-suit-definition",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "XEVASSuitDefinition",
   "title" : "xEVAS Suit Definition",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

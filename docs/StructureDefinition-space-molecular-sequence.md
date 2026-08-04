@@ -1,4 +1,4 @@
-# Space Molecular Sequence - v0.6.0
+# Space Molecular Sequence - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-molecular-sequence | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceMolecularSequence |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-molecular-sequence | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceMolecularSequence |
 
  
 Molecular sequence data from astronaut genomic, transcriptomic, or proteomic analysis 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-molecular-sequ
   "resourceType" : "StructureDefinition",
   "id" : "space-molecular-sequence",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-molecular-sequence",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceMolecularSequence",
   "title" : "Space Molecular Sequence",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

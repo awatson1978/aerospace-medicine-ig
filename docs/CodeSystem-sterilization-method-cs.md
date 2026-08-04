@@ -1,4 +1,4 @@
-# Sterilization Method Code System - v0.6.0
+# Sterilization Method Code System - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SterilizationMethodCS |
+| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SterilizationMethodCS |
 
  
 Sterilization methods for planetary protection bioburden reduction 
@@ -27,12 +27,12 @@ Sterilization methods for planetary protection bioburden reduction
   "resourceType" : "CodeSystem",
   "id" : "sterilization-method-cs",
   "url" : "https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SterilizationMethodCS",
   "title" : "Sterilization Method Code System",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

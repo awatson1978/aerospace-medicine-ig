@@ -1,4 +1,4 @@
-# Standard Measures Grip Strength - Pre-flight - v0.6.0
+# Standard Measures Grip Strength - Pre-flight - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

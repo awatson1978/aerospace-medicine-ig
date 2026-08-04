@@ -1,4 +1,4 @@
-# Omics Risk Assessment - v0.6.0
+# Omics Risk Assessment - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/omics-risk-assessment | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:OmicsRiskAssessment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/omics-risk-assessment | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:OmicsRiskAssessment |
 
  
 Personalized risk assessment derived from multi-omics molecular profiles 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-omics-risk-assessmen
   "resourceType" : "StructureDefinition",
   "id" : "omics-risk-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/omics-risk-assessment",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "OmicsRiskAssessment",
   "title" : "Omics Risk Assessment",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

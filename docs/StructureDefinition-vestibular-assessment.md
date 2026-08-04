@@ -1,4 +1,4 @@
-# Vestibular Function Assessment - v0.6.0
+# Vestibular Function Assessment - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/vestibular-assessment | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:VestibularAssessment |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/vestibular-assessment | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:VestibularAssessment |
 
 Assessment of inner ear and balance function
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-vestibular-assessmen
   "resourceType" : "StructureDefinition",
   "id" : "vestibular-assessment",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/vestibular-assessment",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "VestibularAssessment",
   "title" : "Vestibular Function Assessment",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

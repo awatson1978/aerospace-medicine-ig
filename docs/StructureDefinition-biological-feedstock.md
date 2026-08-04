@@ -1,4 +1,4 @@
-# Biological Feedstock - v0.6.0
+# Biological Feedstock - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/biological-feedstock | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:BiologicalFeedstock |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/biological-feedstock | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:BiologicalFeedstock |
 
  
 Biological feedstock or bioproduct used in or produced by biomanufacturing processes 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-biological-feedstock
   "resourceType" : "StructureDefinition",
   "id" : "biological-feedstock",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/biological-feedstock",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "BiologicalFeedstock",
   "title" : "Biological Feedstock",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

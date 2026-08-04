@@ -1,4 +1,4 @@
-# Space Emergency Condition - v0.6.0
+# Space Emergency Condition - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceEmergencyCondition |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceEmergencyCondition |
 
  
 Diagnosis of an emergency situation during spaceflight requiring immediate response 
@@ -38,11 +38,11 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
   "resourceType" : "StructureDefinition",
   "id" : "space-emergency-condition",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceEmergencyCondition",
   "title" : "Space Emergency Condition",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

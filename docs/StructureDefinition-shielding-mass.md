@@ -1,4 +1,4 @@
-# Shielding Mass - v0.6.0
+# Shielding Mass - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:ShieldingMass |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:ShieldingMass |
 
 Effective shielding mass in g/cm²
 
@@ -44,11 +44,11 @@ Other representations of profile: [CSV](StructureDefinition-shielding-mass.csv),
   "resourceType" : "StructureDefinition",
   "id" : "shielding-mass",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "ShieldingMass",
   "title" : "Shielding Mass",
   "status" : "draft",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

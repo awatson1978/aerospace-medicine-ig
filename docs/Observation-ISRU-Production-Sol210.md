@@ -1,4 +1,4 @@
-# ISRU Production Log - Sol 210 - v0.6.0
+# ISRU Production Log - Sol 210 - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

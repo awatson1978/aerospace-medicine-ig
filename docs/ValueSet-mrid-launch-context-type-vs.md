@@ -1,4 +1,4 @@
-# MRID Launch Context Type - v0.6.0
+# MRID Launch Context Type - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-type-vs | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:MRIDLaunchContextTypeVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-type-vs | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:MRIDLaunchContextTypeVS |
 
  
 FHIR resource types for launch context in MRID questionnaires 
@@ -46,11 +46,11 @@ FHIR resource types for launch context in MRID questionnaires
   "resourceType" : "ValueSet",
   "id" : "mrid-launch-context-type-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MRIDLaunchContextTypeVS",
   "title" : "MRID Launch Context Type",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

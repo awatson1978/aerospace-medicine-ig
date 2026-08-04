@@ -1,4 +1,4 @@
-# MEDB 1.10 Ophthalmologic Examination - v0.6.0
+# MEDB 1.10 Ophthalmologic Examination - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-10-ophthalmologic-exam | *Version*:0.6.0 |
+| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-10-ophthalmologic-exam | *Version*:0.6.2 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB110OphthalmologicExam |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -49,7 +49,7 @@ To assess pre- and postflight ocular status and monitor for Spaceflight Associat
     }
   ],
   "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-10-ophthalmologic-exam",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "MEDB110OphthalmologicExam",
   "title" : "MEDB 1.10 Ophthalmologic Examination",
   "status" : "active",

@@ -1,4 +1,4 @@
-# Space Radiation Types - v0.6.0
+# Space Radiation Types - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs | *Version*:0.6.0 |
-| Draft as of 2026-05-25 | *Computable Name*:SpaceRadiationTypeVS |
+| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs | *Version*:0.6.2 |
+| Draft as of 2026-08-03 | *Computable Name*:SpaceRadiationTypeVS |
 
  
 Types of radiation encountered in space 
@@ -46,12 +46,12 @@ Types of radiation encountered in space
   "resourceType" : "ValueSet",
   "id" : "space-radiation-type-vs",
   "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceRadiationTypeVS",
   "title" : "Space Radiation Types",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

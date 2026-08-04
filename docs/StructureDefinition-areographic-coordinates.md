@@ -1,4 +1,4 @@
-# Areographic Coordinates - v0.6.0
+# Areographic Coordinates - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:AreographicCoordinates |
+| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:AreographicCoordinates |
 
 Mars latitude and longitude for surface locations
 
@@ -42,11 +42,11 @@ Other representations of profile: [CSV](StructureDefinition-areographic-coordina
   "resourceType" : "StructureDefinition",
   "id" : "areographic-coordinates",
   "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "AreographicCoordinates",
   "title" : "Areographic Coordinates",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {

@@ -1,4 +1,4 @@
-# Space Specimen Collection - v0.6.0
+# Space Specimen Collection - v0.6.2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-specimen-collection | *Version*:0.6.0 |
-| Active as of 2026-05-25 | *Computable Name*:SpaceSpecimenCollection |
+| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-specimen-collection | *Version*:0.6.2 |
+| Active as of 2026-08-03 | *Computable Name*:SpaceSpecimenCollection |
 
  
 Specimen collected during spaceflight using microgravity-adapted methods 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-space-specimen-colle
   "resourceType" : "StructureDefinition",
   "id" : "space-specimen-collection",
   "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-specimen-collection",
-  "version" : "0.6.0",
+  "version" : "0.6.2",
   "name" : "SpaceSpecimenCollection",
   "title" : "Space Specimen Collection",
   "status" : "active",
-  "date" : "2026-05-25T15:07:02-06:00",
+  "date" : "2026-08-03T22:31:50-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
