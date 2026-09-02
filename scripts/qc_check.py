@@ -405,11 +405,75 @@ def check_pages(canonical, pages_declared, menu_targets, m):
                     if base in ('examples.json.zip', 'examples.xml.zip', 'full-ig.zip', 'package.tgz', 'definitions.json.zip', 'definitions.xml.zip', 'expansions.json', 'expansions.xml'):
                         continue
                     finding('links', path, lineno, f'missing download/image {base}')
+        # JSON example blocks
+        check_json_examples(path, lines, m, canonical)
         # namespace in examples
         for lineno, line in enumerate(lines, 1):
             for ns in FOREIGN_NAMESPACES[:2]:
                 if ns in line:
                     finding('pages', path, lineno, f'foreign namespace {ns}')
+
+
+def check_json_examples(path, lines, m, canonical):
+    cs_codes_by_id = {}
+    for (kind, name), (fpath, flineno, ident, url) in m.defs.items():
+        if kind == 'CodeSystem':
+            cs_codes_by_id[ident] = m.cs_codes.get(name, set())
+    artifact_ids = {ident for (kind, name), (fpath, flineno, ident, url) in m.defs.items()
+                    if kind in ('Profile', 'Extension', 'CodeSystem', 'ValueSet', 'Resource', 'Logical')}
+    i = 0
+    while i < len(lines):
+        if re.match(r'^\s*```\s*json\s*$', lines[i], re.I):
+            start = i + 1
+            j = start
+            while j < len(lines) and not lines[j].strip().startswith('```'):
+                j += 1
+            block = '\n'.join(lines[start:j])
+            i = j + 1
+            if '"resourceType"' not in block:
+                continue
+            try:
+                obj = json.loads(block)
+            except json.JSONDecodeError as exc:
+                if '...' in block or '//' in block:
+                    continue
+                finding('pages', path, start + 1, f'JSON example does not parse: {exc.msg} (line {start + exc.lineno})')
+                continue
+
+            def walk(o):
+                if isinstance(o, dict):
+                    sysurl = o.get('system')
+                    if isinstance(sysurl, str) and sysurl.startswith(canonical + '/CodeSystem/'):
+                        cid = sysurl.rsplit('/', 1)[1]
+                        if cid not in cs_codes_by_id:
+                            finding('pages', path, start + 1, f'JSON example uses undefined CodeSystem {cid}')
+                        elif isinstance(o.get('code'), str) and o['code'] not in cs_codes_by_id[cid]:
+                            finding('pages', path, start + 1, f'JSON example code {o["code"]} not in CodeSystem {cid}')
+                    for key in ('url', 'profile'):
+                        val = o.get(key)
+                        vals = val if isinstance(val, list) else [val]
+                        for v in vals:
+                            if isinstance(v, str) and v.startswith(canonical + '/'):
+                                ident = v.split('|')[0].rsplit('/', 1)[1]
+                                if ident not in artifact_ids:
+                                    finding('pages', path, start + 1, f'JSON example references undefined artifact {ident}')
+                    ref = o.get('reference')
+                    if isinstance(ref, str) and re.match(r'^[A-Z][A-Za-z]+/[A-Za-z0-9\-\.]+$', ref):
+                        rid = ref.split('/', 1)[1]
+                        if rid not in m.instance_ids and rid not in m.instances:
+                            finding('pages', path, start + 1, f'JSON example reference {ref} matches no example instance')
+                    if 'valueQuantity' in o and isinstance(o['valueQuantity'], dict):
+                        q = o['valueQuantity']
+                        if 'unit' in q and 'code' not in q:
+                            finding('pages', path, start + 1, f'JSON example quantity has unit "{q["unit"]}" but no UCUM code')
+                    for v in o.values():
+                        walk(v)
+                elif isinstance(o, list):
+                    for v in o:
+                        walk(v)
+            walk(obj)
+        else:
+            i += 1
 
 
 # ---------------------------------------------------------------- ndjson
