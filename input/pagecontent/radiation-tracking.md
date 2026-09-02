@@ -1,5 +1,3 @@
-## Radiation Exposure Tracking
-
 ### Overview
 
 When astronaut Scott Kelly returned to Earth after his historic 340-day mission aboard the International Space Station, one of the first questions researchers wanted to answer was: how much radiation had his body absorbed during his time in space? This seemingly simple question reveals the complex challenge at the heart of space medicine—tracking and managing radiation exposure in an environment where cosmic rays constantly bombard the human body with ionizing radiation levels hundreds of times higher than what we experience on Earth's surface.
@@ -31,15 +29,6 @@ The radiation exposure data model captures multiple dimensions of dose informati
 - **Environmental Context**: Mission phase, location, shielding configuration
 - **Detection Method**: Passive dosimeters, active monitors, area monitors
 
-#### Standardized Terminologies
-
-The implementation uses specialized code systems for space radiation medicine:
-
-- **[`SpaceRadiationTypeCS`](CodeSystem-space-radiation-type-cs.html)**: Types of space radiation (GCR, SPE, trapped, secondary)
-- **[`RadiationCountermeasuresCS`](CodeSystem-radiation-countermeasures-cs.html)**: Protective measures and interventions
-- **[`RadiationDetectorTypeCS`](CodeSystem-radiation-detector-type-cs.html)**: Detection equipment types and technologies
-- **[`SpaceRadiationCS`](CodeSystem-space-radiation-cs.html)**: Comprehensive aerospace medicine terminology
-
 ### Space Radiation Environment
 
 Imagine leaving Earth's protective magnetic field and atmosphere behind—suddenly, you're exposed to a constant barrage of high-energy particles that have traveled across the galaxy for millions of years. This is the reality for astronauts venturing beyond low Earth orbit, where the very fabric of space itself becomes a health hazard. Unlike the predictable radiation exposures in hospitals or nuclear facilities, space radiation is dynamic, unpredictable, and fundamentally different from anything humans encounter on Earth.
@@ -50,21 +39,21 @@ Space radiation presents unique challenges that differ fundamentally from terres
 - **Source**: High-energy particles from outside the solar system
 - **Characteristics**: Continuous, low dose rate, high linear energy transfer (LET)
 - **Health Impact**: Primary concern for cancer risk and central nervous system effects
-- **Typical Exposure**: 0.5-1.0 mSv/day in deep space
-- **FHIR Coding**: Uses `gcr-dose` from the enhanced aerospace code system
+- **Typical Exposure**: About 1.8 mSv/day dose equivalent in interplanetary cruise, as measured by the Mars Science Laboratory RAD instrument (Zeitlin et al. 2013)
+- **FHIR Coding**: Uses `gcr-dose` from [SpaceRadiationCS](CodeSystem-space-radiation-cs.html)
 
 #### Solar Particle Events (SPE)
 - **Source**: Solar flares and coronal mass ejections
 - **Characteristics**: Episodic, high dose rate, predominantly protons
 - **Health Impact**: Acute radiation syndrome risk during major events
-- **Typical Exposure**: Highly variable, can exceed 1000 mSv during major events
+- **Typical Exposure**: Highly variable; the largest historical events could deliver skin doses above 1,000 mSv to an unshielded crew member (NCRP Report 98)
 - **FHIR Coding**: Uses `spe-dose` for tracking solar event exposures
 
 #### Trapped Radiation
 - **Source**: Charged particles trapped in Earth's magnetic field (Van Allen belts)
 - **Characteristics**: Predictable based on orbital parameters
 - **Health Impact**: Contributes to cumulative dose, particularly for ISS missions
-- **Typical Exposure**: 0.3-0.5 mSv/day in low Earth orbit
+- **Typical Exposure**: ISS crews accumulate roughly 0.3-0.5 mSv/day from all sources, of which trapped protons in the South Atlantic Anomaly are a major part (Cucinotta et al., NASA/TP-2013-217375)
 - **FHIR Coding**: Uses `trapped-dose` for Van Allen belt radiation
 
 ### Radiation Monitoring Strategy
@@ -90,6 +79,8 @@ All space travelers wear multiple types of radiation detectors documented using 
 
 #### Example Radiation Detector Configuration
 
+The fragment below is illustrative (not a complete instance) and shows how a detector's type and sensitivity are coded; the complete instance is the [radiation detector example](Device-radiation-detector-example.html).
+
 ```json
 {
   "resourceType": "Device",
@@ -113,7 +104,7 @@ All space travelers wear multiple types of radiation detectors documented using 
       },
       "valueQuantity": {
         "value": 1.0,
-        "unit": "μSv",
+        "unit": "uSv",
         "system": "http://unitsofmeasure.org",
         "code": "uSv"
       }
@@ -124,12 +115,16 @@ All space travelers wear multiple types of radiation detectors documented using 
 
 #### Dose Limits and Guidelines
 
-NASA maintains career dose limits based on the principle of limiting excess cancer mortality risk, tracked using the [`CumulativeRadiationDose`](StructureDefinition-cumulative-radiation-dose.html) profile:
+NASA's exposure standard (NASA-STD-3001 Volume 1, Revision C, 2024) sets a single career limit of 600 mSv effective dose that applies regardless of age or sex, replacing the earlier age- and sex-specific limits of roughly 150-400 mSv. It also sets short-term limits, expressed in milligray-equivalent (mGy-Eq), to prevent deterministic effects in specific tissues. The table below lists the limits and the codes used to track them with the [`CumulativeRadiationDose`](StructureDefinition-cumulative-radiation-dose.html) profile.
 
-- **Career Limits**: Age and gender-specific limits (typically 150-400 mSv) - tracked as `career-dose`
-- **30-Day Limits**: 250 mSv for blood-forming organs - tracked as `monthly-dose`
-- **Annual Limits**: Based on career dose budget management - tracked as `annual-dose`
-- **Organ-Specific Limits**: Eye lens (1000 mSv career), skin (1500 mSv annual) - tracked using organ-specific dose components
+| Limit | Value | Period | Tracked as |
+|-------|-------|--------|------------|
+| Career effective dose | 600 mSv | Career | `career-dose` |
+| Blood-forming organs | 250 mGy-Eq / 500 mGy-Eq | 30 days / 1 year | `monthly-dose`, `annual-dose` with `bone-marrow-dose` component |
+| Lens of the eye | 1,000 / 2,000 / 4,000 mGy-Eq | 30 days / 1 year / career | `eye-lens-dose` component |
+| Skin | 1,500 / 3,000 / 6,000 mGy-Eq | 30 days / 1 year / career | `skin-dose` component |
+
+Source: NASA-STD-3001 Volume 1 Revision C (see References).
 
 ### Data Model Architecture
 
@@ -154,6 +149,8 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
 
 #### Example Radiation Exposure Measurement
 
+The instance below is a trimmed JSON rendering of the [daily exposure example](Observation-space-radiation-exposure-example.html): one day of galactic cosmic ray dose measured by the crew personal dosimeter, with a bone-marrow organ dose component and the dose rate at the time of measurement. Note that the organ dose is lower than the total dose, as it must be.
+
 ```json
 {
   "resourceType": "Observation",
@@ -170,20 +167,26 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
   }],
   "code": {
     "coding": [{
-      "system": "http://loinc.org",
-      "code": "73536-5",
-      "display": "Radiation dose total"
+      "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
+      "code": "gcr-dose",
+      "display": "Galactic Cosmic Radiation Dose"
     }]
   },
-  "subject": {"reference": "Patient/astronaut-example"},
-  "effectiveDateTime": "2025-06-01T12:00:00Z",
+  "subject": {"reference": "Patient/ExampleAstronaut"},
+  "encounter": {"reference": "Encounter/ISS-Exp75-InFlight"},
+  "effectiveDateTime": "2025-07-15",
   "valueQuantity": {
-    "value": 0.5,
+    "value": 0.52,
     "unit": "mSv",
     "system": "http://unitsofmeasure.org",
     "code": "mSv"
   },
+  "device": {"reference": "Device/radiation-detector-example"},
   "extension": [
+    {
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
+      "valueReference": {"reference": "Encounter/ISS-Exp75-InFlight"}
+    },
     {
       "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-type",
       "valueCodeableConcept": {
@@ -200,11 +203,12 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
       "code": {
         "coding": [{
           "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
-          "code": "bone-marrow-dose"
+          "code": "bone-marrow-dose",
+          "display": "Bone Marrow Dose"
         }]
       },
       "valueQuantity": {
-        "value": 0.52,
+        "value": 0.47,
         "unit": "mSv",
         "system": "http://unitsofmeasure.org",
         "code": "mSv"
@@ -219,8 +223,8 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
         }]
       },
       "valueQuantity": {
-        "value": 20.8,
-        "unit": "μSv/h",
+        "value": 21.7,
+        "unit": "uSv/h",
         "system": "http://unitsofmeasure.org",
         "code": "uSv/h"
       }
@@ -231,7 +235,7 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
 
 ### Use Cases
 
-Consider the dramatic moment during Apollo 16 when a massive solar particle event erupted from the Sun, sending dangerous radiation racing toward the Moon. Had astronauts been conducting a lunar EVA at that moment, they could have received lethal doses within hours. This near-miss illustrates why radiation tracking isn't just about record-keeping—it's about enabling split-second decisions that can save lives. Modern space missions use sophisticated radiation monitoring systems to provide early warning, guide operational decisions, and ensure that every astronaut returns home safely within acceptable health risk parameters.
+Consider the solar particle event of August 1972, which erupted between the Apollo 16 (April 1972) and Apollo 17 (December 1972) missions while no crew was in flight. Had astronauts been conducting a lunar EVA at that moment, they could have received dangerous, possibly lethal, doses within hours. This near-miss illustrates why radiation tracking isn't just about record-keeping—it's about enabling split-second decisions that can save lives. Modern space missions use sophisticated radiation monitoring systems to provide early warning, guide operational decisions, and ensure that every astronaut returns home safely within acceptable health risk parameters.
 
 #### 1. Pre-Flight Baseline Assessment
 Establish baseline radiation exposure from terrestrial sources using the `SpaceRadiationExposure` profile with baseline mission context. This includes:
@@ -277,7 +281,7 @@ Aggregate data for research on space radiation health effects and countermeasure
 
 ### Enhanced Data Collection
 
-Every radiation measurement tells a story, but the most important stories are often in the details that traditional dosimetry might miss. When astronaut Karen Nyberg developed vision problems after her ISS mission, researchers wondered whether localized radiation exposure to her eyes might have contributed. This led to enhanced organ-specific dose tracking protocols that don't just measure total body dose, but carefully monitor radiation exposure to critical organs like the eye lens, bone marrow, and central nervous system. These detailed measurements help space medicine practitioners understand not just how much radiation astronauts receive, but where it goes and what it might do.
+Every radiation measurement tells a story, but the most important stories are often in the details that traditional dosimetry might miss. A whole-body dose figure says nothing about which tissues absorbed it, yet the lens of the eye, the blood-forming marrow, and the central nervous system each respond differently and each has its own exposure limit. Organ-specific dose tracking therefore does not stop at total body dose but carefully monitors exposure to those critical organs. These detailed measurements help space medicine practitioners understand not just how much radiation astronauts receive, but where it goes and what it might do.
 
 #### Organ-Specific Dose Tracking
 
@@ -362,11 +366,13 @@ This section documents the HERA hardware, mission results, space weather context
 #### Mission Results – Dose and Dose Equivalent Measurements
 
 **Key findings**
-- Total mission dose equivalent: approximately **8 mSv** per mission
-- Observed doses were lower than pre-flight predictions (15–20 mSv)
-- Peak dose rate: **0.2 mSv/min** (comparable to Artemis I outgoing Van Allen belt passage)
+- Polaris Dawn (September 2024, five days, apogee about 1,400 km): total mission dose equivalent approximately **8 mSv**, lower than the pre-flight prediction of 15-20 mSv
+- Fram2 (April 2025, about 3.5 days, 90° polar orbit): HERA total approximately **1.2 mSv**; the crew's CADS personal dosimeters read 0.83-1.22 mSv
+- Peak dose rate observed: **0.2 mSv/min** (comparable to the Artemis I outbound Van Allen belt passage)
 - Vehicle and sensor shielding strongly influenced measured dose
 - Internal HERA clock drift required post-flight mission-time correction
+
+The comparison table further down repeats these two totals alongside ISS, Artemis I, and Mars reference values.
 
 **Fram2 Polar Orbit Dose Rate Map**
 - Highest dose regions observed near the **South Atlantic Anomaly** and polar passes
@@ -384,12 +390,14 @@ This section documents the HERA hardware, mission results, space weather context
 #### Fram2 Space X-Ray Experiment Findings
 
 - X-ray exposures were clearly visible in detector imaging data
-- Total HERA X-ray exposure: approximately **2.3 µSv**
-- Estimated skin exposure: approximately **9 µSv ±50 %**
-- FD3 detector exposures were approximately 10× greater than FD1
+- Dose registered by the HERA detector itself from the X-ray experiment: approximately **2.3 µSv**
+- Estimated crew skin exposure from the experiment: approximately **9 µSv ±50 %** (this is the 0.009 mSv figure in the comparison table)
+- Flight day 3 (FD3) detector exposures were approximately 10× greater than flight day 1 (FD1)
 - Orientation and shielding geometry likely contributed to the difference
 
 #### Mission Radiation Exposure Comparison
+
+The table places the two HERA flights next to routine ISS increments, the uncrewed Artemis I flight, an SPE skin-dose measurement from the BioSentinel cubesat, and projected Mars mission totals. Polaris Dawn's higher total reflects its repeated passes through the inner Van Allen belt at high apogee; Fram2's lower total reflects a shorter, lower flight.
 
 | Scenario                  | Approximate Dose      |
 |---------------------------|-----------------------|
@@ -407,54 +415,50 @@ This section documents the HERA hardware, mission results, space weather context
 
 #### FHIR Implementation Guidance
 
-##### Recommended Resources
+The HERA measurements fit the existing radiation profiles without new structures: each total or dose-rate reading is a [SpaceRadiationExposure](StructureDefinition-space-radiation-exposure.html) Observation (total mission dose, dose equivalent, peak dose rate, SPE exposure), the HERA and CADS instruments are [RadiationDetector](StructureDefinition-radiation-detector.html) Devices, and a mission dose summary is a [SpaceRadiationSummary](StructureDefinition-space-radiation-summary.html) DiagnosticReport. Mission phase, shielding configuration, and organ-specific doses use the existing [MissionContext](StructureDefinition-mission-context.html) and [ShieldingMass](StructureDefinition-shielding-mass.html) extensions and the organ-dose components.
 
-- `Observation` – total mission dose, dose equivalent, peak dose rate, SPE exposure, proton flux, solar flare measurements
-- `Device` – HERA and CADS detector documentation
-- `DiagnosticReport` – mission dose summaries and polar orbit maps
-- Extensions for: mission phase, shielding configuration, orbital region, organ-specific doses
+#### Proposed Profiles (not yet defined)
 
-##### New / Enhanced Profiles (suggested)
+- `HERARadiationObservation` — a SpaceRadiationExposure specialization carrying HERA-specific channels (dose, dose equivalent, and dose-rate map bins); may be unnecessary if the base profile suffices
+- `HERADetectorDevice` — a RadiationDetector specialization for the HERA processing and sensor units
+- `PolarOrbitRadiationMapReport` — a DiagnosticReport carrying latitude/longitude dose-rate maps
 
-- `HERARadiationObservation` (or extend existing `SpaceRadiationExposure`)
-- `HERADetectorDevice`
-- `PolarOrbitRadiationMapReport`
+Source note: the values in this HERA section are taken from NASA Human Research Program post-flight presentation materials for Polaris Dawn and Fram2; no public primary document was located at the time of writing, so they should be treated as preliminary.
 
 ### Implementation Examples
 
 The true power of standardized radiation tracking becomes apparent when you see it in action across diverse scenarios—from routine ISS operations where radiation exposure is carefully monitored and managed within established limits, to emergency situations where real-time dose tracking enables critical decisions about crew safety. These implementation examples showcase how abstract data models translate into practical tools that protect astronaut health, whether documenting a routine measurement from an electronic personal dosimeter or generating comprehensive career dose summaries that guide mission planning and medical surveillance for decades to come.
 
+All four examples describe the same synthetic ISS increment (Expedition 75, June-November 2025) for the guide's example astronaut, so they can be read together as one dosimetry record.
+
 #### Individual Dose Measurement Example
 
-See the [SpaceRadiationExposure example](Observation-space-radiation-exposure-example.html) for a complete real-time dose measurement during an ISS expedition, including:
-- GCR exposure measurement
-- Organ-specific dose components
-- Mission context and shielding information
-- Detection equipment reference
+The [Daily Radiation Exposure, ISS Flight Day 45](Observation-space-radiation-exposure-example.html) instance is one day of galactic cosmic ray dose equivalent (0.52 mSv) measured by the crew personal dosimeter, including:
+- The `gcr-dose` code and the `gcr` radiation type extension
+- Skin (0.61 mSv) and bone marrow (0.47 mSv) organ-dose components
+- Dose rate (21.7 uSv/h) and linear energy transfer (7.5 keV/um) components
+- Mission context, 15 g/cm2 shielding mass, a shielding countermeasure, and a reference to the detector Device
 
-#### Career Dose Summary Example
+#### Cumulative Dose Example
 
-The [CumulativeRadiationDose example](Observation-cumulative-radiation-dose-example.html) demonstrates long-term dose tracking with:
-- Career, mission, and time-period dose accumulations
-- Risk assessment and compliance status
-- Trend analysis and projection
-- Medical surveillance recommendations
+The [Cumulative Radiation Dose, ISS Expedition 75](Observation-cumulative-radiation-dose-example.html) instance covers the first 180 days of the increment (94 mSv) with:
+- Daily, weekly, and 30-day rolling dose components
+- Mission dose (94 mSv) and career dose (212 mSv) components
+- A compliance-status component stating the career total is within the 600 mSv NASA-STD-3001 limit
 
 #### Radiation Detection Equipment Example
 
-The [RadiationDetector example](Device-radiation-detector-example.html) shows comprehensive device documentation including:
-- Detector specifications and capabilities
-- Calibration data and accuracy metrics
-- Operating conditions and limitations
-- Maintenance and quality assurance records
+The [Crew Personal Dosimeter](Device-radiation-detector-example.html) instance documents the electronic personal dosimeter worn by the example astronaut, including:
+- Detector type (`epd`), manufacturer, model, and serial number
+- Sensitivity (1 uSv), energy range (20 keV to 10 MeV), and measurement accuracy (10%) properties
+- The patient it is assigned to
 
 #### Mission Dose Summary Report
 
-The [SpaceRadiationSummary example](DiagnosticReport-space-radiation-summary-example.html) provides a complete mission dose assessment with:
-- Comprehensive exposure analysis
-- Risk assessment and recommendations
-- Comparative analysis with previous missions
-- Long-term health surveillance guidance
+The [Radiation Exposure Summary, ISS Expedition 75](DiagnosticReport-space-radiation-summary-example.html) instance is the flight surgeon's increment summary, with:
+- References to the daily and cumulative dose Observations above as results
+- NASA as the performing organization and the increment as the reporting period
+- A conclusion comparing the 94 mSv mission dose with the pre-flight projection and confirming no change to flight-certification status
 
 ### Regulatory and Standards Compliance
 
@@ -463,7 +467,7 @@ Behind every radiation measurement and dose limit lies decades of scientific res
 The implementation aligns with established radiation protection standards:
 
 #### NASA Standards
-- **NASA-STD-3001**: NASA Space Flight Human-System Standard for crew health
+- **NASA-STD-3001**: NASA Space Flight Human-System Standard for crew health (Volume 1 Revision C sets the 600 mSv career limit)
 - **NASA Radiation Health Officer Requirements**: Operational radiation safety protocols
 - **NASA Space Radiation Health Program**: Research and risk assessment guidelines
 
@@ -516,11 +520,23 @@ Next-generation radiation monitoring and protection:
 
 This comprehensive approach to radiation exposure tracking ensures that space medicine practitioners have the detailed dosimetry data needed to protect astronaut health while enabling the scientific exploration of space.
 
+### Standardized Terminologies
+
+The radiation module uses four small code systems and a set of value sets that bind the profile elements above. In practice an implementer picks the Observation code from the dose-code value set, the radiation type and detector type from their code systems, and the unit from the UCUM-based units value set.
+
+- [SpaceRadiationCS](CodeSystem-space-radiation-cs.html): Measurement components (LET, quality factor, shielding effectiveness), source-specific dose codes (`gcr-dose`, `spe-dose`, `trapped-dose`, `secondary-dose`, `neutron-dose`), accumulation-period codes (`daily-dose` through `career-dose`), organ dose codes, detector property types, and report codes
+- [SpaceRadiationTypeCS](CodeSystem-space-radiation-type-cs.html) / [SpaceRadiationTypeVS](ValueSet-space-radiation-type-vs.html): Types of space radiation (`gcr`, `spe`, `trapped`, `secondary`)
+- [RadiationDetectorTypeCS](CodeSystem-radiation-detector-type-cs.html) / [DosimeterTypeVS](ValueSet-dosimeter-type-vs.html): Detection equipment types (`tld`, `osld`, `epd`, `tepc`, `area-monitor`, `neutron-detector`, `spectrometer`, `passive`, `active`)
+- [RadiationCountermeasuresCS](CodeSystem-radiation-countermeasures-cs.html) / [RadiationCountermeasuresVS](ValueSet-radiation-countermeasures-vs.html): Protective measures (`shielding`, `shelter`, `medication`, `monitoring`)
+- [SpaceRadiationDoseCodesVS](ValueSet-space-radiation-dose-codes-vs.html): Allowed `Observation.code` values for SpaceRadiationExposure (LOINC 73536-5 total dose, 77638-4 dose rate, and the source-specific codes)
+- [OrganDoseCodesVS](ValueSet-organ-dose-codes-vs.html): Organ-specific dose component codes
+- [RadiationDoseUnitsVS](ValueSet-radiation-dose-units-vs.html): UCUM dose units (`mSv`, `uSv`, `Sv`, `mGy`, `uGy`, `Gy`)
+
 ### References
 
 #### NASA Standards and Guidelines
 
-- [NASA-STD-3001, Volume 1, Revision B - Crew Health](https://standards.nasa.gov/standard/nasa/nasa-std-3001-vol-1)
+- [NASA. NASA Space Flight Human-System Standard, Volume 1: Crew Health. NASA-STD-3001 Vol 1 Rev C, 2024](https://www.nasa.gov/wp-content/uploads/2024/03/nasa-std-3001-vol-1-rev-c.pdf)
 - [NASA-STD-3001, Volume 2, Revision A - Human Factors, Habitability, and Environmental Health](https://standards.nasa.gov/standard/nasa/nasa-std-3001-vol-2)
 - [NASA Space Radiation Element Human Research Program](https://www.nasa.gov/hrp/elements/radiation)
 - [NASA-HDBK-4003 - Radiation Health Officer Handbook](https://standards.nasa.gov/standard/nasa/nasa-hdbk-4003)
@@ -543,4 +559,7 @@ This comprehensive approach to radiation exposure tracking ensures that space me
 - [Chancellor, J.C., et al. (2014). Space Radiation: The Number One Risk to Astronaut Health beyond Low Earth Orbit](https://doi.org/10.1016/j.lssr.2014.02.003)
 - [Zeitlin, C., et al. (2013). Measurements of Energetic Particle Radiation in Transit to Mars on the Mars Science Laboratory](https://doi.org/10.1126/science.1235989)
 - [Durante, M., & Cucinotta, F.A. (2008). Heavy Ion Carcinogenesis and Human Space Exploration](https://doi.org/10.1038/nrc2391)
+- Cucinotta FA, Kim MY, Chappell LJ. Space Radiation Cancer Risk Projections and Uncertainties - 2012. NASA/TP-2013-217375, 2013.
+- [Space radiation measurements during Artemis I (Nature, 2024)](https://www.nature.com/articles/s41586-024-07927-7)
+- NASA Human Research Program. HERA (High-Energy Radiation Analyzer) results from Polaris Dawn and Fram2. Post-flight presentation materials, 2025 (no public primary document located).
 - [INTO THE DEEP: As humans return to the Moon, researchers are trying to understand—and thwart—the biological toll of deep-space radiation](https://www.science.org/content/article/humans-return-moon-scientists-confront-dangers-deep-space-radiation)

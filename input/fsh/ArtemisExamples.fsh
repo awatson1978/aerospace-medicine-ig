@@ -95,7 +95,7 @@ Usage: #example
 // DEVICE: Starship HLS
 // =====================================================
 
-Instance: Starship-HLS-Artemis-III
+Instance: Starship-HLS-Artemis-IV
 InstanceOf: Device
 Title: "Starship HLS for Artemis IV"
 Description: "SpaceX Starship Human Landing System variant for Artemis IV lunar landing"

@@ -1,4 +1,4 @@
-## Aerospace Medicine Links (Grouped)
+Links collected while researching this guide, grouped by topic. Entries within a group are kept in the order they were added; scholarly and agency sources are mixed with press coverage, so check the publisher before citing.
 
 ### Policy & Regulations
 
@@ -38,13 +38,36 @@
 * [More than 600 human beings have now been to space](https://www.nytimes.com/2021/11/10/science/600-astronauts-space.html)
 * [Significant Incidents & Close Calls in Human Spaceflight](https://sma.nasa.gov/SignificantIncidents/)
 
-### Commercial Space
+### Commercial Space & Private Missions
 
 * [Solving the commercial passenger spaceflight puzzle (part 1)](https://thespacereview.com/article/3785/1)
 * [The Commercial Space Age Is Here](https://hbr.org/2021/02/the-commercial-space-age-is-here)
 * [You Can Now Book a 10-Day Trip To the ISS](https://matadornetwork.com/read/book-trip-international-space-station/)
 * [DOC accomplishments in space and space commerce](https://www.space.commerce.gov/wp-content/uploads/2021-01-DOC-space-accomplishments-report.pdf)
 * [SpaceX launches first all-commercial crew to space station](https://www.cbsnews.com/news/spacex-launch-space-station-how-to-watch-time-channel-stream-2022-04-08/)
+* [Axiom Space-led microgravity research speeds FDA cancer drug approvals, chip advances – Dr Lucy Low](https://www.youtube.com/watch?v=1Zu5mjsY3Zs)
+* [Blue Origin Completes 36th New Shepard Flight to Space](https://www.blueorigin.com/news/new-shepard-ns-36-mission)
+* [Space Ops: Blue Origin Poised To Leapfrog SpaceX To The Moon](https://aviationweek.com/space/space-exploration/space-ops-blue-origin-poised-leapfrog-spacex-moon)
+* [SpaceX: To The Moon and Beyond](https://www.spacex.com/updates#moon-and-beyond)
+* [SpaceX built a docker from bike parts. The story explains its dominance.](https://www.washingtonpost.com/technology/2025/09/15/spacex-dragon-musk-nasa-space-station/)
+* [NASA Sees Key Progress on Starlab Commercial Space Station](https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-sees-key-progress-on-starlab-commercial-space-station/)
+* [Starlab Selects Vivace to Manufacture Primary Structure for Commercial Space Station](https://starlab-space.com/press-releases/starlab-selects-vivace/)
+* [Voyager Advances Starlab Development with Vivace Manufacturing Partnership](https://www.businesswire.com/news/home/20250924541591/en/Voyager-Advances-Starlab-Development-with-Vivace-Manufacturing-Partnership)
+* [Starlab: The power of space based research](https://starlab-space.com/opportunities/)
+* [Axiom Space Selects Emiliano Ventura as Company's First-Ever Project Astronaut](https://www.axiomspace.com/release/axiom-space-selects-emiliano-ventura-as-companys-first-ever-project-astronaut)
+* [Voyager Launches First Multi-Cloud Region in Space to Transform Real-Time Data Processing](https://www.businesswire.com/news/home/20250915696910/en/Voyager-Launches-First-Multi-Cloud-Region-in-Space-to-Transform-Real-Time-Data-Processing)
+* [Voyager Institute for Space, Technology and Advancement](https://vistaspacepark.com/)
+* [Firefly announces commercial lunar imagery service](https://spacenews.com/firefly-announces-commercial-lunar-imagery-service/)
+* [Honda and Astrobotic Establish Joint Development Agreement to Explore Scalable Lunar Power Solutions](https://hondanews.com/en-US/honda-corporate/releases/honda-and-astrobotic-establish-joint-development-agreement-to-explore-scalable-lunar-power-solutions)
+* [Honda's hopper suddenly makes Japanese carmaker a serious player in rocketry](https://arstechnica.com/science/2025/06/hondas-hopper-suddenly-makes-the-japanese-carmaker-a-serious-player-in-rocketry/)
+* [NASA Selects Axiom Space for Fifth Private Astronaut Mission to International Space Station](https://www.axiomspace.com/release/nasa-selects-axiom-space-for-fifth-private-astronaut-mission-to-international-space-station)
+* [2026: THE FINAL INFLECTION POINT FOR COMMERCIAL SPACE READINESS](https://voyagertechnologies.com/insights/final-inflection-point-for-commercial-space-readiness/)
+* [Balerion Space Ventures invests in founders building the technologies that secure freedom and define the new space frontier](https://www.balerionspace.com/)
+* [Blue Origin to Pause New Shepard Flights for No Less Than Two Years](https://www.blueorigin.com/news/new-shepard-to-pause-flights)
+* [Mapping the Space-Native Economy](https://www.counterflowsolutions.com/post/mapping-the-space-native-economy)
+* [Economics of In-Orbit Refueling (IOR) Interoperability](https://inorbitrefueling.org/economics-of-in-orbit-refueling-ior-interoperability/)
+* [Instinct Space — Rideshare Lunar Landers](https://www.youtube.com/watch?v=-WG8NVonbOo)
+* [From earth to orbit: mapping the economics of space tourism](https://www.emerald.com/jhth/article-abstract/2/2/318/1368772/From-earth-to-orbit-mapping-the-economics-of-space)
 
 ### Conferences
 
@@ -70,7 +93,6 @@
 * [Concern about ISS air quality](https://futurism.com/the-byte/space-station-astronauts-air)
 * [SpaceX signs deal to launch private space station](https://futurism.com/the-byte/spacex-signs-deal-launch-private-space-station)
 * [NASA says Boeing astronauts are not stranded](https://futurism.com/the-byte/boeing-starliner-astronauts-stranded)
-* [The Launch Pad on X: Emergency Situation on the ISS](https://x.com/TLPN_Official/status/1801020834229706766)
 * [NASA update on SpaceX Crew-8 health](https://blogs.nasa.gov/spacestation/2024/10/25/nasa-provides-update-on-agencys-spacex-crew-8-health/)
 * [Starliner crew could return next year on SpaceX flight](https://thehill.com/homenews/space/4818023-boeing-starliner-crew-international-space-station-2025-spacex/)
 * [China's reusable spaceplane lands after 267 days](https://spacenews.com/chinas-secretive-reusable-spaceplane-lands-after-267-days-in-orbit/)
@@ -78,7 +100,6 @@
 * [NASA tells SpaceX to focus on safety](https://gizmodo.com/nasa-tells-spacex-to-focus-safety-after-astronaut-hospitalizations-2000519391)
 * [A key NASA commercial partner faces financial challenges](https://arstechnica.com/space/2024/09/a-key-nasa-commercial-partner-faces-severe-financial-challenges/)
 * [SpaceX Crew Dragon interior (4K UHD video)](https://www.youtube.com/watch?v=SQX3zcpOojQ)
-* [PERFORMANCE IMPROVEMENT IN END-TO-END TRAJECTORY OPTIMIZATION FOR HIGH-MASS MARS LANDING MISSIONS](https://media.licdn.com/dms/document/media/v2/D4E1FAQFC79GZSNlKSQ/feedshare-document-pdf-analyzed/B4EZwZvhH1JgAY-/0/1769958414855?e=1770854400&v=beta&t=K5eRAVjwCom9X4xs8zbDgmOZvlSFL99RbSEuPu1p-GI)
 * [A Message From Administrator Jared Isaacman (Starliner)](https://nasawatch.com/ask-the-administrator/a-message-from-administrator-jared-isaacman-starliner/)
 * [NASA Releases Report on Starliner Crewed Flight Test Investigation](https://www.nasa.gov/news-release/nasa-releases-report-on-starliner-crewed-flight-test-investigation/)
 * [Starliner Propulsion System Anomalies during the Crewed Flight Test - Investigation Report](https://www.nasa.gov/wp-content/uploads/2026/02/nasa-report-with-redactions-021926.pdf?emrc=76e561)
@@ -104,7 +125,7 @@
 * [Extraterrestrial infrastructures: Review of in-situ materials, envelope solutions, and energy performance of livable Martian and lunar habitats](https://www.sciencedirect.com/science/article/abs/pii/S0094576525006873)
 * [Beneath The Moon: Designing lunar habitats for protection & permanence](https://spacecomsecondstage.com/beneath-the-moon/)
 
-### Spacesuits
+### Spacesuits & Space Technology
 
 * [The Past and Future Space Suit](https://www.americanscientist.org/article/the-past-and-future-space-suit)
 * [Next-Generation Spacesuit Reveal (video)](https://www.youtube.com/watch?v=us8Vjple7c8)
@@ -128,6 +149,14 @@
 * [Artemis Spacesuits Have 'a Lot of Flexibility Issues,' Per Former Astronaut](https://www.extremetech.com/aerospace/artemis-spacesuits-have-a-lot-of-flexibility-issues-per-former-astronaut)
 * [NASA's Acquisition of Next-Generation Spacesuit Services](https://oig.nasa.gov/audits/nasas-acquisition-of-next-generation-spacesuit-services/)
 * [Prioritization Strategies for Adapting EVA Spacesuit Architectures: Moon to Mars](https://bpb-us-e1.wpmucdn.com/sites.mit.edu/dist/e/1448/files/2026/05/harwood26a.pdf)
+* [Problem: SpaceX & Boeing suits not compatible for rescue](https://futurism.com/stranded-astronauts-spacex-boeing-spacesuits-incompatible)
+* [NASA's Management of ISS Extravehicular Activity Spacesuits](https://oig.nasa.gov/office-of-inspector-general-oig/audit-reports/nasas-management-of-iss-extravehicular-activity-spacesuits/)
+* [Remcom develops wireless modeling for Artemis lunar spacesuits and vehicles](https://www.militaryaerospace.com/communications/news/55319584/remcom-develops-wireless-modeling-for-artemis-lunar-spacesuits-and-vehicles)
+* [China showcases its first lightweight lunar spacesuit designed for 2030 moon landing](https://interestingengineering.com/space/china-lunar-spacesuit-2030-moon-landing)
+* [QUT to keep Australia's first lunar rover on track](https://spaceanddefense.io/qut-to-keep-australias-first-lunar-rover-on-track/)
+* [Yokogawa and Toyota Partner on Control Platform for Lunar Rover Development](https://www.arcweb.com/blog/yokogawa-toyota-partner-control-platform-lunar-rover-development)
+* [Komatsu lunar machine project #2](https://www.youtube.com/watch?v=rZ7WkQkp8sA)
+* [Space Logistics Supply Chain for Interplanetary Missions](https://arc.aiaa.org/doi/epdf/10.2514/6.2024-85933)
 
 ### Research Programs
 
@@ -159,11 +188,18 @@
 * [Networks are keeping NASA's Artemis II mission connected](https://phys.org/news/2026-01-networks-nasa-artemis-ii-mission.html)
 * [Lasers could allow the world to watch Artemis II astronauts travel to the moon and back](https://abcnews.go.com/Technology/lasers-world-watch-artemis-ii-astronauts-travel-moon/story?id=129781981)
 
-### Analog Simulations
+### Analog Missions & Crew Research
 
 * [Commander of NASA's yearlong analog Mars mission: month one](https://www.space.com/nasa-chapea-analog-mars-mission-one-month-interview)
 * [Lunar base agent-based modeling — A benchmark for simulating crewed space missions](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0348882)
 * [Agent Mars: Multi-Agent Simulation for Multi-Planetary Life Exploration and Settlement](https://arxiv.org/abs/2602.13291)
+* [Leading the crew to Mars: Evidence from NASA HERA analog crews](https://www.sciencedirect.com/science/article/abs/pii/S0094576525005314)
+* [Getting Even or Being at Odds? Cohesion in Even- and Odd-Sized Small Groups](https://business.columbia.edu/faculty/research/getting-even-or-being-odds-cohesion-even-and-odd-sized-small-groups)
+* [Mars Desert Research Station - Apply to Become a Crew Member](https://reports.marssociety.org/apply-to-become-a-crew-member/)
+* [Increasing fidelity in lunar and martian analogs for behavioral health and performance research](https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2025.1505823/full)
+* [Characterizing cognitive workload during simulated surface extravehicular activity with integrated virtual reality](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1713354/full?utm_source=F-NTF&utm_medium=EMLX&utm_campaign=PRD_FEOPS_20170000_ARTICLE)
+* [A brief Meaningful Work and Enjoyment Scale (MeWES) for extreme operational environments](https://www.tandfonline.com/doi/full/10.1080/08995605.2026.2687217)
+* [Sleep structure and autonomic nervous system state during four months of isolation in a space analogue mission](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1720237/full)
 
 ### Astronaut Training
 
@@ -171,13 +207,29 @@
 * [Star Harbor plans world’s first training facility for space tourists](https://blooloop.com/technology/news/star-harbor-commercial-spaceflight-training-facility/)
 * [Sierra Space to start astronaut training program](https://spacenews.com/sierra-space-to-start-astronaut-training-program/)
 
-### Artemis
+### Artemis & Lunar Missions
 
 * [NASA’s LRO: Lunar ice deposits are widespread](https://science.nasa.gov/solar-system/moon/nasas-lro-lunar-ice-deposits-are-widespread/)
 * [NASA updates on Artemis III landing regions](https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/)
 * [AFRL helps NASA test equipment for Artemis II](https://afresearchlab.com/news/afrl-helps-nasa-test-equipment-for-artemis-ii-mission/)
+* [Artemis 2 astronauts will double as human science experiments on their trip around the moon](https://www.space.com/space-exploration/artemis/artemis-2-astronauts-will-double-as-human-science-experiments-on-their-trip-around-the-moon)
+* [NASA's Return To Moon Top Priority For Acting Administrator](https://aviationweek.com/space/space-exploration/nasas-return-moon-top-priority-acting-administrator)
+* [Once unthinkable, NASA and Lockheed now consider launching Orion on other rockets](https://arstechnica.com/space/2025/10/once-unthinkable-nasa-and-lockheed-now-consider-launching-orion-on-other-rockets/)
+* ['We're really on a different trajectory': How NASA's Artemis moon missions aim to prepare us for Mars](https://www.space.com/space-exploration/artemis/were-really-on-a-different-trajectory-how-nasas-artemis-moon-missions-can-help-prepare-us-for-mars)
+* [NASA Selects Blue Origin to Deliver VIPER Rover to Moon's South Pole](https://www.nasa.gov/news-release/nasa-selects-blue-origin-to-deliver-viper-rover-to-moons-south-pole/)
+* [NASA revives VIPER moon rover, taps Blue Origin for lunar landing](https://www.astronomy.com/space-exploration/nasa-revives-viper-moon-rover-taps-blue-origin-for-lunar-landing/)
+* [NASA Opens 2026 Human Lander Challenge for Life Support Systems](https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/human-lander-challenge/nasa-opens-2026-human-lander-challenge-for-life-support-systems-more/)
+* [NASA Seeks Volunteers to Track Artemis II Mission](https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-volunteers-to-track-artemis-ii-mission/)
+* [Evaluating potential landing sites for the Artemis III mission using a multi-criteria decision making approach](https://www.sciencedirect.com/science/article/pii/S0094576524006234)
+* [NASA safety panel recommends review of Artemis plans](https://spacenews.com/nasa-safety-panel-recommends-review-of-artemis-plans/?utm_source=linkedin&utm_medium=jetpack_social)
+* [NASA's Artemis II crewed mission to the Moon shows how US space strategy has changed since Apollo – and contrasts with China's closed program](https://theconversation.com/nasas-artemis-ii-crewed-mission-to-the-moon-shows-how-us-space-strategy-has-changed-since-apollo-and-contrasts-with-chinas-closed-program-270245)
+* [Artemis Update (Feb. 27, 2026)](https://www.youtube.com/watch?v=eCbQtyUopOM)
+* [NASA Ignition - Moon Program Update (video)](https://www.youtube.com/watch?v=zRmCJ7tagGQ)
+* [NASA Ignition: NASA News Conference (video)](https://www.youtube.com/watch?v=LZea4h8zxLY)
+* [NASA Ignition: NASA's Plan for Science and Discovery (video)](https://www.youtube.com/watch?v=BYH6W9iCs2E)
+* [Watchdog: NASA 'Ruled Out' Crew Rescue Capability for Artemis Moon Landing](https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/)
 
-### Medical Studies
+### Astronaut Health & Space Medicine
 
 * [Sleep loss effects on physiology & cognition](https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.1046166/full)
 * [Back pain is common among astronauts](https://www.discovermagazine.com/the-sciences/back-pain-is-highly-common-among-astronauts)
@@ -202,7 +254,6 @@
 * [Scott Kelly on a year in space](https://www.theage.com.au/lifestyle/astronaut-scott-kelly-on-the-devastating-effects-of-a-year-in-space-20170922-gyn9iw.html)
 * [Astronaut blood samples & spaceflight risks](https://www.forbes.com/sites/allisongasparini/2022/06/06/astronaut-blood-samples-continue-to-shed-light-on-the-health-risks-of-spaceflight/?sh=9bebba270925)
 * [Life Sciences Data Archive](https://lsda.jsc.nasa.gov/)
-* [A performance validation of six commercial wrist-worn wearable sleep-tracking devices for sleep stage scoring compared to polysomnography](https://media.licdn.com/dms/document/media/v2/D4E1FAQH7I-nxMIoEoQ/feedshare-document-pdf-analyzed/B4EZwfA_ZXG0AY-/0/1770046881469?e=1770854400&v=beta&t=WtvMluwlSRokF0V0Auj5D4EFQb8PW12TVzAePUron_4)
 * [Identifying cognitive capabilities required for optimal surface extravehicular activity performance](https://www.nature.com/articles/s41526-025-00545-1?error=cookies_not_supported&code=b7a7d84a-1aed-44ed-8ff3-874edb58c05a)
 * [Microgravity-induced alterations in left atrial hemodynamics and thrombogenic risk: Insights from healthy and atrial fibrillation models](https://www.sciencedirect.com/science/article/abs/pii/S009457652600072X?dgcid=author)
 * [Patient-Led Smartwatch ECG Monitoring After AF Ablation: A Randomized Trial](https://www.sciencedirect.com/science/article/pii/S0735109725105792)
@@ -226,6 +277,30 @@
 * [NASA Risk of Venous Thromboembolism in Spaceflight](https://www.nasa.gov/wp-content/uploads/2026/06/risk-venous-thromboembolism-assessment-sp20260005258.pdf?emrc=922888)
 * [Space travel does not significantly impact cardiac sarcomere function but does induce immune-related proteomic changes](https://www.nature.com/articles/s41526-026-00636-7)
 * [Persistent cognitive impairment and bone health following helium ion exposure: implications for space travel](https://www.nature.com/articles/s41526-026-00628-7)
+* [Space Medicine with Drs. Serena Auñón-Chancellor and Michael Barratt](https://resident360.nejm.org/curbside-consults/space-medicine-with-drs-serena-aunon-chancellor-and-michael-barratt)
+* [Space rescue services needed? 2 'stranded' astronaut incidents are a 'massive wake-up call,' experts say](https://www.space.com/space-exploration/human-spaceflight/space-rescue-services-needed-2-stranded-astronaut-incidents-are-a-massive-wake-up-call-experts-say)
+* [China prepares to bring home astronauts stranded on Tiangong space station](https://www.scmp.com/news/china/science/article/3332295/china-preparing-bring-home-astronauts-stranded-tiangong-space-station)
+* [US needs 'space rescue service' to help astronauts in distress, experts say](https://www.space.com/us-needs-space-rescue-service-astronauts-distress)
+* [How to keep astronauts healthy in deep space](https://www.nature.com/articles/d41586-025-01691-y)
+* [Taking 'remote care' to new heights — how space can shape the future of healthcare](https://spacenews.com/taking-remote-care-to-new-heights-how-space-can-shape-the-future-of-healthcare/)
+* [NASA Glenn Tests Mini-X-Ray Technology to Advance Space Health Care](https://www.nasa.gov/centers-and-facilities/glenn/nasa-glenn-tests-mini-x-ray-technology-to-advance-space-health-care/)
+* [NASA and Google test AI medical assistant for astronaut missions to the moon and Mars](https://www.space.com/technology/nasa-and-google-test-ai-medical-assistant-for-astronaut-missions-to-the-moon-and-mars)
+* [Research of storable and ready-to-use artificial red blood cells (hemoglobin vesicles) for emergency medicine and other clinical applications](https://pmc.ncbi.nlm.nih.gov/articles/PMC9816666/)
+* [Update to NASA's Clinical Practice Guideline for Renal Stone Surveillance in U.S. Astronauts](https://ntrs.nasa.gov/citations/20230015727)
+* [The Effects of Long Duration Spaceflight on Sensorimotor Control and Cognition](https://pubmed.ncbi.nlm.nih.gov/34764856/)
+* [Hypergravity is more challenging than microgravity for the human sensorimotor system](https://pubmed.ncbi.nlm.nih.gov/39794369/)
+* [Human stem cells age more rapidly in space, study suggests](https://www.space.com/space-exploration/international-space-station/bad-news-for-astronauts-human-stem-cells-age-more-rapidly-in-space-study-suggests)
+* [Safety protocols, precautions, and countermeasures aboard the International Space Station to prevent ocular injury](https://www.sciencedirect.com/science/article/pii/S0039625724000973)
+* [Houston researchers will study Fram2 astronauts' radiation exposure](https://www.houstonchronicle.com/news/houston-texas/space/article/fram2-houston-researchers-space-radiation-20243749.php)
+* [Pre-flight exercise and bone metabolism predict unloading-induced bone loss due to spaceflight](https://bjsm.bmj.com/content/56/4/196)
+* [Choosing the right gear: A guide to physiological devices for monitoring operator states of aviators](https://ttu-ir.tdl.org/server/api/core/bitstreams/2a0b7dcf-4aaf-4464-930c-d6d5975501e1/content)
+* [Why Pilots Don't Get Therapy](https://www.theatlantic.com/politics/archive/2025/05/why-pilots-dont-get-therapy/682959/)
+* [INTO THE DEEP: As humans return to the Moon, researchers are trying to understand—and thwart—the biological toll of deep-space radiation](https://www.science.org/content/article/humans-return-moon-scientists-confront-dangers-deep-space-radiation)
+* [Space station crew credits ultrasound machine for handling in-orbit health crisis](https://phys.org/news/2026-01-space-station-crew-credits-ultrasound.html)
+* [SpaceX Tourist Says Whole Crew Got Horribly Sick When They Reached Orbit](https://futurism.com/fram2-space-tourists-sick)
+* [Entering a new era for exercise countermeasures in human spaceflight](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/EP093248)
+* [Liquid Lifeline: NASA Tech Could Create IV Fluid In Space](https://www.nasa.gov/general/iv-fluid-in-space/)
+* [Monitoring and modulating interconnected physiological systems in space using portable closed-loop technologies](https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2026.1867627/full)
 
 ### Aerospace Medicine Practice
 
@@ -235,22 +310,26 @@
 * [NASA astronauts talk ‘extreme medicine’](https://breaktimenews.co.uk/nasa-astronauts-talk-extreme-medicine/)
 * [Eye checks, pain studies, and spacesuit checks (ISS blog)](https://blogs.nasa.gov/spacestation/2020/01/10/eye-checks-pain-studies-and-spacesuit-checks-wrap-up-workweek/)
 * [Critical care: eight vital signs of patient monitoring (PDF)](http://publicationslist.org/data/m.elliott/ref-22/The%20eight%20vital%20signs%20of%20patient%20monitoring.pdf)
-* [Human Space Flight Emergencies in the Prehospital Environment](https://media.licdn.com/dms/document/media/v2/D561FAQEjYYUV42O1Kg/feedshare-document-pdf-analyzed/B56Zv2v9mFHsAY-/0/1769371328296?e=1770854400&v=beta&t=mHk0qFowXHJ7RTHySiZwZOadkjXUTaQdPpRF5Z6wg_8)
 * [Obstetric Transport and Factors Associated With Transport to the Intensive Care Unit](https://www.airmedicaljournal.com/article/S1067-991X(25)00270-6/abstract)
 
-### Space Standards
-
-* [Problem: SpaceX & Boeing suits not compatible for rescue](https://futurism.com/stranded-astronauts-spacex-boeing-spacesuits-incompatible)
-
-### Space Cybersecurity
+### Space Traffic Management & Safety
 
 * [How to crash a spacecraft – DoS via NASA CryptoLib vuln](https://visionspace.com/crashing-cryptolib/)
+* [Traffic Coordination System for Space (TRaCSS)](https://space.commerce.gov/traffic-coordination-system-for-space-tracss/)
+* [China Calls NASA On Orbital Conjunction](https://payloadspace.com/china-calls-nasa-on-orbital-conjunction/)
+* [China delays Shenzhou-20 crew return after suspected space debris impact](https://spacenews.com/china-delays-shenzhou-20-crew-return-after-suspected-space-debris-impact/)
+* [NASA Awards Intuitive Machines Contract [Worth $4B]](https://investors.intuitivemachines.com/news-releases/news-release-details/nasa-awards-intuitive-machines-near-space-network-contract)
+* [Inside an effort to construct a lunar highway](https://aerospaceamerica.aiaa.org/inside-an-effort-to-construct-a-lunar-highway/)
+* [ESA's new project to keep an eye on Moon strikes](https://www.esa.int/Space_Safety/ESA_s_new_project_to_keep_an_eye_on_Moon_strikes)
+* [In 2022, an 'Ownerless' Rocket Collided with the Moon—While Many Pointed Fingers at Elon Musk, New Research Uncovers Its Real Source](https://glassalmanac.com/in-2022-an-ownerless-rocket-collided-with-the-moon-while-many-pointed-fingers-at-elon-musk-new-research-uncovers-its-real-source/)
+* [SurfAirOS (Palantir)](https://www.surfair.com/surfos/)
+* [STARGAZE: SPACEX'S SPACE SITUATIONAL AWARENESS SYSTEM](https://starlink.com/updates/stargaze?referral=RC-516239-11127-5&utm_source=twitter&utm_medium=organic&utm_campaign=us_twt_upd_non_vdo_en-us_updates-stargaze)
+* [Free warnings, better catalogs: the real fix for space safety](https://spacenews.com/free-warnings-better-catalogs-the-real-fix-for-space-safety/)
 
 ### Terrestrial Applications
 
 * [How space ops drive innovation in human healthcare](https://ieeexplore.ieee.org/document/10041983)
 * [AI for astronauts → remote patient monitoring](https://spinoff.nasa.gov/astronaut-remote-health-monitoring?msclkid=d3e32237c19211ec91fc866c6933e583)
-* [Noom — at-home blood test kit](https://www.noom.com/)
 * [A Bayesian framework for longitudinal EHR and genetic discovery](https://www.nature.com/articles/s41586-026-10780-5)
 
 ### Lunar Exploration
@@ -297,177 +376,42 @@
 * [National Strategy for Space Nuclear Power and Propulsion](https://www.federalregister.gov/documents/2020/12/23/2020-28457/posting-of-the-presidential-policy-directive-6-space-policy-national-strategy-for-space-nuclear)
 * [NASA’s new nuclear reactor could change exploration](https://www.discovermagazine.com/the-sciences/nasas-new-nuclear-reactor-could-change-space-exploration)
 
-
-### 🧬 Calorie Restriction & Biosphere 2
+### Calorie Restriction & Biosphere 2
 
 * [Calorie restriction in Biosphere 2: physiology, hematology, hormones](https://academic.oup.com/biomedgerontology/article/57/6/B211/573699) – *Walford et al., 2002 (J. Gerontology)*
-  A seminal study documenting the effects of sustained calorie restriction in humans living inside Biosphere 2.
-
+  - A seminal study documenting the effects of sustained calorie restriction in humans living inside Biosphere 2.
 * [Changes in plasma lipids and lipoproteins during Biosphere 2 diet](https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/484893) – *Verdery et al., 1998 (JAMA Intern Med)*
-  Shows rapid improvements in cardiovascular markers under nutrient-dense calorie restriction.
-
+  - Shows rapid improvements in cardiovascular markers under nutrient-dense calorie restriction.
 * [Nutrient-dense low-calorie diets in Biosphere 2](https://www.pnas.org/doi/10.1073/pnas.89.23.11533) – *Walford et al., 1992 (PNAS)*
-  Documents the controlled diet inside the sealed ecosystem and its long-term viability.
-
+  - Documents the controlled diet inside the sealed ecosystem and its long-term viability.
 * [The legacy of Roy Walford and Biosphere 2](https://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736%2804%2917699-7.pdf) – *The Lancet Obituary, 2004*
-  Context for Walford’s foundational influence on human calorie-restriction studies in closed environments.
+  - Context for Walford’s foundational influence on human calorie-restriction studies in closed environments.
 
-
-### 🧑‍🍳 Space Food Systems: Menus, Packaging, Logistics
+### Space Food Systems: Menus, Packaging, Logistics
 
 * [NASA’s Food for Space Flight](https://www.nasa.gov/sites/default/files/atoms/files/food_for_space_flight_tagged.pdf) – *NASA Johnson Space Center*
-
 * [Dining in Space: How astronauts eat aboard ISS](https://www.nasa.gov/audience/forstudents/5-8/features/nasa-knows/what-do-astronauts-eat-58.html) – *NASA Education Portal*
-
 * [Historical NASA menus from Apollo & Shuttle](https://airandspace.si.edu/stories/editorial/astronaut-food-then-and-now) – *Smithsonian Air & Space*
-
 * [Daily rations and caloric needs in space](https://www.nasa.gov/pdf/146558main_Space_Food.pdf) – *NASA Fact Sheet*
-
 * [Food acceptability and selection by astronauts on International Space Station missions informs strategies and risks for deep space exploration](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1562044/full)
 * [Artemis II: What's on the Menu?](https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/)
-* [Artemis II - Crew Menu](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png)
+* Artemis II - Crew Menu (NASA infographic, 2026):
+
+  ![Artemis II - Crew Menu](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png){:width="60%"}
 * [Mission critical: Astronaut food that is nutritious, yummy, and easy to produce](https://cen.acs.org/food/food-science/space-exploration-astronaut-food-nutrition/104/web/2026/07)
 
-
-### 🍅 Food Production & Farming in Space
+### Food Production & Farming in Space
 
 * [NASA’s Veggie Plant Growth System on ISS](https://www.nasa.gov/content/growing-plants-in-space) – *NASA Veggie Project Page*
-
-
 * [NASA astronauts eat first lettuce grown in space](https://www.nasa.gov/mission_pages/station/research/news/meals_ready_to_eat) – *NASA News, 2015*
-
-
 * [NASA/Fairchild “Growing Beyond Earth” program](https://fairchildgarden.org/gbe) – *Fairchild Tropical Botanic Garden*
-
-
 * [Innovation Studio for space farming R&D](https://www.nasa.gov/centers-and-facilities/kennedy/nasa-and-partners-open-first-public-space-agriculture-makerspace/) – *NASA Kennedy*
-
-
 * [Designing crops for space: NASA uses classrooms to test edible plants](https://www.washingtonpost.com/lifestyle/kidspost/growing-plants-space/2020/02/13/9a344ae6-4d28-11ea-bf44-f5043eb3918a_story.html) – *Washington Post*
 
-
-### 🗑️ Food Waste and Trash Management
+### Food Waste and Trash Management
 
 * [Managing trash and food waste on the ISS](https://www.nasa.gov/mission_pages/station/research/news/trash_in_space) – *NASA Station Research*
-
-
 * [The dirty job of space garbage](https://www.nasa.gov/feature/space-station-trash) – *NASA Feature Article*
-
-
-### Additional Resources
-
-* [Space Medicine with Drs. Serena Auñón-Chancellor and Michael Barratt](https://resident360.nejm.org/curbside-consults/space-medicine-with-drs-serena-aunon-chancellor-and-michael-barratt)
-
-### Astronaut Health & Space Medicine
-
-* [Space rescue services needed? 2 'stranded' astronaut incidents are a 'massive wake-up call,' experts say](https://www.space.com/space-exploration/human-spaceflight/space-rescue-services-needed-2-stranded-astronaut-incidents-are-a-massive-wake-up-call-experts-say)
-* [China prepares to bring home astronauts stranded on Tiangong space station](https://www.scmp.com/news/china/science/article/3332295/china-preparing-bring-home-astronauts-stranded-tiangong-space-station)
-* [US needs 'space rescue service' to help astronauts in distress, experts say](https://www.space.com/us-needs-space-rescue-service-astronauts-distress)
-* [How to keep astronauts healthy in deep space](https://www.nature.com/articles/d41586-025-01691-y)
-* [Taking 'remote care' to new heights — how space can shape the future of healthcare](https://spacenews.com/taking-remote-care-to-new-heights-how-space-can-shape-the-future-of-healthcare/)
-* [NASA Glenn Tests Mini-X-Ray Technology to Advance Space Health Care](https://www.nasa.gov/centers-and-facilities/glenn/nasa-glenn-tests-mini-x-ray-technology-to-advance-space-health-care/)
-* [NASA and Google test AI medical assistant for astronaut missions to the moon and Mars](https://www.space.com/technology/nasa-and-google-test-ai-medical-assistant-for-astronaut-missions-to-the-moon-and-mars)
-* [Research of storable and ready-to-use artificial red blood cells (hemoglobin vesicles) for emergency medicine and other clinical applications](https://pmc.ncbi.nlm.nih.gov/articles/PMC9816666/)
-* [Update to NASA's Clinical Practice Guideline for Renal Stone Surveillance in U.S. Astronauts](https://ntrs.nasa.gov/citations/20230015727)
-* [The Effects of Long Duration Spaceflight on Sensorimotor Control and Cognition](https://pubmed.ncbi.nlm.nih.gov/34764856/)
-* [Hypergravity is more challenging than microgravity for the human sensorimotor system](https://pubmed.ncbi.nlm.nih.gov/39794369/)
-* [Human stem cells age more rapidly in space, study suggests](https://www.space.com/space-exploration/international-space-station/bad-news-for-astronauts-human-stem-cells-age-more-rapidly-in-space-study-suggests)
-* [Safety protocols, precautions, and countermeasures aboard the International Space Station to prevent ocular injury](https://www.sciencedirect.com/science/article/pii/S0039625724000973)
-* [Houston researchers will study Fram2 astronauts' radiation exposure](https://www.houstonchronicle.com/news/houston-texas/space/article/fram2-houston-researchers-space-radiation-20243749.php)
-* [Pre-flight exercise and bone metabolism predict unloading-induced bone loss due to spaceflight](https://bjsm.bmj.com/content/56/4/196)
-* [Choosing the right gear: A guide to physiological devices for monitoring operator states of aviators](https://ttu-ir.tdl.org/server/api/core/bitstreams/2a0b7dcf-4aaf-4464-930c-d6d5975501e1/content)
-* [Why Pilots Don't Get Therapy](https://www.theatlantic.com/politics/archive/2025/05/why-pilots-dont-get-therapy/682959/)
-* [INTO THE DEEP: As humans return to the Moon, researchers are trying to understand—and thwart—the biological toll of deep-space radiation](https://www.science.org/content/article/humans-return-moon-scientists-confront-dangers-deep-space-radiation)
-* [Space station crew credits ultrasound machine for handling in-orbit health crisis](https://phys.org/news/2026-01-space-station-crew-credits-ultrasound.html)
-* [SpaceX Tourist Says Whole Crew Got Horribly Sick When They Reached Orbit](https://futurism.com/fram2-space-tourists-sick)
-* [Entering a new era for exercise countermeasures in human spaceflight](https://physoc.onlinelibrary.wiley.com/doi/full/10.1113/EP093248)
-* [Liquid Lifeline: NASA Tech Could Create IV Fluid In Space](https://www.nasa.gov/general/iv-fluid-in-space/)
-* [Monitoring and modulating interconnected physiological systems in space using portable closed-loop technologies](https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2026.1867627/full)
-* [Medical Astromicrobiology: The Framework](https://www.linkedin.com/pulse/medical-astromicrobiology-framework-frederick-browne-md-mba-bkokc)
-* [Microgravity Isn't the Moon: Rethinking Space Biology for Artemis and Mars](https://www.linkedin.com/pulse/microgravity-isnt-moon-rethinking-space-biology-artemis-mars-nzfyc/)
-
-### Analog Missions & Crew Research
-
-* [Leading the crew to Mars: Evidence from NASA HERA analog crews](https://www.sciencedirect.com/science/article/abs/pii/S0094576525005314)
-* [Getting Even or Being at Odds? Cohesion in Even- and Odd-Sized Small Groups](https://business.columbia.edu/faculty/research/getting-even-or-being-odds-cohesion-even-and-odd-sized-small-groups)
-* [Mars Desert Research Station - Apply to Become a Crew Member](https://reports.marssociety.org/apply-to-become-a-crew-member/)
-* [Increasing fidelity in lunar and martian analogs for behavioral health and performance research](https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2025.1505823/full)
-* [Characterizing cognitive workload during simulated surface extravehicular activity with integrated virtual reality](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1713354/full?utm_source=F-NTF&utm_medium=EMLX&utm_campaign=PRD_FEOPS_20170000_ARTICLE)
-* [A brief Meaningful Work and Enjoyment Scale (MeWES) for extreme operational environments](https://www.tandfonline.com/doi/full/10.1080/08995605.2026.2687217)
-* [Sleep structure and autonomic nervous system state during four months of isolation in a space analogue mission](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1720237/full)
-
-### Artemis & Lunar Missions
-
-* [Artemis 2 astronauts will double as human science experiments on their trip around the moon](https://www.space.com/space-exploration/artemis/artemis-2-astronauts-will-double-as-human-science-experiments-on-their-trip-around-the-moon)
-* [NASA's Return To Moon Top Priority For Acting Administrator](https://aviationweek.com/space/space-exploration/nasas-return-moon-top-priority-acting-administrator)
-* [Once unthinkable, NASA and Lockheed now consider launching Orion on other rockets](https://arstechnica.com/space/2025/10/once-unthinkable-nasa-and-lockheed-now-consider-launching-orion-on-other-rockets/)
-* ['We're really on a different trajectory': How NASA's Artemis moon missions aim to prepare us for Mars](https://www.space.com/space-exploration/artemis/were-really-on-a-different-trajectory-how-nasas-artemis-moon-missions-can-help-prepare-us-for-mars)
-* [Sean Duffy Opens up Artemis III Contract](https://x.com/_abbie_watson_/status/1980375993950122466?s=61)
-* [NASA Selects Blue Origin to Deliver VIPER Rover to Moon's South Pole](https://www.nasa.gov/news-release/nasa-selects-blue-origin-to-deliver-viper-rover-to-moons-south-pole/)
-* [NASA revives VIPER moon rover, taps Blue Origin for lunar landing](https://www.astronomy.com/space-exploration/nasa-revives-viper-moon-rover-taps-blue-origin-for-lunar-landing/)
-* [NASA Opens 2026 Human Lander Challenge for Life Support Systems](https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/human-lander-challenge/nasa-opens-2026-human-lander-challenge-for-life-support-systems-more/)
-* [NASA Seeks Volunteers to Track Artemis II Mission](https://www.nasa.gov/humans-in-space/commercial-space/nasa-seeks-volunteers-to-track-artemis-ii-mission/)
-* [Evaluating potential landing sites for the Artemis III mission using a multi-criteria decision making approach](https://www.sciencedirect.com/science/article/pii/S0094576524006234)
-* [NASA safety panel recommends review of Artemis plans](https://spacenews.com/nasa-safety-panel-recommends-review-of-artemis-plans/?utm_source=linkedin&utm_medium=jetpack_social)
-* [NASA's Artemis II crewed mission to the Moon shows how US space strategy has changed since Apollo – and contrasts with China's closed program](https://theconversation.com/nasas-artemis-ii-crewed-mission-to-the-moon-shows-how-us-space-strategy-has-changed-since-apollo-and-contrasts-with-chinas-closed-program-270245)
-* [Artemis Update (Feb. 27, 2026)](https://www.youtube.com/watch?v=eCbQtyUopOM)
-* [NASA Ignition - Moon Program Update (video)](https://www.youtube.com/watch?v=zRmCJ7tagGQ)
-* [NASA Ignition: NASA News Conference (video)](https://www.youtube.com/watch?v=LZea4h8zxLY)
-* [NASA Ignition: NASA's Plan for Science and Discovery (video)](https://www.youtube.com/watch?v=BYH6W9iCs2E)
-* [Watchdog: NASA 'Ruled Out' Crew Rescue Capability for Artemis Moon Landing](https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/)
-
-### Space Technology & Equipment
-
-* [NASA's Management of ISS Extravehicular Activity Spacesuits](https://oig.nasa.gov/office-of-inspector-general-oig/audit-reports/nasas-management-of-iss-extravehicular-activity-spacesuits/)
-* [Remcom develops wireless modeling for Artemis lunar spacesuits and vehicles](https://www.militaryaerospace.com/communications/news/55319584/remcom-develops-wireless-modeling-for-artemis-lunar-spacesuits-and-vehicles)
-* [China showcases its first lightweight lunar spacesuit designed for 2030 moon landing](https://interestingengineering.com/space/china-lunar-spacesuit-2030-moon-landing)
-* [QUT to keep Australia's first lunar rover on track](https://spaceanddefense.io/qut-to-keep-australias-first-lunar-rover-on-track/)
-* [Yokogawa and Toyota Partner on Control Platform for Lunar Rover Development](https://www.arcweb.com/blog/yokogawa-toyota-partner-control-platform-lunar-rover-development)
-* [Komatsu lunar machine project #2](https://www.youtube.com/watch?v=rZ7WkQkp8sA)
-* [Space Logistics Supply Chain for Interplanetary Missions](https://arc.aiaa.org/doi/epdf/10.2514/6.2024-85933)
-* [Regolith Flow Mitigation and Control in Reduced Gravity via Vertically Vibrating Pocket Feeder](https://media.licdn.com/dms/document/media/v2/D4D1FAQGSl1pgWPoaeg/feedshare-document-pdf-analyzed/B4DZ9p.idvJQAY-/0/1784189432847)
-* [Multi-Layered Protection System for the ClamSat Platform – Shielding Against Lunar Extremes and Day-Night Thermal Cycling](https://www.linkedin.com/pulse/multi-layered-protection-system-clamsat-platform-against-sadlocha-1a0wc)
-
-### Commercial Space & Private Missions
-
-* [Axiom Space-led microgravity research speeds FDA cancer drug approvals, chip advances – Dr Lucy Low](https://www.youtube.com/watch?v=1Zu5mjsY3Zs)
-* [Blue Origin Completes 36th New Shepard Flight to Space](https://www.blueorigin.com/news/new-shepard-ns-36-mission)
-* [Space Ops: Blue Origin Poised To Leapfrog SpaceX To The Moon](https://aviationweek.com/space/space-exploration/space-ops-blue-origin-poised-leapfrog-spacex-moon)
-* [SpaceX: To The Moon and Beyond](https://www.spacex.com/updates#moon-and-beyond)
-* [SpaceX built a docker from bike parts. The story explains its dominance.](https://www.washingtonpost.com/technology/2025/09/15/spacex-dragon-musk-nasa-space-station/)
-* [NASA Sees Key Progress on Starlab Commercial Space Station](https://www.nasa.gov/humans-in-space/commercial-space/leo-economy/nasa-sees-key-progress-on-starlab-commercial-space-station/)
-* [Starlab Selects Vivace to Manufacture Primary Structure for Commercial Space Station](https://starlab-space.com/press-releases/starlab-selects-vivace/)
-* [Voyager Advances Starlab Development with Vivace Manufacturing Partnership](https://www.businesswire.com/news/home/20250924541591/en/Voyager-Advances-Starlab-Development-with-Vivace-Manufacturing-Partnership)
-* [Starlab: The power of space based research](https://starlab-space.com/opportunities/)
-* [Axiom Space Selects Emiliano Ventura as Company's First-Ever Project Astronaut](https://www.axiomspace.com/release/axiom-space-selects-emiliano-ventura-as-companys-first-ever-project-astronaut)
-* [Voyager Launches First Multi-Cloud Region in Space to Transform Real-Time Data Processing](https://www.businesswire.com/news/home/20250915696910/en/Voyager-Launches-First-Multi-Cloud-Region-in-Space-to-Transform-Real-Time-Data-Processing)
-* [Voyager Institute for Space, Technology and Advancement](https://vistaspacepark.com/)
-* [Firefly announces commercial lunar imagery service](https://spacenews.com/firefly-announces-commercial-lunar-imagery-service/)
-* [Honda and Astrobotic Establish Joint Development Agreement to Explore Scalable Lunar Power Solutions](https://hondanews.com/en-US/honda-corporate/releases/honda-and-astrobotic-establish-joint-development-agreement-to-explore-scalable-lunar-power-solutions)
-* [Honda's hopper suddenly makes Japanese carmaker a serious player in rocketry](https://arstechnica.com/science/2025/06/hondas-hopper-suddenly-makes-the-japanese-carmaker-a-serious-player-in-rocketry/)
-* [NASA Selects Axiom Space for Fifth Private Astronaut Mission to International Space Station](https://www.axiomspace.com/release/nasa-selects-axiom-space-for-fifth-private-astronaut-mission-to-international-space-station)
-* [2026: THE FINAL INFLECTION POINT FOR COMMERCIAL SPACE READINESS](https://voyagertechnologies.com/insights/final-inflection-point-for-commercial-space-readiness/)
-* [Balerion Space Ventures invests in founders building the technologies that secure freedom and define the new space frontier](https://www.balerionspace.com/)
-* [Blue Origin to Pause New Shepard Flights for No Less Than Two Years](https://www.blueorigin.com/news/new-shepard-to-pause-flights)
-* [Mapping the Space-Native Economy](https://www.counterflowsolutions.com/post/mapping-the-space-native-economy)
-* [Economics of In-Orbit Refueling (IOR) Interoperability](https://inorbitrefueling.org/economics-of-in-orbit-refueling-ior-interoperability/)
-* [Instinct Space — Rideshare Lunar Landers](https://www.youtube.com/watch?v=-WG8NVonbOo)
-* [What’s next for the microgravity ecosystem?](https://www.linkedin.com/pulse/whats-next-microgravity-ecosystem-jeffrey-manber-oq2sf)
-* [From earth to orbit: mapping the economics of space tourism](https://www.emerald.com/jhth/article-abstract/2/2/318/1368772/From-earth-to-orbit-mapping-the-economics-of-space)
-
-### Space Traffic Management & Safety
-
-* [Traffic Coordination System for Space (TRaCSS)](https://space.commerce.gov/traffic-coordination-system-for-space-tracss/)
-* [China Calls NASA On Orbital Conjunction](https://payloadspace.com/china-calls-nasa-on-orbital-conjunction/)
-* [China delays Shenzhou-20 crew return after suspected space debris impact](https://spacenews.com/china-delays-shenzhou-20-crew-return-after-suspected-space-debris-impact/)
-* [NASA Awards Intuitive Machines Contract [Worth $4B]](https://investors.intuitivemachines.com/news-releases/news-release-details/nasa-awards-intuitive-machines-near-space-network-contract)
-* [Inside an effort to construct a lunar highway](https://aerospaceamerica.aiaa.org/inside-an-effort-to-construct-a-lunar-highway/)
-* [ESA's new project to keep an eye on Moon strikes](https://www.esa.int/Space_Safety/ESA_s_new_project_to_keep_an_eye_on_Moon_strikes)
-* [In 2022, an 'Ownerless' Rocket Collided with the Moon—While Many Pointed Fingers at Elon Musk, New Research Uncovers Its Real Source](https://glassalmanac.com/in-2022-an-ownerless-rocket-collided-with-the-moon-while-many-pointed-fingers-at-elon-musk-new-research-uncovers-its-real-source/)
-* [SurfAirOS (Palantir)](https://www.surfair.com/surfos/)
-* [Clear Orbit, Secure Future: A Call to Action on Space Debris](https://media.licdn.com/dms/document/media/v2/D4E1FAQEJQms9X8blow/feedshare-document-pdf-analyzed/B4EZwfPwy8IIAY-/0/1770050755544?e=1770854400&v=beta&t=kJOXZGd6Yx5ymXc4skBvmAUELYlx6fV0L9LF8shthdE)
-* [STARGAZE: SPACEX'S SPACE SITUATIONAL AWARENESS SYSTEM](https://starlink.com/updates/stargaze?referral=RC-516239-11127-5&utm_source=twitter&utm_medium=organic&utm_campaign=us_twt_upd_non_vdo_en-us_updates-stargaze)
-* [Free warnings, better catalogs: the real fix for space safety](https://spacenews.com/free-warnings-better-catalogs-the-real-fix-for-space-safety/)
 
 ### Lunar Resources & Science
 
@@ -480,7 +424,6 @@
 * [Erosion rate of lunar soil under a landing rocket, part 2: benchmarking and predictions](https://arxiv.org/abs/2403.18584)
 * [Lunar Reference Frames](https://www.nasa.gov/wp-content/uploads/2024/12/acr24-lunar-reference-frames.pdf?emrc=4de7e5)
 * [IM-2 Athena: A Closer View](https://lroc.im-ldi.com/images/1409)
-* [Firefly Space Lunar Landing Video](https://x.com/djsnm/status/1896985918663434646?s=61)
 * [Money, shoes, poop, and other highlights from the 796 items we've left on the moon](https://www.popsci.com/trash-items-left-on-moon-apollo-maps/)
 * [NASA Harvests Lettuce for Space Station Study](https://www.nasa.gov/image-article/nasa-harvests-lettuce-for-space-station-study/)
 * [Biomanufacturing for a Lunar base—A sustainable vision for the future](https://www.sciencedirect.com/science/article/pii/S0265964626000196)
@@ -503,7 +446,6 @@
 * [Using AI/ML for Space Biology Research](https://www.nasa.gov/using-ai-ml-for-space-biology-research/)
 * [AVATAR (A Virtual Astronaut Tissue Analog Response)](https://science.nasa.gov/biological-physical/investigations/avatar/)
 * [MuscleMap: An Open-Source, Community Supported Consortium for Whole Body Quantitative MRI of Muscle](https://pubmed.ncbi.nlm.nih.gov/39590726/)
-* [OpenAI: Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss/)
 * [NextSTEP-3 B: Moon to Mars Architecture Studies](https://www.nasa.gov/general/nextstep-3-b-moon-to-mars-architecture-studies/)
 * [NASA Bolsters Golden Age of Exploration with Technology Priorities](https://www.nasa.gov/directorates/stmd/nasa-bolsters-golden-age-of-exploration-with-technology-priorities/)
 * [INTERNATIONAL SPACE STATION NATIONAL LABORATORY ANNUAL REPORT FOR FISCAL YEAR 2025](https://issnationallab.org/about/annual-quarterly-reports-metrics/fy25-annual-report/)
@@ -520,13 +462,11 @@
 ### Robotics & Planetary Exploration
 
 * [Cooperative robotic exploration of a planetary skylight surface and lava cave](https://www.science.org/doi/10.1126/scirobotics.adj9699)
-* [Mars Relay Network - Orbital Dynamics](https://x.com/nasamars/status/1962990877128982696?s=61)
 * [Digital Twin Models for Space Robotics: Objectives, Applications, and Challenges](https://www.sciencedirect.com/science/article/pii/S2590005626002250)
 
 ### ISS Operations & Tools
 
 * [ISS In RealTime](https://issinrealtime.org/)
-* [Orbital Satellite Distances Visualization](https://x.com/pronounced_kyle/status/1882177709482340396?s=61)
 * [International Space Station Update: Thursday, Jan. 8, 2026](https://www.youtube.com/live/ffcV3jCwwPk)
 * [For the 1st time ever, 8 spacecraft are docked to the International Space Station](https://www.space.com/space-exploration/international-space-station/for-the-1st-time-ever-8-spacecraft-are-docked-to-the-international-space-station)
 * [The astronauts on the ISS see 16 sunrises and 16 sunsets every day](https://spacedaily.com/j-the-astronauts-on-the-international-space-station-see-16-sunrises-and-16-sunsets-every-day-and-the-question-of-when-to-sleep-when-to-pray-and-when-to-celebrate-birthdays-has-caused-genuine-philosoph/)

@@ -35,7 +35,7 @@ Usage: #example
 // Cortisol component
 * component[cortisol].code = $loinc#2143-6 "Cortisol [Mass/volume] in Serum or Plasma"
 * component[cortisol].valueQuantity.value = 18.5
-* component[cortisol].valueQuantity.unit = "µg/dL"
+* component[cortisol].valueQuantity.unit = "ug/dL"
 * component[cortisol].valueQuantity.system = $ucum
 * component[cortisol].valueQuantity.code = #ug/dL
 
@@ -114,9 +114,9 @@ Usage: #example
 
 // Total cumulative stress burden
 * valueQuantity.value = 245
-* valueQuantity.unit = "stress units"
+* valueQuantity.unit = "score"
 * valueQuantity.system = $ucum
-* valueQuantity.code = #{stress_units}
+* valueQuantity.code = #{score}
 
 // Emotional domain component
 * component[emotional].code = $behavioral-state-cs#mood-level
@@ -156,9 +156,9 @@ Usage: #example
 
 // Total cumulative stress burden (increased from day 90)
 * valueQuantity.value = 412
-* valueQuantity.unit = "stress units"
+* valueQuantity.unit = "score"
 * valueQuantity.system = $ucum
-* valueQuantity.code = #{stress_units}
+* valueQuantity.code = #{score}
 
 // Mission context
 * extension[missionContext].valueReference = Reference(Encounter/ISS-Exp75-InFlight)

@@ -231,7 +231,7 @@ Usage: #example
 * note.text = "Configured for lunar surface EVA with enhanced lower-body mobility, dust-resistant seals, and integrated PLSS"
 * extension[gravityContext].valueCodeableConcept = GravityContextCS#lunar-gravity "Lunar Gravity (1/6g)"
 
-Instance: ArtemisIII-SuitProvisioning-001
+Instance: ArtemisIV-SuitProvisioning-001
 InstanceOf: EVASuitProvisioningRecord
 Title: "Artemis IV Suit Provisioning"
 Description: "EVA suit provisioning record for Artemis IV lunar landing mission"

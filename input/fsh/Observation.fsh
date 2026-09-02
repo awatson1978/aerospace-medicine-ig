@@ -53,7 +53,7 @@ Description: "Point-in-time behavioral and psychological state assessment for ae
 * component contains cortisol 0..1 and hrv 0..1 and sleep-efficiency 0..1
 * component[cortisol].code = $loinc#2143-6 "Cortisol [Mass/volume] in Serum or Plasma"
 * component[cortisol].value[x] only Quantity
-* component[cortisol].valueQuantity.unit = "µg/dL"
+* component[cortisol].valueQuantity.unit = "ug/dL"
 
 // HRV
 * component[hrv].code = $loinc#80404-7 "R-R interval.standard deviation (Heart rate variability)"
@@ -93,7 +93,7 @@ Description: "Longitudinal, integrated measure of cumulative stress burden analo
 * value[x] 1..1
 * value[x] only Quantity
 * valueQuantity.unit 1..1
-* valueQuantity.unit = "stress units"
+* valueQuantity.unit = "score"
 
 // Mission context extension (re-using radiation pattern)
 * extension contains

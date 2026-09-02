@@ -1,8 +1,6 @@
-## Mental Health and Behavioral Monitoring
-
 ### Overview
 
-In 1961, Soviet cosmonaut Yuri Gagarin became the first human in space—his mission lasted just 108 minutes. Today, astronauts routinely spend six months or more aboard the International Space Station, and future Mars missions will require crews to endure **two to three years** in deep space, isolated from Earth, confined in small habitats, and facing communication delays of up to 20 minutes each way. The question that haunts mission planners is not whether the crew can survive physically, but whether they can remain psychologically intact. History provides sobering lessons: Antarctic winter-over crews have experienced depression, interpersonal conflicts escalating to violence, and cognitive decline. Submarine crews report similar patterns. In space, where there is no escape, no privacy, and no easy rescue, a behavioral health crisis could doom an entire mission.
+In 1961, Soviet cosmonaut Yuri Gagarin became the first human in space—his mission lasted just 108 minutes. Today, astronauts routinely spend six months or more aboard the International Space Station, and future Mars missions will require crews to endure **two to three years** in deep space, isolated from Earth, confined in small habitats, and facing communication delays of up to 20 minutes each way. The question that haunts mission planners is not whether the crew can survive physically, but whether they can remain psychologically intact. History provides sobering lessons: reviews of polar expeditions report depressed mood, sleep disruption, irritability and interpersonal tension, and measurable cognitive decline among Antarctic winter-over crews (Palinkas & Suedfeld 2008). Submarine crews report similar patterns. In space, where there is no escape, no privacy, and no easy rescue, a behavioral health crisis could doom an entire mission.
 
 Unlike radiation exposure or bone loss—which accumulate predictably and can be measured with instruments—**psychological stress is invisible, cumulative, and deeply personal**. An astronaut might report feeling fine while their cortisol levels climb, their sleep fragments, and their reaction times slow. Crew members trained to be stoic and high-performing often suppress emotional distress until it erupts in critical moments. This module recognizes that mental health in space requires the same systematic, data-driven approach as physical health: **continuous monitoring, evidence-based countermeasures, and longitudinal tracking across missions**—treating psychological wellbeing not as a soft skill, but as a mission-critical physiological system.
 
@@ -13,12 +11,15 @@ Unlike radiation exposure or bone loss—which accumulate predictably and can be
 
 | Profile | Purpose | Key Features |
 |---------|---------|--------------|
-| **BehavioralHealthState** | Point-in-time psychological assessments | Mood, anxiety, cognitive readiness, sleep quality, with biomarker components |
-| **CumulativeStressBurden** | Longitudinal stress accumulation | Integrated stress "dose" analogous to radiation exposure tracking |
-| **PsychologicalCountermeasureActivity** | Mental health interventions | CBT sessions, meditation, bright light therapy, pharmacologic support |
-| **IsolationRiskFactor** | Confinement and psychosocial stressors | Factors like interpersonal friction, sensory monotony, communication latency |
+| [BehavioralHealthState](StructureDefinition-behavioral-health-state.html) | Point-in-time psychological assessments | Mood, anxiety, cognitive readiness, sleep quality, with biomarker components |
+| [CumulativeStressBurden](StructureDefinition-cumulative-stress-burden.html) | Longitudinal stress accumulation | Integrated stress "dose" analogous to radiation exposure tracking |
+| [PsychologicalCountermeasureActivity](StructureDefinition-psychological-countermeasure-activity.html) | Mental health interventions | CBT sessions, meditation, bright light therapy, pharmacologic support |
 
 These profiles follow the same architectural patterns as radiation dosimetry and nutrition tracking—separating individual measurements, cumulative burden, and intervention documentation while linking all to mission context.
+
+##### Proposed Profiles (not yet defined)
+
+- `IsolationRiskFactor` - an Observation profile for a single confinement or psychosocial stressor (interpersonal friction, sensory monotony, communication latency). Today these are recorded as plain Observations coded from [IsolationSyndromeFactorCS](CodeSystem-isolation-syndrome-factor-cs.html), and the [IsolationRisk](StructureDefinition-isolation-risk.html) extension carries the same concepts on a countermeasure Procedure; a dedicated profile would constrain the observation form.
 
 #### Data Architecture
 
@@ -38,7 +39,7 @@ All measurements link to **MissionContext** extensions used throughout the IG, e
 New code systems and value sets:
 
 - **[AerospaceBehavioralStateCS](CodeSystem-aerospace-behavioral-state-cs.html)**: mood-level, anxiety-level, irritability-score, conflict-index, cognitive-readiness
-- **[BehavioralBiomarkerCS](CodeSystem-behavioral-biomarker-cs.html)**: cortisol-ugdl, hrv-ms, sleep-duration-h, reaction-time-ms, speech-stress-index
+- **[BehavioralBiomarkerCS](CodeSystem-behavioral-biomarker-cs.html)**: sleep-efficiency-pct, awakenings-count, speech-stress-index, activity-level, reaction-time-ms. Cortisol and heart rate variability are *not* in this code system: they use LOINC 2143-6 (Cortisol [Mass/volume] in Serum or Plasma) and LOINC 80404-7 (R-R interval standard deviation) respectively, so that biomarker components remain interoperable with terrestrial laboratory data.
 - **[IsolationSyndromeFactorCS](CodeSystem-isolation-syndrome-factor-cs.html)**: confinement, sensory-monotony, interpersonal-friction, circadian-drift, communications-latency
 - **[PsychologicalCountermeasureCS](CodeSystem-psychological-countermeasure-cs.html)**: cbt-session, guided-meditation, bright-light-therapy, crew-debrief, pharmacologic-anxiolytic
 - **[BehavioralHealthMetricsVS](ValueSet-behavioral-health-metrics-vs.html)**: Curated behavioral health measurements
@@ -47,7 +48,7 @@ New code systems and value sets:
 - **[IsolationSyndromeFactorsVS](ValueSet-isolation-syndrome-factors-vs.html)**: ICE environment stressor factors
 
 Integration with existing terminologies:
-- **LOINC**: Psychological assessments (55467-8), mood scales, sleep quality
+- **LOINC**: Psychological assessment (55467-8) as the observation category, cortisol (2143-6), heart rate variability (80404-7)
 - **SNOMED CT**: Mental health conditions, psychological procedures
 - **DSM-5/ICD-11**: Psychiatric diagnoses
 - **NASA Standards**: Behavioral health and performance requirements
@@ -125,8 +126,8 @@ Unlike exercise or nutrition—where compliance can be directly observed—**men
 
 #### Risk Threshold Alerts
 
-- **PHQ-9 score ≥10** (moderate depression) triggers clinical consultation
-- **Three consecutive days of poor sleep** (<5 hours, efficiency <70%)
+- **PHQ-9 score ≥10** triggers clinical consultation. A score of 10 or more is the conventional cut point for moderate depression, with roughly 88% sensitivity and 88% specificity for major depression in the validation study (Kroenke, Spitzer & Williams 2001).
+- **Three consecutive nights of poor sleep**, defined here as under 5 hours of sleep or sleep efficiency below 70%. These two numbers are working thresholds for this guide's examples rather than a published spaceflight standard; a flight surgeon would set them per crewmember against their own pre-flight baseline.
 - **Significant HRV decline** below individual baseline
 - **Interpersonal conflict reports** from multiple crew members
 - **Critical incident stress** (near-miss, injury, equipment failure)
@@ -135,17 +136,16 @@ Unlike exercise or nutrition—where compliance can be directly observed—**men
 
 #### Core FHIR Resources
 
-- **Observation** —BehavioralHealthState, CumulativeStressBurden, IsolationRiskFactor
-- **Procedure** —PsychologicalCountermeasureActivity
-- **Condition** —Diagnosed mental health conditions (adjustment disorder, acute stress reaction)
-- **DiagnosticReport** —Comprehensive psychiatric evaluation summaries
-- **Goal** —Behavioral health targets (maintain sleep >7h/night, weekly crew social time)
+- **Observation** — [BehavioralHealthState](StructureDefinition-behavioral-health-state.html), [CumulativeStressBurden](StructureDefinition-cumulative-stress-burden.html), and isolation-factor observations
+- **Procedure** — [PsychologicalCountermeasureActivity](StructureDefinition-psychological-countermeasure-activity.html)
+- **Condition** — Diagnosed mental health conditions (adjustment disorder, acute stress reaction)
+- **DiagnosticReport** — Comprehensive psychiatric evaluation summaries
+- **Goal** — Behavioral health targets (maintain sleep >7h/night, weekly crew social time)
 
 #### Extensions
 
-- **missionContext** (consistent with radiation, nutrition, exercise modules)
-- **isolationRisk** (array of isolation syndrome factors contributing to current state)
-- **behavioralFactor** (environmental or interpersonal context for assessments)
+- [MissionContext](StructureDefinition-mission-context.html) — reference to the mission Encounter (consistent with the radiation, nutrition and exercise modules)
+- [IsolationRisk](StructureDefinition-isolation-risk.html) — isolation syndrome factors contributing to the current state, carried on a countermeasure Procedure
 
 ### Use Cases
 
@@ -220,7 +220,11 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
 - Asynchronous messaging with behavioral health team
 - Family support coordination
 
-### Implementation Examples
+### Examples
+
+The guide carries synthetic worked instances for a six-month ISS expedition: weekly mood and anxiety assessments ([mission week 12](Observation-ISS-MoodAssessment-Week12.html), [pre-EVA](Observation-ISS-AnxietyAssessment-PreEVA.html), [post-anomaly cognitive readiness](Observation-ISS-CognitiveReadiness-PostAnomaly.html)), cumulative stress burden at [day 90](Observation-ISS-StressBurden-Day90.html) and [day 180](Observation-ISS-StressBurden-Day180.html), isolation factors for [confinement](Observation-ISS-IsolationFactor-Confinement.html), [interpersonal friction](Observation-ISS-IsolationFactor-InterpersonalFriction.html) and [circadian drift](Observation-ISS-IsolationFactor-CircadianDrift.html), and countermeasure procedures for a [CBT session](Procedure-ISS-CBT-Session-Week12.html), a [post-anomaly crew debrief](Procedure-ISS-CrewDebrief-PostAnomaly.html), [bright light therapy](Procedure-ISS-BrightLightTherapy-Week8.html) and [daily guided meditation](Procedure-ISS-GuidedMeditation-Daily.html).
+
+The two JSON blocks below show the same two shapes inline.
 
 #### Example 1: BehavioralHealthState - Weekly Mood Assessment
 
@@ -254,7 +258,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
     ]
   },
   "subject": {
-    "reference": "Patient/AstronautExample"
+    "reference": "Patient/ExampleAstronaut"
   },
   "effectiveDateTime": "2025-06-01T10:00:00Z",
   "valueQuantity": {
@@ -267,16 +271,34 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
       "code": {
         "coding": [
           {
-            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs",
-            "code": "cortisol-ugdl"
+            "system": "http://loinc.org",
+            "code": "2143-6",
+            "display": "Cortisol [Mass/volume] in Serum or Plasma"
           }
         ]
       },
       "valueQuantity": {
         "value": 18.5,
-        "unit": "μg/dL",
+        "unit": "ug/dL",
         "system": "http://unitsofmeasure.org",
         "code": "ug/dL"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "80404-7",
+            "display": "R-R interval.standard deviation (Heart rate variability)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 42,
+        "unit": "ms",
+        "system": "http://unitsofmeasure.org",
+        "code": "ms"
       }
     }
   ],
@@ -292,6 +314,8 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
 ```
 
 #### Example 2: Cumulative Stress Burden - Mission Day 90
+
+The burden value is a composite index defined by this guide — a weighted roll-up of the mood, cognitive-readiness and social-connectedness component scores over the mission to date — not the output of a validated instrument. Because it is unit-less, it is carried with the UCUM annotation code `{score}` and the display text "stress units" the profile fixes; the component scores use the same annotation.
 
 ```json
 {
@@ -312,14 +336,14 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
     ]
   },
   "subject": {
-    "reference": "Patient/AstronautExample"
+    "reference": "Patient/ExampleAstronaut"
   },
   "effectiveDateTime": "2025-06-01T00:00:00Z",
   "valueQuantity": {
     "value": 245,
     "unit": "stress units",
     "system": "http://unitsofmeasure.org",
-    "code": "{stress_units}"
+    "code": "{score}"
   },
   "component": [
     {
@@ -414,7 +438,12 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
 - [Identifying cognitive capabilities required for optimal surface extravehicular activity performance](https://www.nature.com/articles/s41526-025-00545-1?error=cookies_not_supported&code=b7a7d84a-1aed-44ed-8ff3-874edb58c05a)
 - [Characterizing cognitive workload during simulated surface extravehicular activity with integrated virtual reality](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1713354/full?utm_source=F-NTF&utm_medium=EMLX&utm_campaign=PRD_FEOPS_20170000_ARTICLE)
 
-#### Related Studies
+#### Clinical Instruments and Analog Evidence
 
-- [Pope Francis and Expedition 53 Crew Exchange](https://www.nasa.gov/blogs/spacestation/2017/10/26/pope-francis-and-expedition-53-crew-exchange-thoughts-about-humanitys-deepest-and-oldest-questions/)
-- [Why Pilots Don't Get Therapy (The Atlantic)](https://www.theatlantic.com/politics/archive/2025/05/why-pilots-dont-get-therapy/682959/)
+- Palinkas LA, Suedfeld P. "Psychological effects of polar expeditions." *The Lancet* 371, no. 9607 (2008): 153-163. Source for the Antarctic winter-over findings cited in the overview.
+- Kroenke K, Spitzer RL, Williams JBW. "The PHQ-9: validity of a brief depression severity measure." *Journal of General Internal Medicine* 16, no. 9 (2001): 606-613. Source for the PHQ-9 ≥10 consultation threshold.
+
+#### Related Media
+
+- [Why Pilots Don't Get Therapy (The Atlantic)](https://www.theatlantic.com/politics/archive/2025/05/why-pilots-dont-get-therapy/682959/) - on stigma and help-seeking in a comparable high-performing operational profession.
+- [Pope Francis and Expedition 53 Crew Exchange (NASA blog)](https://www.nasa.gov/blogs/spacestation/2017/10/26/pope-francis-and-expedition-53-crew-exchange-thoughts-about-humanitys-deepest-and-oldest-questions/) - not a study; an example of the kind of external contact that supports crew morale.

@@ -90,7 +90,7 @@ CodeSystem: MacronutrientMetricsCS
 Id: macronutrient-metrics-cs
 Title: "Macronutrient Metrics"
 Description: "Measurement types for macronutrient tracking"
-* ^count = 9
+* ^count = 10
 * ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
@@ -104,6 +104,7 @@ Description: "Measurement types for macronutrient tracking"
 * #fat-grams "Fat Intake (grams)"
 * #fiber-grams "Fiber Intake (grams)"
 * #protein-per-kg "Protein per Kilogram Body Weight"
+* #calorie-deficit-risk "Calorie Deficit Risk Level" "Categorical risk level derived from the sustained daily caloric deficit"
 
 CodeSystem: HydrationTypeCS
 Id: hydration-type-cs
@@ -356,7 +357,7 @@ Description: "Quantifies acute and cumulative calorie deficits for astronauts"
 * component[energyIntake].valueQuantity.system = $ucum
 * component[energyIntake].valueQuantity.code = #kcal
 
-* component[riskLevel].code = CalorieDeficitRiskCS#mild "Mild (<300 kcal/day)"
+* component[riskLevel].code = MacronutrientMetricsCS#calorie-deficit-risk "Calorie Deficit Risk Level"
 * component[riskLevel].value[x] only CodeableConcept
 * component[riskLevel].valueCodeableConcept from CalorieDeficitRiskVS (required)
 
