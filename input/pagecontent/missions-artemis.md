@@ -10,7 +10,7 @@ The question that keeps mission planners awake at night is not whether the rocke
 
 #### Mission Timeline
 
-The images below are NASA mission maps for each flight. Note that the lunar landing mission map was drawn in 2022 for what was then Artemis III; this guide models that landing as Artemis IV.
+The images below are the NASA mission maps for Artemis I and II. Mission maps for Artemis III onward are omitted because the published concepts predate the replan that moved the first landing to Artemis IV; they will be added when NASA releases updated graphics.
 
 **Artemis I** - Uncrewed test flight, November 16 - December 11, 2022  
 ![Artemis I Mission](artemis_i_mission_2021.jpg){:width="100%"}  
