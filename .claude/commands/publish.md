@@ -5,7 +5,11 @@ Publish the FHIR Implementation Guide. Follow these steps exactly:
    python3 scripts/qc_check.py
    ```
 
-2. Run `_genonce.sh` from the project root. This is a long-running build (~10+ minutes). Use a timeout of at least 600000ms. Stream output so the user can see progress.
+2. Remove stale build folders (renamed artifact ids collide with old files on case-insensitive filesystems), then run `_genonce.sh` from the project root:
+   ```
+   rm -rf temp output
+   ./_genonce.sh
+   ``` This is a long-running build (~10+ minutes). Use a timeout of at least 600000ms. Stream output so the user can see progress.
 
 3. After the build completes, regenerate the NDJSON downloads from the fresh `fsh-generated/resources/` and re-run the QC gate:
    ```

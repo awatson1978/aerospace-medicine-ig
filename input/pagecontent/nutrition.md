@@ -122,7 +122,7 @@ Alerts feed mission control decision algorithms.
 - **Basic** — [SpaceNutritionInventoryItem](StructureDefinition-space-nutrition-inventory-item.html)
 - **DiagnosticReport** — [MetabolicRiskSummary](StructureDefinition-metabolic-risk-summary.html)
 
-FHIR R5 introduces dedicated `NutritionIntake`, `NutritionProduct`, and `InventoryItem` resources for exactly these purposes. This guide is built on R4, so intake is carried as an Observation, the product as a Medication, and inventory as a Basic resource; the guide also carries a backported [NutritionProduct](https://hl7.org/fhir/R5/nutritionproduct.html) definition for the Artemis II menu below. A future R5 version of the guide would move these three onto the native resources.
+FHIR R5 introduces dedicated `NutritionIntake`, `NutritionProduct`, and `InventoryItem` resources for exactly these purposes. This guide is built on R4, so intake is carried as an Observation, the product as a Medication, and inventory as a Basic resource; the guide also carries a [NutritionProduct logical model](StructureDefinition-NutritionProduct.html), mirroring the [R5 resource](https://hl7.org/fhir/R5/nutritionproduct.html), for the Artemis II menu below. A future R5 version of the guide would move these three onto the native resources.
 
 #### Extensions
 
@@ -162,7 +162,7 @@ Study effects of long-term calorie deficit, nutrient timing, circadian misalignm
 
 ### Artemis II Crew Menu
 
-NASA published the crew menu for the **Artemis II** mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories. Each is modeled with this guide's backported `NutritionProduct` definition — the resource is native to [FHIR R5](https://hl7.org/fhir/R5/nutritionproduct.html) and does not exist in R4, so the guide carries a local logical definition of it rather than referencing the R5 resource directly.
+NASA published the crew menu for the **Artemis II** mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories. Each is modeled as an instance of this guide's [NutritionProduct logical model](StructureDefinition-NutritionProduct.html); the resource is native to [FHIR R5](https://hl7.org/fhir/R5/nutritionproduct.html) and does not exist in R4, so the guide carries a logical model of it rather than referencing the R5 resource directly.
 
 | Category | Items |
 |----------|-------|

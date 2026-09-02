@@ -63,6 +63,9 @@ adopted 0.6.x must update their references.
   `isru-metrics-cs`, `biomanufacturing-metric-cs`, `eva-suit-inventory-metric-cs`,
   `venous-flow-metric-cs`, `space-procedure-cs`.
 - `MissionPhaseToNASAMissionPhase` ConceptMap.
+- `NutritionProduct` is now a logical model (with the `logical-target` extension) instead
+  of a custom resource, so its 41 Artemis II menu instances load and validate in an R4
+  build.
 - Radiation example instances (`space-radiation-exposure-example`,
   `cumulative-radiation-dose-example`, `radiation-detector-example`,
   `space-radiation-summary-example`); `MarsCrewMember2`, `CumulativeDose-Transit`.

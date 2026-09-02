@@ -1,9 +1,14 @@
-// Backport of NutritionProduct resource from FHIR R5 for use in this R4 IG
-Resource: NutritionProduct
+// Logical model of the FHIR R5 NutritionProduct resource, for use in this R4 guide.
+// NutritionProduct does not exist in R4, so it is carried as a logical model whose
+// instances (the Artemis II crew menu) are validated as logical-model examples. The
+// logical-target extension lets SUSHI and the IG Publisher accept instances of it.
+Logical: NutritionProduct
+Parent: Base
 Id: NutritionProduct
-Title: "Nutrition Product"
-Description: "A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide."
+Title: "Nutrition Product (logical model)"
+Description: "A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct."
 * ^status = #active
+* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * status 1..1 code "active | inactive | entered-in-error"
 * code 0..1 CodeableConcept "A code that identifies the product"
 * category 0..* CodeableConcept "Broad product groups or categories"

@@ -37,7 +37,7 @@ Title: "Inventory Risk Flag"
 Description: "Risk level for nutrition inventory status"
 * ^status = #active
 * ^context[0].type = #element
-* ^context[0].expression = "InventoryItem"
+* ^context[0].expression = "Basic"
 * value[x] only CodeableConcept
 * valueCodeableConcept from NutritionInventoryStatusVS (required)
 
@@ -47,7 +47,9 @@ Title: "Shelf Life Decay"
 Description: "Degradation of nutritional value over time in space conditions"
 * ^status = #active
 * ^context[0].type = #element
-* ^context[0].expression = "NutritionProduct"
+* ^context[0].expression = "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+* ^context[1].type = #element
+* ^context[1].expression = "Medication"
 * value[x] only Ratio
 * valueRatio ^short = "Decay rate as percentage per time unit"
 
@@ -57,7 +59,9 @@ Title: "Rehydration Requirement"
 Description: "Amount of water required to prepare space food"
 * ^status = #active
 * ^context[0].type = #element
-* ^context[0].expression = "NutritionProduct"
+* ^context[0].expression = "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+* ^context[1].type = #element
+* ^context[1].expression = "Medication"
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code from WaterVolumeUnitsVS (required)

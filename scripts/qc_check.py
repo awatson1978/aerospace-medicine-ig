@@ -262,7 +262,8 @@ def check_fsh(canonical, m):
     # quoted canonical URLs must name a defined artifact
     known_urls = set(m.cs_by_url)
     for (kind, name), (path, lineno, ident, url) in m.defs.items():
-        t = {'Profile': 'StructureDefinition', 'Extension': 'StructureDefinition', 'ValueSet': 'ValueSet', 'CodeSystem': 'CodeSystem'}.get(kind)
+        t = {'Profile': 'StructureDefinition', 'Extension': 'StructureDefinition', 'Logical': 'StructureDefinition',
+             'Resource': 'StructureDefinition', 'ValueSet': 'ValueSet', 'CodeSystem': 'CodeSystem'}.get(kind)
         if t:
             known_urls.add(url or f'{canonical}/{t}/{ident}')
     for path, lineno, url in m.url_refs:
