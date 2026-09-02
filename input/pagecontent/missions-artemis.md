@@ -21,11 +21,8 @@ The images below are NASA mission maps for each flight. Note that the lunar land
 **Artemis III** - Crewed low-Earth orbit test flight, planned 2027
 
 **Artemis IV** - First crewed lunar landing mission at the south pole, planned 2028  
-![Artemis IV Mission](artemis_iv_mission.jpeg){:width="100%"}  
-![Lunar landing mission profile (2022 concept map, originally prepared for Artemis III)](artemis_iii_mission_map_2022.jpeg){:width="100%"}
 
 **Artemis V** - Expanding Artemis Base Camp and sustained lunar presence, planned 2029  
-![Artemis V Mission](artemis_v_mission_may_2023.jpg){:width="100%"}
 
 **Artemis VI–XXX** - As of the Artemis IGNITE conference, the program anticipates 28+ lunar landings. Missions VI through XXX are placeholder entries in the CodeSystem for simulation, planning, and forecasting as mission profiles are defined.
 
