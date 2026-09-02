@@ -13,7 +13,8 @@ CodeSystem: EVASuitStateCS
 Id: eva-suit-state-cs
 Title: "EVA Suit State Code System"
 Description: "Operational states of EVA suit systems"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -27,7 +28,8 @@ CodeSystem: SuitProvisioningStatusCS
 Id: suit-provisioning-status-cs
 Title: "Suit Provisioning Status Code System"
 Description: "Provisioning and logistics status of EVA suit assets"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -38,6 +40,20 @@ Description: "Provisioning and logistics status of EVA suit assets"
 * #maintenance-required "Maintenance Required" "Suit requires maintenance before next EVA"
 * #end-of-life "End of Life" "Suit has exceeded operational life limit"
 
+CodeSystem: EVASuitInventoryMetricCS
+Id: eva-suit-inventory-metric-cs
+Title: "EVA Suit Inventory Metric Code System"
+Description: "Component codes for EVA suit inventory and readiness observations"
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^status = #active
+* ^count = 4
+* #primary-suit-status "Primary Suit Status"
+* #backup-suit-status "Backup Suit Status"
+* #consumables-remaining "Consumables Remaining" "Remaining EVA consumables expressed as hours of EVA time"
+* #next-maintenance-due "Next Maintenance Due"
+
 // =====================================================
 // VALUE SETS
 // =====================================================
@@ -46,7 +62,7 @@ ValueSet: EVASuitStateVS
 Id: eva-suit-state-vs
 Title: "EVA Suit State Value Set"
 Description: "EVA suit operational states"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system EVASuitStateCS
 
@@ -54,7 +70,7 @@ ValueSet: SuitProvisioningStatusVS
 Id: suit-provisioning-status-vs
 Title: "Suit Provisioning Status Value Set"
 Description: "Suit provisioning and logistics status"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SuitProvisioningStatusCS
 
@@ -164,23 +180,23 @@ Description: "Assessment of EVA suit redundancy status, consumables remaining, a
     consumablesRemaining 0..1 MS and
     nextMaintenanceDue 0..1 MS
 
-* component[primarySuitStatus].code.text = "Primary Suit Status"
+* component[primarySuitStatus].code = EVASuitInventoryMetricCS#primary-suit-status "Primary Suit Status"
 * component[primarySuitStatus].value[x] only CodeableConcept
 * component[primarySuitStatus].valueCodeableConcept from SuitProvisioningStatusVS (extensible)
 * component[primarySuitStatus].valueCodeableConcept ^short = "Current status of primary EVA suit"
 
-* component[backupSuitStatus].code.text = "Backup Suit Status"
+* component[backupSuitStatus].code = EVASuitInventoryMetricCS#backup-suit-status "Backup Suit Status"
 * component[backupSuitStatus].value[x] only CodeableConcept
 * component[backupSuitStatus].valueCodeableConcept from SuitProvisioningStatusVS (extensible)
 * component[backupSuitStatus].valueCodeableConcept ^short = "Current status of backup EVA suit"
 
-* component[consumablesRemaining].code.text = "Consumables Remaining"
+* component[consumablesRemaining].code = EVASuitInventoryMetricCS#consumables-remaining "Consumables Remaining"
 * component[consumablesRemaining].value[x] only Quantity
 * component[consumablesRemaining].valueQuantity.system = $ucum
 * component[consumablesRemaining].valueQuantity.code = #h
 * component[consumablesRemaining].valueQuantity ^short = "Remaining consumables in EVA-hours"
 
-* component[nextMaintenanceDue].code.text = "Next Maintenance Due"
+* component[nextMaintenanceDue].code = EVASuitInventoryMetricCS#next-maintenance-due "Next Maintenance Due"
 * component[nextMaintenanceDue].value[x] only dateTime
 * component[nextMaintenanceDue].valueDateTime ^short = "Date next maintenance is due"
 
@@ -196,6 +212,7 @@ InstanceOf: XEVASSuitDefinition
 Title: "xEVAS Lunar Suit Definition"
 Description: "Axiom Space xEVAS suit definition for Artemis lunar surface operations"
 Usage: #example
+* insert SyntheticExample
 
 * modelNumber = "AxEMU-v2"
 * manufacturerString = "Axiom Space"
@@ -216,9 +233,10 @@ Usage: #example
 
 Instance: ArtemisIII-SuitProvisioning-001
 InstanceOf: EVASuitProvisioningRecord
-Title: "Artemis III Suit Provisioning"
-Description: "EVA suit provisioning record for Artemis III lunar landing mission"
+Title: "Artemis IV Suit Provisioning"
+Description: "EVA suit provisioning record for Artemis IV lunar landing mission"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * type = $sct#419891008 "Medical equipment"
@@ -233,19 +251,20 @@ InstanceOf: SuitRedundancyAssessment
 Title: "ISS Suit Redundancy Assessment"
 Description: "Quarterly redundancy assessment for ISS EVA suit inventory"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code.text = "EVA Suit Redundancy Assessment"
 * subject.display = "International Space Station"
 * effectiveDateTime = "2028-06-01T00:00:00Z"
-* component[primarySuitStatus].code.text = "Primary Suit Status"
+* component[primarySuitStatus].code = EVASuitInventoryMetricCS#primary-suit-status "Primary Suit Status"
 * component[primarySuitStatus].valueCodeableConcept = SuitProvisioningStatusCS#deployed-primary "Deployed - Primary"
-* component[backupSuitStatus].code.text = "Backup Suit Status"
+* component[backupSuitStatus].code = EVASuitInventoryMetricCS#backup-suit-status "Backup Suit Status"
 * component[backupSuitStatus].valueCodeableConcept = SuitProvisioningStatusCS#deployed-backup "Deployed - Backup"
-* component[consumablesRemaining].code.text = "Consumables Remaining"
+* component[consumablesRemaining].code = EVASuitInventoryMetricCS#consumables-remaining "Consumables Remaining"
 * component[consumablesRemaining].valueQuantity.value = 48
 * component[consumablesRemaining].valueQuantity.unit = "hours"
 * component[consumablesRemaining].valueQuantity.system = $ucum
 * component[consumablesRemaining].valueQuantity.code = #h
-* component[nextMaintenanceDue].code.text = "Next Maintenance Due"
+* component[nextMaintenanceDue].code = EVASuitInventoryMetricCS#next-maintenance-due "Next Maintenance Due"
 * component[nextMaintenanceDue].valueDateTime = "2028-09-01"

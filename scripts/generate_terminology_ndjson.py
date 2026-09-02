@@ -35,7 +35,7 @@ CodeSystems (38 total):
                     decompression-protocol-cs, underwater-communication-cs,
                     regulatory-compliance-cs
 - Radiation: space-radiation-type-cs, radiation-countermeasures-cs,
-             radiation-detector-type-cs, aerospace-code-system-enhanced
+             radiation-detector-type-cs, space-radiation-cs
 - Nutrition: space-nutrition-type-cs, macronutrient-metrics-cs,
              hydration-type-cs, nutrition-inventory-status-cs
 - Blood Flow Restriction: bfrt-protocol-cs, bfrt-outcome-cs, bfrt-device-type-cs
@@ -53,9 +53,9 @@ ValueSets (35 total):
 - Fitness: space-exercise-modality-vs, space-performance-metric-vs, evs-units-vs
 - Mental Health: behavioral-health-metrics-vs, cognitive-performance-indicators-vs,
                  stress-countermeasures-vs, isolation-syndrome-factors-vs
-- SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-activities,
-                    underwater-training-procedures, diving-contraindicated-conditions
-- Radiation: organ-dose-codes-vs-complete
+- SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-activities-vs,
+                    underwater-training-procedures-vs, diving-contraindicated-conditions-vs
+- Radiation: organ-dose-codes-vs
 - Nutrition: space-nutrition-type-vs, macronutrient-metrics-vs,
              hydration-type-vs, nutrition-inventory-status-vs,
              calorie-deficit-risk-vs
@@ -108,7 +108,7 @@ CODESYSTEMS = [
     'space-radiation-type-cs',
     'radiation-countermeasures-cs',
     'radiation-detector-type-cs',
-    'aerospace-code-system-enhanced',
+    'space-radiation-cs',
     # Nutrition (4)
     'space-nutrition-type-cs',
     'macronutrient-metrics-cs',
@@ -155,11 +155,11 @@ VALUESETS = [
     'stress-countermeasures-vs',
     'isolation-syndrome-factors-vs',
     # SCUBA Training / Hyperbaric Medicine (3)
-    'neutral-buoyancy-training-activities',
-    'underwater-training-procedures',
-    'diving-contraindicated-conditions',
+    'neutral-buoyancy-training-activities-vs',
+    'underwater-training-procedures-vs',
+    'diving-contraindicated-conditions-vs',
     # Radiation (1)
-    'organ-dose-codes-vs-complete',
+    'organ-dose-codes-vs',
     # Nutrition (5)
     'space-nutrition-type-vs',
     'macronutrient-metrics-vs',

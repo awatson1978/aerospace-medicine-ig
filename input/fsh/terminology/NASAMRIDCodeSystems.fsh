@@ -15,9 +15,10 @@ CodeSystem: NASAMRIDSponsorCS
 Id: nasa-mrid-sponsor-cs
 Title: "NASA MRID Sponsor Organizations"
 Description: "Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents."
+* ^count = 7
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -44,9 +45,10 @@ CodeSystem: NASAMRIDDisciplineCS
 Id: nasa-mrid-discipline-cs
 Title: "NASA MRID Medical Disciplines"
 Description: "Medical disciplines categorizing NASA Medical Requirements Integration Documents."
+* ^count = 13
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -85,9 +87,10 @@ CodeSystem: NASAMissionPhaseCS
 Id: nasa-mission-phase-cs
 Title: "NASA Mission Phase Timing"
 Description: "Mission phases and timing codes for medical requirements scheduling."
+* ^count = 7
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -114,9 +117,10 @@ CodeSystem: NASAScheduleOffsetCS
 Id: nasa-schedule-offset-cs
 Title: "NASA Schedule Offset Notation"
 Description: "L-minus and R-plus notation codes for mission timeline scheduling."
+* ^count = 24
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -158,9 +162,10 @@ CodeSystem: NASAMedicalHardwareCS
 Id: nasa-medical-hardware-cs
 Title: "NASA Medical Hardware"
 Description: "Medical equipment and hardware used in NASA medical requirements."
+* ^count = 25
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -236,9 +241,10 @@ CodeSystem: NASAMedicalFacilityCS
 Id: nasa-medical-facility-cs
 Title: "NASA Medical Facility Locations"
 Description: "Medical testing facility locations for NASA medical requirements."
+* ^count = 9
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -269,9 +275,10 @@ CodeSystem: NASADataArchiveCS
 Id: nasa-data-archive-cs
 Title: "NASA Medical Data Archive Systems"
 Description: "Data archive and delivery systems for NASA medical data."
+* ^count = 5
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 
@@ -294,9 +301,10 @@ CodeSystem: NASAMedicalRolesCS
 Id: nasa-medical-roles-cs
 Title: "NASA Medical Personnel Roles"
 Description: "Personnel roles involved in NASA medical requirements."
+* ^count = 9
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 

@@ -15,6 +15,7 @@ InstanceOf: SpaceBodyTemperature
 Title: "Body Temperature - Flight Day 30 Morning"
 Description: "Oral body temperature measurement on flight day 30 during morning circadian nadir"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = $obs-cat#vital-signs "Vital Signs"
@@ -39,6 +40,6 @@ Usage: #example
 * component[timeSinceExercise].valueQuantity.system = $ucum
 * component[timeSinceExercise].valueQuantity.code = #min
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[circadianPhase].valueCodeableConcept = CircadianPhaseCS#morning-nadir "Morning Nadir"
 * extension[flightDay].valueInteger = 30

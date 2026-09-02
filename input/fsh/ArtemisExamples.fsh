@@ -10,15 +10,16 @@ Alias: $obs-cat = http://terminology.hl7.org/CodeSystem/observation-category
 // ENCOUNTER: Artemis III Mission
 // =====================================================
 
-Instance: Artemis-III-Mission
+Instance: Artemis-IV-Mission
 InstanceOf: Encounter
-Title: "Artemis III Mission Encounter"
-Description: "Encounter representing the entire Artemis III mission from launch to splashdown"
+Title: "Artemis IV Mission Encounter"
+Description: "Encounter representing the entire Artemis IV mission from launch to splashdown"
 Usage: #example
+* insert SyntheticExample
 
 * status = #in-progress
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * period.start = "2027-09-01T00:00:00Z"
 
 // =====================================================
@@ -28,16 +29,16 @@ Usage: #example
 Instance: Malapert-Massif-Landing-Site
 InstanceOf: HabitatLocation
 Title: "Malapert Massif Landing Site"
-Description: "Artemis III landing site at Malapert Massif, lunar south pole region"
+Description: "Artemis IV landing site at Malapert Massif, lunar south pole region"
 Usage: #example
+* insert SyntheticExample
 
-* name = "Artemis III Landing Site - Malapert Massif"
+* name = "Artemis IV Landing Site - Malapert Massif"
 * description = "High-elevation site near lunar south pole (86°S, 0°E) with near-continuous sunlight access and proximity to permanently shadowed craters. Malapert Mountain provides elevated terrain for communications and solar power."
 * status = #active
 * mode = #instance
 
-* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
-* type.coding.code = #landing-site
+* type = LocationTypeCS#landing-site "Landing Site"
 * type.text = "Lunar surface landing site"
 
 * position.latitude = -86.0
@@ -56,14 +57,14 @@ InstanceOf: HabitatLocation
 Title: "Lunar Gateway HALO Module"
 Description: "Habitation and Logistics Outpost module of Lunar Gateway in NRHO"
 Usage: #example
+* insert SyntheticExample
 
 * name = "Lunar Gateway - HALO Module"
 * description = "Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions."
 * status = #active
 * mode = #instance
 
-* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
-* type.coding.code = #orbital-station
+* type = LocationTypeCS#orbital-station "Orbital Station"
 * type.text = "Lunar orbital habitat module"
 
 * extension[radiationShielding].extension[shieldingMass].valueQuantity.value = 12.5
@@ -79,13 +80,13 @@ Usage: #example
 Instance: xEMU-Suit-001
 InstanceOf: Device
 Title: "xEMU EVA Suit #001"
-Description: "First xEMU suit certified for Artemis III lunar surface EVAs"
+Description: "First xEMU suit certified for Artemis IV lunar surface EVAs"
 Usage: #example
+* insert SyntheticExample
 
 * deviceName.name = "xEMU Suit Serial #001"
 * deviceName.type = #user-friendly-name
-* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"
-* type.coding.code = #xemu-suit
+* type = ArtemisCertifiedDevicesCS#xemu-suit "xEMU EVA Suit"
 * type.text = "Exploration Extravehicular Mobility Unit"
 * manufacturer = "Axiom Space"
 * status = #active
@@ -96,14 +97,14 @@ Usage: #example
 
 Instance: Starship-HLS-Artemis-III
 InstanceOf: Device
-Title: "Starship HLS for Artemis III"
-Description: "SpaceX Starship Human Landing System variant for Artemis III lunar landing"
+Title: "Starship HLS for Artemis IV"
+Description: "SpaceX Starship Human Landing System variant for Artemis IV lunar landing"
 Usage: #example
+* insert SyntheticExample
 
 * deviceName.name = "Starship HLS (Artemis III)"
 * deviceName.type = #user-friendly-name
-* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"
-* type.coding.code = #starship-hls
+* type = ArtemisCertifiedDevicesCS#starship-hls "Starship Human Landing System"
 * type.text = "Human Landing System"
 * manufacturer = "SpaceX"
 * status = #active
@@ -112,19 +113,18 @@ Usage: #example
 // PROCEDURE: Artemis III EVA-1
 // =====================================================
 
-Instance: Artemis-III-EVA-1
+Instance: Artemis-IV-EVA-1
 InstanceOf: EVAProcedure
-Title: "Artemis III EVA-1"
-Description: "First lunar surface EVA of Artemis III mission at Malapert Massif"
+Title: "Artemis IV EVA-1"
+Description: "First lunar surface EVA of Artemis IV mission at Malapert Massif"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
+* code = SpaceProcedureCS#eva "Extravehicular Activity"
 * code.text = "Extravehicular Activity (EVA)"
-* code.coding[snomedCT].system = $sct
-* code.coding[snomedCT].code = #103741001
-* code.coding[snomedCT].display = "Extravehicular activity (procedure)"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedPeriod.start = "2027-09-10T08:00:00Z"
 * performedPeriod.end = "2027-09-10T14:30:00Z"
 
@@ -133,29 +133,28 @@ Usage: #example
 
 * usedReference[0] = Reference(Device/xEMU-Suit-001)
 
-* performer[0].actor = Reference(Patient/AstronautExample)
-* performer[0].actor.display = "Commander Sarah Chen"
+* performer[0].actor = Reference(Patient/ExampleAstronaut)
+* performer[0].actor.display = "Jane Astronaut"
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[evaNumber].valueString = "EVA-1"
 
 // =====================================================
 // PROCEDURE: Artemis III EVA-2
 // =====================================================
 
-Instance: Artemis-III-EVA-2
+Instance: Artemis-IV-EVA-2
 InstanceOf: EVAProcedure
-Title: "Artemis III EVA-2"
-Description: "Second lunar surface EVA of Artemis III mission exploring shadowed crater"
+Title: "Artemis IV EVA-2"
+Description: "Second lunar surface EVA of Artemis IV mission exploring shadowed crater"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
+* code = SpaceProcedureCS#eva "Extravehicular Activity"
 * code.text = "Extravehicular Activity (EVA)"
-* code.coding[snomedCT].system = $sct
-* code.coding[snomedCT].code = #103741001
-* code.coding[snomedCT].display = "Extravehicular activity (procedure)"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedPeriod.start = "2027-09-12T09:00:00Z"
 * performedPeriod.end = "2027-09-12T16:00:00Z"
 
@@ -164,30 +163,29 @@ Usage: #example
 
 * usedReference[0] = Reference(Device/xEMU-Suit-001)
 
-* performer[0].actor = Reference(Patient/AstronautExample)
-* performer[0].actor.display = "Commander Sarah Chen"
+* performer[0].actor = Reference(Patient/ExampleAstronaut)
+* performer[0].actor.display = "Jane Astronaut"
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[evaNumber].valueString = "EVA-2"
 
 // =====================================================
 // OBSERVATION: Deep Space Radiation Exposure
 // =====================================================
 
-Instance: Artemis-III-Translunar-Radiation
+Instance: Artemis-IV-Translunar-Radiation
 InstanceOf: ArtemisRadiationExposure
-Title: "Artemis III Translunar Radiation Exposure"
+Title: "Artemis IV Translunar Radiation Exposure"
 Description: "Cumulative radiation dose during 4-day translunar cruise"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category[laboratory] = $obs-cat#laboratory
 
-* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-type-cs"
-* code.coding.code = #cumulative-dose
-* code.coding.display = "Cumulative radiation dose"
+* code = ArtemisRadiationMeasureCS#cumulative-dose "Cumulative Radiation Dose"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectivePeriod.start = "2027-09-01T10:00:00Z"
 * effectivePeriod.end = "2027-09-05T10:00:00Z"
 
@@ -196,36 +194,32 @@ Usage: #example
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mSv
 
-* component[radiationSource].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
-* component[radiationSource].code.coding.code = #gcr
-* component[radiationSource].code.coding.display = "Galactic cosmic rays"
-* component[radiationSource].valueCodeableConcept.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
-* component[radiationSource].valueCodeableConcept.coding.code = #gcr
+* component[radiationSource].code = ArtemisRadiationMeasureCS#radiation-source "Radiation Source"
+* component[radiationSource].valueCodeableConcept = SpaceRadiationTypeCS#gcr "Galactic Cosmic Radiation"
 
-* component[shieldingCondition].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
-* component[shieldingCondition].code.coding.code = #nominal-shielding
-* component[shieldingCondition].valueString = "Orion crew module nominal aluminum shielding (~10 g/cm²)"
+* component[shieldingCondition].code = ArtemisRadiationMeasureCS#shielding-condition "Shielding Condition"
+* component[shieldingCondition].valueCodeableConcept = ShieldingConditionCS#nominal-shielding "Nominal Shielding"
+* component[shieldingCondition].valueCodeableConcept.text = "Orion crew module nominal aluminum shielding (~10 g/cm²)"
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 
 // =====================================================
 // OBSERVATION: Surface EVA Radiation Exposure
 // =====================================================
 
-Instance: Artemis-III-EVA1-Radiation
+Instance: Artemis-IV-EVA1-Radiation
 InstanceOf: ArtemisRadiationExposure
-Title: "Artemis III EVA-1 Radiation Exposure"
+Title: "Artemis IV EVA-1 Radiation Exposure"
 Description: "Radiation dose during first lunar surface EVA (6.5 hours unshielded)"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category[laboratory] = $obs-cat#laboratory
 
-* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-type-cs"
-* code.coding.code = #dose-rate
-* code.coding.display = "Radiation dose rate"
+* code = ArtemisRadiationMeasureCS#dose-rate "Radiation Dose Rate"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2027-09-10T11:00:00Z"
 
 * valueQuantity.value = 0.15
@@ -233,33 +227,31 @@ Usage: #example
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mSv/h
 
-* component[radiationSource].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
-* component[radiationSource].code.coding.code = #gcr
-* component[radiationSource].valueCodeableConcept.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
-* component[radiationSource].valueCodeableConcept.coding.code = #gcr
+* component[radiationSource].code = ArtemisRadiationMeasureCS#radiation-source "Radiation Source"
+* component[radiationSource].valueCodeableConcept = SpaceRadiationTypeCS#gcr "Galactic Cosmic Radiation"
 
-* component[shieldingCondition].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
-* component[shieldingCondition].code.coding.code = #minimal-shielding
-* component[shieldingCondition].valueString = "Lunar surface EVA - suit fabric only (~0.3 g/cm²)"
+* component[shieldingCondition].code = ArtemisRadiationMeasureCS#shielding-condition "Shielding Condition"
+* component[shieldingCondition].valueCodeableConcept = ShieldingConditionCS#minimal-shielding "Minimal Shielding"
+* component[shieldingCondition].valueCodeableConcept.text = "Lunar surface EVA - suit fabric only (~0.3 g/cm²)"
 
-* derivedFrom = Reference(Procedure/Artemis-III-EVA-1)
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* partOf = Reference(Procedure/Artemis-IV-EVA-1)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 
 // =====================================================
 // PLAN DEFINITION: Artemis III Mission Plan
 // =====================================================
 
-Instance: Artemis-III-Mission-Plan
+Instance: Artemis-IV-Mission-Plan
 InstanceOf: MissionPlan
-Title: "Artemis III Mission Plan"
-Description: "Complete mission plan for Artemis III including phases, timelines, and EVA schedules"
+Title: "Artemis IV Mission Plan"
+Description: "Complete mission plan for Artemis IV including phases, timelines, and EVA schedules"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
-* title = "Artemis III Mission Plan - First Crewed Lunar South Pole Landing"
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/plan-definition-type"
-* type.coding.code = #workflow-definition
-* description = "Artemis III mission to land crew at Malapert Massif region, conduct 2 surface EVAs over 6.5 days, and return. Objectives include lunar south pole exploration, ice sample collection, xEMU suit validation, and Starship-HLS demonstration."
+* title = "Artemis IV Mission Plan - First Crewed Lunar South Pole Landing"
+* type = http://terminology.hl7.org/CodeSystem/plan-definition-type#workflow-definition "Workflow Definition"
+* description = "Artemis IV mission to land crew at Malapert Massif region, conduct 2 surface EVAs over 6.5 days, and return. Objectives include lunar south pole exploration, ice sample collection, xEMU suit validation, and Starship-HLS demonstration."
 
 * action[0].title = "Launch"
 * action[0].description = "SLS launch from Kennedy Space Center with Orion crew vehicle. Target: 2027-09-01, T+0 hours."
@@ -288,4 +280,4 @@ Usage: #example
 * action[8].title = "Splashdown"
 * action[8].description = "Orion splashdown in Pacific Ocean. Planned: Mission day 20, entry interface to splashdown 30 minutes."
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)

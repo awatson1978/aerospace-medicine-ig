@@ -13,7 +13,8 @@ CodeSystem: BoneDensityMethodCS
 Id: bone-density-method-cs
 Title: "Bone Density Method Code System"
 Description: "Methods for bone mineral density measurement in spaceflight"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -26,7 +27,8 @@ CodeSystem: JointAssessmentCS
 Id: joint-assessment-cs
 Title: "Joint Assessment Code System"
 Description: "Parameters for ultrasound-based joint health assessment"
-* ^experimental = false
+* ^count = 3
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -42,7 +44,7 @@ ValueSet: BoneDensityMethodVS
 Id: bone-density-method-vs
 Title: "Bone Density Method Value Set"
 Description: "Methods for BMD measurement"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system BoneDensityMethodCS
 
@@ -50,7 +52,7 @@ ValueSet: BoneDensitySiteVS
 Id: bone-density-site-vs
 Title: "Bone Density Measurement Site Value Set"
 Description: "Anatomical sites for BMD measurement"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * $sct#122496007 "Lumbar spine structure"
 * $sct#71341001 "Bone structure of femur"

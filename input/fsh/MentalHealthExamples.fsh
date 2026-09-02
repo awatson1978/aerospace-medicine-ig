@@ -17,13 +17,14 @@ InstanceOf: BehavioralHealthState
 Title: "ISS Mood Assessment - Mission Week 12"
 Description: "Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category.coding.system = "http://loinc.org"
 * category.coding.code = #55467-8
 * category.coding.display = "Psychological assessment"
 * code = $behavioral-state-cs#mood-level "Mood level"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-01T10:00:00Z"
 
 // Mood score on -3 to +3 scale
@@ -32,7 +33,7 @@ Usage: #example
 * valueQuantity.code = #{score}
 
 // Cortisol component
-* component[cortisol].code = $behavioral-biomarker-cs#cortisol-ugdl
+* component[cortisol].code = $loinc#2143-6 "Cortisol [Mass/volume] in Serum or Plasma"
 * component[cortisol].valueQuantity.value = 18.5
 * component[cortisol].valueQuantity.unit = "µg/dL"
 * component[cortisol].valueQuantity.system = $ucum
@@ -50,13 +51,14 @@ InstanceOf: BehavioralHealthState
 Title: "ISS Anxiety Assessment - Pre-EVA"
 Description: "Pre-EVA anxiety assessment with HRV biomarker showing elevated stress."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category.coding.system = "http://loinc.org"
 * category.coding.code = #55467-8
 * category.coding.display = "Psychological assessment"
 * code = $behavioral-state-cs#anxiety-level "Anxiety level"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-15T08:00:00Z"
 
 // Anxiety score (0-10 scale)
@@ -65,7 +67,7 @@ Usage: #example
 * valueQuantity.code = #{score}
 
 // HRV component showing reduced variability (stress indicator)
-* component[hrv].code = $behavioral-biomarker-cs#hrv-ms
+* component[hrv].code = $loinc#80404-7 "R-R interval.standard deviation (Heart rate variability)"
 * component[hrv].valueQuantity.value = 32
 * component[hrv].valueQuantity.unit = "ms"
 * component[hrv].valueQuantity.system = $ucum
@@ -76,13 +78,14 @@ InstanceOf: BehavioralHealthState
 Title: "ISS Cognitive Readiness - Post-Anomaly"
 Description: "Cognitive readiness assessment following ammonia leak alarm (false positive)."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category.coding.system = "http://loinc.org"
 * category.coding.code = #55467-8
 * category.coding.display = "Psychological assessment"
 * code = $behavioral-state-cs#cognitive-readiness "Cognitive readiness"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-20T15:30:00Z"
 
 // Cognitive readiness score (0-10 scale)
@@ -99,13 +102,14 @@ InstanceOf: CumulativeStressBurden
 Title: "ISS Cumulative Stress Burden - Mission Day 90"
 Description: "Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
 * code.coding.code = #cumulative-stress
 * code.coding.display = "Cumulative stress burden"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-01T00:00:00Z"
 
 // Total cumulative stress burden
@@ -140,13 +144,14 @@ InstanceOf: CumulativeStressBurden
 Title: "ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)"
 Description: "End-of-mission cumulative stress burden showing sustained elevation despite countermeasures."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
 * code.coding.code = #cumulative-stress
 * code.coding.display = "Cumulative stress burden"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-09-01T00:00:00Z"
 
 // Total cumulative stress burden (increased from day 90)
@@ -167,6 +172,7 @@ InstanceOf: Observation
 Title: "ISS Isolation Factor - Confinement"
 Description: "Assessment of confinement stress during prolonged mission."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
@@ -174,7 +180,7 @@ Usage: #example
 * code.coding.code = #confinement
 * code.coding.display = "Confinement"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-01T10:00:00Z"
 
 // Severity rating (0-10 scale)
@@ -187,6 +193,7 @@ InstanceOf: Observation
 Title: "ISS Isolation Factor - Interpersonal Friction"
 Description: "Documented interpersonal tension between crew members during third quarter."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
@@ -194,7 +201,7 @@ Usage: #example
 * code.coding.code = #interpersonal-friction
 * code.coding.display = "Interpersonal friction"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-10T14:00:00Z"
 
 // Severity rating
@@ -207,6 +214,7 @@ InstanceOf: Observation
 Title: "ISS Isolation Factor - Circadian Drift"
 Description: "Sleep-wake cycle misalignment due to shift work and 16 sunrises per day."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
@@ -214,7 +222,7 @@ Usage: #example
 * code.coding.code = #circadian-drift
 * code.coding.display = "Circadian drift"
 
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-05T22:00:00Z"
 
 // Severity rating
@@ -231,10 +239,11 @@ InstanceOf: PsychologicalCountermeasureActivity
 Title: "ISS CBT Session - Mission Week 12"
 Description: "Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline."
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = $psych-countermeasure-cs#cbt-session "Cognitive behavioral therapy session"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedDateTime = "2025-06-02T16:00:00Z"
 
 // Reason: mood decline
@@ -255,10 +264,11 @@ InstanceOf: PsychologicalCountermeasureActivity
 Title: "ISS Crew Debrief - Post-Anomaly"
 Description: "Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion."
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = $psych-countermeasure-cs#crew-debrief "Crew debrief"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedPeriod.start = "2025-06-20T18:00:00Z"
 * performedPeriod.end = "2025-06-20T19:30:00Z"
 
@@ -278,10 +288,11 @@ InstanceOf: PsychologicalCountermeasureActivity
 Title: "ISS Bright Light Therapy - Mission Week 8"
 Description: "Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality."
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = $psych-countermeasure-cs#bright-light-therapy "Bright light therapy"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedDateTime = "2025-05-15T07:00:00Z"
 
 // Reason: circadian drift and poor sleep
@@ -299,10 +310,11 @@ InstanceOf: PsychologicalCountermeasureActivity
 Title: "ISS Guided Meditation - Daily Practice"
 Description: "Daily 15-minute guided meditation session for stress reduction and mood regulation."
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = $psych-countermeasure-cs#guided-meditation "Guided meditation"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedDateTime = "2025-06-01T20:00:00Z"
 
 // Reason: general stress management

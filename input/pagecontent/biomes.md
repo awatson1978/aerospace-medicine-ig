@@ -8,8 +8,6 @@ Example control panel from a sealed habitat test module (1988) showing multiple 
 
 Closed ecosystems often rely on sunlight (or artificial light) for plant photosynthesis and heat. *Photosynthetically Active Radiation (PAR)* sensors at different heights help ensure light penetrates the plant canopy evenly, and solar radiation sensors track overall energy input. These fields inform lighting control (e.g. supplemental LED lights or shades) and thermal management.
 
-Here's the information converted into a markdown table:
-
 | Field (JSON Key) | Type | Description & Unit |
 |------------------|------|-------------------|
 | par_top_umol | float | PAR light intensity at top of canopy (μmol·m⁻²·s⁻¹). Ensures plants receive adequate light at the upper level for photosynthesis. Multiple height measurements are used to verify light distribution through the canopy. |
@@ -25,8 +23,6 @@ Purpose: Light measurements drive plant growth and influence interior heat. By m
 
 Closed habitats often use thermal mass (e.g. concrete floors, water tanks) to stabilize temperature. Sensors monitoring the temperatures of these materials and their heat exchange fluid loops (inlet/outlet) are essential for diagnostics and control of heating/cooling.
 
-Here's the information converted into a markdown table:
-
 | Field (JSON Key) | Type | Description & Unit |
 |------------------|------|-------------------|
 | concrete_loop_out_temp_C | float | Outlet water temperature (°C) from the concrete mass. The difference between inlet and outlet reflects heat absorption or release by the concrete. This helps assess how effectively the slab is buffering temperature swings. |
@@ -40,8 +36,6 @@ Purpose: Thermal sensors provide insight into how well the habitat retains and d
 ### Atmospheric Life-Support Metrics
 The atmospheric conditions inside the biome must be kept within narrow ranges for human and plant life. Key gas concentrations, pressure, temperature, and humidity are continuously monitored. These fields mirror those tracked in spacecraft life support systems (ISS ECLSS monitors O₂, N₂, CO₂, H₂O, etc.) and in smart greenhouses.
 
-
-Here's the information converted into a properly formatted markdown table:
 
 | Field (JSON Key) | Type | Description & Unit |
 |------------------|------|-------------------|
@@ -61,8 +55,6 @@ Purpose: Atmospheric metrics are the core of life support monitoring. CO₂ and 
 ### HVAC & Pressure Regulation (External "Lung" Integration)
 In a sealed environment, the HVAC system not only manages air quality and temperature, but also must accommodate pressure changes. An external lung – a flexible volume or expandable chamber – is often used to keep internal pressure stable as the air expands or contracts with temperature changes. The API exposes sensors related to this lung mechanism and overall airflow, enabling closed-loop control of the habitat’s atmosphere.
 
-Here's the information converted into a properly formatted markdown table:
-
 | Field (JSON Key) | Type | Description & Unit |
 |------------------|------|-------------------|
 | pressure_diff_pa | float | Differential pressure between the habitat interior and the external environment (Pa). In normal operation this should be near zero, meaning the internal pressure equals the external reference (or a slight positive offset as a safety margin). This field is crucial for structural safety – it ensures the habitat isn't under dangerous pressure that could cause leaks or implosion/explosion. The external lung absorbs pressure swings to keep this difference low. A deviation (e.g. > ±100 Pa) would flag that the lung is at its limit or a valve has malfunctioned. |
@@ -77,8 +69,6 @@ differential provides early warning if the system is reaching its limits. The ai
 
 ### Biome Health Indicators (Air & Water Quality)
 Beyond the basic life-support variables, closed ecosystems benefit from additional sensors that track the health of plants, water, and the general habitat. These include water chemistry for hydroponics, trace gas pollutants, and zone-specific conditions. They are important for diagnosing subtle issues (e.g. nutrient imbalances, pollutant buildup) that could affect long-term sustainability.
-
-Here's the information converted into a properly formatted markdown table:
 
 | Field (JSON Key) | Type | Description & Unit |
 |------------------|------|-------------------|
@@ -100,8 +90,6 @@ The JSON API is designed to be extensible and integrable with other systems, fro
 from equipment and CH₄ as a trace metabolic byproduct). Unit conversions may be applied (e.g. NASA often uses partial pressures in mmHg or kPa for gases; the API could either output those directly or provide a known conversion from the given units).
 
 • Commercial Weather API Integration: For Earth deployments (e.g. a sealed greenhouse), external weather data provides valuable context. The API can include fields for outside conditions obtained from services like AmbientWeather or Weather Underground. For instance:
-
-Here's the information converted into a properly formatted markdown table:
 
 | Field | Type | Description (External Data) |
 |-------|------|----------------------------|

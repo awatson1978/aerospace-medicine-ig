@@ -2,11 +2,12 @@ Alias: SCT = http://snomed.info/sct
 
 // This is a simple example of a FSH file.
 // This file can be renamed, and additional FSH files can be added.
-// SUSHI will look for definitions in any file using the .fsh ending.
+// Multi-axis gimbal (centrifugal trainer) screening bundle and contraindication value set.
 
 Profile: GimbalScreening
-Title: "Gimbal Screening"
 Parent: Bundle
+Id: gimbal-screening
+Title: "Gimbal Screening"
 Description: "Screening protocol for Multi Axis Gimbal training device."
 * type = #document
 
@@ -80,10 +81,12 @@ Description: "Screening protocol for Multi Axis Gimbal training device."
 // * code = http://snomed.info/sct#225931003 "At risk of epileptic fits (finding)"
 
 
-ValueSet:    GimbalContraindicatedConditions
-Id:          GimbalContraindicatedConditions
-Title:       "Gimbal Contraindications"
+ValueSet: GimbalContraindicatedConditions
+Id: gimbal-contraindicated-conditions-vs
+Title: "Gimbal Contraindications"
 Description: "Contraindicated conditions for riding a multi-axis gimbal"
+* ^status = #active
+* ^experimental = true
 * SCT#82271004 "Injury of head (disorder)"
 * SCT#90460009 "Injury of neck (disorder)"
 * SCT#712893003 "Traumatic or non-traumatic injury of back (disorder)"

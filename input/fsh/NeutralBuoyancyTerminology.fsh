@@ -1,6 +1,8 @@
 // Enhanced Code Systems for Neutral Buoyancy Training and Diving Medicine
 // Addresses harmonization issues with custom terminologies
 
+Alias: $sct = http://snomed.info/sct
+
 // =====================================================
 // NEUTRAL BUOYANCY AND DIVING MEDICINE CODE SYSTEMS
 // =====================================================
@@ -9,10 +11,11 @@ CodeSystem: NeutralBuoyancyTrainingCS
 Id: neutral-buoyancy-training-cs
 Title: "Neutral Buoyancy Training Code System"
 Description: "Specialized codes for neutral buoyancy training activities and assessments"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 20
 
 // Training Session Types
 * #eva-simulation "EVA Simulation Training" "Extravehicular activity simulation in neutral buoyancy pool"
@@ -20,6 +23,7 @@ Description: "Specialized codes for neutral buoyancy training activities and ass
 * #emergency-egress "Emergency Egress Training" "Training for emergency escape procedures from spacecraft"
 * #crew-coordination "Crew Coordination Training" "Multi-astronaut coordination and communication training"
 * #equipment-familiarization "Equipment Familiarization" "Introduction and practice with space equipment"
+* #communication-training "Communication Training" "Training in the use of underwater communication systems and signal protocols"
 * #habitat-construction "Habitat Construction Training" "Training for assembly of space habitats and structures"
 * #scientific-sampling "Scientific Sampling Training" "Training for geological and biological sample collection"
 * #maintenance-repair "Maintenance and Repair Training" "Training for spacecraft and equipment maintenance"
@@ -43,10 +47,11 @@ CodeSystem: DivingMedicineCS
 Id: diving-medicine-cs
 Title: "Diving Medicine Code System"
 Description: "Medical codes specific to diving medicine and hyperbaric treatments"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 36
 
 // Medical Examinations
 * #dive-medical-exam "Diving Medical Examination" "Comprehensive medical examination for diving fitness"
@@ -88,15 +93,23 @@ Description: "Medical codes specific to diving medicine and hyperbaric treatment
 * #emergency-ascent "Emergency Ascent Protocol" "Procedures for emergency surface ascent"
 * #lost-diver "Lost Diver Protocol" "Search and rescue procedures for missing diver"
 * #equipment-failure "Equipment Failure Protocol" "Response to life support equipment failure"
+* #emergency-procedures "Emergency Procedures Invoked" "Emergency procedures invoked during a dive, recorded as part of the dive profile"
+
+// Barotrauma Assessment Components
+* #ear-barotrauma "Ear Barotrauma" "Pressure injury to the middle or inner ear"
+* #pulmonary-barotrauma "Pulmonary Barotrauma" "Pressure injury to the lungs from expanding gas during ascent"
+* #sinus-barotrauma "Sinus Barotrauma" "Pressure injury to the paranasal sinuses"
+* #dental-barotrauma "Dental Barotrauma" "Pressure-related dental pain or injury (barodontalgia)"
 
 CodeSystem: UnderwaterCommunicationCS
 Id: underwater-communication-cs
 Title: "Underwater Communication Systems"
 Description: "Communication systems and protocols for underwater training operations"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 31
 
 // Communication Systems
 * #hardwire-comm "Hardwired Communication" "Physical cable-based communication system"
@@ -123,14 +136,31 @@ Description: "Communication systems and protocols for underwater training operat
 * #comm-failure "Communication Failure" "Loss of communication capability"
 * #range-test "Communication Range Test" "Testing effective communication range"
 
+// Device Property Types (Device.property.type for UnderwaterCommunicationSystem)
+* #comm-range "Communication Range" "Device property type: maximum effective communication range of the system"
+* #encryption "Encryption Capability" "Device property type: whether the system supports encrypted communication"
+* #battery-life "Battery Life" "Device property type: rated operating time on a full battery charge"
+* #waterproof-rating "Waterproof Rating" "Device property type: ingress protection or depth rating of the housing"
+* #operating-depth "Operating Depth" "Device property type: maximum rated operating depth of the system"
+
+// Communication Session Assessment
+* #comm-assessment "Communication Assessment" "Assessment of communication system performance during a training session"
+* #signal-strength "Signal Strength" "Measured signal strength of the communication link"
+* #audio-clarity "Audio Clarity" "Assessed clarity and intelligibility of voice communication"
+* #comm-reliability "Communication Reliability" "Percentage of the session during which communication was maintained"
+* #emergency-response-time "Emergency Communication Response Time" "Time from emergency signal to acknowledged response"
+* #security-assessment "Security Assessment" "Assessment of the security and integrity of the communication link"
+* #communication-log "Communication Log" "Narrative log of communications during the dive"
+
 CodeSystem: RegulatoryComplianceCS
 Id: regulatory-compliance-cs
 Title: "Diving and Space Medicine Regulatory Compliance"
 Description: "Regulatory standards and compliance codes for diving and space medicine"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 26
 
 // NOAA Standards
 * #noaa-diving-manual "NOAA Diving Manual" "NOAA Diving Manual standards compliance"
@@ -165,14 +195,22 @@ Description: "Regulatory standards and compliance codes for diving and space med
 * #public-safety-diver "Public Safety Diver" "Public safety diving certification"
 * #instructor-level "Instructor Certification" "Diving instructor certification"
 
+// Compliance Assessment Components
+* #compliance-status "Compliance Status" "Overall compliance status against the assessed regulatory standard"
+* #standards-version "Standards Version" "Version or edition of the regulatory standard assessed against"
+* #certification-level "Certification Level" "Certification level held by the individual under the standard"
+* #expiration-date "Certification Expiration Date" "Date on which the certification or compliance status expires"
+* #restrictions-limitations "Restrictions and Limitations" "Restrictions or limitations attached to the certification or compliance status"
+
 CodeSystem: DecompressionProtocolCS
 Id: decompression-protocol-cs
 Title: "Decompression Protocols and Procedures"
 Description: "Standardized decompression protocols and safety procedures"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 24
 
 // Decompression Algorithms
 * #buhlmann-zh-l16c "Bühlmann ZH-L16C" "Bühlmann decompression algorithm"
@@ -213,10 +251,11 @@ Description: "Standardized decompression protocols and safety procedures"
 // =====================================================
 
 ValueSet: NeutralBuoyancyTrainingActivities
-Id: neutral-buoyancy-training-activities
+Id: neutral-buoyancy-training-activities-vs
 Title: "Neutral Buoyancy Training Activities"
 Description: "Types of training activities conducted in neutral buoyancy environments"
-* ^experimental = false
+* ^status = #active
+* ^experimental = true
 * include codes from system NeutralBuoyancyTrainingCS where concept is-a #eva-simulation
 * include codes from system NeutralBuoyancyTrainingCS where concept is-a #tool-manipulation
 * include codes from system NeutralBuoyancyTrainingCS where concept is-a #emergency-egress
@@ -225,12 +264,14 @@ Description: "Types of training activities conducted in neutral buoyancy environ
 * include codes from system NeutralBuoyancyTrainingCS where concept is-a #habitat-construction
 * include codes from system NeutralBuoyancyTrainingCS where concept is-a #scientific-sampling
 * include codes from system NeutralBuoyancyTrainingCS where concept is-a #maintenance-repair
+* include $sct#182813001 "Training activity"
 
 ValueSet: DivingMedicalExaminations
-Id: diving-medical-examinations
+Id: diving-medical-examinations-vs
 Title: "Diving Medical Examinations"
 Description: "Types of medical examinations for diving fitness"
-* ^experimental = false
+* ^status = #active
+* ^experimental = true
 * include codes from system DivingMedicineCS where concept is-a #dive-medical-exam
 * include codes from system DivingMedicineCS where concept is-a #hyperbaric-clearance
 * include codes from system DivingMedicineCS where concept is-a #fitness-assessment
@@ -238,10 +279,11 @@ Description: "Types of medical examinations for diving fitness"
 * include codes from system DivingMedicineCS where concept is-a #annual-recert
 
 ValueSet: UnderwaterCommunicationSystems
-Id: underwater-communication-systems
+Id: underwater-communication-systems-vs
 Title: "Underwater Communication Systems"
 Description: "Communication systems used in underwater training operations"
-* ^experimental = false
+* ^status = #active
+* ^experimental = true
 * include codes from system UnderwaterCommunicationCS where concept is-a #hardwire-comm
 * include codes from system UnderwaterCommunicationCS where concept is-a #through-water-comm
 * include codes from system UnderwaterCommunicationCS where concept is-a #surface-comm
@@ -251,19 +293,21 @@ Description: "Communication systems used in underwater training operations"
 * include codes from system UnderwaterCommunicationCS where concept is-a #pneumatic-comm
 
 ValueSet: RegulatoryStandards
-Id: regulatory-standards
+Id: regulatory-standards-vs
 Title: "Regulatory Standards for Diving and Space Medicine"
 Description: "Regulatory standards and compliance requirements"
-* ^experimental = false
+* ^status = #active
+* ^experimental = true
 * include codes from system RegulatoryComplianceCS
 * include $sct#79492003 "Diving medical examination"
 * include $sct#182813001 "Training activity"
 
 ValueSet: DecompressionProcedures
-Id: decompression-procedures
+Id: decompression-procedures-vs
 Title: "Decompression Procedures"
 Description: "Standardized decompression procedures and protocols"
-* ^experimental = false
+* ^status = #active
+* ^experimental = true
 * include codes from system DecompressionProtocolCS
-* include $sct#44016006 "Decompression sickness"
+* include $sct#37347000 "Caisson disease"
 * include $sct#182813001 "Training activity"

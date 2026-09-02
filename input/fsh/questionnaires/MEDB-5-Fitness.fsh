@@ -29,6 +29,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 5.1 Aerobic Fitness Assessment"
 Description: "NASA Medical Requirements Integration Document for aerobic fitness assessment. Captures VO2max and related cardiovascular fitness data for spaceflight crew members."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-1-aerobic-fitness"
 * version = "1.0.0"
@@ -335,6 +336,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 5.2 Strength Assessment"
 Description: "NASA Medical Requirements Integration Document for muscle strength assessment. Captures isokinetic and isometric strength data for spaceflight crew members."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-2-strength-assessment"
 * version = "1.0.0"
@@ -558,6 +560,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 5.3 Exercise Prescription"
 Description: "NASA Medical Requirements Integration Document for exercise prescription. Documents in-flight exercise countermeasures protocol and adherence."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-3-exercise-prescription"
 * version = "1.0.0"

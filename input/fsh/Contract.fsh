@@ -4,6 +4,7 @@
 
 Profile: SpaceInsuranceContract
 Parent: Contract
+Id: space-insurance-contract
 Title: "Space Insurance Contract"
 Description: "STUB - Specialized contract coverage for space travel"
 
@@ -11,3 +12,5 @@ Instance: SpaceTourismTravelInsuranceContract
 InstanceOf: SpaceInsuranceContract
 Title: "Insurance - Contract"
 Description: "STUB - Space tourist insurance coverage."
+Usage: #example
+* insert SyntheticExample

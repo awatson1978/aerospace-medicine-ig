@@ -6,6 +6,44 @@ Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
 
 // =====================================================
+// TERMINOLOGY
+// =====================================================
+
+CodeSystem: AerospaceObservationCategoryCS
+Id: aerospace-observation-category-cs
+Title: "Aerospace Observation Category"
+Description: "Observation categories for spacecraft and habitat telemetry that are not covered by the HL7 observation-category code system (operational, environmental, life-support)"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #operational "Operational"
+  * ^definition = "Observations about the operational state or output of mission systems (ISRU plants, power units, vehicles)"
+* #environmental "Environmental"
+  * ^definition = "Observations of the physical environment inside a habitat, vehicle, or suit (pressure, gas composition, temperature, humidity, dust)"
+* #life-support "Life Support"
+  * ^definition = "Observations about environmental control and life support system (ECLSS) performance and consumables"
+
+CodeSystem: ISRUMetricsCS
+Id: isru-metrics-cs
+Title: "ISRU Metrics"
+Description: "Measurement codes for in-situ resource utilization (ISRU) propellant production logs"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 3
+* #cumulative-propellant "Cumulative Propellant Production"
+  * ^definition = "Total mass of propellant (CH4 and/or O2) produced by the ISRU plant since start of operations"
+* #reactor-status "Reactor Status"
+  * ^definition = "Operational status of the ISRU Sabatier/electrolysis reactor"
+* #power-consumption "Power Consumption"
+  * ^definition = "Electrical power drawn by the ISRU plant"
+
+// =====================================================
 // EXTENSIONS
 // =====================================================
 
@@ -127,7 +165,7 @@ Description: "Observation of environmental conditions inside Mars habitat (press
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains environmental 1..1 MS
-* category[environmental] = http://terminology.hl7.org/CodeSystem/observation-category#environmental
+* category[environmental] = AerospaceObservationCategoryCS#environmental
 
 * code MS
 * code ^short = "Type of environmental measurement (pressure, O2%, CO2, temp, humidity, dust)"
@@ -163,8 +201,7 @@ Description: "Tracking ISRU propellant production (CH4/O2) for Mars return journ
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains operational 1..1 MS
-* category[operational].coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/observation-category-aerospace"
-* category[operational].coding.code = #operational
+* category[operational] = AerospaceObservationCategoryCS#operational
 
 * code MS
 * code.text = "ISRU Propellant Production"
@@ -190,10 +227,10 @@ Description: "Tracking ISRU propellant production (CH4/O2) for Mars return journ
     reactorStatus 0..1 MS and
     powerConsumption 0..1 MS
 
-* component[reactorStatus].code.text = "Reactor Status"
+* component[reactorStatus].code = ISRUMetricsCS#reactor-status "Reactor Status"
 * component[reactorStatus].value[x] only CodeableConcept or string
 
-* component[powerConsumption].code.text = "Power Consumption"
+* component[powerConsumption].code = ISRUMetricsCS#power-consumption "Power Consumption"
 * component[powerConsumption].value[x] only Quantity
 * component[powerConsumption].valueQuantity.system = $ucum
 * component[powerConsumption].valueQuantity.code = #kW

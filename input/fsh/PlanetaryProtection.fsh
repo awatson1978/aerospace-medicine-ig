@@ -13,7 +13,8 @@ CodeSystem: PlanetaryProtectionCategoryCS
 Id: planetary-protection-category-cs
 Title: "Planetary Protection Category Code System"
 Description: "COSPAR planetary protection categories for mission classification"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -27,7 +28,8 @@ CodeSystem: MicrobialContaminantTypeCS
 Id: microbial-contaminant-type-cs
 Title: "Microbial Contaminant Type Code System"
 Description: "Types of microbial contamination relevant to planetary protection"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -41,7 +43,8 @@ CodeSystem: SterilizationMethodCS
 Id: sterilization-method-cs
 Title: "Sterilization Method Code System"
 Description: "Sterilization methods for planetary protection bioburden reduction"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -59,7 +62,7 @@ ValueSet: PlanetaryProtectionCategoryVS
 Id: planetary-protection-category-vs
 Title: "Planetary Protection Category Value Set"
 Description: "COSPAR planetary protection categories"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system PlanetaryProtectionCategoryCS
 
@@ -67,7 +70,7 @@ ValueSet: MicrobialContaminantTypeVS
 Id: microbial-contaminant-type-vs
 Title: "Microbial Contaminant Type Value Set"
 Description: "Types of microbial contamination"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system MicrobialContaminantTypeCS
 
@@ -75,7 +78,7 @@ ValueSet: SterilizationMethodVS
 Id: sterilization-method-vs
 Title: "Sterilization Method Value Set"
 Description: "Sterilization methods for planetary protection"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SterilizationMethodCS
 
@@ -253,6 +256,7 @@ InstanceOf: SterilizationProcedure
 Title: "DHMR Sterilization at 125C/50hr"
 Description: "Dry heat microbial reduction sterilization of Mars lander component at 125°C for 50 hours"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = SterilizationMethodCS#dhmr "Dry Heat Microbial Reduction (DHMR)"
@@ -268,6 +272,7 @@ InstanceOf: MicrobialViabilityAssay
 Title: "Surface Swab CFU Assay"
 Description: "Surface swab colony-forming unit assay of Mars lander deck panel"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code = $loinc#630-4 "Bacteria identified in specimen by Culture"
@@ -285,6 +290,7 @@ InstanceOf: MicrobialContaminationRisk
 Title: "Mars Lander Contamination Risk"
 Description: "Forward contamination risk assessment for Mars lander mission"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * subject.display = "Mars Sample Return Mission - Landing Site Jezero Crater"

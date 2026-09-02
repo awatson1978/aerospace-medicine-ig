@@ -14,6 +14,7 @@ InstanceOf: SpaceMotionSicknessCondition
 Title: "Space Motion Sickness Episode - Flight Day 2"
 Description: "Moderate SMS episode on flight day 2 during ISS expedition"
 Usage: #example
+* insert SyntheticExample
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
@@ -21,7 +22,7 @@ Usage: #example
 * severity = GraybielSeverityCS#grade-2 "Grade II-S - Moderate Malaise"
 * subject = Reference(Patient/ExampleAstronaut)
 * onsetDateTime = "2028-03-16T06:00:00Z"
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[gravityContext].valueCodeableConcept = GravityContextCS#microgravity "Microgravity"
 * extension[flightDay].valueInteger = 2
 
@@ -34,6 +35,7 @@ InstanceOf: AntiemeticAdministration
 Title: "Promethazine IM Rescue Dose"
 Description: "Intramuscular promethazine 25mg for acute SMS rescue on flight day 2"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * medicationCodeableConcept = AntiemeticMedicationCS#promethazine-im "Promethazine (Intramuscular)"
@@ -45,7 +47,7 @@ Usage: #example
 * dosage.dose.system = $ucum
 * dosage.dose.code = #mg
 * reasonReference[0] = Reference(Condition/SMS-Episode-FD2)
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[gravityContext].valueCodeableConcept = GravityContextCS#microgravity "Microgravity"
 
 // =====================================================
@@ -57,6 +59,7 @@ InstanceOf: SpaceAdverseEvent
 Title: "Urinary Retention After Promethazine"
 Description: "Urinary retention adverse event 4 hours after promethazine IM administration"
 Usage: #example
+* insert SyntheticExample
 
 * actuality = #actual
 * event = SpaceAdverseEventCS#urinary-retention "Urinary Retention"
@@ -65,7 +68,7 @@ Usage: #example
 * seriousness = http://terminology.hl7.org/CodeSystem/adverse-event-seriousness#non-serious "Non-serious"
 * outcome = http://terminology.hl7.org/CodeSystem/adverse-event-outcome#resolved "Resolved"
 * suspectEntity[0].instance = Reference(MedicationAdministration/Promethazine-IM-Rescue)
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[flightDay].valueInteger = 2
 
 // =====================================================
@@ -77,6 +80,7 @@ InstanceOf: AntiemeticCarePlan
 Title: "SMS Prophylaxis Protocol"
 Description: "Antiemetic care plan for SMS prophylaxis covering pre-flight through post-flight phases"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
 * intent = #plan
@@ -92,4 +96,4 @@ Usage: #example
 * activity[1].detail.status = #completed
 * activity[1].detail.description = "Promethazine 25mg IM PRN for Grade II+ symptoms"
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)

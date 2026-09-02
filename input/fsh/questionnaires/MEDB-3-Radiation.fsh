@@ -24,6 +24,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry"
 Description: "NASA Medical Requirements Integration Document for radiation monitoring and crew personal dosimetry. Captures crew radiation exposure data for occupational exposure documentation and health risk assessment."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-3-1-radiation-monitoring"
 * version = "1.0.0"
@@ -496,6 +497,7 @@ InstanceOf: Questionnaire
 Title: "MR092L Solar Particle Event Protocol"
 Description: "NASA Medical Requirements Integration Document for Solar Particle Event protocol. Monitors SPE alerts, coordinates crew protective actions, and tracks exposure during events."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr092l-spe-protocol"
 * version = "1.0.0"
@@ -703,6 +705,7 @@ InstanceOf: Questionnaire
 Title: "MR093L Radiation Contingency"
 Description: "NASA Medical Requirements Integration Document for radiation contingency events. Documents unexpected radiation events, crew response, and medical assessment."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr093l-radiation-contingency"
 * version = "1.0.0"

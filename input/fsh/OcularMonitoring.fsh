@@ -9,11 +9,32 @@ Alias: $ucum = http://unitsofmeasure.org
 // CODE SYSTEMS
 // =====================================================
 
+CodeSystem: SpaceVisualEffectsCS
+Id: space-visual-effects-cs
+Title: "Space Visual Effects"
+Description: "CodeSystem for space visual effects not found in SNOMED CT"
+
+* ^experimental = true
+* ^caseSensitive = true
+* ^count = 8
+* ^content = #complete
+* ^status = #active
+
+* #sans "Spaceflight-Associated Neuro-ocular Syndrome" "A constellation of ocular and brain findings in astronauts exposed to long-duration spaceflight, including optic disc edema, globe flattening, choroidal folds, and hyperopic shifts"
+* #optic-disc-edema "Optic Disc Edema" "Swelling of the optic disc observed in astronauts during long-duration spaceflight"
+* #posterior-globe-flattening "Posterior Globe Flattening" "Flattening of the posterior portion of the eye globe observed in astronauts during spaceflight"
+* #choroidal-folds "Choroidal Folds" "Folds in the choroidal layer of the eye observed in astronauts during spaceflight"
+* #hyperopic-shift "Hyperopic Shift" "A shift toward farsightedness observed in astronauts during spaceflight"
+* #space-radiation-cataracts "Space Radiation Cataracts" "Cataracts resulting from exposure to space radiation"
+* #light-flash-phenomenon "Light Flash Phenomenon" "Visual perception of flashes of light caused by cosmic rays interacting with the retina or visual cortex"
+* #retinal-vascular-changes "Retinal Vascular Changes" "Changes in the blood vessels of the retina observed during spaceflight"
+
 CodeSystem: SANSAssessmentCS
 Id: sans-assessment-cs
 Title: "SANS Assessment Code System"
 Description: "Parameters for Spaceflight-Associated Neuro-ocular Syndrome assessment"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -32,7 +53,7 @@ ValueSet: SANSAssessmentVS
 Id: sans-assessment-vs
 Title: "SANS Assessment Value Set"
 Description: "SANS assessment parameters"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SANSAssessmentCS
 
@@ -52,7 +73,7 @@ Description: "Spaceflight-Associated Neuro-ocular Syndrome assessment including 
 * category 1..* MS
 
 * code 1..1 MS
-* code = SpaceVisualEffectsCodeSystem#sans "Spaceflight-Associated Neuro-ocular Syndrome"
+* code = SpaceVisualEffectsCS#sans "Spaceflight-Associated Neuro-ocular Syndrome"
 * code ^short = "SANS assessment"
 
 * subject 1..1 MS

@@ -13,7 +13,8 @@ CodeSystem: RadioprotectiveMedicationCS
 Id: radioprotective-medication-cs
 Title: "Radioprotective Medication Code System"
 Description: "Radioprotective and antioxidant medications for space radiation countermeasures"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -27,7 +28,8 @@ CodeSystem: AntioxidantBiomarkerCS
 Id: antioxidant-biomarker-cs
 Title: "Antioxidant Biomarker Code System"
 Description: "Biomarkers of oxidative stress and antioxidant status"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -46,7 +48,7 @@ ValueSet: RadioprotectiveMedicationVS
 Id: radioprotective-medication-vs
 Title: "Radioprotective Medication Value Set"
 Description: "Radioprotective medications for spaceflight"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system RadioprotectiveMedicationCS
 
@@ -54,7 +56,7 @@ ValueSet: AntioxidantBiomarkerVS
 Id: antioxidant-biomarker-vs
 Title: "Antioxidant Biomarker Value Set"
 Description: "Oxidative stress and antioxidant biomarkers"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system AntioxidantBiomarkerCS
 

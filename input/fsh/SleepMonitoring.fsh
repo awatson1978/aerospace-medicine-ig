@@ -13,7 +13,8 @@ CodeSystem: SleepArchitectureCS
 Id: sleep-architecture-cs
 Title: "Sleep Architecture Code System"
 Description: "Sleep architecture parameters measured during spaceflight sleep studies"
-* ^experimental = false
+* ^count = 9
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -31,7 +32,8 @@ CodeSystem: ActigraphyMetricCS
 Id: actigraphy-metric-cs
 Title: "Actigraphy Metric Code System"
 Description: "Metrics derived from wrist actigraphy for sleep-wake monitoring"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -44,7 +46,8 @@ CodeSystem: CircadianAssessmentCS
 Id: circadian-assessment-cs
 Title: "Circadian Rhythm Assessment Code System"
 Description: "Parameters for circadian rhythm assessment in spaceflight"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -61,7 +64,7 @@ ValueSet: SleepArchitectureVS
 Id: sleep-architecture-vs
 Title: "Sleep Architecture Value Set"
 Description: "Sleep architecture parameters"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SleepArchitectureCS
 
@@ -69,7 +72,7 @@ ValueSet: ActigraphyMetricVS
 Id: actigraphy-metric-vs
 Title: "Actigraphy Metric Value Set"
 Description: "Actigraphy-derived metrics"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system ActigraphyMetricCS
 
@@ -77,7 +80,7 @@ ValueSet: CircadianAssessmentVS
 Id: circadian-assessment-vs
 Title: "Circadian Rhythm Assessment Value Set"
 Description: "Circadian rhythm assessment parameters"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system CircadianAssessmentCS
 

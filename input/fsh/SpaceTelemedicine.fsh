@@ -13,7 +13,8 @@ CodeSystem: TelemedicineModalityCS
 Id: telemedicine-modality-cs
 Title: "Telemedicine Modality Code System"
 Description: "Telemedicine modalities for spaceflight medical operations"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -28,7 +29,8 @@ CodeSystem: TelemedicineEquipmentCS
 Id: telemedicine-equipment-cs
 Title: "Telemedicine Equipment Code System"
 Description: "Medical equipment used for telemedicine in spaceflight"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -47,7 +49,7 @@ ValueSet: TelemedicineModalityVS
 Id: telemedicine-modality-vs
 Title: "Telemedicine Modality Value Set"
 Description: "Telemedicine modalities"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system TelemedicineModalityCS
 
@@ -55,7 +57,7 @@ ValueSet: TelemedicineEquipmentVS
 Id: telemedicine-equipment-vs
 Title: "Telemedicine Equipment Value Set"
 Description: "Telemedicine equipment types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system TelemedicineEquipmentCS
 
@@ -213,6 +215,7 @@ InstanceOf: TelemedicineEncounter
 Title: "Store-and-Forward Telemedicine Encounter"
 Description: "Store-and-forward dermatology consultation from ISS to ground"
 Usage: #example
+* insert SyntheticExample
 
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#VR "virtual"
@@ -231,6 +234,7 @@ InstanceOf: TelemedicineConsultRequest
 Title: "Remote-Guided POCUS Request"
 Description: "Request for remote-guided point-of-care ultrasound from ISS CMO to ground radiologist"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
 * intent = #order
@@ -244,6 +248,7 @@ InstanceOf: TelemedicineDevice
 Title: "Lunar Telemedicine Terminal"
 Description: "Integrated telemedicine terminal for Artemis lunar surface operations"
 Usage: #example
+* insert SyntheticExample
 
 * type = TelemedicineEquipmentCS#video-conferencing "Video Conferencing System"
 * status = #active

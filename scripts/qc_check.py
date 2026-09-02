@@ -106,6 +106,7 @@ class FshModel:
         self.code_refs = []        # (file, line, system_token, code)
         self.references = []       # (file, line, type, id)
         self.cs_meta = {}          # cs name -> set of ^keys present
+        self.url_refs = []         # (file, line, url) quoted canonical CodeSystem/ValueSet URLs
 
     def files(self):
         return sorted(glob.glob(os.path.join(FSH, '**', '*.fsh'), recursive=True))
@@ -122,7 +123,7 @@ def parse_fsh(canonical):
         cur_kind = None
         cur_id = None
         for lineno, raw in enumerate(text.splitlines(), 1):
-            line = raw.split('//')[0].rstrip() if not raw.lstrip().startswith('//') else ''
+            line = '' if raw.lstrip().startswith('//') else re.split(r'\s//', raw)[0].rstrip()
             if not line.strip():
                 continue
             am = re.match(r'^Alias:\s*(\S+)\s*=\s*(\S+)', line)
@@ -167,7 +168,7 @@ def parse_fsh(canonical):
                     m.instances[cur]['meta_source'] = True
                 if re.match(r'^\*\s*meta\.tag\b', line):
                     m.instances[cur]['meta_tag'] = True
-                if re.match(r'^\*\s*insert\s+(SyntheticExample|FictionalExample|PublicRecordExample)', line):
+                if re.match(r'^\*\s*insert\s+(SyntheticExample|FictionalExample|ReferenceRecord|PublicRecord)', line):
                     m.instances[cur]['meta_source'] = True
                     m.instances[cur]['meta_tag'] = True
             urlm = re.match(r'^\*\s*\^url\s*=\s*"([^"]+)"', line)
@@ -185,6 +186,8 @@ def parse_fsh(canonical):
                 if cm:
                     codes = cm.group(1).split()
                     m.cs_codes[cur].add(codes[-1][1:])
+            for qm in re.finditer(r'"(https?://[^"\s]+/(?:CodeSystem|ValueSet|StructureDefinition)/[^"\s]+)"', line):
+                m.url_refs.append((path, lineno, qm.group(1)))
             # references
             for rm in re.finditer(r'Reference\(\s*([A-Za-z]+)/([^\s\)]+)\s*\)', line):
                 m.references.append((path, lineno, rm.group(1), rm.group(2)))
@@ -249,10 +252,23 @@ def check_fsh(canonical, m):
                 cs = system
             elif system in local_vs_names or system in m.instances or (('Profile', system) in m.defs):
                 continue
+            elif system.endswith(('CS', 'CodeSystem')):
+                finding('fsh', path, lineno, f'{system}#{code}: {system} is not a defined CodeSystem')
+                continue
             else:
                 continue
         if cs and code not in m.cs_codes.get(cs, set()):
             finding('fsh', path, lineno, f'code #{code} not defined in CodeSystem {cs}')
+    # quoted canonical URLs must name a defined artifact
+    known_urls = set(m.cs_by_url)
+    for (kind, name), (path, lineno, ident, url) in m.defs.items():
+        t = {'Profile': 'StructureDefinition', 'Extension': 'StructureDefinition', 'ValueSet': 'ValueSet', 'CodeSystem': 'CodeSystem'}.get(kind)
+        if t:
+            known_urls.add(url or f'{canonical}/{t}/{ident}')
+    for path, lineno, url in m.url_refs:
+        base = url.split('|')[0]
+        if base.startswith(canonical) and base not in known_urls:
+            finding('fsh', path, lineno, f'quoted URL {base} names no defined artifact')
     # references
     for path, lineno, rtype, rid in m.references:
         if rid in m.instance_ids or rid in m.instances:

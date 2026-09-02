@@ -1,362 +1,95 @@
-// Artemis Devices CodeSystem (Unified)
-// Comprehensive device inventory for the Artemis program including crewed vehicles,
-// EVA systems, landers, Gateway modules, LunaNet communications and navigation
-// infrastructure, surface mobility, habitats, logistics, ISRU, and power systems
+// Artemis Supporting CodeSystems and ValueSets
+// Terminology used by the Artemis profiles and examples that is not part of the
+// radiation tracking module: shielding conditions, location types, and the
+// observation/component codes used by ArtemisRadiationExposure.
+//
+// Note: the former unified ArtemisDevicesCS (artemis-devices-cs) was merged into
+// ArtemisCertifiedDevicesCS and ArtemisPrototypeDevicesCS (see ArtemisDevices.fsh).
 
 // =====================================================
-// UNIFIED DEVICE CODE SYSTEM
+// SHIELDING CONDITION
 // =====================================================
 
-CodeSystem: ArtemisDevicesCS
-Id: artemis-devices-cs
-Title: "Artemis Devices"
-Description: "Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems"
+CodeSystem: ShieldingConditionCS
+Id: shielding-condition-cs
+Title: "Shielding Condition"
+Description: "Qualitative radiation shielding condition of the crew at the time of a radiation exposure measurement"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
+* ^count = 5
+* #unshielded "Unshielded" "No structural or suit shielding beyond the ambient environment (e.g., open-space exposure)"
+* #minimal-shielding "Minimal Shielding" "Suit fabric or thin structure only, roughly below 1 g/cm2 areal density (e.g., lunar surface EVA)"
+* #nominal-shielding "Nominal Shielding" "Nominal vehicle or habitat structure, roughly 5-20 g/cm2 areal density (e.g., Orion crew module, Gateway HALO)"
+* #enhanced-shielding "Enhanced Shielding" "Augmented shielding such as water walls, polyethylene, or regolith cover"
+* #storm-shelter "Storm Shelter" "Crew located in a dedicated solar particle event storm shelter configuration"
 
-// Device type property
-* ^property[0].code = #deviceType
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-devices-cs#deviceType"
-* ^property[=].description = "Device category (spacecraft, launch-vehicle, suit, life-support, lander, habitat, propulsion, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)"
-* ^property[=].type = #code
+ValueSet: ShieldingConditionVS
+Id: shielding-condition-vs
+Title: "Shielding Condition"
+Description: "Shielding conditions for radiation exposure observations"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* include codes from system ShieldingConditionCS
 
-// Manufacturer property
-* ^property[+].code = #manufacturer
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-devices-cs#manufacturer"
-* ^property[=].description = "Device manufacturer or contractor"
-* ^property[=].type = #string
+// =====================================================
+// LOCATION TYPE
+// =====================================================
 
-// --- Crewed Vehicles ---
+CodeSystem: LocationTypeCS
+Id: location-type-cs
+Title: "Aerospace Location Type"
+Description: "Types of locations used in lunar and planetary mission records (landing sites, orbital stations, surface habitats, outposts, analog facilities)"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #landing-site "Landing Site" "Surface landing site or landing region on a planetary body"
+* #orbital-station "Orbital Station" "Crewed station or module in orbit (e.g., Lunar Gateway in NRHO)"
+* #surface-habitat "Surface Habitat" "Pressurized surface habitat providing living quarters and life support"
+* #surface-outpost "Surface Outpost" "Multi-element surface base such as Artemis Base Camp"
+* #analog-facility "Analog Facility" "Terrestrial analog facility used for mission simulation and training"
 
-* #orion "Orion Crew Vehicle"
-  * ^definition = "Spacecraft - Crew Module and Service Module. Manufacturer: Lockheed Martin / NASA."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #spacecraft
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "Lockheed Martin / NASA"
+ValueSet: LocationTypeVS
+Id: location-type-vs
+Title: "Aerospace Location Type"
+Description: "Location types for lunar and planetary mission locations"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* include codes from system LocationTypeCS
 
-* #sls "Space Launch System"
-  * ^definition = "Heavy-Lift Launch Vehicle. Manufacturer: Boeing / NASA."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #launch-vehicle
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "Boeing / NASA"
+// =====================================================
+// ARTEMIS RADIATION MEASURES
+// =====================================================
 
-// --- EVA Systems ---
+CodeSystem: ArtemisRadiationMeasureCS
+Id: artemis-radiation-measure-cs
+Title: "Artemis Radiation Measures"
+Description: "Observation and component codes used by the ArtemisRadiationExposure profile: dose measures and the contextual components (radiation source, shielding condition, tissue type). Radiation source values come from SpaceRadiationTypeCS."
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^count = 5
+* #cumulative-dose "Cumulative Radiation Dose" "Accumulated effective dose over a mission phase or period"
+* #dose-rate "Radiation Dose Rate" "Instantaneous or average dose rate during a measurement window"
+* #radiation-source "Radiation Source" "Component identifying the dominant radiation source (GCR, SPE, trapped, secondary)"
+* #shielding-condition "Shielding Condition" "Component identifying the shielding condition during the exposure"
+* #tissue-type "Tissue Type" "Component identifying the tissue or organ for which the dose is reported"
 
-* #exploration-eva-suit "Exploration EVA Suit"
-  * ^definition = "Exploration Extravehicular Mobility Unit. Manufacturer: Axiom Space / Collins Aerospace."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #suit
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "Axiom Space / Collins Aerospace"
-
-* #plss "Portable Life Support System"
-  * ^definition = "EVA Suit Life Support Backpack. Manufacturer: Collins Aerospace."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #life-support
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "Collins Aerospace"
-
-// --- Landers ---
-
-* #human-landing-system "Human Landing System"
-  * ^definition = "Lunar Lander. Manufacturer: SpaceX."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #lander
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "SpaceX"
-
-* #clps-lander "CLPS Lander"
-  * ^definition = "Commercial Lunar Payload Services Delivery Lander. Manufacturer: NASA / Commercial Providers."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #lander
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Commercial Providers"
-
-// --- Gateway Modules ---
-
-* #gateway-halo "Gateway HALO Module"
-  * ^definition = "Habitation and Logistics Outpost Module. Manufacturer: Northrop Grumman."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #habitat
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "Northrop Grumman"
-
-* #gateway-ppe "Gateway PPE Module"
-  * ^definition = "Power and Propulsion Element. Manufacturer: Maxar Technologies."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #propulsion
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "Maxar Technologies"
-
-// --- Medical Equipment ---
-
-* #medical-kit "Artemis Medical Kit"
-  * ^definition = "Emergency Medical Equipment. Manufacturer: NASA."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #medical-equipment
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA"
-
-// --- LunaNet Communications and Navigation ---
-
-* #lunanet "LunaNet Communication Architecture"
-  * ^definition = "Lunar Communication and Navigation Network. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #orbital-comm-relay "Orbital Communication Relay"
-  * ^definition = "Orbital Relay Satellite for Lunar Communications. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #observation-satellite "Observation Satellite"
-  * ^definition = "Lunar Observation and Monitoring Satellite. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #relay-satellite-observability "Relay Satellite with Observability"
-  * ^definition = "Relay Satellite with Observability Functions. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #surface-comm-nav-node "Surface Communication and Navigation Node"
-  * ^definition = "Lunar Surface Communication and Navigation Infrastructure. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #deployable-surface-comm-tower "Deployable Surface Communication Tower"
-  * ^definition = "Deployable Surface Communications Tower. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #high-throughput-surface-comms "High-Throughput Surface Communications Node"
-  * ^definition = "High-Bandwidth Lunar Surface Communications. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #communications
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #lunar-pnt-node "Lunar PNT Node"
-  * ^definition = "Positioning Navigation and Timing Infrastructure. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #navigation
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #clock-demo-node "Lunar Clock Demonstration Node"
-  * ^definition = "Surface Timing and Synchronization Demonstrator. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #navigation
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #navigation-capability-node "Navigation Capability Node"
-  * ^definition = "Lunar Navigation Infrastructure Element. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #navigation
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-// --- Aerial/Drone ---
-
-* #moonfall-drone "MoonFall Drone"
-  * ^definition = "Lunar Surface Aerial or Descent Support Drone. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #drone
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-// --- Surface Mobility (LTV Variants and Rovers) ---
-
-* #ltv "Lunar Terrain Vehicle"
-  * ^definition = "Lunar Surface Mobility Platform. Manufacturer: NASA / Industry Team."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Industry Team"
-
-* #crewed-ltv "Crewed LTV"
-  * ^definition = "Crewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Industry Team"
-
-* #uncrewed-ltv "Uncrewed LTV"
-  * ^definition = "Uncrewed Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Industry Team"
-
-* #advanced-ltv "Advanced LTV"
-  * ^definition = "Advanced Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Industry Team"
-
-* #ltv-gen-2 "LTV Generation 2"
-  * ^definition = "Second-Generation Lunar Terrain Vehicle. Manufacturer: NASA / Industry Team."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Industry Team"
-
-* #pressurized-rover "Pressurized Rover"
-  * ^definition = "Pressurized Lunar Rover. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #viper-rover "VIPER Rover"
-  * ^definition = "Volatiles Investigating Polar Exploration Rover. Manufacturer: NASA."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA"
-
-* #excavator-rover "Excavator Rover"
-  * ^definition = "Lunar Surface Excavation Rover. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #site-prep-logistics-rover "Site Preparation and Logistics Rover"
-  * ^definition = "Rover for Site Preparation and Logistics Tasks. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #international-partner-rover "International Partner Rover"
-  * ^definition = "Partner-Provided Lunar Rover. Manufacturer: International Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "International Partners"
-
-* #science-rover "Science Rover"
-  * ^definition = "Lunar Surface Science Rover. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #rover
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-// --- Habitats ---
-
-* #basecamp-habitat "Artemis Base Camp Surface Habitat"
-  * ^definition = "Lunar Surface Living Quarters. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #habitat
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #surface-habitat-module "Surface Habitat Module"
-  * ^definition = "Lunar Surface Habitat Infrastructure. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #habitat
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-// --- Logistics ---
-
-* #logistics-demo-unit "Logistics Demonstration Unit"
-  * ^definition = "Demonstrator for Lunar Surface Logistics. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #logistics
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #logistics-delivery-vehicle "Logistics Delivery Vehicle"
-  * ^definition = "Lunar Surface or Cargo Delivery Logistics Asset. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #logistics
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #cargo-return-vehicle "Cargo Return Vehicle"
-  * ^definition = "Vehicle for Returning Cargo from Lunar Surface Operations. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #logistics
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-// --- ISRU ---
-
-* #isru-plant "ISRU Plant"
-  * ^definition = "In Situ Resource Utilization Processing System. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #isru
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-// --- Power Systems ---
-
-* #solar-power-augmentation-unit "Solar Power Augmentation Unit"
-  * ^definition = "Solar Power Augmentation Infrastructure. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #solar-battery-rfc-power-unit "Solar Battery RFC Power Unit"
-  * ^definition = "Solar Battery and Regenerative Fuel Cell Power System. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #rtg-power-unit "RTG Power Unit"
-  * ^definition = "Radioisotope Thermoelectric Generator Power System. Manufacturer: NASA / DOE / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / DOE / Partners"
-
-* #rhu-thermal-survival-unit "RHU Thermal Survival Unit"
-  * ^definition = "Radioisotope Heater Unit for Lunar Night Survival. Manufacturer: NASA / DOE / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / DOE / Partners"
-
-* #fission-surface-power-unit "Fission Surface Power Unit"
-  * ^definition = "Lunar Surface Fission Power System. Manufacturer: NASA / DOE / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / DOE / Partners"
-
-* #power-infrastructure-node "Power Infrastructure Node"
-  * ^definition = "Surface Electrical Power Infrastructure. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
-
-* #power-distribution-node "Power Distribution Node"
-  * ^definition = "Surface Power Distribution System. Manufacturer: NASA / Partners."
-  * ^property[0].code = #deviceType
-  * ^property[=].valueCode = #power
-  * ^property[+].code = #manufacturer
-  * ^property[=].valueString = "NASA / Partners"
+ValueSet: ArtemisRadiationMeasureVS
+Id: artemis-radiation-measure-vs
+Title: "Artemis Radiation Measures"
+Description: "Dose measure codes for ArtemisRadiationExposure.code"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = true
+* include ArtemisRadiationMeasureCS#cumulative-dose
+* include ArtemisRadiationMeasureCS#dose-rate

@@ -25,7 +25,7 @@ Title: "NASA MRID Sponsor Organizations"
 Description: "Value set for NASA MRID sponsor organizations."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-sponsor
 
@@ -39,7 +39,7 @@ Title: "NASA MRID Medical Disciplines"
 Description: "Value set for NASA MRID medical disciplines."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-discipline
 
@@ -53,7 +53,7 @@ Title: "NASA Mission Phases"
 Description: "Value set for mission phase timing."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-phase
 
@@ -67,7 +67,7 @@ Title: "NASA Preflight Schedule Offsets"
 Description: "Value set for L-minus preflight schedule offsets."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $nasa-offset#L-24m
 * $nasa-offset#L-19m
@@ -94,7 +94,7 @@ Title: "NASA Postflight Schedule Offsets"
 Description: "Value set for R-plus postflight schedule offsets."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $nasa-offset#R-0
 * $nasa-offset#R-3d
@@ -115,7 +115,7 @@ Title: "NASA Schedule Offsets"
 Description: "Complete value set for all mission schedule offsets."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-offset
 
@@ -129,7 +129,7 @@ Title: "NASA Radiation Monitoring Equipment"
 Description: "Value set for radiation monitoring hardware."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $nasa-hardware#cpd
 * $nasa-hardware#tepc
@@ -147,7 +147,7 @@ Title: "NASA Cardiovascular Assessment Equipment"
 Description: "Value set for cardiovascular assessment hardware."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $nasa-hardware#12-lead-ecg
 * $nasa-hardware#marquette-case
@@ -163,7 +163,7 @@ Title: "NASA Exercise Equipment"
 Description: "Value set for exercise and fitness assessment hardware."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $nasa-hardware#t2-treadmill
 * $nasa-hardware#ared
@@ -184,7 +184,7 @@ Title: "NASA Medical Facilities"
 Description: "Value set for medical testing facility locations."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-facility
 
@@ -198,7 +198,7 @@ Title: "NASA Medical Data Archive Systems"
 Description: "Value set for data archive and delivery systems."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-archive
 
@@ -212,7 +212,7 @@ Title: "NASA Medical Personnel Roles"
 Description: "Value set for medical personnel roles."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-roles
 
@@ -226,7 +226,7 @@ Title: "NASA Medical Hardware"
 Description: "Complete value set for all NASA medical hardware."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system $nasa-hardware
 
@@ -240,7 +240,7 @@ Title: "ECG Interpretation Results"
 Description: "Value set for ECG interpretation outcomes."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $sct#17621005 "Normal"
 * $sct#263654008 "Abnormal"
@@ -257,7 +257,7 @@ Title: "Behavioral Readiness Assessment"
 Description: "Value set for behavioral/psychological flight readiness outcomes."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $sct#17621005 "Normal"
 * $sct#263654008 "Abnormal"
@@ -274,7 +274,7 @@ Title: "Fitness Assessment Results"
 Description: "Value set for fitness test termination criteria and outcomes."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * $sct#255594003 "Complete"
 * $sct#397943006 "Planned"
@@ -294,7 +294,7 @@ Title: "ISS Crewmember Types"
 Description: "Value set for types of ISS crewmembers by agency."
 
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 // Using custom codes for agency-specific crewmember designations
 * $nasa-roles#crewmember "Crewmember"

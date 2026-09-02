@@ -9,10 +9,11 @@ CodeSystem: SpaceExerciseModalityCS
 Id: space-exercise-modality-cs
 Title: "Space Exercise Modality Code System"
 Description: "Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity)."
+* ^count = 9
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
-* ^experimental = false
+* ^experimental = true
 
 * #treadmill "Treadmill running in microgravity"
     "Running or walking on a vibration-isolated treadmill with harness-based body-weight simulation."
@@ -37,10 +38,11 @@ CodeSystem: SpacePerformanceMetricCS
 Id: space-performance-metric-cs
 Title: "Space Exercise Performance Metric Code System"
 Description: "Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force)."
+* ^count = 10
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
-* ^experimental = false
+* ^experimental = true
 
 * #mean-power "Mean power output"
     "Average mechanical power output over the activity interval."
@@ -72,6 +74,6 @@ Id: space-exercise-modality-vs
 Title: "Space Exercise Modality Value Set"
 Description: "Permitted space exercise modalities, derived from the Space Exercise Modality Code System."
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 
 * include codes from system SpaceExerciseModalityCS

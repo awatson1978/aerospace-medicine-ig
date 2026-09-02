@@ -10,23 +10,29 @@ Source Pages:
 - input/pagecontent/missions-artemis.md (section 15.2.3)
 
 Output Files:
-- input/images/Artemis.CodeSystems.ndjson (4 CodeSystems)
-- input/images/Artemis.ValueSets.ndjson (5 ValueSets)
+- input/images/Artemis.CodeSystems.ndjson (7 CodeSystems)
+- input/images/Artemis.ValueSets.ndjson (8 ValueSets)
 
 Resources Extracted:
 
-CodeSystems (4 total):
-- artemis-mission-cs: Mission codes (ARTEMIS-I through ARTEMIS-V)
+CodeSystems (7 total):
+- artemis-mission-cs: Mission codes (ARTEMIS-I through ARTEMIS-XXX)
 - artemis-landing-region-cs: 13 candidate south pole landing regions
 - artemis-certified-devices-cs: Flight-qualified hardware (Orion, SLS, xEMU, etc.)
-- artemis-prototype-devices-cs: Developmental/test hardware
+- artemis-prototype-devices-cs: Developmental/test hardware and planned infrastructure
+- shielding-condition-cs: Radiation shielding conditions
+- location-type-cs: Lunar/planetary location types
+- artemis-radiation-measure-cs: Radiation dose measure and component codes
 
-ValueSets (5 total):
-- artemis-mission-vs: All Artemis program missions I-V
+ValueSets (8 total):
+- artemis-mission-vs: All Artemis program missions I-XXX
 - artemis-landing-region-vs: Landing region bindings
 - artemis-certified-devices-vs: Certified Artemis devices
 - artemis-prototype-devices-vs: Prototype Artemis devices
 - artemis-all-devices-vs: Combined certified and prototype devices
+- shielding-condition-vs: Shielding conditions
+- location-type-vs: Location types
+- artemis-radiation-measure-vs: Dose measure codes
 
 Usage:
     cd scripts
@@ -46,21 +52,27 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 FSH_RESOURCES_DIR = PROJECT_ROOT / 'fsh-generated' / 'resources'
 OUTPUT_DIR = PROJECT_ROOT / 'input' / 'images'
 
-# CodeSystems to extract (4 total)
+# CodeSystems to extract (7 total)
 CODESYSTEMS = [
     'artemis-mission-cs',
     'artemis-landing-region-cs',
     'artemis-certified-devices-cs',
     'artemis-prototype-devices-cs',
+    'shielding-condition-cs',
+    'location-type-cs',
+    'artemis-radiation-measure-cs',
 ]
 
-# ValueSets to extract (5 total)
+# ValueSets to extract (8 total)
 VALUESETS = [
     'artemis-mission-vs',
     'artemis-landing-region-vs',
     'artemis-certified-devices-vs',
     'artemis-prototype-devices-vs',
     'artemis-all-devices-vs',
+    'shielding-condition-vs',
+    'location-type-vs',
+    'artemis-radiation-measure-vs',
 ]
 
 

@@ -13,7 +13,8 @@ CodeSystem: SpaceMotionSicknessCS
 Id: space-motion-sickness-cs
 Title: "Space Motion Sickness Code System"
 Description: "Types of motion sickness encountered in space travel and related vestibular disorders"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -26,7 +27,8 @@ CodeSystem: GraybielSeverityCS
 Id: graybiel-severity-cs
 Title: "Graybiel Motion Sickness Severity Scale"
 Description: "Modified Graybiel scale for grading motion sickness severity in spaceflight"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -40,7 +42,8 @@ CodeSystem: AntiemeticMedicationCS
 Id: antiemetic-medication-cs
 Title: "Antiemetic Medication Code System"
 Description: "Antiemetic medications used for space motion sickness prophylaxis and treatment"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -55,7 +58,8 @@ CodeSystem: SpaceAdverseEventCS
 Id: space-adverse-event-cs
 Title: "Space Adverse Event Code System"
 Description: "Adverse events associated with antiemetic and countermeasure medications in spaceflight"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -70,7 +74,8 @@ CodeSystem: AntiemeticProtocolCS
 Id: antiemetic-protocol-cs
 Title: "Antiemetic Protocol Code System"
 Description: "Protocols for antiemetic administration in spaceflight contexts"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -88,7 +93,7 @@ ValueSet: SpaceMotionSicknessVS
 Id: space-motion-sickness-vs
 Title: "Space Motion Sickness Value Set"
 Description: "Types of motion sickness in spaceflight"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceMotionSicknessCS
 * $sct#37031009 "Motion sickness"
@@ -97,7 +102,7 @@ ValueSet: GraybielSeverityVS
 Id: graybiel-severity-vs
 Title: "Graybiel Motion Sickness Severity Value Set"
 Description: "Graybiel severity grades for motion sickness"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system GraybielSeverityCS
 
@@ -105,7 +110,7 @@ ValueSet: AntiemeticMedicationVS
 Id: antiemetic-medication-vs
 Title: "Antiemetic Medication Value Set"
 Description: "Antiemetic medications for spaceflight use"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system AntiemeticMedicationCS
 
@@ -113,7 +118,7 @@ ValueSet: SpaceAdverseEventVS
 Id: space-adverse-event-vs
 Title: "Space Adverse Event Value Set"
 Description: "Adverse events from spaceflight medications"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceAdverseEventCS
 
@@ -121,7 +126,7 @@ ValueSet: AntiemeticProtocolVS
 Id: antiemetic-protocol-vs
 Title: "Antiemetic Protocol Value Set"
 Description: "Antiemetic administration protocols"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system AntiemeticProtocolCS
 

@@ -5,18 +5,20 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: mitre.fhir.spacehealth
 canonical: https://awatson1978.github.io/aerospace-medicine-ig
-name: Spaceflight Health Simulations - Reference Documentation
-# title: Aerospace Medicine
-description: Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.
+name: AerospaceMedicineIG
+title: Aerospace Medicine Implementation Guide
+description: FHIR R4 profiles, terminology, questionnaires and examples for aerospace medicine, covering astronaut health monitoring, flight-readiness screening, NASA medical requirements, mission and device registries, and environmental health telemetry for spaceflight and analog missions.
 status: draft # draft | active | retired | unknown
-version: 0.6.2
+experimental: true
+version: 0.7.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 dependencies:
   hl7.fhir.us.core: 4.0.0
   hl7.fhir.uv.sdc: 3.0.0
 copyrightYear: 2022+
+copyright: "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
+license: CC-BY-ND-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: MITRE
@@ -27,16 +29,10 @@ publisher:
 pages:
   index.md:
     title: Space Health Implementation Guide
-  # registry.md:
-  #  title: Health Registry
-  scenarios.md:
-    title: Scenarios
-  # synthea.md:
-  #   title: Synthea
   references.md:
     title: References
   eclss.md:
-    title: Environmental Control and Life Support Systems (ECLSS)
+    title: Life Support Systems (ECLSS) Telemetry
   biomes.md:
     title: Biospheres
   space-agriculture.md:
@@ -73,7 +69,7 @@ pages:
   blood-flow-restriction.md:
     title: Blood Flow Restriction Training
   crew-rescue.md:
-    title: Crew Rescue
+    title: Crew Evacuation and Emergency Response
   space-telemedicine.md:
     title: Space Telemedicine
   space-omics.md:
@@ -121,11 +117,11 @@ menu:
     Neurocognitive Monitoring: neurocognitive-monitoring.html
     Metabolic Hibernation: metabolic-hibernation.html
     Space Telemedicine: space-telemedicine.html
-    Crew Evacuation: crew-rescue.html
+    Crew Evacuation and Emergency Response: crew-rescue.html
     Cardiovascular Countermeasures: cardiovascular-countermeasures.html
     Blood Flow Restriction Training: blood-flow-restriction.html
   Environmental Monitoring: 
-    Life Support Systems: eclss.html
+    Life Support Systems (ECLSS): eclss.html
     Biospheres: biomes.html
     Space Agriculture: space-agriculture.html
     Planetary Protection: planetary-protection.html

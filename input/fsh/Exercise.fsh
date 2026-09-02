@@ -71,10 +71,14 @@ Description: "Individual exercise measurement (duration, intensity, heart rate, 
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    basePA 0..1 MS and
+    loinc 0..1 MS and
+    paTemp 0..1 MS and
     spaceModality 0..1 MS
 
-* code.coding[basePA] ^short = "Physical activity measurement type (LOINC or PA temp codes)"
+* code.coding[loinc] ^short = "Physical activity measurement type (LOINC)"
+* code.coding[loinc].system = $loinc
+* code.coding[paTemp] ^short = "Physical activity measurement type (Physical Activity IG temporary codes)"
+* code.coding[paTemp].system = $pa-temp
 * code.coding[spaceModality] ^short = "Space-specific exercise modality"
 * code.coding[spaceModality].system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs"
 
@@ -128,6 +132,7 @@ Description: "Panel observation grouping related exercise measures for a single 
     paPanel 1..1 MS
 
 * code.coding[paPanel] = $pa-temp#PAPanel "Physical activity panel"
+* code.coding[paPanel].system = $pa-temp
 * code.text MS
 
 * subject 1..1 MS
@@ -180,6 +185,7 @@ Description: "Weekly exercise volume derived from mission exercise sessions (EVS
     loinc 1..1 MS
 
 * code.coding[loinc] = $loinc#82290-8 "Frequency of moderate to vigorous aerobic physical activity"
+* code.coding[loinc].system = $loinc
 
 * subject 1..1 MS
 * subject only Reference(Astronaut)
@@ -247,7 +253,7 @@ ValueSet: EVSUnitsVS
 Id: evs-units-vs
 Title: "EVS Units"
 Description: "Units for Exercise Vital Sign measurements"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include $ucum#min/wk "minutes per week"
 * include $ucum#min "minutes"
@@ -256,7 +262,7 @@ ValueSet: SpacePerformanceMetricVS
 Id: space-performance-metric-vs
 Title: "Space Exercise Performance Metrics"
 Description: "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpacePerformanceMetricCS
 

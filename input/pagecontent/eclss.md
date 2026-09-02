@@ -130,7 +130,7 @@ typically). Tracking cumulative dose ensures no crew exceeds safety limits. It a
 
 * **radiation_alert_level** (string/enum) – Radiation alert status, e.g. "Nominal", "Elevated", "Storm". This can be derived from dose rate but is a useful high-level field. Relevance: It indicates if radiation levels have crossed set thresholds. For example, if >50 µSv/h, maybe "Elevated"; if a solar event pushes it >500 µSv/h, "Storm" might be declared. Crew actions (shelter, electronics shutdown) are tied to these levels.  
 
-  _Spacecraft notes:_ NASA procedures classify solar storm events and have go/no-go for EVAs based on radiation environment. An Orion deep-space mission might have a real-time "Storm Warning" indicator. In a unified API, this field distills complex data into an actio nable status (possibly fed by external space weather alerts too).  
+  _Spacecraft notes:_ NASA procedures classify solar storm events and have go/no-go for EVAs based on radiation environment. An Orion deep-space mission might have a real-time "Storm Warning" indicator. In a unified API, this field distills complex data into an actionable status (possibly fed by external space weather alerts too).  
 
 * **shielding_mode** (string) – Habitat shielding configuration. For instance, "Standard" vs "Storm Shelter". Relevance: Some spacecraft can optimize their configuration during radiation events – e.g., ISS crew can shelter in the heavily shielded Zvezda module during a solar flare. Orion plans to use its water and supplies to build a makeshift shelter. This field would indicate if the spacecraft/habitat is in a protective posture. It’s not a measure of environment, but a status that heavily influences crew dose.  
 
@@ -164,7 +164,7 @@ Examples of key limits:
 
 * **Temperature/Humidity**: From NASA-STD-3001: keep 18–27 °C, 25–75% RH for crew health.  Outside that, crew efficiency or safety is impacted, so alarms at those boundaries (with perhaps soft warnings outside comfort range 20–25 °C, 30–60% RH).  
 
-* **Contaminants**: SMAC tables provide a wealth of limit data . For instance, formaldehyde 7-day SMAC ~0.4 ppm【6†fig】; ammonia 24-hr SMAC ~30 ppm, 7-day ~15 ppm【6†fig】; carbon monoxide 1-hr SMAC ~40 ppm. These values guide the warning and emergency levels for those fields. Typically, the “emergency” would correspond to short-term SMAC (1-hr), and “warning” to long-term SMAC (7-day) being exceeded.  
+* **Contaminants**: SMAC tables provide a wealth of limit data . For instance, formaldehyde 7-day SMAC ~0.4 ppm; ammonia 24-hr SMAC ~30 ppm, 7-day ~15 ppm; carbon monoxide 1-hr SMAC ~40 ppm. These values guide the warning and emergency levels for those fields. Typically, the “emergency” would correspond to short-term SMAC (1-hr), and “warning” to long-term SMAC (7-day) being exceeded.  
 
 * **Radiation**: Agencies have per-event and annual limits. For example, a solar particle event might have a mission halt threshold if dose exceeds certain mSv in a short time. Long-term, NASA limits astronauts to a career dose (which is not one-size-fits-all due to individual limits, but on the order of a few hundred mSv). The alert levels can be tied to current rate (e.g. >1000 µSv/h definitely "Storm") or cumulative (e.g. if someone approaches 250 mSv on a year-long mission, that’s a flag).  
 

@@ -4,11 +4,13 @@
 
 Profile: SpaceLocation
 Parent: Location
+Id: space-location
 Title: "xGeo Locations"
 Description: "STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat."
 
 Profile: SpaceVehicle
 Parent: Location
+Id: space-vehicle
 Title: "Space Vehicle"
 Description: "STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)"
 
@@ -16,42 +18,56 @@ Instance: LocationInternationalSpaceStation
 InstanceOf: SpaceLocation
 Title: "Location - ISS"
 Description: "International Space Station - football field sized orbital space station in low earth orbit (LEO)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - ISS"
 
 Instance: LocationLunarGateway
 InstanceOf: SpaceLocation
 Title: "Location - Gateway"
 Description: "Lunar Gateway - outpost and transfer station in lunar orbit.  (Pending)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Gateway"
 
 Instance: LocationArtemisSpaceCamp
 InstanceOf: SpaceLocation
 Title: "Location - Artemis Space Camp"
 Description: "Artemis space camp (Pending)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Artemis Space Camp"
 
 Instance: LocationLunarVillage
 InstanceOf: SpaceLocation
 Title: "Location - Lunar Village"
 Description: "EU Lunar Village (Pending)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Lunar Village"
 
 Instance: LocationMirSpaceStation
 InstanceOf: SpaceLocation
 Title: "Location - Mir"
 Description: "Mir Space Station (Decomissioned)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Mir"
 
 Instance: LocationSpaceLabSpaceStation
 InstanceOf: SpaceLocation
 Title: "Location - Space Lab"
 Description: "Space Lab (Decomissioned)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Space Lab"
 
 Instance: LocationTaingong
 InstanceOf: SpaceLocation
 Title: "Location - Palace in the Sky"
 Description: "Palace in the Sky (Taingong)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Palace in the Sky"
 
 
@@ -59,6 +75,8 @@ Instance: LocationIcuBed
 InstanceOf: Location
 Title: "Location - ICU Bed"
 Description: "Intensive Care Unit - Bed"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - ICU Bed"
 
 
@@ -66,6 +84,8 @@ Instance: LocationIcuWard
 InstanceOf: Location
 Title: "Location - ICU Ward"
 Description: "Intensive Care Unit - Ward"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - ICU Ward"
 
 
@@ -73,6 +93,8 @@ Instance: LocationSoyez
 InstanceOf: Location
 Title: "Location - Soyez Capsule"
 Description: "Soyez capsule, part of the Korolev Design Bureau lunar landing flight system."
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Soyez Capsule"
 
 
@@ -81,6 +103,8 @@ Instance: LocationDragon
 InstanceOf: Location
 Title: "Location - Dragon Capsule"
 Description: "Dragon capsule, part of the SpaceX Crew Dragon flight system."
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Dragon Capsule"
 
 
@@ -88,6 +112,8 @@ Instance: LocationBiosphere2
 InstanceOf: Location
 Title: "Location - Biosphere2"
 Description: "Biosphere 2 ecology dome at University of Arizona"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Biosphere2"
 
 
@@ -95,30 +121,40 @@ Instance: LocationLunarBuggy
 InstanceOf: Location
 Title: "Location - LunarBuggy"
 Description: "Lunar buggy for the Artemis mission (GM / Lockheed Martin)"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - LunarBuggy"
 
 Instance: LocationCyberTruck
 InstanceOf: Location
 Title: "Location - Cyber Truck"
 Description: "Tesla cyber truck"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Cyber Truck"
 
 Instance: LocationAirlock1
 InstanceOf: Location
 Title: "Location - Airlock1"
 Description: "Airlock 1"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Airlock1"
 
 Instance: LocationSpaceGarage
 InstanceOf: Location
 Title: "Location - SpaceGarage1"
 Description: "Space Garage"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - SpaceGarage1"
 
 Instance: LocationLunarTent1
 InstanceOf: Location
 Title: "Location - Lunar Tent 1"
 Description: "Inflatable lunar tent with controlled atmosphere."
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Lunar Tent 1"
 
 
@@ -126,6 +162,8 @@ Instance: LocationCrater0
 InstanceOf: Location
 Title: "Location - Crater"
 Description: "Lunar crater with no known scientific or industrial uses."
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Crater"
 
 
@@ -133,42 +171,56 @@ Instance: LocationCrater1
 InstanceOf: Location
 Title: "Location - Ice Crater"
 Description: "Lunar crater containing ice"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Ice Crater"
 
 Instance: LocationCrater2
 InstanceOf: Location
 Title: "Location - Telescope Crater"
 Description: "Lunar crater suitable for a space telescope."
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Telescope Crater"
 
 Instance: LocationCrater3
 InstanceOf: Location
 Title: "Location - Habitat Crater"
 Description: "Lunar micro-crater suitable for habitat construction."
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Habitat Crater"
 
 Instance: LocationOrbitalReefSpaceStation
 InstanceOf: SpaceLocation
 Title: "Location - Orbital Reef"
 Description: "Orbital Reef Space Station"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Orbital Reef"
 
 Instance: LegangePoint2
 InstanceOf: SpaceLocation
 Title: "Location - Legrange Point 2"
 Description: "Legrange Point 2"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Legrange Point 2"
 
 Instance: KennedySpaceCenter
 InstanceOf: SpaceLocation
 Title: "Location - Kennedy Space Center"
 Description: "Kennedy Space Center, Florida"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Kennedy Space Center"
 
 Instance: LabToOrbit
 InstanceOf: SpaceLocation
 Title: "Location - Lab To Orbit"
 Description: "Lab To Orbit - Colorado"
+Usage: #example
+* insert ReferenceRecord
 * name = "Location - Lab To Orbit"
 
 
@@ -184,6 +236,8 @@ Instance: NASANeutralBuoyancyLaboratory
 InstanceOf: NeutralBuoyancyFacility
 Title: "NASA Neutral Buoyancy Laboratory"
 Description: "NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas"
+Usage: #example
+* insert ReferenceRecord
 * name = "NASA Neutral Buoyancy Laboratory (NBL)"
 * description = "202 x 102 x 40 feet deep training pool for EVA simulation"
 * address.line = "2101 NASA Parkway"
@@ -196,6 +250,8 @@ Instance: EuropeanAstronautCentreNBL
 InstanceOf: NeutralBuoyancyFacility  
 Title: "European Astronaut Centre NBL"
 Description: "ESA's neutral buoyancy facility in Cologne, Germany"
+Usage: #example
+* insert ReferenceRecord
 * name = "European Astronaut Centre NBL"
 * description = "Columbus Laboratory training facility with underwater EVA simulation"
 * address.city = "Cologne"
@@ -205,6 +261,8 @@ Instance: YuriGagarinCosmonautTrainingCenter
 InstanceOf: NeutralBuoyancyFacility
 Title: "Yuri Gagarin Cosmonaut Training Center"
 Description: "Russian cosmonaut training facility with underwater training capabilities"
+Usage: #example
+* insert ReferenceRecord
 * name = "Yuri Gagarin Cosmonaut Training Center"
 * description = "Star City underwater training complex"
 * address.city = "Star City"
@@ -214,6 +272,8 @@ Instance: CSADavidFloridaLaboratory
 InstanceOf: NeutralBuoyancyFacility
 Title: "CSA David Florida Laboratory"
 Description: "Canadian Space Agency testing facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "David Florida Laboratory"
 * description = "Canadian space systems testing and training facility"
 * address.city = "Ottawa"
@@ -225,6 +285,8 @@ Instance: BrooksAerospaceMedicine
 InstanceOf: Location
 Title: "Brooks School of Aerospace Medicine"
 Description: "USAF School of Aerospace Medicine hyperbaric facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Brooks School of Aerospace Medicine"
 * description = "Military aerospace medicine training and hyperbaric treatment center"
 * address.city = "San Antonio"
@@ -235,6 +297,8 @@ Instance: NavalMedicalResearchUnit
 InstanceOf: Location
 Title: "Naval Medical Research Unit"
 Description: "US Navy diving medicine and hyperbaric research facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Naval Medical Research Unit Dayton"
 * description = "Navy diving medicine research and hyperbaric treatment"
 * address.city = "Dayton"
@@ -245,6 +309,8 @@ Instance: UniversityOfPennsylvaniaHyperbaric
 InstanceOf: Location
 Title: "University of Pennsylvania Hyperbaric Center"
 Description: "Academic hyperbaric medicine and research center"
+Usage: #example
+* insert ReferenceRecord
 * name = "University of Pennsylvania Hyperbaric Center"
 * description = "Academic medical center with hyperbaric chambers"
 * address.city = "Philadelphia"
@@ -259,6 +325,8 @@ Instance: AquariusUnderwaterLaboratory
 InstanceOf: Location
 Title: "Aquarius Underwater Laboratory"
 Description: "NOAA's Aquarius underwater research station used for NEEMO missions"
+Usage: #example
+* insert ReferenceRecord
 * name = "Aquarius Underwater Laboratory"
 * description = "Underwater habitat 62 feet deep off Key Largo for saturation diving training"
 * address.city = "Key Largo"
@@ -269,6 +337,8 @@ Instance: Biosphere2UnderseaHabitat
 InstanceOf: Location
 Title: "Biosphere 2 Undersea Habitat"
 Description: "University of Arizona Biosphere 2 analog training facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Biosphere 2 Analog Research Facility"
 * description = "Closed ecological system and analog training environment"
 * address.city = "Oracle"
@@ -279,6 +349,8 @@ Instance: CHESAUnderseaLaboratory
 InstanceOf: Location
 Title: "CHESA Undersea Laboratory"
 Description: "Commercial underwater training facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Commercial Hyperbaric Emergency Services Association (CHESA)"
 * description = "Commercial diving medicine and emergency response training"
 * address.city = "Morgan City"
@@ -293,6 +365,8 @@ Instance: InternationalSpaceStationCupola
 InstanceOf: SpaceLocation
 Title: "ISS Cupola Module"
 Description: "International Space Station Cupola observation module"
+Usage: #example
+* insert ReferenceRecord
 * name = "ISS Cupola"
 * description = "Seven-windowed observatory module for Earth observation and spacecraft operations"
 
@@ -300,6 +374,8 @@ Instance: InternationalSpaceStationUnity
 InstanceOf: SpaceLocation
 Title: "ISS Unity Node"
 Description: "International Space Station Unity connecting node"
+Usage: #example
+* insert ReferenceRecord
 * name = "ISS Unity Node"
 * description = "Central connecting module with life support and crew quarters"
 
@@ -307,6 +383,8 @@ Instance: InternationalSpaceStationDestiny
 InstanceOf: SpaceLocation
 Title: "ISS Destiny Laboratory"
 Description: "International Space Station US laboratory module"
+Usage: #example
+* insert ReferenceRecord
 * name = "ISS Destiny Laboratory"
 * description = "Primary US research laboratory module"
 
@@ -314,6 +392,8 @@ Instance: InternationalSpaceStationColumbus
 InstanceOf: SpaceLocation
 Title: "ISS Columbus Laboratory"
 Description: "International Space Station European laboratory module"
+Usage: #example
+* insert ReferenceRecord
 * name = "ISS Columbus Laboratory"
 * description = "European Space Agency research laboratory module"
 
@@ -321,6 +401,8 @@ Instance: InternationalSpaceStationKibo
 InstanceOf: SpaceLocation
 Title: "ISS Kibo Laboratory"
 Description: "International Space Station Japanese laboratory module"
+Usage: #example
+* insert ReferenceRecord
 * name = "ISS Kibo Laboratory Complex"
 * description = "Japanese Experiment Module with external platform"
 
@@ -328,6 +410,8 @@ Instance: InternationalSpaceStationZvezda
 InstanceOf: SpaceLocation
 Title: "ISS Zvezda Service Module"
 Description: "International Space Station Russian service module with enhanced shielding"
+Usage: #example
+* insert ReferenceRecord
 * name = "ISS Zvezda Service Module"
 * description = "Russian service module providing life support and crew quarters"
 
@@ -336,6 +420,8 @@ Instance: CrewDragonEndeavour
 InstanceOf: SpaceVehicle
 Title: "Crew Dragon Endeavour"
 Description: "SpaceX Crew Dragon spacecraft Endeavour"
+Usage: #example
+* insert ReferenceRecord
 * name = "Crew Dragon Endeavour"
 * description = "SpaceX commercial crew vehicle for ISS transportation"
 
@@ -343,6 +429,8 @@ Instance: CrewDragonResilience
 InstanceOf: SpaceVehicle
 Title: "Crew Dragon Resilience"
 Description: "SpaceX Crew Dragon spacecraft Resilience"
+Usage: #example
+* insert ReferenceRecord
 * name = "Crew Dragon Resilience"
 * description = "SpaceX commercial crew vehicle for long-duration missions"
 
@@ -350,6 +438,8 @@ Instance: SoyuzMS
 InstanceOf: SpaceVehicle
 Title: "Soyuz MS Spacecraft"
 Description: "Russian Soyuz MS crew vehicle"
+Usage: #example
+* insert ReferenceRecord
 * name = "Soyuz MS"
 * description = "Russian three-person crew vehicle for ISS access"
 
@@ -357,6 +447,8 @@ Instance: StarlinerCalypso
 InstanceOf: SpaceVehicle
 Title: "Boeing Starliner Calypso"
 Description: "Boeing CST-100 Starliner spacecraft"
+Usage: #example
+* insert ReferenceRecord
 * name = "Boeing Starliner Calypso"
 * description = "Boeing commercial crew vehicle for ISS missions"
 
@@ -368,6 +460,8 @@ Instance: LunarGatewayHALO
 InstanceOf: SpaceLocation
 Title: "Lunar Gateway HALO Module"
 Description: "Lunar Gateway Habitation and Logistics Outpost"
+Usage: #example
+* insert ReferenceRecord
 * name = "Gateway HALO (Habitation and Logistics Outpost)"
 * description = "Primary crew quarters and life support for Lunar Gateway station"
 
@@ -375,6 +469,8 @@ Instance: LunarGatewayPPE
 InstanceOf: SpaceLocation
 Title: "Lunar Gateway Power and Propulsion Element"
 Description: "Lunar Gateway Power and Propulsion Element"
+Usage: #example
+* insert ReferenceRecord
 * name = "Gateway PPE (Power and Propulsion Element)"
 * description = "Solar electric propulsion and power generation for Gateway"
 
@@ -382,6 +478,8 @@ Instance: ArtemisBaseCampHabitat
 InstanceOf: SpaceLocation
 Title: "Artemis Base Camp Habitat"
 Description: "Artemis lunar surface habitat module"
+Usage: #example
+* insert ReferenceRecord
 * name = "Artemis Base Camp Habitat"
 * description = "Pressurized lunar surface habitat for extended stays"
 
@@ -389,6 +487,8 @@ Instance: LunarSouthPoleBases
 InstanceOf: SpaceLocation
 Title: "Lunar South Pole Base"
 Description: "Permanent lunar base near the South Pole"
+Usage: #example
+* insert ReferenceRecord
 * name = "Lunar South Pole Research Station"
 * description = "Permanent research facility with access to water ice deposits"
 
@@ -396,6 +496,8 @@ Instance: ShackletonCraterBase
 InstanceOf: SpaceLocation
 Title: "Shackleton Crater Base"
 Description: "Research station at Shackleton Crater rim"
+Usage: #example
+* insert ReferenceRecord
 * name = "Shackleton Crater Research Station"
 * description = "Research facility for lunar ice mining and astronomy"
 
@@ -404,6 +506,8 @@ Instance: MarsTransitVehicle
 InstanceOf: SpaceVehicle
 Title: "Mars Transit Vehicle"
 Description: "Deep space transport for Mars missions"
+Usage: #example
+* insert ReferenceRecord
 * name = "Mars Transit Vehicle"
 * description = "Long-duration spacecraft for interplanetary travel"
 
@@ -411,6 +515,8 @@ Instance: MarsAscentVehicle
 InstanceOf: SpaceVehicle
 Title: "Mars Ascent Vehicle"
 Description: "Mars surface to orbit transport"
+Usage: #example
+* insert ReferenceRecord
 * name = "Mars Ascent Vehicle"
 * description = "Single-stage vehicle for Mars surface departure"
 
@@ -418,6 +524,8 @@ Instance: MarsBaseAlpha
 InstanceOf: SpaceLocation
 Title: "Mars Base Alpha"
 Description: "First permanent Mars surface base"
+Usage: #example
+* insert ReferenceRecord
 * name = "Mars Base Alpha"
 * description = "Primary human settlement on Mars surface"
 
@@ -429,6 +537,8 @@ Instance: JamesWebbSpaceTelescope
 InstanceOf: SpaceLocation
 Title: "James Webb Space Telescope Location"
 Description: "James Webb Space Telescope at Sun-Earth L2"
+Usage: #example
+* insert ReferenceRecord
 * name = "James Webb Space Telescope (L2)"
 * description = "Deep space observatory at Lagrange Point 2"
 
@@ -436,6 +546,8 @@ Instance: SunEarthL1Station
 InstanceOf: SpaceLocation
 Title: "Sun-Earth L1 Observatory"
 Description: "Space weather monitoring station at L1"
+Usage: #example
+* insert ReferenceRecord
 * name = "Sun-Earth L1 Observatory"
 * description = "Solar observation and space weather early warning station"
 
@@ -443,6 +555,8 @@ Instance: EarthMoonL4L5Stations
 InstanceOf: SpaceLocation
 Title: "Earth-Moon L4/L5 Stations"
 Description: "Space habitats at Earth-Moon Lagrange points"
+Usage: #example
+* insert ReferenceRecord
 * name = "Earth-Moon Lagrange Point Stations"
 * description = "O'Neill cylinder space habitats at stable Lagrange points"
 
@@ -455,6 +569,8 @@ Instance: EdwardsAirForceBase
 InstanceOf: Location
 Title: "Edwards Air Force Base"
 Description: "USAF Test Pilot School and aerospace medicine research"
+Usage: #example
+* insert ReferenceRecord
 * name = "Edwards Air Force Base"
 * description = "Flight test center with aerospace medicine research capabilities"
 * address.city = "Edwards"
@@ -465,6 +581,8 @@ Instance: PatuxentRiverNavalAirStation
 InstanceOf: Location
 Title: "Patuxent River Naval Air Station"
 Description: "US Navy Test Pilot School"
+Usage: #example
+* insert ReferenceRecord
 * name = "Naval Air Station Patuxent River"
 * description = "Navy test pilot training with altitude chambers"
 * address.city = "Patuxent River"
@@ -476,6 +594,8 @@ Instance: BrooksAltitudeChamber
 InstanceOf: Location
 Title: "Brooks Altitude Chamber"
 Description: "High-altitude environmental training facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Brooks Altitude Chamber Complex"
 * description = "Hypobaric chambers for altitude and pressure training"
 * address.city = "San Antonio"
@@ -486,6 +606,8 @@ Instance: WrightPattersonAerospaceResearch
 InstanceOf: Location
 Title: "Wright-Patterson Aerospace Research Laboratory"
 Description: "USAF aerospace medicine research facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Wright-Patterson AFB Aerospace Research Laboratory"
 * description = "Advanced aerospace medicine research and training"
 * address.city = "Dayton"
@@ -497,6 +619,8 @@ Instance: NASAAmesResearchCenter
 InstanceOf: Location
 Title: "NASA Ames Research Center"
 Description: "NASA Ames centrifuge and spatial disorientation research"
+Usage: #example
+* insert ReferenceRecord
 * name = "NASA Ames Research Center"
 * description = "20G centrifuge and spatial disorientation research facility"
 * address.city = "Mountain View"
@@ -507,6 +631,8 @@ Instance: ESACentrfugeCologne
 InstanceOf: Location
 Title: "ESA Human Centrifuge"
 Description: "European Space Agency centrifuge facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "ESA Human Centrifuge"
 * description = "8m radius centrifuge for astronaut training and research"
 * address.city = "Cologne"
@@ -516,6 +642,8 @@ Instance: NASCOMRussianCentrifuge
 InstanceOf: Location
 Title: "TsPK Centrifuge Complex"
 Description: "Russian cosmonaut centrifuge training facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "TsPK Centrifuge Complex"
 * description = "18m radius centrifuge for high-G training"
 * address.city = "Star City"
@@ -530,6 +658,8 @@ Instance: UTMBAerospaceResearch
 InstanceOf: Location
 Title: "UTMB Aerospace Medicine Research"
 Description: "University of Texas Medical Branch aerospace medicine program"
+Usage: #example
+* insert ReferenceRecord
 * name = "UTMB Aerospace Medicine Division"
 * description = "Academic aerospace medicine research and residency training"
 * address.city = "Galveston"
@@ -540,6 +670,8 @@ Instance: MayoAerospaceMedicine
 InstanceOf: Location
 Title: "Mayo Clinic Aerospace Medicine"
 Description: "Mayo Clinic aerospace medicine and altitude research"
+Usage: #example
+* insert ReferenceRecord
 * name = "Mayo Clinic Aerospace Medicine"
 * description = "Civilian aerospace medicine practice and research"
 * address.city = "Rochester"
@@ -550,6 +682,8 @@ Instance: KSCMedicalFacility
 InstanceOf: Location
 Title: "Kennedy Space Center Medical Facility"
 Description: "KSC astronaut medical support facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "Kennedy Space Center Medical Operations"
 * description = "Pre-launch and post-landing medical support"
 * address.city = "Cape Canaveral"
@@ -561,6 +695,8 @@ Instance: DLRAerospaceMedicine
 InstanceOf: Location
 Title: "DLR Institute of Aerospace Medicine"
 Description: "German Aerospace Center medical research institute"
+Usage: #example
+* insert ReferenceRecord
 * name = "DLR Institute of Aerospace Medicine"
 * description = "European aerospace medicine research and astronaut medical support"
 * address.city = "Cologne"
@@ -570,6 +706,8 @@ Instance: JAXASpaceBiomedicalResearch
 InstanceOf: Location
 Title: "JAXA Space Biomedical Research Office"
 Description: "Japan Aerospace Exploration Agency medical research"
+Usage: #example
+* insert ReferenceRecord
 * name = "JAXA Space Biomedical Research Office"
 * description = "Japanese space medicine research and astronaut medical support"
 * address.city = "Tsukuba"
@@ -579,6 +717,8 @@ Instance: CSALifeSciencesResearch
 InstanceOf: Location
 Title: "CSA Life Sciences Research"
 Description: "Canadian Space Agency life sciences research division"
+Usage: #example
+* insert ReferenceRecord
 * name = "Canadian Space Agency Life Sciences"
 * description = "Canadian space medicine and life sciences research"
 * address.city = "Saint-Hubert"
@@ -594,6 +734,8 @@ Instance: SpaceXHawthorneFactory
 InstanceOf: Location
 Title: "SpaceX Hawthorne Factory"
 Description: "SpaceX manufacturing and mission control facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "SpaceX Hawthorne Facility"
 * description = "Dragon spacecraft manufacturing and mission operations"
 * address.city = "Hawthorne"
@@ -604,6 +746,8 @@ Instance: SpaceXBocaChica
 InstanceOf: Location
 Title: "SpaceX Starbase"
 Description: "SpaceX Starship development and launch facility"
+Usage: #example
+* insert ReferenceRecord
 * name = "SpaceX Starbase"
 * description = "Starship and Super Heavy development facility"
 * address.city = "Boca Chica"
@@ -615,6 +759,8 @@ Instance: BlueOriginWestTexas
 InstanceOf: Location
 Title: "Blue Origin West Texas Facility"
 Description: "Blue Origin suborbital flight operations"
+Usage: #example
+* insert ReferenceRecord
 * name = "Blue Origin West Texas"
 * description = "New Shepard suborbital tourist flights and crew training"
 * address.city = "Van Horn"
@@ -626,6 +772,8 @@ Instance: VirginGalacticSpaceport
 InstanceOf: Location
 Title: "Spaceport America"
 Description: "Virgin Galactic commercial spaceport"
+Usage: #example
+* insert ReferenceRecord
 * name = "Spaceport America"
 * description = "Commercial suborbital spaceflight operations"
 * address.city = "Truth or Consequences"
@@ -671,7 +819,8 @@ CodeSystem: OperationalStatusCS
 Id: operational-status-cs
 Title: "Operational Status Code System"
 Description: "Operational status codes for facilities and vehicles"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -696,7 +845,8 @@ CodeSystem: LocationCapabilitiesCS
 Id: location-capabilities-cs
 Title: "Location Capabilities Code System"
 Description: "Capabilities and services available at aerospace medicine locations"
-* ^experimental = false
+* ^count = 14
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -728,7 +878,7 @@ ValueSet: OperationalStatusVS
 Id: operational-status-vs
 Title: "Operational Status Value Set"
 Description: "Operational status codes for facilities and vehicles"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Aerospace Medicine"
@@ -741,7 +891,7 @@ ValueSet: LocationCapabilitiesVS
 Id: location-capabilities-vs
 Title: "Location Capabilities Value Set"
 Description: "Capabilities and services available at aerospace medicine locations"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Aerospace Medicine"

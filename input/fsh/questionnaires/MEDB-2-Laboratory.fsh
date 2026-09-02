@@ -29,6 +29,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 2.1 Routine Laboratory Panel"
 Description: "NASA Medical Requirements Integration Document for routine laboratory panel. Captures comprehensive blood chemistry, hematology, and urinalysis data for spaceflight crew members."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-1-routine-lab-panel"
 * version = "1.0.0"
@@ -400,6 +401,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 2.2 MRSA Screening"
 Description: "NASA Medical Requirements Integration Document for MRSA screening. Screens crew members for Methicillin-resistant Staphylococcus aureus colonization prior to spaceflight."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-2-mrsa-screening"
 * version = "1.0.0"
@@ -585,6 +587,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 2.3 Tuberculosis Testing"
 Description: "NASA Medical Requirements Integration Document for tuberculosis screening. Screens crew members for TB infection prior to spaceflight."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-3-tb-testing"
 * version = "1.0.0"
@@ -672,7 +675,7 @@ Usage: #definition
 * item[2].item[1].code = $loinc#71773-6 "Mycobacterium tuberculosis stimulated gamma interferon [Presence] in Blood"
 * item[2].item[1].answerOption[0].valueCoding = $sct#260385009 "Negative"
 * item[2].item[1].answerOption[1].valueCoding = $sct#10828004 "Positive"
-* item[2].item[1].answerOption[2].valueCoding = $sct#419984006 "Indeterminate"
+* item[2].item[1].answerOption[2].valueCoding = $sct#419984006 "Inconclusive"
 
 * item[2].item[2].linkId = "tb-results.tst-induration"
 * item[2].item[2].text = "TST Induration (mm)"
@@ -726,6 +729,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 2.4 H. pylori Screening"
 Description: "NASA Medical Requirements Integration Document for Helicobacter pylori screening. Screens crew members for H. pylori infection prior to long-duration spaceflight."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-4-hpylori-screening"
 * version = "1.0.0"
@@ -813,7 +817,7 @@ Usage: #definition
 * item[2].item[1].code = $loinc#17780-8 "Helicobacter pylori Ab [Presence] in Serum"
 * item[2].item[1].answerOption[0].valueCoding = $sct#260385009 "Negative"
 * item[2].item[1].answerOption[1].valueCoding = $sct#10828004 "Positive"
-* item[2].item[1].answerOption[2].valueCoding = $sct#419984006 "Equivocal"
+* item[2].item[1].answerOption[2].valueCoding = $sct#419984006 "Inconclusive"
 
 * item[2].item[2].linkId = "hpylori-results.treatment-required"
 * item[2].item[2].text = "Eradication Treatment Required"

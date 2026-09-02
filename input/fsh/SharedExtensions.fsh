@@ -13,7 +13,8 @@ CodeSystem: GravityContextCS
 Id: gravity-context-cs
 Title: "Gravity Context Code System"
 Description: "Gravitational environment contexts for observations and procedures"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -29,7 +30,8 @@ CodeSystem: MissionPhaseCS
 Id: mission-phase-cs
 Title: "Mission Phase Code System"
 Description: "Phases of a space mission for temporal context of clinical observations"
-* ^experimental = false
+* ^count = 10
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -52,7 +54,7 @@ ValueSet: GravityContextVS
 Id: gravity-context-vs
 Title: "Gravity Context Value Set"
 Description: "Gravitational environments for clinical context"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system GravityContextCS
 
@@ -60,7 +62,7 @@ ValueSet: MissionPhaseVS
 Id: mission-phase-vs
 Title: "Mission Phase Value Set"
 Description: "Phases of a space mission"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system MissionPhaseCS
 
@@ -72,19 +74,8 @@ Extension: GravityContext
 Id: gravity-context
 Title: "Gravity Context"
 Description: "Gravitational environment in which the observation, condition, or procedure occurred"
+Context: Observation, Condition, Procedure, MedicationAdministration, CarePlan, DeviceDefinition, Specimen, Device
 * ^status = #active
-* ^context[0].type = #element
-* ^context[0].expression = "Observation"
-* ^context[1].type = #element
-* ^context[1].expression = "Condition"
-* ^context[2].type = #element
-* ^context[2].expression = "Procedure"
-* ^context[3].type = #element
-* ^context[3].expression = "MedicationAdministration"
-* ^context[4].type = #element
-* ^context[4].expression = "CarePlan"
-* ^context[5].type = #element
-* ^context[5].expression = "DeviceDefinition"
 * value[x] only CodeableConcept
 * valueCodeableConcept from GravityContextVS (extensible)
 
@@ -92,19 +83,8 @@ Extension: MissionPhase
 Id: mission-phase
 Title: "Mission Phase"
 Description: "Phase of the space mission during which the clinical event occurred"
+Context: Observation, Procedure, Condition, MedicationAdministration, CarePlan, RiskAssessment
 * ^status = #active
-* ^context[0].type = #element
-* ^context[0].expression = "Observation"
-* ^context[1].type = #element
-* ^context[1].expression = "Procedure"
-* ^context[2].type = #element
-* ^context[2].expression = "Condition"
-* ^context[3].type = #element
-* ^context[3].expression = "MedicationAdministration"
-* ^context[4].type = #element
-* ^context[4].expression = "CarePlan"
-* ^context[5].type = #element
-* ^context[5].expression = "RiskAssessment"
 * value[x] only CodeableConcept
 * valueCodeableConcept from MissionPhaseVS (extensible)
 
@@ -112,13 +92,8 @@ Extension: FlightDay
 Id: flight-day
 Title: "Flight Day"
 Description: "Flight day number relative to launch. Positive values indicate flight days (FD+N), negative values indicate return days (R+N)"
+Context: Observation, Procedure, Condition, AdverseEvent, MedicationAdministration
 * ^status = #active
-* ^context[0].type = #element
-* ^context[0].expression = "Observation"
-* ^context[1].type = #element
-* ^context[1].expression = "Procedure"
-* ^context[2].type = #element
-* ^context[2].expression = "Condition"
 * value[x] only integer
 * valueInteger ^short = "Flight day number (FD+N) or return day (R+N as negative)"
 
@@ -126,8 +101,29 @@ Extension: EvidenceSource
 Id: evidence-source
 Title: "Evidence Source"
 Description: "Links clinical data to research evidence sources such as SHARED database entries or PubMed references"
+Context: Element
 * ^status = #active
-* ^context[0].type = #element
-* ^context[0].expression = "Resource"
 * value[x] only uri
 * valueUri ^short = "URI reference to evidence source (PubMed, SHARED database, etc.)"
+
+
+// =====================================================
+// PROVENANCE RULE SETS
+// Every example instance in this guide carries meta.source so consumers can
+// tell synthetic test data, fictional characters, and public-record reference
+// data apart. HTEST marks resources that must never be treated as real patient data.
+// =====================================================
+
+RuleSet: SyntheticExample
+* meta.source = "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"
+* meta.tag = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST "test health data"
+
+RuleSet: FictionalExample
+* meta.source = "https://awatson1978.github.io/aerospace-medicine-ig/provenance/fictional"
+* meta.tag = http://terminology.hl7.org/CodeSystem/v3-ActReason#HTEST "test health data"
+
+RuleSet: ReferenceRecord
+* meta.source = "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record"
+
+RuleSet: PublicRecord(source)
+* meta.source = "{source}"

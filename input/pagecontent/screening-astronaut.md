@@ -24,7 +24,7 @@ Additional evaluations include:
 - Sensorimotor function and behavioral health
 - Cognition and immune status
 - Bone density and radiation exposure history
-- EKGs, vision/hearing tests, pulmonary function, lab panels, imaging (MRI/colonoscopy):contentReference[oaicite:0]{index=0}
+- EKGs, vision/hearing tests, pulmonary function, lab panels, imaging (MRI/colonoscopy)
 
 Certain conditions (e.g. kidney stones, arrhythmias) may disqualify candidates. Astronauts are re-certified annually.
 
@@ -34,13 +34,13 @@ Agencies like ESA require a Class 2 (private pilot) medical certificate and have
 
 - Physical/dental exams
 - Vision/auditory/psychiatric evaluations
-- Extensive lab and cardiopulmonary tests:contentReference[oaicite:1]{index=1}
+- Extensive lab and cardiopulmonary tests
 
 ### Commercial Spaceflight Participant Medical Screening
 
 #### Regulatory Context
 
-As of 2025, FAA does not enforce formal health rules for space tourists due to a Congressional moratorium lasting until at least 2028. Each company sets its own criteria. FAA’s 2006 guidance suggests a risk-based approach depending on flight profile:contentReference[oaicite:2]{index=2}.
+As of 2025, FAA does not enforce formal health rules for space tourists due to a Congressional moratorium lasting until at least 2028. Each company sets its own criteria. FAA’s 2006 guidance suggests a risk-based approach depending on flight profile.
 
 ##### Suborbital Flights (≤3 Gs)
 
@@ -54,7 +54,7 @@ As of 2025, FAA does not enforce formal health rules for space tourists due to a
 - Lab tests (EKG, blood chemistry, chest X-ray, etc.)
 - Re-check within 1–2 weeks of launch
 
-NASA’s OCHMO-STD-100.1A (2022) adds psychosocial history, lifestyle review, infectious disease screening, imaging, cardiac and psychological assessments:contentReference[oaicite:3]{index=3}.
+NASA’s OCHMO-STD-100.1A (2022) adds psychosocial history, lifestyle review, infectious disease screening, imaging, cardiac and psychological assessments.
 
 #### Commercial Provider Practices
 
@@ -64,7 +64,7 @@ Orbital missions (e.g., Inspiration4, Ax-1) follow NASA/ISS standards, including
 
 - Centrifuge training
 - Medical clearance by aerospace medicine professionals
-- Participants may include individuals with controlled medical conditions:contentReference[oaicite:4]{index=4}
+- Participants may include individuals with controlled medical conditions
 
 ##### Blue Origin
 
@@ -74,7 +74,7 @@ Suborbital hops (New Shepard) require:
 - Fit within anthropometric limits (5’0”–6’4”, 110–223 lbs)
 - Health questionnaire reviewed by in-house medical team
 
-No formal medical exam unless indicated. Has flown passengers in their 70s–80s:contentReference[oaicite:5]{index=5}.
+No formal medical exam unless indicated. Has flown passengers in their 70s–80s.
 
 ##### Virgin Galactic
 
@@ -83,11 +83,11 @@ Also suborbital. Requirements include:
 - Health questionnaire
 - Brief medical review during pre-flight training
 - Light screening unless red flags arise
-- Assumes standard conditions (e.g., well-controlled hypertension) are acceptable:contentReference[oaicite:6]{index=6}
+- Assumes standard conditions (e.g., well-controlled hypertension) are acceptable
 
 ##### Other Providers
 
-Companies like Axiom Space adhere to NASA/ISS guidelines. Boeing/SpaceX ISS missions follow NASA screening. Future orbital flights may blend these models. Aerospace Medical Association is developing voluntary standards:contentReference[oaicite:7]{index=7}.
+Companies like Axiom Space adhere to NASA/ISS guidelines. Boeing/SpaceX ISS missions follow NASA screening. Future orbital flights may blend these models. Aerospace Medical Association is developing voluntary standards.
 
 ### FAA Form 8500-8 and Spaceflight Readiness
 
@@ -103,7 +103,7 @@ Spaceflight-specific modifications may include:
 - Pregnancy status
 - Fitness and stress tests (e.g., treadmill, ergometer)
 
-The structure offers a model for FHIR-based spaceflight medical forms:contentReference[oaicite:8]{index=8}.
+The structure offers a model for FHIR-based spaceflight medical forms.
 
 ### FHIR-Based Medical Questionnaire Design
 
@@ -133,7 +133,7 @@ Each condition as a yes/no item:
 - Allergies
 - Orthopedic/mobility
 - Surgeries/hospitalizations
-- Recent medical care:contentReference[oaicite:9]{index=9}
+- Recent medical care
 
 #### 4. Family History (Optional)
 

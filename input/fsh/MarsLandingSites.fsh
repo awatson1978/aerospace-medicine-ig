@@ -10,28 +10,24 @@ Alias: $ucum = http://unitsofmeasure.org
 CodeSystem: MarsLandingSitesCS
 Id: mars-landing-sites-cs
 Title: "Mars Landing Sites (Candidate)"
-Description: "Candidate landing sites for human Mars missions with are
-
-ographic coordinates and site characteristics"
+Description: "Candidate landing sites for human Mars missions with areographic coordinates and site characteristics"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
+* ^count = 6
 
 // Coordinate properties
 * ^property[0].code = #latitude
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs#latitude"
 * ^property[=].description = "Areographic latitude (degrees, -90 to +90)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #longitude
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs#longitude"
 * ^property[=].description = "Areographic longitude (degrees, 0 to 360)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #feature
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs#feature"
 * ^property[=].description = "Primary topographic feature"
 * ^property[=].type = #string
 
@@ -100,5 +96,5 @@ Title: "Mars Landing Sites"
 Description: "Candidate landing sites for human Mars missions"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * include codes from system MarsLandingSitesCS

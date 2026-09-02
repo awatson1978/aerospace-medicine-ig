@@ -2,9 +2,9 @@
 
 ### Overview
 
-In 1961, Soviet cosmonaut Yuri Gagarin became the first human in spacehis mission lasted just 108 minutes. Today, astronauts routinely spend six months or more aboard the International Space Station, and future Mars missions will require crews to endure **two to three years** in deep space, isolated from Earth, confined in small habitats, and facing communication delays of up to 20 minutes each way. The question that haunts mission planners is not whether the crew can survive physically, but whether they can remain psychologically intact. History provides sobering lessons: Antarctic winter-over crews have experienced depression, interpersonal conflicts escalating to violence, and cognitive decline. Submarine crews report similar patterns. In space, where there is no escape, no privacy, and no easy rescue, a behavioral health crisis could doom an entire mission.
+In 1961, Soviet cosmonaut Yuri Gagarin became the first human in space—his mission lasted just 108 minutes. Today, astronauts routinely spend six months or more aboard the International Space Station, and future Mars missions will require crews to endure **two to three years** in deep space, isolated from Earth, confined in small habitats, and facing communication delays of up to 20 minutes each way. The question that haunts mission planners is not whether the crew can survive physically, but whether they can remain psychologically intact. History provides sobering lessons: Antarctic winter-over crews have experienced depression, interpersonal conflicts escalating to violence, and cognitive decline. Submarine crews report similar patterns. In space, where there is no escape, no privacy, and no easy rescue, a behavioral health crisis could doom an entire mission.
 
-Unlike radiation exposure or bone losswhich accumulate predictably and can be measured with instruments**psychological stress is invisible, cumulative, and deeply personal**. An astronaut might report feeling fine while their cortisol levels climb, their sleep fragments, and their reaction times slow. Crew members trained to be stoic and high-performing often suppress emotional distress until it erupts in critical moments. This module recognizes that mental health in space requires the same systematic, data-driven approach as physical health: **continuous monitoring, evidence-based countermeasures, and longitudinal tracking across missions**treating psychological wellbeing not as a soft skill, but as a mission-critical physiological system.
+Unlike radiation exposure or bone loss—which accumulate predictably and can be measured with instruments—**psychological stress is invisible, cumulative, and deeply personal**. An astronaut might report feeling fine while their cortisol levels climb, their sleep fragments, and their reaction times slow. Crew members trained to be stoic and high-performing often suppress emotional distress until it erupts in critical moments. This module recognizes that mental health in space requires the same systematic, data-driven approach as physical health: **continuous monitoring, evidence-based countermeasures, and longitudinal tracking across missions**—treating psychological wellbeing not as a soft skill, but as a mission-critical physiological system.
 
 
 ### FHIR Implementation Architecture
@@ -18,7 +18,7 @@ Unlike radiation exposure or bone losswhich accumulate predictably and can be m
 | **PsychologicalCountermeasureActivity** | Mental health interventions | CBT sessions, meditation, bright light therapy, pharmacologic support |
 | **IsolationRiskFactor** | Confinement and psychosocial stressors | Factors like interpersonal friction, sensory monotony, communication latency |
 
-These profiles follow the same architectural patterns as radiation dosimetry and nutrition trackingseparating individual measurements, cumulative burden, and intervention documentation while linking all to mission context.
+These profiles follow the same architectural patterns as radiation dosimetry and nutrition tracking—separating individual measurements, cumulative burden, and intervention documentation while linking all to mission context.
 
 #### Data Architecture
 
@@ -54,7 +54,7 @@ Integration with existing terminologies:
 
 ### Physiologic and Environmental Considerations
 
-The psychological challenges of spaceflight are not abstract stressorsthey are **concrete, measurable physiologic responses** to an environment fundamentally hostile to human psychology. Picture an astronaut three months into a six-month mission: they wake in a sleeping bag attached to a wall, work shoulder-to-shoulder with the same five people they'll see every day for three more months, hear the constant hum of life support systems, smell the same recycled air, and look out the window to see the same view of Earth rotating below. There is no weather, no seasons, no spontaneity, no privacy. Every conversation with family on Earth has a multi-second delay. This is not adventurethis is sensory deprivation with interpersonal pressure, and the human brain was not designed for it.
+The psychological challenges of spaceflight are not abstract stressors—they are **concrete, measurable physiologic responses** to an environment fundamentally hostile to human psychology. Picture an astronaut three months into a six-month mission: they wake in a sleeping bag attached to a wall, work shoulder-to-shoulder with the same five people they'll see every day for three more months, hear the constant hum of life support systems, smell the same recycled air, and look out the window to see the same view of Earth rotating below. There is no weather, no seasons, no spontaneity, no privacy. Every conversation with family on Earth has a multi-second delay. This is not adventure—this is sensory deprivation with interpersonal pressure, and the human brain was not designed for it.
 
 #### Isolation and Confinement
 
@@ -93,7 +93,7 @@ The psychological challenges of spaceflight are not abstract stressorsthey are 
 
 ### Monitoring Strategy
 
-Unlike exercise or nutritionwhere compliance can be directly observed**mental health monitoring requires multi-modal integration of subjective self-reports, objective biomarkers, crew observations, and environmental context**. The challenge is detecting deterioration early enough to intervene, while respecting crew autonomy and avoiding stigma.
+Unlike exercise or nutrition—where compliance can be directly observed—**mental health monitoring requires multi-modal integration of subjective self-reports, objective biomarkers, crew observations, and environmental context**. The challenge is detecting deterioration early enough to intervene, while respecting crew autonomy and avoiding stigma.
 
 #### Self-Report Assessments
 
@@ -125,7 +125,7 @@ Unlike exercise or nutritionwhere compliance can be directly observed**mental 
 
 #### Risk Threshold Alerts
 
-- **PHQ-9 score e10** (moderate depression) triggers clinical consultation
+- **PHQ-9 score ≥10** (moderate depression) triggers clinical consultation
 - **Three consecutive days of poor sleep** (<5 hours, efficiency <70%)
 - **Significant HRV decline** below individual baseline
 - **Interpersonal conflict reports** from multiple crew members

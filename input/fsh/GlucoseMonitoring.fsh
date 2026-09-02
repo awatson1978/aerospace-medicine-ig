@@ -13,7 +13,8 @@ CodeSystem: CGMMetricsCS
 Id: cgm-metrics-cs
 Title: "Continuous Glucose Monitoring Metrics Code System"
 Description: "Standardized CGM metrics for spaceflight metabolic monitoring"
-* ^experimental = false
+* ^count = 9
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -31,7 +32,8 @@ CodeSystem: CGMDeviceTypeCS
 Id: cgm-device-type-cs
 Title: "CGM Device Type Code System"
 Description: "Types of continuous glucose monitoring devices"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -48,7 +50,7 @@ ValueSet: CGMMetricsVS
 Id: cgm-metrics-vs
 Title: "CGM Metrics Value Set"
 Description: "Standardized CGM metrics"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system CGMMetricsCS
 
@@ -56,7 +58,7 @@ ValueSet: CGMDeviceTypeVS
 Id: cgm-device-type-vs
 Title: "CGM Device Type Value Set"
 Description: "Types of CGM devices"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system CGMDeviceTypeCS
 

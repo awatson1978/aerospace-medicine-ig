@@ -38,7 +38,7 @@ The implementation uses specialized code systems for space radiation medicine:
 - **[`SpaceRadiationTypeCS`](CodeSystem-space-radiation-type-cs.html)**: Types of space radiation (GCR, SPE, trapped, secondary)
 - **[`RadiationCountermeasuresCS`](CodeSystem-radiation-countermeasures-cs.html)**: Protective measures and interventions
 - **[`RadiationDetectorTypeCS`](CodeSystem-radiation-detector-type-cs.html)**: Detection equipment types and technologies
-- **[`AerospaceCodeSystemEnhanced`](CodeSystem-aerospace-code-system-enhanced.html)**: Comprehensive aerospace medicine terminology
+- **[`SpaceRadiationCS`](CodeSystem-space-radiation-cs.html)**: Comprehensive aerospace medicine terminology
 
 ### Space Radiation Environment
 
@@ -107,7 +107,7 @@ All space travelers wear multiple types of radiation detectors documented using 
     {
       "type": {
         "coding": [{
-          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system-enhanced",
+          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
           "code": "sensitivity"
         }]
       },
@@ -199,7 +199,7 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
     {
       "code": {
         "coding": [{
-          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system-enhanced",
+          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
           "code": "bone-marrow-dose"
         }]
       },
@@ -281,7 +281,7 @@ Every radiation measurement tells a story, but the most important stories are of
 
 #### Organ-Specific Dose Tracking
 
-The [`SpaceRadiationExposure`](StructureDefinition-space-radiation-exposure.html) profile includes components for organ-specific dose measurements using codes from the [`OrganDoseCodesVSComplete`](ValueSet-organ-dose-codes-vs-complete.html) value set:
+The [`SpaceRadiationExposure`](StructureDefinition-space-radiation-exposure.html) profile includes components for organ-specific dose measurements using codes from the [`OrganDoseCodesVS`](ValueSet-organ-dose-codes-vs.html) value set:
 
 - **Bone Marrow Dose**: Critical for hematopoietic effects
 - **Eye Lens Dose**: Cataract risk assessment  

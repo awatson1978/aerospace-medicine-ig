@@ -13,7 +13,8 @@ CodeSystem: BiomanufacturingProcessCS
 Id: biomanufacturing-process-cs
 Title: "Biomanufacturing Process Code System"
 Description: "Biomanufacturing processes for in-situ resource utilization and life support"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -28,7 +29,8 @@ CodeSystem: BLiSSOutputCS
 Id: bliss-output-cs
 Title: "BLiSS Output Code System"
 Description: "Bioregenerative Life Support System (BLiSS) output types"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -39,6 +41,19 @@ Description: "Bioregenerative Life Support System (BLiSS) output types"
 * #co2-fixation "CO2 Fixation" "Carbon dioxide removed from atmosphere by biological processes"
 * #biomaterial-output "Biomaterial Output" "Structural or functional biomaterials produced"
 
+CodeSystem: BiomanufacturingMetricCS
+Id: biomanufacturing-metric-cs
+Title: "Biomanufacturing Metric Code System"
+Description: "Component codes for biomanufacturing output observations"
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^status = #active
+* ^count = 3
+* #output-quantity "Output Quantity" "Total output quantity (kg, L, mol)"
+* #output-rate "Output Rate" "Production rate per day or per cycle"
+* #energy-input "Energy Input" "Energy consumed by the process"
+
 // =====================================================
 // VALUE SETS
 // =====================================================
@@ -47,7 +62,7 @@ ValueSet: BiomanufacturingProcessVS
 Id: biomanufacturing-process-vs
 Title: "Biomanufacturing Process Value Set"
 Description: "Biomanufacturing process types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system BiomanufacturingProcessCS
 
@@ -55,7 +70,7 @@ ValueSet: BLiSSOutputVS
 Id: bliss-output-vs
 Title: "BLiSS Output Value Set"
 Description: "Bioregenerative life support output types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system BLiSSOutputCS
 
@@ -152,15 +167,15 @@ Description: "Observation of bioregenerative life support system resource output
     outputRate 0..1 MS and
     energyInput 0..1 MS
 
-* component[outputQuantity].code.text = "Output Quantity"
+* component[outputQuantity].code = BiomanufacturingMetricCS#output-quantity "Output Quantity"
 * component[outputQuantity].value[x] only Quantity
 * component[outputQuantity].valueQuantity ^short = "Total output quantity (kg, L, mol)"
 
-* component[outputRate].code.text = "Output Rate"
+* component[outputRate].code = BiomanufacturingMetricCS#output-rate "Output Rate"
 * component[outputRate].value[x] only Quantity
 * component[outputRate].valueQuantity ^short = "Production rate (per day or per cycle)"
 
-* component[energyInput].code.text = "Energy Input"
+* component[energyInput].code = BiomanufacturingMetricCS#energy-input "Energy Input"
 * component[energyInput].value[x] only Quantity
 * component[energyInput].valueQuantity.system = $ucum
 * component[energyInput].valueQuantity.code = #kW
@@ -202,6 +217,7 @@ InstanceOf: BioreactorDevice
 Title: "Algae Photobioreactor"
 Description: "Closed-loop algae photobioreactor for O2 production and CO2 fixation"
 Usage: #example
+* insert SyntheticExample
 
 * type.text = "Algae Photobioreactor"
 * status = #active
@@ -226,22 +242,23 @@ InstanceOf: BLiSSResourceOutput
 Title: "BLiSS O2 Production Output"
 Description: "Daily O2 production observation from algae photobioreactor"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code = BLiSSOutputCS#o2-production "O2 Production"
 * subject = Reference(Device/Bioreactor-Algae-001)
 * effectiveDateTime = "2028-05-15T18:00:00Z"
-* component[outputQuantity].code.text = "Output Quantity"
+* component[outputQuantity].code = BiomanufacturingMetricCS#output-quantity "Output Quantity"
 * component[outputQuantity].valueQuantity.value = 0.85
 * component[outputQuantity].valueQuantity.unit = "kg"
 * component[outputQuantity].valueQuantity.system = $ucum
 * component[outputQuantity].valueQuantity.code = #kg
-* component[outputRate].code.text = "Output Rate"
+* component[outputRate].code = BiomanufacturingMetricCS#output-rate "Output Rate"
 * component[outputRate].valueQuantity.value = 0.85
 * component[outputRate].valueQuantity.unit = "kg/d"
 * component[outputRate].valueQuantity.system = $ucum
 * component[outputRate].valueQuantity.code = #kg/d
-* component[energyInput].code.text = "Energy Input"
+* component[energyInput].code = BiomanufacturingMetricCS#energy-input "Energy Input"
 * component[energyInput].valueQuantity.value = 1.2
 * component[energyInput].valueQuantity.unit = "kW"
 * component[energyInput].valueQuantity.system = $ucum
@@ -253,6 +270,7 @@ InstanceOf: BiomanufacturingProcedure
 Title: "Algae Cultivation Procedure"
 Description: "Chlorella vulgaris cultivation cycle in ISS photobioreactor"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = BiomanufacturingProcessCS#algae-photobioreactor "Algae Photobioreactor"

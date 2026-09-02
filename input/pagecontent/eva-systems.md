@@ -85,7 +85,7 @@ This content will integrate with:
 
 - American Scientist Editorial Staff. “The Past and Future Space Suit.” *American Scientist*.  [https://www.americanscientist.org/article/the-past-and-future-space-suit](https://www.americanscientist.org/article/the-past-and-future-space-suit)  
 
-- Aerospace America Editorial Staff. “Tomorrow’s Spacesuits.” *Aerospace America*. [https://aerospaceamerica.aiaa.org/features/tomorrows-spacesuits/](https://aerospaceamerica.aiaa.org/features/tomorrows-)  
+- Aerospace America Editorial Staff. “Tomorrow’s Spacesuits.” *Aerospace America*. [https://aerospaceamerica.aiaa.org/features/tomorrows-spacesuits/](https://aerospaceamerica.aiaa.org/features/tomorrows-spacesuits/)  
 
 - Spectrum News 13. “From Apollo to Artemis: How Axiom Space’s New Suits Will Handle the Harsh Moon Dust.” July 17, 2023.
 [https://mynews13.com/fl/orlando/space/2023/07/17/from-apollo-to-artemis-how-axiom-space-s-new-suits-will-handle-the-harsh-moon-dust](https://mynews13.com/fl/orlando/space/2023/07/17/from-apollo-to-artemis-how-axiom-space-s-new-suits-will-handle-the-harsh-moon-dust)  

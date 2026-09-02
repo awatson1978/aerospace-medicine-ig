@@ -15,10 +15,11 @@ InstanceOf: ARCHeRActigraphyObservation
 Title: "ARCHeR Actigraphy - Flight Day 5"
 Description: "Actigraphy data from ARCHeR investigation on flight day 5 showing circadian adaptation"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = $obs-cat#exam "Exam"
-* code = $sct#129006008 "Activity monitoring"
+* code = $sct#30920001 "Circadian rhythm"
 * subject = Reference(Patient/ExampleAstronaut)
 * effectivePeriod.start = "2028-03-20T00:00:00Z"
 * effectivePeriod.end = "2028-03-21T00:00:00Z"
@@ -41,7 +42,7 @@ Usage: #example
 * component[sleepWakeTiming].valueQuantity.system = $ucum
 * component[sleepWakeTiming].valueQuantity.code = #min
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[missionPhase].valueCodeableConcept = MissionPhaseCS#transit-outbound "Outbound Transit"
 
 // =====================================================
@@ -53,10 +54,11 @@ InstanceOf: ImmuneBiomarkerPanel
 Title: "Immune Biomarker Panel - Pre-flight Baseline"
 Description: "Pre-flight baseline immune biomarker panel for Artemis II crew member"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = $obs-cat#laboratory "Laboratory"
-* code = $loinc#24359-3 "Immune function panel"
+* code = ImmuneBiomarkerCS#immune-panel "Immune Function Panel"
 * subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2028-02-15T10:00:00Z"
 
@@ -90,7 +92,7 @@ Usage: #example
 * component[cortisolStress].valueQuantity.system = $ucum
 * component[cortisolStress].valueQuantity.code = #ug/dL
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[missionPhase].valueCodeableConcept = MissionPhaseCS#pre-flight "Pre-flight"
 
 // =====================================================
@@ -102,6 +104,7 @@ InstanceOf: StandardMeasuresObservation
 Title: "Standard Measures Grip Strength - Pre-flight"
 Description: "NASA Standard Measures grip strength assessment at L-30 days"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = $obs-cat#exam "Exam"
@@ -112,6 +115,6 @@ Usage: #example
 * valueQuantity.unit = "kg"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #kg
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[missionPhase].valueCodeableConcept = MissionPhaseCS#pre-flight "Pre-flight"
 * extension[flightDay].valueInteger = -30

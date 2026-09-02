@@ -1,5 +1,4 @@
-// Enhanced Neutral Buoyancy Training and Diving Medicine Profiles
-// Addresses harmonization issues and adds missing functionality
+// Neutral Buoyancy Training Protocols, Regulatory Compliance and Diving Medicine Profiles
 
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
@@ -40,6 +39,7 @@ Extension: DecompressionAlgorithm
 Id: decompression-algorithm
 Title: "Decompression Algorithm Used"
 Description: "The specific decompression algorithm or table used"
+Context: Procedure
 * value[x] only CodeableConcept
 * valueCodeableConcept from DecompressionProcedures (extensible)
 
@@ -47,6 +47,7 @@ Extension: MaximumDepthReached
 Id: maximum-depth-reached
 Title: "Maximum Depth Reached"
 Description: "Maximum depth reached during the dive requiring decompression"
+Context: Procedure
 * value[x] only Quantity
 * valueQuantity.system = $ucum
 * valueQuantity.code = #m
@@ -55,24 +56,27 @@ Extension: TotalDecompressionTime
 Id: total-decompression-time
 Title: "Total Decompression Time"
 Description: "Total time required for decompression including all stops"
+Context: Procedure
 * value[x] only Duration
 
 Extension: SafetyStopCompliance
 Id: safety-stop-compliance
 Title: "Safety Stop Compliance"
 Description: "Compliance with required safety stops during ascent"
+Context: Procedure
 * extension contains
     depth 0..1 MS and
     duration 0..1 MS and
     completed 0..1 MS
 * extension[depth].value[x] only Quantity
-* extension[duration].value[x] only Duration  
+* extension[duration].value[x] only Duration
 * extension[completed].value[x] only boolean
 
 Extension: EnvironmentalFactors
 Id: environmental-factors
 Title: "Environmental Factors"
 Description: "Environmental conditions affecting decompression requirements"
+Context: Procedure
 * value[x] only CodeableConcept
 * valueCodeableConcept from DecompressionProcedures (extensible)
 
@@ -80,6 +84,7 @@ Extension: EmergencyProcedures
 Id: emergency-procedures
 Title: "Emergency Procedures"
 Description: "Emergency decompression procedures if applicable"
+Context: Procedure
 * value[x] only Reference(Procedure)
 
 Profile: RegulatoryComplianceAssessment
@@ -213,45 +218,22 @@ Description: "Assessment of communication system performance during underwater t
 * component[securityAssessment].value[x] only CodeableConcept
 
 // =====================================================
-// ENHANCED NEUTRAL BUOYANCY TRAINING PROFILES
+// NEUTRAL BUOYANCY SESSION EXTENSIONS
+// (used by NeutralBuoyancySession in NeutralBuoyancy.fsh)
 // =====================================================
-
-Profile: EnhancedNeutralBuoyancySession
-Parent: Procedure
-Id: enhanced-neutral-buoyancy-session
-Title: "Enhanced Neutral Buoyancy Training Session"
-Description: "Comprehensive neutral buoyancy training session with full regulatory compliance tracking"
-
-* status MS
-* code MS
-* code from NeutralBuoyancyTrainingActivities (extensible)
-* subject only Reference(Astronaut)
-* performedDateTime MS
-* location only Reference(NeutralBuoyancyFacility)
-* complication 0..*
-* followUp 0..*
-* report 0..*
-
-* extension contains
-    SessionDuration named sessionDuration 0..1 MS and
-    MaximumDepth named maximumDepth 0..1 MS and
-    TrainingObjectives named trainingObjectives 0..* MS and
-    TaskCompletionMetrics named taskMetrics 0..* MS and
-    CommunicationSystems named commSystems 0..* MS and
-    SafetyProtocols named safetyProtocols 0..* MS and
-    RegulatoryCompliance named compliance 0..* MS and
-    EnvironmentalConditions named environmental 0..1 MS
 
 Extension: CommunicationSystems
 Id: communication-systems
 Title: "Communication Systems Used"
 Description: "Communication systems and protocols used during training"
+Context: Procedure
 * value[x] only Reference(UnderwaterCommunicationSystem)
 
 Extension: SafetyProtocols
 Id: safety-protocols
 Title: "Safety Protocols"
 Description: "Safety protocols and procedures followed during training"
+Context: Procedure
 * value[x] only CodeableConcept
 * valueCodeableConcept from RegulatoryStandards (extensible)
 
@@ -259,12 +241,14 @@ Extension: RegulatoryCompliance
 Id: regulatory-compliance
 Title: "Regulatory Compliance"
 Description: "Regulatory standards compliance during training session"
+Context: Procedure
 * value[x] only Reference(RegulatoryComplianceAssessment)
 
 Extension: EnvironmentalConditions
 Id: environmental-conditions
 Title: "Environmental Conditions"
 Description: "Environmental conditions during training session"
+Context: Procedure
 * extension contains
     waterTemperature 0..1 and
     visibility 0..1 and
@@ -381,30 +365,35 @@ Extension: EmergencyType
 Id: emergency-type
 Title: "Type of Emergency"
 Description: "Classification of the emergency situation"
+Context: Procedure
 * value[x] only CodeableConcept
 
 Extension: ResponseTime
 Id: response-time
 Title: "Emergency Response Time"
 Description: "Time from emergency recognition to response initiation"
+Context: Procedure
 * value[x] only Duration
 
 Extension: RescueProcedures
 Id: rescue-procedures
 Title: "Rescue Procedures Used"
 Description: "Specific rescue procedures and techniques employed"
+Context: Procedure
 * value[x] only CodeableConcept
 
 Extension: MedicalIntervention
 Id: medical-intervention
 Title: "Medical Intervention"
 Description: "Medical interventions provided during emergency response"
+Context: Procedure
 * value[x] only Reference(Procedure)
 
 Extension: LessonsLearned
 Id: lessons-learned
 Title: "Lessons Learned"
 Description: "Lessons learned and recommendations from emergency response"
+Context: Procedure
 * value[x] only string
 
 // =====================================================
@@ -438,10 +427,12 @@ Extension: ChamberConfiguration
 Id: chamber-configuration
 Title: "Hyperbaric Chamber Configuration"
 Description: "Configuration and setup of the hyperbaric chamber"
+Context: Procedure
 * value[x] only Reference(Device)
 
 Extension: PatientMonitoring
 Id: patient-monitoring
 Title: "Patient Monitoring"
 Description: "Continuous patient monitoring during hyperbaric treatment"
+Context: Procedure
 * value[x] only Reference(Observation)

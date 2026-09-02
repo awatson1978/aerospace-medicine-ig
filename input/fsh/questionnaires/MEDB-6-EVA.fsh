@@ -29,6 +29,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 6.1 EVA Medical Requirements"
 Description: "NASA Medical Requirements Integration Document for EVA medical requirements. Documents medical clearance, prebreathe protocol, and health monitoring for extravehicular activities."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-6-1-eva-medical"
 * version = "1.0.0"
@@ -279,6 +280,7 @@ InstanceOf: Questionnaire
 Title: "MR087S EVA Prebreathe Protocol"
 Description: "NASA Medical Requirements Integration Document for EVA prebreathe protocol. Tracks oxygen prebreathe procedures to prevent decompression sickness."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr087s-eva-prebreathe"
 * version = "1.0.0"

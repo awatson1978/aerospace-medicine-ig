@@ -13,7 +13,8 @@ CodeSystem: TemperatureMeasurementMethodCS
 Id: temperature-measurement-method-cs
 Title: "Temperature Measurement Method Code System"
 Description: "Methods of body temperature measurement relevant to spaceflight"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -29,7 +30,8 @@ CodeSystem: CircadianPhaseCS
 Id: circadian-phase-cs
 Title: "Circadian Phase Code System"
 Description: "Circadian rhythm phases for contextualizing temperature and physiological measurements"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -46,7 +48,7 @@ ValueSet: TemperatureMeasurementMethodVS
 Id: temperature-measurement-method-vs
 Title: "Temperature Measurement Method Value Set"
 Description: "Methods of body temperature measurement"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system TemperatureMeasurementMethodCS
 
@@ -54,7 +56,7 @@ ValueSet: CircadianPhaseVS
 Id: circadian-phase-vs
 Title: "Circadian Phase Value Set"
 Description: "Circadian rhythm phases"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system CircadianPhaseCS
 

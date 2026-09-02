@@ -29,6 +29,7 @@ InstanceOf: Questionnaire
 Title: "MR036L Medical Kit Inventory"
 Description: "NASA Medical Requirements Integration Document for medical kit inventory management. Tracks medical supplies, equipment status, and expiration dates aboard ISS."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr036l-medical-kit-inventory"
 * version = "1.0.0"
@@ -264,6 +265,7 @@ InstanceOf: Questionnaire
 Title: "MR026L Reconditioning Assessment"
 Description: "NASA Medical Requirements Integration Document for postflight reconditioning. Tracks crew recovery and rehabilitation progress after long-duration spaceflight."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr026l-reconditioning"
 * version = "1.0.0"
@@ -469,6 +471,7 @@ InstanceOf: Questionnaire
 Title: "MR050L Pharmaceutical Management"
 Description: "NASA Medical Requirements Integration Document for pharmaceutical management aboard ISS. Tracks medication inventory, storage conditions, dispensing, and stability monitoring."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr050l-pharmaceutical-management"
 * version = "1.0.0"
@@ -657,6 +660,7 @@ InstanceOf: Questionnaire
 Title: "MR032L Telemedicine Setup"
 Description: "NASA Medical Requirements Integration Document for telemedicine setup and operations. Configures communication links, verifies equipment, and ensures readiness for remote medical support."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr032l-telemedicine-setup"
 * version = "1.0.0"
@@ -842,6 +846,7 @@ InstanceOf: Questionnaire
 Title: "MR008L Medical Hardware Maintenance"
 Description: "NASA Medical Requirements Integration Document for medical hardware maintenance. Tracks calibration schedules, preventive maintenance, and equipment functionality verification."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr008l-medical-hardware-maintenance"
 * version = "1.0.0"

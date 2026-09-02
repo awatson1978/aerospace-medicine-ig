@@ -105,7 +105,7 @@ Diving for space analog training requires extending standard astronaut health sc
 In addition to routine aerospace medical exams, candidates undergo protocols similar to the NOAA Diving Medical Program. For example, all potential divers must demonstrate adequate respiratory function via spirometry and lung imaging⁷, ensuring no obstructive or restrictive disease impairs breathing under pressure. **Cardiovascular fitness** is also assessed (e.g. treadmill tests, ECG, lipid profile) to certify that the diver can handle the exertion and stress of diving⁸. A thorough **neurological and vestibular exam** is critical; inner-ear disorders (such as Meniere's disease, chronic otitis, or prior ear surgery) can prevent proper pressure equalization and are disqualifying⁹.
 
 **Medical Contraindications:**
-The [`DivingContraindicatedConditions`](ValueSet-diving-contraindicated-conditions.html) value set includes conditions such as:
+The [`DivingContraindicatedConditions`](ValueSet-diving-contraindicated-conditions-vs.html) value set includes conditions such as:
 - Asthma and respiratory disorders
 - Cardiac arrhythmias and heart disease
 - History of decompression sickness
@@ -144,9 +144,9 @@ This implementation guide defines code systems and value sets for underwater tra
 - **[`RegulatoryComplianceCS`](CodeSystem-regulatory-compliance-cs.html)**: NOAA, OSHA, NASA, and international standards
 
 #### Value Sets for Implementation
-- **[`NeutralBuoyancyTrainingActivities`](ValueSet-neutral-buoyancy-training-activities.html)**: Training procedures and assessments
-- **[`UnderwaterTrainingProcedures`](ValueSet-underwater-training-procedures.html)**: Underwater training and emergency procedures
-- **[`DivingContraindicatedConditions`](ValueSet-diving-contraindicated-conditions.html)**: Medical conditions that preclude diving
+- **[`NeutralBuoyancyTrainingActivities`](ValueSet-neutral-buoyancy-training-activities-vs.html)**: Training procedures and assessments
+- **[`UnderwaterTrainingProcedures`](ValueSet-underwater-training-procedures-vs.html)**: Underwater training and emergency procedures
+- **[`DivingContraindicatedConditions`](ValueSet-diving-contraindicated-conditions-vs.html)**: Medical conditions that preclude diving
 
 ### Pressure Environment Safety
 

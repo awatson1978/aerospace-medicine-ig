@@ -13,7 +13,8 @@ CodeSystem: BFRTProtocolCS
 Id: bfrt-protocol-cs
 Title: "BFRT Protocol Code System"
 Description: "Blood flow restriction training protocol types for microgravity exercise countermeasures"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -27,7 +28,8 @@ CodeSystem: BFRTOutcomeCS
 Id: bfrt-outcome-cs
 Title: "BFRT Outcome Code System"
 Description: "Outcome measures for blood flow restriction training effectiveness"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -43,7 +45,8 @@ CodeSystem: BFRTDeviceTypeCS
 Id: bfrt-device-type-cs
 Title: "BFRT Device Type Code System"
 Description: "Types of blood flow restriction devices"
-* ^experimental = false
+* ^count = 3
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -59,7 +62,7 @@ ValueSet: BFRTProtocolVS
 Id: bfrt-protocol-vs
 Title: "BFRT Protocol Value Set"
 Description: "Blood flow restriction training protocol types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system BFRTProtocolCS
 
@@ -67,7 +70,7 @@ ValueSet: BFRTOutcomeVS
 Id: bfrt-outcome-vs
 Title: "BFRT Outcome Value Set"
 Description: "BFRT outcome measures"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system BFRTOutcomeCS
 
@@ -75,7 +78,7 @@ ValueSet: BFRTDeviceTypeVS
 Id: bfrt-device-type-vs
 Title: "BFRT Device Type Value Set"
 Description: "BFRT device types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system BFRTDeviceTypeCS
 
@@ -299,6 +302,7 @@ InstanceOf: BFRTDevice
 Title: "BFRT Pneumatic Cuff Device"
 Description: "Pneumatic occlusion cuff for blood flow restriction training on ISS"
 Usage: #example
+* insert SyntheticExample
 
 * type = BFRTDeviceTypeCS#pneumatic-cuff "Pneumatic Cuff"
 * deviceName.name = "Kaatsu Nano BFR Unit #BFR-001"
@@ -314,6 +318,7 @@ InstanceOf: BFRTProcedure
 Title: "Lower Body BFRT Session"
 Description: "Lower-body BFRT session at 30% 1RM with 80 mmHg occlusion pressure"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = BFRTProtocolCS#low-load-bfrt "Low-Load BFRT (20-30% 1RM)"
@@ -333,6 +338,7 @@ InstanceOf: BFRTOutcomeObservation
 Title: "Quadriceps CSA Outcome"
 Description: "Quadriceps cross-sectional area measurement after 8 weeks of BFRT"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code = BFRTOutcomeCS#muscle-csa "Muscle Cross-Sectional Area"
@@ -356,6 +362,7 @@ InstanceOf: BFRTActivityDefinition
 Title: "Low-Load BFRT Protocol"
 Description: "Prescribed low-load BFRT protocol for lower extremity countermeasures"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
 * name = "LowLoadBFRTProtocol"

@@ -13,7 +13,8 @@ CodeSystem: SpaceBloodProductCS
 Id: space-blood-product-cs
 Title: "Space Blood Product Code System"
 Description: "Blood products adapted for spaceflight and austere environment use"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -26,7 +27,8 @@ CodeSystem: SpaceSpecimenTypeCS
 Id: space-specimen-type-cs
 Title: "Space Specimen Type Code System"
 Description: "Specimen types collected during spaceflight with microgravity-adapted methods"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -40,7 +42,8 @@ CodeSystem: SpaceTransfusionProcedureCS
 Id: space-transfusion-procedure-cs
 Title: "Space Transfusion Procedure Code System"
 Description: "Transfusion procedures adapted for spaceflight and austere environments"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -57,7 +60,7 @@ ValueSet: SpaceBloodProductVS
 Id: space-blood-product-vs
 Title: "Space Blood Product Value Set"
 Description: "Blood products for spaceflight use"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceBloodProductCS
 
@@ -65,7 +68,7 @@ ValueSet: SpaceSpecimenTypeVS
 Id: space-specimen-type-vs
 Title: "Space Specimen Type Value Set"
 Description: "Specimen types collected during spaceflight"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceSpecimenTypeCS
 * $sct#119297000 "Blood specimen"
@@ -77,7 +80,7 @@ ValueSet: SpaceTransfusionProcedureVS
 Id: space-transfusion-procedure-vs
 Title: "Space Transfusion Procedure Value Set"
 Description: "Transfusion procedures for spaceflight"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceTransfusionProcedureCS
 

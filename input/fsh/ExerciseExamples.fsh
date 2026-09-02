@@ -16,10 +16,11 @@ InstanceOf: Encounter
 Title: "ISS Expedition 75 In-Flight Period"
 Description: "Encounter representing the in-flight period of ISS Expedition 75"
 Usage: #example
+* insert SyntheticExample
 
 * status = #in-progress
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB "ambulatory"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * period.start = "2025-03-01T00:00:00Z"
 
 // =====================================================
@@ -31,6 +32,7 @@ InstanceOf: Device
 Title: "ISS T2 Treadmill"
 Description: "Treadmill 2 (T2) on the International Space Station with vibration isolation"
 Usage: #example
+* insert SyntheticExample
 
 * deviceName.name = "Treadmill 2 with Vibration Isolation and Stabilization (TVIS)"
 * deviceName.type = #user-friendly-name
@@ -48,15 +50,16 @@ InstanceOf: SpaceExerciseActivityMeasure
 Title: "ISS T2 Treadmill Run - Activity Type"
 Description: "Activity-based measure indicating the type of ISS T2 treadmill running."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-01T13:00:00Z"
 
 // Base PA coding: running
-* code.coding[basePA].system = $loinc
-* code.coding[basePA].code = #74010-0
-* code.coding[basePA].display = "Type of exercise"
+* code.coding[loinc].system = $loinc
+* code.coding[loinc].code = #74010-0
+* code.coding[loinc].display = "Type of exercise"
 
 // Space-specific modality
 * code.coding[spaceModality].system = SpaceExerciseModCS
@@ -74,15 +77,16 @@ InstanceOf: SpaceExerciseActivityMeasure
 Title: "ISS T2 Treadmill Run - Duration"
 Description: "Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-01T13:30:00Z"
 
 // PA-style measure: duration
-* code.coding[basePA].system = $pa-temp
-* code.coding[basePA].code = #duration
-* code.coding[basePA].display = "Duration of physical activity"
+* code.coding[paTemp].system = $pa-temp
+* code.coding[paTemp].code = #duration
+* code.coding[paTemp].display = "Duration of physical activity"
 
 // Space modality slice
 * code.coding[spaceModality].system = SpaceExerciseModCS
@@ -98,15 +102,16 @@ InstanceOf: SpaceExerciseActivityMeasure
 Title: "ISS T2 Treadmill Run - Mean Heart Rate"
 Description: "Mean heart rate during an ISS treadmill session."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectiveDateTime = "2025-06-01T13:30:00Z"
 
 // PA/LOINC-style HR measure
-* code.coding[basePA].system = $loinc
-* code.coding[basePA].code = #8867-4
-* code.coding[basePA].display = "Heart rate"
+* code.coding[loinc].system = $loinc
+* code.coding[loinc].code = #8867-4
+* code.coding[loinc].display = "Heart rate"
 
 * code.coding[spaceModality].system = SpaceExerciseModCS
 * code.coding[spaceModality].code = #treadmill
@@ -125,9 +130,10 @@ InstanceOf: SpaceExerciseActivityGroup
 Title: "ISS T2 Treadmill Session - Activity Group"
 Description: "Panel Observation representing a single 30-minute ISS T2 treadmill session."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectivePeriod.start = "2025-06-01T13:00:00Z"
 * effectivePeriod.end = "2025-06-01T13:30:00Z"
 
@@ -161,9 +167,10 @@ InstanceOf: SpaceEVSMinutesPerWeek
 Title: "ISS EVS Minutes per Week - Week 23 2025"
 Description: "EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23."
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * effectivePeriod.start = "2025-06-02T00:00:00Z"
 * effectivePeriod.end = "2025-06-09T00:00:00Z"
 
@@ -193,10 +200,11 @@ InstanceOf: SpaceExerciseSession
 Title: "ISS T2 Treadmill Session - Procedure"
 Description: "Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel."
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code.text = "ISS T2 treadmill running session"
-* subject = Reference(Patient/AstronautExample)
+* subject = Reference(Patient/ExampleAstronaut)
 * performedPeriod.start = "2025-06-01T13:00:00Z"
 * performedPeriod.end = "2025-06-01T13:30:00Z"
 

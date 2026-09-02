@@ -4,7 +4,6 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $aerospace = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system
 
 // =====================================================
 // EXTENSIONS
@@ -71,7 +70,8 @@ CodeSystem: SpaceNutritionTypeCS
 Id: space-nutrition-type-cs
 Title: "Space Nutrition Product Types"
 Description: "Types of nutritional products used in space missions"
-* ^experimental = false
+* ^count = 10
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -90,7 +90,8 @@ CodeSystem: MacronutrientMetricsCS
 Id: macronutrient-metrics-cs
 Title: "Macronutrient Metrics"
 Description: "Measurement types for macronutrient tracking"
-* ^experimental = false
+* ^count = 9
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -108,7 +109,8 @@ CodeSystem: HydrationTypeCS
 Id: hydration-type-cs
 Title: "Hydration Product Types"
 Description: "Types of hydration products used in space"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -124,7 +126,8 @@ CodeSystem: NutritionInventoryStatusCS
 Id: nutrition-inventory-status-cs
 Title: "Nutrition Inventory Status"
 Description: "Status levels for nutrition inventory management"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -140,7 +143,8 @@ CodeSystem: CalorieDeficitRiskCS
 Id: calorie-deficit-risk-cs
 Title: "Calorie Deficit Risk Levels"
 Description: "Risk categorization for caloric deficits"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -157,7 +161,7 @@ ValueSet: SpaceNutritionTypeVS
 Id: space-nutrition-type-vs
 Title: "Space Nutrition Types"
 Description: "Types of nutritional products available in space missions"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceNutritionTypeCS
 
@@ -165,7 +169,7 @@ ValueSet: MacronutrientMetricsVS
 Id: macronutrient-metrics-vs
 Title: "Macronutrient Metrics"
 Description: "Measurement types for macronutrient tracking"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system MacronutrientMetricsCS
 
@@ -173,7 +177,7 @@ ValueSet: HydrationTypeVS
 Id: hydration-type-vs
 Title: "Hydration Types"
 Description: "Types of hydration products used in space"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system HydrationTypeCS
 
@@ -181,7 +185,7 @@ ValueSet: NutritionInventoryStatusVS
 Id: nutrition-inventory-status-vs
 Title: "Nutrition Inventory Status"
 Description: "Status levels for nutrition inventory management"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system NutritionInventoryStatusCS
 
@@ -189,7 +193,7 @@ ValueSet: CalorieDeficitRiskVS
 Id: calorie-deficit-risk-vs
 Title: "Calorie Deficit Risk Levels"
 Description: "Risk categorization for caloric deficits"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system CalorieDeficitRiskCS
 
@@ -197,7 +201,7 @@ ValueSet: WaterVolumeUnitsVS
 Id: water-volume-units-vs
 Title: "Water Volume Units"
 Description: "Units for measuring water volume"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include $ucum#mL
 * include $ucum#L

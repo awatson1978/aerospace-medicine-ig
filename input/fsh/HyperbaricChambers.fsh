@@ -1,6 +1,5 @@
 // =====================================================
 // HYPERBARIC CHAMBER PROFILE DEFINITION
-// Add this to your Location.fsh file or create a separate file
 // =====================================================
 
 Profile: HyperbaricChamber
@@ -54,17 +53,15 @@ Extension: HyperbaricCapabilities
 Id: hyperbaric-capabilities
 Title: "Hyperbaric Chamber Capabilities"
 Description: "Specific capabilities of the hyperbaric chamber"
-* ^context[0].type = #element
-* ^context[0].expression = "Location"
+Context: Location
 * value[x] only CodeableConcept
 * valueCodeableConcept from HyperbaricCapabilitiesVS (extensible)
 
 Extension: MaximumPressure
 Id: maximum-pressure
 Title: "Maximum Operating Pressure"
-Description: "Maximum pressure the chamber can safely operate at"
-* ^context[0].type = #element
-* ^context[0].expression = "Location"
+Description: "Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment"
+Context: Location, Procedure
 * value[x] only Quantity
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #atm
@@ -73,8 +70,7 @@ Extension: ChamberType
 Id: chamber-type
 Title: "Hyperbaric Chamber Type"
 Description: "Type of hyperbaric chamber (monoplace, multiplace, etc.)"
-* ^context[0].type = #element
-* ^context[0].expression = "Location"
+Context: Location
 * value[x] only CodeableConcept
 * valueCodeableConcept from HyperbaricChamberTypeVS (extensible)
 
@@ -82,8 +78,7 @@ Extension: OxygenCapability
 Id: oxygen-capability
 Title: "Oxygen Delivery Capability"
 Description: "Oxygen delivery capabilities of the chamber"
-* ^context[0].type = #element
-* ^context[0].expression = "Location"
+Context: Location
 * value[x] only boolean
 
 // =====================================================
@@ -94,11 +89,11 @@ CodeSystem: HyperbaricCapabilitiesCS
 Id: hyperbaric-capabilities-cs
 Title: "Hyperbaric Chamber Capabilities"
 Description: "Capabilities and services available in hyperbaric chambers"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
-* ^version = "1.0.0"
+* ^count = 7
 * #decompression-treatment "Decompression Sickness Treatment"
 * #wound-healing "Wound Healing Therapy"
 * #carbon-monoxide-treatment "Carbon Monoxide Poisoning Treatment"
@@ -111,11 +106,11 @@ CodeSystem: HyperbaricChamberTypeCS
 Id: hyperbaric-chamber-type-cs
 Title: "Hyperbaric Chamber Types"
 Description: "Types of hyperbaric chambers"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
-* ^version = "1.0.0"
+* ^count = 5
 * #monoplace "Monoplace Chamber"
 * #multiplace "Multiplace Chamber"
 * #portable "Portable Chamber"
@@ -130,7 +125,7 @@ ValueSet: HyperbaricCapabilitiesVS
 Id: hyperbaric-capabilities-vs
 Title: "Hyperbaric Chamber Capabilities"
 Description: "Capabilities available in hyperbaric chambers"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system HyperbaricCapabilitiesCS
 
@@ -138,7 +133,7 @@ ValueSet: HyperbaricChamberTypeVS
 Id: hyperbaric-chamber-type-vs
 Title: "Hyperbaric Chamber Types"
 Description: "Types of hyperbaric chambers"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system HyperbaricChamberTypeCS
 
@@ -150,6 +145,8 @@ Instance: ExampleHyperbaricChamber
 InstanceOf: HyperbaricChamber
 Title: "Example Hyperbaric Chamber"
 Description: "Example hyperbaric chamber facility"
+Usage: #example
+* insert ReferenceRecord
 * status = #active
 * name = "Hyperbaric Medicine Center - Chamber 1"
 * description = "Multiplace hyperbaric chamber for decompression treatment"
@@ -164,6 +161,8 @@ Instance: NASAHyperbaricFacility
 InstanceOf: HyperbaricChamber
 Title: "NASA Hyperbaric Facility"
 Description: "NASA's hyperbaric chamber for diving medicine and space analog training"
+Usage: #definition
+* insert ReferenceRecord
 * status = #active
 * name = "NASA Hyperbaric Treatment Facility"
 * description = "Hyperbaric chamber for treating decompression sickness and supporting diving operations"

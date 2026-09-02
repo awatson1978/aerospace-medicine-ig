@@ -2,17 +2,17 @@
 
 ### Purpose and Role of Analog Missions in Training
 
-Analog missions are simulated space expeditions conducted on Earth to mimic the conditions and challenges of real spaceflight. They place crews in isolated, confined environments for days or months to perform mission-like tasks under stressors such as limited resources and communication delays:contentReference[oaicite:0]{index=0}.
+Analog missions are simulated space expeditions conducted on Earth to mimic the conditions and challenges of real spaceflight. They place crews in isolated, confined environments for days or months to perform mission-like tasks under stressors such as limited resources and communication delays.
 
-These exercises serve a dual purpose: they are valuable research opportunities to study human performance and behavior in space-like conditions, and they function as training experiences to prepare astronauts and other crew for actual missions:contentReference[oaicite:1]{index=1}. For example, NASA’s year-long CHAPEA Mars habitat simulations are designed to test crew health and performance in a Mars-like environment, helping inform designs and plans for future missions:contentReference[oaicite:2]{index=2}.
+These exercises serve a dual purpose: they are valuable research opportunities to study human performance and behavior in space-like conditions, and they function as training experiences to prepare astronauts and other crew for actual missions. For example, NASA’s year-long CHAPEA Mars habitat simulations are designed to test crew health and performance in a Mars-like environment, helping inform designs and plans for future missions.
 
 By practicing operations in realistic analog settings, crews can identify potential problems and adapt procedures on Earth, ultimately improving safety and effectiveness when humanity ventures to the Moon or Mars.
 
-> *Image (Page 1)*: AMADEE-18 Mars simulation by the Austrian Space Forum in Oman. Crews live in habitats to experience isolation, perform science and maintenance tasks, and practice EVA protocols in a Mars-like desert environment:contentReference[oaicite:3]{index=3}.
+> *Image (Page 1)*: AMADEE-18 Mars simulation by the Austrian Space Forum in Oman. Crews live in habitats to experience isolation, perform science and maintenance tasks, and practice EVA protocols in a Mars-like desert environment.
 
 ### Commercial Analog Training Programs (Star Harbor and Others)
 
-In recent years, commercial space companies have developed analog training programs to broaden access to astronaut-like experiences. **Star Harbor**, for instance, is establishing the world’s first private spaceflight training campus in Colorado, slated to open in 2026:contentReference[oaicite:4]{index=4}.
+In recent years, commercial space companies have developed analog training programs to broaden access to astronaut-like experiences. **Star Harbor**, for instance, is establishing the world’s first private spaceflight training campus in Colorado, slated to open in 2026.
 
 Star Harbor’s 53-acre facility will feature:
 
@@ -23,9 +23,9 @@ Star Harbor’s 53-acre facility will feature:
 - Simulation labs
 - Parabolic flight aircraft
 
-These resources will allow public access to astronaut training previously limited to government agencies:contentReference[oaicite:5]{index=5}. Programs are tailored to roles like vehicle operators, mission specialists, scientist-astronauts, and space tourists:contentReference[oaicite:6]{index=6}.
+These resources will allow public access to astronaut training previously limited to government agencies. Programs are tailored to roles like vehicle operators, mission specialists, scientist-astronauts, and space tourists.
 
-Other commercial efforts like **MMAARS** offer tiered analog missions for students, professionals, and citizen-scientists, typically available for a fee after completing preliminary training:contentReference[oaicite:7]{index=7}.
+Other commercial efforts like **MMAARS** offer tiered analog missions for students, professionals, and citizen-scientists, typically available for a fee after completing preliminary training.
 
 ---
 
@@ -35,28 +35,28 @@ Other commercial efforts like **MMAARS** offer tiered analog missions for studen
 
 - Most programs require participants to be adults (minimum age 18).
 - Some programs target specific age ranges (e.g., CHAPEA requires ages 30–55).
-- Star Harbor centrifuge tests included participants aged 22 to 88:contentReference[oaicite:8]{index=8}.
+- Star Harbor centrifuge tests included participants aged 22 to 88.
 
 #### Physical Fitness and Health
 
 - General health clearance or a physician’s exam required.
-- Analog participants may need to lift ~20 lbs, be non-smokers, or meet specialized health criteria (e.g., SCUBA-certified):contentReference[oaicite:9]{index=9}.
+- Analog participants may need to lift ~20 lbs, be non-smokers, or meet specialized health criteria (e.g., SCUBA-certified).
 
 #### Psychological Readiness
 
 - Mental resilience is essential.
-- NASA analogs conduct formal psychological screening; commercial programs use interviews to assess motivation and interpersonal skills:contentReference[oaicite:10]{index=10}.
+- NASA analogs conduct formal psychological screening; commercial programs use interviews to assess motivation and interpersonal skills.
 
 #### Teamwork and Communication Skills
 
 - Emphasis on collaboration, communication, and team dynamics.
-- Some programs conduct panel interviews or group tasks:contentReference[oaicite:11]{index=11}.
+- Some programs conduct panel interviews or group tasks.
 - English proficiency is commonly required.
 
 #### Relevant Experience or Skills
 
 - Scientific, technical, or operational backgrounds are often favored.
-- Commercial programs are more flexible but still expect high motivation and engagement:contentReference[oaicite:12]{index=12}.
+- Commercial programs are more flexible but still expect high motivation and engagement.
 
 Application processes often include:
 
@@ -79,7 +79,7 @@ Analog training screening differs from NASA/ESA astronaut selection:
 | Screening Rigor       | 1–2 interviews + physical clearance          | Years of evaluation and training   |
 | Purpose               | Training & research                          | Spaceflight mission assignments    |
 
-Despite differences, both value health, resilience, and teamwork. NASA integrates analog missions into astronaut team training (e.g., NEEMO, Arctic expeditions, etc.):contentReference[oaicite:13]{index=13}.
+Despite differences, both value health, resilience, and teamwork. NASA integrates analog missions into astronaut team training (e.g., NEEMO, Arctic expeditions, etc.).
 
 ---
 
@@ -89,14 +89,14 @@ Despite differences, both value health, resilience, and teamwork. NASA integrate
 
 - Short-duration drills for G-force tolerance and disorientation
 - Health screening (e.g., FAA Class 2/3 physical)
-- No psychological or team-based screening needed:contentReference[oaicite:14]{index=14}
+- No psychological or team-based screening needed
 
 #### Neutral Buoyancy & EVA
 
 - Underwater training in neutral buoyancy pools
 - Requires swim test and SCUBA certification
 - Medical clearance for underwater safety
-- Does not test isolation or group dynamics:contentReference[oaicite:15]{index=15}
+- Does not test isolation or group dynamics
 
 #### Other Short Courses
 

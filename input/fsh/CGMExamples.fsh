@@ -15,6 +15,7 @@ InstanceOf: SpaceCGMDevice
 Title: "Dexcom G7 CGM Device"
 Description: "Dexcom G7 continuous glucose monitor used during ISS expedition"
 Usage: #example
+* insert SyntheticExample
 
 * type = CGMDeviceTypeCS#dexcom-g7 "Dexcom G7"
 * deviceName.name = "Dexcom G7 Serial #DG7-2028-001"
@@ -24,7 +25,7 @@ Usage: #example
 * serialNumber = "DG7-2028-001"
 * patient = Reference(Patient/ExampleAstronaut)
 * status = #active
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 
 // =====================================================
 // OBSERVATION: CGM Reading
@@ -35,6 +36,7 @@ InstanceOf: SpaceCGMObservation
 Title: "CGM Glucose Reading - Flight Day 15"
 Description: "Single CGM glucose reading on flight day 15 with summary metrics"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = $obs-cat#laboratory "Laboratory"
@@ -71,7 +73,7 @@ Usage: #example
 * component[hyperEvents].code = CGMMetricsCS#hyper-events "Hyperglycemic Events"
 * component[hyperEvents].valueInteger = 2
 
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)
 * extension[flightDay].valueInteger = 15
 
 // =====================================================
@@ -83,6 +85,7 @@ InstanceOf: SpaceCGMSummary
 Title: "14-Day CGM Summary Report"
 Description: "14-day CGM summary report for spaceflight metabolic monitoring"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code = $loinc#97151-5 "Glucose monitoring report"
@@ -91,4 +94,4 @@ Usage: #example
 * effectivePeriod.end = "2028-03-30T00:00:00Z"
 * result[0] = Reference(Observation/CGM-Reading-FD15)
 * conclusion = "14-day CGM summary: TIR 85%, mean glucose 108 mg/dL, CV 22.5%. No significant hypoglycemia. Mild hyperglycemic excursions noted post-exercise. Metabolic status within normal limits for spaceflight."
-* extension[missionContext].valueReference = Reference(Encounter/Artemis-III-Mission)
+* extension[missionContext].valueReference = Reference(Encounter/Artemis-IV-Mission)

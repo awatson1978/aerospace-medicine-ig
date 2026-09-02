@@ -13,7 +13,8 @@ CodeSystem: SpaceEmergencyTypeCS
 Id: space-emergency-type-cs
 Title: "Space Emergency Type Code System"
 Description: "Types of emergency situations during spaceflight operations"
-* ^experimental = false
+* ^count = 8
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -30,7 +31,8 @@ CodeSystem: EmergencyResponseCS
 Id: emergency-response-cs
 Title: "Emergency Response Code System"
 Description: "Emergency response and evacuation options for spaceflight"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -50,7 +52,7 @@ ValueSet: SpaceEmergencyTypeVS
 Id: space-emergency-type-vs
 Title: "Space Emergency Type Value Set"
 Description: "Types of spaceflight emergency situations"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceEmergencyTypeCS
 
@@ -58,7 +60,7 @@ ValueSet: EmergencyResponseVS
 Id: emergency-response-vs
 Title: "Emergency Response Value Set"
 Description: "Emergency response and evacuation options"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system EmergencyResponseCS
 
@@ -208,6 +210,7 @@ InstanceOf: SpaceEmergencyCondition
 Title: "Rapid Depressurization Event"
 Description: "Rapid depressurization event on ISS requiring emergency response"
 Usage: #example
+* insert SyntheticExample
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
@@ -223,6 +226,7 @@ InstanceOf: EmergencyEvacuationProcedure
 Title: "Emergency Dragon Return"
 Description: "Emergency return to Earth via Crew Dragon following depressurization event"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = EmergencyResponseCS#crew-dragon-return "Crew Dragon Return"
@@ -239,6 +243,7 @@ InstanceOf: EmergencyCarePlan
 Title: "ISS Emergency Contingency Plan"
 Description: "ISS crew contingency plan covering depressurization, fire, and toxic atmosphere scenarios"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
 * intent = #plan

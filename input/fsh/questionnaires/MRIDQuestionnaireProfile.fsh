@@ -174,6 +174,8 @@ CodeSystem: MRIDLaunchContextNameCS
 Id: mrid-launch-context-name-cs
 Title: "MRID Launch Context Name CodeSystem"
 Description: "Names for launch context variables"
+* ^count = 3
+* ^experimental = true
 * ^status = #active
 * ^caseSensitive = true
 * ^content = #complete
@@ -185,6 +187,8 @@ CodeSystem: MRIDLaunchContextTypeCS
 Id: mrid-launch-context-type-cs
 Title: "MRID Launch Context Type CodeSystem"
 Description: "FHIR resource types for launch context"
+* ^count = 3
+* ^experimental = true
 * ^status = #active
 * ^caseSensitive = true
 * ^content = #complete

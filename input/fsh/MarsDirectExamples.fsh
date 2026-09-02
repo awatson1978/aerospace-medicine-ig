@@ -4,25 +4,45 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $obs-cat = http://terminology.hl7.org/CodeSystem/observation-category
+Alias: $v3-actcode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $diagnosis-role = http://terminology.hl7.org/CodeSystem/diagnosis-role
+Alias: $plan-type = http://terminology.hl7.org/CodeSystem/plan-definition-type
 
 // =====================================================
 // PATIENT: Mars Crew Member Example
 // =====================================================
 
 Instance: MarsCrewMember1
-InstanceOf: Patient
+InstanceOf: Astronaut
 Title: "Mars Crew Member - Commander Chen"
 Description: "Example Mars crew member (Commander Sarah Chen) with baseline health data"
 Usage: #example
+* insert SyntheticExample
 
 * identifier[0].system = "https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id"
 * identifier[=].value = "AST-2029-001"
+* active = true
 * name[0].family = "Chen"
 * name[=].given[0] = "Sarah"
 * name[=].prefix[0] = "CDR"
 * gender = #female
 * birthDate = "1990-03-15"
+
+Instance: MarsCrewMember2
+InstanceOf: Astronaut
+Title: "Mars Crew Member - Mission Specialist Okafor"
+Description: "Example Mars crew member (Mission Specialist Daniel Okafor), geologist and subject of the autonomous appendectomy encounter"
+Usage: #example
+* insert SyntheticExample
+
+* identifier[0].system = "https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id"
+* identifier[=].value = "AST-2029-002"
+* active = true
+* name[0].family = "Okafor"
+* name[=].given[0] = "Daniel"
+* name[=].prefix[0] = "MS"
+* gender = #male
+* birthDate = "1992-11-08"
 
 // =====================================================
 // LOCATION: Mars Habitat at Jezero Crater
@@ -33,14 +53,14 @@ InstanceOf: Location
 Title: "Mars Surface Habitat - Jezero Crater"
 Description: "Pressurized habitat module at Jezero Crater landing site"
 Usage: #example
+* insert SyntheticExample
 
 * name = "Mars Direct Habitat Unit - Jezero Site"
 * description = "Pressurized surface habitat with life support, medical bay, and crew quarters. Landed at Jezero Crater ancient delta region."
 * status = #active
 * mode = #instance
 
-* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
-* type.coding.code = #surface-habitat
+* type = LocationTypeCS#surface-habitat "Surface Habitat"
 * type.text = "Mars surface habitat"
 
 * position.latitude = 18.4
@@ -56,12 +76,12 @@ InstanceOf: Device
 Title: "ISRU Propellant Production Plant"
 Description: "In-situ resource utilization plant for CH4/O2 production from Martian atmosphere"
 Usage: #example
+* insert SyntheticExample
 
 * deviceName.name = "Mars Direct ISRU Unit #1 - Jezero"
 * deviceName.type = #user-friendly-name
 
-* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-devices-prototype-cs"
-* type.coding.code = #isruPlant
+* type = MarsPrototypeDevicesCS#isruPlant "Mars ISRU Propellant Plant"
 * type.text = "ISRU Propellant Plant"
 
 * status = #active
@@ -76,9 +96,10 @@ InstanceOf: HabitatEnvironmentalObservation
 Title: "Habitat Environmental Conditions - Sol 125"
 Description: "Atmospheric monitoring inside Mars habitat on Sol 125"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* category[environmental] = $obs-cat#environmental
+* category[environmental] = AerospaceObservationCategoryCS#environmental "Environmental"
 
 * code.text = "Habitat Atmospheric Conditions"
 
@@ -124,14 +145,13 @@ InstanceOf: ISRUProductionLog
 Title: "ISRU Production Log - Sol 210"
 Description: "Cumulative propellant production by Sol 210 (7 months operation)"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
-* category[operational].coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/observation-category-aerospace"
-* category[operational].coding.code = #operational
+* category[operational] = AerospaceObservationCategoryCS#operational "Operational"
 
-* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"
-* code.coding.code = #cumulative-propellant
-* code.coding.display = "Cumulative Propellant Production"
+* code = ISRUMetricsCS#cumulative-propellant "Cumulative Propellant Production"
+* code.text = "ISRU Propellant Production"
 
 * effectiveDateTime = "2041-06-01T12:00:00Z" // Sol 210
 
@@ -142,12 +162,10 @@ Usage: #example
 
 * device = Reference(ISRU-Plant-Jezero-1)
 
-* component[reactorStatus].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"
-* component[reactorStatus].code.coding.code = #reactor-status
+* component[reactorStatus].code = ISRUMetricsCS#reactor-status "Reactor Status"
 * component[reactorStatus].valueString = "Nominal operation, 96% efficiency"
 
-* component[powerConsumption].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"
-* component[powerConsumption].code.coding.code = #power-consumption
+* component[powerConsumption].code = ISRUMetricsCS#power-consumption "Power Consumption"
 * component[powerConsumption].valueQuantity.value = 25.3
 * component[powerConsumption].valueQuantity.unit = "kW"
 * component[powerConsumption].valueQuantity.system = $ucum
@@ -164,13 +182,12 @@ InstanceOf: MarsEVAProcedure
 Title: "Mars EVA - Sol 147"
 Description: "Surface EVA to collect geological samples at crater rim, duration 6.5 hours"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 
 * code.text = "Mars Surface Extravehicular Activity"
-* code.coding[snomedCT].system = $sct
-* code.coding[snomedCT].code = #103741001
-* code.coding[snomedCT].display = "Extravehicular activity (procedure)"
+* code.coding[snomedCT] = $sct#103741001
 
 * subject = Reference(MarsCrewMember1)
 
@@ -185,9 +202,7 @@ Usage: #example
 
 * reasonCode[0].text = "Geological sample collection and crater rim survey"
 
-* outcome.coding[0].system = $sct
-* outcome.coding[=].code = #385669000
-* outcome.coding[=].display = "Successful"
+* outcome = $sct#385669000 "Successful"
 
 * extension[missionContext].valueReference = Reference(Encounter/MarsDirectMission2040)
 * extension[evaNumber].valueString = "EVA-147"
@@ -207,10 +222,11 @@ InstanceOf: Encounter
 Title: "Mars Direct Mission 2040"
 Description: "Entire Mars Direct mission encounter (launch to splashdown)"
 Usage: #example
+* insert SyntheticExample
 
 * status = #in-progress
 
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#FLD "field"
+* class = $v3-actcode#FLD "field"
 
 * subject = Reference(MarsCrewMember1)
 
@@ -218,6 +234,42 @@ Usage: #example
 // period.end not set - mission ongoing
 
 * reasonCode[0].text = "First Mars Direct mission - 18 month surface stay with ISRU demonstration"
+
+// =====================================================
+// OBSERVATION: Cumulative Transit Radiation Dose
+// =====================================================
+
+Instance: CumulativeDose-Transit
+InstanceOf: CumulativeRadiationDose
+Title: "Cumulative Radiation Dose - Outbound Transit"
+Description: "Cumulative galactic cosmic radiation dose accumulated by Commander Chen during the 6-month outbound Earth-Mars transit"
+Usage: #example
+* insert SyntheticExample
+
+* status = #final
+* category[radiationDose] = $loinc#73569-6 "Radiation dose and image quality indicators"
+* code = $loinc#73536-5 "Radiation dose total"
+
+* subject = Reference(MarsCrewMember1)
+
+* effectivePeriod.start = "2040-09-01T00:00:00Z" // Launch
+* effectivePeriod.end = "2041-03-01T00:00:00Z" // Mars arrival
+
+* valueQuantity.value = 360
+* valueQuantity.unit = "mSv"
+* valueQuantity.system = $ucum
+* valueQuantity.code = #mSv
+
+* extension[missionContext].valueReference = Reference(Encounter/MarsDirectMission2040)
+* extension[radiationType].valueCodeableConcept = SpaceRadiationTypeCS#gcr "Galactic Cosmic Radiation"
+
+* component[doseRate].code = $loinc#77638-4 "Irradiation dose rate"
+* component[doseRate].valueQuantity.value = 82.4
+* component[doseRate].valueQuantity.unit = "uSv/h"
+* component[doseRate].valueQuantity.system = $ucum
+* component[doseRate].valueQuantity.code = #uSv/h
+
+* note[0].text = "Personal dosimeter (TEPC-cross-calibrated) integrated over 182 days of deep space cruise. Mean dose rate 1.98 mSv/day, consistent with MSL RAD cruise-phase measurements. No solar particle events recorded during transit."
 
 // =====================================================
 // RISK ASSESSMENT: Radiation Exposure
@@ -228,23 +280,21 @@ InstanceOf: MarsRadiationRiskAssessment
 Title: "Radiation Risk Assessment - Post Outbound Transit"
 Description: "Cancer risk assessment after 6-month outbound transit to Mars"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 
 * subject = Reference(MarsCrewMember1)
 
-* code.coding.system = $sct
-* code.coding.code = #225338004 // Risk assessment
-* code.coding.display = "Risk assessment"
+* code = $sct#225338004 "Risk assessment"
+* code.text = "Radiation Exposure Risk Assessment"
 
 * occurrenceDateTime = "2041-03-01T00:00:00Z" // After arrival at Mars
 
-* basis[0] = Reference(Observation/CumulativeDose-Transit)
+* basis[0] = Reference(CumulativeDose-Transit)
 * basis[0].display = "Cumulative GCR dose during transit: 360 mSv"
 
-* prediction[0].outcome.coding[0].system = $sct
-* prediction[=].outcome.coding[=].code = #363346000
-* prediction[=].outcome.coding[=].display = "Malignant neoplastic disease"
+* prediction[0].outcome = $sct#363346000 "Malignant neoplastic disease"
 
 * prediction[=].probabilityDecimal = 0.018 // 1.8% increased lifetime cancer risk from transit alone
 
@@ -263,24 +313,21 @@ InstanceOf: AutonomousMedicalEncounter
 Title: "Autonomous Medical Encounter - Appendicitis Sol 189"
 Description: "Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay"
 Usage: #example
+* insert SyntheticExample
 
 * status = #finished
 
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#EMER "emergency"
+* class = $v3-actcode#EMER "emergency"
 
-* subject = Reference(Patient/MarsCrewMember2) // Different crew member
+* subject = Reference(MarsCrewMember2) // Different crew member
 
 * period.start = "2041-05-18T03:00:00Z" // Symptom onset
 * period.end = "2041-05-19T08:00:00Z" // Post-op stable
 
-* reasonCode[0].coding.system = $sct
-* reasonCode[=].coding.code = #85189001
-* reasonCode[=].coding.display = "Acute appendicitis"
+* reasonCode[0] = $sct#85189001 "Acute appendicitis"
 
 * diagnosis[0].condition.display = "Acute appendicitis, confirmed by ultrasound"
-* diagnosis[=].use.coding.system = "http://terminology.hl7.org/CodeSystem/diagnosis-role"
-* diagnosis[=].use.coding.code = #AD
-* diagnosis[=].use.coding.display = "Admission diagnosis"
+* diagnosis[=].use = $diagnosis-role#AD "Admission diagnosis"
 
 * extension[communicationDelay].valueQuantity.value = 15.2
 * extension[communicationDelay].valueQuantity.unit = "min"
@@ -300,12 +347,12 @@ InstanceOf: MissionTimelinePlan
 Title: "Mars Direct Mission Plan 2040"
 Description: "Complete mission timeline for Mars Direct architecture mission"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
 * title = "Mars Direct Mission 2040 - Jezero Crater Landing"
 
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/plan-definition-type"
-* type.coding.code = #workflow-definition
+* type = $plan-type#workflow-definition "Workflow Definition"
 
 * description = "Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems."
 

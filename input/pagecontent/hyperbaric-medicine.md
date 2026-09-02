@@ -76,8 +76,8 @@ This implementation guide defines code systems and value sets for hyperbaric med
 - **[`DecompressionProtocolCS`](CodeSystem-decompression-protocol-cs.html)**: Decompression algorithms, safety procedures, ascent protocols
 
 #### Value Sets for Implementation
-- **[`DivingMedicalExaminations`](ValueSet-diving-medical-examinations.html)**: Standardized diving medical assessments
-- **[`DecompressionProcedures`](ValueSet-decompression-procedures.html)**: Decompression treatment and safety procedures
+- **[`DivingMedicalExaminations`](ValueSet-diving-medical-examinations-vs.html)**: Standardized diving medical assessments
+- **[`DecompressionProcedures`](ValueSet-decompression-procedures-vs.html)**: Decompression treatment and safety procedures
 
 ### Clinical Integration
 

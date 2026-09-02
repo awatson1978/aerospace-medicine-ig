@@ -1,5 +1,6 @@
 Profile: AstrodynamicsObservation
 Parent: Observation
+Id: astrodynamics-observation
 Title: "Astrodynamics Observation"
 Description: "An observation of a satellite or celestial object's orbital characteristics, using orbital elements."
 
@@ -9,6 +10,7 @@ InstanceOf: Observation
 Title: "Observation - Orbital Elements"
 Description: "Observation - Orbital Elements"
 Usage: #example
+* insert SyntheticExample
 * status = #final
 * method.text = "Earth Centered Inertial"
 * method = #ECI "Earth Centered Inertial"

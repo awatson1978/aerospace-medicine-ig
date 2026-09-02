@@ -13,10 +13,11 @@ CodeSystem: NASAStandardMeasuresCS
 Id: nasa-standard-measures-cs
 Title: "NASA Spaceflight Standard Measures Code System"
 Description: "Standardized assessments from the NASA Spaceflight Standard Measures program"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 7
 * #functional-task-test "Functional Task Test" "Standardized battery of functional tasks assessing sensorimotor performance"
 * #field-test "Field Test" "Timed obstacle course for post-flight functional assessment"
 * #grip-strength "Grip Strength" "Isometric hand grip dynamometry"
@@ -29,10 +30,12 @@ CodeSystem: ImmuneBiomarkerCS
 Id: immune-biomarker-cs
 Title: "Immune Biomarker Code System"
 Description: "Immune function biomarkers monitored during spaceflight"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 9
+* #immune-panel "Immune Function Panel" "Panel of immune function biomarkers monitored across mission phases"
 * #il-6 "Interleukin-6 (IL-6)" "Pro-inflammatory cytokine marker"
 * #tnf-alpha "Tumor Necrosis Factor Alpha (TNF-α)" "Pro-inflammatory cytokine"
 * #ifn-gamma "Interferon Gamma (IFN-γ)" "Th1 immune response cytokine"
@@ -46,10 +49,11 @@ CodeSystem: OrganChipTypeCS
 Id: organ-chip-type-cs
 Title: "Organ-on-Chip Type Code System"
 Description: "Types of organ-on-chip (microphysiological systems) used in the AVATAR investigation"
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
+* ^count = 6
 * #bone-marrow-chip "Bone Marrow Chip" "Microfluidic bone marrow model for hematopoiesis studies"
 * #immune-chip "Immune Chip" "Microfluidic immune system model"
 * #gut-chip "Gut Chip" "Intestinal epithelium microfluidic model"
@@ -65,7 +69,7 @@ ValueSet: NASAStandardMeasuresVS
 Id: nasa-standard-measures-vs
 Title: "NASA Standard Measures Value Set"
 Description: "NASA Spaceflight Standard Measures assessments"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system NASAStandardMeasuresCS
 
@@ -73,7 +77,7 @@ ValueSet: ImmuneBiomarkerVS
 Id: immune-biomarker-vs
 Title: "Immune Biomarker Value Set"
 Description: "Immune function biomarkers"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system ImmuneBiomarkerCS
 
@@ -81,7 +85,7 @@ ValueSet: OrganChipTypeVS
 Id: organ-chip-type-vs
 Title: "Organ-on-Chip Type Value Set"
 Description: "Types of organ-on-chip devices"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system OrganChipTypeCS
 
@@ -101,8 +105,8 @@ Description: "Actigraphy observation from the Actigraphy for Circadian Health du
 * category 1..* MS
 
 * code 1..1 MS
-* code = $sct#129006008 "Activity monitoring"
-* code ^short = "ARCHeR actigraphy monitoring"
+* code = $sct#30920001 "Circadian rhythm"
+* code ^short = "ARCHeR actigraphy monitoring of circadian rhythm"
 
 * subject 1..1 MS
 * subject only Reference(Astronaut)
@@ -155,7 +159,7 @@ Description: "Panel of immune function biomarkers for monitoring spaceflight-ass
 * category 1..* MS
 
 * code 1..1 MS
-* code = $loinc#24359-3 "Immune function panel"
+* code = ImmuneBiomarkerCS#immune-panel "Immune Function Panel"
 * code ^short = "Immune function panel"
 
 * subject 1..1 MS
@@ -314,8 +318,8 @@ Description: "Organ-on-chip (microphysiological system) device from the AVATAR i
 * property[cellSource] ^short = "Source of cells used in the chip"
 * property[cellSource].type = $sct#4421005 "Cell structure"
 
-* property[cultureDuration] ^short = "Duration of cell culture"
-* property[cultureDuration].type = $sct#410670002 "Duration of device use"
+* property[cultureDuration] ^short = "Duration of cell culture exposure"
+* property[cultureDuration].type = SpaceRadiationCS#exposure-duration "Exposure Duration"
 
 * extension contains
     MissionContext named missionContext 0..1 MS

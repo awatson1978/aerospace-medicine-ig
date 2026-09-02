@@ -13,23 +13,21 @@ Title: "Artemis Landing Regions"
 Description: "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
+* ^count = 13
 
 // Coordinate properties
 * ^property[0].code = #latitude
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs#latitude"
 * ^property[=].description = "Approximate selenographic latitude (degrees)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #longitude
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs#longitude"
 * ^property[=].description = "Approximate selenographic longitude (degrees)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #feature
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs#feature"
 * ^property[=].description = "Primary topographic feature (crater, massif, plateau, ridge)"
 * ^property[=].type = #string
 
@@ -161,5 +159,5 @@ Title: "Artemis Landing Regions"
 Description: "Candidate Artemis III south pole landing regions for Location bindings"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * include codes from system ArtemisLandingRegionCS

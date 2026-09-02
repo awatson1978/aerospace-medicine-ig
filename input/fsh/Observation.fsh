@@ -1,4 +1,4 @@
-// Aliases for systems (optional but handy)
+Alias: $loinc = http://loinc.org
 Alias: $behavioral-biomarker-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs
 
 // ---------------------------------------------------------
@@ -51,12 +51,12 @@ Description: "Point-in-time behavioral and psychological state assessment for ae
 
 // Cortisol
 * component contains cortisol 0..1 and hrv 0..1 and sleep-efficiency 0..1
-* component[cortisol].code = $behavioral-biomarker-cs#cortisol-ugdl
+* component[cortisol].code = $loinc#2143-6 "Cortisol [Mass/volume] in Serum or Plasma"
 * component[cortisol].value[x] only Quantity
 * component[cortisol].valueQuantity.unit = "µg/dL"
 
 // HRV
-* component[hrv].code = $behavioral-biomarker-cs#hrv-ms
+* component[hrv].code = $loinc#80404-7 "R-R interval.standard deviation (Heart rate variability)"
 * component[hrv].value[x] only Quantity
 * component[hrv].valueQuantity.unit = "ms"
 

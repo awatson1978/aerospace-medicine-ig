@@ -183,7 +183,7 @@ python generate_terminology_ndjson.py
 - Fitness: space-exercise-modality-cs, space-performance-metric-cs
 - Mental Health: aerospace-behavioral-state-cs, behavioral-biomarker-cs, isolation-syndrome-factor-cs, psychological-countermeasure-cs
 - SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-cs, diving-medicine-cs, decompression-protocol-cs, underwater-communication-cs, regulatory-compliance-cs
-- Radiation: space-radiation-type-cs, radiation-countermeasures-cs, radiation-detector-type-cs, aerospace-code-system-enhanced
+- Radiation: space-radiation-type-cs, radiation-countermeasures-cs, radiation-detector-type-cs, space-radiation-cs
 - Nutrition: space-nutrition-type-cs, macronutrient-metrics-cs, hydration-type-cs, nutrition-inventory-status-cs
 - Blood Flow Restriction: bfrt-protocol-cs, bfrt-outcome-cs, bfrt-device-type-cs
 - Planetary Protection: planetary-protection-category-cs, microbial-contaminant-type-cs, sterilization-method-cs
@@ -198,7 +198,7 @@ python generate_terminology_ndjson.py
 - Fitness: space-exercise-modality-vs, space-performance-metric-vs, evs-units-vs
 - Mental Health: behavioral-health-metrics-vs, cognitive-performance-indicators-vs, stress-countermeasures-vs, isolation-syndrome-factors-vs
 - SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-activities, underwater-training-procedures, diving-contraindicated-conditions
-- Radiation: organ-dose-codes-vs-complete
+- Radiation: organ-dose-codes-vs
 - Nutrition: space-nutrition-type-vs, macronutrient-metrics-vs, hydration-type-vs, nutrition-inventory-status-vs, calorie-deficit-risk-vs
 - Blood Flow Restriction: bfrt-protocol-vs, bfrt-outcome-vs, bfrt-device-type-vs
 - Planetary Protection: planetary-protection-category-vs, microbial-contaminant-type-vs, sterilization-method-vs

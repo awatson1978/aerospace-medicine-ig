@@ -15,6 +15,7 @@ Instance: ArtemisNutritionProduct001
 InstanceOf: NutritionProduct
 Title: "Coffee"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-001"
 * status = #active
 * code.text = "Coffee"
@@ -26,6 +27,7 @@ Instance: ArtemisNutritionProduct002
 InstanceOf: NutritionProduct
 Title: "Green tea"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-002"
 * status = #active
 * code.text = "Green tea"
@@ -37,6 +39,7 @@ Instance: ArtemisNutritionProduct003
 InstanceOf: NutritionProduct
 Title: "Mango-peach smoothie"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-003"
 * status = #active
 * code.text = "Mango-peach smoothie"
@@ -48,6 +51,7 @@ Instance: ArtemisNutritionProduct004
 InstanceOf: NutritionProduct
 Title: "Chocolate breakfast drink"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-004"
 * status = #active
 * code.text = "Chocolate breakfast drink"
@@ -59,6 +63,7 @@ Instance: ArtemisNutritionProduct005
 InstanceOf: NutritionProduct
 Title: "Vanilla breakfast drink"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-005"
 * status = #active
 * code.text = "Vanilla breakfast drink"
@@ -70,6 +75,7 @@ Instance: ArtemisNutritionProduct006
 InstanceOf: NutritionProduct
 Title: "Strawberry breakfast drink"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-006"
 * status = #active
 * code.text = "Strawberry breakfast drink"
@@ -81,6 +87,7 @@ Instance: ArtemisNutritionProduct007
 InstanceOf: NutritionProduct
 Title: "Lemonade"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-007"
 * status = #active
 * code.text = "Lemonade"
@@ -92,6 +99,7 @@ Instance: ArtemisNutritionProduct008
 InstanceOf: NutritionProduct
 Title: "Apple cider"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-008"
 * status = #active
 * code.text = "Apple cider"
@@ -103,6 +111,7 @@ Instance: ArtemisNutritionProduct009
 InstanceOf: NutritionProduct
 Title: "Pineapple drink"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-009"
 * status = #active
 * code.text = "Pineapple drink"
@@ -114,6 +123,7 @@ Instance: ArtemisNutritionProduct010
 InstanceOf: NutritionProduct
 Title: "Cocoa"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-010"
 * status = #active
 * code.text = "Cocoa"
@@ -125,6 +135,7 @@ Instance: ArtemisNutritionProduct011
 InstanceOf: NutritionProduct
 Title: "Tortillas"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-011"
 * status = #active
 * code.text = "Tortillas"
@@ -136,6 +147,7 @@ Instance: ArtemisNutritionProduct012
 InstanceOf: NutritionProduct
 Title: "Wheat flat bread"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-012"
 * status = #active
 * code.text = "Wheat flat bread"
@@ -147,6 +159,7 @@ Instance: ArtemisNutritionProduct013
 InstanceOf: NutritionProduct
 Title: "Vegetable quiche"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-013"
 * status = #active
 * code.text = "Vegetable quiche"
@@ -158,6 +171,7 @@ Instance: ArtemisNutritionProduct014
 InstanceOf: NutritionProduct
 Title: "Breakfast sausage"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-014"
 * status = #active
 * code.text = "Breakfast sausage"
@@ -169,6 +183,7 @@ Instance: ArtemisNutritionProduct015
 InstanceOf: NutritionProduct
 Title: "Couscous with nuts"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-015"
 * status = #active
 * code.text = "Couscous with nuts"
@@ -180,6 +195,7 @@ Instance: ArtemisNutritionProduct016
 InstanceOf: NutritionProduct
 Title: "Mango salad"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-016"
 * status = #active
 * code.text = "Mango salad"
@@ -191,6 +207,7 @@ Instance: ArtemisNutritionProduct017
 InstanceOf: NutritionProduct
 Title: "Granola with blueberries"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-017"
 * status = #active
 * code.text = "Granola with blueberries"
@@ -202,6 +219,7 @@ Instance: ArtemisNutritionProduct018
 InstanceOf: NutritionProduct
 Title: "Barbecued beef brisket"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-018"
 * status = #active
 * code.text = "Barbecued beef brisket"
@@ -213,6 +231,7 @@ Instance: ArtemisNutritionProduct019
 InstanceOf: NutritionProduct
 Title: "Broccoli au gratin"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-019"
 * status = #active
 * code.text = "Broccoli au gratin"
@@ -224,6 +243,7 @@ Instance: ArtemisNutritionProduct020
 InstanceOf: NutritionProduct
 Title: "Spicy green beans"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-020"
 * status = #active
 * code.text = "Spicy green beans"
@@ -235,6 +255,7 @@ Instance: ArtemisNutritionProduct021
 InstanceOf: NutritionProduct
 Title: "Macaroni & cheese"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-021"
 * status = #active
 * code.text = "Macaroni & cheese"
@@ -246,6 +267,7 @@ Instance: ArtemisNutritionProduct022
 InstanceOf: NutritionProduct
 Title: "Tropical fruit salad"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-022"
 * status = #active
 * code.text = "Tropical fruit salad"
@@ -257,6 +279,7 @@ Instance: ArtemisNutritionProduct023
 InstanceOf: NutritionProduct
 Title: "Butternut squash"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-023"
 * status = #active
 * code.text = "Butternut squash"
@@ -268,6 +291,7 @@ Instance: ArtemisNutritionProduct024
 InstanceOf: NutritionProduct
 Title: "Cauliflower"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-024"
 * status = #active
 * code.text = "Cauliflower"
@@ -279,6 +303,7 @@ Instance: ArtemisNutritionProduct025
 InstanceOf: NutritionProduct
 Title: "Almonds"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-025"
 * status = #active
 * code.text = "Almonds"
@@ -290,6 +315,7 @@ Instance: ArtemisNutritionProduct026
 InstanceOf: NutritionProduct
 Title: "Cashews"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-026"
 * status = #active
 * code.text = "Cashews"
@@ -301,6 +327,7 @@ Instance: ArtemisNutritionProduct027
 InstanceOf: NutritionProduct
 Title: "Maple syrup"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-027"
 * status = #active
 * code.text = "Maple syrup"
@@ -312,6 +339,7 @@ Instance: ArtemisNutritionProduct028
 InstanceOf: NutritionProduct
 Title: "Chocolate spread"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-028"
 * status = #active
 * code.text = "Chocolate spread"
@@ -323,6 +351,7 @@ Instance: ArtemisNutritionProduct029
 InstanceOf: NutritionProduct
 Title: "Peanut butter"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-029"
 * status = #active
 * code.text = "Peanut butter"
@@ -334,6 +363,7 @@ Instance: ArtemisNutritionProduct030
 InstanceOf: NutritionProduct
 Title: "Almond butter"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-030"
 * status = #active
 * code.text = "Almond butter"
@@ -345,6 +375,7 @@ Instance: ArtemisNutritionProduct031
 InstanceOf: NutritionProduct
 Title: "Hot sauce"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-031"
 * status = #active
 * code.text = "Hot sauce"
@@ -356,6 +387,7 @@ Instance: ArtemisNutritionProduct032
 InstanceOf: NutritionProduct
 Title: "Spicy mustard"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-032"
 * status = #active
 * code.text = "Spicy mustard"
@@ -367,6 +399,7 @@ Instance: ArtemisNutritionProduct033
 InstanceOf: NutritionProduct
 Title: "Strawberry jam"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-033"
 * status = #active
 * code.text = "Strawberry jam"
@@ -378,6 +411,7 @@ Instance: ArtemisNutritionProduct034
 InstanceOf: NutritionProduct
 Title: "Honey"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-034"
 * status = #active
 * code.text = "Honey"
@@ -389,6 +423,7 @@ Instance: ArtemisNutritionProduct035
 InstanceOf: NutritionProduct
 Title: "Cinnamon"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-035"
 * status = #active
 * code.text = "Cinnamon"
@@ -400,6 +435,7 @@ Instance: ArtemisNutritionProduct036
 InstanceOf: NutritionProduct
 Title: "Cookies"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-036"
 * status = #active
 * code.text = "Cookies"
@@ -411,6 +447,7 @@ Instance: ArtemisNutritionProduct037
 InstanceOf: NutritionProduct
 Title: "Chocolate"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-037"
 * status = #active
 * code.text = "Chocolate"
@@ -422,6 +459,7 @@ Instance: ArtemisNutritionProduct038
 InstanceOf: NutritionProduct
 Title: "Cake"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-038"
 * status = #active
 * code.text = "Cake"
@@ -433,6 +471,7 @@ Instance: ArtemisNutritionProduct039
 InstanceOf: NutritionProduct
 Title: "Candy-coated almonds"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-039"
 * status = #active
 * code.text = "Candy-coated almonds"
@@ -444,6 +483,7 @@ Instance: ArtemisNutritionProduct040
 InstanceOf: NutritionProduct
 Title: "Cobbler"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-040"
 * status = #active
 * code.text = "Cobbler"
@@ -455,6 +495,7 @@ Instance: ArtemisNutritionProduct041
 InstanceOf: NutritionProduct
 Title: "Pudding"
 Usage: #example
+* insert SyntheticExample
 * id = "artemis-041"
 * status = #active
 * code.text = "Pudding"

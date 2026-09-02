@@ -30,6 +30,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 1.6 Resting ECG"
 Description: "NASA Medical Requirements Integration Document for resting 12-lead ECG assessment. Captures pre- and postflight ECG recordings for cardiovascular evaluation of long-duration flight crew members."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-6-resting-ecg"
 * version = "1.0.0"
@@ -494,6 +495,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 1.8 Audiometry"
 Description: "NASA Medical Requirements Integration Document for audiometric assessment. Captures pre- and postflight hearing threshold data to monitor crew hearing status."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-8-audiometry"
 * version = "1.0.0"
@@ -846,6 +848,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 1.10 Ophthalmologic Examination"
 Description: "NASA Medical Requirements Integration Document for ophthalmologic examination. Captures comprehensive eye examination data for monitoring Spaceflight Associated Neuro-ocular Syndrome (SANS)."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-10-ophthalmologic-exam"
 * version = "1.0.0"
@@ -1231,6 +1234,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 1.9 Dental Examination"
 Description: "NASA Medical Requirements Integration Document for dental examination. Captures comprehensive dental assessment data for spaceflight crew members."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-9-dental-exam"
 * version = "1.0.0"
@@ -1353,6 +1357,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 1.11 Body Composition/DEXA"
 Description: "NASA Medical Requirements Integration Document for body composition assessment using DEXA."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-11-body-composition"
 * version = "1.0.0"
@@ -1504,6 +1509,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 1.14 Body Mass Measurement"
 Description: "NASA Medical Requirements Integration Document for body mass measurement tracking."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-14-body-mass"
 * version = "1.0.0"

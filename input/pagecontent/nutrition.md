@@ -2,9 +2,9 @@
 
 ### Overview
 
-When the crew of **Biosphere 2** emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited **improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity**findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: **astronauts often operate at an energetic deficit**, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.
+When the crew of **Biosphere 2** emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited **improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity**—findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: **astronauts often operate at an energetic deficit**, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.
 
-On the **International Space Station**, astronauts routinely burn **2,5003,500 kcal/day** yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.
+On the **International Space Station**, astronauts routinely burn **2,500–3,500 kcal/day** yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.
 
 
 ### FHIR Implementation Architecture
@@ -19,7 +19,7 @@ On the **International Space Station**, astronauts routinely burn **2,5003,500 
 | **CalorieDeficitAssessment** | Quantify acute and cumulative calorie deficits | Resting metabolic rate, total expenditure, intake vs. requirement |
 | **MetabolicRiskSummary** | Evaluate risk from prolonged deficits | Muscle wasting, bone turnover, hormonal signs of underfeeding |
 
-These profiles parallel the architectural pattern used in radiation trackingseparating individual measurement, device/product specification, and longitudinal summaries.
+These profiles parallel the architectural pattern used in radiation tracking—separating individual measurement, device/product specification, and longitudinal summaries.
 
 #### Data Architecture
 
@@ -55,7 +55,7 @@ Integration with existing terminologies:
 
 ### Physiologic and Environmental Considerations
 
-Caloric deficit in space is not merely a dietary inconvenienceit is a **whole-system physiologic perturbation**. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutritiona constant battle between physiologic needs and environmental constraints.
+Caloric deficit in space is not merely a dietary inconvenience—it is a **whole-system physiologic perturbation**. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutrition—a constant battle between physiologic needs and environmental constraints.
 
 #### Microgravity Effects
 
@@ -64,12 +64,12 @@ Caloric deficit in space is not merely a dietary inconvenienceit is a **whole-s
 
 #### Energy Expenditure
 
-- Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by **400800 kcal/day**, especially during EVA prep
+- Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by **400–800 kcal/day**, especially during EVA prep
 - Planetary surface operations (Moon/Mars) significantly increase caloric expenditure due to suit mass and reduced-but-nonzero gravity
 
 #### Cognitive and Immune Function
 
-Chronic deficits degrade reaction time, stress tolerance, and immune resistancecritical for long-duration missions.
+Chronic deficits degrade reaction time, stress tolerance, and immune resistance—critical for long-duration missions.
 
 #### Hydration
 
@@ -77,11 +77,11 @@ Dehydration exacerbates orthostatic intolerance, kidney stone risk, and thermore
 
 #### Biosphere 2 as an Analog
 
-Long-term calorie deficit produced **improved metabolic markers** but also measurable **loss of lean mass**requiring careful management in space analogs and missions.
+Long-term calorie deficit produced **improved metabolic markers** but also measurable **loss of lean mass**—requiring careful management in space analogs and missions.
 
 ### Monitoring Strategy
 
-Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picturecombining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.
+Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picture—combining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.
 
 #### Daily Macronutrient Logging
 
@@ -98,7 +98,7 @@ Recorded via SpaceNutritionIntake. Includes caloric estimation error margins.
 - Weight, circumferences
 - Bone turnover markers (CTX, P1NP)
 - Resting Metabolic Rate (portable indirect calorimetry)
-- Hydration biomarkers: urine osmolality, Naz/Kz balance
+- Hydration biomarkers: urine osmolality, Na⁺/K⁺ balance
 
 #### Inventory Telemetry
 

@@ -19,15 +19,15 @@ CodeSystems (6 total):
 - mars-missions-cs: Robotic missions (Mariner 4, Viking, Pathfinder, Spirit, Opportunity, Curiosity, Perseverance)
 - crewed-mars-missions-cs: Architectures (Mars Direct, DRM 3.0, DRA 5.0, Starship, Olympus)
 - mars-landing-sites-cs: Candidate sites with coordinates (Jezero, Arcadia, Gale, Elysium, Hellas, Mawrth)
-- mars-devices-certified-cs: Flight-qualified hardware (Orion, Crew Dragon, ISS ECLSS, EMU, Bio-Monitor)
-- mars-devices-prototype-cs: Developmental (Starship, Mars Habitat, xEMU, ISRU Plant, Kilopower, Rovers)
+- mars-certified-devices-cs: Flight-qualified hardware (Orion, Crew Dragon, ISS ECLSS, EMU, Bio-Monitor)
+- mars-prototype-devices-cs: Developmental (Starship, Mars Habitat, xEMU, ISRU Plant, Kilopower, Rovers)
 
 ValueSets (7 total):
 - mars-missions-vs: All Mars missions
 - crewed-mars-missions-vs: Human mission plans
 - mars-landing-sites-vs: Landing site selection
-- mars-devices-certified-vs: Certified devices
-- mars-devices-prototype-vs: Prototype devices
+- mars-certified-devices-vs: Certified devices
+- mars-prototype-devices-vs: Prototype devices
 - mars-all-devices-vs: Combined devices
 
 Usage:
@@ -53,8 +53,8 @@ CODESYSTEMS = [
     'mars-missions-cs',
     'crewed-mars-missions-cs',
     'mars-landing-sites-cs',
-    'mars-devices-certified-cs',
-    'mars-devices-prototype-cs',
+    'mars-certified-devices-cs',
+    'mars-prototype-devices-cs',
 ]
 
 # ValueSets to extract (7 total)
@@ -62,8 +62,8 @@ VALUESETS = [
     'mars-missions-vs',
     'crewed-mars-missions-vs',
     'mars-landing-sites-vs',
-    'mars-devices-certified-vs',
-    'mars-devices-prototype-vs',
+    'mars-certified-devices-vs',
+    'mars-prototype-devices-vs',
     'mars-all-devices-vs',
 ]
 

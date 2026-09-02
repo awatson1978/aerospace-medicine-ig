@@ -91,7 +91,7 @@ It enables a unified **Environmental Microbiology & Planetary Protection** frame
 - Committee on Space Research (COSPAR). *COSPAR Planetary Protection Policy.* 2021 Revision. Paris: COSPAR, 2021.
 
   - [COSPAR Planetary Protection Policy](https://cosparhq.cnes.fr/scientific-structure/ppp/)  
-  - [COSPAR Policy PDF](ttps://cosparhq.cnes.fr/assets/uploads/2021/08/PPPolicy_2021_3.pdf)  
+  - [COSPAR Policy PDF](https://cosparhq.cnes.fr/assets/uploads/2021/08/PPPolicy_2021_3.pdf)  
 
 - National Aeronautics and Space Administration. *Planetary Protection Provisions for Robotic Extraterrestrial Missions.* NASA Policy Directive NPD 8020.12D. Washington, DC: NASA.
 

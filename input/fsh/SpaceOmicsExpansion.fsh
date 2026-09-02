@@ -13,7 +13,8 @@ CodeSystem: SpaceOmicsTypeCS
 Id: space-omics-type-cs
 Title: "Space Omics Type Code System"
 Description: "Multi-omics analysis types for astronaut molecular profiling"
-* ^experimental = false
+* ^count = 7
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -29,7 +30,8 @@ CodeSystem: ExpandedSpecimenTypeCS
 Id: expanded-specimen-type-cs
 Title: "Expanded Specimen Type Code System"
 Description: "Specimen types for astronaut biobank and multi-omics analysis"
-* ^experimental = false
+* ^count = 8
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -50,7 +52,7 @@ ValueSet: SpaceOmicsTypeVS
 Id: space-omics-type-vs
 Title: "Space Omics Type Value Set"
 Description: "Multi-omics analysis types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceOmicsTypeCS
 
@@ -58,7 +60,7 @@ ValueSet: ExpandedSpecimenTypeVS
 Id: expanded-specimen-type-vs
 Title: "Expanded Specimen Type Value Set"
 Description: "Specimen types for astronaut biobank"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system ExpandedSpecimenTypeCS
 
@@ -235,6 +237,7 @@ InstanceOf: Specimen
 Title: "Dried Blood Spot Specimen with Biobank Metadata"
 Description: "Dried blood spot specimen collected in-flight and stored in astronaut biobank"
 Usage: #example
+* insert SyntheticExample
 
 * type = ExpandedSpecimenTypeCS#dried-blood-spot "Dried Blood Spot"
 * subject = Reference(Patient/ExampleAstronaut)
@@ -253,6 +256,7 @@ InstanceOf: MultiOmicsObservation
 Title: "Metabolomics Observation"
 Description: "Untargeted metabolomics analysis of dried blood spot from ISS crew member"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * code = SpaceOmicsTypeCS#metabolomics "Metabolomics"
@@ -275,6 +279,7 @@ InstanceOf: PersonalizedCountermeasurePlan
 Title: "Personalized Countermeasure Plan"
 Description: "Individualized countermeasure plan based on metabolomics and genomics data"
 Usage: #example
+* insert SyntheticExample
 
 * status = #active
 * intent = #plan

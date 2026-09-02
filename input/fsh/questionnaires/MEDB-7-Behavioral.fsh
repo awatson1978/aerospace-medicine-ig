@@ -30,6 +30,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 7.1 Preflight Psychiatric/Psychological Status Check"
 Description: "NASA Medical Requirements Integration Document for preflight behavioral health assessment. Captures psychiatric/psychological assessment of behavioral readiness for flight and review of psychological services."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-1-psych-status"
 * version = "1.0.0"
@@ -436,6 +437,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 7.4 Crew Dynamics Assessment"
 Description: "NASA Medical Requirements Integration Document for crew dynamics assessment. Evaluates crew cohesion, interpersonal relationships, team functioning, and conflict management throughout mission phases."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-4-crew-dynamics"
 * version = "1.0.0"
@@ -714,6 +716,7 @@ InstanceOf: Questionnaire
 Title: "MEDB 7.5 Family Support Evaluation"
 Description: "NASA Medical Requirements Integration Document for family support evaluation. Assesses family support systems, identifies needs, and coordinates support services throughout mission phases."
 Usage: #definition
+* insert PublicRecord("https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12")
 
 * url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-5-family-support"
 * version = "1.0.0"

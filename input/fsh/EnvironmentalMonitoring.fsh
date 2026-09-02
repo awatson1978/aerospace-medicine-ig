@@ -4,6 +4,7 @@
 
 Profile: EnvironmentalMonitoring
 Parent: Observation
+Id: environmental-monitoring
 Description: "Profile for environmental monitoring."
 Title: "Environmental Monitoring"
 // * name 1..* MS
@@ -12,6 +13,8 @@ Instance: Observation.Environmental-1
 InstanceOf: EnvironmentalMonitoring
 Title: "Observation - Environmental"
 Description: "Environmental monitoring status report"
+Usage: #example
+* insert SyntheticExample
 * status = #final
 * code = http://loinc.org#environmental "Environmental Status"
 // * name

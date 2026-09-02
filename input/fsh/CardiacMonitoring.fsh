@@ -13,7 +13,8 @@ CodeSystem: CardiacMonitoringCS
 Id: cardiac-monitoring-cs
 Title: "Cardiac Monitoring Code System"
 Description: "Cardiac monitoring parameters for spaceflight ECG assessment"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -31,7 +32,7 @@ ValueSet: CardiacMonitoringVS
 Id: cardiac-monitoring-vs
 Title: "Cardiac Monitoring Value Set"
 Description: "Cardiac monitoring parameters"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system CardiacMonitoringCS
 

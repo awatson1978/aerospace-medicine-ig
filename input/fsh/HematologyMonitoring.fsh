@@ -13,7 +13,8 @@ CodeSystem: SpaceAnemiaCS
 Id: space-anemia-cs
 Title: "Space Anemia Code System"
 Description: "Parameters for spaceflight-associated anemia assessment"
-* ^experimental = false
+* ^count = 2
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -28,7 +29,7 @@ ValueSet: SpaceAnemiaVS
 Id: space-anemia-vs
 Title: "Space Anemia Value Set"
 Description: "Spaceflight anemia assessment parameters"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceAnemiaCS
 

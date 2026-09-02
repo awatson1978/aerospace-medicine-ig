@@ -1633,6 +1633,7 @@ Instance: TraumaEFASTQuestionnaire
 InstanceOf: Questionnaire
 Title: "Trauma EFAST Exam"
 Usage: #example
+* insert SyntheticExample
 * status = #draft
 * subjectType = #Patient
 

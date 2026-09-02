@@ -13,7 +13,8 @@ CodeSystem: DCSRiskCS
 Id: dcs-risk-cs
 Title: "Decompression Sickness Risk Code System"
 Description: "Decompression sickness risk factors and outcomes for EVA risk assessment"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -31,7 +32,7 @@ ValueSet: DCSRiskVS
 Id: dcs-risk-vs
 Title: "DCS Risk Value Set"
 Description: "DCS risk factors and outcomes"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system DCSRiskCS
 

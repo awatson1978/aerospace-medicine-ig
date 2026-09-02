@@ -13,7 +13,8 @@ CodeSystem: MicrogravityCountermeasureCS
 Id: microgravity-countermeasure-cs
 Title: "Microgravity Countermeasure Code System"
 Description: "Countermeasure interventions for microgravity-induced cardiovascular and fluid shift effects"
-* ^experimental = false
+* ^count = 5
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -27,7 +28,8 @@ CodeSystem: IJVFlowGradeCS
 Id: ijv-flow-grade-cs
 Title: "IJV Flow Grade Code System"
 Description: "Internal jugular vein flow grading system based on spectral pulse-wave Doppler assessment"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -40,7 +42,8 @@ CodeSystem: ParabolicFlightPhaseCS
 Id: parabolic-flight-phase-cs
 Title: "Parabolic Flight Phase Code System"
 Description: "Phases of a parabolic flight maneuver used in microgravity research"
-* ^experimental = false
+* ^count = 4
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -57,7 +60,7 @@ ValueSet: MicrogravityCountermeasureVS
 Id: microgravity-countermeasure-vs
 Title: "Microgravity Countermeasure Value Set"
 Description: "Countermeasure interventions for microgravity cardiovascular effects"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system MicrogravityCountermeasureCS
 
@@ -65,7 +68,7 @@ ValueSet: IJVFlowGradeVS
 Id: ijv-flow-grade-vs
 Title: "IJV Flow Grade Value Set"
 Description: "Internal jugular vein flow grades"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system IJVFlowGradeCS
 
@@ -73,7 +76,7 @@ ValueSet: ParabolicFlightPhaseVS
 Id: parabolic-flight-phase-vs
 Title: "Parabolic Flight Phase Value Set"
 Description: "Phases of a parabolic flight maneuver"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system ParabolicFlightPhaseCS
 
@@ -134,7 +137,7 @@ Description: "IJV flow grade and Flow Directionality Index assessment via spectr
     fdiRatio 0..1 MS
 
 * component[fdiRatio] ^short = "Flow Directionality Index ratio"
-* component[fdiRatio].code = $loinc#LP74840-2 "Flow velocity"
+* component[fdiRatio].code = VenousFlowMetricCS#fdi-ratio "Flow Directionality Index"
 * component[fdiRatio].value[x] only Quantity
 * component[fdiRatio].valueQuantity.system = $ucum
 * component[fdiRatio].valueQuantity.code = #{ratio}
@@ -213,6 +216,21 @@ Description: "IJV cross-sectional area measured by ultrasound at end-diastole"
     MissionContext named missionContext 0..1 MS and
     FlightDay named flightDay 0..1 MS
 
+CodeSystem: VenousFlowMetricCS
+Id: venous-flow-metric-cs
+Title: "Venous Flow Metric Code System"
+Description: "Component codes for internal jugular vein flow directionality measurements"
+* ^experimental = true
+* ^caseSensitive = true
+* ^content = #complete
+* ^status = #active
+* ^count = 5
+* #forward-flow-time "Forward Flow Time" "Duration of antegrade flow within the sample window (s)"
+* #retrograde-flow-time "Retrograde Flow Time" "Duration of retrograde flow within the sample window (s)"
+* #zero-flow-time "Zero Flow Time" "Duration of stagnant flow within the sample window (s)"
+* #total-sample-time "Total Sample Time" "Total duration of the Doppler sample window (s)"
+* #fdi-ratio "Flow Directionality Index" "FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total)"
+
 Profile: FlowDirectionalityIndexObservation
 Parent: Observation
 Id: flow-directionality-index-observation
@@ -250,36 +268,31 @@ Description: "FDI calculation with component times: FDI = ((t_forward - t_retrog
     fdiRatio 0..1 MS
 
 * component[forwardFlowTime] ^short = "Duration of forward flow"
-* component[forwardFlowTime].code = $loinc#LP6960-1 "Time"
-* component[forwardFlowTime].code.text = "Forward Flow Time"
+* component[forwardFlowTime].code = VenousFlowMetricCS#forward-flow-time "Forward Flow Time"
 * component[forwardFlowTime].value[x] only Quantity
 * component[forwardFlowTime].valueQuantity.system = $ucum
 * component[forwardFlowTime].valueQuantity.code = #s
 
 * component[retrogradeFlowTime] ^short = "Duration of retrograde flow"
-* component[retrogradeFlowTime].code = $loinc#LP6960-1 "Time"
-* component[retrogradeFlowTime].code.text = "Retrograde Flow Time"
+* component[retrogradeFlowTime].code = VenousFlowMetricCS#retrograde-flow-time "Retrograde Flow Time"
 * component[retrogradeFlowTime].value[x] only Quantity
 * component[retrogradeFlowTime].valueQuantity.system = $ucum
 * component[retrogradeFlowTime].valueQuantity.code = #s
 
 * component[zeroFlowTime] ^short = "Duration of zero/stagnant flow"
-* component[zeroFlowTime].code = $loinc#LP6960-1 "Time"
-* component[zeroFlowTime].code.text = "Zero Flow Time"
+* component[zeroFlowTime].code = VenousFlowMetricCS#zero-flow-time "Zero Flow Time"
 * component[zeroFlowTime].value[x] only Quantity
 * component[zeroFlowTime].valueQuantity.system = $ucum
 * component[zeroFlowTime].valueQuantity.code = #s
 
 * component[totalSampleTime] ^short = "Total Doppler sample time"
-* component[totalSampleTime].code = $loinc#LP6960-1 "Time"
-* component[totalSampleTime].code.text = "Total Sample Time"
+* component[totalSampleTime].code = VenousFlowMetricCS#total-sample-time "Total Sample Time"
 * component[totalSampleTime].value[x] only Quantity
 * component[totalSampleTime].valueQuantity.system = $ucum
 * component[totalSampleTime].valueQuantity.code = #s
 
 * component[fdiRatio] ^short = "Calculated FDI ratio"
-* component[fdiRatio].code = $loinc#LP74840-2 "Flow velocity"
-* component[fdiRatio].code.text = "FDI Ratio"
+* component[fdiRatio].code = VenousFlowMetricCS#fdi-ratio "FDI Ratio"
 * component[fdiRatio].value[x] only Quantity
 * component[fdiRatio].valueQuantity.system = $ucum
 * component[fdiRatio].valueQuantity.code = #{ratio}
@@ -409,6 +422,7 @@ InstanceOf: LBNPCountermeasureSystem
 Title: "LBNP Chamber Device"
 Description: "Lower body negative pressure chamber with -50 mmHg capability for parabolic flight campaign"
 Usage: #example
+* insert SyntheticExample
 
 * type = $sct#706767009 "Suction device"
 * type.text = "Lower Body Negative Pressure Chamber"
@@ -430,6 +444,7 @@ InstanceOf: UltrasoundMonitoringDevice
 Title: "Butterfly iQ3 Ultrasound"
 Description: "Butterfly iQ3 point-of-care ultrasound for IJV cross-sectional area and flow assessment"
 Usage: #example
+* insert SyntheticExample
 
 * type = $sct#43252007 "Ultrasound device"
 * type.text = "Point-of-Care Ultrasound"
@@ -445,6 +460,7 @@ InstanceOf: LowerBodyNegativePressureProcedure
 Title: "LBNP Session at -30 mmHg During Microgravity"
 Description: "LBNP procedure at -30 mmHg during microgravity phase of 87th ESA Parabolic Flight Campaign"
 Usage: #example
+* insert SyntheticExample
 
 * status = #completed
 * code = MicrogravityCountermeasureCS#lbnp "Lower Body Negative Pressure"
@@ -463,6 +479,7 @@ InstanceOf: InternalJugularVeinFlowObservation
 Title: "IJV Flow During LBNP (FDI = 0.85)"
 Description: "Internal jugular vein flow observation with FDI of 0.85 during LBNP at -30 mmHg"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam "Exam"
@@ -473,7 +490,7 @@ Usage: #example
 * valueCodeableConcept = IJVFlowGradeCS#grade-1 "Grade 1 - Forward Flow"
 * bodySite = $sct#244403000 "Internal jugular vein structure"
 * bodySite.text = "Right Internal Jugular Vein"
-* component[fdiRatio].code = $loinc#LP74840-2 "Flow velocity"
+* component[fdiRatio].code = VenousFlowMetricCS#fdi-ratio "Flow Directionality Index"
 * component[fdiRatio].valueQuantity.value = 0.85
 * component[fdiRatio].valueQuantity.unit = "ratio"
 * component[fdiRatio].valueQuantity.system = $ucum
@@ -489,6 +506,7 @@ InstanceOf: FlowDirectionalityIndexObservation
 Title: "FDI Observation with All Components"
 Description: "Flow Directionality Index observation with all five component measurements"
 Usage: #example
+* insert SyntheticExample
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#exam "Exam"
@@ -500,32 +518,27 @@ Usage: #example
 * valueQuantity.unit = "ratio"
 * valueQuantity.system = $ucum
 * valueQuantity.code = #{ratio}
-* component[forwardFlowTime].code = $loinc#LP6960-1 "Time"
-* component[forwardFlowTime].code.text = "Forward Flow Time"
+* component[forwardFlowTime].code = VenousFlowMetricCS#forward-flow-time "Forward Flow Time"
 * component[forwardFlowTime].valueQuantity.value = 4.2
 * component[forwardFlowTime].valueQuantity.unit = "s"
 * component[forwardFlowTime].valueQuantity.system = $ucum
 * component[forwardFlowTime].valueQuantity.code = #s
-* component[retrogradeFlowTime].code = $loinc#LP6960-1 "Time"
-* component[retrogradeFlowTime].code.text = "Retrograde Flow Time"
+* component[retrogradeFlowTime].code = VenousFlowMetricCS#retrograde-flow-time "Retrograde Flow Time"
 * component[retrogradeFlowTime].valueQuantity.value = 0.3
 * component[retrogradeFlowTime].valueQuantity.unit = "s"
 * component[retrogradeFlowTime].valueQuantity.system = $ucum
 * component[retrogradeFlowTime].valueQuantity.code = #s
-* component[zeroFlowTime].code = $loinc#LP6960-1 "Time"
-* component[zeroFlowTime].code.text = "Zero Flow Time"
+* component[zeroFlowTime].code = VenousFlowMetricCS#zero-flow-time "Zero Flow Time"
 * component[zeroFlowTime].valueQuantity.value = 0.5
 * component[zeroFlowTime].valueQuantity.unit = "s"
 * component[zeroFlowTime].valueQuantity.system = $ucum
 * component[zeroFlowTime].valueQuantity.code = #s
-* component[totalSampleTime].code = $loinc#LP6960-1 "Time"
-* component[totalSampleTime].code.text = "Total Sample Time"
+* component[totalSampleTime].code = VenousFlowMetricCS#total-sample-time "Total Sample Time"
 * component[totalSampleTime].valueQuantity.value = 5.0
 * component[totalSampleTime].valueQuantity.unit = "s"
 * component[totalSampleTime].valueQuantity.system = $ucum
 * component[totalSampleTime].valueQuantity.code = #s
-* component[fdiRatio].code = $loinc#LP74840-2 "Flow velocity"
-* component[fdiRatio].code.text = "FDI Ratio"
+* component[fdiRatio].code = VenousFlowMetricCS#fdi-ratio "FDI Ratio"
 * component[fdiRatio].valueQuantity.value = 0.85
 * component[fdiRatio].valueQuantity.unit = "ratio"
 * component[fdiRatio].valueQuantity.system = $ucum

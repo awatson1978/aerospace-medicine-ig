@@ -13,7 +13,8 @@ CodeSystem: SpacePOCUSTypeCS
 Id: space-pocus-type-cs
 Title: "Space POCUS Type Code System"
 Description: "Point-of-care ultrasound examination types for austere spaceflight environments"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -28,7 +29,8 @@ CodeSystem: SpaceSurgicalProcedureCS
 Id: space-surgical-procedure-cs
 Title: "Space Surgical Procedure Code System"
 Description: "Surgical procedures adapted for spaceflight austere environments"
-* ^experimental = false
+* ^count = 6
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
 * ^status = #active
@@ -47,7 +49,7 @@ ValueSet: SpacePOCUSTypeVS
 Id: space-pocus-type-vs
 Title: "Space POCUS Type Value Set"
 Description: "POCUS examination types"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpacePOCUSTypeCS
 
@@ -55,7 +57,7 @@ ValueSet: SpaceSurgicalProcedureVS
 Id: space-surgical-procedure-vs
 Title: "Space Surgical Procedure Value Set"
 Description: "Surgical procedures for spaceflight"
-* ^experimental = false
+* ^experimental = true
 * ^status = #active
 * include codes from system SpaceSurgicalProcedureCS
 

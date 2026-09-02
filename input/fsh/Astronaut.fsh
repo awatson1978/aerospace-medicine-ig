@@ -1,10 +1,10 @@
 // Add these missing codes and definitions to your existing CodeSystems
 
 
-// Missing Astronaut Profile - should be added to your Patient profiles
+// Astronaut patient profile: the subject of every crew-health example in this guide.
 Profile: Astronaut
 Parent: Patient
-Id: Astronaut
+Id: astronaut
 Title: "Astronaut Patient Profile"
 Description: "Patient profile for astronauts and space travelers"
 * ^version = "1.0.0"
@@ -22,6 +22,8 @@ Instance: ExampleAstronaut
 InstanceOf: Astronaut
 Title: "Example Astronaut"
 Description: "Example astronaut for testing radiation tracking"
+Usage: #example
+* insert SyntheticExample
 * identifier[0].system = "https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id"
 * identifier[0].value = "AST-001"
 * active = true

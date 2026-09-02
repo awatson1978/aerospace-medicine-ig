@@ -67,5 +67,5 @@ The G-SHOCK training program integrates with FHIR-based health records through:
 ### Related Resources
 
 - [G-SHOCK Eligibility Questionnaire](Questionnaire-GShockEligibility.html)
-- [Vestibular Adaptation Protocol](Procedure-VestibularAdaptation.html)
-- [Space Motion Sickness Prevention](MedicationRequest-MotionSickness.html)
+- [Vestibular Adaptation Protocol](Condition-SMS-Episode-FD2.html)
+- [Space Motion Sickness Prevention](MedicationAdministration-Promethazine-IM-Rescue.html)

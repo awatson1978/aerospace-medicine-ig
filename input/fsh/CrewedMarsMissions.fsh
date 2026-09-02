@@ -15,31 +15,28 @@ Title: "Human Mars Mission Plans"
 Description: "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * ^caseSensitive = true
 * ^content = #complete
+* ^count = 10
 
 // Proposer property
 * ^property[0].code = #proposer
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#proposer"
 * ^property[=].description = "Organization or individual proposing the architecture"
 * ^property[=].type = #string
 
 // Year property
 * ^property[+].code = #year
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#year"
 * ^property[=].description = "Year of proposal or major update"
 * ^property[=].type = #integer
 
 // Crew size property
 * ^property[+].code = #crewSize
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#crewSize"
 * ^property[=].description = "Nominal crew size"
 * ^property[=].type = #integer
 
 // Surface stay property
 * ^property[+].code = #surfaceStayDays
-* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#surfaceStayDays"
 * ^property[=].description = "Planned surface stay duration in days"
 * ^property[=].type = #integer
 
@@ -146,5 +143,5 @@ Title: "Human Mars Mission Plans"
 Description: "Proposed and conceptual human mission architectures to Mars"
 * ^version = "1.0.0"
 * ^status = #active
-* ^experimental = false
+* ^experimental = true
 * include codes from system CrewedMarsMissionsCS

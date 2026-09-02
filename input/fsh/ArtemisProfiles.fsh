@@ -151,8 +151,8 @@ Description: "Radiation exposure observation for deep space missions with GCR vs
 * category[laboratory] = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 
 * code MS
-// Note: Bind to RadiationTypeVS from radiation tracking module if available
-// * code from RadiationTypeVS (extensible)
+* code from ArtemisRadiationMeasureVS (extensible)
+* code ^short = "Dose measure (cumulative dose, dose rate)"
 
 * subject 1..1 MS
 * subject only Reference(Astronaut)
@@ -163,8 +163,10 @@ Description: "Radiation exposure observation for deep space missions with GCR vs
 * value[x] 1..1 MS
 * value[x] only Quantity
 * valueQuantity.system = $ucum
-// Note: Bind to RadiationDoseUnitsVS from radiation tracking module if available
-// * valueQuantity.code from RadiationDoseUnitsVS (required)
+* valueQuantity.code from RadiationDoseUnitsVS (extensible)
+
+* partOf MS
+* partOf ^short = "EVA or other procedure during which the exposure occurred"
 
 // Components for detailed dosimetry
 * component MS
@@ -176,15 +178,18 @@ Description: "Radiation exposure observation for deep space missions with GCR vs
     shieldingCondition 0..1 MS and
     tissueType 0..1 MS
 
-* component[radiationSource].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
-// Note: Bind to RadiationSourceVS from radiation tracking module if available
-// * component[radiationSource].code.coding.code from RadiationSourceVS (extensible)
+* component[radiationSource] ^short = "Dominant radiation source (GCR, SPE, trapped, secondary)"
+* component[radiationSource].code = ArtemisRadiationMeasureCS#radiation-source "Radiation Source"
 * component[radiationSource].value[x] only CodeableConcept
+* component[radiationSource].valueCodeableConcept from SpaceRadiationTypeVS (required)
 
-* component[shieldingCondition].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
-* component[shieldingCondition].value[x] only string
+* component[shieldingCondition] ^short = "Shielding condition during the exposure"
+* component[shieldingCondition].code = ArtemisRadiationMeasureCS#shielding-condition "Shielding Condition"
+* component[shieldingCondition].value[x] only CodeableConcept
+* component[shieldingCondition].valueCodeableConcept from ShieldingConditionVS (required)
 
-* component[tissueType].code.coding.system = $sct
+* component[tissueType] ^short = "Tissue or organ for which the dose is reported"
+* component[tissueType].code = ArtemisRadiationMeasureCS#tissue-type "Tissue Type"
 * component[tissueType].value[x] only CodeableConcept
 
 // Extensions
@@ -208,8 +213,7 @@ Description: "Artemis mission timeline with phases, events, constraints, and med
 * status MS
 
 * type MS
-* type.coding.system = "http://terminology.hl7.org/CodeSystem/plan-definition-type"
-* type.coding.code = #workflow-definition
+* type = http://terminology.hl7.org/CodeSystem/plan-definition-type#workflow-definition "Workflow Definition"
 
 * description MS
 * description ^short = "Detailed mission description including objectives, timeline, crew, risks"
@@ -225,10 +229,3 @@ Description: "Artemis mission timeline with phases, events, constraints, and med
     MissionContext named missionContext 0..1 MS
 
 * extension[missionContext] ^short = "Links plan to specific Artemis mission"
-
-// =====================================================
-// VALUE SETS (placeholders - assume defined elsewhere)
-// =====================================================
-
-// Note: RadiationTypeVS, RadiationDoseUnitsVS, RadiationSourceVS
-// should already exist in radiation tracking module
