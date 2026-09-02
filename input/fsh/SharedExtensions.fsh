@@ -126,4 +126,4 @@ RuleSet: ReferenceRecord
 * meta.source = "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record"
 
 RuleSet: PublicRecord(source)
-* meta.source = "{source}"
+* meta.source = {source}
