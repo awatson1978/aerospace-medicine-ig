@@ -3,7 +3,13 @@
 <PlanDefinition xmlns="http://hl7.org/fhir">
   <id value="MarsDirectMissionPlan2040"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-timeline-plan"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
@@ -26,7 +32,7 @@
         
         <tr>
             <th scope="row"><b>Version: </b></th>
-            <td style="padding-left: 4px;">0.6.2</td>
+            <td style="padding-left: 4px;">0.7.0</td>
         </tr>
         
 
@@ -62,6 +68,10 @@
                         </p>
                         
                         
+                        <p style="margin-bottom: 5px;">
+                            <b>display: </b> <span>Workflow Definition</span>
+                        </p>
+                        
                     
                 
                 
@@ -74,7 +84,7 @@
         
         <tr>
             <th scope="row"><b>Date: </b></th>
-            <td style="padding-left: 4px;">2026-08-03 22:31:50-0500</td>
+            <td style="padding-left: 4px;">2026-09-02 13:24:45-0500</td>
         </tr>
         
 
@@ -107,6 +117,12 @@
 
         
 
+        
+        <tr>
+            <th scope="row"><b>Copyright: </b></th>
+            <td style="padding-left: 4px;"><div><p>Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.</p>
+</div></td>
+        </tr>
         
 
         
@@ -229,22 +245,23 @@
 </div>
 </div>
   </text>
-  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context">
     <valueReference>
       <reference value="Encounter/MarsDirectMission2040"/>
     </valueReference>
   </extension>
-  <url value="https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040"/>
-  <version value="0.6.2"/>
+  <url value="https://awatson1978.github.io/aerospace-medicine-ig/PlanDefinition/MarsDirectMissionPlan2040"/>
+  <version value="0.7.0"/>
   <title value="Mars Direct Mission 2040 - Jezero Crater Landing"/>
   <type>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
       <code value="workflow-definition"/>
+      <display value="Workflow Definition"/>
     </coding>
   </type>
   <status value="active"/>
-  <date value="2026-08-03T22:31:50-05:00"/>
+  <date value="2026-09-02T13:24:45-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -254,6 +271,7 @@
     </telecom>
   </contact>
   <description value="Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems."/>
+  <copyright value="Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."/>
   <action>
     <title value="Launch - Earth Return Vehicle (ERV)"/>
     <description value="Uncrewed ERV launch with Sabatier reactor, nuclear power unit, hydrogen supply. Target: Mars arrival 6 months later, land at Jezero. Begin ISRU propellant production immediately."/>

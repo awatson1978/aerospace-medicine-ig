@@ -1,4 +1,4 @@
-# IJV Flow During LBNP (FDI = 0.85) - v0.6.2
+# IJV Flow During LBNP (FDI = 0.85) - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: IJV Flow During LBNP (FDI = 0.85)
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-jugular-vein-flow-observation.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Gravity Context**: Microgravity
 
@@ -18,7 +22,7 @@ Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-j
 
 **code**: IJV Flow Assessment
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-09-05 10:32:00+0000
 
@@ -31,7 +35,7 @@ Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-j
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Value[x]** |
-| * | Flow velocity | 0.85 ratio(Details: UCUM code{ratio} = '{ratio}') |
+| * | Flow Directionality Index | 0.85 ratio(Details: UCUM code{ratio} = '{ratio}') |
 
 
 
@@ -42,17 +46,25 @@ Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-j
   "resourceType" : "Observation",
   "id" : "IJV-Flow-During-LBNP-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-flow-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/internal-jugular-vein-flow-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "microgravity",
             "display" : "Microgravity"
           }
@@ -60,7 +72,7 @@ Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-j
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lbnp-pressure-level",
       "valueQuantity" : {
         "value" : -30,
         "unit" : "mmHg",
@@ -98,7 +110,7 @@ Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-j
   "valueCodeableConcept" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/ijv-flow-grade-cs",
         "code" : "grade-1",
         "display" : "Grade 1 - Forward Flow"
       }
@@ -119,9 +131,9 @@ Profile: [Internal Jugular Vein Flow Observation](StructureDefinition-internal-j
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LP74840-2",
-            "display" : "Flow velocity"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+            "code" : "fdi-ratio",
+            "display" : "Flow Directionality Index"
           }
         ]
       },

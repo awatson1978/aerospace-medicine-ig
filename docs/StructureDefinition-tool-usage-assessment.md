@@ -1,4 +1,4 @@
-# Tool Usage Assessment - v0.6.2
+# Tool Usage Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:ToolUsageAssessment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/tool-usage-assessment | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:ToolUsageAssessment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Assessment of tool manipulation and usage effectiveness
 
@@ -19,7 +20,7 @@ Assessment of tool manipulation and usage effectiveness
 
 **Usages:**
 
-* Use this Extension: [Underwater EVA Simulation](StructureDefinition-UnderwaterEVASimulation.md)
+* Use this Extension: [Underwater EVA Simulation](StructureDefinition-underwater-eva-simulation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/tool-usage-assessment)
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-tool-usage-assessmen
 {
   "resourceType" : "StructureDefinition",
   "id" : "tool-usage-assessment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/tool-usage-assessment",
+  "version" : "0.7.0",
   "name" : "ToolUsageAssessment",
   "title" : "Tool Usage Assessment",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-tool-usage-assessmen
     }
   ],
   "description" : "Assessment of tool manipulation and usage effectiveness",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-tool-usage-assessmen
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-tool-usage-assessmen
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/tool-usage-assessment"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/tool-usage-assessment"
       },
       {
         "id" : "Extension.value[x]",

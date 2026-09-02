@@ -1,4 +1,4 @@
-# ISS Anxiety Assessment - Pre-EVA - v0.6.2
+# ISS Anxiety Assessment - Pre-EVA - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: ISS Anxiety Assessment - Pre-EVA
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
@@ -14,7 +18,7 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
 
 **code**: Anxiety level
 
-**subject**: [Patient/AstronautExample](Patient/AstronautExample)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-06-15 08:00:00+0000
 
@@ -25,7 +29,7 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
 | | | |
 | :--- | :--- | :--- |
 | - | **Code** | **Value[x]** |
-| * | Heart rate variability (ms) | 32 ms(Details: UCUM codems = 'ms') |
+| * | R-R interval.standard deviation (Heart rate variability) | 32 ms(Details: UCUM codems = 'ms') |
 
 
 
@@ -36,8 +40,16 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
   "resourceType" : "Observation",
   "id" : "ISS-AnxietyAssessment-PreEVA",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
@@ -55,14 +67,14 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
   "code" : {
     "coding" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
         "code" : "anxiety-level",
         "display" : "Anxiety level"
       }
     ]
   },
   "subject" : {
-    "reference" : "Patient/AstronautExample"
+    "reference" : "Patient/ExampleAstronaut"
   },
   "effectiveDateTime" : "2025-06-15T08:00:00Z",
   "valueQuantity" : {
@@ -75,8 +87,9 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
       "code" : {
         "coding" : [
           {
-            "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-            "code" : "hrv-ms"
+            "system" : "http://loinc.org",
+            "code" : "80404-7",
+            "display" : "R-R interval.standard deviation (Heart rate variability)"
           }
         ]
       },

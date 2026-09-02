@@ -1,4 +1,4 @@
-# Internal Jugular Vein Pressure Observation - v0.6.2
+# Internal Jugular Vein Pressure Observation - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-pressure-observation | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:InternalJugularVeinPressureObservation |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/internal-jugular-vein-pressure-observation | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:InternalJugularVeinPressureObservation |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 IJV pressure measurement using ultrasound vessel wall near-closure method 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-internal-jugular-vei
 {
   "resourceType" : "StructureDefinition",
   "id" : "internal-jugular-vein-pressure-observation",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-pressure-observation",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/internal-jugular-vein-pressure-observation",
+  "version" : "0.7.0",
   "name" : "InternalJugularVeinPressureObservation",
   "title" : "Internal Jugular Vein Pressure Observation",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-internal-jugular-vei
     }
   ],
   "description" : "IJV pressure measurement using ultrasound vessel wall near-closure method",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-internal-jugular-vei
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-internal-jugular-vei
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -155,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-internal-jugular-vei
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -186,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-internal-jugular-vei
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],

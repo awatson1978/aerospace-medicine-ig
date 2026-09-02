@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CarePlan.extension:missionContext","CarePlan.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"CarePlan.extension:missionContext","CarePlan.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CarePlan.extension:missionPhase","CarePlan.extension","missionPhase","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/mission-phase]]} {[]}
+"CarePlan.extension:missionPhase","CarePlan.extension","missionPhase","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase]]} {[]}
 ","Mission Phase","Phase of the space mission during which the clinical event occurred","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -77,7 +77,7 @@ This element is labeled as a modifier because the status contains the code enter
 ","Summary of nature of plan","A description of the scope and nature of the plan.","","Provides more detail than conveyed by category.","","","","","","","",,,,,"",,,,"CarePlan.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.what[x]"
 "CarePlan.subject","CarePlan.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Who the care plan is for","Identifies the patient or group whose intended care is described by the plan.","","","","","","","","","",,,,,"",,,,"CarePlan.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject",".participation[typeCode=PAT].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "CarePlan.encounter","CarePlan.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}

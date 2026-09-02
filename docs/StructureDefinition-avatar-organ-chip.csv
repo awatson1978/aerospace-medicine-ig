@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Device.extension:missionContext","Device.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"Device.extension:missionContext","Device.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -148,7 +148,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
 ","The part number of the device","The part number of the device.","Alphanumeric Maximum 20.","","","","","","","","",,,,,"",,,,"Device.partNumber",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".playedRole[typeCode=MANU].id","FiveWs.what[x]"
 "Device.type","Device.type","","","",1,1,"Y","","","CodeableConcept {[]} {[]}
-","Type of organ-on-chip system","The kind or type of device.","","","","","","","","","",,"extensible","","https://mitre.org/fhir/space-health/ValueSet/organ-chip-type-vs","",,,,"Device.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of organ-on-chip system","The kind or type of device.","","","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-chip-type-vs","",,,,"Device.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.specialization","Device.specialization","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication","The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication.","","","","","","","","","",,,,,"",,,,"Device.specialization",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -253,7 +253,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Property value as a code, e.g., NTP4 (synced to NTP)","Property value as a code, e.g., NTP4 (synced to NTP).","","","","","","","","","",,,,,"",,,,"Device.property.valueCode",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.property:cultureDuration","Device.property","cultureDuration","","",0,1,"","","","BackboneElement {[]} {[]}
-","Duration of cell culture","The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties.","","","","","","","","","",,,,,"",,,,"Device.property",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Duration of cell culture exposure","The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties.","","","","","","","","","",,,,,"",,,,"Device.property",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Device.property:cultureDuration.id","Device.property.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -270,9 +270,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Device.property:cultureDuration.type","Device.property.type","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Code that specifies the property DeviceDefinitionPropetyCode (Extensible)","Code that specifies the property DeviceDefinitionPropetyCode (Extensible).","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://snomed.info/sct""/>
-    <code value=""410670002""/>
-    <display value=""Duration of device use""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs""/>
+    <code value=""exposure-duration""/>
+    <display value=""Exposure Duration""/>
   </coding>
 </valueCodeableConcept>","","","",,,,,"",,,,"Device.property.type",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

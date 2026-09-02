@@ -24,23 +24,23 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Procedure.extension:emergencyType","Procedure.extension","emergencyType","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/emergency-type]]} {[]}
+"Procedure.extension:emergencyType","Procedure.extension","emergencyType","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-type]]} {[]}
 ","Type of Emergency","Classification of the emergency situation","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Procedure.extension:responseTime","Procedure.extension","responseTime","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/response-time]]} {[]}
+"Procedure.extension:responseTime","Procedure.extension","responseTime","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/response-time]]} {[]}
 ","Emergency Response Time","Time from emergency recognition to response initiation","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Procedure.extension:rescue","Procedure.extension","rescue","","",0,*,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures]]} {[]}
+"Procedure.extension:rescue","Procedure.extension","rescue","","",0,*,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/rescue-procedures]]} {[]}
 ","Rescue Procedures Used","Specific rescue procedures and techniques employed","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Procedure.extension:medical","Procedure.extension","medical","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention]]} {[]}
+"Procedure.extension:medical","Procedure.extension","medical","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/medical-intervention]]} {[]}
 ","Medical Intervention","Medical interventions provided during emergency response","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Procedure.extension:lessons","Procedure.extension","lessons","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned]]} {[]}
+"Procedure.extension:lessons","Procedure.extension","lessons","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lessons-learned]]} {[]}
 ","Lessons Learned","Lessons learned and recommendations from emergency response","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -81,10 +81,10 @@ Cancelled Reason","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
 "Procedure.code","Procedure.code","","type
 ","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","","","","",,"extensible","","https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Identification of the procedure","The specific procedure that is performed. Use text if the exact nature of the procedure cannot be coded (e.g. ""Laparoscopic Appendectomy"").","","0..1 to account for primarily narrative only resources.","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-training-procedures-vs","",,,,"Procedure.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code",".code","FiveWs.what[x]","OBR-44/OBR-45"
 "Procedure.subject","Procedure.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Who the procedure was performed on","The person, animal or group on which the procedure was performed.","","","","","","","","","",,,,,"",,,,"Procedure.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=SBJ].role","FiveWs.subject[x]","FiveWs.subject","PID-3"
 "Procedure.encounter","Procedure.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}
@@ -127,7 +127,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Procedure.performer.onBehalfOf","Procedure.performer.onBehalfOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization|4.0.1]]}
 ","Organization the device or practitioner was acting for","The organization the device or practitioner was acting on behalf of.","","Practitioners and Devices can be associated with multiple organizations.  This element indicates which organization they were acting on behalf of when performing the action.","","","","","","","",,,,,"",,,,"Procedure.performer.onBehalfOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".scoper"
-"Procedure.location","Procedure.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility]]}
+"Procedure.location","Procedure.location","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility]]}
 ","Where the procedure happened","The location where the procedure actually happened.  E.g. a newborn at home, a tracheostomy at a restaurant.","","Ties a procedure to where the records are likely kept.","","","","","","","",,,,,"",,,,"Procedure.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=LOC].role[classCode=SDLOC]","FiveWs.where[x]"
 "Procedure.reasonCode","Procedure.reasonCode","","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}

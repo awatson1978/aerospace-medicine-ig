@@ -1,23 +1,25 @@
-# Space Radiation Exposure (Fixed) - v0.6.2
+# Space Radiation Exposure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Space Radiation Exposure (Fixed)**
+* **Space Radiation Exposure**
 
-## Resource Profile: Space Radiation Exposure (Fixed) 
+## Resource Profile: Space Radiation Exposure 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceRadiationExposure |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-exposure | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceRadiationExposure |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Corrected radiation dose measurement for space missions with proper extension contexts 
+Radiation dose measurement for a crew member during a space mission, with mission context, radiation type, shielding and countermeasure extensions and detailed dosimetry components. 
 
 **Usages:**
 
-* Derived from this Profile: [Cumulative Radiation Dose (Fixed)](StructureDefinition-cumulative-radiation-dose.md)
-* Refer to this Profile: [Space Radiation Exposure Summary (Fixed)](StructureDefinition-space-radiation-summary.md)
+* Derived from this Profile: [Cumulative Radiation Dose](StructureDefinition-cumulative-radiation-dose.md)
+* Refer to this Profile: [Space Radiation Exposure Summary](StructureDefinition-space-radiation-summary.md)
+* Examples for this Profile: [Observation/space-radiation-exposure-example](Observation-space-radiation-exposure-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/space-radiation-exposure)
 
@@ -37,12 +39,12 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-radiation-exposure",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-exposure",
+  "version" : "0.7.0",
   "name" : "SpaceRadiationExposure",
-  "title" : "Space Radiation Exposure (Fixed)",
+  "title" : "Space Radiation Exposure",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,7 +57,8 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
       ]
     }
   ],
-  "description" : "Corrected radiation dose measurement for space missions with proper extension contexts",
+  "description" : "Radiation dose measurement for a crew member during a space mission, with mission context, radiation type, shielding and countermeasure extensions and detailed dosimetry components.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -124,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -140,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/radiation-type"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-type"
             ]
           }
         ],
@@ -156,7 +159,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/shielding-mass"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/shielding-mass"
             ]
           }
         ]
@@ -171,7 +174,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/radiation-countermeasures"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-countermeasures"
             ]
           }
         ]
@@ -219,7 +222,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-radiation-dose-codes-vs"
         }
       },
       {
@@ -230,7 +233,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -271,7 +274,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "path" : "Observation.value[x].code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs"
         }
       },
       {
@@ -281,7 +284,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/radiation-detector"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector"
             ]
           }
         ],
@@ -313,7 +316,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "path" : "Observation.component.code",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-dose-codes-vs"
         }
       },
       {
@@ -335,7 +338,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "path" : "Observation.component.value[x].code",
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs"
         }
       },
       {
@@ -392,7 +395,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "let",
               "display" : "Linear Energy Transfer"
             }
@@ -432,7 +435,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "quality-factor",
               "display" : "Radiation Quality Factor"
             }
@@ -472,7 +475,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "shielding-effectiveness",
               "display" : "Shielding Effectiveness"
             }
@@ -512,7 +515,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-expo
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "exposure-duration",
               "display" : "Exposure Duration"
             }

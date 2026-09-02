@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Location</sch:title>
     <sch:rule context="f:Location">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lunar-coordinates']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lunar-coordinates': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-shielding']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-shielding': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

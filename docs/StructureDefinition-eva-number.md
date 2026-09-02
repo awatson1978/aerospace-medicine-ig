@@ -1,4 +1,4 @@
-# EVA Number - v0.6.2
+# EVA Number - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:EVANumber |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-number | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:EVANumber |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)
 
@@ -20,7 +21,7 @@ Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)
 **Usages:**
 
 * Use this Extension: [Extravehicular Activity Procedure](StructureDefinition-eva-procedure.md) and [Mars Extravehicular Activity Procedure](StructureDefinition-mars-eva-procedure.md)
-* Examples for this Extension: [Procedure/Artemis-III-EVA-1](Procedure-Artemis-III-EVA-1.md), [Procedure/Artemis-III-EVA-2](Procedure-Artemis-III-EVA-2.md) and [Procedure/MarsEVA-Sol147](Procedure-MarsEVA-Sol147.md)
+* Examples for this Extension: [Procedure/Artemis-IV-EVA-1](Procedure-Artemis-IV-EVA-1.md), [Procedure/Artemis-IV-EVA-2](Procedure-Artemis-IV-EVA-2.md) and [Procedure/MarsEVA-Sol147](Procedure-MarsEVA-Sol147.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/eva-number)
 
@@ -42,12 +43,12 @@ Other representations of profile: [CSV](StructureDefinition-eva-number.csv), [Ex
 {
   "resourceType" : "StructureDefinition",
   "id" : "eva-number",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-number",
+  "version" : "0.7.0",
   "name" : "EVANumber",
   "title" : "EVA Number",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -61,6 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-eva-number.csv), [Ex
     }
   ],
   "description" : "Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -96,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-eva-number.csv), [Ex
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-number"
       },
       {
         "id" : "Extension.value[x]",

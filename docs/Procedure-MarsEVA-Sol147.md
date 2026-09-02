@@ -1,4 +1,4 @@
-# Mars EVA - Sol 147 - v0.6.2
+# Mars EVA - Sol 147 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Procedure: Mars EVA - Sol 147
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Mars Extravehicular Activity Procedure](StructureDefinition-mars-eva-procedure.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Context**: [Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --> (ongoing); reasonCode =](Encounter-MarsDirectMission2040.md)
 
@@ -18,7 +22,7 @@ Profile: [Mars Extravehicular Activity Procedure](StructureDefinition-mars-eva-p
 
 **code**: Mars Surface Extravehicular Activity
 
-**subject**: [Sarah Chen Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
+**subject**: [Sarah Chen Female, DoB: 1990-03-15 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
 
 **performed**: 2041-04-06 08:30:00+0000 --> 2041-04-06 15:00:00+0000
 
@@ -51,23 +55,31 @@ Crew reported excellent mobility in xEMU suit. Peak heart rate 145 bpm during cr
   "resourceType" : "Procedure",
   "id" : "MarsEVA-Sol147",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-eva-procedure"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
         "reference" : "Encounter/MarsDirectMission2040"
       }
     },
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-number",
       "valueString" : "EVA-147"
     },
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-delay",
       "valueQuantity" : {
         "value" : 12.5,
         "unit" : "min",
@@ -81,8 +93,7 @@ Crew reported excellent mobility in xEMU suit. Peak heart rate 145 bpm during cr
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "103741001",
-        "display" : "Extravehicular activity (procedure)"
+        "code" : "103741001"
       }
     ],
     "text" : "Mars Surface Extravehicular Activity"

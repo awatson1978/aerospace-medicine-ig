@@ -1,15 +1,16 @@
-# NASA Preflight Schedule Offsets - v0.6.2
+# NASA Preflight Schedule Offsets - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **NASA Preflight Schedule Offsets**
 
-## ValueSet: NASA Preflight Schedule Offsets 
+## ValueSet: NASA Preflight Schedule Offsets (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-preflight-offset-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:NASAPreflightOffsetVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-preflight-offset-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:NASAPreflightOffsetVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Value set for L-minus preflight schedule offsets. 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "nasa-preflight-offset-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-preflight-offset-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-preflight-offset-vs",
+  "version" : "0.7.0",
   "name" : "NASAPreflightOffsetVS",
   "title" : "NASA Preflight Schedule Offsets",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   ],
   "description" : "Value set for L-minus preflight schedule offsets.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
         "concept" : [
           {
             "code" : "L-24m"

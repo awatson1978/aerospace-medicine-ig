@@ -1,4 +1,4 @@
-# Algae Photobioreactor - v0.6.2
+# Algae Photobioreactor - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Device: Algae Photobioreactor
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Bioreactor Device](StructureDefinition-bioreactor-device.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -43,8 +47,16 @@ Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle
   "resourceType" : "Device",
   "id" : "Bioreactor-Algae-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/bioreactor-device"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bioreactor-device"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "active",

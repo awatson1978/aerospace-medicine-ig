@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Procedure</sch:title>
     <sch:rule context="f:Procedure">
-      <sch:assert test="count(f:extension[@url = 'https://mitre.org/fhir/space-health/StructureDefinition/gravity-context']) &lt;= 1">extension with URL = 'https://mitre.org/fhir/space-health/StructureDefinition/gravity-context': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

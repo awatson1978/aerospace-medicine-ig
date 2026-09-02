@@ -1,4 +1,4 @@
-# Artemis Radiation Exposure - v0.6.2
+# Artemis Radiation Exposure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ArtemisRadiationExposure |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/artemis-radiation-exposure | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ArtemisRadiationExposure |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context 
 
 **Usages:**
 
-* Examples for this Profile: [Observation/Artemis-III-EVA1-Radiation](Observation-Artemis-III-EVA1-Radiation.md) and [Observation/Artemis-III-Translunar-Radiation](Observation-Artemis-III-Translunar-Radiation.md)
+* Examples for this Profile: [Observation/Artemis-IV-EVA1-Radiation](Observation-Artemis-IV-EVA1-Radiation.md) and [Observation/Artemis-IV-Translunar-Radiation](Observation-Artemis-IV-Translunar-Radiation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/artemis-radiation-exposure)
 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
 {
   "resourceType" : "StructureDefinition",
   "id" : "artemis-radiation-exposure",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/artemis-radiation-exposure",
+  "version" : "0.7.0",
   "name" : "ArtemisRadiationExposure",
   "title" : "Artemis Radiation Exposure",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
     }
   ],
   "description" : "Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -124,10 +126,16 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.partOf",
+        "path" : "Observation.partOf",
+        "short" : "EVA or other procedure during which the exposure occurred",
         "mustSupport" : true
       },
       {
@@ -169,7 +177,12 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
       {
         "id" : "Observation.code",
         "path" : "Observation.code",
-        "mustSupport" : true
+        "short" : "Dose measure (cumulative dose, dose rate)",
+        "mustSupport" : true,
+        "binding" : {
+          "strength" : "extensible",
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-radiation-measure-vs"
+        }
       },
       {
         "id" : "Observation.subject",
@@ -179,7 +192,7 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -216,6 +229,14 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
         "patternUri" : "http://unitsofmeasure.org"
       },
       {
+        "id" : "Observation.value[x].code",
+        "path" : "Observation.value[x].code",
+        "binding" : {
+          "strength" : "extensible",
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs"
+        }
+      },
+      {
         "id" : "Observation.component",
         "path" : "Observation.component",
         "slicing" : {
@@ -233,14 +254,23 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
         "id" : "Observation.component:radiationSource",
         "path" : "Observation.component",
         "sliceName" : "radiationSource",
+        "short" : "Dominant radiation source (GCR, SPE, trapped, secondary)",
         "min" : 0,
         "max" : "1",
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:radiationSource.code.coding.system",
-        "path" : "Observation.component.code.coding.system",
-        "patternUri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"
+        "id" : "Observation.component:radiationSource.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs",
+              "code" : "radiation-source",
+              "display" : "Radiation Source"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:radiationSource.value[x]",
@@ -249,42 +279,68 @@ Other representations of profile: [CSV](StructureDefinition-artemis-radiation-ex
           {
             "code" : "CodeableConcept"
           }
-        ]
+        ],
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-radiation-type-vs"
+        }
       },
       {
         "id" : "Observation.component:shieldingCondition",
         "path" : "Observation.component",
         "sliceName" : "shieldingCondition",
+        "short" : "Shielding condition during the exposure",
         "min" : 0,
         "max" : "1",
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:shieldingCondition.code.coding.system",
-        "path" : "Observation.component.code.coding.system",
-        "patternUri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs"
+        "id" : "Observation.component:shieldingCondition.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs",
+              "code" : "shielding-condition",
+              "display" : "Shielding Condition"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:shieldingCondition.value[x]",
         "path" : "Observation.component.value[x]",
         "type" : [
           {
-            "code" : "string"
+            "code" : "CodeableConcept"
           }
-        ]
+        ],
+        "binding" : {
+          "strength" : "required",
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/shielding-condition-vs"
+        }
       },
       {
         "id" : "Observation.component:tissueType",
         "path" : "Observation.component",
         "sliceName" : "tissueType",
+        "short" : "Tissue or organ for which the dose is reported",
         "min" : 0,
         "max" : "1",
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:tissueType.code.coding.system",
-        "path" : "Observation.component.code.coding.system",
-        "patternUri" : "http://snomed.info/sct"
+        "id" : "Observation.component:tissueType.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs",
+              "code" : "tissue-type",
+              "display" : "Tissue Type"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:tissueType.value[x]",

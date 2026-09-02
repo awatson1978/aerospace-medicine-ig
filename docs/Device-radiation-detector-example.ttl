@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/Device/radiation-detector-example> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "radiation-detector-example"] ; # 
+  fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
+     fhir:profile ( [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device radiation-detector-example</b></p><a name=\"radiation-detector-example\"> </a><a name=\"hcradiation-detector-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-radiation-detector.html\">Radiation Detection Device</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Example Dosimetry Inc.</p><p><b>serialNumber</b>: EPD-2100-0042</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Crew Personal Active Dosimeter</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: EPD-2100</p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs epd}\">Electronic Personal Dosimeter</span></p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs sensitivity}\">Detector Sensitivity</span></p><p><b>valueQuantity</b>: 1 uSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeuSv = 'uSv')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs energy-range-min}\">Minimum Energy Range</span></p><p><b>valueQuantity</b>: 20 keV<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekeV = 'keV')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs energy-range-max}\">Maximum Energy Range</span></p><p><b>valueQuantity</b>: 10 MeV<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeMeV = 'MeV')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs measurement-accuracy}\">Measurement Accuracy</span></p><p><b>valueQuantity</b>: 10 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><p><b>patient</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:manufacturer [ fhir:v "Example Dosimetry Inc."] ; # 
+  fhir:serialNumber [ fhir:v "EPD-2100-0042"] ; # 
+  fhir:deviceName ( [
+     fhir:name [ fhir:v "Crew Personal Active Dosimeter" ] ;
+     fhir:type [ fhir:v "user-friendly-name" ]
+  ] ) ; # 
+  fhir:modelNumber [ fhir:v "EPD-2100"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs>
+       ] ;
+       fhir:code [ fhir:v "epd" ] ;
+       fhir:display [ fhir:v "Electronic Personal Dosimeter" ]
+     ] )
+  ] ; # 
+  fhir:property ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "sensitivity" ] ;
+         fhir:display [ fhir:v "Detector Sensitivity" ]
+       ] )
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "uSv" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "uSv" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "energy-range-min" ] ;
+         fhir:display [ fhir:v "Minimum Energy Range" ]
+       ] )
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "keV" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "keV" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "energy-range-max" ] ;
+         fhir:display [ fhir:v "Maximum Energy Range" ]
+       ] )
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "MeV" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "MeV" ]
+     ] )
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "measurement-accuracy" ] ;
+         fhir:display [ fhir:v "Measurement Accuracy" ]
+       ] )
+     ] ;
+     fhir:valueQuantity ( [
+       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "%" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "%" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Behavioral Health State - v0.6.2
+# Behavioral Health State - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BehavioralHealthState |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BehavioralHealthState |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Point-in-time behavioral and psychological state assessment for aerospace missions. 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
 {
   "resourceType" : "StructureDefinition",
   "id" : "behavioral-health-state",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state",
+  "version" : "0.7.0",
   "name" : "BehavioralHealthState",
   "title" : "Behavioral Health State",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
     }
   ],
   "description" : "Point-in-time behavioral and psychological state assessment for aerospace missions.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -124,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
         "path" : "Observation.code",
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/behavioral-health-metrics-vs"
         }
       },
       {
@@ -186,8 +188,9 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-              "code" : "cortisol-ugdl"
+              "system" : "http://loinc.org",
+              "code" : "2143-6",
+              "display" : "Cortisol [Mass/volume] in Serum or Plasma"
             }
           ]
         }
@@ -204,7 +207,7 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
       {
         "id" : "Observation.component:cortisol.value[x].unit",
         "path" : "Observation.component.value[x].unit",
-        "patternString" : "µg/dL"
+        "patternString" : "ug/dL"
       },
       {
         "id" : "Observation.component:hrv",
@@ -219,8 +222,9 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-              "code" : "hrv-ms"
+              "system" : "http://loinc.org",
+              "code" : "80404-7",
+              "display" : "R-R interval.standard deviation (Heart rate variability)"
             }
           ]
         }
@@ -252,7 +256,7 @@ Other representations of profile: [CSV](StructureDefinition-behavioral-health-st
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs",
               "code" : "sleep-efficiency-pct"
             }
           ]

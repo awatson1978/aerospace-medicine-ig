@@ -6,39 +6,51 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/CarePlan/SMS-Prophylaxis-Protocol> a fhir:CarePlan ;
+<https://awatson1978.github.io/aerospace-medicine-ig/CarePlan/SMS-Prophylaxis-Protocol> a fhir:CarePlan ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "SMS-Prophylaxis-Protocol"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-care-plan"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-care-plan>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-care-plan"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-care-plan>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan SMS-Prophylaxis-Protocol</b></p><a name=\"SMS-Prophylaxis-Protocol\"> </a><a name=\"hcSMS-Prophylaxis-Protocol\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-antiemetic-care-plan.html\">Antiemetic Care Plan</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Space Motion Sickness Prophylaxis and Treatment Protocol</p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>addresses</b>: <a href=\"Condition-SMS-Episode-FD2.html\">Condition Space Motion Sickness (SMS)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs prophylactic-pre-flight}\">Pre-flight Prophylaxis</span></td><td>Completed</td><td>Scopolamine 0.4mg + Dexedrine 5mg oral, 1 hour before launch</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs rescue-treatment}\">Rescue Treatment</span></td><td>Completed</td><td>Promethazine 25mg IM PRN for Grade II+ symptoms</td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan SMS-Prophylaxis-Protocol</b></p><a name=\"SMS-Prophylaxis-Protocol\"> </a><a name=\"hcSMS-Prophylaxis-Protocol\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-antiemetic-care-plan.html\">Antiemetic Care Plan</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-IV-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: Space Motion Sickness Prophylaxis and Treatment Protocol</p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>addresses</b>: <a href=\"Condition-SMS-Episode-FD2.html\">Condition Space Motion Sickness (SMS)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs prophylactic-pre-flight}\">Pre-flight Prophylaxis</span></td><td>Completed</td><td>Scopolamine 0.4mg + Dexedrine 5mg oral, 1 hour before launch</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs rescue-treatment}\">Rescue Treatment</span></td><td>Completed</td><td>Promethazine 25mg IM PRN for Grade II+ symptoms</td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
-       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/Artemis-IV-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-IV-Mission" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:title [ fhir:v "Space Motion Sickness Prophylaxis and Treatment Protocol"] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:addresses ( [
-     fhir:l <https://mitre.org/fhir/space-health/Condition/SMS-Episode-FD2> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Condition/SMS-Episode-FD2> ;
      fhir:reference [ fhir:v "Condition/SMS-Episode-FD2" ]
   ] ) ; # 
   fhir:activity ( [
@@ -46,8 +58,8 @@
        fhir:code [
          fhir:coding ( [
            fhir:system [
-             fhir:v "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs"^^xsd:anyURI ;
-             fhir:l <https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs>
+             fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs"^^xsd:anyURI ;
+             fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs>
            ] ;
            fhir:code [ fhir:v "prophylactic-pre-flight" ] ;
            fhir:display [ fhir:v "Pre-flight Prophylaxis" ]
@@ -61,8 +73,8 @@
        fhir:code [
          fhir:coding ( [
            fhir:system [
-             fhir:v "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs"^^xsd:anyURI ;
-             fhir:l <https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs>
+             fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs"^^xsd:anyURI ;
+             fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs>
            ] ;
            fhir:code [ fhir:v "rescue-treatment" ] ;
            fhir:display [ fhir:v "Rescue Treatment" ]

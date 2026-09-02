@@ -1,15 +1,16 @@
-# Behavioral Biomarker Code System - v0.6.2
+# Behavioral Biomarker Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Behavioral Biomarker Code System**
 
-## CodeSystem: Behavioral Biomarker Code System 
+## CodeSystem: Behavioral Biomarker Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BehavioralBiomarkerCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BehavioralBiomarkerCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Codes for physiologic and digital biomarkers related to behavioral health and stress. 
@@ -26,12 +27,13 @@ Codes for physiologic and digital biomarkers related to behavioral health and st
 {
   "resourceType" : "CodeSystem",
   "id" : "behavioral-biomarker-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs",
+  "version" : "0.7.0",
   "name" : "BehavioralBiomarkerCS",
   "title" : "Behavioral Biomarker Code System",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -45,25 +47,11 @@ Codes for physiologic and digital biomarkers related to behavioral health and st
     }
   ],
   "description" : "Codes for physiologic and digital biomarkers related to behavioral health and stress.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 8,
+  "count" : 5,
   "concept" : [
-    {
-      "code" : "cortisol-ugdl",
-      "display" : "Cortisol (µg/dL)",
-      "definition" : "Cortisol concentration used as a stress biomarker."
-    },
-    {
-      "code" : "hrv-ms",
-      "display" : "Heart rate variability (ms)",
-      "definition" : "Root-mean-square or similar measure of HRV in milliseconds."
-    },
-    {
-      "code" : "sleep-duration-h",
-      "display" : "Sleep duration (hours)",
-      "definition" : "Total nightly sleep duration in hours."
-    },
     {
       "code" : "sleep-efficiency-pct",
       "display" : "Sleep efficiency (%)",

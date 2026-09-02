@@ -1,4 +1,4 @@
-# Enhanced Hyperbaric Treatment - v0.6.2
+# Enhanced Hyperbaric Treatment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/enhanced-hyperbaric-treatment | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:EnhancedHyperbaricTreatment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/enhanced-hyperbaric-treatment | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:EnhancedHyperbaricTreatment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
 {
   "resourceType" : "StructureDefinition",
   "id" : "enhanced-hyperbaric-treatment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/enhanced-hyperbaric-treatment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/enhanced-hyperbaric-treatment",
+  "version" : "0.7.0",
   "name" : "EnhancedHyperbaricTreatment",
   "title" : "Enhanced Hyperbaric Treatment",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
     }
   ],
   "description" : "Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/treatment-table"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/treatment-table"
             ]
           }
         ],
@@ -129,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-pressure"
             ]
           }
         ],
@@ -145,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/treatment-duration"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/treatment-duration"
             ]
           }
         ],
@@ -161,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/oxygen-concentration"
             ]
           }
         ],
@@ -177,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/complication-monitoring"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/complication-monitoring"
             ]
           }
         ],
@@ -193,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/safety-protocols"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/safety-protocols"
             ]
           }
         ],
@@ -209,7 +211,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/patient-monitoring"
             ]
           }
         ],
@@ -225,7 +227,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/chamber-configuration"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/chamber-configuration"
             ]
           }
         ],
@@ -242,7 +244,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/decompression-procedures-vs"
         }
       },
       {
@@ -252,7 +254,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ]
@@ -291,7 +293,7 @@ Other representations of profile: [CSV](StructureDefinition-enhanced-hyperbaric-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber"
             ]
           }
         ]

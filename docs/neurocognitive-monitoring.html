@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Neurocognitive Monitoring -  v0.6.2</title>
+    <title>Neurocognitive Monitoring - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"29"}
-    h3,h4,h5,h6{--heading-prefix:"29"}</style>
+    <style type="text/css">h2{--heading-prefix:"28"}
+    h3,h4,h5,h6{--heading-prefix:"28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Neurocognitive Monitoring</h2>
   
 
@@ -260,39 +260,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#neurocognitive-monitoring-in-spaceflight" id="markdown-toc-neurocognitive-monitoring-in-spaceflight">Neurocognitive Monitoring in Spaceflight</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#spaceflight-brain-changes" id="markdown-toc-spaceflight-brain-changes">Spaceflight Brain Changes</a></li>
-      <li><a href="#cognition-test-battery" id="markdown-toc-cognition-test-battery">Cognition Test Battery</a></li>
-      <li><a href="#key-results--cognition-accuracy-and-speed" id="markdown-toc-key-results--cognition-accuracy-and-speed">Key Results — Cognition Accuracy and Speed</a></li>
-      <li><a href="#polaris-dawn-pvt-individual-response-data" id="markdown-toc-polaris-dawn-pvt-individual-response-data">Polaris Dawn PVT Individual Response Data</a></li>
-      <li><a href="#longitudinal-monitoring-implications" id="markdown-toc-longitudinal-monitoring-implications">Longitudinal Monitoring Implications</a></li>
-      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a></li>
-      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
-      <li><a href="#next-steps--open-items" id="markdown-toc-next-steps--open-items">Next Steps / Open Items</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
-  <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#spaceflight-brain-changes" id="markdown-toc-spaceflight-brain-changes">Spaceflight Brain Changes</a></li>
+  <li><a href="#cognition-test-battery" id="markdown-toc-cognition-test-battery">Cognition Test Battery</a></li>
+  <li><a href="#key-results--cognition-accuracy-and-speed" id="markdown-toc-key-results--cognition-accuracy-and-speed">Key Results — Cognition Accuracy and Speed</a></li>
+  <li><a href="#polaris-dawn-pvt-individual-response-data" id="markdown-toc-polaris-dawn-pvt-individual-response-data">Polaris Dawn PVT Individual Response Data</a></li>
+  <li><a href="#longitudinal-monitoring-implications" id="markdown-toc-longitudinal-monitoring-implications">Longitudinal Monitoring Implications</a></li>
+  <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a></li>
+  <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h2 id="neurocognitive-monitoring-in-spaceflight">Neurocognitive Monitoring in Spaceflight</h2>
-
 <h3 id="overview">Overview</h3>
 
-<p>Spaceflight induces structural and functional brain changes (cephalad fluid shift, ventricular enlargement, neuroplasticity) that can affect cognitive performance, psychomotor vigilance, and operational readiness. The NASA HRP Cognition test battery provides a standardized, brief, repeatable assessment of key cognitive domains. This page documents spaceflight-induced brain changes, the Cognition battery, key research results (including Polaris Dawn PVT data), and FHIR modeling for longitudinal neurocognitive tracking.</p>
+<p>Spaceflight induces structural and functional brain changes (cephalad fluid shift, ventricular enlargement, neuroplasticity) that can affect cognitive performance, psychomotor vigilance, and operational readiness. The NASA Human Research Program Cognition test battery provides a standardized, brief, repeatable assessment of key cognitive domains. This page documents spaceflight-induced brain changes, the Cognition battery, key research results, and FHIR modeling for longitudinal neurocognitive tracking.</p>
 
 <h3 id="spaceflight-brain-changes">Spaceflight Brain Changes</h3>
 
 <p><strong>Key physiologic effects:</strong></p>
 <ul>
   <li>Head-ward fluid shift and upward shift of the brain</li>
-  <li>Increased ventricular volume (~10 %)
+  <li>Increased ventricular volume (~10%)
     <ul>
-      <li>Brain tissue crowding at superior sagittal sinus (site of CSF reabsorption)</li>
-      <li>Twisting of the cerebral aqueduct (connects 4th and 3rd ventricle)</li>
-      <li>Changes not fully resolved 7–12 months post 6-month ISS missions</li>
+      <li>Brain tissue crowding at superior sagittal sinus (site of cerebrospinal fluid reabsorption)</li>
+      <li>Twisting of the cerebral aqueduct (connects the 4th and 3rd ventricle)</li>
+      <li>Changes not fully resolved 7-12 months after 6-month ISS missions</li>
     </ul>
   </li>
   <li>Gray matter plasticity (primarily volume shifts, not tissue loss; largely resolved ~6 months post-mission)</li>
@@ -301,12 +294,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Spaceflight Associated Neuro-Ocular Syndrome (SANS) — severity increases with mission duration</li>
 </ul>
 
-<p><strong>Reference:</strong>
-D.R. Roberts et al. "Prolonged Microgravity Affects Human Brain Structure and Function." <em>American Journal of Neuroradiology</em> 2019 Nov 40(11):1878–1885.</p>
+<p>These findings come from Roberts et al. (2019), which compared pre- and post-flight MRI in long-duration crews; the full citation is in the References section below.</p>
 
 <h3 id="cognition-test-battery">Cognition Test Battery</h3>
 
-<p>The Cognition battery consists of <strong>10 brief, well-validated tests</strong> (15–20 min total administration time) developed specifically for high-performing astronauts.</p>
+<p>The Cognition battery consists of <strong>10 brief, well-validated tests</strong> (15-20 min total administration time) developed specifically for high-performing astronauts. Each test targets a different cognitive domain, so a crewmember's profile can be read as a shape rather than a single score.</p>
 
 <p><strong>Test Domains Covered:</strong></p>
 
@@ -369,21 +361,20 @@ D.R. Roberts et al. "Prolonged Microgravity Affects Human Brain Structure and Fu
   <li>Available on Windows, Apple iPad, and MRI (fCog) platforms</li>
   <li>Multilingual (English, French, German, Italian, Russian)</li>
   <li>Provides immediate feedback and performance history</li>
-  <li>Part of NASA Behavioral Health &amp; Performance (BHP) Standard Measures</li>
+  <li>Part of NASA Behavioral Health and Performance (BHP) Standard Measures</li>
 </ul>
 
-<p><strong>Reference:</strong>
-Basner, M. et al. "Development and validation of the Cognition test battery." <em>Aerospace Medicine and Human Performance</em> 2015 Vol. 86 Issue 11 Pages 942–952.</p>
+<p>The battery's development and validation are described in Basner et al. (2015), cited in full below.</p>
 
 <h3 id="key-results--cognition-accuracy-and-speed">Key Results — Cognition Accuracy and Speed</h3>
 
-<p>In-flight vs. pre-flight comparisons show statistically significant declines in several domains (z-score scale; slower/less accurate to faster/more accurate):</p>
+<p>In-flight versus pre-flight comparisons show statistically significant declines in several domains (reported on a z-score scale running from slower/less accurate to faster/more accurate):</p>
 
 <p><strong>Highlighted significant changes:</strong></p>
 <ul>
-  <li>Psychomotor Vigilance Test (PVT) — Accuracy &amp; Speed</li>
-  <li>Digit Symbol Substitution (DSST) — Accuracy &amp; Speed</li>
-  <li>Motor Praxis (MP) — Accuracy &amp; Speed</li>
+  <li>Psychomotor Vigilance Test (PVT) — Accuracy and Speed</li>
+  <li>Digit Symbol Substitution (DSST) — Accuracy and Speed</li>
+  <li>Motor Praxis (MP) — Accuracy and Speed</li>
 </ul>
 
 <p><strong>Additional domains assessed:</strong> BART, Matrix Reasoning (MRT), Emotion Recognition (ERT), Line Orientation (LOT), Abstract Matching (AM), Fractal 2-Back (F2B), Visual Object Learning (VOLT).</p>
@@ -392,16 +383,7 @@ Basner, M. et al. "Development and validation of the Cognition test battery." <e
 
 <h3 id="polaris-dawn-pvt-individual-response-data">Polaris Dawn PVT Individual Response Data</h3>
 
-<p>Longitudinal Psychomotor Vigilance Testing demonstrates individualized neurocognitive trajectories:</p>
-
-<ul>
-  <li><strong>Pre-Flight:</strong> N = 5 PVTs</li>
-  <li><strong>In-Flight:</strong> N = 3 PVTs (FH8, FH71, FH92)</li>
-  <li><strong>Post-Flight:</strong> N = 2 PVTs (R+4h, R+39)</li>
-</ul>
-
-<p><strong>Units:</strong> milliseconds (reaction time).
-This dataset illustrates the value of repeated measures across mission phases for personalized risk modeling and operational readiness.</p>
+<p>Repeated Psychomotor Vigilance Testing across the Polaris Dawn mission — five pre-flight, three in-flight, and two post-flight administrations per crewmember — showed that reaction-time trajectories were individual rather than uniform across the crew. The published summary reports the pattern qualitatively; per-subject reaction times in milliseconds are not given, which is itself the argument for capturing each administration as a discrete Observation instead of a mission-level average.</p>
 
 <h3 id="longitudinal-monitoring-implications">Longitudinal Monitoring Implications</h3>
 
@@ -427,35 +409,46 @@ This dataset illustrates the value of repeated measures across mission phases fo
   <li><code class="language-plaintext highlighter-rouge">BodyStructure</code></li>
 </ul>
 
-<h4 id="new-profiles-suggested">New Profiles (suggested)</h4>
+<h4 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h4>
+
+<p>Three artifacts defined elsewhere in this guide already carry part of this domain:</p>
+
+<ul>
+  <li><a href="StructureDefinition-sans-assessment.html">SANSAssessment</a> - Spaceflight-Associated Neuro-ocular Syndrome assessment, including OCT and OCT-A findings.</li>
+  <li><a href="StructureDefinition-vestibular-assessment.html">VestibularAssessment</a> - an extension linking a procedure to inner-ear and balance function observations.</li>
+  <li><a href="StructureDefinition-mission-phase.html">MissionPhase</a> - the shared extension used to tag each administration with its mission phase.</li>
+</ul>
+
+<h5 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h5>
+
+<p>The neurocognitive profiles below are design intent for a future ballot cycle. None are defined in FSH yet, so none are linkable.</p>
 
 <p><strong>Core</strong></p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">SpaceflightCognitionBattery</code></li>
-  <li><code class="language-plaintext highlighter-rouge">PsychomotorVigilanceObservation</code></li>
-  <li><code class="language-plaintext highlighter-rouge">ExecutiveFunctionAssessment</code></li>
-  <li><code class="language-plaintext highlighter-rouge">NeurobehavioralAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightCognitionBattery</code> - a QuestionnaireResponse or panel Observation representing one complete administration of the 10-test Cognition battery.</li>
+  <li><code class="language-plaintext highlighter-rouge">PsychomotorVigilanceObservation</code> - a single PVT administration with reaction time, lapses, and false starts.</li>
+  <li><code class="language-plaintext highlighter-rouge">ExecutiveFunctionAssessment</code> - matrix reasoning, abstract matching, and 2-back results grouped as an executive-function panel.</li>
+  <li><code class="language-plaintext highlighter-rouge">NeurobehavioralAssessment</code> - a summary observation combining cognitive results with fatigue and mood context.</li>
 </ul>
 
 <p><strong>Structural / Biomarker</strong></p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">SpaceflightBrainMRI</code></li>
-  <li><code class="language-plaintext highlighter-rouge">WhiteMatterAssessment</code></li>
-  <li><code class="language-plaintext highlighter-rouge">NeurodegenerationBiomarker</code></li>
-  <li><code class="language-plaintext highlighter-rouge">CSFShiftObservation</code></li>
-  <li><code class="language-plaintext highlighter-rouge">NeurovestibularAssessment</code></li>
-  <li><code class="language-plaintext highlighter-rouge">SANSAssessment</code></li>
-  <li><code class="language-plaintext highlighter-rouge">OperationalReadinessAssessment</code></li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceflightBrainMRI</code> - an ImagingStudy profile for pre/post-flight structural MRI with ventricular volume measures.</li>
+  <li><code class="language-plaintext highlighter-rouge">WhiteMatterAssessment</code> - diffusion-derived white matter metrics.</li>
+  <li><code class="language-plaintext highlighter-rouge">NeurodegenerationBiomarker</code> - blood biomarkers of brain injury and degeneration (for example neurofilament light chain).</li>
+  <li><code class="language-plaintext highlighter-rouge">CSFShiftObservation</code> - cerebrospinal fluid distribution and aqueduct geometry measures.</li>
+  <li><code class="language-plaintext highlighter-rouge">OperationalReadinessAssessment</code> - a derived readiness state combining cognitive, sleep, and workload inputs.</li>
 </ul>
 
-<h4 id="suggested-valuesets--codesystems">Suggested ValueSets / CodeSystems</h4>
+<h5 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h5>
 
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">CognitiveTestCategoryVS</code></li>
-  <li><code class="language-plaintext highlighter-rouge">NeurocognitiveDomainVS</code></li>
-  <li><code class="language-plaintext highlighter-rouge">NeurobehavioralOperationalStateVS</code></li>
-  <li><code class="language-plaintext highlighter-rouge">MissionPhaseCS</code> (pre-flight, ascent, inflight, EVA, transit, docking, reentry, recovery, post-flight-acute, post-flight-longitudinal)</li>
+  <li><code class="language-plaintext highlighter-rouge">CognitiveTestCategoryVS</code> - a value set naming the ten Cognition battery tests. The existing <a href="ValueSet-cognitive-performance-indicators-vs.html">CognitivePerformanceIndicatorsVS</a> covers the derived performance indicators but not the test identifiers themselves.</li>
+  <li><code class="language-plaintext highlighter-rouge">NeurocognitiveDomainVS</code> - a value set for the underlying domains (attention, processing speed, working memory, spatial orientation).</li>
+  <li><code class="language-plaintext highlighter-rouge">NeurobehavioralOperationalStateVS</code> - readiness states derived from the above.</li>
 </ul>
+
+<p>Mission-phase tagging does not need a new code system: use the existing <a href="CodeSystem-mission-phase-cs.html">MissionPhaseCS</a>, which already carries pre-flight, launch-ascent, transit, orbital-ops, surface-ops, and post-flight phases.</p>
 
 <h4 id="example-use-cases">Example Use Cases</h4>
 
@@ -469,7 +462,7 @@ This dataset illustrates the value of repeated measures across mission phases fo
 <p>This content extends existing IG patterns for longitudinal physiologic monitoring and operational risk management. It integrates naturally with:</p>
 <ul>
   <li>Radiation Exposure Tracking</li>
-  <li>Sleep &amp; Fatigue Monitoring</li>
+  <li>Sleep and Fatigue Monitoring</li>
   <li>Vestibular Adaptation</li>
   <li>Behavioral Health / Mental Health</li>
   <li>EVA Workload Assessment</li>
@@ -477,51 +470,17 @@ This dataset illustrates the value of repeated measures across mission phases fo
 
 <p>It supports the broader <strong>Environmental Exposure + Physiologic Countermeasure</strong> framework and real-time operational readiness analytics.</p>
 
-<h3 id="next-steps--open-items">Next Steps / Open Items</h3>
-
-<ul>
-  <li>Add example FHIR instances (Cognition battery Questionnaire + PVT Observation bundle)</li>
-  <li>Publish new ValueSets for cognitive domains and mission phases</li>
-  <li>Link to related profiles (SANS, cephalad fluid shift)</li>
-</ul>
-
 <h3 id="references">References</h3>
 
-<h2 id="references-1">References</h2>
-
 <ul>
-  <li>
-    <p>Roberts, Donna R., Yiri E. Albrecht, Juan C. Collins, Rachel A. Asemani, and colleagues. “Prolonged Microgravity Affects Human Brain Structure and Function.” <em>American Journal of Neuroradiology</em> 40, no. 11 (2019): 1878–1885. <a href="https://doi.org/10.3174/ajnr.A6249">https://doi.org/10.3174/ajnr.A6249</a>.</p>
-  </li>
-  <li>
-    <p>Basner, Mathias, David F. Dinges, Nicholas Mollicone, Adrian Ecker, and colleagues. “Development and Validation of the Cognition Test Battery for Spaceflight.” <em>Aerospace Medicine and Human Performance</em> 86, no. 11 (2015): 942–952. <a href="https://doi.org/10.3357/AMHP.4343.2015">https://doi.org/10.3357/AMHP.4343.2015</a>.</p>
-  </li>
-  <li>
-    <p>Basner, Mathias, Mathilde Savitt, David F. Dinges, and colleagues. “Cognition Test Battery: Performance Monitoring During Spaceflight Operations.” NASA Human Research Program Behavioral Health and Performance Element.</p>
-
-    <ul>
-      <li>NASA HRP Behavioral Health &amp; Performance: <a href="https://www.nasa.gov/hrp/elements/bhp/">https://www.nasa.gov/hrp/elements/bhp/</a></li>
-      <li>Cognition Battery Overview: <a href="https://bhp.nasa.gov/">https://bhp.nasa.gov/</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>National Aeronautics and Space Administration Human Research Program. <em>Cognition Battery and Neurocognitive Monitoring During Spaceflight Operations.</em> NASA HRP Cognitive Functions presentation materials, including Polaris Dawn Psychomotor Vigilance Test (PVT) longitudinal observations.</p>
-  </li>
-  <li>
-    <p>Lee, John K., Rachael D. Seidler, and colleagues. “The Effects of Long Duration Spaceflight on Sensorimotor Control and Cognition.” <em>Frontiers in Neural Circuits</em> 15 (2021). <a href="https://doi.org/10.3389/fncir.2021.723504">https://doi.org/10.3389/fncir.2021.723504</a>.</p>
-  </li>
-  <li>
-    <p>Cassady, Katelyn, Heather R. McGregor, and colleagues. “Sensory Network Segregation as a Predictor of Post-Spaceflight Balance Impairments and Sensory Re-weighting.” <em>npj Microgravity</em> (2025). <a href="https://pubmed.ncbi.nlm.nih.gov/41309651/">https://pubmed.ncbi.nlm.nih.gov/41309651/</a>.</p>
-  </li>
-  <li>
-    <p>Yuan, Pengfei, and colleagues. “EEG Oscillations and Oxygen Saturation During Hypoxia Exposure.” <em>Human Brain Mapping</em> 45, no. 2 (2024). <a href="https://doi.org/10.1002/hbm.26214">https://doi.org/10.1002/hbm.26214</a>.</p>
-  </li>
-  <li>
-    <p>Nature Reviews Neurology / The Lancet Neurology Editorial Group. “Effects of Spaceflight on the Brain.” <em>The Lancet Neurology</em> 23, no. 9 (2024). <a href="https://doi.org/10.1016/S1474-4422(24)00224-2">https://doi.org/10.1016/S1474-4422(24)00224-2</a>.</p>
-  </li>
-  <li>
-    <p>National Aeronautics and Space Administration. <em>Behavioral Health and Performance Standard Measures.</em> NASA Human Research Program <a href="https://www.nasa.gov/hrp/elements/bhp/">https://www.nasa.gov/hrp/elements/bhp/</a></p>
-  </li>
+  <li>Roberts DR, et al. "Prolonged Microgravity Affects Human Brain Structure and Function." <em>American Journal of Neuroradiology</em> 40, no. 11 (2019): 1878-1885. <a href="https://doi.org/10.3174/ajnr.A6249">https://doi.org/10.3174/ajnr.A6249</a></li>
+  <li>Basner M, Savitt A, Moore TM, et al. "Development and Validation of the Cognition Test Battery for Spaceflight." <em>Aerospace Medicine and Human Performance</em> 86, no. 11 (2015): 942-952. <a href="https://doi.org/10.3357/AMHP.4343.2015">https://doi.org/10.3357/AMHP.4343.2015</a></li>
+  <li>NASA Human Research Program. <em>Cognition Battery and Neurocognitive Monitoring During Spaceflight Operations.</em> NASA HRP Behavioral Health and Performance Element, including Polaris Dawn Psychomotor Vigilance Test longitudinal observations. <a href="https://www.nasa.gov/hrp/elements/bhp/">https://www.nasa.gov/hrp/elements/bhp/</a></li>
+  <li>Lee JK, Seidler RD, et al. "The Effects of Long Duration Spaceflight on Sensorimotor Control and Cognition." <em>Frontiers in Neural Circuits</em> 15 (2021). <a href="https://doi.org/10.3389/fncir.2021.723504">https://doi.org/10.3389/fncir.2021.723504</a></li>
+  <li>Cassady K, McGregor HR, et al. "Sensory Network Segregation as a Predictor of Post-Spaceflight Balance Impairments and Sensory Re-weighting." <em>npj Microgravity</em> (2025). <a href="https://pubmed.ncbi.nlm.nih.gov/41309651/">https://pubmed.ncbi.nlm.nih.gov/41309651/</a></li>
+  <li>Yuan P, et al. "EEG Oscillations and Oxygen Saturation During Hypoxia Exposure." <em>Human Brain Mapping</em> 45, no. 2 (2024). <a href="https://doi.org/10.1002/hbm.26214">https://doi.org/10.1002/hbm.26214</a></li>
+  <li>"Effects of spaceflight on the brain." <em>The Lancet Neurology</em> 23, no. 9 (2024). <a href="https://www.thelancet.com/journals/laneur/article/PIIS1474-4422%2824%2900224-2/abstract">https://www.thelancet.com/journals/laneur/article/PIIS1474-4422%2824%2900224-2/abstract</a></li>
+  <li>NASA. <em>Behavioral Health and Performance Standard Measures.</em> NASA Human Research Program. <a href="https://www.nasa.gov/hrp/elements/bhp/">https://www.nasa.gov/hrp/elements/bhp/</a></li>
 </ul>
 
 
@@ -543,7 +502,7 @@ This dataset illustrates the value of repeated measures across mission phases fo
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

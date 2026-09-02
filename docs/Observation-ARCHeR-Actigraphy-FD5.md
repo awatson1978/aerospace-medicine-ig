@@ -1,4 +1,4 @@
-# ARCHeR Actigraphy - Flight Day 5 - v0.6.2
+# ARCHeR Actigraphy - Flight Day 5 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example Observation: ARCHeR Actigraphy - Flight Day 5
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-observation.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Mission Phase**: Outbound Transit
 
@@ -16,9 +20,9 @@ Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-o
 
 **category**: Exam
 
-**code**: Activity monitoring
+**code**: Circadian rhythm
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-03-20 00:00:00+0000 --> 2028-03-21 00:00:00+0000
 
@@ -37,23 +41,31 @@ Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-o
   "resourceType" : "Observation",
   "id" : "ARCHeR-Actigraphy-FD5",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/archer-actigraphy-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "transit-outbound",
             "display" : "Outbound Transit"
           }
@@ -77,8 +89,8 @@ Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-o
     "coding" : [
       {
         "system" : "http://snomed.info/sct",
-        "code" : "129006008",
-        "display" : "Activity monitoring"
+        "code" : "30920001",
+        "display" : "Circadian rhythm"
       }
     ]
   },
@@ -94,7 +106,7 @@ Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-o
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/actigraphy-metric-cs",
             "code" : "interdaily-stability",
             "display" : "Interdaily Stability (IS)"
           }
@@ -111,7 +123,7 @@ Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-o
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-assessment-cs",
             "code" : "circadian-period",
             "display" : "Circadian Period (Tau)"
           }
@@ -128,7 +140,7 @@ Profile: [ARCHeR Actigraphy Observation](StructureDefinition-archer-actigraphy-o
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
             "code" : "total-sleep-time",
             "display" : "Total Sleep Time (TST)"
           }

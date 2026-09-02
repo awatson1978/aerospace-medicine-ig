@@ -1,15 +1,16 @@
-# BFRT Protocol Value Set - v0.6.2
+# BFRT Protocol Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **BFRT Protocol Value Set**
 
-## ValueSet: BFRT Protocol Value Set 
+## ValueSet: BFRT Protocol Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/bfrt-protocol-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BFRTProtocolVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bfrt-protocol-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BFRTProtocolVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Blood flow restriction training protocol types 
@@ -47,13 +48,13 @@ Blood flow restriction training protocol types
 {
   "resourceType" : "ValueSet",
   "id" : "bfrt-protocol-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/bfrt-protocol-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bfrt-protocol-vs",
+  "version" : "0.7.0",
   "name" : "BFRTProtocolVS",
   "title" : "BFRT Protocol Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -67,10 +68,11 @@ Blood flow restriction training protocol types
     }
   ],
   "description" : "Blood flow restriction training protocol types",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-protocol-cs"
       }
     ]
   }

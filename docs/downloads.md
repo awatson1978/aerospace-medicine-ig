@@ -1,4 +1,4 @@
-# Downloads - v0.6.2
+# Downloads - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * **Downloads**
@@ -13,14 +13,24 @@ The following package file includes an NPM package file used by many of the FHIR
 
 ### General Data Model
 
-General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHIR and other CMS approved interoperability data standards.
+Terminology and example resources for the astronaut-health profiles (fitness, mental health, nutrition, radiation, diving, planetary protection, telemedicine and related topics), using SNOMED CT, LOINC and UCUM alongside the code systems defined in this guide. Each file is newline-delimited JSON (NDJSON): one FHIR resource per line, suitable for bulk import.
 
 * [SpaceHealth.CodeSystems.ndjson](SpaceHealth.CodeSystems.ndjson)
 * [SpaceHealth.ValueSets.ndjson](SpaceHealth.ValueSets.ndjson)
+* [SpaceHealth.Conditions.ndjson](SpaceHealth.Conditions.ndjson)
+* [SpaceHealth.Devices.ndjson](SpaceHealth.Devices.ndjson)
+* [SpaceHealth.Locations.ndjson](SpaceHealth.Locations.ndjson)
+* [SpaceHealth.Observations.ndjson](SpaceHealth.Observations.ndjson)
+* [SpaceHealth.Organizations.ndjson](SpaceHealth.Organizations.ndjson)
+* [SpaceHealth.Procedures.ndjson](SpaceHealth.Procedures.ndjson)
 
-### NASA
+### NASA Medical Requirements
+
+Questionnaires transcribed from the NASA Medical Requirements Integration Documents (MRID). See [NASA Medical Requirements](nasa-medical-requirements.md).
 
 * [NASA.Questionnaires.ndjson](NASA.Questionnaires.ndjson)
+* [NASA.CodeSystems.ndjson](NASA.CodeSystems.ndjson)
+* [NASA.ValueSets.ndjson](NASA.ValueSets.ndjson)
 
 ### Artemis
 
@@ -29,7 +39,6 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 * [Artemis.ValueSets.ndjson](Artemis.ValueSets.ndjson)
 * [Artemis.Organizations.ndjson](Artemis.Organizations.ndjson)
 * [Artemis.Devices.ndjson](Artemis.Devices.ndjson)
-* [Artemis.Crew.ndjson](Artemis.Crew.ndjson)
 * [Artemis.NutritionProducts.ndjson](Artemis.NutritionProducts.ndjson)
 * [Artemis.ActivityDefinitions.ndjson](Artemis.ActivityDefinitions.ndjson)
 * [Artemis.PlanDefinitions.ndjson](Artemis.PlanDefinitions.ndjson)
@@ -48,7 +57,9 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 * [CommercialSpace.Organizations.ndjson](CommercialSpace.Organizations.ndjson)
 * [CommercialSpace.Devices.ndjson](CommercialSpace.Devices.ndjson)
 
-### Star Trek
+### Fictional Patients
+
+Eight Patient resources named after Star Trek characters, used as example subjects throughout the guide. They are tagged `HTEST` and carry `meta.source` ending in `/provenance/fictional`; do not load them into a production system.
 
 * [SpaceHealth.Patients.StarTrek.ndjson](SpaceHealth.Patients.StarTrek.ndjson)
 
@@ -56,6 +67,6 @@ General data model developed from NASA and ISS sources, using SNOMED, LOINC, FHI
 
 All the examples that are used in this Implementation Guide available for download:
 
-* [XML](space-health-registry-examples.xml.zip)
-* [JSON](space-health-registry-examples.json.zip)
+* [XML](examples.xml.zip)
+* [JSON](examples.json.zip)
 

@@ -1,4 +1,4 @@
-# Insurance - Plan - v0.6.2
+# Insurance - Plan - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example InsurancePlan: Insurance - Plan
 
-Profile: [Space insurance](StructureDefinition-SpaceInsurance.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Space insurance](StructureDefinition-space-insurance.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 
 
@@ -17,8 +21,16 @@ Profile: [Space insurance](StructureDefinition-SpaceInsurance.md)
   "resourceType" : "InsurancePlan",
   "id" : "SpaceTourismTravelInsurance",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-insurance"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   }
 }

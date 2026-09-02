@@ -1,22 +1,23 @@
-# Decompression Protocols and Procedures - v0.6.2
+# Decompression Protocols and Procedures - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Decompression Protocols and Procedures**
 
-## CodeSystem: Decompression Protocols and Procedures 
+## CodeSystem: Decompression Protocols and Procedures (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:DecompressionProtocolCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/decompression-protocol-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:DecompressionProtocolCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Standardized decompression protocols and safety procedures 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [DecompressionProcedures](ValueSet-decompression-procedures.md)
+* [DecompressionProcedures](ValueSet-decompression-procedures-vs.md)
 
 
 
@@ -26,13 +27,13 @@ Standardized decompression protocols and safety procedures
 {
   "resourceType" : "CodeSystem",
   "id" : "decompression-protocol-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/decompression-protocol-cs",
+  "version" : "0.7.0",
   "name" : "DecompressionProtocolCS",
   "title" : "Decompression Protocols and Procedures",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Standardized decompression protocols and safety procedures
     }
   ],
   "description" : "Standardized decompression protocols and safety procedures",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 24,

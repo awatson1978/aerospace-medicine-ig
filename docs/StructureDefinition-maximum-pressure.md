@@ -1,4 +1,4 @@
-# Maximum Operating Pressure - v0.6.2
+# Maximum Operating Pressure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,10 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:MaximumPressure |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-pressure | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:MaximumPressure |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
-Maximum pressure the chamber can safely operate at
+Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment
 
 **Context of Use**
 
@@ -19,7 +20,7 @@ Maximum pressure the chamber can safely operate at
 
 **Usages:**
 
-* Use this Extension: [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md), [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) and [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md)
+* Use this Extension: [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md), [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md) and [Hyperbaric Treatment](StructureDefinition-hyperbaric-treatment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/maximum-pressure)
 
@@ -43,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-maximum-pressure.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "maximum-pressure",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-pressure",
+  "version" : "0.7.0",
   "name" : "MaximumPressure",
   "title" : "Maximum Operating Pressure",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -61,7 +62,8 @@ Other representations of profile: [CSV](StructureDefinition-maximum-pressure.csv
       ]
     }
   ],
-  "description" : "Maximum pressure the chamber can safely operate at",
+  "description" : "Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -76,6 +78,10 @@ Other representations of profile: [CSV](StructureDefinition-maximum-pressure.csv
     {
       "type" : "element",
       "expression" : "Location"
+    },
+    {
+      "type" : "element",
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -87,7 +93,7 @@ Other representations of profile: [CSV](StructureDefinition-maximum-pressure.csv
         "id" : "Extension",
         "path" : "Extension",
         "short" : "Maximum Operating Pressure",
-        "definition" : "Maximum pressure the chamber can safely operate at"
+        "definition" : "Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment"
       },
       {
         "id" : "Extension.extension",
@@ -97,7 +103,7 @@ Other representations of profile: [CSV](StructureDefinition-maximum-pressure.csv
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-pressure"
       },
       {
         "id" : "Extension.value[x]",

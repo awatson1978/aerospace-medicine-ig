@@ -1,4 +1,4 @@
-# MEDB 1.11 Body Composition/DEXA - v0.6.2
+# MEDB 1.11 Body Composition/DEXA - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-11-body-composition | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-11-body-composition | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB111BodyComposition |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To assess body composition including bone mineral density, lean mass, and fat ma
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB111BodyCompositionQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -44,8 +47,8 @@ To assess body composition including bone mineral density, lean mass, and fat ma
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-11-body-composition",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-11-body-composition",
+  "version" : "0.7.0",
   "name" : "MEDB111BodyComposition",
   "title" : "MEDB 1.11 Body Composition/DEXA",
   "status" : "active",
@@ -89,7 +92,7 @@ To assess body composition including bone mineral density, lean mass, and fat ma
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "exercise-physiology",
                 "display" : "Exercise Physiology"
               }
@@ -98,7 +101,7 @@ To assess body composition including bone mineral density, lean mass, and fat ma
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "exercise-physiology",
                 "display" : "Exercise Physiology"
               }
@@ -113,7 +116,7 @@ To assess body composition including bone mineral density, lean mass, and fat ma
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "bone-muscle-exercise",
                 "display" : "Bone/Muscle/Exercise"
               }
@@ -122,7 +125,7 @@ To assess body composition including bone mineral density, lean mass, and fat ma
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "bone-muscle-exercise",
                 "display" : "Bone/Muscle/Exercise"
               }
@@ -314,7 +317,7 @@ To assess body composition including bone mineral density, lean mass, and fat ma
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

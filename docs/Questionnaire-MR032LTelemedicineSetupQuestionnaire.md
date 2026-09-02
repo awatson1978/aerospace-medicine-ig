@@ -1,4 +1,4 @@
-# MR032L Telemedicine Setup - v0.6.2
+# MR032L Telemedicine Setup - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr032l-telemedicine-setup | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr032l-telemedicine-setup | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR032LTelemedicineSetup |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ Configure telemedicine systems, verify communication links, and ensure readiness
 {
   "resourceType" : "Questionnaire",
   "id" : "MR032LTelemedicineSetupQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ Configure telemedicine systems, verify communication links, and ensure readiness
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr032l-telemedicine-setup",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr032l-telemedicine-setup",
+  "version" : "0.7.0",
   "name" : "MR032LTelemedicineSetup",
   "title" : "MR032L Telemedicine Setup",
   "status" : "active",
@@ -94,7 +97,7 @@ Configure telemedicine systems, verify communication links, and ensure readiness
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -103,7 +106,7 @@ Configure telemedicine systems, verify communication links, and ensure readiness
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -313,7 +316,7 @@ Configure telemedicine systems, verify communication links, and ensure readiness
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "emr",
                 "display" : "Electronic Medical Record"
               }
@@ -322,7 +325,7 @@ Configure telemedicine systems, verify communication links, and ensure readiness
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "emr",
                 "display" : "Electronic Medical Record"
               }

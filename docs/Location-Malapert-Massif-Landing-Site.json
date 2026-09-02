@@ -2,11 +2,17 @@
   "resourceType" : "Location",
   "id" : "Malapert-Massif-Landing-Site",
   "meta" : {
-    "profile" : ["https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"]
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "profile" : ["https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-location"],
+    "tag" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location Malapert-Massif-Landing-Site</b></p><a name=\"Malapert-Massif-Landing-Site\"> </a><a name=\"hcMalapert-Massif-Landing-Site\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-habitat-location.html\">Habitat Location</a></p></div><blockquote><p><b>Lunar Coordinates</b></p><ul><li>latitude: -86</li><li>longitude: 0</li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Artemis III Landing Site - Malapert Massif</p><p><b>description</b>: High-elevation site near lunar south pole (86°S, 0°E) with near-continuous sunlight access and proximity to permanently shadowed craters. Malapert Mountain provides elevated terrain for communications and solar power.</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs landing-site}\">Lunar surface landing site</span></p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td><td><b>Altitude</b></td></tr><tr><td style=\"display: none\">*</td><td>0</td><td>-86</td><td>5000</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location Malapert-Massif-Landing-Site</b></p><a name=\"Malapert-Massif-Landing-Site\"> </a><a name=\"hcMalapert-Massif-Landing-Site\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-habitat-location.html\">Habitat Location</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><blockquote><p><b>Lunar Coordinates</b></p><ul><li>latitude: -86</li><li>longitude: 0</li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Artemis IV Landing Site - Malapert Massif</p><p><b>description</b>: High-elevation site near lunar south pole (86°S, 0°E) with near-continuous sunlight access and proximity to permanently shadowed craters. Malapert Mountain provides elevated terrain for communications and solar power.</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs landing-site}\">Lunar surface landing site</span></p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td><td><b>Altitude</b></td></tr><tr><td style=\"display: none\">*</td><td>0</td><td>-86</td><td>5000</td></tr></table></div>"
   },
   "extension" : [{
     "extension" : [{
@@ -17,16 +23,17 @@
       "url" : "longitude",
       "valueDecimal" : 0
     }],
-    "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates"
+    "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lunar-coordinates"
   }],
   "status" : "active",
-  "name" : "Artemis III Landing Site - Malapert Massif",
+  "name" : "Artemis IV Landing Site - Malapert Massif",
   "description" : "High-elevation site near lunar south pole (86°S, 0°E) with near-continuous sunlight access and proximity to permanently shadowed craters. Malapert Mountain provides elevated terrain for communications and solar power.",
   "mode" : "instance",
   "type" : [{
     "coding" : [{
-      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs",
-      "code" : "landing-site"
+      "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs",
+      "code" : "landing-site",
+      "display" : "Landing Site"
     }],
     "text" : "Lunar surface landing site"
   }],

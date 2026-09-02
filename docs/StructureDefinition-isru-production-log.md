@@ -1,4 +1,4 @@
-# ISRU Production Log - v0.6.2
+# ISRU Production Log - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ISRUProductionLog |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-production-log | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ISRUProductionLog |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Tracking ISRU propellant production (CH4/O2) for Mars return journey 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
 {
   "resourceType" : "StructureDefinition",
   "id" : "isru-production-log",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-production-log",
+  "version" : "0.7.0",
   "name" : "ISRUProductionLog",
   "title" : "ISRU Production Log",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
     }
   ],
   "description" : "Tracking ISRU propellant production (CH4/O2) for Mars return journey",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -155,17 +157,15 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
         "sliceName" : "operational",
         "min" : 1,
         "max" : "1",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs",
+              "code" : "operational"
+            }
+          ]
+        },
         "mustSupport" : true
-      },
-      {
-        "id" : "Observation.category:operational.coding.system",
-        "path" : "Observation.category.coding.system",
-        "patternUri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace"
-      },
-      {
-        "id" : "Observation.category:operational.coding.code",
-        "path" : "Observation.category.coding.code",
-        "patternCode" : "operational"
       },
       {
         "id" : "Observation.code",
@@ -251,9 +251,17 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:reactorStatus.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Reactor Status"
+        "id" : "Observation.component:reactorStatus.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs",
+              "code" : "reactor-status",
+              "display" : "Reactor Status"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:reactorStatus.value[x]",
@@ -276,9 +284,17 @@ Other representations of profile: [CSV](StructureDefinition-isru-production-log.
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:powerConsumption.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Power Consumption"
+        "id" : "Observation.component:powerConsumption.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs",
+              "code" : "power-consumption",
+              "display" : "Power Consumption"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:powerConsumption.value[x]",

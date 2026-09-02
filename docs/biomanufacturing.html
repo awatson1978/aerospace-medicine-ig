@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Biomanufacturing -  v0.6.2</title>
+    <title>Biomanufacturing - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"26"}
-    h3,h4,h5,h6{--heading-prefix:"26"}</style>
+    <style type="text/css">h2{--heading-prefix:"25"}
+    h3,h4,h5,h6{--heading-prefix:"25"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Biomanufacturing</h2>
   
 
@@ -260,45 +260,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#biomanufacturing-and-bioregenerative-life-support" id="markdown-toc-biomanufacturing-and-bioregenerative-life-support">Biomanufacturing and Bioregenerative Life Support</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#key-biomanufacturing-processes" id="markdown-toc-key-biomanufacturing-processes">Key Biomanufacturing Processes</a></li>
-      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
-          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
-          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
-          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
-          <li><a href="#references" id="markdown-toc-references">References</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#biomanufacturing-and-bioregenerative-life-support-1" id="markdown-toc-biomanufacturing-and-bioregenerative-life-support-1">Biomanufacturing and Bioregenerative Life Support</a>    <ul>
-      <li><a href="#overview-1" id="markdown-toc-overview-1">Overview</a></li>
-      <li><a href="#key-biomanufacturing-processes-1" id="markdown-toc-key-biomanufacturing-processes-1">Key Biomanufacturing Processes</a></li>
-      <li><a href="#fhir-implementation-guidance-1" id="markdown-toc-fhir-implementation-guidance-1">FHIR Implementation Guidance</a>        <ul>
-          <li><a href="#recommended-resources-1" id="markdown-toc-recommended-resources-1">Recommended Resources</a></li>
-          <li><a href="#new-profiles-suggested-1" id="markdown-toc-new-profiles-suggested-1">New Profiles (suggested)</a></li>
-          <li><a href="#candidate-codesystems--valuesets-1" id="markdown-toc-candidate-codesystems--valuesets-1">Candidate CodeSystems &amp; ValueSets</a></li>
-        </ul>
-      </li>
-      <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#key-biomanufacturing-processes" id="markdown-toc-key-biomanufacturing-processes">Key Biomanufacturing Processes</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
 
-<h1 id="biomanufacturing-and-bioregenerative-life-support">Biomanufacturing and Bioregenerative Life Support</h1>
+<h3 id="overview">Overview</h3>
 
-<h2 id="overview">Overview</h2>
 <p>In-situ biomanufacturing and bioregenerative life support systems (BLiSS) represent a critical technology for sustainable long-duration missions. By leveraging engineered microbes, algae, and cell cultures, crews can produce oxygen, food, pharmaceuticals, bioplastics, and water-recycling enzymes directly from local resources or recycled waste streams.</p>
 
-<p>Bell et al. (<em>Space Policy</em>, May 2026) and related extraterrestrial infrastructure reviews highlight the transition from proof-of-concept (ISS VEG and MELiSSA programs) to operational systems for Artemis, Mars transit, and surface habitats. FHIR profiles in this section standardize the capture of bioreactor configurations, manufacturing procedures, resource outputs, and biological feedstocks so that biomanufacturing data can be consistently recorded, audited, and integrated into crew health and ECLSS records.</p>
+<p>Bell et al. (<em>Space Policy</em>, 2026) and related extraterrestrial infrastructure reviews highlight the transition from proof-of-concept (the ISS Veggie experiments and ESA's MELiSSA program) to operational systems for Artemis, Mars transit, and surface habitats. FHIR profiles in this section standardize the capture of bioreactor configurations, manufacturing procedures, resource outputs, and biological feedstocks so that biomanufacturing data can be consistently recorded, audited, and integrated into crew health and Environmental Control and Life Support System (ECLSS) records.</p>
 
-<h2 id="key-biomanufacturing-processes">Key Biomanufacturing Processes</h2>
+<h3 id="key-biomanufacturing-processes">Key Biomanufacturing Processes</h3>
+
 <p><strong>Primary Applications</strong></p>
 <ul>
-  <li>Oxygen and CO₂ fixation (algae, cyanobacteria)</li>
+  <li>Oxygen production and CO₂ fixation (algae, cyanobacteria)</li>
   <li>Protein-rich food and nutritional supplements (microbial fermentation, single-cell protein)</li>
   <li>Biopolymer and material production (bacterial plastics)</li>
   <li>Pharmaceutical synthesis (on-demand antibiotics, monoclonal antibodies)</li>
@@ -312,9 +294,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Hybrid systems (photo + heterotrophic)</li>
 </ul>
 
-<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
 
-<h3 id="recommended-resources">Recommended Resources</h3>
+<h4 id="recommended-resources">Recommended Resources</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Device</code> – bioreactor hardware</li>
   <li><code class="language-plaintext highlighter-rouge">Procedure</code> – biomanufacturing runs and process steps</li>
@@ -322,10 +304,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">Substance</code> – biological feedstocks and finished bioproducts</li>
 </ul>
 
-<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
-<p><strong>Core Profiles</strong></p>
+<h4 id="core-profiles">Core Profiles</h4>
+
 <ul>
-  <li><strong><a href="StructureDefinition-bioreactor-device.html"><code class="language-plaintext highlighter-rouge">BioreactorDevice</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
+  <li><strong><a href="StructureDefinition-bioreactor-device.html">Bioreactor Device</a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
     <ul>
       <li>Working volume, temperature control range, agitation parameters</li>
       <li>Gas exchange (O₂/CO₂), lighting spectrum (for photobioreactors)</li>
@@ -333,7 +315,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Sterility status and planetary-protection compliance level</li>
     </ul>
   </li>
-  <li><strong><a href="StructureDefinition-biomanufacturing-procedure.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcedure</code></a></strong> – Documents ISRU bioprocessing, algae cultivation, fermentation, or downstream processing with:
+  <li><strong><a href="StructureDefinition-biomanufacturing-procedure.html">Biomanufacturing Procedure</a></strong> – Documents in-situ resource utilization (ISRU) bioprocessing, algae cultivation, fermentation, or downstream processing with:
     <ul>
       <li>Process parameters (duration, temperature, feedstock input)</li>
       <li>Strain or cell line used</li>
@@ -341,7 +323,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Quality control checkpoints</li>
     </ul>
   </li>
-  <li><strong><a href="StructureDefinition-bliss-resource-output.html"><code class="language-plaintext highlighter-rouge">BLiSSResourceOutput</code></a></strong> – Standardized observation of system-level outputs:
+  <li><strong><a href="StructureDefinition-bliss-resource-output.html">BLiSS Resource Output</a></strong> – Standardized observation of system-level outputs:
     <ul>
       <li>O₂ production rate</li>
       <li>Food / biomass output</li>
@@ -350,7 +332,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>By-product generation (e.g., bioplastics, pharmaceuticals)</li>
     </ul>
   </li>
-  <li><strong><a href="StructureDefinition-biological-feedstock.html"><code class="language-plaintext highlighter-rouge">BiologicalFeedstock</code></a></strong> – Characterizes input or output biological substances:
+  <li><strong><a href="StructureDefinition-biological-feedstock.html">Biological Feedstock</a></strong> – Characterizes input or output biological substances:
     <ul>
       <li>Feedstock type (CO₂, urine-derived nutrients, recycled biomass)</li>
       <li>Output bioproduct (single-cell protein, biopolymer, therapeutic compound)</li>
@@ -359,124 +341,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<p><strong>Supporting Profiles (suggested)</strong></p>
+<h4 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">BiomanufacturingBatch</code> – Links procedures, bioreactor, feedstock, and output into a traceable production run</li>
   <li><code class="language-plaintext highlighter-rouge">BLiSSPerformanceSummary</code> – DiagnosticReport aggregating system-level performance over a mission phase</li>
 </ul>
 
-<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<h3 id="examples">Examples</h3>
+
+<p>The three example instances describe one algae photobioreactor, a cultivation run performed in it, and the oxygen output measured from that run.</p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">BioreactorTypeCS</code> – (photobioreactor, heterotrophic-fermenter, hybrid, etc.)</li>
-  <li><a href="CodeSystem-biomanufacturing-process-cs.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcessCS</code></a> – (algae-cultivation, microbial-fermentation, enzymatic-recycling, isru-biopolymer)</li>
-  <li>`BLiSSResourceTypeVS</li>
+  <li><a href="Device-Bioreactor-Algae-001.html">Algae Photobioreactor</a></li>
+  <li><a href="Procedure-Biomanufacturing-AlgaeCultivation-001.html">Algae Cultivation Procedure</a></li>
+  <li><a href="Observation-BLiSS-O2-Production-001.html">BLiSS O2 Production Output</a></li>
+</ul>
+
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<ul>
+  <li><a href="CodeSystem-biomanufacturing-process-cs.html">Biomanufacturing Process Code System</a> and <a href="ValueSet-biomanufacturing-process-vs.html">Value Set</a> – algae-photobioreactor, fermentation-bioreactor, isru-processor, biocement-production, pharmaceutical-synthesis, biomass-conversion</li>
+  <li><a href="CodeSystem-bliss-output-cs.html">BLiSS Output Code System</a> and <a href="ValueSet-bliss-output-vs.html">Value Set</a> – resource categories produced by a bioregenerative life support system (o2-production, food-production, water-recycling, biofuel-production, co2-fixation, biomaterial-output)</li>
+  <li><a href="CodeSystem-biomanufacturing-metric-cs.html">Biomanufacturing Metric Code System</a> – output-quantity, output-rate, energy-input</li>
+</ul>
+
+<h4 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BioreactorTypeCS</code> – bioreactor hardware classes (photobioreactor, heterotrophic-fermenter, hybrid); the process codes above currently stand in for reactor type</li>
 </ul>
 
 <h3 id="references">References</h3>
 
-<hr />
-<p>title: Biomanufacturing
-layout: default
-—</p>
-
-<h1 id="biomanufacturing-and-bioregenerative-life-support-1">Biomanufacturing and Bioregenerative Life Support</h1>
-
-<h2 id="overview-1">Overview</h2>
-<p>In-situ biomanufacturing and bioregenerative life support systems (BLiSS) represent a critical technology for sustainable long-duration missions. By leveraging engineered microbes, algae, and cell cultures, crews can produce oxygen, food, pharmaceuticals, bioplastics, and water-recycling enzymes directly from local resources or recycled waste streams.</p>
-
-<p><strong>Bell et al.</strong> (<em>Space Policy</em>, May 2026) and related extraterrestrial infrastructure reviews highlight the transition from proof-of-concept (ISS VEG and MELiSSA programs) to operational systems for Artemis, Mars transit, and surface habitats. FHIR profiles in this section standardize the capture of bioreactor configurations, manufacturing procedures, resource outputs, and biological feedstocks so that biomanufacturing data can be consistently recorded, audited, and integrated into crew health and ECLSS records.</p>
-
-<h2 id="key-biomanufacturing-processes-1">Key Biomanufacturing Processes</h2>
-
-<p><strong>Primary Applications</strong></p>
 <ul>
-  <li>Oxygen and CO₂ fixation (algae, cyanobacteria)</li>
-  <li>Protein-rich food and nutritional supplements (microbial fermentation, single-cell protein)</li>
-  <li>Biopolymer and material production (bacterial plastics)</li>
-  <li>Pharmaceutical synthesis (on-demand antibiotics, monoclonal antibodies)</li>
-  <li>Waste recycling (urine, feces, CO₂ → nutrients)</li>
-</ul>
-
-<p><strong>Common Bioreactor Types</strong></p>
-<ul>
-  <li>Photobioreactors (algae/cyanobacteria)</li>
-  <li>Heterotrophic fermenters (bacteria/yeast)</li>
-  <li>Hybrid systems (photo + heterotrophic)</li>
-</ul>
-
-<h2 id="fhir-implementation-guidance-1">FHIR Implementation Guidance</h2>
-
-<h3 id="recommended-resources-1">Recommended Resources</h3>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">Device</code> – bioreactor hardware</li>
-  <li><code class="language-plaintext highlighter-rouge">Procedure</code> – biomanufacturing runs and process steps</li>
-  <li><code class="language-plaintext highlighter-rouge">Observation</code> – resource output metrics and feedstock characterization</li>
-  <li><code class="language-plaintext highlighter-rouge">Substance</code> – biological feedstocks and finished bioproducts</li>
-</ul>
-
-<h3 id="new-profiles-suggested-1">New Profiles (suggested)</h3>
-
-<p><strong>Core Profiles</strong></p>
-<ul>
-  <li><strong><a href="StructureDefinition-bioreactor-device.html"><code class="language-plaintext highlighter-rouge">BioreactorDevice</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
-    <ul>
-      <li>Working volume, temperature control range, agitation parameters</li>
-      <li>Gas exchange (O₂/CO₂), lighting spectrum (for photobioreactors)</li>
-      <li>Sensor suite (pH, dissolved oxygen, biomass density)</li>
-      <li>Sterility status and planetary-protection compliance level</li>
-    </ul>
-  </li>
-  <li><strong><a href="StructureDefinition-biomanufacturing-procedure.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcedure</code></a></strong> – Documents ISRU bioprocessing, algae cultivation, fermentation, or downstream processing with:
-    <ul>
-      <li>Process parameters (duration, temperature, feedstock input)</li>
-      <li>Strain or cell line used</li>
-      <li>Yield and efficiency metrics</li>
-      <li>Quality control checkpoints</li>
-    </ul>
-  </li>
-  <li><strong><a href="StructureDefinition-bliss-resource-output.html"><code class="language-plaintext highlighter-rouge">BLiSSResourceOutput</code></a></strong> – Standardized observation of system-level outputs:
-    <ul>
-      <li>O₂ production rate</li>
-      <li>Food / biomass output</li>
-      <li>Water recycling efficiency</li>
-      <li>CO₂ fixation rate</li>
-      <li>By-product generation (e.g., bioplastics, pharmaceuticals)</li>
-    </ul>
-  </li>
-  <li><strong><a href="StructureDefinition-biological-feedstock.html"><code class="language-plaintext highlighter-rouge">BiologicalFeedstock</code></a></strong> – Characterizes input or output biological substances:
-    <ul>
-      <li>Feedstock type (CO₂, urine-derived nutrients, recycled biomass)</li>
-      <li>Output bioproduct (single-cell protein, biopolymer, therapeutic compound)</li>
-      <li>Purity, viability, and planetary-protection status</li>
-    </ul>
-  </li>
-</ul>
-
-<p><strong>Supporting Profiles (suggested)</strong></p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">BiomanufacturingBatch</code> – Links procedures, bioreactor, feedstock, and output into a traceable production run</li>
-  <li><code class="language-plaintext highlighter-rouge">BLiSSPerformanceSummary</code> – DiagnosticReport aggregating system-level performance over a mission phase</li>
-</ul>
-
-<h3 id="candidate-codesystems--valuesets-1">Candidate CodeSystems &amp; ValueSets</h3>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">BioreactorTypeCS</code> – (photobioreactor, heterotrophic-fermenter, hybrid, etc.)</li>
-  <li><a href="CodeSystem-biomanufacturing-process-cs.html"><code class="language-plaintext highlighter-rouge">BiomanufacturingProcessCS</code></a> – (algae-cultivation, microbial-fermentation, enzymatic-recycling, isru-biopolymer)</li>
-  <li><code class="language-plaintext highlighter-rouge">BLiSSResourceTypeVS</code></li>
-</ul>
-
-<h2 id="references-1">References</h2>
-
-<ul>
-  <li>
-    <p>Bell, A., Yeh, D., Garretson, P., &amp; Roberson, L. (2026). Biomanufacturing for a Lunar base—A sustainable vision for the future. <em>Space Policy</em>. <a href="https://doi.org/10.1016/j.spacepol.2026.101XXX">https://doi.org/10.1016/j.spacepol.2026.101XXX</a></p>
-  </li>
-  <li>
-    <p>Porterfield, D. M., et al. (2025). Critical investments in bioregenerative life support systems for bioastronautics and sustainable lunar exploration. <em>npj Microgravity</em>, 11(57). <a href="https://doi.org/10.1038/s41526-025-00518-4">https://doi.org/10.1038/s41526-025-00518-4</a>.</p>
-  </li>
-  <li>
-    <p>Chander, A. M., et al. (including Fujimura, G.) (2026). Survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions. <em>Applied and Environmental Microbiology</em>. <a href="https://doi.org/10.1128/aem.02065-25">https://doi.org/10.1128/aem.02065-25</a>.</p>
-  </li>
+  <li>Bell A, Yeh D, Garretson P, Roberson L. Biomanufacturing for a Lunar base—A sustainable vision for the future. <em>Space Policy</em>, 2026. <a href="https://www.sciencedirect.com/science/article/pii/S0265964626000196">https://www.sciencedirect.com/science/article/pii/S0265964626000196</a></li>
+  <li>Porterfield DM, et al. Critical investments in bioregenerative life support systems for bioastronautics and sustainable lunar exploration. <em>npj Microgravity</em> 11(57), 2025. <a href="https://doi.org/10.1038/s41526-025-00518-4">https://doi.org/10.1038/s41526-025-00518-4</a></li>
+  <li>Chander AM, et al. Survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions. <em>Applied and Environmental Microbiology</em>, 2026. <a href="https://doi.org/10.1128/aem.02065-25">https://doi.org/10.1128/aem.02065-25</a></li>
+  <li>Orbital biomanufacturing: the key to space resiliency, operational persistence, and ethical sustainability. <em>npj Microgravity</em>, 2026. <a href="https://www.nature.com/articles/s41526-026-00571-7">https://www.nature.com/articles/s41526-026-00571-7</a></li>
 </ul>
 
 
@@ -498,7 +398,7 @@ layout: default
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,22 +1,23 @@
-# Underwater Communication Systems - v0.6.2
+# Underwater Communication Systems - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Underwater Communication Systems**
 
-## CodeSystem: Underwater Communication Systems 
+## CodeSystem: Underwater Communication Systems (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:UnderwaterCommunicationCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/underwater-communication-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:UnderwaterCommunicationCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Communication systems and protocols for underwater training operations 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [UnderwaterCommunicationSystems](ValueSet-underwater-communication-systems.md)
+* [UnderwaterCommunicationSystems](ValueSet-underwater-communication-systems-vs.md)
 
 
 
@@ -26,13 +27,13 @@ Communication systems and protocols for underwater training operations
 {
   "resourceType" : "CodeSystem",
   "id" : "underwater-communication-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/underwater-communication-cs",
+  "version" : "0.7.0",
   "name" : "UnderwaterCommunicationCS",
   "title" : "Underwater Communication Systems",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,9 +47,10 @@ Communication systems and protocols for underwater training operations
     }
   ],
   "description" : "Communication systems and protocols for underwater training operations",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 19,
+  "count" : 31,
   "concept" : [
     {
       "code" : "hardwire-comm",
@@ -144,6 +146,66 @@ Communication systems and protocols for underwater training operations
       "code" : "range-test",
       "display" : "Communication Range Test",
       "definition" : "Testing effective communication range"
+    },
+    {
+      "code" : "comm-range",
+      "display" : "Communication Range",
+      "definition" : "Device property type: maximum effective communication range of the system"
+    },
+    {
+      "code" : "encryption",
+      "display" : "Encryption Capability",
+      "definition" : "Device property type: whether the system supports encrypted communication"
+    },
+    {
+      "code" : "battery-life",
+      "display" : "Battery Life",
+      "definition" : "Device property type: rated operating time on a full battery charge"
+    },
+    {
+      "code" : "waterproof-rating",
+      "display" : "Waterproof Rating",
+      "definition" : "Device property type: ingress protection or depth rating of the housing"
+    },
+    {
+      "code" : "operating-depth",
+      "display" : "Operating Depth",
+      "definition" : "Device property type: maximum rated operating depth of the system"
+    },
+    {
+      "code" : "comm-assessment",
+      "display" : "Communication Assessment",
+      "definition" : "Assessment of communication system performance during a training session"
+    },
+    {
+      "code" : "signal-strength",
+      "display" : "Signal Strength",
+      "definition" : "Measured signal strength of the communication link"
+    },
+    {
+      "code" : "audio-clarity",
+      "display" : "Audio Clarity",
+      "definition" : "Assessed clarity and intelligibility of voice communication"
+    },
+    {
+      "code" : "comm-reliability",
+      "display" : "Communication Reliability",
+      "definition" : "Percentage of the session during which communication was maintained"
+    },
+    {
+      "code" : "emergency-response-time",
+      "display" : "Emergency Communication Response Time",
+      "definition" : "Time from emergency signal to acknowledged response"
+    },
+    {
+      "code" : "security-assessment",
+      "display" : "Security Assessment",
+      "definition" : "Assessment of the security and integrity of the communication link"
+    },
+    {
+      "code" : "communication-log",
+      "display" : "Communication Log",
+      "definition" : "Narrative log of communications during the dive"
     }
   ]
 }

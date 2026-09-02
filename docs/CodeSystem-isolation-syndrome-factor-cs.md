@@ -1,15 +1,16 @@
-# Isolation Syndrome Factor Code System - v0.6.2
+# Isolation Syndrome Factor Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Isolation Syndrome Factor Code System**
 
-## CodeSystem: Isolation Syndrome Factor Code System 
+## CodeSystem: Isolation Syndrome Factor Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:IsolationSyndromeFactorCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:IsolationSyndromeFactorCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions. 
@@ -26,12 +27,13 @@ Factors contributing to isolation, confinement, and psychosocial risk in aerospa
 {
   "resourceType" : "CodeSystem",
   "id" : "isolation-syndrome-factor-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs",
+  "version" : "0.7.0",
   "name" : "IsolationSyndromeFactorCS",
   "title" : "Isolation Syndrome Factor Code System",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -45,6 +47,7 @@ Factors contributing to isolation, confinement, and psychosocial risk in aerospa
     }
   ],
   "description" : "Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 8,

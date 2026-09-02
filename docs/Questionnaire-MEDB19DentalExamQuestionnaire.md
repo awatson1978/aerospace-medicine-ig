@@ -1,4 +1,4 @@
-# MEDB 1.9 Dental Examination - v0.6.2
+# MEDB 1.9 Dental Examination - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-9-dental-exam | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-9-dental-exam | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB19DentalExam |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB19DentalExamQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -44,8 +47,8 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-9-dental-exam",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-9-dental-exam",
+  "version" : "0.7.0",
   "name" : "MEDB19DentalExam",
   "title" : "MEDB 1.9 Dental Examination",
   "status" : "active",
@@ -89,7 +92,7 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -98,7 +101,7 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -113,7 +116,7 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "dental",
                 "display" : "Dental"
               }
@@ -122,7 +125,7 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "dental",
                 "display" : "Dental"
               }
@@ -249,7 +252,7 @@ To assess dental fitness for spaceflight and ensure crew are free of dental cond
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

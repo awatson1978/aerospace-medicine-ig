@@ -6,30 +6,42 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/DeviceDefinition/xEVAS-LunarSuit-Def-001> a fhir:DeviceDefinition ;
+<https://awatson1978.github.io/aerospace-medicine-ig/DeviceDefinition/xEVAS-LunarSuit-Def-001> a fhir:DeviceDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "xEVAS-LunarSuit-Def-001"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/xevas-suit-definition"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/xevas-suit-definition>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceDefinition xEVAS-LunarSuit-Def-001</b></p><a name=\"xEVAS-LunarSuit-Def-001\"> </a><a name=\"hcxEVAS-LunarSuit-Def-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-xevas-suit-definition.html\">xEVAS Suit Definition</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs lunar-gravity}\">Lunar Gravity (1/6g)</span></p><p><b>manufacturer</b>: Axiom Space</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Axiom Extravehicular Mobility Unit (AxEMU)</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: AxEMU-v2</p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:\">Suit Pressure</span></p><p><b>valueQuantity</b>: 8.2 psi<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[psi] = '[psi]')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:\">O2 Duration</span></p><p><b>valueQuantity</b>: 8 hours<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><p><b>note</b>: </p><blockquote><div><p>Configured for lunar surface EVA with enhanced lower-body mobility, dust-resistant seals, and integrated PLSS</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DeviceDefinition xEVAS-LunarSuit-Def-001</b></p><a name=\"xEVAS-LunarSuit-Def-001\"> </a><a name=\"hcxEVAS-LunarSuit-Def-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-xevas-suit-definition.html\">xEVAS Suit Definition</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs lunar-gravity}\">Lunar Gravity (1/6g)</span></p><p><b>manufacturer</b>: Axiom Space</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Axiom Extravehicular Mobility Unit (AxEMU)</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: AxEMU-v2</p><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:\">Suit Pressure</span></p><p><b>valueQuantity</b>: 8.2 psi<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code[psi] = '[psi]')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title=\"Codes:\">O2 Duration</span></p><p><b>valueQuantity</b>: 8 hours<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><p><b>note</b>: </p><blockquote><div><p>Configured for lunar surface EVA with enhanced lower-body mobility, dust-resistant seals, and integrated PLSS</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/gravity-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs>
          ] ;
          fhir:code [ fhir:v "lunar-gravity" ] ;
          fhir:display [ fhir:v "Lunar Gravity (1/6g)" ]

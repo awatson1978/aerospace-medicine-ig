@@ -1,4 +1,4 @@
-# CGM Glucose Reading - Flight Day 15 - v0.6.2
+# CGM Glucose Reading - Flight Day 15 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example Observation: CGM Glucose Reading - Flight Day 15
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Flight Day**: 15
 
@@ -18,7 +22,7 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
 
 **code**: Glucose [Mass/volume] in Interstitial fluid
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-03-30 14:00:00+0000
 
@@ -45,19 +49,27 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
   "resourceType" : "Observation",
   "id" : "CGM-Reading-FD15",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day",
       "valueInteger" : 15
     }
   ],
@@ -100,7 +112,7 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs",
             "code" : "time-in-range",
             "display" : "Time in Range (TIR)"
           }
@@ -117,7 +129,7 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs",
             "code" : "glucose-variability-cv",
             "display" : "Glucose Variability (CV%)"
           }
@@ -134,7 +146,7 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs",
             "code" : "mean-glucose",
             "display" : "Mean Glucose"
           }
@@ -151,7 +163,7 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs",
             "code" : "hypo-events",
             "display" : "Hypoglycemic Events"
           }
@@ -163,7 +175,7 @@ Profile: [Space CGM Observation](StructureDefinition-space-cgm-observation.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs",
             "code" : "hyper-events",
             "display" : "Hyperglycemic Events"
           }

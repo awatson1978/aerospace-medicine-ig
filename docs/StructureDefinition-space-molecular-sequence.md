@@ -1,4 +1,4 @@
-# Space Molecular Sequence - v0.6.2
+# Space Molecular Sequence - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-molecular-sequence | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceMolecularSequence |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-molecular-sequence | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceMolecularSequence |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Molecular sequence data from astronaut genomic, transcriptomic, or proteomic analysis 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-space-molecular-sequ
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-molecular-sequence",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-molecular-sequence",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-molecular-sequence",
+  "version" : "0.7.0",
   "name" : "SpaceMolecularSequence",
   "title" : "Space Molecular Sequence",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-space-molecular-sequ
     }
   ],
   "description" : "Molecular sequence data from astronaut genomic, transcriptomic, or proteomic analysis",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -92,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-space-molecular-sequ
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],

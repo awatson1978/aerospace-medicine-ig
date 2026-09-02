@@ -1,4 +1,4 @@
-# Sun-Earth L1 Observatory - v0.6.2
+# Sun-Earth L1 Observatory - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,9 @@
 
 ## Example Location: Sun-Earth L1 Observatory
 
-Profile: [xGeo Locations](StructureDefinition-SpaceLocation.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
+
+Profile: [xGeo Locations](StructureDefinition-space-location.md)
 
 **name**: Sun-Earth L1 Observatory
 
@@ -21,8 +23,9 @@ Profile: [xGeo Locations](StructureDefinition-SpaceLocation.md)
   "resourceType" : "Location",
   "id" : "SunEarthL1Station",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     ]
   },
   "name" : "Sun-Earth L1 Observatory",

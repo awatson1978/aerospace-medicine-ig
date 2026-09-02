@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Biospheres -  v0.6.2</title>
+    <title>Biospheres - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Biospheres</h2>
   
 
@@ -260,31 +260,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#environmental-monitoring-api-for-a-closed-biome-system" id="markdown-toc-environmental-monitoring-api-for-a-closed-biome-system">Environmental Monitoring API for a Closed Biome System</a>    <ul>
-      <li><a href="#solar-inputoutput-measurements" id="markdown-toc-solar-inputoutput-measurements">Solar Input/Output Measurements</a></li>
-      <li><a href="#thermal-mass--heat-storage-sensors" id="markdown-toc-thermal-mass--heat-storage-sensors">Thermal Mass &amp; Heat Storage Sensors</a></li>
-      <li><a href="#atmospheric-life-support-metrics" id="markdown-toc-atmospheric-life-support-metrics">Atmospheric Life-Support Metrics</a></li>
-      <li><a href="#hvac--pressure-regulation-external-lung-integration" id="markdown-toc-hvac--pressure-regulation-external-lung-integration">HVAC &amp; Pressure Regulation (External "Lung" Integration)</a></li>
-      <li><a href="#biome-health-indicators-air--water-quality" id="markdown-toc-biome-health-indicators-air--water-quality">Biome Health Indicators (Air &amp; Water Quality)</a></li>
-      <li><a href="#external-integration--extensibility" id="markdown-toc-external-integration--extensibility">External Integration &amp; Extensibility</a></li>
-      <li><a href="#sources" id="markdown-toc-sources">Sources:</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#solar-inputoutput-measurements" id="markdown-toc-solar-inputoutput-measurements">Solar Input/Output Measurements</a></li>
+  <li><a href="#thermal-mass--heat-storage-sensors" id="markdown-toc-thermal-mass--heat-storage-sensors">Thermal Mass &amp; Heat Storage Sensors</a></li>
+  <li><a href="#atmospheric-life-support-metrics" id="markdown-toc-atmospheric-life-support-metrics">Atmospheric Life-Support Metrics</a></li>
+  <li><a href="#hvac--pressure-regulation-external-lung-integration" id="markdown-toc-hvac--pressure-regulation-external-lung-integration">HVAC &amp; Pressure Regulation (External "Lung" Integration)</a></li>
+  <li><a href="#biome-health-indicators-air--water-quality" id="markdown-toc-biome-health-indicators-air--water-quality">Biome Health Indicators (Air &amp; Water Quality)</a></li>
+  <li><a href="#external-integration--extensibility" id="markdown-toc-external-integration--extensibility">External Integration &amp; Extensibility</a></li>
+  <li><a href="#relationship-to-fhir-profiles" id="markdown-toc-relationship-to-fhir-profiles">Relationship to FHIR Profiles</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h2 id="environmental-monitoring-api-for-a-closed-biome-system">Environmental Monitoring API for a Closed Biome System</h2>
+<h3 id="overview">Overview</h3>
 
-<p>Introduction: Closed biome habitats – whether Earth-based smart greenhouses, orbital stations, or lunar/ Martian colonies – require comprehensive real-time monitoring of environmental conditions. A JSON-based API for such a system should expose all key life-support and diagnostic variables needed to maintain a stable, habitable environment. This includes monitoring solar radiation for plant growth, thermal storage for temperature control, atmospheric composition (e.g. CO₂, O₂, humidity, pressure) for life support, HVAC parameters (including an external “lung” expansion chamber for pressure regulation), and overall biome health indicators (water pH, ozone levels, etc.). Each sensor reading can be reported as a current value along with aggregated averages to aid trend analysis and system control. The following sections outline sensor data categories, recommended JSON fields (with data types and units), and the purpose of each field in a closed-biome or space habitat context.</p>
+<p>Closed biome habitats – whether Earth-based smart greenhouses, orbital stations, or lunar and Martian colonies – require comprehensive real-time monitoring of environmental conditions. A JSON-based API for such a system should expose all key life-support and diagnostic variables needed to maintain a stable, habitable environment. This includes monitoring solar radiation for plant growth, thermal storage for temperature control, atmospheric composition (for example CO₂, O₂, humidity, and pressure) for life support, HVAC parameters (including an external "lung" expansion chamber for pressure regulation), and overall biome health indicators (water pH, ozone levels, and so on). Each sensor reading can be reported as a current value along with aggregated averages to aid trend analysis and system control.</p>
 
-<p>Example control panel from a sealed habitat test module (1988) showing multiple sensor readouts (“Now”) and their running averages (“Avg”). Key metrics include CO₂ level (~3920 ppm), wet bulb temperature (for humidity), ozone concentration, pH, and even an “external lung” position. Such comprehensive monitoring is crucial to maintain life-supporting conditions in closed systems.</p>
+<p>The design draws on the sealed-habitat experience of Biosphere 2 and the Space Analog for the Moon and Mars (SAM) test module at the University of Arizona, where crews watched CO₂ level, wet-bulb temperature (for humidity), ozone concentration, pH, and even the position of the external "lung" on a single control panel, each reading shown as a current value ("Now") alongside a running average ("Avg"). Such comprehensive monitoring is crucial to maintaining life-supporting conditions in closed systems. The following sections outline sensor data categories, recommended JSON fields (with data types and units), and the purpose of each field in a closed-biome or space habitat context. The same field list is expressed as a FHIR logical model in this guide; see <a href="#relationship-to-fhir-profiles">Relationship to FHIR Profiles</a> below.</p>
 
 <h3 id="solar-inputoutput-measurements">Solar Input/Output Measurements</h3>
 
-<p>Closed ecosystems often rely on sunlight (or artificial light) for plant photosynthesis and heat. <em>Photosynthetically Active Radiation (PAR)</em> sensors at different heights help ensure light penetrates the plant canopy evenly, and solar radiation sensors track overall energy input. These fields inform lighting control (e.g. supplemental LED lights or shades) and thermal management.</p>
-
-<p>Here's the information converted into a markdown table:</p>
+<p>Closed ecosystems often rely on sunlight (or artificial light) for plant photosynthesis and heat. <em>Photosynthetically Active Radiation (PAR)</em> sensors at different heights help ensure light penetrates the plant canopy evenly, and solar radiation sensors track overall energy input. These fields inform lighting control (for example supplemental LED lights or shades) and thermal management.</p>
 
 <table>
   <thead>
@@ -329,8 +325,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Closed habitats often use thermal mass (e.g. concrete floors, water tanks) to stabilize temperature. Sensors monitoring the temperatures of these materials and their heat exchange fluid loops (inlet/outlet) are essential for diagnostics and control of heating/cooling.</p>
 
-<p>Here's the information converted into a markdown table:</p>
-
 <table>
   <thead>
     <tr>
@@ -340,6 +334,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>concrete_loop_in_temp_C</td>
+      <td>float</td>
+      <td>Inlet water temperature (°C) into the concrete thermal mass loop. Paired with the outlet reading below, it gives the temperature drop or rise across the slab.</td>
+    </tr>
     <tr>
       <td>concrete_loop_out_temp_C</td>
       <td>float</td>
@@ -371,9 +370,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Purpose: Thermal sensors provide insight into how well the habitat retains and distributes heat. For example, a concrete slab or water tank can absorb excess heat during the day and release it at night. Monitoring inlet/outlet temperatures on these thermal masses allows the control system to gauge heat transfer rates and adjust pump flows or insulation. Maintaining a stable interior temperature is critical for both crew comfort and biological processes, making these readings fundamental for climate control automation.</p>
 
 <h3 id="atmospheric-life-support-metrics">Atmospheric Life-Support Metrics</h3>
-<p>The atmospheric conditions inside the biome must be kept within narrow ranges for human and plant life. Key gas concentrations, pressure, temperature, and humidity are continuously monitored. These fields mirror those tracked in spacecraft life support systems (ISS ECLSS monitors O₂, N₂, CO₂, H₂O, etc.) and in smart greenhouses.</p>
 
-<p>Here's the information converted into a properly formatted markdown table:</p>
+<p>The atmospheric conditions inside the biome must be kept within narrow ranges for human and plant life. Key gas concentrations, pressure, temperature, and humidity are continuously monitored. These fields mirror those tracked in spacecraft life support systems (the ISS Environmental Control and Life Support System, ECLSS, monitors O₂, N₂, CO₂, H₂O, and other constituents) and in smart greenhouses.</p>
 
 <table>
   <thead>
@@ -387,7 +385,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>co2_ppm</td>
       <td>float</td>
-      <td>Carbon dioxide concentration in air (parts per million). Critical for life support: high CO₂ impairs crew cognition and plant respiration. This value is actively managed via CO₂ scrubbers or plant uptake – without removal, CO₂ can accumulate to dangerous levels. (The ISS, for example, keeps cabin CO₂ in the range of ~1500–3000 ppm for crew safety.)</td>
+      <td>Carbon dioxide concentration in air (parts per million). Critical for life support: high CO₂ impairs crew cognition and plant respiration. This value is actively managed via CO₂ scrubbers or plant uptake – without removal, CO₂ can accumulate to dangerous levels. (NASA's ISS operational limit is a 24-hour average of 3 mmHg, about 4,000 ppm, with a 7-day Spacecraft Maximum Allowable Concentration of 5.3 mmHg, about 7,000 ppm, per JSC 20584; see the <a href="eclss.html">ECLSS page</a> for the full threshold table.)</td>
     </tr>
     <tr>
       <td>o2_percent</td>
@@ -397,7 +395,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td>pressure_kPa</td>
       <td>float</td>
-      <td>Internal atmospheric pressure (kilopascals). Typically around 101 kPa (1 atm) for Earth-like conditions, or slightly lower in space habitats. Pressure is held stable to maintain crew comfort and prevent structural stress. Sudden changes could signify a leak or a failing pressure regulator. (In Biosphere 2, a slight positive pressure ~125 Pa above ambient was maintained to prevent outside contamination.)</td>
+      <td>Internal atmospheric pressure (kilopascals). Typically around 101 kPa (1 atm) for Earth-like conditions, or slightly lower in space habitats. Pressure is held stable to maintain crew comfort and prevent structural stress. Sudden changes could signify a leak or a failing pressure regulator. (Biosphere 2 maintained a slight positive pressure relative to the outside air, using its "lung" chambers, so that any leakage flowed outward rather than inward.)</td>
     </tr>
     <tr>
       <td>humidity_percent</td>
@@ -432,12 +430,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Purpose: Atmospheric metrics are the core of life support monitoring. CO₂ and O₂ levels must be tightly controlled – too much CO₂ is toxic, and too little O₂ is obviously fatal. Pressure and humidity must stay within human-safe limits, as defined by crew health standards (for instance, cabin humidity and temperature are kept within specific ranges to protect crew health). The API’s atmospheric fields enable automated life support systems to inject oxygen, scrub CO₂, remove moisture, or adjust temperature as needed. They are also critical for diagnostics: for example, an unexplained pressure drop would immediately signal a leak or breach, and a spike in CO₂ could indicate a scrubber failure or sudden influx of CO₂ (e.g. from many people exercising). Providing both instantaneous readings and time-averaged values allows controllers to differentiate between transient spikes and sustained shifts, which is important for alarm logic and trend analysis.</p>
+<p>Purpose: Atmospheric metrics are the core of life support monitoring. CO₂ and O₂ levels must be tightly controlled – too much CO₂ is toxic, and too little O₂ is obviously fatal. Pressure and humidity must stay within human-safe limits, as defined by crew health standards (for instance, cabin humidity and temperature are kept within specific ranges to protect crew health). The API's atmospheric fields enable automated life support systems to inject oxygen, scrub CO₂, remove moisture, or adjust temperature as needed. They are also critical for diagnostics: for example, an unexplained pressure drop would immediately signal a leak or breach, and a spike in CO₂ could indicate a scrubber failure or sudden influx of CO₂ (e.g. from many people exercising). Providing both instantaneous readings and time-averaged values allows controllers to differentiate between transient spikes and sustained shifts, which is important for alarm logic and trend analysis.</p>
 
 <h3 id="hvac--pressure-regulation-external-lung-integration">HVAC &amp; Pressure Regulation (External "Lung" Integration)</h3>
-<p>In a sealed environment, the HVAC system not only manages air quality and temperature, but also must accommodate pressure changes. An external lung – a flexible volume or expandable chamber – is often used to keep internal pressure stable as the air expands or contracts with temperature changes. The API exposes sensors related to this lung mechanism and overall airflow, enabling closed-loop control of the habitat’s atmosphere.</p>
 
-<p>Here's the information converted into a properly formatted markdown table:</p>
+<p>In a sealed environment, the HVAC system not only manages air quality and temperature, but also must accommodate pressure changes. An external lung – a flexible volume or expandable chamber – is often used to keep internal pressure stable as the air expands or contracts with temperature changes. The API exposes sensors related to this lung mechanism and overall airflow, enabling closed-loop control of the habitat's atmosphere.</p>
 
 <table>
   <thead>
@@ -476,13 +473,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<p>Purpose: These HVAC fields tie the atmospheric data to the mechanical systems controlling it. The pressure_diff_pa and lung_position_percent work together to ensure the habitat’s structural integrity: the external lung mechanism holds excess air when internal pressure rises, preventing the habitat from “exploding under the immense pressure of its gases”. Monitoring lung expansion and pressure
-differential provides early warning if the system is reaching its limits. The airflow_rate_cms is essential for air quality and temperature consistency – without active circulation, CO₂ could accumulate in stagnating corners or temperatures could stratify (hot ceiling, cold floor). By integrating these sensors, the API allows controllers to adjust fan speeds, dampers, or the lung volume actively. For instance, if pressure_diff starts to climb, the system might proactively cool the air or vent a small volume (in an Earth greenhouse scenario) to bring pressure down. If airflow is low, an alert can be raised to check fan operations or filter clogs. Overall, this category bridges the environment measurements with the mechanical responses necessary to maintain them.</p>
+<p>Purpose: These HVAC fields tie the atmospheric data to the mechanical systems controlling it. The pressure_diff_pa and lung_position_percent work together to ensure the habitat's structural integrity: the external lung mechanism holds excess air when internal pressure rises, preventing the habitat from "exploding under the immense pressure of its gases", as the Emerald Review put it in describing the Biosphere 2 lungs. Monitoring lung expansion and pressure differential provides early warning if the system is reaching its limits. The airflow_rate_cms is essential for air quality and temperature consistency – without active circulation, CO₂ could accumulate in stagnating corners or temperatures could stratify (hot ceiling, cold floor). By integrating these sensors, the API allows controllers to adjust fan speeds, dampers, or the lung volume actively. For instance, if pressure_diff starts to climb, the system might proactively cool the air or vent a small volume (in an Earth greenhouse scenario) to bring pressure down. If airflow is low, an alert can be raised to check fan operations or filter clogs. Overall, this category bridges the environment measurements with the mechanical responses necessary to maintain them.</p>
 
 <h3 id="biome-health-indicators-air--water-quality">Biome Health Indicators (Air &amp; Water Quality)</h3>
-<p>Beyond the basic life-support variables, closed ecosystems benefit from additional sensors that track the health of plants, water, and the general habitat. These include water chemistry for hydroponics, trace gas pollutants, and zone-specific conditions. They are important for diagnosing subtle issues (e.g. nutrient imbalances, pollutant buildup) that could affect long-term sustainability.</p>
 
-<p>Here's the information converted into a properly formatted markdown table:</p>
+<p>Beyond the basic life-support variables, closed ecosystems benefit from additional sensors that track the health of plants, water, and the general habitat. These include water chemistry for hydroponics, trace gas pollutants, and zone-specific conditions. They are important for diagnosing subtle issues (e.g. nutrient imbalances, pollutant buildup) that could affect long-term sustainability.</p>
 
 <table>
   <thead>
@@ -501,7 +496,7 @@ differential provides early warning if the system is reaching its limits. The ai
     <tr>
       <td>ozone_ppm</td>
       <td>float</td>
-      <td>Ozone concentration in the air (ppm). Ozone (O₃) is a harmful oxidant; even low levels can irritate lungs and damage plant tissues. In a closed habitat, ozone might be produced by electrical equipment or used in water sterilization, so it must be monitored to remain safe (typically near 0 ppm). For reference, aircraft cabin air is regulated to &lt;0.25 ppm ozone for passenger safety. An elevated ozone_ppm reading would trigger scrubbing or filtering because ozone above safe levels can degrade air quality and materials.</td>
+      <td>Ozone concentration in the air (ppm). Ozone (O₃) is a harmful oxidant; even low levels can irritate lungs and damage plant tissues. In a closed habitat, ozone might be produced by electrical equipment or used in water sterilization, so it must be monitored to remain safe (typically near 0 ppm). For reference, U.S. airworthiness rules (14 CFR 25.832) limit transport-aircraft cabin ozone to 0.25 ppm by volume at any time above 32,000 ft, and to a 0.1 ppm time-weighted average over any 3-hour interval above 27,000 ft. An elevated ozone_ppm reading would trigger scrubbing or filtering because ozone above safe levels can degrade air quality and materials.</td>
     </tr>
     <tr>
       <td>habitat_humidity_percent</td>
@@ -521,20 +516,15 @@ differential provides early warning if the system is reaching its limits. The ai
   </tbody>
 </table>
 
-<p>Purpose: Biome health sensors go a step further into ensuring a long-term viable ecosystem. The water_pH field, for instance, safeguards the nutrient cycles – plants in hydroponics have optimal pH windows for nutrient uptake 9
-, and fish or microbial communities also need specific pH ranges. This is
-crucial in space or closed habitats where you cannot easily replace water or soil; the chemistry must be carefully balanced. The ozone_ppm sensor protects both life and equipment – ozone can be a byproduct of certain sterilization systems or intense UV lights, and it can damage lungs and sensitive electronics if unchecked. By monitoring ozone, the habitat control can activate charcoal filters or UV off-switches to keep ozone at trace levels. The separate habitat_humidity_percent acknowledges that multi-zone habitats might have different climate requirements (for example, a hydroponic greenhouse might run at 70% RH for plant growth, while the crew cabins stay at 50% to prevent mold and discomfort). Providing a field for each zone’s humidity (and temperature if needed) allows targeted climate control in each area. Additional optional fields like soil_moisture_percent or voc_ppm illustrate how the system can be extended –
-soil moisture feedback can drive automated watering, and VOC levels can indicate when to refresh air or adjust filters (important in tightly sealed spaces where any buildup of toxins could be harmful).</p>
+<p>Purpose: Biome health sensors go a step further into ensuring a long-term viable ecosystem. The water_pH field, for instance, safeguards the nutrient cycles – plants in hydroponics have optimal pH windows for nutrient uptake, and fish or microbial communities also need specific pH ranges. This is crucial in space or closed habitats where you cannot easily replace water or soil; the chemistry must be carefully balanced. The ozone_ppm sensor protects both life and equipment – ozone can be a byproduct of certain sterilization systems or intense UV lights, and it can damage lungs and sensitive electronics if unchecked. By monitoring ozone, the habitat control can activate charcoal filters or UV off-switches to keep ozone at trace levels. The separate habitat_humidity_percent acknowledges that multi-zone habitats might have different climate requirements (for example, a hydroponic greenhouse might run at 70% RH for plant growth, while the crew cabins stay at 50% to prevent mold and discomfort). Providing a field for each zone's humidity (and temperature if needed) allows targeted climate control in each area. Additional optional fields like soil_moisture_percent or voc_ppm illustrate how the system can be extended – soil moisture feedback can drive automated watering, and VOC levels can indicate when to refresh air or adjust filters (important in tightly sealed spaces where any buildup of toxins could be harmful).</p>
 
 <h3 id="external-integration--extensibility">External Integration &amp; Extensibility</h3>
-<p>The JSON API is designed to be extensible and integrable with other systems, from space station telemetry to terrestrial weather services. Each field name is clear and self-descriptive (often including units for clarity), which aids integration with external data sources or protocols:</p>
 
-<p>• ISS Environmental Integration: The chosen fields align well with those used on the International Space Station and similar life support systems. For example, ISS telemetry monitors major atmospheric constituents O₂, N₂, CO₂, and H₂O (humidity) in real time – our o2_percent, co2_ppm , and humidity_percent directly correspond. If needed, additional fields can be introduced to match spacecraft data, such as n2_percent (for nitrogen level, usually stable in a closed system) or trace gases like h2_ppm and ch4_ppm for leak detection (ISS watches for H₂
-from equipment and CH₄ as a trace metabolic byproduct). Unit conversions may be applied (e.g. NASA often uses partial pressures in mmHg or kPa for gases; the API could either output those directly or provide a known conversion from the given units).</p>
+<p>The JSON API is designed to be extensible and integrable with other systems, from space station telemetry to terrestrial weather services. Each field name is clear and self-descriptive (often including units for clarity), which aids integration with external data sources or protocols.</p>
 
-<p>• Commercial Weather API Integration: For Earth deployments (e.g. a sealed greenhouse), external weather data provides valuable context. The API can include fields for outside conditions obtained from services like AmbientWeather or Weather Underground. For instance:</p>
+<p><strong>ISS Environmental Integration.</strong> The chosen fields align well with those used on the International Space Station and similar life support systems. For example, ISS telemetry monitors major atmospheric constituents O₂, N₂, CO₂, and H₂O (humidity) in real time – our o2_percent, co2_ppm, and humidity_percent directly correspond. If needed, additional fields can be introduced to match spacecraft data, such as n2_percent (for nitrogen level, usually stable in a closed system) or trace gases like h2_ppm and ch4_ppm for leak detection (ISS watches for H₂ from equipment and CH₄ as a trace metabolic byproduct). Unit conversions may be applied (e.g. NASA often uses partial pressures in mmHg or kPa for gases; the API could either output those directly or provide a known conversion from the given units).</p>
 
-<p>Here's the information converted into a properly formatted markdown table:</p>
+<p><strong>Commercial Weather API Integration.</strong> For Earth deployments (e.g. a sealed greenhouse), external weather data provides valuable context. The API can include fields for outside conditions obtained from services like AmbientWeather or Weather Underground. For instance:</p>
 
 <table>
   <thead>
@@ -568,107 +558,78 @@ from equipment and CH₄ as a trace metabolic byproduct). Unit conversions may b
   </tbody>
 </table>
 
-<p>By using common naming (temperature, humidity, etc.), the API can map these directly from popular weather APIs, easing integration. For example, Ambient Weather’s JSON might provide tempf (temperature in °F) or Weather Underground might have UV index or solarradiation ; these can be converted to the unified metric fields above. This two-way integration means the biome’s data could also be uploaded to such services or combined with them for analysis (e.g. comparing internal vs. external climate).</p>
+<p>By using common naming (temperature, humidity, etc.), the API can map these directly from popular weather APIs, easing integration. For example, Ambient Weather's JSON might provide tempf (temperature in °F) or Weather Underground might have UV index or solarradiation; these can be converted to the unified metric fields above. This two-way integration means the biome's data could also be uploaded to such services or combined with them for analysis (e.g. comparing internal vs. external climate).</p>
 
-<p>• Data Grouping and Access Patterns: The JSON structure can be organized to improve clarity and integration. One approach is to group fields into nested objects by category or physical zone. For instance, an alternate schema could be:</p>
+<p><strong>Data Grouping and Access Patterns.</strong> The JSON structure can be organized to improve clarity and integration. One approach is to group fields into nested objects by category or physical zone. The following block is illustrative of that grouping rather than a complete message:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-"atmosphere": {
-"co2_ppm": 1200.5,
-"co2_ppm_avg": 1100.0,
-"o2_percent": 20.8,
-"pressure_kPa": 98.5,
-...
-},
-"thermal": {
-"concrete_loop_in_temp_C": 25.0,
-"concrete_loop_out_temp_C": 22.5,
-...
-},
-"solar": {
-"par_top_umol": 300.0,
-"par_mid_umol": 250.0,
-9
-...
-},
-"hvac": {
-"pressure_diff_pa": 10,
-"lung_position_percent": 30,
-...
-},
-"biome_health": {
-"water_pH": 6.2,
-"ozone_ppm": 0.01,
-...
-},
-"external": {
-"external_temp_C": 5.0,
-"external_humidity_percent": 80,
-...
-}
+  "atmosphere": {
+    "co2_ppm": 1200.5,
+    "co2_ppm_avg": 1100.0,
+    "o2_percent": 20.8,
+    "pressure_kPa": 98.5
+  },
+  "thermal": {
+    "concrete_loop_in_temp_C": 25.0,
+    "concrete_loop_out_temp_C": 22.5
+  },
+  "solar": {
+    "par_top_umol": 300.0,
+    "par_mid_umol": 250.0
+  },
+  "hvac": {
+    "pressure_diff_pa": 10,
+    "lung_position_percent": 30
+  },
+  "biome_health": {
+    "water_pH": 6.2,
+    "ozone_ppm": 0.01
+  },
+  "external": {
+    "external_temp_C": 5.0,
+    "external_humidity_percent": 80
+  }
 }
 </code></pre></div></div>
 
 <p>Grouping can make it easier for clients to subscribe to or query just the subset they need (for example, a mobile app might poll atmosphere frequently for life support status, but solar or external only periodically). It also mirrors how systems are divided (sensors on different controllers, etc.), which can simplify protocol integration (e.g. topics in an MQTT broker could be habitat/atmosphere/co2_ppm and so on).</p>
 
-<p>• Current and Aggregate Values: Each sensor field is primarily defined for the real-time reading (e.g. co2_ppm for the latest CO₂ level). However, to support diagnostics and trending, the API defines parallel fields for averages (and potentially other aggregates like min/max). These could be computed on the habitat control system and served via the API. The convention used in this design
-is a simple suffix (e.g. _avg ) for average values, but it can be extended. For example, one might include co2_ppm_min_24h and co2_ppm_max_24h or use a nested structure:</p>
+<p><strong>Current and Aggregate Values.</strong> Each sensor field is primarily defined for the real-time reading (e.g. co2_ppm for the latest CO₂ level). However, to support diagnostics and trending, the API defines parallel fields for averages (and potentially other aggregates like min/max). These could be computed on the habitat control system and served via the API. The convention used in this design is a simple suffix (e.g. _avg) for average values, but it can be extended. For example, one might include co2_ppm_min_24h and co2_ppm_max_24h or use a nested structure such as this illustrative fragment:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"co2_ppm": {
-"current": 1200.5,
-"avg_24h": 1100.0,
-"min_24h": 900.0,
-"max_24h": 1300.0
+  "current": 1200.5,
+  "avg_24h": 1100.0,
+  "min_24h": 900.0,
+  "max_24h": 1300.0
 }
 </code></pre></div></div>
 
-<p>The flat vs. nested approach can be chosen based on what’s easier for consumers of the API. The key is that the API makes these aggregates explicit so that external systems (or operators) don’t all have to recompute them. This is especially useful in space or remote habitats where bandwidth may be limited 
- sending an already-averaged value saves transmit volume and ensures consistency in what different clients see.</p>
+<p>The flat vs. nested approach can be chosen based on what's easier for consumers of the API. The key is that the API makes these aggregates explicit so that external systems (or operators) don't all have to recompute them. This is especially useful in space or remote habitats where bandwidth may be limited: sending an already-averaged value saves transmit volume and ensures consistency in what different clients see.</p>
 
-<p>• Extensibility: The JSON field list is not static; new sensors or calculated fields can be added as the system evolves. For instance, if a methane detector is installed later, a field ch4_ppm could be appended. Because JSON is schemaless, clients that do not recognize a new field can ignore it, while those that need it can start using it. It’s advisable to maintain a clear naming scheme (as done
-above) for any new fields, and to document units in either the field name or a separate metadata dictionary to avoid confusion. Additionally, one could incorporate metadata fields such as sensor timestamp or status if needed (e.g. "co2_ppm_timestamp": "2025-05-14T07:00:00Z" or "co2_sensor_status": "OK" ), ensuring that the API not only provides values but also confidence in those values.</p>
+<p><strong>Extensibility.</strong> The JSON field list is not static; new sensors or calculated fields can be added as the system evolves. For instance, if a methane detector is installed later, a field ch4_ppm could be appended. Because JSON is schemaless, clients that do not recognize a new field can ignore it, while those that need it can start using it. It's advisable to maintain a clear naming scheme (as done above) for any new fields, and to document units in either the field name or a separate metadata dictionary to avoid confusion. Additionally, one could incorporate metadata fields such as sensor timestamp or status if needed (e.g. "co2_ppm_timestamp": "2025-05-14T07:00:00Z" or "co2_sensor_status": "OK"), ensuring that the API not only provides values but also confidence in those values.</p>
 
-<p>In summary, this structured set of JSON fields provides a comprehensive picture of a closed biome’s environment. It balances the needs of life support (air composition, pressure), plant cultivation (light, humidity, pH), and system diagnostics (thermal flows, lung position, etc.). By organizing the data into logical groups and including both instantaneous readings and summary statistics, the API can support real-time control algorithms, crew decision-making, and integration with external monitoring services. The design is forward-compatible with both space-based habitats (aligning with ISS ECLSS parameters) and Earth-based smart greenhouse networks, facilitating a unified approach to environmental data in sealed life-support systems.</p>
+<p>In summary, this structured set of JSON fields provides a comprehensive picture of a closed biome's environment. It balances the needs of life support (air composition, pressure), plant cultivation (light, humidity, pH), and system diagnostics (thermal flows, lung position, etc.). By organizing the data into logical groups and including both instantaneous readings and summary statistics, the API can support real-time control algorithms, crew decision-making, and integration with external monitoring services. The design is forward-compatible with both space-based habitats (aligning with ISS ECLSS parameters) and Earth-based smart greenhouse networks, facilitating a unified approach to environmental data in sealed life-support systems.</p>
 
-<h3 id="sources">Sources:</h3>
-<p>Aranet Wireless Sensors – Case Study on greenhouse PAR distribution
-Emerald Review – Biosphere 2 lung mechanism for pressure regulation
-Univ. of Arizona News – SAM habitat test monitoring (lung pressure, O₂/CO₂ levels)
-ACS (2025) – CO₂ removal is critical to prevent deadly buildup in spacecraft
-NASA ISS ECLSS – Monitored atmospheric constituents (O₂, N₂, CO₂, H₂O, etc.)
-FAA Regulations – Cabin ozone limit of 0.25 ppm for air travel safety
-Hydroponics Guide – Optimal nutrient solution pH (~5.5–6.5) for plant nutrient uptake</p>
+<h3 id="relationship-to-fhir-profiles">Relationship to FHIR Profiles</h3>
+
+<p>The JSON field list above is not itself a FHIR artifact; it is the sensor vocabulary that the guide's environmental profiles are built from. The same fields, grouped by the same categories (solar, thermal mass, atmospheric life support, HVAC and pressure control, biome health, external environment), are expressed as the <a href="StructureDefinition-EnvironmentalMonitoringLogicalModel.html">Environmental Monitoring API for Closed Biome Systems</a> logical model, where each JSON key becomes a decimal element with the unit carried in its description. Spacecraft-specific parameters (cabin partial pressures, trace contaminants, particulates, radiation) are modeled separately in the <a href="StructureDefinition-SpacecraftLifeSupportTelemetry.html">Spacecraft Life Support Telemetry</a> logical model described on the <a href="eclss.html">ECLSS page</a>. When a habitat reports an actual reading rather than describing its schema, it uses the <a href="StructureDefinition-environmental-monitoring.html">Environmental Monitoring</a> Observation profile, with one Observation (or one component per sensor) carrying the value as a UCUM quantity; <a href="Observation-Observation.Environmental-1.html">Observation - Environmental</a> is a minimal synthetic example. Implementers who already publish the JSON API can therefore map a field such as <code class="language-plaintext highlighter-rouge">co2_ppm</code> to an Observation component whose value is a Quantity in <code class="language-plaintext highlighter-rouge">[ppm]</code>, and a field such as <code class="language-plaintext highlighter-rouge">co2_ppm_avg</code> to a second component or to a separate Observation with an <code class="language-plaintext highlighter-rouge">effectivePeriod</code>. No new profiles are proposed on this page.</p>
 
 <h3 id="references">References</h3>
+
 <ul>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>[Becoming a multiplanetary species: Crew completes first mission in pressurized habitat at Biosphere 2</td>
-          <td>University of Arizona News](https://news.arizona.edu/news/becoming-multiplanetary-species-crew-completes-first-mission-pressurized-habitat-biosphere-2)</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>[Biosphere 2: The Futuristic Space Colony That Wasn't</td>
-          <td>The Emerald Review](https://emeraldreview.com/2024/08/biosphere-2-the-futuristic-space-colony-that-never-was/)</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li><a href="https://pro.aranet.com/the-impact-of-fotoniqs-par-coating-and-aranet-sensors/">The Impact of Fotoniq’s PAR+ Coating and Aranet Sensors - Aranet</a></li>
-  <li><a href="https://ceresgs.com/tips-on-using-water-barrels-in-a-solar-greenhouse/">Tips on Using Water Barrels in a Solar Greenhouse – Ceres Greenhouse Solutions</a></li>
-  <li><a href="https://ntrs.nasa.gov/api/citations/20150022318/downloads/20150022318.pdf">International Space Station (ISS) Environmental Control and Life Support (ECLS) System Overview of Events: 2010 - 2014</a></li>
-  <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11955851/">Dual Function Materials Enabling Human Space Flight: Carbon Dioxide Capture and Conversion for Life Support on Crewed Missions - PMC</a></li>
-  <li><a href="https://www.nasa.gov/wp-content/uploads/2023/07/eclss-technical-brief-ochmo.pdf">Environmental Control &amp; Life Support System (ECLSS) - NASA</a></li>
-  <li><a href="https://atlas-scientific.com/blog/ph-for-hydroponics/">Why is pH Important for Hydroponics? - Atlas Scientific</a></li>
-  <li><a href="https://commons.erau.edu/cgi/viewcontent.cgi?article=2125&amp;context=publication">An Analysis of Cabin Ozone Regulations - Scholarly Commons</a></li>
+  <li>Aranet. <a href="https://pro.aranet.com/the-impact-of-fotoniqs-par-coating-and-aranet-sensors/">The Impact of Fotoniq's PAR+ Coating and Aranet Sensors</a> – case study on greenhouse PAR distribution.</li>
+  <li>The Emerald Review. <a href="https://emeraldreview.com/2024/08/biosphere-2-the-futuristic-space-colony-that-never-was/">Biosphere 2: The Futuristic Space Colony That Wasn't</a>, 2024 – Biosphere 2 lung mechanism for pressure regulation.</li>
+  <li>University of Arizona News. <a href="https://news.arizona.edu/news/becoming-multiplanetary-species-crew-completes-first-mission-pressurized-habitat-biosphere-2">Becoming a multiplanetary species: Crew completes first mission in pressurized habitat at Biosphere 2</a> – SAM habitat test monitoring (lung pressure, O₂/CO₂ levels).</li>
+  <li>Ceres Greenhouse Solutions. <a href="https://ceresgs.com/tips-on-using-water-barrels-in-a-solar-greenhouse/">Tips on Using Water Barrels in a Solar Greenhouse</a> – water as thermal mass.</li>
+  <li>NASA. <a href="https://ntrs.nasa.gov/api/citations/20150022318/downloads/20150022318.pdf">International Space Station (ISS) Environmental Control and Life Support (ECLS) System Overview of Events: 2010–2014</a> – monitored atmospheric constituents (O₂, N₂, CO₂, H₂O, etc.).</li>
+  <li>NASA Office of the Chief Health and Medical Officer. <a href="https://www.nasa.gov/wp-content/uploads/2023/07/eclss-technical-brief-ochmo.pdf">Environmental Control &amp; Life Support System (ECLSS) technical brief</a>.</li>
+  <li>NASA. <a href="https://www.nasa.gov/wp-content/uploads/2024/06/jsc-20584-smacs-rev-c-final.pdf">Spacecraft Maximum Allowable Concentrations for Airborne Contaminants, JSC 20584 Rev C</a> – CO₂ operational limits and SMACs.</li>
+  <li>American Chemical Society. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11955851/">Dual Function Materials Enabling Human Space Flight: Carbon Dioxide Capture and Conversion for Life Support on Crewed Missions</a>, 2025 – CO₂ removal is critical to prevent dangerous buildup in spacecraft.</li>
+  <li>Federal Aviation Administration. Airworthiness Standards: Transport Category Airplanes, Cabin ozone concentration, <a href="https://www.ecfr.gov/current/title-14/part-25/section-25.832">14 CFR 25.832</a> – 0.25 ppm cabin ozone limit.</li>
+  <li>Embry-Riddle Aeronautical University Scholarly Commons. <a href="https://commons.erau.edu/cgi/viewcontent.cgi?article=2125&amp;context=publication">An Analysis of Cabin Ozone Regulations</a>.</li>
+  <li>Atlas Scientific. <a href="https://atlas-scientific.com/blog/ph-for-hydroponics/">Why is pH Important for Hydroponics?</a> – optimal nutrient solution pH (~5.5–6.5) for plant nutrient uptake.</li>
 </ul>
+
 
 
 
@@ -688,7 +649,7 @@ Hydroponics Guide – Optimal nutrient solution pH (~5.5–6.5) for plant nutrie
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

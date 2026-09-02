@@ -1,15 +1,16 @@
-# BFRT Outcome Code System - v0.6.2
+# BFRT Outcome Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **BFRT Outcome Code System**
 
-## CodeSystem: BFRT Outcome Code System 
+## CodeSystem: BFRT Outcome Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BFRTOutcomeCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BFRTOutcomeCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Outcome measures for blood flow restriction training effectiveness 
@@ -26,13 +27,13 @@ Outcome measures for blood flow restriction training effectiveness
 {
   "resourceType" : "CodeSystem",
   "id" : "bfrt-outcome-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
+  "version" : "0.7.0",
   "name" : "BFRTOutcomeCS",
   "title" : "BFRT Outcome Code System",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Outcome measures for blood flow restriction training effectiveness
     }
   ],
   "description" : "Outcome measures for blood flow restriction training effectiveness",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 7,

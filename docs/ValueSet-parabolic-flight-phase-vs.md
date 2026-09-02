@@ -1,15 +1,16 @@
-# Parabolic Flight Phase Value Set - v0.6.2
+# Parabolic Flight Phase Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Parabolic Flight Phase Value Set**
 
-## ValueSet: Parabolic Flight Phase Value Set 
+## ValueSet: Parabolic Flight Phase Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/parabolic-flight-phase-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ParabolicFlightPhaseVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/parabolic-flight-phase-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ParabolicFlightPhaseVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Phases of a parabolic flight maneuver 
@@ -45,13 +46,13 @@ Phases of a parabolic flight maneuver
 {
   "resourceType" : "ValueSet",
   "id" : "parabolic-flight-phase-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/parabolic-flight-phase-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/parabolic-flight-phase-vs",
+  "version" : "0.7.0",
   "name" : "ParabolicFlightPhaseVS",
   "title" : "Parabolic Flight Phase Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Phases of a parabolic flight maneuver
     }
   ],
   "description" : "Phases of a parabolic flight maneuver",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/parabolic-flight-phase-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/parabolic-flight-phase-cs"
       }
     ]
   }

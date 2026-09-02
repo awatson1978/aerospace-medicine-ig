@@ -1,4 +1,4 @@
-# Oxygen Concentration - v0.6.2
+# Oxygen Concentration - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:OxygenConcentration |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/oxygen-concentration | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:OxygenConcentration |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Oxygen concentration during treatment
 
@@ -19,7 +20,7 @@ Oxygen concentration during treatment
 
 **Usages:**
 
-* Use this Extension: [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md) and [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md)
+* Use this Extension: [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) and [Hyperbaric Treatment](StructureDefinition-hyperbaric-treatment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/oxygen-concentration)
 
@@ -43,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-concentration
 {
   "resourceType" : "StructureDefinition",
   "id" : "oxygen-concentration",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/oxygen-concentration",
+  "version" : "0.7.0",
   "name" : "OxygenConcentration",
   "title" : "Oxygen Concentration",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -62,6 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-concentration
     }
   ],
   "description" : "Oxygen concentration during treatment",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -75,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-concentration
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -97,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-oxygen-concentration
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-concentration"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/oxygen-concentration"
       },
       {
         "id" : "Extension.value[x]",

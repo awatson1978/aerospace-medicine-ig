@@ -1,22 +1,24 @@
-# Neutral Buoyancy Training Code System - v0.6.2
+# Neutral Buoyancy Training Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Neutral Buoyancy Training Code System**
 
-## CodeSystem: Neutral Buoyancy Training Code System 
+## CodeSystem: Neutral Buoyancy Training Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:NeutralBuoyancyTrainingCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:NeutralBuoyancyTrainingCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Specialized codes for neutral buoyancy training activities and assessments 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [NeutralBuoyancyTrainingActivities](ValueSet-neutral-buoyancy-training-activities.md)
+* [NeutralBuoyancyTrainingActivities](ValueSet-neutral-buoyancy-training-activities-vs.md)
+* [UnderwaterTrainingProcedures](ValueSet-underwater-training-procedures-vs.md)
 
 
 
@@ -26,13 +28,13 @@ Specialized codes for neutral buoyancy training activities and assessments
 {
   "resourceType" : "CodeSystem",
   "id" : "neutral-buoyancy-training-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs",
+  "version" : "0.7.0",
   "name" : "NeutralBuoyancyTrainingCS",
   "title" : "Neutral Buoyancy Training Code System",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,9 +48,10 @@ Specialized codes for neutral buoyancy training activities and assessments
     }
   ],
   "description" : "Specialized codes for neutral buoyancy training activities and assessments",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 19,
+  "count" : 20,
   "concept" : [
     {
       "code" : "eva-simulation",
@@ -74,6 +77,11 @@ Specialized codes for neutral buoyancy training activities and assessments
       "code" : "equipment-familiarization",
       "display" : "Equipment Familiarization",
       "definition" : "Introduction and practice with space equipment"
+    },
+    {
+      "code" : "communication-training",
+      "display" : "Communication Training",
+      "definition" : "Training in the use of underwater communication systems and signal protocols"
     },
     {
       "code" : "habitat-construction",

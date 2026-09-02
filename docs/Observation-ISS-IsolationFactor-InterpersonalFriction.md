@@ -1,4 +1,4 @@
-# ISS Isolation Factor - Interpersonal Friction - v0.6.2
+# ISS Isolation Factor - Interpersonal Friction - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,13 +6,17 @@
 
 ## Example Observation: ISS Isolation Factor - Interpersonal Friction
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
 **status**: Final
 
 **category**: Survey
 
 **code**: Interpersonal friction
 
-**subject**: [Patient/AstronautExample](Patient/AstronautExample)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-06-10 14:00:00+0000
 
@@ -26,6 +30,16 @@
 {
   "resourceType" : "Observation",
   "id" : "ISS-IsolationFactor-InterpersonalFriction",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
+    ]
+  },
   "status" : "final",
   "category" : [
     {
@@ -41,14 +55,14 @@
   "code" : {
     "coding" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs",
         "code" : "interpersonal-friction",
         "display" : "Interpersonal friction"
       }
     ]
   },
   "subject" : {
-    "reference" : "Patient/AstronautExample"
+    "reference" : "Patient/ExampleAstronaut"
   },
   "effectiveDateTime" : "2025-06-10T14:00:00Z",
   "valueQuantity" : {

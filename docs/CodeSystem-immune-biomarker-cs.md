@@ -1,15 +1,16 @@
-# Immune Biomarker Code System - v0.6.2
+# Immune Biomarker Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Immune Biomarker Code System**
 
-## CodeSystem: Immune Biomarker Code System 
+## CodeSystem: Immune Biomarker Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ImmuneBiomarkerCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ImmuneBiomarkerCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Immune function biomarkers monitored during spaceflight 
@@ -26,13 +27,13 @@ Immune function biomarkers monitored during spaceflight
 {
   "resourceType" : "CodeSystem",
   "id" : "immune-biomarker-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
+  "version" : "0.7.0",
   "name" : "ImmuneBiomarkerCS",
   "title" : "Immune Biomarker Code System",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,10 +47,16 @@ Immune function biomarkers monitored during spaceflight
     }
   ],
   "description" : "Immune function biomarkers monitored during spaceflight",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 8,
+  "count" : 9,
   "concept" : [
+    {
+      "code" : "immune-panel",
+      "display" : "Immune Function Panel",
+      "definition" : "Panel of immune function biomarkers monitored across mission phases"
+    },
     {
       "code" : "il-6",
       "display" : "Interleukin-6 (IL-6)",

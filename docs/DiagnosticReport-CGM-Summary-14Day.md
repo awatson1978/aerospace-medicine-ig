@@ -1,4 +1,4 @@
-# 14-Day CGM Summary Report - v0.6.2
+# 14-Day CGM Summary Report - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,13 +6,17 @@
 
 ## Example DiagnosticReport: 14-Day CGM Summary Report
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space CGM Summary Report](StructureDefinition-space-cgm-summary.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 ## Glucose monitoring report 
 
 | | |
 | :--- | :--- |
-| Subject | Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001) |
+| Subject | Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001) |
 | When For | 2028-03-16 00:00:00+0000 --> 2028-03-30 00:00:00+0000 |
 
 **Report Details**
@@ -33,15 +37,23 @@ Profile: [Space CGM Summary Report](StructureDefinition-space-cgm-summary.md)
   "resourceType" : "DiagnosticReport",
   "id" : "CGM-Summary-14Day",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-summary"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     }
   ],

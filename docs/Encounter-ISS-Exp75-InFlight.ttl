@@ -6,12 +6,26 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> a fhir:Encounter ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ISS-Exp75-InFlight"] ; # 
+  fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter ISS-Exp75-InFlight</b></p><a name=\"ISS-Exp75-InFlight\"> </a><a name=\"hcISS-Exp75-InFlight\"> </a><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>period</b>: 2025-03-01 00:00:00+0000 --&gt; (ongoing)</p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter ISS-Exp75-InFlight</b></p><a name=\"ISS-Exp75-InFlight\"> </a><a name=\"hcISS-Exp75-InFlight\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode: AMB</a> (ambulatory)</p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>period</b>: 2025-03-01 00:00:00+0000 --&gt; (ongoing)</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "in-progress"] ; # 
   fhir:class [
@@ -23,8 +37,8 @@
      fhir:display [ fhir:v "ambulatory" ]
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
-     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:period [
      fhir:start [ fhir:v "2025-03-01T00:00:00Z"^^xsd:dateTime ]

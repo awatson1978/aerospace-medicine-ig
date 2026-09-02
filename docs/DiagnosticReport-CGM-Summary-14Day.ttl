@@ -7,28 +7,40 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/DiagnosticReport/CGM-Summary-14Day> a fhir:DiagnosticReport ;
+<https://awatson1978.github.io/aerospace-medicine-ig/DiagnosticReport/CGM-Summary-14Day> a fhir:DiagnosticReport ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "CGM-Summary-14Day"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-summary"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-summary>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport CGM-Summary-14Day</b></p><a name=\"CGM-Summary-14Day\"> </a><a name=\"hcCGM-Summary-14Day\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-cgm-summary.html\">Space CGM Summary Report</a></p></div><h2><span title=\"Codes:{http://loinc.org 97151-5}\">Glucose monitoring report</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</td></tr><tr><td>When For</td><td>2028-03-16 00:00:00+0000 --&gt; 2028-03-30 00:00:00+0000</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-CGM-Reading-FD15.html\"><span title=\"Codes:{http://loinc.org 99504-3}\">Glucose [Mass/volume] in Interstitial fluid</span></a></td><td>105 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>Final</td><td>2028-03-30 14:00:00+0000</td></tr></table><p>14-day CGM summary: TIR 85%, mean glucose 108 mg/dL, CV 22.5%. No significant hypoglycemia. Mild hyperglycemic excursions noted post-exercise. Metabolic status within normal limits for spaceflight.</p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport CGM-Summary-14Day</b></p><a name=\"CGM-Summary-14Day\"> </a><a name=\"hcCGM-Summary-14Day\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-cgm-summary.html\">Space CGM Summary Report</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><h2><span title=\"Codes:{http://loinc.org 97151-5}\">Glucose monitoring report</span> </h2><table class=\"grid\"><tr><td>Subject</td><td>Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</td></tr><tr><td>When For</td><td>2028-03-16 00:00:00+0000 --&gt; 2028-03-30 00:00:00+0000</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-CGM-Reading-FD15.html\"><span title=\"Codes:{http://loinc.org 99504-3}\">Glucose [Mass/volume] in Interstitial fluid</span></a></td><td>105 mg/dL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/dL = 'mg/dL')</span></td><td>Final</td><td>2028-03-30 14:00:00+0000</td></tr></table><p>14-day CGM summary: TIR 85%, mean glucose 108 mg/dL, CV 22.5%. No significant hypoglycemia. Mild hyperglycemic excursions noted post-exercise. Metabolic status within normal limits for spaceflight.</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
-       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/Artemis-IV-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-IV-Mission" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -44,7 +56,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:effective [
@@ -53,7 +65,7 @@
      fhir:end [ fhir:v "2028-03-30T00:00:00Z"^^xsd:dateTime ]
   ] ; # 
   fhir:result ( [
-     fhir:l <https://mitre.org/fhir/space-health/Observation/CGM-Reading-FD15> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Observation/CGM-Reading-FD15> ;
      fhir:reference [ fhir:v "Observation/CGM-Reading-FD15" ]
   ] ) ; # 
   fhir:conclusion [ fhir:v "14-day CGM summary: TIR 85%, mean glucose 108 mg/dL, CV 22.5%. No significant hypoglycemia. Mild hyperglycemic excursions noted post-exercise. Metabolic status within normal limits for spaceflight."] . # 

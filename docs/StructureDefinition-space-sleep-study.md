@@ -1,4 +1,4 @@
-# Space Sleep Study Observation - v0.6.2
+# Space Sleep Study Observation - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-sleep-study | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceSleepStudy |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-sleep-study | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceSleepStudy |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Sleep architecture observation during spaceflight including PSG and actigraphy-derived measures 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-sleep-study",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-sleep-study",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-sleep-study",
+  "version" : "0.7.0",
   "name" : "SpaceSleepStudy",
   "title" : "Space Sleep Study Observation",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
     }
   ],
   "description" : "Sleep architecture observation during spaceflight including PSG and actigraphy-derived measures",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -155,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -195,7 +197,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -240,7 +242,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "total-sleep-time",
               "display" : "Total Sleep Time (TST)"
             }
@@ -280,7 +282,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "sleep-efficiency",
               "display" : "Sleep Efficiency"
             }
@@ -320,7 +322,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "sleep-onset-latency",
               "display" : "Sleep Onset Latency (SOL)"
             }
@@ -360,7 +362,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "waso",
               "display" : "Wake After Sleep Onset (WASO)"
             }
@@ -400,7 +402,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "rem-latency",
               "display" : "REM Latency"
             }
@@ -440,7 +442,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "n1-pct",
               "display" : "N1 Sleep Percentage"
             }
@@ -480,7 +482,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "n2-pct",
               "display" : "N2 Sleep Percentage"
             }
@@ -520,7 +522,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "n3-pct",
               "display" : "N3/SWS Sleep Percentage"
             }
@@ -560,7 +562,7 @@ Other representations of profile: [CSV](StructureDefinition-space-sleep-study.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "rem-pct",
               "display" : "REM Sleep Percentage"
             }

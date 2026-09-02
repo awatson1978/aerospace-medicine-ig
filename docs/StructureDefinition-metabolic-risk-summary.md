@@ -1,4 +1,4 @@
-# Metabolic Risk Summary - v0.6.2
+# Metabolic Risk Summary - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/metabolic-risk-summary | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MetabolicRiskSummary |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/metabolic-risk-summary | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MetabolicRiskSummary |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Evaluates risk from prolonged caloric deficits and metabolic stress 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
 {
   "resourceType" : "StructureDefinition",
   "id" : "metabolic-risk-summary",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/metabolic-risk-summary",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/metabolic-risk-summary",
+  "version" : "0.7.0",
   "name" : "MetabolicRiskSummary",
   "title" : "Metabolic Risk Summary",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
     }
   ],
   "description" : "Evaluates risk from prolonged caloric deficits and metabolic stress",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context"
             ]
           }
         ],
@@ -179,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -215,7 +217,7 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/calorie-deficit-assessment"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/calorie-deficit-assessment"
             ]
           }
         ],
@@ -231,7 +233,7 @@ Other representations of profile: [CSV](StructureDefinition-metabolic-risk-summa
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/hydration-status-observation"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hydration-status-observation"
             ]
           }
         ],

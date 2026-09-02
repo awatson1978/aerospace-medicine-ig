@@ -1,4 +1,4 @@
-# Telemedicine Device - v0.6.2
+# Telemedicine Device - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:TelemedicineDevice |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-device | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:TelemedicineDevice |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Medical device used for telemedicine in spaceflight operations 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-telemedicine-device.
 {
   "resourceType" : "StructureDefinition",
   "id" : "telemedicine-device",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-device",
+  "version" : "0.7.0",
   "name" : "TelemedicineDevice",
   "title" : "Telemedicine Device",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-telemedicine-device.
     }
   ],
   "description" : "Medical device used for telemedicine in spaceflight operations",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -108,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-telemedicine-device.
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -142,7 +144,7 @@ Other representations of profile: [CSV](StructureDefinition-telemedicine-device.
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/telemedicine-equipment-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-equipment-vs"
         }
       },
       {
@@ -152,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-telemedicine-device.
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],

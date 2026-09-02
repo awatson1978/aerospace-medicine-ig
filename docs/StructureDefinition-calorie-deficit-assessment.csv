@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:missionContext","Observation.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"Observation.extension:missionContext","Observation.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Links assessment to specific mission","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:energyExpenditure","Observation.extension","energyExpenditure","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure]]} {[]}
+"Observation.extension:energyExpenditure","Observation.extension","energyExpenditure","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/energy-expenditure]]} {[]}
 ","Total daily energy expenditure","Total daily energy expenditure in kcal/day","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -68,9 +68,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",".outboundRelationship[typeCode=""COMP].target[classCode=""LIST"", moodCode=""EVN""].code","FiveWs.class"
 "Observation.code","Observation.code","","Name
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","","","","",,"extensible","","https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/macronutrient-metrics-vs","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]","116680003 |Is a|"
-"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Who and/or what the observation is about","The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.","One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.","Observations have no value if you don't know who or what they're about.","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3","participation[typeCode=RTGT]","FiveWs.subject[x]","FiveWs.subject"
 "Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}
@@ -238,7 +238,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:energyExpenditure.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs""/>
     <code value=""calorie-expenditure""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -300,7 +300,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:energyIntake.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs""/>
     <code value=""calorie-intake""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -362,14 +362,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:riskLevel.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/calorie-deficit-risk-cs""/>
-    <code value=""mild""/>
-    <display value=""Mild (&lt;300 kcal/day)""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs""/>
+    <code value=""calorie-deficit-risk""/>
+    <display value=""Calorie Deficit Risk Level""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]"
 "Observation.component:riskLevel.value[x]","Observation.component.value[x]","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs","",,,,"Observation.component.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Actual component result","The information determined as a result of making the observation, if the information has a simple value.","Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](http://hl7.org/fhir/R4/observation.html#notes) below.","An observation exists to have a value, though it might not if it is in error, or if it represents a group of observations.","","","","","","","",,"required","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/calorie-deficit-risk-vs","",,,,"Observation.component.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","363714003 |Interprets| < 441742003 |Evaluation finding|","OBX.2, OBX.5, OBX.6","value","363714003 |Interprets|"
 "Observation.component:riskLevel.dataAbsentReason","Observation.component.dataAbsentReason","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Why the component result is missing","Provides a reason why the expected value in the element Observation.component.value[x] is missing.","""Null"" or exceptional values can be represented two ways in FHIR Observations.  One way is to simply include them in the value set and represent the exceptions in the value.  For example, measurement values for a serology test could be  ""detected"", ""not detected"", ""inconclusive"", or  ""test not done"". 

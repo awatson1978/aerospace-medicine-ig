@@ -1,4 +1,4 @@
-# Immune Biomarker Panel - v0.6.2
+# Immune Biomarker Panel - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/immune-biomarker-panel | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ImmuneBiomarkerPanel |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/immune-biomarker-panel | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ImmuneBiomarkerPanel |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Panel of immune function biomarkers for monitoring spaceflight-associated immune dysregulation 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
 {
   "resourceType" : "StructureDefinition",
   "id" : "immune-biomarker-panel",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/immune-biomarker-panel",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/immune-biomarker-panel",
+  "version" : "0.7.0",
   "name" : "ImmuneBiomarkerPanel",
   "title" : "Immune Biomarker Panel",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
     }
   ],
   "description" : "Panel of immune function biomarkers for monitoring spaceflight-associated immune dysregulation",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"
             ]
           }
         ],
@@ -163,9 +165,9 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "24359-3",
-              "display" : "Immune function panel"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
+              "code" : "immune-panel",
+              "display" : "Immune Function Panel"
             }
           ]
         },
@@ -179,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -229,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "il-6",
               "display" : "Interleukin-6 (IL-6)"
             }
@@ -269,7 +271,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "tnf-alpha",
               "display" : "Tumor Necrosis Factor Alpha (TNF-α)"
             }
@@ -309,7 +311,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "ifn-gamma",
               "display" : "Interferon Gamma (IFN-γ)"
             }
@@ -349,7 +351,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "cd4-cd8-ratio",
               "display" : "CD4/CD8 Ratio"
             }
@@ -389,7 +391,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "nk-cell-pct",
               "display" : "Natural Killer Cell Percentage"
             }
@@ -429,7 +431,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "ebv-pcr",
               "display" : "EBV PCR"
             }
@@ -499,7 +501,7 @@ Other representations of profile: [CSV](StructureDefinition-immune-biomarker-pan
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
               "code" : "salivary-iga",
               "display" : "Salivary IgA"
             }

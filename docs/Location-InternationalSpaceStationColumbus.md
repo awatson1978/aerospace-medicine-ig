@@ -1,4 +1,4 @@
-# ISS Columbus Laboratory - v0.6.2
+# ISS Columbus Laboratory - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,9 @@
 
 ## Example Location: ISS Columbus Laboratory
 
-Profile: [xGeo Locations](StructureDefinition-SpaceLocation.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
+
+Profile: [xGeo Locations](StructureDefinition-space-location.md)
 
 **name**: ISS Columbus Laboratory
 
@@ -21,8 +23,9 @@ Profile: [xGeo Locations](StructureDefinition-SpaceLocation.md)
   "resourceType" : "Location",
   "id" : "InternationalSpaceStationColumbus",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     ]
   },
   "name" : "ISS Columbus Laboratory",

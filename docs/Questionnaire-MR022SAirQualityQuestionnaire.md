@@ -1,4 +1,4 @@
-# MR022S Air Quality Monitoring - v0.6.2
+# MR022S Air Quality Monitoring - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr022s-air-quality | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr022s-air-quality | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR022SAirQuality |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
 {
   "resourceType" : "Questionnaire",
   "id" : "MR022SAirQualityQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr022s-air-quality",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr022s-air-quality",
+  "version" : "0.7.0",
   "name" : "MR022SAirQuality",
   "title" : "MR022S Air Quality Monitoring",
   "status" : "active",
@@ -94,7 +97,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "environmental-health",
                 "display" : "Environmental Health System"
               }
@@ -103,7 +106,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "environmental-health",
                 "display" : "Environmental Health System"
               }
@@ -119,7 +122,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "environmental",
                 "display" : "Environmental"
               }
@@ -128,7 +131,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "environmental",
                 "display" : "Environmental"
               }
@@ -299,7 +302,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -308,7 +311,7 @@ To monitor atmospheric composition and quality aboard spacecraft to ensure crew 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

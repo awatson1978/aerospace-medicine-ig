@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CommunicationRequest.extension:missionContext","CommunicationRequest.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"CommunicationRequest.extension:missionContext","CommunicationRequest.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -67,10 +67,10 @@ Cancelled Reason","",0,1,"","","","CodeableConcept {[]} {[]}
 ","True if request is prohibiting action","If true indicates that the CommunicationRequest is asking for the specified action to *not* occur.","The attributes provided with the request qualify what is not to be done.","","","If do not perform is not specified, the request is a positive request e.g. ""do perform""","","","","","",,,,,"",,,,"CommunicationRequest.doNotPerform",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.doNotPerform"
 "CommunicationRequest.medium","CommunicationRequest.medium","","","",0,*,"Y","","","CodeableConcept {[]} {[]}
-","Communication modality","A channel that was used for this communication (e.g. email, fax).","","","","","","","","","",,"extensible","","https://mitre.org/fhir/space-health/ValueSet/telemedicine-modality-vs","",,,,"CommunicationRequest.medium",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Communication modality","A channel that was used for this communication (e.g. email, fax).","","","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-modality-vs","",,,,"CommunicationRequest.medium",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CommunicationRequest.subject","CommunicationRequest.subject","","patient
-","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+","",0,1,"Y","","","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Focus of message","The patient or group that is the focus of this communication request.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "CommunicationRequest.about","CommunicationRequest.about","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}

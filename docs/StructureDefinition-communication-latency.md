@@ -1,4 +1,4 @@
-# Communication Latency - v0.6.2
+# Communication Latency - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/communication-latency | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:CommunicationLatency |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-latency | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:CommunicationLatency |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 One-way signal latency for telemedicine encounters, complementing the Mars-specific CommunicationDelay extension with general-purpose latency tracking
 
@@ -44,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-communication-latenc
 {
   "resourceType" : "StructureDefinition",
   "id" : "communication-latency",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/communication-latency",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-latency",
+  "version" : "0.7.0",
   "name" : "CommunicationLatency",
   "title" : "Communication Latency",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -63,6 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-communication-latenc
     }
   ],
   "description" : "One-way signal latency for telemedicine encounters, complementing the Mars-specific CommunicationDelay extension with general-purpose latency tracking",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -106,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-communication-latenc
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/communication-latency"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-latency"
       },
       {
         "id" : "Extension.value[x]",

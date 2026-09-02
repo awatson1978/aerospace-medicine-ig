@@ -1,19 +1,19 @@
-# Mars Landing Sites (Candidate) - v0.6.2
+# Mars Landing Sites (Candidate) - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Mars Landing Sites (Candidate)**
 
-## CodeSystem: Mars Landing Sites (Candidate) 
+## CodeSystem: Mars Landing Sites (Candidate) (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MarsLandingSitesCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MarsLandingSitesCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Candidate landing sites for human Mars missions with are 
-ographic coordinates and site characteristics 
+Candidate landing sites for human Mars missions with areographic coordinates and site characteristics 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -27,13 +27,13 @@ ographic coordinates and site characteristics
 {
   "resourceType" : "CodeSystem",
   "id" : "mars-landing-sites-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs",
+  "version" : "0.7.0",
   "name" : "MarsLandingSitesCS",
   "title" : "Mars Landing Sites (Candidate)",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,26 +46,24 @@ ographic coordinates and site characteristics
       ]
     }
   ],
-  "description" : "Candidate landing sites for human Mars missions with are\n\nographic coordinates and site characteristics",
+  "description" : "Candidate landing sites for human Mars missions with areographic coordinates and site characteristics",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 6,
   "property" : [
     {
       "code" : "latitude",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs#latitude",
       "description" : "Areographic latitude (degrees, -90 to +90)",
       "type" : "decimal"
     },
     {
       "code" : "longitude",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs#longitude",
       "description" : "Areographic longitude (degrees, 0 to 360)",
       "type" : "decimal"
     },
     {
       "code" : "feature",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs#feature",
       "description" : "Primary topographic feature",
       "type" : "string"
     }

@@ -1,15 +1,16 @@
-# Suit Provisioning Status Code System - v0.6.2
+# Suit Provisioning Status Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Suit Provisioning Status Code System**
 
-## CodeSystem: Suit Provisioning Status Code System 
+## CodeSystem: Suit Provisioning Status Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SuitProvisioningStatusCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SuitProvisioningStatusCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Provisioning and logistics status of EVA suit assets 
@@ -26,13 +27,13 @@ Provisioning and logistics status of EVA suit assets
 {
   "resourceType" : "CodeSystem",
   "id" : "suit-provisioning-status-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs",
+  "version" : "0.7.0",
   "name" : "SuitProvisioningStatusCS",
   "title" : "Suit Provisioning Status Code System",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Provisioning and logistics status of EVA suit assets
     }
   ],
   "description" : "Provisioning and logistics status of EVA suit assets",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 6,

@@ -1,4 +1,4 @@
-# Mars Direct Mission 2040 - v0.6.2
+# Mars Direct Mission 2040 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,11 +6,15 @@
 
 ## Example Encounter: Mars Direct Mission 2040
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
 **status**: In Progress
 
 **class**: [ActCode: FLD](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-FLD) (field)
 
-**subject**: [Sarah Chen Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
+**subject**: [Sarah Chen Female, DoB: 1990-03-15 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
 
 **period**: 2040-09-01 00:00:00+0000 --> (ongoing)
 
@@ -24,6 +28,16 @@
 {
   "resourceType" : "Encounter",
   "id" : "MarsDirectMission2040",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
+    ]
+  },
   "status" : "in-progress",
   "class" : {
     "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",

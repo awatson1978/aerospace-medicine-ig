@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Medication</sch:title>
     <sch:rule context="f:Medication">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/rehydration-requirement']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/rehydration-requirement': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/shelf-life-decay']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/shelf-life-decay': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

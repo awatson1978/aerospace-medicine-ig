@@ -1,4 +1,4 @@
-# Isolation Risk Factor - v0.6.2
+# Isolation Risk Factor - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:IsolationRisk |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isolation-risk | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:IsolationRisk |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Captures isolation and confinement risk factors affecting behavioral health
 
@@ -43,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-isolation-risk.csv),
 {
   "resourceType" : "StructureDefinition",
   "id" : "isolation-risk",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isolation-risk",
+  "version" : "0.7.0",
   "name" : "IsolationRisk",
   "title" : "Isolation Risk Factor",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -62,6 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-isolation-risk.csv),
     }
   ],
   "description" : "Captures isolation and confinement risk factors affecting behavioral health",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -97,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-isolation-risk.csv),
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isolation-risk"
       },
       {
         "id" : "Extension.value[x]",
@@ -109,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-isolation-risk.csv),
         ],
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/isolation-syndrome-factors-vs"
         }
       }
     ]

@@ -1,15 +1,16 @@
-# BLiSS Output Value Set - v0.6.2
+# BLiSS Output Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **BLiSS Output Value Set**
 
-## ValueSet: BLiSS Output Value Set 
+## ValueSet: BLiSS Output Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BLiSSOutputVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bliss-output-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BLiSSOutputVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Bioregenerative life support output types 
@@ -45,13 +46,13 @@ Bioregenerative life support output types
 {
   "resourceType" : "ValueSet",
   "id" : "bliss-output-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bliss-output-vs",
+  "version" : "0.7.0",
   "name" : "BLiSSOutputVS",
   "title" : "BLiSS Output Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Bioregenerative life support output types
     }
   ],
   "description" : "Bioregenerative life support output types",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bliss-output-cs"
       }
     ]
   }

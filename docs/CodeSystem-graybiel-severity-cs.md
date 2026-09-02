@@ -1,15 +1,16 @@
-# Graybiel Motion Sickness Severity Scale - v0.6.2
+# Graybiel Motion Sickness Severity Scale - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Graybiel Motion Sickness Severity Scale**
 
-## CodeSystem: Graybiel Motion Sickness Severity Scale 
+## CodeSystem: Graybiel Motion Sickness Severity Scale (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/graybiel-severity-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:GraybielSeverityCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/graybiel-severity-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:GraybielSeverityCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Modified Graybiel scale for grading motion sickness severity in spaceflight 
@@ -26,13 +27,13 @@ Modified Graybiel scale for grading motion sickness severity in spaceflight
 {
   "resourceType" : "CodeSystem",
   "id" : "graybiel-severity-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/graybiel-severity-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/graybiel-severity-cs",
+  "version" : "0.7.0",
   "name" : "GraybielSeverityCS",
   "title" : "Graybiel Motion Sickness Severity Scale",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Modified Graybiel scale for grading motion sickness severity in spaceflight
     }
   ],
   "description" : "Modified Graybiel scale for grading motion sickness severity in spaceflight",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 5,

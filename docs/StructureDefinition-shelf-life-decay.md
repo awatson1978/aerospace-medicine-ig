@@ -1,4 +1,4 @@
-# Shelf Life Decay - v0.6.2
+# Shelf Life Decay - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ShelfLifeDecay |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/shelf-life-decay | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ShelfLifeDecay |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Degradation of nutritional value over time in space conditions
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-shelf-life-decay.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "shelf-life-decay",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/shelf-life-decay",
+  "version" : "0.7.0",
   "name" : "ShelfLifeDecay",
   "title" : "Shelf Life Decay",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-shelf-life-decay.csv
     }
   ],
   "description" : "Degradation of nutritional value over time in space conditions",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,11 @@ Other representations of profile: [CSV](StructureDefinition-shelf-life-decay.csv
   "context" : [
     {
       "type" : "element",
-      "expression" : "NutritionProduct"
+      "expression" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "type" : "element",
+      "expression" : "Medication"
     }
   ],
   "type" : "Extension",
@@ -95,7 +101,7 @@ Other representations of profile: [CSV](StructureDefinition-shelf-life-decay.csv
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/shelf-life-decay"
       },
       {
         "id" : "Extension.value[x]",

@@ -1,15 +1,16 @@
-# Psychological Countermeasure Code System - v0.6.2
+# Psychological Countermeasure Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Psychological Countermeasure Code System**
 
-## CodeSystem: Psychological Countermeasure Code System 
+## CodeSystem: Psychological Countermeasure Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:PsychologicalCountermeasureCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:PsychologicalCountermeasureCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Codes for psychological countermeasure interventions in aerospace missions. 
@@ -26,12 +27,13 @@ Codes for psychological countermeasure interventions in aerospace missions.
 {
   "resourceType" : "CodeSystem",
   "id" : "psychological-countermeasure-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs",
+  "version" : "0.7.0",
   "name" : "PsychologicalCountermeasureCS",
   "title" : "Psychological Countermeasure Code System",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -45,6 +47,7 @@ Codes for psychological countermeasure interventions in aerospace missions.
     }
   ],
   "description" : "Codes for psychological countermeasure interventions in aerospace missions.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 10,

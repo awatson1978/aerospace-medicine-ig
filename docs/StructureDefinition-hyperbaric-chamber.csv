@@ -24,19 +24,19 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:capabilities","Location.extension","capabilities","","",0,*,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-capabilities]]} {[]}
+"Location.extension:capabilities","Location.extension","capabilities","","",0,*,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-capabilities]]} {[]}
 ","Hyperbaric Chamber Capabilities","Specific capabilities of the hyperbaric chamber","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:maxPressure","Location.extension","maxPressure","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure]]} {[]}
-","Maximum Operating Pressure","Maximum pressure the chamber can safely operate at","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Location.extension:maxPressure","Location.extension","maxPressure","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-pressure]]} {[]}
+","Maximum Operating Pressure","Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:chamberType","Location.extension","chamberType","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/chamber-type]]} {[]}
+"Location.extension:chamberType","Location.extension","chamberType","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/chamber-type]]} {[]}
 ","Hyperbaric Chamber Type","Type of hyperbaric chamber (monoplace, multiplace, etc.)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Location.extension:oxygenCapability","Location.extension","oxygenCapability","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability]]} {[]}
+"Location.extension:oxygenCapability","Location.extension","oxygenCapability","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/oxygen-capability]]} {[]}
 ","Oxygen Delivery Capability","Oxygen delivery capabilities of the chamber","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -53,7 +53,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","active | suspended | inactive","The status property covers the general availability of the resource, not the current value which may be covered by the operationStatus, or by a schedule/slots if they are configured for the location.","","","","","","","","","",,"required","Indicates whether the location is still in use.","http://hl7.org/fhir/ValueSet/location-status|4.0.1","",,,,"Location.status",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".statusCode","FiveWs.status"
 "Location.operationalStatus","Location.operationalStatus","","","",0,1,"Y","","Y","Coding {[]} {[]}
-","The operational status of the location (typically only for a bed/room)","The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance.","","","","","","","","","",,"extensible","","http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs","",,,,"Location.operationalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The operational status of the location (typically only for a bed/room)","The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance.","","","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/operational-status-vs","",,,,"Location.operationalStatus",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","FiveWs.status"
 "Location.name","Location.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","Name of the location as used by humans","Name of the location as used by humans. Does not need to be unique.","If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches.","","","","","","","","",,,,,"",,,,"Location.name",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

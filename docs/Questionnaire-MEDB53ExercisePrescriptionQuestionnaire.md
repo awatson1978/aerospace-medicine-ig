@@ -1,4 +1,4 @@
-# MEDB 5.3 Exercise Prescription - v0.6.2
+# MEDB 5.3 Exercise Prescription - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-5-3-exercise-prescription | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-3-exercise-prescription | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB53ExercisePrescription |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To document and track in-flight exercise countermeasures prescription and crew a
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB53ExercisePrescriptionQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To document and track in-flight exercise countermeasures prescription and crew a
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-5-3-exercise-prescription",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-3-exercise-prescription",
+  "version" : "0.7.0",
   "name" : "MEDB53ExercisePrescription",
   "title" : "MEDB 5.3 Exercise Prescription",
   "status" : "active",
@@ -94,7 +97,7 @@ To document and track in-flight exercise countermeasures prescription and crew a
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "exercise-physiology",
                 "display" : "Exercise Physiology"
               }
@@ -103,7 +106,7 @@ To document and track in-flight exercise countermeasures prescription and crew a
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "exercise-physiology",
                 "display" : "Exercise Physiology"
               }
@@ -140,14 +143,14 @@ To document and track in-flight exercise countermeasures prescription and crew a
               "answerOption" : [
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                     "code" : "t2-treadmill",
                     "display" : "T2 Treadmill"
                   }
                 },
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                     "code" : "cevis",
                     "display" : "CEVIS Cycle Ergometer"
                   }
@@ -183,7 +186,7 @@ To document and track in-flight exercise countermeasures prescription and crew a
               "answerOption" : [
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                     "code" : "ared",
                     "display" : "ARED (Advanced Resistive Exercise Device)"
                   }
@@ -305,7 +308,7 @@ To document and track in-flight exercise countermeasures prescription and crew a
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -314,7 +317,7 @@ To document and track in-flight exercise countermeasures prescription and crew a
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

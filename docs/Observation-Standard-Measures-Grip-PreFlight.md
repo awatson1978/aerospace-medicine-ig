@@ -1,4 +1,4 @@
-# Standard Measures Grip Strength - Pre-flight - v0.6.2
+# Standard Measures Grip Strength - Pre-flight - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example Observation: Standard Measures Grip Strength - Pre-flight
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [NASA Standard Measures Observation](StructureDefinition-standard-measures-observation.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Mission Phase**: Pre-flight
 
@@ -20,7 +24,7 @@ Profile: [NASA Standard Measures Observation](StructureDefinition-standard-measu
 
 **code**: Grip Strength
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-02-15 14:00:00+0000
 
@@ -35,23 +39,31 @@ Profile: [NASA Standard Measures Observation](StructureDefinition-standard-measu
   "resourceType" : "Observation",
   "id" : "Standard-Measures-Grip-PreFlight",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/standard-measures-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/standard-measures-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "pre-flight",
             "display" : "Pre-flight"
           }
@@ -59,7 +71,7 @@ Profile: [NASA Standard Measures Observation](StructureDefinition-standard-measu
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day",
       "valueInteger" : -30
     }
   ],
@@ -78,7 +90,7 @@ Profile: [NASA Standard Measures Observation](StructureDefinition-standard-measu
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-standard-measures-cs",
         "code" : "grip-strength",
         "display" : "Grip Strength"
       }

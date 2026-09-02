@@ -1,4 +1,4 @@
-# Suit Redundancy Assessment - v0.6.2
+# Suit Redundancy Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SuitRedundancyAssessment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/suit-redundancy-assessment | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SuitRedundancyAssessment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Assessment of EVA suit redundancy status, consumables remaining, and maintenance schedule 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
 {
   "resourceType" : "StructureDefinition",
   "id" : "suit-redundancy-assessment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/suit-redundancy-assessment",
+  "version" : "0.7.0",
   "name" : "SuitRedundancyAssessment",
   "title" : "Suit Redundancy Assessment",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
     }
   ],
   "description" : "Assessment of EVA suit redundancy status, consumables remaining, and maintenance schedule",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -179,9 +181,17 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:primarySuitStatus.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Primary Suit Status"
+        "id" : "Observation.component:primarySuitStatus.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+              "code" : "primary-suit-status",
+              "display" : "Primary Suit Status"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:primarySuitStatus.value[x]",
@@ -194,7 +204,7 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/suit-provisioning-status-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/suit-provisioning-status-vs"
         }
       },
       {
@@ -206,9 +216,17 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:backupSuitStatus.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Backup Suit Status"
+        "id" : "Observation.component:backupSuitStatus.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+              "code" : "backup-suit-status",
+              "display" : "Backup Suit Status"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:backupSuitStatus.value[x]",
@@ -221,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/suit-provisioning-status-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/suit-provisioning-status-vs"
         }
       },
       {
@@ -233,9 +251,17 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:consumablesRemaining.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Consumables Remaining"
+        "id" : "Observation.component:consumablesRemaining.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+              "code" : "consumables-remaining",
+              "display" : "Consumables Remaining"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:consumablesRemaining.value[x]",
@@ -266,9 +292,17 @@ Other representations of profile: [CSV](StructureDefinition-suit-redundancy-asse
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:nextMaintenanceDue.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Next Maintenance Due"
+        "id" : "Observation.component:nextMaintenanceDue.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+              "code" : "next-maintenance-due",
+              "display" : "Next Maintenance Due"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:nextMaintenanceDue.value[x]",

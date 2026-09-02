@@ -1,4 +1,4 @@
-# MRID Questionnaire Profile - v0.6.2
+# MRID Questionnaire Profile - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MRIDQuestionnaire |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-questionnaire | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MRIDQuestionnaire |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Profile for NASA Medical Requirements Integration Document (MRID) questionnaires. This profile standardizes the structure and metadata for MEDB (Medical Evaluation Document Baseline) and MR (Medical Requirements) documents translated to FHIR Questionnaire resources for structured data capture. 
@@ -50,12 +51,12 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "mrid-questionnaire",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-questionnaire",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-questionnaire",
+  "version" : "0.7.0",
   "name" : "MRIDQuestionnaire",
   "title" : "MRID Questionnaire Profile",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -69,6 +70,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
     }
   ],
   "description" : "Profile for NASA Medical Requirements Integration Document (MRID) questionnaires.\nThis profile standardizes the structure and metadata for MEDB (Medical Evaluation\nDocument Baseline) and MR (Medical Requirements) documents translated to FHIR\nQuestionnaire resources for structured data capture.\n\nAll MRID questionnaires follow a standard structure with groups for:\n- Medical Requirements Overview (MRID metadata)\n- Preflight Training\n- Preflight Activities\n- In-Flight Activities\n- Postflight Activities\n- Data Delivery\n- Domain-Specific Results (e.g., radiation doses, ECG findings)\n- Postflight Debrief\n\nThe profile supports SDC-compatible extensions for:\n- Launch context (astronaut/patient reference)\n- Observation extraction from QuestionnaireResponse",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -134,7 +136,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-sponsor"
             ]
           }
         ],
@@ -151,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mrid-discipline"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-discipline"
             ]
           }
         ],
@@ -168,7 +170,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-document-number"
             ]
           }
         ],
@@ -185,7 +187,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-questionnaire.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-launch-context"
             ]
           }
         ],

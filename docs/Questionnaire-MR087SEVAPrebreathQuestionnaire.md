@@ -1,4 +1,4 @@
-# MR087S EVA Prebreathe Protocol - v0.6.2
+# MR087S EVA Prebreathe Protocol - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr087s-eva-prebreathe | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr087s-eva-prebreathe | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR087SEVAPrebreathe |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To document execution of EVA prebreathe protocol for decompression sickness prev
 {
   "resourceType" : "Questionnaire",
   "id" : "MR087SEVAPrebreathQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To document execution of EVA prebreathe protocol for decompression sickness prev
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr087s-eva-prebreathe",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr087s-eva-prebreathe",
+  "version" : "0.7.0",
   "name" : "MR087SEVAPrebreathe",
   "title" : "MR087S EVA Prebreathe Protocol",
   "status" : "active",
@@ -225,7 +228,7 @@ To document execution of EVA prebreathe protocol for decompression sickness prev
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -234,7 +237,7 @@ To document execution of EVA prebreathe protocol for decompression sickness prev
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

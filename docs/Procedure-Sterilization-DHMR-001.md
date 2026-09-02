@@ -1,4 +1,4 @@
-# DHMR Sterilization at 125C/50hr - v0.6.2
+# DHMR Sterilization at 125C/50hr - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Procedure: DHMR Sterilization at 125C/50hr
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Sterilization Procedure](StructureDefinition-sterilization-procedure.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Planetary Protection Category**: Category IV
 
@@ -36,17 +40,25 @@ DHMR at 125°C for 50 hours. Pre-treatment bioburden: 3.2×10⁴ spores. Post-tr
   "resourceType" : "Procedure",
   "id" : "Sterilization-DHMR-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/sterilization-procedure"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/planetary-protection-category",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/planetary-protection-category-cs",
             "code" : "category-iv",
             "display" : "Category IV"
           }
@@ -58,7 +70,7 @@ DHMR at 125°C for 50 hours. Pre-treatment bioburden: 3.2×10⁴ spores. Post-tr
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sterilization-method-cs",
         "code" : "dhmr",
         "display" : "Dry Heat Microbial Reduction (DHMR)"
       }

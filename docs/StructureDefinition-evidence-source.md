@@ -1,4 +1,4 @@
-# Evidence Source - v0.6.2
+# Evidence Source - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/evidence-source | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:EvidenceSource |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/evidence-source | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:EvidenceSource |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Links clinical data to research evidence sources such as SHARED database entries or PubMed references
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-evidence-source.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "evidence-source",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/evidence-source",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/evidence-source",
+  "version" : "0.7.0",
   "name" : "EvidenceSource",
   "title" : "Evidence Source",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-evidence-source.csv)
     }
   ],
   "description" : "Links clinical data to research evidence sources such as SHARED database entries or PubMed references",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-evidence-source.csv)
   "context" : [
     {
       "type" : "element",
-      "expression" : "Resource"
+      "expression" : "Element"
     }
   ],
   "type" : "Extension",
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-evidence-source.csv)
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/evidence-source"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/evidence-source"
       },
       {
         "id" : "Extension.value[x]",

@@ -1,4 +1,4 @@
-# Promethazine IM Rescue Dose - v0.6.2
+# Promethazine IM Rescue Dose - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example MedicationAdministration: Promethazine IM Rescue Dose
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Antiemetic Medication Administration](StructureDefinition-antiemetic-administration.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Gravity Context**: Microgravity
 
@@ -16,7 +20,7 @@ Profile: [Antiemetic Medication Administration](StructureDefinition-antiemetic-a
 
 **medication**: Promethazine (Intramuscular)
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-03-16 07:30:00+0000
 
@@ -38,23 +42,31 @@ Profile: [Antiemetic Medication Administration](StructureDefinition-antiemetic-a
   "resourceType" : "MedicationAdministration",
   "id" : "Promethazine-IM-Rescue",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-administration"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-administration"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "microgravity",
             "display" : "Microgravity"
           }
@@ -66,7 +78,7 @@ Profile: [Antiemetic Medication Administration](StructureDefinition-antiemetic-a
   "medicationCodeableConcept" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-medication-cs",
         "code" : "promethazine-im",
         "display" : "Promethazine (Intramuscular)"
       }

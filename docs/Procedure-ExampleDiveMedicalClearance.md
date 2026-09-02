@@ -1,4 +1,4 @@
-# Example Dive Medical Clearance - v0.6.2
+# Example Dive Medical Clearance - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Procedure: Example Dive Medical Clearance
 
-Profile: [Dive Medical Clearance](StructureDefinition-DiveMedicalClearance.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Dive Medical Clearance](StructureDefinition-dive-medical-clearance.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Completed
 
@@ -27,8 +31,16 @@ Profile: [Dive Medical Clearance](StructureDefinition-DiveMedicalClearance.md)
   "resourceType" : "Procedure",
   "id" : "ExampleDiveMedicalClearance",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-medical-clearance"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "completed",

@@ -1,4 +1,4 @@
-# Hyperbaric Chamber - v0.6.2
+# Hyperbaric Chamber - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:HyperbaricChamber |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:HyperbaricChamber |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 A medical facility equipped with a hyperbaric chamber for pressurized treatment 
 
 **Usages:**
 
-* Refer to this Profile: [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md), [Decompression Protocol](StructureDefinition-decompression-protocol.md) and [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md)
+* Refer to this Profile: [Decompression Protocol](StructureDefinition-decompression-protocol.md), [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) and [Hyperbaric Treatment](StructureDefinition-hyperbaric-treatment.md)
 * Examples for this Profile: [Hyperbaric Medicine Center - Chamber 1](Location-ExampleHyperbaricChamber.md) and [NASA Hyperbaric Treatment Facility](Location-NASAHyperbaricFacility.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/hyperbaric-chamber)
@@ -37,12 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "hyperbaric-chamber",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber",
+  "version" : "0.7.0",
   "name" : "HyperbaricChamber",
   "title" : "Hyperbaric Chamber",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -56,6 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
     }
   ],
   "description" : "A medical facility equipped with a hyperbaric chamber for pressurized treatment",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -104,7 +106,7 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-capabilities"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-capabilities"
             ]
           }
         ],
@@ -120,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/maximum-pressure"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-pressure"
             ]
           }
         ],
@@ -136,7 +138,7 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/chamber-type"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/chamber-type"
             ]
           }
         ],
@@ -152,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/oxygen-capability"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/oxygen-capability"
             ]
           }
         ],
@@ -169,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-hyperbaric-chamber.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/operational-status-vs"
         }
       },
       {

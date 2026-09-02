@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Astronaut Training -  v0.6.2</title>
+    <title>Astronaut Training - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"10"}
-    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <style type="text/css">h2{--heading-prefix:"9"}
+    h3,h4,h5,h6{--heading-prefix:"9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Astronaut Training</h2>
   
 
@@ -260,40 +260,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#astronaut-medical-screening-and-flight-readiness-certification" id="markdown-toc-astronaut-medical-screening-and-flight-readiness-certification">Astronaut Medical Screening and Flight Readiness Certification</a>    <ul>
-      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-      <li><a href="#government-astronaut-medical-standards" id="markdown-toc-government-astronaut-medical-standards">Government Astronaut Medical Standards</a></li>
-      <li><a href="#commercial-spaceflight-participant-medical-screening" id="markdown-toc-commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</a></li>
-      <li><a href="#faa-form-8500-8-and-spaceflight-readiness" id="markdown-toc-faa-form-8500-8-and-spaceflight-readiness">FAA Form 8500-8 and Spaceflight Readiness</a></li>
-      <li><a href="#fhir-based-medical-questionnaire-design" id="markdown-toc-fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</a></li>
-      <li><a href="#fhir-implementation-notes" id="markdown-toc-fhir-implementation-notes">FHIR Implementation Notes</a></li>
-      <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
-      <li><a href="#sources" id="markdown-toc-sources">Sources</a></li>
-    </ul>
-  </li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#government-astronaut-medical-standards" id="markdown-toc-government-astronaut-medical-standards">Government Astronaut Medical Standards</a></li>
+  <li><a href="#commercial-spaceflight-participant-medical-screening" id="markdown-toc-commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</a></li>
+  <li><a href="#faa-form-8500-8-and-spaceflight-readiness" id="markdown-toc-faa-form-8500-8-and-spaceflight-readiness">FAA Form 8500-8 and Spaceflight Readiness</a></li>
+  <li><a href="#fhir-based-medical-questionnaire-design" id="markdown-toc-fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h2 id="astronaut-medical-screening-and-flight-readiness-certification">Astronaut Medical Screening and Flight Readiness Certification</h2>
-
 <h3 id="introduction">Introduction</h3>
 
-<p>Astronauts and spaceflight participants must meet rigorous health criteria to ensure they can safely endure the stresses of space travel. Medical screening for space missions is designed to identify any conditions that could cause an in‑flight medical emergency or otherwise compromise crew safety.</p>
+<p>Astronauts and spaceflight participants must meet rigorous health criteria to ensure they can safely endure the stresses of space travel. Medical screening for space missions is designed to identify any conditions that could cause an in-flight medical emergency or otherwise compromise crew safety.</p>
 
-<p>Government space agencies (NASA, ESA, etc.) impose strict medical standards on career astronauts, reflecting the demands of long-duration missions (microgravity, high G-loads, EVA, etc.). In the emerging commercial spaceflight sector, requirements for “space flight participants” (space tourists) tend to be less restrictive, focusing on basic health and functional fitness.</p>
+<p>Government space agencies (NASA, ESA, and others) impose strict medical standards on career astronauts, reflecting the demands of long-duration missions (microgravity, high G-loads, EVA). In the emerging commercial spaceflight sector, requirements for "spaceflight participants" (space tourists) tend to be less restrictive, focusing on basic health and functional fitness.</p>
 
-<p>This report compares U.S. and international medical screening standards for astronauts versus tourists, discusses the FAA’s standard airman medical form (FAA Form 8500-8) in the space context, and explores current practices by commercial providers (SpaceX, Blue Origin, Virgin Galactic). Finally, it outlines how these requirements can be modeled in a FHIR (HL7 Fast Healthcare Interoperability Resources) Questionnaire, including key data fields and standardized coding (e.g. LOINC, SNOMED CT) to support implementation of a digital flight readiness assessment.</p>
+<p>This page compares U.S. and international medical screening standards for astronauts versus tourists, discusses the FAA's standard airman medical form (FAA Form 8500-8) in the space context, and explores current practices by commercial providers (SpaceX, Blue Origin, Virgin Galactic). Finally, it outlines how these requirements can be modeled in a FHIR (HL7 Fast Healthcare Interoperability Resources) Questionnaire, including key data fields and standardized coding (LOINC, SNOMED CT) to support implementation of a digital flight readiness assessment.</p>
 
 <h3 id="government-astronaut-medical-standards">Government Astronaut Medical Standards</h3>
 
 <h4 id="nasa-united-states">NASA (United States)</h4>
 
-<p>NASA maintains rigorous medical certification standards for its astronaut corps. Basic requirements include:</p>
+<p>NASA maintains rigorous medical certification standards for its astronaut corps. Basic requirements published for astronaut candidates include [1]:</p>
 
 <ul>
   <li>Vision correctable to 20/20 in each eye</li>
-  <li>Blood pressure ≤140/90 (sitting)</li>
-  <li>Height between 62–75 inches</li>
+  <li>Blood pressure not exceeding 140/90 (sitting)</li>
+  <li>Height between 62 and 75 inches</li>
 </ul>
 
 <p>Additional evaluations include:</p>
@@ -303,68 +298,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Sensorimotor function and behavioral health</li>
   <li>Cognition and immune status</li>
   <li>Bone density and radiation exposure history</li>
-  <li>EKGs, vision/hearing tests, pulmonary function, lab panels, imaging (MRI/colonoscopy):contentReference[oaicite:0]{index=0}</li>
+  <li>Electrocardiograms, vision and hearing tests, pulmonary function, laboratory panels, imaging (MRI, colonoscopy)</li>
 </ul>
 
-<p>Certain conditions (e.g. kidney stones, arrhythmias) may disqualify candidates. Astronauts are re-certified annually.</p>
+<p>Certain conditions (for example, kidney stones or arrhythmias) may disqualify candidates. Astronauts are re-certified annually. The underlying standards are set out in NASA's Office of the Chief Health and Medical Officer standard OCHMO-STD-100.1A [2].</p>
 
 <h4 id="international-and-iss-standards">International and ISS Standards</h4>
 
-<p>Agencies like ESA require a Class 2 (private pilot) medical certificate and have age caps (e.g., 50 years for ESA applicants). ISS-bound astronauts undergo common standards, certified by a Multilateral Space Medicine Board. Required evaluations include:</p>
+<p>ESA requires applicants to hold, or be able to obtain, a medical certificate equivalent to a Class 2 (private pilot) aviation medical. ESA's 2021-2022 astronaut selection set no upper age limit; earlier ESA campaigns had used an age window, so the point is often misreported [3]. ISS-bound astronauts from all partner agencies are certified against common standards by the Multilateral Space Medicine Board. Required evaluations include:</p>
 
 <ul>
-  <li>Physical/dental exams</li>
-  <li>Vision/auditory/psychiatric evaluations</li>
-  <li>Extensive lab and cardiopulmonary tests:contentReference[oaicite:1]{index=1}</li>
+  <li>Physical and dental exams</li>
+  <li>Vision, auditory, and psychiatric evaluations</li>
+  <li>Extensive laboratory and cardiopulmonary tests</li>
 </ul>
 
 <h3 id="commercial-spaceflight-participant-medical-screening">Commercial Spaceflight Participant Medical Screening</h3>
 
 <h4 id="regulatory-context">Regulatory Context</h4>
 
-<p>As of 2025, FAA does not enforce formal health rules for space tourists due to a Congressional moratorium lasting until at least 2028. Each company sets its own criteria. FAA’s 2006 guidance suggests a risk-based approach depending on flight profile:contentReference[oaicite:2]{index=2}.</p>
+<p>As of 2026, the FAA does not enforce formal health rules for spaceflight participants. Congress placed a "learning period" moratorium on FAA occupant-safety regulation of commercial human spaceflight in 2004, and the FAA Reauthorization Act of 2024 (Public Law 118-63) extended that moratorium to 1 January 2028 [4]. Each company therefore sets its own criteria. The FAA's 2006 guidance suggests a risk-based approach depending on flight profile [5]:</p>
 
-<h5 id="suborbital-flights-3-gs">Suborbital Flights (≤3 Gs)</h5>
+<h5 id="suborbital-flights-up-to-about-3-g">Suborbital Flights (up to about 3 G)</h5>
 
 <ul>
   <li>Basic health questionnaire</li>
-  <li>No physical or lab tests for healthy individuals</li>
+  <li>No physical or laboratory tests for healthy individuals</li>
   <li>Physicians may recommend further screening based on responses</li>
 </ul>
 
-<h5 id="orbital-or-high-g-flights-3-gs">Orbital or High-G Flights (&gt;3 Gs)</h5>
+<h5 id="orbital-or-high-g-flights-above-about-3-g">Orbital or High-G Flights (above about 3 G)</h5>
 
 <ul>
   <li>Comprehensive medical history and physical exam</li>
-  <li>Lab tests (EKG, blood chemistry, chest X-ray, etc.)</li>
-  <li>Re-check within 1–2 weeks of launch</li>
+  <li>Laboratory tests (electrocardiogram, blood chemistry, chest X-ray, and others)</li>
+  <li>Re-check within one to two weeks of launch</li>
 </ul>
 
-<p>NASA’s OCHMO-STD-100.1A (2022) adds psychosocial history, lifestyle review, infectious disease screening, imaging, cardiac and psychological assessments:contentReference[oaicite:3]{index=3}.</p>
+<p>NASA's OCHMO-STD-100.1A (2022) adds psychosocial history, lifestyle review, infectious disease screening, imaging, cardiac and psychological assessments [2].</p>
 
 <h4 id="commercial-provider-practices">Commercial Provider Practices</h4>
 
 <h5 id="spacex">SpaceX</h5>
 
-<p>Orbital missions (e.g., Inspiration4, Ax-1) follow NASA/ISS standards, including:</p>
+<p>Orbital missions (for example, Inspiration4 and Axiom Ax-1) follow NASA/ISS standards, including:</p>
 
 <ul>
   <li>Centrifuge training</li>
   <li>Medical clearance by aerospace medicine professionals</li>
-  <li>Participants may include individuals with controlled medical conditions:contentReference[oaicite:4]{index=4}</li>
+  <li>Participants may include individuals with controlled medical conditions</li>
 </ul>
 
 <h5 id="blue-origin">Blue Origin</h5>
 
-<p>Suborbital hops (New Shepard) require:</p>
+<p>For suborbital New Shepard flights, the requirements as published by Blue Origin include [6]:</p>
 
 <ul>
-  <li>Stair climb test (&lt;90s for 7 flights)</li>
-  <li>Fit within anthropometric limits (5’0”–6’4”, 110–223 lbs)</li>
-  <li>Health questionnaire reviewed by in-house medical team</li>
+  <li>A stair climb test (seven flights of stairs in under 90 seconds)</li>
+  <li>Fitting within anthropometric limits (5 ft 0 in to 6 ft 4 in; 110 to 223 lb)</li>
+  <li>A health questionnaire reviewed by an in-house medical team</li>
 </ul>
 
-<p>No formal medical exam unless indicated. Has flown passengers in their 70s–80s:contentReference[oaicite:5]{index=5}.</p>
+<p>No formal medical exam is required unless indicated. Blue Origin has flown passengers in their 70s and 80s.</p>
 
 <h5 id="virgin-galactic">Virgin Galactic</h5>
 
@@ -374,116 +369,142 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Health questionnaire</li>
   <li>Brief medical review during pre-flight training</li>
   <li>Light screening unless red flags arise</li>
-  <li>Assumes standard conditions (e.g., well-controlled hypertension) are acceptable:contentReference[oaicite:6]{index=6}</li>
+  <li>Common well-controlled conditions (for example, treated hypertension) are generally acceptable</li>
 </ul>
 
 <h5 id="other-providers">Other Providers</h5>
 
-<p>Companies like Axiom Space adhere to NASA/ISS guidelines. Boeing/SpaceX ISS missions follow NASA screening. Future orbital flights may blend these models. Aerospace Medical Association is developing voluntary standards:contentReference[oaicite:7]{index=7}.</p>
+<p>Companies like Axiom Space adhere to NASA/ISS guidelines. Boeing and SpaceX ISS missions follow NASA screening. Future orbital flights may blend these models. The Aerospace Medical Association has published recommended medical guidelines for commercial spaceflight participants [7].</p>
 
 <h3 id="faa-form-8500-8-and-spaceflight-readiness">FAA Form 8500-8 and Spaceflight Readiness</h3>
 
-<p>FAA Form 8500-8 is used for aviation medical certification. Key features:</p>
+<p>FAA Form 8500-8 is used for aviation medical certification. Key features [8]:</p>
 
 <ul>
-  <li>Item 18 includes comprehensive medical history checklist (e.g., heart conditions, neurological disorders, mental health, substance use, etc.)</li>
+  <li>Item 18 includes a comprehensive medical history checklist (heart conditions, neurological disorders, mental health, substance use, and more)</li>
   <li>Item 19 covers recent doctor visits</li>
-  <li>Includes vital signs and physical findings (e.g., blood pressure, height/weight, vision/hearing tests)</li>
+  <li>Includes vital signs and physical findings (blood pressure, height and weight, vision and hearing tests)</li>
 </ul>
 
 <p>Spaceflight-specific modifications may include:</p>
 
 <ul>
-  <li>Claustrophobia, DCS, radiation exposure</li>
+  <li>Claustrophobia, decompression sickness, radiation exposure</li>
   <li>Pregnancy status</li>
-  <li>Fitness and stress tests (e.g., treadmill, ergometer)</li>
+  <li>Fitness and stress tests (treadmill, ergometer)</li>
 </ul>
 
-<p>The structure offers a model for FHIR-based spaceflight medical forms:contentReference[oaicite:8]{index=8}.</p>
+<p>The structure offers a model for FHIR-based spaceflight medical forms. This guide already carries a FHIR rendering of the form as the <a href="Questionnaire-FAA8500Questionnaire.html">FAA Form 8500-8 Questionnaire</a>.</p>
 
 <h3 id="fhir-based-medical-questionnaire-design">FHIR-Based Medical Questionnaire Design</h3>
 
-<p>Key sections include:</p>
+<p>The sections below outline a spaceflight medical questionnaire. For each section, the listed codes are example bindings drawn from LOINC (observations and survey items) and SNOMED CT (conditions); implementers should confirm them against the current terminology releases.</p>
 
-<h4 id="1-applicant-demographics">1. Applicant Demographics</h4>
+<h4 id="applicant-demographics">Applicant Demographics</h4>
+
+<p>Identifying information about the applicant, captured with LOINC observation codes:</p>
 
 <ul>
-  <li>Name, DOB, Sex, Contact, Citizenship</li>
-  <li>Use LOINC (e.g. 77606-2, 54121-8)</li>
+  <li>LOINC 54125-0 Patient name</li>
+  <li>LOINC 21112-8 Birth date</li>
+  <li>LOINC 46098-0 Sex</li>
+  <li>Contact details and citizenship as plain text</li>
 </ul>
 
-<h4 id="2-flightrole-details">2. Flight/Role Details</h4>
+<h4 id="flight-and-role-details">Flight and Role Details</h4>
+
+<p>Which flight the applicant is being screened for and what they will do on it:</p>
 
 <ul>
-  <li>Mission type (Suborbital/Orbital), Role, Duration</li>
-  <li>Use SNOMED CT concepts</li>
+  <li>Mission type (suborbital or orbital), role, and expected duration</li>
+  <li>Mission phase and gravity environment can be coded with this guide's <a href="CodeSystem-mission-phase-cs.html"><code class="language-plaintext highlighter-rouge">MissionPhaseCS</code></a> and <a href="CodeSystem-gravity-context-cs.html"><code class="language-plaintext highlighter-rouge">GravityContextCS</code></a></li>
 </ul>
 
-<h4 id="3-medical-history">3. Medical History</h4>
+<h4 id="medical-history">Medical History</h4>
 
-<p>Each condition as a yes/no item:</p>
+<p>Each condition is recorded as a yes/no item. Where the answer is yes, the condition can be coded with SNOMED CT, for example:</p>
 
 <ul>
-  <li>Cardiac (e.g., 445211001)</li>
-  <li>Neurologic (e.g., seizures, stroke)</li>
-  <li>Respiratory (e.g., asthma, COPD)</li>
-  <li>Psychiatric (e.g., 161615003)</li>
+  <li>Cardiac: SNOMED CT 56265001 Heart disease (disorder)</li>
+  <li>Neurologic: SNOMED CT 84757009 Epilepsy (disorder); 230690007 Cerebrovascular accident (disorder)</li>
+  <li>Respiratory: SNOMED CT 195967001 Asthma (disorder); 13645005 Chronic obstructive lung disease (disorder)</li>
+  <li>Psychiatric: SNOMED CT 74732009 Mental disorder (disorder)</li>
   <li>Substance use</li>
-  <li>Metabolic (e.g., 63854-7 for diabetes)</li>
-  <li>Visual/Hearing</li>
+  <li>Metabolic: SNOMED CT 73211009 Diabetes mellitus (disorder)</li>
+  <li>Visual and hearing impairment</li>
   <li>Allergies</li>
-  <li>Orthopedic/mobility</li>
-  <li>Surgeries/hospitalizations</li>
-  <li>Recent medical care:contentReference[oaicite:9]{index=9}</li>
+  <li>Orthopedic and mobility limitations</li>
+  <li>Surgeries and hospitalizations</li>
+  <li>Recent medical care</li>
 </ul>
 
-<h4 id="4-family-history-optional">4. Family History (Optional)</h4>
+<p>This guide's condition value sets for specific training devices can be reused as answer lists: <a href="ValueSet-gimbal-contraindicated-conditions-vs.html">Gimbal Contraindications</a> and <a href="ValueSet-diving-contraindicated-conditions-vs.html">Diving Contraindicated Conditions</a>.</p>
 
-<h4 id="5-current-medications-and-allergies">5. Current Medications and Allergies</h4>
+<h4 id="family-history-optional">Family History (Optional)</h4>
+
+<p>A brief family history of cardiac, neurological, and hereditary disease.</p>
+
+<h4 id="current-medications-and-allergies">Current Medications and Allergies</h4>
 
 <ul>
-  <li>Use LOINC 89261-2, 81629-1</li>
+  <li>LOINC 10160-0 History of medication use narrative</li>
+  <li>LOINC 48765-2 Allergies and adverse reactions document</li>
 </ul>
 
-<h4 id="6-physical-examination">6. Physical Examination</h4>
+<h4 id="physical-examination">Physical Examination</h4>
+
+<p>Vital signs and system-specific findings:</p>
 
 <ul>
-  <li>Vital signs (LOINC: 8302-2, 29463-7, etc.)</li>
-  <li>System-specific assessments (e.g., vision, color, hearing, murmur, etc.)</li>
+  <li>LOINC 8302-2 Body height; 29463-7 Body weight; 8480-6 Systolic blood pressure; 8462-4 Diastolic blood pressure; 8867-4 Heart rate</li>
+  <li>System-specific assessments (vision, colour vision, hearing, heart murmur, and others) as coded exam findings</li>
 </ul>
 
-<h4 id="7-labs-and-imaging">7. Labs and Imaging</h4>
+<h4 id="laboratory-tests-and-imaging">Laboratory Tests and Imaging</h4>
 
 <ul>
-  <li>CBC, metabolic panel, glucose, EKG (LOINC 8684-8), X-ray (30750-2)</li>
-  <li>Stress tests (e.g., LOINC 82287-9)</li>
+  <li>LOINC 58410-2 Complete blood count panel; 24323-8 Comprehensive metabolic panel; 2345-7 Glucose [mass/volume] in serum or plasma</li>
+  <li>LOINC 11524-6 Electrocardiogram study; 36643-5 Chest X-ray, two views</li>
+  <li>LOINC 18752-6 Exercise stress test study</li>
 </ul>
 
-<h4 id="8-fitness-tests">8. Fitness Tests</h4>
+<h4 id="fitness-tests">Fitness Tests</h4>
 
 <ul>
-  <li>Stair climb, seat fit checks</li>
+  <li>Stair climb and seat-fit checks, recorded as pass/fail items with the measured time or dimension</li>
 </ul>
 
-<h4 id="9-psychological-evaluation">9. Psychological Evaluation</h4>
+<h4 id="psychological-evaluation">Psychological Evaluation</h4>
 
 <ul>
-  <li>Checklist or embedded screeners (PHQ-9, GAD-7)</li>
+  <li>Checklist or embedded screeners: LOINC 44249-1 PHQ-9 quick depression assessment panel; 69737-5 Generalized anxiety disorder 7-item (GAD-7) total score</li>
 </ul>
 
-<h4 id="10-disposition-and-certification">10. Disposition and Certification</h4>
+<h4 id="disposition-and-certification">Disposition and Certification</h4>
 
 <ul>
-  <li>“Flight Ready” status</li>
-  <li>Physician’s name, signature, date</li>
+  <li>"Flight Ready" status</li>
+  <li>Physician's name, signature, and date</li>
 </ul>
 
-<h3 id="fhir-implementation-notes">FHIR Implementation Notes</h3>
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
+
+<p>The questionnaire design above maps onto artifacts that already exist in this guide:</p>
 
 <ul>
-  <li>Use <code class="language-plaintext highlighter-rouge">LOINC</code> for labs, survey items</li>
-  <li>Use <code class="language-plaintext highlighter-rouge">SNOMED CT</code> for conditions</li>
-  <li>Use <code class="language-plaintext highlighter-rouge">UCUM</code> for units</li>
+  <li><a href="Questionnaire-AstronautFlightReadinessQuestionnaire.html">Astronaut Flight Readiness Questionnaire</a>: the spaceflight readiness form modelled on the outline in this page</li>
+  <li><a href="Questionnaire-FAA8500Questionnaire.html">FAA Form 8500-8 Questionnaire</a>: the aviation medical application used as the baseline</li>
+  <li><a href="Questionnaire-GShockEligibility.html">G-SHOCK Centrifugal Trainer Eligibility Questionnaire</a>: a device-specific screening questionnaire</li>
+  <li><a href="Questionnaire-HERAAnalogMissionApplication.html">NASA HERA Analog Mission Application</a>: an analog-mission application form</li>
+  <li><a href="StructureDefinition-astronaut.html">Astronaut</a>: the Patient profile used as the subject of screening records</li>
+</ul>
+
+<p>Implementation notes:</p>
+
+<ul>
+  <li>Use LOINC for laboratory results and survey items</li>
+  <li>Use SNOMED CT for conditions</li>
+  <li>Use UCUM for units</li>
   <li>Use <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code> for structured data capture</li>
   <li>Map responses to <code class="language-plaintext highlighter-rouge">Observation</code>, <code class="language-plaintext highlighter-rouge">Condition</code>, and <code class="language-plaintext highlighter-rouge">MedicationStatement</code> resources</li>
 </ul>
@@ -494,19 +515,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Using FHIR with standard vocabularies enables consistent, interoperable data capture. This improves safety, enables health analytics, and supports the scaling of commercial spaceflight.</p>
 
-<hr />
-
-<h3 id="sources">Sources</h3>
+<h3 id="references">References</h3>
 
 <ul>
-  <li><a href="https://www.faa.gov/media/72446">FAA Guidance for Medical Screening of Commercial Aerospace Passengers</a></li>
-  <li><a href="https://www.nasa.gov/wp-content/uploads/2023/04/ochmo-std-100.1a.pdf">NASA OCHMO-STD-100.1A Medical Standards</a></li>
-  <li><a href="https://www.esa.int/About_Us/Careers_at_ESA/ESA_Astronaut_Selection/Attributes_of_an_astronaut">ESA Astronaut Attributes</a></li>
-  <li><a href="https://bartlettchenlaw.com/should-federal-aviation-administration-enact-medical-standards-space-tourists/">BartlettChen FAA Space Tourists Legal Review</a></li>
-  <li><a href="https://www.womensaerospace.com/how-to-be-an-astronaut/physical-and-medical-qualifications">Women's Aerospace Network</a></li>
-  <li><a href="https://flightphysical.com/medical-application">FAA 8500-8 Application Index</a></li>
-  <li><a href="https://www.space.com/28133-commercial-spaceflight-health-requirements.html">Space.com Articles on Health Requirements</a></li>
-  <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0094576521001016">ScienceDirect Medical Guidelines</a></li>
+  <li>[1] NASA. Astronaut Requirements. https://www.nasa.gov/humans-in-space/astronauts/astronaut-requirements/</li>
+  <li>[2] NASA Office of the Chief Health and Medical Officer. OCHMO-STD-100.1A, NASA Space Flight Medical Standards, 2022. https://www.nasa.gov/wp-content/uploads/2023/04/ochmo-std-100.1a.pdf</li>
+  <li>[3] European Space Agency. Attributes of an astronaut (ESA Astronaut Selection). https://www.esa.int/About_Us/Careers_at_ESA/ESA_Astronaut_Selection/Attributes_of_an_astronaut</li>
+  <li>[4] FAA Reauthorization Act of 2024, Public Law 118-63 (H.R. 3935), 118th Congress. https://www.congress.gov/bill/118th-congress/house-bill/3935</li>
+  <li>[5] Federal Aviation Administration. Guidance for Medical Screening of Commercial Aerospace Passengers, 2006. https://www.faa.gov/media/72446</li>
+  <li>[6] Blue Origin. New Shepard flight requirements (stair climb, height and weight limits), as published on blueorigin.com.</li>
+  <li>[7] Aerospace Medical Association, Commercial Spaceflight Working Group. Medical guidelines for commercial spaceflight participants (review). Acta Astronautica, 2021. https://www.sciencedirect.com/science/article/abs/pii/S0094576521001016</li>
+  <li>[8] FlightPhysical.com. FAA Form 8500-8 application item index. https://flightphysical.com/medical-application</li>
+  <li>[9] Bartlett Chen Law. Should the Federal Aviation Administration enact medical standards for space tourists? https://bartlettchenlaw.com/should-federal-aviation-administration-enact-medical-standards-space-tourists/</li>
+  <li>[10] Women's Aerospace Network. How to be an astronaut: physical and medical qualifications. https://www.womensaerospace.com/how-to-be-an-astronaut/physical-and-medical-qualifications</li>
+  <li>[11] Space.com. Commercial spaceflight health requirements. https://www.space.com/28133-commercial-spaceflight-health-requirements.html</li>
 </ul>
 
 
@@ -528,7 +550,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

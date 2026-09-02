@@ -1,4 +1,4 @@
-# Personalized Countermeasure Plan - v0.6.2
+# Personalized Countermeasure Plan - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example CarePlan: Personalized Countermeasure Plan
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Personalized Countermeasure Plan](StructureDefinition-personalized-countermeasure-plan.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Phase**: Orbital Operations
 
@@ -16,7 +20,7 @@ Profile: [Personalized Countermeasure Plan](StructureDefinition-personalized-cou
 
 **title**: Personalized Bone-Muscle Countermeasure Protocol
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **supportingInfo**: [Observation Metabolomics](Observation-Metabolomics-Observation-001.md)
 
@@ -49,17 +53,25 @@ Profile: [Personalized Countermeasure Plan](StructureDefinition-personalized-cou
   "resourceType" : "CarePlan",
   "id" : "PersonalizedPlan-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/personalized-countermeasure-plan"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/personalized-countermeasure-plan"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "orbital-ops",
             "display" : "Orbital Operations"
           }

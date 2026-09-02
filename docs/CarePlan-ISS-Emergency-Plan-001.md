@@ -1,4 +1,4 @@
-# ISS Emergency Contingency Plan - v0.6.2
+# ISS Emergency Contingency Plan - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example CarePlan: ISS Emergency Contingency Plan
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Emergency Care Plan](StructureDefinition-emergency-care-plan.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -14,7 +18,7 @@ Profile: [Emergency Care Plan](StructureDefinition-emergency-care-plan.md)
 
 **title**: ISS Expedition 75 Emergency Contingency Plan
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 > **activity**
 
@@ -45,8 +49,16 @@ Profile: [Emergency Care Plan](StructureDefinition-emergency-care-plan.md)
   "resourceType" : "CarePlan",
   "id" : "ISS-Emergency-Plan-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/emergency-care-plan"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-care-plan"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "active",
@@ -61,7 +73,7 @@ Profile: [Emergency Care Plan](StructureDefinition-emergency-care-plan.md)
         "code" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs",
               "code" : "safe-haven",
               "display" : "Safe Haven"
             }
@@ -76,7 +88,7 @@ Profile: [Emergency Care Plan](StructureDefinition-emergency-care-plan.md)
         "code" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs",
               "code" : "crew-dragon-return",
               "display" : "Crew Dragon Return"
             }

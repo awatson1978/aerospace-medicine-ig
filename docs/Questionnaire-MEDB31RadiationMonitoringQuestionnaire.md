@@ -1,4 +1,4 @@
-# MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry - v0.6.2
+# MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-3-1-radiation-monitoring | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-3-1-radiation-monitoring | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB31RadiationMonitoring |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB31RadiationMonitoringQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-3-1-radiation-monitoring",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-3-1-radiation-monitoring",
+  "version" : "0.7.0",
   "name" : "MEDB31RadiationMonitoring",
   "title" : "MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry",
   "status" : "active",
@@ -94,7 +97,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -103,7 +106,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -119,7 +122,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "radiation",
                 "display" : "Radiation"
               }
@@ -128,7 +131,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "radiation",
                 "display" : "Radiation"
               }
@@ -272,7 +275,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
                 "code" : "L-19m",
                 "display" : "L-19 months"
               }
@@ -281,7 +284,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
                 "code" : "L-19m",
                 "display" : "L-19 months"
               }
@@ -308,14 +311,14 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                 "code" : "crewmember",
                 "display" : "Crewmember"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                 "code" : "instructor",
                 "display" : "Instructor"
               }
@@ -330,7 +333,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "cpd",
                 "display" : "Crew Passive Dosimeter"
               }
@@ -356,7 +359,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "jsc",
                 "display" : "Johnson Space Center"
               }
@@ -365,7 +368,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "jsc",
                 "display" : "Johnson Space Center"
               }
@@ -504,7 +507,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "cpd",
                 "display" : "Crew Passive Dosimeter"
               }
@@ -513,7 +516,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "cpd",
                 "display" : "Crew Passive Dosimeter"
               }
@@ -588,7 +591,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
                 "code" : "R-0",
                 "display" : "R+0"
               }
@@ -597,7 +600,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
                 "code" : "R-0",
                 "display" : "R+0"
               }
@@ -613,14 +616,14 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                 "code" : "flight-surgeon",
                 "display" : "Flight Surgeon"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                 "code" : "landing-team",
                 "display" : "Landing Team"
               }
@@ -681,7 +684,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
               "answerOption" : [
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                     "code" : "rho",
                     "display" : "Radiation Health Officer"
                   }
@@ -690,7 +693,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
               "initial" : [
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                     "code" : "rho",
                     "display" : "Radiation Health Officer"
                   }
@@ -736,14 +739,14 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
               "answerOption" : [
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                     "code" : "flight-surgeon",
                     "display" : "Flight Surgeon"
                   }
                 },
                 {
                   "valueCoding" : {
-                    "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                    "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                     "code" : "crew-surgeon",
                     "display" : "Crew Surgeon"
                   }
@@ -772,7 +775,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "areas",
                 "display" : "Astronaut Radiation Exposure Assessment System"
               }
@@ -781,7 +784,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "areas",
                 "display" : "Astronaut Radiation Exposure Assessment System"
               }
@@ -847,7 +850,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
                 "code" : "R-30d",
                 "display" : "R+30 days"
               }
@@ -856,7 +859,7 @@ To monitor and document crew exposure to radiation and to maintain crew exposure
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs",
                 "code" : "R-30d",
                 "display" : "R+30 days"
               }

@@ -1,4 +1,4 @@
-# Gravity Context - v0.6.2
+# Gravity Context - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/gravity-context | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:GravityContext |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:GravityContext |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Gravitational environment in which the observation, condition, or procedure occurred
 
@@ -44,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-gravity-context.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "gravity-context",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
+  "version" : "0.7.0",
   "name" : "GravityContext",
   "title" : "Gravity Context",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -63,6 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-gravity-context.csv)
     }
   ],
   "description" : "Gravitational environment in which the observation, condition, or procedure occurred",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -97,6 +99,14 @@ Other representations of profile: [CSV](StructureDefinition-gravity-context.csv)
     {
       "type" : "element",
       "expression" : "DeviceDefinition"
+    },
+    {
+      "type" : "element",
+      "expression" : "Specimen"
+    },
+    {
+      "type" : "element",
+      "expression" : "Device"
     }
   ],
   "type" : "Extension",
@@ -118,7 +128,7 @@ Other representations of profile: [CSV](StructureDefinition-gravity-context.csv)
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
       },
       {
         "id" : "Extension.value[x]",
@@ -130,7 +140,7 @@ Other representations of profile: [CSV](StructureDefinition-gravity-context.csv)
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/gravity-context-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/gravity-context-vs"
         }
       }
     ]

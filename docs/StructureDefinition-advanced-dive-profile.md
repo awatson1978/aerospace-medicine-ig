@@ -1,4 +1,4 @@
-# Advanced Dive Profile - v0.6.2
+# Advanced Dive Profile - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/advanced-dive-profile | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:AdvancedDiveProfile |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/advanced-dive-profile | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:AdvancedDiveProfile |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Comprehensive dive profile with enhanced data collection and regulatory compliance 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
 {
   "resourceType" : "StructureDefinition",
   "id" : "advanced-dive-profile",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/advanced-dive-profile",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/advanced-dive-profile",
+  "version" : "0.7.0",
   "name" : "AdvancedDiveProfile",
   "title" : "Advanced Dive Profile",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
     }
   ],
   "description" : "Comprehensive dive profile with enhanced data collection and regulatory compliance",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -110,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "dive-profile",
               "display" : "Dive Profile"
             }
@@ -125,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ]
@@ -151,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-equipment"
             ]
           }
         ]
@@ -183,7 +185,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "maximum-depth"
             }
           ]
@@ -222,7 +224,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "bottom-time"
             }
           ]
@@ -261,7 +263,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "surface-interval"
             }
           ]
@@ -300,7 +302,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "ascent-rate"
             }
           ]
@@ -339,7 +341,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "water-temperature"
             }
           ]
@@ -378,7 +380,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "visibility"
             }
           ]
@@ -417,7 +419,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "nitrogen-loading"
             }
           ]
@@ -456,7 +458,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "breathing-gas"
             }
           ]
@@ -485,7 +487,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "decompression-obligation"
             }
           ]
@@ -514,7 +516,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
               "code" : "emergency-procedures"
             }
           ]
@@ -543,7 +545,7 @@ Other representations of profile: [CSV](StructureDefinition-advanced-dive-profil
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/underwater-communication-cs",
               "code" : "communication-log"
             }
           ]

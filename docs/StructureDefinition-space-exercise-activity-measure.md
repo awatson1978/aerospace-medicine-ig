@@ -1,4 +1,4 @@
-# Space Exercise Activity Measure - v0.6.2
+# Space Exercise Activity Measure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceExerciseActivityMeasure |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceExerciseActivityMeasure |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity 
@@ -37,12 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-exercise-activity-measure",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure",
+  "version" : "0.7.0",
   "name" : "SpaceExerciseActivityMeasure",
   "title" : "Space Exercise Activity Measure",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -56,6 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
     }
   ],
   "description" : "Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -125,7 +127,7 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -187,13 +189,34 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
         }
       },
       {
-        "id" : "Observation.code.coding:basePA",
+        "id" : "Observation.code.coding:loinc",
         "path" : "Observation.code.coding",
-        "sliceName" : "basePA",
-        "short" : "Physical activity measurement type (LOINC or PA temp codes)",
+        "sliceName" : "loinc",
+        "short" : "Physical activity measurement type (LOINC)",
         "min" : 0,
         "max" : "1",
         "mustSupport" : true
+      },
+      {
+        "id" : "Observation.code.coding:loinc.system",
+        "path" : "Observation.code.coding.system",
+        "min" : 1,
+        "patternUri" : "http://loinc.org"
+      },
+      {
+        "id" : "Observation.code.coding:paTemp",
+        "path" : "Observation.code.coding",
+        "sliceName" : "paTemp",
+        "short" : "Physical activity measurement type (Physical Activity IG temporary codes)",
+        "min" : 0,
+        "max" : "1",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Observation.code.coding:paTemp.system",
+        "path" : "Observation.code.coding.system",
+        "min" : 1,
+        "patternUri" : "http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-temporary-codes"
       },
       {
         "id" : "Observation.code.coding:spaceModality",
@@ -208,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
         "id" : "Observation.code.coding:spaceModality.system",
         "path" : "Observation.code.coding.system",
         "min" : 1,
-        "patternUri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"
+        "patternUri" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs"
       },
       {
         "id" : "Observation.subject",
@@ -218,7 +241,7 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -278,7 +301,7 @@ Other representations of profile: [CSV](StructureDefinition-space-exercise-activ
         "path" : "Observation.component.code",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-performance-metric-vs"
         }
       },
       {

@@ -1,4 +1,4 @@
-# Environmental Factors - v0.6.2
+# Environmental Factors - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:EnvironmentalFactors |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/environmental-factors | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:EnvironmentalFactors |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Environmental conditions affecting decompression requirements
 
@@ -43,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-environmental-factor
 {
   "resourceType" : "StructureDefinition",
   "id" : "environmental-factors",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/environmental-factors",
+  "version" : "0.7.0",
   "name" : "EnvironmentalFactors",
   "title" : "Environmental Factors",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -62,6 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-environmental-factor
     }
   ],
   "description" : "Environmental conditions affecting decompression requirements",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -75,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-environmental-factor
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -97,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-environmental-factor
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/environmental-factors"
       },
       {
         "id" : "Extension.value[x]",
@@ -109,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-environmental-factor
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/decompression-procedures-vs"
         }
       }
     ]

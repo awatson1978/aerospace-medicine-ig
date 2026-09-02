@@ -12,10 +12,10 @@
   <sch:pattern>
     <sch:title>f:Procedure</sch:title>
     <sch:rule context="f:Procedure">
-      <sch:assert test="count(f:extension[@url = 'https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm']) &lt;= 1">extension with URL = 'https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached']) &lt;= 1">extension with URL = 'https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time']) &lt;= 1">extension with URL = 'https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures']) &lt;= 1">extension with URL = 'https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/decompression-algorithm']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/decompression-algorithm': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-depth-reached']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-depth-reached': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/total-decompression-time']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/total-decompression-time': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-procedures']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-procedures': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

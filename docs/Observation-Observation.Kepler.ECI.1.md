@@ -1,10 +1,14 @@
-# Observation - Orbital Elements - v0.6.2
+# Observation - Orbital Elements - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Observation - Orbital Elements**
 
 ## Example Observation: Observation - Orbital Elements
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
@@ -32,6 +36,16 @@
 {
   "resourceType" : "Observation",
   "id" : "Observation.Kepler.ECI.1",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
+    ]
+  },
   "status" : "final",
   "code" : {
     "coding" : [

@@ -3,12 +3,18 @@
 <Encounter xmlns="http://hl7.org/fhir">
   <id value="Telemedicine-StoreForward-001"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-encounter"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-encounter"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter Telemedicine-StoreForward-001</b></p><a name="Telemedicine-StoreForward-001"> </a><a name="hcTelemedicine-StoreForward-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-telemedicine-encounter.html">Telemedicine Encounter</a></p></div><p><b>Communication Latency</b>: 1.3 s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codes = 's')</span></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">ActCode: VR</a> (virtual)</p><p><b>type</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/telemedicine-modality-cs store-forward}">Store-and-Forward</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>period</b>: 2028-05-10 09:00:00+0000 --&gt; 2028-05-10 09:15:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 95320005}">Skin disorder</span></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter Telemedicine-StoreForward-001</b></p><a name="Telemedicine-StoreForward-001"> </a><a name="hcTelemedicine-StoreForward-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-telemedicine-encounter.html">Telemedicine Encounter</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Communication Latency</b>: 1.3 s<span style="background: LightGoldenRodYellow"> (Details: UCUM  codes = 's')</span></p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">ActCode: VR</a> (virtual)</p><p><b>type</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-modality-cs store-forward}">Store-and-Forward</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>period</b>: 2028-05-10 09:00:00+0000 --&gt; 2028-05-10 09:15:00+0000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 95320005}">Skin disorder</span></p></div>
   </text>
-  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/communication-latency">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-latency">
     <valueQuantity>
       <value value="1.3"/>
       <unit value="s"/>
@@ -24,7 +30,7 @@
   </class>
   <type>
     <coding>
-      <system value="https://mitre.org/fhir/space-health/CodeSystem/telemedicine-modality-cs"/>
+      <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-modality-cs"/>
       <code value="store-forward"/>
       <display value="Store-and-Forward"/>
     </coding>

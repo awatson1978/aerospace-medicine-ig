@@ -1,4 +1,4 @@
-# Lower Body BFRT Session - v0.6.2
+# Lower Body BFRT Session - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Procedure: Lower Body BFRT Session
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [BFRT Procedure](StructureDefinition-bfrt-procedure.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Occlusion Pressure**: 80 mmHg(Details: UCUM codemm[Hg] = 'mm[Hg]')
 
@@ -16,7 +20,7 @@ Profile: [BFRT Procedure](StructureDefinition-bfrt-procedure.md)
 
 **code**: Low-Load BFRT (20-30% 1RM)
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **performed**: 2028-04-15 08:30:00+0000
 
@@ -40,13 +44,21 @@ Profile: [BFRT Procedure](StructureDefinition-bfrt-procedure.md)
   "resourceType" : "Procedure",
   "id" : "BFRT-LowerBody-Session-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-procedure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-procedure"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/occlusion-pressure",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/occlusion-pressure",
       "valueQuantity" : {
         "value" : 80,
         "unit" : "mmHg",
@@ -55,11 +67,11 @@ Profile: [BFRT Procedure](StructureDefinition-bfrt-procedure.md)
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "microgravity",
             "display" : "Microgravity"
           }
@@ -71,7 +83,7 @@ Profile: [BFRT Procedure](StructureDefinition-bfrt-procedure.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-protocol-cs",
         "code" : "low-load-bfrt",
         "display" : "Low-Load BFRT (20-30% 1RM)"
       }

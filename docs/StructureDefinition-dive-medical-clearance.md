@@ -1,0 +1,212 @@
+# Dive Medical Clearance - Aerospace Medicine Implementation Guide v0.7.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **Dive Medical Clearance**
+
+## Resource Profile: Dive Medical Clearance 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-medical-clearance | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:DiveMedicalClearance |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
+
+ 
+Medical clearance examination for diving operations 
+
+**Usages:**
+
+* Examples for this Profile: [Procedure/ExampleDiveMedicalClearance](Procedure-ExampleDiveMedicalClearance.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/dive-medical-clearance)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-dive-medical-clearance.csv), [Excel](StructureDefinition-dive-medical-clearance.xlsx), [Schematron](StructureDefinition-dive-medical-clearance.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "dive-medical-clearance",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-medical-clearance",
+  "version" : "0.7.0",
+  "name" : "DiveMedicalClearance",
+  "title" : "Dive Medical Clearance",
+  "status" : "draft",
+  "date" : "2026-09-02T13:24:45-05:00",
+  "publisher" : "MITRE",
+  "contact" : [
+    {
+      "name" : "MITRE",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "https://www.mitre.org/"
+        }
+      ]
+    }
+  ],
+  "description" : "Medical clearance examination for diving operations",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [
+    {
+      "identity" : "workflow",
+      "uri" : "http://hl7.org/fhir/workflow",
+      "name" : "Workflow Pattern"
+    },
+    {
+      "identity" : "rim",
+      "uri" : "http://hl7.org/v3",
+      "name" : "RIM Mapping"
+    },
+    {
+      "identity" : "w5",
+      "uri" : "http://hl7.org/fhir/fivews",
+      "name" : "FiveWs Pattern Mapping"
+    },
+    {
+      "identity" : "v2",
+      "uri" : "http://hl7.org/v2",
+      "name" : "HL7 v2 Mapping"
+    }
+  ],
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Procedure",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [
+      {
+        "id" : "Procedure",
+        "path" : "Procedure"
+      },
+      {
+        "id" : "Procedure.extension",
+        "path" : "Procedure.extension",
+        "slicing" : {
+          "discriminator" : [
+            {
+              "type" : "value",
+              "path" : "url"
+            }
+          ],
+          "ordered" : false,
+          "rules" : "open"
+        }
+      },
+      {
+        "id" : "Procedure.extension:pulmonaryFunction",
+        "path" : "Procedure.extension",
+        "sliceName" : "pulmonaryFunction",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/pulmonary-function"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.extension:cardiovascularFitness",
+        "path" : "Procedure.extension",
+        "sliceName" : "cardiovascularFitness",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cardiovascular-fitness"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.extension:vestibularAssessment",
+        "path" : "Procedure.extension",
+        "sliceName" : "vestibularAssessment",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/vestibular-assessment"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.extension:contraindications",
+        "path" : "Procedure.extension",
+        "sliceName" : "contraindications",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "Extension",
+            "profile" : [
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-contraindications"
+            ]
+          }
+        ],
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.status",
+        "path" : "Procedure.status",
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.code",
+        "path" : "Procedure.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "http://snomed.info/sct",
+              "code" : "79492003",
+              "display" : "Diving medical examination"
+            }
+          ]
+        },
+        "mustSupport" : true
+      },
+      {
+        "id" : "Procedure.subject",
+        "path" : "Procedure.subject",
+        "type" : [
+          {
+            "code" : "Reference",
+            "targetProfile" : [
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
+            ]
+          }
+        ]
+      },
+      {
+        "id" : "Procedure.outcome",
+        "path" : "Procedure.outcome",
+        "mustSupport" : true
+      }
+    ]
+  }
+}
+
+```

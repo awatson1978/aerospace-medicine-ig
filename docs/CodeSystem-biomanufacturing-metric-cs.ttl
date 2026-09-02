@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "biomanufacturing-metric-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem biomanufacturing-metric-cs</b></p><a name=\"biomanufacturing-metric-cs\"> </a><a name=\"hcbiomanufacturing-metric-cs\"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">output-quantity<a name=\"biomanufacturing-metric-cs-output-quantity\"> </a></td><td>Output Quantity</td><td>Total output quantity (kg, L, mol)</td></tr><tr><td style=\"white-space:nowrap\">output-rate<a name=\"biomanufacturing-metric-cs-output-rate\"> </a></td><td>Output Rate</td><td>Production rate per day or per cycle</td></tr><tr><td style=\"white-space:nowrap\">energy-input<a name=\"biomanufacturing-metric-cs-energy-input\"> </a></td><td>Energy Input</td><td>Energy consumed by the process</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "BiomanufacturingMetricCS"] ; # 
+  fhir:title [ fhir:v "Biomanufacturing Metric Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Component codes for biomanufacturing output observations"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "output-quantity" ] ;
+     fhir:display [ fhir:v "Output Quantity" ] ;
+     fhir:definition [ fhir:v "Total output quantity (kg, L, mol)" ]
+  ] [
+     fhir:code [ fhir:v "output-rate" ] ;
+     fhir:display [ fhir:v "Output Rate" ] ;
+     fhir:definition [ fhir:v "Production rate per day or per cycle" ]
+  ] [
+     fhir:code [ fhir:v "energy-input" ] ;
+     fhir:display [ fhir:v "Energy Input" ] ;
+     fhir:definition [ fhir:v "Energy consumed by the process" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

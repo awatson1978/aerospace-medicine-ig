@@ -7,40 +7,52 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/ARCHeR-Actigraphy-FD5> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/ARCHeR-Actigraphy-FD5> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ARCHeR-Actigraphy-FD5"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/archer-actigraphy-observation"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/archer-actigraphy-observation>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ARCHeR-Actigraphy-FD5</b></p><a name=\"ARCHeR-Actigraphy-FD5\"> </a><a name=\"hcARCHeR-Actigraphy-FD5\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-archer-actigraphy-observation.html\">ARCHeR Actigraphy Observation</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs transit-outbound}\">Outbound Transit</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 129006008}\">Activity monitoring</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-03-20 00:00:00+0000 --&gt; 2028-03-21 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs interdaily-stability}\">Interdaily Stability (IS)</span></p><p><b>value</b>: 0.72 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs circadian-period}\">Circadian Period (Tau)</span></p><p><b>value</b>: 24.3 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs total-sleep-time}\">Total Sleep Time (TST)</span></p><p><b>value</b>: 390 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ARCHeR-Actigraphy-FD5</b></p><a name=\"ARCHeR-Actigraphy-FD5\"> </a><a name=\"hcARCHeR-Actigraphy-FD5\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-archer-actigraphy-observation.html\">ARCHeR Actigraphy Observation</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-IV-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs transit-outbound}\">Outbound Transit</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 30920001}\">Circadian rhythm</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-03-20 00:00:00+0000 --&gt; 2028-03-21 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/actigraphy-metric-cs interdaily-stability}\">Interdaily Stability (IS)</span></p><p><b>value</b>: 0.72 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-assessment-cs circadian-period}\">Circadian Period (Tau)</span></p><p><b>value</b>: 24.3 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs total-sleep-time}\">Total Sleep Time (TST)</span></p><p><b>value</b>: 390 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
-       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/Artemis-IV-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-IV-Mission" ]
      ]
   ] [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-phase>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs>
          ] ;
          fhir:code [ fhir:v "transit-outbound" ] ;
          fhir:display [ fhir:v "Outbound Transit" ]
@@ -60,17 +72,17 @@
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
-       a sct:129006008 ;
+       a sct:30920001 ;
        fhir:system [
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:code [ fhir:v "129006008" ] ;
-       fhir:display [ fhir:v "Activity monitoring" ]
+       fhir:code [ fhir:v "30920001" ] ;
+       fhir:display [ fhir:v "Circadian rhythm" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:effective [
@@ -82,8 +94,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/actigraphy-metric-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/actigraphy-metric-cs>
          ] ;
          fhir:code [ fhir:v "interdaily-stability" ] ;
          fhir:display [ fhir:v "Interdaily Stability (IS)" ]
@@ -103,8 +115,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-assessment-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-assessment-cs>
          ] ;
          fhir:code [ fhir:v "circadian-period" ] ;
          fhir:display [ fhir:v "Circadian Period (Tau)" ]
@@ -124,8 +136,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs>
          ] ;
          fhir:code [ fhir:v "total-sleep-time" ] ;
          fhir:display [ fhir:v "Total Sleep Time (TST)" ]

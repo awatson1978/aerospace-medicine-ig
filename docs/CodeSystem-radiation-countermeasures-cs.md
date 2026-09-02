@@ -1,15 +1,16 @@
-# Radiation Countermeasures Code System - v0.6.2
+# Radiation Countermeasures Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Radiation Countermeasures Code System**
 
-## CodeSystem: Radiation Countermeasures Code System 
+## CodeSystem: Radiation Countermeasures Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:RadiationCountermeasuresCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-countermeasures-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:RadiationCountermeasuresCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Protective measures against space radiation 
@@ -17,7 +18,6 @@ Protective measures against space radiation
  This Code system is referenced in the content logical definition of the following value sets: 
 
 * [RadiationCountermeasuresVS](ValueSet-radiation-countermeasures-vs.md)
-* [RadiationCountermeasuresVSComplete](ValueSet-radiation-countermeasures-vs-complete.md)
 
 
 
@@ -27,13 +27,13 @@ Protective measures against space radiation
 {
   "resourceType" : "CodeSystem",
   "id" : "radiation-countermeasures-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-countermeasures-cs",
+  "version" : "0.7.0",
   "name" : "RadiationCountermeasuresCS",
   "title" : "Radiation Countermeasures Code System",
-  "status" : "draft",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -47,9 +47,10 @@ Protective measures against space radiation
     }
   ],
   "description" : "Protective measures against space radiation",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 6,
+  "count" : 4,
   "concept" : [
     {
       "code" : "shielding",
@@ -61,21 +62,12 @@ Protective measures against space radiation
     },
     {
       "code" : "medication",
-      "display" : "Radioprotective Medication"
+      "display" : "Radioprotective Medication",
+      "definition" : "Pharmacological countermeasure; the specific agent is coded with RadioprotectiveMedicationCS"
     },
     {
       "code" : "monitoring",
       "display" : "Enhanced Monitoring"
-    },
-    {
-      "code" : "nac",
-      "display" : "N-Acetylcysteine (NAC)",
-      "definition" : "Antioxidant and glutathione precursor with radioprotective properties"
-    },
-    {
-      "code" : "amifostine",
-      "display" : "Amifostine",
-      "definition" : "Cytoprotective agent that scavenges free radicals from ionizing radiation"
     }
   ]
 }

@@ -3,13 +3,15 @@
   "id" : "mitre.fhir.spacehealth",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><h2>SpaceflightHealthSimulationsReferenceDocumentation</h2><p>The official URL for this implementation guide is: </p><pre>https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide mitre.fhir.spacehealth</b></p><a name=\"mitre.fhir.spacehealth\"> </a><a name=\"hcmitre.fhir.spacehealth\"> </a><h2>AerospaceMedicineIG</h2><p>The official URL for this implementation guide is: </p><pre>https://awatson1978.github.io/aerospace-medicine-ig/ImplementationGuide/mitre.fhir.spacehealth</pre><div><p>FHIR R4 profiles, terminology, questionnaires and examples for aerospace medicine, covering astronaut health monitoring, flight-readiness screening, NASA medical requirements, mission and device registries, and environmental health telemetry for spaceflight and analog missions.</p>\n</div></div>"
   },
-  "url" : "https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth",
-  "version" : "0.6.2",
-  "name" : "SpaceflightHealthSimulationsReferenceDocumentation",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ImplementationGuide/mitre.fhir.spacehealth",
+  "version" : "0.7.0",
+  "name" : "AerospaceMedicineIG",
+  "title" : "Aerospace Medicine Implementation Guide",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -18,9 +20,10 @@
       "value" : "https://www.mitre.org/"
     }]
   }],
-  "description" : "Example Implementation Guide for building aerospace medicine applications that interact with ground based hospitals.",
+  "description" : "FHIR R4 profiles, terminology, questionnaires and examples for aerospace medicine, covering astronaut health monitoring, flight-readiness screening, NASA medical requirements, mission and device registries, and environmental health telemetry for spaceflight and analog missions.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "packageId" : "mitre.fhir.spacehealth",
-  "license" : "CC0-1.0",
+  "license" : "CC-BY-ND-4.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
     "id" : "hl7tx",
@@ -74,17 +77,6 @@
       {
         "url" : "value",
         "valueString" : "ci-build"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "autoload-resources"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -172,7 +164,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://mitre.org/fhir/space-health/history.html"
+        "valueString" : "https://awatson1978.github.io/aerospace-medicine-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -374,17 +366,6 @@
       },
       {
         "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "autoload-resources"
-      },
-      {
-        "url" : "value",
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -462,7 +443,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "https://mitre.org/fhir/space-health/history.html"
+        "valueString" : "https://awatson1978.github.io/aerospace-medicine-ig/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -641,7 +622,7 @@
       },
       "name" : "14-Day CGM Summary Report",
       "description" : "14-day CGM summary report for spaceflight metabolic monitoring",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-summary"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-summary"
     },
     {
       "extension" : [{
@@ -682,18 +663,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SpaceAdaptationBoneHealth"
-      },
-      "name" : "Adaptations of Bone Health",
-      "description" : "Bone health adaptations observed in spaceflight conditions.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -721,10 +690,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/AircraftFumeExposureValueSet"
+        "reference" : "ValueSet/location-type-vs"
       },
-      "name" : "Aircraft Fume Exposure",
-      "description" : "Health impacts from exposure to aircraft contaminated air and fume events.",
+      "name" : "Aerospace Location Type",
+      "description" : "Location types for lunar and planetary mission locations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/location-type-cs"
+      },
+      "name" : "Aerospace Location Type",
+      "description" : "Types of locations used in lunar and planetary mission records (landing sites, orbital stations, surface habitats, outposts, analog facilities)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/aerospace-observation-category-cs"
+      },
+      "name" : "Aerospace Observation Category",
+      "description" : "Observation categories for spacecraft and habitat telemetry that are not covered by the HL7 observation-category code system (operational, environmental, life-support)",
       "exampleBoolean" : false
     },
     {
@@ -737,7 +730,7 @@
       },
       "name" : "Algae Cultivation Procedure",
       "description" : "Chlorella vulgaris cultivation cycle in ISS photobioreactor",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/biomanufacturing-procedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/biomanufacturing-procedure"
     },
     {
       "extension" : [{
@@ -749,7 +742,7 @@
       },
       "name" : "Algae Photobioreactor",
       "description" : "Closed-loop algae photobioreactor for O2 production and CO2 fixation",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bioreactor-device"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bioreactor-device"
     },
     {
       "extension" : [{
@@ -760,7 +753,7 @@
         "reference" : "ValueSet/artemis-all-devices-vs"
       },
       "name" : "All Artemis Devices",
-      "description" : "Both certified and prototype Artemis devices",
+      "description" : "Both certified and prototype Artemis devices (the complete Artemis device inventory)",
       "exampleBoolean" : false
     },
     {
@@ -774,6 +767,36 @@
       "name" : "All Mars Mission Devices",
       "description" : "Both certified and prototype Mars devices",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-030"
+      },
+      "name" : "Almond butter",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-025"
+      },
+      "name" : "Almonds",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -897,6 +920,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-008"
+      },
+      "name" : "Apple cider",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
@@ -917,7 +955,7 @@
       },
       "name" : "ARCHeR Actigraphy - Flight Day 5",
       "description" : "Actigraphy data from ARCHeR investigation on flight day 5 showing circadian adaptation",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/archer-actigraphy-observation"
     },
     {
       "extension" : [{
@@ -953,7 +991,7 @@
       },
       "name" : "Artemis Base Camp Habitat",
       "description" : "Artemis lunar surface habitat module",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -976,19 +1014,7 @@
         "reference" : "CodeSystem/artemis-certified-devices-cs"
       },
       "name" : "Artemis Certified Devices",
-      "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/artemis-devices-cs"
-      },
-      "name" : "Artemis Devices",
-      "description" : "Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems",
+      "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, SLS, xEMU, Starship-HLS, CLPS landers, Gateway modules, LTV, radioisotope power units, etc.)",
       "exampleBoolean" : false
     },
     {
@@ -997,11 +1023,11 @@
         "valueString" : "Procedure"
       }],
       "reference" : {
-        "reference" : "Procedure/Artemis-III-EVA-1"
+        "reference" : "Procedure/Artemis-IV-EVA-1"
       },
-      "name" : "Artemis III EVA-1",
-      "description" : "First lunar surface EVA of Artemis III mission at Malapert Massif",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"
+      "name" : "Artemis IV EVA-1",
+      "description" : "First lunar surface EVA of Artemis IV mission at Malapert Massif",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-procedure"
     },
     {
       "extension" : [{
@@ -1009,11 +1035,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/Artemis-III-EVA1-Radiation"
+        "reference" : "Observation/Artemis-IV-EVA1-Radiation"
       },
-      "name" : "Artemis III EVA-1 Radiation Exposure",
+      "name" : "Artemis IV EVA-1 Radiation Exposure",
       "description" : "Radiation dose during first lunar surface EVA (6.5 hours unshielded)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/artemis-radiation-exposure"
     },
     {
       "extension" : [{
@@ -1021,11 +1047,11 @@
         "valueString" : "Procedure"
       }],
       "reference" : {
-        "reference" : "Procedure/Artemis-III-EVA-2"
+        "reference" : "Procedure/Artemis-IV-EVA-2"
       },
-      "name" : "Artemis III EVA-2",
-      "description" : "Second lunar surface EVA of Artemis III mission exploring shadowed crater",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-procedure"
+      "name" : "Artemis IV EVA-2",
+      "description" : "Second lunar surface EVA of Artemis IV mission exploring shadowed crater",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-procedure"
     },
     {
       "extension" : [{
@@ -1033,10 +1059,10 @@
         "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       },
-      "name" : "Artemis III Mission Encounter",
-      "description" : "Encounter representing the entire Artemis III mission from launch to splashdown",
+      "name" : "Artemis IV Mission Encounter",
+      "description" : "Encounter representing the entire Artemis IV mission from launch to splashdown",
       "exampleBoolean" : true
     },
     {
@@ -1045,11 +1071,11 @@
         "valueString" : "PlanDefinition"
       }],
       "reference" : {
-        "reference" : "PlanDefinition/Artemis-III-Mission-Plan"
+        "reference" : "PlanDefinition/Artemis-IV-Mission-Plan"
       },
-      "name" : "Artemis III Mission Plan",
-      "description" : "Complete mission plan for Artemis III including phases, timelines, and EVA schedules",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-plan"
+      "name" : "Artemis IV Mission Plan",
+      "description" : "Complete mission plan for Artemis IV including phases, timelines, and EVA schedules",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-plan"
     },
     {
       "extension" : [{
@@ -1057,11 +1083,11 @@
         "valueString" : "SupplyDelivery"
       }],
       "reference" : {
-        "reference" : "SupplyDelivery/ArtemisIII-SuitProvisioning-001"
+        "reference" : "SupplyDelivery/ArtemisIV-SuitProvisioning-001"
       },
-      "name" : "Artemis III Suit Provisioning",
-      "description" : "EVA suit provisioning record for Artemis III lunar landing mission",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-suit-provisioning-record"
+      "name" : "Artemis IV Suit Provisioning",
+      "description" : "EVA suit provisioning record for Artemis IV lunar landing mission",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-suit-provisioning-record"
     },
     {
       "extension" : [{
@@ -1069,11 +1095,11 @@
         "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Observation/Artemis-III-Translunar-Radiation"
+        "reference" : "Observation/Artemis-IV-Translunar-Radiation"
       },
-      "name" : "Artemis III Translunar Radiation Exposure",
+      "name" : "Artemis IV Translunar Radiation Exposure",
       "description" : "Cumulative radiation dose during 4-day translunar cruise",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/artemis-radiation-exposure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/artemis-radiation-exposure"
     },
     {
       "extension" : [{
@@ -1120,7 +1146,7 @@
         "reference" : "CodeSystem/artemis-mission-cs"
       },
       "name" : "Artemis Missions",
-      "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status",
+      "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status. Reflects the post-2026 replan in which Artemis III is a crewed low-Earth orbit test flight and Artemis IV is the first crewed lunar landing.",
       "exampleBoolean" : false
     },
     {
@@ -1144,7 +1170,7 @@
         "reference" : "CodeSystem/artemis-prototype-devices-cs"
       },
       "name" : "Artemis Prototype Devices",
-      "description" : "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)",
+      "description" : "Developmental and test hardware not yet flight-certified: demo units, ground analogs, next-generation prototypes, and planned LunaNet, surface mobility, habitat, logistics, ISRU, and surface power infrastructure elements",
       "exampleBoolean" : false
     },
     {
@@ -1162,10 +1188,34 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/artemis-radiation-measure-vs"
+      },
+      "name" : "Artemis Radiation Measures",
+      "description" : "Dose measure codes for ArtemisRadiationExposure.code",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/artemis-radiation-measure-cs"
+      },
+      "name" : "Artemis Radiation Measures",
+      "description" : "Observation and component codes used by the ArtemisRadiationExposure profile: dose measures and the contextual components (radiation source, shielding condition, tissue type). Radiation source values come from SpaceRadiationTypeCS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AstrodynamicsObservation"
+        "reference" : "StructureDefinition/astrodynamics-observation"
       },
       "name" : "Astrodynamics Observation",
       "description" : "An observation of a satellite or celestial object's orbital characteristics, using orbital elements.",
@@ -1189,7 +1239,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Astronaut"
+        "reference" : "StructureDefinition/astronaut"
       },
       "name" : "Astronaut Patient Profile",
       "description" : "Patient profile for astronauts and space travelers",
@@ -1217,7 +1267,7 @@
       },
       "name" : "Autonomous Medical Encounter - Appendicitis Sol 189",
       "description" : "Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/autonomous-medical-encounter"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/autonomous-medical-encounter"
     },
     {
       "extension" : [{
@@ -1233,27 +1283,18 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Binary"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/average-blood-pressure"
+        "reference" : "Binary/artemis-018"
       },
-      "name" : "Average Blood Pressure",
-      "description" : "A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol.  The average blood pressure has a systolic and a diastolic component.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/AstronautBackPain"
-      },
-      "name" : "Back Pain and Space Travel",
-      "description" : "Back pain and associated conditions observed in astronauts and their potential terrestrial applications.",
-      "exampleBoolean" : false
+      "name" : "Barbecued beef brisket",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -1261,7 +1302,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BarotraumaAssessment"
+        "reference" : "StructureDefinition/barotrauma-assessment"
       },
       "name" : "Barotrauma Assessment",
       "description" : "Assessment of pressure-related injuries (barotrauma)",
@@ -1421,7 +1462,7 @@
       },
       "name" : "BFRT Pneumatic Cuff Device",
       "description" : "Pneumatic occlusion cuff for blood flow restriction training on ISS",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-device"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-device"
     },
     {
       "extension" : [{
@@ -1481,6 +1522,18 @@
       },
       "name" : "Biological Feedstock",
       "description" : "Biological feedstock or bioproduct used in or produced by biomanufacturing processes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/biomanufacturing-metric-cs"
+      },
+      "name" : "Biomanufacturing Metric Code System",
+      "description" : "Component codes for biomanufacturing output observations",
       "exampleBoolean" : false
     },
     {
@@ -1553,7 +1606,7 @@
       },
       "name" : "BLiSS O2 Production Output",
       "description" : "Daily O2 production observation from algae photobioreactor",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bliss-resource-output"
     },
     {
       "extension" : [{
@@ -1594,30 +1647,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/bp-device"
-      },
-      "name" : "Blood Pressure Device",
-      "description" : "A profile of the Device resource used specifically for blood pressure devices and includes an extension for blood pressure cuff size.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/blood-pressure-panel"
-      },
-      "name" : "Blood Pressure Panel",
-      "description" : "Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -1630,42 +1659,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/height"
-      },
-      "name" : "Body Height",
-      "description" : "The measurement in centimeters or feet and inches from the top of the head to the heel, usually while standing.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/body-mass-index"
-      },
-      "name" : "Body Mass Index",
-      "description" : "A numerical index based on an individual's weight in kilograms divided by the square of their height in meters.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/body-temperature"
-      },
-      "name" : "Body Temperature",
-      "description" : "The measured heat of an individual's body.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -1673,19 +1666,7 @@
       },
       "name" : "Body Temperature - Flight Day 30 Morning",
       "description" : "Oral body temperature measurement on flight day 30 during morning circadian nadir",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/body-weight"
-      },
-      "name" : "Body Weight",
-      "description" : "The measured mass of an individual's body.",
-      "exampleBoolean" : false
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-body-temperature"
     },
     {
       "extension" : [{
@@ -1697,7 +1678,7 @@
       },
       "name" : "Boeing Starliner Calypso",
       "description" : "Boeing CST-100 Starliner spacecraft",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
     },
     {
       "extension" : [{
@@ -1749,15 +1730,33 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Binary"
       }],
       "reference" : {
-        "reference" : "ValueSet/SpaceTravelBrainChanges"
+        "reference" : "Binary/artemis-014"
       },
-      "name" : "Brain and Neurologic Changes",
-      "description" : "Concepts related to physiological and neurological changes from prolonged space travel.",
-      "exampleBoolean" : false
+      "name" : "Breakfast sausage",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-019"
+      },
+      "name" : "Broccoli au gratin",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -1793,7 +1792,37 @@
       },
       "name" : "Butterfly iQ3 Ultrasound",
       "description" : "Butterfly iQ3 point-of-care ultrasound for IJV cross-sectional area and flow assessment",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/ultrasound-monitoring-device"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/ultrasound-monitoring-device"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-023"
+      },
+      "name" : "Butternut squash",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-038"
+      },
+      "name" : "Cake",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -1833,6 +1862,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-039"
+      },
+      "name" : "Candy-coated almonds",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
@@ -1869,6 +1913,36 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-026"
+      },
+      "name" : "Cashews",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-024"
+      },
+      "name" : "Cauliflower",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
@@ -1901,7 +1975,7 @@
       },
       "name" : "CGM Glucose Reading - Flight Day 15",
       "description" : "Single CGM glucose reading on flight day 15 with summary metrics",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-observation"
     },
     {
       "extension" : [{
@@ -1926,6 +2000,66 @@
       "name" : "CHESA Undersea Laboratory",
       "description" : "Commercial underwater training facility",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-037"
+      },
+      "name" : "Chocolate",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-004"
+      },
+      "name" : "Chocolate breakfast drink",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-028"
+      },
+      "name" : "Chocolate spread",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-035"
+      },
+      "name" : "Cinnamon",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -2001,6 +2135,51 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-040"
+      },
+      "name" : "Cobbler",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-010"
+      },
+      "name" : "Cocoa",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-001"
+      },
+      "name" : "Coffee",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
@@ -2017,7 +2196,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceEquipment"
+        "reference" : "StructureDefinition/space-equipment"
       },
       "name" : "Commercial Space Equipment",
       "description" : "STUB - Device profile for commercial space equipment.",
@@ -2074,66 +2253,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/organ-dose-codes-vs-complete"
-      },
-      "name" : "Complete Organ-Specific Dose Codes",
-      "description" : "Comprehensive codes for organ-specific radiation dose measurements",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/radiation-countermeasures-vs-complete"
-      },
-      "name" : "Complete Radiation Countermeasures",
-      "description" : "Comprehensive list of protective measures against space radiation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/radiation-detector-type-vs-complete"
-      },
-      "name" : "Complete Radiation Detector Types",
-      "description" : "Comprehensive list of radiation detection devices used in space",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-radiation-dose-codes-vs-complete"
-      },
-      "name" : "Complete Space Radiation Dose Measurement Codes",
-      "description" : "Comprehensive codes for radiation dose measurements in space environments",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-radiation-type-vs-complete"
-      },
-      "name" : "Complete Space Radiation Types",
-      "description" : "Comprehensive list of ionizing radiation types encountered in space",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -2153,7 +2272,7 @@
       },
       "name" : "Condition - Asphyxiation",
       "description" : "Oxygen deprivation",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2165,7 +2284,7 @@
       },
       "name" : "Condition - Blunt Trauma",
       "description" : "Blunt injury (disorder)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2177,7 +2296,7 @@
       },
       "name" : "Condition - Burn",
       "description" : "Burn injury (morphologic abnormality)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2189,7 +2308,7 @@
       },
       "name" : "Condition - Heart Attack",
       "description" : "Myocardial infarction (disorder)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2201,7 +2320,7 @@
       },
       "name" : "Condition - Hypoxia",
       "description" : "Oxygen deprivation",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2213,7 +2332,7 @@
       },
       "name" : "Condition - Occular Degeneration",
       "description" : "Microgravity induced occular degeneration.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2225,7 +2344,7 @@
       },
       "name" : "Condition - Osteoporosis",
       "description" : "Microgravity induced bone loss.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2237,7 +2356,7 @@
       },
       "name" : "Condition - Radiation Exposure",
       "description" : "Radiation exposure (rads)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2249,7 +2368,7 @@
       },
       "name" : "Condition - Smoke Inhalation",
       "description" : "Smoke inhalation injury (disorder)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2261,7 +2380,7 @@
       },
       "name" : "Condition - Stroke",
       "description" : "Cerebrovascular accident (disorder)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceCondition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-condition"
     },
     {
       "extension" : [{
@@ -2274,6 +2393,36 @@
       "name" : "Continuous Glucose Monitoring Metrics Code System",
       "description" : "Standardized CGM metrics for spaceflight metabolic monitoring",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-036"
+      },
+      "name" : "Cookies",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-015"
+      },
+      "name" : "Couscous with nuts",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -2297,7 +2446,7 @@
       },
       "name" : "Crew Dragon Endeavour",
       "description" : "SpaceX Crew Dragon spacecraft Endeavour",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
     },
     {
       "extension" : [{
@@ -2309,7 +2458,19 @@
       },
       "name" : "Crew Dragon Resilience",
       "description" : "SpaceX Crew Dragon spacecraft Resilience",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Device"
+      }],
+      "reference" : {
+        "reference" : "Device/radiation-detector-example"
+      },
+      "name" : "Crew Personal Dosimeter (example)",
+      "description" : "Electronic personal dosimeter worn by the example astronaut during an ISS increment.",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector"
     },
     {
       "extension" : [{
@@ -2321,7 +2482,7 @@
       },
       "name" : "CSA David Florida Laboratory",
       "description" : "Canadian Space Agency testing facility",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility"
     },
     {
       "extension" : [{
@@ -2343,9 +2504,33 @@
       "reference" : {
         "reference" : "StructureDefinition/cumulative-radiation-dose"
       },
-      "name" : "Cumulative Radiation Dose (Fixed)",
-      "description" : "Enhanced cumulative radiation dose tracking with comprehensive time periods",
+      "name" : "Cumulative Radiation Dose",
+      "description" : "Cumulative radiation dose over daily, weekly, 30-day, annual, mission and career periods.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CumulativeDose-Transit"
+      },
+      "name" : "Cumulative Radiation Dose - Outbound Transit",
+      "description" : "Cumulative galactic cosmic radiation dose accumulated by Commander Chen during the 6-month outbound Earth-Mars transit",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/cumulative-radiation-dose-example"
+      },
+      "name" : "Cumulative Radiation Dose, ISS Expedition 75 (example)",
+      "description" : "Dose-equivalent accumulated over the first 180 days of an ISS increment, with rolling-period and career totals.",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose"
     },
     {
       "extension" : [{
@@ -2358,6 +2543,18 @@
       "name" : "Cumulative Stress Burden",
       "description" : "Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/space-radiation-exposure-example"
+      },
+      "name" : "Daily Radiation Exposure, ISS Flight Day 45 (example)",
+      "description" : "One day of dose-equivalent measured by the crew personal dosimeter, with organ-dose and dose-rate components.",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-exposure"
     },
     {
       "extension" : [{
@@ -2389,7 +2586,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/decompression-procedures"
+        "reference" : "ValueSet/decompression-procedures-vs"
       },
       "name" : "Decompression Procedures",
       "description" : "Standardized decompression procedures and protocols",
@@ -2425,7 +2622,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DecompressionSickness"
+        "reference" : "StructureDefinition/decompression-sickness"
       },
       "name" : "Decompression Sickness",
       "description" : "Decompression sickness occurring during diving or altitude training",
@@ -2489,7 +2686,7 @@
       },
       "name" : "Device - Air Lock",
       "description" : "Air Lock",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2501,7 +2698,7 @@
       },
       "name" : "Device - Ascent/Entry Spacesuit",
       "description" : "Ascent/Entry Spacesuit",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2513,7 +2710,7 @@
       },
       "name" : "Device - Astro Spacesuit",
       "description" : "Astro Spacesuit",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2525,7 +2722,7 @@
       },
       "name" : "Device - Cislunar Highway Patrol System",
       "description" : "Space traffic patrol system",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2537,7 +2734,7 @@
       },
       "name" : "Device - Cyber Truck",
       "description" : "Cyber truck",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2549,7 +2746,7 @@
       },
       "name" : "Device - Dream Chaser",
       "description" : "Space Vehicle",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2561,7 +2758,7 @@
       },
       "name" : "Device - Flight Recorder (FHIR)",
       "description" : "Mission flight recorder that monitors astronaut and passenger activities.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2573,7 +2770,7 @@
       },
       "name" : "Device - Flight Suit",
       "description" : "Flight suit for space travel.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2585,7 +2782,7 @@
       },
       "name" : "Device - Hospital Bed",
       "description" : "General hospital bed.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2597,7 +2794,7 @@
       },
       "name" : "Device - James Webb Telescope",
       "description" : "Deep space telescope at Legrange Point 2",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2609,7 +2806,7 @@
       },
       "name" : "Device - Lunar Crater Radio Telescope",
       "description" : "Lunar Crater Radio Telescope",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2621,7 +2818,7 @@
       },
       "name" : "Device - Lunar Rover",
       "description" : "Lunar rover",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2633,7 +2830,7 @@
       },
       "name" : "Device - Orbital Reef",
       "description" : "Space Station",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2645,7 +2842,7 @@
       },
       "name" : "Device - Smart Clothing",
       "description" : "ECG enabled undershirt",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2657,7 +2854,7 @@
       },
       "name" : "Device - Space Garage",
       "description" : "Space Garage",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2669,7 +2866,7 @@
       },
       "name" : "Device - Space Suit",
       "description" : "Environmental suit for extra-vehicular operations.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2681,7 +2878,7 @@
       },
       "name" : "Device - Space Tent",
       "description" : "Space Tent",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2693,7 +2890,7 @@
       },
       "name" : "Device - Telehealth Monitor",
       "description" : "Monitoring terminal that supports both video conferencing and streaming vital sign signals.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2705,7 +2902,7 @@
       },
       "name" : "Device - Vital Signs Monitor",
       "description" : "Vital signs monitor (heart rate, respiration, blood pressure, temperature).",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2717,7 +2914,7 @@
       },
       "name" : "Device - xEMU Spacesuit",
       "description" : "xEMU Spacesuit",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2729,7 +2926,7 @@
       },
       "name" : "Device - xEVAS Spacesuit",
       "description" : "xEVAS Spacesuit",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
     },
     {
       "extension" : [{
@@ -2741,7 +2938,7 @@
       },
       "name" : "Dexcom G7 CGM Device",
       "description" : "Dexcom G7 continuous glucose monitor used during ISS expedition",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-cgm-device"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-cgm-device"
     },
     {
       "extension" : [{
@@ -2753,7 +2950,7 @@
       },
       "name" : "DHMR Sterilization at 125C/50hr",
       "description" : "Dry heat microbial reduction sterilization of Mars lander component at 125°C for 50 hours",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/sterilization-procedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/sterilization-procedure"
     },
     {
       "extension" : [{
@@ -2761,7 +2958,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DiveMedicalClearance"
+        "reference" : "StructureDefinition/dive-medical-clearance"
       },
       "name" : "Dive Medical Clearance",
       "description" : "Medical clearance examination for diving operations",
@@ -2773,7 +2970,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DiveProfile"
+        "reference" : "StructureDefinition/dive-profile"
       },
       "name" : "Dive Profile",
       "description" : "Comprehensive dive profile including depth, time, and environmental data",
@@ -2797,7 +2994,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DivingEquipment"
+        "reference" : "StructureDefinition/diving-equipment"
       },
       "name" : "Diving Equipment",
       "description" : "Equipment used for diving operations and underwater training",
@@ -2821,7 +3018,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/diving-contraindicated-conditions"
+        "reference" : "ValueSet/diving-contraindicated-conditions-vs"
       },
       "name" : "Diving Medical Contraindications",
       "description" : "Medical conditions that contraindicate diving activities",
@@ -2833,7 +3030,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/diving-medical-examinations"
+        "reference" : "ValueSet/diving-medical-examinations-vs"
       },
       "name" : "Diving Medical Examinations",
       "description" : "Types of medical examinations for diving fitness",
@@ -2897,7 +3094,7 @@
       },
       "name" : "Earth-Moon L4/L5 Stations",
       "description" : "Space habitats at Earth-Moon Lagrange points",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -2945,7 +3142,7 @@
       },
       "name" : "Emergency Dragon Return",
       "description" : "Emergency return to Earth via Crew Dragon following depressurization event",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-evacuation-procedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-evacuation-procedure"
     },
     {
       "extension" : [{
@@ -2977,7 +3174,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/emergency-response"
+        "reference" : "StructureDefinition/underwater-emergency-response-ext"
       },
       "name" : "Emergency Response Assessment",
       "description" : "Assessment of emergency response procedures",
@@ -3046,18 +3243,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/aerospace-code-system-enhanced"
-      },
-      "name" : "Enhanced Aerospace Medicine Code System",
-      "description" : "Comprehensive code system for aerospace medicine concepts including all referenced codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -3065,18 +3250,6 @@
       },
       "name" : "Enhanced Hyperbaric Treatment",
       "description" : "Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/enhanced-neutral-buoyancy-session"
-      },
-      "name" : "Enhanced Neutral Buoyancy Training Session",
-      "description" : "Comprehensive neutral buoyancy training session with full regulatory compliance tracking",
       "exampleBoolean" : false
     },
     {
@@ -3109,7 +3282,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EnvironmentalMonitoring"
+        "reference" : "StructureDefinition/environmental-monitoring"
       },
       "name" : "Environmental Monitoring",
       "description" : "Profile for environmental monitoring.",
@@ -3149,7 +3322,7 @@
       },
       "name" : "European Astronaut Centre NBL",
       "description" : "ESA's neutral buoyancy facility in Cologne, Germany",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility"
     },
     {
       "extension" : [{
@@ -3161,6 +3334,18 @@
       },
       "name" : "EVA Number",
       "description" : "Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/eva-suit-inventory-metric-cs"
+      },
+      "name" : "EVA Suit Inventory Metric Code System",
+      "description" : "Component codes for EVA suit inventory and readiness observations",
       "exampleBoolean" : false
     },
     {
@@ -3233,7 +3418,7 @@
       },
       "name" : "Example Astronaut",
       "description" : "Example astronaut for testing radiation tracking",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -3245,7 +3430,7 @@
       },
       "name" : "Example Dive Medical Clearance",
       "description" : "Example medical clearance for diving operations",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DiveMedicalClearance"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-medical-clearance"
     },
     {
       "extension" : [{
@@ -3257,7 +3442,7 @@
       },
       "name" : "Example Hyperbaric Chamber",
       "description" : "Example hyperbaric chamber facility",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber"
     },
     {
       "extension" : [{
@@ -3269,7 +3454,7 @@
       },
       "name" : "Example Neutral Buoyancy Training Session",
       "description" : "Example of a typical neutral buoyancy training session",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancySession"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-session"
     },
     {
       "extension" : [{
@@ -3281,7 +3466,7 @@
       },
       "name" : "Example Training Dive Profile",
       "description" : "Example dive profile from neutral buoyancy training",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-profile"
     },
     {
       "extension" : [{
@@ -3353,7 +3538,7 @@
       },
       "name" : "FDI Observation with All Components",
       "description" : "Flow Directionality Index observation with all five component measurements",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flow-directionality-index-observation"
     },
     {
       "extension" : [{
@@ -3409,7 +3594,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/GimbalContraindicatedConditions"
+        "reference" : "ValueSet/gimbal-contraindicated-conditions-vs"
       },
       "name" : "Gimbal Contraindications",
       "description" : "Contraindicated conditions for riding a multi-axis gimbal",
@@ -3421,11 +3606,26 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/GimbalScreening"
+        "reference" : "StructureDefinition/gimbal-screening"
       },
       "name" : "Gimbal Screening",
       "description" : "Screening protocol for Multi Axis Gimbal training device.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-017"
+      },
+      "name" : "Granola with blueberries",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -3489,6 +3689,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-002"
+      },
+      "name" : "Green tea",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
@@ -3497,7 +3712,7 @@
       },
       "name" : "Habitat Environmental Conditions - Sol 125",
       "description" : "Atmospheric monitoring inside Mars habitat on Sol 125",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-environmental-observation"
     },
     {
       "extension" : [{
@@ -3537,15 +3752,33 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Binary"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/heart-rate"
+        "reference" : "Binary/artemis-034"
       },
-      "name" : "Heart Rate",
-      "description" : "The number of heart beats in a minute.",
-      "exampleBoolean" : false
+      "name" : "Honey",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-031"
+      },
+      "name" : "Hot sauce",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -3721,7 +3954,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/HyperbaricTreatment"
+        "reference" : "StructureDefinition/hyperbaric-treatment"
       },
       "name" : "Hyperbaric Treatment",
       "description" : "Hyperbaric oxygen therapy or chamber treatment",
@@ -3761,7 +3994,7 @@
       },
       "name" : "IJV Flow During LBNP (FDI = 0.85)",
       "description" : "Internal jugular vein flow observation with FDI of 0.85 during LBNP at -30 mmHg",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/internal-jugular-vein-flow-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/internal-jugular-vein-flow-observation"
     },
     {
       "extension" : [{
@@ -3821,7 +4054,7 @@
       },
       "name" : "Immune Biomarker Panel - Pre-flight Baseline",
       "description" : "Pre-flight baseline immune biomarker panel for Artemis II crew member",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/immune-biomarker-panel"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/immune-biomarker-panel"
     },
     {
       "extension" : [{
@@ -3845,7 +4078,7 @@
       },
       "name" : "Insurance - Contract",
       "description" : "STUB - Space tourist insurance coverage.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-insurance-contract"
     },
     {
       "extension" : [{
@@ -3857,7 +4090,7 @@
       },
       "name" : "Insurance - Plan",
       "description" : "Space tourist insurance plan.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsurance"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-insurance"
     },
     {
       "extension" : [{
@@ -3946,6 +4179,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/isru-metrics-cs"
+      },
+      "name" : "ISRU Metrics",
+      "description" : "Measurement codes for in-situ resource utilization (ISRU) propellant production logs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -3965,7 +4210,7 @@
       },
       "name" : "ISRU Production Log - Sol 210",
       "description" : "Cumulative propellant production by Sol 210 (7 months operation)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-production-log"
     },
     {
       "extension" : [{
@@ -4001,7 +4246,7 @@
       },
       "name" : "ISS Anxiety Assessment - Pre-EVA",
       "description" : "Pre-EVA anxiety assessment with HRV biomarker showing elevated stress.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"
     },
     {
       "extension" : [{
@@ -4013,7 +4258,7 @@
       },
       "name" : "ISS Bright Light Therapy - Mission Week 8",
       "description" : "Scheduled bright light exposure to stabilize circadian rhythm and improve sleep quality.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity"
     },
     {
       "extension" : [{
@@ -4025,7 +4270,7 @@
       },
       "name" : "ISS CBT Session - Mission Week 12",
       "description" : "Telemedicine cognitive behavioral therapy session addressing mid-mission mood decline.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity"
     },
     {
       "extension" : [{
@@ -4037,7 +4282,7 @@
       },
       "name" : "ISS Cognitive Readiness - Post-Anomaly",
       "description" : "Cognitive readiness assessment following ammonia leak alarm (false positive).",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"
     },
     {
       "extension" : [{
@@ -4049,7 +4294,7 @@
       },
       "name" : "ISS Columbus Laboratory",
       "description" : "International Space Station European laboratory module",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4061,7 +4306,7 @@
       },
       "name" : "ISS Crew Debrief - Post-Anomaly",
       "description" : "Structured crew debrief following ammonia leak false alarm to process stress and restore team cohesion.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity"
     },
     {
       "extension" : [{
@@ -4085,7 +4330,7 @@
       },
       "name" : "ISS Cumulative Stress Burden - Mission Day 180 (End of Mission)",
       "description" : "End-of-mission cumulative stress burden showing sustained elevation despite countermeasures.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-stress-burden"
     },
     {
       "extension" : [{
@@ -4097,7 +4342,7 @@
       },
       "name" : "ISS Cumulative Stress Burden - Mission Day 90",
       "description" : "Third-quarter phenomenon stress accumulation with breakdown by emotional, cognitive, and social domains.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-stress-burden"
     },
     {
       "extension" : [{
@@ -4109,7 +4354,7 @@
       },
       "name" : "ISS Cupola Module",
       "description" : "International Space Station Cupola observation module",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4121,7 +4366,7 @@
       },
       "name" : "ISS Destiny Laboratory",
       "description" : "International Space Station US laboratory module",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4133,7 +4378,7 @@
       },
       "name" : "ISS Emergency Contingency Plan",
       "description" : "ISS crew contingency plan covering depressurization, fire, and toxic atmosphere scenarios",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/emergency-care-plan"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-care-plan"
     },
     {
       "extension" : [{
@@ -4145,7 +4390,7 @@
       },
       "name" : "ISS EVS Minutes per Week - Week 23 2025",
       "description" : "EVS minutes per week derived from ISS treadmill and ARED exercise sessions during Expedition 75, mission week 23.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-evs-minutes-per-week"
     },
     {
       "extension" : [{
@@ -4169,7 +4414,7 @@
       },
       "name" : "ISS Guided Meditation - Daily Practice",
       "description" : "Daily 15-minute guided meditation session for stress reduction and mood regulation.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity"
     },
     {
       "extension" : [{
@@ -4217,7 +4462,7 @@
       },
       "name" : "ISS Kibo Laboratory",
       "description" : "International Space Station Japanese laboratory module",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4229,7 +4474,7 @@
       },
       "name" : "ISS Mood Assessment - Mission Week 12",
       "description" : "Weekly mood and anxiety assessment with cortisol biomarker during mid-mission period.",
-      "exampleCanonical" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"
     },
     {
       "extension" : [{
@@ -4241,7 +4486,7 @@
       },
       "name" : "ISS Suit Redundancy Assessment",
       "description" : "Quarterly redundancy assessment for ISS EVA suit inventory",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/suit-redundancy-assessment"
     },
     {
       "extension" : [{
@@ -4265,7 +4510,7 @@
       },
       "name" : "ISS T2 Treadmill Run - Activity Type",
       "description" : "Activity-based measure indicating the type of ISS T2 treadmill running.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure"
     },
     {
       "extension" : [{
@@ -4277,7 +4522,7 @@
       },
       "name" : "ISS T2 Treadmill Run - Duration",
       "description" : "Activity-based measure capturing duration (minutes) of an ISS T2 treadmill session.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure"
     },
     {
       "extension" : [{
@@ -4289,7 +4534,7 @@
       },
       "name" : "ISS T2 Treadmill Run - Mean Heart Rate",
       "description" : "Mean heart rate during an ISS treadmill session.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure"
     },
     {
       "extension" : [{
@@ -4301,7 +4546,7 @@
       },
       "name" : "ISS T2 Treadmill Session - Activity Group",
       "description" : "Panel Observation representing a single 30-minute ISS T2 treadmill session.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-group"
     },
     {
       "extension" : [{
@@ -4313,7 +4558,7 @@
       },
       "name" : "ISS T2 Treadmill Session - Procedure",
       "description" : "Procedure resource representing a single ISS T2 treadmill session linked to PA artifacts and the SpaceExerciseActivityGroup panel.",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-session"
     },
     {
       "extension" : [{
@@ -4325,7 +4570,7 @@
       },
       "name" : "ISS Unity Node",
       "description" : "International Space Station Unity connecting node",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4337,7 +4582,7 @@
       },
       "name" : "ISS Zvezda Service Module",
       "description" : "International Space Station Russian service module with enhanced shielding",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4349,7 +4594,7 @@
       },
       "name" : "James Webb Space Telescope Location",
       "description" : "James Webb Space Telescope at Sun-Earth L2",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4397,7 +4642,7 @@
       },
       "name" : "LBNP Chamber Device",
       "description" : "Lower body negative pressure chamber with -50 mmHg capability for parabolic flight campaign",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-countermeasure-system"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lbnp-countermeasure-system"
     },
     {
       "extension" : [{
@@ -4433,7 +4678,22 @@
       },
       "name" : "LBNP Session at -30 mmHg During Microgravity",
       "description" : "LBNP procedure at -30 mmHg during microgravity phase of 87th ESA Parabolic Flight Campaign",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lower-body-negative-pressure-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-007"
+      },
+      "name" : "Lemonade",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -4469,7 +4729,7 @@
       },
       "name" : "Location - Artemis Space Camp",
       "description" : "Artemis space camp (Pending)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4529,7 +4789,7 @@
       },
       "name" : "Location - Gateway",
       "description" : "Lunar Gateway - outpost and transfer station in lunar orbit.  (Pending)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4589,7 +4849,7 @@
       },
       "name" : "Location - ISS",
       "description" : "International Space Station - football field sized orbital space station in low earth orbit (LEO)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4601,7 +4861,7 @@
       },
       "name" : "Location - Kennedy Space Center",
       "description" : "Kennedy Space Center, Florida",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4613,7 +4873,7 @@
       },
       "name" : "Location - Lab To Orbit",
       "description" : "Lab To Orbit - Colorado",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4625,7 +4885,7 @@
       },
       "name" : "Location - Legrange Point 2",
       "description" : "Legrange Point 2",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4649,7 +4909,7 @@
       },
       "name" : "Location - Lunar Village",
       "description" : "EU Lunar Village (Pending)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4673,7 +4933,7 @@
       },
       "name" : "Location - Mir",
       "description" : "Mir Space Station (Decomissioned)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4685,7 +4945,7 @@
       },
       "name" : "Location - Orbital Reef",
       "description" : "Orbital Reef Space Station",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4697,7 +4957,7 @@
       },
       "name" : "Location - Palace in the Sky",
       "description" : "Palace in the Sky (Taingong)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4721,7 +4981,7 @@
       },
       "name" : "Location - Space Lab",
       "description" : "Space Lab (Decomissioned)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4805,7 +5065,7 @@
       },
       "name" : "Low-Load BFRT Protocol",
       "description" : "Prescribed low-load BFRT protocol for lower extremity countermeasures",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-activity-definition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-activity-definition"
     },
     {
       "extension" : [{
@@ -4817,7 +5077,7 @@
       },
       "name" : "Lower Body BFRT Session",
       "description" : "Lower-body BFRT session at 30% 1RM with 80 mmHg occlusion pressure",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-procedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-procedure"
     },
     {
       "extension" : [{
@@ -4846,18 +5106,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/LunarDustToxicityValueSet"
-      },
-      "name" : "Lunar Dust Toxicity",
-      "description" : "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -4865,7 +5113,7 @@
       },
       "name" : "Lunar Gateway HALO Module",
       "description" : "Habitation and Logistics Outpost module of Lunar Gateway in NRHO",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-location"
     },
     {
       "extension" : [{
@@ -4877,7 +5125,7 @@
       },
       "name" : "Lunar Gateway HALO Module",
       "description" : "Lunar Gateway Habitation and Logistics Outpost",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4889,7 +5137,7 @@
       },
       "name" : "Lunar Gateway Power and Propulsion Element",
       "description" : "Lunar Gateway Power and Propulsion Element",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4901,7 +5149,7 @@
       },
       "name" : "Lunar South Pole Base",
       "description" : "Permanent lunar base near the South Pole",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4913,7 +5161,22 @@
       },
       "name" : "Lunar Telemedicine Terminal",
       "description" : "Integrated telemedicine terminal for Artemis lunar surface operations",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-device"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-021"
+      },
+      "name" : "Macaroni & cheese",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -4948,8 +5211,53 @@
         "reference" : "Location/Malapert-Massif-Landing-Site"
       },
       "name" : "Malapert Massif Landing Site",
-      "description" : "Artemis III landing site at Malapert Massif, lunar south pole region",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
+      "description" : "Artemis IV landing site at Malapert Massif, lunar south pole region",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-016"
+      },
+      "name" : "Mango salad",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-003"
+      },
+      "name" : "Mango-peach smoothie",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-027"
+      },
+      "name" : "Maple syrup",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -4961,7 +5269,7 @@
       },
       "name" : "Mars Ascent Vehicle",
       "description" : "Mars surface to orbit transport",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
     },
     {
       "extension" : [{
@@ -4973,7 +5281,7 @@
       },
       "name" : "Mars Base Alpha",
       "description" : "First permanent Mars surface base",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -4985,7 +5293,19 @@
       },
       "name" : "Mars Crew Member - Commander Chen",
       "description" : "Example Mars crew member (Commander Sarah Chen) with baseline health data",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/MarsCrewMember2"
+      },
+      "name" : "Mars Crew Member - Mission Specialist Okafor",
+      "description" : "Example Mars crew member (Mission Specialist Daniel Okafor), geologist and subject of the autonomous appendectomy encounter",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -5021,7 +5341,7 @@
       },
       "name" : "Mars Direct Mission Plan 2040",
       "description" : "Complete mission timeline for Mars Direct architecture mission",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-timeline-plan"
     },
     {
       "extension" : [{
@@ -5033,7 +5353,7 @@
       },
       "name" : "Mars EVA - Sol 147",
       "description" : "Surface EVA to collect geological samples at crater rim, duration 6.5 hours",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-eva-procedure"
     },
     {
       "extension" : [{
@@ -5057,7 +5377,7 @@
       },
       "name" : "Mars Lander Contamination Risk",
       "description" : "Forward contamination risk assessment for Mars lander mission",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-risk"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/microbial-contamination-risk"
     },
     {
       "extension" : [{
@@ -5080,7 +5400,7 @@
         "reference" : "CodeSystem/mars-landing-sites-cs"
       },
       "name" : "Mars Landing Sites (Candidate)",
-      "description" : "Candidate landing sites for human Mars missions with are\n\nographic coordinates and site characteristics",
+      "description" : "Candidate landing sites for human Mars missions with areographic coordinates and site characteristics",
       "exampleBoolean" : false
     },
     {
@@ -5089,7 +5409,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/mars-devices-certified-vs"
+        "reference" : "ValueSet/mars-certified-devices-vs"
       },
       "name" : "Mars Mission Devices - Certified",
       "description" : "Flight-qualified hardware for Mars missions",
@@ -5101,7 +5421,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/mars-devices-certified-cs"
+        "reference" : "CodeSystem/mars-certified-devices-cs"
       },
       "name" : "Mars Mission Devices - Certified",
       "description" : "Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)",
@@ -5113,7 +5433,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/mars-devices-prototype-vs"
+        "reference" : "ValueSet/mars-prototype-devices-vs"
       },
       "name" : "Mars Mission Devices - Prototype",
       "description" : "Developmental and test hardware for Mars missions",
@@ -5125,7 +5445,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/mars-devices-prototype-cs"
+        "reference" : "CodeSystem/mars-prototype-devices-cs"
       },
       "name" : "Mars Mission Devices - Prototype",
       "description" : "Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)",
@@ -5189,7 +5509,7 @@
       },
       "name" : "Mars Transit Vehicle",
       "description" : "Deep space transport for Mars missions",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
     },
     {
       "extension" : [{
@@ -5212,7 +5532,7 @@
         "reference" : "StructureDefinition/maximum-pressure"
       },
       "name" : "Maximum Operating Pressure",
-      "description" : "Maximum pressure the chamber can safely operate at",
+      "description" : "Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment",
       "exampleBoolean" : false
     },
     {
@@ -5489,7 +5809,7 @@
       },
       "name" : "Metabolomics Observation",
       "description" : "Untargeted metabolomics analysis of dried blood spot from ISS crew member",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/multi-omics-observation"
     },
     {
       "extension" : [{
@@ -5626,6 +5946,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/MissionPhaseToNASAMissionPhase"
+      },
+      "name" : "Mission Phase to NASA Mission Phase Timing",
+      "description" : "Maps the clinical mission phases in MissionPhaseCS to the coarser NASA medical-requirements timing phases in NASAMissionPhaseCS. Pre-flight maps to preflight activity, all in-space phases map to inflight, and both post-flight phases map to postflight.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -5653,10 +5985,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceRiskAssesment"
+        "reference" : "StructureDefinition/space-risk-assessment"
       },
       "name" : "Mission Risk Assessment",
-      "description" : "STUB - Risk assessment for space missions.",
+      "description" : "Risk assessment for space missions, covering mission-level, oncologic, musculoskeletal and other spaceflight risks.",
       "exampleBoolean" : false
     },
     {
@@ -5950,18 +6282,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MuscleStiffnessAndSpaceHealth"
-      },
-      "name" : "Muscle Stiffness",
-      "description" : "Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
       "reference" : {
@@ -6017,7 +6337,7 @@
       },
       "name" : "NASA Hyperbaric Facility",
       "description" : "NASA's hyperbaric chamber for diving medicine and space analog training",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -6197,7 +6517,7 @@
       },
       "name" : "NASA Neutral Buoyancy Laboratory",
       "description" : "NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility"
     },
     {
       "extension" : [{
@@ -6313,7 +6633,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/NeutralBuoyancyFacility"
+        "reference" : "StructureDefinition/neutral-buoyancy-facility"
       },
       "name" : "Neutral Buoyancy Facility",
       "description" : "Facility for underwater astronaut training",
@@ -6329,7 +6649,7 @@
       },
       "name" : "Neutral Buoyancy Facility Equipment",
       "description" : "Equipment used in neutral buoyancy training facility",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-equipment"
     },
     {
       "extension" : [{
@@ -6337,7 +6657,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/neutral-buoyancy-training-activities"
+        "reference" : "ValueSet/neutral-buoyancy-training-activities-vs"
       },
       "name" : "Neutral Buoyancy Training Activities",
       "description" : "Types of training activities conducted in neutral buoyancy environments",
@@ -6361,10 +6681,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/NeutralBuoyancySession"
+        "reference" : "StructureDefinition/neutral-buoyancy-session"
       },
       "name" : "Neutral Buoyancy Training Session",
-      "description" : "Training session in neutral buoyancy facility for EVA simulation",
+      "description" : "Training session in a neutral buoyancy facility for EVA simulation, including communication systems, safety protocols, regulatory compliance and environmental conditions",
       "exampleBoolean" : false
     },
     {
@@ -6394,6 +6714,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/NutritionProduct"
+      },
+      "name" : "Nutrition Product (logical model)",
+      "description" : "A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
@@ -6401,7 +6733,7 @@
       },
       "name" : "Observation - Environmental",
       "description" : "Environmental monitoring status report",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/EnvironmentalMonitoring"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/environmental-monitoring"
     },
     {
       "extension" : [{
@@ -6605,7 +6937,7 @@
       },
       "name" : "Org - Space Force",
       "description" : "Organization - US Space Force",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceOrg"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-org"
     },
     {
       "extension" : [{
@@ -6658,6 +6990,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/organ-dose-codes-vs"
+      },
+      "name" : "Organ-Specific Dose Codes",
+      "description" : "Codes for organ-specific radiation dose measurements (bone marrow, lens of eye, skin, CNS, thyroid, gonads, lung, GI tract, whole body).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -6677,30 +7021,6 @@
       },
       "name" : "Oxygen Delivery Capability",
       "description" : "Oxygen delivery capabilities of the chamber",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/oxygen-saturation-arterial-blood-pulseOx"
-      },
-      "name" : "Oxygen Saturation in Arterial Blood by Pulse Oximetry",
-      "description" : "A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood via pulse oximetry.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/oxygen-saturation-arterial-blood"
-      },
-      "name" : "Oxygen Saturation in Arterial blood, method not specified",
-      "description" : "A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood.",
       "exampleBoolean" : false
     },
     {
@@ -6749,7 +7069,7 @@
       },
       "name" : "Patient - Ambassador Sarek",
       "description" : "Patient - Ambassador Sarek",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6761,7 +7081,7 @@
       },
       "name" : "Patient - Catherine Janeway",
       "description" : "Patient - Catherine Janeway",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6773,7 +7093,7 @@
       },
       "name" : "Patient - James Kirk",
       "description" : "Patient - James Kirk",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6785,7 +7105,7 @@
       },
       "name" : "Patient - Red Shirt 1",
       "description" : "Patient - Red Shirt 1",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6797,7 +7117,7 @@
       },
       "name" : "Patient - Red Shirt 2",
       "description" : "Patient - Red Shirt 2",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6809,7 +7129,7 @@
       },
       "name" : "Patient - Space Construction 1",
       "description" : "Patient - Space Construction Engineer",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6821,7 +7141,7 @@
       },
       "name" : "Patient - Space Engineer",
       "description" : "Patient - Space Engineer",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6833,7 +7153,7 @@
       },
       "name" : "Patient - Space Miner 1",
       "description" : "Patient - Space Miner",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
     },
     {
       "extension" : [{
@@ -6861,6 +7181,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-029"
+      },
+      "name" : "Peanut butter",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
@@ -6881,7 +7216,22 @@
       },
       "name" : "Personalized Countermeasure Plan",
       "description" : "Individualized countermeasure plan based on metabolomics and genomics data",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/personalized-countermeasure-plan"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/personalized-countermeasure-plan"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-009"
+      },
+      "name" : "Pineapple drink",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -6929,7 +7279,7 @@
       },
       "name" : "Procedure - Bone Densitometry",
       "description" : "Bone densitometry scan",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
     },
     {
       "extension" : [{
@@ -6941,7 +7291,7 @@
       },
       "name" : "Procedure - Compression",
       "description" : "Atmospheric compression of vehicle compartment",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
     },
     {
       "extension" : [{
@@ -6953,7 +7303,7 @@
       },
       "name" : "Procedure - Decompression",
       "description" : "Decompression of vehicle compartment",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
     },
     {
       "extension" : [{
@@ -6965,7 +7315,7 @@
       },
       "name" : "Procedure - Eye Exam",
       "description" : "Eye exam",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
     },
     {
       "extension" : [{
@@ -6977,7 +7327,7 @@
       },
       "name" : "Procedure - Hearing Exam",
       "description" : "Hearing exam",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
     },
     {
       "extension" : [{
@@ -6989,7 +7339,7 @@
       },
       "name" : "Procedure - Ultrasound",
       "description" : "Ultrasound scan of the abdomen",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
     },
     {
       "extension" : [{
@@ -7001,7 +7351,7 @@
       },
       "name" : "Promethazine IM Rescue Dose",
       "description" : "Intramuscular promethazine 25mg for acute SMS rescue on flight day 2",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-administration"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-administration"
     },
     {
       "extension" : [{
@@ -7029,6 +7379,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-041"
+      },
+      "name" : "Pudding",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
@@ -7049,7 +7414,7 @@
       },
       "name" : "Quadriceps CSA Outcome",
       "description" : "Quadriceps cross-sectional area measurement after 8 weeks of BFRT",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-outcome-observation"
     },
     {
       "extension" : [{
@@ -7095,8 +7460,8 @@
       "reference" : {
         "reference" : "StructureDefinition/radiation-detector"
       },
-      "name" : "Radiation Detection Device (Fixed)",
-      "description" : "Fixed device profile for radiation monitoring in space with properly constrained properties",
+      "name" : "Radiation Detection Device",
+      "description" : "Device profile for personal and area radiation monitors used in spaceflight, with detector-property slices.",
       "exampleBoolean" : false
     },
     {
@@ -7126,6 +7491,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/space-radiation-summary-example"
+      },
+      "name" : "Radiation Exposure Summary, ISS Expedition 75 (example)",
+      "description" : "Increment radiation summary prepared by the flight surgeon from the daily and cumulative dose observations.",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-summary"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "RiskAssessment"
       }],
       "reference" : {
@@ -7133,7 +7510,7 @@
       },
       "name" : "Radiation Risk Assessment - Post Outbound Transit",
       "description" : "Cancer risk assessment after 6-month outbound transit to Mars",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-radiation-risk-assessment"
     },
     {
       "extension" : [{
@@ -7205,7 +7582,7 @@
       },
       "name" : "Rapid Depressurization Event",
       "description" : "Rapid depressurization event on ISS requiring emergency response",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-emergency-condition"
     },
     {
       "extension" : [{
@@ -7237,7 +7614,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/regulatory-standards"
+        "reference" : "ValueSet/regulatory-standards-vs"
       },
       "name" : "Regulatory Standards for Diving and Space Medicine",
       "description" : "Regulatory standards and compliance requirements",
@@ -7265,7 +7642,7 @@
       },
       "name" : "Remote-Guided POCUS Request",
       "description" : "Request for remote-guided point-of-care ultrasound from ISS CMO to ground radiologist",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-consult-request"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-consult-request"
     },
     {
       "extension" : [{
@@ -7282,18 +7659,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/respiratory-rate"
-      },
-      "name" : "Respiratory Rate",
-      "description" : "The measured number of breaths taken in a minute.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "RiskAssessment"
       }],
       "reference" : {
@@ -7301,7 +7666,7 @@
       },
       "name" : "Risk - Atmosphere",
       "description" : "Risk of flight running out of breathable atmosphere.  (i.e. suffocation)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
     },
     {
       "extension" : [{
@@ -7313,7 +7678,7 @@
       },
       "name" : "Risk - Calorie Ristrction",
       "description" : "Risk of calorie restriction among passengers. (i.e. starvation)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
     },
     {
       "extension" : [{
@@ -7325,7 +7690,7 @@
       },
       "name" : "Risk - Cancer",
       "description" : "Post-flight risk of cancer.  (i.e. cancer)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
     },
     {
       "extension" : [{
@@ -7337,7 +7702,7 @@
       },
       "name" : "Risk - Catastrophic Failure",
       "description" : "Risk of flight having a catastrophic engineering failure. (i.e. explotion)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
     },
     {
       "extension" : [{
@@ -7349,7 +7714,7 @@
       },
       "name" : "Risk - Contamination",
       "description" : "Risk assessment of microbial contamination. (i.e. mildew)",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
     },
     {
       "extension" : [{
@@ -7361,7 +7726,7 @@
       },
       "name" : "Risk - Mission",
       "description" : "Overall mission risk assessment for a space mission",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
     },
     {
       "extension" : [{
@@ -7433,7 +7798,7 @@
       },
       "name" : "SCUBA Diving Equipment",
       "description" : "Self-contained underwater breathing apparatus",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-equipment"
     },
     {
       "extension" : [{
@@ -7457,7 +7822,7 @@
       },
       "name" : "Shackleton Crater Base",
       "description" : "Research station at Shackleton Crater rim",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -7469,6 +7834,30 @@
       },
       "name" : "Shelf Life Decay",
       "description" : "Degradation of nutritional value over time in space conditions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/shielding-condition-vs"
+      },
+      "name" : "Shielding Condition",
+      "description" : "Shielding conditions for radiation exposure observations",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/shielding-condition-cs"
+      },
+      "name" : "Shielding Condition",
+      "description" : "Qualitative radiation shielding condition of the crew at the time of a radiation exposure measurement",
       "exampleBoolean" : false
     },
     {
@@ -7510,30 +7899,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SleepLossHypoxiaEffect"
-      },
-      "name" : "Sleep Loss and Hypoxia Effects",
-      "description" : "Concepts related to the physiological and cognitive effects of sleep loss and hypoxia.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SleepLossHypoxiaResponses"
-      },
-      "name" : "Sleep Loss and Hypoxia Responses",
-      "description" : "Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CarePlan"
       }],
       "reference" : {
@@ -7541,7 +7906,7 @@
       },
       "name" : "SMS Prophylaxis Protocol",
       "description" : "Antiemetic care plan for SMS prophylaxis covering pre-flight through post-flight phases",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-care-plan"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-care-plan"
     },
     {
       "extension" : [{
@@ -7553,7 +7918,7 @@
       },
       "name" : "Soyuz MS Spacecraft",
       "description" : "Russian Soyuz MS crew vehicle",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
     },
     {
       "extension" : [{
@@ -7666,30 +8031,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-cardiovascular-effects"
-      },
-      "name" : "Space Cardiovascular Effects",
-      "description" : "Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/space-cardiovascular-effects-cs"
-      },
-      "name" : "Space Cardiovascular Effects",
-      "description" : "CodeSystem for space cardiovascular effects not found in SNOMED CT",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -7769,30 +8110,6 @@
       },
       "name" : "Space Emergency Type Value Set",
       "description" : "Types of spaceflight emergency situations",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-environmental-factors"
-      },
-      "name" : "Space Environmental Factors",
-      "description" : "Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/space-environmental-factors-cs"
-      },
-      "name" : "Space Environmental Factors",
-      "description" : "CodeSystem for space environmental factors not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -7897,7 +8214,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceCondition"
+        "reference" : "StructureDefinition/space-condition"
       },
       "name" : "Space Health Condition",
       "description" : "Health conditions specific to outerspace environment.",
@@ -7909,10 +8226,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceProcedure"
+        "reference" : "StructureDefinition/space-procedure"
       },
       "name" : "Space Health Procedure",
-      "description" : "STUB - Health procedures specific to outerspace environment.",
+      "description" : "Health procedures performed in the spaceflight environment. Constrains Procedure for use with astronaut and analog-crew records.",
       "exampleBoolean" : false
     },
     {
@@ -7921,7 +8238,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceInsurance"
+        "reference" : "StructureDefinition/space-insurance"
       },
       "name" : "Space insurance",
       "description" : "STUB - Insurance plan for space travel",
@@ -7933,7 +8250,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceInsuranceContract"
+        "reference" : "StructureDefinition/space-insurance-contract"
       },
       "name" : "Space Insurance Contract",
       "description" : "STUB - Specialized contract coverage for space travel",
@@ -7961,30 +8278,6 @@
       },
       "name" : "Space Molecular Sequence",
       "description" : "Molecular sequence data from astronaut genomic, transcriptomic, or proteomic analysis",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-monitoring-procedures"
-      },
-      "name" : "Space Monitoring Procedures",
-      "description" : "Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/space-monitoring-procedures-cs"
-      },
-      "name" : "Space Monitoring Procedures",
-      "description" : "CodeSystem for space monitoring procedures not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -8021,7 +8314,7 @@
       },
       "name" : "Space Motion Sickness Episode - Flight Day 2",
       "description" : "Moderate SMS episode on flight day 2 during ISS expedition",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-motion-sickness-condition"
     },
     {
       "extension" : [{
@@ -8033,30 +8326,6 @@
       },
       "name" : "Space Motion Sickness Value Set",
       "description" : "Types of motion sickness in spaceflight",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-neurological-effects"
-      },
-      "name" : "Space Neurological Effects",
-      "description" : "Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/space-neurological-effects-cs"
-      },
-      "name" : "Space Neurological Effects",
-      "description" : "CodeSystem for space neurological effects not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -8149,34 +8418,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceOrg"
+        "reference" : "StructureDefinition/space-org"
       },
       "name" : "Space Organization",
       "description" : "STUB - Organizations involved with astronautics and space travel.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-physiological-effects"
-      },
-      "name" : "Space Physiological Effects",
-      "description" : "Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/space-physiological-effects-cs"
-      },
-      "name" : "Space Physiological Effects",
-      "description" : "CodeSystem for space physiological effects not found in SNOMED CT",
       "exampleBoolean" : false
     },
     {
@@ -8221,22 +8466,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/space-preventive-health-cs"
+        "reference" : "CodeSystem/space-procedure-cs"
       },
-      "name" : "Space Preventive Health",
-      "description" : "CodeSystem for space preventive health concepts not found in SNOMED CT",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-psychological-effects"
-      },
-      "name" : "Space Psychological Effects",
-      "description" : "Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression",
+      "name" : "Space Procedure Code System",
+      "description" : "Operational procedures performed in spaceflight that have no SNOMED CT equivalent",
       "exampleBoolean" : false
     },
     {
@@ -8245,10 +8478,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/space-psychological-effects-cs"
+        "reference" : "CodeSystem/space-radiation-cs"
       },
-      "name" : "Space Psychological Effects",
-      "description" : "CodeSystem for space psychological effects not found in SNOMED CT",
+      "name" : "Space Radiation Code System",
+      "description" : "Measurement, dose-accumulation, organ-dose, detector-property and reporting concepts used by the space radiation profiles. Radiation types are in SpaceRadiationTypeCS; detector hardware types are in RadiationDetectorTypeCS.",
       "exampleBoolean" : false
     },
     {
@@ -8257,10 +8490,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/space-radiation-effects"
+        "reference" : "ValueSet/space-radiation-dose-codes-vs"
       },
-      "name" : "Space Radiation Effects",
-      "description" : "Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries",
+      "name" : "Space Radiation Dose Measurement Codes",
+      "description" : "Codes for radiation dose measurements in space environments: LOINC total-dose and dose-rate codes plus source-specific dose codes from the Space Radiation Code System.",
       "exampleBoolean" : false
     },
     {
@@ -8271,8 +8504,8 @@
       "reference" : {
         "reference" : "StructureDefinition/space-radiation-exposure"
       },
-      "name" : "Space Radiation Exposure (Fixed)",
-      "description" : "Corrected radiation dose measurement for space missions with proper extension contexts",
+      "name" : "Space Radiation Exposure",
+      "description" : "Radiation dose measurement for a crew member during a space mission, with mission context, radiation type, shielding and countermeasure extensions and detailed dosimetry components.",
       "exampleBoolean" : false
     },
     {
@@ -8283,20 +8516,8 @@
       "reference" : {
         "reference" : "StructureDefinition/space-radiation-summary"
       },
-      "name" : "Space Radiation Exposure Summary (Fixed)",
-      "description" : "Comprehensive radiation dose summary with proper mission context",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SpaceRadiationRisksVS"
-      },
-      "name" : "Space Radiation Risks ValueSet",
-      "description" : "Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.",
+      "name" : "Space Radiation Exposure Summary",
+      "description" : "Diagnostic report summarizing a crew member's radiation exposure over a mission or reporting period.",
       "exampleBoolean" : false
     },
     {
@@ -8470,37 +8691,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/space-treatment-procedures-cs"
-      },
-      "name" : "Space Treatment Procedures",
-      "description" : "CodeSystem for space treatment procedures not found in SNOMED CT",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceVehicle"
+        "reference" : "StructureDefinition/space-vehicle"
       },
       "name" : "Space Vehicle",
       "description" : "STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/space-visual-effects"
-      },
-      "name" : "Space Visual Effects",
-      "description" : "Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes",
       "exampleBoolean" : false
     },
     {
@@ -8589,6 +8786,36 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-020"
+      },
+      "name" : "Spicy green beans",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-032"
+      },
+      "name" : "Spicy mustard",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
@@ -8597,7 +8824,7 @@
       },
       "name" : "Standard Measures Grip Strength - Pre-flight",
       "description" : "NASA Standard Measures grip strength assessment at L-30 days",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/standard-measures-observation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/standard-measures-observation"
     },
     {
       "extension" : [{
@@ -8605,10 +8832,10 @@
         "valueString" : "Device"
       }],
       "reference" : {
-        "reference" : "Device/Starship-HLS-Artemis-III"
+        "reference" : "Device/Starship-HLS-Artemis-IV"
       },
-      "name" : "Starship HLS for Artemis III",
-      "description" : "SpaceX Starship Human Landing System variant for Artemis III lunar landing",
+      "name" : "Starship HLS for Artemis IV",
+      "description" : "SpaceX Starship Human Landing System variant for Artemis IV lunar landing",
       "exampleBoolean" : true
     },
     {
@@ -8657,19 +8884,37 @@
       },
       "name" : "Store-and-Forward Telemedicine Encounter",
       "description" : "Store-and-forward dermatology consultation from ISS to ground",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-encounter"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-encounter"
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Binary"
       }],
       "reference" : {
-        "reference" : "ValueSet/SpaceflightStressFactors"
+        "reference" : "Binary/artemis-006"
       },
-      "name" : "Stress and Physiological Factors",
-      "description" : "Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.",
-      "exampleBoolean" : false
+      "name" : "Strawberry breakfast drink",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-033"
+      },
+      "name" : "Strawberry jam",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -8741,7 +8986,7 @@
       },
       "name" : "Sun-Earth L1 Observatory",
       "description" : "Space weather monitoring station at L1",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/SpaceLocation"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-location"
     },
     {
       "extension" : [{
@@ -8753,7 +8998,7 @@
       },
       "name" : "Surface Swab CFU Assay",
       "description" : "Surface swab colony-forming unit assay of Mars lander deck panel",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/microbial-viability-assay"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/microbial-viability-assay"
     },
     {
       "extension" : [{
@@ -8901,6 +9146,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-011"
+      },
+      "name" : "Tortillas",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
@@ -8960,6 +9220,21 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-022"
+      },
+      "name" : "Tropical fruit salad",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Location"
       }],
@@ -8969,18 +9244,6 @@
       "name" : "TsPK Centrifuge Complex",
       "description" : "Russian cosmonaut centrifuge training facility",
       "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/twenty-four-hour-blood-pressure"
-      },
-      "name" : "Twenty Four Hour Blood Pressure",
-      "description" : "An average blood pressure (systolic and diastolic) over a twenty four hour period.",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -9024,7 +9287,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/underwater-communication-systems"
+        "reference" : "ValueSet/underwater-communication-systems-vs"
       },
       "name" : "Underwater Communication Systems",
       "description" : "Communication systems used in underwater training operations",
@@ -9060,7 +9323,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/UnderwaterEVASimulation"
+        "reference" : "StructureDefinition/underwater-eva-simulation"
       },
       "name" : "Underwater EVA Simulation",
       "description" : "Extravehicular activity simulation conducted underwater",
@@ -9072,7 +9335,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/underwater-training-procedures"
+        "reference" : "ValueSet/underwater-training-procedures-vs"
       },
       "name" : "Underwater Training Procedures",
       "description" : "Procedures and activities conducted during underwater training",
@@ -9100,7 +9363,7 @@
       },
       "name" : "Urinary Retention After Promethazine",
       "description" : "Urinary retention adverse event 4 hours after promethazine IM administration",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-adverse-event"
     },
     {
       "extension" : [{
@@ -9113,6 +9376,48 @@
       "name" : "UTMB Aerospace Medicine Research",
       "description" : "University of Texas Medical Branch aerospace medicine program",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-005"
+      },
+      "name" : "Vanilla breakfast drink",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-013"
+      },
+      "name" : "Vegetable quiche",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/venous-flow-metric-cs"
+      },
+      "name" : "Venous Flow Metric Code System",
+      "description" : "Component codes for internal jugular vein flow directionality measurements",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -9129,18 +9434,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/vital-signs-panel"
-      },
-      "name" : "Vital Signs Panel",
-      "description" : "A vital signs panel as defined by Logica Health.  It includes Oxygen Saturation via Pulse Oximetry, Oxygen Saturation in Arterial blood, body height, body length, body weight, body temperature, blood pressure panel, heart rate, respiratory rate, head-occcipital/frontal circumference, oxygen saturation via pulse oximetry, and body mass index.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -9149,6 +9442,21 @@
       "name" : "Water Volume Units",
       "description" : "Units for measuring water volume",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/artemis-012"
+      },
+      "name" : "Wheat flat bread",
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct"
     },
     {
       "extension" : [{
@@ -9171,7 +9479,7 @@
         "reference" : "Device/xEMU-Suit-001"
       },
       "name" : "xEMU EVA Suit #001",
-      "description" : "First xEMU suit certified for Artemis III lunar surface EVAs",
+      "description" : "First xEMU suit certified for Artemis IV lunar surface EVAs",
       "exampleBoolean" : true
     },
     {
@@ -9184,7 +9492,7 @@
       },
       "name" : "xEVAS Lunar Suit Definition",
       "description" : "Axiom Space xEVAS suit definition for Artemis lunar surface operations",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition"
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/xevas-suit-definition"
     },
     {
       "extension" : [{
@@ -9204,7 +9512,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SpaceLocation"
+        "reference" : "StructureDefinition/space-location"
       },
       "name" : "xGeo Locations",
       "description" : "STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat.",
@@ -9220,18 +9528,7 @@
       },
       "name" : "Yuri Gagarin Cosmonaut Training Center",
       "description" : "Russian cosmonaut training facility with underwater training capabilities",
-      "exampleCanonical" : "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resourcedefn"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NutritionProduct"
-      },
-      "name" : "Nutrition Product",
-      "description" : "A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide."
+      "exampleCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility"
     }],
     "page" : {
       "extension" : [{
@@ -9253,15 +9550,6 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "scenarios.html"
-        }],
-        "nameUrl" : "scenarios.html",
-        "title" : "Scenarios",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "references.html"
         }],
         "nameUrl" : "references.html",
@@ -9274,7 +9562,7 @@
           "valueUrl" : "eclss.html"
         }],
         "nameUrl" : "eclss.html",
-        "title" : "Environmental Control and Life Support Systems (ECLSS)",
+        "title" : "Life Support Systems (ECLSS) Telemetry",
         "generation" : "markdown"
       },
       {
@@ -9427,7 +9715,7 @@
           "valueUrl" : "crew-rescue.html"
         }],
         "nameUrl" : "crew-rescue.html",
-        "title" : "Crew Rescue",
+        "title" : "Crew Evacuation and Emergency Response",
         "generation" : "markdown"
       },
       {

@@ -1,4 +1,4 @@
-# MRID Sponsor - v0.6.2
+# MRID Sponsor - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MRIDSponsor |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-sponsor | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MRIDSponsor |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 The NASA organizational sponsor responsible for the medical requirement
 
@@ -43,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-mrid-sponsor.csv), [
 {
   "resourceType" : "StructureDefinition",
   "id" : "mrid-sponsor",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-sponsor",
+  "version" : "0.7.0",
   "name" : "MRIDSponsor",
   "title" : "MRID Sponsor",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -62,6 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-sponsor.csv), [
     }
   ],
   "description" : "The NASA organizational sponsor responsible for the medical requirement",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -97,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-sponsor.csv), [
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-sponsor"
       },
       {
         "id" : "Extension.value[x]",
@@ -109,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-sponsor.csv), [
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-sponsor-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mrid-sponsor-vs"
         }
       }
     ]

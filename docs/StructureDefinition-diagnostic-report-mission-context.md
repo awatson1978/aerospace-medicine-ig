@@ -1,4 +1,4 @@
-# Mission Context for Diagnostic Reports - v0.6.2
+# Mission Context for Diagnostic Reports - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:DiagnosticReportMissionContext |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:DiagnosticReportMissionContext |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Links diagnostic reports to specific space missions
 
@@ -19,8 +20,8 @@ Links diagnostic reports to specific space missions
 
 **Usages:**
 
-* Use this Extension: [Metabolic Risk Summary](StructureDefinition-metabolic-risk-summary.md), [Space CGM Summary Report](StructureDefinition-space-cgm-summary.md), [Space Point-of-Care Ultrasound (POCUS)](StructureDefinition-space-pocus.md) and [Space Radiation Exposure Summary (Fixed)](StructureDefinition-space-radiation-summary.md)
-* Examples for this Extension: [DiagnosticReport/CGM-Summary-14Day](DiagnosticReport-CGM-Summary-14Day.md)
+* Use this Extension: [Metabolic Risk Summary](StructureDefinition-metabolic-risk-summary.md), [Space CGM Summary Report](StructureDefinition-space-cgm-summary.md), [Space Point-of-Care Ultrasound (POCUS)](StructureDefinition-space-pocus.md) and [Space Radiation Exposure Summary](StructureDefinition-space-radiation-summary.md)
+* Examples for this Extension: [DiagnosticReport/CGM-Summary-14Day](DiagnosticReport-CGM-Summary-14Day.md) and [DiagnosticReport/space-radiation-summary-example](DiagnosticReport-space-radiation-summary-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/diagnostic-report-mission-context)
 
@@ -42,12 +43,12 @@ Other representations of profile: [CSV](StructureDefinition-diagnostic-report-mi
 {
   "resourceType" : "StructureDefinition",
   "id" : "diagnostic-report-mission-context",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context",
+  "version" : "0.7.0",
   "name" : "DiagnosticReportMissionContext",
   "title" : "Mission Context for Diagnostic Reports",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -61,6 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-diagnostic-report-mi
     }
   ],
   "description" : "Links diagnostic reports to specific space missions",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -96,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-diagnostic-report-mi
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context"
       },
       {
         "id" : "Extension.value[x]",

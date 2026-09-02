@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "aerospace-observation-category-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem aerospace-observation-category-cs</b></p><a name=\"aerospace-observation-category-cs\"> </a><a name=\"hcaerospace-observation-category-cs\"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">operational<a name=\"aerospace-observation-category-cs-operational\"> </a></td><td>Operational</td><td>Observations about the operational state or output of mission systems (ISRU plants, power units, vehicles)</td></tr><tr><td style=\"white-space:nowrap\">environmental<a name=\"aerospace-observation-category-cs-environmental\"> </a></td><td>Environmental</td><td>Observations of the physical environment inside a habitat, vehicle, or suit (pressure, gas composition, temperature, humidity, dust)</td></tr><tr><td style=\"white-space:nowrap\">life-support<a name=\"aerospace-observation-category-cs-life-support\"> </a></td><td>Life Support</td><td>Observations about environmental control and life support system (ECLSS) performance and consumables</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "AerospaceObservationCategoryCS"] ; # 
+  fhir:title [ fhir:v "Aerospace Observation Category"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Observation categories for spacecraft and habitat telemetry that are not covered by the HL7 observation-category code system (operational, environmental, life-support)"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "operational" ] ;
+     fhir:display [ fhir:v "Operational" ] ;
+     fhir:definition [ fhir:v "Observations about the operational state or output of mission systems (ISRU plants, power units, vehicles)" ]
+  ] [
+     fhir:code [ fhir:v "environmental" ] ;
+     fhir:display [ fhir:v "Environmental" ] ;
+     fhir:definition [ fhir:v "Observations of the physical environment inside a habitat, vehicle, or suit (pressure, gas composition, temperature, humidity, dust)" ]
+  ] [
+     fhir:code [ fhir:v "life-support" ] ;
+     fhir:display [ fhir:v "Life Support" ] ;
+     fhir:definition [ fhir:v "Observations about environmental control and life support system (ECLSS) performance and consumables" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

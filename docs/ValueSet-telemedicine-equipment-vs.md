@@ -1,15 +1,16 @@
-# Telemedicine Equipment Value Set - v0.6.2
+# Telemedicine Equipment Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Telemedicine Equipment Value Set**
 
-## ValueSet: Telemedicine Equipment Value Set 
+## ValueSet: Telemedicine Equipment Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/telemedicine-equipment-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:TelemedicineEquipmentVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-equipment-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:TelemedicineEquipmentVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Telemedicine equipment types 
@@ -45,13 +46,13 @@ Telemedicine equipment types
 {
   "resourceType" : "ValueSet",
   "id" : "telemedicine-equipment-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/telemedicine-equipment-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-equipment-vs",
+  "version" : "0.7.0",
   "name" : "TelemedicineEquipmentVS",
   "title" : "Telemedicine Equipment Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Telemedicine equipment types
     }
   ],
   "description" : "Telemedicine equipment types",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-equipment-cs"
       }
     ]
   }

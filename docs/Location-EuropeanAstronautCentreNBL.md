@@ -1,4 +1,4 @@
-# European Astronaut Centre NBL - v0.6.2
+# European Astronaut Centre NBL - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,9 @@
 
 ## Example Location: European Astronaut Centre NBL
 
-Profile: [Neutral Buoyancy Facility](StructureDefinition-NeutralBuoyancyFacility.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
+
+Profile: [Neutral Buoyancy Facility](StructureDefinition-neutral-buoyancy-facility.md)
 
 **name**: European Astronaut Centre NBL
 
@@ -23,8 +25,9 @@ Profile: [Neutral Buoyancy Facility](StructureDefinition-NeutralBuoyancyFacility
   "resourceType" : "Location",
   "id" : "EuropeanAstronautCentreNBL",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility"
     ]
   },
   "name" : "European Astronaut Centre NBL",

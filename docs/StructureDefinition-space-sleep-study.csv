@@ -25,15 +25,15 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:missionContext","Observation.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"Observation.extension:missionContext","Observation.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:flightDay","Observation.extension","flightDay","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/flight-day]]} {[]}
+"Observation.extension:flightDay","Observation.extension","flightDay","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day]]} {[]}
 ","Flight Day","Flight day number relative to launch. Positive values indicate flight days (FD+N), negative values indicate return days (R+N)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Observation.extension:gravityContext","Observation.extension","gravityContext","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/gravity-context]]} {[]}
+"Observation.extension:gravityContext","Observation.extension","gravityContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context]]} {[]}
 ","Gravity Context","Gravitational environment in which the observation, condition, or procedure occurred","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -70,7 +70,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]","116680003 |Is a|"
-"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+"Observation.subject","Observation.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Who and/or what the observation is about","The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.","One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.","Observations have no value if you don't know who or what they're about.","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3","participation[typeCode=RTGT]","FiveWs.subject[x]","FiveWs.subject"
 "Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}
@@ -215,7 +215,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:totalSleepTime.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""total-sleep-time""/>
     <display value=""Total Sleep Time (TST)""/>
   </coding>
@@ -278,7 +278,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:sleepEfficiency.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""sleep-efficiency""/>
     <display value=""Sleep Efficiency""/>
   </coding>
@@ -341,7 +341,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:sleepOnsetLatency.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""sleep-onset-latency""/>
     <display value=""Sleep Onset Latency (SOL)""/>
   </coding>
@@ -404,7 +404,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:waso.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""waso""/>
     <display value=""Wake After Sleep Onset (WASO)""/>
   </coding>
@@ -467,7 +467,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:remLatency.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""rem-latency""/>
     <display value=""REM Latency""/>
   </coding>
@@ -530,7 +530,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:n1Pct.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""n1-pct""/>
     <display value=""N1 Sleep Percentage""/>
   </coding>
@@ -593,7 +593,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:n2Pct.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""n2-pct""/>
     <display value=""N2 Sleep Percentage""/>
   </coding>
@@ -656,7 +656,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:n3Pct.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""n3-pct""/>
     <display value=""N3/SWS Sleep Percentage""/>
   </coding>
@@ -719,7 +719,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:remPct.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs""/>
     <code value=""rem-pct""/>
     <display value=""REM Sleep Percentage""/>
   </coding>

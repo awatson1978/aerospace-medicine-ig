@@ -1,4 +1,4 @@
-# Flow Directionality Index Observation - v0.6.2
+# Flow Directionality Index Observation - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:FlowDirectionalityIndexObservation |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flow-directionality-index-observation | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:FlowDirectionalityIndexObservation |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 FDI calculation with component times: FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total). Range [-1, 1]. 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
 {
   "resourceType" : "StructureDefinition",
   "id" : "flow-directionality-index-observation",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flow-directionality-index-observation",
+  "version" : "0.7.0",
   "name" : "FlowDirectionalityIndexObservation",
   "title" : "Flow Directionality Index Observation",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
     }
   ],
   "description" : "FDI calculation with component times: FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total). Range [-1, 1].",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -155,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -186,7 +188,7 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -255,17 +257,12 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "LP6960-1",
-              "display" : "Time"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+              "code" : "forward-flow-time",
+              "display" : "Forward Flow Time"
             }
           ]
         }
-      },
-      {
-        "id" : "Observation.component:forwardFlowTime.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Forward Flow Time"
       },
       {
         "id" : "Observation.component:forwardFlowTime.value[x]",
@@ -301,17 +298,12 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "LP6960-1",
-              "display" : "Time"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+              "code" : "retrograde-flow-time",
+              "display" : "Retrograde Flow Time"
             }
           ]
         }
-      },
-      {
-        "id" : "Observation.component:retrogradeFlowTime.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Retrograde Flow Time"
       },
       {
         "id" : "Observation.component:retrogradeFlowTime.value[x]",
@@ -347,17 +339,12 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "LP6960-1",
-              "display" : "Time"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+              "code" : "zero-flow-time",
+              "display" : "Zero Flow Time"
             }
           ]
         }
-      },
-      {
-        "id" : "Observation.component:zeroFlowTime.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Zero Flow Time"
       },
       {
         "id" : "Observation.component:zeroFlowTime.value[x]",
@@ -393,17 +380,12 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "LP6960-1",
-              "display" : "Time"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+              "code" : "total-sample-time",
+              "display" : "Total Sample Time"
             }
           ]
         }
-      },
-      {
-        "id" : "Observation.component:totalSampleTime.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Total Sample Time"
       },
       {
         "id" : "Observation.component:totalSampleTime.value[x]",
@@ -439,17 +421,12 @@ Other representations of profile: [CSV](StructureDefinition-flow-directionality-
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://loinc.org",
-              "code" : "LP74840-2",
-              "display" : "Flow velocity"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+              "code" : "fdi-ratio",
+              "display" : "FDI Ratio"
             }
           ]
         }
-      },
-      {
-        "id" : "Observation.component:fdiRatio.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "FDI Ratio"
       },
       {
         "id" : "Observation.component:fdiRatio.value[x]",

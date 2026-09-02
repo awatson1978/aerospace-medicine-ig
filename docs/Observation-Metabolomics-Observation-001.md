@@ -1,4 +1,4 @@
-# Metabolomics Observation - v0.6.2
+# Metabolomics Observation - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: Metabolomics Observation
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Multi-Omics Observation](StructureDefinition-multi-omics-observation.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Phase**: Orbital Operations
 
@@ -16,7 +20,7 @@ Profile: [Multi-Omics Observation](StructureDefinition-multi-omics-observation.m
 
 **code**: Metabolomics
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-04-22 10:00:00+0000
 
@@ -37,17 +41,25 @@ Profile: [Multi-Omics Observation](StructureDefinition-multi-omics-observation.m
   "resourceType" : "Observation",
   "id" : "Metabolomics-Observation-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/multi-omics-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "orbital-ops",
             "display" : "Orbital Operations"
           }
@@ -55,7 +67,7 @@ Profile: [Multi-Omics Observation](StructureDefinition-multi-omics-observation.m
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day",
       "valueInteger" : 35
     }
   ],
@@ -63,7 +75,7 @@ Profile: [Multi-Omics Observation](StructureDefinition-multi-omics-observation.m
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-omics-type-cs",
         "code" : "metabolomics",
         "display" : "Metabolomics"
       }

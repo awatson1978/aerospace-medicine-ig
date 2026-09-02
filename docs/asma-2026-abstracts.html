@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>AsMA 2026 Abstracts -  v0.6.2</title>
+    <title>AsMA 2026 Abstracts - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"19"}
-    h3,h4,h5,h6{--heading-prefix:"19"}</style>
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>AsMA 2026 Abstracts</h2>
   
 
@@ -260,102 +260,121 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#asma-2026-abstracts---fhir-mapping" id="markdown-toc-asma-2026-abstracts---fhir-mapping">AsMA 2026 Abstracts - FHIR Mapping</a></li>
+  <li><a href="#abstract-to-profile-mapping" id="markdown-toc-abstract-to-profile-mapping">Abstract-to-Profile Mapping</a></li>
+  <li><a href="#clinical-domain-coverage" id="markdown-toc-clinical-domain-coverage">Clinical Domain Coverage</a></li>
+  <li><a href="#shared-infrastructure" id="markdown-toc-shared-infrastructure">Shared Infrastructure</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h3 id="asma-2026-abstracts---fhir-mapping">AsMA 2026 Abstracts - FHIR Mapping</h3>
+<p>The Aerospace Medical Association (AsMA) 97th Annual Scientific Meeting (May 2026) included an interactive poster session of roughly 120 abstracts covering spaceflight medicine research. This page summarizes how key abstracts map to FHIR artifacts in this Implementation Guide. Poster numbers are those used in the session programme; the numbered references at the end of the page give the authors and titles.</p>
 
-<p>The Aerospace Medical Association (AsMA) 2026 Interactive Poster Session produced approximately 120 abstracts covering spaceflight medicine research. This page summarizes how key abstracts map to FHIR artifacts in this Implementation Guide.</p>
+<h3 id="abstract-to-profile-mapping">Abstract-to-Profile Mapping</h3>
 
-<h4 id="abstract-to-profile-mapping">Abstract-to-Profile Mapping</h4>
+<p>The table below lists each poster, its topic, and the profile or profiles in this guide that would carry its data. Reference numbers link to the citations at the end of the page.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Abstract</th>
+      <th>Ref.</th>
+      <th>Poster</th>
       <th>Topic</th>
       <th>FHIR Profiles</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td>[1]</td>
       <td>47</td>
       <td>Cardiac arrhythmia risk</td>
       <td><a href="StructureDefinition-space-ecg-observation.html">SpaceECGObservation</a></td>
     </tr>
     <tr>
+      <td>[2]</td>
       <td>49</td>
       <td>Ultrasound joint health</td>
       <td><a href="StructureDefinition-space-joint-health-assessment.html">SpaceJointHealthAssessment</a></td>
     </tr>
     <tr>
+      <td>[3]</td>
       <td>50</td>
       <td>N-Acetylcysteine radioprotection</td>
       <td><a href="StructureDefinition-radioprotective-medication.html">RadioprotectiveMedication</a>, <a href="StructureDefinition-antioxidant-biomarker-panel.html">AntioxidantBiomarkerPanel</a></td>
     </tr>
     <tr>
+      <td>[4]</td>
       <td>51</td>
       <td>Oral body temperature</td>
       <td><a href="StructureDefinition-space-body-temperature.html">SpaceBodyTemperature</a></td>
     </tr>
     <tr>
+      <td>[5]</td>
       <td>52</td>
       <td>CGM in spaceflight</td>
       <td><a href="StructureDefinition-space-cgm-device.html">SpaceCGMDevice</a>, <a href="StructureDefinition-space-cgm-observation.html">SpaceCGMObservation</a></td>
     </tr>
     <tr>
+      <td>[6]</td>
       <td>53</td>
       <td>Torpor and sleep</td>
       <td><a href="StructureDefinition-space-sleep-study.html">SpaceSleepStudy</a>, <a href="StructureDefinition-circadian-rhythm-assessment.html">CircadianRhythmAssessment</a></td>
     </tr>
     <tr>
+      <td>[7]</td>
       <td>54</td>
       <td>RBC rehydration</td>
       <td><a href="StructureDefinition-space-blood-product.html">SpaceBloodProduct</a>, <a href="StructureDefinition-space-transfusion-procedure.html">SpaceTransfusionProcedure</a></td>
     </tr>
     <tr>
+      <td>[8]</td>
       <td>57</td>
       <td>Austere blood banking</td>
       <td><a href="StructureDefinition-space-blood-product.html">SpaceBloodProduct</a></td>
     </tr>
     <tr>
+      <td>[9]</td>
       <td>68</td>
       <td>UWF OCT-A for SANS</td>
       <td><a href="StructureDefinition-sans-assessment.html">SANSAssessment</a></td>
     </tr>
     <tr>
+      <td>[10]</td>
       <td>108</td>
       <td>Postpartum recovery after spaceflight</td>
       <td><a href="StructureDefinition-bone-density-observation.html">BoneDensityObservation</a></td>
     </tr>
     <tr>
+      <td>[11]</td>
       <td>110</td>
       <td>BMD measurement</td>
       <td><a href="StructureDefinition-bone-density-observation.html">BoneDensityObservation</a></td>
     </tr>
     <tr>
+      <td>[12]</td>
       <td>111</td>
       <td>Space travel anaemia</td>
       <td><a href="StructureDefinition-spaceflight-anemia-panel.html">SpaceflightAnemiaPanel</a></td>
     </tr>
     <tr>
+      <td>[13]</td>
       <td>112</td>
       <td>DCS susceptibility</td>
       <td><a href="StructureDefinition-dcs-risk-assessment.html">DCSRiskAssessment</a></td>
     </tr>
     <tr>
-      <td>113-114</td>
+      <td>[14][15]</td>
+      <td>113, 114</td>
       <td>Surgical procedures, 3D printing</td>
       <td><a href="StructureDefinition-space-surgical-procedure.html">SpaceSurgicalProcedure</a></td>
     </tr>
     <tr>
+      <td>[16]</td>
       <td>117</td>
       <td>POCUS in austere environments</td>
       <td><a href="StructureDefinition-space-pocus.html">SpacePOCUS</a></td>
     </tr>
     <tr>
+      <td>[17]</td>
       <td>120</td>
       <td>Artemis II health stack</td>
       <td><a href="StructureDefinition-archer-actigraphy-observation.html">ARCHeRActigraphyObservation</a>, <a href="StructureDefinition-immune-biomarker-panel.html">ImmuneBiomarkerPanel</a></td>
@@ -363,9 +382,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="clinical-domain-coverage">Clinical Domain Coverage</h4>
+<h3 id="clinical-domain-coverage">Clinical Domain Coverage</h3>
 
-<p>The abstracts span the following clinical domains, each with dedicated FHIR profiles:</p>
+<p>The abstracts span the following clinical domains, each with dedicated FHIR profiles in this guide:</p>
 
 <ul>
   <li><strong>Motion Sickness</strong> - SMS/TRMS diagnosis, antiemetic medications, adverse events, care plans</li>
@@ -382,9 +401,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>EVA Risk</strong> - Decompression sickness risk assessment</li>
 </ul>
 
-<h4 id="shared-infrastructure">Shared Infrastructure</h4>
+<h3 id="shared-infrastructure">Shared Infrastructure</h3>
 
-<p>All profiles leverage shared extensions for mission context:</p>
+<p>All of these profiles use the shared extensions for mission context described on the profile pages:</p>
 
 <ul>
   <li><a href="StructureDefinition-mission-context.html">MissionContext</a> - Links to mission encounter</li>
@@ -396,39 +415,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="references">References</h3>
 
-<p>[47] Patel, Keval, Felix Krainski, Michael Bungo, and Benjamin Levine. "Cardiac Arrhythmia Risk in Astronauts during Spaceflight: The NASA Integrated Cardiovascular Study." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[49] Sapkota, Smarika, Richard Meehan, Eric Hoffman, James Crooks, and Elizabeth Regan. "Ultrasound Assessments of Lower Extremity Joint Health after 18 Days Onboard the International Space Station." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[50] Cargill, Michael, Leigh Speicher, and John Cebak. "N-Acetylcysteine in Spaceflight Health: Current Evidence and Future Directions." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[51] Cole, Thomas. "Oral Body Temperature Changes during Long Duration Spaceflight." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[52] Beger, Samuel, Jaime Mateus, and Marissa Rosenberg. "Continuous Glucose Monitoring during Human Spaceflight: A Comparison with Terrestrial Baselines." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[53] Coonjobeeharry, Mani, and Pete Hodkinson. "Sleep Preservation in Torpor for Space Missions." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[54] Keller, Alexandra, Judith Castellon, Lucia White, and George Pantalos. "Manually-Implemented Rehydration of Dehydrated Red Blood Cells in Reduced Gravity." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[57] Nair, Nikita, George Pantalos, and Alexandra Keller. "Ground-Based Evaluation of Dehydrated Red Blood Cell Bag Pressure Seal Rupture Pressures and Channel Width." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[68] Tamayo, Stephanie, Sara Mason, and Tyson Brunstetter. "Ultra-Widefield OCT-Angiography Assessment of Choroidal Intervortex Anastomoses in Astronauts: Is There Vascular Remodeling Due to Spaceflight?" Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[108] Kakkar, Nidhi. "Postpartum Recovery and Performance in Women Following Spaceflight: Current Evidence and Future Directions." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[110] Harwood, Daniel, Moriah Thompson, and Justin Yang. "Bone Mineral Density Measurement in Space: Current Portable Imaging Capabilities and Areas of Focus." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[111] Kakkar, Nidhi. "Space Travel–Associated Anaemia: Current Understanding and Implications for Human Spaceflight." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[112] Gamble, Jessica, Bonnie Posselt, Peter D. Hodkinson, Thomas G. Smith, and Richard S. Whittle. "Exploring Individual Susceptibility to Decompression Sickness during EVA: A Personalised Medicine Approach." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[113] Myerson, Ezra, Sara Rothrock, and Peter Lee. "Evaluation of Novel 3D Printed Surgical Tools for Long Term Space Missions." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[114] Golia, Saahil, Micheal Kortz, and Kaleigh Stabenau. "Mitigation and Management of Acute Appendicitis for Long-Duration Spaceflight: A Scoping Review." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[117] Lyons, Hannah. "Point-of-Care Ultrasound (POCUS) in Austere Environments and Implications for Future Space Exploration." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
-
-<p>[120] Haas, Christopher. "Artemis II Crew Health Systems — From Mission Design to Operations." Poster presented at the 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</p>
+<ul>
+  <li>[1] Patel, Keval, Felix Krainski, Michael Bungo, and Benjamin Levine. "Cardiac Arrhythmia Risk in Astronauts during Spaceflight: The NASA Integrated Cardiovascular Study." Poster 47, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[2] Sapkota, Smarika, Richard Meehan, Eric Hoffman, James Crooks, and Elizabeth Regan. "Ultrasound Assessments of Lower Extremity Joint Health after 18 Days Onboard the International Space Station." Poster 49, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[3] Cargill, Michael, Leigh Speicher, and John Cebak. "N-Acetylcysteine in Spaceflight Health: Current Evidence and Future Directions." Poster 50, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[4] Cole, Thomas. "Oral Body Temperature Changes during Long Duration Spaceflight." Poster 51, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[5] Beger, Samuel, Jaime Mateus, and Marissa Rosenberg. "Continuous Glucose Monitoring during Human Spaceflight: A Comparison with Terrestrial Baselines." Poster 52, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[6] Coonjobeeharry, Mani, and Pete Hodkinson. "Sleep Preservation in Torpor for Space Missions." Poster 53, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[7] Keller, Alexandra, Judith Castellon, Lucia White, and George Pantalos. "Manually-Implemented Rehydration of Dehydrated Red Blood Cells in Reduced Gravity." Poster 54, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[8] Nair, Nikita, George Pantalos, and Alexandra Keller. "Ground-Based Evaluation of Dehydrated Red Blood Cell Bag Pressure Seal Rupture Pressures and Channel Width." Poster 57, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[9] Tamayo, Stephanie, Sara Mason, and Tyson Brunstetter. "Ultra-Widefield OCT-Angiography Assessment of Choroidal Intervortex Anastomoses in Astronauts: Is There Vascular Remodeling Due to Spaceflight?" Poster 68, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[10] Kakkar, Nidhi. "Postpartum Recovery and Performance in Women Following Spaceflight: Current Evidence and Future Directions." Poster 108, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[11] Harwood, Daniel, Moriah Thompson, and Justin Yang. "Bone Mineral Density Measurement in Space: Current Portable Imaging Capabilities and Areas of Focus." Poster 110, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[12] Kakkar, Nidhi. "Space Travel–Associated Anaemia: Current Understanding and Implications for Human Spaceflight." Poster 111, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[13] Gamble, Jessica, Bonnie Posselt, Peter D. Hodkinson, Thomas G. Smith, and Richard S. Whittle. "Exploring Individual Susceptibility to Decompression Sickness during EVA: A Personalised Medicine Approach." Poster 112, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[14] Myerson, Ezra, Sara Rothrock, and Peter Lee. "Evaluation of Novel 3D Printed Surgical Tools for Long Term Space Missions." Poster 113, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[15] Golia, Saahil, Micheal Kortz, and Kaleigh Stabenau. "Mitigation and Management of Acute Appendicitis for Long-Duration Spaceflight: A Scoping Review." Poster 114, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[16] Lyons, Hannah. "Point-of-Care Ultrasound (POCUS) in Austere Environments and Implications for Future Space Exploration." Poster 117, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+  <li>[17] Haas, Christopher. "Artemis II Crew Health Systems — From Mission Design to Operations." Poster 120, 97th Annual Scientific Meeting of the Aerospace Medical Association (AsMA), May 2026.</li>
+</ul>
 
 
 
@@ -449,7 +454,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

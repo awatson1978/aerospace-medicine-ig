@@ -1,15 +1,16 @@
-# Artemis Missions - v0.6.2
+# Artemis Missions - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Artemis Missions**
 
-## ValueSet: Artemis Missions 
+## ValueSet: Artemis Missions (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ArtemisMissionVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-mission-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ArtemisMissionVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 All Artemis program missions I-XXX 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "artemis-mission-vs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-mission-vs",
+  "version" : "0.7.0",
   "name" : "ArtemisMissionVS",
   "title" : "Artemis Missions",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   ],
   "description" : "All Artemis program missions I-XXX",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs"
       }
     ]
   }

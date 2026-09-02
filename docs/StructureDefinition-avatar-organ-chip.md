@@ -1,4 +1,4 @@
-# AVATAR Organ-on-Chip Device - v0.6.2
+# AVATAR Organ-on-Chip Device - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/avatar-organ-chip | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AVATAROrganChip |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/avatar-organ-chip | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AVATAROrganChip |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Organ-on-chip (microphysiological system) device from the AVATAR investigation for tissue-chip-based monitoring in spaceflight 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "avatar-organ-chip",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/avatar-organ-chip",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/avatar-organ-chip",
+  "version" : "0.7.0",
   "name" : "AVATAROrganChip",
   "title" : "AVATAR Organ-on-Chip Device",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
     }
   ],
   "description" : "Organ-on-chip (microphysiological system) device from the AVATAR investigation for tissue-chip-based monitoring in spaceflight",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -108,7 +110,7 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -137,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/organ-chip-type-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-chip-type-vs"
         }
       },
       {
@@ -178,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
         "id" : "Device.property:cultureDuration",
         "path" : "Device.property",
         "sliceName" : "cultureDuration",
-        "short" : "Duration of cell culture",
+        "short" : "Duration of cell culture exposure",
         "min" : 0,
         "max" : "1"
       },
@@ -188,9 +190,9 @@ Other representations of profile: [CSV](StructureDefinition-avatar-organ-chip.cs
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://snomed.info/sct",
-              "code" : "410670002",
-              "display" : "Duration of device use"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
+              "code" : "exposure-duration",
+              "display" : "Exposure Duration"
             }
           ]
         }

@@ -1,4 +1,4 @@
-# MEDB 1.6 Resting ECG - v0.6.2
+# MEDB 1.6 Resting ECG - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-6-resting-ecg | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-6-resting-ecg | *Version*:0.7.0 |
 | Active as of 2013-12-19 | *Computable Name*:MEDB16RestingECG |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB16RestingECGQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-6-resting-ecg",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-6-resting-ecg",
+  "version" : "0.7.0",
   "name" : "MEDB16RestingECG",
   "title" : "MEDB 1.6 Resting ECG",
   "status" : "active",
@@ -94,7 +97,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -103,7 +106,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -119,7 +122,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "cardiovascular",
                 "display" : "Cardiovascular"
               }
@@ -297,7 +300,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "12-lead-ecg",
                 "display" : "12-Lead ECG Machine"
               }
@@ -306,7 +309,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "12-lead-ecg",
                 "display" : "12-Lead ECG Machine"
               }
@@ -322,14 +325,14 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "jsc",
                 "display" : "Johnson Space Center"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "russia-gctc",
                 "display" : "Gagarin Cosmonaut Training Center"
               }
@@ -610,7 +613,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "12-lead-ecg",
                 "display" : "12-Lead ECG Machine"
               }
@@ -619,7 +622,7 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs",
                 "code" : "12-lead-ecg",
                 "display" : "12-Lead ECG Machine"
               }
@@ -635,14 +638,14 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "jsc",
                 "display" : "Johnson Space Center"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "russia-gctc",
                 "display" : "Gagarin Cosmonaut Training Center"
               }
@@ -890,14 +893,14 @@ To assess pre- and postflight ECG recordings on long-duration flight crew member
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "pacs",
                 "display" : "Picture Archiving and Communication System"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

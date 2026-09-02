@@ -1,4 +1,4 @@
-# Antioxidant Biomarker Panel - v0.6.2
+# Antioxidant Biomarker Panel - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/antioxidant-biomarker-panel | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AntioxidantBiomarkerPanel |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antioxidant-biomarker-panel | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AntioxidantBiomarkerPanel |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Panel of oxidative stress and antioxidant status biomarkers for monitoring radioprotective countermeasure efficacy 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
 {
   "resourceType" : "StructureDefinition",
   "id" : "antioxidant-biomarker-panel",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/antioxidant-biomarker-panel",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antioxidant-biomarker-panel",
+  "version" : "0.7.0",
   "name" : "AntioxidantBiomarkerPanel",
   "title" : "Antioxidant Biomarker Panel",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
     }
   ],
   "description" : "Panel of oxidative stress and antioxidant status biomarkers for monitoring radioprotective countermeasure efficacy",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"
             ]
           }
         ],
@@ -179,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -223,7 +225,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs",
               "code" : "glutathione-reduced",
               "display" : "Reduced Glutathione (GSH)"
             }
@@ -263,7 +265,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs",
               "code" : "malondialdehyde",
               "display" : "Malondialdehyde (MDA)"
             }
@@ -303,7 +305,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs",
               "code" : "8-ohdg",
               "display" : "8-Hydroxy-2'-Deoxyguanosine (8-OHdG)"
             }
@@ -343,7 +345,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs",
               "code" : "sod-activity",
               "display" : "Superoxide Dismutase (SOD) Activity"
             }
@@ -383,7 +385,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs",
               "code" : "catalase-activity",
               "display" : "Catalase Activity"
             }
@@ -423,7 +425,7 @@ Other representations of profile: [CSV](StructureDefinition-antioxidant-biomarke
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs",
               "code" : "tac",
               "display" : "Total Antioxidant Capacity (TAC)"
             }

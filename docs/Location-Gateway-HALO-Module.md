@@ -1,4 +1,4 @@
-# Lunar Gateway HALO Module - v0.6.2
+# Lunar Gateway HALO Module - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Location: Lunar Gateway HALO Module
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Habitat Location](StructureDefinition-habitat-location.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 > **Radiation Shielding**
 * shieldingMass: 12.5 g/cm²(Details: UCUM codeg/cm2 = 'g/cm2')
@@ -31,8 +35,16 @@ Profile: [Habitat Location](StructureDefinition-habitat-location.md)
   "resourceType" : "Location",
   "id" : "Gateway-HALO-Module",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-location"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
@@ -52,7 +64,7 @@ Profile: [Habitat Location](StructureDefinition-habitat-location.md)
           "valueString" : "Aluminum alloy with polyethylene water walls"
         }
       ],
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding"
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-shielding"
     }
   ],
   "status" : "active",
@@ -63,8 +75,9 @@ Profile: [Habitat Location](StructureDefinition-habitat-location.md)
     {
       "coding" : [
         {
-          "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs",
-          "code" : "orbital-station"
+          "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs",
+          "code" : "orbital-station",
+          "display" : "Orbital Station"
         }
       ],
       "text" : "Lunar orbital habitat module"

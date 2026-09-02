@@ -1,4 +1,4 @@
-# Device - Space Garage - v0.6.2
+# Device - Space Garage - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Device: Device - Space Garage
 
-Profile: [Commercial Space Equipment](StructureDefinition-SpaceEquipment.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Commercial Space Equipment](StructureDefinition-space-equipment.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -30,8 +34,16 @@ Profile: [Commercial Space Equipment](StructureDefinition-SpaceEquipment.md)
   "resourceType" : "Device",
   "id" : "DeviceSpaceGarage",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "active",

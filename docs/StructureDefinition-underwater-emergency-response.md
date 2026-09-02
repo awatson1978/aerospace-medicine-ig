@@ -1,4 +1,4 @@
-# Underwater Emergency Response - v0.6.2
+# Underwater Emergency Response - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:UnderwaterEmergencyResponse |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/underwater-emergency-response | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:UnderwaterEmergencyResponse |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Emergency response procedures during underwater training operations 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
 {
   "resourceType" : "StructureDefinition",
   "id" : "underwater-emergency-response",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/underwater-emergency-response",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/underwater-emergency-response",
+  "version" : "0.7.0",
   "name" : "UnderwaterEmergencyResponse",
   "title" : "Underwater Emergency Response",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
     }
   ],
   "description" : "Emergency response procedures during underwater training operations",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/emergency-type"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-type"
             ]
           }
         ],
@@ -129,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/response-time"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/response-time"
             ]
           }
         ],
@@ -145,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/rescue-procedures"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/rescue-procedures"
             ]
           }
         ],
@@ -161,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/medical-intervention"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/medical-intervention"
             ]
           }
         ],
@@ -177,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/lessons-learned"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lessons-learned"
             ]
           }
         ],
@@ -194,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-training-procedures-vs"
         }
       },
       {
@@ -204,7 +206,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ]
@@ -243,7 +245,7 @@ Other representations of profile: [CSV](StructureDefinition-underwater-emergency
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility"
             ]
           }
         ]

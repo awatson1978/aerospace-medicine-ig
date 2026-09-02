@@ -1,15 +1,16 @@
-# EVA Suit State Value Set - v0.6.2
+# EVA Suit State Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **EVA Suit State Value Set**
 
-## ValueSet: EVA Suit State Value Set 
+## ValueSet: EVA Suit State Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/eva-suit-state-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:EVASuitStateVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/eva-suit-state-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:EVASuitStateVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 EVA suit operational states 
@@ -45,13 +46,13 @@ EVA suit operational states
 {
   "resourceType" : "ValueSet",
   "id" : "eva-suit-state-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/eva-suit-state-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/eva-suit-state-vs",
+  "version" : "0.7.0",
   "name" : "EVASuitStateVS",
   "title" : "EVA Suit State Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ EVA suit operational states
     }
   ],
   "description" : "EVA suit operational states",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/eva-suit-state-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-state-cs"
       }
     ]
   }

@@ -1,15 +1,16 @@
-# Bone Density Method Value Set - v0.6.2
+# Bone Density Method Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Bone Density Method Value Set**
 
-## ValueSet: Bone Density Method Value Set 
+## ValueSet: Bone Density Method Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/bone-density-method-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BoneDensityMethodVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bone-density-method-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BoneDensityMethodVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Methods for BMD measurement 
@@ -45,13 +46,13 @@ Methods for BMD measurement
 {
   "resourceType" : "ValueSet",
   "id" : "bone-density-method-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/bone-density-method-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bone-density-method-vs",
+  "version" : "0.7.0",
   "name" : "BoneDensityMethodVS",
   "title" : "Bone Density Method Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Methods for BMD measurement
     }
   ],
   "description" : "Methods for BMD measurement",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/bone-density-method-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bone-density-method-cs"
       }
     ]
   }

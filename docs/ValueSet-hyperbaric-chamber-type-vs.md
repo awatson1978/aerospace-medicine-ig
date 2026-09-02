@@ -1,15 +1,16 @@
-# Hyperbaric Chamber Types - v0.6.2
+# Hyperbaric Chamber Types - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Hyperbaric Chamber Types**
 
-## ValueSet: Hyperbaric Chamber Types 
+## ValueSet: Hyperbaric Chamber Types (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:HyperbaricChamberTypeVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/hyperbaric-chamber-type-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:HyperbaricChamberTypeVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Types of hyperbaric chambers 
@@ -45,13 +46,13 @@ Types of hyperbaric chambers
 {
   "resourceType" : "ValueSet",
   "id" : "hyperbaric-chamber-type-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/hyperbaric-chamber-type-vs",
+  "version" : "0.7.0",
   "name" : "HyperbaricChamberTypeVS",
   "title" : "Hyperbaric Chamber Types",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Types of hyperbaric chambers
     }
   ],
   "description" : "Types of hyperbaric chambers",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/hyperbaric-chamber-type-cs"
       }
     ]
   }

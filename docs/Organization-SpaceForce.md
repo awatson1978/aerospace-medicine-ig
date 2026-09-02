@@ -1,4 +1,4 @@
-# Org - Space Force - v0.6.2
+# Org - Space Force - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,9 @@
 
 ## Example Organization: Org - Space Force
 
-Profile: [Space Organization](StructureDefinition-SpaceOrg.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
+
+Profile: [Space Organization](StructureDefinition-space-org.md)
 
 **name**: Space Force
 
@@ -19,8 +21,9 @@ Profile: [Space Organization](StructureDefinition-SpaceOrg.md)
   "resourceType" : "Organization",
   "id" : "SpaceForce",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceOrg"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-org"
     ]
   },
   "name" : "Space Force"

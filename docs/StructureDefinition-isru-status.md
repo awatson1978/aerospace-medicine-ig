@@ -1,4 +1,4 @@
-# ISRU System Status - v0.6.2
+# ISRU System Status - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ISRUStatus |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-status | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ISRUStatus |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 In-Situ Resource Utilization system status and propellant production levels
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-isru-status.csv), [E
 {
   "resourceType" : "StructureDefinition",
   "id" : "isru-status",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-status",
+  "version" : "0.7.0",
   "name" : "ISRUStatus",
   "title" : "ISRU System Status",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-isru-status.csv), [E
     }
   ],
   "description" : "In-Situ Resource Utilization system status and propellant production levels",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -150,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-isru-status.csv), [E
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-status"
       },
       {
         "id" : "Extension.value[x]",

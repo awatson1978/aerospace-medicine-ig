@@ -1,4 +1,4 @@
-# Areographic Coordinates - v0.6.2
+# Areographic Coordinates - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AreographicCoordinates |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/areographic-coordinates | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AreographicCoordinates |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Mars latitude and longitude for surface locations
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-areographic-coordina
 {
   "resourceType" : "StructureDefinition",
   "id" : "areographic-coordinates",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/areographic-coordinates",
+  "version" : "0.7.0",
   "name" : "AreographicCoordinates",
   "title" : "Areographic Coordinates",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-areographic-coordina
     }
   ],
   "description" : "Mars latitude and longitude for surface locations",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -151,7 +153,7 @@ Other representations of profile: [CSV](StructureDefinition-areographic-coordina
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/areographic-coordinates"
       },
       {
         "id" : "Extension.value[x]",

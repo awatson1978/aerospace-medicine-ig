@@ -1,4 +1,4 @@
-# Calorie Deficit Assessment - v0.6.2
+# Calorie Deficit Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/calorie-deficit-assessment | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:CalorieDeficitAssessment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/calorie-deficit-assessment | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:CalorieDeficitAssessment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Quantifies acute and cumulative calorie deficits for astronauts 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
 {
   "resourceType" : "StructureDefinition",
   "id" : "calorie-deficit-assessment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/calorie-deficit-assessment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/calorie-deficit-assessment",
+  "version" : "0.7.0",
   "name" : "CalorieDeficitAssessment",
   "title" : "Calorie Deficit Assessment",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
     }
   ],
   "description" : "Quantifies acute and cumulative calorie deficits for astronauts",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -124,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -141,7 +143,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/energy-expenditure"
             ]
           }
         ],
@@ -190,7 +192,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/macronutrient-metrics-vs"
         }
       },
       {
@@ -201,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -270,7 +272,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
               "code" : "calorie-expenditure"
             }
           ]
@@ -309,7 +311,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
               "code" : "calorie-intake"
             }
           ]
@@ -348,9 +350,9 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/calorie-deficit-risk-cs",
-              "code" : "mild",
-              "display" : "Mild (<300 kcal/day)"
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+              "code" : "calorie-deficit-risk",
+              "display" : "Calorie Deficit Risk Level"
             }
           ]
         }
@@ -365,7 +367,7 @@ Other representations of profile: [CSV](StructureDefinition-calorie-deficit-asse
         ],
         "binding" : {
           "strength" : "required",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/calorie-deficit-risk-vs"
         }
       }
     ]

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "isru-metrics-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem isru-metrics-cs</b></p><a name=\"isru-metrics-cs\"> </a><a name=\"hcisru-metrics-cs\"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cumulative-propellant<a name=\"isru-metrics-cs-cumulative-propellant\"> </a></td><td>Cumulative Propellant Production</td><td>Total mass of propellant (CH4 and/or O2) produced by the ISRU plant since start of operations</td></tr><tr><td style=\"white-space:nowrap\">reactor-status<a name=\"isru-metrics-cs-reactor-status\"> </a></td><td>Reactor Status</td><td>Operational status of the ISRU Sabatier/electrolysis reactor</td></tr><tr><td style=\"white-space:nowrap\">power-consumption<a name=\"isru-metrics-cs-power-consumption\"> </a></td><td>Power Consumption</td><td>Electrical power drawn by the ISRU plant</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ISRUMetricsCS"] ; # 
+  fhir:title [ fhir:v "ISRU Metrics"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Measurement codes for in-situ resource utilization (ISRU) propellant production logs"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cumulative-propellant" ] ;
+     fhir:display [ fhir:v "Cumulative Propellant Production" ] ;
+     fhir:definition [ fhir:v "Total mass of propellant (CH4 and/or O2) produced by the ISRU plant since start of operations" ]
+  ] [
+     fhir:code [ fhir:v "reactor-status" ] ;
+     fhir:display [ fhir:v "Reactor Status" ] ;
+     fhir:definition [ fhir:v "Operational status of the ISRU Sabatier/electrolysis reactor" ]
+  ] [
+     fhir:code [ fhir:v "power-consumption" ] ;
+     fhir:display [ fhir:v "Power Consumption" ] ;
+     fhir:definition [ fhir:v "Electrical power drawn by the ISRU plant" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

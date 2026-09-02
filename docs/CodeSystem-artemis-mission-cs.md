@@ -1,18 +1,19 @@
-# Artemis Missions - v0.6.2
+# Artemis Missions - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Artemis Missions**
 
-## CodeSystem: Artemis Missions 
+## CodeSystem: Artemis Missions (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ArtemisMissionCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ArtemisMissionCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Historical and planned Artemis program missions with target destinations, launch dates, and status 
+Historical and planned Artemis program missions with target destinations, launch dates, and status. Reflects the post-2026 replan in which Artemis III is a crewed low-Earth orbit test flight and Artemis IV is the first crewed lunar landing. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -26,13 +27,13 @@ Historical and planned Artemis program missions with target destinations, launch
 {
   "resourceType" : "CodeSystem",
   "id" : "artemis-mission-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs",
+  "version" : "0.7.0",
   "name" : "ArtemisMissionCS",
   "title" : "Artemis Missions",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -45,26 +46,24 @@ Historical and planned Artemis program missions with target destinations, launch
       ]
     }
   ],
-  "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status",
+  "description" : "Historical and planned Artemis program missions with target destinations, launch dates, and status. Reflects the post-2026 replan in which Artemis III is a crewed low-Earth orbit test flight and Artemis IV is the first crewed lunar landing.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 30,
   "property" : [
     {
       "code" : "status",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs#status",
       "description" : "Mission status (completed, in-progress, planned)",
-      "type" : "code"
+      "type" : "string"
     },
     {
       "code" : "target",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs#target",
       "description" : "Target destination (orbit or landing)",
       "type" : "string"
     },
     {
       "code" : "launchDate",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs#launchDate",
       "description" : "Launch date of mission (actual or planned)",
       "type" : "dateTime"
     }
@@ -74,19 +73,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-I",
       "display" : "Artemis I",
       "definition" : "Uncrewed test flight of Orion and SLS around the Moon. Launched Nov 16, 2022. Status: completed. Target: Lunar orbit and return.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: completed | Target: Lunar orbit and return (uncrewed test) | Launch: 2022-11-16"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "completed"
+          "valueString" : "completed"
         },
         {
           "code" : "target",
@@ -102,19 +92,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-II",
       "display" : "Artemis II",
       "definition" : "First crewed lunar flyby mission of Artemis program. Planned ~2026. Status: planned. Target: Lunar flyby (crewed).",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Target: Lunar flyby (crewed) | Launch: ~2026"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         },
         {
           "code" : "target",
@@ -130,19 +111,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-III",
       "display" : "Artemis III",
       "definition" : "Crewed low-Earth orbit test flight preparing systems for future lunar landings. Planned ~2027. Status: planned. Target: LEO test flight (crewed).",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Target: LEO test flight (crewed) | Launch: ~2027"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         },
         {
           "code" : "target",
@@ -157,24 +129,15 @@ Historical and planned Artemis program missions with target destinations, launch
     {
       "code" : "ARTEMIS-IV",
       "display" : "Artemis IV",
-      "definition" : "Lunar Gateway assembly mission with landing. Planned ~2028. Status: planned. Target: Gateway assembly + landing.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Target: Lunar Gateway assembly + landing | Launch: ~2028"
-        }
-      ],
+      "definition" : "First crewed lunar landing of the Artemis program, combined with Lunar Gateway assembly (following the Artemis III crewed low-Earth orbit test flight). Planned ~2028. Status: planned. Target: Gateway assembly + first crewed lunar landing.",
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         },
         {
           "code" : "target",
-          "valueString" : "Lunar Gateway assembly + landing"
+          "valueString" : "Lunar Gateway assembly + first crewed lunar landing"
         },
         {
           "code" : "launchDate",
@@ -185,20 +148,11 @@ Historical and planned Artemis program missions with target destinations, launch
     {
       "code" : "ARTEMIS-V",
       "display" : "Artemis V",
-      "definition" : "Lunar landing with new lander and Lunar Terrain Vehicle. Planned ~2030. Status: planned. Target: Lunar landing (new lander, LTV rover).",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Target: Lunar landing (new lander, LTV rover) | Launch: ~2030"
-        }
-      ],
+      "definition" : "Second crewed lunar landing with a new lander and the Lunar Terrain Vehicle. Planned ~2030. Status: planned. Target: Lunar landing (new lander, LTV rover).",
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         },
         {
           "code" : "target",
@@ -214,19 +168,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-VI",
       "display" : "Artemis VI",
       "definition" : "Placeholder entry for Artemis VI mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -234,19 +179,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-VII",
       "display" : "Artemis VII",
       "definition" : "Placeholder entry for Artemis VII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -254,19 +190,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-VIII",
       "display" : "Artemis VIII",
       "definition" : "Placeholder entry for Artemis VIII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -274,19 +201,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-IX",
       "display" : "Artemis IX",
       "definition" : "Placeholder entry for Artemis IX mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -294,19 +212,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-X",
       "display" : "Artemis X",
       "definition" : "Placeholder entry for Artemis X mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -314,19 +223,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XI",
       "display" : "Artemis XI",
       "definition" : "Placeholder entry for Artemis XI mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -334,19 +234,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XII",
       "display" : "Artemis XII",
       "definition" : "Placeholder entry for Artemis XII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -354,19 +245,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XIII",
       "display" : "Artemis XIII",
       "definition" : "Placeholder entry for Artemis XIII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -374,19 +256,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XIV",
       "display" : "Artemis XIV",
       "definition" : "Placeholder entry for Artemis XIV mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -394,19 +267,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XV",
       "display" : "Artemis XV",
       "definition" : "Placeholder entry for Artemis XV mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -414,19 +278,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XVI",
       "display" : "Artemis XVI",
       "definition" : "Placeholder entry for Artemis XVI mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -434,19 +289,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XVII",
       "display" : "Artemis XVII",
       "definition" : "Placeholder entry for Artemis XVII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -454,19 +300,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XVIII",
       "display" : "Artemis XVIII",
       "definition" : "Placeholder entry for Artemis XVIII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -474,19 +311,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XIX",
       "display" : "Artemis XIX",
       "definition" : "Placeholder entry for Artemis XIX mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -494,19 +322,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XX",
       "display" : "Artemis XX",
       "definition" : "Placeholder entry for Artemis XX mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -514,19 +333,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXI",
       "display" : "Artemis XXI",
       "definition" : "Placeholder entry for Artemis XXI mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -534,19 +344,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXII",
       "display" : "Artemis XXII",
       "definition" : "Placeholder entry for Artemis XXII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -554,19 +355,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXIII",
       "display" : "Artemis XXIII",
       "definition" : "Placeholder entry for Artemis XXIII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -574,19 +366,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXIV",
       "display" : "Artemis XXIV",
       "definition" : "Placeholder entry for Artemis XXIV mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -594,19 +377,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXV",
       "display" : "Artemis XXV",
       "definition" : "Placeholder entry for Artemis XXV mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -614,19 +388,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXVI",
       "display" : "Artemis XXVI",
       "definition" : "Placeholder entry for Artemis XXVI mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -634,19 +399,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXVII",
       "display" : "Artemis XXVII",
       "definition" : "Placeholder entry for Artemis XXVII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -654,19 +410,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXVIII",
       "display" : "Artemis XXVIII",
       "definition" : "Placeholder entry for Artemis XXVIII mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -674,19 +421,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXIX",
       "display" : "Artemis XXIX",
       "definition" : "Placeholder entry for Artemis XXIX mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     },
@@ -694,19 +432,10 @@ Historical and planned Artemis program missions with target destinations, launch
       "code" : "ARTEMIS-XXX",
       "display" : "Artemis XXX",
       "definition" : "Placeholder entry for Artemis XXX mission used for simulation, planning, and forecasting.",
-      "designation" : [
-        {
-          "use" : {
-            "system" : "http://terminology.hl7.org/CodeSystem/designation-usage",
-            "code" : "definition"
-          },
-          "value" : "Status: planned | Placeholder mission entry for simulation and forecasting"
-        }
-      ],
       "property" : [
         {
           "code" : "status",
-          "valueCode" : "planned"
+          "valueString" : "planned"
         }
       ]
     }

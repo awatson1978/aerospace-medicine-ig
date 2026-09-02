@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:Basic</sch:title>
     <sch:rule context="f:Basic">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/inventory-risk-flag']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/uv/aerospace/StructureDefinition/inventory-risk-flag': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/inventory-risk-flag']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/inventory-risk-flag': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

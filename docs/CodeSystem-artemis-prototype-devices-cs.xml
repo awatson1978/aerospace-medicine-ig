@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="artemis-prototype-devices-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem artemis-prototype-devices-cs</b></p><a name="artemis-prototype-devices-cs"> </a><a name="hcartemis-prototype-devices-cs"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>deviceType</td><td>deviceType</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType</td><td>code</td><td>Device category (spacecraft, suit, vehicle, habitat, equipment)</td></tr><tr><td>testEnvironment</td><td>testEnvironment</td><td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment</td><td>code</td><td>Primary test environment (ground, ISS, analog-mission)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>testEnvironment</b></td></tr><tr><td style="white-space:nowrap">xemu-demo<a name="artemis-prototype-devices-cs-xemu-demo"> </a></td><td>xEMU Demo Unit</td><td>Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground.</td><td>suit</td><td>ground</td></tr><tr><td style="white-space:nowrap">pressurized-rover-proto<a name="artemis-prototype-devices-cs-pressurized-rover-proto"> </a></td><td>Pressurized Rover Prototype</td><td>Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.</td><td>rover</td><td>ground</td></tr><tr><td style="white-space:nowrap">habitat-test-module<a name="artemis-prototype-devices-cs-habitat-test-module"> </a></td><td>Habitat Test Module</td><td>Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.</td><td>habitat</td><td>analog-mission</td></tr><tr><td style="white-space:nowrap">nextgen-plss<a name="artemis-prototype-devices-cs-nextgen-plss"> </a></td><td>Next-Generation PLSS</td><td>Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground.</td><td>life-support</td><td>ground</td></tr><tr><td style="white-space:nowrap">biomonitor-wearable<a name="artemis-prototype-devices-cs-biomonitor-wearable"> </a></td><td>BioMonitor Wearable Prototype</td><td>Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS.</td><td>medical-equipment</td><td>iss</td></tr><tr><td style="white-space:nowrap">autonomous-medical-unit<a name="artemis-prototype-devices-cs-autonomous-medical-unit"> </a></td><td>Autonomous Medical Unit Prototype</td><td>Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground.</td><td>medical-equipment</td><td>ground</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem artemis-prototype-devices-cs</b></p><a name="artemis-prototype-devices-cs"> </a><a name="hcartemis-prototype-devices-cs"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>deviceType</td><td>deviceType</td><td>string</td><td>Device category (suit, life-support, habitat, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)</td></tr><tr><td>testEnvironment</td><td>testEnvironment</td><td>string</td><td>Primary test environment (ground, iss, analog-mission)</td></tr><tr><td>manufacturer</td><td>manufacturer</td><td>string</td><td>Device manufacturer or contractor</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>testEnvironment</b></td><td><b>manufacturer</b></td></tr><tr><td style="white-space:nowrap">xemu-demo<a name="artemis-prototype-devices-cs-xemu-demo"> </a></td><td>xEMU Demo Unit</td><td>Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground.</td><td>suit</td><td>ground</td><td/></tr><tr><td style="white-space:nowrap">nextgen-plss<a name="artemis-prototype-devices-cs-nextgen-plss"> </a></td><td>Next-Generation PLSS</td><td>Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground.</td><td>life-support</td><td>ground</td><td/></tr><tr><td style="white-space:nowrap">biomonitor-wearable<a name="artemis-prototype-devices-cs-biomonitor-wearable"> </a></td><td>BioMonitor Wearable Prototype</td><td>Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS.</td><td>medical-equipment</td><td>iss</td><td/></tr><tr><td style="white-space:nowrap">autonomous-medical-unit<a name="artemis-prototype-devices-cs-autonomous-medical-unit"> </a></td><td>Autonomous Medical Unit Prototype</td><td>Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground.</td><td>medical-equipment</td><td>ground</td><td/></tr><tr><td style="white-space:nowrap">habitat-test-module<a name="artemis-prototype-devices-cs-habitat-test-module"> </a></td><td>Habitat Test Module</td><td>Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.</td><td>habitat</td><td>analog-mission</td><td/></tr><tr><td style="white-space:nowrap">surface-habitat-module<a name="artemis-prototype-devices-cs-surface-habitat-module"> </a></td><td>Surface Habitat Module</td><td>Planned lunar surface habitat infrastructure element. Manufacturer: NASA / Partners. Test env: ground.</td><td>habitat</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">pressurized-rover-proto<a name="artemis-prototype-devices-cs-pressurized-rover-proto"> </a></td><td>Pressurized Rover Prototype</td><td>Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.</td><td>rover</td><td>ground</td><td/></tr><tr><td style="white-space:nowrap">crewed-ltv<a name="artemis-prototype-devices-cs-crewed-ltv"> </a></td><td>Crewed LTV</td><td>Crewed Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.</td><td>rover</td><td>ground</td><td>NASA / Industry Team</td></tr><tr><td style="white-space:nowrap">uncrewed-ltv<a name="artemis-prototype-devices-cs-uncrewed-ltv"> </a></td><td>Uncrewed LTV</td><td>Uncrewed (teleoperated) Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.</td><td>rover</td><td>ground</td><td>NASA / Industry Team</td></tr><tr><td style="white-space:nowrap">advanced-ltv<a name="artemis-prototype-devices-cs-advanced-ltv"> </a></td><td>Advanced LTV</td><td>Advanced Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.</td><td>rover</td><td>ground</td><td>NASA / Industry Team</td></tr><tr><td style="white-space:nowrap">ltv-gen-2<a name="artemis-prototype-devices-cs-ltv-gen-2"> </a></td><td>LTV Generation 2</td><td>Second-generation Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.</td><td>rover</td><td>ground</td><td>NASA / Industry Team</td></tr><tr><td style="white-space:nowrap">excavator-rover<a name="artemis-prototype-devices-cs-excavator-rover"> </a></td><td>Excavator Rover</td><td>Lunar surface excavation rover under development. Manufacturer: NASA / Partners. Test env: ground.</td><td>rover</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">site-prep-logistics-rover<a name="artemis-prototype-devices-cs-site-prep-logistics-rover"> </a></td><td>Site Preparation and Logistics Rover</td><td>Rover concept for site preparation and logistics tasks. Manufacturer: NASA / Partners. Test env: ground.</td><td>rover</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">international-partner-rover<a name="artemis-prototype-devices-cs-international-partner-rover"> </a></td><td>International Partner Rover</td><td>Partner-provided lunar rover under development. Manufacturer: International Partners. Test env: ground.</td><td>rover</td><td>ground</td><td>International Partners</td></tr><tr><td style="white-space:nowrap">science-rover<a name="artemis-prototype-devices-cs-science-rover"> </a></td><td>Science Rover</td><td>Lunar surface science rover concept. Manufacturer: NASA / Partners. Test env: analog-mission.</td><td>rover</td><td>analog-mission</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">moonfall-drone<a name="artemis-prototype-devices-cs-moonfall-drone"> </a></td><td>MoonFall Drone</td><td>Lunar surface aerial or descent support drone concept. Manufacturer: NASA / Partners. Test env: ground.</td><td>drone</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">orbital-comm-relay<a name="artemis-prototype-devices-cs-orbital-comm-relay"> </a></td><td>Orbital Communication Relay</td><td>Orbital relay satellite for lunar communications. Manufacturer: NASA / Partners. Test env: ground.</td><td>communications</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">observation-satellite<a name="artemis-prototype-devices-cs-observation-satellite"> </a></td><td>Observation Satellite</td><td>Lunar observation and monitoring satellite. Manufacturer: NASA / Partners. Test env: ground.</td><td>communications</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">relay-satellite-observability<a name="artemis-prototype-devices-cs-relay-satellite-observability"> </a></td><td>Relay Satellite with Observability</td><td>Relay satellite with observability functions. Manufacturer: NASA / Partners. Test env: ground.</td><td>communications</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">surface-comm-nav-node<a name="artemis-prototype-devices-cs-surface-comm-nav-node"> </a></td><td>Surface Communication and Navigation Node</td><td>Lunar surface communication and navigation infrastructure node. Manufacturer: NASA / Partners. Test env: ground.</td><td>communications</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">deployable-surface-comm-tower<a name="artemis-prototype-devices-cs-deployable-surface-comm-tower"> </a></td><td>Deployable Surface Communication Tower</td><td>Deployable surface communications tower. Manufacturer: NASA / Partners. Test env: ground.</td><td>communications</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">high-throughput-surface-comms<a name="artemis-prototype-devices-cs-high-throughput-surface-comms"> </a></td><td>High-Throughput Surface Communications Node</td><td>High-bandwidth lunar surface communications node. Manufacturer: NASA / Partners. Test env: ground.</td><td>communications</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">lunar-pnt-node<a name="artemis-prototype-devices-cs-lunar-pnt-node"> </a></td><td>Lunar PNT Node</td><td>Positioning, navigation, and timing infrastructure node. Manufacturer: NASA / Partners. Test env: ground.</td><td>navigation</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">clock-demo-node<a name="artemis-prototype-devices-cs-clock-demo-node"> </a></td><td>Lunar Clock Demonstration Node</td><td>Surface timing and synchronization demonstrator. Manufacturer: NASA / Partners. Test env: ground.</td><td>navigation</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">navigation-capability-node<a name="artemis-prototype-devices-cs-navigation-capability-node"> </a></td><td>Navigation Capability Node</td><td>Lunar navigation infrastructure element. Manufacturer: NASA / Partners. Test env: ground.</td><td>navigation</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">logistics-demo-unit<a name="artemis-prototype-devices-cs-logistics-demo-unit"> </a></td><td>Logistics Demonstration Unit</td><td>Demonstrator for lunar surface logistics. Manufacturer: NASA / Partners. Test env: ground.</td><td>logistics</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">logistics-delivery-vehicle<a name="artemis-prototype-devices-cs-logistics-delivery-vehicle"> </a></td><td>Logistics Delivery Vehicle</td><td>Lunar surface or cargo delivery logistics asset concept. Manufacturer: NASA / Partners. Test env: ground.</td><td>logistics</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">cargo-return-vehicle<a name="artemis-prototype-devices-cs-cargo-return-vehicle"> </a></td><td>Cargo Return Vehicle</td><td>Vehicle concept for returning cargo from lunar surface operations. Manufacturer: NASA / Partners. Test env: ground.</td><td>logistics</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">isru-plant<a name="artemis-prototype-devices-cs-isru-plant"> </a></td><td>ISRU Plant</td><td>In Situ Resource Utilization processing system under development. Manufacturer: NASA / Partners. Test env: ground.</td><td>isru</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">solar-power-augmentation-unit<a name="artemis-prototype-devices-cs-solar-power-augmentation-unit"> </a></td><td>Solar Power Augmentation Unit</td><td>Solar power augmentation infrastructure. Manufacturer: NASA / Partners. Test env: ground.</td><td>power</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">solar-battery-rfc-power-unit<a name="artemis-prototype-devices-cs-solar-battery-rfc-power-unit"> </a></td><td>Solar Battery RFC Power Unit</td><td>Solar, battery, and regenerative fuel cell power system. Manufacturer: NASA / Partners. Test env: ground.</td><td>power</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">fission-surface-power-unit<a name="artemis-prototype-devices-cs-fission-surface-power-unit"> </a></td><td>Fission Surface Power Unit</td><td>Lunar surface fission power system under development. Manufacturer: NASA / DOE / Partners. Test env: ground.</td><td>power</td><td>ground</td><td>NASA / DOE / Partners</td></tr><tr><td style="white-space:nowrap">power-infrastructure-node<a name="artemis-prototype-devices-cs-power-infrastructure-node"> </a></td><td>Power Infrastructure Node</td><td>Surface electrical power infrastructure node. Manufacturer: NASA / Partners. Test env: ground.</td><td>power</td><td>ground</td><td>NASA / Partners</td></tr><tr><td style="white-space:nowrap">power-distribution-node<a name="artemis-prototype-devices-cs-power-distribution-node"> </a></td><td>Power Distribution Node</td><td>Surface power distribution system. Manufacturer: NASA / Partners. Test env: ground.</td><td>power</td><td>ground</td><td>NASA / Partners</td></tr></table></div>
   </text>
-  <url value="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"/>
-  <version value="0.6.2"/>
+  <url value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs"/>
+  <version value="0.7.0"/>
   <name value="ArtemisPrototypeDevicesCS"/>
   <title value="Artemis Prototype Devices"/>
   <status value="active"/>
-  <experimental value="false"/>
-  <date value="2026-08-03T22:31:50-05:00"/>
+  <experimental value="true"/>
+  <date value="2026-09-02T13:24:45-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -20,21 +20,25 @@
       <value value="https://www.mitre.org/"/>
     </telecom>
   </contact>
-  <description value="Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)"/>
+  <description value="Developmental and test hardware not yet flight-certified: demo units, ground analogs, next-generation prototypes, and planned LunaNet, surface mobility, habitat, logistics, ISRU, and surface power infrastructure elements"/>
+  <copyright value="Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="6"/>
+  <count value="34"/>
   <property>
     <code value="deviceType"/>
-    <uri value="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType"/>
-    <description value="Device category (spacecraft, suit, vehicle, habitat, equipment)"/>
-    <type value="code"/>
+    <description value="Device category (suit, life-support, habitat, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)"/>
+    <type value="string"/>
   </property>
   <property>
     <code value="testEnvironment"/>
-    <uri value="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment"/>
-    <description value="Primary test environment (ground, ISS, analog-mission)"/>
-    <type value="code"/>
+    <description value="Primary test environment (ground, iss, analog-mission)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="manufacturer"/>
+    <description value="Device manufacturer or contractor"/>
+    <type value="string"/>
   </property>
   <concept>
     <code value="xemu-demo"/>
@@ -42,37 +46,11 @@
     <definition value="Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground."/>
     <property>
       <code value="deviceType"/>
-      <valueCode value="suit"/>
+      <valueString value="suit"/>
     </property>
     <property>
       <code value="testEnvironment"/>
-      <valueCode value="ground"/>
-    </property>
-  </concept>
-  <concept>
-    <code value="pressurized-rover-proto"/>
-    <display value="Pressurized Rover Prototype"/>
-    <definition value="Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground."/>
-    <property>
-      <code value="deviceType"/>
-      <valueCode value="rover"/>
-    </property>
-    <property>
-      <code value="testEnvironment"/>
-      <valueCode value="ground"/>
-    </property>
-  </concept>
-  <concept>
-    <code value="habitat-test-module"/>
-    <display value="Habitat Test Module"/>
-    <definition value="Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission."/>
-    <property>
-      <code value="deviceType"/>
-      <valueCode value="habitat"/>
-    </property>
-    <property>
-      <code value="testEnvironment"/>
-      <valueCode value="analog-mission"/>
+      <valueString value="ground"/>
     </property>
   </concept>
   <concept>
@@ -81,11 +59,11 @@
     <definition value="Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground."/>
     <property>
       <code value="deviceType"/>
-      <valueCode value="life-support"/>
+      <valueString value="life-support"/>
     </property>
     <property>
       <code value="testEnvironment"/>
-      <valueCode value="ground"/>
+      <valueString value="ground"/>
     </property>
   </concept>
   <concept>
@@ -94,11 +72,11 @@
     <definition value="Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS."/>
     <property>
       <code value="deviceType"/>
-      <valueCode value="medical-equipment"/>
+      <valueString value="medical-equipment"/>
     </property>
     <property>
       <code value="testEnvironment"/>
-      <valueCode value="iss"/>
+      <valueString value="iss"/>
     </property>
   </concept>
   <concept>
@@ -107,11 +85,513 @@
     <definition value="Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground."/>
     <property>
       <code value="deviceType"/>
-      <valueCode value="medical-equipment"/>
+      <valueString value="medical-equipment"/>
     </property>
     <property>
       <code value="testEnvironment"/>
-      <valueCode value="ground"/>
+      <valueString value="ground"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="habitat-test-module"/>
+    <display value="Habitat Test Module"/>
+    <definition value="Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="habitat"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="analog-mission"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="surface-habitat-module"/>
+    <display value="Surface Habitat Module"/>
+    <definition value="Planned lunar surface habitat infrastructure element. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="habitat"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="pressurized-rover-proto"/>
+    <display value="Pressurized Rover Prototype"/>
+    <definition value="Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="crewed-ltv"/>
+    <display value="Crewed LTV"/>
+    <definition value="Crewed Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Industry Team"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="uncrewed-ltv"/>
+    <display value="Uncrewed LTV"/>
+    <definition value="Uncrewed (teleoperated) Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Industry Team"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="advanced-ltv"/>
+    <display value="Advanced LTV"/>
+    <definition value="Advanced Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Industry Team"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ltv-gen-2"/>
+    <display value="LTV Generation 2"/>
+    <definition value="Second-generation Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Industry Team"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="excavator-rover"/>
+    <display value="Excavator Rover"/>
+    <definition value="Lunar surface excavation rover under development. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="site-prep-logistics-rover"/>
+    <display value="Site Preparation and Logistics Rover"/>
+    <definition value="Rover concept for site preparation and logistics tasks. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="international-partner-rover"/>
+    <display value="International Partner Rover"/>
+    <definition value="Partner-provided lunar rover under development. Manufacturer: International Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="International Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="science-rover"/>
+    <display value="Science Rover"/>
+    <definition value="Lunar surface science rover concept. Manufacturer: NASA / Partners. Test env: analog-mission."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="analog-mission"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="moonfall-drone"/>
+    <display value="MoonFall Drone"/>
+    <definition value="Lunar surface aerial or descent support drone concept. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="drone"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="orbital-comm-relay"/>
+    <display value="Orbital Communication Relay"/>
+    <definition value="Orbital relay satellite for lunar communications. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="communications"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="observation-satellite"/>
+    <display value="Observation Satellite"/>
+    <definition value="Lunar observation and monitoring satellite. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="communications"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="relay-satellite-observability"/>
+    <display value="Relay Satellite with Observability"/>
+    <definition value="Relay satellite with observability functions. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="communications"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="surface-comm-nav-node"/>
+    <display value="Surface Communication and Navigation Node"/>
+    <definition value="Lunar surface communication and navigation infrastructure node. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="communications"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="deployable-surface-comm-tower"/>
+    <display value="Deployable Surface Communication Tower"/>
+    <definition value="Deployable surface communications tower. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="communications"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="high-throughput-surface-comms"/>
+    <display value="High-Throughput Surface Communications Node"/>
+    <definition value="High-bandwidth lunar surface communications node. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="communications"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="lunar-pnt-node"/>
+    <display value="Lunar PNT Node"/>
+    <definition value="Positioning, navigation, and timing infrastructure node. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="navigation"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="clock-demo-node"/>
+    <display value="Lunar Clock Demonstration Node"/>
+    <definition value="Surface timing and synchronization demonstrator. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="navigation"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="navigation-capability-node"/>
+    <display value="Navigation Capability Node"/>
+    <definition value="Lunar navigation infrastructure element. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="navigation"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="logistics-demo-unit"/>
+    <display value="Logistics Demonstration Unit"/>
+    <definition value="Demonstrator for lunar surface logistics. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="logistics"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="logistics-delivery-vehicle"/>
+    <display value="Logistics Delivery Vehicle"/>
+    <definition value="Lunar surface or cargo delivery logistics asset concept. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="logistics"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="cargo-return-vehicle"/>
+    <display value="Cargo Return Vehicle"/>
+    <definition value="Vehicle concept for returning cargo from lunar surface operations. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="logistics"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="isru-plant"/>
+    <display value="ISRU Plant"/>
+    <definition value="In Situ Resource Utilization processing system under development. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="isru"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="solar-power-augmentation-unit"/>
+    <display value="Solar Power Augmentation Unit"/>
+    <definition value="Solar power augmentation infrastructure. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="power"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="solar-battery-rfc-power-unit"/>
+    <display value="Solar Battery RFC Power Unit"/>
+    <definition value="Solar, battery, and regenerative fuel cell power system. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="power"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="fission-surface-power-unit"/>
+    <display value="Fission Surface Power Unit"/>
+    <definition value="Lunar surface fission power system under development. Manufacturer: NASA / DOE / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="power"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / DOE / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="power-infrastructure-node"/>
+    <display value="Power Infrastructure Node"/>
+    <definition value="Surface electrical power infrastructure node. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="power"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="power-distribution-node"/>
+    <display value="Power Distribution Node"/>
+    <definition value="Surface power distribution system. Manufacturer: NASA / Partners. Test env: ground."/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="power"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+    <property>
+      <code value="manufacturer"/>
+      <valueString value="NASA / Partners"/>
     </property>
   </concept>
 </CodeSystem>

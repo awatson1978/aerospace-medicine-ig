@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-training-procedures-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "underwater-training-procedures-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet underwater-training-procedures-vs</b></p><a name=\"underwater-training-procedures-vs\"> </a><a name=\"hcunderwater-training-procedures-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/182813001\">182813001</a></td><td>Training activity</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-neutral-buoyancy-training-cs.html\"><code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.7.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-neutral-buoyancy-training-cs.html#neutral-buoyancy-training-cs-eva-simulation\">eva-simulation</a></td><td>EVA Simulation Training</td><td>Extravehicular activity simulation in neutral buoyancy pool</td></tr><tr><td><a href=\"CodeSystem-neutral-buoyancy-training-cs.html#neutral-buoyancy-training-cs-tool-manipulation\">tool-manipulation</a></td><td>Tool Manipulation Training</td><td>Training for handling tools and equipment in weightless environment</td></tr><tr><td><a href=\"CodeSystem-neutral-buoyancy-training-cs.html#neutral-buoyancy-training-cs-emergency-egress\">emergency-egress</a></td><td>Emergency Egress Training</td><td>Training for emergency escape procedures from spacecraft</td></tr><tr><td><a href=\"CodeSystem-neutral-buoyancy-training-cs.html#neutral-buoyancy-training-cs-communication-training\">communication-training</a></td><td>Communication Training</td><td>Training in the use of underwater communication systems and signal protocols</td></tr><tr><td><a href=\"CodeSystem-neutral-buoyancy-training-cs.html#neutral-buoyancy-training-cs-crew-coordination\">crew-coordination</a></td><td>Crew Coordination Training</td><td>Multi-astronaut coordination and communication training</td></tr><tr><td><a href=\"CodeSystem-neutral-buoyancy-training-cs.html#neutral-buoyancy-training-cs-equipment-familiarization\">equipment-familiarization</a></td><td>Equipment Familiarization</td><td>Introduction and practice with space equipment</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-training-procedures-vs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-training-procedures-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "UnderwaterTrainingProcedures"] ; # 
+  fhir:title [ fhir:v "Underwater Training Procedures"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Procedures and activities conducted during underwater training"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "182813001" ] ;
+         fhir:display [ fhir:v "Training activity" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "eva-simulation" ] ;
+         fhir:display [ fhir:v "EVA Simulation Training" ]
+       ] [
+         fhir:code [ fhir:v "tool-manipulation" ] ;
+         fhir:display [ fhir:v "Tool Manipulation Training" ]
+       ] [
+         fhir:code [ fhir:v "emergency-egress" ] ;
+         fhir:display [ fhir:v "Emergency Egress Training" ]
+       ] [
+         fhir:code [ fhir:v "communication-training" ] ;
+         fhir:display [ fhir:v "Communication Training" ]
+       ] [
+         fhir:code [ fhir:v "crew-coordination" ] ;
+         fhir:display [ fhir:v "Crew Coordination Training" ]
+       ] [
+         fhir:code [ fhir:v "equipment-familiarization" ] ;
+         fhir:display [ fhir:v "Equipment Familiarization" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

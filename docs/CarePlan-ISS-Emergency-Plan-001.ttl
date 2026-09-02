@@ -6,24 +6,36 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/CarePlan/ISS-Emergency-Plan-001> a fhir:CarePlan ;
+<https://awatson1978.github.io/aerospace-medicine-ig/CarePlan/ISS-Emergency-Plan-001> a fhir:CarePlan ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ISS-Emergency-Plan-001"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/emergency-care-plan"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/emergency-care-plan>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-care-plan"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-care-plan>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan ISS-Emergency-Plan-001</b></p><a name=\"ISS-Emergency-Plan-001\"> </a><a name=\"hcISS-Emergency-Plan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-emergency-care-plan.html\">Emergency Care Plan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: ISS Expedition 75 Emergency Contingency Plan</p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs safe-haven}\">Safe Haven</span></td><td>Not Started</td><td>Retreat to Soyuz or Dragon for safe haven in case of toxic atmosphere or fire</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs crew-dragon-return}\">Crew Dragon Return</span></td><td>Not Started</td><td>Emergency return via Crew Dragon if safe haven insufficient</td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan ISS-Emergency-Plan-001</b></p><a name=\"ISS-Emergency-Plan-001\"> </a><a name=\"hcISS-Emergency-Plan-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-emergency-care-plan.html\">Emergency Care Plan</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>title</b>: ISS Expedition 75 Emergency Contingency Plan</p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs safe-haven}\">Safe Haven</span></td><td>Not Started</td><td>Retreat to Soyuz or Dragon for safe haven in case of toxic atmosphere or fire</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs crew-dragon-return}\">Crew Dragon Return</span></td><td>Not Started</td><td>Emergency return via Crew Dragon if safe haven insufficient</td></tr></table></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:intent [ fhir:v "plan"] ; # 
   fhir:title [ fhir:v "ISS Expedition 75 Emergency Contingency Plan"] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:activity ( [
@@ -31,8 +43,8 @@
        fhir:code [
          fhir:coding ( [
            fhir:system [
-             fhir:v "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs"^^xsd:anyURI ;
-             fhir:l <https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs>
+             fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs"^^xsd:anyURI ;
+             fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs>
            ] ;
            fhir:code [ fhir:v "safe-haven" ] ;
            fhir:display [ fhir:v "Safe Haven" ]
@@ -46,8 +58,8 @@
        fhir:code [
          fhir:coding ( [
            fhir:system [
-             fhir:v "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs"^^xsd:anyURI ;
-             fhir:l <https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs>
+             fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs"^^xsd:anyURI ;
+             fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs>
            ] ;
            fhir:code [ fhir:v "crew-dragon-return" ] ;
            fhir:display [ fhir:v "Crew Dragon Return" ]

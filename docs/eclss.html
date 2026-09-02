@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Environmental Control and Life Support Systems (ECLSS) -  v0.6.2</title>
+    <title>Life Support Systems (ECLSS) Telemetry - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -222,7 +222,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Environmental Control and Life Support Systems (ECLSS)</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Life Support Systems (ECLSS) Telemetry</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -242,8 +242,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Environmental Control and Life Support Systems (ECLSS)</h2>
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Life Support Systems (ECLSS) Telemetry</h2>
   
 
 
@@ -260,20 +260,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#unified-environmental-health-telemetry-fields-for-spacecraft" id="markdown-toc-unified-environmental-health-telemetry-fields-for-spacecraft">Unified Environmental Health Telemetry Fields for Spacecraft</a>    <ul>
-      <li><a href="#atmospheric-composition" id="markdown-toc-atmospheric-composition">Atmospheric Composition</a></li>
-      <li><a href="#cabin-pressure-temperature-and-humidity" id="markdown-toc-cabin-pressure-temperature-and-humidity">Cabin Pressure, Temperature, and Humidity</a></li>
-      <li><a href="#airborne-contaminants--trace-gases" id="markdown-toc-airborne-contaminants--trace-gases">Airborne Contaminants &amp; Trace Gases</a></li>
-      <li><a href="#particulate-and-microbial-monitoring" id="markdown-toc-particulate-and-microbial-monitoring">Particulate and Microbial Monitoring</a></li>
-      <li><a href="#radiation-environment" id="markdown-toc-radiation-environment">Radiation Environment</a></li>
-      <li><a href="#thresholds-and-safety-limits-smacs--guidelines" id="markdown-toc-thresholds-and-safety-limits-smacs--guidelines">Thresholds and Safety Limits (SMACs &amp; Guidelines)</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#atmospheric-composition" id="markdown-toc-atmospheric-composition">Atmospheric Composition</a></li>
+  <li><a href="#cabin-pressure-temperature-and-humidity" id="markdown-toc-cabin-pressure-temperature-and-humidity">Cabin Pressure, Temperature, and Humidity</a></li>
+  <li><a href="#airborne-contaminants--trace-gases" id="markdown-toc-airborne-contaminants--trace-gases">Airborne Contaminants &amp; Trace Gases</a></li>
+  <li><a href="#particulate-and-microbial-monitoring" id="markdown-toc-particulate-and-microbial-monitoring">Particulate and Microbial Monitoring</a></li>
+  <li><a href="#radiation-environment" id="markdown-toc-radiation-environment">Radiation Environment</a></li>
+  <li><a href="#thresholds-and-safety-limits-smacs--guidelines" id="markdown-toc-thresholds-and-safety-limits-smacs--guidelines">Thresholds and Safety Limits (SMACs &amp; Guidelines)</a></li>
+  <li><a href="#relationship-to-fhir-profiles" id="markdown-toc-relationship-to-fhir-profiles">Relationship to FHIR Profiles</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h1 id="unified-environmental-health-telemetry-fields-for-spacecraft">Unified Environmental Health Telemetry Fields for Spacecraft</h1>
+<h3 id="overview">Overview</h3>
 
 <p>Maintaining a safe, Earth-like cabin environment is critical for crewed spacecraft. Environmental Control and Life Support Systems (ECLSS) on vehicles like the ISS, Space Shuttle, Artemis/Orion, Crew Dragon, and Soyuz all perform similar functions: providing breathable air, comfortable climate, and removing contaminants. Below is a structured set of JSON-based telemetry fields (with data types and units) that could be used across these spacecraft to monitor real-time environmental health parameters. Each field includes a description of its function, relevance to crew health, and any spacecraft-specific notes. (All units are metric for consistency.)</p>
 
@@ -285,12 +284,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>
     <p><strong>o2_percent</strong> (float, %) – Oxygen concentration in cabin air. Typically maintained around ~21% (sea-level equivalent) to support human respiration. Sufficient O₂ partial pressure (~21 kPa at 101 kPa total pressure) is vital to avoid hypoxia; too low causes dizziness and loss of consciousness.  Excess O₂ (above ~23-25%) is avoided due to fire risk. Relevance: Low O₂ impairs crew health within minutes. Spacecraft keep O₂ within tight bounds and display it in real time. For example, Orion’s laser air monitor continuously tracks O₂ levels.</p>
 
-    <p><em>Spacecraft notes:</em> All listed vehicles use a roughly Earth-normal O₂/N₂ atmosphere. The Space Shuttle and ISS operated at ~101 kPa, 21% O₂ 2. (The Shuttle could temporarily lower cabin pressure to ~70 kPa for EVA prep, but O₂ percent was then raised to ~26% to maintain partial pressure). Our unified field uses percentage for clarity.</p>
+    <p><em>Spacecraft notes:</em> All listed vehicles use a roughly Earth-normal O₂/N₂ atmosphere. The Space Shuttle and ISS operated at ~101 kPa, 21% O₂. (The Shuttle could temporarily lower cabin pressure to ~70 kPa for EVA prep, but O₂ percent was then raised to ~26% to maintain partial pressure). Our unified field uses percentage for clarity.</p>
   </li>
   <li>
-    <p><strong>co2_ppm</strong> (float, parts-per-million) – Carbon Dioxide concentration in cabin air. Nominally a few hundred to a few thousand ppm; controlled via scrubbers to stay below strict limits (NASA standard ≤3 mmHg ≈ 4000 ppm 1-hour average 5). High CO₂ can cause headaches, drowsiness, and impaired cognition, progressing to more serious symptoms if levels rise (e.g. ≥~8000 ppm causes distress). Relevance: CO₂ is the primary metabolic waste gas and must be removed to prevent hypercapnia. ECLSS continuously scrubs CO₂ (e.g. LiOH canisters in Crew Dragon and Soyuz, regenerative scrubbers on ISS) and monitors cabin CO₂ to trigger alerts if thresholds are exceeded. Real-time ppCO₂ is typically displayed to crew/ground because if CO₂ removal fails, crew can become symptomatic within hours.</p>
+    <p><strong>co2_ppm</strong> (float, parts-per-million) – Carbon Dioxide concentration in cabin air. Nominally a few hundred to a few thousand ppm; controlled via scrubbers to stay below strict limits (the ISS operational limit is a 24-hour average of 3 mmHg, about 4,000 ppm; see the threshold table below). High CO₂ can cause headaches, drowsiness, and impaired cognition, progressing to more serious symptoms if levels rise (e.g. ≥~8000 ppm causes distress). Relevance: CO₂ is the primary metabolic waste gas and must be removed to prevent hypercapnia. ECLSS continuously scrubs CO₂ (e.g. LiOH canisters in Crew Dragon and Soyuz, regenerative scrubbers on ISS) and monitors cabin CO₂ to trigger alerts if thresholds are exceeded. Real-time ppCO₂ is typically displayed to crew/ground because if CO₂ removal fails, crew can become symptomatic within hours.</p>
 
-    <p><em>Spacecraft notes:</em> ISS and Shuttle aimed for ~0.3–0.5% CO₂ (≈2300–3800 ppm) steady-state. NASA’s guidelines (SMAC and Std-3001) limit exposure (e.g. 3 mmHg / 0.4 kPa 1-hr limit). Soyuz and Apollo (short-term missions) allowed CO₂ to climb a bit higher before canister changes, but all include this field. Use of ppm aligns with common reporting and SMAC values.</p>
+    <p><em>Spacecraft notes:</em> ISS and Shuttle aimed for ~0.3–0.5% CO₂ (≈2300–3800 ppm) steady-state. NASA’s guidelines (the JSC 20584 SMACs and NASA-STD-3001) limit exposure (e.g. the 3 mmHg / 0.4 kPa 24-hour operational limit). Soyuz and Apollo (short-term missions) allowed CO₂ to climb a bit higher before canister changes, but all include this field. Use of ppm aligns with common reporting and SMAC values.</p>
   </li>
   <li>
     <p><strong>n2_percent</strong> (float, %) – Nitrogen concentration in cabin air. Normally ~78% in an Earth-like atmosphere. N₂ is an inert buffer gas that maintains total pressure and prevents excess oxygen. Relevance: While N₂ itself isn’t metabolically active, the total pressure and partial pressures of O₂/ N₂ are managed together. Too little N₂ results in low total pressure (risk of decompression sickness); too much N₂ at high pressure could raise risk of nitrogen narcosis, though spacecraft do not approach those levels. N₂ is typically not toxic, but its percentage drops if O₂ is increased for pressure adjustments.</p>
@@ -298,16 +297,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><em>Spacecraft notes:</em> All vehicles use N₂ as the primary diluent gas. Some Russian vehicles historically reported total pressure in mmHg and O₂ in partial pressure, implicitly determining N₂. This field makes N₂ explicit for completeness (optional if total pressure and O₂ are known).</p>
   </li>
   <li>
-    <p><strong>ch4_ppm</strong> (float, ppm) – Methane concentration in cabin air. Normally very low (a few ppm). CH₄ can be produced by human metabolism in trace amounts or released from experiments/hardware. Relevance: Methane is not highly toxic at trace levels but is monitored as part of atmospheric quality. It is also a flammability concern if concentrated (though nominal levels are far below the lower flammable limit). On ISS, the Major Constituent Analyzer tracks CH₄ continuously. An
-unusual rise could indicate a leak from a system or an unexpected biologic process.</p>
+    <p><strong>ch4_ppm</strong> (float, ppm) – Methane concentration in cabin air. Normally very low (a few ppm). CH₄ can be produced by human metabolism in trace amounts or released from experiments/hardware. Relevance: Methane is not highly toxic at trace levels but is monitored as part of atmospheric quality. It is also a flammability concern if concentrated (though nominal levels are far below the lower flammable limit). On ISS, the Major Constituent Analyzer tracks CH₄ continuously. An unusual rise could indicate a leak from a system or an unexpected biologic process.</p>
 
-    <p><em>Spacecraft notes:</em> All modern spacecraft have the capability to detect elevated methane as a safety metric, though nominal readings are near-zero. This field would typically read or a small value under normal conditions.</p>
+    <p><em>Spacecraft notes:</em> All modern spacecraft have the capability to detect elevated methane as a safety metric, though nominal readings are near-zero. This field would typically read zero or a small value under normal conditions.</p>
   </li>
   <li>
-    <p><strong>h2_ppm</strong> (float, ppm) – Hydrogen concentration in cabin air. Nominally ~0 ppm; any detected H₂ is significant. Relevance: Hydrogen is a highly flammable gas, monitored to detect leaks (e.g. from fuel cells on Shuttle, water electrolysis equipment on ISS). Even small H₂ accumulations are taken seriously; readings approaching a fraction of a percent would prompt alarms due to fire/explosion
-risk.</p>
+    <p><strong>h2_ppm</strong> (float, ppm) – Hydrogen concentration in cabin air. Nominally ~0 ppm; any detected H₂ is significant. Relevance: Hydrogen is a highly flammable gas, monitored to detect leaks (e.g. from fuel cells on Shuttle, water electrolysis equipment on ISS). Even small H₂ accumulations are taken seriously; readings approaching a fraction of a percent would prompt alarms due to fire/explosion risk.</p>
 
-    <p><em>Spacecraft notes:</em> ISS’s analyzer monitors H₂ 10, and Apollo/Shuttle had H₂ sensors (fuel cell byproduct). This field may often be zero; a non-zero reading triggers troubleshooting. Units in ppm (or µatm partial pressure) allow detecting tiny increases.</p>
+    <p><em>Spacecraft notes:</em> ISS’s analyzer monitors H₂, and Apollo/Shuttle had H₂ sensors (fuel cell byproduct). This field may often be zero; a non-zero reading triggers troubleshooting. Units in ppm (or µatm partial pressure) allow detecting tiny increases.</p>
   </li>
   <li>
     <p><strong>h2o_partial_pressure</strong> (float, kPa) – Water vapor partial pressure in cabin air, i.e. moisture content. This can also be reported as humidity (see below) but is included here as a measured gas partial pressure (e.g. ISS detects H₂O via mass spectrometer). Relevance: Adequate humidity is important for crew comfort and health (avoiding dry skin or excessive condensation). Water vapor in excess leads to condensation on surfaces, which can foster microbial growth or electrical issues.</p>
@@ -329,13 +326,12 @@ risk.</p>
     <p><em>Spacecraft notes:</em> The Space Shuttle occasionally operated at ~70 kPa (10.2 psi) during pre-EVA campouts to acclimate crews for spacesuit pressure. Our unified field is in kPa (metric); historically, NASA used psi and Russia used mmHg (760 mmHg = 101 kPa) – conversion can be handled in software. Typical safe range per NASA is roughly 91–104 kPa cabin pressure (with alarms outside that).</p>
   </li>
   <li>
-    <p><strong>cabin_temperature_C</strong> (float, °C) – Cabin air temperature. Usually maintained in the 18°C to 27°C safe range 13, with an optimal comfort band around 22°C ±3°. Relevance: Temperature directly affects crew comfort, performance, and health. Too cold (&lt;18°C) risks hypothermia over time; too hot (&gt;30°C) causes heat stress and degrades the ability to work. NASA’s human health standards specify 18–27 °C as safe limits for crew health, and a narrower 20–25 °C for ideal performance and
-comfort 13. This telemetry field ensures thermal control systems are keeping habitat temperature within those bounds.</p>
+    <p><strong>cabin_temperature_C</strong> (float, °C) – Cabin air temperature. Usually maintained in the 18°C to 27°C safe range, with an optimal comfort band around 22°C ±3°. Relevance: Temperature directly affects crew comfort, performance, and health. Too cold (&lt;18°C) risks hypothermia over time; too hot (&gt;30°C) causes heat stress and degrades the ability to work. NASA’s human health standards specify 18–27 °C as safe limits for crew health, and a narrower 20–25 °C for ideal performance and comfort (NASA-STD-3001 Volume 2). This telemetry field ensures thermal control systems are keeping habitat temperature within those bounds.</p>
 
     <p><em>Spacecraft notes:</em> All crewed spacecraft have active thermal control. The ISS for example maintains roughly 22–24 °C in modules. Crew can adjust Dragon and Orion cabin temps within a set range. This field is critical during phases like re-entry or sunlight eclipse cycles when thermal swings occur.</p>
   </li>
   <li>
-    <p><strong>cabin_humidity_percent</strong> (float, %RH) – Relative humidity of cabin air. Controlled to stay roughly 30–60% RH for comfort 14 13, with allowable wider bounds ~25–75% . Relevance: Humidity affects respiratory comfort and prevents issues like drying of mucous membranes (if too low) or condensation and mold growth (if too high). NASA requires keeping humidity under 75% to avoid condensation on surfaces. High humidity combined with microgravity can cause water accumulation in unintended places, and too low humidity can increase susceptibility to illness. This field is monitored continuously; deviations trigger dehumidifiers or humidifiers as needed.</p>
+    <p><strong>cabin_humidity_percent</strong> (float, %RH) – Relative humidity of cabin air. Controlled to stay roughly 30–60% RH for comfort, with allowable wider bounds of about 25–75% (NASA-STD-3001 Volume 2). Relevance: Humidity affects respiratory comfort and prevents issues like drying of mucous membranes (if too low) or condensation and mold growth (if too high). NASA requires keeping humidity under 75% to avoid condensation on surfaces. High humidity combined with microgravity can cause water accumulation in unintended places, and too low humidity can increase susceptibility to illness. This field is monitored continuously; deviations trigger dehumidifiers or humidifiers as needed.</p>
 
     <p><em>Spacecraft notes:</em> The ISS uses a condensing heat exchanger to remove moisture, keeping RH ~40-60%. Soyuz, being a smaller volume, relies on cabin air temperature control and lithium chloride canisters for humidity. All vehicles transmit humidity readings to ground. Water vapor/condensate metrics: If humidity gets too high, condensation sensors or accumulated condensate volume might also be tracked (e.g. liters of water collected), but those are indirect – the %RH field is the primary indicator of moisture in air.</p>
   </li>
@@ -354,7 +350,7 @@ comfort 13. This telemetry field ensures thermal control systems are keeping hab
   <li>
     <p><strong>co_ppm</strong> (float, ppm) – Carbon Monoxide concentration. Normally 0 ppm in a healthy cabin (CO is not naturally present). Any non-zero reading is critical. Relevance: CO is a poisonous gas that binds to blood hemoglobin, causing suffocation at high levels. It could be produced by smoldering electrical components or incomplete combustion (though open fire is rare in spacecraft, a heater malfunction or a chemical reaction could release CO). ECLSS often includes a Combustion Product Monitor that watches for CO as an early fire indicator. SMAC limits for CO are very low (on the order of 10–50 ppm for short-term exposure).</p>
 
-    <p><em>Spacecraft notes</em>: The Space Shuttle had a sensor to convert any CO to CO₂ for removal, and the ISS’s Trace Contaminant Control System (TCCS) catalytically oxidizes CO to CO₂ as well 18. In Soyuz, chemical oxygen candles (if used) could produce CO if malfunctioning – hence cabin air is sampled by chemical dosimeters. Our field assumes any modern craft would report CO if detected (e.g. via an Air Quality Monitor payload).</p>
+    <p><em>Spacecraft notes</em>: The Space Shuttle had a sensor to convert any CO to CO₂ for removal, and the ISS’s Trace Contaminant Control System (TCCS) catalytically oxidizes CO to CO₂ as well. In Soyuz, chemical oxygen candles (if used) could produce CO if malfunctioning – hence cabin air is sampled by chemical dosimeters. Our field assumes any modern craft would report CO if detected (e.g. via an Air Quality Monitor payload).</p>
   </li>
   <li>
     <p><strong>nh3_ppm</strong> (float, ppm) – Ammonia concentration. Nominally 0 ppm; any detectable ammonia is a concern. Relevance: Ammonia (NH₃) is a toxic, sharp-smelling gas that can irritate eyes and lungs even at low ppm. It might enter the cabin through coolant leaks (ISS and Shuttle used ammonia in external thermal control, but inside the cabin it could leak from an experiment or a breakdown of urea). NASA identified ammonia as one of the contaminants likely to exceed allowable limits without active scrubbing. SMAC limits for ammonia (NH₃) are on the order of 30 ppm for short-term and ~7 ppm long-term (for 180 days).</p>
@@ -415,8 +411,7 @@ comfort 13. This telemetry field ensures thermal control systems are keeping hab
     <p><em>Spacecraft notes:</em> Currently, ISS crew perform microbial air sampling periodically (using devices like Petri dish impactors or filter samplers) and incubate cultures; these results (CFU counts) are reported later. New technologies (e.g. gene sequencers and fluorescent detection) are being tested for real-time microbial monitoring onboard ISS. In a unified telemetry model, this field might be updated infrequently (after sampling), but future spacecraft could have continuous bioaerosol sensors. It’s included to cover the “microorganisms in cabin air” aspect of environmental health.</p>
   </li>
   <li>
-    <p><strong>surface_microbe_count_cfu_per_100cm2</strong> (float, CFU/100 cm²) – Surface microbial count (e.g. per swab area). While not an air telemetry value, this contextual field can be part of environmental health reports, indicating cleanliness of cabin surfaces. Relevance: High surface microbe counts could lead to air contamination or crew illness via contact. ECLSS doesn’t directly control surface
-microbes, but the data is relevant to overall habitat health.</p>
+    <p><strong>surface_microbe_count_cfu_per_100cm2</strong> (float, CFU/100 cm²) – Surface microbial count (e.g. per swab area). While not an air telemetry value, this contextual field can be part of environmental health reports, indicating cleanliness of cabin surfaces. Relevance: High surface microbe counts could lead to air contamination or crew illness via contact. ECLSS doesn’t directly control surface microbes, but the data is relevant to overall habitat health.</p>
 
     <p><em>Spacecraft notes:</em> This comes from crew-collected swabs and cultivation or genetic analysis (e.g. swab-to-sequencer methods on ISS). It’s an offline data point rather than real-time telemetry. Including it in the schema allows integrated environmental health monitoring (air and surfaces).</p>
   </li>
@@ -432,21 +427,19 @@ microbes, but the data is relevant to overall habitat health.</p>
 
 <ul>
   <li>
-    <p><strong>radiation_dose_rate_uSv_per_hr</strong> (float, µSv/h) – Current radiation dose rate in the habitat, in micro-Sieverts per hour. This indicates how much ionizing radiation the crew is being exposed to at the moment. On the ISS, typical rates are on the order of ~20–100 µSv/h depending on orbital position and solar activity (equivalent to ~0.2–1 mSv per week). Relevance: Real-time dose
-rate lets crew and ground know if radiation is within normal bounds or spiking (as during a solar particle event). If a sudden increase occurs, it may indicate a solar flare/CME and prompt crew to take shelter in a more shielded module. Continuous dosimeters feed this field; for example, astronauts wear personal dosimeters and the ISS has area monitors, the data from which can be telemetered.</p>
+    <p><strong>radiation_dose_rate_uSv_per_hr</strong> (float, µSv/h) – Current radiation dose rate in the habitat, in micro-Sieverts per hour. This indicates how much ionizing radiation the crew is being exposed to at the moment. On the ISS, typical rates are on the order of ~20–100 µSv/h depending on orbital position and solar activity (equivalent to ~0.2–1 mSv per week). Relevance: Real-time dose rate lets crew and ground know if radiation is within normal bounds or spiking (as during a solar particle event). If a sudden increase occurs, it may indicate a solar flare/CME and prompt crew to take shelter in a more shielded module. Continuous dosimeters feed this field; for example, astronauts wear personal dosimeters and the ISS has area monitors, the data from which can be telemetered.</p>
 
     <p><em>Spacecraft notes</em>: All current crew vehicles have passive dosimeters, but reporting a unified real-time dose rate is typically done on ISS (which has an array of radiation sensors). Orion has planned active radiation sensors for deep space, which would produce such a reading. We use µSv/hour as units (the Sievert accounts for biological effect). This field essentially gives a “radiation weather” report inside the craft.</p>
   </li>
   <li>
-    <p><strong>radiation_cumulative_mSv</strong> (float, mSv) – Cumulative mission dose received by the crew (or location) in millisieverts. This accumulative counter starts from mission begin (or could be career cumulative for each astronaut, but here likely mission-based). Relevance: Long-term health risk (cancer, etc.) correlates with total radiation dose. NASA and other agencies impose career and mission dose limits (for instance, ~600 mSv career limit, and ISS crew ~70 mSv per 6-months
-typically). Tracking cumulative dose ensures no crew exceeds safety limits. It also helps gauge when additional shielding or mission adjustments are needed.</p>
+    <p><strong>radiation_cumulative_mSv</strong> (float, mSv) – Cumulative mission dose received by the crew (or location) in millisieverts. This accumulative counter starts from mission begin (or could be career cumulative for each astronaut, but here likely mission-based). Relevance: Long-term health risk (cancer, etc.) correlates with total radiation dose. NASA and other agencies impose career and mission dose limits (NASA's career limit is 600 mSv effective dose regardless of age or sex, per NASA-STD-3001 Volume 1 Revision C; ISS crews typically receive on the order of 70 mSv per six-month increment). Tracking cumulative dose ensures no crew exceeds safety limits. It also helps gauge when additional shielding or mission adjustments are needed.</p>
 
     <p><em>Spacecraft notes:</em> On ISS, astronauts average ~0.1–0.18 Sv/year (100–180 mSv/y). The cumulative field would reflect such exposure. For short missions (Shuttle ~10 days, Dragon ~1–2 days transit), cumulative dose might stay &lt;5 mSv. Still, including it allows comparison across missions and ensures even short excursions (like Artemis lunar missions, which might get higher dose due to deep-space radiation) are monitored. It resets each mission (unless tracking a particular individual’s lifetime dose, which is usually done in medical records rather than telemetry).</p>
   </li>
   <li>
     <p><strong>radiation_alert_level</strong> (string/enum) – Radiation alert status, e.g. "Nominal", "Elevated", "Storm". This can be derived from dose rate but is a useful high-level field. Relevance: It indicates if radiation levels have crossed set thresholds. For example, if &gt;50 µSv/h, maybe "Elevated"; if a solar event pushes it &gt;500 µSv/h, "Storm" might be declared. Crew actions (shelter, electronics shutdown) are tied to these levels.</p>
 
-    <p><em>Spacecraft notes:</em> NASA procedures classify solar storm events and have go/no-go for EVAs based on radiation environment. An Orion deep-space mission might have a real-time "Storm Warning" indicator. In a unified API, this field distills complex data into an actio nable status (possibly fed by external space weather alerts too).</p>
+    <p><em>Spacecraft notes:</em> NASA procedures classify solar storm events and have go/no-go for EVAs based on radiation environment. An Orion deep-space mission might have a real-time "Storm Warning" indicator. In a unified API, this field distills complex data into an actionable status (possibly fed by external space weather alerts too). NASA's ISS flight rules include solar-storm procedures that move crew to better-shielded modules when warranted (see the OCHMO ECLSS technical brief and NASA-STD-3001 in the References).</p>
   </li>
   <li>
     <p><strong>shielding_mode</strong> (string) – Habitat shielding configuration. For instance, "Standard" vs "Storm Shelter". Relevance: Some spacecraft can optimize their configuration during radiation events – e.g., ISS crew can shelter in the heavily shielded Zvezda module during a solar flare. Orion plans to use its water and supplies to build a makeshift shelter. This field would indicate if the spacecraft/habitat is in a protective posture. It’s not a measure of environment, but a status that heavily influences crew dose.</p>
@@ -464,7 +457,7 @@ typically). Tracking cumulative dose ensures no crew exceeds safety limits. It a
 <p>Each of the above fields has associated allowable ranges or thresholds that trigger warnings. NASA’s Spacecraft Maximum Allowable Concentrations (SMACs) define exposure limits for contaminants (like CO, NH₃, formaldehyde, etc.) over various durations. Likewise, NASA-STD-3001 and vehicle specs define safe bands for pressure, O₂/CO₂, temperature, humidity, and radiation. In a unified telemetry schema, we don’t necessarily hardcode these limits as fields, but we highlight them in documentation or could provide them as a sub-object for reference. For example:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"thresholds": {
-"co2_ppm": { "warning": 5000, "emergency": 15000 },
+"co2_ppm": { "warning": 4000, "emergency": 7000 },
 "co_ppm": { "warning": 10, "emergency": 50 },
 "cabin_pressure_kPa": { "low_warning": 95, "low_emergency": 90,
 "high_warning": 105, "high_emergency": 110 },
@@ -472,12 +465,46 @@ typically). Tracking cumulative dose ensures no crew exceeds safety limits. It a
 }
 </code></pre></div></div>
 
-<p>(The above is an illustrative snippet — actual values would come from NASA specifications.)  Including such a structure in the API can inform software when to raise alerts. For instance, if co2_ppm exceeds the 1-hour limit (~0.7% or 7000 ppm per some standards), an alarm can be sent. In practice, ISS’s monitoring system already ties alarms to these limits. A unified API might standardize those thresholds across spacecraft for consistency in crew health management.
-Examples of key limits:</p>
+<p>(The above is an illustrative snippet. The CO₂ values are the 24-hour operational limit and the 7-day SMAC from the table below; the other values are placeholders that an implementer would replace with the applicable vehicle specification.)  Including such a structure in the API can inform software when to raise alerts. For instance, if co2_ppm exceeds the 7-day SMAC (5.3 mmHg, about 7,000 ppm), an alarm can be sent. In practice, ISS’s monitoring system already ties alarms to these limits. A unified API might standardize those thresholds across spacecraft for consistency in crew health management.</p>
+
+<p><strong>Carbon dioxide limits.</strong> CO₂ is the threshold most often quoted inconsistently, because several different limits exist for different exposure durations. The table below gives the values used throughout this guide. Partial pressures are converted to ppm at a 101 kPa (760 mmHg) cabin.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Limit</th>
+      <th>Partial pressure</th>
+      <th>Approximate concentration</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ISS operational limit (24-hour average)</td>
+      <td>3 mmHg</td>
+      <td>~4,000 ppm</td>
+      <td>NASA ISS flight rules; NASA-STD-3001 Volume 2</td>
+    </tr>
+    <tr>
+      <td>7-day SMAC</td>
+      <td>5.3 mmHg</td>
+      <td>~7,000 ppm</td>
+      <td>JSC 20584 Rev C</td>
+    </tr>
+    <tr>
+      <td>1,000-day SMAC</td>
+      <td>7.6 mmHg</td>
+      <td>~10,000 ppm</td>
+      <td>JSC 20584 Rev C</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Examples of key limits:</p>
 
 <ul>
   <li>
-    <p><strong>CO₂</strong>: As noted, keep &lt;3 mmHg (~4000 ppm) on 1-hr average ; long-term exposure should be much lower (NASA was revising standards for acceptable daily average). Crew report headaches if CO₂ goes above ~8 mmHg (~1% or 10,000 ppm), so that would be an emergency level.</p>
+    <p><strong>CO₂</strong>: As noted, keep below 3 mmHg (~4,000 ppm) on a 24-hour average; the 7-day SMAC is 5.3 mmHg (~7,000 ppm) and the 1,000-day SMAC is 7.6 mmHg (~10,000 ppm). Crew have reported headaches at partial pressures well below the older 1,000-day value, which is why the operational limit is set lower than the SMACs.</p>
   </li>
   <li>
     <p><strong>O₂</strong>: Nominal 21 kPa (21% at 101 kPa); emergency if drops below ~16 kPa (risk of hypoxia) or rises above ~23 kPa (increased fire risk). Spacecraft fire safety rules often set an O₂ upper limit ~30% O₂ at 10.2 psi for EVA pre-breathe scenarios – beyond that is not permitted.</p>
@@ -489,18 +516,22 @@ Examples of key limits:</p>
     <p><strong>Temperature/Humidity</strong>: From NASA-STD-3001: keep 18–27 °C, 25–75% RH for crew health.  Outside that, crew efficiency or safety is impacted, so alarms at those boundaries (with perhaps soft warnings outside comfort range 20–25 °C, 30–60% RH).</p>
   </li>
   <li>
-    <p><strong>Contaminants</strong>: SMAC tables provide a wealth of limit data . For instance, formaldehyde 7-day SMAC ~0.4 ppm【6†fig】; ammonia 24-hr SMAC ~30 ppm, 7-day ~15 ppm【6†fig】; carbon monoxide 1-hr SMAC ~40 ppm. These values guide the warning and emergency levels for those fields. Typically, the “emergency” would correspond to short-term SMAC (1-hr), and “warning” to long-term SMAC (7-day) being exceeded.</p>
+    <p><strong>Contaminants</strong>: The JSC 20584 SMAC tables provide a wealth of limit data. For instance, the formaldehyde 7-day SMAC is 0.1 ppm; ammonia limits are on the order of 30 ppm for 24 hours and lower for 7 days; carbon monoxide short-term limits are on the order of tens of ppm. These values guide the warning and emergency levels for those fields. Typically, the “emergency” would correspond to short-term SMAC (1-hr), and “warning” to long-term SMAC (7-day) being exceeded.</p>
   </li>
   <li>
-    <p><strong>Radiation</strong>: Agencies have per-event and annual limits. For example, a solar particle event might have a mission halt threshold if dose exceeds certain mSv in a short time. Long-term, NASA limits astronauts to a career dose (which is not one-size-fits-all due to individual limits, but on the order of a few hundred mSv). The alert levels can be tied to current rate (e.g. &gt;1000 µSv/h definitely "Storm") or cumulative (e.g. if someone approaches 250 mSv on a year-long mission, that’s a flag).</p>
+    <p><strong>Radiation</strong>: Agencies have per-event and annual limits. For example, a solar particle event might have a mission halt threshold if dose exceeds certain mSv in a short time. Long-term, NASA limits astronauts to a career effective dose of 600 mSv (NASA-STD-3001 Volume 1 Revision C). The alert levels can be tied to current rate (e.g. &gt;1000 µSv/h definitely "Storm") or cumulative (e.g. if someone approaches 250 mSv on a year-long mission, that’s a flag).</p>
   </li>
 </ul>
 
-<p>It’s important to note that different spacecraft can have slight differences in their nominal environmental settings or sensor availability, but the above JSON fields are chosen to be general enough for all: - The ISS has the most extensive monitoring (all listed fields are applicable; it even has specialized monitors for combustion products and trace gases). - The Space Shuttle (historical) had most of these fields except it did not have real-time formaldehyde sensors (samples were analyzed post-flight). It did measure CO₂, O₂, pressure, etc., and kept contaminants low via LiOH and activated charcoal canisters.</p>
+<p>It’s important to note that different spacecraft can have slight differences in their nominal environmental settings or sensor availability, but the above JSON fields are chosen to be general enough for all:</p>
 
-<p>Orion/Artemis will have modern air monitors (O₂, CO₂, H₂O, possibly trace gas sensors) and radiation sensors, given its deep space profile. Expect all fields to be relevant; some (like shielding_mode ) particularly so for solar storm response. - Crew Dragon (SpaceX) supports short missions (~1–3 days transit to ISS). It has a simple open-loop ECLSS: pressurized oxygen tanks, LiOH cartridges for CO₂. It does monitor cabin atmosphere (O₂, CO₂, pressure, T, RH) to maintain safety, but likely not a full suite of trace gas sensors due to short duration. In a unified schema, fields like formaldehyde or NH₃ might simply remain near zero/default (no data) for Dragon unless something abnormal occurs.</p>
-
-<p>Radiation is less a concern for LEO transport, but dosimeters are onboard. - Soyuz (Russian spacecraft) uses chemical oxygen generation and LiOH for CO₂, with cabin pressure ~1 atm of O₂/N₂. It has rudimentary sensors: historically a “gas analyzer” periodically measured O₂ and CO₂ levels on Soyuz. Newer Soyuz models likely have digital sensors for P, T as well. Fields like trace contaminants and particles might not be actively measured on Soyuz, but in a unified data format those fields could be left null or filled by ground analysis if needed. Radiation monitoring on Soyuz is via passive badges, so radiation_dose_rate might not update until after flight in that case.</p>
+<ul>
+  <li><strong>ISS</strong> has the most extensive monitoring (all listed fields are applicable; it even has specialized monitors for combustion products and trace gases).</li>
+  <li><strong>Space Shuttle</strong> (historical) had most of these fields except real-time formaldehyde sensors (samples were analyzed post-flight). It did measure CO₂, O₂, pressure, and so on, and kept contaminants low via LiOH and activated charcoal canisters.</li>
+  <li><strong>Orion/Artemis</strong> will have modern air monitors (O₂, CO₂, H₂O, possibly trace gas sensors) and radiation sensors, given its deep space profile. Expect all fields to be relevant; some (like <code class="language-plaintext highlighter-rouge">shielding_mode</code>) particularly so for solar storm response.</li>
+  <li><strong>Crew Dragon</strong> (SpaceX) supports short missions (roughly 1–3 days transit to ISS). It has a simple open-loop ECLSS: pressurized oxygen tanks and LiOH cartridges for CO₂. It monitors cabin atmosphere (O₂, CO₂, pressure, temperature, RH) to maintain safety, but likely not a full suite of trace gas sensors given the short duration. In a unified schema, fields like formaldehyde or NH₃ might simply remain near zero or absent for Dragon unless something abnormal occurs. Radiation is less a concern for LEO transport, but dosimeters are onboard.</li>
+  <li><strong>Soyuz</strong> uses chemical oxygen generation and LiOH for CO₂, with cabin pressure of about 1 atm of O₂/N₂. It has rudimentary sensors: historically a “gas analyzer” periodically measured O₂ and CO₂ levels. Newer Soyuz models likely have digital sensors for pressure and temperature as well. Trace contaminants and particles might not be actively measured on Soyuz, but in a unified data format those fields could be left null or filled by ground analysis if needed. Radiation monitoring on Soyuz is via passive badges, so <code class="language-plaintext highlighter-rouge">radiation_dose_rate_uSv_per_hr</code> might not update until after flight.</li>
+</ul>
 
 <p>In summary, Table 1 below outlines the core JSON fields, their types/units, and descriptions:</p>
 
@@ -673,11 +704,17 @@ Examples of key limits:</p>
   </tbody>
 </table>
 
-<p>Sources: This unified schema is based on NASA ECLSS technical documentation and spacecraft specifications. The ISS ECLSS design, for example, explicitly monitors O₂, N₂, CO₂, CH₄, H₂, H₂O partial pressures, total pressure, temperature, and humidity in real time. It filters particulates and microorganisms and removes trace organic gases to keep levels within safe limits. NASA’s Spacecraft Maximum Allowable Concentration (SMAC) guidelines inform the threshold values for contaminants.  The Orion capsule’s life support includes advanced sensors for major constituents and water vapor, and planned deep-space missions emphasize radiation monitoring and storm shelter protocols. By standardizing the telemetry fields as above, data from a Crew Dragon on a short ISS ferry flight or from a months-long ISS expedition, or even a future Lunar Gateway module, can be interpreted uniformly to ensure crew environmental health is always safeguarded.</p>
+<p>Basis for this schema: This unified schema is based on NASA ECLSS technical documentation and spacecraft specifications. The ISS ECLSS design, for example, explicitly monitors O₂, N₂, CO₂, CH₄, H₂, H₂O partial pressures, total pressure, temperature, and humidity in real time. It filters particulates and microorganisms and removes trace organic gases to keep levels within safe limits. NASA’s Spacecraft Maximum Allowable Concentration (SMAC) guidelines inform the threshold values for contaminants.  The Orion capsule’s life support includes advanced sensors for major constituents and water vapor, and planned deep-space missions emphasize radiation monitoring and storm shelter protocols. By standardizing the telemetry fields as above, data from a Crew Dragon on a short ISS ferry flight or from a months-long ISS expedition, or even a future Lunar Gateway module, can be interpreted uniformly to ensure crew environmental health is always safeguarded.</p>
+
+<h3 id="relationship-to-fhir-profiles">Relationship to FHIR Profiles</h3>
+
+<p>The JSON field names on this page are a telemetry vocabulary, not FHIR resources, but the guide already carries the same measurements in FHIR form. The <a href="StructureDefinition-SpacecraftLifeSupportTelemetry.html">Spacecraft Life Support Telemetry</a> logical model mirrors this page field-for-field in camelCase (<code class="language-plaintext highlighter-rouge">o2Percent</code>, <code class="language-plaintext highlighter-rouge">co2Ppm</code>, <code class="language-plaintext highlighter-rouge">cabinPressureKPa</code>, <code class="language-plaintext highlighter-rouge">radiationDoseRateUSvPerHr</code>, and so on), grouped into the same atmospheric, climate, contaminant, particulate, and radiation sections, so it is the formal definition of the schema described here. When a reading is exchanged as a clinical or operational record it is carried as an Observation conforming to the <a href="StructureDefinition-environmental-monitoring.html">Environmental Monitoring</a> profile, with the field name mapping to <code class="language-plaintext highlighter-rouge">Observation.code</code> (or to <code class="language-plaintext highlighter-rouge">Observation.component.code</code> when several readings are reported together) and the value and UCUM unit carried in <code class="language-plaintext highlighter-rouge">valueQuantity</code>. The radiation fields (<code class="language-plaintext highlighter-rouge">radiation_dose_rate_uSv_per_hr</code>, <code class="language-plaintext highlighter-rouge">radiation_cumulative_mSv</code>, <code class="language-plaintext highlighter-rouge">shielding_mode</code>) correspond to the <a href="StructureDefinition-space-radiation-exposure.html">Space Radiation Exposure</a> and <a href="StructureDefinition-cumulative-radiation-dose.html">Cumulative Radiation Dose</a> profiles and the <a href="StructureDefinition-shielding-mass.html">Shielding Mass</a> extension described on the <a href="radiation-tracking.html">Radiation Tracking</a> page. A related logical model for closed-biome habitats and greenhouses, <a href="StructureDefinition-EnvironmentalMonitoringLogicalModel.html">Environmental Monitoring API for Closed Biome Systems</a>, reuses the atmospheric subset of these fields; see the <a href="biomes.html">Biospheres</a> page.</p>
 
 <h3 id="references">References</h3>
 
 <ul>
+  <li><a href="https://www.nasa.gov/wp-content/uploads/2024/03/nasa-std-3001-vol-1-rev-c.pdf">NASA. NASA Space Flight Human-System Standard, Volume 1: Crew Health. NASA-STD-3001 Vol 1 Rev C, 2024</a></li>
+  <li><a href="https://standards.nasa.gov/standard/nasa/nasa-std-3001-vol-2">NASA-STD-3001, Volume 2 - Human Factors, Habitability, and Environmental Health</a></li>
   <li><a href="https://www.nasa.gov/wp-content/uploads/2016/01/174687main_eclss_facts.pdf?emrc=0ab55e">NASA Facts - International Space Station Environmental Control and Life Support System</a></li>
   <li><a href="https://www.howitworksdaily.com/how-does-the-soyuz-launch-system-work/">How does the Soyuz launch system work? – How It Works</a></li>
   <li><a href="https://www.nasa.gov/wp-content/uploads/2023/07/eclss-technical-brief-ochmo.pdf">OCHMO-TB-002 Environmental Control &amp; Life Support System: Human-Centered Approach</a></li>
@@ -696,9 +733,7 @@ Examples of key limits:</p>
   <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8229003/">A Microbial Monitoring System Demonstrated on the International Space Station Provides a Successful Platform for Detection of Targeted Microorganisms</a></li>
   <li><a href="https://pubmed.ncbi.nlm.nih.gov/33467183/">Real-Time Culture-Independent Microbial Profiling Onboard the International Space Station Using Nanopore Sequencing</a></li>
   <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8038356/">Radiation on Earth or in Space: What Does It Change?</a></li>
-  <li><a href="https://en.wikipedia.org/wiki/Effects_of_ionizing_radiation_in_spaceflight">Effects of ionizing radiation in spaceflight</a></li>
   <li><a href="https://newspaceeconomy.ca/2023/03/28/nasas-iss-procedures-responding-to-space-weather/">NASA’s ISS Procedures: Responding to Space Weather</a></li>
-  <li><a href="https://www.firstcoastnews.com/article/weather/solar-storm-causes-iss-crew-to-take-extra-precautions-to-avoid-radiation-aurora/77-b9e4b73b-7cd1-4d80-95c3-01bdbfbec587">Solar Storm causes I.S.S crew to take extra precautions to avoid radiation</a></li>
   <li><a href="https://www.nasa.gov/wp-content/uploads/2024/06/jsc-20584-smacs-rev-c-final.pdf?emrc=17fbbc">Spacecraft Maximum Allowable Concentrations for Airborne Contaminants </a></li>
   <li><a href="https://link.springer.com/10.1007/978-3-319-09575-2_39-2">Russian Life Support Systems: Vostok, Voskhod, and Soyuz</a></li>
 </ul>
@@ -722,7 +757,7 @@ Examples of key limits:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

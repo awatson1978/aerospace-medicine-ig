@@ -1,4 +1,4 @@
-# ISS Suit Redundancy Assessment - v0.6.2
+# ISS Suit Redundancy Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: ISS Suit Redundancy Assessment
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Suit Redundancy Assessment](StructureDefinition-suit-redundancy-assessment.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
@@ -33,8 +37,16 @@ Profile: [Suit Redundancy Assessment](StructureDefinition-suit-redundancy-assess
   "resourceType" : "Observation",
   "id" : "SuitRedundancy-Assessment-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/suit-redundancy-assessment"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
@@ -48,12 +60,18 @@ Profile: [Suit Redundancy Assessment](StructureDefinition-suit-redundancy-assess
   "component" : [
     {
       "code" : {
-        "text" : "Primary Suit Status"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+            "code" : "primary-suit-status",
+            "display" : "Primary Suit Status"
+          }
+        ]
       },
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs",
             "code" : "deployed-primary",
             "display" : "Deployed - Primary"
           }
@@ -62,12 +80,18 @@ Profile: [Suit Redundancy Assessment](StructureDefinition-suit-redundancy-assess
     },
     {
       "code" : {
-        "text" : "Backup Suit Status"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+            "code" : "backup-suit-status",
+            "display" : "Backup Suit Status"
+          }
+        ]
       },
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs",
             "code" : "deployed-backup",
             "display" : "Deployed - Backup"
           }
@@ -76,7 +100,13 @@ Profile: [Suit Redundancy Assessment](StructureDefinition-suit-redundancy-assess
     },
     {
       "code" : {
-        "text" : "Consumables Remaining"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+            "code" : "consumables-remaining",
+            "display" : "Consumables Remaining"
+          }
+        ]
       },
       "valueQuantity" : {
         "value" : 48,
@@ -87,7 +117,13 @@ Profile: [Suit Redundancy Assessment](StructureDefinition-suit-redundancy-assess
     },
     {
       "code" : {
-        "text" : "Next Maintenance Due"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs",
+            "code" : "next-maintenance-due",
+            "display" : "Next Maintenance Due"
+          }
+        ]
       },
       "valueDateTime" : "2028-09-01"
     }

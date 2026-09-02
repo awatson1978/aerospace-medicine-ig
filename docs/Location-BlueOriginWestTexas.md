@@ -1,10 +1,12 @@
-# Blue Origin West Texas Facility - v0.6.2
+# Blue Origin West Texas Facility - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Blue Origin West Texas Facility**
 
 ## Example Location: Blue Origin West Texas Facility
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
 
 **name**: Blue Origin West Texas
 
@@ -20,6 +22,9 @@
 {
   "resourceType" : "Location",
   "id" : "BlueOriginWestTexas",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record"
+  },
   "name" : "Blue Origin West Texas",
   "description" : "New Shepard suborbital tourist flights and crew training",
   "address" : {

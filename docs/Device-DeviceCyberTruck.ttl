@@ -6,18 +6,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Device/DeviceCyberTruck> a fhir:Device ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Device/DeviceCyberTruck> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "DeviceCyberTruck"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/SpaceEquipment>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-equipment>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device DeviceCyberTruck</b></p><a name=\"DeviceCyberTruck\"> </a><a name=\"hcDeviceCyberTruck\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SpaceEquipment.html\">Commercial Space Equipment</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: </p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Device - Cyber Truck</td><td>User Friendly name</td></tr></table><p><b>partNumber</b>: Cyber Truck</p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device DeviceCyberTruck</b></p><a name=\"DeviceCyberTruck\"> </a><a name=\"hcDeviceCyberTruck\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-equipment.html\">Commercial Space Equipment</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: </p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Device - Cyber Truck</td><td>User Friendly name</td></tr></table><p><b>partNumber</b>: Cyber Truck</p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:manufacturer [ fhir:v ""] ; # 

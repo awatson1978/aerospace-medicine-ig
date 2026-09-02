@@ -1,4 +1,4 @@
-# MEDB 1.14 Body Mass Measurement - v0.6.2
+# MEDB 1.14 Body Mass Measurement - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-1-14-body-mass | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-14-body-mass | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB114BodyMass |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To track body mass changes during spaceflight as an indicator of nutritional sta
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB114BodyMassQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -44,8 +47,8 @@ To track body mass changes during spaceflight as an indicator of nutritional sta
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-1-14-body-mass",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-14-body-mass",
+  "version" : "0.7.0",
   "name" : "MEDB114BodyMass",
   "title" : "MEDB 1.14 Body Mass Measurement",
   "status" : "active",
@@ -197,7 +200,7 @@ To track body mass changes during spaceflight as an indicator of nutritional sta
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

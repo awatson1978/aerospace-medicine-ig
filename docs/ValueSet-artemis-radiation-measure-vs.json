@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "artemis-radiation-measure-vs",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet artemis-radiation-measure-vs</b></p><a name=\"artemis-radiation-measure-vs\"> </a><a name=\"hcartemis-radiation-measure-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-artemis-radiation-measure-cs.html\"><code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.7.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-artemis-radiation-measure-cs.html#artemis-radiation-measure-cs-cumulative-dose\">cumulative-dose</a></td><td style=\"color: #cccccc\">Cumulative Radiation Dose</td><td>Accumulated effective dose over a mission phase or period</td></tr><tr><td><a href=\"CodeSystem-artemis-radiation-measure-cs.html#artemis-radiation-measure-cs-dose-rate\">dose-rate</a></td><td style=\"color: #cccccc\">Radiation Dose Rate</td><td>Instantaneous or average dose rate during a measurement window</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-radiation-measure-vs",
+  "version" : "0.7.0",
+  "name" : "ArtemisRadiationMeasureVS",
+  "title" : "Artemis Radiation Measures",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org/"
+    }]
+  }],
+  "description" : "Dose measure codes for ArtemisRadiationExposure.code",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs",
+      "concept" : [{
+        "code" : "cumulative-dose"
+      },
+      {
+        "code" : "dose-rate"
+      }]
+    }]
+  }
+}

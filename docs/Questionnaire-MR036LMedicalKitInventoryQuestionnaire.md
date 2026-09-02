@@ -1,4 +1,4 @@
-# MR036L Medical Kit Inventory - v0.6.2
+# MR036L Medical Kit Inventory - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr036l-medical-kit-inventory | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr036l-medical-kit-inventory | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR036LMedicalKitInventory |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To maintain accurate inventory of medical supplies and equipment aboard ISS, tra
 {
   "resourceType" : "Questionnaire",
   "id" : "MR036LMedicalKitInventoryQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To maintain accurate inventory of medical supplies and equipment aboard ISS, tra
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr036l-medical-kit-inventory",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr036l-medical-kit-inventory",
+  "version" : "0.7.0",
   "name" : "MR036LMedicalKitInventory",
   "title" : "MR036L Medical Kit Inventory",
   "status" : "active",
@@ -94,7 +97,7 @@ To maintain accurate inventory of medical supplies and equipment aboard ISS, tra
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -103,7 +106,7 @@ To maintain accurate inventory of medical supplies and equipment aboard ISS, tra
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -398,7 +401,7 @@ To maintain accurate inventory of medical supplies and equipment aboard ISS, tra
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -407,7 +410,7 @@ To maintain accurate inventory of medical supplies and equipment aboard ISS, tra
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

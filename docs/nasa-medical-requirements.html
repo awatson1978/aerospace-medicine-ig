@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>NASA Medical Requirements -  v0.6.2</title>
+    <title>NASA Medical Requirements - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>NASA Medical Requirements</h2>
   
 
@@ -260,35 +260,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#nasa-medical-requirements-integration-documents-mrid" id="markdown-toc-nasa-medical-requirements-integration-documents-mrid">NASA Medical Requirements Integration Documents (MRID)</a>    <ul>
-      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-      <li><a href="#medb-1---physical-examinations" id="markdown-toc-medb-1---physical-examinations">MEDB 1 - Physical Examinations</a></li>
-      <li><a href="#medb-2---laboratory" id="markdown-toc-medb-2---laboratory">MEDB 2 - Laboratory</a></li>
-      <li><a href="#medb-3---radiation" id="markdown-toc-medb-3---radiation">MEDB 3 - Radiation</a></li>
-      <li><a href="#medb-5---fitness" id="markdown-toc-medb-5---fitness">MEDB 5 - Fitness</a></li>
-      <li><a href="#medb-6---extravehicular-activity-eva" id="markdown-toc-medb-6---extravehicular-activity-eva">MEDB 6 - Extravehicular Activity (EVA)</a></li>
-      <li><a href="#medb-7---behavioral-health" id="markdown-toc-medb-7---behavioral-health">MEDB 7 - Behavioral Health</a></li>
-      <li><a href="#mr---eva-support" id="markdown-toc-mr---eva-support">MR - EVA Support</a></li>
-      <li><a href="#mr---environmental-health" id="markdown-toc-mr---environmental-health">MR - Environmental Health</a></li>
-      <li><a href="#mr---equipment-and-operations" id="markdown-toc-mr---equipment-and-operations">MR - Equipment and Operations</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#medb-1---physical-examinations" id="markdown-toc-medb-1---physical-examinations">MEDB 1 - Physical Examinations</a></li>
+  <li><a href="#medb-2---laboratory" id="markdown-toc-medb-2---laboratory">MEDB 2 - Laboratory</a></li>
+  <li><a href="#medb-3---radiation" id="markdown-toc-medb-3---radiation">MEDB 3 - Radiation</a></li>
+  <li><a href="#medb-5---fitness" id="markdown-toc-medb-5---fitness">MEDB 5 - Fitness</a></li>
+  <li><a href="#medb-6---extravehicular-activity-eva" id="markdown-toc-medb-6---extravehicular-activity-eva">MEDB 6 - Extravehicular Activity (EVA)</a></li>
+  <li><a href="#medb-7---behavioral-health" id="markdown-toc-medb-7---behavioral-health">MEDB 7 - Behavioral Health</a></li>
+  <li><a href="#mr---eva-support" id="markdown-toc-mr---eva-support">MR - EVA Support</a></li>
+  <li><a href="#mr---environmental-health" id="markdown-toc-mr---environmental-health">MR - Environmental Health</a></li>
+  <li><a href="#mr---equipment-and-operations" id="markdown-toc-mr---equipment-and-operations">MR - Equipment and Operations</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h2 id="nasa-medical-requirements-integration-documents-mrid">NASA Medical Requirements Integration Documents (MRID)</h2>
-
 <h3 id="introduction">Introduction</h3>
 
 <p>NASA's Medical Requirements Integration Documents (MRIDs) define the standardized data collection requirements for crew health assessment across all phases of spaceflight. Maintained under the JSC28913 baseline by NASA's Medical Operations division at Johnson Space Center, the MRID system ensures consistent, traceable health monitoring from preflight certification through postflight reconditioning.</p>
 
 <p>Each MRID specifies what data must be collected, who it applies to, when it is required, and how the data is archived. The documents are organized into major categories: the <strong>Medical Evaluation Documents Board (MEDB)</strong> series covers clinical assessments performed directly on crew members, while the <strong>Medical Requirements (MR)</strong> series covers environmental monitoring, equipment management, and operational medical support.</p>
 
-<p>The original MRID documentation is maintained in NASA's <a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">Life Sciences Data Archive (LSDA)</a>. This Implementation Guide provides FHIR Questionnaire representations of each MRID to support structured data capture and interoperability.</p>
+<p>The original MRID documentation is maintained in the <a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MRID document library</a> of NASA's Life Sciences Data Archive (LSDA), hosted on the NASA Life Sciences Portal (NLSP). The portal does not expose stable links to individual documents, so the tables below name each MRID in plain text and link instead to this guide's FHIR Questionnaire representation of it. Each questionnaire records its provenance in <code class="language-plaintext highlighter-rouge">meta.source</code>, which points back to the NLSP MRID library. Every questionnaire conforms to the <a href="StructureDefinition-mrid-questionnaire.html">MRID Questionnaire</a> profile, which fixes the metadata group (MRID number, sponsor, discipline, purpose, deliverables) that all of them share.</p>
+
+<p>In the tables, <strong>L-</strong> dates count down to launch and <strong>R+</strong> dates count from return; for example, L-60 days means 60 days before launch and R+3 days means three days after landing.</p>
 
 <blockquote class="stu-note">
-  <p>We welcome feedback on how these questionnaires are modeled in FHIR. Please share suggestions via <a href="https://github.com/awatson1978/aerospace-medicine-ig/discussions">GitHub Discussions</a> or file an <a href="https://github.com/awatson1978/aerospace-medicine-ig/issues">issue</a>.</p>
+  <p>We welcome feedback on how these questionnaires are modeled in FHIR. Please share suggestions or report problems by filing an <a href="https://github.com/awatson1978/aerospace-medicine-ig/issues">issue on GitHub</a>.</p>
 </blockquote>
 
 <h3 id="medb-1---physical-examinations">MEDB 1 - Physical Examinations</h3>
@@ -307,42 +304,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 1.6</a></td>
+      <td>MEDB 1.6</td>
       <td><a href="Questionnaire-MEDB16RestingECGQuestionnaire.html">Resting ECG</a></td>
       <td>All crew</td>
       <td>Annual exam / flight certification</td>
       <td>Annual; preflight</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 1.8</a></td>
+      <td>MEDB 1.8</td>
       <td><a href="Questionnaire-MEDB18AudiometryQuestionnaire.html">Audiometry</a></td>
       <td>All crew</td>
       <td>Annual exam / flight certification</td>
       <td>Annual; preflight</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 1.9</a></td>
+      <td>MEDB 1.9</td>
       <td><a href="Questionnaire-MEDB19DentalExamQuestionnaire.html">Dental Examination</a></td>
       <td>All crew</td>
       <td>Annual exam / flight certification</td>
       <td>Annual; preflight</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 1.10</a></td>
+      <td>MEDB 1.10</td>
       <td><a href="Questionnaire-MEDB110OphthalmologicExamQuestionnaire.html">Ophthalmologic Examination</a></td>
       <td>All crew</td>
       <td>Annual exam / flight certification</td>
       <td>Annual; preflight</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 1.11</a></td>
+      <td>MEDB 1.11</td>
       <td><a href="Questionnaire-MEDB111BodyCompositionQuestionnaire.html">Body Composition/DEXA</a></td>
       <td>All crew</td>
       <td>Annual exam / flight certification</td>
       <td>Annual; preflight</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 1.14</a></td>
+      <td>MEDB 1.14</td>
       <td><a href="Questionnaire-MEDB114BodyMassQuestionnaire.html">Body Mass Measurement</a></td>
       <td>All crew</td>
       <td>Annual exam / flight certification</td>
@@ -367,28 +364,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 2.1</a></td>
+      <td>MEDB 2.1</td>
       <td><a href="Questionnaire-MEDB21RoutineLabPanelQuestionnaire.html">Routine Laboratory Panel</a></td>
       <td>All crew (≥30 day flights)</td>
       <td>Flight readiness - preflight baseline</td>
       <td>L-9/6 months, L-60 to L-10 days; R+0 to R+3 days</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 2.2</a></td>
+      <td>MEDB 2.2</td>
       <td><a href="Questionnaire-MEDB22MRSAScreeningQuestionnaire.html">MRSA Screening</a></td>
       <td>All flight crew</td>
       <td>All flights - infection prevention</td>
       <td>L-60 to L-30 days; retest L-10 if positive</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 2.3</a></td>
+      <td>MEDB 2.3</td>
       <td><a href="Questionnaire-MEDB23TBTestingQuestionnaire.html">Tuberculosis Testing</a></td>
       <td>All flight crew</td>
       <td>All flights - annual screening</td>
       <td>Annual examination</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 2.4</a></td>
+      <td>MEDB 2.4</td>
       <td><a href="Questionnaire-MEDB24HpyloriScreeningQuestionnaire.html">H. pylori Screening</a></td>
       <td>Long-duration crew (≥30 days)</td>
       <td>Long-duration missions - GI health</td>
@@ -413,7 +410,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 3.1</a></td>
+      <td>MEDB 3.1</td>
       <td><a href="Questionnaire-MEDB31RadiationMonitoringQuestionnaire.html">Radiation Monitoring / Crew Personal Dosimetry</a></td>
       <td>ISS crew (primary and backup)</td>
       <td>Every ISS increment - occupational monitoring</td>
@@ -438,21 +435,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 5.1</a></td>
+      <td>MEDB 5.1</td>
       <td><a href="Questionnaire-MEDB51AerobicFitnessQuestionnaire.html">Aerobic Fitness Assessment</a></td>
       <td>Long-duration crew (≥30 days)</td>
       <td>Flight readiness - cardiovascular baseline</td>
       <td>L-180 to L-60 days; R+5 to R+7, R+30 days</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 5.2</a></td>
+      <td>MEDB 5.2</td>
       <td><a href="Questionnaire-MEDB52StrengthAssessmentQuestionnaire.html">Strength Assessment</a></td>
       <td>Long-duration crew (≥30 days)</td>
       <td>Flight readiness - musculoskeletal baseline</td>
       <td>L-180 to L-60 days; R+5 to R+7, R+30 days</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 5.3</a></td>
+      <td>MEDB 5.3</td>
       <td><a href="Questionnaire-MEDB53ExercisePrescriptionQuestionnaire.html">Exercise Prescription</a></td>
       <td>Long-duration crew</td>
       <td>In-flight countermeasure - fitness maintenance</td>
@@ -477,7 +474,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 6.1</a></td>
+      <td>MEDB 6.1</td>
       <td><a href="Questionnaire-MEDB61EVAMedicalRequirementsQuestionnaire.html">EVA Medical Requirements</a></td>
       <td>EVA crew members only</td>
       <td>EVA approval - certification and pre-EVA clearance</td>
@@ -502,21 +499,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 7.1</a></td>
+      <td>MEDB 7.1</td>
       <td><a href="Questionnaire-MEDB71PsychStatusQuestionnaire.html">Preflight Psychiatric/Psychological Status Check</a></td>
       <td>Long-duration crew (≥30 days)</td>
       <td>Flight readiness - behavioral clearance</td>
       <td>L-12 months / L-240 to L-180 days; L-90 to L-30 days</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 7.4</a></td>
+      <td>MEDB 7.4</td>
       <td><a href="Questionnaire-MEDB74CrewDynamicsQuestionnaire.html">Crew Dynamics Assessment</a></td>
       <td>All crew (≥30 days)</td>
       <td>Crew team assessment - continuous monitoring</td>
       <td>L-180 to L-90 days; in-flight monthly; R+30 to R+60 days</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MEDB 7.5</a></td>
+      <td>MEDB 7.5</td>
       <td><a href="Questionnaire-MEDB75FamilySupportQuestionnaire.html">Family Support Evaluation</a></td>
       <td>Long-duration crew</td>
       <td>Long-duration missions - family services</td>
@@ -524,8 +521,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
-
-<hr />
 
 <h3 id="mr---eva-support">MR - EVA Support</h3>
 
@@ -543,21 +538,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR087S</a></td>
+      <td>MR087S</td>
       <td><a href="Questionnaire-MR087SEVAPrebreathQuestionnaire.html">EVA Prebreathe Protocol</a></td>
       <td>EVA crew</td>
       <td>EVA approval - DCS prevention</td>
       <td>Pre-EVA (before each EVA)</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR092L</a></td>
+      <td>MR092L</td>
       <td><a href="Questionnaire-MR092LSPEProtocolQuestionnaire.html">Solar Particle Event Protocol</a></td>
       <td>All ISS crew during SPE events</td>
       <td>Emergency response - radiation protection</td>
       <td>Event-driven (in-flight only)</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR093L</a></td>
+      <td>MR093L</td>
       <td><a href="Questionnaire-MR093LRadiationContingencyQuestionnaire.html">Radiation Contingency</a></td>
       <td>Crew affected by contingency</td>
       <td>Emergency response - incident documentation</td>
@@ -582,21 +577,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR051L</a></td>
+      <td>MR051L</td>
       <td><a href="Questionnaire-MR051LWaterQualityQuestionnaire.html">Water Quality Assessment</a></td>
       <td>ISS operations - all crew</td>
       <td>Environmental monitoring - water safety</td>
       <td>Weekly (microbial), monthly (chemical)</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR022S</a></td>
+      <td>MR022S</td>
       <td><a href="Questionnaire-MR022SAirQualityQuestionnaire.html">Air Quality Monitoring</a></td>
       <td>All spacecraft (ISS)</td>
       <td>Environmental monitoring - atmospheric safety</td>
       <td>Continuous (major constituents); weekly/monthly sampling</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR054L</a></td>
+      <td>MR054L</td>
       <td><a href="Questionnaire-MR054LMicrobialMonitoringQuestionnaire.html">Microbial Monitoring</a></td>
       <td>ISS operations - all crew</td>
       <td>Environmental monitoring - infection prevention</td>
@@ -621,35 +616,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR036L</a></td>
+      <td>MR036L</td>
       <td><a href="Questionnaire-MR036LMedicalKitInventoryQuestionnaire.html">Medical Kit Inventory</a></td>
       <td>ISS operations</td>
       <td>Resource management - supply tracking</td>
       <td>Regular in-flight inventory checks</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR026L</a></td>
+      <td>MR026L</td>
       <td><a href="Questionnaire-MR026LReconditioningQuestionnaire.html">Reconditioning Assessment</a></td>
       <td>All returning long-duration crew</td>
       <td>Postflight recovery - return to duty</td>
       <td>R+0 to R+3 initial; weekly progress; final varies</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR050L</a></td>
+      <td>MR050L</td>
       <td><a href="Questionnaire-MR050LPharmaceuticalManagementQuestionnaire.html">Pharmaceutical Management</a></td>
       <td>ISS operations - all crew</td>
       <td>Resource management - medication safety</td>
       <td>In-flight continuous</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR032L</a></td>
+      <td>MR032L</td>
       <td><a href="Questionnaire-MR032LTelemedicineSetupQuestionnaire.html">Telemedicine Setup</a></td>
       <td>All ISS crew</td>
       <td>Mission support - remote medical capability</td>
       <td>Preflight training; in-flight verification</td>
     </tr>
     <tr>
-      <td><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">MR008L</a></td>
+      <td>MR008L</td>
       <td><a href="Questionnaire-MR008LMedicalHardwareMaintenanceQuestionnaire.html">Medical Hardware Maintenance</a></td>
       <td>All on-orbit and ground medical equipment</td>
       <td>Equipment management - calibration and maintenance</td>
@@ -658,16 +653,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<hr />
-
 <h3 id="references">References</h3>
 
 <ul>
-  <li><a href="https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12">NASA Life Sciences Data Archive - MRID Documents</a> - Original NASA Medical Requirements Integration Documents</li>
-  <li>JSC28913 - NASA Medical Requirements Integration Document baseline</li>
-  <li>SSP 50260 - ISS Medical Operations Requirement Document</li>
-  <li>SSP 50667 - Medical Volume B</li>
-  <li><a href="NASA.Questionnaires.ndjson">NASA.Questionnaires.ndjson</a> - Downloadable MEDB questionnaires in NDJSON format</li>
+  <li>NASA Life Sciences Data Archive. MRID document library (Medical Requirements Integration Documents), NASA Life Sciences Portal. https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&amp;from=1&amp;pagesize=100&amp;filters=project_name.keyword%7Ceq%7CMRID&amp;template=12</li>
+  <li>NASA Johnson Space Center. JSC 28913, Medical Requirements Integration Document (MRID) baseline. (Document number and title as cited in the MRID library; no public URL.)</li>
+  <li>NASA/International Space Station Program. SSP 50260, ISS Medical Operations Requirements Document (MORD). (No public URL.)</li>
+  <li>NASA/International Space Station Program. SSP 50667, Medical Evaluation Documents, Volume B. (No public URL.)</li>
+  <li><a href="NASA.Questionnaires.ndjson">NASA.Questionnaires.ndjson</a>: downloadable MEDB and MR questionnaires in NDJSON format</li>
 </ul>
 
 
@@ -689,7 +682,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

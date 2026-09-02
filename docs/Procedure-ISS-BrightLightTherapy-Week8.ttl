@@ -6,27 +6,39 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Procedure/ISS-BrightLightTherapy-Week8> a fhir:Procedure ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Procedure/ISS-BrightLightTherapy-Week8> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ISS-BrightLightTherapy-Week8"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ISS-BrightLightTherapy-Week8</b></p><a name=\"ISS-BrightLightTherapy-Week8\"> </a><a name=\"hcISS-BrightLightTherapy-Week8\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-psychological-countermeasure-activity.html\">Psychological Countermeasure Activity</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs bright-light-therapy}\">Bright light therapy</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>performed</b>: 2025-05-15 07:00:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs circadian-drift}\">Circadian drift</span>, <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs sleep-quality}\">Sleep quality</span></p><p><b>outcome</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs sleep-quality}\">Sleep quality</span></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ISS-BrightLightTherapy-Week8</b></p><a name=\"ISS-BrightLightTherapy-Week8\"> </a><a name=\"hcISS-BrightLightTherapy-Week8\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-psychological-countermeasure-activity.html\">Psychological Countermeasure Activity</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs bright-light-therapy}\">Bright light therapy</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2025-05-15 07:00:00+0000</p><p><b>reasonCode</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs circadian-drift}\">Circadian drift</span>, <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs sleep-quality}\">Sleep quality</span></p><p><b>outcome</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs sleep-quality}\">Sleep quality</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> ;
        fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
      ]
   ] ) ; # 
@@ -34,16 +46,16 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs>
        ] ;
        fhir:code [ fhir:v "bright-light-therapy" ] ;
        fhir:display [ fhir:v "Bright light therapy" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
-     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:performed [
      a fhir:DateTime ;
@@ -52,8 +64,8 @@
   fhir:reasonCode ( [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs>
        ] ;
        fhir:code [ fhir:v "circadian-drift" ] ;
        fhir:display [ fhir:v "Circadian drift" ]
@@ -61,8 +73,8 @@
   ] [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs>
        ] ;
        fhir:code [ fhir:v "sleep-quality" ] ;
        fhir:display [ fhir:v "Sleep quality" ]
@@ -71,8 +83,8 @@
   fhir:outcome [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs>
        ] ;
        fhir:code [ fhir:v "sleep-quality" ] ;
        fhir:display [ fhir:v "Sleep quality" ]

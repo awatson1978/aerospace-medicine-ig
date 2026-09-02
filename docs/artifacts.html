@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary -  v0.6.2</title>
+    <title>Artifacts Summary - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"33"}
-    h3,h4,h5,h6{--heading-prefix:"33.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"32"}
+    h3,h4,h5,h6{--heading-prefix:"32.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -272,10 +272,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Concept Maps</a>
       </li>
       <li>
-         <a href="#8">Other</a>
+         <a href="#8">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#9">Other</a>
       </li>
    </ul>
 </div>
@@ -296,6 +299,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NutritionProduct.html"
+                  title="StructureDefinition/NutritionProduct">Nutrition Product (logical model)</a>
+            </td>
+            <td>
+<p>A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct.</p>
 </td>
          </tr>
          <tr>
@@ -703,8 +715,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AstrodynamicsObservation.html"
-                  title="StructureDefinition/AstrodynamicsObservation">Astrodynamics Observation</a>
+               <a href="StructureDefinition-astrodynamics-observation.html"
+                  title="StructureDefinition/astrodynamics-observation">Astrodynamics Observation</a>
             </td>
             <td>
 <p>An observation of a satellite or celestial object's orbital characteristics, using orbital elements.</p>
@@ -712,8 +724,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Astronaut.html"
-                  title="StructureDefinition/Astronaut">Astronaut Patient Profile</a>
+               <a href="StructureDefinition-astronaut.html"
+                  title="StructureDefinition/astronaut">Astronaut Patient Profile</a>
             </td>
             <td>
 <p>Patient profile for astronauts and space travelers</p>
@@ -726,15 +738,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Encounter profile for crew-led medical events with no real-time ground support due to communication delays</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-average-blood-pressure.html"
-                  title="StructureDefinition/average-blood-pressure">Average Blood Pressure</a>
-            </td>
-            <td>
-<p>A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol.  The average blood pressure has a systolic and a diastolic component.</p>
 </td>
          </tr>
          <tr>
@@ -793,8 +796,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-BarotraumaAssessment.html"
-                  title="StructureDefinition/BarotraumaAssessment">Barotrauma Assessment</a>
+               <a href="StructureDefinition-barotrauma-assessment.html"
+                  title="StructureDefinition/barotrauma-assessment">Barotrauma Assessment</a>
             </td>
             <td>
 <p>Assessment of pressure-related injuries (barotrauma)</p>
@@ -838,60 +841,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-bp-device.html"
-                  title="StructureDefinition/bp-device">Blood Pressure Device</a>
-            </td>
-            <td>
-<p>A profile of the Device resource used specifically for blood pressure devices and includes an extension for blood pressure cuff size.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-blood-pressure-panel.html"
-                  title="StructureDefinition/blood-pressure-panel">Blood Pressure Panel</a>
-            </td>
-            <td>
-<p>Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-height.html"
-                  title="StructureDefinition/height">Body Height</a>
-            </td>
-            <td>
-<p>The measurement in centimeters or feet and inches from the top of the head to the heel, usually while standing.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-body-mass-index.html"
-                  title="StructureDefinition/body-mass-index">Body Mass Index</a>
-            </td>
-            <td>
-<p>A numerical index based on an individual's weight in kilograms divided by the square of their height in meters.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-body-temperature.html"
-                  title="StructureDefinition/body-temperature">Body Temperature</a>
-            </td>
-            <td>
-<p>The measured heat of an individual's body.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-body-weight.html"
-                  title="StructureDefinition/body-weight">Body Weight</a>
-            </td>
-            <td>
-<p>The measured mass of an individual's body.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-bone-density-observation.html"
                   title="StructureDefinition/bone-density-observation">Bone Density Observation</a>
             </td>
@@ -919,8 +868,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceEquipment.html"
-                  title="StructureDefinition/SpaceEquipment">Commercial Space Equipment</a>
+               <a href="StructureDefinition-space-equipment.html"
+                  title="StructureDefinition/space-equipment">Commercial Space Equipment</a>
             </td>
             <td>
 <p>STUB - Device profile for commercial space equipment.</p>
@@ -938,10 +887,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-cumulative-radiation-dose.html"
-                  title="StructureDefinition/cumulative-radiation-dose">Cumulative Radiation Dose (Fixed)</a>
+                  title="StructureDefinition/cumulative-radiation-dose">Cumulative Radiation Dose</a>
             </td>
             <td>
-<p>Enhanced cumulative radiation dose tracking with comprehensive time periods</p>
+<p>Cumulative radiation dose over daily, weekly, 30-day, annual, mission and career periods.</p>
 </td>
          </tr>
          <tr>
@@ -964,8 +913,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DecompressionSickness.html"
-                  title="StructureDefinition/DecompressionSickness">Decompression Sickness</a>
+               <a href="StructureDefinition-decompression-sickness.html"
+                  title="StructureDefinition/decompression-sickness">Decompression Sickness</a>
             </td>
             <td>
 <p>Decompression sickness occurring during diving or altitude training</p>
@@ -982,8 +931,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DiveMedicalClearance.html"
-                  title="StructureDefinition/DiveMedicalClearance">Dive Medical Clearance</a>
+               <a href="StructureDefinition-dive-medical-clearance.html"
+                  title="StructureDefinition/dive-medical-clearance">Dive Medical Clearance</a>
             </td>
             <td>
 <p>Medical clearance examination for diving operations</p>
@@ -991,8 +940,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DiveProfile.html"
-                  title="StructureDefinition/DiveProfile">Dive Profile</a>
+               <a href="StructureDefinition-dive-profile.html"
+                  title="StructureDefinition/dive-profile">Dive Profile</a>
             </td>
             <td>
 <p>Comprehensive dive profile including depth, time, and environmental data</p>
@@ -1000,8 +949,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DivingEquipment.html"
-                  title="StructureDefinition/DivingEquipment">Diving Equipment</a>
+               <a href="StructureDefinition-diving-equipment.html"
+                  title="StructureDefinition/diving-equipment">Diving Equipment</a>
             </td>
             <td>
 <p>Equipment used for diving operations and underwater training</p>
@@ -1054,17 +1003,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-enhanced-neutral-buoyancy-session.html"
-                  title="StructureDefinition/enhanced-neutral-buoyancy-session">Enhanced Neutral Buoyancy Training Session</a>
-            </td>
-            <td>
-<p>Comprehensive neutral buoyancy training session with full regulatory compliance tracking</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EnvironmentalMonitoring.html"
-                  title="StructureDefinition/EnvironmentalMonitoring">Environmental Monitoring</a>
+               <a href="StructureDefinition-environmental-monitoring.html"
+                  title="StructureDefinition/environmental-monitoring">Environmental Monitoring</a>
             </td>
             <td>
 <p>Profile for environmental monitoring.</p>
@@ -1090,8 +1030,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-GimbalScreening.html"
-                  title="StructureDefinition/GimbalScreening">Gimbal Screening</a>
+               <a href="StructureDefinition-gimbal-screening.html"
+                  title="StructureDefinition/gimbal-screening">Gimbal Screening</a>
             </td>
             <td>
 <p>Screening protocol for Multi Axis Gimbal training device.</p>
@@ -1117,15 +1057,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-heart-rate.html"
-                  title="StructureDefinition/heart-rate">Heart Rate</a>
-            </td>
-            <td>
-<p>The number of heart beats in a minute.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-hydration-status-observation.html"
                   title="StructureDefinition/hydration-status-observation">Hydration Status Observation</a>
             </td>
@@ -1144,8 +1075,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-HyperbaricTreatment.html"
-                  title="StructureDefinition/HyperbaricTreatment">Hyperbaric Treatment</a>
+               <a href="StructureDefinition-hyperbaric-treatment.html"
+                  title="StructureDefinition/hyperbaric-treatment">Hyperbaric Treatment</a>
             </td>
             <td>
 <p>Hyperbaric oxygen therapy or chamber treatment</p>
@@ -1318,11 +1249,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceRiskAssesment.html"
-                  title="StructureDefinition/SpaceRiskAssesment">Mission Risk Assessment</a>
+               <a href="StructureDefinition-space-risk-assessment.html"
+                  title="StructureDefinition/space-risk-assessment">Mission Risk Assessment</a>
             </td>
             <td>
-<p>STUB - Risk assessment for space missions.</p>
+<p>Risk assessment for space missions, covering mission-level, oncologic, musculoskeletal and other spaceflight risks.</p>
 </td>
          </tr>
          <tr>
@@ -1354,8 +1285,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-NeutralBuoyancyFacility.html"
-                  title="StructureDefinition/NeutralBuoyancyFacility">Neutral Buoyancy Facility</a>
+               <a href="StructureDefinition-neutral-buoyancy-facility.html"
+                  title="StructureDefinition/neutral-buoyancy-facility">Neutral Buoyancy Facility</a>
             </td>
             <td>
 <p>Facility for underwater astronaut training</p>
@@ -1363,11 +1294,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-NeutralBuoyancySession.html"
-                  title="StructureDefinition/NeutralBuoyancySession">Neutral Buoyancy Training Session</a>
+               <a href="StructureDefinition-neutral-buoyancy-session.html"
+                  title="StructureDefinition/neutral-buoyancy-session">Neutral Buoyancy Training Session</a>
             </td>
             <td>
-<p>Training session in neutral buoyancy facility for EVA simulation</p>
+<p>Training session in a neutral buoyancy facility for EVA simulation, including communication systems, safety protocols, regulatory compliance and environmental conditions</p>
 </td>
          </tr>
          <tr>
@@ -1377,24 +1308,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Personalized risk assessment derived from multi-omics molecular profiles</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.html"
-                  title="StructureDefinition/oxygen-saturation-arterial-blood-pulseOx">Oxygen Saturation in Arterial Blood by Pulse Oximetry</a>
-            </td>
-            <td>
-<p>A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood via pulse oximetry.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-oxygen-saturation-arterial-blood.html"
-                  title="StructureDefinition/oxygen-saturation-arterial-blood">Oxygen Saturation in Arterial blood, method not specified</a>
-            </td>
-            <td>
-<p>A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood.</p>
 </td>
          </tr>
          <tr>
@@ -1427,10 +1340,10 @@ Questionnaire resources for structured data capture.</p>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-radiation-detector.html"
-                  title="StructureDefinition/radiation-detector">Radiation Detection Device (Fixed)</a>
+                  title="StructureDefinition/radiation-detector">Radiation Detection Device</a>
             </td>
             <td>
-<p>Fixed device profile for radiation monitoring in space with properly constrained properties</p>
+<p>Device profile for personal and area radiation monitors used in spaceflight, with detector-property slices.</p>
 </td>
          </tr>
          <tr>
@@ -1458,15 +1371,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Assessment of compliance with diving and space medicine regulatory standards</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-respiratory-rate.html"
-                  title="StructureDefinition/respiratory-rate">Respiratory Rate</a>
-            </td>
-            <td>
-<p>The measured number of breaths taken in a minute.</p>
 </td>
          </tr>
          <tr>
@@ -1588,8 +1492,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceCondition.html"
-                  title="StructureDefinition/SpaceCondition">Space Health Condition</a>
+               <a href="StructureDefinition-space-condition.html"
+                  title="StructureDefinition/space-condition">Space Health Condition</a>
             </td>
             <td>
 <p>Health conditions specific to outerspace environment.</p>
@@ -1597,17 +1501,17 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceProcedure.html"
-                  title="StructureDefinition/SpaceProcedure">Space Health Procedure</a>
+               <a href="StructureDefinition-space-procedure.html"
+                  title="StructureDefinition/space-procedure">Space Health Procedure</a>
             </td>
             <td>
-<p>STUB - Health procedures specific to outerspace environment.</p>
+<p>Health procedures performed in the spaceflight environment. Constrains Procedure for use with astronaut and analog-crew records.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceInsuranceContract.html"
-                  title="StructureDefinition/SpaceInsuranceContract">Space Insurance Contract</a>
+               <a href="StructureDefinition-space-insurance-contract.html"
+                  title="StructureDefinition/space-insurance-contract">Space Insurance Contract</a>
             </td>
             <td>
 <p>STUB - Specialized contract coverage for space travel</p>
@@ -1669,8 +1573,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceOrg.html"
-                  title="StructureDefinition/SpaceOrg">Space Organization</a>
+               <a href="StructureDefinition-space-org.html"
+                  title="StructureDefinition/space-org">Space Organization</a>
             </td>
             <td>
 <p>STUB - Organizations involved with astronautics and space travel.</p>
@@ -1688,19 +1592,19 @@ Questionnaire resources for structured data capture.</p>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-space-radiation-exposure.html"
-                  title="StructureDefinition/space-radiation-exposure">Space Radiation Exposure (Fixed)</a>
+                  title="StructureDefinition/space-radiation-exposure">Space Radiation Exposure</a>
             </td>
             <td>
-<p>Corrected radiation dose measurement for space missions with proper extension contexts</p>
+<p>Radiation dose measurement for a crew member during a space mission, with mission context, radiation type, shielding and countermeasure extensions and detailed dosimetry components.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-space-radiation-summary.html"
-                  title="StructureDefinition/space-radiation-summary">Space Radiation Exposure Summary (Fixed)</a>
+                  title="StructureDefinition/space-radiation-summary">Space Radiation Exposure Summary</a>
             </td>
             <td>
-<p>Comprehensive radiation dose summary with proper mission context</p>
+<p>Diagnostic report summarizing a crew member's radiation exposure over a mission or reporting period.</p>
 </td>
          </tr>
          <tr>
@@ -1741,8 +1645,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceVehicle.html"
-                  title="StructureDefinition/SpaceVehicle">Space Vehicle</a>
+               <a href="StructureDefinition-space-vehicle.html"
+                  title="StructureDefinition/space-vehicle">Space Vehicle</a>
             </td>
             <td>
 <p>STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc)</p>
@@ -1750,8 +1654,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceInsurance.html"
-                  title="StructureDefinition/SpaceInsurance">Space insurance</a>
+               <a href="StructureDefinition-space-insurance.html"
+                  title="StructureDefinition/space-insurance">Space insurance</a>
             </td>
             <td>
 <p>STUB - Insurance plan for space travel</p>
@@ -1831,15 +1735,6 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-twenty-four-hour-blood-pressure.html"
-                  title="StructureDefinition/twenty-four-hour-blood-pressure">Twenty Four Hour Blood Pressure</a>
-            </td>
-            <td>
-<p>An average blood pressure (systolic and diastolic) over a twenty four hour period.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-ultrasound-monitoring-device.html"
                   title="StructureDefinition/ultrasound-monitoring-device">Ultrasound Monitoring Device</a>
             </td>
@@ -1858,8 +1753,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-UnderwaterEVASimulation.html"
-                  title="StructureDefinition/UnderwaterEVASimulation">Underwater EVA Simulation</a>
+               <a href="StructureDefinition-underwater-eva-simulation.html"
+                  title="StructureDefinition/underwater-eva-simulation">Underwater EVA Simulation</a>
             </td>
             <td>
 <p>Extravehicular activity simulation conducted underwater</p>
@@ -1876,15 +1771,6 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-vital-signs-panel.html"
-                  title="StructureDefinition/vital-signs-panel">Vital Signs Panel</a>
-            </td>
-            <td>
-<p>A vital signs panel as defined by Logica Health.  It includes Oxygen Saturation via Pulse Oximetry, Oxygen Saturation in Arterial blood, body height, body length, body weight, body temperature, blood pressure panel, heart rate, respiratory rate, head-occcipital/frontal circumference, oxygen saturation via pulse oximetry, and body mass index.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-xevas-suit-definition.html"
                   title="StructureDefinition/xevas-suit-definition">xEVAS Suit Definition</a>
             </td>
@@ -1894,8 +1780,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SpaceLocation.html"
-                  title="StructureDefinition/SpaceLocation">xGeo Locations</a>
+               <a href="StructureDefinition-space-location.html"
+                  title="StructureDefinition/space-location">xGeo Locations</a>
             </td>
             <td>
 <p>STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat.</p>
@@ -2037,8 +1923,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-emergency-response.html"
-                  title="StructureDefinition/emergency-response">Emergency Response Assessment</a>
+               <a href="StructureDefinition-underwater-emergency-response-ext.html"
+                  title="StructureDefinition/underwater-emergency-response-ext">Emergency Response Assessment</a>
             </td>
             <td>
 <p>Assessment of emergency response procedures</p>
@@ -2311,7 +2197,7 @@ Questionnaire resources for structured data capture.</p>
                   title="StructureDefinition/maximum-pressure">Maximum Operating Pressure</a>
             </td>
             <td>
-<p>Maximum pressure the chamber can safely operate at</p>
+<p>Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment</p>
 </td>
          </tr>
          <tr>
@@ -2630,20 +2516,10 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-SpaceAdaptationBoneHealth.html"
-                  title="ValueSet/SpaceAdaptationBoneHealth">Adaptations of Bone Health</a>
+               <a href="ValueSet-location-type-vs.html" title="ValueSet/location-type-vs">Aerospace Location Type</a>
             </td>
             <td>
-<p>Bone health adaptations observed in spaceflight conditions.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-AircraftFumeExposureValueSet.html"
-                  title="ValueSet/AircraftFumeExposureValueSet">Aircraft Fume Exposure</a>
-            </td>
-            <td>
-<p>Health impacts from exposure to aircraft contaminated air and fume events.</p>
+<p>Location types for lunar and planetary mission locations</p>
 </td>
          </tr>
          <tr>
@@ -2652,7 +2528,7 @@ Questionnaire resources for structured data capture.</p>
                   title="ValueSet/artemis-all-devices-vs">All Artemis Devices</a>
             </td>
             <td>
-<p>Both certified and prototype Artemis devices</p>
+<p>Both certified and prototype Artemis devices (the complete Artemis device inventory)</p>
 </td>
          </tr>
          <tr>
@@ -2729,6 +2605,15 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-artemis-radiation-measure-vs.html"
+                  title="ValueSet/artemis-radiation-measure-vs">Artemis Radiation Measures</a>
+            </td>
+            <td>
+<p>Dose measure codes for ArtemisRadiationExposure.code</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-bfrt-device-type-vs.html"
                   title="ValueSet/bfrt-device-type-vs">BFRT Device Type Value Set</a>
             </td>
@@ -2758,15 +2643,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Bioregenerative life support output types</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-AstronautBackPain.html"
-                  title="ValueSet/AstronautBackPain">Back Pain and Space Travel</a>
-            </td>
-            <td>
-<p>Back pain and associated conditions observed in astronauts and their potential terrestrial applications.</p>
 </td>
          </tr>
          <tr>
@@ -2812,15 +2688,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Methods for BMD measurement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SpaceTravelBrainChanges.html"
-                  title="ValueSet/SpaceTravelBrainChanges">Brain and Neurologic Changes</a>
-            </td>
-            <td>
-<p>Concepts related to physiological and neurological changes from prolonged space travel.</p>
 </td>
          </tr>
          <tr>
@@ -2887,51 +2754,6 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-organ-dose-codes-vs-complete.html"
-                  title="ValueSet/organ-dose-codes-vs-complete">Complete Organ-Specific Dose Codes</a>
-            </td>
-            <td>
-<p>Comprehensive codes for organ-specific radiation dose measurements</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-radiation-countermeasures-vs-complete.html"
-                  title="ValueSet/radiation-countermeasures-vs-complete">Complete Radiation Countermeasures</a>
-            </td>
-            <td>
-<p>Comprehensive list of protective measures against space radiation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-radiation-detector-type-vs-complete.html"
-                  title="ValueSet/radiation-detector-type-vs-complete">Complete Radiation Detector Types</a>
-            </td>
-            <td>
-<p>Comprehensive list of radiation detection devices used in space</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-space-radiation-dose-codes-vs-complete.html"
-                  title="ValueSet/space-radiation-dose-codes-vs-complete">Complete Space Radiation Dose Measurement Codes</a>
-            </td>
-            <td>
-<p>Comprehensive codes for radiation dose measurements in space environments</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-space-radiation-type-vs-complete.html"
-                  title="ValueSet/space-radiation-type-vs-complete">Complete Space Radiation Types</a>
-            </td>
-            <td>
-<p>Comprehensive list of ionizing radiation types encountered in space</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-dcs-risk-vs.html" title="ValueSet/dcs-risk-vs">DCS Risk Value Set</a>
             </td>
             <td>
@@ -2940,8 +2762,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-decompression-procedures.html"
-                  title="ValueSet/decompression-procedures">Decompression Procedures</a>
+               <a href="ValueSet-decompression-procedures-vs.html"
+                  title="ValueSet/decompression-procedures-vs">Decompression Procedures</a>
             </td>
             <td>
 <p>Standardized decompression procedures and protocols</p>
@@ -2949,8 +2771,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-diving-contraindicated-conditions.html"
-                  title="ValueSet/diving-contraindicated-conditions">Diving Medical Contraindications</a>
+               <a href="ValueSet-diving-contraindicated-conditions-vs.html"
+                  title="ValueSet/diving-contraindicated-conditions-vs">Diving Medical Contraindications</a>
             </td>
             <td>
 <p>Medical conditions that contraindicate diving activities</p>
@@ -2958,8 +2780,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-diving-medical-examinations.html"
-                  title="ValueSet/diving-medical-examinations">Diving Medical Examinations</a>
+               <a href="ValueSet-diving-medical-examinations-vs.html"
+                  title="ValueSet/diving-medical-examinations-vs">Diving Medical Examinations</a>
             </td>
             <td>
 <p>Types of medical examinations for diving fitness</p>
@@ -3029,8 +2851,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-GimbalContraindicatedConditions.html"
-                  title="ValueSet/GimbalContraindicatedConditions">Gimbal Contraindications</a>
+               <a href="ValueSet-gimbal-contraindicated-conditions-vs.html"
+                  title="ValueSet/gimbal-contraindicated-conditions-vs">Gimbal Contraindications</a>
             </td>
             <td>
 <p>Contraindicated conditions for riding a multi-axis gimbal</p>
@@ -3137,15 +2959,6 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-LunarDustToxicityValueSet.html"
-                  title="ValueSet/LunarDustToxicityValueSet">Lunar Dust Toxicity</a>
-            </td>
-            <td>
-<p>Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-mrid-launch-context-name-vs.html"
                   title="ValueSet/mrid-launch-context-name-vs">MRID Launch Context Name</a>
             </td>
@@ -3182,8 +2995,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-mars-devices-certified-vs.html"
-                  title="ValueSet/mars-devices-certified-vs">Mars Mission Devices - Certified</a>
+               <a href="ValueSet-mars-certified-devices-vs.html"
+                  title="ValueSet/mars-certified-devices-vs">Mars Mission Devices - Certified</a>
             </td>
             <td>
 <p>Flight-qualified hardware for Mars missions</p>
@@ -3191,8 +3004,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-mars-devices-prototype-vs.html"
-                  title="ValueSet/mars-devices-prototype-vs">Mars Mission Devices - Prototype</a>
+               <a href="ValueSet-mars-prototype-devices-vs.html"
+                  title="ValueSet/mars-prototype-devices-vs">Mars Mission Devices - Prototype</a>
             </td>
             <td>
 <p>Developmental and test hardware for Mars missions</p>
@@ -3230,15 +3043,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Phases of a space mission</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-MuscleStiffnessAndSpaceHealth.html"
-                  title="ValueSet/MuscleStiffnessAndSpaceHealth">Muscle Stiffness</a>
-            </td>
-            <td>
-<p>Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications.</p>
 </td>
          </tr>
          <tr>
@@ -3369,8 +3173,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-neutral-buoyancy-training-activities.html"
-                  title="ValueSet/neutral-buoyancy-training-activities">Neutral Buoyancy Training Activities</a>
+               <a href="ValueSet-neutral-buoyancy-training-activities-vs.html"
+                  title="ValueSet/neutral-buoyancy-training-activities-vs">Neutral Buoyancy Training Activities</a>
             </td>
             <td>
 <p>Types of training activities conducted in neutral buoyancy environments</p>
@@ -3392,6 +3196,15 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Operational status codes for facilities and vehicles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-organ-dose-codes-vs.html"
+                  title="ValueSet/organ-dose-codes-vs">Organ-Specific Dose Codes</a>
+            </td>
+            <td>
+<p>Codes for organ-specific radiation dose measurements (bone marrow, lens of eye, skin, CNS, thyroid, gonads, lung, GI tract, whole body).</p>
 </td>
          </tr>
          <tr>
@@ -3450,8 +3263,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-regulatory-standards.html"
-                  title="ValueSet/regulatory-standards">Regulatory Standards for Diving and Space Medicine</a>
+               <a href="ValueSet-regulatory-standards-vs.html"
+                  title="ValueSet/regulatory-standards-vs">Regulatory Standards for Diving and Space Medicine</a>
             </td>
             <td>
 <p>Regulatory standards and compliance requirements</p>
@@ -3468,29 +3281,20 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-shielding-condition-vs.html"
+                  title="ValueSet/shielding-condition-vs">Shielding Condition</a>
+            </td>
+            <td>
+<p>Shielding conditions for radiation exposure observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-sleep-architecture-vs.html"
                   title="ValueSet/sleep-architecture-vs">Sleep Architecture Value Set</a>
             </td>
             <td>
 <p>Sleep architecture parameters</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SleepLossHypoxiaEffect.html"
-                  title="ValueSet/SleepLossHypoxiaEffect">Sleep Loss and Hypoxia Effects</a>
-            </td>
-            <td>
-<p>Concepts related to the physiological and cognitive effects of sleep loss and hypoxia.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SleepLossHypoxiaResponses.html"
-                  title="ValueSet/SleepLossHypoxiaResponses">Sleep Loss and Hypoxia Responses</a>
-            </td>
-            <td>
-<p>Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia.</p>
 </td>
          </tr>
          <tr>
@@ -3521,29 +3325,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-space-cardiovascular-effects.html"
-                  title="ValueSet/space-cardiovascular-effects">Space Cardiovascular Effects</a>
-            </td>
-            <td>
-<p>Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-space-emergency-type-vs.html"
                   title="ValueSet/space-emergency-type-vs">Space Emergency Type Value Set</a>
             </td>
             <td>
 <p>Types of spaceflight emergency situations</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-space-environmental-factors.html"
-                  title="ValueSet/space-environmental-factors">Space Environmental Factors</a>
-            </td>
-            <td>
-<p>Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression</p>
 </td>
          </tr>
          <tr>
@@ -3566,29 +3352,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-space-monitoring-procedures.html"
-                  title="ValueSet/space-monitoring-procedures">Space Monitoring Procedures</a>
-            </td>
-            <td>
-<p>Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-space-motion-sickness-vs.html"
                   title="ValueSet/space-motion-sickness-vs">Space Motion Sickness Value Set</a>
             </td>
             <td>
 <p>Types of motion sickness in spaceflight</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-space-neurological-effects.html"
-                  title="ValueSet/space-neurological-effects">Space Neurological Effects</a>
-            </td>
-            <td>
-<p>Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes</p>
 </td>
          </tr>
          <tr>
@@ -3620,38 +3388,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-space-physiological-effects.html"
-                  title="ValueSet/space-physiological-effects">Space Physiological Effects</a>
+               <a href="ValueSet-space-radiation-dose-codes-vs.html"
+                  title="ValueSet/space-radiation-dose-codes-vs">Space Radiation Dose Measurement Codes</a>
             </td>
             <td>
-<p>Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-space-psychological-effects.html"
-                  title="ValueSet/space-psychological-effects">Space Psychological Effects</a>
-            </td>
-            <td>
-<p>Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-space-radiation-effects.html"
-                  title="ValueSet/space-radiation-effects">Space Radiation Effects</a>
-            </td>
-            <td>
-<p>Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SpaceRadiationRisksVS.html"
-                  title="ValueSet/SpaceRadiationRisksVS">Space Radiation Risks ValueSet</a>
-            </td>
-            <td>
-<p>Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.</p>
+<p>Codes for radiation dose measurements in space environments: LOINC total-dose and dose-rate codes plus source-specific dose codes from the Space Radiation Code System.</p>
 </td>
          </tr>
          <tr>
@@ -3692,15 +3433,6 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-space-visual-effects.html"
-                  title="ValueSet/space-visual-effects">Space Visual Effects</a>
-            </td>
-            <td>
-<p>Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-sterilization-method-vs.html"
                   title="ValueSet/sterilization-method-vs">Sterilization Method Value Set</a>
             </td>
@@ -3715,15 +3447,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Standardized set of psychological countermeasures used to mitigate stress and support mental health.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SpaceflightStressFactors.html"
-                  title="ValueSet/SpaceflightStressFactors">Stress and Physiological Factors</a>
-            </td>
-            <td>
-<p>Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.</p>
 </td>
          </tr>
          <tr>
@@ -3764,8 +3487,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-underwater-communication-systems.html"
-                  title="ValueSet/underwater-communication-systems">Underwater Communication Systems</a>
+               <a href="ValueSet-underwater-communication-systems-vs.html"
+                  title="ValueSet/underwater-communication-systems-vs">Underwater Communication Systems</a>
             </td>
             <td>
 <p>Communication systems used in underwater training operations</p>
@@ -3773,8 +3496,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-underwater-training-procedures.html"
-                  title="ValueSet/underwater-training-procedures">Underwater Training Procedures</a>
+               <a href="ValueSet-underwater-training-procedures-vs.html"
+                  title="ValueSet/underwater-training-procedures-vs">Underwater Training Procedures</a>
             </td>
             <td>
 <p>Procedures and activities conducted during underwater training</p>
@@ -3817,6 +3540,24 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-location-type-cs.html"
+                  title="CodeSystem/location-type-cs">Aerospace Location Type</a>
+            </td>
+            <td>
+<p>Types of locations used in lunar and planetary mission records (landing sites, orbital stations, surface habitats, outposts, analog facilities)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-aerospace-observation-category-cs.html"
+                  title="CodeSystem/aerospace-observation-category-cs">Aerospace Observation Category</a>
+            </td>
+            <td>
+<p>Observation categories for spacecraft and habitat telemetry that are not covered by the HL7 observation-category code system (operational, environmental, life-support)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-antiemetic-medication-cs.html"
                   title="CodeSystem/antiemetic-medication-cs">Antiemetic Medication Code System</a>
             </td>
@@ -3848,16 +3589,7 @@ Questionnaire resources for structured data capture.</p>
                   title="CodeSystem/artemis-certified-devices-cs">Artemis Certified Devices</a>
             </td>
             <td>
-<p>Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-artemis-devices-cs.html"
-                  title="CodeSystem/artemis-devices-cs">Artemis Devices</a>
-            </td>
-            <td>
-<p>Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems</p>
+<p>Flight-qualified hardware and systems used in Artemis missions (Orion, SLS, xEMU, Starship-HLS, CLPS landers, Gateway modules, LTV, radioisotope power units, etc.)</p>
 </td>
          </tr>
          <tr>
@@ -3875,7 +3607,7 @@ Questionnaire resources for structured data capture.</p>
                   title="CodeSystem/artemis-mission-cs">Artemis Missions</a>
             </td>
             <td>
-<p>Historical and planned Artemis program missions with target destinations, launch dates, and status</p>
+<p>Historical and planned Artemis program missions with target destinations, launch dates, and status. Reflects the post-2026 replan in which Artemis III is a crewed low-Earth orbit test flight and Artemis IV is the first crewed lunar landing.</p>
 </td>
          </tr>
          <tr>
@@ -3884,7 +3616,16 @@ Questionnaire resources for structured data capture.</p>
                   title="CodeSystem/artemis-prototype-devices-cs">Artemis Prototype Devices</a>
             </td>
             <td>
-<p>Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)</p>
+<p>Developmental and test hardware not yet flight-certified: demo units, ground analogs, next-generation prototypes, and planned LunaNet, surface mobility, habitat, logistics, ISRU, and surface power infrastructure elements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-artemis-radiation-measure-cs.html"
+                  title="CodeSystem/artemis-radiation-measure-cs">Artemis Radiation Measures</a>
+            </td>
+            <td>
+<p>Observation and component codes used by the ArtemisRadiationExposure profile: dose measures and the contextual components (radiation source, shielding condition, tissue type). Radiation source values come from SpaceRadiationTypeCS.</p>
 </td>
          </tr>
          <tr>
@@ -3930,6 +3671,15 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Codes for physiologic and digital biomarkers related to behavioral health and stress.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-biomanufacturing-metric-cs.html"
+                  title="CodeSystem/biomanufacturing-metric-cs">Biomanufacturing Metric Code System</a>
+            </td>
+            <td>
+<p>Component codes for biomanufacturing output observations</p>
 </td>
          </tr>
          <tr>
@@ -4040,6 +3790,15 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-eva-suit-inventory-metric-cs.html"
+                  title="CodeSystem/eva-suit-inventory-metric-cs">EVA Suit Inventory Metric Code System</a>
+            </td>
+            <td>
+<p>Component codes for EVA suit inventory and readiness observations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-eva-suit-state-cs.html"
                   title="CodeSystem/eva-suit-state-cs">EVA Suit State Code System</a>
             </td>
@@ -4054,15 +3813,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Emergency response and evacuation options for spaceflight</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-aerospace-code-system-enhanced.html"
-                  title="CodeSystem/aerospace-code-system-enhanced">Enhanced Aerospace Medicine Code System</a>
-            </td>
-            <td>
-<p>Comprehensive code system for aerospace medicine concepts including all referenced codes</p>
 </td>
          </tr>
          <tr>
@@ -4139,6 +3889,15 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-isru-metrics-cs.html"
+                  title="CodeSystem/isru-metrics-cs">ISRU Metrics</a>
+            </td>
+            <td>
+<p>Measurement codes for in-situ resource utilization (ISRU) propellant production logs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-immune-biomarker-cs.html"
                   title="CodeSystem/immune-biomarker-cs">Immune Biomarker Code System</a>
             </td>
@@ -4206,15 +3965,13 @@ Questionnaire resources for structured data capture.</p>
                   title="CodeSystem/mars-landing-sites-cs">Mars Landing Sites (Candidate)</a>
             </td>
             <td>
-<p>Candidate landing sites for human Mars missions with are</p>
-
-<p>ographic coordinates and site characteristics</p>
+<p>Candidate landing sites for human Mars missions with areographic coordinates and site characteristics</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-mars-devices-certified-cs.html"
-                  title="CodeSystem/mars-devices-certified-cs">Mars Mission Devices - Certified</a>
+               <a href="CodeSystem-mars-certified-devices-cs.html"
+                  title="CodeSystem/mars-certified-devices-cs">Mars Mission Devices - Certified</a>
             </td>
             <td>
 <p>Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)</p>
@@ -4222,8 +3979,8 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-mars-devices-prototype-cs.html"
-                  title="CodeSystem/mars-devices-prototype-cs">Mars Mission Devices - Prototype</a>
+               <a href="CodeSystem-mars-prototype-devices-cs.html"
+                  title="CodeSystem/mars-prototype-devices-cs">Mars Mission Devices - Prototype</a>
             </td>
             <td>
 <p>Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)</p>
@@ -4447,6 +4204,15 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-shielding-condition-cs.html"
+                  title="CodeSystem/shielding-condition-cs">Shielding Condition</a>
+            </td>
+            <td>
+<p>Qualitative radiation shielding condition of the crew at the time of a radiation exposure measurement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-sleep-architecture-cs.html"
                   title="CodeSystem/sleep-architecture-cs">Sleep Architecture Code System</a>
             </td>
@@ -4483,29 +4249,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-space-cardiovascular-effects-cs.html"
-                  title="CodeSystem/space-cardiovascular-effects-cs">Space Cardiovascular Effects</a>
-            </td>
-            <td>
-<p>CodeSystem for space cardiovascular effects not found in SNOMED CT</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-space-emergency-type-cs.html"
                   title="CodeSystem/space-emergency-type-cs">Space Emergency Type Code System</a>
             </td>
             <td>
 <p>Types of emergency situations during spaceflight operations</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-space-environmental-factors-cs.html"
-                  title="CodeSystem/space-environmental-factors-cs">Space Environmental Factors</a>
-            </td>
-            <td>
-<p>CodeSystem for space environmental factors not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
@@ -4528,29 +4276,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-space-monitoring-procedures-cs.html"
-                  title="CodeSystem/space-monitoring-procedures-cs">Space Monitoring Procedures</a>
-            </td>
-            <td>
-<p>CodeSystem for space monitoring procedures not found in SNOMED CT</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-space-motion-sickness-cs.html"
                   title="CodeSystem/space-motion-sickness-cs">Space Motion Sickness Code System</a>
             </td>
             <td>
 <p>Types of motion sickness encountered in space travel and related vestibular disorders</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-space-neurological-effects-cs.html"
-                  title="CodeSystem/space-neurological-effects-cs">Space Neurological Effects</a>
-            </td>
-            <td>
-<p>CodeSystem for space neurological effects not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
@@ -4582,29 +4312,20 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-space-physiological-effects-cs.html"
-                  title="CodeSystem/space-physiological-effects-cs">Space Physiological Effects</a>
+               <a href="CodeSystem-space-procedure-cs.html"
+                  title="CodeSystem/space-procedure-cs">Space Procedure Code System</a>
             </td>
             <td>
-<p>CodeSystem for space physiological effects not found in SNOMED CT</p>
+<p>Operational procedures performed in spaceflight that have no SNOMED CT equivalent</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-space-preventive-health-cs.html"
-                  title="CodeSystem/space-preventive-health-cs">Space Preventive Health</a>
+               <a href="CodeSystem-space-radiation-cs.html"
+                  title="CodeSystem/space-radiation-cs">Space Radiation Code System</a>
             </td>
             <td>
-<p>CodeSystem for space preventive health concepts not found in SNOMED CT</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-space-psychological-effects-cs.html"
-                  title="CodeSystem/space-psychological-effects-cs">Space Psychological Effects</a>
-            </td>
-            <td>
-<p>CodeSystem for space psychological effects not found in SNOMED CT</p>
+<p>Measurement, dose-accumulation, organ-dose, detector-property and reporting concepts used by the space radiation profiles. Radiation types are in SpaceRadiationTypeCS; detector hardware types are in RadiationDetectorTypeCS.</p>
 </td>
          </tr>
          <tr>
@@ -4641,15 +4362,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Transfusion procedures adapted for spaceflight and austere environments</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-space-treatment-procedures-cs.html"
-                  title="CodeSystem/space-treatment-procedures-cs">Space Treatment Procedures</a>
-            </td>
-            <td>
-<p>CodeSystem for space treatment procedures not found in SNOMED CT</p>
 </td>
          </tr>
          <tr>
@@ -4715,9 +4427,35 @@ Questionnaire resources for structured data capture.</p>
 <p>Communication systems and protocols for underwater training operations</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-venous-flow-metric-cs.html"
+                  title="CodeSystem/venous-flow-metric-cs">Venous Flow Metric Code System</a>
+            </td>
+            <td>
+<p>Component codes for internal jugular vein flow directionality measurements</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="7"> </a>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-MissionPhaseToNASAMissionPhase.html"
+                  title="ConceptMap/MissionPhaseToNASAMissionPhase">Mission Phase to NASA Mission Phase Timing</a>
+            </td>
+            <td>
+<p>Maps the clinical mission phases in MissionPhaseCS to the coarser NASA medical-requirements timing phases in NASAMissionPhaseCS. Pre-flight maps to preflight activity, all in-space phases map to inflight, and both post-flight phases map to postflight.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -4761,6 +4499,30 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-030.html" title="Binary/artemis-030">Almond butter</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-025.html" title="Binary/artemis-025">Almonds</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-008.html" title="Binary/artemis-008">Apple cider</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Location-AquariusUnderwaterLaboratory.html"
                   title="Location/AquariusUnderwaterLaboratory">Aquarius Underwater Laboratory</a>
             </td>
@@ -4779,17 +4541,17 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Procedure-Artemis-III-EVA-1.html"
-                  title="Procedure/Artemis-III-EVA-1">Artemis III EVA-1</a>
+               <a href="Procedure-Artemis-IV-EVA-1.html"
+                  title="Procedure/Artemis-IV-EVA-1">Artemis IV EVA-1</a>
             </td>
             <td>
-<p>First lunar surface EVA of Artemis III mission at Malapert Massif</p>
+<p>First lunar surface EVA of Artemis IV mission at Malapert Massif</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-Artemis-III-EVA1-Radiation.html"
-                  title="Observation/Artemis-III-EVA1-Radiation">Artemis III EVA-1 Radiation Exposure</a>
+               <a href="Observation-Artemis-IV-EVA1-Radiation.html"
+                  title="Observation/Artemis-IV-EVA1-Radiation">Artemis IV EVA-1 Radiation Exposure</a>
             </td>
             <td>
 <p>Radiation dose during first lunar surface EVA (6.5 hours unshielded)</p>
@@ -4797,44 +4559,44 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Procedure-Artemis-III-EVA-2.html"
-                  title="Procedure/Artemis-III-EVA-2">Artemis III EVA-2</a>
+               <a href="Procedure-Artemis-IV-EVA-2.html"
+                  title="Procedure/Artemis-IV-EVA-2">Artemis IV EVA-2</a>
             </td>
             <td>
-<p>Second lunar surface EVA of Artemis III mission exploring shadowed crater</p>
+<p>Second lunar surface EVA of Artemis IV mission exploring shadowed crater</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Encounter-Artemis-III-Mission.html"
-                  title="Encounter/Artemis-III-Mission">Artemis III Mission Encounter</a>
+               <a href="Encounter-Artemis-IV-Mission.html"
+                  title="Encounter/Artemis-IV-Mission">Artemis IV Mission Encounter</a>
             </td>
             <td>
-<p>Encounter representing the entire Artemis III mission from launch to splashdown</p>
+<p>Encounter representing the entire Artemis IV mission from launch to splashdown</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="PlanDefinition-Artemis-III-Mission-Plan.html"
-                  title="PlanDefinition/Artemis-III-Mission-Plan">Artemis III Mission Plan</a>
+               <a href="PlanDefinition-Artemis-IV-Mission-Plan.html"
+                  title="PlanDefinition/Artemis-IV-Mission-Plan">Artemis IV Mission Plan</a>
             </td>
             <td>
-<p>Complete mission plan for Artemis III including phases, timelines, and EVA schedules</p>
+<p>Complete mission plan for Artemis IV including phases, timelines, and EVA schedules</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SupplyDelivery-ArtemisIII-SuitProvisioning-001.html"
-                  title="SupplyDelivery/ArtemisIII-SuitProvisioning-001">Artemis III Suit Provisioning</a>
+               <a href="SupplyDelivery-ArtemisIV-SuitProvisioning-001.html"
+                  title="SupplyDelivery/ArtemisIV-SuitProvisioning-001">Artemis IV Suit Provisioning</a>
             </td>
             <td>
-<p>EVA suit provisioning record for Artemis III lunar landing mission</p>
+<p>EVA suit provisioning record for Artemis IV lunar landing mission</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-Artemis-III-Translunar-Radiation.html"
-                  title="Observation/Artemis-III-Translunar-Radiation">Artemis III Translunar Radiation Exposure</a>
+               <a href="Observation-Artemis-IV-Translunar-Radiation.html"
+                  title="Observation/Artemis-IV-Translunar-Radiation">Artemis IV Translunar Radiation Exposure</a>
             </td>
             <td>
 <p>Cumulative radiation dose during 4-day translunar cruise</p>
@@ -4865,6 +4627,14 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Daily O2 production observation from algae photobioreactor</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-018.html" title="Binary/artemis-018">Barbecued beef brisket</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -4904,6 +4674,22 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-014.html" title="Binary/artemis-014">Breakfast sausage</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-019.html" title="Binary/artemis-019">Broccoli au gratin</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Location-BrooksAltitudeChamber.html"
                   title="Location/BrooksAltitudeChamber">Brooks Altitude Chamber</a>
             </td>
@@ -4926,6 +4712,14 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Butterfly iQ3 point-of-care ultrasound for IJV cross-sectional area and flow assessment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-023.html" title="Binary/artemis-023">Butternut squash</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -4962,6 +4756,94 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Canadian Space Agency life sciences research division</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-038.html" title="Binary/artemis-038">Cake</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-039.html" title="Binary/artemis-039">Candy-coated almonds</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-026.html" title="Binary/artemis-026">Cashews</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-024.html" title="Binary/artemis-024">Cauliflower</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-037.html" title="Binary/artemis-037">Chocolate</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-004.html" title="Binary/artemis-004">Chocolate breakfast drink</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-028.html" title="Binary/artemis-028">Chocolate spread</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-035.html" title="Binary/artemis-035">Cinnamon</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-040.html" title="Binary/artemis-040">Cobbler</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-010.html" title="Binary/artemis-010">Cocoa</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-001.html" title="Binary/artemis-001">Coffee</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -5054,6 +4936,22 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-036.html" title="Binary/artemis-036">Cookies</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-015.html" title="Binary/artemis-015">Couscous with nuts</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Location-CrewDragonEndeavour.html"
                   title="Location/CrewDragonEndeavour">Crew Dragon Endeavour</a>
             </td>
@@ -5072,6 +4970,33 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Device-radiation-detector-example.html"
+                  title="Device/radiation-detector-example">Crew Personal Dosimeter (example)</a>
+            </td>
+            <td>
+<p>Electronic personal dosimeter worn by the example astronaut during an ISS increment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-CumulativeDose-Transit.html"
+                  title="Observation/CumulativeDose-Transit">Cumulative Radiation Dose - Outbound Transit</a>
+            </td>
+            <td>
+<p>Cumulative galactic cosmic radiation dose accumulated by Commander Chen during the 6-month outbound Earth-Mars transit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-cumulative-radiation-dose-example.html"
+                  title="Observation/cumulative-radiation-dose-example">Cumulative Radiation Dose, ISS Expedition 75 (example)</a>
+            </td>
+            <td>
+<p>Dose-equivalent accumulated over the first 180 days of an ISS increment, with rolling-period and career totals.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Procedure-Sterilization-DHMR-001.html"
                   title="Procedure/Sterilization-DHMR-001">DHMR Sterilization at 125C/50hr</a>
             </td>
@@ -5086,6 +5011,15 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>German Aerospace Center medical research institute</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-space-radiation-exposure-example.html"
+                  title="Observation/space-radiation-exposure-example">Daily Radiation Exposure, ISS Flight Day 45 (example)</a>
+            </td>
+            <td>
+<p>One day of dose-equivalent measured by the crew personal dosimeter, with organ-dose and dose-rate components.</p>
 </td>
          </tr>
          <tr>
@@ -5388,11 +5322,43 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-017.html" title="Binary/artemis-017">Granola with blueberries</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-002.html" title="Binary/artemis-002">Green tea</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-HabitatEnvironment-Sol125.html"
                   title="Observation/HabitatEnvironment-Sol125">Habitat Environmental Conditions - Sol 125</a>
             </td>
             <td>
 <p>Atmospheric monitoring inside Mars habitat on Sol 125</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-034.html" title="Binary/artemis-034">Honey</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-031.html" title="Binary/artemis-031">Hot sauce</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -5755,6 +5721,14 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-007.html" title="Binary/artemis-007">Lemonade</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Location-LocationAirlock1.html" title="Location/LocationAirlock1">Location - Airlock1</a>
             </td>
             <td>
@@ -6029,11 +6003,43 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-021.html" title="Binary/artemis-021">Macaroni &amp; cheese</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Location-Malapert-Massif-Landing-Site.html"
                   title="Location/Malapert-Massif-Landing-Site">Malapert Massif Landing Site</a>
             </td>
             <td>
-<p>Artemis III landing site at Malapert Massif, lunar south pole region</p>
+<p>Artemis IV landing site at Malapert Massif, lunar south pole region</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-016.html" title="Binary/artemis-016">Mango salad</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-003.html" title="Binary/artemis-003">Mango-peach smoothie</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-027.html" title="Binary/artemis-027">Maple syrup</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -6059,6 +6065,14 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Example Mars crew member (Commander Sarah Chen) with baseline health data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-MarsCrewMember2.html" title="Patient/MarsCrewMember2">Mars Crew Member - Mission Specialist Okafor</a>
+            </td>
+            <td>
+<p>Example Mars crew member (Mission Specialist Daniel Okafor), geologist and subject of the autonomous appendectomy encounter</p>
 </td>
          </tr>
          <tr>
@@ -6139,15 +6153,6 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>NASA Ames centrifuge and spatial disorientation research</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-NASAHyperbaricFacility.html"
-                  title="Location/NASAHyperbaricFacility">NASA Hyperbaric Facility</a>
-            </td>
-            <td>
-<p>NASA's hyperbaric chamber for diving medicine and space analog training</p>
 </td>
          </tr>
          <tr>
@@ -6381,11 +6386,27 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-029.html" title="Binary/artemis-029">Peanut butter</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CarePlan-PersonalizedPlan-001.html"
                   title="CarePlan/PersonalizedPlan-001">Personalized Countermeasure Plan</a>
             </td>
             <td>
 <p>Individualized countermeasure plan based on metabolomics and genomics data</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-009.html" title="Binary/artemis-009">Pineapple drink</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -6453,11 +6474,28 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-041.html" title="Binary/artemis-041">Pudding</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-BFRT-Quadriceps-CSA-001.html"
                   title="Observation/BFRT-Quadriceps-CSA-001">Quadriceps CSA Outcome</a>
             </td>
             <td>
 <p>Quadriceps cross-sectional area measurement after 8 weeks of BFRT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DiagnosticReport-space-radiation-summary-example.html"
+                  title="DiagnosticReport/space-radiation-summary-example">Radiation Exposure Summary, ISS Expedition 75 (example)</a>
+            </td>
+            <td>
+<p>Increment radiation summary prepared by the flight surgeon from the daily and cumulative dose observations.</p>
 </td>
          </tr>
          <tr>
@@ -6612,6 +6650,22 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-020.html" title="Binary/artemis-020">Spicy green beans</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-032.html" title="Binary/artemis-032">Spicy mustard</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-Standard-Measures-Grip-PreFlight.html"
                   title="Observation/Standard-Measures-Grip-PreFlight">Standard Measures Grip Strength - Pre-flight</a>
             </td>
@@ -6621,11 +6675,11 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Device-Starship-HLS-Artemis-III.html"
-                  title="Device/Starship-HLS-Artemis-III">Starship HLS for Artemis III</a>
+               <a href="Device-Starship-HLS-Artemis-IV.html"
+                  title="Device/Starship-HLS-Artemis-IV">Starship HLS for Artemis IV</a>
             </td>
             <td>
-<p>SpaceX Starship Human Landing System variant for Artemis III lunar landing</p>
+<p>SpaceX Starship Human Landing System variant for Artemis IV lunar landing</p>
 </td>
          </tr>
          <tr>
@@ -6635,6 +6689,22 @@ Questionnaire resources for structured data capture.</p>
             </td>
             <td>
 <p>Store-and-forward dermatology consultation from ISS to ground</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-006.html" title="Binary/artemis-006">Strawberry breakfast drink</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-033.html" title="Binary/artemis-033">Strawberry jam</a>
+            </td>
+            <td>
+
 </td>
          </tr>
          <tr>
@@ -6657,8 +6727,24 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-011.html" title="Binary/artemis-011">Tortillas</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Questionnaire-TraumaEFASTQuestionnaire.html"
                   title="Questionnaire/TraumaEFASTQuestionnaire">Trauma EFAST Exam</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-022.html" title="Binary/artemis-022">Tropical fruit salad</a>
             </td>
             <td>
 
@@ -6702,6 +6788,30 @@ Questionnaire resources for structured data capture.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Binary-artemis-005.html" title="Binary/artemis-005">Vanilla breakfast drink</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-013.html" title="Binary/artemis-013">Vegetable quiche</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Binary-artemis-012.html" title="Binary/artemis-012">Wheat flat bread</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Location-WrightPattersonAerospaceResearch.html"
                   title="Location/WrightPattersonAerospaceResearch">Wright-Patterson Aerospace Research Laboratory</a>
             </td>
@@ -6723,7 +6833,7 @@ Questionnaire resources for structured data capture.</p>
                <a href="Device-xEMU-Suit-001.html" title="Device/xEMU-Suit-001">xEMU EVA Suit #001</a>
             </td>
             <td>
-<p>First xEMU suit certified for Artemis III lunar surface EVAs</p>
+<p>First xEMU suit certified for Artemis IV lunar surface EVAs</p>
 </td>
          </tr>
          <tr>
@@ -6737,7 +6847,7 @@ Questionnaire resources for structured data capture.</p>
          </tr>
       </tbody>
    </table>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -6745,11 +6855,11 @@ Questionnaire resources for structured data capture.</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-NutritionProduct.html"
-                  title="StructureDefinition/NutritionProduct">Nutrition Product</a>
+               <a href="Location-NASAHyperbaricFacility.html"
+                  title="Location/NASAHyperbaricFacility">NASA Hyperbaric Facility</a>
             </td>
             <td>
-<p>A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide.</p>
+<p>NASA's hyperbaric chamber for diving medicine and space analog training</p>
 </td>
          </tr>
       </tbody>
@@ -6772,7 +6882,7 @@ Questionnaire resources for structured data capture.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

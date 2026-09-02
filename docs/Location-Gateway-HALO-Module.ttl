@@ -6,18 +6,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Location/Gateway-HALO-Module> a fhir:Location ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Location/Gateway-HALO-Module> a fhir:Location ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Gateway-HALO-Module"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/habitat-location"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/habitat-location>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-location"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-location>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location Gateway-HALO-Module</b></p><a name=\"Gateway-HALO-Module\"> </a><a name=\"hcGateway-HALO-Module\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-habitat-location.html\">Habitat Location</a></p></div><blockquote><p><b>Radiation Shielding</b></p><ul><li>shieldingMass: 12.5 g/cm²<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/cm2 = 'g/cm2')</span></li><li>shieldingComposition: Aluminum alloy with polyethylene water walls</li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Lunar Gateway - HALO Module</p><p><b>description</b>: Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions.</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs orbital-station}\">Lunar orbital habitat module</span></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location Gateway-HALO-Module</b></p><a name=\"Gateway-HALO-Module\"> </a><a name=\"hcGateway-HALO-Module\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-habitat-location.html\">Habitat Location</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><blockquote><p><b>Radiation Shielding</b></p><ul><li>shieldingMass: 12.5 g/cm²<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeg/cm2 = 'g/cm2')</span></li><li>shieldingComposition: Aluminum alloy with polyethylene water walls</li></ul></blockquote><p><b>status</b>: Active</p><p><b>name</b>: Lunar Gateway - HALO Module</p><p><b>description</b>: Primary habitation module of Lunar Gateway in Near-Rectilinear Halo Orbit (NRHO). Provides crew quarters, life support, and logistics for Artemis missions.</p><p><b>mode</b>: Instance</p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs orbital-station}\">Lunar orbital habitat module</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [
@@ -46,8 +58,8 @@
        ]
      ] ) ;
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-shielding"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-shielding>
      ]
   ] ) ; # 
   fhir:status [ fhir:v "active"] ; # 
@@ -57,10 +69,11 @@
   fhir:type ( [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs>
        ] ;
-       fhir:code [ fhir:v "orbital-station" ]
+       fhir:code [ fhir:v "orbital-station" ] ;
+       fhir:display [ fhir:v "Orbital Station" ]
      ] ) ;
      fhir:text [ fhir:v "Lunar orbital habitat module" ]
   ] ) . # 

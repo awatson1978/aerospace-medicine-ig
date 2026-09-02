@@ -1,15 +1,16 @@
-# Artemis Landing Regions - v0.6.2
+# Artemis Landing Regions - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Artemis Landing Regions**
 
-## CodeSystem: Artemis Landing Regions 
+## CodeSystem: Artemis Landing Regions (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ArtemisLandingRegionCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ArtemisLandingRegionCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters) 
@@ -26,13 +27,13 @@ Candidate Artemis III landing regions near the lunar south pole (within 6° of p
 {
   "resourceType" : "CodeSystem",
   "id" : "artemis-landing-region-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs",
+  "version" : "0.7.0",
   "name" : "ArtemisLandingRegionCS",
   "title" : "Artemis Landing Regions",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,25 +47,23 @@ Candidate Artemis III landing regions near the lunar south pole (within 6° of p
     }
   ],
   "description" : "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 13,
   "property" : [
     {
       "code" : "latitude",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#latitude",
       "description" : "Approximate selenographic latitude (degrees)",
       "type" : "decimal"
     },
     {
       "code" : "longitude",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#longitude",
       "description" : "Approximate selenographic longitude (degrees)",
       "type" : "decimal"
     },
     {
       "code" : "feature",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#feature",
       "description" : "Primary topographic feature (crater, massif, plateau, ridge)",
       "type" : "string"
     }

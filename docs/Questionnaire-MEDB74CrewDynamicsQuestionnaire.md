@@ -1,4 +1,4 @@
-# MEDB 7.4 Crew Dynamics Assessment - v0.6.2
+# MEDB 7.4 Crew Dynamics Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-7-4-crew-dynamics | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-4-crew-dynamics | *Version*:0.7.0 |
 | Active as of 2024-01-15 | *Computable Name*:MEDB74CrewDynamics |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) | |
 
@@ -26,6 +26,9 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB74CrewDynamicsQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-7-4-crew-dynamics",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-4-crew-dynamics",
+  "version" : "0.7.0",
   "name" : "MEDB74CrewDynamics",
   "title" : "MEDB 7.4 Crew Dynamics Assessment",
   "status" : "active",
@@ -94,7 +97,7 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "bhp",
                 "display" : "Behavioral Health and Performance"
               }
@@ -103,7 +106,7 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "bhp",
                 "display" : "Behavioral Health and Performance"
               }
@@ -119,7 +122,7 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "behavioral",
                 "display" : "Behavior and Performance"
               }
@@ -128,7 +131,7 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "behavioral",
                 "display" : "Behavior and Performance"
               }
@@ -507,14 +510,14 @@ Monitor crew cohesion, interpersonal dynamics, and team performance throughout m
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "emr",
                 "display" : "Electronic Medical Record"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

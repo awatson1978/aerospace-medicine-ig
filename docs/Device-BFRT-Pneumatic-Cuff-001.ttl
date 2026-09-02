@@ -6,18 +6,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Device/BFRT-Pneumatic-Cuff-001> a fhir:Device ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Device/BFRT-Pneumatic-Cuff-001> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "BFRT-Pneumatic-Cuff-001"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-device"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/bfrt-device>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-device"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-device>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device BFRT-Pneumatic-Cuff-001</b></p><a name=\"BFRT-Pneumatic-Cuff-001\"> </a><a name=\"hcBFRT-Pneumatic-Cuff-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bfrt-device.html\">BFRT Device</a></p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Kaatsu Global</p><p><b>serialNumber</b>: BFR-ISS-2028-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Kaatsu Nano BFR Unit #BFR-001</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: Nano</p><p><b>type</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs pneumatic-cuff}\">Pneumatic Cuff</span></p><p><b>patient</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device BFRT-Pneumatic-Cuff-001</b></p><a name=\"BFRT-Pneumatic-Cuff-001\"> </a><a name=\"hcBFRT-Pneumatic-Cuff-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bfrt-device.html\">BFRT Device</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Kaatsu Global</p><p><b>serialNumber</b>: BFR-ISS-2028-001</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Kaatsu Nano BFR Unit #BFR-001</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: Nano</p><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-device-type-cs pneumatic-cuff}\">Pneumatic Cuff</span></p><p><b>patient</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:manufacturer [ fhir:v "Kaatsu Global"] ; # 
@@ -30,15 +42,15 @@
   fhir:type [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs"^^xsd:anyURI ;
-         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-device-type-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-device-type-cs>
        ] ;
        fhir:code [ fhir:v "pneumatic-cuff" ] ;
        fhir:display [ fhir:v "Pneumatic Cuff" ]
      ] )
   ] ; # 
   fhir:patient [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] . # 
 

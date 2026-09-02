@@ -1,4 +1,4 @@
-# Mars Crew Member Profile - v0.6.2
+# Mars Crew Member Profile - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MarsCrewMemberProfile |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-crew-member | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MarsCrewMemberProfile |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-mars-crew-member.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "mars-crew-member",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-crew-member",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-crew-member",
+  "version" : "0.7.0",
   "name" : "MarsCrewMemberProfile",
   "title" : "Mars Crew Member Profile",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-mars-crew-member.csv
     }
   ],
   "description" : "Patient profile for Mars crew with extensions for radiation career dose, flight certification, and baseline health metrics",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {

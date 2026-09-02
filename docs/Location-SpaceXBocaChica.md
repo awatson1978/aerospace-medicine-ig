@@ -1,10 +1,12 @@
-# SpaceX Starbase - v0.6.2
+# SpaceX Starbase - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **SpaceX Starbase**
 
 ## Example Location: SpaceX Starbase
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
 
 **name**: SpaceX Starbase
 
@@ -20,6 +22,9 @@
 {
   "resourceType" : "Location",
   "id" : "SpaceXBocaChica",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record"
+  },
   "name" : "SpaceX Starbase",
   "description" : "Starship and Super Heavy development facility",
   "address" : {

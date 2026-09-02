@@ -1,4 +1,4 @@
-# MEDB 2.4 H. pylori Screening - v0.6.2
+# MEDB 2.4 H. pylori Screening - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-4-hpylori-screening | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-4-hpylori-screening | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB24HpyloriScreening |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB24HpyloriScreeningQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-2-4-hpylori-screening",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-4-hpylori-screening",
+  "version" : "0.7.0",
   "name" : "MEDB24HpyloriScreening",
   "title" : "MEDB 2.4 H. pylori Screening",
   "status" : "active",
@@ -94,7 +97,7 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -103,7 +106,7 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -214,7 +217,7 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
               "valueCoding" : {
                 "system" : "http://snomed.info/sct",
                 "code" : "419984006",
-                "display" : "Equivocal"
+                "display" : "Inconclusive"
               }
             }
           ]
@@ -301,7 +304,7 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -310,7 +313,7 @@ To screen crew members for Helicobacter pylori infection prior to long-duration 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

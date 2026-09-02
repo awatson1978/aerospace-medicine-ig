@@ -1,4 +1,4 @@
-# MR050L Pharmaceutical Management - v0.6.2
+# MR050L Pharmaceutical Management - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr050l-pharmaceutical-management | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr050l-pharmaceutical-management | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR050LPharmaceuticalManagement |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
 {
   "resourceType" : "Questionnaire",
   "id" : "MR050LPharmaceuticalManagementQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr050l-pharmaceutical-management",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr050l-pharmaceutical-management",
+  "version" : "0.7.0",
   "name" : "MR050LPharmaceuticalManagement",
   "title" : "MR050L Pharmaceutical Management",
   "status" : "active",
@@ -94,7 +97,7 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -103,7 +106,7 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "medical-operations",
                 "display" : "Medical Operations"
               }
@@ -294,7 +297,7 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "meme",
                 "display" : "Medical Equipment Management Environment"
               }
@@ -303,7 +306,7 @@ Manage pharmaceutical inventory, track storage conditions, monitor medication st
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "meme",
                 "display" : "Medical Equipment Management Environment"
               }

@@ -1,4 +1,4 @@
-# xEVAS Lunar Suit Definition - v0.6.2
+# xEVAS Lunar Suit Definition - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example DeviceDefinition: xEVAS Lunar Suit Definition
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [xEVAS Suit Definition](StructureDefinition-xevas-suit-definition.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Gravity Context**: Lunar Gravity (1/6g)
 
@@ -41,17 +45,25 @@ Configured for lunar surface EVA with enhanced lower-body mobility, dust-resista
   "resourceType" : "DeviceDefinition",
   "id" : "xEVAS-LunarSuit-Def-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/xevas-suit-definition"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "lunar-gravity",
             "display" : "Lunar Gravity (1/6g)"
           }

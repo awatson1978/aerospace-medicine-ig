@@ -1,4 +1,4 @@
-# ARCHeR Actigraphy Observation - v0.6.2
+# ARCHeR Actigraphy Observation - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ARCHeRActigraphyObservation |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/archer-actigraphy-observation | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ARCHeRActigraphyObservation |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Actigraphy observation from the Actigraphy for Circadian Health during Exploration Research (ARCHeR) investigation 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
 {
   "resourceType" : "StructureDefinition",
   "id" : "archer-actigraphy-observation",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/archer-actigraphy-observation",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/archer-actigraphy-observation",
+  "version" : "0.7.0",
   "name" : "ARCHeRActigraphyObservation",
   "title" : "ARCHeR Actigraphy Observation",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
     }
   ],
   "description" : "Actigraphy observation from the Actigraphy for Circadian Health during Exploration Research (ARCHeR) investigation",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"
             ]
           }
         ],
@@ -159,13 +161,13 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
       {
         "id" : "Observation.code",
         "path" : "Observation.code",
-        "short" : "ARCHeR actigraphy monitoring",
+        "short" : "ARCHeR actigraphy monitoring of circadian rhythm",
         "patternCodeableConcept" : {
           "coding" : [
             {
               "system" : "http://snomed.info/sct",
-              "code" : "129006008",
-              "display" : "Activity monitoring"
+              "code" : "30920001",
+              "display" : "Circadian rhythm"
             }
           ]
         },
@@ -179,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -229,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/actigraphy-metric-cs",
               "code" : "interdaily-stability",
               "display" : "Interdaily Stability (IS)"
             }
@@ -269,7 +271,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-assessment-cs",
               "code" : "circadian-period",
               "display" : "Circadian Period (Tau)"
             }
@@ -309,7 +311,7 @@ Other representations of profile: [CSV](StructureDefinition-archer-actigraphy-ob
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs",
               "code" : "total-sleep-time",
               "display" : "Total Sleep Time (TST)"
             }

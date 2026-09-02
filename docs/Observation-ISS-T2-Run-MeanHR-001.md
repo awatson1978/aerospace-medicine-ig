@@ -1,4 +1,4 @@
-# ISS T2 Treadmill Run - Mean Heart Rate - v0.6.2
+# ISS T2 Treadmill Run - Mean Heart Rate - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: ISS T2 Treadmill Run - Mean Heart Rate
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space Exercise Activity Measure](StructureDefinition-space-exercise-activity-measure.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
@@ -14,7 +18,7 @@ Profile: [Space Exercise Activity Measure](StructureDefinition-space-exercise-ac
 
 **code**: Heart rate
 
-**subject**: [Patient/AstronautExample](Patient/AstronautExample)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-06-01 13:30:00+0000
 
@@ -29,8 +33,16 @@ Profile: [Space Exercise Activity Measure](StructureDefinition-space-exercise-ac
   "resourceType" : "Observation",
   "id" : "ISS-T2-Run-MeanHR-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-measure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
@@ -48,18 +60,18 @@ Profile: [Space Exercise Activity Measure](StructureDefinition-space-exercise-ac
   "code" : {
     "coding" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs",
-        "code" : "treadmill"
-      },
-      {
         "system" : "http://loinc.org",
         "code" : "8867-4",
         "display" : "Heart rate"
+      },
+      {
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs",
+        "code" : "treadmill"
       }
     ]
   },
   "subject" : {
-    "reference" : "Patient/AstronautExample"
+    "reference" : "Patient/ExampleAstronaut"
   },
   "effectiveDateTime" : "2025-06-01T13:30:00Z",
   "valueQuantity" : {

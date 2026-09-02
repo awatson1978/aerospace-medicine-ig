@@ -1,5 +1,4 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,33 +6,44 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/ExampleDiveProfile> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/ExampleDiveProfile> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ExampleDiveProfile"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-profile"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-profile>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleDiveProfile</b></p><a name=\"ExampleDiveProfile\"> </a><a name=\"hcExampleDiveProfile\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DiveProfile.html\">Dive Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LA6156-8}\">Dive profile</span></p><p><b>subject</b>: <a href=\"Patient-janeway.html\">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2025-06-01 09:30:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33747-0}\">Maximum depth</span></p><p><b>value</b>: 12 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LA6157-6}\">Bottom time</span></p><p><b>value</b>: 180 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33746-2}\">Water temperature</span></p><p><b>value</b>: 26 Cel<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleDiveProfile</b></p><a name=\"ExampleDiveProfile\"> </a><a name=\"hcExampleDiveProfile\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-dive-profile.html\">Dive Profile</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs dive-profile}\">Dive Profile</span></p><p><b>subject</b>: <a href=\"Patient-janeway.html\">Catherine Janeway  (no stated gender), DoB Unknown</a></p><p><b>effective</b>: 2025-06-01 09:30:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs maximum-depth}\">Maximum Depth</span></p><p><b>value</b>: 12 m<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codem = 'm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs bottom-time}\">Bottom Time</span></p><p><b>value</b>: 180 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs water-temperature}\">Water Temperature</span></p><p><b>value</b>: 26 Cel<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
      fhir:coding ( [
-       a loinc:LA6156-8 ;
        fhir:system [
-         fhir:v "http://loinc.org"^^xsd:anyURI ;
-         fhir:l <http://loinc.org>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs>
        ] ;
-       fhir:code [ fhir:v "LA6156-8" ] ;
-       fhir:display [ fhir:v "Dive profile" ]
+       fhir:code [ fhir:v "dive-profile" ] ;
+       fhir:display [ fhir:v "Dive Profile" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/janeway> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/janeway> ;
      fhir:reference [ fhir:v "Patient/janeway" ]
   ] ; # 
   fhir:effective [
@@ -43,13 +53,12 @@
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
-         a loinc:33747-0 ;
          fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs>
          ] ;
-         fhir:code [ fhir:v "33747-0" ] ;
-         fhir:display [ fhir:v "Maximum depth" ]
+         fhir:code [ fhir:v "maximum-depth" ] ;
+         fhir:display [ fhir:v "Maximum Depth" ]
        ] )
      ] ;
      fhir:value [
@@ -64,13 +73,12 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         a loinc:LA6157-6 ;
          fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs>
          ] ;
-         fhir:code [ fhir:v "LA6157-6" ] ;
-         fhir:display [ fhir:v "Bottom time" ]
+         fhir:code [ fhir:v "bottom-time" ] ;
+         fhir:display [ fhir:v "Bottom Time" ]
        ] )
      ] ;
      fhir:value [
@@ -85,13 +93,12 @@
   ] [
      fhir:code [
        fhir:coding ( [
-         a loinc:33746-2 ;
          fhir:system [
-           fhir:v "http://loinc.org"^^xsd:anyURI ;
-           fhir:l <http://loinc.org>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs>
          ] ;
-         fhir:code [ fhir:v "33746-2" ] ;
-         fhir:display [ fhir:v "Water temperature" ]
+         fhir:code [ fhir:v "water-temperature" ] ;
+         fhir:display [ fhir:v "Water Temperature" ]
        ] )
      ] ;
      fhir:value [

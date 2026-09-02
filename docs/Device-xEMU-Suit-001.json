@@ -1,9 +1,17 @@
 {
   "resourceType" : "Device",
   "id" : "xEMU-Suit-001",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "tag" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device xEMU-Suit-001</b></p><a name=\"xEMU-Suit-001\"> </a><a name=\"hcxEMU-Suit-001\"> </a><p><b>status</b>: Active</p><p><b>manufacturer</b>: Axiom Space</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>xEMU Suit Serial #001</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs xemu-suit}\">Exploration Extravehicular Mobility Unit</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device xEMU-Suit-001</b></p><a name=\"xEMU-Suit-001\"> </a><a name=\"hcxEMU-Suit-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Axiom Space</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>xEMU Suit Serial #001</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs xemu-suit}\">Exploration Extravehicular Mobility Unit</span></p></div>"
   },
   "status" : "active",
   "manufacturer" : "Axiom Space",
@@ -13,8 +21,9 @@
   }],
   "type" : {
     "coding" : [{
-      "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs",
-      "code" : "xemu-suit"
+      "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs",
+      "code" : "xemu-suit",
+      "display" : "xEMU EVA Suit"
     }],
     "text" : "Exploration Extravehicular Mobility Unit"
   }

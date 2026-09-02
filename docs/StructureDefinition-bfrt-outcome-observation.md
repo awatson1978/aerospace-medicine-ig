@@ -1,4 +1,4 @@
-# BFRT Outcome Observation - v0.6.2
+# BFRT Outcome Observation - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BFRTOutcomeObservation |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-outcome-observation | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BFRTOutcomeObservation |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Outcome measurements from blood flow restriction training including musculoskeletal and bone biomarkers 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
 {
   "resourceType" : "StructureDefinition",
   "id" : "bfrt-outcome-observation",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-outcome-observation",
+  "version" : "0.7.0",
   "name" : "BFRTOutcomeObservation",
   "title" : "BFRT Outcome Observation",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
     }
   ],
   "description" : "Outcome measurements from blood flow restriction training including musculoskeletal and bone biomarkers",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"
             ]
           }
         ],
@@ -155,7 +157,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -173,7 +175,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/bfrt-outcome-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bfrt-outcome-vs"
         }
       },
       {
@@ -184,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -237,7 +239,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
               "code" : "muscle-csa",
               "display" : "Muscle Cross-Sectional Area"
             }
@@ -277,7 +279,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
               "code" : "p1np",
               "display" : "P1NP (Procollagen Type I N-Propeptide)"
             }
@@ -317,7 +319,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
               "code" : "ctx",
               "display" : "CTX (C-Terminal Telopeptide)"
             }
@@ -357,7 +359,7 @@ Other representations of profile: [CSV](StructureDefinition-bfrt-outcome-observa
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
               "code" : "muscle-thickness",
               "display" : "Muscle Thickness"
             }

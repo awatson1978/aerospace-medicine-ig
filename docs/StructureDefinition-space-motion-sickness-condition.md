@@ -1,4 +1,4 @@
-# Space Motion Sickness Condition - v0.6.2
+# Space Motion Sickness Condition - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceMotionSicknessCondition |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-motion-sickness-condition | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceMotionSicknessCondition |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Diagnosis and tracking of space motion sickness, terrestrial re-entry motion sickness, and related vestibular disorders 
@@ -37,12 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-motion-sickness-condition",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-motion-sickness-condition",
+  "version" : "0.7.0",
   "name" : "SpaceMotionSicknessCondition",
   "title" : "Space Motion Sickness Condition",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -56,6 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
     }
   ],
   "description" : "Diagnosis and tracking of space motion sickness, terrestrial re-entry motion sickness, and related vestibular disorders",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -124,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -140,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -156,7 +158,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -169,7 +171,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
         "mustSupport" : true,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/graybiel-severity-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/graybiel-severity-vs"
         }
       },
       {
@@ -180,7 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/space-motion-sickness-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-motion-sickness-vs"
         }
       },
       {
@@ -190,7 +192,7 @@ Other representations of profile: [CSV](StructureDefinition-space-motion-sicknes
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],

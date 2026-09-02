@@ -1,22 +1,23 @@
-# Diving and Space Medicine Regulatory Compliance - v0.6.2
+# Diving and Space Medicine Regulatory Compliance - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Diving and Space Medicine Regulatory Compliance**
 
-## CodeSystem: Diving and Space Medicine Regulatory Compliance 
+## CodeSystem: Diving and Space Medicine Regulatory Compliance (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:RegulatoryComplianceCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:RegulatoryComplianceCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Regulatory standards and compliance codes for diving and space medicine 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
-* [RegulatoryStandards](ValueSet-regulatory-standards.md)
+* [RegulatoryStandards](ValueSet-regulatory-standards-vs.md)
 
 
 
@@ -26,13 +27,13 @@ Regulatory standards and compliance codes for diving and space medicine
 {
   "resourceType" : "CodeSystem",
   "id" : "regulatory-compliance-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
+  "version" : "0.7.0",
   "name" : "RegulatoryComplianceCS",
   "title" : "Diving and Space Medicine Regulatory Compliance",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,9 +47,10 @@ Regulatory standards and compliance codes for diving and space medicine
     }
   ],
   "description" : "Regulatory standards and compliance codes for diving and space medicine",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 21,
+  "count" : 26,
   "concept" : [
     {
       "code" : "noaa-diving-manual",
@@ -154,6 +156,31 @@ Regulatory standards and compliance codes for diving and space medicine
       "code" : "instructor-level",
       "display" : "Instructor Certification",
       "definition" : "Diving instructor certification"
+    },
+    {
+      "code" : "compliance-status",
+      "display" : "Compliance Status",
+      "definition" : "Overall compliance status against the assessed regulatory standard"
+    },
+    {
+      "code" : "standards-version",
+      "display" : "Standards Version",
+      "definition" : "Version or edition of the regulatory standard assessed against"
+    },
+    {
+      "code" : "certification-level",
+      "display" : "Certification Level",
+      "definition" : "Certification level held by the individual under the standard"
+    },
+    {
+      "code" : "expiration-date",
+      "display" : "Certification Expiration Date",
+      "definition" : "Date on which the certification or compliance status expires"
+    },
+    {
+      "code" : "restrictions-limitations",
+      "display" : "Restrictions and Limitations",
+      "definition" : "Restrictions or limitations attached to the certification or compliance status"
     }
   ]
 }

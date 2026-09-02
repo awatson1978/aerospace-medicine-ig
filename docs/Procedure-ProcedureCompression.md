@@ -1,4 +1,4 @@
-# Procedure - Compression - v0.6.2
+# Procedure - Compression - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,11 +6,15 @@
 
 ## Example Procedure: Procedure - Compression
 
-Profile: [Space Health Procedure](StructureDefinition-SpaceProcedure.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Space Health Procedure](StructureDefinition-space-procedure.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Completed
 
-**code**: Compression (procedure)
+**code**: Vehicle Compartment Repressurization
 
 **subject**: [Space Miner](Patient-spaceminer1.md)
 
@@ -23,17 +27,25 @@ Profile: [Space Health Procedure](StructureDefinition-SpaceProcedure.md)
   "resourceType" : "Procedure",
   "id" : "ProcedureCompression",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "completed",
   "code" : {
     "coding" : [
       {
-        "system" : "http://snomed.info/sct",
-        "code" : "281613004",
-        "display" : "Compression (procedure)"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-procedure-cs",
+        "code" : "vehicle-repressurization",
+        "display" : "Vehicle Compartment Repressurization"
       }
     ]
   },

@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-dose-codes-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organ-dose-codes-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet organ-dose-codes-vs</b></p><a name=\"organ-dose-codes-vs\"> </a><a name=\"hcorgan-dose-codes-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-space-radiation-cs.html\"><code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.7.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-bone-marrow-dose\">bone-marrow-dose</a></td><td style=\"color: #cccccc\">Bone Marrow Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-eye-lens-dose\">eye-lens-dose</a></td><td style=\"color: #cccccc\">Eye Lens Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-skin-dose\">skin-dose</a></td><td style=\"color: #cccccc\">Skin Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-cns-dose\">cns-dose</a></td><td style=\"color: #cccccc\">Central Nervous System Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-thyroid-dose\">thyroid-dose</a></td><td style=\"color: #cccccc\">Thyroid Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-gonad-dose\">gonad-dose</a></td><td style=\"color: #cccccc\">Gonad Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-lung-dose\">lung-dose</a></td><td style=\"color: #cccccc\">Lung Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-gi-tract-dose\">gi-tract-dose</a></td><td style=\"color: #cccccc\">GI Tract Dose</td></tr><tr><td><a href=\"CodeSystem-space-radiation-cs.html#space-radiation-cs-whole-body-dose\">whole-body-dose</a></td><td style=\"color: #cccccc\">Whole Body Dose</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-dose-codes-vs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-dose-codes-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "OrganDoseCodesVS"] ; # 
+  fhir:title [ fhir:v "Organ-Specific Dose Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for organ-specific radiation dose measurements (bone marrow, lens of eye, skin, CNS, thyroid, gonads, lung, GI tract, whole body)."] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "bone-marrow-dose" ]
+       ] [
+         fhir:code [ fhir:v "eye-lens-dose" ]
+       ] [
+         fhir:code [ fhir:v "skin-dose" ]
+       ] [
+         fhir:code [ fhir:v "cns-dose" ]
+       ] [
+         fhir:code [ fhir:v "thyroid-dose" ]
+       ] [
+         fhir:code [ fhir:v "gonad-dose" ]
+       ] [
+         fhir:code [ fhir:v "lung-dose" ]
+       ] [
+         fhir:code [ fhir:v "gi-tract-dose" ]
+       ] [
+         fhir:code [ fhir:v "whole-body-dose" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

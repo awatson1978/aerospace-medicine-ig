@@ -1,15 +1,16 @@
-# ECG Interpretation Results - v0.6.2
+# ECG Interpretation Results - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **ECG Interpretation Results**
 
-## ValueSet: ECG Interpretation Results 
+## ValueSet: ECG Interpretation Results (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ECGInterpretationVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/ecg-interpretation-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ECGInterpretationVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Value set for ECG interpretation outcomes. 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "ecg-interpretation-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/ecg-interpretation-vs",
+  "version" : "0.7.0",
   "name" : "ECGInterpretationVS",
   "title" : "ECG Interpretation Results",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,6 +66,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   ],
   "description" : "Value set for ECG interpretation outcomes.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {

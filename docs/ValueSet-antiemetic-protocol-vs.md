@@ -1,15 +1,16 @@
-# Antiemetic Protocol Value Set - v0.6.2
+# Antiemetic Protocol Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Antiemetic Protocol Value Set**
 
-## ValueSet: Antiemetic Protocol Value Set 
+## ValueSet: Antiemetic Protocol Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/antiemetic-protocol-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AntiemeticProtocolVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/antiemetic-protocol-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AntiemeticProtocolVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Antiemetic administration protocols 
@@ -45,13 +46,13 @@ Antiemetic administration protocols
 {
   "resourceType" : "ValueSet",
   "id" : "antiemetic-protocol-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/antiemetic-protocol-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/antiemetic-protocol-vs",
+  "version" : "0.7.0",
   "name" : "AntiemeticProtocolVS",
   "title" : "Antiemetic Protocol Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Antiemetic administration protocols
     }
   ],
   "description" : "Antiemetic administration protocols",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs"
       }
     ]
   }

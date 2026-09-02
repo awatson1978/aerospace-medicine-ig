@@ -12,7 +12,7 @@
   <sch:pattern>
     <sch:title>f:ActivityDefinition</sch:title>
     <sch:rule context="f:ActivityDefinition">
-      <sch:assert test="count(f:extension[@url = 'https://mitre.org/fhir/space-health/StructureDefinition/sex-specific-protocol']) &lt;= 1">extension with URL = 'https://mitre.org/fhir/space-health/StructureDefinition/sex-specific-protocol': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/sex-specific-protocol']) &lt;= 1">extension with URL = 'https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/sex-specific-protocol': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

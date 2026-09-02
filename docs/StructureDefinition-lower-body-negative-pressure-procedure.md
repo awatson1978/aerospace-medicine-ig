@@ -1,4 +1,4 @@
-# Lower Body Negative Pressure Procedure - v0.6.2
+# Lower Body Negative Pressure Procedure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:LowerBodyNegativePressureProcedure |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lower-body-negative-pressure-procedure | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:LowerBodyNegativePressureProcedure |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 LBNP session applying sub-atmospheric pressure to the lower body as a countermeasure for cephalad fluid shift 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
 {
   "resourceType" : "StructureDefinition",
   "id" : "lower-body-negative-pressure-procedure",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/lower-body-negative-pressure-procedure",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lower-body-negative-pressure-procedure",
+  "version" : "0.7.0",
   "name" : "LowerBodyNegativePressureProcedure",
   "title" : "Lower Body Negative Pressure Procedure",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
     }
   ],
   "description" : "LBNP session applying sub-atmospheric pressure to the lower body as a countermeasure for cephalad fluid shift",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -129,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -145,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-pressure-level"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lbnp-pressure-level"
             ]
           }
         ],
@@ -164,7 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/microgravity-countermeasure-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/microgravity-countermeasure-vs"
         }
       },
       {
@@ -174,7 +176,7 @@ Other representations of profile: [CSV](StructureDefinition-lower-body-negative-
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],

@@ -6,12 +6,26 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Device/xEMU-Suit-001> a fhir:Device ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Device/xEMU-Suit-001> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "xEMU-Suit-001"] ; # 
+  fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device xEMU-Suit-001</b></p><a name=\"xEMU-Suit-001\"> </a><a name=\"hcxEMU-Suit-001\"> </a><p><b>status</b>: Active</p><p><b>manufacturer</b>: Axiom Space</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>xEMU Suit Serial #001</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs xemu-suit}\">Exploration Extravehicular Mobility Unit</span></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device xEMU-Suit-001</b></p><a name=\"xEMU-Suit-001\"> </a><a name=\"hcxEMU-Suit-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Axiom Space</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>xEMU Suit Serial #001</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs xemu-suit}\">Exploration Extravehicular Mobility Unit</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:manufacturer [ fhir:v "Axiom Space"] ; # 
@@ -22,10 +36,11 @@
   fhir:type [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs>
        ] ;
-       fhir:code [ fhir:v "xemu-suit" ]
+       fhir:code [ fhir:v "xemu-suit" ] ;
+       fhir:display [ fhir:v "xEMU EVA Suit" ]
      ] ) ;
      fhir:text [ fhir:v "Exploration Extravehicular Mobility Unit" ]
   ] . # 

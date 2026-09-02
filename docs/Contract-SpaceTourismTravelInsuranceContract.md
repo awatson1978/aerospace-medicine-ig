@@ -1,4 +1,4 @@
-# Insurance - Contract - v0.6.2
+# Insurance - Contract - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Contract: Insurance - Contract
 
-Profile: [Space Insurance Contract](StructureDefinition-SpaceInsuranceContract.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Space Insurance Contract](StructureDefinition-space-insurance-contract.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 
 
@@ -17,8 +21,16 @@ Profile: [Space Insurance Contract](StructureDefinition-SpaceInsuranceContract.m
   "resourceType" : "Contract",
   "id" : "SpaceTourismTravelInsuranceContract",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceInsuranceContract"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-insurance-contract"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   }
 }

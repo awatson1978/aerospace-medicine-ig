@@ -1,4 +1,4 @@
-# Cumulative Stress Burden - v0.6.2
+# Cumulative Stress Burden - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:CumulativeStressBurden |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-stress-burden | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:CumulativeStressBurden |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose. 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
 {
   "resourceType" : "StructureDefinition",
   "id" : "cumulative-stress-burden",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-stress-burden",
+  "version" : "0.7.0",
   "name" : "CumulativeStressBurden",
   "title" : "Cumulative Stress Burden",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
     }
   ],
   "description" : "Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ]
@@ -137,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
       {
         "id" : "Observation.code.coding.system",
         "path" : "Observation.code.coding.system",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
       },
       {
         "id" : "Observation.code.coding.code",
@@ -173,7 +175,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
         "id" : "Observation.value[x].unit",
         "path" : "Observation.value[x].unit",
         "min" : 1,
-        "patternString" : "stress units"
+        "patternString" : "score"
       },
       {
         "id" : "Observation.component",
@@ -201,7 +203,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "mood-level"
             }
           ]
@@ -229,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "cognitive-readiness"
             }
           ]
@@ -257,7 +259,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-stress-bu
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "social-connectedness"
             }
           ]

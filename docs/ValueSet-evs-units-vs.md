@@ -1,15 +1,16 @@
-# EVS Units - v0.6.2
+# EVS Units - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **EVS Units**
 
-## ValueSet: EVS Units 
+## ValueSet: EVS Units (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/evs-units-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:EVSUnitsVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/evs-units-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:EVSUnitsVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Units for Exercise Vital Sign measurements 
@@ -23,8 +24,6 @@ Units for Exercise Vital Sign measurements
  
 
 ### Expansion
-
-No Expansion for this valueset (not supported by Publication Tooling)
 
 -------
 
@@ -47,13 +46,13 @@ No Expansion for this valueset (not supported by Publication Tooling)
 {
   "resourceType" : "ValueSet",
   "id" : "evs-units-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/evs-units-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/evs-units-vs",
+  "version" : "0.7.0",
   "name" : "EVSUnitsVS",
   "title" : "EVS Units",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -67,6 +66,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
     }
   ],
   "description" : "Units for Exercise Vital Sign measurements",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {

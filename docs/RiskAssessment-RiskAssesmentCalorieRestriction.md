@@ -1,4 +1,4 @@
-# Risk - Calorie Ristrction - v0.6.2
+# Risk - Calorie Ristrction - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,11 +6,15 @@
 
 ## Example RiskAssessment: Risk - Calorie Ristrction
 
-Profile: [Mission Risk Assessment](StructureDefinition-SpaceRiskAssesment.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Mission Risk Assessment](StructureDefinition-space-risk-assessment.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
-**subject**: [Catherine Janeway](Patient/CaptainJaneway)
+**subject**: [Catherine Janeway](Patient-janeway.md)
 
 
 
@@ -21,13 +25,21 @@ Profile: [Mission Risk Assessment](StructureDefinition-SpaceRiskAssesment.md)
   "resourceType" : "RiskAssessment",
   "id" : "RiskAssesmentCalorieRestriction",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceRiskAssesment"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-risk-assessment"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
   "subject" : {
-    "reference" : "Patient/CaptainJaneway",
+    "reference" : "Patient/janeway",
     "display" : "Catherine Janeway"
   }
 }

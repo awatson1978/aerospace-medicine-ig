@@ -1,4 +1,4 @@
-# Algae Cultivation Procedure - v0.6.2
+# Algae Cultivation Procedure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Procedure: Algae Cultivation Procedure
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Biomanufacturing Procedure](StructureDefinition-biomanufacturing-procedure.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Gravity Context**: Microgravity
 
@@ -38,17 +42,25 @@ Profile: [Biomanufacturing Procedure](StructureDefinition-biomanufacturing-proce
   "resourceType" : "Procedure",
   "id" : "Biomanufacturing-AlgaeCultivation-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/biomanufacturing-procedure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/biomanufacturing-procedure"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "microgravity",
             "display" : "Microgravity"
           }
@@ -60,7 +72,7 @@ Profile: [Biomanufacturing Procedure](StructureDefinition-biomanufacturing-proce
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-process-cs",
         "code" : "algae-photobioreactor",
         "display" : "Algae Photobioreactor"
       }

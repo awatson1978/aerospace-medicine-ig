@@ -2,38 +2,48 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Procedure/ProcedureDecompression> a fhir:Procedure ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Procedure/ProcedureDecompression> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ProcedureDecompression"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/SpaceProcedure>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-procedure>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ProcedureDecompression</b></p><a name=\"ProcedureDecompression\"> </a><a name=\"hcProcedureDecompression\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-SpaceProcedure.html\">Space Health Procedure</a></p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 281613004}\">Decompression (procedure)</span></p><p><b>subject</b>: <a href=\"Patient-spaceminer1.html\">Space Miner</a></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ProcedureDecompression</b></p><a name=\"ProcedureDecompression\"> </a><a name=\"hcProcedureDecompression\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-procedure.html\">Space Health Procedure</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-procedure-cs vehicle-decompression}\">Vehicle Compartment Decompression</span></p><p><b>subject</b>: <a href=\"Patient-spaceminer1.html\">Space Miner</a></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "completed"] ; # 
   fhir:code [
      fhir:coding ( [
-       a sct:281613004 ;
        fhir:system [
-         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
-         fhir:l <http://snomed.info/sct>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-procedure-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-procedure-cs>
        ] ;
-       fhir:code [ fhir:v "281613004" ] ;
-       fhir:display [ fhir:v "Decompression (procedure)" ]
+       fhir:code [ fhir:v "vehicle-decompression" ] ;
+       fhir:display [ fhir:v "Vehicle Compartment Decompression" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/spaceminer1> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/spaceminer1> ;
      fhir:reference [ fhir:v "Patient/spaceminer1" ] ;
      fhir:display [ fhir:v "Space Miner" ]
   ] . # 

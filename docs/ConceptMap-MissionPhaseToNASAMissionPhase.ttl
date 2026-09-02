@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/ConceptMap/MissionPhaseToNASAMissionPhase> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MissionPhaseToNASAMissionPhase"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap MissionPhaseToNASAMissionPhase</b></p><a name=\"MissionPhaseToNASAMissionPhase\"> </a><a name=\"hcMissionPhaseToNASAMissionPhase\"> </a><p>Mapping from <a href=\"ValueSet-mission-phase-vs.html\">Mission Phase Value Set</a> to <a href=\"ValueSet-nasa-mission-phase-vs.html\">NASA Mission Phases</a></p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-mission-phase-cs.html\">Mission Phase Code System</a> to <a href=\"CodeSystem-nasa-mission-phase-cs.html\">NASA Mission Phase Timing</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>pre-flight</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>preflight-activity</td></tr><tr><td>launch-ascent (Launch and Ascent)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>transit-outbound (Outbound Transit)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>orbital-ops (Orbital Operations)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>lunar-surface-ops (Lunar Surface Operations)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>mars-surface-ops (Mars Surface Operations)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>transit-return (Return Transit)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>entry-descent (Entry and Descent)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>post-flight-acute</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>postflight</td></tr><tr><td>post-flight-reconditioning</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>postflight</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/ConceptMap/MissionPhaseToNASAMissionPhase"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/ConceptMap/MissionPhaseToNASAMissionPhase>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "MissionPhaseToNASAMissionPhase"] ; # 
+  fhir:title [ fhir:v "Mission Phase to NASA Mission Phase Timing"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps the clinical mission phases in MissionPhaseCS to the coarser NASA medical-requirements timing phases in NASAMissionPhaseCS. Pre-flight maps to preflight activity, all in-space phases map to inflight, and both post-flight phases map to postflight."] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:source [
+     a fhir:Canonical ;
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mission-phase-vs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mission-phase-vs>
+  ] ; # 
+  fhir:target [
+     a fhir:Canonical ;
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mission-phase-vs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mission-phase-vs>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs>
+     ] ;
+     fhir:target [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "pre-flight" ] ;
+       fhir:display [ fhir:v "Pre-flight" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "preflight-activity" ] ;
+         fhir:display [ fhir:v "Preflight Activity" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "launch-ascent" ] ;
+       fhir:display [ fhir:v "Launch and Ascent" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "transit-outbound" ] ;
+       fhir:display [ fhir:v "Outbound Transit" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "orbital-ops" ] ;
+       fhir:display [ fhir:v "Orbital Operations" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "lunar-surface-ops" ] ;
+       fhir:display [ fhir:v "Lunar Surface Operations" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "mars-surface-ops" ] ;
+       fhir:display [ fhir:v "Mars Surface Operations" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "transit-return" ] ;
+       fhir:display [ fhir:v "Return Transit" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "entry-descent" ] ;
+       fhir:display [ fhir:v "Entry and Descent" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "inflight" ] ;
+         fhir:display [ fhir:v "In-Flight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "post-flight-acute" ] ;
+       fhir:display [ fhir:v "Post-flight Acute" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "postflight" ] ;
+         fhir:display [ fhir:v "Postflight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "post-flight-reconditioning" ] ;
+       fhir:display [ fhir:v "Post-flight Reconditioning" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "postflight" ] ;
+         fhir:display [ fhir:v "Postflight" ] ;
+         fhir:equivalence [ fhir:v "wider" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,4 +1,4 @@
-# Lunar Telemedicine Terminal - v0.6.2
+# Lunar Telemedicine Terminal - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Device: Lunar Telemedicine Terminal
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Telemedicine Device](StructureDefinition-telemedicine-device.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -32,8 +36,16 @@ Profile: [Telemedicine Device](StructureDefinition-telemedicine-device.md)
   "resourceType" : "Device",
   "id" : "Telemedicine-LunarTerminal-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-device"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-device"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "active",
@@ -48,7 +60,7 @@ Profile: [Telemedicine Device](StructureDefinition-telemedicine-device.md)
   "type" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-equipment-cs",
         "code" : "video-conferencing",
         "display" : "Video Conferencing System"
       }

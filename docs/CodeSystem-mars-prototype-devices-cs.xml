@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mars-prototype-devices-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mars-prototype-devices-cs</b></p><a name="mars-prototype-devices-cs"> </a><a name="hcmars-prototype-devices-cs"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>deviceType</td><td>deviceType</td><td>string</td><td>Device category (spacecraft, life-support, suit, medical-equipment, habitat, isru-system, power-generation, rover)</td></tr><tr><td>testEnvironment</td><td>testEnvironment</td><td>string</td><td>Primary test environment (ground, orbital-test, analog-mission, mars-surface)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-prototype-devices-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>testEnvironment</b></td></tr><tr><td style="white-space:nowrap">starship<a name="mars-prototype-devices-cs-starship"> </a></td><td>SpaceX Starship</td><td>Fully reusable rocket/lander for Mars (prototype stage, orbital tests ongoing 2020s)</td><td>spacecraft</td><td>orbital-test</td></tr><tr><td style="white-space:nowrap">marsHabitat<a name="mars-prototype-devices-cs-marsHabitat"> </a></td><td>Mars Surface Habitat Module</td><td>Pressurized living quarters for Mars surface (NASA DRA 5.0 concept, no full prototype yet)</td><td>habitat</td><td>analog-mission</td></tr><tr><td style="white-space:nowrap">xemuMarsSuit<a name="mars-prototype-devices-cs-xemuMarsSuit"> </a></td><td>xEMU Mars Suit</td><td>Next-generation planetary EVA suit under development for lunar and Mars surface EVAs</td><td>suit</td><td>ground</td></tr><tr><td style="white-space:nowrap">isruPlant<a name="mars-prototype-devices-cs-isruPlant"> </a></td><td>Mars ISRU Propellant Plant</td><td>Scaled-up MOXIE + Sabatier system to produce CH4/O2 on Mars (tested at prototype level, MOXIE on Perseverance for O2)</td><td>isru-system</td><td>mars-surface</td></tr><tr><td style="white-space:nowrap">kilopower<a name="mars-prototype-devices-cs-kilopower"> </a></td><td>Kilopower Fission Reactor</td><td>10 kW nuclear fission surface power unit (prototyped on Earth 2018, KRUSTY demo, for future Mars use)</td><td>power-generation</td><td>ground</td></tr><tr><td style="white-space:nowrap">pressurizedRover<a name="mars-prototype-devices-cs-pressurizedRover"> </a></td><td>Pressurized Mars Rover</td><td>Concept vehicle for long-range crew excursions (prototypes like NASA SEV exist but not Mars-certified)</td><td>rover</td><td>ground</td></tr><tr><td style="white-space:nowrap">autonomousSurgicalUnit<a name="mars-prototype-devices-cs-autonomousSurgicalUnit"> </a></td><td>Autonomous Surgical Unit</td><td>Concept medical device for Mars (lightweight operating table, robotic assist tools, TRL&lt;6 prototype)</td><td>medical-equipment</td><td>ground</td></tr></table></div>
+  </text>
+  <url value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-prototype-devices-cs"/>
+  <version value="0.7.0"/>
+  <name value="MarsPrototypeDevicesCS"/>
+  <title value="Mars Mission Devices - Prototype"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-09-02T13:24:45-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org/"/>
+    </telecom>
+  </contact>
+  <description value="Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)"/>
+  <copyright value="Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <property>
+    <code value="deviceType"/>
+    <description value="Device category (spacecraft, life-support, suit, medical-equipment, habitat, isru-system, power-generation, rover)"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="testEnvironment"/>
+    <description value="Primary test environment (ground, orbital-test, analog-mission, mars-surface)"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="starship"/>
+    <display value="SpaceX Starship"/>
+    <definition value="Fully reusable rocket/lander for Mars (prototype stage, orbital tests ongoing 2020s)"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="spacecraft"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="orbital-test"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="marsHabitat"/>
+    <display value="Mars Surface Habitat Module"/>
+    <definition value="Pressurized living quarters for Mars surface (NASA DRA 5.0 concept, no full prototype yet)"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="habitat"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="analog-mission"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="xemuMarsSuit"/>
+    <display value="xEMU Mars Suit"/>
+    <definition value="Next-generation planetary EVA suit under development for lunar and Mars surface EVAs"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="suit"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="isruPlant"/>
+    <display value="Mars ISRU Propellant Plant"/>
+    <definition value="Scaled-up MOXIE + Sabatier system to produce CH4/O2 on Mars (tested at prototype level, MOXIE on Perseverance for O2)"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="isru-system"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="mars-surface"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="kilopower"/>
+    <display value="Kilopower Fission Reactor"/>
+    <definition value="10 kW nuclear fission surface power unit (prototyped on Earth 2018, KRUSTY demo, for future Mars use)"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="power-generation"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="pressurizedRover"/>
+    <display value="Pressurized Mars Rover"/>
+    <definition value="Concept vehicle for long-range crew excursions (prototypes like NASA SEV exist but not Mars-certified)"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="rover"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="autonomousSurgicalUnit"/>
+    <display value="Autonomous Surgical Unit"/>
+    <definition value="Concept medical device for Mars (lightweight operating table, robotic assist tools, TRL&lt;6 prototype)"/>
+    <property>
+      <code value="deviceType"/>
+      <valueString value="medical-equipment"/>
+    </property>
+    <property>
+      <code value="testEnvironment"/>
+      <valueString value="ground"/>
+    </property>
+  </concept>
+</CodeSystem>

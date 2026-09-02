@@ -1,22 +1,23 @@
-# Space Radiation Exposure Summary (Fixed) - v0.6.2
+# Space Radiation Exposure Summary - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Space Radiation Exposure Summary (Fixed)**
+* **Space Radiation Exposure Summary**
 
-## Resource Profile: Space Radiation Exposure Summary (Fixed) 
+## Resource Profile: Space Radiation Exposure Summary 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceRadiationSummary |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-summary | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceRadiationSummary |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Comprehensive radiation dose summary with proper mission context 
+Diagnostic report summarizing a crew member's radiation exposure over a mission or reporting period. 
 
 **Usages:**
 
-* This Profile is not used by any profiles in this Implementation Guide
+* Examples for this Profile: [DiagnosticReport/space-radiation-summary-example](DiagnosticReport-space-radiation-summary-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/space-radiation-summary)
 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-radiation-summary",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-summary",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-summary",
+  "version" : "0.7.0",
   "name" : "SpaceRadiationSummary",
-  "title" : "Space Radiation Exposure Summary (Fixed)",
+  "title" : "Space Radiation Exposure Summary",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -54,7 +55,8 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
       ]
     }
   ],
-  "description" : "Comprehensive radiation dose summary with proper mission context",
+  "description" : "Diagnostic report summarizing a crew member's radiation exposure over a mission or reporting period.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/diagnostic-report-mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context"
             ]
           }
         ],
@@ -145,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "radiation-summary",
               "display" : "Space Radiation Exposure Summary"
             }
@@ -160,7 +162,7 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -200,8 +202,8 @@ Other representations of profile: [CSV](StructureDefinition-space-radiation-summ
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure",
-              "https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-exposure",
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose"
             ]
           }
         ],

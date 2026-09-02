@@ -1,15 +1,16 @@
-# Sleep Architecture Value Set - v0.6.2
+# Sleep Architecture Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Sleep Architecture Value Set**
 
-## ValueSet: Sleep Architecture Value Set 
+## ValueSet: Sleep Architecture Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/sleep-architecture-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SleepArchitectureVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/sleep-architecture-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SleepArchitectureVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Sleep architecture parameters 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "sleep-architecture-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/sleep-architecture-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/sleep-architecture-vs",
+  "version" : "0.7.0",
   "name" : "SleepArchitectureVS",
   "title" : "Sleep Architecture Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   ],
   "description" : "Sleep architecture parameters",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs"
       }
     ]
   }

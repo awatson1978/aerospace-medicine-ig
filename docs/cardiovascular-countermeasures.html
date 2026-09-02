@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Cardiovascular Countermeasures -  v0.6.2</title>
+    <title>Cardiovascular Countermeasures - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"27"}
-    h3,h4,h5,h6{--heading-prefix:"27"}</style>
+    <style type="text/css">h2{--heading-prefix:"26"}
+    h3,h4,h5,h6{--heading-prefix:"26"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Cardiovascular Countermeasures</h2>
   
 
@@ -260,38 +260,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#cardiovascular-countermeasures-in-microgravity" id="markdown-toc-cardiovascular-countermeasures-in-microgravity">Cardiovascular Countermeasures in Microgravity</a></li>
   <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
   <li><a href="#physiologic-challenges" id="markdown-toc-physiologic-challenges">Physiologic Challenges</a></li>
   <li><a href="#countermeasure-lower-body-negative-pressure-lbnp" id="markdown-toc-countermeasure-lower-body-negative-pressure-lbnp">Countermeasure: Lower Body Negative Pressure (LBNP)</a></li>
   <li><a href="#87th-esa-parabolic-flight-campaign" id="markdown-toc-87th-esa-parabolic-flight-campaign">87th ESA Parabolic Flight Campaign</a></li>
-  <li><a href="#observation-methods" id="markdown-toc-observation-methods">Observation Methods</a>    <ul>
-      <li><a href="#traditional-ijv-flow-grades" id="markdown-toc-traditional-ijv-flow-grades">Traditional IJV Flow Grades</a></li>
-      <li><a href="#flow-directionality-index-fdi" id="markdown-toc-flow-directionality-index-fdi">Flow Directionality Index (FDI)</a></li>
-    </ul>
-  </li>
+  <li><a href="#observation-methods" id="markdown-toc-observation-methods">Observation Methods</a></li>
   <li><a href="#key-findings" id="markdown-toc-key-findings">Key Findings</a></li>
-  <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>    <ul>
-      <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
-      <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
-      <li><a href="#new-codesystems--valuesets" id="markdown-toc-new-codesystems--valuesets">New CodeSystems / ValueSets</a></li>
-      <li><a href="#fdi-observation-components" id="markdown-toc-fdi-observation-components">FDI Observation Components</a></li>
-      <li><a href="#example-researchstudy" id="markdown-toc-example-researchstudy">Example ResearchStudy</a></li>
-    </ul>
-  </li>
+  <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
   <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
-  <li><a href="#next-steps--open-items" id="markdown-toc-next-steps--open-items">Next Steps / Open Items</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h3 id="cardiovascular-countermeasures-in-microgravity">Cardiovascular Countermeasures in Microgravity</h3>
+<h3 id="overview">Overview</h3>
 
-<h2 id="overview">Overview</h2>
 <p>Exposure to microgravity induces a cephalad fluid shift that alters venous hemodynamics, increases intracranial pressure, and contributes to Spaceflight-Associated Neuro-Ocular Syndrome (SANS). Lower Body Negative Pressure (LBNP) is a primary countermeasure shown to reduce headward fluid redistribution, lower intraocular pressure, and improve internal jugular vein (IJV) flow.</p>
 
-<p>This page documents the physiologic effects observed during the <strong>87th ESA Parabolic Flight Campaign (September 1–13, 2025)</strong> and provides FHIR modeling guidance for capturing LBNP sessions, IJV ultrasound assessments, and Flow Directionality Index (FDI) calculations.</p>
+<p>This page documents the physiologic effects observed during a graded-LBNP study flown on the <strong>87th ESA Parabolic Flight Campaign (September 1-13, 2025)</strong> and provides FHIR modeling guidance for capturing LBNP sessions, IJV ultrasound assessments, and Flow Directionality Index (FDI) calculations. The study is small — three primary subjects — so the findings below are best read as a demonstration of what the data model has to carry, not as settled physiology.</p>
 
-<h2 id="physiologic-challenges">Physiologic Challenges</h2>
+<h3 id="physiologic-challenges">Physiologic Challenges</h3>
+
 <p><strong>Primary concern:</strong> Cephalad fluid shift during microgravity exposure.</p>
 
 <p><strong>Conditions / Risks:</strong></p>
@@ -320,7 +310,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Central fluid compartment</li>
 </ul>
 
-<h2 id="countermeasure-lower-body-negative-pressure-lbnp">Countermeasure: Lower Body Negative Pressure (LBNP)</h2>
+<h3 id="countermeasure-lower-body-negative-pressure-lbnp">Countermeasure: Lower Body Negative Pressure (LBNP)</h3>
+
+<p>LBNP seals the lower body in a chamber held below cabin pressure, drawing blood footward and partially restoring the pressure gradient that gravity supplies on Earth.</p>
+
 <p><strong>Reported effects of LBNP:</strong></p>
 <ul>
   <li>Reduces headward fluid shift</li>
@@ -338,23 +331,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>-50 mmHg</li>
 </ul>
 
-<h2 id="87th-esa-parabolic-flight-campaign">87th ESA Parabolic Flight Campaign</h2>
+<h3 id="87th-esa-parabolic-flight-campaign">87th ESA Parabolic Flight Campaign</h3>
+
 <ul>
-  <li><strong>Dates:</strong> September 1–13, 2025</li>
+  <li><strong>Dates:</strong> September 1-13, 2025</li>
   <li><strong>Structure:</strong> 6 sets of 5 parabolas (30 total)</li>
-  <li><strong>Phases:</strong> Hypergravity ascent (1.5–1.8 g) → Microgravity (0 g) → Hypergravity recovery</li>
+  <li><strong>Phases:</strong> Hypergravity ascent (1.5-1.8 g) → Microgravity (0 g) → Hypergravity recovery</li>
 </ul>
 
 <p><strong>Subjects:</strong> 3 primary (all female) + 2 backup (1 female / 1 male)</p>
 
 <p><strong>Data collected:</strong> Blood pressure, heart rate, cardiac output, ECG, IJV cross-sectional area, IJV pressure, IJV flow</p>
 
-<h2 id="observation-methods">Observation Methods</h2>
+<h3 id="observation-methods">Observation Methods</h3>
+
 <p><strong>IJV Cross-Sectional Area</strong></p>
 <ul>
   <li>Butterfly iQ3 ultrasound</li>
   <li>Compremium frames captured at end-diastole</li>
-  <li>Average of 2 blinded operators (3rd operator if discrepancy &gt;10 %)</li>
+  <li>Average of 2 blinded operators (3rd operator if discrepancy &gt;10%)</li>
 </ul>
 
 <p><strong>IJV Pressure</strong></p>
@@ -369,40 +364,75 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>5-second flow image acquired ≥10 seconds into 0 g</li>
 </ul>
 
-<h3 id="traditional-ijv-flow-grades">Traditional IJV Flow Grades</h3>
-<p>| Grade | Description                  | Approximate FDI |
-|——-|——————————|—————–|
-| 1     | Forward flow                 | 1.0             |
-| 2     | Forward flow with intermittent no-flow | 0.65     |
-| 3     | Stagnant flow                | 0.03            |
-| 4     | Retrograde flow              | -0.5            |</p>
+<h4 id="traditional-ijv-flow-grades">Traditional IJV Flow Grades</h4>
 
-<h3 id="flow-directionality-index-fdi">Flow Directionality Index (FDI)</h3>
-<p>$
-\text{FDI} = \left( \frac{t_{Q,\text{forward}} - t_{Q,\text{retrograde}}}{T_{\text{total}}} \right) \times \left( 1 - \frac{t_{Q,\text{zero}}}{T_{\text{total}}} \right)
-$</p>
+<p>Doppler traces have historically been read into four ordinal grades. The right-hand column gives the approximate Flow Directionality Index that corresponds to each grade, which is what makes the two scales comparable.</p>
 
-<p><strong>Range:</strong> [-1, 1]</p>
+<table>
+  <thead>
+    <tr>
+      <th>Grade</th>
+      <th>Description</th>
+      <th>Approximate FDI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Forward flow</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Forward flow with intermittent no-flow</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Stagnant flow</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Retrograde flow</td>
+      <td>-0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="flow-directionality-index-fdi">Flow Directionality Index (FDI)</h4>
+
+<p>The FDI condenses a Doppler sample window into a single signed number by subtracting the time spent flowing backwards from the time spent flowing forwards, then penalising the time spent not flowing at all:</p>
+
+<p><code class="language-plaintext highlighter-rouge">FDI = ((t_forward − t_retrograde) / T_total) × (1 − t_zero / T_total)</code></p>
+
+<p>where <code class="language-plaintext highlighter-rouge">t_forward</code>, <code class="language-plaintext highlighter-rouge">t_retrograde</code>, and <code class="language-plaintext highlighter-rouge">t_zero</code> are the seconds of antegrade, retrograde, and stagnant flow within a sample window of <code class="language-plaintext highlighter-rouge">T_total</code> seconds.</p>
+
+<p><strong>Range:</strong> −1 to 1</p>
 <ul>
   <li>1 = continuous forward flow</li>
   <li>~0 = stagnant flow</li>
   <li>Negative = retrograde flow</li>
 </ul>
 
-<h2 id="key-findings">Key Findings</h2>
+<h3 id="key-findings">Key Findings</h3>
+
+<p>These are preliminary results from three primary subjects (n=3). They are directionally consistent with the ground-based LBNP literature, but the sample is too small to support effect sizes.</p>
+
 <ul>
-  <li>LBNP reduces IJV area during both 1 g and 0 g phases.</li>
-  <li>IJV area is larger in 0 g than in 1 g.</li>
-  <li>Greater incidence of abnormal IJV flow during 0 g.</li>
-  <li>LBNP improves IJV flow in both gravity conditions.</li>
-  <li>FDI provides greater granularity than traditional grading.</li>
-  <li>Heart rate increases with LBNP; cardiac output decreases with LBNP.</li>
-  <li>Additional subjects needed for stronger blood-pressure conclusions.</li>
+  <li>LBNP reduced IJV area during both 1 g and 0 g phases (preliminary, n=3).</li>
+  <li>IJV area was larger in 0 g than in 1 g (preliminary, n=3).</li>
+  <li>Abnormal IJV flow occurred more often during 0 g (preliminary, n=3).</li>
+  <li>LBNP improved IJV flow in both gravity conditions (preliminary, n=3).</li>
+  <li>FDI provides greater granularity than the traditional four-grade scale.</li>
+  <li>Heart rate increased with LBNP; cardiac output decreased with LBNP (preliminary, n=3).</li>
+  <li>Additional subjects are needed before any blood-pressure conclusion can be drawn.</li>
 </ul>
 
-<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+<h3 id="fhir-implementation-guidance">FHIR Implementation Guidance</h3>
 
-<h3 id="recommended-resources">Recommended Resources</h3>
+<h4 id="recommended-resources">Recommended Resources</h4>
+
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Observation</code></li>
   <li><code class="language-plaintext highlighter-rouge">Procedure</code></li>
@@ -413,37 +443,44 @@ $</p>
   <li><code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></li>
 </ul>
 
-<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
+<h4 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h4>
+
 <p><strong>Observation</strong></p>
 <ul>
-  <li><a href="StructureDefinition-internal-jugular-vein-flow-observation.html"><code class="language-plaintext highlighter-rouge">InternalJugularVeinFlowObservation</code></a></li>
-  <li><a href="StructureDefinition-internal-jugular-vein-pressure-observation.html"><code class="language-plaintext highlighter-rouge">InternalJugularVeinPressureObservation</code></a></li>
-  <li><a href="StructureDefinition-internal-jugular-vein-area-observation.html"><code class="language-plaintext highlighter-rouge">InternalJugularVeinAreaObservation</code></a></li>
-  <li><code class="language-plaintext highlighter-rouge">CardiovascularCountermeasureObservation</code></li>
-  <li><a href="StructureDefinition-flow-directionality-index-observation.html"><code class="language-plaintext highlighter-rouge">FlowDirectionalityIndexObservation</code></a> (with components)</li>
+  <li><a href="StructureDefinition-internal-jugular-vein-flow-observation.html">InternalJugularVeinFlowObservation</a> - graded IJV flow with an FDI component</li>
+  <li><a href="StructureDefinition-internal-jugular-vein-pressure-observation.html">InternalJugularVeinPressureObservation</a> - IJV pressure by the wall near-closure method</li>
+  <li><a href="StructureDefinition-internal-jugular-vein-area-observation.html">InternalJugularVeinAreaObservation</a> - end-diastolic cross-sectional area</li>
+  <li><a href="StructureDefinition-flow-directionality-index-observation.html">FlowDirectionalityIndexObservation</a> - FDI with all five timing components</li>
 </ul>
 
 <p><strong>Procedure</strong></p>
 <ul>
-  <li><a href="StructureDefinition-lower-body-negative-pressure-procedure.html"><code class="language-plaintext highlighter-rouge">LowerBodyNegativePressureProcedure</code></a></li>
-  <li><a href="StructureDefinition-parabolic-flight-exposure.html"><code class="language-plaintext highlighter-rouge">ParabolicFlightExposure</code></a></li>
+  <li><a href="StructureDefinition-lower-body-negative-pressure-procedure.html">LowerBodyNegativePressureProcedure</a> - one LBNP exposure at a stated pressure level</li>
+  <li><a href="StructureDefinition-parabolic-flight-exposure.html">ParabolicFlightExposure</a> - a parabola or parabola set as a gravity exposure</li>
 </ul>
 
 <p><strong>Device</strong></p>
 <ul>
-  <li><a href="StructureDefinition-ultrasound-monitoring-device.html"><code class="language-plaintext highlighter-rouge">UltrasoundMonitoringDevice</code></a></li>
-  <li><code class="language-plaintext highlighter-rouge">VenousPressureMonitoringDevice</code></li>
-  <li><a href="StructureDefinition-lbnp-countermeasure-system.html"><code class="language-plaintext highlighter-rouge">LBNPCountermeasureSystem</code></a></li>
+  <li><a href="StructureDefinition-ultrasound-monitoring-device.html">UltrasoundMonitoringDevice</a> - the imaging device used for IJV assessment</li>
+  <li><a href="StructureDefinition-lbnp-countermeasure-system.html">LBNPCountermeasureSystem</a> - the LBNP chamber itself</li>
 </ul>
 
-<h3 id="new-codesystems--valuesets">New CodeSystems / ValueSets</h3>
+<p><strong>Extension</strong></p>
 <ul>
-  <li><a href="CodeSystem-microgravity-countermeasure-cs.html"><code class="language-plaintext highlighter-rouge">MicrogravityCountermeasureCS</code></a> (lbnp, venous-flow-monitoring, fluid-shift-mitigation, anti-sans-protocol, venous-thrombosis-prevention)</li>
-  <li><a href="CodeSystem-ijv-flow-grade-cs.html"><code class="language-plaintext highlighter-rouge">IJVFlowGradeCS</code></a> (grade-1 … grade-4)</li>
-  <li><a href="CodeSystem-parabolic-flight-phase-cs.html"><code class="language-plaintext highlighter-rouge">ParabolicFlightPhaseCS</code></a> (steady-1g, pull-up, microgravity, pull-out)</li>
+  <li><a href="StructureDefinition-lbnp-pressure-level.html">LBNPPressureLevel</a> - the applied negative pressure in mmHg, carried on both the procedure and the observations made during it</li>
 </ul>
 
-<h3 id="fdi-observation-components">FDI Observation Components</h3>
+<h5 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h5>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">CardiovascularCountermeasureObservation</code> - a generic parent for countermeasure-response measurements (heart rate, cardiac output, intraocular pressure) recorded during an LBNP or artificial-gravity exposure, so that non-IJV responses do not each need a bespoke profile.</li>
+  <li><code class="language-plaintext highlighter-rouge">VenousPressureMonitoringDevice</code> - a Device profile for continuous venous pressure instrumentation, distinct from the ultrasound device profile that exists today.</li>
+</ul>
+
+<h4 id="fdi-observation-components">FDI Observation Components</h4>
+
+<p>The five component codes below come from <a href="CodeSystem-venous-flow-metric-cs.html">VenousFlowMetricCS</a> and let a reader recompute the index from the raw timings rather than trusting the reported ratio.</p>
+
 <ul>
   <li><code class="language-plaintext highlighter-rouge">forward-flow-time</code></li>
   <li><code class="language-plaintext highlighter-rouge">retrograde-flow-time</code></li>
@@ -452,11 +489,31 @@ $</p>
   <li><code class="language-plaintext highlighter-rouge">fdi-ratio</code></li>
 </ul>
 
-<h3 id="example-researchstudy">Example ResearchStudy</h3>
-<p><strong>Title:</strong> Graded Lower Body Negative Pressure During Parabolic Microgravity Exposure
-<strong>Metadata:</strong> ESA Parabolic Flight Campaign 2025 – Cardiovascular countermeasure study</p>
+<h3 id="examples">Examples</h3>
 
-<h2 id="architectural-alignment">Architectural Alignment</h2>
+<p>The guide carries synthetic worked instances for a single -30 mmHg LBNP exposure during the microgravity phase of a parabola set.</p>
+
+<ul>
+  <li><a href="Device-LBNP-Chamber-001.html">LBNP Chamber Device</a> - the countermeasure system used for the exposure.</li>
+  <li><a href="Device-Butterfly-iQ3-001.html">Butterfly iQ3 Ultrasound</a> - the handheld imaging device used for IJV assessment.</li>
+  <li><a href="Procedure-LBNP-Session-Microgravity-001.html">LBNP Session at -30 mmHg During Microgravity</a> - the procedure record, tagged with gravity context and pressure level.</li>
+  <li><a href="Observation-IJV-Flow-During-LBNP-001.html">IJV Flow During LBNP (FDI = 0.85)</a> - a Grade 1 flow observation carrying the computed FDI.</li>
+  <li><a href="Observation-FDI-Components-001.html">FDI Observation with All Components</a> - the same index broken out into its five timing components.</li>
+</ul>
+
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<p>Three code systems describe the countermeasure, the flow grade, and the flight phase; a fourth supplies the FDI component codes. Each has a matching value set for binding.</p>
+
+<ul>
+  <li><a href="CodeSystem-microgravity-countermeasure-cs.html">MicrogravityCountermeasureCS</a> (lbnp, venous-flow-monitoring, fluid-shift-mitigation, anti-sans-protocol, venous-thrombosis-prevention) - <a href="ValueSet-microgravity-countermeasure-vs.html">value set</a></li>
+  <li><a href="CodeSystem-ijv-flow-grade-cs.html">IJVFlowGradeCS</a> (grade-1 … grade-4) - <a href="ValueSet-ijv-flow-grade-vs.html">value set</a></li>
+  <li><a href="CodeSystem-parabolic-flight-phase-cs.html">ParabolicFlightPhaseCS</a> (steady-1g, pull-up, microgravity, pull-out) - <a href="ValueSet-parabolic-flight-phase-vs.html">value set</a></li>
+  <li><a href="CodeSystem-venous-flow-metric-cs.html">VenousFlowMetricCS</a> - component codes for the Flow Directionality Index</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
 <p>This content aligns with and extends existing IG sections:</p>
 <ul>
   <li>Neutral Buoyancy Training and Decompression Medicine</li>
@@ -465,20 +522,15 @@ $</p>
   <li>Physiologic Adaptation Tracking</li>
 </ul>
 
-<p>It contributes to a generalized <strong>Environmental Exposure + Physiologic Countermeasure</strong> framework applicable to microgravity, hypergravity, radiation, decompression, EVA stressors, and fluid redistribution.</p>
+<p>It contributes to a generalized <strong>Environmental Exposure + Physiologic Countermeasure</strong> framework applicable to microgravity, hypergravity, radiation, decompression, EVA stressors, and fluid redistribution. Exercise-side venous stasis and hemostasis monitoring is described on the <a href="fitness.html">Fitness</a> page.</p>
 
-<h2 id="next-steps--open-items">Next Steps / Open Items</h2>
+<h3 id="references">References</h3>
+
 <ul>
-  <li>Add example FHIR instances (Observation bundles for IJV flow + LBNP session)</li>
-  <li>Create FSH definitions for the new profiles listed above</li>
-  <li>Link to new ValueSets once published</li>
+  <li>Pentinat-Llurba H, Whittle R, Robin A, Reinarz C, Laygo D, Rao R, Herrmann M, Allen J, Seidler R, Flores O, Diaz-Artiles A. "Graded Lower Body Negative Pressure During Parabolic Flight: Progress to Date and Upcoming Campaigns." Oral presentation, April 7, 2026. Texas A&amp;M University and collaborating institutions. Data collected during the 87th ESA Parabolic Flight Campaign, September 1-13, 2025.</li>
+  <li>European Space Agency. Parabolic Flights Overview. <a href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights">https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights</a></li>
 </ul>
 
-<p><strong>References</strong></p>
-<ul>
-  <li>Pentinat-Llurba, Huc, Richard Whittle, Adrien Robin, Cort Reinarz, Dave Laygo, Rashika Rao, Madison Herrmann, Josephine Allen, Rachael Seidler, Oscar Flores, and Ana Diaz-Artiles. “Graded Lower Body Negative Pressure During Parabolic Flight: Progress to Date and Upcoming Campaigns.” Oral presentation presented at the 87th ESA Parabolic Flight Campaign session, April 7, 2026, Texas A&amp;M University and collaborating institutions.</li>
-  <li>ESA Parabolic Flights Overview: <a href="https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights">https://www.esa.int/Science_Exploration/Human_and_Robotic_Exploration/Research/Parabolic_flights</a></li>
-</ul>
 
 
 
@@ -498,7 +550,7 @@ $</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

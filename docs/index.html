@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Space Health Implementation Guide -  v0.6.2</title>
+    <title>Space Health Implementation Guide - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Space Health Implementation Guide</h2>
   
 
@@ -254,10 +254,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://awatson1978.github.io/aerospace-medicine-ig/ImplementationGuide/mitre.fhir.spacehealth<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://awatson1978.github.io/aerospace-medicine-ig/ImplementationGuide/mitre.fhir.spacehealth"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ImplementationGuide/mitre.fhir.spacehealth|0.6.2"/></span>
+      <span class="copy-text">0.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://awatson1978.github.io/aerospace-medicine-ig/ImplementationGuide/mitre.fhir.spacehealth|0.7.0"/></span>
       </td>
     </tr>
 
@@ -273,18 +273,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-08-03
+            as of 2026-09-02
           
         
       </td>
 
 
 
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">SpaceflightHealthSimulationsReferenceDocumentation</span></td>
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">AerospaceMedicineIG</span></td>
     </tr>
 
 
 
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.</p>
+</td>
+    </tr>
 
   </table>
 
@@ -299,16 +304,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#publication-notice-and-acknowledgements" id="markdown-toc-publication-notice-and-acknowledgements">Publication Notice and Acknowledgements</a>    <ul>
-      <li><a href="#publication-and-release-notice" id="markdown-toc-publication-and-release-notice">Publication and Release Notice</a></li>
-      <li><a href="#acknowledgements" id="markdown-toc-acknowledgements">Acknowledgements</a></li>
-      <li><a href="#use-of-large-language-models" id="markdown-toc-use-of-large-language-models">Use of Large Language Models</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#use-case-scenarios" id="markdown-toc-use-case-scenarios">Use-Case Scenarios</a></li>
+  <li><a href="#provenance-and-example-data" id="markdown-toc-provenance-and-example-data">Provenance and Example Data</a></li>
+  <li><a href="#roadmap" id="markdown-toc-roadmap">Roadmap</a></li>
+  <li><a href="#publication-notice-and-acknowledgements" id="markdown-toc-publication-notice-and-acknowledgements">Publication Notice and Acknowledgements</a></li>
 </ul>
 
 </div>
-<p>Welcome to the HL7 FHIR Aerospace Medicine Implementation Guide (IG). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.</p>
+<h3 id="overview">Overview</h3>
+
+<p>Welcome to the FHIR Implementation Guide for Aerospace Medicine (MITRE). This guide documents a standardized approach for modeling and exchanging health and medical data in aerospace environments using the Fast Healthcare Interoperability Resources (FHIR) specification. The goal of this IG is to bridge the gap between terrestrial healthcare informatics and the emerging needs of space medicine by enabling consistent, interoperable simulation and data exchange across mission profiles, devices, and care environments.</p>
 
 <p>This guide is intended for developers, researchers, mission planners, medical device manufacturers, and clinicians who are designing, evaluating, or simulating health monitoring systems in aerospace domains—from commercial space tourism to long-duration crewed missions. It provides the data schemas, usage patterns, and practical mappings needed to support synthetic patient generation and interoperability across the continuum of spaceflight health data—from pre-launch screening to in-flight telemetry to post-mission rehabilitation.</p>
 
@@ -317,7 +323,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The design philosophy of this guide is grounded in a central thesis:</p>
 
 <blockquote>
-  <p>A hospital ICU bed, an astronaut's spacesuit, and NASA mission control all share a common imperative: to continuously monitor, analyze, and act upon a human’s vital signs in a life-critical environment.</p>
+  <p>A hospital ICU bed, an astronaut's spacesuit, and NASA mission control all share a common imperative: to continuously monitor, analyze, and act upon a human's vital signs in a life-critical environment.</p>
 </blockquote>
 
 <p>If this thesis holds, then the boundaries between Earth-based clinical care and spaceflight operational medicine begin to blur. The underlying data requirements of intensive care units—real-time biometric streaming, automated alerting, device interoperability, and physician oversight—are strikingly similar to those required for safeguarding astronauts in microgravity or hostile environments. Conversely, the rugged, autonomous, and adaptive systems developed for human spaceflight offer a promising model for remote, resource-constrained, and austere healthcare delivery on Earth.</p>
@@ -363,34 +369,75 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Ultimately, this implementation guide is not only a tool for simulating patients in space - it is a statement about the convergence of aerospace and clinical medicine, and a call to design our next-generation health systems with both Earth and space in mind. As we prepare for commercial space tourism, lunar occupations, and human Mars missions, the infrastructure we build must be informed by the highest standards of safety, interoperability, and resilience.</p>
 
-<h2 id="publication-notice-and-acknowledgements">Publication Notice and Acknowledgements</h2>
+<h3 id="use-case-scenarios">Use-Case Scenarios</h3>
 
-<h3 id="publication-and-release-notice">Publication and Release Notice</h3>
+<p>The profiles and examples in this guide were organized around a set of mission scenarios, each with a stated health objective. They range from terrestrial analogs that already generate FHIR data today to lunar surface operations that do not yet exist.</p>
+
+<ul>
+  <li><strong>Space vehicle launch</strong> – mission risk and flight insurance calculations; modeling of catastrophic failure modes.</li>
+  <li><strong>ICU monitoring</strong> – remote patient monitoring of an intensive-care patient; vital sign monitoring in a telehealth environment.</li>
+  <li><strong>Wearables monitoring</strong> – smart clothing, fitness trackers, and other devices in a body area network; vital sign baselining and monitoring.</li>
+  <li><strong>Medical home reported outcomes</strong> – remote patient monitoring and patient-reported outcomes in a medical home; vital sign and environmental monitoring.</li>
+  <li><strong>Space tourism</strong> – commercial suborbital or orbital flight of less than one day past the Kármán line; integration of passenger hospital records.</li>
+  <li><strong>Space occupational safety</strong> – occupational health considerations for astronauts; osteoporosis and ocular degeneration management.</li>
+  <li><strong>Space walk</strong> – occupational safety for extravehicular activity; vital sign monitoring in a microgravity environment.</li>
+  <li><strong>Artemis surface camp</strong> – extended stay on the lunar surface; inflatable habitat with a contained atmosphere.</li>
+  <li><strong>Lunar prospecting</strong> – surveying and prospecting for ice mining and lunar cave habitats; radiation exposure management.</li>
+  <li><strong>Lunar radio telescope installation</strong> – construction of a crater-based radio telescope; resource maintenance and multi-person surface missions.</li>
+  <li><strong>Lunar Gateway</strong> – transfer operations through the Gateway station; airlocks and closed-loop environment transfers.</li>
+  <li><strong>Lunar ice mining</strong> – mining in a permanently shadowed crater; occupational safety while operating heavy equipment in reduced gravity.</li>
+  <li><strong>Lunar biodome construction</strong> – habitat construction; environmental monitoring, including micrometeorites and solar storms.</li>
+  <li><strong>Lunar farming</strong> – food production on the lunar surface; calorie production and food safety.</li>
+</ul>
+
+<h3 id="provenance-and-example-data">Provenance and Example Data</h3>
+
+<p>Every example instance in this guide carries a <code class="language-plaintext highlighter-rouge">meta.source</code> that says where its data came from, so that a consuming system can tell test data from reference data. Synthetic subjects use <code class="language-plaintext highlighter-rouge">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</code>; fictional characters (the Star Trek-named crew used to make the examples memorable) use <code class="language-plaintext highlighter-rouge">/provenance/fictional</code>; real facilities, agencies, and missions taken from public documents use <code class="language-plaintext highlighter-rouge">/provenance/public-record</code>; and instances transcribed from an external document carry that document's URL (the NASA Medical Requirements Integration Document questionnaires, for example, cite the NASA Life Sciences Portal library). Synthetic and fictional resources additionally carry the <code class="language-plaintext highlighter-rouge">HTEST</code> tag from <code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/v3-ActReason</code>, which marks them as test health data that must never be treated as a real patient record. <a href="Patient-janeway.html">Catherine Janeway</a> is an example of a fictional patient, and <a href="Patient-ExampleAstronaut.html">ExampleAstronaut</a> is the single synthetic subject used across the guide's clinical examples.</p>
+
+<h3 id="roadmap">Roadmap</h3>
+
+<p>The following topics are planned but not yet covered by a page or profile set in this guide:</p>
+
+<ul>
+  <li>Medical imaging</li>
+  <li>Sensor calibration</li>
+  <li>Timekeeping</li>
+  <li>Fungal microbiome</li>
+  <li>Waste and water recycling</li>
+  <li>Lunar base and rover missions</li>
+  <li>Commercial space missions</li>
+  <li>Spacesuit environmental monitoring</li>
+  <li>Distance and location</li>
+  <li>Atmospherics</li>
+  <li>X-ray evaluation</li>
+</ul>
+
+<h3 id="publication-notice-and-acknowledgements">Publication Notice and Acknowledgements</h3>
+
+<h4 id="publication-and-release-notice">Publication and Release Notice</h4>
 
 <p>This Implementation Guide was originated and developed by the author during the course of independent research and professional inquiry conducted while working within U.S. Federal laboratory environments, including the Centers for Medicare &amp; Medicaid Services (CMS) Alliance for Modernized Healthcare (AMH), the Center for Advanced Aviation System Development (CAASD), and the FAA Office of Aerospace Medicine.</p>
 
-<p>The work reflects the author’s independent technical analysis, research interests, and subject-matter expertise in aerospace medicine, space health systems, and clinical interoperability, and was developed outside the scope of any specific sponsored program, contract, or commissioned deliverable.</p>
+<p>The work reflects the author's independent technical analysis, research interests, and subject-matter expertise in aerospace medicine, space health systems, and clinical interoperability, and was developed outside the scope of any specific sponsored program, contract, or commissioned deliverable.</p>
 
 <p>This document was reviewed and approved for public release under established institutional public-release procedures.</p>
 
-<p>Approved for Public Release; Distribution Unlimited.<br />
+<p>Approved for Public Release; Distribution Unlimited.
 Public Release Case Number 25-1124.</p>
 
-<p>©2025 The MITRE Corporation.<br />
-©2026 Abigail Watson.<br />
-All rights reserved by their respective owners.</p>
+<p>Copyright 2022-2026 The MITRE Corporation and Abigail Watson. This Implementation Guide is licensed under the <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0)</a>: it may be shared and implemented with attribution, but modified versions may not be redistributed.</p>
 
-<h3 id="acknowledgements">Acknowledgements</h3>
+<h4 id="acknowledgements">Acknowledgements</h4>
 
 <p>The author acknowledges valuable discussions, domain insights, and informal technical feedback from collaborators and stakeholders across the aerospace medicine, clinical research, and space health communities. General domain awareness, conceptual framing, and use-case exploration reflected in this Implementation Guide have benefited from professional interactions with teams from Space ISAC and other NASA-affiliated researchers.</p>
 
-<p>The <a href="https://trialx.com/">TrialX</a> team has provided collaborative feedback and is among the first organizations to implement content from this IG. Their work on the <strong>HERMES</strong> health data management platform, funded by the  <strong>Translational Research Institute for Space Health (TRISH)</strong>, and in collaboration and stewardship of the <strong>EXPAND</strong> program — includes an ongoing effort to adopt FHIR-based interoperability standards in the HERMES platform. This independent adoption reflects a broader movement toward open, standards-based health data systems in human spaceflight.</p>
+<p>The <a href="https://trialx.com/">TrialX</a> team has provided collaborative feedback and is among the first organizations to implement content from this IG. Their work on the <strong>HERMES</strong> health data management platform, funded by the <strong>Translational Research Institute for Space Health (TRISH)</strong>, and in collaboration and stewardship of the <strong>EXPAND</strong> program — includes an ongoing effort to adopt FHIR-based interoperability standards in the HERMES platform. This independent adoption reflects a broader movement toward open, standards-based health data systems in human spaceflight.</p>
 
 <p>This Implementation Guide builds on a tradition of federally funded research and development in aerospace systems. MITRE's involvement in aerospace dates to the Apollo program and continues through its management of the CMS Alliance for Modernized Healthcare (AMH) and the Center for Advanced Aviation System Development (CAASD), where foundational work on clinical interoperability and aviation safety standards informs this guide's approach.</p>
 
 <p>The views, specifications, and implementation guidance expressed in this document are solely those of the author and do not necessarily reflect the official views, policies, or endorsement of any organization referenced herein.</p>
 
-<h3 id="use-of-large-language-models">Use of Large Language Models</h3>
+<h4 id="use-of-large-language-models">Use of Large Language Models</h4>
 
 <p>Significant portions of this Implementation Guide were developed with the assistance of Large Language Models (LLMs), used as research and development tools under the direct supervision and editorial control of the author. The author takes full responsibility for the accuracy, appropriateness, and scientific rigor of all content presented herein.</p>
 
@@ -424,6 +471,7 @@ While LLMs significantly enhanced the efficiency and scope of this work, they ar
 
 
 
+
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
@@ -440,7 +488,7 @@ While LLMs significantly enhanced the efficiency and scope of this work, they ar
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

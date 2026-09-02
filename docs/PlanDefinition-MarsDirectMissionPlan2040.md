@@ -1,4 +1,4 @@
-# Mars Direct Mission Plan 2040 - v0.6.2
+# Mars Direct Mission Plan 2040 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040 | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*: |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/PlanDefinition/MarsDirectMissionPlan2040 | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*: |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems. 
@@ -17,15 +18,17 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
 * **Actions:**: **Url:**
   * : [Mars Direct Mission 2040 - Jezero Crater Landing](PlanDefinition-MarsDirectMissionPlan2040.md)
 * **Actions:**: **Version:**
-  * : 0.6.2
+  * : 0.7.0
 * **Actions:**: **Title:**
   * : Mars Direct Mission 2040 - Jezero Crater Landing
 * **Actions:**: **Date:**
-  * : 2026-08-03 22:31:50-0500
+  * : 2026-09-02 13:24:45-0500
 * **Actions:**: **Publisher:**
   * : MITRE
 * **Actions:**: **Description:**
   * : Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems.
+* **Actions:**: **Copyright:**
+  * : Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.
 
 
 
@@ -36,31 +39,40 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
   "resourceType" : "PlanDefinition",
   "id" : "MarsDirectMissionPlan2040",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/mission-timeline-plan"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-timeline-plan"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
         "reference" : "Encounter/MarsDirectMission2040"
       }
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/PlanDefinition/MarsDirectMissionPlan2040",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/PlanDefinition/MarsDirectMissionPlan2040",
+  "version" : "0.7.0",
   "title" : "Mars Direct Mission 2040 - Jezero Crater Landing",
   "type" : {
     "coding" : [
       {
         "system" : "http://terminology.hl7.org/CodeSystem/plan-definition-type",
-        "code" : "workflow-definition"
+        "code" : "workflow-definition",
+        "display" : "Workflow Definition"
       }
     ]
   },
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -74,6 +86,7 @@ Mars Direct architecture mission with ERV pre-deployed, ISRU propellant producti
     }
   ],
   "description" : "Mars Direct architecture mission with ERV pre-deployed, ISRU propellant production for return, crew of 4, 18-month surface operations at Jezero Crater. Mission objectives: demonstrate ISRU viability, conduct extensive geological surveys, collect samples for analysis, validate long-duration Mars surface systems.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "action" : [
     {
       "title" : "Launch - Earth Return Vehicle (ERV)",

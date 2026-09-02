@@ -1,4 +1,4 @@
-# Remote-Guided POCUS Request - v0.6.2
+# Remote-Guided POCUS Request - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example ServiceRequest: Remote-Guided POCUS Request
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Telemedicine Consult Request](StructureDefinition-telemedicine-consult-request.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -14,7 +18,7 @@ Profile: [Telemedicine Consult Request](StructureDefinition-telemedicine-consult
 
 **code**: Remote-Guided Procedure
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **reasonCode**: Abdominal pain
 
@@ -34,8 +38,16 @@ Crew member reports acute RLQ pain x 6 hours. Request remote-guided abdominal PO
   "resourceType" : "ServiceRequest",
   "id" : "Telemedicine-POCUS-Request-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-consult-request"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-consult-request"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "active",
@@ -43,7 +55,7 @@ Crew member reports acute RLQ pain x 6 hours. Request remote-guided abdominal PO
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-modality-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-modality-cs",
         "code" : "remote-guided-procedure",
         "display" : "Remote-Guided Procedure"
       }

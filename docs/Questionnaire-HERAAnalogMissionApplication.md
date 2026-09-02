@@ -1,4 +1,4 @@
-# NASA HERA Analog Mission Application - v0.6.2
+# NASA HERA Analog Mission Application - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://example.org/Questionnaire/hera-analog-mission-application | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/HERAAnalogMissionApplication | *Version*:0.7.0 |
 | Active as of 2025-05-18 | *Computable Name*:HERAAnalogMissionApplication |
 | **Copyright/Legal**: This information collection meets the requirements of 44 U.S.C 3507. OMB control number 2700-0174, expires 04/30/2026. | |
 
@@ -26,8 +26,8 @@ To determine eligibility for the Flight Analog Project, including initial screen
 {
   "resourceType" : "Questionnaire",
   "id" : "HERAAnalogMissionApplication",
-  "url" : "http://example.org/Questionnaire/hera-analog-mission-application",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/HERAAnalogMissionApplication",
+  "version" : "0.7.0",
   "name" : "HERAAnalogMissionApplication",
   "title" : "NASA HERA Analog Mission Application",
   "status" : "active",

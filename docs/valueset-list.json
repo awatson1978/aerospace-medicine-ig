@@ -1,352 +1,130 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-all-devices-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "ArtemisAllDevicesVS",
-      "title" : "All Artemis Devices",
-      "description" : "Both certified and prototype Artemis devices",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs",
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-certified-devices-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "ArtemisCertifiedDevicesVS",
-      "title" : "Artemis Certified Devices",
-      "description" : "Flight-qualified Artemis mission hardware",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-landing-region-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "ArtemisLandingRegionVS",
-      "title" : "Artemis Landing Regions",
-      "description" : "Candidate Artemis III south pole landing regions for Location bindings",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "ArtemisMissionVS",
-      "title" : "Artemis Missions",
-      "description" : "All Artemis program missions I-XXX",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-prototype-devices-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "ArtemisPrototypeDevicesVS",
-      "title" : "Artemis Prototype Devices",
-      "description" : "Developmental and test Artemis hardware",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "BehavioralHealthMetricsVS",
-      "title" : "Behavioral Health Metrics Value Set",
-      "description" : "Key behavioral health state metrics used in aerospace behavioral health monitoring.",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/cognitive-performance-indicators-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "CognitivePerformanceIndicatorsVS",
-      "title" : "Cognitive Performance Indicators Value Set",
-      "description" : "Cognitive and vigilance performance indicators relevant to operational readiness.",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "CrewedMarsMissionsVS",
-      "title" : "Human Mars Mission Plans",
-      "description" : "Proposed and conceptual human mission architectures to Mars",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/isolation-syndrome-factors-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "IsolationSyndromeFactorsVS",
-      "title" : "Isolation Syndrome Factors Value Set",
-      "description" : "Risk factors related to isolation and confinement that affect behavioral health.",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "LocationCapabilitiesVS",
-      "title" : "Location Capabilities Value Set",
-      "description" : "Capabilities and services available at aerospace medicine locations",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "MarsAllDevicesVS",
-      "title" : "All Mars Mission Devices",
-      "description" : "Both certified and prototype Mars devices",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs",
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "MarsCertifiedDevicesVS",
-      "title" : "Mars Mission Devices - Certified",
-      "description" : "Flight-qualified hardware for Mars missions",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-prototype-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "MarsPrototypeDevicesVS",
-      "title" : "Mars Mission Devices - Prototype",
-      "description" : "Developmental and test hardware for Mars missions",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-landing-sites-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "MarsLandingSitesVS",
-      "title" : "Mars Landing Sites",
-      "description" : "Candidate landing sites for human Mars missions",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "MarsMissionsVS",
-      "title" : "Mars Missions",
-      "description" : "All Mars missions (robotic and human, completed and planned)",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "OperationalStatusVS",
-      "title" : "Operational Status Value Set",
-      "description" : "Operational status codes for facilities and vehicles",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "SpaceExerciseModalityVS",
-      "title" : "Space Exercise Modality Value Set",
-      "description" : "Permitted space exercise modalities, derived from the Space Exercise Modality Code System.",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"
-      ]
-    },
-    {
-      "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "StressCountermeasuresVS",
-      "title" : "Stress Countermeasures Value Set",
-      "description" : "Standardized set of psychological countermeasures used to mitigate stress and support mental health.",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs"
-      ]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/AircraftFumeExposureValueSet",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "AircraftFumeExposureValueSet",
-      "title" : "Aircraft Fume Exposure",
-      "description" : "Health impacts from exposure to aircraft contaminated air and fume events.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/AstronautBackPain",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "AstronautBackPain",
-      "title" : "Back Pain and Space Travel",
-      "description" : "Back pain and associated conditions observed in astronauts and their potential terrestrial applications.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/GimbalContraindicatedConditions",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "GimbalContraindicatedConditions",
-      "title" : "Gimbal Contraindications",
-      "description" : "Contraindicated conditions for riding a multi-axis gimbal",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/LunarDustToxicityValueSet",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "LunarDustToxicityValueSet",
-      "title" : "Lunar Dust Toxicity",
-      "description" : "Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/MuscleStiffnessAndSpaceHealth",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "MuscleStiffnessAndSpaceHealth",
-      "title" : "Muscle Stiffness",
-      "description" : "Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaEffect",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SleepLossHypoxiaEffect",
-      "title" : "Sleep Loss and Hypoxia Effects",
-      "description" : "Concepts related to the physiological and cognitive effects of sleep loss and hypoxia.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/SleepLossHypoxiaResponses",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SleepLossHypoxiaResponses",
-      "title" : "Sleep Loss and Hypoxia Responses",
-      "description" : "Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceAdaptationBoneHealth",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceAdaptationBoneHealth",
-      "title" : "Adaptations of Bone Health",
-      "description" : "Bone health adaptations observed in spaceflight conditions.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceRadiationRisksVS",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceRadiationRisksVS",
-      "title" : "Space Radiation Risks ValueSet",
-      "description" : "Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceTravelBrainChanges",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceTravelBrainChanges",
-      "title" : "Brain and Neurologic Changes",
-      "description" : "Concepts related to physiological and neurological changes from prolonged space travel.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/SpaceflightStressFactors",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceflightStressFactors",
-      "title" : "Stress and Physiological Factors",
-      "description" : "Concepts related to stress, physiological, and psychological factors during spaceflight analog missions.",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/actigraphy-metric-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/actigraphy-metric-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "ActigraphyMetricVS",
       "title" : "Actigraphy Metric Value Set",
       "description" : "Actigraphy-derived metrics",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/actigraphy-metric-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/actigraphy-metric-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/antiemetic-medication-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/antiemetic-medication-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "AntiemeticMedicationVS",
       "title" : "Antiemetic Medication Value Set",
       "description" : "Antiemetic medications for spaceflight use",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-medication-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-medication-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/antiemetic-protocol-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/antiemetic-protocol-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "AntiemeticProtocolVS",
       "title" : "Antiemetic Protocol Value Set",
       "description" : "Antiemetic administration protocols",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/antioxidant-biomarker-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/antioxidant-biomarker-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "AntioxidantBiomarkerVS",
       "title" : "Antioxidant Biomarker Value Set",
       "description" : "Oxidative stress and antioxidant biomarkers",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/antioxidant-biomarker-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antioxidant-biomarker-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/behavioral-readiness-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-all-devices-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ArtemisAllDevicesVS",
+      "title" : "All Artemis Devices",
+      "description" : "Both certified and prototype Artemis devices (the complete Artemis device inventory)",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-certified-devices-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ArtemisCertifiedDevicesVS",
+      "title" : "Artemis Certified Devices",
+      "description" : "Flight-qualified Artemis mission hardware",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-landing-region-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ArtemisLandingRegionVS",
+      "title" : "Artemis Landing Regions",
+      "description" : "Candidate Artemis III south pole landing regions for Location bindings",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-mission-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ArtemisMissionVS",
+      "title" : "Artemis Missions",
+      "description" : "All Artemis program missions I-XXX",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-prototype-devices-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ArtemisPrototypeDevicesVS",
+      "title" : "Artemis Prototype Devices",
+      "description" : "Developmental and test Artemis hardware",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-radiation-measure-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ArtemisRadiationMeasureVS",
+      "title" : "Artemis Radiation Measures",
+      "description" : "Dose measure codes for ArtemisRadiationExposure.code",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/behavioral-health-metrics-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "BehavioralHealthMetricsVS",
+      "title" : "Behavioral Health Metrics Value Set",
+      "description" : "Key behavioral health state metrics used in aerospace behavioral health monitoring.",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/behavioral-readiness-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BehavioralReadinessVS",
       "title" : "Behavioral Readiness Assessment",
@@ -354,74 +132,74 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/bfrt-device-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bfrt-device-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BFRTDeviceTypeVS",
       "title" : "BFRT Device Type Value Set",
       "description" : "BFRT device types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/bfrt-device-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-device-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/bfrt-outcome-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bfrt-outcome-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BFRTOutcomeVS",
       "title" : "BFRT Outcome Value Set",
       "description" : "BFRT outcome measures",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/bfrt-protocol-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bfrt-protocol-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BFRTProtocolVS",
       "title" : "BFRT Protocol Value Set",
       "description" : "Blood flow restriction training protocol types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-protocol-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/biomanufacturing-process-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/biomanufacturing-process-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BiomanufacturingProcessVS",
       "title" : "Biomanufacturing Process Value Set",
       "description" : "Biomanufacturing process types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/biomanufacturing-process-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-process-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bliss-output-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BLiSSOutputVS",
       "title" : "BLiSS Output Value Set",
       "description" : "Bioregenerative life support output types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bliss-output-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/bone-density-method-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bone-density-method-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BoneDensityMethodVS",
       "title" : "Bone Density Method Value Set",
       "description" : "Methods for BMD measurement",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/bone-density-method-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bone-density-method-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/bone-density-site-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bone-density-site-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "BoneDensitySiteVS",
       "title" : "Bone Density Measurement Site Value Set",
@@ -429,126 +207,152 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/calorie-deficit-risk-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/calorie-deficit-risk-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "CalorieDeficitRiskVS",
       "title" : "Calorie Deficit Risk Levels",
       "description" : "Risk categorization for caloric deficits",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/calorie-deficit-risk-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/calorie-deficit-risk-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/cardiac-monitoring-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/cardiac-monitoring-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "CardiacMonitoringVS",
       "title" : "Cardiac Monitoring Value Set",
       "description" : "Cardiac monitoring parameters",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/cardiac-monitoring-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cardiac-monitoring-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/cgm-device-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/cgm-device-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "CGMDeviceTypeVS",
       "title" : "CGM Device Type Value Set",
       "description" : "Types of CGM devices",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/cgm-device-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-device-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/cgm-metrics-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/cgm-metrics-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "CGMMetricsVS",
       "title" : "CGM Metrics Value Set",
       "description" : "Standardized CGM metrics",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/circadian-assessment-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/circadian-assessment-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "CircadianAssessmentVS",
       "title" : "Circadian Rhythm Assessment Value Set",
       "description" : "Circadian rhythm assessment parameters",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/circadian-assessment-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-assessment-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/circadian-phase-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/circadian-phase-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "CircadianPhaseVS",
       "title" : "Circadian Phase Value Set",
       "description" : "Circadian rhythm phases",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-phase-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/dcs-risk-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/cognitive-performance-indicators-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "CognitivePerformanceIndicatorsVS",
+      "title" : "Cognitive Performance Indicators Value Set",
+      "description" : "Cognitive and vigilance performance indicators relevant to operational readiness.",
+      "systems" : [
+        "http://loinc.org",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/crewed-mars-missions-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "CrewedMarsMissionsVS",
+      "title" : "Human Mars Mission Plans",
+      "description" : "Proposed and conceptual human mission architectures to Mars",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/dcs-risk-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "DCSRiskVS",
       "title" : "DCS Risk Value Set",
       "description" : "DCS risk factors and outcomes",
-      "systems" : ["https://mitre.org/fhir/space-health/CodeSystem/dcs-risk-cs"]
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/dcs-risk-cs"
+      ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/decompression-procedures-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "DecompressionProcedures",
       "title" : "Decompression Procedures",
       "description" : "Standardized decompression procedures and protocols",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/decompression-protocol-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/decompression-protocol-cs",
         "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-contraindicated-conditions",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/diving-contraindicated-conditions-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "DivingContraindicatedConditions",
       "title" : "Diving Medical Contraindications",
       "description" : "Medical conditions that contraindicate diving activities",
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/diving-medical-examinations",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/diving-medical-examinations-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "DivingMedicalExaminations",
       "title" : "Diving Medical Examinations",
       "description" : "Types of medical examinations for diving fitness",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/diving-medicine-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/dosimeter-type-vs",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/dosimeter-type-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "DosimeterTypeVS",
       "title" : "Dosimeter Types",
       "description" : "Types of radiation dosimeters",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/ecg-interpretation-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/ecg-interpretation-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "ECGInterpretationVS",
       "title" : "ECG Interpretation Results",
@@ -556,30 +360,30 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/emergency-response-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/emergency-response-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "EmergencyResponseVS",
       "title" : "Emergency Response Value Set",
       "description" : "Emergency response and evacuation options",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/eva-suit-state-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/eva-suit-state-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "EVASuitStateVS",
       "title" : "EVA Suit State Value Set",
       "description" : "EVA suit operational states",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/eva-suit-state-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-state-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/evs-units-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/evs-units-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "EVSUnitsVS",
       "title" : "EVS Units",
@@ -587,19 +391,19 @@
       "systems" : ["http://unitsofmeasure.org"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/expanded-specimen-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/expanded-specimen-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "ExpandedSpecimenTypeVS",
       "title" : "Expanded Specimen Type Value Set",
       "description" : "Specimen types for astronaut biobank",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/expanded-specimen-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/expanded-specimen-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/fitness-assessment-result-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/fitness-assessment-result-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "FitnessAssessmentResultVS",
       "title" : "Fitness Assessment Results",
@@ -607,787 +411,825 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/gravity-context-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/gimbal-contraindicated-conditions-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "GimbalContraindicatedConditions",
+      "title" : "Gimbal Contraindications",
+      "description" : "Contraindicated conditions for riding a multi-axis gimbal",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/gravity-context-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "GravityContextVS",
       "title" : "Gravity Context Value Set",
       "description" : "Gravitational environments for clinical context",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/graybiel-severity-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/graybiel-severity-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "GraybielSeverityVS",
       "title" : "Graybiel Motion Sickness Severity Value Set",
       "description" : "Graybiel severity grades for motion sickness",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/graybiel-severity-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/graybiel-severity-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/hydration-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/hydration-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "HydrationTypeVS",
       "title" : "Hydration Types",
       "description" : "Types of hydration products used in space",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/hydration-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/hydration-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-capabilities-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/hyperbaric-capabilities-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "HyperbaricCapabilitiesVS",
       "title" : "Hyperbaric Chamber Capabilities",
       "description" : "Capabilities available in hyperbaric chambers",
       "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/hyperbaric-capabilities-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/hyperbaric-chamber-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/hyperbaric-chamber-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "HyperbaricChamberTypeVS",
       "title" : "Hyperbaric Chamber Types",
       "description" : "Types of hyperbaric chambers",
       "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/hyperbaric-chamber-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/ijv-flow-grade-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/ijv-flow-grade-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "IJVFlowGradeVS",
       "title" : "IJV Flow Grade Value Set",
       "description" : "Internal jugular vein flow grades",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/ijv-flow-grade-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/ijv-flow-grade-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/immune-biomarker-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/immune-biomarker-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "ImmuneBiomarkerVS",
       "title" : "Immune Biomarker Value Set",
       "description" : "Immune function biomarkers",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/iss-crewmember-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/isolation-syndrome-factors-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "IsolationSyndromeFactorsVS",
+      "title" : "Isolation Syndrome Factors Value Set",
+      "description" : "Risk factors related to isolation and confinement that affect behavioral health.",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/iss-crewmember-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "ISSCrewmemberTypeVS",
       "title" : "ISS Crewmember Types",
       "description" : "Value set for types of ISS crewmembers by agency.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/macronutrient-metrics-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/location-capabilities-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "LocationCapabilitiesVS",
+      "title" : "Location Capabilities Value Set",
+      "description" : "Capabilities and services available at aerospace medicine locations",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-capabilities-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/location-type-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "LocationTypeVS",
+      "title" : "Aerospace Location Type",
+      "description" : "Location types for lunar and planetary mission locations",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/macronutrient-metrics-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "MacronutrientMetricsVS",
       "title" : "Macronutrient Metrics",
       "description" : "Measurement types for macronutrient tracking",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/macronutrient-metrics-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/microbial-contaminant-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-all-devices-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "MarsAllDevicesVS",
+      "title" : "All Mars Mission Devices",
+      "description" : "Both certified and prototype Mars devices",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-certified-devices-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-prototype-devices-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-certified-devices-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "MarsCertifiedDevicesVS",
+      "title" : "Mars Mission Devices - Certified",
+      "description" : "Flight-qualified hardware for Mars missions",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-certified-devices-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-landing-sites-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "MarsLandingSitesVS",
+      "title" : "Mars Landing Sites",
+      "description" : "Candidate landing sites for human Mars missions",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-missions-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "MarsMissionsVS",
+      "title" : "Mars Missions",
+      "description" : "All Mars missions (robotic and human, completed and planned)",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-missions-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-prototype-devices-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "MarsPrototypeDevicesVS",
+      "title" : "Mars Mission Devices - Prototype",
+      "description" : "Developmental and test hardware for Mars missions",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-prototype-devices-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/microbial-contaminant-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "MicrobialContaminantTypeVS",
       "title" : "Microbial Contaminant Type Value Set",
       "description" : "Types of microbial contamination",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/microbial-contaminant-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/microgravity-countermeasure-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/microgravity-countermeasure-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "MicrogravityCountermeasureVS",
       "title" : "Microgravity Countermeasure Value Set",
       "description" : "Countermeasure interventions for microgravity cardiovascular effects",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/microgravity-countermeasure-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/microgravity-countermeasure-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/mission-phase-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mission-phase-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "MissionPhaseVS",
       "title" : "Mission Phase Value Set",
       "description" : "Phases of a space mission",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-name-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mrid-launch-context-name-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "MRIDLaunchContextNameVS",
       "title" : "MRID Launch Context Name",
       "description" : "Names for launch context variables in MRID questionnaires",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mrid-launch-context-name-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/mrid-launch-context-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mrid-launch-context-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "MRIDLaunchContextTypeVS",
       "title" : "MRID Launch Context Type",
       "description" : "FHIR resource types for launch context in MRID questionnaires",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mrid-launch-context-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-cardiovascular-equipment-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-cardiovascular-equipment-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASACardiovascularEquipmentVS",
       "title" : "NASA Cardiovascular Assessment Equipment",
       "description" : "Value set for cardiovascular assessment hardware.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-data-archive-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-data-archive-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASADataArchiveVS",
       "title" : "NASA Medical Data Archive Systems",
       "description" : "Value set for data archive and delivery systems.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-exercise-equipment-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-exercise-equipment-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAExerciseEquipmentVS",
       "title" : "NASA Exercise Equipment",
       "description" : "Value set for exercise and fitness assessment hardware.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-medical-facility-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-medical-facility-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAMedicalFacilityVS",
       "title" : "NASA Medical Facilities",
       "description" : "Value set for medical testing facility locations.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-medical-hardware-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-medical-hardware-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAMedicalHardwareVS",
       "title" : "NASA Medical Hardware",
       "description" : "Complete value set for all NASA medical hardware.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-medical-roles-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-medical-roles-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAMedicalRolesVS",
       "title" : "NASA Medical Personnel Roles",
       "description" : "Value set for medical personnel roles.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-mission-phase-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mission-phase-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAMissionPhaseVS",
       "title" : "NASA Mission Phases",
       "description" : "Value set for mission phase timing.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-discipline-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mrid-discipline-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAMRIDDisciplineVS",
       "title" : "NASA MRID Medical Disciplines",
       "description" : "Value set for NASA MRID medical disciplines.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-mrid-sponsor-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mrid-sponsor-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAMRIDSponsorVS",
       "title" : "NASA MRID Sponsor Organizations",
       "description" : "Value set for NASA MRID sponsor organizations.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-postflight-offset-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-postflight-offset-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAPostflightOffsetVS",
       "title" : "NASA Postflight Schedule Offsets",
       "description" : "Value set for R-plus postflight schedule offsets.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-preflight-offset-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-preflight-offset-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAPreflightOffsetVS",
       "title" : "NASA Preflight Schedule Offsets",
       "description" : "Value set for L-minus preflight schedule offsets.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-radiation-equipment-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-radiation-equipment-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASARadiationEquipmentVS",
       "title" : "NASA Radiation Monitoring Equipment",
       "description" : "Value set for radiation monitoring hardware.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-schedule-offset-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-schedule-offset-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAScheduleOffsetVS",
       "title" : "NASA Schedule Offsets",
       "description" : "Complete value set for all mission schedule offsets.",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-standard-measures-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-standard-measures-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NASAStandardMeasuresVS",
       "title" : "NASA Standard Measures Value Set",
       "description" : "NASA Spaceflight Standard Measures assessments",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-standard-measures-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/neutral-buoyancy-training-activities",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/neutral-buoyancy-training-activities-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "NeutralBuoyancyTrainingActivities",
       "title" : "Neutral Buoyancy Training Activities",
       "description" : "Types of training activities conducted in neutral buoyancy environments",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs",
+        "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/nutrition-inventory-status-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nutrition-inventory-status-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "NutritionInventoryStatusVS",
       "title" : "Nutrition Inventory Status",
       "description" : "Status levels for nutrition inventory management",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/nutrition-inventory-status-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nutrition-inventory-status-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-chip-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/operational-status-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "OperationalStatusVS",
+      "title" : "Operational Status Value Set",
+      "description" : "Operational status codes for facilities and vehicles",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/operational-status-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-chip-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "OrganChipTypeVS",
       "title" : "Organ-on-Chip Type Value Set",
       "description" : "Types of organ-on-chip devices",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/organ-chip-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/organ-chip-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-dose-codes-vs-complete",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-dose-codes-vs",
+      "version" : "0.7.0",
       "status" : "active",
-      "name" : "OrganDoseCodesVSComplete",
-      "title" : "Complete Organ-Specific Dose Codes",
-      "description" : "Comprehensive codes for organ-specific radiation dose measurements",
+      "name" : "OrganDoseCodesVS",
+      "title" : "Organ-Specific Dose Codes",
+      "description" : "Codes for organ-specific radiation dose measurements (bone marrow, lens of eye, skin, CNS, thyroid, gonads, lung, GI tract, whole body).",
       "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/parabolic-flight-phase-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/parabolic-flight-phase-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "ParabolicFlightPhaseVS",
       "title" : "Parabolic Flight Phase Value Set",
       "description" : "Phases of a parabolic flight maneuver",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/parabolic-flight-phase-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/parabolic-flight-phase-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/planetary-protection-category-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "PlanetaryProtectionCategoryVS",
       "title" : "Planetary Protection Category Value Set",
       "description" : "COSPAR planetary protection categories",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/planetary-protection-category-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-countermeasures-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "RadiationCountermeasuresVS",
       "title" : "Radiation Countermeasures",
       "description" : "Protective measures against radiation",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-countermeasures-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-countermeasures-vs-complete",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs",
+      "version" : "0.7.0",
       "status" : "active",
-      "name" : "RadiationCountermeasuresVSComplete",
-      "title" : "Complete Radiation Countermeasures",
-      "description" : "Comprehensive list of protective measures against space radiation",
-      "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/radiation-countermeasures-cs",
-        "http://snomed.info/sct"
-      ]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "RadiationDetectorTypeVSComplete",
-      "title" : "Complete Radiation Detector Types",
-      "description" : "Comprehensive list of radiation detection devices used in space",
-      "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
-        "https://mitre.org/fhir/space-health/CodeSystem/radiation-detector-type-cs"
-      ]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs",
-      "version" : "0.6.2",
-      "status" : "draft",
       "name" : "RadiationDoseUnitsVS",
       "title" : "Radiation Dose Units",
       "description" : "Units for radiation dose measurements",
       "systems" : ["http://unitsofmeasure.org"]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/radioprotective-medication-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radioprotective-medication-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "RadioprotectiveMedicationVS",
       "title" : "Radioprotective Medication Value Set",
       "description" : "Radioprotective medications for spaceflight",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/radioprotective-medication-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radioprotective-medication-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/regulatory-standards",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/regulatory-standards-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "RegulatoryStandards",
       "title" : "Regulatory Standards for Diving and Space Medicine",
       "description" : "Regulatory standards and compliance requirements",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/regulatory-compliance-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
         "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/sans-assessment-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/sans-assessment-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SANSAssessmentVS",
       "title" : "SANS Assessment Value Set",
       "description" : "SANS assessment parameters",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/sleep-architecture-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/shielding-condition-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "ShieldingConditionVS",
+      "title" : "Shielding Condition",
+      "description" : "Shielding conditions for radiation exposure observations",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/sleep-architecture-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SleepArchitectureVS",
       "title" : "Sleep Architecture Value Set",
       "description" : "Sleep architecture parameters",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/sleep-architecture-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sleep-architecture-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-adverse-event-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-adverse-event-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceAdverseEventVS",
       "title" : "Space Adverse Event Value Set",
       "description" : "Adverse events from spaceflight medications",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-adverse-event-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-anemia-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-anemia-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceAnemiaVS",
       "title" : "Space Anemia Value Set",
       "description" : "Spaceflight anemia assessment parameters",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-anemia-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-anemia-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-blood-product-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-blood-product-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceBloodProductVS",
       "title" : "Space Blood Product Value Set",
       "description" : "Blood products for spaceflight use",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-blood-product-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-blood-product-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-cardiovascular-effects",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceCardiovascularEffectsValueSet",
-      "title" : "Space Cardiovascular Effects",
-      "description" : "Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-emergency-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-emergency-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceEmergencyTypeVS",
       "title" : "Space Emergency Type Value Set",
       "description" : "Types of spaceflight emergency situations",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-emergency-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-environmental-factors",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceEnvironmentalFactorsValueSet",
-      "title" : "Space Environmental Factors",
-      "description" : "Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression",
-      "systems" : ["http://snomed.info/sct"]
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-exercise-modality-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "SpaceExerciseModalityVS",
+      "title" : "Space Exercise Modality Value Set",
+      "description" : "Permitted space exercise modalities, derived from the Space Exercise Modality Code System.",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs"
+      ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-monitoring-procedures",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceMonitoringProceduresValueSet",
-      "title" : "Space Monitoring Procedures",
-      "description" : "Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-motion-sickness-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-motion-sickness-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceMotionSicknessVS",
       "title" : "Space Motion Sickness Value Set",
       "description" : "Types of motion sickness in spaceflight",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-motion-sickness-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-motion-sickness-cs",
         "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-neurological-effects",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceNeurologicalEffectsValueSet",
-      "title" : "Space Neurological Effects",
-      "description" : "Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-nutrition-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-nutrition-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceNutritionTypeVS",
       "title" : "Space Nutrition Types",
       "description" : "Types of nutritional products available in space missions",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-nutrition-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-nutrition-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-omics-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-omics-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceOmicsTypeVS",
       "title" : "Space Omics Type Value Set",
       "description" : "Multi-omics analysis types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-omics-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-omics-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-performance-metric-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-performance-metric-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpacePerformanceMetricVS",
       "title" : "Space Exercise Performance Metrics",
       "description" : "Performance metrics for space exercise (defined in SpacePerformanceMetricCS)",
       "systems" : [
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-performance-metric-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-physiological-effects",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpacePhysiologicalEffectsValueSet",
-      "title" : "Space Physiological Effects",
-      "description" : "Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-pocus-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-pocus-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpacePOCUSTypeVS",
       "title" : "Space POCUS Type Value Set",
       "description" : "POCUS examination types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-pocus-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-pocus-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-psychological-effects",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpacePsychologicalEffectsValueSet",
-      "title" : "Space Psychological Effects",
-      "description" : "Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-dose-codes-vs-complete",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-radiation-dose-codes-vs",
+      "version" : "0.7.0",
       "status" : "active",
-      "name" : "SpaceRadiationDoseCodesVSComplete",
-      "title" : "Complete Space Radiation Dose Measurement Codes",
-      "description" : "Comprehensive codes for radiation dose measurements in space environments",
+      "name" : "SpaceRadiationDoseCodesVS",
+      "title" : "Space Radiation Dose Measurement Codes",
+      "description" : "Codes for radiation dose measurements in space environments: LOINC total-dose and dose-rate codes plus source-specific dose codes from the Space Radiation Code System.",
       "systems" : [
         "http://loinc.org",
-        "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-effects",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceRadiationEffectsValueSet",
-      "title" : "Space Radiation Effects",
-      "description" : "Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-radiation-type-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "SpaceRadiationTypeVS",
       "title" : "Space Radiation Types",
       "description" : "Types of radiation encountered in space",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-type-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-radiation-type-vs-complete",
-      "version" : "0.6.2",
-      "status" : "active",
-      "name" : "SpaceRadiationTypeVSComplete",
-      "title" : "Complete Space Radiation Types",
-      "description" : "Comprehensive list of ionizing radiation types encountered in space",
-      "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-radiation-type-cs",
-        "http://snomed.info/sct"
-      ]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-specimen-type-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-specimen-type-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceSpecimenTypeVS",
       "title" : "Space Specimen Type Value Set",
       "description" : "Specimen types collected during spaceflight",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-specimen-type-cs",
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-specimen-type-cs",
         "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-surgical-procedure-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-surgical-procedure-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceSurgicalProcedureVS",
       "title" : "Space Surgical Procedure Value Set",
       "description" : "Surgical procedures for spaceflight",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-surgical-procedure-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-surgical-procedure-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-transfusion-procedure-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-transfusion-procedure-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SpaceTransfusionProcedureVS",
       "title" : "Space Transfusion Procedure Value Set",
       "description" : "Transfusion procedures for spaceflight",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/space-transfusion-procedure-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-transfusion-procedure-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/space-visual-effects",
-      "version" : "0.6.2",
-      "status" : "draft",
-      "name" : "SpaceVisualEffectsValueSet",
-      "title" : "Space Visual Effects",
-      "description" : "Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/sterilization-method-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/sterilization-method-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SterilizationMethodVS",
       "title" : "Sterilization Method Value Set",
       "description" : "Sterilization methods for planetary protection",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/sterilization-method-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sterilization-method-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/suit-provisioning-status-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/stress-countermeasures-vs",
+      "version" : "0.7.0",
+      "status" : "active",
+      "name" : "StressCountermeasuresVS",
+      "title" : "Stress Countermeasures Value Set",
+      "description" : "Standardized set of psychological countermeasures used to mitigate stress and support mental health.",
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs"
+      ]
+    },
+    {
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/suit-provisioning-status-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "SuitProvisioningStatusVS",
       "title" : "Suit Provisioning Status Value Set",
       "description" : "Suit provisioning and logistics status",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/telemedicine-equipment-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-equipment-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "TelemedicineEquipmentVS",
       "title" : "Telemedicine Equipment Value Set",
       "description" : "Telemedicine equipment types",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-equipment-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-equipment-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/telemedicine-modality-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-modality-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "TelemedicineModalityVS",
       "title" : "Telemedicine Modality Value Set",
       "description" : "Telemedicine modalities",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-modality-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-modality-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/temperature-measurement-method-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/temperature-measurement-method-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "TemperatureMeasurementMethodVS",
       "title" : "Temperature Measurement Method Value Set",
       "description" : "Methods of body temperature measurement",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/temperature-measurement-method-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-communication-systems",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-communication-systems-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "UnderwaterCommunicationSystems",
       "title" : "Underwater Communication Systems",
       "description" : "Communication systems used in underwater training operations",
       "systems" : [
-        "https://mitre.org/fhir/space-health/CodeSystem/underwater-communication-cs"
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/underwater-communication-cs"
       ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/underwater-training-procedures",
-      "version" : "0.6.2",
-      "status" : "draft",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/underwater-training-procedures-vs",
+      "version" : "0.7.0",
+      "status" : "active",
       "name" : "UnderwaterTrainingProcedures",
       "title" : "Underwater Training Procedures",
       "description" : "Procedures and activities conducted during underwater training",
-      "systems" : ["http://snomed.info/sct"]
+      "systems" : [
+        "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs",
+        "http://snomed.info/sct"
+      ]
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/ValueSet/water-volume-units-vs",
-      "version" : "0.6.2",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/water-volume-units-vs",
+      "version" : "0.7.0",
       "status" : "active",
       "name" : "WaterVolumeUnitsVS",
       "title" : "Water Volume Units",

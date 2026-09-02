@@ -1,0 +1,215 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/cumulative-radiation-dose-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cumulative-radiation-dose-example"] ; # 
+  fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
+     fhir:profile ( [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation cumulative-radiation-dose-example</b></p><a name=\"cumulative-radiation-dose-example\"> </a><a name=\"hccumulative-radiation-dose-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-cumulative-radiation-dose.html\">Cumulative Radiation Dose</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 73569-6}\">Radiation dose and image quality indicators</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 73536-5}\">Radiation dose total</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>encounter</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>effective</b>: 2025-06-01 --&gt; 2025-11-28</p><p><b>value</b>: 94 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs daily-dose}\">Daily Radiation Dose</span></p><p><b>value</b>: 0.52 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs weekly-dose}\">Weekly Radiation Dose</span></p><p><b>value</b>: 3.6 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs monthly-dose}\">30-Day Radiation Dose</span></p><p><b>value</b>: 15.4 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs mission-dose}\">Mission Radiation Dose</span></p><p><b>value</b>: 94 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs career-dose}\">Career Radiation Dose</span></p><p><b>value</b>: 212 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs compliance-status}\">Compliance Status</span></p><p><b>value</b>: <span title=\"Codes:\">Within NASA-STD-3001 600 mSv career effective-dose limit</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> ;
+       fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:73569-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "73569-6" ] ;
+       fhir:display [ fhir:v "Radiation dose and image quality indicators" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:73536-5 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "73536-5" ] ;
+       fhir:display [ fhir:v "Radiation dose total" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> ;
+     fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-06-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-11-28"^^xsd:date ]
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "94"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mSv" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "mSv" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "daily-dose" ] ;
+         fhir:display [ fhir:v "Daily Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 0.52 ] ;
+       fhir:unit [ fhir:v "mSv" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "weekly-dose" ] ;
+         fhir:display [ fhir:v "Weekly Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 3.6 ] ;
+       fhir:unit [ fhir:v "mSv" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "monthly-dose" ] ;
+         fhir:display [ fhir:v "30-Day Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v 15.4 ] ;
+       fhir:unit [ fhir:v "mSv" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "mission-dose" ] ;
+         fhir:display [ fhir:v "Mission Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "94"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mSv" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "career-dose" ] ;
+         fhir:display [ fhir:v "Career Radiation Dose" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "212"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mSv" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mSv" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+         ] ;
+         fhir:code [ fhir:v "compliance-status" ] ;
+         fhir:display [ fhir:v "Compliance Status" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:text [ fhir:v "Within NASA-STD-3001 600 mSv career effective-dose limit" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

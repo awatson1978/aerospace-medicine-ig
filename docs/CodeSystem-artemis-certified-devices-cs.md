@@ -1,18 +1,19 @@
-# Artemis Certified Devices - v0.6.2
+# Artemis Certified Devices - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Artemis Certified Devices**
 
-## CodeSystem: Artemis Certified Devices 
+## CodeSystem: Artemis Certified Devices (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ArtemisCertifiedDevicesCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ArtemisCertifiedDevicesCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.) 
+Flight-qualified hardware and systems used in Artemis missions (Orion, SLS, xEMU, Starship-HLS, CLPS landers, Gateway modules, LTV, radioisotope power units, etc.) 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -27,13 +28,13 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
 {
   "resourceType" : "CodeSystem",
   "id" : "artemis-certified-devices-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs",
+  "version" : "0.7.0",
   "name" : "ArtemisCertifiedDevicesCS",
   "title" : "Artemis Certified Devices",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,21 +47,20 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       ]
     }
   ],
-  "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)",
+  "description" : "Flight-qualified hardware and systems used in Artemis missions (Orion, SLS, xEMU, Starship-HLS, CLPS landers, Gateway modules, LTV, radioisotope power units, etc.)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 11,
+  "count" : 15,
   "property" : [
     {
       "code" : "deviceType",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#deviceType",
-      "description" : "Device category (spacecraft, suit, vehicle, habitat, equipment)",
-      "type" : "code"
+      "description" : "Device category (spacecraft, launch-vehicle, suit, life-support, lander, habitat, propulsion, communications, medical-equipment, rover, power)",
+      "type" : "string"
     },
     {
       "code" : "manufacturer",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#manufacturer",
-      "description" : "Device manufacturer/contractor",
+      "description" : "Device manufacturer or contractor",
       "type" : "string"
     }
   ],
@@ -72,7 +72,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "spacecraft"
+          "valueString" : "spacecraft"
         },
         {
           "code" : "manufacturer",
@@ -87,7 +87,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "launch-vehicle"
+          "valueString" : "launch-vehicle"
         },
         {
           "code" : "manufacturer",
@@ -102,7 +102,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "suit"
+          "valueString" : "suit"
         },
         {
           "code" : "manufacturer",
@@ -111,13 +111,28 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       ]
     },
     {
-      "code" : "starship-hls",
-      "display" : "Starship Human Landing System",
-      "definition" : "SpaceX Starship variant serving as lunar lander for Artemis III. Manufacturer: SpaceX.",
+      "code" : "plss",
+      "display" : "Portable Life Support System",
+      "definition" : "PLSS backpack for xEMU suit (life support during EVA). Manufacturer: Collins Aerospace.",
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "lander"
+          "valueString" : "life-support"
+        },
+        {
+          "code" : "manufacturer",
+          "valueString" : "Collins Aerospace"
+        }
+      ]
+    },
+    {
+      "code" : "starship-hls",
+      "display" : "Starship Human Landing System",
+      "definition" : "SpaceX Starship variant serving as the Artemis human landing system. Manufacturer: SpaceX.",
+      "property" : [
+        {
+          "code" : "deviceType",
+          "valueString" : "lander"
         },
         {
           "code" : "manufacturer",
@@ -126,17 +141,47 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       ]
     },
     {
-      "code" : "ltv",
-      "display" : "Lunar Terrain Vehicle",
-      "definition" : "Unpressurized rover for surface mobility (Artemis V and later). Manufacturer: TBD.",
+      "code" : "clps-lander",
+      "display" : "CLPS Lander",
+      "definition" : "Commercial Lunar Payload Services delivery lander for robotic payload delivery to the lunar surface. Manufacturer: NASA / Commercial Providers.",
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "rover"
+          "valueString" : "lander"
         },
         {
           "code" : "manufacturer",
-          "valueString" : "TBD"
+          "valueString" : "NASA / Commercial Providers"
+        }
+      ]
+    },
+    {
+      "code" : "ltv",
+      "display" : "Lunar Terrain Vehicle",
+      "definition" : "Unpressurized rover for surface mobility (Artemis V and later). Manufacturer: NASA / Industry Team.",
+      "property" : [
+        {
+          "code" : "deviceType",
+          "valueString" : "rover"
+        },
+        {
+          "code" : "manufacturer",
+          "valueString" : "NASA / Industry Team"
+        }
+      ]
+    },
+    {
+      "code" : "viper-rover",
+      "display" : "VIPER Rover",
+      "definition" : "Volatiles Investigating Polar Exploration Rover - flight-built robotic rover for lunar south pole volatile prospecting. Manufacturer: NASA.",
+      "property" : [
+        {
+          "code" : "deviceType",
+          "valueString" : "rover"
+        },
+        {
+          "code" : "manufacturer",
+          "valueString" : "NASA"
         }
       ]
     },
@@ -147,7 +192,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "habitat"
+          "valueString" : "habitat"
         },
         {
           "code" : "manufacturer",
@@ -162,7 +207,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "propulsion"
+          "valueString" : "propulsion"
         },
         {
           "code" : "manufacturer",
@@ -177,7 +222,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "habitat"
+          "valueString" : "habitat"
         },
         {
           "code" : "manufacturer",
@@ -188,11 +233,11 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
     {
       "code" : "lunanet-comm",
       "display" : "LunaNet Communication System",
-      "definition" : "Lunar communication network elements (relay satellites or surface comm devices). Manufacturer: NASA/Partners.",
+      "definition" : "Lunar communication and navigation network elements (relay satellites or surface comm devices). Manufacturer: NASA/Partners.",
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "communications"
+          "valueString" : "communications"
         },
         {
           "code" : "manufacturer",
@@ -207,7 +252,7 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "medical-equipment"
+          "valueString" : "medical-equipment"
         },
         {
           "code" : "manufacturer",
@@ -216,17 +261,32 @@ Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Sta
       ]
     },
     {
-      "code" : "plss",
-      "display" : "Portable Life Support System",
-      "definition" : "PLSS backpack for xEMU suit (life support during EVA). Manufacturer: Collins Aerospace.",
+      "code" : "rtg-power-unit",
+      "display" : "RTG Power Unit",
+      "definition" : "Radioisotope Thermoelectric Generator power system. Manufacturer: NASA / DOE / Partners.",
       "property" : [
         {
           "code" : "deviceType",
-          "valueCode" : "life-support"
+          "valueString" : "power"
         },
         {
           "code" : "manufacturer",
-          "valueString" : "Collins Aerospace"
+          "valueString" : "NASA / DOE / Partners"
+        }
+      ]
+    },
+    {
+      "code" : "rhu-thermal-survival-unit",
+      "display" : "RHU Thermal Survival Unit",
+      "definition" : "Radioisotope Heater Unit for lunar night survival. Manufacturer: NASA / DOE / Partners.",
+      "property" : [
+        {
+          "code" : "deviceType",
+          "valueString" : "power"
+        },
+        {
+          "code" : "manufacturer",
+          "valueString" : "NASA / DOE / Partners"
         }
       ]
     }

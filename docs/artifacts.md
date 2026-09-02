@@ -1,4 +1,4 @@
-# Artifacts Summary - v0.6.2
+# Artifacts Summary - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -14,6 +14,7 @@ These define data models that represent the domain covered by this implementatio
 | | |
 | :--- | :--- |
 | [Environmental Monitoring API for Closed Biome Systems](StructureDefinition-EnvironmentalMonitoringLogicalModel.md) | A logical model representing the comprehensive environmental monitoring parameters for closed biome systems, including space habitats, lunar/Mars colonies, and Earth-based smart greenhouses. |
+| [Nutrition Product (logical model)](StructureDefinition-NutritionProduct.md) | A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct. |
 | [Spacecraft Life Support Telemetry](StructureDefinition-SpacecraftLifeSupportTelemetry.md) | A logical model representing Environmental Control and Life Support Systems (ECLSS) parameters monitored in spacecraft habitat modules. |
 
 ### Structures: Questionnaires 
@@ -71,56 +72,47 @@ These define constraints on FHIR resources for systems conforming to this implem
 | [Antiemetic Medication Administration](StructureDefinition-antiemetic-administration.md) | Record of antiemetic medication administration during space missions |
 | [Antioxidant Biomarker Panel](StructureDefinition-antioxidant-biomarker-panel.md) | Panel of oxidative stress and antioxidant status biomarkers for monitoring radioprotective countermeasure efficacy |
 | [Artemis Radiation Exposure](StructureDefinition-artemis-radiation-exposure.md) | Radiation exposure observation for deep space missions with GCR vs SPE differentiation and shielding context |
-| [Astrodynamics Observation](StructureDefinition-AstrodynamicsObservation.md) | An observation of a satellite or celestial object's orbital characteristics, using orbital elements. |
-| [Astronaut Patient Profile](StructureDefinition-Astronaut.md) | Patient profile for astronauts and space travelers |
+| [Astrodynamics Observation](StructureDefinition-astrodynamics-observation.md) | An observation of a satellite or celestial object's orbital characteristics, using orbital elements. |
+| [Astronaut Patient Profile](StructureDefinition-astronaut.md) | Patient profile for astronauts and space travelers |
 | [Autonomous Medical Encounter](StructureDefinition-autonomous-medical-encounter.md) | Encounter profile for crew-led medical events with no real-time ground support due to communication delays |
-| [Average Blood Pressure](StructureDefinition-average-blood-pressure.md) | A calculated average of two or more blood pressure readings in a specified time period or according to a specified algorithm or protocol. The average blood pressure has a systolic and a diastolic component. |
 | [BFRT Activity Definition](StructureDefinition-bfrt-activity-definition.md) | Prescribed BFRT protocol defining exercise parameters, occlusion pressure targets, and sex-specific adaptations |
 | [BFRT Care Plan](StructureDefinition-bfrt-care-plan.md) | Care plan for blood flow restriction training addressing bone loss and muscle atrophy countermeasures |
 | [BFRT Device](StructureDefinition-bfrt-device.md) | Blood flow restriction training occlusion cuff device |
 | [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation.md) | Outcome measurements from blood flow restriction training including musculoskeletal and bone biomarkers |
 | [BFRT Procedure](StructureDefinition-bfrt-procedure.md) | Blood flow restriction training session performed in microgravity or partial gravity |
 | [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md) | Observation of bioregenerative life support system resource output quantities and rates |
-| [Barotrauma Assessment](StructureDefinition-BarotraumaAssessment.md) | Assessment of pressure-related injuries (barotrauma) |
+| [Barotrauma Assessment](StructureDefinition-barotrauma-assessment.md) | Assessment of pressure-related injuries (barotrauma) |
 | [Behavioral Health State](StructureDefinition-behavioral-health-state.md) | Point-in-time behavioral and psychological state assessment for aerospace missions. |
 | [Biological Feedstock](StructureDefinition-biological-feedstock.md) | Biological feedstock or bioproduct used in or produced by biomanufacturing processes |
 | [Biomanufacturing Procedure](StructureDefinition-biomanufacturing-procedure.md) | Biomanufacturing process execution for ISRU or life support production |
 | [Bioreactor Device](StructureDefinition-bioreactor-device.md) | Bioreactor device for in-situ biomanufacturing including photobioreactors and fermentation vessels |
-| [Blood Pressure Device](StructureDefinition-bp-device.md) | A profile of the Device resource used specifically for blood pressure devices and includes an extension for blood pressure cuff size. |
-| [Blood Pressure Panel](StructureDefinition-blood-pressure-panel.md) | Blood Pressure Panel; a grouping of systolic, diastolic, and mean arterial blood pressure components. |
-| [Body Height](StructureDefinition-height.md) | The measurement in centimeters or feet and inches from the top of the head to the heel, usually while standing. |
-| [Body Mass Index](StructureDefinition-body-mass-index.md) | A numerical index based on an individual's weight in kilograms divided by the square of their height in meters. |
-| [Body Temperature](StructureDefinition-body-temperature.md) | The measured heat of an individual's body. |
-| [Body Weight](StructureDefinition-body-weight.md) | The measured mass of an individual's body. |
 | [Bone Density Observation](StructureDefinition-bone-density-observation.md) | Bone mineral density measurement during spaceflight with method, site, and T/Z-score components |
 | [Calorie Deficit Assessment](StructureDefinition-calorie-deficit-assessment.md) | Quantifies acute and cumulative calorie deficits for astronauts |
 | [Circadian Rhythm Assessment](StructureDefinition-circadian-rhythm-assessment.md) | Assessment of circadian rhythm parameters during spaceflight |
-| [Commercial Space Equipment](StructureDefinition-SpaceEquipment.md) | STUB - Device profile for commercial space equipment. |
+| [Commercial Space Equipment](StructureDefinition-space-equipment.md) | STUB - Device profile for commercial space equipment. |
 | [Communication Session Assessment](StructureDefinition-communication-session-assessment.md) | Assessment of communication system performance during underwater training |
-| [Cumulative Radiation Dose (Fixed)](StructureDefinition-cumulative-radiation-dose.md) | Enhanced cumulative radiation dose tracking with comprehensive time periods |
+| [Cumulative Radiation Dose](StructureDefinition-cumulative-radiation-dose.md) | Cumulative radiation dose over daily, weekly, 30-day, annual, mission and career periods. |
 | [Cumulative Stress Burden](StructureDefinition-cumulative-stress-burden.md) | Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose. |
 | [Decompression Protocol](StructureDefinition-decompression-protocol.md) | Standardized decompression procedures for diving operations and space analog training |
-| [Decompression Sickness](StructureDefinition-DecompressionSickness.md) | Decompression sickness occurring during diving or altitude training |
+| [Decompression Sickness](StructureDefinition-decompression-sickness.md) | Decompression sickness occurring during diving or altitude training |
 | [Decompression Sickness Risk Assessment](StructureDefinition-dcs-risk-assessment.md) | Individual DCS susceptibility assessment for EVA planning |
-| [Dive Medical Clearance](StructureDefinition-DiveMedicalClearance.md) | Medical clearance examination for diving operations |
-| [Dive Profile](StructureDefinition-DiveProfile.md) | Comprehensive dive profile including depth, time, and environmental data |
-| [Diving Equipment](StructureDefinition-DivingEquipment.md) | Equipment used for diving operations and underwater training |
+| [Dive Medical Clearance](StructureDefinition-dive-medical-clearance.md) | Medical clearance examination for diving operations |
+| [Dive Profile](StructureDefinition-dive-profile.md) | Comprehensive dive profile including depth, time, and environmental data |
+| [Diving Equipment](StructureDefinition-diving-equipment.md) | Equipment used for diving operations and underwater training |
 | [EVA Suit Provisioning Record](StructureDefinition-eva-suit-provisioning-record.md) | Logistics record for EVA suit provisioning, delivery, and positioning |
 | [Emergency Care Plan](StructureDefinition-emergency-care-plan.md) | Evacuation and contingency plan addressing spaceflight emergency conditions |
 | [Emergency Evacuation Procedure](StructureDefinition-emergency-evacuation-procedure.md) | Emergency evacuation or abort action performed during spaceflight |
 | [Emergency Risk Assessment](StructureDefinition-emergency-risk-assessment.md) | Probability prediction for spaceflight emergency types to support contingency planning |
 | [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) | Comprehensive hyperbaric oxygen therapy with full monitoring and safety protocols |
-| [Enhanced Neutral Buoyancy Training Session](StructureDefinition-enhanced-neutral-buoyancy-session.md) | Comprehensive neutral buoyancy training session with full regulatory compliance tracking |
-| [Environmental Monitoring](StructureDefinition-EnvironmentalMonitoring.md) | Profile for environmental monitoring. |
+| [Environmental Monitoring](StructureDefinition-environmental-monitoring.md) | Profile for environmental monitoring. |
 | [Extravehicular Activity Procedure](StructureDefinition-eva-procedure.md) | Record of an Artemis mission EVA (moonwalk) with duration, location, participants, suit device, and metabolic data |
 | [Flow Directionality Index Observation](StructureDefinition-flow-directionality-index-observation.md) | FDI calculation with component times: FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total). Range [-1, 1]. |
-| [Gimbal Screening](StructureDefinition-GimbalScreening.md) | Screening protocol for Multi Axis Gimbal training device. |
+| [Gimbal Screening](StructureDefinition-gimbal-screening.md) | Screening protocol for Multi Axis Gimbal training device. |
 | [Habitat Environmental Monitoring](StructureDefinition-habitat-environmental-observation.md) | Observation of environmental conditions inside Mars habitat (pressure, O2, CO2, temperature, humidity, dust) |
 | [Habitat Location](StructureDefinition-habitat-location.md) | Location profile for lunar habitats, Gateway modules, and landing sites with selenographic coordinates and region code |
-| [Heart Rate](StructureDefinition-heart-rate.md) | The number of heart beats in a minute. |
 | [Hydration Status Observation](StructureDefinition-hydration-status-observation.md) | Hydration status monitoring for space missions |
 | [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md) | A medical facility equipped with a hyperbaric chamber for pressurized treatment |
-| [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md) | Hyperbaric oxygen therapy or chamber treatment |
+| [Hyperbaric Treatment](StructureDefinition-hyperbaric-treatment.md) | Hyperbaric oxygen therapy or chamber treatment |
 | [ISRU Production Log](StructureDefinition-isru-production-log.md) | Tracking ISRU propellant production (CH4/O2) for Mars return journey |
 | [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md) | Panel of immune function biomarkers for monitoring spaceflight-associated immune dysregulation |
 | [Internal Jugular Vein Area Observation](StructureDefinition-internal-jugular-vein-area-observation.md) | IJV cross-sectional area measured by ultrasound at end-diastole |
@@ -147,23 +139,20 @@ The profile supports SDC-compatible extensions for:* Launch context (astronaut/p
 | [Microbial Contamination Risk](StructureDefinition-microbial-contamination-risk.md) | Forward contamination risk prediction for planetary protection compliance |
 | [Microbial Viability Assay](StructureDefinition-microbial-viability-assay.md) | Microbial viability assay measuring colony-forming units or most probable number on spacecraft surfaces |
 | [Mission Plan](StructureDefinition-mission-plan.md) | Artemis mission timeline with phases, events, constraints, and medical protocols |
-| [Mission Risk Assessment](StructureDefinition-SpaceRiskAssesment.md) | STUB - Risk assessment for space missions. |
+| [Mission Risk Assessment](StructureDefinition-space-risk-assessment.md) | Risk assessment for space missions, covering mission-level, oncologic, musculoskeletal and other spaceflight risks. |
 | [Mission Timeline Plan](StructureDefinition-mission-timeline-plan.md) | Mars mission timeline with phases, events, EVA schedules, and medical protocols |
 | [Multi-Omics Observation](StructureDefinition-multi-omics-observation.md) | Multi-omics analysis observation from astronaut molecular profiling |
 | [NASA Standard Measures Observation](StructureDefinition-standard-measures-observation.md) | Standardized assessment from the NASA Spaceflight Standard Measures program for pre/in/post-flight comparison |
-| [Neutral Buoyancy Facility](StructureDefinition-NeutralBuoyancyFacility.md) | Facility for underwater astronaut training |
-| [Neutral Buoyancy Training Session](StructureDefinition-NeutralBuoyancySession.md) | Training session in neutral buoyancy facility for EVA simulation |
+| [Neutral Buoyancy Facility](StructureDefinition-neutral-buoyancy-facility.md) | Facility for underwater astronaut training |
+| [Neutral Buoyancy Training Session](StructureDefinition-neutral-buoyancy-session.md) | Training session in a neutral buoyancy facility for EVA simulation, including communication systems, safety protocols, regulatory compliance and environmental conditions |
 | [Omics Risk Assessment](StructureDefinition-omics-risk-assessment.md) | Personalized risk assessment derived from multi-omics molecular profiles |
-| [Oxygen Saturation in Arterial Blood by Pulse Oximetry](StructureDefinition-oxygen-saturation-arterial-blood-pulseOx.md) | A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood via pulse oximetry. |
-| [Oxygen Saturation in Arterial blood, method not specified](StructureDefinition-oxygen-saturation-arterial-blood.md) | A measurement of the percentage to which oxygen is bound to hemoglobin in arterial blood. |
 | [Parabolic Flight Exposure](StructureDefinition-parabolic-flight-exposure.md) | Parabolic flight session providing brief microgravity exposure for research |
 | [Personalized Countermeasure Plan](StructureDefinition-personalized-countermeasure-plan.md) | Individualized countermeasure plan informed by multi-omics data for spaceflight health optimization |
 | [Psychological Countermeasure Activity](StructureDefinition-psychological-countermeasure-activity.md) | Documentation of psychological countermeasure interventions for behavioral health in aerospace missions. |
-| [Radiation Detection Device (Fixed)](StructureDefinition-radiation-detector.md) | Fixed device profile for radiation monitoring in space with properly constrained properties |
+| [Radiation Detection Device](StructureDefinition-radiation-detector.md) | Device profile for personal and area radiation monitors used in spaceflight, with detector-property slices. |
 | [Radioprotective Medication](StructureDefinition-radioprotective-medication.md) | Radioprotective and antioxidant medications used as countermeasures against space radiation |
 | [Radioprotective Medication Administration](StructureDefinition-radioprotective-administration.md) | Administration of radioprotective medication during space missions, typically timed relative to radiation exposure |
 | [Regulatory Compliance Assessment](StructureDefinition-regulatory-compliance-assessment.md) | Assessment of compliance with diving and space medicine regulatory standards |
-| [Respiratory Rate](StructureDefinition-respiratory-rate.md) | The measured number of breaths taken in a minute. |
 | [SANS Assessment](StructureDefinition-sans-assessment.md) | Spaceflight-Associated Neuro-ocular Syndrome assessment including OCT, OCT-A, and clinical findings |
 | [Space Adverse Event](StructureDefinition-space-adverse-event.md) | Adverse events from medications or procedures during spaceflight |
 | [Space Blood Product](StructureDefinition-space-blood-product.md) | Blood products adapted for spaceflight including lyophilized RBCs and freeze-dried plasma |
@@ -177,25 +166,25 @@ The profile supports SDC-compatible extensions for:* Launch context (astronaut/p
 | [Space Exercise Activity Measure](StructureDefinition-space-exercise-activity-measure.md) | Individual exercise measurement (duration, intensity, heart rate, power output) for space-based physical activity |
 | [Space Exercise Session](StructureDefinition-space-exercise-session.md) | Procedural record of a space-based exercise event, linking prescriptions, goals, devices, and observations |
 | [Space Exercise Vital Sign Minutes Per Week](StructureDefinition-space-evs-minutes-per-week.md) | Weekly exercise volume derived from mission exercise sessions (EVS - Exercise Vital Sign) |
-| [Space Health Condition](StructureDefinition-SpaceCondition.md) | Health conditions specific to outerspace environment. |
-| [Space Health Procedure](StructureDefinition-SpaceProcedure.md) | STUB - Health procedures specific to outerspace environment. |
-| [Space Insurance Contract](StructureDefinition-SpaceInsuranceContract.md) | STUB - Specialized contract coverage for space travel |
+| [Space Health Condition](StructureDefinition-space-condition.md) | Health conditions specific to outerspace environment. |
+| [Space Health Procedure](StructureDefinition-space-procedure.md) | Health procedures performed in the spaceflight environment. Constrains Procedure for use with astronaut and analog-crew records. |
+| [Space Insurance Contract](StructureDefinition-space-insurance-contract.md) | STUB - Specialized contract coverage for space travel |
 | [Space Joint Health Assessment](StructureDefinition-space-joint-health-assessment.md) | Ultrasound-based joint health assessment during spaceflight |
 | [Space Molecular Sequence](StructureDefinition-space-molecular-sequence.md) | Molecular sequence data from astronaut genomic, transcriptomic, or proteomic analysis |
 | [Space Motion Sickness Condition](StructureDefinition-space-motion-sickness-condition.md) | Diagnosis and tracking of space motion sickness, terrestrial re-entry motion sickness, and related vestibular disorders |
 | [Space Nutrition Intake](StructureDefinition-space-nutrition-intake.md) | Documentation of actual daily intake and hydration events for space missions |
 | [Space Nutrition Inventory Item](StructureDefinition-space-nutrition-inventory-item.md) | Tracks food stores aboard spacecraft or planetary habitats |
 | [Space Nutrition Product](StructureDefinition-space-nutrition-product.md) | Space-rated food, supplements, and electrolytes with mission-specific properties |
-| [Space Organization](StructureDefinition-SpaceOrg.md) | STUB - Organizations involved with astronautics and space travel. |
+| [Space Organization](StructureDefinition-space-org.md) | STUB - Organizations involved with astronautics and space travel. |
 | [Space Point-of-Care Ultrasound (POCUS)](StructureDefinition-space-pocus.md) | Point-of-care ultrasound examination in austere spaceflight environments |
-| [Space Radiation Exposure (Fixed)](StructureDefinition-space-radiation-exposure.md) | Corrected radiation dose measurement for space missions with proper extension contexts |
-| [Space Radiation Exposure Summary (Fixed)](StructureDefinition-space-radiation-summary.md) | Comprehensive radiation dose summary with proper mission context |
+| [Space Radiation Exposure](StructureDefinition-space-radiation-exposure.md) | Radiation dose measurement for a crew member during a space mission, with mission context, radiation type, shielding and countermeasure extensions and detailed dosimetry components. |
+| [Space Radiation Exposure Summary](StructureDefinition-space-radiation-summary.md) | Diagnostic report summarizing a crew member's radiation exposure over a mission or reporting period. |
 | [Space Sleep Study Observation](StructureDefinition-space-sleep-study.md) | Sleep architecture observation during spaceflight including PSG and actigraphy-derived measures |
 | [Space Specimen Collection](StructureDefinition-space-specimen-collection.md) | Specimen collected during spaceflight using microgravity-adapted methods |
 | [Space Surgical Procedure](StructureDefinition-space-surgical-procedure.md) | Surgical procedure adapted for spaceflight austere environments, potentially using 3D-printed instruments |
 | [Space Transfusion Procedure](StructureDefinition-space-transfusion-procedure.md) | Blood transfusion procedure adapted for spaceflight and austere environments |
-| [Space Vehicle](StructureDefinition-SpaceVehicle.md) | STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc) |
-| [Space insurance](StructureDefinition-SpaceInsurance.md) | STUB - Insurance plan for space travel |
+| [Space Vehicle](StructureDefinition-space-vehicle.md) | STUB - Vehicles that maintain controled environments or life support systems (ambulances, space craft, submarines, etc) |
+| [Space insurance](StructureDefinition-space-insurance.md) | STUB - Insurance plan for space travel |
 | [Spaceflight Anemia Panel](StructureDefinition-spaceflight-anemia-panel.md) | Panel of hematological markers for spaceflight-associated anemia assessment |
 | [Spaceflight Specimen](StructureDefinition-spaceflight-specimen.md) | Biological specimen collected during spaceflight using microgravity-adapted methods |
 | [Sterilization Procedure](StructureDefinition-sterilization-procedure.md) | Sterilization procedure for planetary protection bioburden reduction (UV, DHMR, VHP, etc.) |
@@ -204,14 +193,12 @@ The profile supports SDC-compatible extensions for:* Launch context (astronaut/p
 | [Telemedicine Consult Request](StructureDefinition-telemedicine-consult-request.md) | Request for telemedicine consultation from crew medical officer to ground specialist |
 | [Telemedicine Device](StructureDefinition-telemedicine-device.md) | Medical device used for telemedicine in spaceflight operations |
 | [Telemedicine Encounter](StructureDefinition-telemedicine-encounter.md) | Telemedicine encounter between crew and ground medical team |
-| [Twenty Four Hour Blood Pressure](StructureDefinition-twenty-four-hour-blood-pressure.md) | An average blood pressure (systolic and diastolic) over a twenty four hour period. |
 | [Ultrasound Monitoring Device](StructureDefinition-ultrasound-monitoring-device.md) | Point-of-care ultrasound device for IJV imaging (e.g., Butterfly iQ3) |
 | [Underwater Communication System](StructureDefinition-underwater-communication-system.md) | Communication equipment for underwater training operations |
-| [Underwater EVA Simulation](StructureDefinition-UnderwaterEVASimulation.md) | Extravehicular activity simulation conducted underwater |
+| [Underwater EVA Simulation](StructureDefinition-underwater-eva-simulation.md) | Extravehicular activity simulation conducted underwater |
 | [Underwater Emergency Response](StructureDefinition-underwater-emergency-response.md) | Emergency response procedures during underwater training operations |
-| [Vital Signs Panel](StructureDefinition-vital-signs-panel.md) | A vital signs panel as defined by Logica Health. It includes Oxygen Saturation via Pulse Oximetry, Oxygen Saturation in Arterial blood, body height, body length, body weight, body temperature, blood pressure panel, heart rate, respiratory rate, head-occcipital/frontal circumference, oxygen saturation via pulse oximetry, and body mass index. |
 | [xEVAS Suit Definition](StructureDefinition-xevas-suit-definition.md) | Definition of an Exploration Extravehicular Activity Suit (xEVAS) including model, capabilities, and operational parameters |
-| [xGeo Locations](StructureDefinition-SpaceLocation.md) | STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat. |
+| [xGeo Locations](StructureDefinition-space-location.md) | STUB - Locations in outerspace, past the Karman line, such as a space ship or space habitat. |
 
 ### Structures: Extension Definitions 
 
@@ -233,7 +220,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [Diving Medical Contraindications](StructureDefinition-diving-contraindications.md) | Medical conditions that contraindicate diving |
 | [EVA Number](StructureDefinition-eva-number.md) | Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2) |
 | [Emergency Procedures](StructureDefinition-emergency-procedures.md) | Emergency decompression procedures if applicable |
-| [Emergency Response Assessment](StructureDefinition-emergency-response.md) | Assessment of emergency response procedures |
+| [Emergency Response Assessment](StructureDefinition-underwater-emergency-response-ext.md) | Assessment of emergency response procedures |
 | [Emergency Response Time](StructureDefinition-response-time.md) | Time from emergency recognition to response initiation |
 | [Energy Expenditure](StructureDefinition-energy-expenditure.md) | Total daily energy expenditure in kcal/day |
 | [Environmental Conditions](StructureDefinition-environmental-conditions.md) | Environmental conditions during training session |
@@ -263,7 +250,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [MRID Launch Context](StructureDefinition-mrid-launch-context.md) | Context for pre-populating the questionnaire with astronaut/patient reference. Compatible with SDC launchContext pattern. |
 | [MRID Sponsor](StructureDefinition-mrid-sponsor.md) | The NASA organizational sponsor responsible for the medical requirement |
 | [Maximum Depth Reached](StructureDefinition-maximum-depth-reached.md) | Maximum depth reached during the dive requiring decompression |
-| [Maximum Operating Pressure](StructureDefinition-maximum-pressure.md) | Maximum pressure the chamber can safely operate at |
+| [Maximum Operating Pressure](StructureDefinition-maximum-pressure.md) | Maximum pressure the chamber can safely operate at, or maximum pressure reached during a hyperbaric treatment |
 | [Maximum Training Depth](StructureDefinition-maximum-depth.md) | Maximum depth reached during training session |
 | [Medical Intervention](StructureDefinition-medical-intervention.md) | Medical interventions provided during emergency response |
 | [Mission Context](StructureDefinition-mission-context.md) | Links clinical observations and events to specific space missions |
@@ -305,9 +292,8 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [Actigraphy Metric Value Set](ValueSet-actigraphy-metric-vs.md) | Actigraphy-derived metrics |
-| [Adaptations of Bone Health](ValueSet-SpaceAdaptationBoneHealth.md) | Bone health adaptations observed in spaceflight conditions. |
-| [Aircraft Fume Exposure](ValueSet-AircraftFumeExposureValueSet.md) | Health impacts from exposure to aircraft contaminated air and fume events. |
-| [All Artemis Devices](ValueSet-artemis-all-devices-vs.md) | Both certified and prototype Artemis devices |
+| [Aerospace Location Type](ValueSet-location-type-vs.md) | Location types for lunar and planetary mission locations |
+| [All Artemis Devices](ValueSet-artemis-all-devices-vs.md) | Both certified and prototype Artemis devices (the complete Artemis device inventory) |
 | [All Mars Mission Devices](ValueSet-mars-all-devices-vs.md) | Both certified and prototype Mars devices |
 | [Antiemetic Medication Value Set](ValueSet-antiemetic-medication-vs.md) | Antiemetic medications for spaceflight use |
 | [Antiemetic Protocol Value Set](ValueSet-antiemetic-protocol-vs.md) | Antiemetic administration protocols |
@@ -316,17 +302,16 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Artemis Landing Regions](ValueSet-artemis-landing-region-vs.md) | Candidate Artemis III south pole landing regions for Location bindings |
 | [Artemis Missions](ValueSet-artemis-mission-vs.md) | All Artemis program missions I-XXX |
 | [Artemis Prototype Devices](ValueSet-artemis-prototype-devices-vs.md) | Developmental and test Artemis hardware |
+| [Artemis Radiation Measures](ValueSet-artemis-radiation-measure-vs.md) | Dose measure codes for ArtemisRadiationExposure.code |
 | [BFRT Device Type Value Set](ValueSet-bfrt-device-type-vs.md) | BFRT device types |
 | [BFRT Outcome Value Set](ValueSet-bfrt-outcome-vs.md) | BFRT outcome measures |
 | [BFRT Protocol Value Set](ValueSet-bfrt-protocol-vs.md) | Blood flow restriction training protocol types |
 | [BLiSS Output Value Set](ValueSet-bliss-output-vs.md) | Bioregenerative life support output types |
-| [Back Pain and Space Travel](ValueSet-AstronautBackPain.md) | Back pain and associated conditions observed in astronauts and their potential terrestrial applications. |
 | [Behavioral Health Metrics Value Set](ValueSet-behavioral-health-metrics-vs.md) | Key behavioral health state metrics used in aerospace behavioral health monitoring. |
 | [Behavioral Readiness Assessment](ValueSet-behavioral-readiness-vs.md) | Value set for behavioral/psychological flight readiness outcomes. |
 | [Biomanufacturing Process Value Set](ValueSet-biomanufacturing-process-vs.md) | Biomanufacturing process types |
 | [Bone Density Measurement Site Value Set](ValueSet-bone-density-site-vs.md) | Anatomical sites for BMD measurement |
 | [Bone Density Method Value Set](ValueSet-bone-density-method-vs.md) | Methods for BMD measurement |
-| [Brain and Neurologic Changes](ValueSet-SpaceTravelBrainChanges.md) | Concepts related to physiological and neurological changes from prolonged space travel. |
 | [CGM Device Type Value Set](ValueSet-cgm-device-type-vs.md) | Types of CGM devices |
 | [CGM Metrics Value Set](ValueSet-cgm-metrics-vs.md) | Standardized CGM metrics |
 | [Calorie Deficit Risk Levels](ValueSet-calorie-deficit-risk-vs.md) | Risk categorization for caloric deficits |
@@ -334,15 +319,10 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Circadian Phase Value Set](ValueSet-circadian-phase-vs.md) | Circadian rhythm phases |
 | [Circadian Rhythm Assessment Value Set](ValueSet-circadian-assessment-vs.md) | Circadian rhythm assessment parameters |
 | [Cognitive Performance Indicators Value Set](ValueSet-cognitive-performance-indicators-vs.md) | Cognitive and vigilance performance indicators relevant to operational readiness. |
-| [Complete Organ-Specific Dose Codes](ValueSet-organ-dose-codes-vs-complete.md) | Comprehensive codes for organ-specific radiation dose measurements |
-| [Complete Radiation Countermeasures](ValueSet-radiation-countermeasures-vs-complete.md) | Comprehensive list of protective measures against space radiation |
-| [Complete Radiation Detector Types](ValueSet-radiation-detector-type-vs-complete.md) | Comprehensive list of radiation detection devices used in space |
-| [Complete Space Radiation Dose Measurement Codes](ValueSet-space-radiation-dose-codes-vs-complete.md) | Comprehensive codes for radiation dose measurements in space environments |
-| [Complete Space Radiation Types](ValueSet-space-radiation-type-vs-complete.md) | Comprehensive list of ionizing radiation types encountered in space |
 | [DCS Risk Value Set](ValueSet-dcs-risk-vs.md) | DCS risk factors and outcomes |
-| [Decompression Procedures](ValueSet-decompression-procedures.md) | Standardized decompression procedures and protocols |
-| [Diving Medical Contraindications](ValueSet-diving-contraindicated-conditions.md) | Medical conditions that contraindicate diving activities |
-| [Diving Medical Examinations](ValueSet-diving-medical-examinations.md) | Types of medical examinations for diving fitness |
+| [Decompression Procedures](ValueSet-decompression-procedures-vs.md) | Standardized decompression procedures and protocols |
+| [Diving Medical Contraindications](ValueSet-diving-contraindicated-conditions-vs.md) | Medical conditions that contraindicate diving activities |
+| [Diving Medical Examinations](ValueSet-diving-medical-examinations-vs.md) | Types of medical examinations for diving fitness |
 | [Dosimeter Types](ValueSet-dosimeter-type-vs.md) | Types of radiation dosimeters |
 | [ECG Interpretation Results](ValueSet-ecg-interpretation-vs.md) | Value set for ECG interpretation outcomes. |
 | [EVA Suit State Value Set](ValueSet-eva-suit-state-vs.md) | EVA suit operational states |
@@ -350,7 +330,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Emergency Response Value Set](ValueSet-emergency-response-vs.md) | Emergency response and evacuation options |
 | [Expanded Specimen Type Value Set](ValueSet-expanded-specimen-type-vs.md) | Specimen types for astronaut biobank |
 | [Fitness Assessment Results](ValueSet-fitness-assessment-result-vs.md) | Value set for fitness test termination criteria and outcomes. |
-| [Gimbal Contraindications](ValueSet-GimbalContraindicatedConditions.md) | Contraindicated conditions for riding a multi-axis gimbal |
+| [Gimbal Contraindications](ValueSet-gimbal-contraindicated-conditions-vs.md) | Contraindicated conditions for riding a multi-axis gimbal |
 | [Gravity Context Value Set](ValueSet-gravity-context-vs.md) | Gravitational environments for clinical context |
 | [Graybiel Motion Sickness Severity Value Set](ValueSet-graybiel-severity-vs.md) | Graybiel severity grades for motion sickness |
 | [Human Mars Mission Plans](ValueSet-crewed-mars-missions-vs.md) | Proposed and conceptual human mission architectures to Mars |
@@ -362,18 +342,16 @@ These define sets of codes used by systems conforming to this implementation gui
 | [Immune Biomarker Value Set](ValueSet-immune-biomarker-vs.md) | Immune function biomarkers |
 | [Isolation Syndrome Factors Value Set](ValueSet-isolation-syndrome-factors-vs.md) | Risk factors related to isolation and confinement that affect behavioral health. |
 | [Location Capabilities Value Set](ValueSet-location-capabilities-vs.md) | Capabilities and services available at aerospace medicine locations |
-| [Lunar Dust Toxicity](ValueSet-LunarDustToxicityValueSet.md) | Conditions and effects associated with lunar dust exposure, including respiratory, ocular, and systemic toxicities. |
 | [MRID Launch Context Name](ValueSet-mrid-launch-context-name-vs.md) | Names for launch context variables in MRID questionnaires |
 | [MRID Launch Context Type](ValueSet-mrid-launch-context-type-vs.md) | FHIR resource types for launch context in MRID questionnaires |
 | [Macronutrient Metrics](ValueSet-macronutrient-metrics-vs.md) | Measurement types for macronutrient tracking |
 | [Mars Landing Sites](ValueSet-mars-landing-sites-vs.md) | Candidate landing sites for human Mars missions |
-| [Mars Mission Devices - Certified](ValueSet-mars-devices-certified-vs.md) | Flight-qualified hardware for Mars missions |
-| [Mars Mission Devices - Prototype](ValueSet-mars-devices-prototype-vs.md) | Developmental and test hardware for Mars missions |
+| [Mars Mission Devices - Certified](ValueSet-mars-certified-devices-vs.md) | Flight-qualified hardware for Mars missions |
+| [Mars Mission Devices - Prototype](ValueSet-mars-prototype-devices-vs.md) | Developmental and test hardware for Mars missions |
 | [Mars Missions](ValueSet-mars-missions-vs.md) | All Mars missions (robotic and human, completed and planned) |
 | [Microbial Contaminant Type Value Set](ValueSet-microbial-contaminant-type-vs.md) | Types of microbial contamination |
 | [Microgravity Countermeasure Value Set](ValueSet-microgravity-countermeasure-vs.md) | Countermeasure interventions for microgravity cardiovascular effects |
 | [Mission Phase Value Set](ValueSet-mission-phase-vs.md) | Phases of a space mission |
-| [Muscle Stiffness](ValueSet-MuscleStiffnessAndSpaceHealth.md) | Concepts related to muscle stiffness and health in the context of spaceflight and Earth-based applications. |
 | [NASA Cardiovascular Assessment Equipment](ValueSet-nasa-cardiovascular-equipment-vs.md) | Value set for cardiovascular assessment hardware. |
 | [NASA Exercise Equipment](ValueSet-nasa-exercise-equipment-vs.md) | Value set for exercise and fitness assessment hardware. |
 | [NASA MRID Medical Disciplines](ValueSet-nasa-mrid-discipline-vs.md) | Value set for NASA MRID medical disciplines. |
@@ -388,52 +366,43 @@ These define sets of codes used by systems conforming to this implementation gui
 | [NASA Radiation Monitoring Equipment](ValueSet-nasa-radiation-equipment-vs.md) | Value set for radiation monitoring hardware. |
 | [NASA Schedule Offsets](ValueSet-nasa-schedule-offset-vs.md) | Complete value set for all mission schedule offsets. |
 | [NASA Standard Measures Value Set](ValueSet-nasa-standard-measures-vs.md) | NASA Spaceflight Standard Measures assessments |
-| [Neutral Buoyancy Training Activities](ValueSet-neutral-buoyancy-training-activities.md) | Types of training activities conducted in neutral buoyancy environments |
+| [Neutral Buoyancy Training Activities](ValueSet-neutral-buoyancy-training-activities-vs.md) | Types of training activities conducted in neutral buoyancy environments |
 | [Nutrition Inventory Status](ValueSet-nutrition-inventory-status-vs.md) | Status levels for nutrition inventory management |
 | [Operational Status Value Set](ValueSet-operational-status-vs.md) | Operational status codes for facilities and vehicles |
+| [Organ-Specific Dose Codes](ValueSet-organ-dose-codes-vs.md) | Codes for organ-specific radiation dose measurements (bone marrow, lens of eye, skin, CNS, thyroid, gonads, lung, GI tract, whole body). |
 | [Organ-on-Chip Type Value Set](ValueSet-organ-chip-type-vs.md) | Types of organ-on-chip devices |
 | [Parabolic Flight Phase Value Set](ValueSet-parabolic-flight-phase-vs.md) | Phases of a parabolic flight maneuver |
 | [Planetary Protection Category Value Set](ValueSet-planetary-protection-category-vs.md) | COSPAR planetary protection categories |
 | [Radiation Countermeasures](ValueSet-radiation-countermeasures-vs.md) | Protective measures against radiation |
 | [Radiation Dose Units](ValueSet-radiation-dose-units-vs.md) | Units for radiation dose measurements |
 | [Radioprotective Medication Value Set](ValueSet-radioprotective-medication-vs.md) | Radioprotective medications for spaceflight |
-| [Regulatory Standards for Diving and Space Medicine](ValueSet-regulatory-standards.md) | Regulatory standards and compliance requirements |
+| [Regulatory Standards for Diving and Space Medicine](ValueSet-regulatory-standards-vs.md) | Regulatory standards and compliance requirements |
 | [SANS Assessment Value Set](ValueSet-sans-assessment-vs.md) | SANS assessment parameters |
+| [Shielding Condition](ValueSet-shielding-condition-vs.md) | Shielding conditions for radiation exposure observations |
 | [Sleep Architecture Value Set](ValueSet-sleep-architecture-vs.md) | Sleep architecture parameters |
-| [Sleep Loss and Hypoxia Effects](ValueSet-SleepLossHypoxiaEffect.md) | Concepts related to the physiological and cognitive effects of sleep loss and hypoxia. |
-| [Sleep Loss and Hypoxia Responses](ValueSet-SleepLossHypoxiaResponses.md) | Concepts related to sleep deprivation and physiological/cognitive responses to systemic environmental hypoxia. |
 | [Space Adverse Event Value Set](ValueSet-space-adverse-event-vs.md) | Adverse events from spaceflight medications |
 | [Space Anemia Value Set](ValueSet-space-anemia-vs.md) | Spaceflight anemia assessment parameters |
 | [Space Blood Product Value Set](ValueSet-space-blood-product-vs.md) | Blood products for spaceflight use |
-| [Space Cardiovascular Effects](ValueSet-space-cardiovascular-effects.md) | Cardiovascular effects and conditions relevant to human spaceflight, including orthostatic intolerance, heart rate changes, and blood pressure |
 | [Space Emergency Type Value Set](ValueSet-space-emergency-type-vs.md) | Types of spaceflight emergency situations |
-| [Space Environmental Factors](ValueSet-space-environmental-factors.md) | Environmental factors relevant to human spaceflight, including weightlessness, radiation, isolation, and decompression |
 | [Space Exercise Modality Value Set](ValueSet-space-exercise-modality-vs.md) | Permitted space exercise modalities, derived from the Space Exercise Modality Code System. |
 | [Space Exercise Performance Metrics](ValueSet-space-performance-metric-vs.md) | Performance metrics for space exercise (defined in SpacePerformanceMetricCS) |
-| [Space Monitoring Procedures](ValueSet-space-monitoring-procedures.md) | Monitoring procedures relevant to human spaceflight, including vital signs monitoring and physiological monitoring |
 | [Space Motion Sickness Value Set](ValueSet-space-motion-sickness-vs.md) | Types of motion sickness in spaceflight |
-| [Space Neurological Effects](ValueSet-space-neurological-effects.md) | Neurological effects relevant to human spaceflight, including vestibular conditions, motion sickness, and intracranial pressure changes |
 | [Space Nutrition Types](ValueSet-space-nutrition-type-vs.md) | Types of nutritional products available in space missions |
 | [Space Omics Type Value Set](ValueSet-space-omics-type-vs.md) | Multi-omics analysis types |
 | [Space POCUS Type Value Set](ValueSet-space-pocus-type-vs.md) | POCUS examination types |
-| [Space Physiological Effects](ValueSet-space-physiological-effects.md) | Physiological effects and conditions relevant to human spaceflight, including motion sickness, bone loss, muscle atrophy, and sleep disorders |
-| [Space Psychological Effects](ValueSet-space-psychological-effects.md) | Psychological effects relevant to human spaceflight, including sleep disorders, isolation, anxiety, and depression |
-| [Space Radiation Effects](ValueSet-space-radiation-effects.md) | Radiation effects and conditions relevant to human spaceflight, including cosmic radiation, radiation sickness, and radiation injuries |
-| [Space Radiation Risks ValueSet](ValueSet-SpaceRadiationRisksVS.md) | Concepts relevant to space radiation risks and associated health concerns identified from Artemis I mission data. |
+| [Space Radiation Dose Measurement Codes](ValueSet-space-radiation-dose-codes-vs.md) | Codes for radiation dose measurements in space environments: LOINC total-dose and dose-rate codes plus source-specific dose codes from the Space Radiation Code System. |
 | [Space Radiation Types](ValueSet-space-radiation-type-vs.md) | Types of radiation encountered in space |
 | [Space Specimen Type Value Set](ValueSet-space-specimen-type-vs.md) | Specimen types collected during spaceflight |
 | [Space Surgical Procedure Value Set](ValueSet-space-surgical-procedure-vs.md) | Surgical procedures for spaceflight |
 | [Space Transfusion Procedure Value Set](ValueSet-space-transfusion-procedure-vs.md) | Transfusion procedures for spaceflight |
-| [Space Visual Effects](ValueSet-space-visual-effects.md) | Visual and ocular effects relevant to human spaceflight, including visual impairment, optic nerve conditions, and intraocular pressure changes |
 | [Sterilization Method Value Set](ValueSet-sterilization-method-vs.md) | Sterilization methods for planetary protection |
 | [Stress Countermeasures Value Set](ValueSet-stress-countermeasures-vs.md) | Standardized set of psychological countermeasures used to mitigate stress and support mental health. |
-| [Stress and Physiological Factors](ValueSet-SpaceflightStressFactors.md) | Concepts related to stress, physiological, and psychological factors during spaceflight analog missions. |
 | [Suit Provisioning Status Value Set](ValueSet-suit-provisioning-status-vs.md) | Suit provisioning and logistics status |
 | [Telemedicine Equipment Value Set](ValueSet-telemedicine-equipment-vs.md) | Telemedicine equipment types |
 | [Telemedicine Modality Value Set](ValueSet-telemedicine-modality-vs.md) | Telemedicine modalities |
 | [Temperature Measurement Method Value Set](ValueSet-temperature-measurement-method-vs.md) | Methods of body temperature measurement |
-| [Underwater Communication Systems](ValueSet-underwater-communication-systems.md) | Communication systems used in underwater training operations |
-| [Underwater Training Procedures](ValueSet-underwater-training-procedures.md) | Procedures and activities conducted during underwater training |
+| [Underwater Communication Systems](ValueSet-underwater-communication-systems-vs.md) | Communication systems used in underwater training operations |
+| [Underwater Training Procedures](ValueSet-underwater-training-procedures-vs.md) | Procedures and activities conducted during underwater training |
 | [Water Volume Units](ValueSet-water-volume-units-vs.md) | Units for measuring water volume |
 
 ### Terminology: Code Systems 
@@ -444,19 +413,22 @@ These define new code systems used by systems conforming to this implementation 
 | :--- | :--- |
 | [Actigraphy Metric Code System](CodeSystem-actigraphy-metric-cs.md) | Metrics derived from wrist actigraphy for sleep-wake monitoring |
 | [Aerospace Behavioral State Code System](CodeSystem-aerospace-behavioral-state-cs.md) | Codes describing behavioral and psychological state parameters in aerospace missions. |
+| [Aerospace Location Type](CodeSystem-location-type-cs.md) | Types of locations used in lunar and planetary mission records (landing sites, orbital stations, surface habitats, outposts, analog facilities) |
+| [Aerospace Observation Category](CodeSystem-aerospace-observation-category-cs.md) | Observation categories for spacecraft and habitat telemetry that are not covered by the HL7 observation-category code system (operational, environmental, life-support) |
 | [Antiemetic Medication Code System](CodeSystem-antiemetic-medication-cs.md) | Antiemetic medications used for space motion sickness prophylaxis and treatment |
 | [Antiemetic Protocol Code System](CodeSystem-antiemetic-protocol-cs.md) | Protocols for antiemetic administration in spaceflight contexts |
 | [Antioxidant Biomarker Code System](CodeSystem-antioxidant-biomarker-cs.md) | Biomarkers of oxidative stress and antioxidant status |
-| [Artemis Certified Devices](CodeSystem-artemis-certified-devices-cs.md) | Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.) |
-| [Artemis Devices](CodeSystem-artemis-devices-cs.md) | Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems |
+| [Artemis Certified Devices](CodeSystem-artemis-certified-devices-cs.md) | Flight-qualified hardware and systems used in Artemis missions (Orion, SLS, xEMU, Starship-HLS, CLPS landers, Gateway modules, LTV, radioisotope power units, etc.) |
 | [Artemis Landing Regions](CodeSystem-artemis-landing-region-cs.md) | Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters) |
-| [Artemis Missions](CodeSystem-artemis-mission-cs.md) | Historical and planned Artemis program missions with target destinations, launch dates, and status |
-| [Artemis Prototype Devices](CodeSystem-artemis-prototype-devices-cs.md) | Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes) |
+| [Artemis Missions](CodeSystem-artemis-mission-cs.md) | Historical and planned Artemis program missions with target destinations, launch dates, and status. Reflects the post-2026 replan in which Artemis III is a crewed low-Earth orbit test flight and Artemis IV is the first crewed lunar landing. |
+| [Artemis Prototype Devices](CodeSystem-artemis-prototype-devices-cs.md) | Developmental and test hardware not yet flight-certified: demo units, ground analogs, next-generation prototypes, and planned LunaNet, surface mobility, habitat, logistics, ISRU, and surface power infrastructure elements |
+| [Artemis Radiation Measures](CodeSystem-artemis-radiation-measure-cs.md) | Observation and component codes used by the ArtemisRadiationExposure profile: dose measures and the contextual components (radiation source, shielding condition, tissue type). Radiation source values come from SpaceRadiationTypeCS. |
 | [BFRT Device Type Code System](CodeSystem-bfrt-device-type-cs.md) | Types of blood flow restriction devices |
 | [BFRT Outcome Code System](CodeSystem-bfrt-outcome-cs.md) | Outcome measures for blood flow restriction training effectiveness |
 | [BFRT Protocol Code System](CodeSystem-bfrt-protocol-cs.md) | Blood flow restriction training protocol types for microgravity exercise countermeasures |
 | [BLiSS Output Code System](CodeSystem-bliss-output-cs.md) | Bioregenerative Life Support System (BLiSS) output types |
 | [Behavioral Biomarker Code System](CodeSystem-behavioral-biomarker-cs.md) | Codes for physiologic and digital biomarkers related to behavioral health and stress. |
+| [Biomanufacturing Metric Code System](CodeSystem-biomanufacturing-metric-cs.md) | Component codes for biomanufacturing output observations |
 | [Biomanufacturing Process Code System](CodeSystem-biomanufacturing-process-cs.md) | Biomanufacturing processes for in-situ resource utilization and life support |
 | [Bone Density Method Code System](CodeSystem-bone-density-method-cs.md) | Methods for bone mineral density measurement in spaceflight |
 | [CGM Device Type Code System](CodeSystem-cgm-device-type-cs.md) | Types of continuous glucose monitoring devices |
@@ -469,9 +441,9 @@ These define new code systems used by systems conforming to this implementation 
 | [Decompression Sickness Risk Code System](CodeSystem-dcs-risk-cs.md) | Decompression sickness risk factors and outcomes for EVA risk assessment |
 | [Diving Medicine Code System](CodeSystem-diving-medicine-cs.md) | Medical codes specific to diving medicine and hyperbaric treatments |
 | [Diving and Space Medicine Regulatory Compliance](CodeSystem-regulatory-compliance-cs.md) | Regulatory standards and compliance codes for diving and space medicine |
+| [EVA Suit Inventory Metric Code System](CodeSystem-eva-suit-inventory-metric-cs.md) | Component codes for EVA suit inventory and readiness observations |
 | [EVA Suit State Code System](CodeSystem-eva-suit-state-cs.md) | Operational states of EVA suit systems |
 | [Emergency Response Code System](CodeSystem-emergency-response-cs.md) | Emergency response and evacuation options for spaceflight |
-| [Enhanced Aerospace Medicine Code System](CodeSystem-aerospace-code-system-enhanced.md) | Comprehensive code system for aerospace medicine concepts including all referenced codes |
 | [Expanded Specimen Type Code System](CodeSystem-expanded-specimen-type-cs.md) | Specimen types for astronaut biobank and multi-omics analysis |
 | [Gravity Context Code System](CodeSystem-gravity-context-cs.md) | Gravitational environment contexts for observations and procedures |
 | [Graybiel Motion Sickness Severity Scale](CodeSystem-graybiel-severity-cs.md) | Modified Graybiel scale for grading motion sickness severity in spaceflight |
@@ -480,6 +452,7 @@ These define new code systems used by systems conforming to this implementation 
 | [Hyperbaric Chamber Capabilities](CodeSystem-hyperbaric-capabilities-cs.md) | Capabilities and services available in hyperbaric chambers |
 | [Hyperbaric Chamber Types](CodeSystem-hyperbaric-chamber-type-cs.md) | Types of hyperbaric chambers |
 | [IJV Flow Grade Code System](CodeSystem-ijv-flow-grade-cs.md) | Internal jugular vein flow grading system based on spectral pulse-wave Doppler assessment |
+| [ISRU Metrics](CodeSystem-isru-metrics-cs.md) | Measurement codes for in-situ resource utilization (ISRU) propellant production logs |
 | [Immune Biomarker Code System](CodeSystem-immune-biomarker-cs.md) | Immune function biomarkers monitored during spaceflight |
 | [Isolation Syndrome Factor Code System](CodeSystem-isolation-syndrome-factor-cs.md) | Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions. |
 | [Joint Assessment Code System](CodeSystem-joint-assessment-cs.md) | Parameters for ultrasound-based joint health assessment |
@@ -488,8 +461,8 @@ These define new code systems used by systems conforming to this implementation 
 | [MRID Launch Context Type CodeSystem](CodeSystem-mrid-launch-context-type-cs.md) | FHIR resource types for launch context |
 | [Macronutrient Metrics](CodeSystem-macronutrient-metrics-cs.md) | Measurement types for macronutrient tracking |
 | [Mars Landing Sites (Candidate)](CodeSystem-mars-landing-sites-cs.md) | Candidate landing sites for human Mars missions with areographic coordinates and site characteristics |
-| [Mars Mission Devices - Certified](CodeSystem-mars-devices-certified-cs.md) | Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.) |
-| [Mars Mission Devices - Prototype](CodeSystem-mars-devices-prototype-cs.md) | Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems) |
+| [Mars Mission Devices - Certified](CodeSystem-mars-certified-devices-cs.md) | Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.) |
+| [Mars Mission Devices - Prototype](CodeSystem-mars-prototype-devices-cs.md) | Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems) |
 | [Mars Missions](CodeSystem-mars-missions-cs.md) | NASA and international missions to Mars (robotic and conceptual human missions) |
 | [Microbial Contaminant Type Code System](CodeSystem-microbial-contaminant-type-cs.md) | Types of microbial contamination relevant to planetary protection |
 | [Microgravity Countermeasure Code System](CodeSystem-microgravity-countermeasure-cs.md) | Countermeasure interventions for microgravity-induced cardiovascular and fluid shift effects |
@@ -514,29 +487,24 @@ These define new code systems used by systems conforming to this implementation 
 | [Radiation Detector Type Code System](CodeSystem-radiation-detector-type-cs.md) | Types of radiation detection equipment |
 | [Radioprotective Medication Code System](CodeSystem-radioprotective-medication-cs.md) | Radioprotective and antioxidant medications for space radiation countermeasures |
 | [SANS Assessment Code System](CodeSystem-sans-assessment-cs.md) | Parameters for Spaceflight-Associated Neuro-ocular Syndrome assessment |
+| [Shielding Condition](CodeSystem-shielding-condition-cs.md) | Qualitative radiation shielding condition of the crew at the time of a radiation exposure measurement |
 | [Sleep Architecture Code System](CodeSystem-sleep-architecture-cs.md) | Sleep architecture parameters measured during spaceflight sleep studies |
 | [Space Adverse Event Code System](CodeSystem-space-adverse-event-cs.md) | Adverse events associated with antiemetic and countermeasure medications in spaceflight |
 | [Space Anemia Code System](CodeSystem-space-anemia-cs.md) | Parameters for spaceflight-associated anemia assessment |
 | [Space Blood Product Code System](CodeSystem-space-blood-product-cs.md) | Blood products adapted for spaceflight and austere environment use |
-| [Space Cardiovascular Effects](CodeSystem-space-cardiovascular-effects-cs.md) | CodeSystem for space cardiovascular effects not found in SNOMED CT |
 | [Space Emergency Type Code System](CodeSystem-space-emergency-type-cs.md) | Types of emergency situations during spaceflight operations |
-| [Space Environmental Factors](CodeSystem-space-environmental-factors-cs.md) | CodeSystem for space environmental factors not found in SNOMED CT |
 | [Space Exercise Modality Code System](CodeSystem-space-exercise-modality-cs.md) | Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity). |
 | [Space Exercise Performance Metric Code System](CodeSystem-space-performance-metric-cs.md) | Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force). |
-| [Space Monitoring Procedures](CodeSystem-space-monitoring-procedures-cs.md) | CodeSystem for space monitoring procedures not found in SNOMED CT |
 | [Space Motion Sickness Code System](CodeSystem-space-motion-sickness-cs.md) | Types of motion sickness encountered in space travel and related vestibular disorders |
-| [Space Neurological Effects](CodeSystem-space-neurological-effects-cs.md) | CodeSystem for space neurological effects not found in SNOMED CT |
 | [Space Nutrition Product Types](CodeSystem-space-nutrition-type-cs.md) | Types of nutritional products used in space missions |
 | [Space Omics Type Code System](CodeSystem-space-omics-type-cs.md) | Multi-omics analysis types for astronaut molecular profiling |
 | [Space POCUS Type Code System](CodeSystem-space-pocus-type-cs.md) | Point-of-care ultrasound examination types for austere spaceflight environments |
-| [Space Physiological Effects](CodeSystem-space-physiological-effects-cs.md) | CodeSystem for space physiological effects not found in SNOMED CT |
-| [Space Preventive Health](CodeSystem-space-preventive-health-cs.md) | CodeSystem for space preventive health concepts not found in SNOMED CT |
-| [Space Psychological Effects](CodeSystem-space-psychological-effects-cs.md) | CodeSystem for space psychological effects not found in SNOMED CT |
+| [Space Procedure Code System](CodeSystem-space-procedure-cs.md) | Operational procedures performed in spaceflight that have no SNOMED CT equivalent |
+| [Space Radiation Code System](CodeSystem-space-radiation-cs.md) | Measurement, dose-accumulation, organ-dose, detector-property and reporting concepts used by the space radiation profiles. Radiation types are in SpaceRadiationTypeCS; detector hardware types are in RadiationDetectorTypeCS. |
 | [Space Radiation Type Code System](CodeSystem-space-radiation-type-cs.md) | Types of radiation encountered in space environments |
 | [Space Specimen Type Code System](CodeSystem-space-specimen-type-cs.md) | Specimen types collected during spaceflight with microgravity-adapted methods |
 | [Space Surgical Procedure Code System](CodeSystem-space-surgical-procedure-cs.md) | Surgical procedures adapted for spaceflight austere environments |
 | [Space Transfusion Procedure Code System](CodeSystem-space-transfusion-procedure-cs.md) | Transfusion procedures adapted for spaceflight and austere environments |
-| [Space Treatment Procedures](CodeSystem-space-treatment-procedures-cs.md) | CodeSystem for space treatment procedures not found in SNOMED CT |
 | [Space Visual Effects](CodeSystem-space-visual-effects-cs.md) | CodeSystem for space visual effects not found in SNOMED CT |
 | [Sterilization Method Code System](CodeSystem-sterilization-method-cs.md) | Sterilization methods for planetary protection bioburden reduction |
 | [Suit Provisioning Status Code System](CodeSystem-suit-provisioning-status-cs.md) | Provisioning and logistics status of EVA suit assets |
@@ -544,6 +512,15 @@ These define new code systems used by systems conforming to this implementation 
 | [Telemedicine Modality Code System](CodeSystem-telemedicine-modality-cs.md) | Telemedicine modalities for spaceflight medical operations |
 | [Temperature Measurement Method Code System](CodeSystem-temperature-measurement-method-cs.md) | Methods of body temperature measurement relevant to spaceflight |
 | [Underwater Communication Systems](CodeSystem-underwater-communication-cs.md) | Communication systems and protocols for underwater training operations |
+| [Venous Flow Metric Code System](CodeSystem-venous-flow-metric-cs.md) | Component codes for internal jugular vein flow directionality measurements |
+
+### Terminology: Concept Maps 
+
+These define transformations to convert between codes by systems conforming with this implementation guide.
+
+| | |
+| :--- | :--- |
+| [Mission Phase to NASA Mission Phase Timing](ConceptMap-MissionPhaseToNASAMissionPhase.md) | Maps the clinical mission phases in MissionPhaseCS to the coarser NASA medical-requirements timing phases in NASAMissionPhaseCS. Pre-flight maps to preflight activity, all in-space phases map to inflight, and both post-flight phases map to postflight. |
 
 ### Example: Example Instances 
 
@@ -555,29 +532,47 @@ These are example instances that show what data produced and consumed by systems
 | [ARCHeR Actigraphy - Flight Day 5](Observation-ARCHeR-Actigraphy-FD5.md) | Actigraphy data from ARCHeR investigation on flight day 5 showing circadian adaptation |
 | [Algae Cultivation Procedure](Procedure-Biomanufacturing-AlgaeCultivation-001.md) | Chlorella vulgaris cultivation cycle in ISS photobioreactor |
 | [Algae Photobioreactor](Device-Bioreactor-Algae-001.md) | Closed-loop algae photobioreactor for O2 production and CO2 fixation |
+| [Almond butter](Binary-artemis-030.md) |  |
+| [Almonds](Binary-artemis-025.md) |  |
+| [Apple cider](Binary-artemis-008.md) |  |
 | [Aquarius Underwater Laboratory](Location-AquariusUnderwaterLaboratory.md) | NOAA's Aquarius underwater research station used for NEEMO missions |
 | [Artemis Base Camp Habitat](Location-ArtemisBaseCampHabitat.md) | Artemis lunar surface habitat module |
-| [Artemis III EVA-1](Procedure-Artemis-III-EVA-1.md) | First lunar surface EVA of Artemis III mission at Malapert Massif |
-| [Artemis III EVA-1 Radiation Exposure](Observation-Artemis-III-EVA1-Radiation.md) | Radiation dose during first lunar surface EVA (6.5 hours unshielded) |
-| [Artemis III EVA-2](Procedure-Artemis-III-EVA-2.md) | Second lunar surface EVA of Artemis III mission exploring shadowed crater |
-| [Artemis III Mission Encounter](Encounter-Artemis-III-Mission.md) | Encounter representing the entire Artemis III mission from launch to splashdown |
-| [Artemis III Mission Plan](PlanDefinition-Artemis-III-Mission-Plan.md) | Complete mission plan for Artemis III including phases, timelines, and EVA schedules |
-| [Artemis III Suit Provisioning](SupplyDelivery-ArtemisIII-SuitProvisioning-001.md) | EVA suit provisioning record for Artemis III lunar landing mission |
-| [Artemis III Translunar Radiation Exposure](Observation-Artemis-III-Translunar-Radiation.md) | Cumulative radiation dose during 4-day translunar cruise |
+| [Artemis IV EVA-1](Procedure-Artemis-IV-EVA-1.md) | First lunar surface EVA of Artemis IV mission at Malapert Massif |
+| [Artemis IV EVA-1 Radiation Exposure](Observation-Artemis-IV-EVA1-Radiation.md) | Radiation dose during first lunar surface EVA (6.5 hours unshielded) |
+| [Artemis IV EVA-2](Procedure-Artemis-IV-EVA-2.md) | Second lunar surface EVA of Artemis IV mission exploring shadowed crater |
+| [Artemis IV Mission Encounter](Encounter-Artemis-IV-Mission.md) | Encounter representing the entire Artemis IV mission from launch to splashdown |
+| [Artemis IV Mission Plan](PlanDefinition-Artemis-IV-Mission-Plan.md) | Complete mission plan for Artemis IV including phases, timelines, and EVA schedules |
+| [Artemis IV Suit Provisioning](SupplyDelivery-ArtemisIV-SuitProvisioning-001.md) | EVA suit provisioning record for Artemis IV lunar landing mission |
+| [Artemis IV Translunar Radiation Exposure](Observation-Artemis-IV-Translunar-Radiation.md) | Cumulative radiation dose during 4-day translunar cruise |
 | [Autonomous Medical Encounter - Appendicitis Sol 189](Encounter-Emergency-Appendicitis-Sol189.md) | Crew-led emergency appendectomy on Mars with 15-minute Earth communication delay |
 | [BFRT Pneumatic Cuff Device](Device-BFRT-Pneumatic-Cuff-001.md) | Pneumatic occlusion cuff for blood flow restriction training on ISS |
 | [BLiSS O2 Production Output](Observation-BLiSS-O2-Production-001.md) | Daily O2 production observation from algae photobioreactor |
+| [Barbecued beef brisket](Binary-artemis-018.md) |  |
 | [Biosphere 2 Undersea Habitat](Location-Biosphere2UnderseaHabitat.md) | University of Arizona Biosphere 2 analog training facility |
 | [Blue Origin West Texas Facility](Location-BlueOriginWestTexas.md) | Blue Origin suborbital flight operations |
 | [Body Temperature - Flight Day 30 Morning](Observation-Body-Temp-FD30-Morning.md) | Oral body temperature measurement on flight day 30 during morning circadian nadir |
 | [Boeing Starliner Calypso](Location-StarlinerCalypso.md) | Boeing CST-100 Starliner spacecraft |
+| [Breakfast sausage](Binary-artemis-014.md) |  |
+| [Broccoli au gratin](Binary-artemis-019.md) |  |
 | [Brooks Altitude Chamber](Location-BrooksAltitudeChamber.md) | High-altitude environmental training facility |
 | [Brooks School of Aerospace Medicine](Location-BrooksAerospaceMedicine.md) | USAF School of Aerospace Medicine hyperbaric facility |
 | [Butterfly iQ3 Ultrasound](Device-Butterfly-iQ3-001.md) | Butterfly iQ3 point-of-care ultrasound for IJV cross-sectional area and flow assessment |
+| [Butternut squash](Binary-artemis-023.md) |  |
 | [CGM Glucose Reading - Flight Day 15](Observation-CGM-Reading-FD15.md) | Single CGM glucose reading on flight day 15 with summary metrics |
 | [CHESA Undersea Laboratory](Location-CHESAUnderseaLaboratory.md) | Commercial underwater training facility |
 | [CSA David Florida Laboratory](Location-CSADavidFloridaLaboratory.md) | Canadian Space Agency testing facility |
 | [CSA Life Sciences Research](Location-CSALifeSciencesResearch.md) | Canadian Space Agency life sciences research division |
+| [Cake](Binary-artemis-038.md) |  |
+| [Candy-coated almonds](Binary-artemis-039.md) |  |
+| [Cashews](Binary-artemis-026.md) |  |
+| [Cauliflower](Binary-artemis-024.md) |  |
+| [Chocolate](Binary-artemis-037.md) |  |
+| [Chocolate breakfast drink](Binary-artemis-004.md) |  |
+| [Chocolate spread](Binary-artemis-028.md) |  |
+| [Cinnamon](Binary-artemis-035.md) |  |
+| [Cobbler](Binary-artemis-040.md) |  |
+| [Cocoa](Binary-artemis-010.md) |  |
+| [Coffee](Binary-artemis-001.md) |  |
 | [Condition - Asphyxiation](Condition-ConditionAsphyxiation.md) | Oxygen deprivation |
 | [Condition - Blunt Trauma](Condition-ConditionBluntTrauma.md) | Blunt injury (disorder) |
 | [Condition - Burn](Condition-ConditionBurn.md) | Burn injury (morphologic abnormality) |
@@ -588,10 +583,16 @@ These are example instances that show what data produced and consumed by systems
 | [Condition - Radiation Exposure](Condition-ConditionRadiationExposure.md) | Radiation exposure (rads) |
 | [Condition - Smoke Inhalation](Condition-ConditionSmokeInhalation.md) | Smoke inhalation injury (disorder) |
 | [Condition - Stroke](Condition-ConditionStroke.md) | Cerebrovascular accident (disorder) |
+| [Cookies](Binary-artemis-036.md) |  |
+| [Couscous with nuts](Binary-artemis-015.md) |  |
 | [Crew Dragon Endeavour](Location-CrewDragonEndeavour.md) | SpaceX Crew Dragon spacecraft Endeavour |
 | [Crew Dragon Resilience](Location-CrewDragonResilience.md) | SpaceX Crew Dragon spacecraft Resilience |
+| [Crew Personal Dosimeter (example)](Device-radiation-detector-example.md) | Electronic personal dosimeter worn by the example astronaut during an ISS increment. |
+| [Cumulative Radiation Dose - Outbound Transit](Observation-CumulativeDose-Transit.md) | Cumulative galactic cosmic radiation dose accumulated by Commander Chen during the 6-month outbound Earth-Mars transit |
+| [Cumulative Radiation Dose, ISS Expedition 75 (example)](Observation-cumulative-radiation-dose-example.md) | Dose-equivalent accumulated over the first 180 days of an ISS increment, with rolling-period and career totals. |
 | [DHMR Sterilization at 125C/50hr](Procedure-Sterilization-DHMR-001.md) | Dry heat microbial reduction sterilization of Mars lander component at 125°C for 50 hours |
 | [DLR Institute of Aerospace Medicine](Location-DLRAerospaceMedicine.md) | German Aerospace Center medical research institute |
+| [Daily Radiation Exposure, ISS Flight Day 45 (example)](Observation-space-radiation-exposure-example.md) | One day of dose-equivalent measured by the crew personal dosimeter, with organ-dose and dose-rate components. |
 | [Department of Defense](Organization-UsDeptOfDefence.md) | Organization - Department of Defense |
 | [Device - Air Lock](Device-DeviceAirLock.md) | Air Lock |
 | [Device - Ascent/Entry Spacesuit](Device-AscentEntrySpacesuit.md) | Ascent/Entry Spacesuit |
@@ -627,7 +628,11 @@ These are example instances that show what data produced and consumed by systems
 | [Example Neutral Buoyancy Training Session](Procedure-ExampleNeutralBuoyancySession.md) | Example of a typical neutral buoyancy training session |
 | [Example Training Dive Profile](Observation-ExampleDiveProfile.md) | Example dive profile from neutral buoyancy training |
 | [FDI Observation with All Components](Observation-FDI-Components-001.md) | Flow Directionality Index observation with all five component measurements |
+| [Granola with blueberries](Binary-artemis-017.md) |  |
+| [Green tea](Binary-artemis-002.md) |  |
 | [Habitat Environmental Conditions - Sol 125](Observation-HabitatEnvironment-Sol125.md) | Atmospheric monitoring inside Mars habitat on Sol 125 |
+| [Honey](Binary-artemis-034.md) |  |
+| [Hot sauce](Binary-artemis-031.md) |  |
 | [Hyperbaric Treatment Chamber](Location-HyperbaricChamberFacility.md) | Hyperbaric medicine treatment facility |
 | [IJV Flow During LBNP (FDI = 0.85)](Observation-IJV-Flow-During-LBNP-001.md) | Internal jugular vein flow observation with FDI of 0.85 during LBNP at -30 mmHg |
 | [ISRU Production Log - Sol 210](Observation-ISRU-Production-Sol210.md) | Cumulative propellant production by Sol 210 (7 months operation) |
@@ -668,6 +673,7 @@ These are example instances that show what data produced and consumed by systems
 | [Kennedy Space Center Medical Facility](Location-KSCMedicalFacility.md) | KSC astronaut medical support facility |
 | [LBNP Chamber Device](Device-LBNP-Chamber-001.md) | Lower body negative pressure chamber with -50 mmHg capability for parabolic flight campaign |
 | [LBNP Session at -30 mmHg During Microgravity](Procedure-LBNP-Session-Microgravity-001.md) | LBNP procedure at -30 mmHg during microgravity phase of 87th ESA Parabolic Flight Campaign |
+| [Lemonade](Binary-artemis-007.md) |  |
 | [Location - Airlock1](Location-LocationAirlock1.md) | Airlock 1 |
 | [Location - Artemis Space Camp](Location-LocationArtemisSpaceCamp.md) | Artemis space camp (Pending) |
 | [Location - Biosphere2](Location-LocationBiosphere2.md) | Biosphere 2 ecology dome at University of Arizona |
@@ -700,10 +706,15 @@ These are example instances that show what data produced and consumed by systems
 | [Lunar Gateway Power and Propulsion Element](Location-LunarGatewayPPE.md) | Lunar Gateway Power and Propulsion Element |
 | [Lunar South Pole Base](Location-LunarSouthPoleBases.md) | Permanent lunar base near the South Pole |
 | [Lunar Telemedicine Terminal](Device-Telemedicine-LunarTerminal-001.md) | Integrated telemedicine terminal for Artemis lunar surface operations |
-| [Malapert Massif Landing Site](Location-Malapert-Massif-Landing-Site.md) | Artemis III landing site at Malapert Massif, lunar south pole region |
+| [Macaroni & cheese](Binary-artemis-021.md) |  |
+| [Malapert Massif Landing Site](Location-Malapert-Massif-Landing-Site.md) | Artemis IV landing site at Malapert Massif, lunar south pole region |
+| [Mango salad](Binary-artemis-016.md) |  |
+| [Mango-peach smoothie](Binary-artemis-003.md) |  |
+| [Maple syrup](Binary-artemis-027.md) |  |
 | [Mars Ascent Vehicle](Location-MarsAscentVehicle.md) | Mars surface to orbit transport |
 | [Mars Base Alpha](Location-MarsBaseAlpha.md) | First permanent Mars surface base |
 | [Mars Crew Member - Commander Chen](Patient-MarsCrewMember1.md) | Example Mars crew member (Commander Sarah Chen) with baseline health data |
+| [Mars Crew Member - Mission Specialist Okafor](Patient-MarsCrewMember2.md) | Example Mars crew member (Mission Specialist Daniel Okafor), geologist and subject of the autonomous appendectomy encounter |
 | [Mars Direct Mission 2040](Encounter-MarsDirectMission2040.md) | Entire Mars Direct mission encounter (launch to splashdown) |
 | [Mars Direct Mission Plan 2040](PlanDefinition-MarsDirectMissionPlan2040.md) | Complete mission timeline for Mars Direct architecture mission |
 | [Mars EVA - Sol 147](Procedure-MarsEVA-Sol147.md) | Surface EVA to collect geological samples at crater rim, duration 6.5 hours |
@@ -713,7 +724,6 @@ These are example instances that show what data produced and consumed by systems
 | [Mayo Clinic Aerospace Medicine](Location-MayoAerospaceMedicine.md) | Mayo Clinic aerospace medicine and altitude research |
 | [Metabolomics Observation](Observation-Metabolomics-Observation-001.md) | Untargeted metabolomics analysis of dried blood spot from ISS crew member |
 | [NASA Ames Research Center](Location-NASAAmesResearchCenter.md) | NASA Ames centrifuge and spatial disorientation research |
-| [NASA Hyperbaric Facility](Location-NASAHyperbaricFacility.md) | NASA's hyperbaric chamber for diving medicine and space analog training |
 | [NASA Neutral Buoyancy Laboratory](Location-NASANeutralBuoyancyLaboratory.md) | NASA's Neutral Buoyancy Laboratory at Johnson Space Center, Houston, Texas |
 | [Naval Medical Research Unit](Location-NavalMedicalResearchUnit.md) | US Navy diving medicine and hyperbaric research facility |
 | [Neutral Buoyancy Facility Equipment](Device-NeutralBuoyancyFacilityEquipment.md) | Equipment used in neutral buoyancy training facility |
@@ -741,7 +751,9 @@ These are example instances that show what data produced and consumed by systems
 | [Patient - Space Engineer](Patient-space-engineer-1.md) | Patient - Space Engineer |
 | [Patient - Space Miner 1](Patient-spaceminer1.md) | Patient - Space Miner |
 | [Patuxent River Naval Air Station](Location-PatuxentRiverNavalAirStation.md) | US Navy Test Pilot School |
+| [Peanut butter](Binary-artemis-029.md) |  |
 | [Personalized Countermeasure Plan](CarePlan-PersonalizedPlan-001.md) | Individualized countermeasure plan based on metabolomics and genomics data |
+| [Pineapple drink](Binary-artemis-009.md) |  |
 | [Procedure - Bone Densitometry](Procedure-ProcedureBoneDensitometry.md) | Bone densitometry scan |
 | [Procedure - Compression](Procedure-ProcedureCompression.md) | Atmospheric compression of vehicle compartment |
 | [Procedure - Decompression](Procedure-ProcedureDecompression.md) | Decompression of vehicle compartment |
@@ -749,7 +761,9 @@ These are example instances that show what data produced and consumed by systems
 | [Procedure - Hearing Exam](Procedure-ProcedureHearingExam.md) | Hearing exam |
 | [Procedure - Ultrasound](Procedure-ProcedureUltrasound.md) | Ultrasound scan of the abdomen |
 | [Promethazine IM Rescue Dose](MedicationAdministration-Promethazine-IM-Rescue.md) | Intramuscular promethazine 25mg for acute SMS rescue on flight day 2 |
+| [Pudding](Binary-artemis-041.md) |  |
 | [Quadriceps CSA Outcome](Observation-BFRT-Quadriceps-CSA-001.md) | Quadriceps cross-sectional area measurement after 8 weeks of BFRT |
+| [Radiation Exposure Summary, ISS Expedition 75 (example)](DiagnosticReport-space-radiation-summary-example.md) | Increment radiation summary prepared by the flight surgeon from the daily and cumulative dose observations. |
 | [Radiation Risk Assessment - Post Outbound Transit](RiskAssessment-RadiationRisk-PostTransit.md) | Cancer risk assessment after 6-month outbound transit to Mars |
 | [Rapid Depressurization Event](Condition-Emergency-RapidDepress-001.md) | Rapid depressurization event on ISS requiring emergency response |
 | [Remote-Guided POCUS Request](ServiceRequest-Telemedicine-POCUS-Request-001.md) | Request for remote-guided point-of-care ultrasound from ISS CMO to ground radiologist |
@@ -767,19 +781,28 @@ These are example instances that show what data produced and consumed by systems
 | [SpaceX Hawthorne Factory](Location-SpaceXHawthorneFactory.md) | SpaceX manufacturing and mission control facility |
 | [SpaceX Starbase](Location-SpaceXBocaChica.md) | SpaceX Starship development and launch facility |
 | [Spaceport America](Location-VirginGalacticSpaceport.md) | Virgin Galactic commercial spaceport |
+| [Spicy green beans](Binary-artemis-020.md) |  |
+| [Spicy mustard](Binary-artemis-032.md) |  |
 | [Standard Measures Grip Strength - Pre-flight](Observation-Standard-Measures-Grip-PreFlight.md) | NASA Standard Measures grip strength assessment at L-30 days |
-| [Starship HLS for Artemis III](Device-Starship-HLS-Artemis-III.md) | SpaceX Starship Human Landing System variant for Artemis III lunar landing |
+| [Starship HLS for Artemis IV](Device-Starship-HLS-Artemis-IV.md) | SpaceX Starship Human Landing System variant for Artemis IV lunar landing |
 | [Store-and-Forward Telemedicine Encounter](Encounter-Telemedicine-StoreForward-001.md) | Store-and-forward dermatology consultation from ISS to ground |
+| [Strawberry breakfast drink](Binary-artemis-006.md) |  |
+| [Strawberry jam](Binary-artemis-033.md) |  |
 | [Sun-Earth L1 Observatory](Location-SunEarthL1Station.md) | Space weather monitoring station at L1 |
 | [Surface Swab CFU Assay](Observation-MicrobialAssay-SurfaceSwab-001.md) | Surface swab colony-forming unit assay of Mars lander deck panel |
+| [Tortillas](Binary-artemis-011.md) |  |
 | [Trauma EFAST Exam](Questionnaire-TraumaEFASTQuestionnaire.md) |  |
+| [Tropical fruit salad](Binary-artemis-022.md) |  |
 | [TsPK Centrifuge Complex](Location-NASCOMRussianCentrifuge.md) | Russian cosmonaut centrifuge training facility |
 | [UTMB Aerospace Medicine Research](Location-UTMBAerospaceResearch.md) | University of Texas Medical Branch aerospace medicine program |
 | [University of Pennsylvania Hyperbaric Center](Location-UniversityOfPennsylvaniaHyperbaric.md) | Academic hyperbaric medicine and research center |
 | [Urinary Retention After Promethazine](AdverseEvent-Urinary-Retention-Post-Promethazine.md) | Urinary retention adverse event 4 hours after promethazine IM administration |
+| [Vanilla breakfast drink](Binary-artemis-005.md) |  |
+| [Vegetable quiche](Binary-artemis-013.md) |  |
+| [Wheat flat bread](Binary-artemis-012.md) |  |
 | [Wright-Patterson Aerospace Research Laboratory](Location-WrightPattersonAerospaceResearch.md) | USAF aerospace medicine research facility |
 | [Yuri Gagarin Cosmonaut Training Center](Location-YuriGagarinCosmonautTrainingCenter.md) | Russian cosmonaut training facility with underwater training capabilities |
-| [xEMU EVA Suit #001](Device-xEMU-Suit-001.md) | First xEMU suit certified for Artemis III lunar surface EVAs |
+| [xEMU EVA Suit #001](Device-xEMU-Suit-001.md) | First xEMU suit certified for Artemis IV lunar surface EVAs |
 | [xEVAS Lunar Suit Definition](DeviceDefinition-xEVAS-LunarSuit-Def-001.md) | Axiom Space xEVAS suit definition for Artemis lunar surface operations |
 
 ### Other 
@@ -788,5 +811,5 @@ These are resources that are used within this implementation guide that do not f
 
 | | |
 | :--- | :--- |
-| [Nutrition Product](StructureDefinition-NutritionProduct.md) | A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide. |
+| [NASA Hyperbaric Facility](Location-NASAHyperbaricFacility.md) | NASA's hyperbaric chamber for diving medicine and space analog training |
 

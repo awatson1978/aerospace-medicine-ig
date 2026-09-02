@@ -1,4 +1,4 @@
-# LBNP Chamber Device - v0.6.2
+# LBNP Chamber Device - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Device: LBNP Chamber Device
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [LBNP Countermeasure System](StructureDefinition-lbnp-countermeasure-system.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -41,8 +45,16 @@ Profile: [LBNP Countermeasure System](StructureDefinition-lbnp-countermeasure-sy
   "resourceType" : "Device",
   "id" : "LBNP-Chamber-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/lbnp-countermeasure-system"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lbnp-countermeasure-system"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "active",

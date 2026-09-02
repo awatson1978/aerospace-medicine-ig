@@ -1,4 +1,4 @@
-# Patient Monitoring - v0.6.2
+# Patient Monitoring - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:PatientMonitoring |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/patient-monitoring | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:PatientMonitoring |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Continuous patient monitoring during hyperbaric treatment
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-patient-monitoring.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "patient-monitoring",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/patient-monitoring",
+  "version" : "0.7.0",
   "name" : "PatientMonitoring",
   "title" : "Patient Monitoring",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-monitoring.c
     }
   ],
   "description" : "Continuous patient monitoring during hyperbaric treatment",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-monitoring.c
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-patient-monitoring.c
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/patient-monitoring"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/patient-monitoring"
       },
       {
         "id" : "Extension.value[x]",

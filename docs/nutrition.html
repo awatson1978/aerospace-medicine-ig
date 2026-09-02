@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Nutrition -  v0.6.2</title>
+    <title>Nutrition - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15"}
-    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Nutrition</h2>
   
 
@@ -260,32 +260,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#nutrition-and-calorie-deficient-diets" id="markdown-toc-nutrition-and-calorie-deficient-diets">Nutrition and Calorie-Deficient Diets</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
-      <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a></li>
-      <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
-      <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
-      <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
-      <li><a href="#artemis-ii-crew-menu" id="markdown-toc-artemis-ii-crew-menu">Artemis II Crew Menu</a></li>
-      <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a></li>
-      <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
-      <li><a href="#implementation-examples" id="markdown-toc-implementation-examples">Implementation Examples</a></li>
-      <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
-      <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#fhir-implementation-architecture" id="markdown-toc-fhir-implementation-architecture">FHIR Implementation Architecture</a></li>
+  <li><a href="#physiologic-and-environmental-considerations" id="markdown-toc-physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</a></li>
+  <li><a href="#monitoring-strategy" id="markdown-toc-monitoring-strategy">Monitoring Strategy</a></li>
+  <li><a href="#data-model-architecture" id="markdown-toc-data-model-architecture">Data Model Architecture</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+  <li><a href="#artemis-ii-crew-menu" id="markdown-toc-artemis-ii-crew-menu">Artemis II Crew Menu</a></li>
+  <li><a href="#enhanced-data-collection" id="markdown-toc-enhanced-data-collection">Enhanced Data Collection</a></li>
+  <li><a href="#integration-with-existing-systems" id="markdown-toc-integration-with-existing-systems">Integration with Existing Systems</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#regulatory-and-standards-alignment" id="markdown-toc-regulatory-and-standards-alignment">Regulatory and Standards Alignment</a></li>
+  <li><a href="#future-directions" id="markdown-toc-future-directions">Future Directions</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-<h2 id="nutrition-and-calorie-deficient-diets">Nutrition and Calorie-Deficient Diets</h2>
-
 <h3 id="overview">Overview</h3>
 
-<p>When the crew of <strong>Biosphere 2</strong> emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited <strong>improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity</strong>findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: <strong>astronauts often operate at an energetic deficit</strong>, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.</p>
+<p>When the crew of <strong>Biosphere 2</strong> emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited <strong>improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity</strong>—findings later championed by Dr. Roy Walford and colleagues at UCLA. Their experiment foreshadowed a truth that space agencies now confront directly: <strong>astronauts often operate at an energetic deficit</strong>, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.</p>
 
-<p>On the <strong>International Space Station</strong>, astronauts routinely burn <strong>2,5003,500 kcal/day</strong> yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.</p>
+<p>On the <strong>International Space Station</strong>, astronauts routinely burn <strong>2,500–3,500 kcal/day</strong> yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.</p>
 
 <h3 id="fhir-implementation-architecture">FHIR Implementation Architecture</h3>
 
@@ -301,34 +296,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><strong>SpaceNutritionIntake</strong></td>
+      <td><a href="StructureDefinition-space-nutrition-intake.html">SpaceNutritionIntake</a></td>
       <td>Document actual daily intake and hydration events</td>
       <td>Macronutrient breakdown, micronutrient sufficiency, hydration type/volume, route</td>
     </tr>
     <tr>
-      <td><strong>SpaceNutritionProduct</strong></td>
+      <td><a href="StructureDefinition-space-nutrition-product.html">SpaceNutritionProduct</a></td>
       <td>Describe space-rated food, supplements, electrolytes</td>
       <td>Shelf-life, rehydration requirements, preparation method, hazard analysis</td>
     </tr>
     <tr>
-      <td><strong>SpaceNutritionInventoryItem</strong></td>
+      <td><a href="StructureDefinition-space-nutrition-inventory-item.html">SpaceNutritionInventoryItem</a></td>
       <td>Track stores aboard spacecraft or planetary habitats</td>
       <td>Lot number, mass, burn rate, expired/shortage flags</td>
     </tr>
     <tr>
-      <td><strong>CalorieDeficitAssessment</strong></td>
+      <td><a href="StructureDefinition-calorie-deficit-assessment.html">CalorieDeficitAssessment</a></td>
       <td>Quantify acute and cumulative calorie deficits</td>
       <td>Resting metabolic rate, total expenditure, intake vs. requirement</td>
     </tr>
     <tr>
-      <td><strong>MetabolicRiskSummary</strong></td>
+      <td><a href="StructureDefinition-hydration-status-observation.html">HydrationStatusObservation</a></td>
+      <td>Record hydration events and fluid balance</td>
+      <td>Fluid type, volume in UCUM units, hydration deficit extension</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-metabolic-risk-summary.html">MetabolicRiskSummary</a></td>
       <td>Evaluate risk from prolonged deficits</td>
       <td>Muscle wasting, bone turnover, hormonal signs of underfeeding</td>
     </tr>
   </tbody>
 </table>
 
-<p>These profiles parallel the architectural pattern used in radiation trackingseparating individual measurement, device/product specification, and longitudinal summaries.</p>
+<p>These profiles parallel the architectural pattern used in radiation tracking—separating individual measurement, device/product specification, and longitudinal summaries.</p>
 
 <h4 id="data-architecture">Data Architecture</h4>
 
@@ -358,7 +358,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong><a href="ValueSet-hydration-type-vs.html">HydrationTypeVS</a></strong>: ValueSet for hydration types</li>
   <li><strong><a href="CodeSystem-nutrition-inventory-status-cs.html">NutritionInventoryStatusCS</a></strong>: adequate, low, critical, expired</li>
   <li><strong><a href="ValueSet-nutrition-inventory-status-vs.html">NutritionInventoryStatusVS</a></strong>: ValueSet for inventory status</li>
-  <li><strong><a href="ValueSet-calorie-deficit-risk-vs.html">CalorieDeficitRiskVS</a></strong>: mild (&lt;300 kcal/day), moderate (300–600), severe (&gt;600), extreme (&gt;1,000 kcal/day)</li>
+  <li><strong><a href="CodeSystem-calorie-deficit-risk-cs.html">CalorieDeficitRiskCS</a></strong> and <strong><a href="ValueSet-calorie-deficit-risk-vs.html">CalorieDeficitRiskVS</a></strong>: mild (&lt;300 kcal/day), moderate (300-600), severe (&gt;600), extreme (&gt;1,000 kcal/day)</li>
 </ul>
 
 <p>Integration with existing terminologies:</p>
@@ -370,7 +370,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="physiologic-and-environmental-considerations">Physiologic and Environmental Considerations</h3>
 
-<p>Caloric deficit in space is not merely a dietary inconvenienceit is a <strong>whole-system physiologic perturbation</strong>. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutritiona constant battle between physiologic needs and environmental constraints.</p>
+<p>Caloric deficit in space is not merely a dietary inconvenience—it is a <strong>whole-system physiologic perturbation</strong>. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutrition—a constant battle between physiologic needs and environmental constraints.</p>
 
 <h4 id="microgravity-effects">Microgravity Effects</h4>
 
@@ -382,13 +382,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="energy-expenditure">Energy Expenditure</h4>
 
 <ul>
-  <li>Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by <strong>400800 kcal/day</strong>, especially during EVA prep</li>
+  <li>Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by <strong>400–800 kcal/day</strong>, especially during EVA prep</li>
   <li>Planetary surface operations (Moon/Mars) significantly increase caloric expenditure due to suit mass and reduced-but-nonzero gravity</li>
 </ul>
 
 <h4 id="cognitive-and-immune-function">Cognitive and Immune Function</h4>
 
-<p>Chronic deficits degrade reaction time, stress tolerance, and immune resistancecritical for long-duration missions.</p>
+<p>Chronic deficits degrade reaction time, stress tolerance, and immune resistance—critical for long-duration missions.</p>
 
 <h4 id="hydration">Hydration</h4>
 
@@ -396,15 +396,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="biosphere-2-as-an-analog">Biosphere 2 as an Analog</h4>
 
-<p>Long-term calorie deficit produced <strong>improved metabolic markers</strong> but also measurable <strong>loss of lean mass</strong>requiring careful management in space analogs and missions.</p>
+<p>Long-term calorie deficit produced <strong>improved metabolic markers</strong> but also measurable <strong>loss of lean mass</strong>—requiring careful management in space analogs and missions.</p>
 
 <h3 id="monitoring-strategy">Monitoring Strategy</h3>
 
-<p>Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picturecombining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.</p>
+<p>Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picture—combining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.</p>
 
 <h4 id="daily-macronutrient-logging">Daily Macronutrient Logging</h4>
 
-<p>Recorded via SpaceNutritionIntake. Includes caloric estimation error margins.</p>
+<p>Recorded via <a href="StructureDefinition-space-nutrition-intake.html">SpaceNutritionIntake</a> observations. Each entry carries the caloric estimation error margin alongside the estimate, because in-flight intake is reconstructed from packaging and crew report rather than weighed.</p>
 
 <h4 id="device-assisted-measurement">Device-Assisted Measurement</h4>
 
@@ -420,7 +420,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Weight, circumferences</li>
   <li>Bone turnover markers (CTX, P1NP)</li>
   <li>Resting Metabolic Rate (portable indirect calorimetry)</li>
-  <li>Hydration biomarkers: urine osmolality, Naz/Kz balance</li>
+  <li>Hydration biomarkers: urine osmolality, Na⁺/K⁺ balance</li>
 </ul>
 
 <h4 id="inventory-telemetry">Inventory Telemetry</h4>
@@ -429,10 +429,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="risk-threshold-alerts">Risk Threshold Alerts</h4>
 
+<p>The alert thresholds below are the ones this guide uses in its worked examples. They are illustrative operational triggers, not published limits: the deficit band comes from the risk levels in <a href="CodeSystem-calorie-deficit-risk-cs.html">CalorieDeficitRiskCS</a>, and the protein floor is the lower end of the 1.2-1.7 g/kg/day intake range NASA's nutritional requirements describe for spaceflight (Smith, Zwart and Heer). Any operational deployment should re-derive them from the flight surgeon's own standards.</p>
+
 <ul>
-  <li>Greater than 600 kcal/day deficit for 3 consecutive days</li>
-  <li>Less than 1.2 g/kg protein</li>
-  <li>Fluid deficit greater than 1.5 L/day</li>
+  <li>Sustained deficit greater than 600 kcal/day for 3 consecutive days (the "severe" band)</li>
+  <li>Protein intake below 1.2 g/kg body weight per day</li>
+  <li>Net fluid deficit greater than 1.5 L/day</li>
 </ul>
 
 <p>Alerts feed mission control decision algorithms.</p>
@@ -442,20 +444,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="core-fhir-resources">Core FHIR Resources</h4>
 
 <ul>
-  <li><strong>NutritionIntake</strong> —SpaceNutritionIntake</li>
-  <li><strong>NutritionProduct</strong> —SpaceNutritionProduct</li>
-  <li><strong>Observation</strong> —CalorieDeficitAssessment, HydrationStatusObservation</li>
-  <li><strong>InventoryItem</strong> —SpaceNutritionInventoryItem</li>
-  <li><strong>DiagnosticReport</strong> —MetabolicRiskSummary</li>
+  <li><strong>Observation</strong> — <a href="StructureDefinition-space-nutrition-intake.html">SpaceNutritionIntake</a>, <a href="StructureDefinition-calorie-deficit-assessment.html">CalorieDeficitAssessment</a>, <a href="StructureDefinition-hydration-status-observation.html">HydrationStatusObservation</a></li>
+  <li><strong>Medication</strong> — <a href="StructureDefinition-space-nutrition-product.html">SpaceNutritionProduct</a></li>
+  <li><strong>Basic</strong> — <a href="StructureDefinition-space-nutrition-inventory-item.html">SpaceNutritionInventoryItem</a></li>
+  <li><strong>DiagnosticReport</strong> — <a href="StructureDefinition-metabolic-risk-summary.html">MetabolicRiskSummary</a></li>
 </ul>
+
+<p>FHIR R5 introduces dedicated <code class="language-plaintext highlighter-rouge">NutritionIntake</code>, <code class="language-plaintext highlighter-rouge">NutritionProduct</code>, and <code class="language-plaintext highlighter-rouge">InventoryItem</code> resources for exactly these purposes. This guide is built on R4, so intake is carried as an Observation, the product as a Medication, and inventory as a Basic resource; the guide also carries a <a href="StructureDefinition-NutritionProduct.html">NutritionProduct logical model</a>, mirroring the <a href="https://hl7.org/fhir/R5/nutritionproduct.html">R5 resource</a>, for the Artemis II menu below. A future R5 version of the guide would move these three onto the native resources.</p>
 
 <h4 id="extensions">Extensions</h4>
 
 <ul>
-  <li><strong>missionContext</strong> (consistent with radiation and NBL modules)</li>
-  <li><strong>energyExpenditure</strong> (kcal/day)</li>
-  <li><strong>hydrationDeficit</strong> (L/day)</li>
-  <li><strong>inventoryRiskFlag</strong> (critical, caution, nominal)</li>
+  <li><a href="StructureDefinition-mission-context.html">MissionContext</a> — reference to the mission Encounter (consistent with the radiation and neutral-buoyancy modules)</li>
+  <li><a href="StructureDefinition-energy-expenditure.html">EnergyExpenditure</a> — total daily energy expenditure (kcal/day)</li>
+  <li><a href="StructureDefinition-hydration-deficit.html">HydrationDeficit</a> — daily fluid deficit (L/day)</li>
+  <li><a href="StructureDefinition-inventory-risk-flag.html">InventoryRiskFlag</a> — critical, caution, nominal</li>
+  <li><a href="StructureDefinition-rehydration-requirement.html">RehydrationRequirement</a> and <a href="StructureDefinition-shelf-life-decay.html">ShelfLifeDecay</a> — water needed to prepare a product, and its degradation rate in space conditions</li>
 </ul>
 
 <h3 id="use-cases">Use Cases</h3>
@@ -488,7 +492,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="artemis-ii-crew-menu">Artemis II Crew Menu</h3>
 
-<p>NASA published the crew menu for the <strong>Artemis II</strong> mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories, each modeled as a FHIR <a href="https://hl7.org/fhir/R5/nutritionproduct.html">NutritionProduct</a> resource in this IG.</p>
+<p>NASA published the crew menu for the <strong>Artemis II</strong> mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories. Each is modeled as an instance of this guide's <a href="StructureDefinition-NutritionProduct.html">NutritionProduct logical model</a>; the resource is native to <a href="https://hl7.org/fhir/R5/nutritionproduct.html">FHIR R5</a> and does not exist in R4, so the guide carries a logical model of it rather than referencing the R5 resource directly.</p>
 
 <table>
   <thead>
@@ -543,11 +547,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>These resources are available for bulk download as <a href="Artemis.NutritionProducts.ndjson">Artemis.NutritionProducts.ndjson</a> on the <a href="downloads.html">Downloads</a> page.</p>
 
-<p><strong>Sources:</strong></p>
-<ul>
-  <li><a href="https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/">Artemis II: What's on the Menu?</a></li>
-  <li><a href="https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png">Artemis II - Crew Menu Infographic</a></li>
-</ul>
+<p>The menu items and categories are taken from NASA's published Artemis II menu material, cited in the References section below.</p>
 
 <h3 id="enhanced-data-collection">Enhanced Data Collection</h3>
 
@@ -605,90 +605,198 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>FHIR InventoryItem records synchronize with manifest systems for lunar/Mars surface caches</li>
 </ul>
 
-<h3 id="implementation-examples">Implementation Examples</h3>
+<h3 id="examples">Examples</h3>
 
-<h4 id="example-1-spacenutritionintake">Example 1: SpaceNutritionIntake</h4>
+<p>No FSH example instances exist for the nutrition profiles yet, so the two JSON blocks below are illustrative rather than published instances: they show the shape a conforming resource takes, using this guide's single example patient (<code class="language-plaintext highlighter-rouge">Patient/ExampleAstronaut</code>) and the ISS Expedition 75 in-flight encounter that the exercise examples also use.</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NutritionIntake"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-nutrition-intake"</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w"> </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"occurenceDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T12:30:00Z"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"consumedItem"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"nutritionProduct"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NutritionProduct/FD-Lasagna-01"</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"package"</span><span class="w"> </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"nutrient"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"nutrientCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Energy"</span><span class="w"> </span><span class="p">},</span><span class="w">
-          </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">420</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w"> </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"nutrientCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Protein"</span><span class="w"> </span><span class="p">},</span><span class="w">
-          </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w"> </span><span class="p">}</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"nutrientCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carbohydrate"</span><span class="w"> </span><span class="p">},</span><span class="w">
-          </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w"> </span><span class="p">}</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">]</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">],</span><span class="w">
-  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iss-expedition-72"</span><span class="w">
-    </span><span class="p">}</span><span class="w">
-  </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
+<h4 id="example-1-space-nutrition-intake-illustrative">Example 1: Space Nutrition Intake (illustrative)</h4>
 
-<h4 id="example-2-caloriedeficitassessment">Example 2: CalorieDeficitAssessment</h4>
+<p>A single rehydratable meal logged as an Observation. FHIR R4 has no <code class="language-plaintext highlighter-rouge">NutritionIntake</code> resource, so intake is carried as an Observation coded from <a href="CodeSystem-macronutrient-metrics-cs.html">MacronutrientMetricsCS</a>, with the macronutrient breakdown in components.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/calorie-deficit-assessment"</span><span class="w">
+      </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-nutrition-intake"</span><span class="w">
     </span><span class="p">]</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"226379006"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nutrition and dietetics procedure (procedure)"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
   </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
     </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calorie-deficit"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Daily Calorie Balance"</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calorie-intake"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calorie Intake"</span><span class="w">
       </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Freeze-dried lasagna, midday meal"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/AstronautExample"</span><span class="w"> </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T23:59:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/ExampleAstronaut"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T12:30:00Z"</span><span class="p">,</span><span class="w">
   </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">-650</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">420</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Energy Expenditure"</span><span class="w"> </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">3100</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://loinc.org"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2692-2"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Protein [Mass/volume] in Serum or Plasma"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">28</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
     </span><span class="p">},</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Energy Intake"</span><span class="w"> </span><span class="p">},</span><span class="w">
-      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">2450</span><span class="p">,</span><span class="w"> </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w"> </span><span class="p">}</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"carbohydrate-grams"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Carbohydrate Intake (grams)"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">45</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fat-grams"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fat Intake (grams)"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"g"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">],</span><span class="w">
   </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eva-day"</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Encounter/ISS-Exp75-InFlight"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="example-2-calorie-deficit-assessment-illustrative">Example 2: Calorie Deficit Assessment (illustrative)</h4>
+
+<p>The end-of-day balance for the same crewmember. The value is the signed daily balance; the two components carry the expenditure and intake it was derived from, so the arithmetic (2,450 − 3,100 = −650 kcal) is checkable. A deficit of this size falls in the "severe" band of <a href="CodeSystem-calorie-deficit-risk-cs.html">CalorieDeficitRiskCS</a>.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"profile"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/calorie-deficit-assessment"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://snomed.info/sct"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"182922004"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dietary regime (regime/therapy)"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calorie-deficit"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calorie Deficit"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Daily calorie balance"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/ExampleAstronaut"</span><span class="w"> </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2025-06-01T23:59:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">-650</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"component"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calorie-expenditure"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calorie Expenditure"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">3100</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calorie-intake"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Calorie Intake"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"valueQuantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">2450</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"kcal"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Encounter/ISS-Exp75-InFlight"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
@@ -742,6 +850,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="space-food-systems-and-standards">Space Food Systems and Standards</h4>
 
 <ul>
+  <li><a href="https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/">Artemis II: What's on the Menu? - NASA</a></li>
+  <li>NASA. Artemis II Crew Menu Infographic. NP-2026-01-001-JSC, March 2026: <a href="https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png">https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png</a></li>
+  <li>Smith SM, Zwart SR, Heer M. <em>Human Adaptation to Spaceflight: The Role of Nutrition.</em> NASA Johnson Space Center, NP-2014-10-018-JSC, 2014. Source for the spaceflight protein intake range and nutritional requirement context used in the risk thresholds above.</li>
   <li><a href="https://www.nasa.gov/directorates/esdmd/hhp/space-food-systems/">Space Food Systems - NASA</a></li>
   <li><a href="https://www.nasa.gov/sites/default/files/atoms/files/food_for_space_flight_tagged.pdf">NASA's Food for Space Flight</a></li>
   <li><a href="https://www.nasa.gov/history/space-station-20th-food-on-iss/">Space Station 20th: Food on ISS</a></li>
@@ -799,7 +910,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

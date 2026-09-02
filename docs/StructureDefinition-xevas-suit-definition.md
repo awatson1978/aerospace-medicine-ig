@@ -1,4 +1,4 @@
-# xEVAS Suit Definition - v0.6.2
+# xEVAS Suit Definition - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:XEVASSuitDefinition |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/xevas-suit-definition | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:XEVASSuitDefinition |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Definition of an Exploration Extravehicular Activity Suit (xEVAS) including model, capabilities, and operational parameters 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-xevas-suit-definitio
 {
   "resourceType" : "StructureDefinition",
   "id" : "xevas-suit-definition",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/xevas-suit-definition",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/xevas-suit-definition",
+  "version" : "0.7.0",
   "name" : "XEVASSuitDefinition",
   "title" : "xEVAS Suit Definition",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-xevas-suit-definitio
     }
   ],
   "description" : "Definition of an Exploration Extravehicular Activity Suit (xEVAS) including model, capabilities, and operational parameters",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -103,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-xevas-suit-definitio
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],

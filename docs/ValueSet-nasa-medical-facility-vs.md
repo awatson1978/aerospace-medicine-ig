@@ -1,15 +1,16 @@
-# NASA Medical Facilities - v0.6.2
+# NASA Medical Facilities - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **NASA Medical Facilities**
 
-## ValueSet: NASA Medical Facilities 
+## ValueSet: NASA Medical Facilities (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/nasa-medical-facility-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:NASAMedicalFacilityVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-medical-facility-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:NASAMedicalFacilityVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Value set for medical testing facility locations. 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "nasa-medical-facility-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/nasa-medical-facility-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-medical-facility-vs",
+  "version" : "0.7.0",
   "name" : "NASAMedicalFacilityVS",
   "title" : "NASA Medical Facilities",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   ],
   "description" : "Value set for medical testing facility locations.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs"
       }
     ]
   }

@@ -1,4 +1,4 @@
-# Antiemetic Medication Administration - v0.6.2
+# Antiemetic Medication Administration - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-administration | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AntiemeticAdministration |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-administration | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AntiemeticAdministration |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Record of antiemetic medication administration during space missions 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
 {
   "resourceType" : "StructureDefinition",
   "id" : "antiemetic-administration",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-administration",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-administration",
+  "version" : "0.7.0",
   "name" : "AntiemeticAdministration",
   "title" : "Antiemetic Medication Administration",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
     }
   ],
   "description" : "Record of antiemetic medication administration during space missions",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -118,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -134,7 +136,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -165,7 +167,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/antiemetic-medication"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/antiemetic-medication"
             ]
           }
         ],
@@ -184,7 +186,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/antiemetic-medication-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/antiemetic-medication-vs"
         }
       },
       {
@@ -194,7 +196,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -213,7 +215,7 @@ Other representations of profile: [CSV](StructureDefinition-antiemetic-administr
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/space-motion-sickness-condition"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-motion-sickness-condition"
             ]
           }
         ],

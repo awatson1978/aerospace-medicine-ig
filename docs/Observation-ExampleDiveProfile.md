@@ -1,4 +1,4 @@
-# Example Training Dive Profile - v0.6.2
+# Example Training Dive Profile - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,21 +6,25 @@
 
 ## Example Observation: Example Training Dive Profile
 
-Profile: [Dive Profile](StructureDefinition-DiveProfile.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Dive Profile](StructureDefinition-dive-profile.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
-**code**: Dive profile
+**code**: Dive Profile
 
 **subject**: [Catherine Janeway (no stated gender), DoB Unknown](Patient-janeway.md)
 
 **effective**: 2025-06-01 09:30:00+0000
 
-> **component****code**:Maximum depth**value**: 12 m(Details: UCUM codem = 'm')
+> **component****code**:Maximum Depth**value**: 12 m(Details: UCUM codem = 'm')
 
-> **component****code**:Bottom time**value**: 180 min(Details: UCUM codemin = 'min')
+> **component****code**:Bottom Time**value**: 180 min(Details: UCUM codemin = 'min')
 
-> **component****code**:Water temperature**value**: 26 Cel(Details: UCUM codeCel = 'Cel')
+> **component****code**:Water Temperature**value**: 26 Cel(Details: UCUM codeCel = 'Cel')
 
 
 
@@ -31,17 +35,25 @@ Profile: [Dive Profile](StructureDefinition-DiveProfile.md)
   "resourceType" : "Observation",
   "id" : "ExampleDiveProfile",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/DiveProfile"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/dive-profile"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "LA6156-8",
-        "display" : "Dive profile"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
+        "code" : "dive-profile",
+        "display" : "Dive Profile"
       }
     ]
   },
@@ -54,9 +66,9 @@ Profile: [Dive Profile](StructureDefinition-DiveProfile.md)
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "33747-0",
-            "display" : "Maximum depth"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
+            "code" : "maximum-depth",
+            "display" : "Maximum Depth"
           }
         ]
       },
@@ -70,9 +82,9 @@ Profile: [Dive Profile](StructureDefinition-DiveProfile.md)
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LA6157-6",
-            "display" : "Bottom time"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
+            "code" : "bottom-time",
+            "display" : "Bottom Time"
           }
         ]
       },
@@ -86,9 +98,9 @@ Profile: [Dive Profile](StructureDefinition-DiveProfile.md)
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "33746-2",
-            "display" : "Water temperature"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs",
+            "code" : "water-temperature",
+            "display" : "Water Temperature"
           }
         ]
       },

@@ -1,18 +1,19 @@
-# All Artemis Devices - v0.6.2
+# All Artemis Devices - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **All Artemis Devices**
 
-## ValueSet: All Artemis Devices 
+## ValueSet: All Artemis Devices (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-all-devices-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:ArtemisAllDevicesVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-all-devices-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:ArtemisAllDevicesVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Both certified and prototype Artemis devices 
+Both certified and prototype Artemis devices (the complete Artemis device inventory) 
 
  **References** 
 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "artemis-all-devices-vs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-all-devices-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-all-devices-vs",
+  "version" : "0.7.0",
   "name" : "ArtemisAllDevicesVS",
   "title" : "All Artemis Devices",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -64,14 +65,15 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       ]
     }
   ],
-  "description" : "Both certified and prototype Artemis devices",
+  "description" : "Both certified and prototype Artemis devices (the complete Artemis device inventory)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"
       },
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs"
       }
     ]
   }

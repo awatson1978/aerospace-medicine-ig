@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Blood Flow Restriction Training -  v0.6.2</title>
+    <title>Blood Flow Restriction Training - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"20"}
-    h3,h4,h5,h6{--heading-prefix:"20"}</style>
+    <style type="text/css">h2{--heading-prefix:"19"}
+    h3,h4,h5,h6{--heading-prefix:"19"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Blood Flow Restriction Training</h2>
   
 
@@ -260,40 +260,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#blood-flow-restriction-training-bfrt-as-a-microgravity-countermeasure" id="markdown-toc-blood-flow-restriction-training-bfrt-as-a-microgravity-countermeasure">Blood Flow Restriction Training (BFRT) as a Microgravity Countermeasure</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#key-physiologic-rationale" id="markdown-toc-key-physiologic-rationale">Key Physiologic Rationale</a></li>
-      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
-          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
-          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
-          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
-        </ul>
-      </li>
-      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#key-physiologic-rationale" id="markdown-toc-key-physiologic-rationale">Key Physiologic Rationale</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+  <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
 
-<h1 id="blood-flow-restriction-training-bfrt-as-a-microgravity-countermeasure">Blood Flow Restriction Training (BFRT) as a Microgravity Countermeasure</h1>
+<h3 id="overview">Overview</h3>
 
-<h2 id="overview">Overview</h2>
-<p>Blood Flow Restriction Training (BFRT) applies controlled occlusion to limbs during low-load resistance exercise, inducing metabolic stress and muscle hypertrophy with significantly reduced mechanical load and equipment mass. In microgravity, where traditional high-load resistance exercise is constrained by vehicle mass/power limits, BFRT offers a promising countermeasure against muscle atrophy and bone loss.</p>
+<p>Blood Flow Restriction Training (BFRT) applies controlled occlusion to limbs during low-load resistance exercise, inducing metabolic stress and muscle hypertrophy with significantly reduced mechanical load and equipment mass. In microgravity, where traditional high-load resistance exercise is constrained by vehicle mass and power limits, BFRT offers a promising countermeasure against muscle atrophy and bone loss.</p>
 
-<p>Evidence from npj Microgravity (2026) and related HRP studies demonstrates BFRT’s efficacy for preserving muscle cross-sectional area (CSA), bone biomarkers (P1NP, CTX), and muscle thickness with minimal hardware. This page defines FHIR profiles to standardize BFRT device configurations, session procedures, prescribed protocols, outcome measurements, and integrated care plans.</p>
+<p>A 2025 review in <em>npj Microgravity</em> (Hu et al.) and related Human Research Program (HRP) studies summarize evidence that BFRT can help preserve muscle cross-sectional area (CSA), bone turnover biomarkers (P1NP, CTX), and muscle thickness with minimal hardware. This page defines FHIR profiles to standardize BFRT device configurations, session procedures, prescribed protocols, outcome measurements, and integrated care plans.</p>
 
-<h2 id="key-physiologic-rationale">Key Physiologic Rationale</h2>
+<h3 id="key-physiologic-rationale">Key Physiologic Rationale</h3>
+
 <ul>
-  <li>Low-load exercise (20–30 % of 1RM) + occlusion (40–80 % limb occlusion pressure) triggers anabolic signaling comparable to high-load training</li>
-  <li>Sex-specific adaptations (e.g., cuff pressure, session volume) are critical in microgravity due to fluid shifts and cardiovascular deconditioning</li>
-  <li>Dual benefit: muscle preservation + bone loading with reduced injury risk</li>
+  <li>Low-load exercise (20–30% of one-repetition maximum, 1RM) combined with occlusion (40–80% of limb occlusion pressure) triggers anabolic signaling comparable to high-load training (Hu et al., 2025; Hackney et al., 2019)</li>
+  <li>Sex-specific adaptations (e.g., cuff pressure, session volume) are important in microgravity because of fluid shifts and cardiovascular deconditioning</li>
+  <li>Dual benefit: muscle preservation plus bone loading with reduced injury risk</li>
 </ul>
 
-<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
 
-<h3 id="recommended-resources">Recommended Resources</h3>
+<h4 id="recommended-resources">Recommended Resources</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Device</code> – occlusion cuffs and monitoring hardware</li>
   <li><code class="language-plaintext highlighter-rouge">Procedure</code> – individual BFRT sessions</li>
@@ -302,31 +296,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">CarePlan</code> – integrated countermeasure regimen</li>
 </ul>
 
-<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
-<p><strong>Core Profiles</strong></p>
+<h4 id="core-profiles">Core Profiles</h4>
+
 <ul>
-  <li><strong><code class="language-plaintext highlighter-rouge">BFRTDevice</code></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
+  <li><strong><a href="StructureDefinition-bfrt-device.html">BFRT Device</a></strong> – Extends <code class="language-plaintext highlighter-rouge">Device</code> with:
     <ul>
       <li>Cuff type (pneumatic, intelligent, elastic wrap)</li>
       <li>Limb (upper/lower), target occlusion pressure, safety limits</li>
       <li>Integrated sensors (pressure, heart rate, EMG)</li>
     </ul>
   </li>
-  <li><strong><code class="language-plaintext highlighter-rouge">BFRTProcedure</code></strong> – Documents a single BFRT session with:
+  <li><strong><a href="StructureDefinition-bfrt-procedure.html">BFRT Procedure</a></strong> – Documents a single BFRT session with:
     <ul>
-      <li>Occlusion pressure, inflation/deflation timing, exercise modality</li>
+      <li>Occlusion pressure (via the <a href="StructureDefinition-occlusion-pressure.html">Occlusion Pressure</a> extension), inflation/deflation timing, exercise modality</li>
       <li>Gravity context (microgravity, lunar, Martian)</li>
       <li>Real-time monitoring and adverse event flags</li>
     </ul>
   </li>
-  <li><strong><code class="language-plaintext highlighter-rouge">BFRTActivityDefinition</code></strong> – Prescribed protocol template with:
+  <li><strong><a href="StructureDefinition-bfrt-activity-definition.html">BFRT Activity Definition</a></strong> – Prescribed protocol template with:
     <ul>
-      <li>Sex-specific adaptations (cuff pressure, load, volume)</li>
+      <li>Sex-specific adaptations (via the <a href="StructureDefinition-sex-specific-protocol.html">Sex-Specific Protocol</a> extension: cuff pressure, load, volume)</li>
       <li>Session frequency, duration, progression rules</li>
       <li>Integration with traditional resistance or aerobic exercise</li>
     </ul>
   </li>
-  <li><strong><code class="language-plaintext highlighter-rouge">BFRTOutcomeObservation</code></strong> – Standardized results including:
+  <li><strong><a href="StructureDefinition-bfrt-outcome-observation.html">BFRT Outcome Observation</a></strong> – Standardized results including:
     <ul>
       <li>Muscle cross-sectional area (CSA)</li>
       <li>Bone biomarkers (P1NP, CTX)</li>
@@ -334,39 +328,58 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Strength/endurance metrics</li>
     </ul>
   </li>
-  <li><strong><code class="language-plaintext highlighter-rouge">BFRTCarePlan</code></strong> – Links BFRT activities into a comprehensive countermeasure plan addressing muscle atrophy and bone loss, with goals, monitoring schedule, and contingency rules</li>
+  <li><strong><a href="StructureDefinition-bfrt-care-plan.html">BFRT Care Plan</a></strong> – Links BFRT activities into a comprehensive countermeasure plan addressing muscle atrophy and bone loss, with goals, monitoring schedule, and contingency rules</li>
 </ul>
 
-<p><strong>Supporting Profiles (suggested)</strong></p>
+<h4 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h4>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">BFRTSessionBundle</code> – Composite of procedure + outcomes + device data for a single session</li>
+  <li><code class="language-plaintext highlighter-rouge">BFRTSessionBundle</code> – Composite of procedure, outcomes, and device data for a single session</li>
 </ul>
 
-<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<h3 id="examples">Examples</h3>
+
+<p>The four example instances describe a pneumatic cuff, the low-load protocol it is used with, one lower-body session, and the quadriceps CSA measurement used to track the outcome.</p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">BFRTCuffTypeCS</code> – (pneumatic, intelligent, elastic-wrap)</li>
-  <li><code class="language-plaintext highlighter-rouge">BFRTExerciseModalityVS</code> – (low-load-resistance, aerobic, hybrid)</li>
-  <li><code class="language-plaintext highlighter-rouge">BoneBiomarkerVS</code> – (p1np, ctx, sclerostin, etc.)</li>
-  <li><code class="language-plaintext highlighter-rouge">BFRTOcclusionPressureCategoryVS</code> – (40-60%, 60-80% limb occlusion pressure)</li>
+  <li><a href="Device-BFRT-Pneumatic-Cuff-001.html">BFRT Pneumatic Cuff Device</a></li>
+  <li><a href="ActivityDefinition-BFRT-Protocol-LowLoad-001.html">Low-Load BFRT Protocol</a></li>
+  <li><a href="Procedure-BFRT-LowerBody-Session-001.html">Lower Body BFRT Session</a></li>
+  <li><a href="Observation-BFRT-Quadriceps-CSA-001.html">Quadriceps CSA Outcome</a></li>
 </ul>
 
-<h2 id="architectural-alignment">Architectural Alignment</h2>
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<ul>
+  <li><a href="CodeSystem-bfrt-protocol-cs.html">BFRT Protocol Code System</a> and <a href="ValueSet-bfrt-protocol-vs.html">Value Set</a> – intermittent-bfrt, continuous-bfrt, auto-regulated-bfrt, low-load-bfrt (20–30% 1RM), moderate-load-bfrt (40–50% 1RM)</li>
+  <li><a href="CodeSystem-bfrt-outcome-cs.html">BFRT Outcome Code System</a> and <a href="ValueSet-bfrt-outcome-vs.html">Value Set</a> – muscle-csa, p1np, ctx, limb-occlusion-pressure, rep-max-1rm, muscle-thickness, vascular-compliance</li>
+  <li><a href="CodeSystem-bfrt-device-type-cs.html">BFRT Device Type Code System</a> and <a href="ValueSet-bfrt-device-type-vs.html">Value Set</a> – pneumatic-cuff, intelligent-pressure-cuff, elastic-wrap</li>
+</ul>
+
+<h4 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">BFRTExerciseModalityVS</code> – low-load-resistance, aerobic, hybrid; the protocol codes above distinguish load but not modality</li>
+  <li><code class="language-plaintext highlighter-rouge">BoneBiomarkerVS</code> – p1np, ctx, sclerostin, etc.; the BFRT Outcome codes cover P1NP and CTX today and LOINC codes should be preferred where available</li>
+  <li><code class="language-plaintext highlighter-rouge">BFRTOcclusionPressureCategoryVS</code> – banded occlusion pressure (40–60%, 60–80% of limb occlusion pressure); the numeric value is already carried by the Occlusion Pressure extension</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
 <p>This content directly extends existing IG sections:</p>
 <ul>
-  <li><strong>Exercise Countermeasures</strong> (E4D system, venous flow, LBNP)</li>
-  <li><strong>Fitness</strong> (strength/endurance assessments)</li>
-  <li><strong>Cardiovascular Countermeasures</strong> (venous hemodynamics during occlusion)</li>
-  <li><strong>Metabolic Suppression</strong> (resource-efficient countermeasures)</li>
-  <li><strong>Crew Health Monitoring</strong> (longitudinal biomarker tracking)</li>
+  <li><a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a> (venous hemodynamics during occlusion, lower body negative pressure)</li>
+  <li><a href="fitness.html">Fitness</a> (strength/endurance assessments)</li>
+  <li><a href="metabolic-hibernation.html">Metabolic Suppression</a> (resource-efficient countermeasures)</li>
+  <li>Crew Health Monitoring (longitudinal biomarker tracking)</li>
 </ul>
 
-<p>It contributes to a unified <strong>Physiologic Countermeasure</strong> framework optimized for mass/power-constrained exploration vehicles.</p>
+<p>It contributes to a unified physiologic countermeasure framework optimized for mass- and power-constrained exploration vehicles.</p>
 
-<h2 id="references">References</h2>
+<h3 id="references">References</h3>
+
 <ul>
-  <li>Hu, M., Y. Li, and colleagues. “Blood Flow Restriction Training in Microgravity: A Review of Multisystem Physiological Benefits and Implementation Challenges for Long-Duration Space Missions.” <em>npj Microgravity</em> 11 (2025). Nature Publishing Group. <a href="https://doi.org/10.1038/s41526-025-00515-7">https://doi.org/10.1038/s41526-025-00515-7</a>.</li>
-  <li>Scott, J. M., et al. “High-Intensity Exercise With Blood Flow Restriction or in Hypoxia as Valuable Spaceflight Countermeasures?” <em>Frontiers in Physiology</em> 10 (2019): 1266. <a href="https://doi.org/10.3389/fphys.2019.01266">https://doi.org/10.3389/fphys.2019.01266</a>.</li>
-  <li>Hackney, K. J., et al. “Application of Blood Flow Restriction to Optimize Exercise Countermeasures for Human Space Flight.” <em>Frontiers in Physiology</em> 10 (2019): 33. <a href="https://doi.org/10.3389/fphys.2019.00033">https://doi.org/10.3389/fphys.2019.00033</a>.</li>
+  <li>Hu M, Li Y, et al. Blood flow restriction training in microgravity: a review of multisystem physiological benefits and implementation challenges for long-duration space missions. <em>npj Microgravity</em> 11, 2025. <a href="https://doi.org/10.1038/s41526-025-00515-7">https://doi.org/10.1038/s41526-025-00515-7</a></li>
+  <li>Scott JM, et al. High-Intensity Exercise With Blood Flow Restriction or in Hypoxia as Valuable Spaceflight Countermeasures? <em>Frontiers in Physiology</em> 10:1266, 2019. <a href="https://doi.org/10.3389/fphys.2019.01266">https://doi.org/10.3389/fphys.2019.01266</a></li>
+  <li>Hackney KJ, et al. Application of Blood Flow Restriction to Optimize Exercise Countermeasures for Human Space Flight. <em>Frontiers in Physiology</em> 10:33, 2019. <a href="https://doi.org/10.3389/fphys.2019.00033">https://doi.org/10.3389/fphys.2019.00033</a></li>
 </ul>
 
 
@@ -388,7 +401,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,4 +1,4 @@
-# EVA Suit Provisioning Record - v0.6.2
+# EVA Suit Provisioning Record - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,15 +8,16 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/eva-suit-provisioning-record | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:EVASuitProvisioningRecord |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-suit-provisioning-record | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:EVASuitProvisioningRecord |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Logistics record for EVA suit provisioning, delivery, and positioning 
 
 **Usages:**
 
-* Examples for this Profile: [SupplyDelivery/ArtemisIII-SuitProvisioning-001](SupplyDelivery-ArtemisIII-SuitProvisioning-001.md)
+* Examples for this Profile: [SupplyDelivery/ArtemisIV-SuitProvisioning-001](SupplyDelivery-ArtemisIV-SuitProvisioning-001.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/eva-suit-provisioning-record)
 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-eva-suit-provisionin
 {
   "resourceType" : "StructureDefinition",
   "id" : "eva-suit-provisioning-record",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/eva-suit-provisioning-record",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-suit-provisioning-record",
+  "version" : "0.7.0",
   "name" : "EVASuitProvisioningRecord",
   "title" : "EVA Suit Provisioning Record",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-eva-suit-provisionin
     }
   ],
   "description" : "Logistics record for EVA suit provisioning, delivery, and positioning",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-eva-suit-provisionin
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],

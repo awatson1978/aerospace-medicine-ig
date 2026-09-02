@@ -1,4 +1,4 @@
-# BLiSS O2 Production Output - v0.6.2
+# BLiSS O2 Production Output - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: BLiSS O2 Production Output
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Gravity Context**: Microgravity
 
@@ -33,17 +37,25 @@ Profile: [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md)
   "resourceType" : "Observation",
   "id" : "BLiSS-O2-Production-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bliss-resource-output"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "microgravity",
             "display" : "Microgravity"
           }
@@ -55,7 +67,7 @@ Profile: [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md)
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bliss-output-cs",
         "code" : "o2-production",
         "display" : "O2 Production"
       }
@@ -68,7 +80,13 @@ Profile: [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md)
   "component" : [
     {
       "code" : {
-        "text" : "Output Quantity"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs",
+            "code" : "output-quantity",
+            "display" : "Output Quantity"
+          }
+        ]
       },
       "valueQuantity" : {
         "value" : 0.85,
@@ -79,7 +97,13 @@ Profile: [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md)
     },
     {
       "code" : {
-        "text" : "Output Rate"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs",
+            "code" : "output-rate",
+            "display" : "Output Rate"
+          }
+        ]
       },
       "valueQuantity" : {
         "value" : 0.85,
@@ -90,7 +114,13 @@ Profile: [BLiSS Resource Output](StructureDefinition-bliss-resource-output.md)
     },
     {
       "code" : {
-        "text" : "Energy Input"
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs",
+            "code" : "energy-input",
+            "display" : "Energy Input"
+          }
+        ]
       },
       "valueQuantity" : {
         "value" : 1.2,

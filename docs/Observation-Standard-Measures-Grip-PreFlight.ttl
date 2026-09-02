@@ -6,40 +6,52 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/Standard-Measures-Grip-PreFlight> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/Standard-Measures-Grip-PreFlight> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Standard-Measures-Grip-PreFlight"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/standard-measures-observation"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/standard-measures-observation>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/standard-measures-observation"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/standard-measures-observation>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Standard-Measures-Grip-PreFlight</b></p><a name=\"Standard-Measures-Grip-PreFlight\"> </a><a name=\"hcStandard-Measures-Grip-PreFlight\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-standard-measures-observation.html\">NASA Standard Measures Observation</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-III-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs pre-flight}\">Pre-flight</span></p><p><b>Flight Day</b>: -30</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs grip-strength}\">Grip Strength</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-02-15 14:00:00+0000</p><p><b>value</b>: 45.2 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Standard-Measures-Grip-PreFlight</b></p><a name=\"Standard-Measures-Grip-PreFlight\"> </a><a name=\"hcStandard-Measures-Grip-PreFlight\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-standard-measures-observation.html\">NASA Standard Measures Observation</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href=\"Encounter-Artemis-IV-Mission.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Mission Phase</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs pre-flight}\">Pre-flight</span></p><p><b>Flight Day</b>: -30</p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category exam}\">Exam</span></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-standard-measures-cs grip-strength}\">Grip Strength</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-02-15 14:00:00+0000</p><p><b>value</b>: 45.2 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Encounter/Artemis-III-Mission> ;
-       fhir:reference [ fhir:v "Encounter/Artemis-III-Mission" ]
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/Artemis-IV-Mission> ;
+       fhir:reference [ fhir:v "Encounter/Artemis-IV-Mission" ]
      ]
   ] [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-phase>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs>
          ] ;
          fhir:code [ fhir:v "pre-flight" ] ;
          fhir:display [ fhir:v "Pre-flight" ]
@@ -47,8 +59,8 @@
      ]
   ] [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/flight-day>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day>
      ] ;
      fhir:value [
        a fhir:Integer ;
@@ -69,15 +81,15 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs"^^xsd:anyURI ;
-         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/nasa-standard-measures-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-standard-measures-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-standard-measures-cs>
        ] ;
        fhir:code [ fhir:v "grip-strength" ] ;
        fhir:display [ fhir:v "Grip Strength" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:effective [

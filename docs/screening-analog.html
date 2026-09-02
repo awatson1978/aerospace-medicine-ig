@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Analog Mission Training -  v0.6.2</title>
+    <title>Analog Mission Training - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Analog Mission Training</h2>
   
 
@@ -265,29 +265,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#screening-criteria-for-participant-selection" id="markdown-toc-screening-criteria-for-participant-selection">Screening Criteria for Participant Selection</a></li>
   <li><a href="#comparison-to-government-astronaut-program-selection" id="markdown-toc-comparison-to-government-astronaut-program-selection">Comparison to Government Astronaut Program Selection</a></li>
   <li><a href="#analog-missions-vs-other-training-elements" id="markdown-toc-analog-missions-vs-other-training-elements">Analog Missions vs. Other Training Elements</a></li>
+  <li><a href="#fhir-mapping" id="markdown-toc-fhir-mapping">FHIR Mapping</a></li>
   <li><a href="#summary" id="markdown-toc-summary">Summary</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
-
 <h3 id="purpose-and-role-of-analog-missions-in-training">Purpose and Role of Analog Missions in Training</h3>
 
-<p>Analog missions are simulated space expeditions conducted on Earth to mimic the conditions and challenges of real spaceflight. They place crews in isolated, confined environments for days or months to perform mission-like tasks under stressors such as limited resources and communication delays:contentReference[oaicite:0]{index=0}.</p>
+<p>Analog missions are simulated space expeditions conducted on Earth to mimic the conditions and challenges of real spaceflight. They place crews in isolated, confined environments for days or months to perform mission-like tasks under stressors such as limited resources and communication delays.</p>
 
-<p>These exercises serve a dual purpose: they are valuable research opportunities to study human performance and behavior in space-like conditions, and they function as training experiences to prepare astronauts and other crew for actual missions:contentReference[oaicite:1]{index=1}. For example, NASA’s year-long CHAPEA Mars habitat simulations are designed to test crew health and performance in a Mars-like environment, helping inform designs and plans for future missions:contentReference[oaicite:2]{index=2}.</p>
+<p>These exercises serve a dual purpose: they are valuable research opportunities to study human performance and behavior in space-like conditions, and they function as training experiences to prepare astronauts and other crew for actual missions. For example, NASA's year-long CHAPEA (Crew Health and Performance Exploration Analog) Mars habitat simulations are designed to test crew health and performance in a Mars-like environment, helping inform designs and plans for future missions [1][3].</p>
 
-<p>By practicing operations in realistic analog settings, crews can identify potential problems and adapt procedures on Earth, ultimately improving safety and effectiveness when humanity ventures to the Moon or Mars.</p>
-
-<blockquote>
-  <p><em>Image (Page 1)</em>: AMADEE-18 Mars simulation by the Austrian Space Forum in Oman. Crews live in habitats to experience isolation, perform science and maintenance tasks, and practice EVA protocols in a Mars-like desert environment:contentReference[oaicite:3]{index=3}.</p>
-</blockquote>
+<p>By practicing operations in realistic analog settings, crews can identify potential problems and adapt procedures on Earth, ultimately improving safety and effectiveness when humanity ventures to the Moon or Mars. The Austrian Space Forum's AMADEE-18 Mars simulation in Oman is one example: crews lived in habitats to experience isolation, performed science and maintenance tasks, and practiced EVA protocols in a Mars-like desert environment [2].</p>
 
 <h3 id="commercial-analog-training-programs-star-harbor-and-others">Commercial Analog Training Programs (Star Harbor and Others)</h3>
 
-<p>In recent years, commercial space companies have developed analog training programs to broaden access to astronaut-like experiences. <strong>Star Harbor</strong>, for instance, is establishing the world’s first private spaceflight training campus in Colorado, slated to open in 2026:contentReference[oaicite:4]{index=4}.</p>
+<p>In recent years, commercial space companies have developed analog training programs to broaden access to astronaut-like experiences. <strong>Star Harbor</strong>, for instance, is establishing a private spaceflight training campus in Colorado, announced with a planned opening in 2026 [4].</p>
 
-<p>Star Harbor’s 53-acre facility will feature:</p>
+<p>Star Harbor's planned 53-acre facility is to feature:</p>
 
 <ul>
   <li>Land-based and underwater habitat modules</li>
@@ -298,9 +294,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Parabolic flight aircraft</li>
 </ul>
 
-<p>These resources will allow public access to astronaut training previously limited to government agencies:contentReference[oaicite:5]{index=5}. Programs are tailored to roles like vehicle operators, mission specialists, scientist-astronauts, and space tourists:contentReference[oaicite:6]{index=6}.</p>
+<p>These resources are intended to allow public access to astronaut training previously limited to government agencies. Programs are tailored to roles like vehicle operators, mission specialists, scientist-astronauts, and space tourists.</p>
 
-<p>Other commercial efforts like <strong>MMAARS</strong> offer tiered analog missions for students, professionals, and citizen-scientists, typically available for a fee after completing preliminary training:contentReference[oaicite:7]{index=7}.</p>
+<p>Other commercial efforts like <strong>MMAARS</strong> (Mars and Moon Astronautics Academy and Research Science) offer tiered analog missions for students, professionals, and citizen-scientists, typically available for a fee after completing preliminary training [5].</p>
 
 <hr />
 
@@ -310,29 +306,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>Most programs require participants to be adults (minimum age 18).</li>
-  <li>Some programs target specific age ranges (e.g., CHAPEA requires ages 30–55).</li>
-  <li>Star Harbor centrifuge tests included participants aged 22 to 88:contentReference[oaicite:8]{index=8}.</li>
+  <li>Some programs target specific age ranges; NASA's CHAPEA call required ages 30 to 55 [3].</li>
+  <li>Star Harbor has reported centrifuge test participants aged 22 to 88 [4].</li>
 </ul>
 
 <h4 id="physical-fitness-and-health">Physical Fitness and Health</h4>
 
 <ul>
-  <li>General health clearance or a physician’s exam required.</li>
-  <li>Analog participants may need to lift ~20 lbs, be non-smokers, or meet specialized health criteria (e.g., SCUBA-certified):contentReference[oaicite:9]{index=9}.</li>
+  <li>General health clearance or a physician's exam is required.</li>
+  <li>Analog participants may need to lift about 20 lb, be non-smokers, or meet specialized health criteria (for example, SCUBA certification for underwater habitats).</li>
 </ul>
 
 <h4 id="psychological-readiness">Psychological Readiness</h4>
 
 <ul>
-  <li>Mental resilience is essential.</li>
-  <li>NASA analogs conduct formal psychological screening; commercial programs use interviews to assess motivation and interpersonal skills:contentReference[oaicite:10]{index=10}.</li>
+  <li>Mental resilience is essential; isolation and confinement produce measurable biobehavioral and psychosocial stress even in short analog missions [7].</li>
+  <li>NASA analogs conduct formal psychological screening; commercial programs use interviews to assess motivation and interpersonal skills.</li>
 </ul>
 
 <h4 id="teamwork-and-communication-skills">Teamwork and Communication Skills</h4>
 
 <ul>
-  <li>Emphasis on collaboration, communication, and team dynamics.</li>
-  <li>Some programs conduct panel interviews or group tasks:contentReference[oaicite:11]{index=11}.</li>
+  <li>Emphasis on collaboration, communication, and team dynamics; leadership and cohesion findings from NASA HERA crews inform crew composition [8].</li>
+  <li>Some programs conduct panel interviews or group tasks.</li>
   <li>English proficiency is commonly required.</li>
 </ul>
 
@@ -340,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>Scientific, technical, or operational backgrounds are often favored.</li>
-  <li>Commercial programs are more flexible but still expect high motivation and engagement:contentReference[oaicite:12]{index=12}.</li>
+  <li>Commercial programs are more flexible but still expect high motivation and engagement.</li>
 </ul>
 
 <p>Application processes often include:</p>
@@ -356,7 +352,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="comparison-to-government-astronaut-program-selection">Comparison to Government Astronaut Program Selection</h3>
 
-<p>Analog training screening differs from NASA/ESA astronaut selection:</p>
+<p>Analog training screening differs from NASA and ESA astronaut selection, as the table below summarizes:</p>
 
 <table>
   <thead>
@@ -384,18 +380,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Screening Rigor</td>
-      <td>1–2 interviews + physical clearance</td>
+      <td>1-2 interviews plus physical clearance</td>
       <td>Years of evaluation and training</td>
     </tr>
     <tr>
       <td>Purpose</td>
-      <td>Training &amp; research</td>
+      <td>Training and research</td>
       <td>Spaceflight mission assignments</td>
     </tr>
   </tbody>
 </table>
 
-<p>Despite differences, both value health, resilience, and teamwork. NASA integrates analog missions into astronaut team training (e.g., NEEMO, Arctic expeditions, etc.):contentReference[oaicite:13]{index=13}.</p>
+<p>Despite differences, both value health, resilience, and teamwork. NASA integrates analog missions into astronaut team training (NEEMO undersea missions, Arctic expeditions, and others) [10].</p>
 
 <hr />
 
@@ -405,24 +401,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li>Short-duration drills for G-force tolerance and disorientation</li>
-  <li>Health screening (e.g., FAA Class 2/3 physical)</li>
-  <li>No psychological or team-based screening needed:contentReference[oaicite:14]{index=14}</li>
+  <li>Health screening (for example, an FAA Class 2 or Class 3 physical)</li>
+  <li>No psychological or team-based screening needed</li>
+  <li>See <a href="screening-gimbal.html">Multi-Axis Gimbal Simulator</a></li>
 </ul>
 
-<h4 id="neutral-buoyancy--eva">Neutral Buoyancy &amp; EVA</h4>
+<h4 id="neutral-buoyancy-and-eva">Neutral Buoyancy and EVA</h4>
 
 <ul>
   <li>Underwater training in neutral buoyancy pools</li>
   <li>Requires swim test and SCUBA certification</li>
   <li>Medical clearance for underwater safety</li>
-  <li>Does not test isolation or group dynamics:contentReference[oaicite:15]{index=15}</li>
+  <li>Does not test isolation or group dynamics</li>
+  <li>See <a href="scuba-training.html">SCUBA Training and Dive Operations</a></li>
 </ul>
 
 <h4 id="other-short-courses">Other Short Courses</h4>
 
 <ul>
   <li>Includes parabolic flights, mock cockpits, wilderness survival</li>
-  <li>Physical screens based on course (e.g., inner ear or cardiac issues)</li>
+  <li>Physical screens based on course (for example, inner ear or cardiac issues)</li>
   <li>No psychological screening or extended team interaction</li>
 </ul>
 
@@ -431,6 +429,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </blockquote>
 
 <hr />
+
+<h3 id="fhir-mapping">FHIR Mapping</h3>
+
+<p>Analog-mission applications are represented in this guide as FHIR Questionnaires; the <a href="Questionnaire-HERAAnalogMissionApplication.html">NASA HERA Analog Mission Application</a> captures the background, health, and availability items a candidate completes, and each completed application becomes a <code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code>. The applicant is recorded with the <a href="StructureDefinition-astronaut.html">Astronaut</a> Patient profile, which also serves crew members of real missions, so screening results carry forward unchanged if the participant later flies. Facilities such as habitats, pools, and centrifuges are recorded as Location resources using the <a href="StructureDefinition-space-location.html">xGeo Locations</a> profile, which the guide's underwater-training facilities also build on. Selection decisions and medical clearances that arise from the application are then documented as Procedure and Observation resources tied to the same patient, the pattern used by the <a href="StructureDefinition-dive-medical-clearance.html">Dive Medical Clearance</a> profile for underwater analogs.</p>
 
 <h3 id="summary">Summary</h3>
 
@@ -447,19 +449,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="references">References</h3>
 
-<ol>
-  <li>NASA (2023). "NASA Selects Participants for One-Year Mars Analog Mission."</li>
-  <li>UNOOSA (2019). <em>My Two Weeks as an Analog Astronaut</em>.</li>
-  <li>SatNews (2024). "Martians Wanted: NASA opens call…"</li>
-  <li>Blooloop (2022). "Star Harbor plans world’s first training facility…"</li>
-  <li>MMAARS (2025). FAQ and Program Overview.</li>
-  <li>The Space Review (2008). "Screening and Training for Commercial Human Spaceflight."</li>
-  <li>Nature npj Microgravity (2024). ESA Topical Team Review.</li>
-  <li>NASTAR Center (2024). "Suborbital Spaceflight Participant Training."</li>
-  <li>SpaceVIP (2024). "Nastar Center Earth Experiences."</li>
-  <li>NASA JSC (2011). FS-2011-11-057.</li>
-  <li><a href="https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2025.1505823/full">Increasing fidelity in lunar and martian analogs for behavioral health and performance research</a></li>
-</ol>
+<ul>
+  <li>[1] NASA. NASA Selects Participants for One-Year Mars Analog Mission, 2023.</li>
+  <li>[2] Austrian Space Forum (OeWF). AMADEE-18 Mars analog field simulation, Dhofar, Oman, 2018.</li>
+  <li>[3] Space.com. Commander of NASA's yearlong analog Mars mission: month one (interview). https://www.space.com/nasa-chapea-analog-mars-mission-one-month-interview</li>
+  <li>[4] Blooloop. Star Harbor plans world's first training facility for space tourists, 2022. https://blooloop.com/technology/news/star-harbor-commercial-spaceflight-training-facility/</li>
+  <li>[5] MMAARS. FAQ and Program Overview, 2025.</li>
+  <li>[6] The Space Review. Screening and Training for Commercial Human Spaceflight, 2008.</li>
+  <li>[7] Frontiers in Physiology. Biobehavioral and psychosocial stress in analog missions, 2022. https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.898841/full</li>
+  <li>[8] Leading the crew to Mars: Evidence from NASA HERA analog crews. Acta Astronautica, 2025. https://www.sciencedirect.com/science/article/abs/pii/S0094576525005314</li>
+  <li>[9] NASTAR Center. Suborbital Spaceflight Participant Training, 2024.</li>
+  <li>[10] NASA Johnson Space Center. Analog missions fact sheet, FS-2011-11-057, 2011.</li>
+  <li>[11] Increasing fidelity in lunar and martian analogs for behavioral health and performance research. Frontiers in Space Technologies, 2025. https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2025.1505823/full</li>
+</ul>
 
 
 
@@ -480,7 +482,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

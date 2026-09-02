@@ -1,10 +1,12 @@
-# Kennedy Space Center Medical Facility - v0.6.2
+# Kennedy Space Center Medical Facility - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Kennedy Space Center Medical Facility**
 
 ## Example Location: Kennedy Space Center Medical Facility
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
 
 **name**: Kennedy Space Center Medical Operations
 
@@ -20,6 +22,9 @@
 {
   "resourceType" : "Location",
   "id" : "KSCMedicalFacility",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record"
+  },
   "name" : "Kennedy Space Center Medical Operations",
   "description" : "Pre-launch and post-landing medical support",
   "address" : {

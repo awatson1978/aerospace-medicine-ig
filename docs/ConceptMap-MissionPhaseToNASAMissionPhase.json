@@ -1,0 +1,121 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "MissionPhaseToNASAMissionPhase",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap MissionPhaseToNASAMissionPhase</b></p><a name=\"MissionPhaseToNASAMissionPhase\"> </a><a name=\"hcMissionPhaseToNASAMissionPhase\"> </a><p>Mapping from <a href=\"ValueSet-mission-phase-vs.html\">Mission Phase Value Set</a> to <a href=\"ValueSet-nasa-mission-phase-vs.html\">NASA Mission Phases</a></p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-mission-phase-cs.html\">Mission Phase Code System</a> to <a href=\"CodeSystem-nasa-mission-phase-cs.html\">NASA Mission Phase Timing</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>pre-flight</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>preflight-activity</td></tr><tr><td>launch-ascent (Launch and Ascent)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>transit-outbound (Outbound Transit)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>orbital-ops (Orbital Operations)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>lunar-surface-ops (Lunar Surface Operations)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>mars-surface-ops (Mars Surface Operations)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>transit-return (Return Transit)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>entry-descent (Entry and Descent)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>inflight</td></tr><tr><td>post-flight-acute</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>postflight</td></tr><tr><td>post-flight-reconditioning</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider\" title=\"wider\">maps to wider concept</a></td><td>postflight</td></tr></table></div>"
+  },
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ConceptMap/MissionPhaseToNASAMissionPhase",
+  "version" : "0.7.0",
+  "name" : "MissionPhaseToNASAMissionPhase",
+  "title" : "Mission Phase to NASA Mission Phase Timing",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-09-02",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org/"
+    }]
+  }],
+  "description" : "Maps the clinical mission phases in MissionPhaseCS to the coarser NASA medical-requirements timing phases in NASAMissionPhaseCS. Pre-flight maps to preflight activity, all in-space phases map to inflight, and both post-flight phases map to postflight.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
+  "sourceCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mission-phase-vs",
+  "targetCanonical" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/nasa-mission-phase-vs",
+  "group" : [{
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
+    "target" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs",
+    "element" : [{
+      "code" : "pre-flight",
+      "display" : "Pre-flight",
+      "target" : [{
+        "code" : "preflight-activity",
+        "display" : "Preflight Activity",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "launch-ascent",
+      "display" : "Launch and Ascent",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "transit-outbound",
+      "display" : "Outbound Transit",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "orbital-ops",
+      "display" : "Orbital Operations",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "lunar-surface-ops",
+      "display" : "Lunar Surface Operations",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "mars-surface-ops",
+      "display" : "Mars Surface Operations",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "transit-return",
+      "display" : "Return Transit",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "entry-descent",
+      "display" : "Entry and Descent",
+      "target" : [{
+        "code" : "inflight",
+        "display" : "In-Flight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "post-flight-acute",
+      "display" : "Post-flight Acute",
+      "target" : [{
+        "code" : "postflight",
+        "display" : "Postflight",
+        "equivalence" : "wider"
+      }]
+    },
+    {
+      "code" : "post-flight-reconditioning",
+      "display" : "Post-flight Reconditioning",
+      "target" : [{
+        "code" : "postflight",
+        "display" : "Postflight",
+        "equivalence" : "wider"
+      }]
+    }]
+  }]
+}

@@ -1,15 +1,16 @@
-# MRID Launch Context Name CodeSystem - v0.6.2
+# MRID Launch Context Name CodeSystem - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **MRID Launch Context Name CodeSystem**
 
-## CodeSystem: MRID Launch Context Name CodeSystem 
+## CodeSystem: MRID Launch Context Name CodeSystem (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MRIDLaunchContextNameCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mrid-launch-context-name-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MRIDLaunchContextNameCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Names for launch context variables 
@@ -26,12 +27,13 @@ Names for launch context variables
 {
   "resourceType" : "CodeSystem",
   "id" : "mrid-launch-context-name-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/mrid-launch-context-name-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mrid-launch-context-name-cs",
+  "version" : "0.7.0",
   "name" : "MRIDLaunchContextNameCS",
   "title" : "MRID Launch Context Name CodeSystem",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -45,6 +47,7 @@ Names for launch context variables
     }
   ],
   "description" : "Names for launch context variables",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 3,

@@ -1,4 +1,4 @@
-# BLiSS Resource Output - v0.6.2
+# BLiSS Resource Output - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:BLiSSResourceOutput |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bliss-resource-output | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:BLiSSResourceOutput |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Observation of bioregenerative life support system resource output quantities and rates 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
 {
   "resourceType" : "StructureDefinition",
   "id" : "bliss-resource-output",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bliss-resource-output",
+  "version" : "0.7.0",
   "name" : "BLiSSResourceOutput",
   "title" : "BLiSS Resource Output",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
     }
   ],
   "description" : "Observation of bioregenerative life support system resource output quantities and rates",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"
             ]
           }
         ],
@@ -157,7 +159,7 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/bliss-output-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/bliss-output-vs"
         }
       },
       {
@@ -202,9 +204,17 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:outputQuantity.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Output Quantity"
+        "id" : "Observation.component:outputQuantity.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs",
+              "code" : "output-quantity",
+              "display" : "Output Quantity"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:outputQuantity.value[x]",
@@ -225,9 +235,17 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:outputRate.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Output Rate"
+        "id" : "Observation.component:outputRate.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs",
+              "code" : "output-rate",
+              "display" : "Output Rate"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:outputRate.value[x]",
@@ -248,9 +266,17 @@ Other representations of profile: [CSV](StructureDefinition-bliss-resource-outpu
         "mustSupport" : true
       },
       {
-        "id" : "Observation.component:energyInput.code.text",
-        "path" : "Observation.component.code.text",
-        "patternString" : "Energy Input"
+        "id" : "Observation.component:energyInput.code",
+        "path" : "Observation.component.code",
+        "patternCodeableConcept" : {
+          "coding" : [
+            {
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs",
+              "code" : "energy-input",
+              "display" : "Energy Input"
+            }
+          ]
+        }
       },
       {
         "id" : "Observation.component:energyInput.value[x]",

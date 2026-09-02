@@ -1,4 +1,4 @@
-# Quadriceps CSA Outcome - v0.6.2
+# Quadriceps CSA Outcome - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: Quadriceps CSA Outcome
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Phase**: Orbital Operations
 
@@ -16,7 +20,7 @@ Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation
 
 **code**: Muscle Cross-Sectional Area
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-06-10 09:00:00+0000
 
@@ -33,17 +37,25 @@ Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation
   "resourceType" : "Observation",
   "id" : "BFRT-Quadriceps-CSA-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-outcome-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "orbital-ops",
             "display" : "Orbital Operations"
           }
@@ -51,7 +63,7 @@ Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day",
       "valueInteger" : 56
     }
   ],
@@ -59,7 +71,7 @@ Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
         "code" : "muscle-csa",
         "display" : "Muscle Cross-Sectional Area"
       }
@@ -74,7 +86,7 @@ Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
             "code" : "muscle-csa",
             "display" : "Muscle Cross-Sectional Area"
           }
@@ -91,7 +103,7 @@ Profile: [BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs",
             "code" : "p1np",
             "display" : "P1NP (Procollagen Type I N-Propeptide)"
           }

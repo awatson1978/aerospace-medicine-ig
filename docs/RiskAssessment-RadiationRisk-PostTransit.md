@@ -1,4 +1,4 @@
-# Radiation Risk Assessment - Post Outbound Transit - v0.6.2
+# Radiation Risk Assessment - Post Outbound Transit - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,19 +6,23 @@
 
 ## Example RiskAssessment: Radiation Risk Assessment - Post Outbound Transit
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Mars Radiation Risk Assessment](StructureDefinition-mars-radiation-risk-assessment.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Context**: [Encounter: status = in-progress; class = field (ActCode#FLD); period = 2040-09-01 00:00:00+0000 --> (ongoing); reasonCode =](Encounter-MarsDirectMission2040.md)
 
 **status**: Final
 
-**code**: Risk assessment
+**code**: Radiation Exposure Risk Assessment
 
-**subject**: [Sarah Chen Female, DoB: 1990-03-15 ( http://nasa.gov/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
+**subject**: [Sarah Chen Female, DoB: 1990-03-15 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-2029-001)](Patient-MarsCrewMember1.md)
 
 **occurrence**: 2041-03-01 00:00:00+0000
 
-**basis**: [Cumulative GCR dose during transit: 360 mSv](Observation/CumulativeDose-Transit)
+**basis**: [Cumulative GCR dose during transit: 360 mSv](Observation-CumulativeDose-Transit.md)
 
 ### Predictions
 
@@ -43,13 +47,21 @@ Mitigation: Continue radiation monitoring throughout surface operations. Utilize
   "resourceType" : "RiskAssessment",
   "id" : "RadiationRisk-PostTransit",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/mars-radiation-risk-assessment"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-radiation-risk-assessment"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
         "reference" : "Encounter/MarsDirectMission2040"
       }
@@ -63,7 +75,8 @@ Mitigation: Continue radiation monitoring throughout surface operations. Utilize
         "code" : "225338004",
         "display" : "Risk assessment"
       }
-    ]
+    ],
+    "text" : "Radiation Exposure Risk Assessment"
   },
   "subject" : {
     "reference" : "Patient/MarsCrewMember1"

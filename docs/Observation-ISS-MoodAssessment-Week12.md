@@ -1,4 +1,4 @@
-# ISS Mood Assessment - Mission Week 12 - v0.6.2
+# ISS Mood Assessment - Mission Week 12 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: ISS Mood Assessment - Mission Week 12
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
@@ -14,13 +18,13 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
 
 **code**: Mood level
 
-**subject**: [Patient/AstronautExample](Patient/AstronautExample)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-06-01 10:00:00+0000
 
 **value**: -1 {score}(Details: UCUM code{score} = '{score}')
 
-> **component****code**:Cortisol (µg/dL)**value**: 18.5 µg/dL(Details: UCUM codeug/dL = 'ug/dL')
+> **component****code**:Cortisol [Mass/volume] in Serum or Plasma**value**: 18.5 ug/dL(Details: UCUM codeug/dL = 'ug/dL')
 
 > **component****code**:Sleep efficiency (%)**value**: 72 %(Details: UCUM code% = '%')
 
@@ -33,8 +37,16 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
   "resourceType" : "Observation",
   "id" : "ISS-MoodAssessment-Week12",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
@@ -52,14 +64,14 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
   "code" : {
     "coding" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
         "code" : "mood-level",
         "display" : "Mood level"
       }
     ]
   },
   "subject" : {
-    "reference" : "Patient/AstronautExample"
+    "reference" : "Patient/ExampleAstronaut"
   },
   "effectiveDateTime" : "2025-06-01T10:00:00Z",
   "valueQuantity" : {
@@ -72,14 +84,15 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
       "code" : {
         "coding" : [
           {
-            "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
-            "code" : "cortisol-ugdl"
+            "system" : "http://loinc.org",
+            "code" : "2143-6",
+            "display" : "Cortisol [Mass/volume] in Serum or Plasma"
           }
         ]
       },
       "valueQuantity" : {
         "value" : 18.5,
-        "unit" : "µg/dL",
+        "unit" : "ug/dL",
         "system" : "http://unitsofmeasure.org",
         "code" : "ug/dL"
       }
@@ -88,7 +101,7 @@ Profile: [Behavioral Health State](StructureDefinition-behavioral-health-state.m
       "code" : {
         "coding" : [
           {
-            "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs",
             "code" : "sleep-efficiency-pct"
           }
         ]

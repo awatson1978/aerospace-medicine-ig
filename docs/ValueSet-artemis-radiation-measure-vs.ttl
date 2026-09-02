@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-radiation-measure-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artemis-radiation-measure-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet artemis-radiation-measure-vs</b></p><a name=\"artemis-radiation-measure-vs\"> </a><a name=\"hcartemis-radiation-measure-vs\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-artemis-radiation-measure-cs.html\"><code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.7.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-artemis-radiation-measure-cs.html#artemis-radiation-measure-cs-cumulative-dose\">cumulative-dose</a></td><td style=\"color: #cccccc\">Cumulative Radiation Dose</td><td>Accumulated effective dose over a mission phase or period</td></tr><tr><td><a href=\"CodeSystem-artemis-radiation-measure-cs.html#artemis-radiation-measure-cs-dose-rate\">dose-rate</a></td><td style=\"color: #cccccc\">Radiation Dose Rate</td><td>Instantaneous or average dose rate during a measurement window</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-radiation-measure-vs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/artemis-radiation-measure-vs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ArtemisRadiationMeasureVS"] ; # 
+  fhir:title [ fhir:v "Artemis Radiation Measures"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Dose measure codes for ArtemisRadiationExposure.code"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "cumulative-dose" ]
+       ] [
+         fhir:code [ fhir:v "dose-rate" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

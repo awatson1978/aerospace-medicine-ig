@@ -1,15 +1,16 @@
-# Organ-on-Chip Type Value Set - v0.6.2
+# Organ-on-Chip Type Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Organ-on-Chip Type Value Set**
 
-## ValueSet: Organ-on-Chip Type Value Set 
+## ValueSet: Organ-on-Chip Type Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/organ-chip-type-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:OrganChipTypeVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-chip-type-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:OrganChipTypeVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Types of organ-on-chip devices 
@@ -45,13 +46,13 @@ Types of organ-on-chip devices
 {
   "resourceType" : "ValueSet",
   "id" : "organ-chip-type-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/organ-chip-type-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/organ-chip-type-vs",
+  "version" : "0.7.0",
   "name" : "OrganChipTypeVS",
   "title" : "Organ-on-Chip Type Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ Types of organ-on-chip devices
     }
   ],
   "description" : "Types of organ-on-chip devices",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/organ-chip-type-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/organ-chip-type-cs"
       }
     ]
   }

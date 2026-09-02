@@ -1,4 +1,4 @@
-# Regulatory Compliance Assessment - v0.6.2
+# Regulatory Compliance Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance-assessment | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:RegulatoryComplianceAssessment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/regulatory-compliance-assessment | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:RegulatoryComplianceAssessment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Assessment of compliance with diving and space medicine regulatory standards 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
 {
   "resourceType" : "StructureDefinition",
   "id" : "regulatory-compliance-assessment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/regulatory-compliance-assessment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/regulatory-compliance-assessment",
+  "version" : "0.7.0",
   "name" : "RegulatoryComplianceAssessment",
   "title" : "Regulatory Compliance Assessment",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
     }
   ],
   "description" : "Assessment of compliance with diving and space medicine regulatory standards",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -110,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/regulatory-standards"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/regulatory-standards-vs"
         }
       },
       {
@@ -120,7 +122,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ]
@@ -170,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
               "code" : "compliance-status"
             }
           ]
@@ -199,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
               "code" : "standards-version"
             }
           ]
@@ -228,7 +230,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
               "code" : "certification-level"
             }
           ]
@@ -257,7 +259,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
               "code" : "expiration-date"
             }
           ]
@@ -286,7 +288,7 @@ Other representations of profile: [CSV](StructureDefinition-regulatory-complianc
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs",
               "code" : "restrictions-limitations"
             }
           ]

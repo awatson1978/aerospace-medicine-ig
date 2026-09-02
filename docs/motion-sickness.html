@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Motion Sickness -  v0.6.2</title>
+    <title>Motion Sickness - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"18"}
-    h3,h4,h5,h6{--heading-prefix:"18"}</style>
+    <style type="text/css">h2{--heading-prefix:"17"}
+    h3,h4,h5,h6{--heading-prefix:"17"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Motion Sickness</h2>
   
 
@@ -258,16 +258,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#shared-evidence-base" id="markdown-toc-shared-evidence-base">SHARED Evidence Base</a></li>
+  <li><a href="#severity-grading" id="markdown-toc-severity-grading">Severity Grading</a></li>
+  <li><a href="#treatment-protocols" id="markdown-toc-treatment-protocols">Treatment Protocols</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#adverse-events" id="markdown-toc-adverse-events">Adverse Events</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
 </div>
-<h3 id="space-motion-sickness">Space Motion Sickness</h3>
+<p>Space Motion Sickness (SMS) is one of the most common medical conditions of early spaceflight. Across 24 Space Shuttle flights roughly two thirds of crewmembers reported symptoms, and reviews of the wider flight record put the incidence somewhere between 60% and 80% during the first 72 hours of microgravity exposure (Davis et al. 1988; Reschke et al. 1998). It is rarely dangerous on its own, but it arrives exactly when a crew is busiest — activation, rendezvous, and the first EVA preparations — and the drugs used to treat it carry sedation and anticholinergic effects of their own. This page describes the FHIR profiles and terminology used to capture SMS diagnosis, treatment, and medication adverse events.</p>
 
-<p>Space Motion Sickness (SMS) is one of the most common medical conditions experienced during spaceflight, affecting approximately 60-80% of astronauts during the first 72 hours of microgravity exposure. This page describes the FHIR profiles and terminology used to capture SMS diagnosis, treatment, and adverse events.</p>
+<h3 id="overview">Overview</h3>
 
-<h4 id="overview">Overview</h4>
-
-<p>Space motion sickness results from sensory conflict between vestibular, visual, and proprioceptive inputs during adaptation to altered gravitational environments. Related conditions include:</p>
+<p>Space motion sickness results from sensory conflict between vestibular, visual, and proprioceptive inputs during adaptation to altered gravitational environments. The otolith organs report a gravity vector that no longer exists, the eyes report a stable cabin, and the brain reconciles the mismatch over two to four days. Related conditions include:</p>
 
 <ul>
   <li><strong>Space Motion Sickness (SMS)</strong> - Occurs during initial microgravity adaptation</li>
@@ -276,13 +285,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Vestibular Conflict Syndrome</strong> - Sensory mismatch in altered gravity environments</li>
 </ul>
 
-<h4 id="shared-evidence-base">SHARED Evidence Base</h4>
+<h3 id="shared-evidence-base">SHARED Evidence Base</h3>
 
-<p>The Space Health and Research Evidence Database (SHARED) provides the evidence foundation for motion sickness management in spaceflight. Key findings from the SHARED database and the Rebecca Blue Eugen Reinartz Lecture include standardized severity grading (Graybiel scale), antiemetic protocol comparisons, and adverse event tracking.</p>
+<p>The Space Health and Research Evidence Database (SHARED) provides the evidence foundation for motion sickness management in spaceflight. Key findings from the SHARED database and from the Rebecca Blue Eugen Reinartz Lecture include standardized severity grading (Graybiel scale), antiemetic protocol comparisons, and adverse event tracking. Those three themes — grade it, treat it, and record what the treatment did to the crewmember — are what the profiles below are built to carry.</p>
 
-<h4 id="severity-grading">Severity Grading</h4>
+<h3 id="severity-grading">Severity Grading</h3>
 
-<p>Motion sickness severity is graded using the modified Graybiel scale:</p>
+<p>Severity is graded with a modified form of the Graybiel scale, the diagnostic criteria published for acute motion sickness in 1968 and still the reference point for operational grading. Grading matters because the treatment decision (watchful waiting versus an intramuscular rescue dose) turns on it.</p>
 
 <table>
   <thead>
@@ -315,7 +324,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="treatment-protocols">Treatment Protocols</h4>
+<h3 id="treatment-protocols">Treatment Protocols</h3>
 
 <p>Antiemetic medications used in spaceflight include:</p>
 
@@ -328,7 +337,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Ondansetron</strong> - 5-HT3 antagonist alternative with fewer sedation effects</li>
 </ul>
 
-<h4 id="fhir-profiles">FHIR Profiles</h4>
+<p>Intramuscular promethazine became the operational rescue agent after in-flight experience showed that crewmembers did not exhibit the degree of sedation the same dose produces on the ground (Bagian &amp; Ward 1994). That observation is itself a reason to record administrations and outcomes as structured data rather than as free text.</p>
+
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
+
+<p>Each stage of an SMS episode maps onto a different FHIR resource: the diagnosis and its Graybiel grade onto Condition, each dose onto MedicationAdministration, any drug reaction onto AdverseEvent, and the prophylaxis-plus-rescue plan onto CarePlan.</p>
 
 <table>
   <thead>
@@ -367,7 +380,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="adverse-events">Adverse Events</h4>
+<p>All four resource types carry the shared <a href="StructureDefinition-mission-context.html">MissionContext</a>, <a href="StructureDefinition-gravity-context.html">GravityContext</a>, and <a href="StructureDefinition-flight-day.html">FlightDay</a> extensions, so an episode can be placed on a mission timeline alongside radiation, exercise, and behavioral health data.</p>
+
+<h3 id="adverse-events">Adverse Events</h3>
 
 <p>Key adverse events tracked from antiemetic medications:</p>
 
@@ -379,7 +394,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Dry mouth and blurred vision (anticholinergic effects)</li>
 </ul>
 
-<h4 id="terminology">Terminology</h4>
+<h3 id="examples">Examples</h3>
+
+<p>The guide carries a worked set of synthetic instances that follow one illustrative flight-day-2 episode from diagnosis through treatment and its consequence.</p>
+
+<ul>
+  <li><a href="Condition-SMS-Episode-FD2.html">Space Motion Sickness Episode - Flight Day 2</a> - a Grade II-S episode recorded on flight day 2 of the Artemis IV mission encounter.</li>
+  <li><a href="MedicationAdministration-Promethazine-IM-Rescue.html">Promethazine IM Rescue Dose</a> - a 25 mg intramuscular rescue dose given ninety minutes after onset, linked back to the episode.</li>
+  <li><a href="AdverseEvent-Urinary-Retention-Post-Promethazine.html">Urinary Retention After Promethazine</a> - a non-serious, resolved anticholinergic adverse event four hours after the dose, with the administration named as the suspect entity.</li>
+  <li><a href="CarePlan-SMS-Prophylaxis-Protocol.html">SMS Prophylaxis Protocol</a> - the pre-flight scopolamine-dexedrine prophylaxis and the rescue-treatment activity in a single care plan.</li>
+</ul>
+
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<p>Five small code systems supply the vocabulary these profiles bind to: what the condition is, how bad it is, what was given, what happened afterwards, and under which protocol it was given.</p>
 
 <ul>
   <li><a href="CodeSystem-space-motion-sickness-cs.html">SpaceMotionSicknessCS</a> - Motion sickness type codes</li>
@@ -387,6 +415,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="CodeSystem-antiemetic-medication-cs.html">AntiemeticMedicationCS</a> - Antiemetic medication codes</li>
   <li><a href="CodeSystem-space-adverse-event-cs.html">SpaceAdverseEventCS</a> - Adverse event codes</li>
   <li><a href="CodeSystem-antiemetic-protocol-cs.html">AntiemeticProtocolCS</a> - Treatment protocol codes</li>
+</ul>
+
+<p>Each has a matching value set for binding: <a href="ValueSet-space-motion-sickness-vs.html">SpaceMotionSicknessVS</a>, <a href="ValueSet-graybiel-severity-vs.html">GraybielSeverityVS</a>, <a href="ValueSet-antiemetic-medication-vs.html">AntiemeticMedicationVS</a>, <a href="ValueSet-space-adverse-event-vs.html">SpaceAdverseEventVS</a>, and <a href="ValueSet-antiemetic-protocol-vs.html">AntiemeticProtocolVS</a>.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>Davis JR, Vanderploeg JM, Santy PA, Jennings RT, Stewart DF. Space motion sickness during 24 flights of the space shuttle. <em>Aviation, Space, and Environmental Medicine</em> 59, no. 12 (1988): 1185-1189.</li>
+  <li>Reschke MF, Bloomberg JJ, Harm DL, Paloski WH, Layne C, McDonald V. Posture, locomotion, spatial orientation, and motion sickness as a function of space flight. <em>Brain Research Reviews</em> 28, no. 1-2 (1998): 102-117.</li>
+  <li>Graybiel A, Wood CD, Miller EF, Cramer DB. Diagnostic criteria for grading the severity of acute motion sickness. <em>Aerospace Medicine</em> 39, no. 5 (1968): 453-455.</li>
+  <li>Bagian JP, Ward DF. A retrospective study of promethazine and its failure to produce the expected incidence of sedation during space flight. <em>Journal of Clinical Pharmacology</em> 34, no. 6 (1994): 649-651.</li>
+  <li>Blue RS. Eugen Reinartz Lecture: evidence-based management of space motion sickness. Aerospace Medical Association Annual Scientific Meeting.</li>
+  <li>NASA Human Research Program. Space Health and Research Evidence Database (SHARED).</li>
 </ul>
 
 
@@ -408,7 +449,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

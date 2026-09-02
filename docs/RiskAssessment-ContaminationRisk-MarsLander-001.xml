@@ -3,15 +3,21 @@
 <RiskAssessment xmlns="http://hl7.org/fhir">
   <id value="ContaminationRisk-MarsLander-001"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-risk"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/microbial-contamination-risk"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RiskAssessment ContaminationRisk-MarsLander-001</b></p><a name="ContaminationRisk-MarsLander-001"> </a><a name="hcContaminationRisk-MarsLander-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-microbial-contamination-risk.html">Microbial Contamination Risk</a></p></div><p><b>Planetary Protection Category</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs category-iv}">Category IV</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Forward Contamination Risk Assessment</span></p><p><b>subject</b>: Mars Sample Return Mission - Landing Site Jezero Crater</p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Outcome</b></td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs bacterial-spore}">Bacterial Spore</span></td><td>0.00012</td></tr></table><p><b>mitigation</b>: DHMR sterilization of all lander surfaces, Category IV-b bioburden requirements met</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RiskAssessment ContaminationRisk-MarsLander-001</b></p><a name="ContaminationRisk-MarsLander-001"> </a><a name="hcContaminationRisk-MarsLander-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-microbial-contamination-risk.html">Microbial Contamination Risk</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Planetary Protection Category</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/planetary-protection-category-cs category-iv}">Category IV</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">Forward Contamination Risk Assessment</span></p><p><b>subject</b>: Mars Sample Return Mission - Landing Site Jezero Crater</p><h3>Predictions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Outcome</b></td><td><b>Probability[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/microbial-contaminant-type-cs bacterial-spore}">Bacterial Spore</span></td><td>0.00012</td></tr></table><p><b>mitigation</b>: DHMR sterilization of all lander surfaces, Category IV-b bioburden requirements met</p></div>
   </text>
-  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/planetary-protection-category">
     <valueCodeableConcept>
       <coding>
-        <system value="https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs"/>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/planetary-protection-category-cs"/>
         <code value="category-iv"/>
         <display value="Category IV"/>
       </coding>
@@ -27,7 +33,7 @@
   <prediction>
     <outcome>
       <coding>
-        <system value="https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs"/>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/microbial-contaminant-type-cs"/>
         <code value="bacterial-spore"/>
         <display value="Bacterial Spore"/>
       </coding>

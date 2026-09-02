@@ -1,4 +1,4 @@
-# Hyperbaric Treatment Table - v0.6.2
+# Hyperbaric Treatment Table - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/treatment-table | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:TreatmentTable |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/treatment-table | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:TreatmentTable |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Specific treatment table used (e.g., USN Table 6)
 
@@ -19,7 +20,7 @@ Specific treatment table used (e.g., USN Table 6)
 
 **Usages:**
 
-* Use this Extension: [Hyperbaric Treatment](StructureDefinition-HyperbaricTreatment.md) and [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md)
+* Use this Extension: [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) and [Hyperbaric Treatment](StructureDefinition-hyperbaric-treatment.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/treatment-table)
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-treatment-table.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "treatment-table",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/treatment-table",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/treatment-table",
+  "version" : "0.7.0",
   "name" : "TreatmentTable",
   "title" : "Hyperbaric Treatment Table",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-treatment-table.csv)
     }
   ],
   "description" : "Specific treatment table used (e.g., USN Table 6)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-treatment-table.csv)
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-treatment-table.csv)
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/treatment-table"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/treatment-table"
       },
       {
         "id" : "Extension.value[x]",

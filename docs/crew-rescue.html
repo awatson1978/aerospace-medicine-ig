@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Crew Rescue -  v0.6.2</title>
+    <title>Crew Evacuation and Emergency Response - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"21"}
-    h3,h4,h5,h6{--heading-prefix:"21"}</style>
+    <style type="text/css">h2{--heading-prefix:"20"}
+    h3,h4,h5,h6{--heading-prefix:"20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -222,7 +222,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Crew Rescue</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Crew Evacuation and Emergency Response</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -242,8 +242,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Crew Rescue</h2>
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Crew Evacuation and Emergency Response</h2>
   
 
 
@@ -260,34 +260,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#crew-evacuation-and-emergency-response" id="markdown-toc-crew-evacuation-and-emergency-response">Crew Evacuation and Emergency Response</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#operational-context" id="markdown-toc-operational-context">Operational Context</a></li>
-      <li><a href="#muster-and-egress-plans" id="markdown-toc-muster-and-egress-plans">Muster and Egress Plans</a></li>
-      <li><a href="#communication-protocols" id="markdown-toc-communication-protocols">Communication Protocols</a></li>
-      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
-          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
-          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
-          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
-        </ul>
-      </li>
-      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-      <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#operational-context" id="markdown-toc-operational-context">Operational Context</a></li>
+  <li><a href="#muster-and-egress-plans" id="markdown-toc-muster-and-egress-plans">Muster and Egress Plans</a></li>
+  <li><a href="#communication-protocols" id="markdown-toc-communication-protocols">Communication Protocols</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+  <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
 
-<h1 id="crew-evacuation-and-emergency-response">Crew Evacuation and Emergency Response</h1>
+<h3 id="overview">Overview</h3>
 
-<h2 id="overview">Overview</h2>
-<p>Crew evacuation and emergency response procedures are the final layer of defense when onboard systems or crew health fail. NASA procedures for the ISS, commercial vehicles (Dragon, Soyuz), and Artemis lunar operations emphasize rapid, standardized actions to protect the crew and enable return to Earth or movement to a safe haven.</p>
+<p>Crew evacuation and emergency response procedures are the final layer of defense when onboard systems or crew health fail. NASA procedures for the International Space Station (ISS), commercial vehicles (Dragon, Soyuz), and Artemis lunar operations emphasize rapid, standardized actions to protect the crew and enable return to Earth or movement to a safe haven.</p>
 
-<p>This page defines FHIR profiles for documenting emergency conditions, evacuation procedures, risk context, and contingency plans. It supports seamless integration of onboard telemetry, ground consultation, and post-event analysis across LEO, lunar, and deep-space missions.</p>
+<p>This page defines FHIR profiles for documenting emergency conditions, evacuation procedures, risk context, and contingency plans. It supports integration of onboard telemetry, ground consultation, and post-event analysis across low-Earth-orbit (LEO), lunar, and deep-space missions.</p>
 
-<h2 id="operational-context">Operational Context</h2>
+<h3 id="operational-context">Operational Context</h3>
+
 <p><strong>Primary Threats</strong> (ISS and exploration-class vehicles)</p>
 <ul>
   <li>Rapid depressurization</li>
@@ -301,11 +294,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Limited time windows (minutes for depressurization/fire)</li>
   <li>Communication latency (near-zero in LEO → minutes/hours in lunar or Mars transit)</li>
   <li>Vehicle-specific egress paths (Dragon/Orion abort, Soyuz undock, lunar lander safe-haven)</li>
-  <li>NASA OIG audit (IG-26-004, 2026) notes that early Artemis lunar missions have no dedicated external crew-rescue capability — survival depends entirely on onboard evacuation and safe-haven protocols.</li>
+  <li>The NASA Office of Inspector General (OIG) audit of the Human Landing System program (IG-26-004, 2026) notes that early Artemis lunar landings will have no dedicated external crew-rescue capability; survival depends entirely on onboard evacuation and safe-haven protocols.</li>
 </ul>
 
-<h2 id="muster-and-egress-plans">Muster and Egress Plans</h2>
-<p>All procedures follow the proven <strong>Warn → Gather → Work</strong> framework:</p>
+<h3 id="muster-and-egress-plans">Muster and Egress Plans</h3>
+
+<p>This page organizes procedures with the Warn → Gather → Work sequence used in ISS emergency response training, which mirrors the accountability-first structure of terrestrial fireground and mass-casualty protocols:</p>
 
 <p><strong>Warn</strong></p>
 <ul>
@@ -334,21 +328,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Lunar Surface</strong>: Move to lander safe-haven or surface habitat</li>
 </ul>
 
-<p>These plans mirror EMT mass-casualty and firefighter rapid-intervention protocols: clear accountability, pre-assigned roles, and rehearsed egress paths.</p>
+<p>These plans mirror emergency medical technician (EMT) mass-casualty and firefighter rapid-intervention protocols: clear accountability, pre-assigned roles, and rehearsed egress paths.</p>
 
-<h2 id="communication-protocols">Communication Protocols</h2>
+<h3 id="communication-protocols">Communication Protocols</h3>
+
 <p>Standardized, concise communication is critical under stress:</p>
 
 <ul>
-  <li><strong>Onboard</strong>: Voice checklists, digital shared procedures, nonverbal signals (analogous to firefighter OATH or tap/tug protocols)</li>
+  <li><strong>Onboard</strong>: Voice checklists, digital shared procedures, nonverbal signals (analogous to firefighter tap/tug protocols)</li>
   <li><strong>Ground Link</strong>: Telemedicine consult (real-time when available) for complex decisions</li>
   <li><strong>Telemetry</strong>: Real-time transmission of vehicle status, crew vitals, and location during muster/egress</li>
   <li><strong>Post-Event</strong>: Structured reporting for lessons-learned and future risk refinement</li>
 </ul>
 
-<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
 
-<h3 id="recommended-resources">Recommended Resources</h3>
+<h4 id="recommended-resources">Recommended Resources</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Condition</code> / <code class="language-plaintext highlighter-rouge">Observation</code> – emergency diagnosis</li>
   <li><code class="language-plaintext highlighter-rouge">Procedure</code> – evacuation and abort actions</li>
@@ -356,88 +351,73 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">RiskAssessment</code> – contextual probability framing (no actuarial computation)</li>
 </ul>
 
-<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
-<p><strong>Core Profiles</strong></p>
+<h4 id="core-profiles">Core Profiles</h4>
+
 <ul>
-  <li><strong><a href="StructureDefinition-space-emergency-condition.html"><code class="language-plaintext highlighter-rouge">SpaceEmergencyCondition</code></a></strong> – Standardized coding of emergency diagnosis (depressurization, fire, toxic atmosphere, medical) with severity, onset time, and affected modules/vehicles</li>
-  <li><strong><a href="StructureDefinition-emergency-evacuation-procedure.html"><code class="language-plaintext highlighter-rouge">EmergencyEvacuationProcedure</code></a></strong> – Documents the specific evacuation or abort action taken (Dragon return, Soyuz undock, safe-haven relocation) including timestamps, crew roles, and outcome</li>
-  <li><strong><a href="StructureDefinition-emergency-risk-assessment.html"><code class="language-plaintext highlighter-rouge">EmergencyRiskAssessment</code></a></strong> – Captures mission-phase and vehicle-specific risk context (e.g., probability categories for planning purposes) without performing statistical modeling</li>
-  <li><strong><a href="StructureDefinition-emergency-care-plan.html"><code class="language-plaintext highlighter-rouge">EmergencyCarePlan</code></a></strong> – Links identified conditions to the full contingency plan, muster point, egress path, and post-evacuation medical follow-up</li>
+  <li><strong><a href="StructureDefinition-space-emergency-condition.html">Space Emergency Condition</a></strong> – Standardized coding of emergency diagnosis (depressurization, fire, toxic atmosphere, medical) with severity, onset time, and affected modules/vehicles</li>
+  <li><strong><a href="StructureDefinition-emergency-evacuation-procedure.html">Emergency Evacuation Procedure</a></strong> – Documents the specific evacuation or abort action taken (Dragon return, Soyuz undock, safe-haven relocation) including timestamps, crew roles, and outcome</li>
+  <li><strong><a href="StructureDefinition-emergency-risk-assessment.html">Emergency Risk Assessment</a></strong> – Captures mission-phase and vehicle-specific risk context (e.g., probability categories for planning purposes) without performing statistical modeling</li>
+  <li><strong><a href="StructureDefinition-emergency-care-plan.html">Emergency Care Plan</a></strong> – Links identified conditions to the full contingency plan, muster point, egress path, and post-evacuation medical follow-up</li>
 </ul>
 
-<p><strong>Supporting Profiles (suggested)</strong></p>
+<h4 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h4>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">EmergencyMusterLog</code> – Crew accountability and location tracking during Gather phase</li>
+  <li><code class="language-plaintext highlighter-rouge">EmergencyMusterLog</code> – Crew accountability and location tracking during the Gather phase</li>
   <li><code class="language-plaintext highlighter-rouge">EvacuationTelemetryBundle</code> – Composite of vitals, vehicle status, and communication logs</li>
 </ul>
 
-<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<h3 id="examples">Examples</h3>
+
+<p>The three example instances form one illustrative scenario: a rapid depressurization is recorded, the crew returns in Crew Dragon, and both are tied back to the station's standing contingency plan.</p>
+
 <ul>
-  <li><a href="CodeSystem-space-emergency-type-cs.html"><code class="language-plaintext highlighter-rouge">SpaceEmergencyTypeCS</code></a> – (depressurization, fire, toxic-atmosphere, medical-evac)</li>
-  <li><code class="language-plaintext highlighter-rouge">EvacuationActionCS</code> – (dragon-undock, soyuz-return, orion-abort, lunar-safe-haven)</li>
-  <li><code class="language-plaintext highlighter-rouge">MusterPointVS</code> – (vehicle-specific safe havens and assembly points)</li>
+  <li><a href="Condition-Emergency-RapidDepress-001.html">Rapid Depressurization Event</a></li>
+  <li><a href="Procedure-Emergency-DragonReturn-001.html">Emergency Dragon Return</a></li>
+  <li><a href="CarePlan-ISS-Emergency-Plan-001.html">ISS Emergency Contingency Plan</a></li>
 </ul>
 
-<h2 id="architectural-alignment">Architectural Alignment</h2>
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<ul>
+  <li><a href="CodeSystem-space-emergency-type-cs.html">Space Emergency Type Code System</a> and <a href="ValueSet-space-emergency-type-vs.html">Value Set</a> – rapid-depress, fire-onboard, toxic-atmosphere, medical-emergency, vehicle-malfunction, collision-debris, abort-launch, abort-entry</li>
+  <li><a href="CodeSystem-emergency-response-cs.html">Emergency Response Code System</a> and <a href="ValueSet-emergency-response-vs.html">Value Set</a> – crew-dragon-return, soyuz-return, orion-abort, safe-haven, emergency-eva, emergency-undock, crew-rescue-vehicle</li>
+</ul>
+
+<h4 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MusterPointVS</code> – vehicle-specific safe havens and assembly points; the care plan example currently describes the safe haven in each activity's description text</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
 <p>This content directly supports and extends existing IG sections:</p>
 <ul>
   <li>Crew Health Monitoring</li>
-  <li>Space Telemedicine (real-time ground consultation during egress)</li>
-  <li>ECLSS (toxic atmosphere and depressurization response)</li>
-  <li>Cardiovascular / Venous Flow Countermeasures (medical evacuations)</li>
-  <li>Radiation Exposure Tracking (storm-shelter or abort decisions)</li>
-  <li>Metabolic Suppression (autonomous operations during comms blackout)</li>
+  <li><a href="space-telemedicine.html">Space Telemedicine</a> (real-time ground consultation during egress)</li>
+  <li><a href="eclss.html">ECLSS</a> (toxic atmosphere and depressurization response)</li>
+  <li><a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a> (medical evacuations)</li>
+  <li><a href="radiation-tracking.html">Radiation Exposure Tracking</a> (storm-shelter or abort decisions)</li>
+  <li><a href="metabolic-hibernation.html">Metabolic Suppression</a> (autonomous operations during communication blackout)</li>
 </ul>
 
-<p>It forms a critical bridge toward future <strong>autonomous medical operations</strong> and precision risk-informed planning for exploration missions.</p>
+<p>It forms a bridge toward future autonomous medical operations and risk-informed planning for exploration missions.</p>
 
-<h2 id="references">References</h2>
-<h2 id="references-1">References</h2>
+<h3 id="references">References</h3>
 
 <ul>
-  <li>NASA. <em>International Space Station Emergency Procedures and Crew Response Protocols (Warn-Gather-Work Framework).</em> Houston, TX: National Aeronautics and Space Administration, Johnson Space Center.
-    <ul>
-      <li>ISS Emergency Procedures: <a href="https://www.nasa.gov/reference/emergency-equipment-and-procedures/">https://www.nasa.gov/reference/emergency-equipment-and-procedures/</a></li>
-      <li>ISS Operations: <a href="https://www.nasa.gov/mission_pages/station/">https://www.nasa.gov/mission_pages/station/</a></li>
-    </ul>
-  </li>
-  <li>NASA Office of Inspector General. <em>Management of the Human Landing System Contracts</em>. Report No. IG-26-004. Washington, DC: National Aeronautics and Space Administration Office of Inspector General, 2026.
-    <ul>
-      <li>NASA OIG Reports: <a href="https://oig.nasa.gov/audits-and-reports/">https://oig.nasa.gov/audits-and-reports/</a></li>
-      <li>Related Artemis rescue discussion: <a href="https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/">https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/</a></li>
-    </ul>
-  </li>
-  <li>NASA. <em>Human Integration Design Handbook (HIDH).</em> NASA/SP-2010-3407. Washington, DC: National Aeronautics and Space Administration, 2010.
-    <ul>
-      <li>Human Integration Design Handbook: <a href="https://www.nasa.gov/human-integration-design-handbook/">https://www.nasa.gov/human-integration-design-handbook/</a></li>
-    </ul>
-  </li>
-  <li>NASA. <em>Orion Program: Crew Survival, Abort, and Contingency Operations.</em> Washington, DC: National Aeronautics and Space Administration.
-    <ul>
-      <li>Orion Program: <a href="https://www.nasa.gov/orion/">https://www.nasa.gov/orion/</a></li>
-      <li>Artemis Program: <a href="https://www.nasa.gov/artemis/">https://www.nasa.gov/artemis/</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>NASA Commercial Crew Program. <em>Commercial Crew Contingency Operations and Emergency Return Capabilities (Crew Dragon and CST-100 Starliner).</em> Washington, DC: National Aeronautics and Space Administration.</p>
-
-    <ul>
-      <li>Commercial Crew Program: <a href="https://www.nasa.gov/commercialcrew/">https://www.nasa.gov/commercialcrew/</a></li>
-      <li>SpaceX Human Spaceflight: <a href="https://www.spacex.com/humanspaceflight/">https://www.spacex.com/humanspaceflight/</a></li>
-      <li>Boeing Starliner: <a href="https://www.boeing.com/space/starliner/">https://www.boeing.com/space/starliner/</a></li>
-    </ul>
-  </li>
-  <li>International Association of Fire Fighters. <em>Rapid Intervention Team Operations and Personnel Accountability Systems.</em> Washington, DC: IAFF.
-    <ul>
-      <li>IAFF Fire Ground Survival Program: <a href="https://www.iaff.org/fire-ground-survival/">https://www.iaff.org/fire-ground-survival/</a></li>
-    </ul>
-  </li>
-  <li>Federal Emergency Management Agency. <em>Incident Accountability and Rapid Intervention Concepts for High-Risk Environments.</em> Washington, DC: FEMA.
-    <ul>
-      <li>U.S. Fire Administration: <a href="https://www.usfa.fema.gov/">https://www.usfa.fema.gov/</a></li>
-    </ul>
-  </li>
+  <li>NASA. <em>Emergency Equipment and Procedures</em> (ISS reference). <a href="https://www.nasa.gov/reference/emergency-equipment-and-procedures/">https://www.nasa.gov/reference/emergency-equipment-and-procedures/</a></li>
+  <li>NASA Office of Inspector General. <em>NASA's Management of the Human Landing System Program.</em> Report No. IG-26-004, 2026. Published at <a href="https://oig.nasa.gov/">oig.nasa.gov</a>.</li>
+  <li>Flying Magazine. <a href="https://www.flyingmag.com/nasa-crew-rescue-artemis-moon-landing/">Watchdog: NASA 'Ruled Out' Crew Rescue Capability for Artemis Moon Landing</a> – press coverage of the OIG finding.</li>
+  <li>NASA. <em>Human Integration Design Handbook (HIDH).</em> NASA/SP-2010-3407, 2010. <a href="https://www.nasa.gov/human-integration-design-handbook/">https://www.nasa.gov/human-integration-design-handbook/</a></li>
+  <li>NASA. <em>Orion spacecraft</em> program page. <a href="https://www.nasa.gov/orion/">https://www.nasa.gov/orion/</a></li>
+  <li>NASA. <em>Commercial Crew Program.</em> <a href="https://www.nasa.gov/commercialcrew/">https://www.nasa.gov/commercialcrew/</a></li>
+  <li>SpaceX. <em>Human Spaceflight</em> (Crew Dragon). <a href="https://www.spacex.com/humanspaceflight/">https://www.spacex.com/humanspaceflight/</a></li>
+  <li>Boeing. <em>CST-100 Starliner.</em> <a href="https://www.boeing.com/space/starliner/">https://www.boeing.com/space/starliner/</a></li>
+  <li>International Association of Fire Fighters. <em>Fire Ground Survival Program.</em> <a href="https://www.iaff.org/fire-ground-survival/">https://www.iaff.org/fire-ground-survival/</a></li>
+  <li>U.S. Fire Administration (FEMA). <a href="https://www.usfa.fema.gov/">https://www.usfa.fema.gov/</a></li>
+  <li>Space.com. <a href="https://www.space.com/space-exploration/human-spaceflight/space-rescue-services-needed-2-stranded-astronaut-incidents-are-a-massive-wake-up-call-experts-say">Space rescue services needed? 2 'stranded' astronaut incidents are a 'massive wake-up call,' experts say</a></li>
 </ul>
+
 
 
 
@@ -457,7 +437,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,4 +1,4 @@
-# Decompression Protocol - v0.6.2
+# Decompression Protocol - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/decompression-protocol | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:DecompressionProtocol |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/decompression-protocol | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:DecompressionProtocol |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Standardized decompression procedures for diving operations and space analog training 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
 {
   "resourceType" : "StructureDefinition",
   "id" : "decompression-protocol",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/decompression-protocol",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/decompression-protocol",
+  "version" : "0.7.0",
   "name" : "DecompressionProtocol",
   "title" : "Decompression Protocol",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
     }
   ],
   "description" : "Standardized decompression procedures for diving operations and space analog training",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/decompression-algorithm"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/decompression-algorithm"
             ]
           }
         ],
@@ -129,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/maximum-depth-reached"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/maximum-depth-reached"
             ]
           }
         ],
@@ -145,7 +147,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/total-decompression-time"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/total-decompression-time"
             ]
           }
         ],
@@ -161,7 +163,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/safety-stop-compliance"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/safety-stop-compliance"
             ]
           }
         ],
@@ -177,7 +179,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/environmental-factors"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/environmental-factors"
             ]
           }
         ],
@@ -193,7 +195,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/emergency-procedures"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-procedures"
             ]
           }
         ],
@@ -210,7 +212,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/decompression-procedures"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/decompression-procedures-vs"
         }
       },
       {
@@ -220,7 +222,7 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ]
@@ -259,8 +261,8 @@ Other representations of profile: [CSV](StructureDefinition-decompression-protoc
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/NeutralBuoyancyFacility",
-              "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-facility",
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber"
             ]
           }
         ]

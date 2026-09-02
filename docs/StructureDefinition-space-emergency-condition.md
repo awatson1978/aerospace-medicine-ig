@@ -1,4 +1,4 @@
-# Space Emergency Condition - v0.6.2
+# Space Emergency Condition - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceEmergencyCondition |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-emergency-condition | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceEmergencyCondition |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Diagnosis of an emergency situation during spaceflight requiring immediate response 
@@ -37,12 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-emergency-condition",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-emergency-condition",
+  "version" : "0.7.0",
   "name" : "SpaceEmergencyCondition",
   "title" : "Space Emergency Condition",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -56,6 +57,7 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
     }
   ],
   "description" : "Diagnosis of an emergency situation during spaceflight requiring immediate response",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -124,7 +126,7 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -140,7 +142,7 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"
             ]
           }
         ],
@@ -170,7 +172,7 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/space-emergency-type-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-emergency-type-vs"
         }
       },
       {
@@ -180,7 +182,7 @@ Other representations of profile: [CSV](StructureDefinition-space-emergency-cond
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],

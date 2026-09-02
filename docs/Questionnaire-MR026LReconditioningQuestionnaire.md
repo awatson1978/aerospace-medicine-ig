@@ -1,4 +1,4 @@
-# MR026L Reconditioning Assessment - v0.6.2
+# MR026L Reconditioning Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/mr026l-reconditioning | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr026l-reconditioning | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MR026LReconditioning |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To document and track crew reconditioning progress after long-duration spaceflig
 {
   "resourceType" : "Questionnaire",
   "id" : "MR026LReconditioningQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To document and track crew reconditioning progress after long-duration spaceflig
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/mr026l-reconditioning",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr026l-reconditioning",
+  "version" : "0.7.0",
   "name" : "MR026LReconditioning",
   "title" : "MR026L Reconditioning Assessment",
   "status" : "active",
@@ -94,7 +97,7 @@ To document and track crew reconditioning progress after long-duration spaceflig
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "ascr",
                 "display" : "Astronaut Strength Conditioning and Rehabilitation"
               }
@@ -103,7 +106,7 @@ To document and track crew reconditioning progress after long-duration spaceflig
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "ascr",
                 "display" : "Astronaut Strength Conditioning and Rehabilitation"
               }
@@ -119,7 +122,7 @@ To document and track crew reconditioning progress after long-duration spaceflig
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "reconditioning",
                 "display" : "Reconditioning"
               }
@@ -128,7 +131,7 @@ To document and track crew reconditioning progress after long-duration spaceflig
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "reconditioning",
                 "display" : "Reconditioning"
               }
@@ -358,7 +361,7 @@ To document and track crew reconditioning progress after long-duration spaceflig
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -367,7 +370,7 @@ To document and track crew reconditioning progress after long-duration spaceflig
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

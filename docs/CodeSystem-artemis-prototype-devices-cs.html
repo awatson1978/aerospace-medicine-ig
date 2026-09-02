@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artemis Prototype Devices -  v0.6.2</title>
+    <title>Artemis Prototype Devices - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"33.394"}
-    h3,h4,h5,h6{--heading-prefix:"33.394"}</style>
+    <style type="text/css">h2{--heading-prefix:"32.364"}
+    h3,h4,h5,h6{--heading-prefix:"32.364"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -235,7 +235,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -279,16 +279,16 @@
 
   <a name="root"> </a>
   <h2 id="root">CodeSystem: Artemis Prototype Devices
-
+(Experimental)
   </h2>
 
   <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs|0.6.2"/></span>
+      <span class="copy-text">0.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs|0.7.0"/></span>
       </td>
     </tr>
 
@@ -304,7 +304,7 @@
         
           Active
           
-            as of 2026-08-03
+            as of 2026-09-02
           
         
       </td>
@@ -317,10 +317,15 @@
 
 
 
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.</p>
+</td>
+    </tr>
+
   </table>
 
 <p>
-<p>Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)</p>
+<p>Developmental and test hardware not yet flight-certified: demo units, ground analogs, next-generation prototypes, and planned LunaNet, surface mobility, habitat, logistics, ISRU, and surface power infrastructure elements</p>
 
 </p>
 
@@ -341,48 +346,224 @@
 
 
   <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="artemis-prototype-devices-cs"> </a><a name="hcartemis-prototype-devices-cs"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
-<table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<table class="grid" data-fhir="generated"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
 <tr><td>deviceType</td>
 <td>deviceType</td>
-<td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType</td>
-<td>code</td>
-<td>Device category (spacecraft, suit, vehicle, habitat, equipment)</td></tr>
+<td>string</td>
+<td>Device category (suit, life-support, habitat, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)</td></tr>
 <tr><td>testEnvironment</td>
 <td>testEnvironment</td>
-<td>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment</td>
-<td>code</td>
-<td>Primary test environment (ground, ISS, analog-mission)</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs</code> defines the following codes:</p>
-<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>testEnvironment</b></td></tr>
+<td>string</td>
+<td>Primary test environment (ground, iss, analog-mission)</td></tr>
+<tr><td>manufacturer</td>
+<td>manufacturer</td>
+<td>string</td>
+<td>Device manufacturer or contractor</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>deviceType</b></td><td><b>testEnvironment</b></td><td><b>manufacturer</b></td></tr>
 <tr><td style="white-space:nowrap">xemu-demo<a name="artemis-prototype-devices-cs-xemu-demo"> </a></td>
 <td>xEMU Demo Unit</td>
 <td>Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground.</td>
 <td>suit</td>
-<td>ground</td></tr>
-<tr><td style="white-space:nowrap">pressurized-rover-proto<a name="artemis-prototype-devices-cs-pressurized-rover-proto"> </a></td>
-<td>Pressurized Rover Prototype</td>
-<td>Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.</td>
-<td>rover</td>
-<td>ground</td></tr>
-<tr><td style="white-space:nowrap">habitat-test-module<a name="artemis-prototype-devices-cs-habitat-test-module"> </a></td>
-<td>Habitat Test Module</td>
-<td>Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.</td>
-<td>habitat</td>
-<td>analog-mission</td></tr>
+<td>ground</td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">nextgen-plss<a name="artemis-prototype-devices-cs-nextgen-plss"> </a></td>
 <td>Next-Generation PLSS</td>
 <td>Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground.</td>
 <td>life-support</td>
-<td>ground</td></tr>
+<td>ground</td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">biomonitor-wearable<a name="artemis-prototype-devices-cs-biomonitor-wearable"> </a></td>
 <td>BioMonitor Wearable Prototype</td>
 <td>Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS.</td>
 <td>medical-equipment</td>
-<td>iss</td></tr>
+<td>iss</td>
+<td></td></tr>
 <tr><td style="white-space:nowrap">autonomous-medical-unit<a name="artemis-prototype-devices-cs-autonomous-medical-unit"> </a></td>
 <td>Autonomous Medical Unit Prototype</td>
 <td>Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground.</td>
 <td>medical-equipment</td>
-<td>ground</td></tr></table></div>
+<td>ground</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">habitat-test-module<a name="artemis-prototype-devices-cs-habitat-test-module"> </a></td>
+<td>Habitat Test Module</td>
+<td>Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.</td>
+<td>habitat</td>
+<td>analog-mission</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">surface-habitat-module<a name="artemis-prototype-devices-cs-surface-habitat-module"> </a></td>
+<td>Surface Habitat Module</td>
+<td>Planned lunar surface habitat infrastructure element. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>habitat</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">pressurized-rover-proto<a name="artemis-prototype-devices-cs-pressurized-rover-proto"> </a></td>
+<td>Pressurized Rover Prototype</td>
+<td>Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td></td></tr>
+<tr><td style="white-space:nowrap">crewed-ltv<a name="artemis-prototype-devices-cs-crewed-ltv"> </a></td>
+<td>Crewed LTV</td>
+<td>Crewed Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">uncrewed-ltv<a name="artemis-prototype-devices-cs-uncrewed-ltv"> </a></td>
+<td>Uncrewed LTV</td>
+<td>Uncrewed (teleoperated) Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">advanced-ltv<a name="artemis-prototype-devices-cs-advanced-ltv"> </a></td>
+<td>Advanced LTV</td>
+<td>Advanced Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">ltv-gen-2<a name="artemis-prototype-devices-cs-ltv-gen-2"> </a></td>
+<td>LTV Generation 2</td>
+<td>Second-generation Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>NASA / Industry Team</td></tr>
+<tr><td style="white-space:nowrap">excavator-rover<a name="artemis-prototype-devices-cs-excavator-rover"> </a></td>
+<td>Excavator Rover</td>
+<td>Lunar surface excavation rover under development. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">site-prep-logistics-rover<a name="artemis-prototype-devices-cs-site-prep-logistics-rover"> </a></td>
+<td>Site Preparation and Logistics Rover</td>
+<td>Rover concept for site preparation and logistics tasks. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">international-partner-rover<a name="artemis-prototype-devices-cs-international-partner-rover"> </a></td>
+<td>International Partner Rover</td>
+<td>Partner-provided lunar rover under development. Manufacturer: International Partners. Test env: ground.</td>
+<td>rover</td>
+<td>ground</td>
+<td>International Partners</td></tr>
+<tr><td style="white-space:nowrap">science-rover<a name="artemis-prototype-devices-cs-science-rover"> </a></td>
+<td>Science Rover</td>
+<td>Lunar surface science rover concept. Manufacturer: NASA / Partners. Test env: analog-mission.</td>
+<td>rover</td>
+<td>analog-mission</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">moonfall-drone<a name="artemis-prototype-devices-cs-moonfall-drone"> </a></td>
+<td>MoonFall Drone</td>
+<td>Lunar surface aerial or descent support drone concept. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>drone</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">orbital-comm-relay<a name="artemis-prototype-devices-cs-orbital-comm-relay"> </a></td>
+<td>Orbital Communication Relay</td>
+<td>Orbital relay satellite for lunar communications. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>communications</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">observation-satellite<a name="artemis-prototype-devices-cs-observation-satellite"> </a></td>
+<td>Observation Satellite</td>
+<td>Lunar observation and monitoring satellite. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>communications</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">relay-satellite-observability<a name="artemis-prototype-devices-cs-relay-satellite-observability"> </a></td>
+<td>Relay Satellite with Observability</td>
+<td>Relay satellite with observability functions. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>communications</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">surface-comm-nav-node<a name="artemis-prototype-devices-cs-surface-comm-nav-node"> </a></td>
+<td>Surface Communication and Navigation Node</td>
+<td>Lunar surface communication and navigation infrastructure node. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>communications</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">deployable-surface-comm-tower<a name="artemis-prototype-devices-cs-deployable-surface-comm-tower"> </a></td>
+<td>Deployable Surface Communication Tower</td>
+<td>Deployable surface communications tower. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>communications</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">high-throughput-surface-comms<a name="artemis-prototype-devices-cs-high-throughput-surface-comms"> </a></td>
+<td>High-Throughput Surface Communications Node</td>
+<td>High-bandwidth lunar surface communications node. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>communications</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">lunar-pnt-node<a name="artemis-prototype-devices-cs-lunar-pnt-node"> </a></td>
+<td>Lunar PNT Node</td>
+<td>Positioning, navigation, and timing infrastructure node. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>navigation</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">clock-demo-node<a name="artemis-prototype-devices-cs-clock-demo-node"> </a></td>
+<td>Lunar Clock Demonstration Node</td>
+<td>Surface timing and synchronization demonstrator. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>navigation</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">navigation-capability-node<a name="artemis-prototype-devices-cs-navigation-capability-node"> </a></td>
+<td>Navigation Capability Node</td>
+<td>Lunar navigation infrastructure element. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>navigation</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">logistics-demo-unit<a name="artemis-prototype-devices-cs-logistics-demo-unit"> </a></td>
+<td>Logistics Demonstration Unit</td>
+<td>Demonstrator for lunar surface logistics. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>logistics</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">logistics-delivery-vehicle<a name="artemis-prototype-devices-cs-logistics-delivery-vehicle"> </a></td>
+<td>Logistics Delivery Vehicle</td>
+<td>Lunar surface or cargo delivery logistics asset concept. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>logistics</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">cargo-return-vehicle<a name="artemis-prototype-devices-cs-cargo-return-vehicle"> </a></td>
+<td>Cargo Return Vehicle</td>
+<td>Vehicle concept for returning cargo from lunar surface operations. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>logistics</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">isru-plant<a name="artemis-prototype-devices-cs-isru-plant"> </a></td>
+<td>ISRU Plant</td>
+<td>In Situ Resource Utilization processing system under development. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>isru</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">solar-power-augmentation-unit<a name="artemis-prototype-devices-cs-solar-power-augmentation-unit"> </a></td>
+<td>Solar Power Augmentation Unit</td>
+<td>Solar power augmentation infrastructure. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>power</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">solar-battery-rfc-power-unit<a name="artemis-prototype-devices-cs-solar-battery-rfc-power-unit"> </a></td>
+<td>Solar Battery RFC Power Unit</td>
+<td>Solar, battery, and regenerative fuel cell power system. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>power</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">fission-surface-power-unit<a name="artemis-prototype-devices-cs-fission-surface-power-unit"> </a></td>
+<td>Fission Surface Power Unit</td>
+<td>Lunar surface fission power system under development. Manufacturer: NASA / DOE / Partners. Test env: ground.</td>
+<td>power</td>
+<td>ground</td>
+<td>NASA / DOE / Partners</td></tr>
+<tr><td style="white-space:nowrap">power-infrastructure-node<a name="artemis-prototype-devices-cs-power-infrastructure-node"> </a></td>
+<td>Power Infrastructure Node</td>
+<td>Surface electrical power infrastructure node. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>power</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr>
+<tr><td style="white-space:nowrap">power-distribution-node<a name="artemis-prototype-devices-cs-power-distribution-node"> </a></td>
+<td>Power Distribution Node</td>
+<td>Surface power distribution system. Manufacturer: NASA / Partners. Test env: ground.</td>
+<td>power</td>
+<td>ground</td>
+<td>NASA / Partners</td></tr></table></div>
 
   
 
@@ -409,7 +590,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

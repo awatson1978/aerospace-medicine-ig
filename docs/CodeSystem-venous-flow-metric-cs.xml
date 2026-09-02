@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="venous-flow-metric-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem venous-flow-metric-cs</b></p><a name="venous-flow-metric-cs"> </a><a name="hcvenous-flow-metric-cs"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">forward-flow-time<a name="venous-flow-metric-cs-forward-flow-time"> </a></td><td>Forward Flow Time</td><td>Duration of antegrade flow within the sample window (s)</td></tr><tr><td style="white-space:nowrap">retrograde-flow-time<a name="venous-flow-metric-cs-retrograde-flow-time"> </a></td><td>Retrograde Flow Time</td><td>Duration of retrograde flow within the sample window (s)</td></tr><tr><td style="white-space:nowrap">zero-flow-time<a name="venous-flow-metric-cs-zero-flow-time"> </a></td><td>Zero Flow Time</td><td>Duration of stagnant flow within the sample window (s)</td></tr><tr><td style="white-space:nowrap">total-sample-time<a name="venous-flow-metric-cs-total-sample-time"> </a></td><td>Total Sample Time</td><td>Total duration of the Doppler sample window (s)</td></tr><tr><td style="white-space:nowrap">fdi-ratio<a name="venous-flow-metric-cs-fdi-ratio"> </a></td><td>Flow Directionality Index</td><td>FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total)</td></tr></table></div>
+  </text>
+  <url value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs"/>
+  <version value="0.7.0"/>
+  <name value="VenousFlowMetricCS"/>
+  <title value="Venous Flow Metric Code System"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-09-02T13:24:45-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org/"/>
+    </telecom>
+  </contact>
+  <description value="Component codes for internal jugular vein flow directionality measurements"/>
+  <copyright value="Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="forward-flow-time"/>
+    <display value="Forward Flow Time"/>
+    <definition value="Duration of antegrade flow within the sample window (s)"/>
+  </concept>
+  <concept>
+    <code value="retrograde-flow-time"/>
+    <display value="Retrograde Flow Time"/>
+    <definition value="Duration of retrograde flow within the sample window (s)"/>
+  </concept>
+  <concept>
+    <code value="zero-flow-time"/>
+    <display value="Zero Flow Time"/>
+    <definition value="Duration of stagnant flow within the sample window (s)"/>
+  </concept>
+  <concept>
+    <code value="total-sample-time"/>
+    <display value="Total Sample Time"/>
+    <definition value="Total duration of the Doppler sample window (s)"/>
+  </concept>
+  <concept>
+    <code value="fdi-ratio"/>
+    <display value="Flow Directionality Index"/>
+    <definition value="FDI = ((t_forward - t_retrograde) / T_total) * (1 - t_zero / T_total)"/>
+  </concept>
+</CodeSystem>

@@ -1,15 +1,16 @@
-# Antiemetic Protocol Code System - v0.6.2
+# Antiemetic Protocol Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Antiemetic Protocol Code System**
 
-## CodeSystem: Antiemetic Protocol Code System 
+## CodeSystem: Antiemetic Protocol Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AntiemeticProtocolCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AntiemeticProtocolCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Protocols for antiemetic administration in spaceflight contexts 
@@ -26,13 +27,13 @@ Protocols for antiemetic administration in spaceflight contexts
 {
   "resourceType" : "CodeSystem",
   "id" : "antiemetic-protocol-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/antiemetic-protocol-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/antiemetic-protocol-cs",
+  "version" : "0.7.0",
   "name" : "AntiemeticProtocolCS",
   "title" : "Antiemetic Protocol Code System",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Protocols for antiemetic administration in spaceflight contexts
     }
   ],
   "description" : "Protocols for antiemetic administration in spaceflight contexts",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 5,

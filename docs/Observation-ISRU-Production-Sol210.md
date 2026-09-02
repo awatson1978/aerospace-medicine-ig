@@ -1,4 +1,4 @@
-# ISRU Production Log - Sol 210 - v0.6.2
+# ISRU Production Log - Sol 210 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,13 +6,17 @@
 
 ## Example Observation: ISRU Production Log - Sol 210
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [ISRU Production Log](StructureDefinition-isru-production-log.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
-**category**: operational
+**category**: Operational
 
-**code**: Cumulative Propellant Production
+**code**: ISRU Propellant Production
 
 **effective**: 2041-06-01 12:00:00+0000
 
@@ -27,9 +31,9 @@ Production rate steady at 450 kg/sol average. On track to reach 112 tons for Ear
 
 **device**: [Device: status = active; manufacturer = NASA / Commercial Partners; type = Mars ISRU Propellant Plant](Device-ISRU-Plant-Jezero-1.md)
 
-> **component****code**:power-consumption**value**: 25.3 kW(Details: UCUM codekW = 'kW')
+> **component****code**:Reactor Status**value**: Nominal operation, 96% efficiency
 
-> **component****code**:reactor-status**value**: Nominal operation, 96% efficiency
+> **component****code**:Power Consumption**value**: 25.3 kW(Details: UCUM codekW = 'kW')
 
 
 
@@ -40,8 +44,16 @@ Production rate steady at 450 kg/sol average. On track to reach 112 tons for Ear
   "resourceType" : "Observation",
   "id" : "ISRU-Production-Sol210",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-production-log"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
@@ -49,8 +61,9 @@ Production rate steady at 450 kg/sol average. On track to reach 112 tons for Ear
     {
       "coding" : [
         {
-          "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace",
-          "code" : "operational"
+          "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs",
+          "code" : "operational",
+          "display" : "Operational"
         }
       ]
     }
@@ -58,11 +71,12 @@ Production rate steady at 450 kg/sol average. On track to reach 112 tons for Ear
   "code" : {
     "coding" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs",
         "code" : "cumulative-propellant",
         "display" : "Cumulative Propellant Production"
       }
-    ]
+    ],
+    "text" : "ISRU Propellant Production"
   },
   "effectiveDateTime" : "2041-06-01T12:00:00Z",
   "valueQuantity" : {
@@ -84,8 +98,21 @@ Production rate steady at 450 kg/sol average. On track to reach 112 tons for Ear
       "code" : {
         "coding" : [
           {
-            "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs",
-            "code" : "power-consumption"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs",
+            "code" : "reactor-status",
+            "display" : "Reactor Status"
+          }
+        ]
+      },
+      "valueString" : "Nominal operation, 96% efficiency"
+    },
+    {
+      "code" : {
+        "coding" : [
+          {
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs",
+            "code" : "power-consumption",
+            "display" : "Power Consumption"
           }
         ]
       },
@@ -95,17 +122,6 @@ Production rate steady at 450 kg/sol average. On track to reach 112 tons for Ear
         "system" : "http://unitsofmeasure.org",
         "code" : "kW"
       }
-    },
-    {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs",
-            "code" : "reactor-status"
-          }
-        ]
-      },
-      "valueString" : "Nominal operation, 96% efficiency"
     }
   ]
 }

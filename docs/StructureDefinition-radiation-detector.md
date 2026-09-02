@@ -1,22 +1,24 @@
-# Radiation Detection Device (Fixed) - v0.6.2
+# Radiation Detection Device - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Radiation Detection Device (Fixed)**
+* **Radiation Detection Device**
 
-## Resource Profile: Radiation Detection Device (Fixed) 
+## Resource Profile: Radiation Detection Device 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radiation-detector | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:RadiationDetector |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:RadiationDetector |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Fixed device profile for radiation monitoring in space with properly constrained properties 
+Device profile for personal and area radiation monitors used in spaceflight, with detector-property slices. 
 
 **Usages:**
 
-* Refer to this Profile: [Space Radiation Exposure (Fixed)](StructureDefinition-space-radiation-exposure.md)
+* Refer to this Profile: [Space Radiation Exposure](StructureDefinition-space-radiation-exposure.md)
+* Examples for this Profile: [Device/radiation-detector-example](Device-radiation-detector-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/radiation-detector)
 
@@ -36,12 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "radiation-detector",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/radiation-detector",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector",
+  "version" : "0.7.0",
   "name" : "RadiationDetector",
-  "title" : "Radiation Detection Device (Fixed)",
+  "title" : "Radiation Detection Device",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -54,7 +56,8 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
       ]
     }
   ],
-  "description" : "Fixed device profile for radiation monitoring in space with properly constrained properties",
+  "description" : "Device profile for personal and area radiation monitors used in spaceflight, with detector-property slices.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -117,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/radiation-detector-type-vs-complete"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/dosimeter-type-vs"
         }
       },
       {
@@ -147,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "sensitivity",
               "display" : "Detector Sensitivity"
             }
@@ -178,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "energy-range-min",
               "display" : "Minimum Energy Range"
             }
@@ -209,7 +212,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "energy-range-max",
               "display" : "Maximum Energy Range"
             }
@@ -240,7 +243,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "dosimeter-type",
               "display" : "Dosimeter Type"
             }
@@ -248,10 +251,18 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         }
       },
       {
+        "id" : "Device.property:dosimeterType.valueCode",
+        "path" : "Device.property.valueCode",
+        "binding" : {
+          "strength" : "extensible",
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/dosimeter-type-vs"
+        }
+      },
+      {
         "id" : "Device.property:calibrationDate",
         "path" : "Device.property",
         "sliceName" : "calibrationDate",
-        "short" : "Last calibration date as string",
+        "short" : "Days since last calibration",
         "min" : 0,
         "max" : "1"
       },
@@ -261,12 +272,22 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "calibration-date",
               "display" : "Calibration Date"
             }
           ]
         }
+      },
+      {
+        "id" : "Device.property:calibrationDate.valueQuantity.system",
+        "path" : "Device.property.valueQuantity.system",
+        "patternUri" : "http://unitsofmeasure.org"
+      },
+      {
+        "id" : "Device.property:calibrationDate.valueQuantity.code",
+        "path" : "Device.property.valueQuantity.code",
+        "patternCode" : "d"
       },
       {
         "id" : "Device.property:operatingTempMin",
@@ -282,7 +303,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "operating-temp-min",
               "display" : "Minimum Operating Temperature"
             }
@@ -313,7 +334,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "operating-temp-max",
               "display" : "Maximum Operating Temperature"
             }
@@ -344,7 +365,7 @@ Other representations of profile: [CSV](StructureDefinition-radiation-detector.c
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "measurement-accuracy",
               "display" : "Measurement Accuracy"
             }

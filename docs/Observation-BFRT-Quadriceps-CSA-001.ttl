@@ -6,30 +6,42 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/BFRT-Quadriceps-CSA-001> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/BFRT-Quadriceps-CSA-001> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "BFRT-Quadriceps-CSA-001"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/bfrt-outcome-observation>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-outcome-observation"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-outcome-observation>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BFRT-Quadriceps-CSA-001</b></p><a name=\"BFRT-Quadriceps-CSA-001\"> </a><a name=\"hcBFRT-Quadriceps-CSA-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bfrt-outcome-observation.html\">BFRT Outcome Observation</a></p></div><p><b>Mission Phase</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs orbital-ops}\">Orbital Operations</span></p><p><b>Flight Day</b>: 56</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs muscle-csa}\">Muscle Cross-Sectional Area</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-06-10 09:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs muscle-csa}\">Muscle Cross-Sectional Area</span></p><p><b>value</b>: 72.5 cm2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm2 = 'cm2')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs p1np}\">P1NP (Procollagen Type I N-Propeptide)</span></p><p><b>value</b>: 45.2 ng/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeng/mL = 'ng/mL')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation BFRT-Quadriceps-CSA-001</b></p><a name=\"BFRT-Quadriceps-CSA-001\"> </a><a name=\"hcBFRT-Quadriceps-CSA-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-bfrt-outcome-observation.html\">BFRT Outcome Observation</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Phase</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs orbital-ops}\">Orbital Operations</span></p><p><b>Flight Day</b>: 56</p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs muscle-csa}\">Muscle Cross-Sectional Area</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2028-06-10 09:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs muscle-csa}\">Muscle Cross-Sectional Area</span></p><p><b>value</b>: 72.5 cm2<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm2 = 'cm2')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs p1np}\">P1NP (Procollagen Type I N-Propeptide)</span></p><p><b>value</b>: 45.2 ng/mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeng/mL = 'ng/mL')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/mission-phase>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs>
          ] ;
          fhir:code [ fhir:v "orbital-ops" ] ;
          fhir:display [ fhir:v "Orbital Operations" ]
@@ -37,8 +49,8 @@
      ]
   ] [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/flight-day>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day>
      ] ;
      fhir:value [
        a fhir:Integer ;
@@ -49,15 +61,15 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
-         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs>
        ] ;
        fhir:code [ fhir:v "muscle-csa" ] ;
        fhir:display [ fhir:v "Muscle Cross-Sectional Area" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:effective [
@@ -68,8 +80,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs>
          ] ;
          fhir:code [ fhir:v "muscle-csa" ] ;
          fhir:display [ fhir:v "Muscle Cross-Sectional Area" ]
@@ -89,8 +101,8 @@
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/bfrt-outcome-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-outcome-cs>
          ] ;
          fhir:code [ fhir:v "p1np" ] ;
          fhir:display [ fhir:v "P1NP (Procollagen Type I N-Propeptide)" ]

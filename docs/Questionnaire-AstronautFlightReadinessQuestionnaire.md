@@ -1,4 +1,4 @@
-# Astronaut and Space Tourist Medical Screening Questionnaire - v0.6.2
+# Astronaut and Space Tourist Medical Screening Questionnaire - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/AstronautFlightReadinessQuestionnaire | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/AstronautFlightReadinessQuestionnaire | *Version*:0.7.0 |
 | Active as of 2025-05-18 | *Computable Name*:AstronautFlightReadinessQuestionnaire |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices. 
@@ -22,8 +23,8 @@ A medical screening form for astronaut or space tourism flight readiness, based 
 {
   "resourceType" : "Questionnaire",
   "id" : "AstronautFlightReadinessQuestionnaire",
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/AstronautFlightReadinessQuestionnaire",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/AstronautFlightReadinessQuestionnaire",
+  "version" : "0.7.0",
   "name" : "AstronautFlightReadinessQuestionnaire",
   "title" : "Astronaut and Space Tourist Medical Screening Questionnaire",
   "status" : "active",
@@ -41,6 +42,7 @@ A medical screening form for astronaut or space tourism flight readiness, based 
     }
   ],
   "description" : "A medical screening form for astronaut or space tourism flight readiness, based on FAA Form 8500-8, NASA/ESA standards, and commercial vendor practices.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "item" : [
     {
       "linkId" : "intro",

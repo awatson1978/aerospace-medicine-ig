@@ -1,15 +1,16 @@
-# All Mars Mission Devices - v0.6.2
+# All Mars Mission Devices - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **All Mars Mission Devices**
 
-## ValueSet: All Mars Mission Devices 
+## ValueSet: All Mars Mission Devices (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MarsAllDevicesVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-all-devices-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MarsAllDevicesVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Both certified and prototype Mars devices 
@@ -45,13 +46,13 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 {
   "resourceType" : "ValueSet",
   "id" : "mars-all-devices-vs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/mars-all-devices-vs",
+  "version" : "0.7.0",
   "name" : "MarsAllDevicesVS",
   "title" : "All Mars Mission Devices",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,13 +66,14 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   ],
   "description" : "Both certified and prototype Mars devices",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-certified-devices-cs"
       },
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-prototype-devices-cs"
       }
     ]
   }

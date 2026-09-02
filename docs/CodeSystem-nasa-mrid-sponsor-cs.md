@@ -1,15 +1,16 @@
-# NASA MRID Sponsor Organizations - v0.6.2
+# NASA MRID Sponsor Organizations - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **NASA MRID Sponsor Organizations**
 
-## CodeSystem: NASA MRID Sponsor Organizations 
+## CodeSystem: NASA MRID Sponsor Organizations (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:NASAMRIDSponsorCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:NASAMRIDSponsorCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents. 
@@ -26,13 +27,13 @@ Organizations that sponsor medical requirements within NASA's Medical Requiremen
 {
   "resourceType" : "CodeSystem",
   "id" : "nasa-mrid-sponsor-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
+  "version" : "0.7.0",
   "name" : "NASAMRIDSponsorCS",
   "title" : "NASA MRID Sponsor Organizations",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Organizations that sponsor medical requirements within NASA's Medical Requiremen
     }
   ],
   "description" : "Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 7,

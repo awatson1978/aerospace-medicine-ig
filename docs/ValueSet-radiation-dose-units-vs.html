@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Radiation Dose Units -  v0.6.2</title>
+    <title>Radiation Dose Units - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"33.345"}
-    h3,h4,h5,h6{--heading-prefix:"33.345"}</style>
+    <style type="text/css">h2{--heading-prefix:"32.324"}
+    h3,h4,h5,h6{--heading-prefix:"32.324"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -235,7 +235,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -279,15 +279,15 @@
 
   <a name="root"> </a>
   <h2 id="root">ValueSet: Radiation Dose Units
-
+(Experimental)
   </h2>
-  <table class="colsd">
+  <table class="colsi">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.6.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://mitre.org/fhir/space-health/ValueSet/radiation-dose-units-vs|0.6.2"/></span>
+      <span class="copy-text">0.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radiation-dose-units-vs|0.7.0"/></span>
       </td>
     </tr>
 
@@ -301,9 +301,9 @@
 
       <td colspan="4">
         
-          Draft
+          Active
           
-            as of 2026-08-03
+            as of 2026-09-02
           
         
       </td>
@@ -315,6 +315,11 @@
 
 
 
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.</p>
+</td>
+    </tr>
 
   </table>
 
@@ -329,7 +334,8 @@
   </p>
   
 <ul>
- <li><a href="StructureDefinition-space-radiation-exposure.html">Space Radiation Exposure (Fixed)</a></li>
+ <li><a href="StructureDefinition-artemis-radiation-exposure.html">Artemis Radiation Exposure</a></li>
+ <li><a href="StructureDefinition-space-radiation-exposure.html">Space Radiation Exposure</a></li>
 </ul>
 
 
@@ -349,8 +355,7 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px" title="No Expansion for this valueset (not supported by Publication Tooling&lt;!-- [A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the value set cannot be expanded] --&gt;)">No Expansion for this valueset (not supported by Publication Tooling<!-- [A definition for CodeSystem 'http://unitsofmeasure.org' could not be found, so the value set cannot be expanded] -->)</p>
-
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem UCUM version 2.2<span class="copy-text-inline"><button data-clipboard-text="http://unitsofmeasure.org|2.2" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 6 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://unitsofmeasure.org-mSv"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  mSv</td><td>mSv</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;mSv&quot;, &quot;display&quot;: &quot;mSv&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;mSv&quot;&gt;&lt;display value=&quot;mSv&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-uSv"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  uSv</td><td>uSv</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;uSv&quot;, &quot;display&quot;: &quot;uSv&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;uSv&quot;&gt;&lt;display value=&quot;uSv&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-Sv"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  Sv</td><td>Sv</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;Sv&quot;, &quot;display&quot;: &quot;Sv&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;Sv&quot;&gt;&lt;display value=&quot;Sv&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-mGy"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  mGy</td><td>mGy</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;mGy&quot;, &quot;display&quot;: &quot;mGy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;mGy&quot;&gt;&lt;display value=&quot;mGy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-uGy"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  uGy</td><td>uGy</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;uGy&quot;, &quot;display&quot;: &quot;uGy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;uGy&quot;&gt;&lt;display value=&quot;uGy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://unitsofmeasure.org-Gy"> </a><code>http://unitsofmeasure.org</code></td><td style="white-space:nowrap">  Gy</td><td>Gy</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://unitsofmeasure.org&quot;, &quot;version&quot;: &quot;2.2&quot;, &quot;code&quot;: &quot;Gy&quot;, &quot;display&quot;: &quot;Gy&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://unitsofmeasure.org&quot;&gt;&lt;version value=&quot;2.2&quot;&gt;&lt;code value=&quot;Gy&quot;&gt;&lt;display value=&quot;Gy&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
 
   <hr/>
   <p>
@@ -409,7 +414,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

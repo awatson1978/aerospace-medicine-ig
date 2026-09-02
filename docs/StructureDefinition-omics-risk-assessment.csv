@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"RiskAssessment.extension:missionContext","RiskAssessment.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"RiskAssessment.extension:missionContext","RiskAssessment.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"RiskAssessment.extension:missionPhase","RiskAssessment.extension","missionPhase","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/mission-phase]]} {[]}
+"RiskAssessment.extension:missionPhase","RiskAssessment.extension","missionPhase","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase]]} {[]}
 ","Mission Phase","Phase of the space mission during which the clinical event occurred","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -57,7 +57,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RiskAssessment.code","RiskAssessment.code","","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Risk assessment type","The type of the risk assessment performed.","","","","","","","","","",,,,,"",,,,"RiskAssessment.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","FiveWs.what[x]"
-"RiskAssessment.subject","RiskAssessment.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+"RiskAssessment.subject","RiskAssessment.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Who/what does assessment apply to?","The patient or group the risk assessment applies to.","","","","","","","","","",,,,,"",,,,"RiskAssessment.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=SBJ].role","Subject of Care","FiveWs.subject[x]","FiveWs.subject"
 "RiskAssessment.encounter","RiskAssessment.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}
@@ -78,7 +78,7 @@ Period {[]} {[]}","When was assessment made?","The date (and possibly time) the 
 "RiskAssessment.reasonReference","RiskAssessment.reasonReference","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport|4.0.1], CanonicalType[http://hl7.org/fhir/StructureDefinition/DocumentReference|4.0.1]]}
 ","Why the assessment was necessary?","Resources supporting the reason the risk assessment was performed.","","","","","","","","","",,,,,"",,,,"RiskAssessment.reasonReference",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.reasonReference","FiveWs.why[x]"
-"RiskAssessment.basis","RiskAssessment.basis","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/multi-omics-observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
+"RiskAssessment.basis","RiskAssessment.basis","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/multi-omics-observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
 ","Multi-omics observations informing this risk assessment","Indicates the source data considered as part of the assessment (for example, FamilyHistory, Observations, Procedures, Conditions, etc.).","","","","","","","","","",,,,,"",,,,"RiskAssessment.basis",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=DRIV].target","Risk Factor; Link to Evidence"
 "RiskAssessment.prediction","RiskAssessment.prediction","","","",0,*,"Y","","","BackboneElement {[]} {[]}

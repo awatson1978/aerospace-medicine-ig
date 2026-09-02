@@ -1,4 +1,4 @@
-# Safety Protocols - v0.6.2
+# Safety Protocols - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/safety-protocols | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:SafetyProtocols |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/safety-protocols | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:SafetyProtocols |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Safety protocols and procedures followed during training
 
@@ -19,7 +20,7 @@ Safety protocols and procedures followed during training
 
 **Usages:**
 
-* Use this Extension: [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) and [Enhanced Neutral Buoyancy Training Session](StructureDefinition-enhanced-neutral-buoyancy-session.md)
+* Use this Extension: [Enhanced Hyperbaric Treatment](StructureDefinition-enhanced-hyperbaric-treatment.md) and [Neutral Buoyancy Training Session](StructureDefinition-neutral-buoyancy-session.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/safety-protocols)
 
@@ -43,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-safety-protocols.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "safety-protocols",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/safety-protocols",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/safety-protocols",
+  "version" : "0.7.0",
   "name" : "SafetyProtocols",
   "title" : "Safety Protocols",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -62,6 +63,7 @@ Other representations of profile: [CSV](StructureDefinition-safety-protocols.csv
     }
   ],
   "description" : "Safety protocols and procedures followed during training",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -75,7 +77,7 @@ Other representations of profile: [CSV](StructureDefinition-safety-protocols.csv
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -97,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-safety-protocols.csv
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/safety-protocols"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/safety-protocols"
       },
       {
         "id" : "Extension.value[x]",
@@ -109,7 +111,7 @@ Other representations of profile: [CSV](StructureDefinition-safety-protocols.csv
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/regulatory-standards"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/regulatory-standards-vs"
         }
       }
     ]

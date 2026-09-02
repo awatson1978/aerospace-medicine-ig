@@ -1,15 +1,16 @@
-# NASA Medical Personnel Roles - v0.6.2
+# NASA Medical Personnel Roles - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **NASA Medical Personnel Roles**
 
-## CodeSystem: NASA Medical Personnel Roles 
+## CodeSystem: NASA Medical Personnel Roles (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:NASAMedicalRolesCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:NASAMedicalRolesCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Personnel roles involved in NASA medical requirements. 
@@ -27,13 +28,13 @@ Personnel roles involved in NASA medical requirements.
 {
   "resourceType" : "CodeSystem",
   "id" : "nasa-medical-roles-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
+  "version" : "0.7.0",
   "name" : "NASAMedicalRolesCS",
   "title" : "NASA Medical Personnel Roles",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -47,6 +48,7 @@ Personnel roles involved in NASA medical requirements.
     }
   ],
   "description" : "Personnel roles involved in NASA medical requirements.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 9,

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artemis Prototype Devices - JSON Representation -  v0.6.2</title>
+    <title>Artemis Prototype Devices - JSON Representation - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"33.394"}
-    h3,h4,h5,h6{--heading-prefix:"33.394"}</style>
+    <style type="text/css">h2{--heading-prefix:"32.364"}
+    h3,h4,h5,h6{--heading-prefix:"32.364"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,9 +52,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -158,7 +158,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -174,7 +174,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -237,7 +237,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -292,7 +292,7 @@
         
           Active
           
-            as of 2026-08-03
+            as of 2026-09-02
           
         
       </td>
@@ -308,20 +308,20 @@
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
   "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "artemis-prototype-devices-cs",
   "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem artemis-prototype-devices-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;artemis-prototype-devices-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcartemis-prototype-devices-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;deviceType&lt;/td&gt;&lt;td&gt;deviceType&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;Device category (spacecraft, suit, vehicle, habitat, equipment)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;testEnvironment&lt;/td&gt;&lt;td&gt;testEnvironment&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;Primary test environment (ground, ISS, analog-mission)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;deviceType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;testEnvironment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;xemu-demo&lt;a name=\&quot;artemis-prototype-devices-cs-xemu-demo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;xEMU Demo Unit&lt;/td&gt;&lt;td&gt;Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground.&lt;/td&gt;&lt;td&gt;suit&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pressurized-rover-proto&lt;a name=\&quot;artemis-prototype-devices-cs-pressurized-rover-proto\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressurized Rover Prototype&lt;/td&gt;&lt;td&gt;Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;habitat-test-module&lt;a name=\&quot;artemis-prototype-devices-cs-habitat-test-module\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Habitat Test Module&lt;/td&gt;&lt;td&gt;Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.&lt;/td&gt;&lt;td&gt;habitat&lt;/td&gt;&lt;td&gt;analog-mission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nextgen-plss&lt;a name=\&quot;artemis-prototype-devices-cs-nextgen-plss\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Next-Generation PLSS&lt;/td&gt;&lt;td&gt;Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground.&lt;/td&gt;&lt;td&gt;life-support&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;biomonitor-wearable&lt;a name=\&quot;artemis-prototype-devices-cs-biomonitor-wearable\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BioMonitor Wearable Prototype&lt;/td&gt;&lt;td&gt;Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS.&lt;/td&gt;&lt;td&gt;medical-equipment&lt;/td&gt;&lt;td&gt;iss&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;autonomous-medical-unit&lt;a name=\&quot;artemis-prototype-devices-cs-autonomous-medical-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Autonomous Medical Unit Prototype&lt;/td&gt;&lt;td&gt;Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground.&lt;/td&gt;&lt;td&gt;medical-equipment&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem artemis-prototype-devices-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;artemis-prototype-devices-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcartemis-prototype-devices-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;deviceType&lt;/td&gt;&lt;td&gt;deviceType&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;Device category (suit, life-support, habitat, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;testEnvironment&lt;/td&gt;&lt;td&gt;testEnvironment&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;Primary test environment (ground, iss, analog-mission)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;manufacturer&lt;/td&gt;&lt;td&gt;manufacturer&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;Device manufacturer or contractor&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;deviceType&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;testEnvironment&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;manufacturer&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;xemu-demo&lt;a name=\&quot;artemis-prototype-devices-cs-xemu-demo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;xEMU Demo Unit&lt;/td&gt;&lt;td&gt;Prototype EVA suit used in ground testing or ISS demonstration (not flight-certified). Test env: ground.&lt;/td&gt;&lt;td&gt;suit&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nextgen-plss&lt;a name=\&quot;artemis-prototype-devices-cs-nextgen-plss\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Next-Generation PLSS&lt;/td&gt;&lt;td&gt;Next-generation Portable Life Support System under development (for suits beyond Artemis). Test env: ground.&lt;/td&gt;&lt;td&gt;life-support&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;biomonitor-wearable&lt;a name=\&quot;artemis-prototype-devices-cs-biomonitor-wearable\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;BioMonitor Wearable Prototype&lt;/td&gt;&lt;td&gt;Experimental biomedical monitoring device (advanced smart garment for astronauts in trial). Test env: ISS.&lt;/td&gt;&lt;td&gt;medical-equipment&lt;/td&gt;&lt;td&gt;iss&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;autonomous-medical-unit&lt;a name=\&quot;artemis-prototype-devices-cs-autonomous-medical-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Autonomous Medical Unit Prototype&lt;/td&gt;&lt;td&gt;Prototype diagnostic device or smart medical assistant being evaluated for lunar use. Test env: ground.&lt;/td&gt;&lt;td&gt;medical-equipment&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;habitat-test-module&lt;a name=\&quot;artemis-prototype-devices-cs-habitat-test-module\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Habitat Test Module&lt;/td&gt;&lt;td&gt;Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.&lt;/td&gt;&lt;td&gt;habitat&lt;/td&gt;&lt;td&gt;analog-mission&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;surface-habitat-module&lt;a name=\&quot;artemis-prototype-devices-cs-surface-habitat-module\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surface Habitat Module&lt;/td&gt;&lt;td&gt;Planned lunar surface habitat infrastructure element. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;habitat&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;pressurized-rover-proto&lt;a name=\&quot;artemis-prototype-devices-cs-pressurized-rover-proto\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Pressurized Rover Prototype&lt;/td&gt;&lt;td&gt;Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;crewed-ltv&lt;a name=\&quot;artemis-prototype-devices-cs-crewed-ltv\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Crewed LTV&lt;/td&gt;&lt;td&gt;Crewed Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Industry Team&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;uncrewed-ltv&lt;a name=\&quot;artemis-prototype-devices-cs-uncrewed-ltv\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Uncrewed LTV&lt;/td&gt;&lt;td&gt;Uncrewed (teleoperated) Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Industry Team&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;advanced-ltv&lt;a name=\&quot;artemis-prototype-devices-cs-advanced-ltv\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Advanced LTV&lt;/td&gt;&lt;td&gt;Advanced Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Industry Team&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ltv-gen-2&lt;a name=\&quot;artemis-prototype-devices-cs-ltv-gen-2\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;LTV Generation 2&lt;/td&gt;&lt;td&gt;Second-generation Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Industry Team&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;excavator-rover&lt;a name=\&quot;artemis-prototype-devices-cs-excavator-rover\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Excavator Rover&lt;/td&gt;&lt;td&gt;Lunar surface excavation rover under development. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;site-prep-logistics-rover&lt;a name=\&quot;artemis-prototype-devices-cs-site-prep-logistics-rover\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Site Preparation and Logistics Rover&lt;/td&gt;&lt;td&gt;Rover concept for site preparation and logistics tasks. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;international-partner-rover&lt;a name=\&quot;artemis-prototype-devices-cs-international-partner-rover\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;International Partner Rover&lt;/td&gt;&lt;td&gt;Partner-provided lunar rover under development. Manufacturer: International Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;International Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;science-rover&lt;a name=\&quot;artemis-prototype-devices-cs-science-rover\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Science Rover&lt;/td&gt;&lt;td&gt;Lunar surface science rover concept. Manufacturer: NASA / Partners. Test env: analog-mission.&lt;/td&gt;&lt;td&gt;rover&lt;/td&gt;&lt;td&gt;analog-mission&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;moonfall-drone&lt;a name=\&quot;artemis-prototype-devices-cs-moonfall-drone\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;MoonFall Drone&lt;/td&gt;&lt;td&gt;Lunar surface aerial or descent support drone concept. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;drone&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;orbital-comm-relay&lt;a name=\&quot;artemis-prototype-devices-cs-orbital-comm-relay\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Orbital Communication Relay&lt;/td&gt;&lt;td&gt;Orbital relay satellite for lunar communications. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;communications&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;observation-satellite&lt;a name=\&quot;artemis-prototype-devices-cs-observation-satellite\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Observation Satellite&lt;/td&gt;&lt;td&gt;Lunar observation and monitoring satellite. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;communications&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;relay-satellite-observability&lt;a name=\&quot;artemis-prototype-devices-cs-relay-satellite-observability\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Relay Satellite with Observability&lt;/td&gt;&lt;td&gt;Relay satellite with observability functions. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;communications&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;surface-comm-nav-node&lt;a name=\&quot;artemis-prototype-devices-cs-surface-comm-nav-node\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Surface Communication and Navigation Node&lt;/td&gt;&lt;td&gt;Lunar surface communication and navigation infrastructure node. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;communications&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deployable-surface-comm-tower&lt;a name=\&quot;artemis-prototype-devices-cs-deployable-surface-comm-tower\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deployable Surface Communication Tower&lt;/td&gt;&lt;td&gt;Deployable surface communications tower. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;communications&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;high-throughput-surface-comms&lt;a name=\&quot;artemis-prototype-devices-cs-high-throughput-surface-comms\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;High-Throughput Surface Communications Node&lt;/td&gt;&lt;td&gt;High-bandwidth lunar surface communications node. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;communications&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;lunar-pnt-node&lt;a name=\&quot;artemis-prototype-devices-cs-lunar-pnt-node\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lunar PNT Node&lt;/td&gt;&lt;td&gt;Positioning, navigation, and timing infrastructure node. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;navigation&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;clock-demo-node&lt;a name=\&quot;artemis-prototype-devices-cs-clock-demo-node\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lunar Clock Demonstration Node&lt;/td&gt;&lt;td&gt;Surface timing and synchronization demonstrator. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;navigation&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;navigation-capability-node&lt;a name=\&quot;artemis-prototype-devices-cs-navigation-capability-node\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Navigation Capability Node&lt;/td&gt;&lt;td&gt;Lunar navigation infrastructure element. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;navigation&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;logistics-demo-unit&lt;a name=\&quot;artemis-prototype-devices-cs-logistics-demo-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Demonstration Unit&lt;/td&gt;&lt;td&gt;Demonstrator for lunar surface logistics. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;logistics&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;logistics-delivery-vehicle&lt;a name=\&quot;artemis-prototype-devices-cs-logistics-delivery-vehicle\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Logistics Delivery Vehicle&lt;/td&gt;&lt;td&gt;Lunar surface or cargo delivery logistics asset concept. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;logistics&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;cargo-return-vehicle&lt;a name=\&quot;artemis-prototype-devices-cs-cargo-return-vehicle\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cargo Return Vehicle&lt;/td&gt;&lt;td&gt;Vehicle concept for returning cargo from lunar surface operations. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;logistics&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;isru-plant&lt;a name=\&quot;artemis-prototype-devices-cs-isru-plant\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ISRU Plant&lt;/td&gt;&lt;td&gt;In Situ Resource Utilization processing system under development. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;isru&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;solar-power-augmentation-unit&lt;a name=\&quot;artemis-prototype-devices-cs-solar-power-augmentation-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solar Power Augmentation Unit&lt;/td&gt;&lt;td&gt;Solar power augmentation infrastructure. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;power&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;solar-battery-rfc-power-unit&lt;a name=\&quot;artemis-prototype-devices-cs-solar-battery-rfc-power-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Solar Battery RFC Power Unit&lt;/td&gt;&lt;td&gt;Solar, battery, and regenerative fuel cell power system. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;power&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;fission-surface-power-unit&lt;a name=\&quot;artemis-prototype-devices-cs-fission-surface-power-unit\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fission Surface Power Unit&lt;/td&gt;&lt;td&gt;Lunar surface fission power system under development. Manufacturer: NASA / DOE / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;power&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / DOE / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;power-infrastructure-node&lt;a name=\&quot;artemis-prototype-devices-cs-power-infrastructure-node\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Power Infrastructure Node&lt;/td&gt;&lt;td&gt;Surface electrical power infrastructure node. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;power&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;power-distribution-node&lt;a name=\&quot;artemis-prototype-devices-cs-power-distribution-node\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Power Distribution Node&lt;/td&gt;&lt;td&gt;Surface power distribution system. Manufacturer: NASA / Partners. Test env: ground.&lt;/td&gt;&lt;td&gt;power&lt;/td&gt;&lt;td&gt;ground&lt;/td&gt;&lt;td&gt;NASA / Partners&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.6.2",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.7.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ArtemisPrototypeDevicesCS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Artemis Prototype Devices",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-08-03T22:31:50-05:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-09-02T13:24:45-05:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "MITRE",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -334,22 +334,26 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "Developmental and test hardware not yet flight-certified: demo units, ground analogs, next-generation prototypes, and planned LunaNet, surface mobility, habitat, logistics, ISRU, and surface power infrastructure elements",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a>" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 6,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 34,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "deviceType",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "Device category (spacecraft, suit, vehicle, habitat, equipment)",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "code"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "Device category (suit, life-support, habitat, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "string"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "testEnvironment",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "Primary test environment (ground, ISS, analog-mission)",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "code"
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "Primary test environment (ground, iss, analog-mission)",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "string"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "manufacturer",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "Device manufacturer or contractor",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "string"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
@@ -360,41 +364,11 @@
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "suit"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "suit"
         },
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "ground"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pressurized-rover-proto",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressurized Rover Prototype",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "rover"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "ground"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "habitat-test-module",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Habitat Test Module",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "habitat"
-        },
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "analog-mission"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
         }
       ]
     },
@@ -405,11 +379,11 @@
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "life-support"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "life-support"
         },
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "ground"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
         }
       ]
     },
@@ -420,11 +394,11 @@
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "medical-equipment"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "medical-equipment"
         },
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "iss"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "iss"
         }
       ]
     },
@@ -435,11 +409,573 @@
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "medical-equipment"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "medical-equipment"
         },
         {
           "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueCode</a>" : "ground"
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "habitat-test-module",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Habitat Test Module",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Ground-based habitat prototype (e.g., 3D-printed habitat analog or Lunar/Mars yard modules). Test env: analog-mission.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "habitat"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "analog-mission"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "surface-habitat-module",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surface Habitat Module",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Planned lunar surface habitat infrastructure element. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "habitat"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "pressurized-rover-proto",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Pressurized Rover Prototype",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Early concept lunar pressurized rover (testing life support and habitat functions on Earth). Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "crewed-ltv",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Crewed LTV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Crewed Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Industry Team"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "uncrewed-ltv",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Uncrewed LTV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Uncrewed (teleoperated) Lunar Terrain Vehicle variant under development. Manufacturer: NASA / Industry Team. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Industry Team"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "advanced-ltv",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Advanced LTV",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Advanced Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Industry Team"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ltv-gen-2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "LTV Generation 2",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Second-generation Lunar Terrain Vehicle concept. Manufacturer: NASA / Industry Team. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Industry Team"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "excavator-rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Excavator Rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar surface excavation rover under development. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "site-prep-logistics-rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Site Preparation and Logistics Rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Rover concept for site preparation and logistics tasks. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "international-partner-rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "International Partner Rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Partner-provided lunar rover under development. Manufacturer: International Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "International Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "science-rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Science Rover",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar surface science rover concept. Manufacturer: NASA / Partners. Test env: analog-mission.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "rover"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "analog-mission"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "moonfall-drone",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "MoonFall Drone",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar surface aerial or descent support drone concept. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "drone"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "orbital-comm-relay",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Orbital Communication Relay",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Orbital relay satellite for lunar communications. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "communications"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "observation-satellite",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Observation Satellite",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar observation and monitoring satellite. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "communications"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "relay-satellite-observability",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Relay Satellite with Observability",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Relay satellite with observability functions. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "communications"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "surface-comm-nav-node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Surface Communication and Navigation Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar surface communication and navigation infrastructure node. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "communications"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "deployable-surface-comm-tower",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Deployable Surface Communication Tower",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Deployable surface communications tower. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "communications"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "high-throughput-surface-comms",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "High-Throughput Surface Communications Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "High-bandwidth lunar surface communications node. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "communications"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "lunar-pnt-node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lunar PNT Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Positioning, navigation, and timing infrastructure node. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "navigation"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "clock-demo-node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Lunar Clock Demonstration Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Surface timing and synchronization demonstrator. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "navigation"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "navigation-capability-node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Navigation Capability Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar navigation infrastructure element. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "navigation"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "logistics-demo-unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Logistics Demonstration Unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Demonstrator for lunar surface logistics. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "logistics"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "logistics-delivery-vehicle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Logistics Delivery Vehicle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar surface or cargo delivery logistics asset concept. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "logistics"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "cargo-return-vehicle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Cargo Return Vehicle",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Vehicle concept for returning cargo from lunar surface operations. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "logistics"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "isru-plant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ISRU Plant",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "In Situ Resource Utilization processing system under development. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "isru"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "solar-power-augmentation-unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Solar Power Augmentation Unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Solar power augmentation infrastructure. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "power"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "solar-battery-rfc-power-unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Solar Battery RFC Power Unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Solar, battery, and regenerative fuel cell power system. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "power"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "fission-surface-power-unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Fission Surface Power Unit",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Lunar surface fission power system under development. Manufacturer: NASA / DOE / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "power"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / DOE / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "power-infrastructure-node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Power Infrastructure Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Surface electrical power infrastructure node. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "power"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "power-distribution-node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Power Distribution Node",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Surface power distribution system. Manufacturer: NASA / Partners. Test env: ground.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "deviceType",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "power"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "testEnvironment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "ground"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "manufacturer",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value_x_">valueString</a>" : "NASA / Partners"
         }
       ]
     }
@@ -468,7 +1004,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

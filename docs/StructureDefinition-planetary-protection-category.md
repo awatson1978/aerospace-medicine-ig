@@ -1,4 +1,4 @@
-# Planetary Protection Category - v0.6.2
+# Planetary Protection Category - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:PlanetaryProtectionCategory |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/planetary-protection-category | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:PlanetaryProtectionCategory |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 COSPAR planetary protection category applicable to the procedure, device, or observation
 
@@ -44,12 +45,12 @@ Other representations of profile: [CSV](StructureDefinition-planetary-protection
 {
   "resourceType" : "StructureDefinition",
   "id" : "planetary-protection-category",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/planetary-protection-category",
+  "version" : "0.7.0",
   "name" : "PlanetaryProtectionCategory",
   "title" : "Planetary Protection Category",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -63,6 +64,7 @@ Other representations of profile: [CSV](StructureDefinition-planetary-protection
     }
   ],
   "description" : "COSPAR planetary protection category applicable to the procedure, device, or observation",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -106,7 +108,7 @@ Other representations of profile: [CSV](StructureDefinition-planetary-protection
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/planetary-protection-category"
       },
       {
         "id" : "Extension.value[x]",
@@ -118,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-planetary-protection
         ],
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/planetary-protection-category-vs"
         }
       }
     ]

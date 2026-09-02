@@ -1,4 +1,4 @@
-# Body Temperature - Flight Day 30 Morning - v0.6.2
+# Body Temperature - Flight Day 30 Morning - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example Observation: Body Temperature - Flight Day 30 Morning
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space Body Temperature Observation](StructureDefinition-space-body-temperature.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Circadian Phase**: Morning Nadir
 
@@ -20,7 +24,7 @@ Profile: [Space Body Temperature Observation](StructureDefinition-space-body-tem
 
 **code**: Body temperature
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-04-14 06:30:00+0000
 
@@ -41,23 +45,31 @@ Profile: [Space Body Temperature Observation](StructureDefinition-space-body-tem
   "resourceType" : "Observation",
   "id" : "Body-Temp-FD30-Morning",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-body-temperature"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-body-temperature"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/circadian-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/circadian-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/circadian-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/circadian-phase-cs",
             "code" : "morning-nadir",
             "display" : "Morning Nadir"
           }
@@ -65,7 +77,7 @@ Profile: [Space Body Temperature Observation](StructureDefinition-space-body-tem
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day",
       "valueInteger" : 30
     }
   ],
@@ -103,7 +115,7 @@ Profile: [Space Body Temperature Observation](StructureDefinition-space-body-tem
   "method" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/temperature-measurement-method-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/temperature-measurement-method-cs",
         "code" : "oral-thermometer",
         "display" : "Oral Thermometer"
       }

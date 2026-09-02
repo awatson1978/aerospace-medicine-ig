@@ -1,4 +1,4 @@
-# ISS T2 Treadmill Session - Activity Group - v0.6.2
+# ISS T2 Treadmill Session - Activity Group - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: ISS T2 Treadmill Session - Activity Group
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space Exercise Activity Group](StructureDefinition-space-exercise-activity-group.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --> (ongoing)](Encounter-ISS-Exp75-InFlight.md)
 
@@ -20,13 +24,13 @@ Profile: [Space Exercise Activity Group](StructureDefinition-space-exercise-acti
 
 **code**: ISS T2 treadmill session
 
-**subject**: [Patient/AstronautExample](Patient/AstronautExample)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-06-01 13:00:00+0000 --> 2025-06-01 13:30:00+0000
 
 **hasMember**: 
 
-* [Observation Treadmill running in microgravity](Observation-ISS-T2-Run-Type-001.md)
+* [Observation Type of exercise](Observation-ISS-T2-Run-Type-001.md)
 * [Observation Duration of physical activity](Observation-ISS-T2-Run-Duration-001.md)
 * [Observation Heart rate](Observation-ISS-T2-Run-MeanHR-001.md)
 
@@ -39,25 +43,33 @@ Profile: [Space Exercise Activity Group](StructureDefinition-space-exercise-acti
   "resourceType" : "Observation",
   "id" : "ISS-T2-Run-Group-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-activity-group"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-group"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
         "reference" : "Encounter/ISS-Exp75-InFlight"
       }
     },
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/exercise-device",
       "valueReference" : {
         "reference" : "Device/ISS-T2-Treadmill"
       }
     },
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/harness-load",
       "valueQuantity" : {
         "value" : 75,
         "unit" : "%",
@@ -89,7 +101,7 @@ Profile: [Space Exercise Activity Group](StructureDefinition-space-exercise-acti
     "text" : "ISS T2 treadmill session"
   },
   "subject" : {
-    "reference" : "Patient/AstronautExample"
+    "reference" : "Patient/ExampleAstronaut"
   },
   "effectivePeriod" : {
     "start" : "2025-06-01T13:00:00Z",

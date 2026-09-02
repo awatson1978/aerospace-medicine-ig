@@ -1,4 +1,4 @@
-# G-SHOCK Centrifugal Trainer Eligibility Questionnaire - v0.6.2
+# G-SHOCK Centrifugal Trainer Eligibility Questionnaire - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://aerospace-medicine.org/fhir/Questionnaire/g-shock-eligibility | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/GShockEligibility | *Version*:0.7.0 |
 | Active as of 2025-05-19 | *Computable Name*:GShockEligibilityQuestionnaire |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training 
@@ -22,8 +23,8 @@ Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-
 {
   "resourceType" : "Questionnaire",
   "id" : "GShockEligibility",
-  "url" : "http://aerospace-medicine.org/fhir/Questionnaire/g-shock-eligibility",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/GShockEligibility",
+  "version" : "0.7.0",
   "name" : "GShockEligibilityQuestionnaire",
   "title" : "G-SHOCK Centrifugal Trainer Eligibility Questionnaire",
   "status" : "active",
@@ -42,6 +43,7 @@ Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-
     }
   ],
   "description" : "Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "item" : [
     {
       "linkId" : "intro",

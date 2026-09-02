@@ -1,4 +1,4 @@
-# Lunar Coordinates - v0.6.2
+# Lunar Coordinates - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:LunarCoordinates |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lunar-coordinates | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:LunarCoordinates |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Selenographic latitude and longitude for lunar surface locations
 
@@ -20,7 +21,7 @@ Selenographic latitude and longitude for lunar surface locations
 **Usages:**
 
 * Use this Extension: [Habitat Location](StructureDefinition-habitat-location.md)
-* Examples for this Extension: [Artemis III Landing Site - Malapert Massif](Location-Malapert-Massif-Landing-Site.md)
+* Examples for this Extension: [Artemis IV Landing Site - Malapert Massif](Location-Malapert-Massif-Landing-Site.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/lunar-coordinates)
 
@@ -42,12 +43,12 @@ Other representations of profile: [CSV](StructureDefinition-lunar-coordinates.cs
 {
   "resourceType" : "StructureDefinition",
   "id" : "lunar-coordinates",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lunar-coordinates",
+  "version" : "0.7.0",
   "name" : "LunarCoordinates",
   "title" : "Lunar Coordinates",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -61,6 +62,7 @@ Other representations of profile: [CSV](StructureDefinition-lunar-coordinates.cs
     }
   ],
   "description" : "Selenographic latitude and longitude for lunar surface locations",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -152,7 +154,7 @@ Other representations of profile: [CSV](StructureDefinition-lunar-coordinates.cs
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/lunar-coordinates"
       },
       {
         "id" : "Extension.value[x]",

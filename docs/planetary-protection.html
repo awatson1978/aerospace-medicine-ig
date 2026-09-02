@@ -1,84 +1,84 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Planetary Protection -  v0.6.2</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Planetary Protection - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
-  	<link rel="stylesheet" href="assets/css/cqf.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"24"}
-    h3,h4,h5,h6{--heading-prefix:"24"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"23"}
+    h3,h4,h5,h6{--heading-prefix:"23"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
 
-          <!-- Placeholder for child template header declarations -->
+        <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -211,26 +211,26 @@
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Planetary Protection</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Planetary Protection</b></li>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://mitre.org/fhir/space-health/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Planetary Protection</h2>
   
 
@@ -257,45 +257,72 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
+    <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#planetary-protection" id="markdown-toc-planetary-protection">Planetary Protection</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#cospar-planetary-protection-categories" id="markdown-toc-cospar-planetary-protection-categories">COSPAR Planetary Protection Categories</a></li>
-      <li><a href="#key-processes" id="markdown-toc-key-processes">Key Processes</a></li>
-      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
-          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
-          <li><a href="#new-profiles-suggested" id="markdown-toc-new-profiles-suggested">New Profiles (suggested)</a></li>
-          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
-        </ul>
-      </li>
-      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-      <li><a href="#references-1" id="markdown-toc-references-1">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#cospar-planetary-protection-categories" id="markdown-toc-cospar-planetary-protection-categories">COSPAR Planetary Protection Categories</a></li>
+  <li><a href="#key-processes" id="markdown-toc-key-processes">Key Processes</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+  <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
 
-<h1 id="planetary-protection">Planetary Protection</h1>
+<h3 id="overview">Overview</h3>
 
-<h2 id="overview">Overview</h2>
-<p>Planetary protection is the discipline of preventing forward contamination (Earth microbes to other celestial bodies) and backward contamination (extraterrestrial material to Earth). It is governed by the COSPAR Planetary Protection Policy and implemented through NASA’s NPD 8020.12 and mission-specific requirements.</p>
+<p>Planetary protection is the discipline of preventing forward contamination (Earth microbes carried to other celestial bodies) and backward contamination (extraterrestrial material returned to Earth). It is governed by the Committee on Space Research (COSPAR) Planetary Protection Policy and implemented through NASA Policy Directive NPD 8020.12 and mission-specific requirements.</p>
 
-<p>Recent work (Fujimura et al., <em>Applied and Environmental Microbiology</em>, April 2026) advances standardized microbial monitoring, sterilization validation, and risk assessment for Artemis, Mars Sample Return, and future exploration missions. This page defines FHIR profiles to capture contamination conditions, risk assessments, sterilization procedures, and viability assays so that microbial control data can be consistently recorded, shared, and audited across international partners and commercial providers.</p>
+<p>Recent work on the survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions (Chander et al., <em>Applied and Environmental Microbiology</em>, 2026) shows that organisms recovered from spacecraft assembly facilities can tolerate the very environments planetary protection is meant to keep them out of. That finding reinforces the need for standardized microbial monitoring, sterilization validation, and risk assessment for Artemis, Mars Sample Return, and future exploration missions. This page defines FHIR profiles to capture contamination conditions, risk assessments, sterilization procedures, and viability assays so that microbial control data can be consistently recorded, shared, and audited across international partners and commercial providers.</p>
 
-<h2 id="cospar-planetary-protection-categories">COSPAR Planetary Protection Categories</h2>
-<p>| Category | Description                              | Typical Missions                  |
-|———-|——————————————|———————————–|
-| I        | No protection required                   | Flybys of bodies with no interest |
-| II       | Minimal protection                       | Flybys of bodies of interest      |
-| III      | Controlled contamination                 | Orbiters / landers (no life search) |
-| IV       | Strict bioburden control                 | Mars landers / sample return      |
-| V        | Restricted Earth return                  | Sample return from Mars / Europa  |</p>
+<h3 id="cospar-planetary-protection-categories">COSPAR Planetary Protection Categories</h3>
 
-<h2 id="key-processes">Key Processes</h2>
+<p>COSPAR assigns each mission a category based on the target body and mission type, and the category determines how much bioburden control is required. The summary below follows the COSPAR Policy on Planetary Protection (2021 revision); the policy itself defines subcategories (for example IVa, IVb, IVc for Mars landers, and restricted versus unrestricted Earth return) that this guide encodes in the <a href="CodeSystem-planetary-protection-category-cs.html">Planetary Protection Category Code System</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Typical Missions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>I</td>
+      <td>No protection required; target not of direct interest for chemical evolution or the origin of life</td>
+      <td>Flybys, orbiters, or landers to bodies such as the Sun or Mercury</td>
+    </tr>
+    <tr>
+      <td>II</td>
+      <td>Minimal documentation; target of significant interest but with only a remote chance of contamination compromising future investigations</td>
+      <td>Missions to the Moon, Venus, comets, most asteroids</td>
+    </tr>
+    <tr>
+      <td>III</td>
+      <td>Controlled contamination; flyby and orbiter missions to bodies of interest for chemical evolution or origin of life</td>
+      <td>Mars and Europa orbiters</td>
+    </tr>
+    <tr>
+      <td>IV</td>
+      <td>Strict bioburden control; lander and probe missions to those same bodies (subcategories IVa–IVc)</td>
+      <td>Mars landers and rovers</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>Earth-return missions; "restricted Earth return" requires containment of returned material</td>
+      <td>Sample return from Mars, Europa, Enceladus</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="key-processes">Key Processes</h3>
+
+<p>Planetary protection in practice comes down to two activities: reducing the number of viable organisms on flight hardware, and measuring how many remain.</p>
+
 <p><strong>Sterilization Methods</strong></p>
 <ul>
   <li>Dry Heat Microbial Reduction (DHMR)</li>
@@ -312,9 +339,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Molecular (qPCR) and culture-independent methods</li>
 </ul>
 
-<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
 
-<h3 id="recommended-resources">Recommended Resources</h3>
+<h4 id="recommended-resources">Recommended Resources</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Condition</code> – contamination diagnosis</li>
   <li><code class="language-plaintext highlighter-rouge">RiskAssessment</code> – forward contamination probability</li>
@@ -323,21 +350,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">Specimen</code> – surface swabs, hardware samples, and environmental monitoring</li>
 </ul>
 
-<h3 id="new-profiles-suggested">New Profiles (suggested)</h3>
-<p><strong>Core Profiles</strong></p>
+<h4 id="core-profiles">Core Profiles</h4>
+
 <ul>
-  <li><strong><a href="StructureDefinition-microbial-contamination-condition.html"><code class="language-plaintext highlighter-rouge">MicrobialContaminationCondition</code></a></strong> – Records a detected or potential contamination event with:
+  <li><strong><a href="StructureDefinition-microbial-contamination-condition.html">Microbial Contamination Condition</a></strong> – Records a detected or potential contamination event with:
     <ul>
-      <li>COSPAR category</li>
+      <li>COSPAR category (via the <a href="StructureDefinition-planetary-protection-category.html">Planetary Protection Category</a> extension)</li>
       <li>Affected spacecraft/hardware location</li>
-      <li>Contaminant type (bacterial, fungal, viral, etc.)</li>
+      <li>Contaminant type (bacterial spore, vegetative bacteria, fungal spore, biofilm)</li>
       <li>Severity and mission impact</li>
     </ul>
   </li>
   <li>
-    <p><strong><a href="StructureDefinition-microbial-contamination-risk.html"><code class="language-plaintext highlighter-rouge">MicrobialContaminationRisk</code></a></strong> – Captures forward or backward contamination risk assessment, including probability category, mitigation status, and COSPAR compliance level</p>
+    <p><strong><a href="StructureDefinition-microbial-contamination-risk.html">Microbial Contamination Risk</a></strong> – Captures forward or backward contamination risk assessment, including probability category, mitigation status, and COSPAR compliance level</p>
   </li>
-  <li><strong><a href="StructureDefinition-sterilization-procedure.html"><code class="language-plaintext highlighter-rouge">SterilizationProcedure</code></a></strong> – Documents sterilization actions with:
+  <li><strong><a href="StructureDefinition-sterilization-procedure.html">Sterilization Procedure</a></strong> – Documents sterilization actions with:
     <ul>
       <li>Method (DHMR, VHP, UV, etc.)</li>
       <li>Process parameters (temperature, duration, dose, concentration)</li>
@@ -345,7 +372,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Hardware or surface targeted</li>
     </ul>
   </li>
-  <li><strong><a href="StructureDefinition-microbial-viability-assay.html"><code class="language-plaintext highlighter-rouge">MicrobialViabilityAssay</code></a></strong> – Standardized assay results with:
+  <li><strong><a href="StructureDefinition-microbial-viability-assay.html">Microbial Viability Assay</a></strong> – Standardized assay results with:
     <ul>
       <li>Method (MPN, CFU, ATP, qPCR)</li>
       <li>Quantitative counts</li>
@@ -355,95 +382,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<p><strong>Supporting Profiles (suggested)</strong></p>
+<h4 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">PlanetaryProtectionSummary</code> – DiagnosticReport aggregating all assays and procedures for a mission element</li>
   <li><code class="language-plaintext highlighter-rouge">SpacecraftBioburdenLog</code> – Longitudinal tracking of bioburden across assembly, integration, and test (AIT) phases</li>
 </ul>
 
-<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<h3 id="examples">Examples</h3>
+
+<p>The three example instances below walk one piece of Mars-bound hardware through the workflow: it is heat-sterilized, swabbed and cultured, and then assigned a contamination risk.</p>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">COSPARCategoryCS</code> – I through V (with subcategories)</li>
-  <li><a href="CodeSystem-sterilization-method-cs.html"><code class="language-plaintext highlighter-rouge">SterilizationMethodCS</code></a> – (dhmr, vhp, uv, chemical-cleaning, etc.)</li>
-  <li><code class="language-plaintext highlighter-rouge">MicrobialAssayMethodCS</code> – (mpn, cfu, atp, qpcr)</li>
-  <li><code class="language-plaintext highlighter-rouge">PlanetaryProtectionContaminantTypeVS</code> – (bacterial-spore, vegetative-bacteria, fungal, viral, archaea)</li>
+  <li><a href="Procedure-Sterilization-DHMR-001.html">DHMR Sterilization at 125C/50hr</a> – a dry-heat microbial reduction run</li>
+  <li><a href="Observation-MicrobialAssay-SurfaceSwab-001.html">Surface Swab CFU Assay</a> – the post-sterilization colony count</li>
+  <li><a href="RiskAssessment-ContaminationRisk-MarsLander-001.html">Mars Lander Contamination Risk</a> – the resulting forward-contamination risk assessment</li>
 </ul>
 
-<h2 id="architectural-alignment">Architectural Alignment</h2>
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<ul>
+  <li><a href="CodeSystem-planetary-protection-category-cs.html">Planetary Protection Category Code System</a> and <a href="ValueSet-planetary-protection-category-vs.html">Value Set</a> – COSPAR categories I through V</li>
+  <li><a href="CodeSystem-sterilization-method-cs.html">Sterilization Method Code System</a> and <a href="ValueSet-sterilization-method-vs.html">Value Set</a> – dhmr, vhp, uv-sterilization, gamma-irradiation, ethylene-oxide</li>
+  <li><a href="CodeSystem-microbial-contaminant-type-cs.html">Microbial Contaminant Type Code System</a> and <a href="ValueSet-microbial-contaminant-type-vs.html">Value Set</a> – bacterial-spore, vegetative-bacteria, fungal-spore, biofilm, viable-microbe</li>
+</ul>
+
+<h4 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">MicrobialAssayMethodCS</code> – assay method codes (mpn, cfu, atp, qpcr); the <a href="StructureDefinition-microbial-viability-assay.html">Microbial Viability Assay</a> profile currently distinguishes methods through LOINC-coded components (most-probable-number count, colony count) rather than a local method code</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
 <p>This content directly supports and extends existing IG sections:</p>
 <ul>
-  <li><strong>Space Agriculture Microbiology</strong> (VEG-05 and hydroponics microbial control)</li>
-  <li><strong>ECLSS</strong> (closed-loop environmental monitoring)</li>
-  <li><strong>Crew Evacuation and Emergency Response</strong> (toxic atmosphere / contamination events)</li>
-  <li><strong>Radiation Exposure Tracking</strong> (synergistic microbial/radiation monitoring)</li>
-  <li><strong>Telemedicine</strong> (ground consultation for contamination events)</li>
+  <li><a href="space-agriculture.html">Space Agriculture</a> (VEG-05 and hydroponics microbial control)</li>
+  <li><a href="eclss.html">ECLSS</a> (closed-loop environmental monitoring)</li>
+  <li><a href="crew-rescue.html">Crew Evacuation and Emergency Response</a> (toxic atmosphere / contamination events)</li>
+  <li><a href="radiation-tracking.html">Radiation Exposure Tracking</a> (synergistic microbial/radiation monitoring)</li>
+  <li><a href="space-telemedicine.html">Space Telemedicine</a> (ground consultation for contamination events)</li>
 </ul>
 
-<p>It enables a unified <strong>Environmental Microbiology &amp; Planetary Protection</strong> framework essential for sample-return missions, crewed Mars operations, and commercial planetary missions.</p>
+<p>It enables a unified Environmental Microbiology &amp; Planetary Protection framework essential for sample-return missions, crewed Mars operations, and commercial planetary missions.</p>
 
-<h2 id="references">References</h2>
-<h2 id="references-1">References</h2>
+<h3 id="references">References</h3>
 
 <ul>
-  <li>
-    <p>Fujimura, Kazuyuki, and colleagues. “Planetary Protection Microbial Monitoring and Control for Artemis and Beyond.” <em>Applied and Environmental Microbiology</em> 92, no. 4 (2026). American Society for Microbiology.</p>
-  </li>
-  <li>
-    <p>Committee on Space Research (COSPAR). <em>COSPAR Planetary Protection Policy.</em> 2021 Revision. Paris: COSPAR, 2021.</p>
-
-    <ul>
-      <li><a href="https://cosparhq.cnes.fr/scientific-structure/ppp/">COSPAR Planetary Protection Policy</a></li>
-      <li><a name="l816">​</a><a href="ttps://cosparhq.cnes.fr/assets/uploads/2021/08/PPPolicy_2021_3.pdf">COSPAR Policy PDF</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>National Aeronautics and Space Administration. <em>Planetary Protection Provisions for Robotic Extraterrestrial Missions.</em> NASA Policy Directive NPD 8020.12D. Washington, DC: NASA.</p>
-
-    <ul>
-      <li><a href="https://planetaryprotection.nasa.gov/">NASA Planetary Protection Office</a></li>
-      <li><a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&amp;c=8020&amp;s=12D">NPD 8020.12</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>National Aeronautics and Space Administration. <em>NASA Planetary Protection Handbook.</em> Washington, DC: NASA Office of Safety and Mission Assurance. <a href="https://planetaryprotection.nasa.gov/resources/sags/">https://planetaryprotection.nasa.gov/resources/sags/</a></p>
-  </li>
-  <li>
-    <p>Moissl-Eichinger, Christine, Kasthuri Venkateswaran, and colleagues. “Microbiome Dynamics During Spacecraft Assembly, Integration, and Test Operations.” <em>Microbiome</em> 11 (2023). <a href="https://doi.org/10.1186/s40168-023-01479-0">https://doi.org/10.1186/s40168-023-01479-0</a>.</p>
-  </li>
-  <li>
-    <p>Mora, Marc, and colleagues. “Survival of NASA-Cleanroom Microbial Isolates Under Simulated Space and Martian Conditions.” <em>Applied and Environmental Microbiology</em> 92, no. 2 (2026). <a href="https://doi.org/10.1128/aem.02065-25">https://doi.org/10.1128/aem.02065-25</a>.</p>
-  </li>
-  <li>
-    <p>National Academies of Sciences, Engineering, and Medicine. <em>Review and Assessment of Planetary Protection Policy Development Processes.</em> Washington, DC: National Academies Press, 2018. <a href="https://doi.org/10.17226/25172">https://doi.org/10.17226/25172</a>.</p>
-  </li>
-  <li>
-    <p>European Space Agency. <em>Planetary Protection Requirements and Contamination Control for Exploration Missions.</em> Noordwijk, Netherlands: ESA. <a href="https://www.esa.int/Safety_Security/Planetary_Protection">https://www.esa.int/Safety_Security/Planetary_Protection</a></p>
-  </li>
-  <li>
-    <p>Venkateswaran, Kasthuri, Duane L. Pierson, and Nitin K. Singh. “Non-Culture-Based Assays for Spacecraft Microbial Monitoring.” <em>Microbial Ecology</em> 47 (2004): 119–126. <a href="https://doi.org/10.1007/s00248-003-1036-3">https://doi.org/10.1007/s00248-003-1036-3</a>.</p>
-  </li>
+  <li>Chander AM, et al. Survival of NASA-cleanroom microbial isolates under simulated space and Martian conditions. <em>Applied and Environmental Microbiology</em>, 2026. <a href="https://doi.org/10.1128/aem.02065-25">https://doi.org/10.1128/aem.02065-25</a></li>
+  <li>Committee on Space Research (COSPAR). <em>COSPAR Policy on Planetary Protection.</em> 2021 revision. <a href="https://cosparhq.cnes.fr/scientific-structure/ppp/">Policy page</a>; <a href="https://cosparhq.cnes.fr/assets/uploads/2021/08/PPPolicy_2021_3.pdf">PDF</a></li>
+  <li>National Aeronautics and Space Administration. <em>Planetary Protection Provisions for Robotic Extraterrestrial Missions.</em> NASA Policy Directive NPD 8020.12D. <a href="https://nodis3.gsfc.nasa.gov/displayDir.cfm?t=NPD&amp;c=8020&amp;s=12D">NPD 8020.12</a>; <a href="https://planetaryprotection.nasa.gov/">NASA Office of Planetary Protection</a></li>
+  <li>National Aeronautics and Space Administration. <em>NASA Planetary Protection Handbook and standards.</em> <a href="https://planetaryprotection.nasa.gov/resources/sags/">https://planetaryprotection.nasa.gov/resources/sags/</a></li>
+  <li>Moissl-Eichinger C, Venkateswaran K, et al. Microbiome dynamics during spacecraft assembly, integration, and test operations. <em>Microbiome</em> 11, 2023. <a href="https://doi.org/10.1186/s40168-023-01479-0">https://doi.org/10.1186/s40168-023-01479-0</a></li>
+  <li>National Academies of Sciences, Engineering, and Medicine. <em>Review and Assessment of Planetary Protection Policy Development Processes.</em> National Academies Press, 2018. <a href="https://doi.org/10.17226/25172">https://doi.org/10.17226/25172</a></li>
+  <li>European Space Agency. <em>Planetary Protection.</em> <a href="https://www.esa.int/Safety_Security/Planetary_Protection">https://www.esa.int/Safety_Security/Planetary_Protection</a></li>
+  <li>Venkateswaran K, Pierson DL, Singh NK. Non-culture-based assays for spacecraft microbial monitoring. <em>Microbial Ecology</em> 47:119–126, 2004. <a href="https://doi.org/10.1007/s00248-003-1036-3">https://doi.org/10.1007/s00248-003-1036-3</a></li>
 </ul>
 
 
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -452,26 +465,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                 
           </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
 
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
-    <!-- Analytics Below
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
+

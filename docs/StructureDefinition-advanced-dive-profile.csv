@@ -52,13 +52,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Type of observation (code / type)","Describes what was observed. Sometimes this is called the observation ""name"".","*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""dive-profile""/>
     <display value=""Dive Profile""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","< 363787002 |Observable entity| OR < 386053000 |Evaluation procedure|","OBX-3","code","FiveWs.what[x]","116680003 |Is a|"
-"Observation.subject","Observation.subject","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+"Observation.subject","Observation.subject","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Who and/or what the observation is about","The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation.","One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.","Observations have no value if you don't know who or what they're about.","","","","","","","",,,,,"",,,,"Observation.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3","participation[typeCode=RTGT]","FiveWs.subject[x]","FiveWs.subject"
 "Observation.focus","Observation.focus","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource|4.0.1]]}
@@ -106,7 +106,7 @@ If the use case requires BodySite to be handled as a separate resource (e.g. to 
 "Observation.specimen","Observation.specimen","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen|4.0.1]]}
 ","Specimen used for this observation","The specimen that was used when this observation was made.","Should only be used if not implicit in code found in `Observation.code`.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).","","","","","","","","",,,,,"",,,,"Observation.specimen",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 123038009 |Specimen|","SPM segment","participation[typeCode=SPC].specimen","704319004 |Inherent in|"
-"Observation.device","Observation.device","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/DivingEquipment]]}
+"Observation.device","Observation.device","","","",0,1,"","","","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-equipment]]}
 ","(Measurement) Device","The device used to generate the observation data.","Note that this is not meant to represent a device involved in the transmission of the result, e.g., a gateway.  Such devices may be documented using the Provenance resource where relevant.","","","","","","","","",,,,,"",,,,"Observation.device",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 49062001 |Device|","OBX-17 / PRT -10","participation[typeCode=DEV]","424226004 |Using device|"
 "Observation.referenceRange","Observation.referenceRange","","","",0,*,"","","","BackboneElement {[]} {[]}
@@ -203,7 +203,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:maximumDepth.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""maximum-depth""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -265,7 +265,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:bottomTime.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""bottom-time""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -327,7 +327,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:surfaceInterval.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""surface-interval""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -389,7 +389,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:ascentRate.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""ascent-rate""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -451,7 +451,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:waterTemperature.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""water-temperature""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -513,7 +513,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:visibility.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""visibility""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -575,7 +575,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:nitrogenLoading.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""nitrogen-loading""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -637,7 +637,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:breathingGasMixture.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""breathing-gas""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -676,7 +676,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:decompressionObligation.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""decompression-obligation""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -715,7 +715,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:emergencyProcedures.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs""/>
     <code value=""emergency-procedures""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -754,7 +754,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Observation.component:communicationLog.code","Observation.component.code","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Type of component observation (code / type)","Describes what was observed. Sometimes this is called the observation ""code"".","*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.","Knowing what kind of observation is being made is essential to understanding the observation.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
-    <system value=""http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs""/>
+    <system value=""https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/underwater-communication-cs""/>
     <code value=""communication-log""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes identifying names of simple observations.","http://hl7.org/fhir/ValueSet/observation-codes|4.0.1","",,,,"Observation.component.code",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

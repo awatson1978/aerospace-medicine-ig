@@ -1,10 +1,12 @@
-# NASA Hyperbaric Facility - v0.6.2
+# NASA Hyperbaric Facility - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **NASA Hyperbaric Facility**
 
-## Example Location: NASA Hyperbaric Facility
+## Location: NASA Hyperbaric Facility
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
 
 Profile: [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md)
 
@@ -27,8 +29,9 @@ Profile: [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md)
   "resourceType" : "Location",
   "id" : "NASAHyperbaricFacility",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber"
     ]
   },
   "status" : "active",

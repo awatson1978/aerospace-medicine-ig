@@ -3,15 +3,21 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="BLiSS-O2-Production-001"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/bliss-resource-output"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bliss-resource-output"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BLiSS-O2-Production-001</b></p><a name="BLiSS-O2-Production-001"> </a><a name="hcBLiSS-O2-Production-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-bliss-resource-output.html">BLiSS Resource Output</a></p></div><p><b>Gravity Context</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}">Microgravity</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs o2-production}">O2 Production</span></p><p><b>subject</b>: <a href="Device-Bioreactor-Algae-001.html">Device: status = active; manufacturer = Techshot Inc.; modelNumber = PBR-3000; type = ; note = Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle</a></p><p><b>effective</b>: 2028-05-15 18:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Output Quantity</span></p><p><b>value</b>: 0.85 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Output Rate</span></p><p><b>value</b>: 0.85 kg/d<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg/d = 'kg/d')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Energy Input</span></p><p><b>value</b>: 1.2 kW<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekW = 'kW')</span></p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation BLiSS-O2-Production-001</b></p><a name="BLiSS-O2-Production-001"> </a><a name="hcBLiSS-O2-Production-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-bliss-resource-output.html">BLiSS Resource Output</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Gravity Context</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs microgravity}">Microgravity</span></p><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bliss-output-cs o2-production}">O2 Production</span></p><p><b>subject</b>: <a href="Device-Bioreactor-Algae-001.html">Device: status = active; manufacturer = Techshot Inc.; modelNumber = PBR-3000; type = ; note = Chlorella vulgaris culture, LED-illuminated, 16h:8h light-dark cycle</a></p><p><b>effective</b>: 2028-05-15 18:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs output-quantity}">Output Quantity</span></p><p><b>value</b>: 0.85 kg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg = 'kg')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs output-rate}">Output Rate</span></p><p><b>value</b>: 0.85 kg/d<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekg/d = 'kg/d')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs energy-input}">Energy Input</span></p><p><b>value</b>: 1.2 kW<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekW = 'kW')</span></p></blockquote></div>
   </text>
-  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/gravity-context">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context">
     <valueCodeableConcept>
       <coding>
-        <system value="https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"/>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs"/>
         <code value="microgravity"/>
         <display value="Microgravity"/>
       </coding>
@@ -20,7 +26,7 @@
   <status value="final"/>
   <code>
     <coding>
-      <system value="https://mitre.org/fhir/space-health/CodeSystem/bliss-output-cs"/>
+      <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bliss-output-cs"/>
       <code value="o2-production"/>
       <display value="O2 Production"/>
     </coding>
@@ -31,7 +37,11 @@
   <effectiveDateTime value="2028-05-15T18:00:00Z"/>
   <component>
     <code>
-      <text value="Output Quantity"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs"/>
+        <code value="output-quantity"/>
+        <display value="Output Quantity"/>
+      </coding>
     </code>
     <valueQuantity>
       <value value="0.85"/>
@@ -42,7 +52,11 @@
   </component>
   <component>
     <code>
-      <text value="Output Rate"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs"/>
+        <code value="output-rate"/>
+        <display value="Output Rate"/>
+      </coding>
     </code>
     <valueQuantity>
       <value value="0.85"/>
@@ -53,7 +67,11 @@
   </component>
   <component>
     <code>
-      <text value="Energy Input"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/biomanufacturing-metric-cs"/>
+        <code value="energy-input"/>
+        <display value="Energy Input"/>
+      </coding>
     </code>
     <valueQuantity>
       <value value="1.2"/>

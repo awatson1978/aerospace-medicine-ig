@@ -1,22 +1,24 @@
-# Cumulative Radiation Dose (Fixed) - v0.6.2
+# Cumulative Radiation Dose - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Cumulative Radiation Dose (Fixed)**
+* **Cumulative Radiation Dose**
 
-## Resource Profile: Cumulative Radiation Dose (Fixed) 
+## Resource Profile: Cumulative Radiation Dose 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:CumulativeRadiationDose |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:CumulativeRadiationDose |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-Enhanced cumulative radiation dose tracking with comprehensive time periods 
+Cumulative radiation dose over daily, weekly, 30-day, annual, mission and career periods. 
 
 **Usages:**
 
-* Refer to this Profile: [Space Radiation Exposure Summary (Fixed)](StructureDefinition-space-radiation-summary.md)
+* Refer to this Profile: [Space Radiation Exposure Summary](StructureDefinition-space-radiation-summary.md)
+* Examples for this Profile: [Observation/CumulativeDose-Transit](Observation-CumulativeDose-Transit.md) and [Observation/cumulative-radiation-dose-example](Observation-cumulative-radiation-dose-example.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/cumulative-radiation-dose)
 
@@ -36,12 +38,12 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
 {
   "resourceType" : "StructureDefinition",
   "id" : "cumulative-radiation-dose",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/cumulative-radiation-dose",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-radiation-dose",
+  "version" : "0.7.0",
   "name" : "CumulativeRadiationDose",
-  "title" : "Cumulative Radiation Dose (Fixed)",
+  "title" : "Cumulative Radiation Dose",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -54,7 +56,8 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
       ]
     }
   ],
-  "description" : "Enhanced cumulative radiation dose tracking with comprehensive time periods",
+  "description" : "Cumulative radiation dose over daily, weekly, 30-day, annual, mission and career periods.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -91,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
   "kind" : "resource",
   "abstract" : false,
   "type" : "Observation",
-  "baseDefinition" : "https://mitre.org/fhir/space-health/StructureDefinition/space-radiation-exposure",
+  "baseDefinition" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-exposure",
   "derivation" : "constraint",
   "differential" : {
     "element" : [
@@ -136,7 +139,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "career-dose",
               "display" : "Career Radiation Dose"
             }
@@ -157,7 +160,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "mission-dose",
               "display" : "Mission Radiation Dose"
             }
@@ -178,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "annual-dose",
               "display" : "Annual Radiation Dose"
             }
@@ -199,7 +202,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "monthly-dose",
               "display" : "30-Day Radiation Dose"
             }
@@ -220,7 +223,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "weekly-dose",
               "display" : "Weekly Radiation Dose"
             }
@@ -241,7 +244,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "daily-dose",
               "display" : "Daily Radiation Dose"
             }
@@ -262,7 +265,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "risk-assessment",
               "display" : "Radiation Risk Assessment"
             }
@@ -292,7 +295,7 @@ Other representations of profile: [CSV](StructureDefinition-cumulative-radiation
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
               "code" : "compliance-status",
               "display" : "Compliance Status"
             }

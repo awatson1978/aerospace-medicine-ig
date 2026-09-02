@@ -1,4 +1,4 @@
-# FDI Observation with All Components - v0.6.2
+# FDI Observation with All Components - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: FDI Observation with All Components
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Flow Directionality Index Observation](StructureDefinition-flow-directionality-index-observation.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Gravity Context**: Microgravity
 
@@ -16,7 +20,7 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
 
 **code**: Flow Directionality Index
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2025-09-05 10:33:00+0000
 
@@ -41,17 +45,25 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
   "resourceType" : "Observation",
   "id" : "FDI-Components-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/flow-directionality-index-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flow-directionality-index-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs",
             "code" : "microgravity",
             "display" : "Microgravity"
           }
@@ -96,12 +108,11 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LP6960-1",
-            "display" : "Time"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+            "code" : "forward-flow-time",
+            "display" : "Forward Flow Time"
           }
-        ],
-        "text" : "Forward Flow Time"
+        ]
       },
       "valueQuantity" : {
         "value" : 4.2,
@@ -114,12 +125,11 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LP6960-1",
-            "display" : "Time"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+            "code" : "retrograde-flow-time",
+            "display" : "Retrograde Flow Time"
           }
-        ],
-        "text" : "Retrograde Flow Time"
+        ]
       },
       "valueQuantity" : {
         "value" : 0.3,
@@ -132,12 +142,11 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LP6960-1",
-            "display" : "Time"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+            "code" : "zero-flow-time",
+            "display" : "Zero Flow Time"
           }
-        ],
-        "text" : "Zero Flow Time"
+        ]
       },
       "valueQuantity" : {
         "value" : 0.5,
@@ -150,12 +159,11 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LP6960-1",
-            "display" : "Time"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+            "code" : "total-sample-time",
+            "display" : "Total Sample Time"
           }
-        ],
-        "text" : "Total Sample Time"
+        ]
       },
       "valueQuantity" : {
         "value" : 5,
@@ -168,12 +176,11 @@ Profile: [Flow Directionality Index Observation](StructureDefinition-flow-direct
       "code" : {
         "coding" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "LP74840-2",
-            "display" : "Flow velocity"
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/venous-flow-metric-cs",
+            "code" : "fdi-ratio",
+            "display" : "FDI Ratio"
           }
-        ],
-        "text" : "FDI Ratio"
+        ]
       },
       "valueQuantity" : {
         "value" : 0.85,

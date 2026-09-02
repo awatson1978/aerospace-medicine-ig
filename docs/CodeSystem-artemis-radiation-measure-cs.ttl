@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artemis-radiation-measure-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem artemis-radiation-measure-cs</b></p><a name=\"artemis-radiation-measure-cs\"> </a><a name=\"hcartemis-radiation-measure-cs\"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cumulative-dose<a name=\"artemis-radiation-measure-cs-cumulative-dose\"> </a></td><td>Cumulative Radiation Dose</td><td>Accumulated effective dose over a mission phase or period</td></tr><tr><td style=\"white-space:nowrap\">dose-rate<a name=\"artemis-radiation-measure-cs-dose-rate\"> </a></td><td>Radiation Dose Rate</td><td>Instantaneous or average dose rate during a measurement window</td></tr><tr><td style=\"white-space:nowrap\">radiation-source<a name=\"artemis-radiation-measure-cs-radiation-source\"> </a></td><td>Radiation Source</td><td>Component identifying the dominant radiation source (GCR, SPE, trapped, secondary)</td></tr><tr><td style=\"white-space:nowrap\">shielding-condition<a name=\"artemis-radiation-measure-cs-shielding-condition\"> </a></td><td>Shielding Condition</td><td>Component identifying the shielding condition during the exposure</td></tr><tr><td style=\"white-space:nowrap\">tissue-type<a name=\"artemis-radiation-measure-cs-tissue-type\"> </a></td><td>Tissue Type</td><td>Component identifying the tissue or organ for which the dose is reported</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-radiation-measure-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ArtemisRadiationMeasureCS"] ; # 
+  fhir:title [ fhir:v "Artemis Radiation Measures"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Observation and component codes used by the ArtemisRadiationExposure profile: dose measures and the contextual components (radiation source, shielding condition, tissue type). Radiation source values come from SpaceRadiationTypeCS."] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cumulative-dose" ] ;
+     fhir:display [ fhir:v "Cumulative Radiation Dose" ] ;
+     fhir:definition [ fhir:v "Accumulated effective dose over a mission phase or period" ]
+  ] [
+     fhir:code [ fhir:v "dose-rate" ] ;
+     fhir:display [ fhir:v "Radiation Dose Rate" ] ;
+     fhir:definition [ fhir:v "Instantaneous or average dose rate during a measurement window" ]
+  ] [
+     fhir:code [ fhir:v "radiation-source" ] ;
+     fhir:display [ fhir:v "Radiation Source" ] ;
+     fhir:definition [ fhir:v "Component identifying the dominant radiation source (GCR, SPE, trapped, secondary)" ]
+  ] [
+     fhir:code [ fhir:v "shielding-condition" ] ;
+     fhir:display [ fhir:v "Shielding Condition" ] ;
+     fhir:definition [ fhir:v "Component identifying the shielding condition during the exposure" ]
+  ] [
+     fhir:code [ fhir:v "tissue-type" ] ;
+     fhir:display [ fhir:v "Tissue Type" ] ;
+     fhir:definition [ fhir:v "Component identifying the tissue or organ for which the dose is reported" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

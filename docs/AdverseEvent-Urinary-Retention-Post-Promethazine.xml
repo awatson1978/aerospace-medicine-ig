@@ -3,23 +3,29 @@
 <AdverseEvent xmlns="http://hl7.org/fhir">
   <id value="Urinary-Retention-Post-Promethazine"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-adverse-event"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AdverseEvent Urinary-Retention-Post-Promethazine</b></p><a name="Urinary-Retention-Post-Promethazine"> </a><a name="hcUrinary-Retention-Post-Promethazine"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-adverse-event.html">Space Adverse Event</a></p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-III-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Flight Day</b>: 2</p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs urinary-retention}">Urinary Retention</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>date</b>: 2028-03-16 11:30:00+0000</p><p><b>seriousness</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-seriousness non-serious}">Non-serious</span></p><p><b>outcome</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-outcome resolved}">Resolved</span></p><h3>SuspectEntities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Instance</b></td></tr><tr><td style="display: none">*</td><td><a href="MedicationAdministration-Promethazine-IM-Rescue.html">MedicationAdministration: extension = -&gt;Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing),Microgravity; status = completed; medication[x] = Promethazine (Intramuscular); effective[x] = 2028-03-16 07:30:00+0000</a></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AdverseEvent Urinary-Retention-Post-Promethazine</b></p><a name="Urinary-Retention-Post-Promethazine"> </a><a name="hcUrinary-Retention-Post-Promethazine"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-space-adverse-event.html">Space Adverse Event</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href="Encounter-Artemis-IV-Mission.html">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Flight Day</b>: 2</p><p><b>actuality</b>: Adverse Event</p><p><b>event</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-adverse-event-cs urinary-retention}">Urinary Retention</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>date</b>: 2028-03-16 11:30:00+0000</p><p><b>seriousness</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-seriousness non-serious}">Non-serious</span></p><p><b>outcome</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/adverse-event-outcome resolved}">Resolved</span></p><h3>SuspectEntities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Instance</b></td></tr><tr><td style="display: none">*</td><td><a href="MedicationAdministration-Promethazine-IM-Rescue.html">MedicationAdministration: extension = -&gt;Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --&gt; (ongoing),Microgravity; status = completed; medication[x] = Promethazine (Intramuscular); effective[x] = 2028-03-16 07:30:00+0000</a></td></tr></table></div>
   </text>
-  <extension url="http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context">
     <valueReference>
-      <reference value="Encounter/Artemis-III-Mission"/>
+      <reference value="Encounter/Artemis-IV-Mission"/>
     </valueReference>
   </extension>
-  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/flight-day">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day">
     <valueInteger value="2"/>
   </extension>
   <actuality value="actual"/>
   <event>
     <coding>
-      <system value="https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs"/>
+      <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-adverse-event-cs"/>
       <code value="urinary-retention"/>
       <display value="Urinary Retention"/>
     </coding>

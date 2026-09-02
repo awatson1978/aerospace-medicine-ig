@@ -1,4 +1,4 @@
-# Trauma EFAST Exam - v0.6.2
+# Trauma EFAST Exam - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/TraumaEFASTQuestionnaire | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*: |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/TraumaEFASTQuestionnaire | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*: |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 
 
@@ -19,11 +20,21 @@
 {
   "resourceType" : "Questionnaire",
   "id" : "TraumaEFASTQuestionnaire",
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/TraumaEFASTQuestionnaire",
-  "version" : "0.6.2",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
+    ]
+  },
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/TraumaEFASTQuestionnaire",
+  "version" : "0.7.0",
   "status" : "draft",
   "subjectType" : ["Patient"],
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -36,6 +47,7 @@
       ]
     }
   ],
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "item" : [
     {
       "linkId" : "pericardial",

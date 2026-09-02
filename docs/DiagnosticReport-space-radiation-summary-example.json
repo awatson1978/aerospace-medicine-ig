@@ -1,0 +1,59 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "space-radiation-summary-example",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "profile" : ["https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-summary"],
+    "tag" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport space-radiation-summary-example</b></p><a name=\"space-radiation-summary-example\"> </a><a name=\"hcspace-radiation-summary-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-radiation-summary.html\">Space Radiation Exposure Summary</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><h2><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs radiation-summary}\">Space Radiation Exposure Summary</span> (<span title=\"Codes:{http://loinc.org 73569-6}\">Radiation dose and image quality indicators</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</td></tr><tr><td>When For</td><td>2025-06-01 --&gt; 2025-11-28</td></tr><tr><td>Reported</td><td>2025-12-02 09:00:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"Organization-NASA.html\">Organization NASA</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-space-radiation-exposure-example.html\"><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs gcr-dose}\">Galactic Cosmic Radiation Dose</span></a></td><td>0.52 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></td><td>Final</td><td>2025-07-15</td></tr><tr><td><a href=\"Observation-cumulative-radiation-dose-example.html\"><span title=\"Codes:{http://loinc.org 73536-5}\">Radiation dose total</span></a></td><td>94 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></td><td>Final</td><td/></tr></table><p>Mission dose-equivalent of 94 mSv over 180 days is consistent with the pre-flight projection of 0.5 mSv per day at solar minimum. Career total remains below the 600 mSv NASA-STD-3001 limit; no change to flight-certification status.</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context",
+    "valueReference" : {
+      "reference" : "Encounter/ISS-Exp75-InFlight"
+    }
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "73569-6",
+      "display" : "Radiation dose and image quality indicators"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs",
+      "code" : "radiation-summary",
+      "display" : "Space Radiation Exposure Summary"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExampleAstronaut"
+  },
+  "encounter" : {
+    "reference" : "Encounter/ISS-Exp75-InFlight"
+  },
+  "effectivePeriod" : {
+    "start" : "2025-06-01",
+    "end" : "2025-11-28"
+  },
+  "issued" : "2025-12-02T09:00:00Z",
+  "performer" : [{
+    "reference" : "Organization/NASA"
+  }],
+  "result" : [{
+    "reference" : "Observation/space-radiation-exposure-example"
+  },
+  {
+    "reference" : "Observation/cumulative-radiation-dose-example"
+  }],
+  "conclusion" : "Mission dose-equivalent of 94 mSv over 180 days is consistent with the pre-flight projection of 0.5 mSv per day at solar minimum. Career total remains below the 600 mSv NASA-STD-3001 limit; no change to flight-certification status."
+}

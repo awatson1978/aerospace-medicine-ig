@@ -1,4 +1,4 @@
-# Emergency Response Time - v0.6.2
+# Emergency Response Time - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/response-time | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:ResponseTime |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/response-time | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:ResponseTime |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Time from emergency recognition to response initiation
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-response-time.csv), 
 {
   "resourceType" : "StructureDefinition",
   "id" : "response-time",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/response-time",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/response-time",
+  "version" : "0.7.0",
   "name" : "ResponseTime",
   "title" : "Emergency Response Time",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-response-time.csv), 
     }
   ],
   "description" : "Time from emergency recognition to response initiation",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-response-time.csv), 
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-response-time.csv), 
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/response-time"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/response-time"
       },
       {
         "id" : "Extension.value[x]",

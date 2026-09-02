@@ -1,10 +1,12 @@
-# Example Hyperbaric Chamber - v0.6.2
+# Example Hyperbaric Chamber - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Example Hyperbaric Chamber**
 
 ## Example Location: Example Hyperbaric Chamber
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
 
 Profile: [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md)
 
@@ -27,8 +29,9 @@ Profile: [Hyperbaric Chamber](StructureDefinition-hyperbaric-chamber.md)
   "resourceType" : "Location",
   "id" : "ExampleHyperbaricChamber",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/hyperbaric-chamber"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/hyperbaric-chamber"
     ]
   },
   "status" : "active",

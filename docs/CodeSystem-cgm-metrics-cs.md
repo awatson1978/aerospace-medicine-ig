@@ -1,15 +1,16 @@
-# Continuous Glucose Monitoring Metrics Code System - v0.6.2
+# Continuous Glucose Monitoring Metrics Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Continuous Glucose Monitoring Metrics Code System**
 
-## CodeSystem: Continuous Glucose Monitoring Metrics Code System 
+## CodeSystem: Continuous Glucose Monitoring Metrics Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:CGMMetricsCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:CGMMetricsCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Standardized CGM metrics for spaceflight metabolic monitoring 
@@ -26,13 +27,13 @@ Standardized CGM metrics for spaceflight metabolic monitoring
 {
   "resourceType" : "CodeSystem",
   "id" : "cgm-metrics-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/cgm-metrics-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/cgm-metrics-cs",
+  "version" : "0.7.0",
   "name" : "CGMMetricsCS",
   "title" : "Continuous Glucose Monitoring Metrics Code System",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ Standardized CGM metrics for spaceflight metabolic monitoring
     }
   ],
   "description" : "Standardized CGM metrics for spaceflight metabolic monitoring",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 9,

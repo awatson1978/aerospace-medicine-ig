@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AdverseEvent.extension:missionContext","AdverseEvent.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"AdverseEvent.extension:missionContext","AdverseEvent.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AdverseEvent.extension:flightDay","AdverseEvent.extension","flightDay","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/flight-day]]} {[]}
+"AdverseEvent.extension:flightDay","AdverseEvent.extension","flightDay","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day]]} {[]}
 ","Flight Day","Flight day number relative to launch. Positive values indicate flight days (FD+N), negative values indicate return days (R+N)","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -49,10 +49,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","product-problem | product-quality | product-use-error | wrong-dose | incorrect-prescribing-information | wrong-technique | wrong-route-of-administration | wrong-rate | wrong-duration | wrong-time | expired-drug | medical-device-use-error | problem-different-manufacturer | unsafe-physical-environment","The overall type of event, intended for search and filtering purposes.","","","","","","","","","",,"extensible","Overall categorization of the event, e.g. product-related or situational.","http://hl7.org/fhir/ValueSet/adverse-event-category|4.0.1","",,,,"AdverseEvent.category",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.class"
 "AdverseEvent.event","AdverseEvent.event","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Type of adverse event","This element defines the specific type of event that occurred or that was prevented from occurring.","","","","","","","","","",,"extensible","","https://mitre.org/fhir/space-health/ValueSet/space-adverse-event-vs","",,,,"AdverseEvent.event",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Type of adverse event","This element defines the specific type of event that occurred or that was prevented from occurring.","","","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/space-adverse-event-vs","",,,,"AdverseEvent.event",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.what[x]"
 "AdverseEvent.subject","AdverseEvent.subject","","patient
-","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Subject impacted by event","This subject or group impacted by the event.","If AdverseEvent.resultingCondition differs among members of the group, then use Patient as the subject.","Allows for exposure of biohazard (such as legionella) to a group of individuals in a hospital.","","","","","","","",,,,,"",,,,"AdverseEvent.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.who"
 "AdverseEvent.encounter","AdverseEvent.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1]]}

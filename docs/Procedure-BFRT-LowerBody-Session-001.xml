@@ -3,13 +3,19 @@
 <Procedure xmlns="http://hl7.org/fhir">
   <id value="BFRT-LowerBody-Session-001"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/bfrt-procedure"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/bfrt-procedure"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure BFRT-LowerBody-Session-001</b></p><a name="BFRT-LowerBody-Session-001"> </a><a name="hcBFRT-LowerBody-Session-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-bfrt-procedure.html">BFRT Procedure</a></p></div><p><b>Occlusion Pressure</b>: 80 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>Gravity Context</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs low-load-bfrt}">Low-Load BFRT (20-30% 1RM)</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2028-04-15 08:30:00+0000</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 68367000}">Thigh structure</span></p><p><b>note</b>: </p><blockquote><div><p>3 sets x 15 reps at 30% 1RM, 80 mmHg occlusion, 1-min rest between sets</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure BFRT-LowerBody-Session-001</b></p><a name="BFRT-LowerBody-Session-001"> </a><a name="hcBFRT-LowerBody-Session-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-bfrt-procedure.html">BFRT Procedure</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Occlusion Pressure</b>: 80 mmHg<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemm[Hg] = 'mm[Hg]')</span></p><p><b>Gravity Context</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs microgravity}">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-protocol-cs low-load-bfrt}">Low-Load BFRT (20-30% 1RM)</span></p><p><b>subject</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2028-04-15 08:30:00+0000</p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 68367000}">Thigh structure</span></p><p><b>note</b>: </p><blockquote><div><p>3 sets x 15 reps at 30% 1RM, 80 mmHg occlusion, 1-min rest between sets</p>
 </div></blockquote><p><b>usedReference</b>: <a href="Device-BFRT-Pneumatic-Cuff-001.html">Device: status = active; manufacturer = Kaatsu Global; serialNumber = BFR-ISS-2028-001; modelNumber = Nano; type = Pneumatic Cuff</a></p></div>
   </text>
-  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/occlusion-pressure">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/occlusion-pressure">
     <valueQuantity>
       <value value="80"/>
       <unit value="mmHg"/>
@@ -17,10 +23,10 @@
       <code value="mm[Hg]"/>
     </valueQuantity>
   </extension>
-  <extension url="https://mitre.org/fhir/space-health/StructureDefinition/gravity-context">
+  <extension url="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context">
     <valueCodeableConcept>
       <coding>
-        <system value="https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"/>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs"/>
         <code value="microgravity"/>
         <display value="Microgravity"/>
       </coding>
@@ -29,7 +35,7 @@
   <status value="completed"/>
   <code>
     <coding>
-      <system value="https://mitre.org/fhir/space-health/CodeSystem/bfrt-protocol-cs"/>
+      <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/bfrt-protocol-cs"/>
       <code value="low-load-bfrt"/>
       <display value="Low-Load BFRT (20-30% 1RM)"/>
     </coding>

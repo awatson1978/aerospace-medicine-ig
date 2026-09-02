@@ -7,30 +7,42 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Procedure/Emergency-DragonReturn-001> a fhir:Procedure ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Procedure/Emergency-DragonReturn-001> a fhir:Procedure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Emergency-DragonReturn-001"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/emergency-evacuation-procedure"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/emergency-evacuation-procedure>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-evacuation-procedure"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/emergency-evacuation-procedure>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure Emergency-DragonReturn-001</b></p><a name=\"Emergency-DragonReturn-001\"> </a><a name=\"hcEmergency-DragonReturn-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-emergency-evacuation-procedure.html\">Emergency Evacuation Procedure</a></p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs crew-dragon-return}\">Crew Dragon Return</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2028-07-15 15:00:00+0000 --&gt; 2028-07-16 03:45:00+0000</p><p><b>reasonReference</b>: <a href=\"Condition-Emergency-RapidDepress-001.html\">Condition Rapid Depressurization</a></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>Crew evacuated via Crew Dragon-8, undocking at T+30 min, splashdown at T+12.75 hr</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure Emergency-DragonReturn-001</b></p><a name=\"Emergency-DragonReturn-001\"> </a><a name=\"hcEmergency-DragonReturn-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-emergency-evacuation-procedure.html\">Emergency Evacuation Procedure</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Gravity Context</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs microgravity}\">Microgravity</span></p><p><b>status</b>: Completed</p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs crew-dragon-return}\">Crew Dragon Return</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>performed</b>: 2028-07-15 15:00:00+0000 --&gt; 2028-07-16 03:45:00+0000</p><p><b>reasonReference</b>: <a href=\"Condition-Emergency-RapidDepress-001.html\">Condition Rapid Depressurization</a></p><p><b>outcome</b>: <span title=\"Codes:{http://snomed.info/sct 385669000}\">Successful</span></p><p><b>note</b>: </p><blockquote><div><p>Crew evacuated via Crew Dragon-8, undocking at T+30 min, splashdown at T+12.75 hr</p>\n</div></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/gravity-context"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/gravity-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/gravity-context>
      ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
-           fhir:l <https://mitre.org/fhir/space-health/CodeSystem/gravity-context-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/gravity-context-cs>
          ] ;
          fhir:code [ fhir:v "microgravity" ] ;
          fhir:display [ fhir:v "Microgravity" ]
@@ -41,15 +53,15 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs"^^xsd:anyURI ;
-         fhir:l <https://mitre.org/fhir/space-health/CodeSystem/emergency-response-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/emergency-response-cs>
        ] ;
        fhir:code [ fhir:v "crew-dragon-return" ] ;
        fhir:display [ fhir:v "Crew Dragon Return" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/ExampleAstronaut> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
      fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:performed [
@@ -58,7 +70,7 @@
      fhir:end [ fhir:v "2028-07-16T03:45:00Z"^^xsd:dateTime ]
   ] ; # 
   fhir:reasonReference ( [
-     fhir:l <https://mitre.org/fhir/space-health/Condition/Emergency-RapidDepress-001> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Condition/Emergency-RapidDepress-001> ;
      fhir:reference [ fhir:v "Condition/Emergency-RapidDepress-001" ]
   ] ) ; # 
   fhir:outcome [

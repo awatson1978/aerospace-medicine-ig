@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Neutral Buoyancy Training Code System - TTL Representation -  v0.6.2</title>
+    <title>Neutral Buoyancy Training Code System - TTL Representation - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"33.446"}
-    h3,h4,h5,h6{--heading-prefix:"33.446"}</style>
+    <style type="text/css">h2{--heading-prefix:"32.419"}
+    h3,h4,h5,h6{--heading-prefix:"32.419"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -52,9 +52,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -158,7 +158,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -174,7 +174,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -237,7 +237,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -292,7 +292,7 @@
         
           Active
           
-            as of 2026-08-03
+            as of 2026-09-02
           
         
       </td>
@@ -322,18 +322,18 @@
   <a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;neutral-buoyancy-training-cs&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem neutral-buoyancy-training-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;neutral-buoyancy-training-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcneutral-buoyancy-training-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eva-simulation&lt;a name=\&quot;neutral-buoyancy-training-cs-eva-simulation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EVA Simulation Training&lt;/td&gt;&lt;td&gt;Extravehicular activity simulation in neutral buoyancy pool&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tool-manipulation&lt;a name=\&quot;neutral-buoyancy-training-cs-tool-manipulation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tool Manipulation Training&lt;/td&gt;&lt;td&gt;Training for handling tools and equipment in weightless environment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-egress&lt;a name=\&quot;neutral-buoyancy-training-cs-emergency-egress\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Egress Training&lt;/td&gt;&lt;td&gt;Training for emergency escape procedures from spacecraft&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;crew-coordination&lt;a name=\&quot;neutral-buoyancy-training-cs-crew-coordination\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Crew Coordination Training&lt;/td&gt;&lt;td&gt;Multi-astronaut coordination and communication training&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;equipment-familiarization&lt;a name=\&quot;neutral-buoyancy-training-cs-equipment-familiarization\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Equipment Familiarization&lt;/td&gt;&lt;td&gt;Introduction and practice with space equipment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;habitat-construction&lt;a name=\&quot;neutral-buoyancy-training-cs-habitat-construction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Habitat Construction Training&lt;/td&gt;&lt;td&gt;Training for assembly of space habitats and structures&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;scientific-sampling&lt;a name=\&quot;neutral-buoyancy-training-cs-scientific-sampling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Scientific Sampling Training&lt;/td&gt;&lt;td&gt;Training for geological and biological sample collection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;maintenance-repair&lt;a name=\&quot;neutral-buoyancy-training-cs-maintenance-repair\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maintenance and Repair Training&lt;/td&gt;&lt;td&gt;Training for spacecraft and equipment maintenance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;task-completion-time&lt;a name=\&quot;neutral-buoyancy-training-cs-task-completion-time\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Task Completion Time&lt;/td&gt;&lt;td&gt;Time required to complete assigned tasks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;movement-efficiency&lt;a name=\&quot;neutral-buoyancy-training-cs-movement-efficiency\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Movement Efficiency&lt;/td&gt;&lt;td&gt;Assessment of movement and navigation efficiency&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;communication-clarity&lt;a name=\&quot;neutral-buoyancy-training-cs-communication-clarity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication Clarity&lt;/td&gt;&lt;td&gt;Quality of underwater communication systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-response-time&lt;a name=\&quot;neutral-buoyancy-training-cs-emergency-response-time\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Response Time&lt;/td&gt;&lt;td&gt;Response time to emergency scenarios&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;equipment-handling&lt;a name=\&quot;neutral-buoyancy-training-cs-equipment-handling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Equipment Handling Proficiency&lt;/td&gt;&lt;td&gt;Skill in manipulating tools and equipment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;spatial-orientation&lt;a name=\&quot;neutral-buoyancy-training-cs-spatial-orientation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spatial Orientation&lt;/td&gt;&lt;td&gt;Ability to maintain orientation in 3D environment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stress-management&lt;a name=\&quot;neutral-buoyancy-training-cs-stress-management\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stress Management&lt;/td&gt;&lt;td&gt;Performance under stress and unexpected conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nbl-facility&lt;a name=\&quot;neutral-buoyancy-training-cs-nbl-facility\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutral Buoyancy Laboratory&lt;/td&gt;&lt;td&gt;NASA's Neutral Buoyancy Laboratory facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;commercial-facility&lt;a name=\&quot;neutral-buoyancy-training-cs-commercial-facility\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Commercial Training Facility&lt;/td&gt;&lt;td&gt;Commercial neutral buoyancy training facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;open-water&lt;a name=\&quot;neutral-buoyancy-training-cs-open-water\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open Water Training&lt;/td&gt;&lt;td&gt;Training conducted in natural water environments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;saturation-habitat&lt;a name=\&quot;neutral-buoyancy-training-cs-saturation-habitat\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saturation Diving Habitat&lt;/td&gt;&lt;td&gt;Underwater habitat for extended training missions&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem neutral-buoyancy-training-cs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;neutral-buoyancy-training-cs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcneutral-buoyancy-training-cs\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eva-simulation&lt;a name=\&quot;neutral-buoyancy-training-cs-eva-simulation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;EVA Simulation Training&lt;/td&gt;&lt;td&gt;Extravehicular activity simulation in neutral buoyancy pool&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;tool-manipulation&lt;a name=\&quot;neutral-buoyancy-training-cs-tool-manipulation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tool Manipulation Training&lt;/td&gt;&lt;td&gt;Training for handling tools and equipment in weightless environment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-egress&lt;a name=\&quot;neutral-buoyancy-training-cs-emergency-egress\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Egress Training&lt;/td&gt;&lt;td&gt;Training for emergency escape procedures from spacecraft&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;crew-coordination&lt;a name=\&quot;neutral-buoyancy-training-cs-crew-coordination\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Crew Coordination Training&lt;/td&gt;&lt;td&gt;Multi-astronaut coordination and communication training&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;equipment-familiarization&lt;a name=\&quot;neutral-buoyancy-training-cs-equipment-familiarization\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Equipment Familiarization&lt;/td&gt;&lt;td&gt;Introduction and practice with space equipment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;communication-training&lt;a name=\&quot;neutral-buoyancy-training-cs-communication-training\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication Training&lt;/td&gt;&lt;td&gt;Training in the use of underwater communication systems and signal protocols&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;habitat-construction&lt;a name=\&quot;neutral-buoyancy-training-cs-habitat-construction\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Habitat Construction Training&lt;/td&gt;&lt;td&gt;Training for assembly of space habitats and structures&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;scientific-sampling&lt;a name=\&quot;neutral-buoyancy-training-cs-scientific-sampling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Scientific Sampling Training&lt;/td&gt;&lt;td&gt;Training for geological and biological sample collection&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;maintenance-repair&lt;a name=\&quot;neutral-buoyancy-training-cs-maintenance-repair\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Maintenance and Repair Training&lt;/td&gt;&lt;td&gt;Training for spacecraft and equipment maintenance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;task-completion-time&lt;a name=\&quot;neutral-buoyancy-training-cs-task-completion-time\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Task Completion Time&lt;/td&gt;&lt;td&gt;Time required to complete assigned tasks&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;movement-efficiency&lt;a name=\&quot;neutral-buoyancy-training-cs-movement-efficiency\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Movement Efficiency&lt;/td&gt;&lt;td&gt;Assessment of movement and navigation efficiency&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;communication-clarity&lt;a name=\&quot;neutral-buoyancy-training-cs-communication-clarity\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Communication Clarity&lt;/td&gt;&lt;td&gt;Quality of underwater communication systems&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;emergency-response-time&lt;a name=\&quot;neutral-buoyancy-training-cs-emergency-response-time\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Emergency Response Time&lt;/td&gt;&lt;td&gt;Response time to emergency scenarios&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;equipment-handling&lt;a name=\&quot;neutral-buoyancy-training-cs-equipment-handling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Equipment Handling Proficiency&lt;/td&gt;&lt;td&gt;Skill in manipulating tools and equipment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;spatial-orientation&lt;a name=\&quot;neutral-buoyancy-training-cs-spatial-orientation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Spatial Orientation&lt;/td&gt;&lt;td&gt;Ability to maintain orientation in 3D environment&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;stress-management&lt;a name=\&quot;neutral-buoyancy-training-cs-stress-management\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stress Management&lt;/td&gt;&lt;td&gt;Performance under stress and unexpected conditions&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;nbl-facility&lt;a name=\&quot;neutral-buoyancy-training-cs-nbl-facility\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Neutral Buoyancy Laboratory&lt;/td&gt;&lt;td&gt;NASA's Neutral Buoyancy Laboratory facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;commercial-facility&lt;a name=\&quot;neutral-buoyancy-training-cs-commercial-facility\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Commercial Training Facility&lt;/td&gt;&lt;td&gt;Commercial neutral buoyancy training facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;open-water&lt;a name=\&quot;neutral-buoyancy-training-cs-open-water\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open Water Training&lt;/td&gt;&lt;td&gt;Training conducted in natural water environments&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;saturation-habitat&lt;a name=\&quot;neutral-buoyancy-training-cs-saturation-habitat\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Saturation Diving Habitat&lt;/td&gt;&lt;td&gt;Underwater habitat for extended training missions&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://mitre.org/fhir/space-health/CodeSystem/neutral-buoyancy-training-cs&gt;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs&gt;
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.6.2&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.7.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;NeutralBuoyancyTrainingCS&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Neutral Buoyancy Training Code System&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-08-03T22:31:50-05:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-09-02T13:24:45-05:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MITRE&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MITRE&quot; ] ;
@@ -342,9 +342,10 @@
 <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.mitre.org/&quot; ]     ] )
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Specialized codes for neutral buoyancy training activities and assessments&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">fhir:copyright</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;complete&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;19&quot;^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;20&quot;^^xsd:nonNegativeInteger] ; # 
   <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;eva-simulation&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;EVA Simulation Training&quot; ] ;
@@ -365,6 +366,10 @@
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;equipment-familiarization&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Equipment Familiarization&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Introduction and practice with space equipment&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;communication-training&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Communication Training&quot; ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Training in the use of underwater communication systems and signal protocols&quot; ]
   ] [
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;habitat-construction&quot; ] ;
 <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Habitat Construction Training&quot; ] ;
@@ -448,7 +453,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

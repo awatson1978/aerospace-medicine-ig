@@ -1,4 +1,4 @@
-# Crew Dragon Resilience - v0.6.2
+# Crew Dragon Resilience - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,9 @@
 
 ## Example Location: Crew Dragon Resilience
 
-Profile: [Space Vehicle](StructureDefinition-SpaceVehicle.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record](https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record)
+
+Profile: [Space Vehicle](StructureDefinition-space-vehicle.md)
 
 **name**: Crew Dragon Resilience
 
@@ -21,8 +23,9 @@ Profile: [Space Vehicle](StructureDefinition-SpaceVehicle.md)
   "resourceType" : "Location",
   "id" : "CrewDragonResilience",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/public-record",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/SpaceVehicle"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-vehicle"
     ]
   },
   "name" : "Crew Dragon Resilience",

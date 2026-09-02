@@ -1,4 +1,4 @@
-# Location Hierarchy - v0.6.2
+# Location Hierarchy - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:LocationHierarchy |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/location-hierarchy | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:LocationHierarchy |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Hierarchical relationship between locations (parent/child)
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-location-hierarchy.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "location-hierarchy",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/location-hierarchy",
+  "version" : "0.7.0",
   "name" : "LocationHierarchy",
   "title" : "Location Hierarchy",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-location-hierarchy.c
     }
   ],
   "description" : "Hierarchical relationship between locations (parent/child)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-location-hierarchy.c
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/location-hierarchy"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/location-hierarchy"
       },
       {
         "id" : "Extension.value[x]",

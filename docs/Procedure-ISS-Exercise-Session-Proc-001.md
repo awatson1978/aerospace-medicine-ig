@@ -1,4 +1,4 @@
-# ISS T2 Treadmill Session - Procedure - v0.6.2
+# ISS T2 Treadmill Session - Procedure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Procedure: ISS T2 Treadmill Session - Procedure
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space Exercise Session](StructureDefinition-space-exercise-session.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --> (ongoing)](Encounter-ISS-Exp75-InFlight.md)
 
@@ -14,7 +18,7 @@ Profile: [Space Exercise Session](StructureDefinition-space-exercise-session.md)
 
 **code**: ISS T2 treadmill running session
 
-**subject**: [Patient/AstronautExample](Patient/AstronautExample)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **encounter**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --> (ongoing)](Encounter-ISS-Exp75-InFlight.md)
 
@@ -31,13 +35,21 @@ Profile: [Space Exercise Session](StructureDefinition-space-exercise-session.md)
   "resourceType" : "Procedure",
   "id" : "ISS-Exercise-Session-Proc-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-exercise-session"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-session"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
         "reference" : "Encounter/ISS-Exp75-InFlight"
       }
@@ -48,7 +60,7 @@ Profile: [Space Exercise Session](StructureDefinition-space-exercise-session.md)
     "text" : "ISS T2 treadmill running session"
   },
   "subject" : {
-    "reference" : "Patient/AstronautExample"
+    "reference" : "Patient/ExampleAstronaut"
   },
   "encounter" : {
     "reference" : "Encounter/ISS-Exp75-InFlight"

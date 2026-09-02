@@ -1,17 +1,15 @@
-# Nutrition - v0.6.2
+# Nutrition - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * **Nutrition**
 
 ## Nutrition
 
-## Nutrition and Calorie-Deficient Diets
-
 ### Overview
 
-When the crew of **Biosphere 2** emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited **improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity**findings later championed by Dr. Roy Walford and colleagues at the University of Chicago. Their experiment foreshadowed a truth that space agencies now confront directly: **astronauts often operate at an energetic deficit**, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.
+When the crew of **Biosphere 2** emerged after two years of sealed-habitat living, researchers were astonished: despite a chronic caloric deficit, the team exhibited **improved cardiometabolic markers, reduced inflammatory profiles, and enhanced insulin sensitivity**—findings later championed by Dr. Roy Walford and colleagues at UCLA. Their experiment foreshadowed a truth that space agencies now confront directly: **astronauts often operate at an energetic deficit**, sometimes unintentionally, sometimes as a result of mission constraints, and sometimes as a managed physiologic strategy.
 
-On the **International Space Station**, astronauts routinely burn **2,5003,500 kcal/day** yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.
+On the **International Space Station**, astronauts routinely burn **2,500–3,500 kcal/day** yet may consume significantly less due to appetite suppression, shelf-life constraints, or inventory shortages. Every unaccounted calorie becomes an operational variable: mass budgeting, hydration balance, micro- and macronutrient sufficiency, muscle and bone preservation, cognitive performance, and long-term metabolic health. Tracking intake is therefore as mission-critical as monitoring radiation dose or EVA suit pressure.
 
 ### FHIR Implementation Architecture
 
@@ -19,13 +17,14 @@ On the **International Space Station**, astronauts routinely burn **2,5003,500 
 
 | | | |
 | :--- | :--- | :--- |
-| **SpaceNutritionIntake** | Document actual daily intake and hydration events | Macronutrient breakdown, micronutrient sufficiency, hydration type/volume, route |
-| **SpaceNutritionProduct** | Describe space-rated food, supplements, electrolytes | Shelf-life, rehydration requirements, preparation method, hazard analysis |
-| **SpaceNutritionInventoryItem** | Track stores aboard spacecraft or planetary habitats | Lot number, mass, burn rate, expired/shortage flags |
-| **CalorieDeficitAssessment** | Quantify acute and cumulative calorie deficits | Resting metabolic rate, total expenditure, intake vs. requirement |
-| **MetabolicRiskSummary** | Evaluate risk from prolonged deficits | Muscle wasting, bone turnover, hormonal signs of underfeeding |
+| [SpaceNutritionIntake](StructureDefinition-space-nutrition-intake.md) | Document actual daily intake and hydration events | Macronutrient breakdown, micronutrient sufficiency, hydration type/volume, route |
+| [SpaceNutritionProduct](StructureDefinition-space-nutrition-product.md) | Describe space-rated food, supplements, electrolytes | Shelf-life, rehydration requirements, preparation method, hazard analysis |
+| [SpaceNutritionInventoryItem](StructureDefinition-space-nutrition-inventory-item.md) | Track stores aboard spacecraft or planetary habitats | Lot number, mass, burn rate, expired/shortage flags |
+| [CalorieDeficitAssessment](StructureDefinition-calorie-deficit-assessment.md) | Quantify acute and cumulative calorie deficits | Resting metabolic rate, total expenditure, intake vs. requirement |
+| [HydrationStatusObservation](StructureDefinition-hydration-status-observation.md) | Record hydration events and fluid balance | Fluid type, volume in UCUM units, hydration deficit extension |
+| [MetabolicRiskSummary](StructureDefinition-metabolic-risk-summary.md) | Evaluate risk from prolonged deficits | Muscle wasting, bone turnover, hormonal signs of underfeeding |
 
-These profiles parallel the architectural pattern used in radiation trackingseparating individual measurement, device/product specification, and longitudinal summaries.
+These profiles parallel the architectural pattern used in radiation tracking—separating individual measurement, device/product specification, and longitudinal summaries.
 
 #### Data Architecture
 
@@ -52,7 +51,7 @@ New code systems and value sets:
 * **[HydrationTypeVS](ValueSet-hydration-type-vs.md)**: ValueSet for hydration types
 * **[NutritionInventoryStatusCS](CodeSystem-nutrition-inventory-status-cs.md)**: adequate, low, critical, expired
 * **[NutritionInventoryStatusVS](ValueSet-nutrition-inventory-status-vs.md)**: ValueSet for inventory status
-* **[CalorieDeficitRiskVS](ValueSet-calorie-deficit-risk-vs.md)**: mild (<300 kcal/day), moderate (300–600), severe (>600), extreme (>1,000 kcal/day)
+* **[CalorieDeficitRiskCS](CodeSystem-calorie-deficit-risk-cs.md)** and **[CalorieDeficitRiskVS](ValueSet-calorie-deficit-risk-vs.md)**: mild (<300 kcal/day), moderate (300-600), severe (>600), extreme (>1,000 kcal/day)
 
 Integration with existing terminologies:
 
@@ -62,7 +61,7 @@ Integration with existing terminologies:
 
 ### Physiologic and Environmental Considerations
 
-Caloric deficit in space is not merely a dietary inconvenienceit is a **whole-system physiologic perturbation**. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutritiona constant battle between physiologic needs and environmental constraints.
+Caloric deficit in space is not merely a dietary inconvenience—it is a **whole-system physiologic perturbation**. Picture an astronaut floating through the ISS after a six-hour EVA: their muscles are fatigued from fighting against the stiff spacesuit joints, their appetite is suppressed by the fluid shift that makes their face puffy and sinuses congested, and the pre-packaged meal floating nearby holds little appeal despite their body's desperate need for fuel. This is the daily reality of space nutrition—a constant battle between physiologic needs and environmental constraints.
 
 #### Microgravity Effects
 
@@ -71,12 +70,12 @@ Caloric deficit in space is not merely a dietary inconvenienceit is a **whole-s
 
 #### Energy Expenditure
 
-* Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by **400800 kcal/day**, especially during EVA prep
+* Resistance exercise (ARED), treadmill running, and cycling increase metabolic load by **400–800 kcal/day**, especially during EVA prep
 * Planetary surface operations (Moon/Mars) significantly increase caloric expenditure due to suit mass and reduced-but-nonzero gravity
 
 #### Cognitive and Immune Function
 
-Chronic deficits degrade reaction time, stress tolerance, and immune resistancecritical for long-duration missions.
+Chronic deficits degrade reaction time, stress tolerance, and immune resistance—critical for long-duration missions.
 
 #### Hydration
 
@@ -84,15 +83,15 @@ Dehydration exacerbates orthostatic intolerance, kidney stone risk, and thermore
 
 #### Biosphere 2 as an Analog
 
-Long-term calorie deficit produced **improved metabolic markers** but also measurable **loss of lean mass**requiring careful management in space analogs and missions.
+Long-term calorie deficit produced **improved metabolic markers** but also measurable **loss of lean mass**—requiring careful management in space analogs and missions.
 
 ### Monitoring Strategy
 
-Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picturecombining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.
+Analogous to radiation dosimetry's layered detection system, nutrition monitoring integrates multiple data streams to provide comprehensive tracking of astronaut nutritional status. Think of this as creating a complete metabolic picture—combining direct measurements of what astronauts consume with physiologic markers that reveal how their bodies are responding to the space environment and dietary intake.
 
 #### Daily Macronutrient Logging
 
-Recorded via SpaceNutritionIntake. Includes caloric estimation error margins.
+Recorded via [SpaceNutritionIntake](StructureDefinition-space-nutrition-intake.md) observations. Each entry carries the caloric estimation error margin alongside the estimate, because in-flight intake is reconstructed from packaging and crew report rather than weighed.
 
 #### Device-Assisted Measurement
 
@@ -105,7 +104,7 @@ Recorded via SpaceNutritionIntake. Includes caloric estimation error margins.
 * Weight, circumferences
 * Bone turnover markers (CTX, P1NP)
 * Resting Metabolic Rate (portable indirect calorimetry)
-* Hydration biomarkers: urine osmolality, Naz/Kz balance
+* Hydration biomarkers: urine osmolality, Na⁺/K⁺ balance
 
 #### Inventory Telemetry
 
@@ -113,9 +112,11 @@ Habitat systems continuously track **remaining consumables**, mirroring ECLSS en
 
 #### Risk Threshold Alerts
 
-* Greater than 600 kcal/day deficit for 3 consecutive days
-* Less than 1.2 g/kg protein
-* Fluid deficit greater than 1.5 L/day
+The alert thresholds below are the ones this guide uses in its worked examples. They are illustrative operational triggers, not published limits: the deficit band comes from the risk levels in [CalorieDeficitRiskCS](CodeSystem-calorie-deficit-risk-cs.md), and the protein floor is the lower end of the 1.2-1.7 g/kg/day intake range NASA's nutritional requirements describe for spaceflight (Smith, Zwart and Heer). Any operational deployment should re-derive them from the flight surgeon's own standards.
+
+* Sustained deficit greater than 600 kcal/day for 3 consecutive days (the "severe" band)
+* Protein intake below 1.2 g/kg body weight per day
+* Net fluid deficit greater than 1.5 L/day
 
 Alerts feed mission control decision algorithms.
 
@@ -123,18 +124,20 @@ Alerts feed mission control decision algorithms.
 
 #### Core FHIR Resources
 
-* **NutritionIntake** —SpaceNutritionIntake
-* **NutritionProduct** —SpaceNutritionProduct
-* **Observation** —CalorieDeficitAssessment, HydrationStatusObservation
-* **InventoryItem** —SpaceNutritionInventoryItem
-* **DiagnosticReport** —MetabolicRiskSummary
+* **Observation** — [SpaceNutritionIntake](StructureDefinition-space-nutrition-intake.md), [CalorieDeficitAssessment](StructureDefinition-calorie-deficit-assessment.md), [HydrationStatusObservation](StructureDefinition-hydration-status-observation.md)
+* **Medication** — [SpaceNutritionProduct](StructureDefinition-space-nutrition-product.md)
+* **Basic** — [SpaceNutritionInventoryItem](StructureDefinition-space-nutrition-inventory-item.md)
+* **DiagnosticReport** — [MetabolicRiskSummary](StructureDefinition-metabolic-risk-summary.md)
+
+FHIR R5 introduces dedicated `NutritionIntake`, `NutritionProduct`, and `InventoryItem` resources for exactly these purposes. This guide is built on R4, so intake is carried as an Observation, the product as a Medication, and inventory as a Basic resource; the guide also carries a [NutritionProduct logical model](StructureDefinition-NutritionProduct.md), mirroring the [R5 resource](https://hl7.org/fhir/R5/nutritionproduct.html), for the Artemis II menu below. A future R5 version of the guide would move these three onto the native resources.
 
 #### Extensions
 
-* **missionContext** (consistent with radiation and NBL modules)
-* **energyExpenditure** (kcal/day)
-* **hydrationDeficit** (L/day)
-* **inventoryRiskFlag** (critical, caution, nominal)
+* [MissionContext](StructureDefinition-mission-context.md) — reference to the mission Encounter (consistent with the radiation and neutral-buoyancy modules)
+* [EnergyExpenditure](StructureDefinition-energy-expenditure.md) — total daily energy expenditure (kcal/day)
+* [HydrationDeficit](StructureDefinition-hydration-deficit.md) — daily fluid deficit (L/day)
+* [InventoryRiskFlag](StructureDefinition-inventory-risk-flag.md) — critical, caution, nominal
+* [RehydrationRequirement](StructureDefinition-rehydration-requirement.md) and [ShelfLifeDecay](StructureDefinition-shelf-life-decay.md) — water needed to prepare a product, and its degradation rate in space conditions
 
 ### Use Cases
 
@@ -166,7 +169,7 @@ Study effects of long-term calorie deficit, nutrient timing, circadian misalignm
 
 ### Artemis II Crew Menu
 
-NASA published the crew menu for the **Artemis II** mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories, each modeled as a FHIR [NutritionProduct](https://hl7.org/fhir/R5/nutritionproduct.html) resource in this IG.
+NASA published the crew menu for the **Artemis II** mission, providing a concrete example of mission menu planning (Use Case #2 above). The menu includes 41 items across 10 categories. Each is modeled as an instance of this guide's [NutritionProduct logical model](StructureDefinition-NutritionProduct.md); the resource is native to [FHIR R5](https://hl7.org/fhir/R5/nutritionproduct.html) and does not exist in R4, so the guide carries a logical model of it rather than referencing the R5 resource directly.
 
 | | |
 | :--- | :--- |
@@ -183,10 +186,7 @@ NASA published the crew menu for the **Artemis II** mission, providing a concret
 
 These resources are available for bulk download as [Artemis.NutritionProducts.ndjson](Artemis.NutritionProducts.ndjson) on the [Downloads](downloads.md) page.
 
-**Sources:**
-
-* [Artemis II: What's on the Menu?](https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/)
-* [Artemis II - Crew Menu Infographic](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png)
+The menu items and categories are taken from NASA's published Artemis II menu material, cited in the References section below.
 
 ### Enhanced Data Collection
 
@@ -230,93 +230,201 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
 
 * FHIR InventoryItem records synchronize with manifest systems for lunar/Mars surface caches
 
-### Implementation Examples
+### Examples
 
-#### Example 1: SpaceNutritionIntake
+No FSH example instances exist for the nutrition profiles yet, so the two JSON blocks below are illustrative rather than published instances: they show the shape a conforming resource takes, using this guide's single example patient (`Patient/ExampleAstronaut`) and the ISS Expedition 75 in-flight encounter that the exercise examples also use.
 
-```
-{
-  "resourceType": "NutritionIntake",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-nutrition-intake"
-    ]
-  },
-  "status": "completed",
-  "subject": { "reference": "Patient/AstronautExample" },
-  "occurenceDateTime": "2025-06-01T12:30:00Z",
-  "consumedItem": [
-    {
-      "nutritionProduct": {
-        "reference": "NutritionProduct/FD-Lasagna-01"
-      },
-      "amount": { "value": 1, "unit": "package" },
-      "nutrient": [
-        {
-          "nutrientCode": { "text": "Energy" },
-          "amount": { "value": 420, "unit": "kcal" }
-        },
-        {
-          "nutrientCode": { "text": "Protein" },
-          "amount": { "value": 28, "unit": "g" }
-        },
-        {
-          "nutrientCode": { "text": "Carbohydrate" },
-          "amount": { "value": 45, "unit": "g" }
-        }
-      ]
-    }
-  ],
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
-      "valueCode": "iss-expedition-72"
-    }
-  ]
-}
+#### Example 1: Space Nutrition Intake (illustrative)
 
-```
-
-#### Example 2: CalorieDeficitAssessment
+A single rehydratable meal logged as an Observation. FHIR R4 has no `NutritionIntake` resource, so intake is carried as an Observation coded from [MacronutrientMetricsCS](CodeSystem-macronutrient-metrics-cs.md), with the macronutrient breakdown in components.
 
 ```
 {
   "resourceType": "Observation",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/calorie-deficit-assessment"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-nutrition-intake"
     ]
   },
   "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "226379006",
+          "display": "Nutrition and dietetics procedure (procedure)"
+        }
+      ]
+    }
+  ],
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/macronutrient-metrics-cs",
-        "code": "calorie-deficit",
-        "display": "Daily Calorie Balance"
+        "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+        "code": "calorie-intake",
+        "display": "Calorie Intake"
       }
-    ]
+    ],
+    "text": "Freeze-dried lasagna, midday meal"
   },
-  "subject": { "reference": "Patient/AstronautExample" },
-  "effectiveDateTime": "2025-06-01T23:59:00Z",
+  "subject": { "reference": "Patient/ExampleAstronaut" },
+  "effectiveDateTime": "2025-06-01T12:30:00Z",
   "valueQuantity": {
-    "value": -650,
-    "unit": "kcal"
+    "value": 420,
+    "unit": "kcal",
+    "system": "http://unitsofmeasure.org",
+    "code": "kcal"
   },
   "component": [
     {
-      "code": { "text": "Energy Expenditure" },
-      "valueQuantity": { "value": 3100, "unit": "kcal" }
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "2692-2",
+            "display": "Protein [Mass/volume] in Serum or Plasma"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 28,
+        "unit": "g",
+        "system": "http://unitsofmeasure.org",
+        "code": "g"
+      }
     },
     {
-      "code": { "text": "Energy Intake" },
-      "valueQuantity": { "value": 2450, "unit": "kcal" }
+      "code": {
+        "coding": [
+          {
+            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+            "code": "carbohydrate-grams",
+            "display": "Carbohydrate Intake (grams)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 45,
+        "unit": "g",
+        "system": "http://unitsofmeasure.org",
+        "code": "g"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+            "code": "fat-grams",
+            "display": "Fat Intake (grams)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 12,
+        "unit": "g",
+        "system": "http://unitsofmeasure.org",
+        "code": "g"
+      }
     }
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
-      "valueCode": "eva-day"
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
+      "valueReference": {
+        "reference": "Encounter/ISS-Exp75-InFlight"
+      }
+    }
+  ]
+}
+
+```
+
+#### Example 2: Calorie Deficit Assessment (illustrative)
+
+The end-of-day balance for the same crewmember. The value is the signed daily balance; the two components carry the expenditure and intake it was derived from, so the arithmetic (2,450 − 3,100 = −650 kcal) is checkable. A deficit of this size falls in the "severe" band of [CalorieDeficitRiskCS](CodeSystem-calorie-deficit-risk-cs.md).
+
+```
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/calorie-deficit-assessment"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "182922004",
+          "display": "Dietary regime (regime/therapy)"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+        "code": "calorie-deficit",
+        "display": "Calorie Deficit"
+      }
+    ],
+    "text": "Daily calorie balance"
+  },
+  "subject": { "reference": "Patient/ExampleAstronaut" },
+  "effectiveDateTime": "2025-06-01T23:59:00Z",
+  "valueQuantity": {
+    "value": -650,
+    "unit": "kcal",
+    "system": "http://unitsofmeasure.org",
+    "code": "kcal"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+            "code": "calorie-expenditure",
+            "display": "Calorie Expenditure"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3100,
+        "unit": "kcal",
+        "system": "http://unitsofmeasure.org",
+        "code": "kcal"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
+            "code": "calorie-intake",
+            "display": "Calorie Intake"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 2450,
+        "unit": "kcal",
+        "system": "http://unitsofmeasure.org",
+        "code": "kcal"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
+      "valueReference": {
+        "reference": "Encounter/ISS-Exp75-InFlight"
+      }
     }
   ]
 }
@@ -366,6 +474,9 @@ Interfaces that promote adequate intake during appetite suppression phases.
 
 #### Space Food Systems and Standards
 
+* [Artemis II: What's on the Menu? - NASA](https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-whats-on-the-menu/)
+* NASA. Artemis II Crew Menu Infographic. NP-2026-01-001-JSC, March 2026: [https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png](https://www.nasa.gov/wp-content/uploads/2026/03/np-2026-01-001-jsc-artemis-ii-crew-menu-infographic-3-06-26-pdf.png)
+* Smith SM, Zwart SR, Heer M. **Human Adaptation to Spaceflight: The Role of Nutrition.** NASA Johnson Space Center, NP-2014-10-018-JSC, 2014. Source for the spaceflight protein intake range and nutritional requirement context used in the risk thresholds above.
 * [Space Food Systems - NASA](https://www.nasa.gov/directorates/esdmd/hhp/space-food-systems/)
 * [NASA's Food for Space Flight](https://www.nasa.gov/sites/default/files/atoms/files/food_for_space_flight_tagged.pdf)
 * [Space Station 20th: Food on ISS](https://www.nasa.gov/history/space-station-20th-food-on-iss/)

@@ -1,4 +1,4 @@
-# Store-and-Forward Telemedicine Encounter - v0.6.2
+# Store-and-Forward Telemedicine Encounter - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Encounter: Store-and-Forward Telemedicine Encounter
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Telemedicine Encounter](StructureDefinition-telemedicine-encounter.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Communication Latency**: 1.3 s(Details: UCUM codes = 's')
 
@@ -16,7 +20,7 @@ Profile: [Telemedicine Encounter](StructureDefinition-telemedicine-encounter.md)
 
 **type**: Store-and-Forward
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **period**: 2028-05-10 09:00:00+0000 --> 2028-05-10 09:15:00+0000
 
@@ -31,13 +35,21 @@ Profile: [Telemedicine Encounter](StructureDefinition-telemedicine-encounter.md)
   "resourceType" : "Encounter",
   "id" : "Telemedicine-StoreForward-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/telemedicine-encounter"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/telemedicine-encounter"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/communication-latency",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-latency",
       "valueQuantity" : {
         "value" : 1.3,
         "unit" : "s",
@@ -56,7 +68,7 @@ Profile: [Telemedicine Encounter](StructureDefinition-telemedicine-encounter.md)
     {
       "coding" : [
         {
-          "system" : "https://mitre.org/fhir/space-health/CodeSystem/telemedicine-modality-cs",
+          "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/telemedicine-modality-cs",
           "code" : "store-forward",
           "display" : "Store-and-Forward"
         }

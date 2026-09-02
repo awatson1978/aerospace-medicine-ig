@@ -1,10 +1,14 @@
-# ISRU Propellant Production Plant - v0.6.2
+# ISRU Propellant Production Plant - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **ISRU Propellant Production Plant**
 
 ## Example Device: ISRU Propellant Production Plant
+
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Active
 
@@ -27,6 +31,16 @@
 {
   "resourceType" : "Device",
   "id" : "ISRU-Plant-Jezero-1",
+  "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
+    ]
+  },
   "status" : "active",
   "manufacturer" : "NASA / Commercial Partners",
   "deviceName" : [
@@ -38,8 +52,9 @@
   "type" : {
     "coding" : [
       {
-        "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs",
-        "code" : "isruPlant"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-prototype-devices-cs",
+        "code" : "isruPlant",
+        "display" : "Mars ISRU Propellant Plant"
       }
     ],
     "text" : "ISRU Propellant Plant"

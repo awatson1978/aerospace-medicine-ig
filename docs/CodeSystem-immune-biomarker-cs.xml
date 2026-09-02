@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="immune-biomarker-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem immune-biomarker-cs</b></p><a name="immune-biomarker-cs"> </a><a name="hcimmune-biomarker-cs"> </a><p>This case-sensitive code system <code>https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">il-6<a name="immune-biomarker-cs-il-6"> </a></td><td>Interleukin-6 (IL-6)</td><td>Pro-inflammatory cytokine marker</td></tr><tr><td style="white-space:nowrap">tnf-alpha<a name="immune-biomarker-cs-tnf-alpha"> </a></td><td>Tumor Necrosis Factor Alpha (TNF-α)</td><td>Pro-inflammatory cytokine</td></tr><tr><td style="white-space:nowrap">ifn-gamma<a name="immune-biomarker-cs-ifn-gamma"> </a></td><td>Interferon Gamma (IFN-γ)</td><td>Th1 immune response cytokine</td></tr><tr><td style="white-space:nowrap">cd4-cd8-ratio<a name="immune-biomarker-cs-cd4-cd8-ratio"> </a></td><td>CD4/CD8 Ratio</td><td>T-cell subset ratio indicating immune balance</td></tr><tr><td style="white-space:nowrap">nk-cell-pct<a name="immune-biomarker-cs-nk-cell-pct"> </a></td><td>Natural Killer Cell Percentage</td><td>NK cell fraction of total lymphocytes</td></tr><tr><td style="white-space:nowrap">ebv-pcr<a name="immune-biomarker-cs-ebv-pcr"> </a></td><td>EBV PCR</td><td>Epstein-Barr virus reactivation detection by PCR</td></tr><tr><td style="white-space:nowrap">cmv-pcr<a name="immune-biomarker-cs-cmv-pcr"> </a></td><td>CMV PCR</td><td>Cytomegalovirus reactivation detection by PCR</td></tr><tr><td style="white-space:nowrap">salivary-iga<a name="immune-biomarker-cs-salivary-iga"> </a></td><td>Salivary IgA</td><td>Mucosal immune function marker</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem immune-biomarker-cs</b></p><a name="immune-biomarker-cs"> </a><a name="hcimmune-biomarker-cs"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">immune-panel<a name="immune-biomarker-cs-immune-panel"> </a></td><td>Immune Function Panel</td><td>Panel of immune function biomarkers monitored across mission phases</td></tr><tr><td style="white-space:nowrap">il-6<a name="immune-biomarker-cs-il-6"> </a></td><td>Interleukin-6 (IL-6)</td><td>Pro-inflammatory cytokine marker</td></tr><tr><td style="white-space:nowrap">tnf-alpha<a name="immune-biomarker-cs-tnf-alpha"> </a></td><td>Tumor Necrosis Factor Alpha (TNF-α)</td><td>Pro-inflammatory cytokine</td></tr><tr><td style="white-space:nowrap">ifn-gamma<a name="immune-biomarker-cs-ifn-gamma"> </a></td><td>Interferon Gamma (IFN-γ)</td><td>Th1 immune response cytokine</td></tr><tr><td style="white-space:nowrap">cd4-cd8-ratio<a name="immune-biomarker-cs-cd4-cd8-ratio"> </a></td><td>CD4/CD8 Ratio</td><td>T-cell subset ratio indicating immune balance</td></tr><tr><td style="white-space:nowrap">nk-cell-pct<a name="immune-biomarker-cs-nk-cell-pct"> </a></td><td>Natural Killer Cell Percentage</td><td>NK cell fraction of total lymphocytes</td></tr><tr><td style="white-space:nowrap">ebv-pcr<a name="immune-biomarker-cs-ebv-pcr"> </a></td><td>EBV PCR</td><td>Epstein-Barr virus reactivation detection by PCR</td></tr><tr><td style="white-space:nowrap">cmv-pcr<a name="immune-biomarker-cs-cmv-pcr"> </a></td><td>CMV PCR</td><td>Cytomegalovirus reactivation detection by PCR</td></tr><tr><td style="white-space:nowrap">salivary-iga<a name="immune-biomarker-cs-salivary-iga"> </a></td><td>Salivary IgA</td><td>Mucosal immune function marker</td></tr></table></div>
   </text>
-  <url value="https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs"/>
-  <version value="0.6.2"/>
+  <url value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs"/>
+  <version value="0.7.0"/>
   <name value="ImmuneBiomarkerCS"/>
   <title value="Immune Biomarker Code System"/>
   <status value="active"/>
-  <experimental value="false"/>
-  <date value="2026-08-03T22:31:50-05:00"/>
+  <experimental value="true"/>
+  <date value="2026-09-02T13:24:45-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -21,9 +21,15 @@
     </telecom>
   </contact>
   <description value="Immune function biomarkers monitored during spaceflight"/>
+  <copyright value="Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."/>
   <caseSensitive value="true"/>
   <content value="complete"/>
-  <count value="8"/>
+  <count value="9"/>
+  <concept>
+    <code value="immune-panel"/>
+    <display value="Immune Function Panel"/>
+    <definition value="Panel of immune function biomarkers monitored across mission phases"/>
+  </concept>
   <concept>
     <code value="il-6"/>
     <display value="Interleukin-6 (IL-6)"/>

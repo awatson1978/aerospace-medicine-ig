@@ -1,4 +1,4 @@
-# Psychological Countermeasure Activity - v0.6.2
+# Psychological Countermeasure Activity - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:PsychologicalCountermeasureActivity |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:PsychologicalCountermeasureActivity |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Documentation of psychological countermeasure interventions for behavioral health in aerospace missions. 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
 {
   "resourceType" : "StructureDefinition",
   "id" : "psychological-countermeasure-activity",
-  "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/psychological-countermeasure-activity",
+  "version" : "0.7.0",
   "name" : "PsychologicalCountermeasureActivity",
   "title" : "Psychological Countermeasure Activity",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
     }
   ],
   "description" : "Documentation of psychological countermeasure interventions for behavioral health in aerospace missions.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -113,7 +115,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ]
@@ -128,7 +130,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isolation-risk"
             ]
           }
         ]
@@ -147,7 +149,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
         "min" : 1,
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/stress-countermeasures-vs"
         }
       },
       {
@@ -160,7 +162,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
         "path" : "Procedure.reasonCode",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/behavioral-health-metrics-vs"
         }
       },
       {
@@ -182,7 +184,7 @@ Other representations of profile: [CSV](StructureDefinition-psychological-counte
         "path" : "Procedure.outcome",
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "http://hl7.org/fhir/uv/aerospace/ValueSet/behavioral-health-metrics-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/behavioral-health-metrics-vs"
         }
       }
     ]

@@ -7,18 +7,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/ISS-AnxietyAssessment-PreEVA> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/ISS-AnxietyAssessment-PreEVA> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ISS-AnxietyAssessment-PreEVA"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-AnxietyAssessment-PreEVA</b></p><a name=\"ISS-AnxietyAssessment-PreEVA\"> </a><a name=\"hcISS-AnxietyAssessment-PreEVA\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-behavioral-health-state.html\">Behavioral Health State</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 55467-8}\">Psychological assessment</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs anxiety-level}\">Anxiety level</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-15 08:00:00+0000</p><p><b>value</b>: 6 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs hrv-ms}\">Heart rate variability (ms)</span></td><td>32 ms<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codems = 'ms')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-AnxietyAssessment-PreEVA</b></p><a name=\"ISS-AnxietyAssessment-PreEVA\"> </a><a name=\"hcISS-AnxietyAssessment-PreEVA\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-behavioral-health-state.html\">Behavioral Health State</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://loinc.org 55467-8}\">Psychological assessment</span></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs anxiety-level}\">Anxiety level</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2025-06-15 08:00:00+0000</p><p><b>value</b>: 6 {score}<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code{score} = '{score}')</span></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 80404-7}\">R-R interval.standard deviation (Heart rate variability)</span></td><td>32 ms<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codems = 'ms')</span></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
@@ -35,16 +47,16 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs>
        ] ;
        fhir:code [ fhir:v "anxiety-level" ] ;
        fhir:display [ fhir:v "Anxiety level" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
-     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:effective [
      a fhir:DateTime ;
@@ -62,11 +74,13 @@
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
+         a loinc:80404-7 ;
          fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs>
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
          ] ;
-         fhir:code [ fhir:v "hrv-ms" ]
+         fhir:code [ fhir:v "80404-7" ] ;
+         fhir:display [ fhir:v "R-R interval.standard deviation (Heart rate variability)" ]
        ] )
      ] ;
      fhir:value [

@@ -7,37 +7,49 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/ISS-EVS-MinPerWeek-2025W23> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/ISS-EVS-MinPerWeek-2025W23> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ISS-EVS-MinPerWeek-2025W23"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/space-evs-minutes-per-week>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-evs-minutes-per-week"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-evs-minutes-per-week>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-EVS-MinPerWeek-2025W23</b></p><a name=\"ISS-EVS-MinPerWeek-2025W23\"> </a><a name=\"hcISS-EVS-MinPerWeek-2025W23\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-evs-minutes-per-week.html\">Space Exercise Vital Sign Minutes Per Week</a></p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Derived From Activity Group</b>: <a href=\"Observation-ISS-T2-Run-Group-001.html\">Observation Physical activity panel</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}\">Activity</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82290-8}\">Frequency of moderate to vigorous aerobic physical activity</span></p><p><b>subject</b>: <a href=\"Patient/AstronautExample\">Patient/AstronautExample</a></p><p><b>effective</b>: 2025-06-02 00:00:00+0000 --&gt; 2025-06-09 00:00:00+0000</p><p><b>value</b>: 420 min/wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin/wk = 'min/wk')</span></p></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISS-EVS-MinPerWeek-2025W23</b></p><a name=\"ISS-EVS-MinPerWeek-2025W23\"> </a><a name=\"hcISS-EVS-MinPerWeek-2025W23\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-evs-minutes-per-week.html\">Space Exercise Vital Sign Minutes Per Week</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>Mission Context</b>: <a href=\"Encounter-ISS-Exp75-InFlight.html\">Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2025-03-01 00:00:00+0000 --&gt; (ongoing)</a></p><p><b>Derived From Activity Group</b>: <a href=\"Observation-ISS-T2-Run-Group-001.html\">Observation Physical activity panel</a></p><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}\">Activity</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 82290-8}\">Frequency of moderate to vigorous aerobic physical activity</span></p><p><b>subject</b>: <a href=\"Patient-ExampleAstronaut.html\">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p><p><b>effective</b>: 2025-06-02 00:00:00+0000 --&gt; 2025-06-09 00:00:00+0000</p><p><b>value</b>: 420 min/wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin/wk = 'min/wk')</span></p></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Encounter/ISS-Exp75-InFlight> ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> ;
        fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
      ]
   ] [
      fhir:url [
-       fhir:v "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/derived-from-group"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/derived-from-group>
      ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:l <https://mitre.org/fhir/space-health/Observation/ISS-T2-Run-Group-001> ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Observation/ISS-T2-Run-Group-001> ;
        fhir:reference [ fhir:v "Observation/ISS-T2-Run-Group-001" ]
      ]
   ] ) ; # 
@@ -64,8 +76,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://mitre.org/fhir/space-health/Patient/AstronautExample> ;
-     fhir:reference [ fhir:v "Patient/AstronautExample" ]
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
   ] ; # 
   fhir:effective [
      a fhir:Period ;

@@ -1,4 +1,4 @@
-# Mars Lander Contamination Risk - v0.6.2
+# Mars Lander Contamination Risk - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example RiskAssessment: Mars Lander Contamination Risk
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Microbial Contamination Risk](StructureDefinition-microbial-contamination-risk.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Planetary Protection Category**: Category IV
 
@@ -34,17 +38,25 @@ Profile: [Microbial Contamination Risk](StructureDefinition-microbial-contaminat
   "resourceType" : "RiskAssessment",
   "id" : "ContaminationRisk-MarsLander-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/microbial-contamination-risk"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/microbial-contamination-risk"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/planetary-protection-category",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/planetary-protection-category",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/planetary-protection-category-cs",
             "code" : "category-iv",
             "display" : "Category IV"
           }
@@ -64,7 +76,7 @@ Profile: [Microbial Contamination Risk](StructureDefinition-microbial-contaminat
       "outcome" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/microbial-contaminant-type-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/microbial-contaminant-type-cs",
             "code" : "bacterial-spore",
             "display" : "Bacterial Spore"
           }

@@ -1,15 +1,16 @@
-# Planetary Protection Category Value Set - v0.6.2
+# Planetary Protection Category Value Set - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Planetary Protection Category Value Set**
 
-## ValueSet: Planetary Protection Category Value Set 
+## ValueSet: Planetary Protection Category Value Set (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:PlanetaryProtectionCategoryVS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/planetary-protection-category-vs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:PlanetaryProtectionCategoryVS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 COSPAR planetary protection categories 
@@ -45,13 +46,13 @@ COSPAR planetary protection categories
 {
   "resourceType" : "ValueSet",
   "id" : "planetary-protection-category-vs",
-  "url" : "https://mitre.org/fhir/space-health/ValueSet/planetary-protection-category-vs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/planetary-protection-category-vs",
+  "version" : "0.7.0",
   "name" : "PlanetaryProtectionCategoryVS",
   "title" : "Planetary Protection Category Value Set",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -65,10 +66,11 @@ COSPAR planetary protection categories
     }
   ],
   "description" : "COSPAR planetary protection categories",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "compose" : {
     "include" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/planetary-protection-category-cs"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/planetary-protection-category-cs"
       }
     ]
   }

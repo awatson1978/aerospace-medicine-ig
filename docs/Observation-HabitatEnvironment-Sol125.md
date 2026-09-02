@@ -1,4 +1,4 @@
-# Habitat Environmental Conditions - Sol 125 - v0.6.2
+# Habitat Environmental Conditions - Sol 125 - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,11 +6,15 @@
 
 ## Example Observation: Habitat Environmental Conditions - Sol 125
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Habitat Environmental Monitoring](StructureDefinition-habitat-environmental-observation.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
-**category**: environmental
+**category**: Environmental
 
 **code**: Habitat Atmospheric Conditions
 
@@ -37,8 +41,16 @@ Profile: [Habitat Environmental Monitoring](StructureDefinition-habitat-environm
   "resourceType" : "Observation",
   "id" : "HabitatEnvironment-Sol125",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/habitat-environmental-observation"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/habitat-environmental-observation"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
@@ -46,8 +58,9 @@ Profile: [Habitat Environmental Monitoring](StructureDefinition-habitat-environm
     {
       "coding" : [
         {
-          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code" : "environmental"
+          "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs",
+          "code" : "environmental",
+          "display" : "Environmental"
         }
       ]
     }

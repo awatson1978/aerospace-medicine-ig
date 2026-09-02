@@ -1,4 +1,4 @@
-# Space Joint Health Assessment - v0.6.2
+# Space Joint Health Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/space-joint-health-assessment | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SpaceJointHealthAssessment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-joint-health-assessment | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceJointHealthAssessment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Ultrasound-based joint health assessment during spaceflight 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
 {
   "resourceType" : "StructureDefinition",
   "id" : "space-joint-health-assessment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/space-joint-health-assessment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-joint-health-assessment",
+  "version" : "0.7.0",
   "name" : "SpaceJointHealthAssessment",
   "title" : "Space Joint Health Assessment",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
     }
   ],
   "description" : "Ultrasound-based joint health assessment during spaceflight",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -179,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -229,7 +231,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/joint-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/joint-assessment-cs",
               "code" : "joint-effusion",
               "display" : "Joint Effusion"
             }
@@ -262,7 +264,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/joint-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/joint-assessment-cs",
               "code" : "cartilage-thickness",
               "display" : "Cartilage Thickness"
             }
@@ -302,7 +304,7 @@ Other representations of profile: [CSV](StructureDefinition-space-joint-health-a
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/joint-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/joint-assessment-cs",
               "code" : "synovial-assessment",
               "display" : "Synovial Assessment"
             }

@@ -25,11 +25,11 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension:communicationLatency","ServiceRequest.extension","communicationLatency","","",0,1,"Y","","","Extension {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/communication-latency]]} {[]}
+"ServiceRequest.extension:communicationLatency","ServiceRequest.extension","communicationLatency","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-latency]]} {[]}
 ","Communication Latency","One-way signal latency for telemedicine encounters, complementing the Mars-specific CommunicationDelay extension with general-purpose latency tracking","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension:missionContext","ServiceRequest.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context]]} {[]}
+"ServiceRequest.extension:missionContext","ServiceRequest.extension","missionContext","","",0,1,"Y","","","Extension {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context]]} {[]}
 ","Mission Context","Links clinical observations and events to specific space missions","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -77,7 +77,7 @@ groupIdentifier","",0,1,"","","Y","Identifier {[]} {[]}
 ","Request.doNotPerform",".actionNegationInd"
 "ServiceRequest.code","ServiceRequest.code","","service requested
 ","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
-","Requested telemedicine modality","A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.","Many laboratory and radiology procedure codes embed the specimen/organ system in the test order name, for example,  serum or serum/plasma glucose, or a chest x-ray. The specimen might not be recorded separately from the test code.","","","","","","","","",,"extensible","","https://mitre.org/fhir/space-health/ValueSet/telemedicine-modality-vs","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Requested telemedicine modality","A code that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that have been requested.","Many laboratory and radiology procedure codes embed the specimen/organ system in the test order name, for example,  serum or serum/plasma glucose, or a chest x-ray. The specimen might not be recorded separately from the test code.","","","","","","","","",,"extensible","","https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/telemedicine-modality-vs","",,,,"ServiceRequest.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.code","PR1-3 / OBR-4  (varies by domain)",".code","FiveWs.what[x]","Procedure.procedureCode"
 "ServiceRequest.orderDetail","ServiceRequest.orderDetail","","detailed instructions
 ","",0,*,"","","Y","CodeableConcept {[]} {[]}
@@ -87,7 +87,7 @@ groupIdentifier","",0,1,"","","Y","Identifier {[]} {[]}
 "ServiceRequest.quantity[x]","ServiceRequest.quantity[x]","","","",0,1,"","","Y","Quantity {[]} {[]}
 Ratio {[]} {[]}Range {[]} {[]}","Service amount","An amount of service being requested which can be a quantity ( for example $1,500 home modification), a ratio ( for example, 20 half day visits per month), or a range (2.0 to 1.8 Gy per fraction).","","When ordering a service the number of service items may need to be specified separately from the the service item.","","","","","","","",,,,,"",,,,"ServiceRequest.quantity[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","NTE",".quantity"
-"ServiceRequest.subject","ServiceRequest.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://mitre.org/fhir/space-health/StructureDefinition/Astronaut]]}
+"ServiceRequest.subject","ServiceRequest.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut]]}
 ","Individual or Entity the service is ordered for","On whom or what the service is to be performed. This is usually a human patient, but can also be requested on animals, groups of humans or animals, devices such as dialysis machines, or even locations (typically for environmental scans).","","","","","","","","","",,,,,"",,,,"ServiceRequest.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","PID",".participation[typeCode=SBJ].role","FiveWs.subject[x]","FiveWs.subject","ClinicalStatement.subject"
 "ServiceRequest.encounter","ServiceRequest.encounter","","context

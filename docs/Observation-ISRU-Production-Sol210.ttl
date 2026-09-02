@@ -6,38 +6,52 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://mitre.org/fhir/space-health/Observation/ISRU-Production-Sol210> a fhir:Observation ;
+<https://awatson1978.github.io/aerospace-medicine-ig/Observation/ISRU-Production-Sol210> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ISRU-Production-Sol210"] ; # 
   fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
      fhir:profile ( [
-       fhir:v "https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log"^^xsd:anyURI ;
-       fhir:l <https://mitre.org/fhir/space-health/StructureDefinition/isru-production-log>
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-production-log"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isru-production-log>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISRU-Production-Sol210</b></p><a name=\"ISRU-Production-Sol210\"> </a><a name=\"hcISRU-Production-Sol210\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-isru-production-log.html\">ISRU Production Log</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace operational}\">operational</span></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs cumulative-propellant}\">Cumulative Propellant Production</span></p><p><b>effective</b>: 2041-06-01 12:00:00+0000</p><p><b>value</b>: 89000 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>note</b>: </p><blockquote><div><p>Production rate steady at 450 kg/sol average. On track to reach 112 tons for Earth return vehicle by Sol 300.</p>\n</div></blockquote><p><b>device</b>: <a href=\"Device-ISRU-Plant-Jezero-1.html\">Device: status = active; manufacturer = NASA / Commercial Partners; type = Mars ISRU Propellant Plant</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs power-consumption}\">power-consumption</span></p><p><b>value</b>: 25.3 kW<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekW = 'kW')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs reactor-status}\">reactor-status</span></p><p><b>value</b>: Nominal operation, 96% efficiency</p></blockquote></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ISRU-Production-Sol210</b></p><a name=\"ISRU-Production-Sol210\"> </a><a name=\"hcISRU-Production-Sol210\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-isru-production-log.html\">ISRU Production Log</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs operational}\">Operational</span></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs cumulative-propellant}\">ISRU Propellant Production</span></p><p><b>effective</b>: 2041-06-01 12:00:00+0000</p><p><b>value</b>: 89000 kg<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekg = 'kg')</span></p><p><b>note</b>: </p><blockquote><div><p>Production rate steady at 450 kg/sol average. On track to reach 112 tons for Earth return vehicle by Sol 300.</p>\n</div></blockquote><p><b>device</b>: <a href=\"Device-ISRU-Plant-Jezero-1.html\">Device: status = active; manufacturer = NASA / Commercial Partners; type = Mars ISRU Propellant Plant</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs reactor-status}\">Reactor Status</span></p><p><b>value</b>: Nominal operation, 96% efficiency</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs power-consumption}\">Power Consumption</span></p><p><b>value</b>: 25.3 kW<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekW = 'kW')</span></p></blockquote></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:category ( [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-observation-category-cs>
        ] ;
-       fhir:code [ fhir:v "operational" ]
+       fhir:code [ fhir:v "operational" ] ;
+       fhir:display [ fhir:v "Operational" ]
      ] )
   ] ) ; # 
   fhir:code [
      fhir:coding ( [
        fhir:system [
-         fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs>
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs>
        ] ;
        fhir:code [ fhir:v "cumulative-propellant" ] ;
        fhir:display [ fhir:v "Cumulative Propellant Production" ]
-     ] )
+     ] ) ;
+     fhir:text [ fhir:v "ISRU Propellant Production" ]
   ] ; # 
   fhir:effective [
      a fhir:DateTime ;
@@ -57,17 +71,33 @@
      fhir:text [ fhir:v "Production rate steady at 450 kg/sol average. On track to reach 112 tons for Earth return vehicle by Sol 300." ]
   ] ) ; # 
   fhir:device [
-     fhir:l <https://mitre.org/fhir/space-health/Device/ISRU-Plant-Jezero-1> ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Device/ISRU-Plant-Jezero-1> ;
      fhir:reference [ fhir:v "Device/ISRU-Plant-Jezero-1" ]
   ] ; # 
   fhir:component ( [
      fhir:code [
        fhir:coding ( [
          fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs>
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs>
          ] ;
-         fhir:code [ fhir:v "power-consumption" ]
+         fhir:code [ fhir:v "reactor-status" ] ;
+         fhir:display [ fhir:v "Reactor Status" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Nominal operation, 96% efficiency"
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
+           fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs>
+         ] ;
+         fhir:code [ fhir:v "power-consumption" ] ;
+         fhir:display [ fhir:v "Power Consumption" ]
        ] )
      ] ;
      fhir:value [
@@ -79,20 +109,6 @@
          fhir:l <http://unitsofmeasure.org>
        ] ;
        fhir:code [ fhir:v "kW" ]
-     ]
-  ] [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs>
-         ] ;
-         fhir:code [ fhir:v "reactor-status" ]
-       ] )
-     ] ;
-     fhir:value [
-       a fhir:String ;
-       fhir:v "Nominal operation, 96% efficiency"
      ]
   ] ) . # 
 

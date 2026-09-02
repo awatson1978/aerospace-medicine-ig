@@ -1,15 +1,16 @@
-# Aerospace Behavioral State Code System - v0.6.2
+# Aerospace Behavioral State Code System - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Aerospace Behavioral State Code System**
 
-## CodeSystem: Aerospace Behavioral State Code System 
+## CodeSystem: Aerospace Behavioral State Code System (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:AerospaceBehavioralStateCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:AerospaceBehavioralStateCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Codes describing behavioral and psychological state parameters in aerospace missions. 
@@ -27,12 +28,13 @@ Codes describing behavioral and psychological state parameters in aerospace miss
 {
   "resourceType" : "CodeSystem",
   "id" : "aerospace-behavioral-state-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
+  "version" : "0.7.0",
   "name" : "AerospaceBehavioralStateCS",
   "title" : "Aerospace Behavioral State Code System",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +48,7 @@ Codes describing behavioral and psychological state parameters in aerospace miss
     }
   ],
   "description" : "Codes describing behavioral and psychological state parameters in aerospace missions.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 9,

@@ -1,4 +1,4 @@
-# Rapid Depressurization Event - v0.6.2
+# Rapid Depressurization Event - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Condition: Rapid Depressurization Event
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space Emergency Condition](StructureDefinition-space-emergency-condition.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **Mission Phase**: Orbital Operations
 
@@ -18,7 +22,7 @@ Profile: [Space Emergency Condition](StructureDefinition-space-emergency-conditi
 
 **code**: Rapid Depressurization
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **onset**: 2028-07-15 14:30:00+0000
 
@@ -38,17 +42,25 @@ Pressure drop detected in Node 2, crew immediately donned masks and initiated is
   "resourceType" : "Condition",
   "id" : "Emergency-RapidDepress-001",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-emergency-condition"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-emergency-condition"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "orbital-ops",
             "display" : "Orbital Operations"
           }
@@ -84,7 +96,7 @@ Pressure drop detected in Node 2, crew immediately donned masks and initiated is
   "code" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/space-emergency-type-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-emergency-type-cs",
         "code" : "rapid-depress",
         "display" : "Rapid Depressurization"
       }

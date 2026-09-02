@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "eva-suit-inventory-metric-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem eva-suit-inventory-metric-cs</b></p><a name=\"eva-suit-inventory-metric-cs\"> </a><a name=\"hceva-suit-inventory-metric-cs\"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">primary-suit-status<a name=\"eva-suit-inventory-metric-cs-primary-suit-status\"> </a></td><td>Primary Suit Status</td><td/></tr><tr><td style=\"white-space:nowrap\">backup-suit-status<a name=\"eva-suit-inventory-metric-cs-backup-suit-status\"> </a></td><td>Backup Suit Status</td><td/></tr><tr><td style=\"white-space:nowrap\">consumables-remaining<a name=\"eva-suit-inventory-metric-cs-consumables-remaining\"> </a></td><td>Consumables Remaining</td><td>Remaining EVA consumables expressed as hours of EVA time</td></tr><tr><td style=\"white-space:nowrap\">next-maintenance-due<a name=\"eva-suit-inventory-metric-cs-next-maintenance-due\"> </a></td><td>Next Maintenance Due</td><td/></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "EVASuitInventoryMetricCS"] ; # 
+  fhir:title [ fhir:v "EVA Suit Inventory Metric Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Component codes for EVA suit inventory and readiness observations"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "primary-suit-status" ] ;
+     fhir:display [ fhir:v "Primary Suit Status" ]
+  ] [
+     fhir:code [ fhir:v "backup-suit-status" ] ;
+     fhir:display [ fhir:v "Backup Suit Status" ]
+  ] [
+     fhir:code [ fhir:v "consumables-remaining" ] ;
+     fhir:display [ fhir:v "Consumables Remaining" ] ;
+     fhir:definition [ fhir:v "Remaining EVA consumables expressed as hours of EVA time" ]
+  ] [
+     fhir:code [ fhir:v "next-maintenance-due" ] ;
+     fhir:display [ fhir:v "Next Maintenance Due" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,15 +1,16 @@
-# Human Mars Mission Plans - v0.6.2
+# Human Mars Mission Plans - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
 * **Human Mars Mission Plans**
 
-## CodeSystem: Human Mars Mission Plans 
+## CodeSystem: Human Mars Mission Plans (Experimental) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:CrewedMarsMissionsCS |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:CrewedMarsMissionsCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.) 
@@ -26,13 +27,13 @@ Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DR
 {
   "resourceType" : "CodeSystem",
   "id" : "crewed-mars-missions-cs",
-  "url" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs",
+  "version" : "0.7.0",
   "name" : "CrewedMarsMissionsCS",
   "title" : "Human Mars Mission Plans",
   "status" : "active",
-  "experimental" : false,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "experimental" : true,
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,31 +47,28 @@ Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DR
     }
   ],
   "description" : "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 10,
   "property" : [
     {
       "code" : "proposer",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#proposer",
       "description" : "Organization or individual proposing the architecture",
       "type" : "string"
     },
     {
       "code" : "year",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#year",
       "description" : "Year of proposal or major update",
       "type" : "integer"
     },
     {
       "code" : "crewSize",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#crewSize",
       "description" : "Nominal crew size",
       "type" : "integer"
     },
     {
       "code" : "surfaceStayDays",
-      "uri" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#surfaceStayDays",
       "description" : "Planned surface stay duration in days",
       "type" : "integer"
     }

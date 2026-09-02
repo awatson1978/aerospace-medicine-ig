@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/DiagnosticReport/space-radiation-summary-example> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "space-radiation-summary-example"] ; # 
+  fhir:meta [
+     fhir:source [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic>
+     ] ;
+     fhir:profile ( [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-summary"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-summary>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActReason"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/v3-ActReason>
+       ] ;
+       fhir:code [ fhir:v "HTEST" ] ;
+       fhir:display [ fhir:v "test health data" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport space-radiation-summary-example</b></p><a name=\"space-radiation-summary-example\"> </a><a name=\"hcspace-radiation-summary-example\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Information Source: <a href=\"https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic\">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-space-radiation-summary.html\">Space Radiation Exposure Summary</a></p><p style=\"margin-bottom: 0px\">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><h2><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs radiation-summary}\">Space Radiation Exposure Summary</span> (<span title=\"Codes:{http://loinc.org 73569-6}\">Radiation dose and image quality indicators</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</td></tr><tr><td>When For</td><td>2025-06-01 --&gt; 2025-11-28</td></tr><tr><td>Reported</td><td>2025-12-02 09:00:00+0000</td></tr><tr><td>Performer</td><td> <a href=\"Organization-NASA.html\">Organization NASA</a></td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>When For</b></td></tr><tr><td><a href=\"Observation-space-radiation-exposure-example.html\"><span title=\"Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs gcr-dose}\">Galactic Cosmic Radiation Dose</span></a></td><td>0.52 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></td><td>Final</td><td>2025-07-15</td></tr><tr><td><a href=\"Observation-cumulative-radiation-dose-example.html\"><span title=\"Codes:{http://loinc.org 73536-5}\">Radiation dose total</span></a></td><td>94 mSv<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemSv = 'mSv')</span></td><td>Final</td><td/></tr></table><p>Mission dose-equivalent of 94 mSv over 180 days is consistent with the pre-flight projection of 0.5 mSv per day at solar minimum. Career total remains below the 600 mSv NASA-STD-3001 limit; no change to flight-certification status.</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context"^^xsd:anyURI ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diagnostic-report-mission-context>
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> ;
+       fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:73569-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "73569-6" ] ;
+       fhir:display [ fhir:v "Radiation dose and image quality indicators" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"^^xsd:anyURI ;
+         fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs>
+       ] ;
+       fhir:code [ fhir:v "radiation-summary" ] ;
+       fhir:display [ fhir:v "Space Radiation Exposure Summary" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Patient/ExampleAstronaut> ;
+     fhir:reference [ fhir:v "Patient/ExampleAstronaut" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Encounter/ISS-Exp75-InFlight> ;
+     fhir:reference [ fhir:v "Encounter/ISS-Exp75-InFlight" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-06-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-11-28"^^xsd:date ]
+  ] ; # 
+  fhir:issued [ fhir:v "2025-12-02T09:00:00Z"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Organization/NASA> ;
+     fhir:reference [ fhir:v "Organization/NASA" ]
+  ] ) ; # 
+  fhir:result ( [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Observation/space-radiation-exposure-example> ;
+     fhir:reference [ fhir:v "Observation/space-radiation-exposure-example" ]
+  ] [
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/Observation/cumulative-radiation-dose-example> ;
+     fhir:reference [ fhir:v "Observation/cumulative-radiation-dose-example" ]
+  ] ) ; # 
+  fhir:conclusion [ fhir:v "Mission dose-equivalent of 94 mSv over 180 days is consistent with the pre-flight projection of 0.5 mSv per day at solar minimum. Career total remains below the 600 mSv NASA-STD-3001 limit; no change to flight-certification status."] . # 
+
+# -------------------------------------------------------------------------------------
+

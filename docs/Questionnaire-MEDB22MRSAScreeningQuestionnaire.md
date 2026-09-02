@@ -1,4 +1,4 @@
-# MEDB 2.2 MRSA Screening - v0.6.2
+# MEDB 2.2 MRSA Screening - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-2-2-mrsa-screening | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-2-mrsa-screening | *Version*:0.7.0 |
 | Active as of 2017-06-05 | *Computable Name*:MEDB22MRSAScreening |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB22MRSAScreeningQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-2-2-mrsa-screening",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-2-mrsa-screening",
+  "version" : "0.7.0",
   "name" : "MEDB22MRSAScreening",
   "title" : "MEDB 2.2 MRSA Screening",
   "status" : "active",
@@ -94,7 +97,7 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "environmental-health",
                 "display" : "Environmental Health System"
               }
@@ -103,7 +106,7 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "environmental-health",
                 "display" : "Environmental Health System"
               }
@@ -119,7 +122,7 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "laboratory",
                 "display" : "Laboratory"
               }
@@ -128,7 +131,7 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "laboratory",
                 "display" : "Laboratory"
               }
@@ -364,7 +367,7 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }
@@ -373,7 +376,7 @@ To screen crew members for MRSA colonization prior to spaceflight to prevent tra
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "mmis",
                 "display" : "Medical Mission Information System"
               }

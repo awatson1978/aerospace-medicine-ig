@@ -3,10 +3,16 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="SuitRedundancy-Assessment-001"/>
   <meta>
-    <profile value="https://mitre.org/fhir/space-health/StructureDefinition/suit-redundancy-assessment"/>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/suit-redundancy-assessment"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation SuitRedundancy-Assessment-001</b></p><a name="SuitRedundancy-Assessment-001"> </a><a name="hcSuitRedundancy-Assessment-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-suit-redundancy-assessment.html">Suit Redundancy Assessment</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">EVA Suit Redundancy Assessment</span></p><p><b>subject</b>: International Space Station</p><p><b>effective</b>: 2028-06-01 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Primary Suit Status</span></p><p><b>value</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs deployed-primary}">Deployed - Primary</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Backup Suit Status</span></p><p><b>value</b>: <span title="Codes:{https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs deployed-backup}">Deployed - Backup</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Consumables Remaining</span></p><p><b>value</b>: 48 hours<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:">Next Maintenance Due</span></p><p><b>value</b>: 2028-09-01</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation SuitRedundancy-Assessment-001</b></p><a name="SuitRedundancy-Assessment-001"> </a><a name="hcSuitRedundancy-Assessment-001"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-suit-redundancy-assessment.html">Suit Redundancy Assessment</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:">EVA Suit Redundancy Assessment</span></p><p><b>subject</b>: International Space Station</p><p><b>effective</b>: 2028-06-01 00:00:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs primary-suit-status}">Primary Suit Status</span></p><p><b>value</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs deployed-primary}">Deployed - Primary</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs backup-suit-status}">Backup Suit Status</span></p><p><b>value</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs deployed-backup}">Deployed - Backup</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs consumables-remaining}">Consumables Remaining</span></p><p><b>value</b>: 48 hours<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeh = 'h')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs next-maintenance-due}">Next Maintenance Due</span></p><p><b>value</b>: 2028-09-01</p></blockquote></div>
   </text>
   <status value="final"/>
   <code>
@@ -18,11 +24,15 @@
   <effectiveDateTime value="2028-06-01T00:00:00Z"/>
   <component>
     <code>
-      <text value="Primary Suit Status"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs"/>
+        <code value="primary-suit-status"/>
+        <display value="Primary Suit Status"/>
+      </coding>
     </code>
     <valueCodeableConcept>
       <coding>
-        <system value="https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs"/>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs"/>
         <code value="deployed-primary"/>
         <display value="Deployed - Primary"/>
       </coding>
@@ -30,11 +40,15 @@
   </component>
   <component>
     <code>
-      <text value="Backup Suit Status"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs"/>
+        <code value="backup-suit-status"/>
+        <display value="Backup Suit Status"/>
+      </coding>
     </code>
     <valueCodeableConcept>
       <coding>
-        <system value="https://mitre.org/fhir/space-health/CodeSystem/suit-provisioning-status-cs"/>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/suit-provisioning-status-cs"/>
         <code value="deployed-backup"/>
         <display value="Deployed - Backup"/>
       </coding>
@@ -42,7 +56,11 @@
   </component>
   <component>
     <code>
-      <text value="Consumables Remaining"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs"/>
+        <code value="consumables-remaining"/>
+        <display value="Consumables Remaining"/>
+      </coding>
     </code>
     <valueQuantity>
       <value value="48"/>
@@ -53,7 +71,11 @@
   </component>
   <component>
     <code>
-      <text value="Next Maintenance Due"/>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/eva-suit-inventory-metric-cs"/>
+        <code value="next-maintenance-due"/>
+        <display value="Next Maintenance Due"/>
+      </coding>
     </code>
     <valueDateTime value="2028-09-01"/>
   </component>

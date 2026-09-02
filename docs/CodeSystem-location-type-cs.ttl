@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "location-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem location-type-cs</b></p><a name=\"location-type-cs\"> </a><a name=\"hclocation-type-cs\"> </a><p>This case-sensitive code system <code>https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">landing-site<a name=\"location-type-cs-landing-site\"> </a></td><td>Landing Site</td><td>Surface landing site or landing region on a planetary body</td></tr><tr><td style=\"white-space:nowrap\">orbital-station<a name=\"location-type-cs-orbital-station\"> </a></td><td>Orbital Station</td><td>Crewed station or module in orbit (e.g., Lunar Gateway in NRHO)</td></tr><tr><td style=\"white-space:nowrap\">surface-habitat<a name=\"location-type-cs-surface-habitat\"> </a></td><td>Surface Habitat</td><td>Pressurized surface habitat providing living quarters and life support</td></tr><tr><td style=\"white-space:nowrap\">surface-outpost<a name=\"location-type-cs-surface-outpost\"> </a></td><td>Surface Outpost</td><td>Multi-element surface base such as Artemis Base Camp</td></tr><tr><td style=\"white-space:nowrap\">analog-facility<a name=\"location-type-cs-analog-facility\"> </a></td><td>Analog Facility</td><td>Terrestrial analog facility used for mission simulation and training</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"^^xsd:anyURI ;
+     fhir:l <https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "LocationTypeCS"] ; # 
+  fhir:title [ fhir:v "Aerospace Location Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-09-02T13:24:45-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of locations used in lunar and planetary mission records (landing sites, orbital stations, surface habitats, outposts, analog facilities)"] ; # 
+  fhir:copyright [ fhir:v "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "landing-site" ] ;
+     fhir:display [ fhir:v "Landing Site" ] ;
+     fhir:definition [ fhir:v "Surface landing site or landing region on a planetary body" ]
+  ] [
+     fhir:code [ fhir:v "orbital-station" ] ;
+     fhir:display [ fhir:v "Orbital Station" ] ;
+     fhir:definition [ fhir:v "Crewed station or module in orbit (e.g., Lunar Gateway in NRHO)" ]
+  ] [
+     fhir:code [ fhir:v "surface-habitat" ] ;
+     fhir:display [ fhir:v "Surface Habitat" ] ;
+     fhir:definition [ fhir:v "Pressurized surface habitat providing living quarters and life support" ]
+  ] [
+     fhir:code [ fhir:v "surface-outpost" ] ;
+     fhir:display [ fhir:v "Surface Outpost" ] ;
+     fhir:definition [ fhir:v "Multi-element surface base such as Artemis Base Camp" ]
+  ] [
+     fhir:code [ fhir:v "analog-facility" ] ;
+     fhir:display [ fhir:v "Analog Facility" ] ;
+     fhir:definition [ fhir:v "Terrestrial analog facility used for mission simulation and training" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

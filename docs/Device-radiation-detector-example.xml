@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Device xmlns="http://hl7.org/fhir">
+  <id value="radiation-detector-example"/>
+  <meta>
+    <source value="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic"/>
+    <profile value="https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Device radiation-detector-example</b></p><a name="radiation-detector-example"> </a><a name="hcradiation-detector-example"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Information Source: <a href="https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic">https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic</a></p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-radiation-detector.html">Radiation Detection Device</a></p><p style="margin-bottom: 0px">Tag: test health data (Details: ActReason code HTEST = 'test health data')</p></div><p><b>status</b>: Active</p><p><b>manufacturer</b>: Example Dosimetry Inc.</p><p><b>serialNumber</b>: EPD-2100-0042</p><h3>DeviceNames</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Crew Personal Active Dosimeter</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: EPD-2100</p><p><b>type</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs epd}">Electronic Personal Dosimeter</span></p><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs sensitivity}">Detector Sensitivity</span></p><p><b>valueQuantity</b>: 1 uSv<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeuSv = 'uSv')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs energy-range-min}">Minimum Energy Range</span></p><p><b>valueQuantity</b>: 20 keV<span style="background: LightGoldenRodYellow"> (Details: UCUM  codekeV = 'keV')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs energy-range-max}">Maximum Energy Range</span></p><p><b>valueQuantity</b>: 10 MeV<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeMeV = 'MeV')</span></p></blockquote><blockquote><p><b>property</b></p><p><b>type</b>: <span title="Codes:{https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs measurement-accuracy}">Measurement Accuracy</span></p><p><b>valueQuantity</b>: 10 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><p><b>patient</b>: <a href="Patient-ExampleAstronaut.html">Jane Astronaut  Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)</a></p></div>
+  </text>
+  <status value="active"/>
+  <manufacturer value="Example Dosimetry Inc."/>
+  <serialNumber value="EPD-2100-0042"/>
+  <deviceName>
+    <name value="Crew Personal Active Dosimeter"/>
+    <type value="user-friendly-name"/>
+  </deviceName>
+  <modelNumber value="EPD-2100"/>
+  <type>
+    <coding>
+      <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs"/>
+      <code value="epd"/>
+      <display value="Electronic Personal Dosimeter"/>
+    </coding>
+  </type>
+  <property>
+    <type>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"/>
+        <code value="sensitivity"/>
+        <display value="Detector Sensitivity"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="1"/>
+      <unit value="uSv"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="uSv"/>
+    </valueQuantity>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"/>
+        <code value="energy-range-min"/>
+        <display value="Minimum Energy Range"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="20"/>
+      <unit value="keV"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="keV"/>
+    </valueQuantity>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"/>
+        <code value="energy-range-max"/>
+        <display value="Maximum Energy Range"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="10"/>
+      <unit value="MeV"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="MeV"/>
+    </valueQuantity>
+  </property>
+  <property>
+    <type>
+      <coding>
+        <system value="https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-cs"/>
+        <code value="measurement-accuracy"/>
+        <display value="Measurement Accuracy"/>
+      </coding>
+    </type>
+    <valueQuantity>
+      <value value="10"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </property>
+  <patient>
+    <reference value="Patient/ExampleAstronaut"/>
+  </patient>
+</Device>

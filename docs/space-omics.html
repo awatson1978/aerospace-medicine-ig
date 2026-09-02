@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Space Omics -  v0.6.2</title>
+    <title>Space Omics - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"23"}
-    h3,h4,h5,h6{--heading-prefix:"23"}</style>
+    <style type="text/css">h2{--heading-prefix:"22"}
+    h3,h4,h5,h6{--heading-prefix:"22"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Space Omics</h2>
   
 
@@ -260,66 +260,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#space-omics-expansion-soma--multi-omics-astronaut-profiling-and-biobanking" id="markdown-toc-space-omics-expansion-soma--multi-omics-astronaut-profiling-and-biobanking">Space Omics Expansion (SOMA) – Multi-Omics Astronaut Profiling and Biobanking</a>    <ul>
-      <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-      <li><a href="#key-study-elements" id="markdown-toc-key-study-elements">Key Study Elements</a></li>
-      <li><a href="#fhir-implementation-guidance" id="markdown-toc-fhir-implementation-guidance">FHIR Implementation Guidance</a>        <ul>
-          <li><a href="#recommended-resources" id="markdown-toc-recommended-resources">Recommended Resources</a></li>
-          <li><a href="#new--enhanced-profiles" id="markdown-toc-new--enhanced-profiles">New / Enhanced Profiles</a></li>
-          <li><a href="#candidate-codesystems--valuesets" id="markdown-toc-candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</a></li>
-        </ul>
-      </li>
-      <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
-      <li><a href="#next-steps--open-items" id="markdown-toc-next-steps--open-items">Next Steps / Open Items</a></li>
-      <li><a href="#references" id="markdown-toc-references">References</a></li>
-    </ul>
-  </li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#key-study-elements" id="markdown-toc-key-study-elements">Key Study Elements</a></li>
+  <li><a href="#fhir-profiles-and-extensions" id="markdown-toc-fhir-profiles-and-extensions">FHIR Profiles and Extensions</a></li>
+  <li><a href="#examples" id="markdown-toc-examples">Examples</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
+  <li><a href="#architectural-alignment" id="markdown-toc-architectural-alignment">Architectural Alignment</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
 
-<h1 id="space-omics-expansion-soma--multi-omics-astronaut-profiling-and-biobanking">Space Omics Expansion (SOMA) – Multi-Omics Astronaut Profiling and Biobanking</h1>
+<h3 id="overview">Overview</h3>
 
-<h2 id="overview">Overview</h2>
-<p>The <strong>Space Omics and Medical Atlas (SOMA)</strong> and international astronaut biobank represent a landmark open-science resource for aerospace medicine. Published in <em>Nature</em> (11 June 2024), SOMA integrates clinical, cellular, and multi-omic data from diverse missions—including the NASA Twins Study, JAXA CFE, SpaceX Inspiration4 (I4), Axiom, and Polaris—creating a &gt;10-fold increase in publicly available human space omics data.</p>
+<p>The <strong>Space Omics and Medical Atlas (SOMA)</strong> and international astronaut biobank represent a landmark open-science resource for aerospace medicine. Published in <em>Nature</em> in June 2024, SOMA integrates clinical, cellular, and multi-omic data from diverse missions—including the NASA Twins Study, JAXA Cell-Free Epigenome (CFE) study, SpaceX Inspiration4 (I4), Axiom, and Polaris—creating a more than ten-fold increase in publicly available human space omics data.</p>
 
 <p>Over 2,911 biospecimens were banked from the Inspiration4 crew (3-day orbital mission at 585 km), with 1,194 processed across 13 sample types and 10 timepoints (pre-flight L-92/L-44/L-3, in-flight FD1–3, post-flight R+1, and recovery R+45/R+82/R+194). Matched samples are available through the Cornell Aerospace Medicine Biobank (CAMbank) for future analyses.</p>
 
 <p>This page provides FHIR modeling guidance for capturing multi-omic profiles, molecular sequences, omics-derived risk assessments, and personalized countermeasure plans to support precision space medicine for Artemis, Mars, and exploration-class missions.</p>
 
-<h2 id="key-study-elements">Key Study Elements</h2>
+<h3 id="key-study-elements">Key Study Elements</h3>
+
 <p><strong>Cohorts &amp; Design</strong></p>
 <ul>
   <li>Primary focus: Inspiration4 all-civilian crew (ages 29–51)</li>
   <li>Integrated with long-duration ISS data (Twins, JAXA) for cross-mission comparisons</li>
-  <li>13 biospecimen types (whole blood, serum, plasma, PBMCs, EVs, urine, stool, skin biopsies, swabs, etc.)</li>
+  <li>13 biospecimen types (whole blood, serum, plasma, peripheral blood mononuclear cells, extracellular vesicles, urine, stool, skin biopsies, swabs, etc.)</li>
 </ul>
 
 <p><strong>Omics Platforms Covered</strong></p>
 <ul>
-  <li>Genomics / Epigenomics: WGS, cfDNA, snATAC-seq</li>
-  <li>Transcriptomics: direct RNA-seq, snRNA-seq, cfRNA, spatial transcriptomics</li>
+  <li>Genomics / Epigenomics: whole-genome sequencing (WGS), cell-free DNA (cfDNA), single-nucleus ATAC-seq</li>
+  <li>Transcriptomics: direct RNA-seq, single-nucleus RNA-seq, cell-free RNA (cfRNA), spatial transcriptomics</li>
   <li>Proteomics / Metabolomics: untargeted LC-MS/MS, chemokine/cytokine panels</li>
-  <li>Immunomics: BCR/TCR repertoire sequencing</li>
-  <li>Microbiome: metagenomics/metatranscriptomics (oral, nasal, skin, gut)</li>
+  <li>Immunomics: B-cell and T-cell receptor repertoire sequencing</li>
+  <li>Microbiome: metagenomics and metatranscriptomics (oral, nasal, skin, gut)</li>
 </ul>
 
 <p><strong>Signature Molecular Changes Observed</strong></p>
 <ul>
-  <li>Rapid telomere elongation (17–22 % increase in 3 days)</li>
-  <li>Cytokine shifts (↑ IL-6, IL-10, CCL2; ↓ BDNF; ↑ IL-19 post-flight)</li>
+  <li>Telomere elongation during flight that reverses after return, a pattern first reported in the NASA Twins Study over a 340-day mission (Garrett-Bakelman et al., 2019) and reproduced in the Inspiration4 crew after only three days in orbit</li>
+  <li>Cytokine shifts (increased IL-6, IL-10, CCL2; decreased BDNF; increased IL-19 post-flight)</li>
   <li>Immune cell gene expression (T-cell activation, monocyte-specific recovery trajectories)</li>
-  <li>Cell-type proportion shifts (cfRNA: ↑ hepatocytes, kidney endothelial cells, melanocytes)</li>
+  <li>Cell-type proportion shifts (cfRNA: increased hepatocyte, kidney endothelial cell, and melanocyte signal)</li>
   <li>Recovery dynamics: most changes reverse, but some pathways (circadian, longevity) persist</li>
   <li>Mission-specific vs. universal responses (short high-altitude vs. long-duration ISS)</li>
 </ul>
 
-<p><strong>Biobanking</strong><br />
-Cornell Aerospace Medicine Biobank (CAMbank) stores viably frozen specimens for ongoing and future multi-omic research. All data are publicly available via NASA OSDR and the SOMA portal (browsers for bulk/spatial omics, single-cell, and microbiome).</p>
+<p><strong>Biobanking</strong></p>
 
-<h2 id="fhir-implementation-guidance">FHIR Implementation Guidance</h2>
+<p>Cornell Aerospace Medicine Biobank (CAMbank) stores viably frozen specimens for ongoing and future multi-omic research. All data are publicly available via the NASA Open Science Data Repository (OSDR) and the SOMA portal (browsers for bulk/spatial omics, single-cell, and microbiome).</p>
 
-<h3 id="recommended-resources">Recommended Resources</h3>
+<h3 id="fhir-profiles-and-extensions">FHIR Profiles and Extensions</h3>
+
+<h4 id="recommended-resources">Recommended Resources</h4>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Observation</code> – multi-omic results, cytokine panels, telomere length, gene expression</li>
   <li><code class="language-plaintext highlighter-rouge">MolecularSequence</code> – genomic, transcriptomic, and epigenomic sequences</li>
@@ -329,55 +323,68 @@ Cornell Aerospace Medicine Biobank (CAMbank) stores viably frozen specimens for 
   <li><code class="language-plaintext highlighter-rouge">ResearchStudy</code> / <code class="language-plaintext highlighter-rouge">ResearchSubject</code> – SOMA cohort tracking</li>
 </ul>
 
-<h3 id="new--enhanced-profiles">New / Enhanced Profiles</h3>
-<p><strong>Core Profiles</strong></p>
+<h4 id="core-profiles">Core Profiles</h4>
+
 <ul>
-  <li><strong><a href="StructureDefinition-multi-omics-observation.html"><code class="language-plaintext highlighter-rouge">MultiOmicsObservation</code></a></strong> – Captures platform, read counts, quality metrics, and cross-omics correlations for any assay (genomics, proteomics, metabolomics, etc.)</li>
-  <li><strong><a href="StructureDefinition-space-molecular-sequence.html"><code class="language-plaintext highlighter-rouge">SpaceMolecularSequence</code></a></strong> – Extends <code class="language-plaintext highlighter-rouge">MolecularSequence</code> with spaceflight context (mission phase, radiation exposure, microgravity duration, telomere dynamics)</li>
-  <li><strong><a href="StructureDefinition-omics-risk-assessment.html"><code class="language-plaintext highlighter-rouge">OmicsRiskAssessment</code></a></strong> – Personalized risk scores derived from multi-omic signatures (telomere, cytokine, immune activation, cell-type shifts)</li>
-  <li><strong><a href="StructureDefinition-personalized-countermeasure-plan.html"><code class="language-plaintext highlighter-rouge">PersonalizedCountermeasurePlan</code></a></strong> – Links omics-derived risks to individualized interventions (exercise, nutrition, pharmacologic, sleep, radiation countermeasures)</li>
+  <li><strong><a href="StructureDefinition-multi-omics-observation.html">Multi-Omics Observation</a></strong> – Captures platform, read counts, quality metrics, and cross-omics correlations for any assay (genomics, proteomics, metabolomics, etc.)</li>
+  <li><strong><a href="StructureDefinition-space-molecular-sequence.html">Space Molecular Sequence</a></strong> – Extends <code class="language-plaintext highlighter-rouge">MolecularSequence</code> with spaceflight context (mission phase, radiation exposure, microgravity duration, telomere dynamics)</li>
+  <li><strong><a href="StructureDefinition-omics-risk-assessment.html">Omics Risk Assessment</a></strong> – Personalized risk scores derived from multi-omic signatures (telomere, cytokine, immune activation, cell-type shifts)</li>
+  <li><strong><a href="StructureDefinition-personalized-countermeasure-plan.html">Personalized Countermeasure Plan</a></strong> – Links omics-derived risks to individualized interventions (exercise, nutrition, pharmacologic, sleep, radiation countermeasures)</li>
+  <li><strong><a href="StructureDefinition-biobank-location.html">Biobank Location</a></strong> (extension) – Records where a specimen is banked so that a Specimen can be traced back to CAMbank or another repository</li>
 </ul>
 
-<p><strong>Supporting Profiles (suggested)</strong></p>
+<h4 id="proposed-profiles-not-yet-defined">Proposed Profiles (not yet defined)</h4>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">SpaceBiobankSpecimen</code> – Biobanking metadata and future re-analysis tracking</li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceBiobankSpecimen</code> – Specimen profile with biobanking metadata and future re-analysis tracking; the Biobank Location extension on a plain <code class="language-plaintext highlighter-rouge">Specimen</code> covers the core need today</li>
   <li><code class="language-plaintext highlighter-rouge">OmicsRecoveryTrajectory</code> – Longitudinal recovery monitoring (persistent vs. transient changes)</li>
 </ul>
 
-<h3 id="candidate-codesystems--valuesets">Candidate CodeSystems &amp; ValueSets</h3>
+<h3 id="examples">Examples</h3>
+
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">SpaceOmicsPlatformCS</code> – (WGS, snRNA-seq, cfRNA, spatial-transcriptomics, untargeted-proteomics, etc.)</li>
-  <li><code class="language-plaintext highlighter-rouge">SpaceOmicsBiomarkerCS</code> – (telomere-length, IL6, CCL2, BDNF, m6A-methylation, etc.)</li>
-  <li><code class="language-plaintext highlighter-rouge">SpaceOmicsRiskCategoryVS</code> – (immune-activation, oxidative-stress, DNA-damage-response, longevity-pathways)</li>
-  <li><code class="language-plaintext highlighter-rouge">AstronautMissionContextVS</code> – (short-duration-high-altitude, long-duration-ISS, lunar-surface, Mars-transit)</li>
+  <li><a href="Specimen-DBS-Specimen-001.html">Dried Blood Spot Specimen with Biobank Metadata</a></li>
+  <li><a href="Observation-Metabolomics-Observation-001.html">Metabolomics Observation</a></li>
+  <li><a href="CarePlan-PersonalizedPlan-001.html">Personalized Countermeasure Plan</a></li>
 </ul>
 
-<h2 id="architectural-alignment">Architectural Alignment</h2>
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
+
+<ul>
+  <li><a href="CodeSystem-space-omics-type-cs.html">Space Omics Type Code System</a> and <a href="ValueSet-space-omics-type-vs.html">Value Set</a> – genomics, transcriptomics, proteomics, metabolomics, epigenomics, microbiomics, lipidomics</li>
+  <li><a href="CodeSystem-expanded-specimen-type-cs.html">Expanded Specimen Type Code System</a> and <a href="ValueSet-expanded-specimen-type-vs.html">Value Set</a> – dried-blood-spot, extracellular-vesicle, nasal/skin/oral/gut microbiome samples, hair-follicle, exhaled-breath-condensate</li>
+  <li>Mission context for an omics observation uses the shared <a href="CodeSystem-mission-phase-cs.html">Mission Phase</a> and <a href="CodeSystem-gravity-context-cs.html">Gravity Context</a> code systems rather than an omics-specific value set</li>
+</ul>
+
+<h4 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h4>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SpaceOmicsPlatformCS</code> – specific assay platforms (WGS, snRNA-seq, cfRNA, spatial-transcriptomics, untargeted-proteomics); the Space Omics Type codes above cover the omics layer but not the platform</li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceOmicsBiomarkerCS</code> – telomere-length, IL6, CCL2, BDNF, m6A-methylation, etc.; LOINC codes should be used where they exist</li>
+  <li><code class="language-plaintext highlighter-rouge">SpaceOmicsRiskCategoryVS</code> – immune-activation, oxidative-stress, DNA-damage-response, longevity-pathways</li>
+</ul>
+
+<h3 id="architectural-alignment">Architectural Alignment</h3>
+
 <p>SOMA data directly extends existing IG capabilities:</p>
 <ul>
-  <li><strong>Radiation Exposure Tracking</strong> – telomere length and DNA-damage signatures</li>
-  <li><strong>Neurocognitive Monitoring</strong> – cytokine/BDNF changes and immune-brain axis</li>
-  <li><strong>Cardiovascular Countermeasures</strong> – inflammatory and endothelial responses</li>
-  <li><strong>Exercise &amp; Metabolic Suppression</strong> – energy-expenditure and recovery trajectories</li>
-  <li><strong>ECLSS / Nutrition</strong> – microbiome and metabolomics in closed-loop systems</li>
-  <li><strong>Longitudinal Crew Health</strong> – biobanking and personalized countermeasures</li>
+  <li><a href="radiation-tracking.html">Radiation Exposure Tracking</a> – telomere length and DNA-damage signatures</li>
+  <li><a href="neurocognitive-monitoring.html">Neurocognitive Monitoring</a> – cytokine/BDNF changes and immune-brain axis</li>
+  <li><a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a> – inflammatory and endothelial responses</li>
+  <li><a href="fitness.html">Exercise</a> and <a href="metabolic-hibernation.html">Metabolic Suppression</a> – energy-expenditure and recovery trajectories</li>
+  <li><a href="eclss.html">ECLSS</a> / <a href="nutrition.html">Nutrition</a> – microbiome and metabolomics in closed-loop systems</li>
+  <li>Longitudinal Crew Health – biobanking and personalized countermeasures</li>
 </ul>
 
-<p>It enables a true <strong>Precision Aerospace Medicine</strong> layer for risk mitigation and autonomous operations on lunar/Mars missions.</p>
+<p>It enables a precision aerospace medicine layer for risk mitigation and autonomous operations on lunar and Mars missions.</p>
 
-<h2 id="next-steps--open-items">Next Steps / Open Items</h2>
-<ul>
-  <li>Publish example bundles (Inspiration4 multi-omics Observation + OmicsRiskAssessment)</li>
-  <li>Link to SOMA portal and CAMbank in IG examples</li>
-  <li>Integrate with NASA OSDR identifiers</li>
-</ul>
+<h3 id="references">References</h3>
 
-<h2 id="references">References</h2>
 <ul>
-  <li><a href="https://www.nature.com/articles/s41586-024-07639-y">Overbey et al. (2024). The Space Omics and Medical Atlas (SOMA) and international astronaut biobank. <em>Nature</em> 632, 1145–1154.</a> DOI: 10.1038/s41586-024-07639-y</li>
+  <li>Overbey EG, et al. The Space Omics and Medical Atlas (SOMA) and international astronaut biobank. <em>Nature</em> 632:1145–1154, 2024. <a href="https://doi.org/10.1038/s41586-024-07639-y">https://doi.org/10.1038/s41586-024-07639-y</a></li>
+  <li>Garrett-Bakelman FE, et al. The NASA Twins Study: A multidimensional analysis of a year-long human spaceflight. <em>Science</em> 364(6436):eaau8650, 2019. <a href="https://doi.org/10.1126/science.aau8650">https://doi.org/10.1126/science.aau8650</a></li>
   <li><a href="https://soma.weill.cornell.edu">SOMA Portal</a></li>
   <li><a href="https://cambank.weill.cornell.edu/#main">Cornell Aerospace Medicine Biobank (CAMbank)</a></li>
   <li><a href="https://smce.nasa.gov/open-science-data-repository-osdr/">NASA Open Science Data Repository (OSDR)</a></li>
+  <li>Scott RT, et al. Biomonitoring and precision health in deep space supported by artificial intelligence. <em>Nature Machine Intelligence</em> 5, 2023. <a href="https://doi.org/10.1038/s42256-023-00617-5">https://doi.org/10.1038/s42256-023-00617-5</a></li>
 </ul>
 
 
@@ -399,7 +406,7 @@ Cornell Aerospace Medicine Biobank (CAMbank) stores viably frozen specimens for 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

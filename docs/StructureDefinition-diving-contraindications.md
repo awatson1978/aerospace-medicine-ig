@@ -1,4 +1,4 @@
-# Diving Medical Contraindications - v0.6.2
+# Diving Medical Contraindications - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/diving-contraindications | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:DivingContraindications |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-contraindications | *Version*:0.7.0 |
+| Draft as of 2026-09-02 | *Computable Name*:DivingContraindications |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Medical conditions that contraindicate diving
 
@@ -19,7 +20,7 @@ Medical conditions that contraindicate diving
 
 **Usages:**
 
-* Use this Extension: [Dive Medical Clearance](StructureDefinition-DiveMedicalClearance.md)
+* Use this Extension: [Dive Medical Clearance](StructureDefinition-dive-medical-clearance.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/diving-contraindications)
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-diving-contraindicat
 {
   "resourceType" : "StructureDefinition",
   "id" : "diving-contraindications",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/diving-contraindications",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-contraindications",
+  "version" : "0.7.0",
   "name" : "DivingContraindications",
   "title" : "Diving Medical Contraindications",
   "status" : "draft",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-diving-contraindicat
     }
   ],
   "description" : "Medical conditions that contraindicate diving",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -73,7 +75,7 @@ Other representations of profile: [CSV](StructureDefinition-diving-contraindicat
   "context" : [
     {
       "type" : "element",
-      "expression" : "Element"
+      "expression" : "Procedure"
     }
   ],
   "type" : "Extension",
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-diving-contraindicat
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/diving-contraindications"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/diving-contraindications"
       },
       {
         "id" : "Extension.value[x]",

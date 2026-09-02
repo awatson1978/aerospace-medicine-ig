@@ -1,27 +1,25 @@
-# Blood Flow Restriction Training - v0.6.2
+# Blood Flow Restriction Training - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * **Blood Flow Restriction Training**
 
 ## Blood Flow Restriction Training
 
-# Blood Flow Restriction Training (BFRT) as a Microgravity Countermeasure
+### Overview
 
-## Overview
+Blood Flow Restriction Training (BFRT) applies controlled occlusion to limbs during low-load resistance exercise, inducing metabolic stress and muscle hypertrophy with significantly reduced mechanical load and equipment mass. In microgravity, where traditional high-load resistance exercise is constrained by vehicle mass and power limits, BFRT offers a promising countermeasure against muscle atrophy and bone loss.
 
-Blood Flow Restriction Training (BFRT) applies controlled occlusion to limbs during low-load resistance exercise, inducing metabolic stress and muscle hypertrophy with significantly reduced mechanical load and equipment mass. In microgravity, where traditional high-load resistance exercise is constrained by vehicle mass/power limits, BFRT offers a promising countermeasure against muscle atrophy and bone loss.
+A 2025 review in **npj Microgravity** (Hu et al.) and related Human Research Program (HRP) studies summarize evidence that BFRT can help preserve muscle cross-sectional area (CSA), bone turnover biomarkers (P1NP, CTX), and muscle thickness with minimal hardware. This page defines FHIR profiles to standardize BFRT device configurations, session procedures, prescribed protocols, outcome measurements, and integrated care plans.
 
-Evidence from npj Microgravity (2026) and related HRP studies demonstrates BFRT’s efficacy for preserving muscle cross-sectional area (CSA), bone biomarkers (P1NP, CTX), and muscle thickness with minimal hardware. This page defines FHIR profiles to standardize BFRT device configurations, session procedures, prescribed protocols, outcome measurements, and integrated care plans.
+### Key Physiologic Rationale
 
-## Key Physiologic Rationale
+* Low-load exercise (20–30% of one-repetition maximum, 1RM) combined with occlusion (40–80% of limb occlusion pressure) triggers anabolic signaling comparable to high-load training (Hu et al., 2025; Hackney et al., 2019)
+* Sex-specific adaptations (e.g., cuff pressure, session volume) are important in microgravity because of fluid shifts and cardiovascular deconditioning
+* Dual benefit: muscle preservation plus bone loading with reduced injury risk
 
-* Low-load exercise (20–30 % of 1RM) + occlusion (40–80 % limb occlusion pressure) triggers anabolic signaling comparable to high-load training
-* Sex-specific adaptations (e.g., cuff pressure, session volume) are critical in microgravity due to fluid shifts and cardiovascular deconditioning
-* Dual benefit: muscle preservation + bone loading with reduced injury risk
+### FHIR Profiles and Extensions
 
-## FHIR Implementation Guidance
-
-### Recommended Resources
+#### Recommended Resources
 
 * `Device` – occlusion cuffs and monitoring hardware
 * `Procedure` – individual BFRT sessions
@@ -29,59 +27,70 @@ Evidence from npj Microgravity (2026) and related HRP studies demonstrates BFRT�
 * `Observation` – outcome metrics (CSA, biomarkers, thickness)
 * `CarePlan` – integrated countermeasure regimen
 
-### New Profiles (suggested)
+#### Core Profiles
 
-**Core Profiles**
-
-* **`BFRTDevice`** – Extends `Device` with: 
+* **[BFRT Device](StructureDefinition-bfrt-device.md)** – Extends `Device` with: 
 * Cuff type (pneumatic, intelligent, elastic wrap)
 * Limb (upper/lower), target occlusion pressure, safety limits
 * Integrated sensors (pressure, heart rate, EMG)
  
-* **`BFRTProcedure`** – Documents a single BFRT session with: 
-* Occlusion pressure, inflation/deflation timing, exercise modality
+* **[BFRT Procedure](StructureDefinition-bfrt-procedure.md)** – Documents a single BFRT session with: 
+* Occlusion pressure (via the [Occlusion Pressure](StructureDefinition-occlusion-pressure.md) extension), inflation/deflation timing, exercise modality
 * Gravity context (microgravity, lunar, Martian)
 * Real-time monitoring and adverse event flags
  
-* **`BFRTActivityDefinition`** – Prescribed protocol template with: 
-* Sex-specific adaptations (cuff pressure, load, volume)
+* **[BFRT Activity Definition](StructureDefinition-bfrt-activity-definition.md)** – Prescribed protocol template with: 
+* Sex-specific adaptations (via the [Sex-Specific Protocol](StructureDefinition-sex-specific-protocol.md) extension: cuff pressure, load, volume)
 * Session frequency, duration, progression rules
 * Integration with traditional resistance or aerobic exercise
  
-* **`BFRTOutcomeObservation`** – Standardized results including: 
+* **[BFRT Outcome Observation](StructureDefinition-bfrt-outcome-observation.md)** – Standardized results including: 
 * Muscle cross-sectional area (CSA)
 * Bone biomarkers (P1NP, CTX)
 * Muscle thickness (ultrasound)
 * Strength/endurance metrics
  
-* **`BFRTCarePlan`** – Links BFRT activities into a comprehensive countermeasure plan addressing muscle atrophy and bone loss, with goals, monitoring schedule, and contingency rules
+* **[BFRT Care Plan](StructureDefinition-bfrt-care-plan.md)** – Links BFRT activities into a comprehensive countermeasure plan addressing muscle atrophy and bone loss, with goals, monitoring schedule, and contingency rules
 
-**Supporting Profiles (suggested)**
+#### Proposed Profiles (not yet defined)
 
-* `BFRTSessionBundle` – Composite of procedure + outcomes + device data for a single session
+* `BFRTSessionBundle` – Composite of procedure, outcomes, and device data for a single session
 
-### Candidate CodeSystems & ValueSets
+### Examples
 
-* `BFRTCuffTypeCS` – (pneumatic, intelligent, elastic-wrap)
-* `BFRTExerciseModalityVS` – (low-load-resistance, aerobic, hybrid)
-* `BoneBiomarkerVS` – (p1np, ctx, sclerostin, etc.)
-* `BFRTOcclusionPressureCategoryVS` – (40-60%, 60-80% limb occlusion pressure)
+The four example instances describe a pneumatic cuff, the low-load protocol it is used with, one lower-body session, and the quadriceps CSA measurement used to track the outcome.
 
-## Architectural Alignment
+* [BFRT Pneumatic Cuff Device](Device-BFRT-Pneumatic-Cuff-001.md)
+* [Low-Load BFRT Protocol](ActivityDefinition-BFRT-Protocol-LowLoad-001.md)
+* [Lower Body BFRT Session](Procedure-BFRT-LowerBody-Session-001.md)
+* [Quadriceps CSA Outcome](Observation-BFRT-Quadriceps-CSA-001.md)
+
+### Standardized Terminologies
+
+* [BFRT Protocol Code System](CodeSystem-bfrt-protocol-cs.md) and [Value Set](ValueSet-bfrt-protocol-vs.md) – intermittent-bfrt, continuous-bfrt, auto-regulated-bfrt, low-load-bfrt (20–30% 1RM), moderate-load-bfrt (40–50% 1RM)
+* [BFRT Outcome Code System](CodeSystem-bfrt-outcome-cs.md) and [Value Set](ValueSet-bfrt-outcome-vs.md) – muscle-csa, p1np, ctx, limb-occlusion-pressure, rep-max-1rm, muscle-thickness, vascular-compliance
+* [BFRT Device Type Code System](CodeSystem-bfrt-device-type-cs.md) and [Value Set](ValueSet-bfrt-device-type-vs.md) – pneumatic-cuff, intelligent-pressure-cuff, elastic-wrap
+
+#### Proposed Terminology (not yet defined)
+
+* `BFRTExerciseModalityVS` – low-load-resistance, aerobic, hybrid; the protocol codes above distinguish load but not modality
+* `BoneBiomarkerVS` – p1np, ctx, sclerostin, etc.; the BFRT Outcome codes cover P1NP and CTX today and LOINC codes should be preferred where available
+* `BFRTOcclusionPressureCategoryVS` – banded occlusion pressure (40–60%, 60–80% of limb occlusion pressure); the numeric value is already carried by the Occlusion Pressure extension
+
+### Architectural Alignment
 
 This content directly extends existing IG sections:
 
-* **Exercise Countermeasures** (E4D system, venous flow, LBNP)
-* **Fitness** (strength/endurance assessments)
-* **Cardiovascular Countermeasures** (venous hemodynamics during occlusion)
-* **Metabolic Suppression** (resource-efficient countermeasures)
-* **Crew Health Monitoring** (longitudinal biomarker tracking)
+* [Cardiovascular Countermeasures](cardiovascular-countermeasures.md) (venous hemodynamics during occlusion, lower body negative pressure)
+* [Fitness](fitness.md) (strength/endurance assessments)
+* [Metabolic Suppression](metabolic-hibernation.md) (resource-efficient countermeasures)
+* Crew Health Monitoring (longitudinal biomarker tracking)
 
-It contributes to a unified **Physiologic Countermeasure** framework optimized for mass/power-constrained exploration vehicles.
+It contributes to a unified physiologic countermeasure framework optimized for mass- and power-constrained exploration vehicles.
 
-## References
+### References
 
-* Hu, M., Y. Li, and colleagues. “Blood Flow Restriction Training in Microgravity: A Review of Multisystem Physiological Benefits and Implementation Challenges for Long-Duration Space Missions.” **npj Microgravity** 11 (2025). Nature Publishing Group. [https://doi.org/10.1038/s41526-025-00515-7](https://doi.org/10.1038/s41526-025-00515-7).
-* Scott, J. M., et al. “High-Intensity Exercise With Blood Flow Restriction or in Hypoxia as Valuable Spaceflight Countermeasures?” **Frontiers in Physiology** 10 (2019): 1266. [https://doi.org/10.3389/fphys.2019.01266](https://doi.org/10.3389/fphys.2019.01266).
-* Hackney, K. J., et al. “Application of Blood Flow Restriction to Optimize Exercise Countermeasures for Human Space Flight.” **Frontiers in Physiology** 10 (2019): 33. [https://doi.org/10.3389/fphys.2019.00033](https://doi.org/10.3389/fphys.2019.00033).
+* Hu M, Li Y, et al. Blood flow restriction training in microgravity: a review of multisystem physiological benefits and implementation challenges for long-duration space missions. **npj Microgravity** 11, 2025. [https://doi.org/10.1038/s41526-025-00515-7](https://doi.org/10.1038/s41526-025-00515-7)
+* Scott JM, et al. High-Intensity Exercise With Blood Flow Restriction or in Hypoxia as Valuable Spaceflight Countermeasures? **Frontiers in Physiology** 10:1266, 2019. [https://doi.org/10.3389/fphys.2019.01266](https://doi.org/10.3389/fphys.2019.01266)
+* Hackney KJ, et al. Application of Blood Flow Restriction to Optimize Exercise Countermeasures for Human Space Flight. **Frontiers in Physiology** 10:33, 2019. [https://doi.org/10.3389/fphys.2019.00033](https://doi.org/10.3389/fphys.2019.00033)
 

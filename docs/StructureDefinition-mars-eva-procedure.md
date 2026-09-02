@@ -1,4 +1,4 @@
-# Mars Extravehicular Activity Procedure - v0.6.2
+# Mars Extravehicular Activity Procedure - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MarsEVAProcedure |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-eva-procedure | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MarsEVAProcedure |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
 {
   "resourceType" : "StructureDefinition",
   "id" : "mars-eva-procedure",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mars-eva-procedure",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mars-eva-procedure",
+  "version" : "0.7.0",
   "name" : "MarsEVAProcedure",
   "title" : "Mars Extravehicular Activity Procedure",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
     }
   ],
   "description" : "Record of Mars surface EVA with duration, location, participants, suit device, metabolic data, and dust exposure",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -114,7 +116,7 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -131,7 +133,7 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/eva-number"
             ]
           }
         ],
@@ -148,7 +150,7 @@ Other representations of profile: [CSV](StructureDefinition-mars-eva-procedure.c
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/communication-delay"
             ]
           }
         ],

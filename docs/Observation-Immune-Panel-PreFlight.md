@@ -1,4 +1,4 @@
-# Immune Biomarker Panel - Pre-flight Baseline - v0.6.2
+# Immune Biomarker Panel - Pre-flight Baseline - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example Observation: Immune Biomarker Panel - Pre-flight Baseline
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Mission Phase**: Pre-flight
 
@@ -16,9 +20,9 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
 
 **category**: Laboratory
 
-**code**: Immune function panel
+**code**: Immune Function Panel
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **effective**: 2028-02-15 10:00:00+0000
 
@@ -41,23 +45,31 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
   "resourceType" : "Observation",
   "id" : "Immune-Panel-PreFlight",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/immune-biomarker-panel"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/immune-biomarker-panel"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mission-phase",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-phase",
       "valueCodeableConcept" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/mission-phase-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mission-phase-cs",
             "code" : "pre-flight",
             "display" : "Pre-flight"
           }
@@ -80,9 +92,9 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
   "code" : {
     "coding" : [
       {
-        "system" : "http://loinc.org",
-        "code" : "24359-3",
-        "display" : "Immune function panel"
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
+        "code" : "immune-panel",
+        "display" : "Immune Function Panel"
       }
     ]
   },
@@ -95,7 +107,7 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
             "code" : "il-6",
             "display" : "Interleukin-6 (IL-6)"
           }
@@ -112,7 +124,7 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
             "code" : "tnf-alpha",
             "display" : "Tumor Necrosis Factor Alpha (TNF-α)"
           }
@@ -129,7 +141,7 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
             "code" : "cd4-cd8-ratio",
             "display" : "CD4/CD8 Ratio"
           }
@@ -146,7 +158,7 @@ Profile: [Immune Biomarker Panel](StructureDefinition-immune-biomarker-panel.md)
       "code" : {
         "coding" : [
           {
-            "system" : "https://mitre.org/fhir/space-health/CodeSystem/immune-biomarker-cs",
+            "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/immune-biomarker-cs",
             "code" : "nk-cell-pct",
             "display" : "Natural Killer Cell Percentage"
           }

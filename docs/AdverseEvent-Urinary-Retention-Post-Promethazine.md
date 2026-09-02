@@ -1,4 +1,4 @@
-# Urinary Retention After Promethazine - v0.6.2
+# Urinary Retention After Promethazine - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,9 +6,13 @@
 
 ## Example AdverseEvent: Urinary Retention After Promethazine
 
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
 Profile: [Space Adverse Event](StructureDefinition-space-adverse-event.md)
 
-**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-III-Mission.md)
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
+
+**Mission Context**: [Encounter: status = in-progress; class = ambulatory (ActCode#AMB); period = 2027-09-01 00:00:00+0000 --> (ongoing)](Encounter-Artemis-IV-Mission.md)
 
 **Flight Day**: 2
 
@@ -16,7 +20,7 @@ Profile: [Space Adverse Event](StructureDefinition-space-adverse-event.md)
 
 **event**: Urinary Retention
 
-**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( http://nasa.gov/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
+**subject**: [Jane Astronaut Female, DoB: 1980-01-01 ( https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id#AST-001)](Patient-ExampleAstronaut.md)
 
 **date**: 2028-03-16 11:30:00+0000
 
@@ -40,19 +44,27 @@ Profile: [Space Adverse Event](StructureDefinition-space-adverse-event.md)
   "resourceType" : "AdverseEvent",
   "id" : "Urinary-Retention-Post-Promethazine",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/space-adverse-event"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-adverse-event"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "extension" : [
     {
-      "url" : "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference" : {
-        "reference" : "Encounter/Artemis-III-Mission"
+        "reference" : "Encounter/Artemis-IV-Mission"
       }
     },
     {
-      "url" : "https://mitre.org/fhir/space-health/StructureDefinition/flight-day",
+      "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day",
       "valueInteger" : 2
     }
   ],
@@ -60,7 +72,7 @@ Profile: [Space Adverse Event](StructureDefinition-space-adverse-event.md)
   "event" : {
     "coding" : [
       {
-        "system" : "https://mitre.org/fhir/space-health/CodeSystem/space-adverse-event-cs",
+        "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-adverse-event-cs",
         "code" : "urinary-retention",
         "display" : "Urinary Retention"
       }

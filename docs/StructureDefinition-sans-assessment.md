@@ -1,4 +1,4 @@
-# SANS Assessment - v0.6.2
+# SANS Assessment - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/sans-assessment | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:SANSAssessment |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/sans-assessment | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SANSAssessment |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Spaceflight-Associated Neuro-ocular Syndrome assessment including OCT, OCT-A, and clinical findings 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "sans-assessment",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/sans-assessment",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/sans-assessment",
+  "version" : "0.7.0",
   "name" : "SANSAssessment",
   "title" : "SANS Assessment",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
     }
   ],
   "description" : "Spaceflight-Associated Neuro-ocular Syndrome assessment including OCT, OCT-A, and clinical findings",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -123,7 +125,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context"
             ]
           }
         ],
@@ -139,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
           {
             "code" : "Extension",
             "profile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/flight-day"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/flight-day"
             ]
           }
         ],
@@ -163,7 +165,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-visual-effects-cs",
               "code" : "sans",
               "display" : "Spaceflight-Associated Neuro-ocular Syndrome"
             }
@@ -179,7 +181,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
           {
             "code" : "Reference",
             "targetProfile" : [
-              "https://mitre.org/fhir/space-health/StructureDefinition/Astronaut"
+              "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/astronaut"
             ]
           }
         ],
@@ -223,7 +225,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs",
               "code" : "optic-disc-edema-grade",
               "display" : "Optic Disc Edema Grade"
             }
@@ -253,7 +255,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs",
               "code" : "globe-flattening",
               "display" : "Globe Flattening"
             }
@@ -283,7 +285,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs",
               "code" : "choroidal-folds-present",
               "display" : "Choroidal Folds"
             }
@@ -313,7 +315,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs",
               "code" : "icp-estimate",
               "display" : "Intracranial Pressure Estimate"
             }
@@ -353,7 +355,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs",
               "code" : "retinal-vessel-density",
               "display" : "Retinal Vessel Density"
             }
@@ -393,7 +395,7 @@ Other representations of profile: [CSV](StructureDefinition-sans-assessment.csv)
         "patternCodeableConcept" : {
           "coding" : [
             {
-              "system" : "https://mitre.org/fhir/space-health/CodeSystem/sans-assessment-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/sans-assessment-cs",
               "code" : "rnfl-thickness",
               "display" : "RNFL Thickness"
             }

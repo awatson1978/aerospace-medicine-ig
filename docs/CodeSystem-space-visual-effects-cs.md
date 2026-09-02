@@ -1,4 +1,4 @@
-# Space Visual Effects - v0.6.2
+# Space Visual Effects - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs | *Version*:0.6.2 |
-| Draft as of 2026-08-03 | *Computable Name*:SpaceVisualEffectsCodeSystem |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-visual-effects-cs | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:SpaceVisualEffectsCS |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 CodeSystem for space visual effects not found in SNOMED CT 
@@ -26,13 +27,13 @@ CodeSystem for space visual effects not found in SNOMED CT
 {
   "resourceType" : "CodeSystem",
   "id" : "space-visual-effects-cs",
-  "url" : "https://mitre.org/fhir/space-health/CodeSystem/space-visual-effects-cs",
-  "version" : "0.6.2",
-  "name" : "SpaceVisualEffectsCodeSystem",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-visual-effects-cs",
+  "version" : "0.7.0",
+  "name" : "SpaceVisualEffectsCS",
   "title" : "Space Visual Effects",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : true,
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -46,6 +47,7 @@ CodeSystem for space visual effects not found in SNOMED CT
     }
   ],
   "description" : "CodeSystem for space visual effects not found in SNOMED CT",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "caseSensitive" : true,
   "content" : "complete",
   "count" : 8,

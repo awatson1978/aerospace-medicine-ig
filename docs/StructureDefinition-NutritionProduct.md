@@ -1,22 +1,23 @@
-# Nutrition Product - v0.6.2
+# Nutrition Product (logical model) - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Nutrition Product**
+* **Nutrition Product (logical model)**
 
-## Resource Profile: Nutrition Product 
+## Logical Model: Nutrition Product (logical model) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/NutritionProduct | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:NutritionProduct |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:NutritionProduct |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
-A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide. 
+A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct. 
 
 **Usages:**
 
-* This Resource is not used by any profiles in this Implementation Guide
+* This Logical Model is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/mitre.fhir.spacehealth|current/StructureDefinition/NutritionProduct)
 
@@ -26,7 +27,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
  
 
-Other representations of profile: [CSV](StructureDefinition-NutritionProduct.csv), [Excel](StructureDefinition-NutritionProduct.xlsx), [Schematron](StructureDefinition-NutritionProduct.sch) 
+Other representations of profile: [CSV](StructureDefinition-NutritionProduct.csv), [Excel](StructureDefinition-NutritionProduct.xlsx) 
 
 
 
@@ -36,12 +37,18 @@ Other representations of profile: [CSV](StructureDefinition-NutritionProduct.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "NutritionProduct",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/NutritionProduct",
-  "version" : "0.6.2",
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/logical-target",
+      "valueBoolean" : true
+    }
+  ],
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct",
+  "version" : "0.7.0",
   "name" : "NutritionProduct",
-  "title" : "Nutrition Product",
+  "title" : "Nutrition Product (logical model)",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -54,27 +61,47 @@ Other representations of profile: [CSV](StructureDefinition-NutritionProduct.csv
       ]
     }
   ],
-  "description" : "A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide.",
+  "description" : "A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct.",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
-  "mapping" : [
-    {
-      "identity" : "rim",
-      "uri" : "http://hl7.org/v3",
-      "name" : "RIM Mapping"
-    }
-  ],
-  "kind" : "resource",
+  "kind" : "logical",
   "abstract" : false,
-  "type" : "NutritionProduct",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DomainResource",
+  "type" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/NutritionProduct",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
   "derivation" : "specialization",
   "differential" : {
     "element" : [
       {
         "id" : "NutritionProduct",
         "path" : "NutritionProduct",
-        "short" : "Nutrition Product",
-        "definition" : "A product used for nutritional purposes. Backported from FHIR R5 for use in this R4 implementation guide."
+        "short" : "Nutrition Product (logical model)",
+        "definition" : "A product used for nutritional purposes. Logical model mirroring the FHIR R5 NutritionProduct resource so that R4 implementations can exchange space food-item catalogues; instances carry resourceType NutritionProduct."
+      },
+      {
+        "id" : "NutritionProduct.id",
+        "path" : "NutritionProduct.id",
+        "short" : "Logical id of this product record",
+        "definition" : "Logical id of this product record",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "id"
+          }
+        ]
+      },
+      {
+        "id" : "NutritionProduct.meta",
+        "path" : "NutritionProduct.meta",
+        "short" : "Metadata about the record, including provenance (meta.source) and the HTEST tag",
+        "definition" : "Metadata about the record, including provenance (meta.source) and the HTEST tag",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "Meta"
+          }
+        ]
       },
       {
         "id" : "NutritionProduct.status",

@@ -1,4 +1,4 @@
-# Radioprotective Medication - v0.6.2
+# Radioprotective Medication - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/radioprotective-medication | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:RadioprotectiveMedication |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radioprotective-medication | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:RadioprotectiveMedication |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
  
 Radioprotective and antioxidant medications used as countermeasures against space radiation 
@@ -36,12 +37,12 @@ Other representations of profile: [CSV](StructureDefinition-radioprotective-medi
 {
   "resourceType" : "StructureDefinition",
   "id" : "radioprotective-medication",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/radioprotective-medication",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radioprotective-medication",
+  "version" : "0.7.0",
   "name" : "RadioprotectiveMedication",
   "title" : "Radioprotective Medication",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -55,6 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-radioprotective-medi
     }
   ],
   "description" : "Radioprotective and antioxidant medications used as countermeasures against space radiation",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -97,7 +99,7 @@ Other representations of profile: [CSV](StructureDefinition-radioprotective-medi
         "mustSupport" : true,
         "binding" : {
           "strength" : "extensible",
-          "valueSet" : "https://mitre.org/fhir/space-health/ValueSet/radioprotective-medication-vs"
+          "valueSet" : "https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/radioprotective-medication-vs"
         }
       },
       {

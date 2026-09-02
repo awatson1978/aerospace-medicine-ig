@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>EHR Use for Pilot Certification -  v0.6.2</title>
+    <title>EHR Use for Pilot Certification - Aerospace Medicine Implementation Guide v0.7.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -50,9 +50,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Aerospace Medicine Implementation Guide</span>
             <br/>
-            <span style="display:inline-block;">0.6.2 - ci-build
+            <span style="display:inline-block;">0.7.0 - ci-build
 
 
             </span>
@@ -156,7 +156,7 @@
         <a href="space-telemedicine.html">Space Telemedicine</a>
       </li>
       <li>
-        <a href="crew-rescue.html">Crew Evacuation</a>
+        <a href="crew-rescue.html">Crew Evacuation and Emergency Response</a>
       </li>
       <li>
         <a href="cardiovascular-countermeasures.html">Cardiovascular Countermeasures</a>
@@ -172,7 +172,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="eclss.html">Life Support Systems</a>
+        <a href="eclss.html">Life Support Systems (ECLSS)</a>
       </li>
       <li>
         <a href="biomes.html">Biospheres</a>
@@ -242,7 +242,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">SpaceflightHealthSimulationsReferenceDocumentation - Local Development build (v0.6.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://mitre.org/fhir/space-health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Aerospace Medicine Implementation Guide - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://awatson1978.github.io/aerospace-medicine-ig/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>EHR Use for Pilot Certification</h2>
   
 
@@ -265,8 +265,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#ehr-integration-approach" id="markdown-toc-ehr-integration-approach">EHR Integration Approach</a></li>
   <li><a href="#implementation-considerations" id="markdown-toc-implementation-considerations">Implementation Considerations</a></li>
   <li><a href="#future-implementation-roadmap" id="markdown-toc-future-implementation-roadmap">Future Implementation Roadmap</a></li>
-  <li><a href="#faa-specific-value-sets" id="markdown-toc-faa-specific-value-sets">FAA-Specific Value Sets</a></li>
+  <li><a href="#standardized-terminologies" id="markdown-toc-standardized-terminologies">Standardized Terminologies</a></li>
   <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
@@ -291,11 +292,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="ehr-integration-approach">EHR Integration Approach</h3>
 
-<p>With new federal regulations such as the 21st Century Cures Act, Medicare Access and CHIP Reauthorization Act of 2015 (MACRA), and Trusted Exchange Framework and Common Agreement (TEFCA), the FAA can now leverage standardized health data to support the certification process.</p>
+<p>With federal policy such as the 21st Century Cures Act [1], the Medicare Access and CHIP Reauthorization Act of 2015 (MACRA) [2], and the Trusted Exchange Framework and Common Agreement (TEFCA) [3], the FAA can now leverage standardized health data to support the certification process.</p>
 
 <h4 id="technical-feasibility">Technical Feasibility</h4>
 
-<p>Research has demonstrated that all medically relevant fields in Form 8500-8 can be expressed and transmitted via Fast Healthcare Interoperability Resources (FHIR) APIs. Key findings include:</p>
+<p>This guide's mapping of Form 8500-8 to a FHIR Questionnaire, published here as the <a href="Questionnaire-FAA8500Questionnaire.html">FAA Form 8500-8 Questionnaire</a>, shows that all medically relevant fields in the form can be expressed and transmitted via Fast Healthcare Interoperability Resources (FHIR) APIs [7][8]. Key findings from that mapping include:</p>
 
 <ul>
   <li>All medical conditions mentioned in Form 8500-8 and special issuance guidance have associated SNOMED CT codes</li>
@@ -334,16 +335,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Data Location</strong>: Identifying where specific health data resides across multiple providers</li>
   <li><strong>Data Format</strong>: Managing differences between table-based MedXPress data and document-oriented EHR data</li>
   <li><strong>Terminology Mapping</strong>: Creating crosswalks between ICD-10 codes used by FAA and SNOMED CT/LOINC codes in EHRs</li>
-  <li><strong>Security and Trust Networks</strong>: Implementing NIST 800-171 compliant servers, OAuth 2.0, and X.509 security certificates</li>
+  <li><strong>Security and Trust Networks</strong>: Implementing servers that meet NIST Special Publication 800-171 [4], OAuth 2.0, and X.509 security certificates</li>
 </ul>
 
 <h4 id="policy-and-legal-considerations">Policy and Legal Considerations</h4>
 
 <ul>
-  <li><strong>Privacy Act of 1974</strong>: Governs collection and handling of personally identifiable information</li>
-  <li><strong>21st Century Cures Act</strong>: Enables patient access to and sharing of health data</li>
-  <li><strong>CARIN Alliance Code of Conduct</strong>: Provides ethical framework for handling patient-authorized data</li>
-  <li><strong>TEFCA</strong>: Establishes nationwide framework for health information exchange</li>
+  <li><strong>Privacy Act of 1974</strong> (5 U.S.C. § 552a): Governs collection and handling of personally identifiable information by federal agencies [5]</li>
+  <li><strong>21st Century Cures Act</strong>: Enables patient access to and sharing of health data [1]</li>
+  <li><strong>CARIN Alliance Code of Conduct</strong>: Provides an ethical framework for handling patient-authorized data [6]</li>
+  <li><strong>TEFCA</strong>: Establishes a nationwide framework for health information exchange [3]</li>
 </ul>
 
 <h3 id="future-implementation-roadmap">Future Implementation Roadmap</h3>
@@ -358,25 +359,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>Incentivize Adoption</strong>: Offer faster processing times for pilots who provide EHR data</li>
 </ol>
 
-<h3 id="faa-specific-value-sets">FAA-Specific Value Sets</h3>
+<h3 id="standardized-terminologies">Standardized Terminologies</h3>
 
-<p>To facilitate implementation, standardized value sets have been developed for:</p>
+<p>The <a href="Questionnaire-FAA8500Questionnaire.html">FAA Form 8500-8 Questionnaire</a> uses SNOMED CT for conditions, LOINC for examinations and laboratory tests, and RxNorm for medications, following the conventions of HL7 US Core [8].</p>
+
+<h4 id="proposed-terminology-not-yet-defined">Proposed Terminology (not yet defined)</h4>
+
+<p>To support automated validation of flight readiness, the following value sets would be useful. They are described here as a proposal; none of them exists in this guide yet.</p>
 
 <ul>
-  <li>Disqualifying medical conditions</li>
-  <li>Special issuance eligible conditions</li>
-  <li>Do Not Issue (DNI) medications</li>
-  <li>Do Not Fly medications</li>
-  <li>Required examinations and laboratory tests</li>
+  <li><code class="language-plaintext highlighter-rouge">faa-disqualifying-conditions-vs</code>: medical conditions that are disqualifying under the FAA Guide for Aviation Medical Examiners [7]</li>
+  <li><code class="language-plaintext highlighter-rouge">faa-special-issuance-conditions-vs</code>: conditions eligible for a special issuance authorization</li>
+  <li><code class="language-plaintext highlighter-rouge">faa-do-not-issue-medications-vs</code>: medications on the FAA "Do Not Issue" list</li>
+  <li><code class="language-plaintext highlighter-rouge">faa-do-not-fly-medications-vs</code>: medications on the FAA "Do Not Fly" list</li>
+  <li><code class="language-plaintext highlighter-rouge">faa-required-examinations-vs</code>: examinations and laboratory tests required for each certificate class</li>
 </ul>
 
-<p>These value sets, coded in FHIR-compatible terminologies, enable consistent interpretation of medical data across different EHR systems and support automated validation of flight readiness requirements.</p>
+<p>Once defined in FHIR-compatible terminologies, such value sets would enable consistent interpretation of medical data across different EHR systems.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 
 <p>EHR integration with the pilot certification process is technically feasible and offers significant benefits for safety, efficiency, and administrative burden reduction. By leveraging standardized health data exchange protocols, the FAA can streamline the Form 8500-8 process while improving the accuracy and completeness of medical information used for certification decisions.</p>
 
 <p>The implementation of EHR integration aligns with broader digital transformation initiatives across the aviation sector and positions the FAA to take advantage of emerging technologies in health data interoperability to enhance flight safety.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li>[1] 21st Century Cures Act, Public Law 114-255 (H.R. 34), 114th Congress, 2016. https://www.congress.gov/bill/114th-congress/house-bill/34</li>
+  <li>[2] Medicare Access and CHIP Reauthorization Act of 2015 (MACRA), Public Law 114-10. Centers for Medicare and Medicaid Services. https://www.cms.gov/Medicare/Quality-Initiatives-Patient-Assessment-Instruments/Value-Based-Programs/MACRA-MIPS-and-APMs/MACRA-MIPS-and-APMs</li>
+  <li>[3] Office of the National Coordinator for Health Information Technology (ONC). Trusted Exchange Framework and Common Agreement (TEFCA). https://www.healthit.gov/topic/interoperability/policy/trusted-exchange-framework-and-common-agreement-tefca</li>
+  <li>[4] National Institute of Standards and Technology. Special Publication 800-171 Rev. 3, Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations, 2024. https://doi.org/10.6028/NIST.SP.800-171r3</li>
+  <li>[5] Privacy Act of 1974, 5 U.S.C. § 552a. U.S. Department of Justice, Office of Privacy and Civil Liberties. https://www.justice.gov/opcl/privacy-act-1974</li>
+  <li>[6] CARIN Alliance. Code of Conduct for consumer-directed exchange of health information.</li>
+  <li>[7] Federal Aviation Administration. Guide for Aviation Medical Examiners; FAA Form 8500-8, Application for Airman Medical Certificate, submitted through MedXPress. https://www.faa.gov/ame_guide and https://medxpress.faa.gov/</li>
+  <li>[8] HL7 International. US Core Implementation Guide. https://hl7.org/fhir/us/core/</li>
+</ul>
+
 
 
 
@@ -396,7 +415,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.6.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 3, 2026 22:31-0500">2026-08-03</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org/">MITRE</a>.  Package mitre.fhir.spacehealth#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 2, 2026 13:24-0500">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

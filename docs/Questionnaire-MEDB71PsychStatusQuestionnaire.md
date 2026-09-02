@@ -1,4 +1,4 @@
-# MEDB 7.1 Preflight Psychiatric/Psychological Status Check - v0.6.2
+# MEDB 7.1 Preflight Psychiatric/Psychological Status Check - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/Questionnaire/medb-7-1-psych-status | *Version*:0.6.2 |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-1-psych-status | *Version*:0.7.0 |
 | Active as of 2012-05-31 | *Computable Name*:MEDB71PsychStatus |
 | **Copyright/Legal**: NASA Johnson Space Center - Medical Requirements Integration Documents (MRIDs) JSC28913 | |
 
@@ -26,6 +26,9 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
 {
   "resourceType" : "Questionnaire",
   "id" : "MEDB71PsychStatusQuestionnaire",
+  "meta" : {
+    "source" : "https://nlsp.nasa.gov/explore/jtable/lsda_document/lsda_document?q=all&from=1&pagesize=100&filters=project_name.keyword%7Ceq%7CMRID&template=12"
+  },
   "extension" : [
     {
       "extension" : [
@@ -48,8 +51,8 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
       "url" : "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
     }
   ],
-  "url" : "https://mitre.org/fhir/space-health/Questionnaire/medb-7-1-psych-status",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-1-psych-status",
+  "version" : "0.7.0",
   "name" : "MEDB71PsychStatus",
   "title" : "MEDB 7.1 Preflight Psychiatric/Psychological Status Check",
   "status" : "active",
@@ -94,7 +97,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "bhp",
                 "display" : "Behavioral Health and Performance"
               }
@@ -103,7 +106,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs",
                 "code" : "bhp",
                 "display" : "Behavioral Health and Performance"
               }
@@ -119,7 +122,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "behavioral",
                 "display" : "Behavior and Performance"
               }
@@ -128,7 +131,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "initial" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs",
                 "code" : "behavioral",
                 "display" : "Behavior and Performance"
               }
@@ -356,14 +359,14 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                 "code" : "crewmember",
                 "display" : "Crewmember"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs",
                 "code" : "bhp-specialist",
                 "display" : "BHP Specialist"
               }
@@ -378,14 +381,14 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "jsc",
                 "display" : "Johnson Space Center"
               }
             },
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs",
                 "code" : "russia-gctc",
                 "display" : "Gagarin Cosmonaut Training Center"
               }
@@ -522,7 +525,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "linkId" : "behavioral-metrics.mood-level",
           "code" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "mood-level",
               "display" : "Mood level"
             }
@@ -535,7 +538,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "linkId" : "behavioral-metrics.anxiety-level",
           "code" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "anxiety-level",
               "display" : "Anxiety level"
             }
@@ -548,7 +551,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "linkId" : "behavioral-metrics.coping-capacity",
           "code" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "coping-capacity",
               "display" : "Coping capacity"
             }
@@ -578,7 +581,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "linkId" : "behavioral-metrics.sleep-quality",
           "code" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "sleep-quality",
               "display" : "Sleep quality"
             }
@@ -605,7 +608,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "linkId" : "behavioral-metrics.cognitive-readiness",
           "code" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "cognitive-readiness",
               "display" : "Cognitive readiness"
             }
@@ -632,7 +635,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "linkId" : "behavioral-metrics.social-connectedness",
           "code" : [
             {
-              "system" : "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+              "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
               "code" : "social-connectedness",
               "display" : "Social connectedness"
             }
@@ -722,7 +725,7 @@ Psychiatric/Psychological assessment of behavioral readiness for flight. Review 
           "answerOption" : [
             {
               "valueCoding" : {
-                "system" : "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs",
+                "system" : "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs",
                 "code" : "emr",
                 "display" : "Electronic Medical Record"
               }

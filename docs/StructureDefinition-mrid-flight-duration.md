@@ -1,4 +1,4 @@
-# MRID Flight Duration Requirement - v0.6.2
+# MRID Flight Duration Requirement - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,9 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration | *Version*:0.6.2 |
-| Active as of 2026-08-03 | *Computable Name*:MRIDFlightDuration |
+| *Official URL*:https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-flight-duration | *Version*:0.7.0 |
+| Active as of 2026-09-02 | *Computable Name*:MRIDFlightDuration |
+| **Copyright/Legal**: Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124. | |
 
 Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days')
 
@@ -41,12 +42,12 @@ Other representations of profile: [CSV](StructureDefinition-mrid-flight-duration
 {
   "resourceType" : "StructureDefinition",
   "id" : "mrid-flight-duration",
-  "url" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration",
-  "version" : "0.6.2",
+  "url" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-flight-duration",
+  "version" : "0.7.0",
   "name" : "MRIDFlightDuration",
   "title" : "MRID Flight Duration Requirement",
   "status" : "active",
-  "date" : "2026-08-03T22:31:50-05:00",
+  "date" : "2026-09-02T13:24:45-05:00",
   "publisher" : "MITRE",
   "contact" : [
     {
@@ -60,6 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-flight-duration
     }
   ],
   "description" : "Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days')",
+  "copyright" : "Copyright 2022-2026 The MITRE Corporation and Abigail Watson. Licensed under Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0). Approved for Public Release; Distribution Unlimited. Public Release Case Number 25-1124.",
   "fhirVersion" : "4.0.1",
   "mapping" : [
     {
@@ -95,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-mrid-flight-duration
       {
         "id" : "Extension.url",
         "path" : "Extension.url",
-        "fixedUri" : "https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration"
+        "fixedUri" : "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mrid-flight-duration"
       },
       {
         "id" : "Extension.value[x]",

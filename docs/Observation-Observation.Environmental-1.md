@@ -1,4 +1,4 @@
-# Observation - Environmental - v0.6.2
+# Observation - Environmental - Aerospace Medicine Implementation Guide v0.7.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -6,7 +6,11 @@
 
 ## Example Observation: Observation - Environmental
 
-Profile: [Environmental Monitoring](StructureDefinition-EnvironmentalMonitoring.md)
+Information Source: [https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic](https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic)
+
+Profile: [Environmental Monitoring](StructureDefinition-environmental-monitoring.md)
+
+Tag: test health data (Details: ActReason code HTEST = 'test health data')
 
 **status**: Final
 
@@ -21,8 +25,16 @@ Profile: [Environmental Monitoring](StructureDefinition-EnvironmentalMonitoring.
   "resourceType" : "Observation",
   "id" : "Observation.Environmental-1",
   "meta" : {
+    "source" : "https://awatson1978.github.io/aerospace-medicine-ig/provenance/synthetic",
     "profile" : [
-      "https://mitre.org/fhir/space-health/StructureDefinition/EnvironmentalMonitoring"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/environmental-monitoring"
+    ],
+    "tag" : [
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "code" : "HTEST",
+        "display" : "test health data"
+      }
     ]
   },
   "status" : "final",
