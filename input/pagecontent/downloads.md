@@ -29,6 +29,8 @@ Terminology and example resources for the astronaut-health profiles (fitness, me
 Questionnaires transcribed from the NASA Medical Requirements Integration Documents (MRID). See [NASA Medical Requirements](nasa-medical-requirements.html).
 
 - [NASA.Questionnaires.ndjson](NASA.Questionnaires.ndjson)
+- [NASA.CodeSystems.ndjson](NASA.CodeSystems.ndjson)
+- [NASA.ValueSets.ndjson](NASA.ValueSets.ndjson)
 
 ### Artemis
 

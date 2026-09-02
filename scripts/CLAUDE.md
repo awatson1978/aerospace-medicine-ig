@@ -1,312 +1,122 @@
-# FHIR Implementation Guide Scripts
+# Scripts
 
-This directory contains utility scripts for generating downloadable resource files from the HL7 FHIR Aerospace Medicine Implementation Guide.
+Utility scripts for quality control and for generating the NDJSON downloads published
+with the Aerospace Medicine Implementation Guide. All scripts are Python 3 standard
+library only and are run from the repository root unless noted.
 
-## Overview
+## Quality control
 
-The Implementation Guide defines numerous FHIR resources (CodeSystems, ValueSets, Profiles, etc.) that are generated from FSH (FHIR Shorthand) definitions. These scripts extract specific subsets of resources and package them into downloadable formats for implementers.
+### qc_check.py
 
-## Purpose
-
-Scripts in this directory serve to:
-
-1. **Extract Resource Subsets**: Pull specific groups of resources based on clinical/functional domains
-2. **Generate NDJSON Files**: Create newline-delimited JSON files for bulk data exchange
-3. **Maintain Consistency**: Ensure download files stay synchronized with IG content
-4. **Support Reusability**: Provide templates for generating additional resource bundles
-
-## NDJSON Generation Pattern
-
-### Standard Workflow
-
-1. **Identify Source Content**: Determine which Implementation Guide pages define the resources
-2. **Extract Resource IDs**: Parse the "Standardized Terminologies" sections to find CodeSystem/ValueSet IDs
-3. **Locate JSON Files**: Find the corresponding JSON files in `fsh-generated/resources/`
-4. **Generate NDJSON**: Convert each JSON file to a single-line minified format
-5. **Write Output**: Save to `input/images/` for inclusion in the published IG
-
-### NDJSON Format Requirements
-
-- **One resource per line**: Each line is a complete, valid JSON object
-- **Minified JSON**: No formatting, whitespace, or newlines within each object
-- **No trailing newline**: File should end immediately after the last JSON object
-- **Valid JSON**: Each line must parse as valid JSON independently
-
-### File Naming Convention
+Static quality gate that runs without SUSHI or the IG Publisher.
 
 ```
-SpaceHealth.<ResourceType>.<Subset>.ndjson
+python3 scripts/qc_check.py              # full report, exit 1 on any finding
+python3 scripts/qc_check.py --quiet      # counts only
+python3 scripts/qc_check.py --section fsh --section links
 ```
 
-Examples:
-- `SpaceHealth.CodeSystems.ndjson` - All terminology CodeSystems
-- `SpaceHealth.ValueSets.ndjson` - All terminology ValueSets
-- `SpaceHealth.Devices.ndjson` - Device resources
-- `SpaceHealth.Locations.ndjson` - Location resources
+Sections:
 
-### Source Directories
+- `pages`: control characters, LLM/PDF extraction debris, duplicate or missing
+  References headings, second front-matter blocks, images written as links,
+  placeholder DOIs, malformed URLs, foreign canonical namespaces, undeclared pages.
+- `links`: every relative link target in `input/pagecontent/*.md` resolved against
+  FSH `Id:`/`Instance:` declarations, `input/images/`, and `sushi-config.yaml` pages.
+- `fsh`: dangling `Reference(Type/id)`, codes not defined in their local CodeSystem,
+  aliases and quoted URLs that name no defined artifact, foreign namespaces, instances
+  without `Usage:`, example instances without `meta.source` (via the provenance rule
+  sets in `SharedExtensions.fsh`), CodeSystems missing `^count`/`^status`/
+  `^experimental`/`^content`/`^caseSensitive`, id naming convention (`-cs`, `-vs`,
+  kebab-case profile ids), indented declarations.
+- `ndjson`: every line of `input/images/*.ndjson` parses, has a `resourceType`, uses the
+  current canonical, and has a valid `Procedure.status`.
 
-- **Input**: `fsh-generated/resources/` - Generated FHIR resources from FSH definitions
-- **Output**: `input/images/` - Published with the IG for user downloads
+Run it before every commit and as step 1 of `/publish`. It does not replace SUSHI or the
+publisher validator; run those locally as well.
 
-## Existing Scripts
+### check_links.py
 
-### generate_nasa_ndjson.py
+Checks every external URL referenced from the pages (HEAD, then a ranged GET for servers
+that reject HEAD) and prints the failures with the page and line that cite them.
 
-**Purpose**: Generate downloadable NDJSON file for NASA MEDB Questionnaires.
+```
+python3 scripts/check_links.py            # failures only
+python3 scripts/check_links.py --all      # every URL
+```
 
-**Source Pages**:
-- `input/fsh/questionnaires/MEDB-1-PhysicalExams.fsh`
-- `input/fsh/questionnaires/MEDB-2-Laboratory.fsh`
-- `input/fsh/questionnaires/MEDB-3-Radiation.fsh`
-- `input/fsh/questionnaires/MEDB-5-Fitness.fsh`
-- `input/fsh/questionnaires/MEDB-6-EVA.fsh`
-- `input/fsh/questionnaires/MEDB-7-Behavioral.fsh`
+Needs outbound network access; run it from a workstation.
 
-**Output Files**:
-- `input/images/NASA.Questionnaires.ndjson` (18 Questionnaires)
+## NDJSON downloads
 
-**Usage**:
-```bash
+The downloads in `input/images/*.ndjson` are newline-delimited JSON: one minified FHIR
+resource per line, no trailing newline. They are published with the site because the
+publisher copies `input/images/` to the site root.
+
+### How the generators work
+
+`ndjson_lib.py` resolves each resource in this order:
+
+1. `fsh-generated/resources/<Type>-<id>.json` — fresh SUSHI output (authoritative)
+2. `docs/<Type>-<id>.json` — the last published build (may be stale)
+3. the record already present in the target NDJSON file (carry-forward)
+
+and normalises it: narrative `text` removed, `version` set from `sushi-config.yaml`,
+legacy namespaces (`hl7.org/fhir/uv/aerospace`, `mitre.org/fhir/space-health`)
+rewritten to the current canonical, and renamed ids (`ID_RENAMES`) updated. Each
+generator prints where its resources came from and lists anything MISSING; a resource
+is missing only when it exists in FSH but no build has produced it yet.
+
+Ids are discovered from `input/fsh/` by file name, so new terminology is picked up
+without editing id lists:
+
+| Script | FSH sources | Output |
+|---|---|---|
+| `generate_terminology_ndjson.py` | every CodeSystem/ValueSet except the families below | `SpaceHealth.CodeSystems.ndjson`, `SpaceHealth.ValueSets.ndjson` |
+| `generate_artemis_ndjson.py` | `Artemis*.fsh` | `Artemis.CodeSystems.ndjson`, `Artemis.ValueSets.ndjson` |
+| `generate_marsdirect_ndjson.py` | `Mars*.fsh`, `CrewedMarsMissions.fsh` | `MarsDirect.CodeSystems.ndjson`, `MarsDirect.ValueSets.ndjson` |
+| `generate_nasa_ndjson.py` | `questionnaires/*.fsh`, `terminology/*.fsh` | `NASA.Questionnaires.ndjson`, `NASA.CodeSystems.ndjson`, `NASA.ValueSets.ndjson` |
+| `normalize_ndjson.py` | none (hand-maintained files) | Devices, Locations, Organizations, Goals, PlanDefinitions, ActivityDefinitions, NutritionProducts, Patients, Conditions, Observations, Procedures |
+
+### Standard workflow
+
+```
+sushi .
 cd scripts
-python3 generate_nasa_ndjson.py
-```
-
-**Resources Extracted**:
-
-*Questionnaires (18):*
-- MEDB 1 - Physical Exams: Resting ECG, Audiometry, Dental Exam, Ophthalmologic Exam, Body Composition/DEXA, Body Mass
-- MEDB 2 - Laboratory: Routine Lab Panel, MRSA Screening, TB Testing, H. pylori Screening
-- MEDB 3 - Radiation: Radiation Monitoring/Crew Personal Dosimetry
-- MEDB 5 - Fitness: Aerobic Fitness, Strength Assessment, Exercise Prescription
-- MEDB 6 - EVA: EVA Medical Requirements
-- MEDB 7 - Behavioral: Psychiatric/Psychological Status, Crew Dynamics, Family Support
-
-### generate_artemis_ndjson.py
-
-**Purpose**: Generate downloadable NDJSON files for Artemis mission CodeSystems and ValueSets.
-
-**Source Pages**:
-- `input/pagecontent/missions-artemis.md` (section 15.2.3)
-
-**Output Files**:
-- `input/images/Artemis.CodeSystems.ndjson` (4 CodeSystems)
-- `input/images/Artemis.ValueSets.ndjson` (5 ValueSets)
-
-**Usage**:
-```bash
-cd scripts
+python3 generate_terminology_ndjson.py
 python3 generate_artemis_ndjson.py
-```
-
-**Resources Extracted**:
-
-*CodeSystems (4):*
-- artemis-mission-cs: Mission codes (ARTEMIS-I through ARTEMIS-V)
-- artemis-landing-region-cs: 13 candidate south pole landing regions
-- artemis-certified-devices-cs: Flight-qualified hardware (Orion, SLS, xEMU, etc.)
-- artemis-prototype-devices-cs: Developmental/test hardware
-
-*ValueSets (5):*
-- artemis-mission-vs: All Artemis program missions I-V
-- artemis-landing-region-vs: Landing region bindings
-- artemis-certified-devices-vs: Certified Artemis devices
-- artemis-prototype-devices-vs: Prototype Artemis devices
-- artemis-all-devices-vs: Combined certified and prototype devices
-
-### generate_marsdirect_ndjson.py
-
-**Purpose**: Generate downloadable NDJSON files for Mars Direct mission CodeSystems and ValueSets.
-
-**Source Pages**:
-- `input/pagecontent/missions-marsdirect.md` (section 16.4.3)
-
-**Output Files**:
-- `input/images/MarsDirect.CodeSystems.ndjson` (5 CodeSystems)
-- `input/images/MarsDirect.ValueSets.ndjson` (6 ValueSets)
-
-**Usage**:
-```bash
-cd scripts
 python3 generate_marsdirect_ndjson.py
+python3 generate_nasa_ndjson.py
+python3 normalize_ndjson.py
+cd ..
+python3 scripts/qc_check.py --section ndjson
 ```
 
-**Resources Extracted**:
+Then rebuild the IG (`./_genonce.sh`) so the published copies in the site match.
 
-*CodeSystems (5):*
-- mars-missions-cs: Robotic missions (Mariner 4, Viking, Pathfinder, Spirit, Opportunity, Curiosity, Perseverance)
-- crewed-mars-missions-cs: Architectures (Mars Direct, DRM 3.0, DRA 5.0, Starship, Olympus)
-- mars-landing-sites-cs: Candidate sites with coordinates (Jezero, Arcadia, Gale, Elysium, Hellas, Mawrth)
-- mars-devices-certified-cs: Flight-qualified hardware (Orion, Crew Dragon, ISS ECLSS, EMU, Bio-Monitor)
-- mars-devices-prototype-cs: Developmental (Starship, Mars Habitat, xEMU, ISRU Plant, Kilopower, Rovers)
+### Hand-maintained files
 
-*ValueSets (6):*
-- mars-missions-vs: All Mars missions
-- crewed-mars-missions-vs: Human mission plans
-- mars-landing-sites-vs: Landing site selection
-- mars-devices-certified-vs: Certified devices
-- mars-devices-prototype-vs: Prototype devices
-- mars-all-devices-vs: Combined devices
+The Artemis, Commercial Space and Mars Direct Devices/Locations/Organizations files,
+the Artemis Goals/PlanDefinitions/ActivityDefinitions/NutritionProducts files, and the
+SpaceHealth Conditions/Devices/Locations/Observations/Organizations/Procedures/Patients
+files contain resources that have no FSH source. `normalize_ndjson.py` keeps them on the
+current canonical and version, fixes invalid `Procedure.status` values, and tags the
+fictional Star Trek patients with `meta.source` and `HTEST`. Migrating these resources
+into FSH so they are validated with everything else is a planned follow-up.
 
-### generate_terminology_ndjson.py
+### Renamed artifacts
 
-**Purpose**: Generate downloadable NDJSON files for CodeSystems and ValueSets from astronaut health pages.
-
-**Source Pages**:
-- `input/pagecontent/fitness.md` (section 11.5)
-- `input/pagecontent/mentalhealth.md` (section 10.2.3)
-- `input/pagecontent/scuba-training.md`
-- `input/pagecontent/hyperbaric-medicine.md`
-- `input/pagecontent/radiation-tracking.md` (section 12.2.3)
-- `input/pagecontent/nutrition.md` (section 14.2.3)
-- `input/pagecontent/planetary-protection.md`
-- `input/pagecontent/biomanufacturing.md`
-- `input/pagecontent/crew-rescue.md`
-- `input/pagecontent/space-telemedicine.md`
-- `input/pagecontent/space-omics.md`
-- `input/pagecontent/eva-systems.md`
-- `input/pagecontent/cardiovascular-countermeasures.md`
-
-**Output Files**:
-- `input/images/SpaceHealth.CodeSystems.ndjson` (38 CodeSystems)
-- `input/images/SpaceHealth.ValueSets.ndjson` (35 ValueSets)
-
-**Usage**:
-```bash
-cd scripts
-python generate_terminology_ndjson.py
-```
-
-**Resources Extracted**:
-
-*CodeSystems (38):*
-- Fitness: space-exercise-modality-cs, space-performance-metric-cs
-- Mental Health: aerospace-behavioral-state-cs, behavioral-biomarker-cs, isolation-syndrome-factor-cs, psychological-countermeasure-cs
-- SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-cs, diving-medicine-cs, decompression-protocol-cs, underwater-communication-cs, regulatory-compliance-cs
-- Radiation: space-radiation-type-cs, radiation-countermeasures-cs, radiation-detector-type-cs, space-radiation-cs
-- Nutrition: space-nutrition-type-cs, macronutrient-metrics-cs, hydration-type-cs, nutrition-inventory-status-cs
-- Blood Flow Restriction: bfrt-protocol-cs, bfrt-outcome-cs, bfrt-device-type-cs
-- Planetary Protection: planetary-protection-category-cs, microbial-contaminant-type-cs, sterilization-method-cs
-- Biomanufacturing: biomanufacturing-process-cs, bliss-output-cs
-- Crew Rescue: space-emergency-type-cs, emergency-response-cs
-- Space Telemedicine: telemedicine-modality-cs, telemedicine-equipment-cs
-- Space Omics: space-omics-type-cs, expanded-specimen-type-cs
-- EVA Systems: eva-suit-state-cs, suit-provisioning-status-cs
-- Cardiovascular: microgravity-countermeasure-cs, ijv-flow-grade-cs, parabolic-flight-phase-cs
-
-*ValueSets (35):*
-- Fitness: space-exercise-modality-vs, space-performance-metric-vs, evs-units-vs
-- Mental Health: behavioral-health-metrics-vs, cognitive-performance-indicators-vs, stress-countermeasures-vs, isolation-syndrome-factors-vs
-- SCUBA Training / Hyperbaric Medicine: neutral-buoyancy-training-activities, underwater-training-procedures, diving-contraindicated-conditions
-- Radiation: organ-dose-codes-vs
-- Nutrition: space-nutrition-type-vs, macronutrient-metrics-vs, hydration-type-vs, nutrition-inventory-status-vs, calorie-deficit-risk-vs
-- Blood Flow Restriction: bfrt-protocol-vs, bfrt-outcome-vs, bfrt-device-type-vs
-- Planetary Protection: planetary-protection-category-vs, microbial-contaminant-type-vs, sterilization-method-vs
-- Biomanufacturing: biomanufacturing-process-vs, bliss-output-vs
-- Crew Rescue: space-emergency-type-vs, emergency-response-vs
-- Space Telemedicine: telemedicine-modality-vs, telemedicine-equipment-vs
-- Space Omics: space-omics-type-vs, expanded-specimen-type-vs
-- EVA Systems: eva-suit-state-vs, suit-provisioning-status-vs
-- Cardiovascular: microgravity-countermeasure-vs, ijv-flow-grade-vs, parabolic-flight-phase-vs
-
-## Creating New Scripts
-
-### Template Structure
-
-```python
-#!/usr/bin/env python3
-"""
-Script Name: generate_<resource-type>_ndjson.py
-
-Purpose:
-Describe what this script does and why it exists.
-
-Source Pages:
-- List the IG pages that define the resources
-- Include section numbers for reference
-
-Output Files:
-- List the NDJSON files this script generates
-
-Resources Extracted:
-- List the specific resource IDs included
-"""
-
-import json
-import os
-from pathlib import Path
-
-# Define resource IDs to extract
-RESOURCE_IDS = [
-    'resource-id-1',
-    'resource-id-2',
-    # ... etc
-]
-
-def generate_ndjson(resource_type, resource_ids, output_file):
-    """
-    Generate NDJSON file from FHIR resources.
-
-    Args:
-        resource_type: Type of FHIR resource (e.g., 'CodeSystem', 'ValueSet')
-        resource_ids: List of resource IDs to include
-        output_file: Path to output NDJSON file
-    """
-    # Implementation here
-    pass
-
-if __name__ == '__main__':
-    # Execute generation
-    pass
-```
-
-### Best Practices
-
-1. **Document Source Pages**: Always include comments showing which IG pages define the resources
-2. **List Resource IDs**: Explicitly list all resource IDs being extracted for easy maintenance
-3. **Error Handling**: Check for missing files and report clearly
-4. **Validation**: Verify JSON validity and NDJSON format
-5. **Path Independence**: Use relative paths from project root
-6. **Count Verification**: Report expected vs. actual resource counts
-
-### Testing New Scripts
-
-1. Run the script and verify output file creation
-2. Check line count matches expected resource count: `wc -l <output-file>`
-3. Validate NDJSON format: `jq -c . <output-file> > /dev/null`
-4. Spot-check a few resources: `head -1 <output-file> | jq .`
-5. Verify file is referenced in downloads page
-
-## Future Script Ideas
-
-Based on existing NDJSON files in `input/images/`, consider creating scripts for:
-
-- **SpaceHealth.Devices.ndjson** - Exercise equipment, dosimeters, medical devices
-- **SpaceHealth.Locations.ndjson** - Training facilities, spacecraft, habitats
-- **SpaceHealth.Organizations.ndjson** - Space agencies, research institutions
-- **SpaceHealth.Procedures.ndjson** - Medical procedures, training activities
-- **SpaceHealth.Observations.ndjson** - Vital signs, radiation measurements
-- **SpaceHealth.Conditions.ndjson** - Space-specific medical conditions
-- **SpaceHealth.Patients.Crew.ndjson** - Astronaut/crew patient examples
+When an artifact id changes, add the old→new pair to `ID_RENAMES` in `ndjson_lib.py`.
+The generators then find the old JSON in `docs/` as a fallback and rewrite the id and
+URL, and `normalize_ndjson.py` rewrites references in the hand-maintained files.
 
 ## Maintenance
 
-### When to Re-run Scripts
-
-- After updating FSH definitions for included resources
-- After running `sushi` or `_genonce` to rebuild the IG
-- When adding new resources to the terminology sections
-- Before publishing a new version of the IG
-
-### Updating Scripts
-
-When modifying which resources are included:
-
-1. Update the resource ID lists in the script
-2. Update the count in script documentation
-3. Update this CLAUDE.md file with new totals
-4. Update the IG page that references the download links
-5. Re-run the script to regenerate output files
+- After editing FSH: `sushi .`, run the generators, run `qc_check.py`.
+- Before publishing: `/publish` runs `qc_check.py`, the build, the generators, and
+  `qc_check.py --section ndjson` in that order.
+- Adding a new NDJSON file: add its link to `input/pagecontent/downloads.md` and a row
+  to the table above.
 
 ## References
 
