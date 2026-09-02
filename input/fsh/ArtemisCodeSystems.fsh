@@ -11,7 +11,6 @@ CodeSystem: ArtemisDevicesCS
 Id: artemis-devices-cs
 Title: "Artemis Devices"
 Description: "Unified device inventory for the Artemis program including crewed vehicles, EVA systems, landers, Gateway modules, LunaNet communications and navigation infrastructure, surface mobility (LTV variants and rovers), habitats, logistics assets, ISRU, and power systems"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -20,13 +19,13 @@ Description: "Unified device inventory for the Artemis program including crewed 
 
 // Device type property
 * ^property[0].code = #deviceType
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#deviceType"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-devices-cs#deviceType"
 * ^property[=].description = "Device category (spacecraft, launch-vehicle, suit, life-support, lander, habitat, propulsion, communications, navigation, medical-equipment, rover, drone, logistics, isru, power)"
 * ^property[=].type = #code
 
 // Manufacturer property
 * ^property[+].code = #manufacturer
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-devices-cs#manufacturer"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-devices-cs#manufacturer"
 * ^property[=].description = "Device manufacturer or contractor"
 * ^property[=].type = #string
 

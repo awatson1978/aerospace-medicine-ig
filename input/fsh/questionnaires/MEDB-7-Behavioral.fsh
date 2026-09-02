@@ -4,15 +4,15 @@
 // This file contains questionnaires for MEDB 7.x series behavioral assessments
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
-Alias: $behavioral-state = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
+Alias: $behavioral-state = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 
@@ -31,7 +31,7 @@ Title: "MEDB 7.1 Preflight Psychiatric/Psychological Status Check"
 Description: "NASA Medical Requirements Integration Document for preflight behavioral health assessment. Captures psychiatric/psychological assessment of behavioral readiness for flight and review of psychological services."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-7-1-psych-status"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-1-psych-status"
 * version = "1.0.0"
 * name = "MEDB71PsychStatus"
 * status = #active
@@ -437,7 +437,7 @@ Title: "MEDB 7.4 Crew Dynamics Assessment"
 Description: "NASA Medical Requirements Integration Document for crew dynamics assessment. Evaluates crew cohesion, interpersonal relationships, team functioning, and conflict management throughout mission phases."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-7-4-crew-dynamics"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-4-crew-dynamics"
 * version = "1.0.0"
 * name = "MEDB74CrewDynamics"
 * status = #active
@@ -715,7 +715,7 @@ Title: "MEDB 7.5 Family Support Evaluation"
 Description: "NASA Medical Requirements Integration Document for family support evaluation. Assesses family support systems, identifies needs, and coordinates support services throughout mission phases."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-7-5-family-support"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-7-5-family-support"
 * version = "1.0.0"
 * name = "MEDB75FamilySupport"
 * status = #active

@@ -22,7 +22,7 @@ Instance: ExampleAstronaut
 InstanceOf: Astronaut
 Title: "Example Astronaut"
 Description: "Example astronaut for testing radiation tracking"
-* identifier[0].system = "http://nasa.gov/astronaut-id"
+* identifier[0].system = "https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id"
 * identifier[0].value = "AST-001"
 * active = true
 * name[0].given = "Jane"

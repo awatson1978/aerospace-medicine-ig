@@ -4,14 +4,14 @@
 // This file contains questionnaires for MEDB 5.x series fitness assessments
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -30,7 +30,7 @@ Title: "MEDB 5.1 Aerobic Fitness Assessment"
 Description: "NASA Medical Requirements Integration Document for aerobic fitness assessment. Captures VO2max and related cardiovascular fitness data for spaceflight crew members."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-5-1-aerobic-fitness"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-1-aerobic-fitness"
 * version = "1.0.0"
 * name = "MEDB51AerobicFitness"
 * status = #active
@@ -336,7 +336,7 @@ Title: "MEDB 5.2 Strength Assessment"
 Description: "NASA Medical Requirements Integration Document for muscle strength assessment. Captures isokinetic and isometric strength data for spaceflight crew members."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-5-2-strength-assessment"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-2-strength-assessment"
 * version = "1.0.0"
 * name = "MEDB52StrengthAssessment"
 * status = #active
@@ -559,7 +559,7 @@ Title: "MEDB 5.3 Exercise Prescription"
 Description: "NASA Medical Requirements Integration Document for exercise prescription. Documents in-flight exercise countermeasures protocol and adherence."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-5-3-exercise-prescription"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-5-3-exercise-prescription"
 * version = "1.0.0"
 * name = "MEDB53ExercisePrescription"
 * status = #active

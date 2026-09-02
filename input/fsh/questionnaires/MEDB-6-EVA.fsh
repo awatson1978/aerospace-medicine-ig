@@ -4,14 +4,14 @@
 // This file contains questionnaires for EVA (Extravehicular Activity) medical requirements
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -30,7 +30,7 @@ Title: "MEDB 6.1 EVA Medical Requirements"
 Description: "NASA Medical Requirements Integration Document for EVA medical requirements. Documents medical clearance, prebreathe protocol, and health monitoring for extravehicular activities."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-6-1-eva-medical"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-6-1-eva-medical"
 * version = "1.0.0"
 * name = "MEDB61EVAMedical"
 * status = #active
@@ -280,7 +280,7 @@ Title: "MR087S EVA Prebreathe Protocol"
 Description: "NASA Medical Requirements Integration Document for EVA prebreathe protocol. Tracks oxygen prebreathe procedures to prevent decompression sickness."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr087s-eva-prebreathe"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr087s-eva-prebreathe"
 * version = "1.0.0"
 * name = "MR087SEVAPrebreathe"
 * status = #active

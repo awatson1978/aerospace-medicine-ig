@@ -16,7 +16,6 @@ Id: nasa-mrid-sponsor-cs
 Title: "NASA MRID Sponsor Organizations"
 Description: "Organizations that sponsor medical requirements within NASA's Medical Requirements Integration Documents."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -46,7 +45,6 @@ Id: nasa-mrid-discipline-cs
 Title: "NASA MRID Medical Disciplines"
 Description: "Medical disciplines categorizing NASA Medical Requirements Integration Documents."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -88,7 +86,6 @@ Id: nasa-mission-phase-cs
 Title: "NASA Mission Phase Timing"
 Description: "Mission phases and timing codes for medical requirements scheduling."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -118,7 +115,6 @@ Id: nasa-schedule-offset-cs
 Title: "NASA Schedule Offset Notation"
 Description: "L-minus and R-plus notation codes for mission timeline scheduling."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -163,7 +159,6 @@ Id: nasa-medical-hardware-cs
 Title: "NASA Medical Hardware"
 Description: "Medical equipment and hardware used in NASA medical requirements."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -242,7 +237,6 @@ Id: nasa-medical-facility-cs
 Title: "NASA Medical Facility Locations"
 Description: "Medical testing facility locations for NASA medical requirements."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -276,7 +270,6 @@ Id: nasa-data-archive-cs
 Title: "NASA Medical Data Archive Systems"
 Description: "Data archive and delivery systems for NASA medical data."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
@@ -302,7 +295,6 @@ Id: nasa-medical-roles-cs
 Title: "NASA Medical Personnel Roles"
 Description: "Personnel roles involved in NASA medical requirements."
 
-* ^url = "https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs"
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true

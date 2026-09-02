@@ -4,11 +4,11 @@
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $nb-training = http://hl7.org/fhir/uv/aerospace/CodeSystem/neutral-buoyancy-training-cs
-Alias: $diving-med = http://hl7.org/fhir/uv/aerospace/CodeSystem/diving-medicine-cs
-Alias: $underwater-comm = http://hl7.org/fhir/uv/aerospace/CodeSystem/underwater-communication-cs
-Alias: $regulatory = http://hl7.org/fhir/uv/aerospace/CodeSystem/regulatory-compliance-cs
-Alias: $decompression = http://hl7.org/fhir/uv/aerospace/CodeSystem/decompression-protocol-cs
+Alias: $nb-training = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs
+Alias: $diving-med = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/diving-medicine-cs
+Alias: $underwater-comm = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/underwater-communication-cs
+Alias: $regulatory = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/regulatory-compliance-cs
+Alias: $decompression = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/decompression-protocol-cs
 
 // =====================================================
 // DECOMPRESSION PROTOCOLS AND REGULATORY COMPLIANCE

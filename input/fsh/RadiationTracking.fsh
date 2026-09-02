@@ -4,7 +4,7 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $aerospace = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system
+Alias: $aerospace = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system
 
 // =====================================================
 // CORRECTED EXTENSIONS WITH PROPER CONTEXTS
@@ -14,7 +14,6 @@ Extension: MissionContext
 Id: mission-context
 Title: "Mission Context"
 Description: "Links clinical observations and events to specific space missions"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"

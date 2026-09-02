@@ -9,7 +9,6 @@ CodeSystem: ArtemisCertifiedDevicesCS
 Id: artemis-certified-devices-cs
 Title: "Artemis Certified Devices"
 Description: "Flight-qualified hardware and systems used in Artemis missions (Orion, xEMU, Starship-HLS, Gateway, LTV, etc.)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -18,13 +17,13 @@ Description: "Flight-qualified hardware and systems used in Artemis missions (Or
 
 // Device type property
 * ^property[0].code = #deviceType
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#deviceType"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs#deviceType"
 * ^property[=].description = "Device category (spacecraft, suit, vehicle, habitat, equipment)"
 * ^property[=].type = #code
 
 // Manufacturer property
 * ^property[+].code = #manufacturer
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs#manufacturer"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs#manufacturer"
 * ^property[=].description = "Device manufacturer/contractor"
 * ^property[=].type = #string
 
@@ -114,7 +113,6 @@ CodeSystem: ArtemisPrototypeDevicesCS
 Id: artemis-prototype-devices-cs
 Title: "Artemis Prototype Devices"
 Description: "Developmental and test hardware not yet flight-certified (demo units, ground analogs, next-gen prototypes)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -123,13 +121,13 @@ Description: "Developmental and test hardware not yet flight-certified (demo uni
 
 // Device type property
 * ^property[0].code = #deviceType
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#deviceType"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs#deviceType"
 * ^property[=].description = "Device category (spacecraft, suit, vehicle, habitat, equipment)"
 * ^property[=].type = #code
 
 // Test environment property
 * ^property[+].code = #testEnvironment
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-prototype-devices-cs#testEnvironment"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-prototype-devices-cs#testEnvironment"
 * ^property[=].description = "Primary test environment (ground, ISS, analog-mission)"
 * ^property[=].type = #code
 
@@ -184,7 +182,6 @@ ValueSet: ArtemisCertifiedDevicesVS
 Id: artemis-certified-devices-vs
 Title: "Artemis Certified Devices"
 Description: "Flight-qualified Artemis mission hardware"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-certified-devices-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -194,7 +191,6 @@ ValueSet: ArtemisPrototypeDevicesVS
 Id: artemis-prototype-devices-vs
 Title: "Artemis Prototype Devices"
 Description: "Developmental and test Artemis hardware"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-prototype-devices-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -204,7 +200,6 @@ ValueSet: ArtemisAllDevicesVS
 Id: artemis-all-devices-vs
 Title: "All Artemis Devices"
 Description: "Both certified and prototype Artemis devices"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-all-devices-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

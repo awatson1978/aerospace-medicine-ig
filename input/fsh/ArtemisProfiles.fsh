@@ -13,7 +13,6 @@ Extension: LunarCoordinates
 Id: lunar-coordinates
 Title: "Lunar Coordinates"
 Description: "Selenographic latitude and longitude for lunar surface locations"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/lunar-coordinates"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Location"
@@ -30,7 +29,6 @@ Extension: RadiationShielding
 Id: radiation-shielding
 Title: "Radiation Shielding"
 Description: "Shielding mass and composition for habitat or vehicle"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-shielding"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Device"
@@ -49,7 +47,6 @@ Extension: EVANumber
 Id: eva-number
 Title: "EVA Number"
 Description: "Sequential EVA identifier within a mission (e.g., EVA-1, EVA-2)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/eva-number"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Procedure"
@@ -179,12 +176,12 @@ Description: "Radiation exposure observation for deep space missions with GCR vs
     shieldingCondition 0..1 MS and
     tissueType 0..1 MS
 
-* component[radiationSource].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"
+* component[radiationSource].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
 // Note: Bind to RadiationSourceVS from radiation tracking module if available
 // * component[radiationSource].code.coding.code from RadiationSourceVS (extensible)
 * component[radiationSource].value[x] only CodeableConcept
 
-* component[shieldingCondition].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs"
+* component[shieldingCondition].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
 * component[shieldingCondition].value[x] only string
 
 * component[tissueType].code.coding.system = $sct

@@ -11,7 +11,6 @@ CodeSystem: ArtemisLandingRegionCS
 Id: artemis-landing-region-cs
 Title: "Artemis Landing Regions"
 Description: "Candidate Artemis III landing regions near the lunar south pole (within 6° of pole, near permanently shadowed craters)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -20,17 +19,17 @@ Description: "Candidate Artemis III landing regions near the lunar south pole (w
 
 // Coordinate properties
 * ^property[0].code = #latitude
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#latitude"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs#latitude"
 * ^property[=].description = "Approximate selenographic latitude (degrees)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #longitude
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#longitude"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs#longitude"
 * ^property[=].description = "Approximate selenographic longitude (degrees)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #feature
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-landing-region-cs#feature"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-landing-region-cs#feature"
 * ^property[=].description = "Primary topographic feature (crater, massif, plateau, ridge)"
 * ^property[=].type = #string
 
@@ -160,7 +159,6 @@ ValueSet: ArtemisLandingRegionVS
 Id: artemis-landing-region-vs
 Title: "Artemis Landing Regions"
 Description: "Candidate Artemis III south pole landing regions for Location bindings"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-landing-region-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

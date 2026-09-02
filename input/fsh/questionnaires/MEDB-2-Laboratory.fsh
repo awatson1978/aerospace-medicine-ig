@@ -4,14 +4,14 @@
 // This file contains questionnaires for MEDB 2.x series laboratory assessments
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -30,7 +30,7 @@ Title: "MEDB 2.1 Routine Laboratory Panel"
 Description: "NASA Medical Requirements Integration Document for routine laboratory panel. Captures comprehensive blood chemistry, hematology, and urinalysis data for spaceflight crew members."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-2-1-routine-lab-panel"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-1-routine-lab-panel"
 * version = "1.0.0"
 * name = "MEDB21RoutineLabPanel"
 * status = #active
@@ -401,7 +401,7 @@ Title: "MEDB 2.2 MRSA Screening"
 Description: "NASA Medical Requirements Integration Document for MRSA screening. Screens crew members for Methicillin-resistant Staphylococcus aureus colonization prior to spaceflight."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-2-2-mrsa-screening"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-2-mrsa-screening"
 * version = "1.0.0"
 * name = "MEDB22MRSAScreening"
 * status = #active
@@ -586,7 +586,7 @@ Title: "MEDB 2.3 Tuberculosis Testing"
 Description: "NASA Medical Requirements Integration Document for tuberculosis screening. Screens crew members for TB infection prior to spaceflight."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-2-3-tb-testing"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-3-tb-testing"
 * version = "1.0.0"
 * name = "MEDB23TBTesting"
 * status = #active
@@ -727,7 +727,7 @@ Title: "MEDB 2.4 H. pylori Screening"
 Description: "NASA Medical Requirements Integration Document for Helicobacter pylori screening. Screens crew members for H. pylori infection prior to long-duration spaceflight."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-2-4-hpylori-screening"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-2-4-hpylori-screening"
 * version = "1.0.0"
 * name = "MEDB24HpyloriScreening"
 * status = #active

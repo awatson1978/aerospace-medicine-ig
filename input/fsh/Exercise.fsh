@@ -15,7 +15,6 @@ Extension: ExerciseDevice
 Id: exercise-device
 Title: "Exercise Device"
 Description: "Reference to the exercise equipment used (e.g., T2 Treadmill, ARED, CEVIS)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -28,7 +27,6 @@ Extension: HarnessLoad
 Id: harness-load
 Title: "Harness Load"
 Description: "Percentage of body weight applied by harness during treadmill exercise"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -41,7 +39,6 @@ Extension: DerivedFromGroup
 Id: derived-from-group
 Title: "Derived From Activity Group"
 Description: "Links aggregated metrics to source activity group observations"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/derived-from-group"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -79,7 +76,7 @@ Description: "Individual exercise measurement (duration, intensity, heart rate, 
 
 * code.coding[basePA] ^short = "Physical activity measurement type (LOINC or PA temp codes)"
 * code.coding[spaceModality] ^short = "Space-specific exercise modality"
-* code.coding[spaceModality].system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"
+* code.coding[spaceModality].system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs"
 
 * subject 1..1 MS
 * subject only Reference(Astronaut)

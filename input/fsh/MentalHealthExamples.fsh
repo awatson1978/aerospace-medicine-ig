@@ -3,10 +3,10 @@
 
 Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $behavioral-state-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs
-Alias: $behavioral-biomarker-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs
-Alias: $isolation-factor-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs
-Alias: $psych-countermeasure-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs
+Alias: $behavioral-state-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs
+Alias: $behavioral-biomarker-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs
+Alias: $isolation-factor-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs
+Alias: $psych-countermeasure-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs
 
 // =====================================================
 // BEHAVIORAL HEALTH STATE EXAMPLES
@@ -101,7 +101,7 @@ Description: "Third-quarter phenomenon stress accumulation with breakdown by emo
 Usage: #example
 
 * status = #final
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
 * code.coding.code = #cumulative-stress
 * code.coding.display = "Cumulative stress burden"
 
@@ -142,7 +142,7 @@ Description: "End-of-mission cumulative stress burden showing sustained elevatio
 Usage: #example
 
 * status = #final
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs"
 * code.coding.code = #cumulative-stress
 * code.coding.display = "Cumulative stress burden"
 
@@ -170,7 +170,7 @@ Usage: #example
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs"
 * code.coding.code = #confinement
 * code.coding.display = "Confinement"
 
@@ -190,7 +190,7 @@ Usage: #example
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs"
 * code.coding.code = #interpersonal-friction
 * code.coding.display = "Interpersonal friction"
 
@@ -210,7 +210,7 @@ Usage: #example
 
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#survey "Survey"
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isolation-syndrome-factor-cs"
 * code.coding.code = #circadian-drift
 * code.coding.display = "Circadian drift"
 

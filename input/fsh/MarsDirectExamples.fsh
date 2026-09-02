@@ -16,7 +16,7 @@ Title: "Mars Crew Member - Commander Chen"
 Description: "Example Mars crew member (Commander Sarah Chen) with baseline health data"
 Usage: #example
 
-* identifier[0].system = "http://nasa.gov/astronaut-id"
+* identifier[0].system = "https://awatson1978.github.io/aerospace-medicine-ig/identifier/astronaut-id"
 * identifier[=].value = "AST-2029-001"
 * name[0].family = "Chen"
 * name[=].given[0] = "Sarah"
@@ -39,7 +39,7 @@ Usage: #example
 * status = #active
 * mode = #instance
 
-* type.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs"
+* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
 * type.coding.code = #surface-habitat
 * type.text = "Mars surface habitat"
 
@@ -60,7 +60,7 @@ Usage: #example
 * deviceName.name = "Mars Direct ISRU Unit #1 - Jezero"
 * deviceName.type = #user-friendly-name
 
-* type.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
+* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-devices-prototype-cs"
 * type.coding.code = #isruPlant
 * type.text = "ISRU Propellant Plant"
 
@@ -126,10 +126,10 @@ Description: "Cumulative propellant production by Sol 210 (7 months operation)"
 Usage: #example
 
 * status = #final
-* category[operational].coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace"
+* category[operational].coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/observation-category-aerospace"
 * category[operational].coding.code = #operational
 
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"
 * code.coding.code = #cumulative-propellant
 * code.coding.display = "Cumulative Propellant Production"
 
@@ -142,11 +142,11 @@ Usage: #example
 
 * device = Reference(ISRU-Plant-Jezero-1)
 
-* component[reactorStatus].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs"
+* component[reactorStatus].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"
 * component[reactorStatus].code.coding.code = #reactor-status
 * component[reactorStatus].valueString = "Nominal operation, 96% efficiency"
 
-* component[powerConsumption].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isru-metrics-cs"
+* component[powerConsumption].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/isru-metrics-cs"
 * component[powerConsumption].code.coding.code = #power-consumption
 * component[powerConsumption].valueQuantity.value = 25.3
 * component[powerConsumption].valueQuantity.unit = "kW"

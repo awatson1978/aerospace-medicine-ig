@@ -53,12 +53,12 @@ Each neutral buoyancy session is documented using the [`NeutralBuoyancySession`]
 {
   "resourceType": "Procedure",
   "meta": {
-    "profile": ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/neutral-buoyancy-session"]
+    "profile": ["https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/neutral-buoyancy-session"]
   },
   "status": "completed",
   "code": {
     "coding": [{
-      "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/neutral-buoyancy-training-cs",
+      "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/neutral-buoyancy-training-cs",
       "code": "eva-simulation",
       "display": "EVA Simulation Training"
     }]

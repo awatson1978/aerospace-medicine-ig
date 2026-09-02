@@ -13,7 +13,6 @@ CodeSystem: ArtemisMissionCS
 Id: artemis-mission-cs
 Title: "Artemis Missions"
 Description: "Historical and planned Artemis program missions with target destinations, launch dates, and status"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -22,19 +21,19 @@ Description: "Historical and planned Artemis program missions with target destin
 
 // Mission status property
 * ^property[0].code = #status
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs#status"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs#status"
 * ^property[=].description = "Mission status (completed, in-progress, planned)"
 * ^property[=].type = #code
 
 // Target destination property
 * ^property[+].code = #target
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs#target"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs#target"
 * ^property[=].description = "Target destination (orbit or landing)"
 * ^property[=].type = #string
 
 // Launch date property
 * ^property[+].code = #launchDate
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-mission-cs#launchDate"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-mission-cs#launchDate"
 * ^property[=].description = "Launch date of mission (actual or planned)"
 * ^property[=].type = #dateTime
 
@@ -277,7 +276,6 @@ ValueSet: ArtemisMissionVS
 Id: artemis-mission-vs
 Title: "Artemis Missions"
 Description: "All Artemis program missions I-XXX"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/artemis-mission-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

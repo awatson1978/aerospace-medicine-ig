@@ -94,11 +94,11 @@ All space travelers wear multiple types of radiation detectors documented using 
 {
   "resourceType": "Device",
   "meta": {
-    "profile": ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-detector"]
+    "profile": ["https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-detector"]
   },
   "type": {
     "coding": [{
-      "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-detector-type-cs",
+      "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-detector-type-cs",
       "code": "epd",
       "display": "Electronic Personal Dosimeter"
     }]
@@ -107,7 +107,7 @@ All space travelers wear multiple types of radiation detectors documented using 
     {
       "type": {
         "coding": [{
-          "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system-enhanced",
+          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system-enhanced",
           "code": "sensitivity"
         }]
       },
@@ -158,7 +158,7 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
 {
   "resourceType": "Observation",
   "meta": {
-    "profile": ["http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-radiation-exposure"]
+    "profile": ["https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-radiation-exposure"]
   },
   "status": "final",
   "category": [{
@@ -185,10 +185,10 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/radiation-type",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/radiation-type",
       "valueCodeableConcept": {
         "coding": [{
-          "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-radiation-type-cs",
+          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-radiation-type-cs",
           "code": "gcr",
           "display": "Galactic Cosmic Radiation"
         }]
@@ -199,7 +199,7 @@ The radiation exposure tracking profiles extend the base FHIR resources to accom
     {
       "code": {
         "coding": [{
-          "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system-enhanced",
+          "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system-enhanced",
           "code": "bone-marrow-dose"
         }]
       },

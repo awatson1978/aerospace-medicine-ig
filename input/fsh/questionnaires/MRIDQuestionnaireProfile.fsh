@@ -7,8 +7,8 @@
 // structure for spaceflight medical requirements.
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
 
 // ============================================================================
 // MRID Questionnaire Profile
@@ -90,7 +90,6 @@ Extension: MRIDSponsor
 Id: mrid-sponsor
 Title: "MRID Sponsor"
 Description: "The NASA organizational sponsor responsible for the medical requirement"
-* ^url = "https://mitre.org/fhir/space-health/StructureDefinition/mrid-sponsor"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Questionnaire"
@@ -101,7 +100,6 @@ Extension: MRIDDiscipline
 Id: mrid-discipline
 Title: "MRID Discipline"
 Description: "The medical discipline category for the medical requirement"
-* ^url = "https://mitre.org/fhir/space-health/StructureDefinition/mrid-discipline"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Questionnaire"
@@ -112,7 +110,6 @@ Extension: MRIDDocumentNumber
 Id: mrid-document-number
 Title: "MRID Document Number"
 Description: "The official MRID document identifier (e.g., MEDB 3.1, MR004L, MR005S)"
-* ^url = "https://mitre.org/fhir/space-health/StructureDefinition/mrid-document-number"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Questionnaire"
@@ -123,7 +120,6 @@ Extension: MRIDFlightDuration
 Id: mrid-flight-duration
 Title: "MRID Flight Duration Requirement"
 Description: "Indicates the flight duration requirements for this medical requirement (e.g., 'All flights', '>= 30 days', '>= 180 days')"
-* ^url = "https://mitre.org/fhir/space-health/StructureDefinition/mrid-flight-duration"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Questionnaire"
@@ -133,7 +129,6 @@ Extension: MRIDFrequency
 Id: mrid-frequency
 Title: "MRID Frequency"
 Description: "How often this medical requirement applies (e.g., 'Every ISS Increment', 'Annual', 'Per mission')"
-* ^url = "https://mitre.org/fhir/space-health/StructureDefinition/mrid-frequency"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Questionnaire"
@@ -143,7 +138,6 @@ Extension: MRIDLaunchContext
 Id: mrid-launch-context
 Title: "MRID Launch Context"
 Description: "Context for pre-populating the questionnaire with astronaut/patient reference. Compatible with SDC launchContext pattern."
-* ^url = "https://mitre.org/fhir/space-health/StructureDefinition/mrid-launch-context"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Questionnaire"

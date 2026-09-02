@@ -231,7 +231,7 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
   "resourceType": "NutritionIntake",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-nutrition-intake"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-nutrition-intake"
     ]
   },
   "status": "completed",
@@ -261,7 +261,7 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueCode": "iss-expedition-72"
     }
   ]
@@ -275,14 +275,14 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
   "resourceType": "Observation",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/calorie-deficit-assessment"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/calorie-deficit-assessment"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/macronutrient-metrics-cs",
+        "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/macronutrient-metrics-cs",
         "code": "calorie-deficit",
         "display": "Daily Calorie Balance"
       }
@@ -306,7 +306,7 @@ Advanced parameters enable deeper physiologic monitoring and risk assessment:
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueCode": "eva-day"
     }
   ]

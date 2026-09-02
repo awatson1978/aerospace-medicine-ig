@@ -671,7 +671,6 @@ CodeSystem: OperationalStatusCS
 Id: operational-status-cs
 Title: "Operational Status Code System"
 Description: "Operational status codes for facilities and vehicles"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs"
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
@@ -679,7 +678,7 @@ Description: "Operational status codes for facilities and vehicles"
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Aerospace Medicine"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^contact.telecom.value = "https://github.com/awatson1978/aerospace-medicine-ig"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * #active "Active and operational" "The facility or vehicle is currently active and operational"
 * #maintenance "Under maintenance" "The facility or vehicle is temporarily offline for maintenance"
@@ -697,7 +696,6 @@ CodeSystem: LocationCapabilitiesCS
 Id: location-capabilities-cs
 Title: "Location Capabilities Code System"
 Description: "Capabilities and services available at aerospace medicine locations"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs"
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
@@ -705,7 +703,7 @@ Description: "Capabilities and services available at aerospace medicine location
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Aerospace Medicine"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^contact.telecom.value = "https://github.com/awatson1978/aerospace-medicine-ig"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * #eva-simulation "EVA Simulation Training" "Facility capable of extravehicular activity simulation training"
 * #hyperbaric-treatment "Hyperbaric Treatment" "Facility with hyperbaric oxygen therapy capabilities"
@@ -730,13 +728,12 @@ ValueSet: OperationalStatusVS
 Id: operational-status-vs
 Title: "Operational Status Value Set"
 Description: "Operational status codes for facilities and vehicles"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/operational-status-vs"
 * ^experimental = false
 * ^status = #active
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Aerospace Medicine"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^contact.telecom.value = "https://github.com/awatson1978/aerospace-medicine-ig"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * include codes from system OperationalStatusCS
 
@@ -744,13 +741,12 @@ ValueSet: LocationCapabilitiesVS
 Id: location-capabilities-vs
 Title: "Location Capabilities Value Set"
 Description: "Capabilities and services available at aerospace medicine locations"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/location-capabilities-vs"
 * ^experimental = false
 * ^status = #active
 * ^version = "1.0.0"
 * ^publisher = "HL7 International / Aerospace Medicine"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^contact.telecom.value = "https://github.com/awatson1978/aerospace-medicine-ig"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 * include codes from system LocationCapabilitiesCS
 
@@ -759,8 +755,8 @@ Description: "Capabilities and services available at aerospace medicine location
 // =====================================================
 
 // Add these aliases to files that need to reference these systems
-Alias: $operational-status = http://hl7.org/fhir/uv/aerospace/CodeSystem/operational-status-cs
-Alias: $location-capabilities = http://hl7.org/fhir/uv/aerospace/CodeSystem/location-capabilities-cs
+Alias: $operational-status = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/operational-status-cs
+Alias: $location-capabilities = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-capabilities-cs
 // =====================================================
 // LOCATION SUMMARY AND RECOMMENDATIONS
 // =====================================================

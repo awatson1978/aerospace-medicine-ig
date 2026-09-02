@@ -9,7 +9,6 @@ CodeSystem: SpaceExerciseModalityCS
 Id: space-exercise-modality-cs
 Title: "Space Exercise Modality Code System"
 Description: "Spaceflight-specific exercise modalities used in microgravity and partial gravity environments (e.g., ISS treadmill, ARED resistive training, artificial gravity)."
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -38,7 +37,6 @@ CodeSystem: SpacePerformanceMetricCS
 Id: space-performance-metric-cs
 Title: "Space Exercise Performance Metric Code System"
 Description: "Key performance metrics for space-based exercise sessions (e.g., power output, VO2 surrogate, effective ground reaction force)."
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-performance-metric-cs"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -73,7 +71,6 @@ ValueSet: SpaceExerciseModalityVS
 Id: space-exercise-modality-vs
 Title: "Space Exercise Modality Value Set"
 Description: "Permitted space exercise modalities, derived from the Space Exercise Modality Code System."
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/space-exercise-modality-vs"
 * ^status = #active
 * ^experimental = false
 

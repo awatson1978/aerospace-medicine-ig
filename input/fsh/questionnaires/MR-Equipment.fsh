@@ -4,14 +4,14 @@
 // This file contains questionnaires for medical equipment and kit management
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -30,7 +30,7 @@ Title: "MR036L Medical Kit Inventory"
 Description: "NASA Medical Requirements Integration Document for medical kit inventory management. Tracks medical supplies, equipment status, and expiration dates aboard ISS."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr036l-medical-kit-inventory"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr036l-medical-kit-inventory"
 * version = "1.0.0"
 * name = "MR036LMedicalKitInventory"
 * status = #active
@@ -265,7 +265,7 @@ Title: "MR026L Reconditioning Assessment"
 Description: "NASA Medical Requirements Integration Document for postflight reconditioning. Tracks crew recovery and rehabilitation progress after long-duration spaceflight."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr026l-reconditioning"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr026l-reconditioning"
 * version = "1.0.0"
 * name = "MR026LReconditioning"
 * status = #active
@@ -470,7 +470,7 @@ Title: "MR050L Pharmaceutical Management"
 Description: "NASA Medical Requirements Integration Document for pharmaceutical management aboard ISS. Tracks medication inventory, storage conditions, dispensing, and stability monitoring."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr050l-pharmaceutical-management"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr050l-pharmaceutical-management"
 * version = "1.0.0"
 * name = "MR050LPharmaceuticalManagement"
 * status = #active
@@ -658,7 +658,7 @@ Title: "MR032L Telemedicine Setup"
 Description: "NASA Medical Requirements Integration Document for telemedicine setup and operations. Configures communication links, verifies equipment, and ensures readiness for remote medical support."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr032l-telemedicine-setup"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr032l-telemedicine-setup"
 * version = "1.0.0"
 * name = "MR032LTelemedicineSetup"
 * status = #active
@@ -843,7 +843,7 @@ Title: "MR008L Medical Hardware Maintenance"
 Description: "NASA Medical Requirements Integration Document for medical hardware maintenance. Tracks calibration schedules, preventive maintenance, and equipment functionality verification."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr008l-medical-hardware-maintenance"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr008l-medical-hardware-maintenance"
 * version = "1.0.0"
 * name = "MR008LMedicalHardwareMaintenance"
 * status = #active

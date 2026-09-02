@@ -13,7 +13,6 @@ CodeSystem: CrewedMarsMissionsCS
 Id: crewed-mars-missions-cs
 Title: "Human Mars Mission Plans"
 Description: "Proposed or conceptual human mission architectures to Mars (Mars Direct, NASA DRMs, SpaceX, etc.)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -22,25 +21,25 @@ Description: "Proposed or conceptual human mission architectures to Mars (Mars D
 
 // Proposer property
 * ^property[0].code = #proposer
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#proposer"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#proposer"
 * ^property[=].description = "Organization or individual proposing the architecture"
 * ^property[=].type = #string
 
 // Year property
 * ^property[+].code = #year
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#year"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#year"
 * ^property[=].description = "Year of proposal or major update"
 * ^property[=].type = #integer
 
 // Crew size property
 * ^property[+].code = #crewSize
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#crewSize"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#crewSize"
 * ^property[=].description = "Nominal crew size"
 * ^property[=].type = #integer
 
 // Surface stay property
 * ^property[+].code = #surfaceStayDays
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/crewed-mars-missions-cs#surfaceStayDays"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/crewed-mars-missions-cs#surfaceStayDays"
 * ^property[=].description = "Planned surface stay duration in days"
 * ^property[=].type = #integer
 
@@ -145,7 +144,6 @@ ValueSet: CrewedMarsMissionsVS
 Id: crewed-mars-missions-vs
 Title: "Human Mars Mission Plans"
 Description: "Proposed and conceptual human mission architectures to Mars"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/crewed-mars-missions-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

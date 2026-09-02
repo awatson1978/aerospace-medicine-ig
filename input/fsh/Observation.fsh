@@ -1,5 +1,5 @@
 // Aliases for systems (optional but handy)
-Alias: $behavioral-biomarker-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs
+Alias: $behavioral-biomarker-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs
 
 // ---------------------------------------------------------
 // Extension: IsolationRisk
@@ -8,7 +8,6 @@ Extension: IsolationRisk
 Id: isolation-risk
 Title: "Isolation Risk Factor"
 Description: "Captures isolation and confinement risk factors affecting behavioral health"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk"
 * ^status = #active
 * ^context.type = #element
 * ^context.expression = "Procedure"
@@ -23,7 +22,6 @@ Parent: Observation
 Id: behavioral-health-state
 Title: "Behavioral Health State"
 Description: "Point-in-time behavioral and psychological state assessment for aerospace missions."
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
 * ^status = #active
 
 // Must be a psychological / behavioral category
@@ -68,7 +66,7 @@ Description: "Point-in-time behavioral and psychological state assessment for ae
 * component[sleep-efficiency].valueQuantity.unit = "%"
 
 
-Alias: $aerospace-behavioral-state-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs
+Alias: $aerospace-behavioral-state-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs
 
 // ---------------------------------------------------------
 // Profile: CumulativeStressBurden (Observation)
@@ -78,13 +76,12 @@ Parent: Observation
 Id: cumulative-stress-burden
 Title: "Cumulative Stress Burden"
 Description: "Longitudinal, integrated measure of cumulative stress burden analogous to cumulative radiation dose."
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
 * ^status = #active
 
 // Ensure code is fixed to cumulative-stress
 * code 1..1
 * code.coding 1..1
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs" (exactly)
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs" (exactly)
 * code.coding.code = #cumulative-stress (exactly)
 
 // Subject and time as usual
@@ -100,7 +97,7 @@ Description: "Longitudinal, integrated measure of cumulative stress burden analo
 
 // Mission context extension (re-using radiation pattern)
 * extension contains
-    http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context named missionContext 0..1
+    https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context named missionContext 0..1
 
 // Optional breakdown by domain (emotional, cognitive, social) via components
 * component ^slicing.discriminator[0].type = #pattern
@@ -118,8 +115,8 @@ Description: "Longitudinal, integrated measure of cumulative stress burden analo
 * component[social].value[x] only Quantity
 
 
-Alias: $psych-countermeasure-cs = http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs
-Alias: $stress-countermeasures-vs = http://hl7.org/fhir/uv/aerospace/ValueSet/stress-countermeasures-vs
+Alias: $psych-countermeasure-cs = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/psychological-countermeasure-cs
+Alias: $stress-countermeasures-vs = https://awatson1978.github.io/aerospace-medicine-ig/ValueSet/stress-countermeasures-vs
 
 // ---------------------------------------------------------
 // Profile: PsychologicalCountermeasureActivity (Procedure)
@@ -129,7 +126,6 @@ Parent: Procedure
 Id: psychological-countermeasure-activity
 Title: "Psychological Countermeasure Activity"
 Description: "Documentation of psychological countermeasure interventions for behavioral health in aerospace missions."
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/psychological-countermeasure-activity"
 * ^status = #active
 
 // Basic cardinalities
@@ -149,8 +145,8 @@ Description: "Documentation of psychological countermeasure interventions for be
 
 // mission-context & isolation factors (re-use existing extension patterns)
 * extension contains
-    http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context named missionContext 0..1 and
-    http://hl7.org/fhir/uv/aerospace/StructureDefinition/isolation-risk named isolationRisk 0..*
+    https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context named missionContext 0..1 and
+    https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/isolation-risk named isolationRisk 0..*
 
 // Link to related assessments when available
 * reasonReference 0..*

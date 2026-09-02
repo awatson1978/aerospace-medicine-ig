@@ -216,7 +216,6 @@ CodeSystem: AerospaceBehavioralStateCS
 Id: aerospace-behavioral-state-cs
 Title: "Aerospace Behavioral State Code System"
 Description: "Codes describing behavioral and psychological state parameters in aerospace missions."
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs"
 * ^status = #active
 * ^caseSensitive = true
 
@@ -246,7 +245,6 @@ CodeSystem: BehavioralBiomarkerCS
 Id: behavioral-biomarker-cs
 Title: "Behavioral Biomarker Code System"
 Description: "Codes for physiologic and digital biomarkers related to behavioral health and stress."
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs"
 * ^status = #active
 * ^caseSensitive = true
 
@@ -274,7 +272,6 @@ CodeSystem: IsolationSyndromeFactorCS
 Id: isolation-syndrome-factor-cs
 Title: "Isolation Syndrome Factor Code System"
 Description: "Factors contributing to isolation, confinement, and psychosocial risk in aerospace missions."
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/isolation-syndrome-factor-cs"
 * ^status = #active
 * ^caseSensitive = true
 
@@ -302,7 +299,6 @@ CodeSystem: PsychologicalCountermeasureCS
 Id: psychological-countermeasure-cs
 Title: "Psychological Countermeasure Code System"
 Description: "Codes for psychological countermeasure interventions in aerospace missions."
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/psychological-countermeasure-cs"
 * ^status = #active
 * ^caseSensitive = true
 

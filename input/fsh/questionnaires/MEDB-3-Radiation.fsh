@@ -6,14 +6,14 @@
 // Purpose: Monitor and document crew radiation exposure, perform risk assessment
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -25,7 +25,7 @@ Title: "MEDB 3.1 Radiation Monitoring/Crew Personal Dosimetry"
 Description: "NASA Medical Requirements Integration Document for radiation monitoring and crew personal dosimetry. Captures crew radiation exposure data for occupational exposure documentation and health risk assessment."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-3-1-radiation-monitoring"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-3-1-radiation-monitoring"
 * version = "1.0.0"
 * name = "MEDB31RadiationMonitoring"
 * status = #active
@@ -497,7 +497,7 @@ Title: "MR092L Solar Particle Event Protocol"
 Description: "NASA Medical Requirements Integration Document for Solar Particle Event protocol. Monitors SPE alerts, coordinates crew protective actions, and tracks exposure during events."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr092l-spe-protocol"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr092l-spe-protocol"
 * version = "1.0.0"
 * name = "MR092LSPEProtocol"
 * status = #active
@@ -704,7 +704,7 @@ Title: "MR093L Radiation Contingency"
 Description: "NASA Medical Requirements Integration Document for radiation contingency events. Documents unexpected radiation events, crew response, and medical assessment."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr093l-radiation-contingency"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr093l-radiation-contingency"
 * version = "1.0.0"
 * name = "MR093LRadiationContingency"
 * status = #active

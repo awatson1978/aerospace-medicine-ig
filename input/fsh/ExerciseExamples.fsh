@@ -5,7 +5,7 @@ Alias: $pa-temp = http://hl7.org/fhir/us/physical-activity/CodeSystem/pa-tempora
 Alias: $loinc = http://loinc.org
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $obs-cat = http://terminology.hl7.org/CodeSystem/observation-category
-Alias: SpaceExerciseModCS = http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs
+Alias: SpaceExerciseModCS = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs
 
 // =====================================================
 // ENCOUNTER: ISS Expedition 75

@@ -9,7 +9,6 @@ CodeSystem: MarsCertifiedDevicesCS
 Id: mars-devices-certified-cs
 Title: "Mars Mission Devices - Certified"
 Description: "Flight-qualified hardware and systems operational or used in Mars mission planning (ISS heritage, Orion, etc.)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -18,13 +17,13 @@ Description: "Flight-qualified hardware and systems operational or used in Mars 
 
 // Device type property
 * ^property[0].code = #deviceType
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs#deviceType"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-devices-certified-cs#deviceType"
 * ^property[=].description = "Device category"
 * ^property[=].type = #code
 
 // Manufacturer property
 * ^property[+].code = #manufacturer
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-certified-cs#manufacturer"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-devices-certified-cs#manufacturer"
 * ^property[=].description = "Device manufacturer"
 * ^property[=].type = #string
 
@@ -79,7 +78,6 @@ CodeSystem: MarsPrototypeDevicesCS
 Id: mars-devices-prototype-cs
 Title: "Mars Mission Devices - Prototype"
 Description: "Developmental or conceptual hardware for Mars missions (prototypes, test articles, planned systems)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -88,13 +86,13 @@ Description: "Developmental or conceptual hardware for Mars missions (prototypes
 
 // Device type property
 * ^property[0].code = #deviceType
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs#deviceType"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-devices-prototype-cs#deviceType"
 * ^property[=].description = "Device category"
 * ^property[=].type = #code
 
 // Test environment property
 * ^property[+].code = #testEnvironment
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-devices-prototype-cs#testEnvironment"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-devices-prototype-cs#testEnvironment"
 * ^property[=].description = "Primary test environment"
 * ^property[=].type = #code
 
@@ -156,7 +154,6 @@ ValueSet: MarsCertifiedDevicesVS
 Id: mars-devices-certified-vs
 Title: "Mars Mission Devices - Certified"
 Description: "Flight-qualified hardware for Mars missions"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-certified-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -166,7 +163,6 @@ ValueSet: MarsPrototypeDevicesVS
 Id: mars-devices-prototype-vs
 Title: "Mars Mission Devices - Prototype"
 Description: "Developmental and test hardware for Mars missions"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-devices-prototype-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -176,7 +172,6 @@ ValueSet: MarsAllDevicesVS
 Id: mars-all-devices-vs
 Title: "All Mars Mission Devices"
 Description: "Both certified and prototype Mars devices"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-all-devices-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

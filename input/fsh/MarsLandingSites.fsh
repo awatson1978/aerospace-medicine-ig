@@ -13,7 +13,6 @@ Title: "Mars Landing Sites (Candidate)"
 Description: "Candidate landing sites for human Mars missions with are
 
 ographic coordinates and site characteristics"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -22,17 +21,17 @@ ographic coordinates and site characteristics"
 
 // Coordinate properties
 * ^property[0].code = #latitude
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs#latitude"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs#latitude"
 * ^property[=].description = "Areographic latitude (degrees, -90 to +90)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #longitude
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs#longitude"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs#longitude"
 * ^property[=].description = "Areographic longitude (degrees, 0 to 360)"
 * ^property[=].type = #decimal
 
 * ^property[+].code = #feature
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-landing-sites-cs#feature"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-landing-sites-cs#feature"
 * ^property[=].description = "Primary topographic feature"
 * ^property[=].type = #string
 
@@ -99,7 +98,6 @@ ValueSet: MarsLandingSitesVS
 Id: mars-landing-sites-vs
 Title: "Mars Landing Sites"
 Description: "Candidate landing sites for human Mars missions"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-landing-sites-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

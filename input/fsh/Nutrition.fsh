@@ -4,7 +4,7 @@
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
-Alias: $aerospace = http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-code-system
+Alias: $aerospace = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-code-system
 
 // =====================================================
 // EXTENSIONS
@@ -14,7 +14,6 @@ Extension: EnergyExpenditure
 Id: energy-expenditure
 Title: "Energy Expenditure"
 Description: "Total daily energy expenditure in kcal/day"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/energy-expenditure"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -26,7 +25,6 @@ Extension: HydrationDeficit
 Id: hydration-deficit
 Title: "Hydration Deficit"
 Description: "Daily hydration deficit in liters per day"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/hydration-deficit"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -38,7 +36,6 @@ Extension: InventoryRiskFlag
 Id: inventory-risk-flag
 Title: "Inventory Risk Flag"
 Description: "Risk level for nutrition inventory status"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/inventory-risk-flag"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "InventoryItem"
@@ -49,7 +46,6 @@ Extension: ShelfLifeDecay
 Id: shelf-life-decay
 Title: "Shelf Life Decay"
 Description: "Degradation of nutritional value over time in space conditions"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/shelf-life-decay"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "NutritionProduct"
@@ -60,7 +56,6 @@ Extension: RehydrationRequirement
 Id: rehydration-requirement
 Title: "Rehydration Requirement"
 Description: "Amount of water required to prepare space food"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/rehydration-requirement"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "NutritionProduct"

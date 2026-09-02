@@ -4,7 +4,7 @@ Title: "FAA Form 8500-8 Questionnaire"
 Description: "FAA Form 8500-8 Application for Airman Medical Certificate converted to FHIR Questionnaire format"
 Usage: #definition
 
-* url = "http://hl7.org/fhir/uv/aerospace/Questionnaire/faa-form-8500-8"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/faa-form-8500-8"
 * version = "1.0.0"
 * status = #active
 * date = "2025-05-21"
@@ -887,7 +887,7 @@ Title: "G-SHOCK Centrifugal Trainer Eligibility Questionnaire"
 Description: "Pre-training screening questionnaire to determine eligibility for G-SHOCK multi-axis gimbal training"
 Usage: #definition
 
-* url = "http://aerospace-medicine.org/fhir/Questionnaire/g-shock-eligibility"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/GShockEligibility"
 * version = "1.0.0"
 * name = "GShockEligibilityQuestionnaire"
 * title = "G-SHOCK Centrifugal Trainer Eligibility Questionnaire"
@@ -1111,7 +1111,7 @@ Title: "NASA HERA Analog Mission Application"
 Description: "Application for the Human Exploration Research Analog (HERA) mission at NASA Johnson Space Center"
 Usage: #definition
 
-* url = "http://example.org/Questionnaire/hera-analog-mission-application"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/HERAAnalogMissionApplication"
 * version = "1.0"
 * name = "HERAAnalogMissionApplication"
 * title = "NASA HERA Analog Mission Application"

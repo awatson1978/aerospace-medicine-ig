@@ -13,7 +13,6 @@ Extension: AreographicCoordinates
 Id: areographic-coordinates
 Title: "Areographic Coordinates"
 Description: "Mars latitude and longitude for surface locations"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/areographic-coordinates"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Location"
@@ -30,7 +29,6 @@ Extension: ISRUStatus
 Id: isru-status
 Title: "ISRU System Status"
 Description: "In-Situ Resource Utilization system status and propellant production levels"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/isru-status"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -49,7 +47,6 @@ Extension: CommunicationDelay
 Id: communication-delay
 Title: "Communication Delay"
 Description: "Earth-Mars light-time delay for data transmission context"
-* ^url = "http://hl7.org/fhir/uv/aerospace/StructureDefinition/communication-delay"
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Observation"
@@ -166,7 +163,7 @@ Description: "Tracking ISRU propellant production (CH4/O2) for Mars return journ
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains operational 1..1 MS
-* category[operational].coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/observation-category-aerospace"
+* category[operational].coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/observation-category-aerospace"
 * category[operational].coding.code = #operational
 
 * code MS

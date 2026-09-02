@@ -13,7 +13,6 @@ CodeSystem: MarsMissionsCS
 Id: mars-missions-cs
 Title: "Mars Missions"
 Description: "NASA and international missions to Mars (robotic and conceptual human missions)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -22,25 +21,25 @@ Description: "NASA and international missions to Mars (robotic and conceptual hu
 
 // Mission type property
 * ^property[0].code = #missionType
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs#missionType"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-missions-cs#missionType"
 * ^property[=].description = "Type of mission (robotic, human, conceptual)"
 * ^property[=].type = #code
 
 // Launch date property
 * ^property[+].code = #launchDate
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs#launchDate"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-missions-cs#launchDate"
 * ^property[=].description = "Launch date of mission"
 * ^property[=].type = #dateTime
 
 // Status property
 * ^property[+].code = #status
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs#status"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-missions-cs#status"
 * ^property[=].description = "Mission status (completed, active, planned)"
 * ^property[=].type = #code
 
 // Landing site property
 * ^property[+].code = #landingSite
-* ^property[=].uri = "http://hl7.org/fhir/uv/aerospace/CodeSystem/mars-missions-cs#landingSite"
+* ^property[=].uri = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/mars-missions-cs#landingSite"
 * ^property[=].description = "Landing site on Mars (for landers/rovers)"
 * ^property[=].type = #string
 
@@ -183,7 +182,6 @@ ValueSet: MarsMissionsVS
 Id: mars-missions-vs
 Title: "Mars Missions"
 Description: "All Mars missions (robotic and human, completed and planned)"
-* ^url = "http://hl7.org/fhir/uv/aerospace/ValueSet/mars-missions-vs"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false

@@ -229,7 +229,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
   "resourceType": "Observation",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/behavioral-health-state"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/behavioral-health-state"
     ]
   },
   "status": "final",
@@ -247,7 +247,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+        "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
         "code": "mood-level",
         "display": "Mood level"
       }
@@ -267,7 +267,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/behavioral-biomarker-cs",
+            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/behavioral-biomarker-cs",
             "code": "cortisol-ugdl"
           }
         ]
@@ -282,7 +282,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference": {
         "reference": "Encounter/ISS-Exp75-InFlight"
       }
@@ -298,14 +298,14 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
   "resourceType": "Observation",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/cumulative-stress-burden"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/cumulative-stress-burden"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+        "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
         "code": "cumulative-stress",
         "display": "Cumulative stress burden"
       }
@@ -326,7 +326,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
       "code": {
         "coding": [
           {
-            "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/aerospace-behavioral-state-cs",
+            "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/aerospace-behavioral-state-cs",
             "code": "mood-level"
           }
         ]
@@ -340,7 +340,7 @@ Structured debriefs, re-adaptation assessments, and long-term mental health outc
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueReference": {
         "reference": "Encounter/ISS-Exp75-InFlight"
       }

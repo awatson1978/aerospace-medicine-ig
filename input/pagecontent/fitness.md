@@ -329,7 +329,7 @@ O-Link proximity extension assay platform measures ~5,400 plasma proteins simult
   "resourceType": "Observation",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-exercise-activity-measure"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-measure"
     ]
   },
   "status": "final",
@@ -352,7 +352,7 @@ O-Link proximity extension assay platform measures ~5,400 plasma proteins simult
         "display": "Duration of physical activity"
       },
       {
-        "system": "http://hl7.org/fhir/uv/aerospace/CodeSystem/space-exercise-modality-cs",
+        "system": "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/space-exercise-modality-cs",
         "code": "treadmill",
         "display": "Treadmill running in microgravity"
       }
@@ -370,7 +370,7 @@ O-Link proximity extension assay platform measures ~5,400 plasma proteins simult
   },
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -390,7 +390,7 @@ O-Link proximity extension assay platform measures ~5,400 plasma proteins simult
   "resourceType": "Observation",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/aerospace/StructureDefinition/space-exercise-activity-group"
+      "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/space-exercise-activity-group"
     ]
   },
   "status": "final",
@@ -435,7 +435,7 @@ O-Link proximity extension assay platform measures ~5,400 plasma proteins simult
   ],
   "extension": [
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/mission-context",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/mission-context",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -445,13 +445,13 @@ O-Link proximity extension assay platform measures ~5,400 plasma proteins simult
       }
     },
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/exercise-device",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/exercise-device",
       "valueReference": {
         "reference": "Device/ISS-T2-Treadmill"
       }
     },
     {
-      "url": "http://hl7.org/fhir/uv/aerospace/StructureDefinition/harness-load",
+      "url": "https://awatson1978.github.io/aerospace-medicine-ig/StructureDefinition/harness-load",
       "valueQuantity": {
         "value": 75,
         "unit": "%",

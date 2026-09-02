@@ -5,14 +5,14 @@
 // including water quality, air quality, and microbial monitoring
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -31,7 +31,7 @@ Title: "MR051L Water Quality Assessment"
 Description: "NASA Medical Requirements Integration Document for water quality monitoring. Tracks potable and technical water quality parameters aboard the International Space Station."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr051l-water-quality"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr051l-water-quality"
 * version = "1.0.0"
 * name = "MR051LWaterQuality"
 * status = #active
@@ -230,7 +230,7 @@ Title: "MR022S Air Quality Monitoring"
 Description: "NASA Medical Requirements Integration Document for atmospheric monitoring. Tracks air quality parameters to ensure crew health and safety."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr022s-air-quality"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr022s-air-quality"
 * version = "1.0.0"
 * name = "MR022SAirQuality"
 * status = #active
@@ -400,7 +400,7 @@ Title: "MR054L Microbial Monitoring"
 Description: "NASA Medical Requirements Integration Document for microbial monitoring. Tracks microbial populations in air, water, and surfaces aboard ISS."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/mr054l-microbial-monitoring"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/mr054l-microbial-monitoring"
 * version = "1.0.0"
 * name = "MR054LMicrobialMonitoring"
 * status = #active

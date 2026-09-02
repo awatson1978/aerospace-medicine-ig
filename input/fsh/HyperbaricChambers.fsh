@@ -12,7 +12,7 @@ Description: "A medical facility equipped with a hyperbaric chamber for pressuri
 * ^status = #active
 * ^publisher = "HL7 International / Aerospace Medicine"
 * ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://hl7.org/Special/committees/aerospace"
+* ^contact.telecom.value = "https://github.com/awatson1978/aerospace-medicine-ig"
 * ^jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001
 
 // Required elements
@@ -94,7 +94,6 @@ CodeSystem: HyperbaricCapabilitiesCS
 Id: hyperbaric-capabilities-cs
 Title: "Hyperbaric Chamber Capabilities"
 Description: "Capabilities and services available in hyperbaric chambers"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-capabilities-cs"
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete
@@ -112,7 +111,6 @@ CodeSystem: HyperbaricChamberTypeCS
 Id: hyperbaric-chamber-type-cs
 Title: "Hyperbaric Chamber Types"
 Description: "Types of hyperbaric chambers"
-* ^url = "http://hl7.org/fhir/uv/aerospace/CodeSystem/hyperbaric-chamber-type-cs"
 * ^experimental = false
 * ^caseSensitive = true
 * ^content = #complete

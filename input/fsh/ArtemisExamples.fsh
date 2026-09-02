@@ -36,7 +36,7 @@ Usage: #example
 * status = #active
 * mode = #instance
 
-* type.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs"
+* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
 * type.coding.code = #landing-site
 * type.text = "Lunar surface landing site"
 
@@ -62,7 +62,7 @@ Usage: #example
 * status = #active
 * mode = #instance
 
-* type.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/location-type-cs"
+* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/location-type-cs"
 * type.coding.code = #orbital-station
 * type.text = "Lunar orbital habitat module"
 
@@ -84,7 +84,7 @@ Usage: #example
 
 * deviceName.name = "xEMU Suit Serial #001"
 * deviceName.type = #user-friendly-name
-* type.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"
+* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"
 * type.coding.code = #xemu-suit
 * type.text = "Exploration Extravehicular Mobility Unit"
 * manufacturer = "Axiom Space"
@@ -102,7 +102,7 @@ Usage: #example
 
 * deviceName.name = "Starship HLS (Artemis III)"
 * deviceName.type = #user-friendly-name
-* type.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/artemis-certified-devices-cs"
+* type.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/artemis-certified-devices-cs"
 * type.coding.code = #starship-hls
 * type.text = "Human Landing System"
 * manufacturer = "SpaceX"
@@ -183,7 +183,7 @@ Usage: #example
 * status = #final
 * category[laboratory] = $obs-cat#laboratory
 
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-type-cs"
 * code.coding.code = #cumulative-dose
 * code.coding.display = "Cumulative radiation dose"
 
@@ -196,13 +196,13 @@ Usage: #example
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mSv
 
-* component[radiationSource].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"
+* component[radiationSource].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
 * component[radiationSource].code.coding.code = #gcr
 * component[radiationSource].code.coding.display = "Galactic cosmic rays"
-* component[radiationSource].valueCodeableConcept.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"
+* component[radiationSource].valueCodeableConcept.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
 * component[radiationSource].valueCodeableConcept.coding.code = #gcr
 
-* component[shieldingCondition].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs"
+* component[shieldingCondition].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
 * component[shieldingCondition].code.coding.code = #nominal-shielding
 * component[shieldingCondition].valueString = "Orion crew module nominal aluminum shielding (~10 g/cm²)"
 
@@ -221,7 +221,7 @@ Usage: #example
 * status = #final
 * category[laboratory] = $obs-cat#laboratory
 
-* code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-type-cs"
+* code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-type-cs"
 * code.coding.code = #dose-rate
 * code.coding.display = "Radiation dose rate"
 
@@ -233,12 +233,12 @@ Usage: #example
 * valueQuantity.system = $ucum
 * valueQuantity.code = #mSv/h
 
-* component[radiationSource].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"
+* component[radiationSource].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
 * component[radiationSource].code.coding.code = #gcr
-* component[radiationSource].valueCodeableConcept.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/radiation-source-cs"
+* component[radiationSource].valueCodeableConcept.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/radiation-source-cs"
 * component[radiationSource].valueCodeableConcept.coding.code = #gcr
 
-* component[shieldingCondition].code.coding.system = "http://hl7.org/fhir/uv/aerospace/CodeSystem/shielding-condition-cs"
+* component[shieldingCondition].code.coding.system = "https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/shielding-condition-cs"
 * component[shieldingCondition].code.coding.code = #minimal-shielding
 * component[shieldingCondition].valueString = "Lunar surface EVA - suit fabric only (~0.3 g/cm²)"
 

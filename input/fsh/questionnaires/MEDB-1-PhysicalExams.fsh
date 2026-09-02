@@ -4,14 +4,14 @@
 // This file contains questionnaires for MEDB 1.x series physical examinations
 // ============================================================================
 
-Alias: $nasa-sponsor = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-sponsor-cs
-Alias: $nasa-discipline = https://mitre.org/fhir/space-health/CodeSystem/nasa-mrid-discipline-cs
-Alias: $nasa-phase = https://mitre.org/fhir/space-health/CodeSystem/nasa-mission-phase-cs
-Alias: $nasa-offset = https://mitre.org/fhir/space-health/CodeSystem/nasa-schedule-offset-cs
-Alias: $nasa-hardware = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-hardware-cs
-Alias: $nasa-facility = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-facility-cs
-Alias: $nasa-archive = https://mitre.org/fhir/space-health/CodeSystem/nasa-data-archive-cs
-Alias: $nasa-roles = https://mitre.org/fhir/space-health/CodeSystem/nasa-medical-roles-cs
+Alias: $nasa-sponsor = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-sponsor-cs
+Alias: $nasa-discipline = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mrid-discipline-cs
+Alias: $nasa-phase = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-mission-phase-cs
+Alias: $nasa-offset = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-schedule-offset-cs
+Alias: $nasa-hardware = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-hardware-cs
+Alias: $nasa-facility = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-facility-cs
+Alias: $nasa-archive = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-data-archive-cs
+Alias: $nasa-roles = https://awatson1978.github.io/aerospace-medicine-ig/CodeSystem/nasa-medical-roles-cs
 Alias: $loinc = http://loinc.org
 Alias: $sct = http://snomed.info/sct
 Alias: $ucum = http://unitsofmeasure.org
@@ -31,7 +31,7 @@ Title: "MEDB 1.6 Resting ECG"
 Description: "NASA Medical Requirements Integration Document for resting 12-lead ECG assessment. Captures pre- and postflight ECG recordings for cardiovascular evaluation of long-duration flight crew members."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-1-6-resting-ecg"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-6-resting-ecg"
 * version = "1.0.0"
 * name = "MEDB16RestingECG"
 * status = #active
@@ -495,7 +495,7 @@ Title: "MEDB 1.8 Audiometry"
 Description: "NASA Medical Requirements Integration Document for audiometric assessment. Captures pre- and postflight hearing threshold data to monitor crew hearing status."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-1-8-audiometry"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-8-audiometry"
 * version = "1.0.0"
 * name = "MEDB18Audiometry"
 * status = #active
@@ -847,7 +847,7 @@ Title: "MEDB 1.10 Ophthalmologic Examination"
 Description: "NASA Medical Requirements Integration Document for ophthalmologic examination. Captures comprehensive eye examination data for monitoring Spaceflight Associated Neuro-ocular Syndrome (SANS)."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-1-10-ophthalmologic-exam"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-10-ophthalmologic-exam"
 * version = "1.0.0"
 * name = "MEDB110OphthalmologicExam"
 * status = #active
@@ -1232,7 +1232,7 @@ Title: "MEDB 1.9 Dental Examination"
 Description: "NASA Medical Requirements Integration Document for dental examination. Captures comprehensive dental assessment data for spaceflight crew members."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-1-9-dental-exam"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-9-dental-exam"
 * version = "1.0.0"
 * name = "MEDB19DentalExam"
 * status = #active
@@ -1354,7 +1354,7 @@ Title: "MEDB 1.11 Body Composition/DEXA"
 Description: "NASA Medical Requirements Integration Document for body composition assessment using DEXA."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-1-11-body-composition"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-11-body-composition"
 * version = "1.0.0"
 * name = "MEDB111BodyComposition"
 * status = #active
@@ -1505,7 +1505,7 @@ Title: "MEDB 1.14 Body Mass Measurement"
 Description: "NASA Medical Requirements Integration Document for body mass measurement tracking."
 Usage: #definition
 
-* url = "https://mitre.org/fhir/space-health/Questionnaire/medb-1-14-body-mass"
+* url = "https://awatson1978.github.io/aerospace-medicine-ig/Questionnaire/medb-1-14-body-mass"
 * version = "1.0.0"
 * name = "MEDB114BodyMass"
 * status = #active
